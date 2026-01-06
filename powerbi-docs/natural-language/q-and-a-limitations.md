@@ -1,80 +1,83 @@
 ---
 title: Limitations of Power BI Q&A
-description: Current limitations of Power BI Q&A
-author: maggiesMSFT
-ms.author: maggies
+description: Learn about the current limitations of Power BI Q&A, including the supported data sources, review question limitations, and teach Q&A limitations.
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
-ms.date: 09/09/2020
+ms.topic: concept-article
+ms.date: 12/04/2024
 ---
 # Limitations of Power BI Q&A
 
-Power BI Q&A currently has some limitations.
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
-## Data sources
+The [Q&A feature](../consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](../report-server/install-powerbi-desktop.md).  
 
-### Supported data sources
+## Supported data sources
 
 Power BI Q&A supports the following configurations of data sources in the Power BI service:
 
 - Import mode
+- DirectQuery
 - Live connect to Azure Analysis Services
-- Live connect to SQL Server Analysis Services (with a gateway)
-- Power BI datasets.
+- Live connect to on-premises SQL Server Analysis Services tabular models
 
-In each of these configurations, row-level security is also supported.
+In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premises SQL Server Analysis Services models.
 
-**DirectQuery support for Q&A** (preview)
+## DirectQuery support for Q&A
 
-Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one small change to the behavior of Q&A when it's in DirectQuery mode: After you type your question, you select the **Submit** button. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
+Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](../connect-data/desktop-directquery-about.md) against these data sources. 
 
-### Data sources not supported
+## Data sources not supported
 
-Power BI Q&A currently does not support the following configurations:
+### Composite model support
 
-- Object level security with any type of data source
-- Composite models
-- Reporting Services 
+Q&A also supports composite models, if the model contains at least one of the following data sources:
 
-## Tooling limitations
+- One import data source.
+- One supported DirectQuery data source.
 
-The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, read the [intro to Q&A tooling](q-and-a-tooling-intro.md).
+If the model contains a mix of data sources, we only index columns from import tables or columns from supported DirectQuery sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves. 
+
+- Object-level security with any type of data source
+- Reporting Services
+
+## Q&A setup limitations 
+
+The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources: 
+
+- Import mode  
+- DirectQuery   
 
 ## Review question limitations
 
-The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
+The review questions only store questions asked about your data model for up to 28 days. Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
-Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
+Users can also keep their questions from being recorded by selecting **Settings** > **General** and setting the **Q&A option** to Off.
 
-Users can also keep their questions from being recorded by selecting **Settings** > **General** and deselecting **Allow Q&A to record my utterance**. 
+:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-questions.png" alt-text="Screenshot showing Privacy Help your dataset owners by sharing the questions you asked about their data.":::
 
 ## Teach Q&A limitations
 
-Teach Q&A allows you to fix two types of errors:
+Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
 
-- Assign a word to a field.
-- Assign a word a filter condition.
-
-Currently we don't support redefining a recognized term or defining other types of conditions or phrases. Also, when defining filtering conditions, you can only use a limited subset of language, including:
-
-- Country which is USA
-- Country which is not USA
+- Product category which is accessories
+- Product category which is not accessories 
 - Products > 100
 - Products greater than 100
 - Products = 100
-- Products is 100
+- Products equal 100
 - Products < 100
-- Products smaller than 100
 
-> [!NOTE]
-> Q&A Tooling only supports import mode. It doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This current limitation will be removed in subsequent releases of Power BI.
+Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
 
 ### Statements not supported
 
-- Multiple conditions aren't supported. As a workaround, create a DAX calculated column that evaluates a multi-condition statement Boolean and use this field instead.
+- Multiple conditions aren't supported. As a workaround, create a Data Analysis Expressions (DAX) calculated column that evaluates a multi-condition statement Boolean and use this field instead.
 - If you don't specify a filter condition when Q&A prompts for a subset of data, you can't save the definition, even if the entire statement has no red underlines.
 
-## Next steps
+## Related content
 
-There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
+There are several best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md).

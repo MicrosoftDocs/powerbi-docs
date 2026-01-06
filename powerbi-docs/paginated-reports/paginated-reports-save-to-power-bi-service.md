@@ -1,115 +1,106 @@
 ---
-title: "Publish a paginated report to the Power BI service"
-description: In this tutorial, you learn to publish a paginated report to the Power BI service by uploading it from your local computer.  
-author: maggiesMSFT
-ms.author: maggies
+title: Publish a Paginated Report to the Power BI Service
+description: Learn how to publish a paginated report to the Power BI service by uploading it from your local computer.  
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 04/03/2021
+ms.date: 12/01/2025
+ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Publish a paginated report to the Power BI service
 
-[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the workspace is in a Premium capacity or you have a Premium Per User (PPU) license. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
+This article explains how to publish a paginated report to the Power BI service by uploading it from your local computer.
 
 ## Requirements
 
-- Either a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license and write access to a workspace in a Power BI Premium capacity.
-- Or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license.
+[!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
+
 - If your report data source is on premises, you need to install a gateway. Read more about [on-premises gateways](../connect-data/service-gateway-onprem.md). After you upload the report, you connect to the on-premises data source by using the gateway.
 
-## Add a workspace to a Premium capacity
+## From Report Builder, publish to the Power BI service
 
-If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the name, you need to add the workspace to a Premium capacity. 
-
-1. Select **Workspaces**, select the ellipsis (**...**) next to the workspace name, then select **Edit workspace**.
-
-    ![Select Edit workspace](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
-
-1. In the **Edit workspace** dialog box, expand **Advanced**, then slide **Dedicated capacity** to **On**.
-
-    ![Select Dedicated capacity](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace-dialog.png)
-
-   You may not be able to change it. If not, then contact your Power BI Premium capacity admin to give you assignment rights to add your workspace to a Premium capacity.
-
-## From Report Builder, publish a paginated report to the Power BI Service
-
-1. Create a new paginated report or open an existing paginated report from the Power BI Service in Report Builder. If you open an existing paginated report from the service, the **Save** option is disabled because you're updating a report that's live in the Power BI Service.
+1. In Report Builder, create a new paginated report or open an existing paginated report from the Power BI service. If you open an existing paginated report from the service, the **Save** option is disabled because you're updating a report that's live in the Power BI service.
 
 1. On the Report Builder **File** menu, select **Publish**.
 
-    ![Select the File menu, then Publish.](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png)
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png" alt-text="Screenshot showing the Publish option under the File menu." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-save-as.png":::
+   
+   
+   
+```If you aren't signed in to Power BI yet, you need to sign in or create an account now. In the upper-right corner of Report Builder, select **Sign in** and complete the steps.```
+   
+1. In the list of workspaces on the left, select a workspace. Type a **File name** in the box > **Save**.
 
-    If you aren't signed in to Power BI yet, you need to sign in or create an account now. In the upper-right corner of Report Builder, select **Sign in** and complete the steps.
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png" alt-text="Screenshot showing Select a workspace." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png":::
+   
+1. Open the Power BI service in a browser and find the workspace where you published the paginated report.
 
-2. In the list of workspaces on the left, select a workspace with the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to its name. Type a **File name** in the box > **Save**. 
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png" alt-text="Screenshot showing Paginated report in Reports list." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png":::
+   
+1. Select the paginated report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
 
-    ![Select a Premium workspace](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-workspace.png)
-
-4. Open the Power BI service in a browser and browse to the Premium workspace where you published the paginated report. On the **Reports** tab, you see your report.
-
-    ![Paginated report in Reports list](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
-
-5. Select the paginated report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
-
-    ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
-
-6. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png" alt-text="Screenshot showing parameters that you need to select." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png":::
+   
+1. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
 
 ## From the Power BI service, upload a paginated report
 
 You can also start from the Power BI service and upload a paginated report.
 
+> [!NOTE]
+> Currently, you can't import a paginated report from OneDrive or SharePoint.
+
 1. Create your paginated report in Report Builder and save it to your local computer.
 
-1. Open the Power BI service in a browser and browse to the Premium workspace where you want to publish the report. Note the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the name. 
+1. Open the Power BI service in a browser and find the workspace where you want to publish the report.
 
-1. Select **Get data** at the bottom of the nav pane. 
+1. Select **Upload**, then choose **Browse** to find the paginated report.
 
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Select Get data.":::
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-upload-file.png" alt-text="Screenshot showing Browse option under Upload." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-upload-file.png":::
+   
+1. To edit your credentials, select the ellipses next to the report name, then choose **Manage**.
 
-1. In the **Files** box, select **Get**.
-
-    ![Power BI Get Files](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-files-get.png)
-
-1. Select **Local file** > browse to the paginated report > **Open**.
-
-    ![Select Local File](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-local-file.png)
-
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-manage.png" alt-text="Screenshot showing the Manage option." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-manage.png":::
+   
 1. Select **Continue** > **Edit credentials**.
 
-    ![Select Edit credentials](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-edit-credentials.png)
-
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-edit-credentials.png" alt-text="Screenshot showing Edit credentials." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-edit-credentials.png":::
+   
 1. Configure your credentials > **Sign in**.
 
-    ![Edit credentials](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png)
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png" alt-text="Screenshot showing authentication for credentials." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-paginated-credentials.png":::
+   
+1. Select the report to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
 
-   On the **Reports** tab, you see your report.
-
-    ![Paginated report in Reports list](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-wwi-report.png)
-
-1. Select it to open it in the Power BI service. If it has parameters, you need to select them before you can view the report.
- 
-    ![Select parameters](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-select-parameters.png)
-
-6. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in this article to access the data source.
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png" alt-text="Screenshot showing required parameters." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-parameters.png":::
+   
+1. If your report data source is on premises, read about how to [connect to a gateway](#connect-to-a-gateway) in the following section to access the data source.
 
 ## Connect to a gateway
 
 As with any other Power BI report, if the paginated report data source is on premises, then you need to create or connect to a gateway to access the data.
 
-1. Next to the report name, select **Manage**.
+1. Select the settings icon at the top right, then choose **Manage connections and gateways**.
 
-   ![Manage the paginated report](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
+    :::image type="content" source="media/paginated-reports-save-to-power-bi-service/power-bi-manage-gateway.png" alt-text="Screenshot showing Manage connections option." lightbox="media/paginated-reports-save-to-power-bi-service/power-bi-manage-gateway.png":::
+   
+1. For more details, see the Power BI service article [What is an on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
-1. See the Power BI service article [What is an on-premises data gateway](../connect-data/service-gateway-onprem.md) for details and next steps.
+## Considerations and limitations
 
-## Next steps
+- Maximum file size of a paginated report file with extension .rdl is 20 MB. If your RDL file is larger, it is typically due to using large embedded images in which case consider using external images or reducing size of the embedded images.
+
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
-- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+
 - [Embed Power BI paginated reports](../developer/embedded/embed-paginated-reports.md)
+

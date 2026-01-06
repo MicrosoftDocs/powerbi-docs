@@ -1,130 +1,177 @@
----
-title: Line charts in Power BI
-description: 'Learn how to use line charts in Power BI.'
-author: mihart
-ms.author: mihart
-ms.reviewer: 'mihart'
+﻿---
+title: Line Charts in Power BI
+description: Learn how to create and customize line charts in Power BI to visualize trends and patterns over time.
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
-ms.date: 07/12/2022
+ms.topic: how-to
+ms.date: 11/10/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
+#customer intent: As a Power BI user, I want to learn how to create and customize line charts so I can effectively visualize trends and time-series data in my reports.
 ---
 
 # Line charts in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart may have one or many lines. Line charts have an x and a y axis. 
+Line charts display continuous data as points connected by lines, making them ideal for visualizing trends over time. Use line charts to track metrics like monthly revenue, website traffic, or performance across periods. They excel at revealing patterns, seasonal effects, and long-term changes in your data.
 
-:::image type="content" source="media/power-bi-line-charts/power-bi-line.png" alt-text="Simple line chart.":::
+Power BI offers four line chart variants:
+
+- **Line chart** :::image type="icon" source="media/power-bi-line-chart/icon-line-chart.png":::
+- **Area chart** :::image type="icon" source="media/power-bi-line-chart/icon-area-chart.png":::
+- **Stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-stacked-area-chart.png":::
+- **100% stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-100-stacked-area-chart.png":::
 
 ## Prerequisites
 
+In the following guide, you use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
+
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-This tutorial uses the Sales and Marketing Sample to create a line chart that displays this year's sales by category.
+> [!IMPORTANT]
+> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
 
-1. Download the [sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
-
-2. Open Power BI Desktop, and from the menu bar, select **File** > **Open report**.
-
-3. Browse to the **Sales and Marketing Sample PBIX** file, then select **Open**.
-
-4. On the left pane, select the **Report** icon :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png"::: to open the file in report view.
- 
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. Launch **Power BI Desktop**.
+1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
+1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
 
 # [Power BI service](#tab/powerbi-service)
 
-This tutorial uses the built-in Sales and Marketing Sample in the Power BI service.
-
-1. Open the Power BI service, then select on **Get data** in the bottom left corner.
-
-2. On the Get Data page that appears, select **Samples**.
-
-   :::image type="content" source="media/power-bi-visualization-slicers/get-data-samples.png" alt-text="Screenshot of Get Data box with link to samples.":::
-
-3. Select the **Sales and Marketing Sample**, and choose **Connect**.
-
-4. Select **Edit** on the menu bar to display the **Visualizations** pane.
-
-5. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. Sign in to the Power BI service (`app.powerbi.com`).
+1. From the left-side navigation pane, select **Learn**.
+1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
+1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
 
 ---
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a line chart
 
-1. From the Fields pane, select **SalesFact** \> **Total units**, and select **Date** > **Month**.  Power BI creates a column chart on your report canvas.
+1. From the **Visualizations** pane, select the **Line chart** icon to add a visual placeholder to the canvas. (In the Power BI service, select **Build visual** first, then choose the icon.)
 
-    :::image type="content" source="media/power-bi-line-charts/power-bi-step-1.png" alt-text="Screenshot of the Fields pane with data fields selected.":::
+   :::image type="content" source="media/power-bi-line-chart/create-line-chart.png" alt-text="Screenshot of Power BI canvas with a line chart placeholder added, showing the Visualizations pane and Line chart icon selected." lightbox="media/power-bi-line-chart/create-line-chart.png":::
 
-2. Convert to a line chart by selecting the line chart template from the Visualizations pane.
+1. Add data to your chart by using one of these combinations:
+   - One field on **X-axis** and one measure on **Y-axis**.
+   - One field on **X-axis**, one measure on **Y-axis**, and one field in **Legend**.
+   - One or more fields on **X-axis** and multiple measures on **Y-axis** (charts with multiple measures don't support legends).
 
-    :::image type="content" source="media/power-bi-line-charts/power-bi-convert-to-line.png" alt-text="Screenshot of the Visualizations pane with Line chart icon selected.":::
+   For this example:
 
-3. Filter your line chart to show data for the years 2012-2014. If your Filters pane is collapsed, expand it now. From the Fields pane, select **Date** \> **Year** and drag it onto the Filters pane. Drop it under the heading **Filters on this visual**. 
+   - Drag **This Year Sales > Value** to the **Y-axis** field well.
+   - Drag **Time > Month** to the **X-axis** field well.
 
-    :::image type="content" source="media/power-bi-line-charts/power-bi-year-filter.png" alt-text="Screenshot of Filters pane with filters added.":::
+1. To customize your chart, select **Format visual** in the Visualizations pane to access formatting options under the **Visual** and **General** tabs.
 
-    Change **Advanced filtering** to **Basic filtering** and select **2012**, **2013**, and **2014**.
+## Drill into line chart data
 
-    :::image type="content" source="media/power-bi-line-charts/power-bi-filter-year.png" alt-text="Screenshot of Advanced filtering dropdown to select year limits.":::
+Line charts support drill actions that let you explore data hierarchies. To enable drilling through different time levels, configure your chart with a date hierarchy (Year > Quarter > Month > Day).
 
-4. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
+To set up drill functionality:
 
-    :::image type="content" source="media/power-bi-line-charts/power-bi-line-3years.png" alt-text="Screenshot of line chart with font size and y axis font changed.":::
+1. Select your line chart on the canvas.
+1. In the **Visualizations** pane, locate the **X-axis** field well.
+1. From the **Data** pane, drag **Time > Date Hierarchy** to the **X-axis** field well (remove any existing fields first).
 
-## Add lines to the chart
+:::image type="content" source="media/power-bi-line-chart/line-chart-drill.png" alt-text="Screenshot of a line chart with four drill icons: Drill up, Drill down, Go to next level, and Expand all. Icons are positioned near the chart." lightbox="media/power-bi-line-chart/line-chart-drill.png":::
 
-Line charts can have many different lines. In some cases, the values on the lines may be so divergent that they don't display well together. Let's look at adding additional lines to our current chart and then learn how to format our chart when the values represented by the lines are different. 
+Four drill icons appear near the visual:
 
-### Add more lines
+- **Drill up** - Move to a higher level in the hierarchy.
+- **Drill down** - Enable drill mode to select individual data points.
+- **Go to next level** - Expand all points to the next hierarchy level.
+- **Expand all** - Show next level grouped under each category.
 
-Instead of looking at total units for all regions as a single line on the chart, let's split out total units by region. Add additional lines by dragging **Geo** > **Region** to the Legend well.
+### Use drill down mode
 
-   :::image type="content" source="media/power-bi-line-charts/power-bi-line-regions.png" alt-text="One line for each region.":::
+1. Select the **Drill down** icon (downward arrow) to activate drill mode.
+1. Select any data point or axis value to drill into that specific period.
+1. Select the **Drill up** icon to return to the previous level.
 
-### Use two y axes
+### Navigate hierarchy levels
 
-What if you want to look at total sales and total units on the same chart? Sales numbers are so much higher than unit numbers, making the line chart unusable. In fact, the red line for total units appears to be zero.
+- **Go to next level**: Expands all data points simultaneously to show the next level (for example, all months across all quarters).
+- **Expand all**: Maintains grouping while showing the next level of detail beneath each category.
 
-:::image type="content" source="media/power-bi-line-charts/power-bi-diverging.png" alt-text="Screenshot shows how using a single y axis displays the total units as essentially flat and a useless comparison with the sales figures.":::
+## Use zoom sliders
 
-To display highly diverging values on one chart, use a combo chart. You can learn all about combo charts by reading [Combo charts in Power BI](power-bi-visualization-combo-chart.md). In our example below, we can display sales and total units together on one chart by adding a second y axis. 
+Zoom sliders let you focus on specific data ranges along the X or Y axes, making it easier to examine trends in detail.
 
-:::image type="content" source="media/power-bi-line-charts/power-bi-dual-axes.png" alt-text="Screenshot shows the sales values as a bar chart with the y axis on the left and the total units as a line with the y axis on the right.":::
+:::image type="content" source="media/power-bi-line-chart/line-chart-zoom.png" alt-text="Screenshot of the Visualizations pane with the Zoom slider card expanded and the toggle set to On." lightbox="media/power-bi-line-chart/line-chart-zoom.png":::
 
-## Highlighting and cross-filtering
+To enable zoom sliders:
 
-For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
+1. Select your line chart and open **Format visual** in the Visualizations pane.
+1. Change the X-axis **Type** from **Categorical** to **Continuous** (required for zoom functionality).
+1. Expand the **Zoom slider** card and toggle it to **On**.
+1. Enable **X-axis** and **Y-axis** options to show sliders on both axes.
+1. Optionally enable:
+   - **Slider tooltips** - Shows values as you drag slider handles.
+   - **Slider labels** - Displays the full range of values available on each axis.
 
-Selecting a data point on a line chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, open the **Market Share** tab.  
+Drag the slider handles to adjust the visible data range dynamically. The chart updates to show only data within the selected range.
 
-On a line chart, a single data point is the intersection of a point on the x axis and y axis. When you select a data point, Power BI adds markers indicating which point (for a single line) or points (if there are two or more lines) are the source for the cross-highlighting and cross-filtering of the other visuals on the report page. If your visual is very dense, Power BI will select the closest point to where you click on the visual.
+## Customize line segments
 
-In this example, we've selected a data point that encompasses: July 2014, % Units Market Share R12M of 33.16 and % Units Market Share of 34.74.
+To highlight trends or emphasize key data points, apply targeted formatting to specific portions of your line.
 
-:::image type="content" source="media/power-bi-line-charts/power-bi-single-select.png" alt-text="Select a single data point on a line chart.":::
+:::image type="content" source="media/power-bi-line-chart/line-chart-line-segment.png" alt-text="Screenshot of the Format visual pane with the Lines card expanded and the Apply settings to dropdown set to 'Aug'." lightbox="media/power-bi-line-chart/line-chart-line-segment.png":::
 
-Notice how the column chart is cross-highlighted, and the gauge is cross-filtered.
+To format line segments:
 
-To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../create-reports/service-reports-visual-interactions.md).
+1. Select your line chart and open **Format visual**.
+1. Under the **Visual** tab, expand the **Lines** card.
+1. In the **Apply settings to** dropdown, select a specific category (such as "Aug") or choose **All**.
+1. Change the **Color** to highlight the selected segment.
+1. Set the **Segment type** to:
+   - **Both** - Colors both sides of data points (default).
+   - **Left** - Colors only the left side of each point.
+   - **Right** - Colors only the right side of each point.
+1. Toggle **Shade area** to **On** to fill the area beneath the line.
 
-## Considerations and troubleshooting
+> [!NOTE]
+> Line segment formatting is only available for single-series charts. Multiple series (via legend or multiple Y-axis measures) don't support segment customization.
 
-* One line chart can't have dual y axes. You'll need to use a combo chart instead.
-* In the examples above, the charts were formatted to increase font size, change font color, add axis titles, center the chart title and legend, start both axes at zero, and more. The Formatting pane (paint roller icon) has a seemingly endless set of options for making your charts look the way you want them to. The best way to learn is to open the Formatting pane and explore.
+## Add a secondary Y-axis
 
-## Next steps
+When you compare measures with different scales, use a secondary Y-axis to plot each measure on its own vertical axis.
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+:::image type="content" source="media/power-bi-line-chart/line-chart-secondary-axis.png" alt-text="Screenshot of a line chart with one measure in the Y-axis field and Last Year Sales added to the Secondary Y-axis field well." lightbox="media/power-bi-line-chart/line-chart-secondary-axis.png":::
 
+To add a secondary Y-axis:
 
+1. Select your line chart.
+1. Verify that one measure is already in the **Y-axis** field well.
+1. From the **Data** pane, drag a second measure (for example, **Last Year Sales**) to the **Secondary Y-axis** field well.
 
+The chart adds a second line with its own axis scale. This feature makes it easier to compare trends between metrics even when values differ significantly.
 
+## Considerations and limitations
 
+- **Maximum number of lines**:
+  - While Power BI doesn't impose a strict line limit, too many lines (typically beyond 10-15) can reduce readability and performance. For complex comparisons, consider:
+    - Using small multiples.
+    - Adding slicers for dynamic filtering.
+    - Choosing alternative chart types better suited for high-volume data.
+- **Conditional formatting**:
+  - Line charts don't natively support conditional formatting for lines, shaded areas, or markers. While some users find workarounds by applying conditional formatting to a column chart first and then switching to a line chart, this method isn't officially supported. Results can vary.
+- **Line segment behavior**:
+  - **Single series only**: Segment formatting (color, shade area) works with only one series. Multiple series disable this feature.
+  - **Gaps in data**: How gaps appear depends on axis type:
+    - **Categorical axis**: Shows gaps as discrete breaks when "Show items with no data" is enabled.
+    - **Continuous axis**: Connects points with a line even when values are missing.
+- **Analytics features**:
+  - Advanced features like **Anomaly detection** and **Forecasting** require:
+    - A single-series chart.
+    - A continuous X-axis.
+  - Area chart variants (Area, Stacked Area, 100% Stacked Area) have varying support for analytics features. Test your configuration before relying on these tools in production reports.
+
+## Related content
+
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

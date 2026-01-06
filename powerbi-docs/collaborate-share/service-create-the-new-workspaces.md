@@ -1,40 +1,67 @@
 ---
-title: Create a workspace - Power BI
+title: Create a workspace in Power BI
 description: "Learn how to create a workspace: a collection of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
-author: maggiesMSFT
-ms.author: maggies
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
+ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 10/20/2022
-ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
+ms.date: 09/29/2025
+ms.custom: fabric
 LocalizationGroup: Share your work
+ai-usage: ai-assisted
 ---
+
 # Create a workspace in Power BI
 
-This article explains how to create *workspaces*, spaces to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
+In them, you create collections of dashboards, reports, paginated reports, semantic models, and dataflows. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. You create and manage workspaces in the Power BI service (in a browser at app.powerbi.com), not in Power BI Desktop. Power BI Desktop lets you publish to an existing workspace you have access to but doesn't provide workspace creation settings. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
 
-:::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of a workspace in Power B I.":::
+:::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of a workspace in Power BI.":::
 
 ## Create a workspace
 
-1. Select **Workspaces** > **Create workspace**.
-   
-     ![Screenshot of Create workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
+> [!IMPORTANT]
+> The following steps apply to the Power BI service (browser). Power BI Desktop doesn't include the workspace creation interface. If you’re in Power BI Desktop, open a browser and go to app.powerbi.com to create a workspace.
+>
+> The unified Fabric experience may show slightly different navigation labels or a + New button instead of **Create**; the steps are otherwise the same.
 
-2. Give the workspace a unique name. If the name isn't available, edit it to come up with a name that's unique.
-   
+1. In the Power BI service (browser at app.powerbi.com, not Power BI Desktop), start from the main navigation pane and do one of the following (labels can vary slightly):
+
+   - Select **Workspaces** in the left pane, then **New workspace**.
+   - Select **Create** > **Workspaces** > **New workspace**.
+   - Or select **+ New** (if shown) > **Workspace**.
+
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-create-new.png" alt-text="Screenshot of the Create a new workspace dialog.":::
+
+     The exact placement or styling of the **New workspace** option may vary slightly based on tenant navigation updates or preview features.
+
+     If you don't see **Create** or **New workspace**, possible reasons:
+
+     - Your Power BI license is free (workspace creation beyond My workspace requires a Power BI Pro or Premium Per User license, or assignment to a Premium capacity enabling creation).
+     - Your tenant admin has limited who can create new workspaces (a security group restriction).
+     - You’re in Power BI Desktop instead of the browser service.
+     - A preview or updated navigation layout is hiding the **Create** button; try selecting **Workspaces** first to reveal **New workspace**, or look for a **+ New** button.
+     - Your browser session is stale (try a hard refresh or sign out/in).
+
+     What to do:
+     - Verify your license (check the account menu for trial or Pro / PPU status).
+     - Ask a Power BI admin if workspace creation is restricted and request to be added to the allowed security group.
+     - Confirm you are at <https://app.powerbi.com> in a supported browser and not inside an embedded view.
+
+1. Give the workspace a unique name. If the name isn't available, edit it to come up with a name that's unique.
+
     When you create an app from the workspace, by default it will have the same name and icon as the workspace. You can change both when you create the app.
-   
-1. Here are some optional settings for your workspace. They're explained in more detail in the [Workspace settings](#workspace-settings) section later in this article:
 
-    - Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB. 
-    - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 Group file storage location (provided by SharePoint).    
-    - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
-    - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
-    - [Assign the workspace to a Premium capacity](#premium-capacity-settings).
-    - Connect the workspace to an Azure Data Lake Gen2 storage account (in preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connecting-to-an-azure-data-lake-gen-2-at-a-workspace-level).
+1. Here are some optional settings for your workspace. They're explained in more detail in the [Workspace settings](#workspace-settings) section later in this article:
+   - Upload a **Workspace image**. Files can be .png or .jpg format. File size must be less than 45 KB.
+   - (Semantic models and dataflows are added later through Get data; no setting needed here.)
+   - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 Group file storage location (provided by SharePoint).
+   - [Add a Contact list](#create-a-contact-list), the names of people to contact for information about the workspace. By default, the workspace admins are the contacts.
+   - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
+   - [Assign the workspace to a Premium capacity](#premium-capacity-settings).
+   - Connect the workspace to an Azure Data Lake Gen2 storage account (preview). Read about this functionality in the article [Configuring dataflow storage to use Azure Data Lake Gen 2](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md#connect-to-an-azure-data-lake-gen-2-at-a-workspace-level).
 
 1. Select **Save**.
 
@@ -54,18 +81,20 @@ You can specify which users receive notification about issues occurring in the w
 
     In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png" alt-text="Screenshot of the Workspace settings pane.":::
 
-2. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
+1. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**.
 
-    ![Screenshot of Workspace contacts.](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-contacts.png" alt-text="Screenshot of the contact list configuration showing workspace contacts.":::
 
-3. Select **Save**.
+1. Select **Save**.
 
 ### Set a workspace OneDrive
 
 The Workspace OneDrive feature allows you to configure a Microsoft 365 Group whose SharePoint document library is available to workspace users. You create the Group *outside* of Power BI first, with one available method being from OneDrive. Read about creating a [OneDrive shared library](https://support.microsoft.com/office/create-a-new-shared-library-from-onedrive-for-work-or-school-345c8599-05d8-4bf8-9355-2b5cfabe04d0).
-NOTE: It's important to note that the creation of Microsoft 365 Groups may be restricted in your environment, and/or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
+
+> [!NOTE]
+> Creating Microsoft 365 Groups may be restricted in your environment, or the ability to create them from your OneDrive site may be disabled. If this is the case, speak with your IT department.
 
 Power BI doesn't synchronize permissions between users or groups with workspace access, and users or groups with Microsoft 365 Group membership. A best practice is to give [access to the workspace](service-give-access-new-workspaces.md) to the same Microsoft 365 Group whose file storage you configured. Then manage workspace access by managing membership of the Microsoft 365 Group.
 
@@ -75,45 +104,29 @@ Power BI doesn't synchronize permissions between users or groups with workspace 
 
     In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png" alt-text="Screenshot of the Workspace settings pane.":::
 
-2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 group that you created earlier. Type just the name, not the URL. Power BI automatically picks up the OneDrive for the group.
+1. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 group that you created earlier. Type just the name, not the URL. Power BI automatically picks up the OneDrive for the group.
 
-    ![Screenshot of Specify a OneDrive location.](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png" alt-text="Screenshot of specifying a OneDrive location for a workspace.":::
 
-3. Select **Save**.
+1. Select **Save**.
 
-**Access the workspace OneDrive location**
+### Access the workspace OneDrive location
 
 After you've configured the OneDrive location, you get to it in the same way you get to other data sources in the Power BI service.
 
-1. In the nav pane, select **Get Data**, then in the **Files** box select **Get**.
+1. In the nav pane, select **Data hub**, then type the OneDrive location in the **Filter** box.
 
-    ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-get-data-files.png" alt-text="Screenshot of Data hub, get files." lightbox="media/service-create-the-new-workspaces/power-bi-get-data-files.png":::
 
-    Power BI should automatically detect the workspace OneDrive, so it appears as **OneDrive - WORKSPACE_NAME". It may take some time for the workspace OneDrive to appear on the **Get data** page after you've configured it.
+    Power BI should automatically detect the workspace OneDrive, so it appears under **Location**. It may take some time for the workspace OneDrive to appear on the **Data hub** page after you've configured it.
 
-1. Select the workspace OneDrive, for example, **OneDrive - Sales and Marketing**.
-
-
-
-1. Navigate to the folder containing your Power BI files. Select the file, then select **Connect**.
-
-1. If Power BI doesn't automatically detect the workspace OneDrive, on the **Get data** page, select **SharePoint - Team Sites**.
-
-    ![Screenshot of SharePoint - Team Sites, get data.](media/service-create-the-new-workspaces/workspace-get-data-sharepoint-team-sites.png)
-
-2. Type the URL of the shared library you created earlier, or select **Connect** to see the content available to you.
-
-    :::image type="content" source="media/service-create-the-new-workspaces/workspace-sharepoint-site-url.png" alt-text="Screenshot of Type the URL of the shared library you created earlier, or select Connect.":::
-
-1. Navigate to the folder containing your Power BI files.
-
-    :::image type="content" source="media/service-create-the-new-workspaces/sharepoint-team-sites-content.png" alt-text="Screenshot of folders in SharePoint - Team Sites.":::
+1. Select the semantic model.
 
 ### Allow contributors to update the app
 
-You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
+You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and semantic models which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
 
 By default, only workspace Admins and Members can create, publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
 
@@ -123,19 +136,22 @@ By default, only workspace Admins and Members can create, publish and update the
 
     In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
-2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png" alt-text="Screenshot of the Workspace settings pane.":::
+1. In **Workspace settings**, go to **Power BI** > **General** > **Secure update**, then enable **Allow contributors to update the app for this workspace**. (If your tenant still shows the legacy layout, it appears under **Advanced** > **Security settings**.)
 
-When enabled, contributors can:
-* Update app metadata like name, icon, description, support site, and color.
-* Add or remove items included in the app, like adding reports or datasets.
-* Change the visibility of the items for all the audience groups in the audience tab.
+When these features are enabled, contributors can:
+
+- Update app metadata such as name, icon, description, support site, and color.
+- Add or remove items included in the app, like adding reports or semantic models.
+- Change the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
-* Create or publish the app for the first time.
-* Add users to the app or change who has permission to the app.
-* Enable or disable automatic installation of app for app users.
-* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups. 
+
+- Create or publish the app for the first time.
+- Add users to the app or change who has permission to the app.
+- Enable or disable automatic installation of app for app users.
+- Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the semantic models in the audience groups.
+- Allow or prevent app consumers saving a copy of reports included in the app.  
 
 ## Premium capacity settings
 
@@ -143,13 +159,13 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
 1. Set **Premium capacity** to **On**.
 
-    ![Screenshot of Premium capacity On.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+    :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium.png" alt-text="Screenshot of turning Premium capacity on for a workspace.":::
 
 1. Choose either Premium capacity or **Premium Per User**. Read more about [Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
-1. Choose **Default storage limit**. Read more about [enabling large datasets](../enterprise/service-premium-large-models.md#enable-large-datasets).
+1. Choose **Default storage limit**. Read more about [enabling large semantic models](../enterprise/service-premium-large-models.md#enable-large-semantic-models).
 
 ## Give users access to your workspace
 
@@ -158,7 +174,24 @@ Now that you've created the workspace, you'll want to add other users to *roles*
 - [Give users access to a workspace](service-give-access-new-workspaces.md)
 - [Roles in workspaces in Power BI](service-roles-new-workspaces.md)
 
-## Next steps
-* Read about [workspaces in Power BI](service-new-workspaces.md)
-* [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+## Pin workspaces
+
+Quickly access your favorite workspaces by pinning them to the top of the workspace flyout list.
+
+1. Open the workspace flyout from the nav pane and hover over the workspace you want to pin. Select the **Pin to top** icon.
+
+    :::image type="content" source="media/service-create-the-new-workspaces/pin-workspace.png" alt-text="Screenshot of pinning a workspace to the top.":::
+
+1. The workspace is added in the **Pinned** list.
+
+    :::image type="content" source="media/service-create-the-new-workspaces/pinned-list.png" alt-text="Screenshot of the pinned workspaces list.":::
+
+1. To unpin a workspace, select the unpin button. The workspace is unpinned.
+
+    :::image type="content" source="media/service-create-the-new-workspaces/unpin-workspace.png" alt-text="Screenshot of unpinning a workspace.":::
+
+## Related content
+
+- Read about [workspaces in Power BI](service-new-workspaces.md)
+- [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

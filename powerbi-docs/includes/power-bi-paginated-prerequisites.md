@@ -2,15 +2,17 @@
 title: Power BI paginated reports prereqs
 description: Power BI prerequisites for paginated reports
 services: powerbi
-author: maggiesMSFT
-
+author: JulCsc
 ms.service: powerbi
 ms.topic: include
-ms.date: 10/14/2021
-ms.author: maggies
+ms.date: 09/09/2025
+ms.author: juliacawthra
 ms.custom: include file
 ---
 
-- You don't need any license to [download Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center for free.
-- You can publish and share paginated reports in your My Workspace or in other workspaces, as long as the workspace is in a Power BI Premium capacity and you have write access to the workspace. 
-- In a Premium Gen1 capacity, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../enterprise/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. In a [Premium Gen2 capacity](../enterprise/service-premium-gen2-what-is.md#paginated-reports), paginated reports are enabled automatically.
+License requirements for Power BI paginated reports (.rdl files) are the same as for [Power BI reports](../fundamentals/service-features-license-type.md) (.pbix files).
+
+- You don't need a license to [download Power BI Report Builder](https://www.microsoft.com/download/details.aspx?id=105942) from the Microsoft Download Center for free.
+- With a free license, you can publish paginated reports to My Workspace in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../consumer/end-user-features.md#licenses).
+- With a Power BI Pro license or a PPU license, you can publish paginated reports to other workspaces. You also need at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) in the workspace.
+- You need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md).

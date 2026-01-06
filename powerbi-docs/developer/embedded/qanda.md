@@ -1,24 +1,25 @@
 ---
 title: Q&A in Power BI embedded analytics
-description: Power BI embedded analytics offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
-author: mberdugo
-ms.author: monaberdugo
+description: Learn how Power BI embedded analytics offers a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
+author: billmath
+ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 02/17/2022 
+ms.date: 12/15/2025
+#customer intent: As a developer, I want to learn how to incorporate Q&A into my application using Power BI embedded analytics so I can write more interactive applications.
 ---
 
 # Q&A in Power BI embedded analytics
 
 Power BI embedded analytics offers you a way to incorporate [Q&A](pbi-glossary.md#qa) into an application. Your users can ask questions using natural language, and receive immediate answers in the form of visuals like charts or graphs.
 
-![Q&A Interactive question in an embedded frame](media/qanda/embedded-qanda.gif)
+:::image type="content" source="media/qanda/embedded-qanda.gif" alt-text="Animated GIF of the Power BI Embedded view, which shows how to embed a sample Q&A question.":::
 
 There are two modes for embedding Q&A within your application: **interactive** and **result only**. **Interactive** mode allows you to type in questions and have them displayed within the visual. If you have a saved question, or a set question you want to display, you can use the **result only** mode by populating the question in your embed config.
 
-Here's what the JavaScript code will look like.
+Here's an example of the JavaScript code:
 
 ```javascript
 // Embed configuration used to describe the what and how to embed.
@@ -91,11 +92,10 @@ qna.on("visualRendered", function(event) {
 
 ## Embed token
 
-Create an embed token off of a dataset to start a Q&A part. For more information, see [Generate token](/rest/api/power-bi/embedtoken).
+Create an embed token from a semantic model to start a Q&A part. For more information, see the [generate token operation](/rest/api/power-bi/embedtoken).
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Try out Q&A embedding with the JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)
+[Try out the Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

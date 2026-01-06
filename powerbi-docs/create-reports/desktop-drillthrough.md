@@ -1,87 +1,130 @@
 ---
-title: Set up drillthrough in Power BI reports
-description: Learn how to use drillthrough to drill down into data, on a new report page, in Power BI reports
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: ''
+title: 'Drillthrough in Power BI Reports: Navigate to Detailed Insights'
+description: Learn how to use drillthrough filters, buttons, and cross-report drillthrough in Power BI Desktop to provide detailed, context-specific insights.
+ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: how-to
-ms.date: 06/15/2022
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: ''
+ms.date: 09/02/2025
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix"
 LocalizationGroup: Create reports
+ai-usage: ai-assisted
+#customer intent: As a Power BI user, I want to set up drillthrough in my reports so that I can provide detailed, context-specific information to my report readers.
 ---
-# Set up drillthrough in Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+# Drillthrough in Power BI reports: Navigate to detailed insights
 
-With *drillthrough* in Power BI reports, you can create a destination *target* page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers right-click a data point in other *source* report pages, they drill through to the target page to get details that are filtered to that context. You can set up drillthrough in your reports in Power BI Desktop or the Power BI service. 
+Drillthrough in Power BI lets users navigate from a summary view to a detailed report page filtered to a specific context. This feature improves report interactivity and supports focused analysis, enabling users to explore data related to a selected item.  
 
-Want to investigate this report yourself? Open this [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Then select **Download** to download the Sales & Returns sample .pbix file to your computer.
+## Overview
 
-![Screenshot of Using drillthrough.](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
+Drillthrough is a navigation feature that lets report viewers move from one page to another filtered to a specific value. It's commonly used to show detailed information about a selected entity, like a customer, product, or region. Drillthrough can be triggered by right-clicking a visual or selecting a button, making it easy for users to explore detailed insights.
 
-Here are some articles explaining other ways to use drillthrough.
+## Concepts
 
-- [Create a button that drills through](desktop-drill-through-buttons.md) to details when they click it.
-- [Set up cross-report drillthrough](desktop-cross-report-drill-through.md) to jump from one report to another in the same Power BI service workspace or app.
+Understanding drillthrough components helps you design effective report navigation. This section introduces the key elements for setting up and using drillthrough.
 
-## Set up the drillthrough target page
+| Feature | Description |
+|---|---|
+| Drillthrough filters | Fields added to a drillthrough page that determine which data is shown when a user navigates to that page. Filters apply automatically based on selection. Use multiple fields to support compound filtering. |
+| Drillthrough pages | Report pages designed to display detailed information about a single item, with visuals that respond to the drillthrough filter and clear labeling. |
+| Drillthrough buttons | Interactive elements that allow users to navigate to a drillthrough page. Configure buttons with tooltips and formatting for accessibility. Use conditional formatting to show or hide buttons based on filter context. |
+| Cross-report drillthrough | Enables navigation between reports in the same workspace. Requires consistent field names and data types, and must be enabled in report settings. Only supported in the Power BI service. |
 
-1. To set up drillthrough, create a *target report page* that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
+The following section outlines steps to create and use drillthrough features in Power BI. Each procedure is designed to be concise and focused on essential actions.
 
-    For example, suppose you want to provide drillthrough for manufacturers. You might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
+## Create a drillthrough page
 
-2. Then, on that drillthrough target page, in the **Build visual** section of the **Visualizations** pane, drag the field for which you want to enable drillthrough into the **Drill through** well.
+To create a drillthrough page:
 
-    ![Screenshot of Drillthrough well.](media/desktop-drillthrough/drillthrough-add-fields-here.png)
+1. Create a new report page in Power BI Desktop.
+1. In the Visualizations pane, locate the **Drillthrough filters** well.
+1. Drag the desired field (for example, `Customer Name`) into the **Drillthrough filters** well.
+1. Add visuals to the page that respond to the drillthrough filter, such as charts or tables that highlight key details.
 
-    When you add a field to the **Drillthrough filters** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
+## Use drillthrough from a visual
 
-    ![Screenshot of Drillthrough image.](media/desktop-drillthrough/drillthrough-03.png)
+To use drillthrough from a visual, follow these steps:
 
-## Use your own image for a back button    
- Because the back button is an image, you can replace that image with any image you want. It still operates as a back button so that report consumers can go back to the original source page. You can only add your own images in Power BI Desktop, not in the Power BI service.
+1. Right-click a data point in a visual.
+1. Select the drillthrough page from the context menu.
+1. The drillthrough page opens and is filtered to the selected value.
 
-To use your own image for a back button, follow these steps:
+## Add a drillthrough button
 
-1. In Power BI Desktop, on the **Insert** tab, select **Image**. Then, locate your image and place it on the drillthrough target page.
+To add a drillthrough button, follow these steps:
 
-2. Select your new image on the drillthrough target page. Under the **Format image** pane, set the **Action** slider to **On**, and  then set the **Type** to **Back**. Your image now functions as a back button.
+1. Insert a button on a report page.
+1. In the Visualizations pane, set the button's action to `Drillthrough`.
+1. Select the target drillthrough page.
+1. Configure the button's tooltip and formatting, if needed.
+1. Use conditional formatting to show or hide the button depending on the filter context.
+1. Add descriptive labels and tooltips to enhance accessibility.
 
-    ![Screenshot of Load image and set Type to Back.](media/desktop-drillthrough/drillthrough-create-back-button.png)
+## Enable cross-report drillthrough
 
-    Now users can right-click a data point on the other source pages in your report, and get a context menu that supports drillthrough to that target page. 
+To enable cross-report drillthrough, follow these steps:
 
-    ![Screenshot of Drillthrough menu.](media/desktop-drillthrough/drillthrough-04.png)
+1. Publish the source and target reports to the same workspace.
+1. In the target report, enable **Cross-report drillthrough** in the report settings.
+1. Use matching field names and data types in the source and target reports.
+1. Create a drillthrough page in the target report and apply the appropriate drillthrough filter.
+1. Refresh the source and target reports after publishing to ensure drillthrough is available.
 
-    When report readers choose to drill through, the target page is filtered to show information about the data point they right-clicked on. For example, suppose you right-click a data point about Contoso, a manufacturer, and select **Drill through**. The drillthrough page they go to is filtered to Contoso.
+## Troubleshooting
 
-## Pass all filters in drillthrough
+This section outlines common issues users might encounter when using drillthrough in Power BI and provides steps to resolve them.
 
-You can set up drillthrough to pass all applied filters to the drillthrough target page. For example, you can select only a certain category of products and the visuals filtered to that category, and then select drillthrough on a source. You might be interested in what the drillthrough target page would look like with all those filters applied.
+### Drillthrough page doesn't appear in the context menu
 
-To keep all applied filters, go to the destination page. In the **Drillthrough** section of the **Visualizations** pane, set **Keep all filters** to **On**. 
+If the drillthrough page doesn't appear when right-clicking a visual, follow these suggestions:
 
-When you then drill through on a visual on a source page, the temporary filters that you applied to the source visual are also applied to the drillthrough target page. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
+1. Verify that the drillthrough filter field is present in the **Drillthrough filters** well on the target page.
+1. Make sure the field used in the source visual matches the field in the drillthrough filter.
+1. Check that the field isn't aggregated (for example, summed or counted) in the source visual.
+1. Use the **Performance analyzer** to identify potential issues with the query behavior.
 
-![Screenshot of Transient filters in italics.](media/desktop-drillthrough/drillthrough-temporary-filters-italics.png)
+### Drillthrough button isn't working
 
-Although you could do this with tooltips pages, that would be an odd experience because the tooltip wouldn't appear to be working properly. For this reason, we don't recommend doing so with tooltips.
+If a drillthrough button doesn't navigate to the target page, follow these suggestions:
 
-## Add a measure to drillthrough
+1. Verify that the button’s **Action** is set to `Drillthrough`.
+1. Verify that the **Drillthrough target** is correctly selected.
+1. Make sure the report is published and the button isn't disabled due to missing filter context.
 
-Besides passing all filters to the drillthrough target page, you can also add a measure or a summarized numeric column to the drillthrough area. Drag the drillthrough field to the **Drillthrough** card on the drillthrough target page to apply it. 
+### Filters aren't applied correctly
 
-![Screenshot of Add a measure to drillthrough.](media/desktop-drillthrough/drillthrough-summarized-measure.png)
+If the drillthrough page opens but doesn't filter as expected, follow these suggestions:
 
-When you add a measure or summarized numeric column, you can drill through to the page when the field is used in the *Value* area of a visual.
+1. Check that the field used for drillthrough isn't duplicated or transformed in Power Query.
+1. Check for relationships between tables that can affect filter propagation.
+1. Use the **Performance analyzer** to inspect query behavior and confirm filter application.
 
-That's all there is to setting up drillthrough in your reports. It's a great way to get an expanded view of the entity information that you selected for your drillthrough filter.
+### Cross-report drillthrough fails
 
-## Next steps
+If cross-report drillthrough fails, follow these suggestions:
 
-You might also be interested in the following articles:
+1. Ensure both reports are published to the same workspace.
+1. Verify that the field names and data types match exactly between source and target reports.
+1. Enable **Cross-report drillthrough** in the target report’s settings.
+1. Refresh both reports after publishing.
 
-* [Use cross-report drillthrough in Power BI reports](desktop-cross-report-drill-through.md)
-* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
+### Data refresh gives an error
+
+If drillthrough pages show outdated or missing data, follow these suggestions:
+
+1. Refresh the dataset manually in Power BI Desktop.
+1. Use the **Transform data** pane to find and fix errors in affected tables.
+1. Remove duplicate values from join columns if the errors persist.
+1. Republish the report and verify the refresh timestamp in the Power BI service.
+
+> [!NOTE]
+> For large datasets, like those used in pacing dashboards, refresh previews for all tables before publishing to avoid partial updates.
+
+## Related content
+
+- [Filters and highlighting](power-bi-reports-filters-and-highlighting.md)
+- [Create buttons](desktop-buttons.md)
+- [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)

@@ -2,12 +2,12 @@
 title: include file
 description: include file
 services: powerbi
-author: arthiriyer
- 
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii 
 ms.service: powerbi
 ms.topic: include
-ms.date: 06/02/2021
-ms.author: arthii
+ms.date: 12/01/2025
 ---
 
 > [!NOTE]

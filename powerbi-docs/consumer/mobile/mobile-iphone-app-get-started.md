@@ -1,14 +1,16 @@
 ---
 title: Get started with the Power BI mobile app for iOS
 description: Learn how the Microsoft Power BI mobile app for iOS app brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
-author: paulinbar
-ms.author: painbar
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/10/2022
-ms.custom: intro-get-started
+ms.date: 02/17/2025
+ms.custom:
+  - intro-get-started
+  - sfi-image-nochange
 ---
 # Get started with the Power BI mobile app on iOS devices
 The Microsoft Power BI for iOS app on the iPhone and iPad delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](mobile-apple-watch.md).  
@@ -27,16 +29,16 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 ## Download the app
 [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone or iPad.
 
-You can run the Power BI mobile app for iOS on any device running iOS 14.0 or later.
+You can run the Power BI mobile app for iOS on any device running iOS/iPadOS 17 or later.
 
 ## Sign up for the Power BI service
-If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and select **Try Power BI for free**.
+If you haven't already signed up, go to [powerbi.com](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi), and select **Try Power BI for free**.
 
 
 ## Get started with the Power BI app
 1. In your iOS device, open the Power BI app.
 2. To sign in to Power BI, tap the **Power BI** tab and fill in your sign-in details.  
-   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
+   To sign in to your Reporting Services KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to the Power BI mobile app](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
@@ -63,7 +65,7 @@ Tap the magnifying glass in the header to start searching for your Power BI cont
 ## View your favorite dashboards and reports
 Tap **Favorites** (![Favorites icon](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
 
-Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+Read more about [favorites in the Power BI mobile apps](../end-user-favorite.md#mobile).
 
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
@@ -76,7 +78,7 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md). 
 
-## Next steps
+## Related content
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

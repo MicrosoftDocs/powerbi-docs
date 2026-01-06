@@ -1,16 +1,17 @@
 ---
 title: Troubleshooting Power BI developer environment setup
 description: This article discusses some common issues you might come across when developing or creating a custom Power BI visual.
-author: mberdugo
-ms.author: monaberdugo
+author: billmath
+ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 07/31/2022
+ms.topic: troubleshooting
+ms.date: 12/15/2025
+# customer intent: As a Power BI developer, I want to learn how to troubleshoot common issues that might occur when setting up my developer environment for creating custom Power BI visuals so that I can develop my visuals effectively.
 ---
 
-# Troubleshoot your Power BI developer environment setup
+# Troubleshoot your Power BI developer environment setup for custom visuals
 
 This article explains how to diagnose and fix the following common problems that can occur when setting up your developer environment for creating custom Power BI visuals.
 
@@ -30,9 +31,9 @@ For help with installing [pbiviz](environment-setup.md#install-pbiviz) or [NodeJ
 
 Run the visual server with the command `pbiviz start` in your terminal's command line *from the root of your visual project*.
 
-![pbiviz start command](media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png)
+:::image type="content" source="media/power-bi-custom-visuals-troubleshoot/powerbi-start-visual.png" alt-text="Screenshot of powershell running the p b i viz start command showing the server starting.":::
 
-If the server's not running, your SSL certificates were probably not [installed correctly](environment-setup.md#create-and-install-a-certificate). To install your SSL certificates, see [Create and install a certificate](environment-setup.md#create-and-install-a-certificate).
+If the server's not running, your SSL certificates were probably not installed correctly. To install your SSL certificates, see [Create an SSL certificate](create-ssl-certificate.md).
 
 ## Can't see the developer icon on the Visualizations tab
 
@@ -40,16 +41,19 @@ The developer icon looks like a prompt icon within the **Visualizations** tab.
 
 ![Visual selection](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
+If you don't see it, make sure you have [enabled developer mode in the Power BI settings](environment-setup.md#enable-developer-mode).
 
 > [!NOTE]
 > The developer visual is currently only available in the **Power BI service** and not in Power BI Desktop or the mobile app. The packaged visual will work everywhere.
 
 ## Contacting the support team
 
-Feel free to contact the Power BI visuals support team (pbicvsupport@microsoft.com) with any questions, comments, or issues you have.
+Feel free to contact the Power BI visuals support team <pbicvsupport@microsoft.com> with any questions, comments, or issues you have.  
+This support channel is for custom visuals developers in the process of developing their own visuals.
 
-## Next steps
+For customer experience issues when using custom Power BI visuals, submit a case request via the [Power Platform admin center portal](https://admin.powerplatform.microsoft.com/newsupportticket/powerbipro).
+
+## Related content
 
 * [Setting up your Power BI environment](environment-setup.md)
 * [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)

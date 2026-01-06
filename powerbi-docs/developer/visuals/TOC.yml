@@ -23,12 +23,16 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a funnel plot from R script to R visual"
       href: funnel-plot-from-r.md
-  - name: Import Power BI custom visuals
+  - name: About Power BI custom visuals
     items: 
     - name: "Import a Power BI visual"
       href: import-visual.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.yml
+    - name: "Examples of Power BI visuals"
+      href: samples.md
+    - name: "The About dialog"
+      href: about-dialog.md
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -69,17 +73,56 @@
     - name: "Analytics pane" 
       href: analytics-pane.md
     - name: "Add format pane"
-      href: format-pane.md
-    - name: "Filter visuals" 
-      href: filter-api.md
-    - name: "Identity filter" 
-      href: identity-filter-api.md
+      expanded: false
+      items:
+        - name: "Format pane"
+          href: format-pane-general.md
+        - name: "Format pane example"
+          href: format-pane-example.md
+        - name: "Formatting components"
+          expanded: false
+          items:
+            - name: "Formatting card"
+              href: formatting-model-card.md
+            - name: "Formatting group"
+              href: formatting-model-group.md
+            - name: "Formatting container"
+              href: formatting-model-container.md
+        - name: "Formatting slices"
+          expanded: false
+          items:
+            - name: "Toggle switch"
+              href: "formatting-model-toggleswitch.md"
+            - name: "Num up down"
+              href: "formatting-model-numupdown.md"
+            - name: "Slider"
+              href: "formatting-model-slider.md"
+            - name: "Color picker"
+              href: "formatting-model-colorpicker.md"
+            - name: "Dropdowns"
+              href: "formatting-model-dropdown.md"
+            - name: "Flag selections"
+              href: "formatting-model-flagselection.md"
+            - name: "Text input"
+              href: "formatting-model-textinput.md"
+            - name: "Text area"
+              href: "formatting-model-textarea.md"
+            - name: "Font picker"
+              href: "formatting-model-fontpicker.md"
+            - name: "Alignment group"
+              href: "formatting-model-alignmentgroup.md"
+            - name: "Font control"
+              href: "formatting-model-fontcontrol.md"
+            - name: "Margin padding"
+              href: "formatting-model-marginpadding.md"
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
       href: bookmarks-support.md
     - name: "Add context menu support"
       href: context-menu.md
+    - name: "Add dynamic format strings support"
+      href: dynamic-format.md
     - name: "Add drill-down support"
       href: drill-down-support.md
     - name: "Add colors to your visual" 
@@ -127,7 +170,7 @@
     - name: "License enforcement API"
       href: licensing-api.md
     - name: Transactability and licensing FAQ
-      href: licensing-faq.md
+      href: licensing-faq.yml
   - name: Reference
     items: 
     - name: "Changelog"
@@ -140,10 +183,31 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
+    - name: "Authentication"
+      expanded: false
+      items:
+      - name: "Authentication API"
+        href: authentication-api.md
+      - name: "Microsoft Entra ID application setup"
+        href: entra-id-authentication.md
+    - name: "On object formatting API" 
+      href: on-object-formatting-api.md
+    - name: "Subselection API" 
+      href: subselection-api.md
+    - name: "Filter visuals API" 
+      href: filter-api.md
+    - name: "Identity filter API" 
+      href: identity-filter-api.md
+    - name: "Hierarchy identity filter API"
+      href: hierarchy-filter-api.md
+    - name: "Detect filter API"
+      href: detect-filter-api.md
     - name: "'Rendering' events API" 
       href: event-service.md
     - name: "Drilldown API"
       href: drilldown-api.md
+    - name: "Dynamic drill support API"
+      href: dynamic-drill-down.md
     - name: "File download API"
       href: file-download-api.md
     - name: "Permissions API"
@@ -158,6 +222,8 @@
         href: utils-formatting.md
       - name: "Formatting model utils"
         href: utils-formatting-model.md
+      - name: "On object utils"
+        href: utils-on-object.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"
@@ -175,10 +241,8 @@
   - name: Resources
     items:
     - name: "Dev Center"
-      href: https://powerbi.microsoft.com/developers/
-    - name: "Examples of Power BI visuals"
-      href: samples.md
+      href: https://www.microsoft.com/power-platform/products/power-bi/developers
     - name: "Custom Visuals Git Repo"
-      href: https://github.com/PowerBi-Projects/PowerBI-visuals/
+      href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

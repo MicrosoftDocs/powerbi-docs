@@ -1,12 +1,12 @@
 ---
-title: Embedded analytics tutorial register Azure AD app
-description: Part 2 of the register Azure AD app for the embedded analytics tutorials.
+title: Embedded analytics tutorial register Microsoft Entra app
+description: Part 2 of the register Microsoft Entra app for the embedded analytics tutorials.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
-ms.date: 12/09/2020
+ms.date: 12/01/2025
 ms.custom: include file
 ---
 
-To register your application with Azure AD, follow the instructions in [Register your application](../developer/embedded/register-app.md).
+To register your application with Microsoft Entra ID, follow the instructions in [Register your application](../developer/embedded/register-app.md).

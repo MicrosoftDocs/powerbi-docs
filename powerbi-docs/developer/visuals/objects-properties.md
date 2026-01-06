@@ -1,13 +1,14 @@
 ---
 title: Objects and properties of Power BI visuals
-description: This article describes the customizable properties of Power BI visuals.
-author: mberdugo
-ms.author: monaberdugo
-ms.reviewer: sranins
+description: This article explains which Power BI visual properties are customizable and how to customize the visual properties in the formatting pane.
+author: billmath
+ms.author: billmath
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 10/11/2022
+ms.topic: concept-article
+ms.date: 12/15/2025
+#customer intent: As a Power BI visual developer, I want to learn about the objects and properties of Power BI visuals so that I can customize my visuals.
 ---
 
 # Objects and properties of Power BI visuals
@@ -166,10 +167,10 @@ To customize the properties in the formatting pane, use one of the following met
 ### [getFormattingModel API method](#tab/getFormattingModel)
 
 > [!NOTE]
-> The `getFormattingModel` API method is supported from API versions 5.1+
+> The `getFormattingModel` API method is supported from API versions 5.1+. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 To use objects effectively in API version 5.1+, you need to implement the `getFormattingModel` method.  
-This method builds and returns a formatting model that includes full properties pane hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
+This method builds and returns a formatting model that includes full [properties pane](./format-pane-general.md) hierarchy of formatting cards, formatting groups, Also it contains formatting properties and their values.
 
 ### Capabilities objects reflected in formatting model
 
@@ -336,6 +337,6 @@ selector: {
 }
 ```
 
-## Next steps
+## Related content
 
 [Performance tips](performance-tips.md)

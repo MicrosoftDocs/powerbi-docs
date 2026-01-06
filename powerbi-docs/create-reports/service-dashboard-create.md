@@ -1,121 +1,119 @@
 ---
 title: Create a Power BI dashboard from a report
-description: Create a Power BI dashboard from a report
-author: maggiesMSFT
-ms.author: maggies
+description: Learn how to pin visualizations from existing reports to a dashboard in Power BI to help users understand data relationships.
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.custom: video-lJKgWnvl6bQ
-ms.date: 04/12/2021
+ms.custom: video-removed
+ms.date: 04/09/2025
+#customer intent: As a Power BI user I want to learn how to create dashboards with visualizations.
 ---
 # Create a Power BI dashboard from a report
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many different ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a dataset, or by duplicating an existing dashboard.  
+You read [Introduction to dashboards in Power BI](service-dashboards.md), and now you want to create your own. There are many ways to create a dashboard. For example, you can create a dashboard from a report, from scratch, from a semantic model, or by duplicating an existing dashboard. In this article, you create a quick and easy dashboard that pins visualizations from an existing report.
 
-We start by creating a quick and easy dashboard that pins visualizations from a report that's already been built. 
+After you complete this article, you'll understand:
 
-After you complete this article, you'll have a good understanding of:
-- The relationship between dashboards and reports
-- How to open Editing view in the report editor
-- How to pin tiles 
-- How to navigate between a dashboard and a report 
- 
-![Screenshot shows a Power B I dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+- The relationship between dashboards and reports.
+- How to pin tiles.
+- How to navigate between a dashboard and a report.
 
-> [!NOTE] 
-> Dashboards are a feature of the Power BI service, not Power BI Desktop. Although you don't create dashboards in the Power BI mobile apps, you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) there.
+[![Screenshot shows a Power BI dashboard with several visualizations.](media/service-dashboard-create/power-bi-completed-dashboard-small.png)](media/service-dashboard-create/power-bi-completed-dashboard-small.png#lightbox)
+
+> [!NOTE]
+> Dashboards are a feature of the Power BI service, not Power BI Desktop. You can't create dashboards in the Power BI mobile apps, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 >
-> 
+>
 
-## Video: Create a dashboard by pinning visuals and images from a report
-Watch Amanda create a new dashboard by pinning visualizations from a report. Then, follow the steps in the next section, [Import a dataset with a report](#import-a-dataset-with-a-report), to try it out yourself using the Procurement Analysis sample.
-    
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+## Pin tiles to a dashboard
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+You can use the following steps and the [Procurement Analysis sample](sample-procurement.md) to try pinning visualizations to a new dashboard for yourself.
 
-## Import a dataset with a report
-In this step-by-step, we import one of the Power BI sample datasets and use it to create our new dashboard. The sample we use is an Excel workbook with two PowerView sheets. When Power BI imports the workbook, it adds a dataset and a report to your workspace. The report is automatically created from the PowerView sheets.
+1. Open the Procurement Analysis sample report and then select **Edit** to open the report in Editing view.
 
-1. Download the [Procurement Analysis sample](https://go.microsoft.com/fwlink/?LinkId=529784) Excel file. We recommend saving it in your OneDrive for Business.
-2. Open the Power BI service in your browser (app.powerbi.com).
-3. From the nav pane, select **My Workspace** and then select **Get Data**.
+    ![Screenshot of the report, highlighting more options and edit.](media/service-dashboard-create/power-bi-reading-view-new.png)
 
-    ![nav pane](media/service-dashboard-create/power-bi-get-data-new-look.png)
-5. Under **Files**, select **Get**.
+1. Hover over a visualization to and then to add a visualization to a dashboard, select the pin icon :::image type="icon" source="media/service-dashboard-create/power-bi-pin-icon.png":::.
 
-   ![Get files](media/service-dashboard-create/power-bi-select-files.png)
-6. Navigate to the location where you saved the Procurement Analysis sample Excel file. Select it and choose **Connect**.
+    ![Screenshot of a visualization, highlighting the pin icon.](media/service-dashboard-create/power-bi-hover-new.png)
+1. Select whether to pin to an existing dashboard or new dashboard.
 
-   ![Connect to files](media/service-dashboard-create/power-bi-connectnew.png)
-7. For this exercise, select **Import**.
+   - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that are shared with you don't appear in the dropdown.
+   - **New dashboard**: Enter the name of the new dashboard.
 
-    ![OneDrive for Business window](media/service-dashboard-create/power-bi-import.png)
-8. When the success message appears, select the **x** to dismiss it.
+1. In this case, we select the option for **New dashboard** and enter a name. For this example the default "Total Invoice by Country/Region" name is used.
 
-   ![Screenshot shows a success message with the X called out.](media/service-dashboard-create/power-bi-view-datasetnew.png)
+    ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-title.png)
 
-> [!TIP]
-> Did you know? You can narrow the nav pane by selecting the icon with three lines at the top ![nav pane show or hide icon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). That gives you more room for the report itself.
+1. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, select **Save**.
 
-### Open the report and pin tiles to your dashboard
-1. In the same workspace, select the **Procurement Analysis Sample** report to open it.
+    ![Screenshot of a success message, highlighting Go to dashboard.](media/service-dashboard-create/power-bi-pin-success.png)
 
-    ![Reports tab](media/service-dashboard-create/power-bi-reports.png)
-    The report opens in Reading view. Notice it has two tabs on the left: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
+    Power BI opens the new dashboard, which has one tile: the visualization you pinned.
 
-2. Select **More options (...)** > **Edit** to open the report in Editing view.
+   ![Screenshot of a dashboard with one tile.](media/service-dashboard-create/power-bi-pinned.png)
 
-    ![Report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
-3. Hover over a visualization to reveal the options available. To add a visualization to a dashboard, select the pin icon ![Pin icon](media/service-dashboard-create/power-bi-pin-icon.png).
+1. Select the tile to return to the report.
 
-    ![Hover over tile](media/service-dashboard-create/power-bi-hover.png)
-4. Because we're creating a new dashboard, select the option for **New dashboard** and give it a name.
+     ![Screenshot of the Select the title element.](media/service-dashboard-create/select-the-title.png)
 
-    ![Screenshot shows the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-tile.png)
-5. When you select **Pin**, Power BI creates the new dashboard in the current workspace. After the **Pinned to dashboard** message appears, select **Go to dashboard**. If you're prompted to save the report, choose **Save**.
+1. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window appears, select **Existing dashboard**.  
 
-    ![Screenshot shows a success message with the Go to dashboard option called out.](media/service-dashboard-create/power-bi-pin-success.png)
+   ![Screenshot of the Pin to dashboard window, highlighting Existing dashboard.](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
-    Power BI opens the new dashboard. It has one tile: the visualization you just pinned.
+## Pin an entire report page
 
-   ![dashboard with one tile](media/service-dashboard-create/power-bi-pinned.png)
-7. Select the tile to return to the report. Pin a few more tiles to the new dashboard. When the **Pin to dashboard** window displays, select **Existing dashboard**.  
+Another option is to pin an entire report page to a dashboard, which is an easy way to pin more than one visualization at a time. When you pin an entire page, the tiles are *live*. That is, you can interact with them there on the dashboard. Changes you make to any of the visualizations in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
 
-   ![Screenshot shows the Pin to dashboard window with the Existing dashboard option called out.](media/service-dashboard-create/power-bi-existing-dashboard.png)
+For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
-## Pin an entire report page to the dashboard
-Instead of pinning one visual at a time, you can [pin an entire report page as a *live tile*](service-dashboard-pin-live-tile-from-report.md). Let's do it.
+## Considerations and limitations
 
-1. In the report editor, select the **Spend Overview** tab to open the second page of the report.
+Some report formatting options or themes aren't applied to visuals when you pin them to a dashboard.
+- Border, shadow, and background settings, as well as all title and subtitle formatting (aside from the text itself), are ignored in the pinned tile.
+- For card visuals, the text used for the value is shown in dashboards using the 'DIN' font family, with black text. You can change the text color for all the tiles on a dashboard by [creating a custom dashboard theme](service-dashboard-themes.md).
+- Conditional formatting isn't applied.
 
-   ![Report tab](media/service-dashboard-create/power-bi-page-tab.png)
+Certain interactivity/features are lost or limited.
+- If you pin just a visual (rather than an entire report page), filters and slicers in the report may not persist or apply the same way on the tile.
+- Button visuals that trigger bookmarks or clear or apply filters when you select them have no action in a dashboard tile. These actions only make sense within the context of a report. The tile is a snapshot/hyperlink, not full report functionality.
+- If you’re a viewer (not creator) of a dashboard, you often cannot move or resize tiles. Dashboard tile refresh and behavior may depend on dataset refresh and cache.
 
-2. You want all of the visuals in the report on your dashboard. In the upper-right corner of the menubar, select **Pin to a dashboard**. On a dashboard, live page tiles update each time the page is refreshed.
+Live changes in the report may not update the tile’s visual type.
+- If you pinned a line chart, then later change the visual in the report to a bar chart, the dashboard tile still shows the original line-chart visual type (though data may refresh).
+- Similarly, geometry or layout changes may not propagate.
 
-   ![Upper right of report editor](media/service-dashboard-create/power-bi-pin-live.png)
+Limitations with visual types, data size, and image sizes.
+- Some custom visuals, certain slicer visuals, or unsupported visuals may not be pinnable.
+- Visuals adjust their size to fit the size of the tile, which can result in differences in layout as if the visual were resized in the report.
+- Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
+- While you can pin visuals from different reports or datasets to one dashboard, you cannot create new visuals on the dashboard itself that combine data from different underlying datasets in the way you can in a report.
+- Custom fonts that aren’t part of Power BI’s supported font list aren’t applied on dashboards.
 
-3. When the **Pin to dashboard** window appears, select **Existing dashboard**.
+Dashboard theme and visual theme mismatches.
+- When you pin a tile, you can choose to keep the report’s theme (so the visual looks as it did) or use the dashboard theme (so all tiles match). However, some tiles might lose formatting when the dashboard theme is applied.
+- Some theme-level formatting (tile background color, tile border) may not apply in all cases (for example, pinned live report pages or certain tile types).
+  
+Dashboard limitations (beyond pinning) that impact pinned visuals.
+- Dashboards are limited to one page (one canvas), whereas reports can have many pages.
+- You cannot create dashboards in Power BI Desktop—only in the Power BI service.
+- On a dashboard, filtering or slicing the canvas is not available in the same way as in a report: you cannot drop a slicer across tiles and have them all respond (unless each tile was pinned from a live page).
 
-   ![Screenshot shows the Pin to dashboard window with the Existing dashboard option selected and a Pin live button.](media/service-dashboard-create/power-bi-pin-live2.png)
 
-4. After the Success message appears, select **Go to dashboard**. There you see the tiles you pinned from the report. In the example below, we've pinned two tiles from page one of the report and one live tile, which is page two of the report.
+## Related content
 
-   ![Screenshot shows a Power B I dashboard with the visualizations from this article.](media/service-dashboard-create/power-bi-dashboard.png)
+Congratulations on creating your first dashboard. Now that you have a dashboard, there's more you can do with it. Start exploring on your own, or see one of the following articles:
 
-## Next steps
-Congratulations on creating your first dashboard! Now that you have a dashboard, there's much more you can do with it. Follow one of the suggested articles below, or start exploring on your own: 
-
-* [Resize and move tiles](service-dashboard-edit-tile.md)
-* [All about dashboard tiles](service-dashboard-tiles.md)
-* [Share your dashboard by creating an app](../collaborate-share/service-create-distribute-apps.md)
-* [Power BI - Basic Concepts](../fundamentals/service-basic-concepts.md)
-* [Tips for designing a great dashboard](service-dashboards-design-tips.md)
+- [Resize and move tiles](service-dashboard-edit-tile.md)
+- [All about dashboard tiles](service-dashboard-tiles.md)
+- [Share your dashboard by creating an app](../collaborate-share/service-create-distribute-apps.md)
+- [Power BI - Basic Concepts](../fundamentals/service-basic-concepts.md)
+ [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

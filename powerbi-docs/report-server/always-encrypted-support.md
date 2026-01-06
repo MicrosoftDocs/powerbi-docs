@@ -1,13 +1,14 @@
 ---
 title: Always Encrypted in Power BI Report Server
 description: This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database.
-author: maggiesMSFT
-ms.author: maggies
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 01/22/2020
+ms.topic: concept-article
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # Always Encrypted in Power BI Report Server
 
@@ -51,7 +52,7 @@ Read more about [deterministic vs. randomized encryption](/sql/relational-databa
 
 Parameter usage only applies to deterministic encryption.
 
-**Single-value parameter**.  You can use a single-value parameter against an Always Encrypted column.
+**Single-value parameter**. You can use a single-value parameter against an Always Encrypted column.
 
 **Multi-value parameter**. You can't use a multi-value parameter with more than one value against an Always Encrypted column.
 
@@ -80,10 +81,10 @@ Currently the only supported aggregations against deterministic Always Encrypted
 
 ## Always Encrypted in connection strings
 
-You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
+You need to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
-## Next steps
+## Related content
 
-[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
+- [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

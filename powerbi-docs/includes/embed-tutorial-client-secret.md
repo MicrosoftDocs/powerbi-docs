@@ -2,10 +2,10 @@
 title: Embedded analytics tutorial for getting the client secret
 description: Get the client secret for the embedded analytics tutorials.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
-ms.date: 12/09/2020
+ms.date: 12/01/2025
 ms.custom: include file
 ---
 
@@ -15,7 +15,7 @@ To get the client secret, follow these steps:
 
 2. Search for **App registrations** and select the **App registrations** link.
 
-3. Select the Azure AD app you're using for embedding your Power BI content.
+3. Select the Microsoft Entra app you're using for embedding your Power BI content.
 
 4. Under **Manage**, select **Certificates & secrets**.
 

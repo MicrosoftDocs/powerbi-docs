@@ -1,18 +1,19 @@
 ---
 title: 'Create a Power BI report for Power BI Report Server'
 description: Learn how to create a Power BI report for Power BI Report Server in a few simple steps.
-author: maggiesMSFT
-ms.author: maggies
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # Create a Power BI report for Power BI Report Server
 You can store and manage Power BI reports on premises in the Power BI Report Server web portal, just as you can store Power BI reports in the cloud in the Power BI service (https://powerbi.com). You create and edit reports in Power BI Desktop, and publish them to the web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on a mobile device.
 
-![Power BI report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+:::image type="content" source="media/quickstart-create-powerbi-report/report-server-powerbi-report.png" alt-text="Screenshot of Power BI report in the web portal.":::
 
 Here are four quick steps to get you started.
 
@@ -22,9 +23,9 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
 1. In the report server web portal, select the **Download** arrow > **Power BI Desktop**.
 
-    ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
-
-    Or go to the [Power BI Report Server](https://powerbi.microsoft.com/report-server/) home page and select **Advanced download options**.
+    :::image type="content" source="media/install-powerbi-desktop/report-server-download-web-portal.png" alt-text="Screenshot showing how to download Power BI Desktop from the web portal.":::
+   
+   Or, go to the [Power BI Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server) home page and select **Advanced download options**.
 
 2. In the Download Center page, select **Download**.
 
@@ -36,38 +37,38 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
 4. After you download the installer, run the Power BI Desktop Setup Wizard.
 
-2. At the end of the installation, check **Start Power BI Desktop now**.
+1. At the end of the installation, check **Start Power BI Desktop now**.
+
+    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (September 2025)** is in the title bar.
+
+    :::image type="content" source="media/install-powerbi-desktop/power-bi-report-server-desktop.png" alt-text="Screenshot of Power BI Desktop September 2025.":::
    
-    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (January 2021)** is in the title bar.
+1. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
 
-    ![Power BI Desktop January 2021](media/install-powerbi-desktop/power-bi-report-server-desktop.png)
-
-3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
+    :::image type="content" source="media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png" alt-text="Screenshot of Power BI Desktop start screen.":::
    
-    ![Power BI Desktop start screen](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
-
 ## Step 2: Select a data source
 You can connect to a variety of data sources. Read more about [connecting to data sources](connect-data-sources.md).
 
 1. From the welcome screen, select **Get Data**.
    
     Or on the **Home** tab, select **Get Data**.
-2. Select your data source -- in this example, **Analysis Services**.
-   
-    ![Select data source](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
-3. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
-   
-    ![Server name](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
-4. Choose the report server where you'll save your reports.
-   
-    ![Report server selection](media/quickstart-create-powerbi-report/report-server-select-server.png)
+1. Select your data source -- in this example, **Analysis Services**.
 
+    :::image type="content" source="media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png" alt-text="Screenshot of selecting a data source.":::
+1. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
+
+    :::image type="content" source="media/quickstart-create-powerbi-report/report-server-ssas-server-name.png" alt-text="Screenshot showing the server name field.":::
+1. Choose the report server where you'll save your reports.
+
+    :::image type="content" source="media/quickstart-create-powerbi-report/report-server-select-server.png" alt-text="Screenshot of report server selection.":::
+   
 ## Step 3: Design your report
 Here's the fun part: You get to create visuals that illustrate your data.
 
 For example, you could create a funnel chart of customers and group values by yearly income.
 
-![Design a report](media/quickstart-create-powerbi-report/report-server-create-funnel.png)
+:::image type="content" source="media/quickstart-create-powerbi-report/report-server-create-funnel.png" alt-text="Screenshot of designing a report.":::
 
 1. In **Visualizations**, select **Funnel chart**.
 2. Drag the field to be counted to the **Values** well. If it's not a numeric field, Power BI Desktop automatically makes it a *Count of* the value.
@@ -79,19 +80,23 @@ Read much more about [designing a Power BI report](../create-reports/desktop-rep
 > Some visuals such as paginated report visual will only work on the Power BI service only. Rendering these visuals on Power BI Report Server will give an "Unsupported visual" error.
 
 ## Step 4: Save your report to the report server
+> [!NOTE]
+> Power BI Desktop only supports integrated authentication for publishing reports to Power BI Report Server. Basic authentication is not supported; for this use case, you can use the portal.
+
 When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
 
 1. On the **File** menu, select **Save as** > **Power BI Report Server**.
+
+    :::image type="content" source="media/quickstart-create-powerbi-report/report-server-save-as-powerbi-report-server.png" alt-text="Screenshot showing how to save to the report server.":::
+1. Now you can view it in the web portal.
+
+    :::image type="content" source="media/quickstart-create-powerbi-report/report-server-powerbi-report.png" alt-text="Screenshot showing how to view the report in the web portal.":::
    
-    ![Save to the report server](media/quickstart-create-powerbi-report/report-server-save-as-powerbi-report-server.png)
-2. Now you can view it in the web portal.
-   
-    ![View the report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
-    
 > [!NOTE]
 > If you choose to edit the report in the future, the report data you see in the desktop will always be the cached data from when the report was initially created.  To view the latest data when editing the report, you must refresh the data in your Power BI Desktop application.
 
-## Next steps
+## Related content
+
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 

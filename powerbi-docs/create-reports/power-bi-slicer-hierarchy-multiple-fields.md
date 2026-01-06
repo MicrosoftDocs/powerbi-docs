@@ -1,13 +1,14 @@
 ---
 title: Add multiple fields to a hierarchy slicer
 description: Learn how to create a hierarchy slicer that contains multiple fields in a hierarchy.
-author: maggiesMSFT
-ms.author: maggies
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/22/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---
@@ -29,11 +30,16 @@ When you select one or more children for an item, you see a semi-selected square
 
 ## Format the slicer
 
-The behavior of the slicer hasn't changed. You can also style your slicer how you want. For example, you can set it to single-select mode. Or you can swap between a list and dropdown.
+The behavior of the slicer hasn't changed. You can also style your slicer how you want. For example, in the **Format** pane, on the **Visual** tab > **Slicer settings** > **Options** **Style**, you can swap between a **Vertical list** or a **Dropdown**.
 
-:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Screenshot of Hierarchy slicer formatted as dropdown slicer.":::
+:::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Screenshot of the Format pane, Dropdown or Vertical list slicer.":::
+you can set it to single-select mode.
 
-You can also make the following formatting changes.
+You can also make other formatting changes for hierarchy slicers:
+
+- Change the [title](#change-the-title).
+- Change the [expand/collapse icon](#change-the-expandcollapse-icon).
+- Change the [indentation](#change-the-indentation).
 
 ### Change the title
 
@@ -81,7 +87,7 @@ If space is tight on your report, you may want to reduce the amount you indent t
 - For tabular models, this feature requires SQL Server Analysis Services 2017 or newer.    
 - For multi-dimensional models, this feature requires SQL Server Analysis Services 2019 CU5 or newer with SuperDAXMD enabled. Read more about [SuperDAXMD](/analysis-services/multidimensional-models/dax-for-multidimensional-models#superdaxmd).
 
-## Next steps
+## Related content
 
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

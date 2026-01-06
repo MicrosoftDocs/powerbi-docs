@@ -1,0 +1,13 @@
+---
+ title: include file
+ description: include file
+ services: powerbi
+ author: JulCsc
+ ms.service: powerbi
+ ms.topic: include
+ ms.date: 12/01/2025
+ ms.author: juliacawthra
+ ms.custom: include file
+---
+
+**APPLIES TO:** :::image type="icon" source="media/yes-icon.svg" border="false":::Power&nbsp;BI&nbsp;service :::image type="icon" source="media/no-icon.svg" border="false":::Power&nbsp;BI&nbsp;Report&nbsp;Builder :::image type="icon" source="media/no-icon.svg" border="false":::Power&nbsp;BI&nbsp;Desktop

@@ -5,7 +5,7 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Query Editor overview"
+    - name: "Power Query Editor overview"
       href: desktop-query-overview.md
   - name: Tutorials
     expanded: true
@@ -14,11 +14,35 @@
       href: desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
       href: desktop-tutorial-create-calculated-columns.md
+    - name: "Create calculation groups"
+      href: calculation-groups.md      
   - name: Concepts
     expanded: true
     items:
+    - name: "Use notebooks with your semantic model"
+      href: service-notebooks.md  
+    - name: "Edit data models in the Power BI service"
+      href: service-edit-data-models.md  
+    - name: "Implement time-based calculations in Power BI"
+      href: desktop-time-intelligence.md
+    - name: "Use semantic model version history"
+      href: service-semantic-model-version-history.md  
+    - name: "Use calculations options in Power BI Desktop"
+      href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
+    - name: "Work with TMDL view (preview)"
+      href: desktop-tmdl-view.md  
+    - name: "Work with DAX query view"
+      href: dax-query-view.md
+    - name: "Quick measure suggestions"
+      href: quick-measure-suggestions.md
+    - name: "Use Copilot to write and explain DAX queries"
+      href: /dax/dax-copilot
+    - name: "Use Copilot to create measure descriptions"
+      href: desktop-measure-copilot-descriptions.md
+    - name: "Work with Model explorer"
+      href: model-explorer.md        
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
     - name: "Many-to-many relationships"
@@ -33,6 +57,10 @@
       href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
+    - name: "Work with value filter behavior (preview)"
+      href: value-filter-behavior.md
+    - name: "Export query results (preview)"
+      href: export-query-results.md
   - name: Datamarts (preview)
     items: 
     - name: "Introduction to datamarts (preview)"
@@ -41,10 +69,12 @@
       href: datamarts/datamarts-understand.md
     - name: "Get started with datamarts (preview)"
       href: datamarts/datamarts-get-started.md   
-    - name: "Analyzing datamarts (preview)"
+    - name: "Analyze datamarts (preview)"
       href: datamarts/datamarts-analyze.md         
-    - name: "Sharing and discovery with datamarts (preview)"
-      href: datamarts/datamarts-sharing-discovery.md           
+    - name: "Discover data with datamarts (preview)"
+      href: datamarts/datamarts-discovery.md          
+    - name: "Share datamarts and manage permissions (preview)"
+      href: datamarts/datamarts-sharing-manage-permissions.md         
     - name: "Create reports with datamarts (preview)"
       href: datamarts/datamarts-create-reports.md         
     - name: "Access control in datamarts (preview)"
@@ -65,32 +95,28 @@
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
     - name: "Premium features of dataflows"
       href: dataflows/dataflows-premium-features.md      
-    - name: "Use Machine Learning and Cognitive Services with dataflows"
-      href: dataflows/dataflows-machine-learning-integration.md  
     - name: "Dataflows best practices"
       href: ./dataflows/dataflows-best-practices.md  
-    - name: "Understanding and optimizing dataflow refresh"
+    - name: "Understand and optimize dataflow refresh"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
-    - name: "Using DirectQuery with dataflows"
+    - name: "Use DirectQuery with dataflows"
       href: ./dataflows/dataflows-directquery.md       
     - name: "Dataflows considerations and limitations"
       href: dataflows/dataflows-features-limitations.md
     - name: "Streaming dataflows (preview)"
       href: dataflows/dataflows-streaming.md
-    - name: "Developing dataflows solutions"
+    - name: "Develop dataflows solutions"
       href: dataflows/dataflows-develop-solutions.md      
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+      href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
-    - name: "Using Azure Log Analytics in Power BI (preview)"
+    - name: "Use Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-overview.md
-    - name: "Configuring Azure Log Analytics in Power BI (preview)"
+    - name: "Configuring Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-configure.md
-    - name: "Azure Log Analytics in Power BI - FAQ (preview)"
+    - name: "Azure Log Analytics in Power BI - FAQ"
       href: log-analytics/desktop-log-analytics-faq.md
-    - name: "Installing the Log Analytics Template App (preview)"
-      href: log-analytics/install-as-engine-app.md   
-    - name: "Using the Log Analytics Template App (preview)"
-      href: log-analytics/desktop-loganalytics-reportguide-datasets.md
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -99,24 +125,24 @@
       href: desktop-create-and-manage-relationships.md
     - name: "Use the Analytics pane"
       href: desktop-analytics-pane.md
-    - name: "Work with Data view"
+    - name: "Work with Table view"
       href: ../connect-data/desktop-data-view.md
     - name: "Learn DAX basics in Power BI Desktop"
       href: desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"
       href: desktop-relationship-view.md
-    - name: "Quick measures suggestions (preview)"
+    - name: "Quick measures suggestions"
       href: quick-measure-suggestions.md      
     - name: Transform and shape data
       items: 
       - name: "Combine files (binaries)"
-        href: desktop-combine-binaries.md
-      - name: "Use AI Insights"
-        href: desktop-ai-insights.md        
+        href: desktop-combine-binaries.md     
     - name: Model your data
       items: 
       - name: "Create quick measures for common calculations"
         href: desktop-quick-measures.md
+      - name: "Use Copilot to create measure descriptions"
+        href: desktop-measure-copilot-descriptions.md
       - name: "Create and use what-if parameters to visualize variables"
         href: desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
@@ -129,10 +155,16 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
+      - name: "Use visual calculations (preview)"
+        href: desktop-visual-calculations-overview.md
+      - name: "Using DAX user-defined functions (preview)"
+        href: desktop-user-defined-functions-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
       - name: "Import and display KPIs"
         href: desktop-import-and-display-kpis.md
+      - name: "Set and use date tables"
+        href: desktop-date-tables.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
   - name: External tools

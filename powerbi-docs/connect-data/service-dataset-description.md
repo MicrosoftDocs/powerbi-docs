@@ -1,24 +1,30 @@
 ---
-title: Dataset description
-description: Learn what a dataset description is, how it's useful, and how to provide it.
-author: paulinbar
-ms.author: painbar
+title: Add Semantic Model Descriptions in Power BI
+description: Learn how to add semantic model descriptions in Power BI to help users discover and reuse datasets. Improve collaboration with clear, informative descriptions.
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: conceptual
-ms.date: 11/18/2021
+ms.topic: concept-article
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
-# Dataset description
+# Semantic model description
 
-To help members of your organization quickly identify datasets that might be useful for them, provide a concise, informative description of your dataset in the dataset's settings. Users will see this description in the info tooltip next to the dataset's name in the datasets hub, as well as on the dataset's details page. Providing a meaningful description helps foster dataset reuse. For instance, based on a dataset's description, users may decide to explore reports that are based on the dataset, or to create their own reports based on the dataset.
+Semantic model descriptions help users in your organization quickly identify and reuse relevant datasets in Power BI. Add a concise, informative description in your semantic model's settings to improve discovery. Users see this description in the tooltip next to the semantic model's name in the semantic models hub and on the semantic model's details page.
 
-## Provide a dataset description
+Providing a meaningful description helps foster semantic model reuse. For instance, based on a semantic model's description, users might decide to explore existing reports or create their own reports based on the semantic model.
 
-To provide a description for a dataset, go to dataset's settings page, find the Dataset description section, and enter your description in the text box.
+## Provide a semantic model description
 
-:::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of dataset description text box on the dataset settings page.":::
+To provide a description for a semantic model, go to the semantic model's settings page, find the Semantic model description section, and enter your description in the text box.
 
-## Next steps
-* [Data hub](service-data-hub.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+On the settings page, find the **Semantic model description** section and enter your description in the text box. Select **Apply** to save your description.
+
+:::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of the semantic model description text box in Power BI settings." lightbox="media/service-dataset-description/dataset-description-section-in-dataset-settings.png":::
+
+## Related content
+
+- [OneLake data hub](service-data-hub.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

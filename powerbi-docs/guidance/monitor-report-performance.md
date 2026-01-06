@@ -1,14 +1,14 @@
 ---
-title: Monitor report performance in Power BI
-description: Guidance on how to monitor report performance in Power BI.
-author: peter-myers
-ms.author: kfollis
-manager: asaxton
-ms.reviewer: asaxton
+title: "Monitor report performance in Power BI"
+description: "Guidance on how to monitor report performance in Power BI."
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.date: 04/02/2021
+ms.topic: concept-article
+ms.custom: fabric-cat
+ms.date: 12/30/2024
 ---
 
 # Monitor report performance in Power BI
@@ -31,10 +31,7 @@ Slow queries or report visuals should be a focal point of continued optimization
 
 Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
 
-> [!NOTE]
-> Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
-
-![Screenshot of Power Query Editor Tools ribbon tab showing the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
+:::image type="content" source="media/monitor-report-performance/power-query-diagnotics.png" alt-text="Screenshot showing the Power Query Editor Tools ribbon tab showing the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command." border="false":::
 
 ## Use Performance Analyzer
 
@@ -54,7 +51,7 @@ Use SQL Server Profiler when your data source is either:
 - Azure Analysis Services
 
 > [!CAUTION]
-> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported [only for specific operations](/power-bi/transform-model/desktop-external-tools#supported-write-operations). Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
+> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported only for specific operations. Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
 
 To create a SQL Server Profiler trace, follow these instructions:
 
@@ -76,17 +73,14 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-Monitor performance of content deployed into your organization's Power BI Premium Gen2 capacity with the help of the [Gen2 metrics app](./../enterprise/service-premium-gen2-metrics-app.md).
+Monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
-To monitor the Power BI Premium original version capacities, use the [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md).
-
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics app](../enterprise/service-premium-metrics-app.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

@@ -11,9 +11,9 @@ metadata:
   ms.subservice: pbi-collaborate-share
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 07/01/2021
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 06/30/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,7 +26,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Ways to share your work
-            url: service-how-to-collaborate-distribute-dashboards-reports.md
+            url: service-share-dashboards.md
       - linkListType: concept
         links:
           - text: "Workspaces"
@@ -61,7 +61,7 @@ landingContent:
             url: service-share-dashboards.md
           - text: "Filter and share a report"
             url: service-share-reports.md
-          - text: "Share a dataset"
+          - text: "Share a semantic model"
             url: ../connect-data/service-datasets-share.md
 
   # Card (optional)

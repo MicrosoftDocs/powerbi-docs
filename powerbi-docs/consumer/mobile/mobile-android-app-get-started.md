@@ -1,14 +1,16 @@
 ---
 title: Get started with the Power BI mobile app on Android devices
 description: Learn how the Android mobile app for Microsoft Power BI brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
-author: paulinbar
-ms.author: painbar
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/21/2022
-ms.custom: intro-get-started
+ms.date: 04/24/2025
+ms.custom:
+  - intro-get-started
+  - sfi-image-nochange
 ---
 # Get started with the Power BI mobile app on Android devices
 The Android app for Microsoft Power BI delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. 
@@ -30,10 +32,13 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 
 [Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
-Power BI can run on a number of different Android devices, running the Android 6.0 operating system or later. To check on your device, go to **Settings** > **About device** > **Android version**. 
+Power BI can run on a number of different Android devices. Make sure your device meets the following requirements:
+
+* It is running the Android 8.0 operating system or later. To check on your device, go to **Settings** > **About device** > **Android version**.
+* It must have Android System Webview version - 94.0.4606.50 or above (or something comparable) installed on it.
 
 **Start when you open the app**    
-Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android device. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
+Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android device. Tap **I'll sign in later** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
 
 Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -51,7 +56,7 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
 
     If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
 
-   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
+   To sign in to your Reporting Services KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
@@ -77,8 +82,6 @@ Tap the magnifying glass in the header to start searching for your Power BI cont
 ## View your favorite dashboards and reports
 Tap **Favorites** (![Favorites icon](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
 
-Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
-
 ## Enterprise support for the Power BI mobile apps
 Organizations can use Microsoft Intune to manage devices and applications, including the Power BI mobile apps for Android and iOS.
 
@@ -92,25 +95,24 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md). 
 
 ## Next steps
+
 Here are some other things you can do in the Android device app for Power BI with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
 * View [your apps](../../collaborate-share/service-create-distribute-apps.md).
 * View your [dashboards](mobile-apps-view-dashboard.md).
-* Explore the [tiles on your dashboards](mobile-tiles-in-the-mobile-apps.md).
 * Open [Power BI reports](mobile-reports-in-the-mobile-apps.md).
 * View [your apps](../../collaborate-share/service-create-distribute-apps.md).
-* [Annotate and share tiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Share [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
 * [Scan a Power BI QR code](mobile-apps-qr-code.md) with your Android phone to open a related dashboard tile or report. 
-* View [notifications about updates to your Power BI account](mobile-apps-notification-center.md), such as dashboards that colleagues share with you.
 
 ### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
 * [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for Android devices.
 * Create [KPIs on the web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md) web portal
 
-### See also
+### Related content
+
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

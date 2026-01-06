@@ -1,132 +1,122 @@
 ---
 title: "Tutorial: Create a decomposition tree with a Power BI sample"
-description: Learn to explore the Retail Analysis sample with a decomposition tree in the Power BI service.
-author: maggiesMSFT
-ms.author: maggies
+description: Learn to explore the Retail Analysis sample with a decomposition tree in the Power BI service and Power BI Desktop.
+author: julcsc
+ms.author: juliacawthra
 ms.reviewer: 
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 09/26/2022
+ms.date: 10/01/2025
 LocalizationGroup: Samples
 ---
 # Tutorial: Create a decomposition tree with a Power BI sample
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you start with a built-in Power BI sample dataset and create a report with a *[decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md)*, an interactive visual for ad hoc exploration and conducting root cause analysis. It's also an artificial intelligence (AI) visualization, so you can ask it to find the next category, or *dimension*, to drill down into based on certain criteria.
+In this tutorial, you start with a built-in Power BI sample semantic model and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for exploration and conducting root cause analysis.
 
-:::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot showing the completed decomposition tree.":::
+A decomposition tree is also an artificial intelligence (AI) visualization. You can ask it to find the next category, or dimension, to drill down into based on certain criteria. For more information, see [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
+
+:::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-final.png" alt-text="Screenshot shows the completed decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-final.png":::
+
+> [!NOTE]
+> You can also create a decomposition tree in the Power BI service by following similar steps. For simplicity, the rest of this tutorial demonstrates the process in Power BI Desktop.
+
 This tutorial shows you how to:
 
 > [!div class="checklist"]
+>
+> - Download the Retail Analysis sample and open it in Power BI Desktop.
+> - Create a decomposition tree.
+> - Do root cause analysis on your data in the decomposition tree in Edit mode.
+> - Save the report and continue root cause analysis in reading view.
 
-> * Sign up for a Power BI license, if you don't have one.
-> * Import the Retail Analysis sample and add it to the Power BI service.
-> * Create a decomposition tree.
-> * Do root cause analysis on your data in the decomp tree in Edit mode.
-> * Save the report and continue root cause analysis in reading view.
-
-If you want to familiarize yourself with the built-in sample in this tutorial and its scenario, see [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
+If you want to get familiar with the built-in sample in this tutorial and its scenario, see [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you start.
 
 ## Prerequisites
 
-- To download a sample in the Power BI service, you can sign up for a [free or trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
+> [!TIP]
+> You don't need a Power BI license to explore the samples in Power BI Desktop. 
 
+- To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
+- You need to download the [Retail Analysis Sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-## Import the sample in the Power BI service
+## Open the sample in Power BI Desktop
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+1. Download the [Retail Analysis Sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-    If you don't have a Power BI Pro or Premium Per User (PPU) license, you can save the sample to your My Workspace.
+1. Open the Retail Analysis Sample in Power BI Desktop. The report should open in **Report view**. 
 
-1. Select **Get data** at the bottom of the nav pane. 
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-report-view.png" alt-text="Screenshot shows the report view with the option to choose visualizations." lightbox="media/sample-tutorial-decomp-tree/retail-visualizations-report-view.png":::
 
-   :::image type="content" source="../media/power-bi-get-data.png" alt-text="Screenshot showing the Get data button.":::
+## Create a decomposition tree
 
-   If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane.
+Now you can create a decomposition tree to analyze the sample data.
 
-    ![Screenshot showing the nav pane icon.](media/sample-tutorial-connect-to-the-samples/expand-nav.png)
+1. In the **Visualizations** pane under **Build visual**, select the **Decomposition tree** icon.
 
-1. On the **Get Data** page that appears, select **Samples**.
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot shows the visualizations pane with the decomposition tree icon highlighted." lightbox="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png":::
 
-1. Select **Retail Analysis Sample** > **Connect**.
+1. Decomposition trees can get wide. Select the focus mode icon or drag the edge so the visualization fills most of the page. In this example, we're in focus mode.
 
-### Create a report from the dataset
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png" alt-text="Screenshot shows the resized decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png":::
 
-On the **Datasets + dataflows** tab, you have several options for exploring your dataset. In this tutorial, you're going to explore the dataset by creating your own report from scratch.
+1. Expand **Sales** > **This Year Sales** and then select **Value**. Power BI adds the corresponding value to the **Analyze** box. 
 
-![Screenshot showing the Retail Analysis Sample dataset entry.](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png" alt-text="Screenshot shows Value for This Year Sales added to the Analyze box for the decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png":::
 
-1. Select **More options** (**...**) > **Create report**.
+   Decomposition trees analyze one value by many categories, or dimensions. 
 
-   ![Screenshot showing the Create report menu item.](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png)
+1. Next, select each dimension field that you want added to the **Explain by** box. Let's select these fields:
 
-   The dataset opens in report editing mode.
+   - **District** > **DM** (District Manager)
+   - **Item** > **Category**
+   - **Item** > **FamilyNane** (Family Name)
+   - **Item** > **Segment**
+   - **Store** > **Chain**
+   - **Store** > **PostalCode**
+   - **Store** > **Store Type**
+   - **Store** > **Territory**
 
-   ![Screenshot showing a brand-new report in edit mode.](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-explain-desktop.png" alt-text="Screenshot shows the fields added to the Explain by box." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-explain-desktop.png":::
 
-## Create a decomp tree
+   Add as many as you want, in any order. You can use them or not, in any order, in the decomposition tree. 
 
-Let's add a decomposition tree, or decomp tree, to our report for ad hoc analysis.
+## Analyze in the decomposition tree
 
-1. Open Power BI Desktop and load the Retail Analysis Sample. You can get this sample from [Download original sample Power BI files](sample-datasets.md#download-original-sample-power-bi-files).
+Now comes the analysis part.
 
-1. Select the **Report** icon to open the Reports view. In the **Visualizations** pane, select the **Decomposition tree** icon.
+1. Select the plus sign (+) next to **This Year Sales** and select **High value**. 
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-visualizations-decomp-tree.png" alt-text="Screenshot showing the Visualizations pane with Decomposition tree selected.":::
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value-desktop.png" alt-text="Screenshot shows High value selected for analysis." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value-desktop.png":::
 
-1. Drag the edge so it fills most of the page. Decomposition trees can get wide.
+   That means Power BI uses artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-resize-desktop.png" alt-text="Screeshot showing the resized decomposition tree.":::
+1. Power BI selects **Store type**.
 
-1. Decomp trees analyze one value by many categories, or *dimensions*. Expand **Sales** > **This Year Sales** and select **Value**. Power BI adds **Value** to the **Analyze** box.
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Screenshot shows Store Type selected by Power BI." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png":::
 
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-analyze-sales-desktop.png" alt-text="Screenshot showing Value for This Year Sales added to the Analyze box for the decomposition tree.":::
+1. Select the plus sign (+) next to **Same Store** and select **High value**. Keep selecting **High value** from the top nodes until you have a decomposition tree that looks like this one.
 
-1. Next, select dimension fields and add them to the **Explain by** box. Add as many as you want, in any order. You can use them or not, in any order, in the decomp tree. We added:
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Screenshot shows all the highest values selected by Power BI." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-complete.png":::
 
-    - District Manager
-    - Category
-    - FamilyName
-    - Segment
-    - Chain
-    - PostalCode
-    - Store Type
-    - Territory
+   We selected **Same store** > **Chain** > **Territory** > **DM** > **Category**. Or select other values yourself, and see what you end up with.
 
-     :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-explain-desktop.png" alt-text="Screenshot showing the fields added to the Explain by box.":::
+1. You can delete a dimension by selecting the **X** next to the corresponding heading.
 
-## Analyze in the decomp tree
+   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Screenshot showing how to delete a level from the decomposition tree." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png":::
 
-Now comes the ad hoc analysis part.
+1. Save the report by selecting **Share** > **Share** or **Share** > **Copy link**. 
 
-1. Select the plus sign (+) next to **This Year Sales** and select **High value**. That means Power BI will use artificial intelligence to analyze all the different categories in the **Explain by** box, and pick the one to drill into to get the highest value of the measure being analyzed.
+    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-share.png" alt-text="Screenshot shows the decomposition tree with the options available for This Year Sales." lightbox="media/sample-tutorial-decomp-tree/retail-decomp-share.png":::
 
-   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-select-high-value-desktop.png" alt-text="Screenshot showing High value selected for analysis.":::
+Now anyone who views your report can interact with the decomposition tree, starting from the first **This Year Sales** and choosing their own path to follow.
 
-   Power BI selects **Store type**.
+Learn about everything else you can do with decomposition trees in [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
-   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-store-type.png" alt-text="Screenshot showing Store Type selected by Power BI.":::
-
-2. Keep selecting **High value** until you have a decomp tree that looks like this one.
-
-   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-complete.png" alt-text="Screenshot showing all the highest values selected by Power BI.":::
-
-   Or select other values yourself, and see what you end up with.
-
-3. You can delete levels by selecting the **X** in the heading.
-
-   :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-delete-dimension.png" alt-text="Screenshot showing how to delete a level from the decomposition tree.":::
-
-4. Save your report. Now anyone who views your report can interact with the decomp tree, starting from the first **This Year Sales** and choosing their own path to follow.
-
-    :::image type="content" source="media/sample-tutorial-decomp-tree/retail-decomp-reading-view.png" alt-text="Screenshot showing the decomposition tree with the options available for This Year Sales.":::
-
-Learn about everything else you can do with decomp trees in [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
-
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Tutorial: Explore a Power BI sample](sample-tutorial-connect-to-the-samples.md)

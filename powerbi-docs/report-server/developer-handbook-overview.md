@@ -1,20 +1,21 @@
 ---
 title: Developer handbook overview, Power BI Report Server
 description: Welcome to the developer handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
-author: maggiesMSFT
-ms.author: maggies
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 11/01/2017
+ms.topic: overview
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 
 # Developer handbook overview, Power BI Report Server
 
 Welcome to the developer handbook for Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
 
-![Power BI Report Server overview.](media/admin-handbook-overview/admin-handbook.png)
+:::image type="content" source="media/admin-handbook-overview/admin-handbook.png" alt-text="Screenshot of Power BI Report Server overview.":::
 
 This handbook highlights options you have, as a developer, to work with Power BI Report Server.
 
@@ -58,12 +59,12 @@ There are several types of extensions you can build.
 
 To learn more, see [Extension library](/sql/reporting-services/extensions/reporting-services-extension-library).
 
-## Next steps
+## Related content
 
-[Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
-[Building Applications Using the Web Service and the .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
-[URL Access](/sql/reporting-services/url-access-ssrs)  
-[Extension library](/sql/reporting-services/extensions/reporting-services-extension-library)  
-[WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+* [Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
+* [Building Applications Using the Web Service and the .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
+* [URL Access](/sql/reporting-services/url-access-ssrs)  
+* [Extension library](/sql/reporting-services/extensions/reporting-services-extension-library)  
+* [WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -9,14 +9,6 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "Data hub"
-      href: service-data-hub.md
-    - name: "Data details pages: Index"
-      href: service-data-details-page.md
-    - name: "Dataset details page"
-      href: service-dataset-details-page.md
-    - name: "Datamart details page"
-      href: service-datamart-details-page.md
     - name: "Power BI for Azure users"
       href: powerbi-azure-landing.md
   - name: Quickstarts
@@ -35,14 +27,6 @@
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "Connect to a GitHub sample"
-      href: service-tutorial-connect-to-github.md
-    - name: "Use Cognitive Services"
-      href: service-tutorial-use-cognitive-services.md
-    - name: "Build a machine learning model"
-      href: service-tutorial-build-machine-learning-model.md
-    - name: "Consume a machine learning model in a report"
-      href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
@@ -52,49 +36,57 @@
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
-    - name: "Datasets in the Power BI service"
+    - name: "New name for Power BI datasets"
+      href: service-datasets-rename.md      
+    - name: "Semantic models in the Power BI service"
       href: service-datasets-understand.md      
-    - name: "Dataset modes in the Power BI service"
-      href: service-dataset-modes-understand.md        
+    - name: "Semantic model modes in the Power BI service"
+      href: service-dataset-modes-understand.md      
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
-    - name: "Using enhanced dataset metadata in Power BI Desktop"
+    - name: "Using enhanced semantic model metadata in Power BI Desktop"
       href: desktop-enhanced-dataset-metadata.md      
     - name: "Work with multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
     - name: "About using DirectQuery in Power BI"
       href: desktop-directquery-about.md
-    - name: "Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)"
-      href: desktop-directquery-datasets-azure-analysis-services.md      
+    - name: "Live connection and DirectQuery comparison"
+      href: service-live-connect-dq-datasets.md       
   - name: How-to guides
     expanded: true
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to the Power BI Release Plan report"  
+      href: service-connect-to-power-bi-release-plan.md
+    - name: "Connect to cloud data sources in the Power BI service"
+      href: service-connect-cloud-data-sources.md      
+    - name: "Create and share cloud data sources in the Power BI service"
+      href: service-create-share-cloud-data-sources.md          
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
       - name: "Use dynamic M query parameters"
-        href: desktop-dynamic-m-query-parameters.md        
-      - name: "Create a report on a SharePoint List"
-        href: desktop-sharepoint-online-list.md
-      - name: "Connect to LinkedIn Sales Navigator"
-        href: desktop-connect-linkedin-sales-navigator.md        
-      - name: "Get webpage data by providing examples"
-        href: desktop-connect-to-web-by-example.md
-      - name: "Connect to datasets in the Power BI service"
+        href: desktop-dynamic-m-query-parameters.md
+      - name: "Create a semantic model from Log Analytics"
+        href: create-dataset-log-analytics.md
+      - name: "Create a semantic model from a SharePoint list"
+        href: create-dataset-sharepoint-online-list.md
+      - name: "Create a report on a SharePoint list"
+        href: desktop-sharepoint-online-list.md        
+      - name: "Connect to semantic models in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
         href: desktop-import-excel-workbooks.md
-      - name: "Connect to data with Power BI Desktop generic interfaces"
-        href: desktop-connect-using-generic-interfaces.md
-      - name: "Connect to PDF files"
-        href: desktop-connect-pdf.md        
-      - name: "Connect to Adobe Analytics"
-        href: desktop-connect-adobe-analytics.md          
+      - name: "Create visuals with the Microsoft Cost Management connector"
+        href: desktop-connect-azure-cost-management.md
       - name: "Connect to an Oracle database"
         href: desktop-connect-oracle-database.md
+      - name: "Enter data directly into Power BI Desktop"
+        href: desktop-enter-data-directly-into-desktop.md
+      - name: "Connect to webpages"
+        href: desktop-connect-to-web.md
       - name: Python
         items: 
         - name: "Run Python scripts"
@@ -107,46 +99,20 @@
           href: desktop-python-visuals.md
         - name: "Learn which Python packages are supported"
           href: service-python-packages-support.md
-      - name: "Run R scripts"
-        href: desktop-r-scripts.md
-      - name: "Use R in Query Editor"
-        href: desktop-r-in-query-editor.md
-      - name: "Use an external R IDE"
-        href: desktop-r-ide.md
-      - name: "Create visuals with R packages"
-        href: service-r-packages-support.md
-      - name: "Enter data directly into Power BI Desktop"
-        href: desktop-enter-data-directly-into-desktop.md
-      - name: "Connect to Excel workbooks"
-        href: desktop-connect-excel.md
+      - name: R
+        items:
+        - name: "Run R scripts"
+          href: desktop-r-scripts.md
+        - name: "Use R in Query Editor"
+          href: desktop-r-in-query-editor.md
+        - name: "Use an external R IDE"
+          href: desktop-r-ide.md
+        - name: "Create visuals with R packages"
+          href: service-r-packages-support.md
+      - name: "Connect to Snowflake in the Power BI service"
+        href: service-connect-snowflake.md 
       - name: "Connect to SSAS multidimensional models"
         href: desktop-ssas-multidimensional.md
-      - name: "Connect to CSV files"
-        href: desktop-connect-csv.md
-      - name: "Connect to a Google BigQuery database"
-        href: desktop-connect-bigquery.md        
-      - name: "Connect to an Impala database"
-        href: desktop-connect-impala.md
-      - name: "Connect to OData feeds"
-        href: desktop-connect-odata.md
-      - name: "Connect to an Amazon Redshift database"
-        href: desktop-connect-redshift.md
-      - name: "Connect to webpages"
-        href: desktop-connect-to-web.md
-      - name: "Connect to a Snowflake computing warehouse"
-        href: desktop-connect-snowflake.md
-      - name: "Connect to Snowflake in the Power BI service"
-        href: service-connect-snowflake.md        
-      - name: "Create visuals with the Azure Cost Management connector"
-        href: desktop-connect-azure-cost-management.md        
-      - name: "Connect to Azure Consumption Insights data"
-        href: desktop-connect-azure-consumption-insights.md
-      - name: "Connect to SAP HANA databases"
-        href: desktop-sap-hana.md
-      - name: "Enable encryption for SAP HANA"
-        href: desktop-sap-hana-encryption.md
-      - name: "Edit SAP variables in the Power BI service"
-        href: service-edit-sap-variables.md        
       - name: "Connect to Analysis Services tabular data"
         href: desktop-analysis-services-tabular-data.md
       - name: "Connect to data sources with DirectQuery"
@@ -157,77 +123,137 @@
         href: desktop-directquery-sap-hana.md
       - name: "Apply the Assume Referential Integrity setting"
         href: desktop-assume-referential-integrity.md
-      - name: "Access SAP BW data with the SAP BW Connector"
+      - name: "Edit SAP variables in the Power BI service"
+        href: service-edit-sap-variables.md    
+      - name: "Access SAP BW data with the SAP BW connector"
         href: desktop-sap-bw-connector.md
-      - name: "Use OneDrive for Business links"
+      - name: "Connect to LinkedIn Sales Navigator"
+        href: desktop-connect-linkedin-sales-navigator.md 
+      - name: "Use OneDrive for work or school links"
         href: desktop-use-onedrive-business-links.md
-      - name: "Third-party service: Use the Google Analytics connector"
-        href: service-google-analytics-connector.md
       - name: "Connect to Project Online data through Power BI Desktop"
         href: desktop-project-online-connect-to-data.md
-    - name: Get data from files
-      items: 
-      - name: "Getting data from files"
-        href: service-get-data-from-files.md
-      - name: "Get data from Excel workbook files"
-        href: service-excel-workbook-files.md
-      - name: "Get data from Power BI Desktop files"
-        href: service-desktop-files.md
-      - name: "Edit parameters"
-        href: service-parameters.md
-      - name: "Get data from comma separated value (.csv) files"
-        href: service-comma-separated-value-files.md
-      - name: "Real-time streaming in Power BI"
-        href: service-real-time-streaming.md
-      - name: "Publish to Power BI from Excel"
-        href: service-publish-from-excel.md
-      - name: "Reduce the size of an Excel workbook"
-        href: reduce-the-size-of-an-excel-workbook.md
-    - name: Get data from shared datasets
-      items: 
-      - name: "Use datasets across workspaces"
-        href: service-datasets-across-workspaces.md
-      - name: "Provide a dataset description"
-        href: service-dataset-description.md
-      - name: "Share dataset access (preview)"
-        href: service-datasets-share.md
-      - name: "Dataset permissions"
-        href: service-datasets-permissions.md
-      - name: "Manage dataset access (preview)"
-        href: service-datasets-manage-access-permissions.md
-      - name: "Build permission for shared datasets"
-        href: service-datasets-build-permissions.md
-      - name: "Create reports based on datasets"
-        href: service-datasets-discover-across-workspaces.md
-      - name: "Copy reports based on datasets"
-        href: service-datasets-copy-reports.md
-      - name: "Control the use of datasets"
-        href: service-datasets-admin-across-workspaces.md
-    - name: Get data from databases
-      items: 
-      - name: "Azure and Power BI"
-        href: service-azure-and-power-bi.md
-      - name: "Power BI and Azure egress"
-        href: service-azure-egress-power-bi.md           
-      - name: "Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery"
-        href: service-azure-sql-data-warehouse-with-direct-connect.md
-      - name: "Azure SQL Database with DirectQuery"
-        href: service-azure-sql-database-with-direct-connect.md
+    - name: Gateways
+      items:
+      - name: "Guidance for deploying a data gateway"
+        href: service-gateway-deployment-guidance.md
+      - name: "On-premises data gateway - in-depth"
+        href: service-gateway-onprem-indepth.md
+      - name: "On-premises data gateway (personal mode)"
+        href: service-gateway-personal-mode.md
+      - name: "On-premises data gateway FAQ"
+        href: service-gateway-power-bi-faq.yml              
+      - name: "Manage gateway data sources"
+        items:
+        - name: "Add or remove a gateway data source"
+          href: service-gateway-data-sources.md
+        - name: "Manage your enterprise data source - Analysis Services"
+          href: service-gateway-enterprise-manage-ssas.md
+        - name: "Manage your data source - Oracle"
+          href: service-gateway-onprem-manage-oracle.md
+        - name: "Manage your enterprise data source - SAP HANA"
+          href: service-gateway-enterprise-manage-sap.md
+        - name: "Manage your enterprise data source - SQL"
+          href: service-gateway-enterprise-manage-sql.md
+        - name: "Manage your enterprise data source - import/scheduled refresh"
+          href: service-gateway-enterprise-manage-scheduled-refresh.md
+        - name: "Merge on-premises and cloud data sources"
+          href: service-gateway-mashup-on-premises-cloud.md
+      - name: "Enable single sign-on (SSO)"
+        items:
+        - name: "SSO overview"
+          href: service-gateway-sso-overview.md
+        - name: "Active Directory SSO"
+          items:
+          - name: "Active Directory SSO overview"
+            href: service-gateway-active-directory-sso.md
+          - name: "Kerberos-based SSO"
+            items:
+            - name: "Configure Kerberos-based SSO"
+              href: service-gateway-sso-kerberos.md
+            - name: "Data source-specific configuration"
+              items:
+              - name: "SAP BW - gx64krb5.dll"
+                href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+              - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
+                href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+              - name: "SAP HANA"
+                href: service-gateway-sso-kerberos-sap-hana.md
+              - name: "Teradata and SSO"
+                href: service-gateway-sso-kerberos-teradata.md              
+          - name: "SAML-based SSO"
+            href: service-gateway-sso-saml.md
+          - name: "Test SSO configuration"
+            href: service-gateway-sso-test-configuration.md
+        - name: "Microsoft Entra SSO"
+          href: service-gateway-azure-active-directory-sso.md
+      - name: "Troubleshoot the gateway"
+        href: service-gateway-onprem-tshoot.md
+      - name: "Troubleshoot the gateway (personal mode)"
+        href: service-admin-troubleshooting-power-bi-personal-gateway.md
+      - name: "Use custom connectors"
+        href: service-gateway-custom-connectors.md
+    - name: Get data
+      items:
+      - name: Get data from files
+        items: 
+        - name: "Get data from files"
+          href: service-get-data-from-files.md
+        - name: "Get data from comma separated value (.csv) files"
+          href: service-comma-separated-value-files.md
+        - name: "Get data from Excel workbook files"
+          href: service-excel-workbook-files.md
+        - name: "Publish to Power BI from Excel"
+          href: service-publish-from-excel.md
+        - name: "Reduce the size of an Excel workbook"
+          href: reduce-the-size-of-an-excel-workbook.md
+        - name: "Get data from Power BI Desktop files"
+          href: service-desktop-files.md
+        - name: "Edit parameters"
+          href: service-parameters.md
+        - name: "Real-time streaming in Power BI"
+          href: service-real-time-streaming.md
+      - name: Get data from shared semantic models
+        items: 
+        - name: "Use semantic models across workspaces"
+          href: service-datasets-across-workspaces.md
+        - name: "Provide a semantic model description"
+          href: service-dataset-description.md
+        - name: "Share semantic model access (preview)"
+          href: service-datasets-share.md
+        - name: "Semantic model permissions"
+          href: service-datasets-permissions.md
+        - name: "Manage semantic model access (preview)"
+          href: service-datasets-manage-access-permissions.md
+        - name: "Build permission for shared semantic models"
+          href: service-datasets-build-permissions.md
+        - name: "Create reports based on semantic models"
+          href: service-datasets-discover-across-workspaces.md
+        - name: "Copy reports based on semantic models"
+          href: service-datasets-copy-reports.md
+        - name: "Control the use of semantic models"
+          href: service-datasets-admin-across-workspaces.md
+      - name: Get data from databases
+        items: 
+        - name: "Azure and Power BI"
+          href: service-azure-and-power-bi.md
+        - name: "Power BI and Azure egress"
+          href: service-azure-egress-power-bi.md           
+        - name: "Azure Synapse Analytics (formerly SQL Data Warehouse) with DirectQuery"
+          href: service-azure-sql-data-warehouse-with-direct-connect.md
+        - name: "Azure SQL Database with DirectQuery"
+          href: service-azure-sql-database-with-direct-connect.md
     - name: Refresh data
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
-      - name: "Managing query refresh"
-        href: refresh-include-in-report-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
-        href: refresh-summaries.md
-      - name: "Enhanced refresh with REST API"
-        href: asynchronous-refresh.md     
+        href: refresh-summaries.md     
       - name: Incremental refresh
         items:
-        - name: Incremental refresh and real-time data for datasets
+        - name: Incremental refresh and real-time data for semantic models
           href: ../connect-data/incremental-refresh-overview.md
         - name: Configure incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-configure.md
@@ -235,18 +261,26 @@
           href: ../connect-data/incremental-refresh-xmla.md
         - name: Troubleshoot incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-troubleshoot.md
-      - name: "Refresh a dataset from a local Power BI Desktop file"
-        href: refresh-desktop-file-local-drive.md
-      - name: "Refresh a dataset from a cloud Power BI Desktop file"
-        href: refresh-desktop-file-onedrive.md
-      - name: "Refresh a dataset from a local Excel workbook"
-        href: refresh-excel-file-local-drive.md
-      - name: "Refresh a dataset from a cloud Excel workbook"
-        href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset from a .csv file on OneDrive"
-        href: refresh-csv-file-onedrive.md
+      - name: "Manage query refresh"
+        href: refresh-include-in-report-refresh.md
       - name: "Query caching in Power BI Premium"
         href: power-bi-query-caching.md
+      - name: "Enhanced refresh with REST API"
+        href: asynchronous-refresh.md
+      - name: "Refresh a semantic model from a local Power BI Desktop file"
+        href: refresh-desktop-file-local-drive.md
+      - name: "Refresh a semantic model from a cloud Power BI Desktop file"
+        href: refresh-desktop-file-onedrive.md
+      - name: "Refresh a semantic model from a local Excel workbook"
+        href: refresh-excel-file-local-drive.md
+      - name: "Refresh a semantic model from a cloud Excel workbook"
+        href: refresh-excel-file-onedrive.md
+      - name: "Refresh a semantic model from a .csv file on OneDrive"
+        href: refresh-csv-file-onedrive.md
+      - name: "Refresh a Semantic Model using Data Pipelines (Preview)"
+        href: data-pipeline-templates.md
+      - name: "Frequent refreshes using Real-Time Intelligence"
+        href: real-time-intelligence-sample.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -265,24 +299,20 @@
       items: 
       - name: "Connect to services with apps"
         href: service-connect-to-services.md
-      - name: "Analyze Popular Stocks with Power BI"
-        href: service-connect-to-analyze-stocks.md
-      - name: "COVID-19 US Tracking Report"
-        href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"
         href: service-connect-to-crisis-communication-presence-report.md
-      - name: "GitHub"
-        href: service-connect-to-github.md
+      - name: Connect to Emissions Impact Dashboard
+        items:
+        - name: "Emissions Impact Dashboard for Azure"
+          href: service-connect-to-emissions-impact-dashboard.md
+        - name: "Emissions Impact Dashboard for Microsoft 365"
+          href: service-connect-emissions-impact-dashboard-microsoft-365.md
+        - name: "Azure emissions calculation methodology"
+          href: azure-emissions-calculation-methodology.md  
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
-      - name: "Emissions Impact Dashboard"
-        href: service-connect-to-emissions-impact-dashboard.md
-      - name: "Emissions Impact Dashboard for Microsoft 365"
-        href: service-connect-emissions-impact-dashboard-microsoft-365.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
-      - name: "Power BI Premium Capacity Metrics"
-        href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
@@ -293,66 +323,6 @@
         href: service-connect-to-smartsheet.md
       - name: "Zendesk"
         href: service-connect-to-zendesk.md
-    - name: Gateways
-      items:
-      - name: "Guidance for deploying a data gateway"
-        href: service-gateway-deployment-guidance.md
-      - name: "On-premises data gateway - in-depth"
-        href: service-gateway-onprem-indepth.md
-      - name: "On-premises data gateway (personal mode)"
-        href: service-gateway-personal-mode.md
-      - name: "On-premises data gateway FAQ"
-        href: service-gateway-power-bi-faq.yml              
-      - name: "Manage gateway data sources"
-        items:
-        - name: "Add or remove a gateway data source"
-          href: service-gateway-data-sources.md
-        - name: "Manage your enterprise data source - Analysis Services"
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: "Manage your enterprise data source - SAP HANA"
-          href: service-gateway-enterprise-manage-sap.md
-        - name: "Manage your enterprise data source - SQL"
-          href: service-gateway-enterprise-manage-sql.md
-        - name: "Manage your data source - Oracle"
-          href: service-gateway-onprem-manage-oracle.md
-        - name: "Manage your enterprise data source - import/scheduled refresh"
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: "Merge on-premises and cloud data sources"
-          href: service-gateway-mashup-on-premises-cloud.md
-      - name: "Enable single sign-on (SSO)"
-        items:
-        - name: "SSO overview"
-          href: service-gateway-sso-overview.md
-        - name: "Active Directory SSO"
-          items:
-          - name: "Active Directory SSO overview"
-            href: service-gateway-active-directory-sso.md
-          - name: "Kerberos-based SSO"
-            items:
-            - name: "Configure Kerberos-based SSO"
-              href: service-gateway-sso-kerberos.md
-            - name: "Datasource-specific configuration"
-              items:
-              - name: "SAP HANA"
-                href: service-gateway-sso-kerberos-sap-hana.md
-              - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
-                href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
-              - name: "SAP BW - gx64krb5.dll"
-                href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-              - name: "Teradata and SSO"
-                href: service-gateway-sso-kerberos-teradata.md              
-          - name: "SAML-based SSO"
-            href: service-gateway-sso-saml.md
-          - name: "Test single sign-on (SSO) configuration"
-            href: service-gateway-sso-test-configuration.md
-        - name: "Azure Active Directory SSO"
-          href: service-gateway-azure-active-directory-sso.md
-      - name: "Troubleshoot the gateway"
-        href: service-gateway-onprem-tshoot.md
-      - name: "Troubleshoot the gateway (personal mode)"
-        href: service-admin-troubleshooting-power-bi-personal-gateway.md
-      - name: "Use custom connectors"
-        href: service-gateway-custom-connectors.md
     - name: Troubleshoot
       items: 
       - name: "Troubleshoot opening Power BI Desktop"
@@ -373,8 +343,10 @@
         href: desktop-access-database-errors.md
       - name: "Troubleshoot developing DirectQuery models"
         href: desktop-directquery-troubleshoot.md
-      - name: "Troubleshooting Nested Values"
+      - name: "Troubleshoot nested values"
         href: service-troubleshooting-nested-values.md
+      - name: "Troubleshoot sign in with OData feed connections"
+        href: desktop-troubleshoot-odata.md     
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -383,7 +355,5 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
-    - name: "Manage DirectQuery connections to a published dataset"
+    - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md
-    - name: "Troubleshooting sign in with OData Feed connections"
-      href: desktop-troubleshoot-odata.md      

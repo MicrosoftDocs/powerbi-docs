@@ -1,118 +1,232 @@
 ---
-title: Troubleshooting refresh scenarios
-description: Troubleshooting refresh scenarios
-author: davidiseminger
-ms.author: davidi
+title: Troubleshoot refresh scenarios
+description: This article provides ways to troubleshoot issues with refreshing data within the Power BI service, for various data sources and conditions.
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/06/2021
+ms.date: 11/14/2025
 LocalizationGroup: Data refresh
+ai-usage: ai-assisted
 ---
 
-# Troubleshooting refresh scenarios
+# Troubleshoot refresh scenarios
 
-Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service.
+This article describes different scenarios you might encounter when refreshing data within the Power BI service.
 
 > [!NOTE]
-> If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
->
+> If you encounter an issue or scenario not listed in this article you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://support.fabric.microsoft.com/support/).
 
-You should always ensure that basic requirements for refresh are met and verified. These basic requirements include:
+You should always ensure that basic requirements for refresh are met and verified:
 
-* Verify the gateway version is up to date
-* Verify the report has a gateway selected - if not, the datasource may have changed or might be missing
+* Verify the gateway version is up to date.
+* Verify the report has a gateway selected. If there's no gateway selected, the data source might have changed or might be missing.
 
-Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
+After you confirm the requirements are met, take a look through the following sections for more troubleshooting.
 
 ## Email notifications
 
-If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
+If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate semantic models in Power BI. An admin uses the following area in the semantic model settings.
 
-![Email for refresh notifications](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
+:::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of the section in the semantic model settings for changing Power BI email refresh notifications.":::
 
 ## Refresh using Web connector doesn't work properly
 
-If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your dataset or report after November 18, 2016, you must use a gateway for refresh to work properly.
+If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your semantic model or report after November 18, 2016, you must use a gateway for refresh to work properly.
 
 ## Unsupported data source for refresh
 
-When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see
+When you configure a semantic model, you might get an error indicating the semantic model uses an unsupported data source for refresh. For details, see
 [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Dashboard doesn't reflect changes after refresh
 
-Wait about 10-15 minutes for a refresh to be reflected in the dashboard tiles. If it's still not showing up, repin the visualization to the dashboard.
+Wait 10-15 minutes for a refresh to be reflected in the dashboard tiles. If it still doesn't show up, repin the visualization to the dashboard.
 
 ## GatewayNotReachable when setting credentials
 
-You may encounter `GatewayNotReachable` when trying to set credentials for a data source. This can be the result of an outdated gateway. Install the latest gateway and try again.
+You might encounter a `GatewayNotReachable` error when you try to set credentials for a data source, which can be the result of an outdated gateway. [Install the latest gateway](/data-integration/gateway/service-gateway-install) and try again.
 
 ## Processing Error: The following system error occurred: Type Mismatch
 
-This could be an issue with your M script within your Power BI Desktop file or Excel workbook. It can also be due to an out-of-date Power BI Desktop version.
+This error could be an issue with your [M script](/powerquery-m/m-spec-introduction) within your Power BI Desktop file or Excel workbook. It can also be due to an out-of-date Power BI Desktop version.
 
 ## Tile refresh errors
 
-For a list of errors you may encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
+For a list of errors you might encounter with dashboard tiles, and explanations, see [Troubleshoot tile errors](refresh-troubleshooting-tile-errors.md).
 
-## Refresh fails when updating data from sources that use Azure AD OAuth
+<a name='refresh-fails-when-updating-data-from-sources-that-use-azure-ad-oauth'></a>
 
-The Azure Active Directory (**Azure AD**) OAuth token, used by many different data sources, expires in approximately one hour. You can run into situations where loading data takes longer than the token expiration (more than one hour), since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+## Refresh fails when updating data from sources that use Microsoft Entra ID OAuth
 
-Data sources that use Azure AD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, this may be the reason.
+The Microsoft Entra ID OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data finishes loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
-Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance (or other Azure AD OAuth data source) is so large that it can run into the two-hour data-load threshold, you may experience a data load timeout from the Power BI service as well.
+Data sources that use Microsoft Entra ID OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, OAuth might be the reason.
 
-Also note that, for refresh to work properly, when connecting to a **SharePoint Online** data source using Azure AD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SPO instance is so large that it runs over the two-hour data-load threshold, the Power BI service might report a data load time-out. This data load time-out also applies to other Microsoft Entra ID OAuth data sources.
 
-In addition, if you want to connect to a data source from Power BI service using OAuth2, the data source must be in the same tenant as Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
+For refresh to work properly when connecting to an **SPO** data source by using Microsoft Entra ID OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+
+If you want to connect to a data source from the Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multitenant connection scenarios aren’t supported with OAuth2.
 
 ## Uncompressed data limits for refresh
 
-The maximum size for datasets imported into the **Power BI service** is 1 GB. These datasets are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit on the amount of uncompressed data that is processed during refresh to 10 GB. This limit accounts for the compression, and therefore is much higher than 1 GB. Datasets in Power BI Premium aren't subject to this limit. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
+The maximum size for semantic models imported into the **Power BI service** is 1 GB. These semantic models are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that is processed during refresh. This limit accounts for the compression, and therefore is higher than the 1-GB maximum semantic model size. Semantic models in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
-## Scheduled refresh timeout
+## Scheduled refresh time-out
 
-Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you  encounter this limit, consider reducing the size or complexity of your dataset, or consider refactoring the large dataset into multiple smaller datasets.
+Scheduled refreshes for imported semantic models time out after two hours. This time-out is increased to five hours for semantic models in Premium workspaces. If you encounter this limit, consider reducing the size or complexity of your semantic model, or consider refactoring the large semantic model into multiple smaller semantic models.
 
-## Scheduled refresh failures
+## Scheduled refresh disabled
 
 If a scheduled refresh fails four times in a row, Power BI disables the refresh. Address the underlying problem, and then re-enable the scheduled refresh.
 
+However, if the semantic model resides in a workspace under Embedded capacity, and that capacity is switched off, the *first* attempt at refresh fails (since the capacity is switched off), and in this circumstance its scheduled refresh is immediately disabled.
+
 ## Access to the resource is forbidden  
 
-This error can occur because of expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
+This error can occur because of expired cached credentials. Clear your internet browser cache, then sign in to Power BI and go to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true` to force an update of your credentials.
 
 ## Data refresh failure because of password change or expired credentials
 
-Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
+Data refresh can also fail due to expired cached credentials. Clear your internet browser cache, then sign in to Power BI and go to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`, which forces an update of your credentials.
 
-## Refresh a column of the ANY type containing TRUE/FALSE results in unexpected values
+## Refresh a column of the ANY type that contains TRUE or FALSE results in unexpected values
 
-When you create a report in Power BI Desktop that contains an ANY data type column, and that column contains TRUE/FALSE values, the values of that column can differ between the Power BI Desktop and the Power BI service after a refresh. In Power BI Desktop, the underlying engine converts the boolean values to strings, retaining TRUE or FALSE values. In the Power BI service, the underlying engine converts the values to objects, and then converts the values to -1 or 0.
+When you create a report in Power BI Desktop that has an ANY data type column containing TRUE or FALSE values, the values of that column can differ between Power BI Desktop and the Power BI service after a refresh. In Power BI Desktop, the underlying engine converts the boolean values to strings, retaining TRUE or FALSE values. In the Power BI service, the underlying engine converts the values to objects, and then converts the values to -1 or 0.
 
-Visuals created in Power BI Desktop using such columns may behave or appear as designed prior to a refresh event, but may change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
+Visuals created in Power BI Desktop by using such columns might behave or appear as designed before a refresh event, but might change (due to TRUE/FALSE being converted to -1/0) after the refresh event.
 
 ## Resolve the error: Container exited unexpectedly with code 0x0000DEAD
 
-If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the dataset.
+If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try to disable the scheduled refresh and republish the semantic model.
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity may throttle data refresh operations when too many datasets are being processed concurrently. Throttling can occur in Power BI Premium capacities, or more rarely, in Premium Gen2 capacities. When a refresh operation is canceled the following error message is logged into the refresh history:
+A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
 
-*The operation was throttled by Power BI Premium because there were too many datasets being processed concurrently.*
+* Refresh during nonpeak times. Performing refresh operations during non-business hours or other non-peak times helps ensure that the overall usage in the capacity remains relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
+* Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica performs the semantic model during refresh while interactive queries are executed on the read-only replica.
+* Reduce model complexity. Simplifying the model, especially if it involves computationally expensive calculated tables and columns, can help to lower the refresh burden and avoid memory bottlenecks during refresh. If possible, move calculated tables and columns to the data source or ETL processes.
+* Use [incremental refresh](../connect-data/incremental-refresh-overview.md) for large semantic models. By automatically partitioning large tables, incremental refresh can help to reduce the amount of data that needs to be refreshed. By refreshing only the most recent import partitions, you can significantly reduce the refresh duration, thus making room for more refreshes in a given timespan.
+* Add Automatic retry for custom refreshes. If you're using XMLA or the Power BI REST API to refresh a semantic model, make sure to add retry logic as explained in [datasets - refresh dataset](refresh-data.md). Retries with backoff pattern can help to ensure that your semantic models are refreshed successfully. Alternatively, consider using the built-in scheduling facility in Power BI because the Power BI performs retries when scheduled and on-demand refreshes are throttled.
+
+If a refresh operation is canceled due to throttling, the following error messages are logged into the refresh history:
+
+*You've exceeded the capacity limit for semantic model refreshes. Try again when fewer semantic models are being processed.*
  
-If the error occurs frequently, use the [schedule view](../connect-data/refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-gen2-what-is.md#capacities-and-skus) table.
+If the error occurs frequently, use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly spaced. To understand the maximum number of concurrent refreshes allowed per SKU, review the [Capacities and SKUs](../enterprise/service-premium-what-is.md#capacities-and-skus) table.
 
-To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer datasets are being processed, increase the time between refresh operations for all datasets in your refresh schedule on the affected Premium capacity, or do both. You can retry the operation if you're using custom XMLA operations.
+To resolve this error, you can modify your refresh schedule to perform the refresh operation when fewer semantic models are being processed. You can also increase the time between refresh operations for all semantic models in your refresh schedule on the affected Premium capacity. You can retry the operation if you're using custom [XMLA operations](/analysis-services/xmla/xml-for-analysis-xmla-reference).
 
-## Next steps
+*Capacity level limit exceeded.*
+ 
+This error indicates you have too many semantic models running refresh at the same time, based on the capacity your organization purchased. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
-- [Data refresh in Power BI](refresh-data.md)  
-- [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+*Node level limit exceeded.*
+ 
+This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
-More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/)
+## Low memory situations
+
+Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
+
+If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
+
+## Dataflows or datamart failures in Premium workspaces
+
+Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you might receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+
+The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
+
+* Linkar
+* Actian
+* AmazonAthena
+* AmazonOpenSearchService
+* BIConnector
+* DataVirtuality
+* DenodoForPowerBI
+* Exasol
+* Foundry
+* Indexima
+* IRIS
+* JethroODBC
+* Kyligence
+* MariaDB
+* MarkLogicODBC
+* OpenSearchProject
+* QubolePresto
+* SingleStoreODBC
+* StarburstPresto
+* TibcoTdv
+
+The use of the previous list of connectors with dataflows or datamarts is only supported in workspaces that aren't Premium.
+
+## There was a problem refreshing the dataflow, the gateway version you're using isn't supported
+
+This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or to a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
+
+## Circular Dependency error related to Calculated Table utilize SummarizeColumns
+
+In September 2024 a feature was enabled that allows *SummarizeColumns* to be placed inside a measure and evaluated within any external filter context, which might introduce new dependencies if *SummarizeColumns* is used in *CalculateTable*. These new dependencies might cause a circular dependency error during model refresh. 
+
+If this error appears, the following steps can address the issue:
+
+1. Identify all *CalculateTables* that use *SummarizeColumns* 
+
+2. For each *SummarizeColumns* expression, make the following changes:
+
+  For a *SummarizeColumns* expression with *GB* on *Product* and *Geography*, for example:
+
+  ```sql
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  ...
+  )
+  ```
+
+  Add *Product* and *Geography* as filters into *SummarizeColumns* so it looks like the following expression:
+
+  ```sql
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  Product, 
+  Geography,
+  ...
+  )
+  ```
+
+These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
+
+## Connection errors when refreshing from semantic models
+
+The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
+ 
+In some circumstances, this error can be more permanent when the results of the query are being used in a complex M expression, and the results of the query are not fetched quickly enough during execution of the M program. For example, this error can occur when a data refresh is copying from a Semantic Model and the M script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the above error. To work around this issue, you can use the ```Table.Buffer``` function to cache the outer join table.
+
+## Dataflow refresh completes quickly without updating data
+
+If a dataflow refresh appears to complete in an unusually short time without throwing any errors, but the data isn't actually being updated, consider the following causes:
+
+* **All data already processed**: If you're using incremental refresh, the dataflow may have already processed all available new or changed data in a previous refresh. The refresh completes quickly because there's nothing new to process. Check your incremental refresh policy and the date range it covers.
+
+* **Incremental refresh filter issue**: Verify that your incremental refresh filter is correctly configured. If the filter excludes all data, the refresh completes without processing any rows.
+
+* **Linked or dependent dataflows**: If your dataflow references another dataflow and that upstream dataflow hasn't changed, Power BI might skip the refresh of dependent entities. Check whether any upstream dataflows have actually refreshed.
+
+* **No data changes at the source**: The dataflow might be connecting to a data source where no new data has been added or changed since the last refresh. In this case, the refresh completes successfully but no data is updated.
+
+To troubleshoot, download the refresh history CSV to view the **Rows processed** and **Bytes processed** metrics. If these values are zero or significantly lower than expected, it indicates that no new data was processed during the refresh. You can also manually trigger a full refresh (if not using incremental refresh) to verify that the dataflow can retrieve data properly.
+
+## Related content
+
+* [Data refresh in Power BI](refresh-data.md)  
+* [Configure scheduled refresh](refresh-scheduled-refresh.md)
+* [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  
+* [Troubleshooting the Power BI gateway (personal mode)](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+
+More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/).

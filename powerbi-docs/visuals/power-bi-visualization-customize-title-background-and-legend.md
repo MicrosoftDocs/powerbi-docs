@@ -1,30 +1,30 @@
 ---
-title: Get started formatting Power BI visualizations
-description: 'Customize visualization titles, backgrounds, labels, and legends'
-author: mihart
-ms.author: mihart
-ms.reviewer: 'mihart'
+title: Customize Power BI Visualization Titles
+description: "Learn how to customize Power BI visualization titles, backgrounds, labels, and legends. Follow step-by-step instructions to format your reports. Start customizing today."
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 featuredvideoid: removed
 ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/29/2022
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 
-# Customize visualization titles, backgrounds, labels, and legends
+# Customize Power BI visualization titles
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations, that the best way to learn about them is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, label, layer, and add a theme.
+Learn how to customize Power BI visualization titles, backgrounds, labels, and legends to create professional, branded reports. This tutorial walks you through formatting options in the Format pane, showing you how to customize titles, legends, backgrounds, labels, layers, and themes to enhance your visualizations.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
 ## Prerequisites
 
 - The Power BI service or Power BI Desktop
-
 - Retail Analysis Sample report
 
 > [!NOTE]
@@ -38,11 +38,8 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 > When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resizing](../create-reports/service-dashboard-edit-tile.md).
 
 1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
-
 1. Select the **Open Store Count by Open Month and Chain** clustered column chart.
-
 1. In the **Visualizations** pane, select the paint brush icon, then **General** to reveal the format options.
-
 1. Select **Title** to expand that section.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-format-menu.png" alt-text="Screenshot of the Format pane with the paint brush icon and the Title drop-down called out.":::
@@ -60,7 +57,6 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
     b. Select the drop-down to close the color window.
 
 1. Increase the text size to **16 pt**.
-
 1. The last customization you'll make to the chart title is to align it in the center of the visualization.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png" alt-text="Screenshot of the Alignment controls with the Center option selected.":::
@@ -80,9 +76,7 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 With the same clustered column chart selected, expand the **Effects** > **Background** options.
 
 1. Move the **Background** slider to **On**.
-
 1. Select the drop-down and choose a grey color.
-
 1. Change **Transparency** to **74%**.
 
 At this point in the tutorial, your clustered column chart background will look something like this:
@@ -96,17 +90,13 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 ## Customize visualization legends
 
 1. Open the **Overview** report page and select the **Total Sales Variance by FiscalMonth and District Manager** chart.
-
 1. In the **Visualization** tab, select the paint brush icon to open the Format pane.
-
 1. Expand the **Legend** options. The toggles for **Legend** and **Title** are both **On** by default.
-
 1. Use the **Position** field to move the legend to the left side of the visualization.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png" alt-text="Screenshot of the Legend card.":::
 
 1. Enter *Manager* in the **Title text** field.
-
 1. Change **Color** to black.
 
 Save the changes you've made and move to the next section.
@@ -124,18 +114,15 @@ In the following video, watch Rien add total labels to a stacked chart, and then
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HrRQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=107a4025-499e-4be5-9c89-f57715c07332]
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
-
-1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png"::: to convert this area chart to a stacked bar chart.
+1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png" border="false"::: to convert this area chart to a stacked bar chart.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png" alt-text="Screenshot of the new stacked bar chart.":::
 
 1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
-
 1. Move the **Data labels** slider to **On**.
-
 1. Move the **Total labels** slider to **On**.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total label slider set to On.":::
@@ -155,10 +142,9 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IY3L]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09ec9caf-e576-476f-8214-3275803f424f]
 
 1. Add a new report page by selecting the yellow plus sign.
-
 1. Add a shape to the canvas. Here, we've added a green rectangle.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a green rectangle.":::
@@ -192,7 +178,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
 1. Save the report changes and switch to **Reading view**.
 
-Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#selecting-visuals-within-a-group).
+Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#select-visuals-within-a-group).
 
 ## Customize colors using a theme
 
@@ -200,7 +186,7 @@ You can apply design changes to your entire report by using report themes. For e
 
 To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report below uses the **Solar** theme.
 
-:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Report using Solar theme of yellows, oranges, and reds.":::
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
 
 ## Visualization types that you can customize
 
@@ -222,7 +208,7 @@ Here is a list of the customization options that are available for each visualiz
 | KPI | Yes | Yes | n/a |n/a |
 | Line | Yes | Yes | Yes |n/a |
 | Map | Yes | Yes | Yes |n/a |
-| Map: [Azure Map](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context) | Yes | Yes | Yes |n/a |
+| Map: Azure Map | Yes | Yes | Yes |n/a |
 | Matrix | Yes | Yes | n/a |Yes |
 | Pie | Yes | Yes | Yes |n/a |
 | Q&A | Yes | Yes | n/a |n/a |
@@ -234,10 +220,9 @@ Here is a list of the customization options that are available for each visualiz
 | Treemap | Yes | Yes | Yes |n/a |
 | Waterfall | Yes | Yes | Yes |n/a |
 
-## Next steps
+## Related content
 
 - [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
-
 - [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

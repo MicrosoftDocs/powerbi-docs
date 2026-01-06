@@ -1,76 +1,51 @@
 ### YamlMime:Landing
-
 title: Power BI get started documentation
 summary: Power BI documentation provides expert information and answers to get you started using Power BI.
-
 metadata:
   title: Power BI get started documentation
   description: Power BI documentation provides expert information and answers to get you started using Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
-  ms.topic: landing-page # Required
+  ms.topic: landing-page
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 11/15/2021
-
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  author: julcsc
+  ms.author: juliacawthra
+  ms.date: 08/28/2025
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: What is Power BI?
+  - title: Learn the basics
     linkLists:
       - linkListType: overview
         links:
           - text: What is Power BI?
             url: power-bi-overview.md
-          - text: What is Power BI Desktop?
-            url: desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: power-bi-service-overview.md
-          - text: Comparing Power BI Desktop and the service
-            url: service-service-vs-desktop.md
+          - text: Basic concepts
+            url: service-basic-concepts.md
 
-  # Card (optional)
-  - title: What's new?
+  - title: Stay up to date
     linkLists:
-      - linkListType: concept
+      - linkListType: whats-new
         links:
           - text: What's new in Power BI?
-            url: desktop-latest-update.md
-          - text: The new experience in the Power BI service
-            url: service-experience-changes.md
-          - text: The new Format pane in Power BI Desktop
-            url: desktop-format-pane.md
+            url: whats-new.md
+          - text: Desktop change log
+            url: desktop-change-log.md
 
-  # Card (optional)
-  - title: Get started with Learn
+  - title: Get started with Power BI
     linkLists:
-      - linkListType: learn
+      - linkListType: get-started
         links:
-          - text: Create and use analytics reports
-            url: /training/paths/create-use-analytics-reports-power-bi/
-          - text: Get data with Power BI Desktop
-            url: /training/modules/get-data-power-bi/?tutorial-step=1
-  # Card (optional)
-  - title: Licensing
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Sign up for Power BI"
-            url: service-self-service-signup-for-power-bi.md 
-          - text: "Features by license type"
-            url: service-features-license-type.md
+          - text: Sign up for Power BI
+            url: service-self-service-signup-for-power-bi.md
+          - text: Start using Power BI Desktop
+            url: desktop-getting-started.md
+          - text: Start using the Power BI service
+            url: service-get-started.md
 
-  # Card (optional)
-  - title: Resources
+  - title: Watch and learn
     linkLists:
       - linkListType: reference
         links:
-          - text: "Power BI videos"
-            url: videos.md 
-          - text: "Webinars"
-            url: webinars.md
+          - text: Power BI videos
+            url: videos.md

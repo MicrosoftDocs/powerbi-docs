@@ -13,9 +13,9 @@ metadata:
   ms.subservice: powerbi-developer # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
   ms.collection: collection # Optional; Remove if no collection is used.
-  author: mberdugo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: monaberdugo #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/20/2021
+  author: billmath #Required; your GitHub user alias, with correct capitalization.
+  ms.author: billmath #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/20/2024
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,17 +27,17 @@ highlightedContent:
       itemType: overview
       url: embedded/embedded-analytics-power-bi.md
      # Card
-    - title: Power BI Embedded Generation 2
-      itemType: whats-new
-      url: embedded/power-bi-embedded-generation-2.md 
+    - title: Set up a Power BI Embedded solution
+      itemType: get-started
+      url: embedded/create-an-azure-active-directory-tenant.md 
      # Card
     - title: Develop your own Power BI visual
       itemType: overview
       url: visuals/develop-power-bi-visuals.md   
     # Card
-    - title: Power BI embedded analytics Client APIs
-      itemType: whats-new
-      url: /javascript/api/overview/powerbi/
+    - title: Power BI security
+      itemType: overview
+      url: ../enterprise/service-admin-power-bi-security.md
     # Card
     - title: Explore features and APIs in the embedded analytics playground
       itemType: whats-new
@@ -45,7 +45,7 @@ highlightedContent:
     # Card
     - title: Browse Power BI PowerShell code samples
       itemType: how-to-guide
-      url: /samples/azure-samples/powerbi-powershell/microsoft-power-bi-powershell-samples/
+      url: https://github.com/microsoft/PowerBI-Developer-Samples
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -59,10 +59,10 @@ conceptualContent:
         - url: embedded/embedded-analytics-power-bi.md
           itemType: overview
           text: What is Power BI embedded analytics?
-        - url: embedded/embedded-analytics-power-bi.md
+        - url: embedded/embedded-row-level-security.md
           itemType: overview
-          text: What is Power BI Embedded Generation 2          
-        - url: embedded/power-bi-embedded-generation-2.md
+          text: RLS and security        
+        - url: embedded/embedded-capacity.md
           itemType: concept
           text: Capacity and SKUs
       # footerLink (optional)
@@ -86,22 +86,56 @@ conceptualContent:
         url: visuals/index.yml
         text: See more
     # Card
-    - title: Embedded analytics client APIs
+    - title: Solutions and best practices for Power BI developers
       links:
-        - url: /javascript/api/overview/powerbi/embedded-analytics-client-api
+        - url: /rest/api/power-bi/
           itemType: overview
-          text: What is the Power BI embedded analytics Client API?
-        - url: /javascript/api/overview/powerbi/showcase-export-events
+          text: Automation with Power BI REST APIs
+        - url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
+          itemType: reference
+          text: Using TOM with semantic models
+        - url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
           itemType: overview
-          text: Go from insights to quick action showcase
-        - url: /javascript/api/overview/powerbi/embed-report
-          itemType: how-to-guide
-          text: Embed a report
+          text: Lifecycle management collaboration with deployment pipelines
       # footerLink (optional)
       footerLink:
-        url: /javascript/api/overview/powerbi/
+        url: projects/index.yml
         text: See more
-
+    # Card
+    - title: Power BI Desktop developer mode
+      links:
+        - url: projects/projects-overview.md
+          itemType: overview
+          text: Power BI Desktop projects
+        - url: projects/projects-git.md
+          itemType: concept
+          text: Projects Git integration
+        - url: projects/projects-azdo.md
+          itemType: concept
+          text: Projects AzDo integration
+        - url:  ../transform-model/desktop-external-tools.md
+          itemType: concept
+          text: Power BI Desktop external tools
+      # footerLink (optional)
+      footerLink:
+        url: projects/index.yml
+        text: See more
+    # Card
+    - title: Power BI MCP servers
+      links:
+        - url: mcp/mcp-servers-overview.md
+          itemType: overview
+          text: What are the Power BI MCP servers?
+        - url: mcp/remote-mcp-server-get-started.md
+          itemType: get-started
+          text: Get started with the remote MCP server
+        - url: mcp/remote-mcp-server-tools.md
+          itemType: concept
+          text: Remote Power BI MCP server tools
+      # footerLink (optional)
+      footerLink:
+        url: mcp/index.yml
+        text: See more
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
@@ -118,12 +152,12 @@ additionalContent:
           url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
+          summary: Learn how Power BI, Power Apps, Power Automate, and Microsoft Copilot Studios work together to enhance each other.
           url: /power-platform/
         # Card
         - title: Power BI developer center
           summary: Build with Power BI.
-          url: https://powerbi.microsoft.com/developers/
+          url: https://www.microsoft.com/power-platform/products/power-bi/developers
         # Card
         - title: Samples of Power BI visuals
           summary: A collection of Power BI samples and their code libraries.
@@ -133,9 +167,9 @@ additionalContent:
           summary: Power BI libraries (NuGet).
           url: https://www.nuget.org/profiles/powerbi
         # Card
-        - title: Embedding setup tool
+        - title: Start using Power BI Embedded
           summary: Set up your Power BI embedding environment.
-          url: https://app.powerbi.com/embedsetup
+          url: ./embedded/register-app.md
         # Card
         - title: Power BI embedded analytics Client APIs
           summary: Explore the Power BI embedded analytics Client APIs.
