@@ -99,12 +99,12 @@ Format pane reset to default quickly let’s report creators undo customizations
 - Reset to default for the whole visual.
 - Reset to default for each section of the format pane.
 
-   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-settings-default.png" alt-text="Screenshot showing data color section with color palette open.":::
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-settings-default.png" alt-text="Screenshot showing the bars options expanded with the reset settings to default option highlighted.":::
 
 - Reset the group's settings to default within each section.
 - Reset group settings without affecting the rest of the section.
 
-   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-default-group.png" alt-text="Screenshot showing Data color section with color palette open.":::
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-default-group.png" alt-text="Screenshot showing the border options expanded with the reset settings to default option highlighted.":::
 
 ## Apply a style to a table
 
