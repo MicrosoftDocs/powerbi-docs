@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 11/01/2025
+ms.date: 01/06/2026
 ai-usage: ai-assisted
 ---
 
@@ -27,7 +27,7 @@ These are the requirements for the latest generally available (GA) version.
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.8 or later<br><br>If the server doesn't have internet access, you can manually install the .NET Framework from [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/help/4503548/).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.8 see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
+| .NET Framework |4.8 or later<br><br>If the server doesn't have internet access, you can manually install the required version of the .NET Framework. For most scenarios, [download the latest supported .NET Framework version for Windows](https://dotnet.microsoft.com/en-us/download/dotnet-framework).<br/><br/>If you specifically need .NET Framework 4.8, use the [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/help/4503548/).<br/><br/>For more information, recommendations, and guidance about .NET Framework deployment, see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
