@@ -28,13 +28,6 @@ ai-usage: ai-assisted
 > - you're part of a government cloud (regardless of where your home tenant is located).
 >
 > We're working to support Azure Maps in these unsupported regions. **If you and all report users are located in a supported region, you're encouraged to start using Azure Maps now.** Learn how to [upgrade to Azure Maps](/azure/azure-maps/power-bi-visual-conversion). To see the list of supported regions, see [Azure Maps service geographic scope](/azure/azure-maps/geographic-scope). For more information about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
-<<<<<<< HEAD
-
-[!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)
-
-A filled, or *choropleth*, map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region. You can quickly display relative differences with shading that ranges from light (less frequent/lower) to dark (more frequent/more).
-=======
->>>>>>> 270f4917eeaa1d985fde7ab187ddf923137d4296
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 
