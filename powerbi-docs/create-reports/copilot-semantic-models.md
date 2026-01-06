@@ -7,6 +7,7 @@ ms.reviewer: daengli
 ms.service: powerbi
 ms.topic: concept-article
 ms.date: 04/15/2025
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Use Copilot with semantic models
