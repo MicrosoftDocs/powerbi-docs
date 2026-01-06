@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
-ms.date: 12/01/2025
+ms.date: 01/12/2026
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ---
@@ -70,7 +70,6 @@ The best way to learn how to use the Formatting options is to try them out. You 
 Let’s walk through the steps necessary to customize colors on a visualization.
 
 1. Select a visualization to make it active.
-
 1. Select the paint brush icon to open the Formatting tab. The Formatting tab displays all the formatting elements available for the selected visual.
 
     :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png" alt-text="Screenshot showing Chart with Formatting pane tab selected.":::
@@ -86,9 +85,7 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 Here are a few tips for working with colors. The numbers in the following list are also shown on the following image, indicating where you can access and change these useful elements.
 
 1. Don’t like the color? No problem, just select the down-arrow to open the color palette and select a new one.
-
 1. Don't like any of the color changes? Select **Reset to default** from the bottom of the **Data color** section, and your colors revert to the default settings.
-
 1. Want a color you don’t see in the palette? Just select **More colors...**, and choose from the spectrum.  
 
    :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png" alt-text="Screenshot showing Data color section with color palette open.":::
@@ -96,14 +93,18 @@ Here are a few tips for working with colors. The numbers in the following list a
 Don't like the change you just made? Use **CTRL+Z** to undo, as you’re used to doing.
 
 ## Reset to default options
-Format pane reset to default quickly let’s report creators undo customizations made to a visual. You can reset default with finer control: 
-•	Reset to default for the whole visual.
-•	Reset to default each section of the format pane.
-:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-visual&sectionresettodefault.png" alt-text="Screenshot showing Data color section with color palette open.":::
 
-•	Reset this group settings to default within each section.
-•	Reset group settings without impacting the rest of the section. 
-:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-resettodefaultgroup.png" alt-text="Screenshot showing Data color section with color palette open.":::
+Format pane reset to default quickly let’s report creators undo customizations made to a visual. You can reset default with finer control: 
+
+- Reset to default for the whole visual.
+- Reset to default for each section of the format pane.
+
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-settings-default.png" alt-text="Screenshot showing data color section with color palette open.":::
+
+- Reset the group's settings to default within each section.
+- Reset group settings without affecting the rest of the section.
+
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-default-group.png" alt-text="Screenshot showing Data color section with color palette open.":::
 
 ## Apply a style to a table
 
@@ -155,7 +156,6 @@ Here is the *after* picture.
 1. Select the visualization to make it active, and open the Formatting tab. 
 1. Select **Data labels** and turn them **On**. 
 1. Make these formatting changes: 
-
     1. Increase the font size to **12**.
     1. Change the font family to **Arial Black**.
     1. Turn **Show background** to **On** and **Background color** to white with a **Transparency** of 5%.
@@ -200,6 +200,5 @@ These are just a few of the formatting tasks that are possible. Open a report in
 For more information, see the following articles:
 
 - [Sharing reports](../collaborate-share/service-share-reports.md)
-
 - [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)
 - [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
