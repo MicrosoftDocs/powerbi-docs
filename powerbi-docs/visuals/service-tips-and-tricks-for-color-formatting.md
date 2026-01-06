@@ -131,7 +131,7 @@ Power BI report creators can customize colors in visuals with a theme color pick
 - A clear indicator for the currently selected theme color.
 - A simple way to reset colors to their default settings.
 
-   :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/theme-color-picker.png" alt-text="Screenshot of theme color picker user interface in Power BI.":::
+   :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/theme-color-picker.jpg" alt-text="Screenshot of theme color picker user interface in Power BI.":::
  
 - A **Back** button to return from custom colors to theme colors.
 
