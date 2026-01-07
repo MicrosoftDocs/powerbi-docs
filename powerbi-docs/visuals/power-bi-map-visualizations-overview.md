@@ -21,12 +21,12 @@ Power BI provides multiple map visualization options to suit various analytical 
 
 ## Azure maps
 
-**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](/azure/azure-maps/power-bi-visual-add-bubble-layer), [3D column](/azure/azure-maps/power-bi-visual-add-3d-column-layer), [heat map](/azure/azure-maps/power-bi-visual-add-heat-map-layer), [filled](/azure/azure-maps/power-bi-visual-filled-map), [path layer](power-bi-visual-add-path-layer), and [reference layers](/azure/azure-maps/power-bi-visual-add-reference-layer). You can add [pie chart overlays](/azure/azure-maps/power-bi-visual-add-pie-chart-layer) and use [clustering](/azure/azure-maps/power-bi-visual-cluster-bubbles).
+**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](/azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context), [3D column](/azure/azure-maps/power-bi-visual-add-3d-column-layer?context=/power-bi/create-reports/context/context), [heat map](/azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context), [filled](/azure/azure-maps/power-bi-visual-filled-map?context=/power-bi/create-reports/context/context), [path layer](/azure/azure-maps/power-bi-visual-add-path-layer?context=/power-bi/create-reports/context/context), and [reference layers](/azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context). You can add [pie chart overlays](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context) and use [clustering](/azure/azure-maps/power-bi-visual-cluster-bubbles?context=/power-bi/create-reports/context/context).
 
 > [!NOTE]
 > Administrators must enable the Azure map visual in the **Power BI Admin Portal** under **Integration** settings.
 
-For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/visualalizations/map/context/context).
+For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
 
 ## Shape maps (preview)
 
