@@ -41,6 +41,17 @@ For detailed instructions, see [Create Shape Map visualizations in Power BI Desk
 
 Basic **map** visuals display data points as bubbles on a map, with bubble sizes representing measure values. They use Bing Maps integration for automatic geocoding and work with addresses, cities, states, countries/regions, or longitude/latitude coordinates. 
 
+> [!IMPORTANT]
+> The **Bing Maps** visual is scheduled for deprecation, with the timeline still being planned. Any existing Bing Maps already in your reports will still be available.
+>
+> To prepare for this upcoming change, **upgrade to Azure Maps** *unless*:
+>
+> - you have team members who would consume the report in China, Korea, or government clouds.
+> - you're physically located in China or Korea (regardless of where your home tenant is located).
+> - you're part of a government cloud (regardless of where your home tenant is located).
+>
+> We're working to support Azure Maps in these unsupported regions. **If you and all report users are located in a supported region, you're encouraged to start using Azure Maps now.** Learn how to [upgrade to Azure Maps](/azure/azure-maps/power-bi-visual-conversion). To see the list of supported regions, see [Azure Maps service geographic scope](/azure/azure-maps/geographic-scope). For more information about Azure Maps, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started)
+
 For detailed guidance, see [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md).
 
 ## Filled maps (choropleth Bing maps)
