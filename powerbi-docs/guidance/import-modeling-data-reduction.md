@@ -58,6 +58,8 @@ In some specific instances, you can convert source text data into numeric values
 
 In this example, we recommend that you set the column default summarization property to `Do Not Summarize`. It helps to avoid inappropriate summarization of the order number values.
 
+Converting the text data to numeric values does not help if the column is being used in a relationship, because it will always be hash encoded.
+
 ## Preference for custom columns
 
 The VertiPaq storage engine stores model [calculated columns](../transform-model/desktop-calculated-columns.md) (defined in DAX) just like regular Power Query-sourced columns. However, the internal data structures are stored slightly differently, and typically achieve less efficient compression. Also, the data structures are built once all Power Query tables are loaded, which can result in extended data refresh times. It's therefore less efficient to add table columns as _calculated_ columns than Power Query _computed_ columns (defined in M).
