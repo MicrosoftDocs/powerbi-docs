@@ -21,12 +21,12 @@ Power BI provides multiple map visualization options to suit various analytical 
 
 ## Azure maps
 
-**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](power-bi-visual-add-bubble-layer.md), [3D column](power-bi-visual-add-3d-column-layer.md), [heat map](power-bi-visual-add-heat-map-layer.md), [filled](power-bi-visual-filled-map.md), [path layer](power-bi-visual-add-path-layer.md), and [reference layers](power-bi-visual-add-reference-layer.md). You can add [pie chart overlays](power-bi-visual-add-pie-chart-layer.md) and use [clustering](power-bi-visual-cluster-bubbles.md).
+**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](/azure/azure-maps/power-bi-visual-add-bubble-layer), [3D column](/azure/azure-maps/power-bi-visual-add-3d-column-layer), [heat map](/azure/azure-maps/power-bi-visual-add-heat-map-layer), [filled](/azure/azure-maps/power-bi-visual-filled-map), [path layer](power-bi-visual-add-path-layer), and [reference layers](/azure/azure-maps/power-bi-visual-add-reference-layer). You can add [pie chart overlays](/azure/azure-maps/power-bi-visual-add-pie-chart-layer) and use [clustering](/azure/azure-maps/power-bi-visual-cluster-bubbles).
 
 > [!NOTE]
 > Administrators must enable the Azure map visual in the **Power BI Admin Portal** under **Integration** settings.
 
-For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context).
+For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/visualalizations/map/context/context).
 
 ## Shape maps (preview)
 
