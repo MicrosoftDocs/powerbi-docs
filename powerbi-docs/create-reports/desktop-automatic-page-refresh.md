@@ -203,7 +203,7 @@ This table describes with more detail where this feature is available and the li
 | Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
 | Analysis Services (Azure and On Premises)     | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
 | Power BI semantic models (connected live)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Power BI semantic models (DirectQuery connection)   | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A  | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
+| Power BI composite model   | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No | |
 | Power BI Push semantic models                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
 | Power BI streaming semantic models                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
 
@@ -221,6 +221,8 @@ This table describes with more detail where this feature is available and the li
 
 > [!IMPORTANT]
 > Adding a push dataset (streaming dataset with history **ON**) as a source to an existing semantic model with APR will cause the minimum limit to increase to 30 minutes.
+
+Automatic refresh for composite models is governed by the most restrictive setting applied across the underlying data sources. For example, when a table included in a composite model has an automatic refresh interval of one hour and the composite model is configured for a 30-minute refresh, the composite model will adhere to the one-hour interval due to the more restrictive refresh constraint of the underlying data source. As a result, if none of the underlying data sources have automatic refresh enabled, the composite model will be unable to leverage automatic refresh. To address this issue, the capacity administrator of the workspace where the data resides must update the settings on all the underlying data to ensure the composite model can successfully use automatic refresh. 
 
 ## Impact of model refresh on open reports when using Import mode
 
