@@ -90,7 +90,7 @@ There are many ways to manage your alerts:
 - Alerts only work with numeric data types.
 - Alerts only work on refreshed data. They don't work on static data.
 - Because alerts are only sent if your data changes, you don't receive duplicate alerts for an unchanged value.
-- Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
+- Alerts only work on streaming datasets if you build a KPI, legacy card, or gauge report visual and then pin that visual to the dashboard. These visuals are all show a single value.
 - You can create up to 250 alerts across all your models.
 - Alerts don't have support for co-ownership. If you need to transfer ownership between users, you need to create a new alert. If you're integrating your alerts with Power Automate, you also need to recreate the flow.
 
