@@ -5,7 +5,7 @@ ms.date: 12/01/2025
 ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: how-to
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
