@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
