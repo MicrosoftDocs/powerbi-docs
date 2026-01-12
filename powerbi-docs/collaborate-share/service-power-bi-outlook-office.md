@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: article
+ms.topic: concept-article
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.date: 12/18/2025
