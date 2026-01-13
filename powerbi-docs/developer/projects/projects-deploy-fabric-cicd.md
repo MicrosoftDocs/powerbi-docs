@@ -167,54 +167,61 @@ Create `.azuredevops/deploy-pipeline.yml` in your repository:
 trigger:
   branches:
     include:
+      - dev
       - main
 
-pool:
-  vmImage: 'ubuntu-latest'
-
 variables:
-  - group: fabric-credentials
+  - name: workspace_id
+    value: "your-workspace-id"
+  - name: environment
+    value: "dev"
 
-steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '3.11'
-    displayName: 'Use Python 3.11'
-
-  - script: pip install fabric-cicd
-    displayName: 'Install fabric-cicd'
-
-  - task: AzureCLI@2
-    displayName: 'Deploy PBIP to Fabric'
-    inputs:
-      azureSubscription: 'fabric-service-connection'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: |
-        python deploy.py
-    env:
-      AZURE_TENANT_ID: $(AZURE_TENANT_ID)
-      AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
-      AZURE_CLIENT_SECRET: $(AZURE_CLIENT_SECRET)
-      FABRIC_WORKSPACE_ID: $(FABRIC_WORKSPACE_ID)
+stages:
+  - stage: Build_Release
+    jobs:
+      - job: Build
+        pool:
+          vmImage: 'windows-latest'
+        steps:
+          - checkout: self
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '3.12'
+              addToPath: true
+          - script: |
+              pip install fabric-cicd
+            displayName: 'Install fabric-cicd'
+          - task: AzureCLI@2
+            displayName: 'Deploy PBIP to Fabric'
+            inputs:
+              azureSubscription: 'fabric-service-connection'
+              scriptType: 'ps'
+              scriptLocation: 'inlineScript'
+              inlineScript: |
+                python -u deploy.py `
+                  --workspace_id "$(workspace_id)" `
+                  --environment "$(environment)"
 ```
 
-Update your `deploy.py` to use service principal authentication:
+Update your `deploy.py` to use Azure CLI credential and accept command-line arguments:
 
 ```python
-import os
-from azure.identity import ClientSecretCredential
+import argparse
+from azure.identity import AzureCliCredential
 from fabric_cicd import FabricWorkspace, publish_all_items
 
-credential = ClientSecretCredential(
-    tenant_id=os.environ["AZURE_TENANT_ID"],
-    client_id=os.environ["AZURE_CLIENT_ID"],
-    client_secret=os.environ["AZURE_CLIENT_SECRET"],
-)
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
+parser.add_argument("--workspace_id", type=str, required=True, help="Workspace ID")
+parser.add_argument("--environment", type=str, default="prod", help="Environment")
+args = parser.parse_args()
+
+# Uses the identity from the AzureCLI@2 task
+credential = AzureCliCredential()
 
 target_workspace = FabricWorkspace(
-    workspace_id=os.environ["FABRIC_WORKSPACE_ID"],
-    environment=os.environ.get("ENVIRONMENT", "prod"),
+    workspace_id=args.workspace_id,
+    environment=args.environment,
     repository_directory=".",
     item_type_in_scope=["SemanticModel", "Report"],
     token_credential=credential,
@@ -226,16 +233,31 @@ publish_all_items(target_workspace)
 ### Set up Azure DevOps
 
 1. **Create a service principal** in Azure AD with Contributor or Admin role on your Fabric workspaces
-2. **Create a variable group** named `fabric-credentials` with:
-   - `AZURE_TENANT_ID`: Your Azure tenant ID
-   - `AZURE_CLIENT_ID`: Service principal client ID
-   - `AZURE_CLIENT_SECRET`: Service principal secret (mark as secret)
-   - `FABRIC_WORKSPACE_ID`: Target workspace ID
+2. **Add the service principal to your Fabric workspace**:
+   - Open Fabric portal and navigate to your workspace
+   - Go to Workspace Settings > Manage access
+   - Add the service principal with Contributor or Admin role
+3. **Create an Azure service connection** in Azure DevOps project settings:
+   - Go to Project Settings > Service connections
+   - Create a new Azure Resource Manager service connection
+   - Use the service principal credentials
+   - Name it `fabric-service-connection` (or update the pipeline YAML)
 
-   :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-variable-group.png" alt-text="Screenshot showing Azure DevOps variable group configuration with Fabric credentials.":::
+   :::image type="content" source="media/projects-deploy-fabric-cicd/fabric-service-connection.png" alt-text="Screenshot showing Azure service connection configuration in Azure DevOps.":::
 
-3. **Create an Azure service connection** in Azure DevOps project settings
-4. **Commit the pipeline YAML** and deployment script to your repository
+4. **Create a new pipeline** in Azure DevOps:
+   - Go to Pipelines > New pipeline
+   - Select your repository and choose "Existing Azure Pipelines YAML file"
+   - Select the path to your deploy-pipeline.yml file
+
+   :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-setup1.png" alt-text="Screenshot showing new pipeline creation in Azure DevOps.":::
+
+   :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-setup2.png" alt-text="Screenshot showing pipeline YAML file selection in Azure DevOps.":::
+
+5. **Update the workspace ID in the YAML**:
+   - Edit the `workspace_id` variable in deploy-pipeline.yml
+   - Set it to your target workspace ID
+6. **Save and run the pipeline** to deploy your PBIP to Fabric
 
    :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-run.png" alt-text="Screenshot showing successful Azure DevOps pipeline execution deploying PBIP to Fabric.":::
 
@@ -253,43 +275,89 @@ name: Deploy PBIP to Fabric
 
 on:
   push:
-    branches: [main]
+    branches: [dev, main]
   workflow_dispatch:
+
+env:
+  WORKSPACE_ID: '24e9d9a7-2c86-4c47-9d85-2ff6f0b2d4ee'
+  ENVIRONMENT: 'dev'
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
       
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.12'
       
       - name: Install fabric-cicd
         run: pip install fabric-cicd
       
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
       - name: Deploy PBIP to Fabric
-        run: python deploy.py
-        env:
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          FABRIC_WORKSPACE_ID: ${{ secrets.FABRIC_WORKSPACE_ID }}
+        run: python deploy-pipeline.py --workspace_id ${{ env.WORKSPACE_ID }} --environment ${{ env.ENVIRONMENT }}
+```
+
+### Create deployment script
+
+Create `deploy-pipeline.py` that accepts command-line arguments:
+
+```python
+import argparse
+from azure.identity import AzureCliCredential
+from fabriccicd.workspace import FabricWorkspace
+from fabriccicd.publish import publish_all_items
+
+parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
+parser.add_argument("--workspace_id", required=True, help="Target workspace ID")
+parser.add_argument("--environment", default="prod", help="Environment name")
+args = parser.parse_args()
+
+credential = AzureCliCredential()
+
+target_workspace = FabricWorkspace(
+    workspace_id=args.workspace_id,
+    environment=args.environment,
+    repository_directory=".",
+    item_type_in_scope=["SemanticModel", "Report"],
+    token_credential=credential,
+)
+
+publish_all_items(target_workspace)
 ```
 
 ### Set up GitHub Actions
 
 1. **Create a service principal** in Azure AD with Contributor or Admin role on your Fabric workspaces
-2. **Add repository secrets** in GitHub (Settings > Secrets and variables > Actions):
-   - `AZURE_TENANT_ID`: Your Azure tenant ID
-   - `AZURE_CLIENT_ID`: Service principal client ID
-   - `AZURE_CLIENT_SECRET`: Service principal secret
-   - `FABRIC_WORKSPACE_ID`: Target workspace ID
+2. **Add the service principal to your Fabric workspace**:
+   - Open Fabric portal and navigate to your workspace
+   - Go to Workspace Settings > Manage access
+   - Add the service principal with Contributor or Admin role
+3. **Create the Azure credentials secret**:
+   - Get your service principal credentials in JSON format:
+     ```json
+     {
+       "clientId": "<service-principal-client-id>",
+       "clientSecret": "<service-principal-secret>",
+       "subscriptionId": "<azure-subscription-id>",
+       "tenantId": "<azure-tenant-id>"
+     }
+     ```
+   - Go to GitHub repository Settings > Secrets and variables > Actions
+   - Add `AZURE_CREDENTIALS` with the JSON above
 
    :::image type="content" source="media/projects-deploy-fabric-cicd/github-actions-secrets.png" alt-text="Screenshot showing GitHub repository secrets configuration for Fabric deployment.":::
 
-3. **Commit the workflow YAML** and deployment script to your repository
+4. **Update the workspace ID in the workflow**:
+   - Edit the `WORKSPACE_ID` environment variable in deploy.yml
+   - Set it to your target workspace ID
+5. **Commit the workflow YAML** and deployment script to your repository
 
 > [!TIP]
 > For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
