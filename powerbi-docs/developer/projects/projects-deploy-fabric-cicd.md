@@ -3,7 +3,7 @@ title: Deploy Power BI projects (PBIP) using fabric-cicd
 description: Learn how to deploy Power BI Desktop projects (PBIP) using the fabric-cicd Python library for manual and automated deployments.
 author: [TO_BE_FILLED]
 ms.author: [TO_BE_FILLED]
-ms.reviewer: ruiromano
+ms.reviewer: [TO_BE_FILLED]
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
@@ -15,7 +15,7 @@ ms.date: 12/12/2025
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is a Python library developed by Microsoft that provides the easiest way for developers to deploy Power BI Desktop project (PBIP) files from source control to Fabric workspaces.
+[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is a Python library developed by Microsoft that provides a code-first method for developers to deploy Power BI Desktop project (PBIP) files from source control to Fabric workspaces.
 
 In this article, you learn how to:
 
@@ -30,11 +30,7 @@ Learn more about PBIP format in [Power BI Desktop projects (PBIP)](./projects-ov
 fabric-cicd is specifically designed for deploying source-controlled Fabric artifacts and offers several advantages:
 
 * **Uses Fabric native REST APIs** - Built on official Microsoft Fabric APIs, ensuring compatibility and long-term support
-* **Format-agnostic** - Deploy TMDL or BIM semantic models without conversion
-* **Integrated deployment** - Deploy semantic models and reports together from PBIP projects  
 * **Python-native** - Seamless integration with modern Python-based DevOps workflows
-
-* **Complete deployment**: Deploys both semantic models and reports in a single operation
 * **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
 * **Developer-friendly**: Simple Python scripts that can run locally or in CI/CD pipelines
 * **Orphan cleanup**: Automatically removes items from workspace that no longer exist in source control
@@ -46,13 +42,13 @@ Before you begin, ensure you have:
 
 * [Python](https://www.python.org/) (version 3.9 to 3.12)
 * A Power BI Desktop project saved in PBIP format
-* Your PBIP files in source control (Git, Azure DevOps, or GitHub)
 * Access to a Microsoft Fabric workspace with Contributor role
 
 For automated deployments, you also need:
 
 * A service principal with at least the Contributor role on target Fabric workspaces
 * Access to Azure DevOps or GitHub Actions
+* Your PBIP files in source control (Git, Azure DevOps, or GitHub)
 
 ## Quick start
 
@@ -85,6 +81,8 @@ my-powerbi-project/
 └── SalesAnalytics.pbip
 ```
 
+:::image type="content" source="media/projects-deploy-fabric-cicd/pbip-project-structure.png" alt-text="Screenshot showing PBIP project folder structure in File Explorer.":::
+
 For detailed information on required files and formats, see [Power BI Desktop project report folder](./projects-report.md) and [Power BI Desktop project semantic model folder](./projects-dataset.md).
 
 > [!TIP]
@@ -101,7 +99,7 @@ from fabric_cicd import FabricWorkspace, publish_all_items
 credential = InteractiveBrowserCredential()
 
 target_workspace = FabricWorkspace(
-    workspace_name="My Development Workspace",  # Replace with your workspace name
+    workspace_name="My Development Workspace",  # Or use: workspace_id="your-workspace-id"
     environment="dev",
     repository_directory=".",
     item_type_in_scope=["SemanticModel", "Report"],  # Deploy both semantic models and reports
@@ -111,8 +109,10 @@ target_workspace = FabricWorkspace(
 publish_all_items(target_workspace)
 ```
 
+:::image type="content" source="media/projects-deploy-fabric-cicd/deploy-script-vscode.png" alt-text="Screenshot showing deploy.py file in VS Code with deployment configuration.":::
+
 > [!IMPORTANT]
-> Replace `"My Development Workspace"` with your actual Fabric workspace name. The workspace must exist and you must have Contributor or Admin permissions.
+> Replace `"My Development Workspace"` with your actual Fabric workspace name. Alternatively, you can use `workspace_id="your-workspace-id"` instead of `workspace_name`. The workspace must exist and you must have Contributor or Admin permissions.
 
 ### 4. Deploy
 
@@ -133,7 +133,14 @@ Your browser opens for authentication. After signing in, fabric-cicd deploys you
        Published
 ```
 
+:::image type="content" source="media/projects-deploy-fabric-cicd/deployment-output-terminal.png" alt-text="Screenshot showing terminal output with deployment progress messages.":::
+
 Deployment typically takes 20-30 seconds depending on the size of your semantic model.
+
+> [!TIP]
+> If you see a warning about a missing parameter.yml file, this is expected and can be ignored. The parameter file is only needed for environment-specific parameterization (covered in Advanced features).
+
+:::image type="content" source="media/projects-deploy-fabric-cicd/fabric-workspace-deployed-items.png" alt-text="Screenshot showing deployed semantic model and report in Fabric workspace.":::
 
 > [!NOTE]
 > The first time you deploy a semantic model with data sources, you need to manually configure data source credentials in the Fabric portal. Go to workspace > semantic model > Settings > Data source credentials. Subsequent deployments reuse the saved credentials.
@@ -224,8 +231,13 @@ publish_all_items(target_workspace)
    - `AZURE_CLIENT_ID`: Service principal client ID
    - `AZURE_CLIENT_SECRET`: Service principal secret (mark as secret)
    - `FABRIC_WORKSPACE_ID`: Target workspace ID
+
+   :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-variable-group.png" alt-text="Screenshot showing Azure DevOps variable group configuration with Fabric credentials.":::
+
 3. **Create an Azure service connection** in Azure DevOps project settings
 4. **Commit the pipeline YAML** and deployment script to your repository
+
+   :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-run.png" alt-text="Screenshot showing successful Azure DevOps pipeline execution deploying PBIP to Fabric.":::
 
 > [!TIP]
 > For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
@@ -274,6 +286,9 @@ jobs:
    - `AZURE_CLIENT_ID`: Service principal client ID
    - `AZURE_CLIENT_SECRET`: Service principal secret
    - `FABRIC_WORKSPACE_ID`: Target workspace ID
+
+   :::image type="content" source="media/projects-deploy-fabric-cicd/github-actions-secrets.png" alt-text="Screenshot showing GitHub repository secrets configuration for Fabric deployment.":::
+
 3. **Commit the workflow YAML** and deployment script to your repository
 
 > [!TIP]
