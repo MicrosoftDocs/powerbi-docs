@@ -361,8 +361,7 @@ Create `deploy-pipeline.py` that accepts command-line arguments:
 ```python
 import argparse
 from azure.identity import AzureCliCredential
-from fabriccicd.workspace import FabricWorkspace
-from fabriccicd.publish import publish_all_items
+from fabric_cicd import FabricWorkspace, publish_all_items
 
 parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
 parser.add_argument("--workspace_id", required=True, help="Target workspace ID")
