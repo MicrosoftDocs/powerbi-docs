@@ -1,5 +1,5 @@
 ---
-title: Search and find content in Power BI service
+title: Search and Find Content in the Power BI Service
 description: Learn how to search, filter, and sort content in Power BI service. Find dashboards, reports, and apps quickly with global search and filtering tools.
 author: julcsc
 ms.author: juliacawthra
@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 LocalizationGroup: Get started
 ---
 
-# Search and find content in Power BI service
+# Search and find content in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 

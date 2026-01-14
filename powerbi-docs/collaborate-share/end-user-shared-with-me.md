@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 
-# View Shared Dashboards and Reports in Power BI
+# View shared dashboards and reports in Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Add comments to dashboards and reports
+title: Add Comments to Dashboards and Reports
 description: Learn how to add comments to Power BI dashboards, reports, and visuals, and how comments capture filter context as bookmarks. Start collaborating today.
 author: julcsc
 ms.author: juliacawthra

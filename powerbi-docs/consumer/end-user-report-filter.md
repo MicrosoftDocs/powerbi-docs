@@ -1,5 +1,5 @@
 ---
-title: Filter data in Power BI reports
+title: Filter Data in Power BI Reports
 description: Learn how to use filters in the Power BI service to view and analyze specific data in your reports.
 author: julcsc
 ms.author: juliacawthra

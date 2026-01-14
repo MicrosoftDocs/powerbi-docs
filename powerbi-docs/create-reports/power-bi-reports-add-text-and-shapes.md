@@ -1,6 +1,6 @@
 ---
-title: Add text, shapes, and smart narrative visuals to reports
-description: Learn how to add and create text boxes, shapes, and smart narrative visuals to reports in Power BI Desktop or the Power BI service.
+title: Add Text Boxes, Shapes, and Smart Narratives to Power BI Reports
+description: Learn how to add text boxes, shapes, and smart narratives to Power BI reports. Discover formatting options and AI-powered text summaries.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
