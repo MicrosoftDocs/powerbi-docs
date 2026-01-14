@@ -7029,6 +7029,11 @@
       "source_path": "powerbi-docs/create-reports/service-quick-create-sharepoint-list.md",
       "redirect_url": "/power-bi/connect-data/create-dataset-sharepoint-online-list",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-focus.md",
+      "redirect_url": "/power-bi/consumer/end-user-report-view#zoom-in-on-a-visual",
+      "redirect_document_id": false
     }
   ]
 }                           
