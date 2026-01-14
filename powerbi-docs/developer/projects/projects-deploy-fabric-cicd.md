@@ -1,9 +1,9 @@
 ---
 title: Deploy Power BI projects (PBIP) using fabric-cicd
 description: Learn how to deploy Power BI Desktop projects (PBIP) using the fabric-cicd Python library for manual and automated deployments.
-author: [TO_BE_FILLED]
-ms.author: [TO_BE_FILLED]
-ms.reviewer: [TO_BE_FILLED]
+author: justinmartin
+ms.author: justinmartin
+ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
