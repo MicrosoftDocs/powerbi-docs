@@ -66,4 +66,6 @@ You can also control the fields that Power BI uses for analysis. For example, by
 
 ## Related content
 
-To learn more about the algorithm that runs anomaly detection, see [Tony Xing's post on the SR-CNN algorithm in Azure Anomaly Detector](/ai/customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector).
+- [What is Anomaly Detector?](/azure/ai-services/anomaly-detector/overview)
+
+For more details about the Anomaly Detector algorithm, see the [Overview of SR-CNN algorithm in Azure Anomaly Detector](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798) blog post.
