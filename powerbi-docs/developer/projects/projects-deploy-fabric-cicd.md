@@ -19,9 +19,9 @@ ms.date: 12/12/2025
 
 In this article, you learn how to:
 
-* Deploy PBIP files from your local machine
-* Configure environment-specific parameters for different workspaces
-* Automate deployments with CI/CD pipelines in Azure DevOps or GitHub Actions
+* Deploy PBIP files manually from your local machine
+* Automate deployments using Azure DevOps pipelines with branch-based workspace targeting
+* Automate deployments using GitHub Actions workflows with branch-based workspace targeting
 
 Learn more about PBIP format in [Power BI Desktop projects (PBIP)](./projects-overview.md) and [Fabric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
 
@@ -69,12 +69,12 @@ Ensure your PBIP project includes the required files. A typical PBIP project str
 ```
 my-powerbi-project/
 ├── SalesAnalytics.Report/
-│   ├── definition.pbir          # Required
-│   └── definition/              # Required for PBIR format
+│   ├── definition.pbir
+│   └── definition/
 │       └── pages/
 ├── SalesAnalytics.SemanticModel/
-│   ├── definition.pbism         # Required
-│   └── definition/              # Required for TMDL format
+│   ├── definition.pbism
+│   └── definition/
 │       ├── model.tmdl
 │       ├── tables/
 │       └── ...
@@ -111,9 +111,6 @@ publish_all_items(target_workspace)
 
 :::image type="content" source="media/projects-deploy-fabric-cicd/deploy-script-vscode.png" alt-text="Screenshot showing deploy.py file in VS Code with deployment configuration.":::
 
-> [!IMPORTANT]
-> Replace `"My Development Workspace"` with your actual Fabric workspace name. Alternatively, you can use `workspace_id="your-workspace-id"` instead of `workspace_name`. The workspace must exist and you must have Contributor or Admin permissions.
-
 ### 4. Deploy
 
 Run the deployment script:
@@ -138,7 +135,7 @@ Your browser opens for authentication. After signing in, fabric-cicd deploys you
 Deployment typically takes 20-30 seconds depending on the size of your semantic model.
 
 > [!TIP]
-> If you see a warning about a missing parameter.yml file, this is expected and can be ignored. The parameter file is only needed for environment-specific parameterization (covered in Advanced features).
+> If you see a warning about a missing parameter.yml file, this is expected and can be ignored. The parameter file is only needed for [environment-specific parameterization](https://microsoft.github.io/fabric-cicd/latest/how_to/parameterization/).
 
 :::image type="content" source="media/projects-deploy-fabric-cicd/fabric-workspace-deployed-items.png" alt-text="Screenshot showing deployed semantic model and report in Fabric workspace.":::
 
@@ -151,9 +148,8 @@ fabric-cicd offers many advanced features beyond basic deployment:
 
 * **Environment parameterization**: Replace workspace IDs, lakehouse IDs, and connection strings for different environments using parameter.yml files
 * **Orphan cleanup**: Automatically remove items from the workspace that no longer exist in source control
-* **Selective deployment**: Deploy only specific item types (semantic models only, reports only)
 * **Multiple authentication methods**: Support for Azure CLI, managed identity, and service principal authentication
-* **Workspace by ID or name**: Reference workspaces by name or GUID
+* **Configuration Based Deployment**: Define all deployment settings in a single YAML configuration file instead of Python code, simplifying multi-environment deployments to one function call
 
 For complete documentation on these features, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
@@ -171,10 +167,20 @@ trigger:
       - main
 
 variables:
-  - name: workspace_id
-    value: "your-workspace-id"
-  - name: environment
-    value: "dev"
+  - name: workspace_ids
+    value: |
+      {
+        "dev": "11111111-1111-1111-1111-111111111111",
+        "main": "22222222-2222-2222-2222-222222222222",
+        "default": "11111111-1111-1111-1111-111111111111"
+      }
+  - name: environments
+    value: |
+      {
+        "dev": "dev",
+        "main": "prod",
+        "default": "dev"
+      }
 
 stages:
   - stage: Build_Release
@@ -198,19 +204,37 @@ stages:
               scriptType: 'ps'
               scriptLocation: 'inlineScript'
               inlineScript: |
-                python -u deploy.py `
-                  --workspace_id "$(workspace_id)" `
-                  --environment "$(environment)"
+                $branch_name = ${env:BUILD_SOURCEBRANCHNAME}
+                
+                $workspace_ids = '$(workspace_ids)' | ConvertFrom-Json
+                $environments = '$(environments)' | ConvertFrom-Json
+                
+                if ($workspace_ids.PSObject.Properties.Name -contains $branch_name) {
+                    $workspace_id = $workspace_ids.$branch_name
+                } else {
+                    $workspace_id = $workspace_ids.default
+                }
+                
+                if ($environments.PSObject.Properties.Name -contains $branch_name) {
+                    $environment = $environments.$branch_name
+                } else {
+                    $environment = $environments.default
+                }
+                
+                python -u deploy-pipeline.py `
+                  --workspace_id "$workspace_id" `
+                  --environment "$environment"
 ```
 
-Update your `deploy.py` to use Azure CLI credential and accept command-line arguments:
+### Create deployment script
+
+Create `deploy-pipeline.py` that accepts command-line arguments:
 
 ```python
 import argparse
 from azure.identity import AzureCliCredential
 from fabric_cicd import FabricWorkspace, publish_all_items
 
-# Parse command-line arguments
 parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
 parser.add_argument("--workspace_id", type=str, required=True, help="Workspace ID")
 parser.add_argument("--environment", type=str, default="prod", help="Environment")
@@ -254,15 +278,13 @@ publish_all_items(target_workspace)
 
    :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-setup2.png" alt-text="Screenshot showing pipeline YAML file selection in Azure DevOps.":::
 
-5. **Update the workspace ID in the YAML**:
-   - Edit the `workspace_id` variable in deploy-pipeline.yml
-   - Set it to your target workspace ID
+5. **Update the workspace IDs in the YAML**:
+   - Edit the `workspace_ids` variable in deploy-pipeline.yml
+   - Set workspace IDs for each branch (dev, main) and a default fallback
+   - The pipeline automatically selects the correct workspace based on the branch that triggered it
 6. **Save and run the pipeline** to deploy your PBIP to Fabric
 
    :::image type="content" source="media/projects-deploy-fabric-cicd/azure-devops-pipeline-run.png" alt-text="Screenshot showing successful Azure DevOps pipeline execution deploying PBIP to Fabric.":::
-
-> [!TIP]
-> For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
 ## GitHub Actions automation
 
@@ -278,10 +300,6 @@ on:
     branches: [dev, main]
   workflow_dispatch:
 
-env:
-  WORKSPACE_ID: '24e9d9a7-2c86-4c47-9d85-2ff6f0b2d4ee'
-  ENVIRONMENT: 'dev'
-
 jobs:
   deploy:
     runs-on: windows-latest
@@ -292,6 +310,38 @@ jobs:
         with:
           python-version: '3.12'
       
+      - name: Set workspace variables
+        id: workspace
+        run: |
+          $branch_name = "${{ github.ref_name }}"
+          
+          $workspace_ids = @{
+            "dev" = "11111111-1111-1111-1111-111111111111"
+            "main" = "22222222-2222-2222-2222-222222222222"
+            "default" = "11111111-1111-1111-1111-111111111111"
+          }
+          
+          $environments = @{
+            "dev" = "dev"
+            "main" = "prod"
+            "default" = "dev"
+          }
+          
+          if ($workspace_ids.ContainsKey($branch_name)) {
+            $workspace_id = $workspace_ids[$branch_name]
+          } else {
+            $workspace_id = $workspace_ids["default"]
+          }
+          
+          if ($environments.ContainsKey($branch_name)) {
+            $environment = $environments[$branch_name]
+          } else {
+            $environment = $environments["default"]
+          }
+          
+          echo "workspace_id=$workspace_id" >> $env:GITHUB_OUTPUT
+          echo "environment=$environment" >> $env:GITHUB_OUTPUT
+      
       - name: Install fabric-cicd
         run: pip install fabric-cicd
       
@@ -301,7 +351,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       
       - name: Deploy PBIP to Fabric
-        run: python deploy-pipeline.py --workspace_id ${{ env.WORKSPACE_ID }} --environment ${{ env.ENVIRONMENT }}
+        run: python deploy-pipeline.py --workspace_id ${{ steps.workspace.outputs.workspace_id }} --environment ${{ steps.workspace.outputs.environment }}
 ```
 
 ### Create deployment script
@@ -352,15 +402,11 @@ publish_all_items(target_workspace)
    - Go to GitHub repository Settings > Secrets and variables > Actions
    - Add `AZURE_CREDENTIALS` with the JSON above
 
-   :::image type="content" source="media/projects-deploy-fabric-cicd/github-actions-secrets.png" alt-text="Screenshot showing GitHub repository secrets configuration for Fabric deployment.":::
-
-4. **Update the workspace ID in the workflow**:
-   - Edit the `WORKSPACE_ID` environment variable in deploy.yml
-   - Set it to your target workspace ID
+4. **Update the workspace IDs in the workflow**:
+   - Edit the `workspace_ids` hashtable in the "Set workspace variables" step
+   - Set workspace IDs for each branch (dev, main) and a default fallback
+   - The workflow automatically selects the correct workspace based on the branch that triggered it
 5. **Commit the workflow YAML** and deployment script to your repository
-
-> [!TIP]
-> For advanced scenarios like pre-deployment validation, orphan cleanup, or environment-specific parameterization, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
 ## Related content
 
