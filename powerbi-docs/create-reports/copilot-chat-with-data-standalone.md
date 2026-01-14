@@ -3,6 +3,7 @@ title: Standalone Copilot Experience in Power BI (preview)
 description: Learn how business users can chat with data using the standalone Copilot experience in Power BI (preview).
 author: julcsc
 ms.author: juliacawthra
+ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
@@ -19,7 +20,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Copilot in Power BI is available as a full-screen, standalone Copilot experience that finds and answers questions about any report, semantic model, and Fabric data agent they have access to. This experience is different from the Copilot pane, which only answers questions about the report you currently have open. The standalone Copilot experience is also available in preview in the [Power BI mobile apps](../consumer/mobile/mobile-standalone-copilot.md).
 
-The first entry point is Copilot icon on the left navigation bar. 
+The first entry point is the **Copilot** icon in the left navigation bar. The **Copilot** icon can be moved or unpinned like other items.
 
 :::image type="content" source="media/copilot-introduction/copilot-standalone-screen.png" alt-text="Screenshot of the standalone Copilot experience in Power BI, showing a chat interface for interacting with data." lightbox="media/copilot-introduction/copilot-standalone-screen.png":::
 
