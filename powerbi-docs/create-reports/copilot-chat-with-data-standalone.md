@@ -26,7 +26,7 @@ The first entry point is the **Copilot** icon in the left navigation bar. The **
 
 The second entry point is on the Power BI Home page. This entry point appears automatically when the standalone Copilot is enabled by your tenant admin and there's a valid Copilot capacity available. If you prefer the classic view, you can switch back to **Recommended content** using the picker at the top of the Home page. 
 
-:::image type="content" source="media/copilot-introduction/standalone-on-home.png" alt-text="Screenshot of the standalone Copilot experience in Power BI home page." lightbox="media/copilot-introduction/standalone-on-home.png":::
+:::image type="content" source="media/copilot-introduction/standalone-home-page.png" alt-text="Screenshot of the standalone Copilot experience in Power BI home page with the page layout picker highlighted." lightbox="media/copilot-introduction/standalone-home-page.png":::
 
 > [!NOTE]
 > **Admins need to turn on the tenant setting:** To try it out, admins need to [enable Copilot in Power BI](copilot-enable-power-bi.md), and additionally enable the following new tenant setting: Users can access a standalone, cross-item Power BI Copilot experience.
