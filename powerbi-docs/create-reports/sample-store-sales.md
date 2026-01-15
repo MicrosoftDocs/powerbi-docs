@@ -7,6 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---

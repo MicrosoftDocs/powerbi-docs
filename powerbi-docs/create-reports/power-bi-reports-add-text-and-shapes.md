@@ -1,6 +1,6 @@
 ---
-title: Add text, shapes, and smart narrative visuals to reports
-description: Learn how to add and create text boxes, shapes, and smart narrative visuals to reports in Power BI Desktop or the Power BI service.
+title: Add Text Boxes, Shapes, and Smart Narratives to Power BI Reports
+description: Learn how to add text boxes, shapes, and smart narratives to Power BI reports. Discover formatting options and AI-powered text summaries.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,7 +8,8 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/21/2025
+ms.date: 01/12/2026
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn how to add text and shapes to my reports so that I can enhance the visual presentation and clarity of my data.
 ---
@@ -56,14 +57,21 @@ This procedure uses the [Retail Analysis sample](sample-retail-analysis.md) avai
 
 ## Add dynamic values to a text box
 
-You can display dynamic measure values in text boxes rather than just static text. This feature is particularly useful when you want to show key metrics with custom formatting alongside other report content.
+You can display dynamic measure values in text boxes rather than just static text. This feature is particularly useful when you want to show key metrics with custom formatting alongside other report content. In the Format pane, you access this functionality through the **Values** section (also referred to as the value part of a text box).
 
 To add a dynamic measure value to a text box:
 
 1. Select the text box in your report.
-1. In the **Format** pane, under **Values**, select the field button (fx icon).
-1. Choose the measure you want to display.
+1. In the **Visualizations** pane, select the **Format** icon (paint roller).
+1. Expand the **General** section if it's not already expanded.
+1. Locate the **Values** section. Select the field button (fx icon) next to **Values**.
+1. In the field selector that appears, choose the measure you want to display.
 1. The text box displays the measure value, which updates dynamically based on your report filters and slicers.
+
+For information about using measures with dynamic format strings in text boxes, see [Use the value part of a text box](desktop-dynamic-format-strings.md#use-the-value-part-of-a-text-box).
+
+> [!NOTE]
+> When you add a value to a text box, any typed text in the text box is removed. Text boxes can display either typed text or a measure value, but not both simultaneously. To display a label with a value, consider using multiple text boxes or a card visual.
 
 ### Format dynamic values
 
@@ -95,7 +103,7 @@ You can add shapes to Power BI reports with various formatting options and styli
 
 ---
 
-1. From the dropdown menu, select a shape to add it to your report canvas. In the **Format** pane, customize the shape to suit your needs. For this example, the arrow is rotated 45 degrees and formatted to include text and a shadow.
+1. From the dropdown menu, select a shape to add it to your report canvas. In the **Format** pane, customize the shape to suit your needs. In this example, the arrow is rotated 45 degrees and formatted to include text and a shadow.
 
    :::image type="content" source="media/power-bi-reports-add-text-and-shapes/power-bi-arrow.png" alt-text="Screenshot of an arrow shape that is formatted by adding text, shadow, and rotation.":::
 
@@ -119,7 +127,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 1. You can format it as you would any other text box. The smart narrative underlines values found in the data.
 
-Read more about [smart narratives](../visuals/power-bi-visualization-smart-narrative.md).
+For more information, see [smart narratives](../visuals/power-bi-visualization-smart-narrative.md).
 
 ## Related content
 
