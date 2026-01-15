@@ -11,6 +11,7 @@ LocalizationGroup: Create reports
 no-loc: [Copilot]
 ai-usage: ai-assisted
 ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 ---
 
 # Overview of Copilot for Power BI

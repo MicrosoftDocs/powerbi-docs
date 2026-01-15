@@ -83,6 +83,10 @@
               "transform-model/**/*.md": "pbi-transform-model",
               "troubleshoot/**/*.md": "*",
               "visuals/**/*.md": "pbi-visuals"
+          },
+          "ms.update-cycle": {
+              "paginated-reports/**/*.md": "1095-days",
+              "report-server/**/*.md": "1095-days"
           }
     },
     "template": [],
