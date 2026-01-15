@@ -8,6 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.date: 12/01/2025
 LocalizationGroup: Samples
 ai-usage: ai-assisted

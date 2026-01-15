@@ -8,6 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
+ms.update-cycle: 1095-days
 ms.date: 10/01/2025
 LocalizationGroup: Samples
 ---

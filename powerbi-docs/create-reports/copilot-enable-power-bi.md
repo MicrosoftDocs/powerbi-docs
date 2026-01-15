@@ -11,6 +11,7 @@ ms.date: 10/01/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 #customer intent: As a Power BI user, I want to learn how to enable Fabric Copilot for Power BI to use Copilot in the service and desktop.
 ---
 

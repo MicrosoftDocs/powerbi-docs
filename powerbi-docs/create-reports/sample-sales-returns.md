@@ -8,6 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.date: 09/11/2025
 LocalizationGroup: Samples
 #customer intent: As a Power BI customer, I want to learn about the Sales and Returns sample report in Power BI.
