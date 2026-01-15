@@ -261,15 +261,15 @@ stages:
    - Create a new Azure Resource Manager service connection
    - Use the service principal credentials
    - Update the `azureSubscription` value in the YAML to match your service connection name
-4. **Create a new pipeline** in Azure DevOps:
+4. **Update the workspace IDs in the YAML**:
+   - Edit the `workspace_ids` variable in azure-pipelines.yml in your repository
+   - Set your dev and prod workspace IDs
+   - Commit and push the changes to source control
+5. **Create a new pipeline** in Azure DevOps:
    - Go to Pipelines > New pipeline
    - Select your repository and choose "Existing Azure Pipelines YAML file"
    - Select azure-pipelines.yml
-5. **Update the workspace IDs in the YAML**:
-   - Edit the `workspace_ids` variable in azure-pipelines.yml
-   - Set your dev and prod workspace IDs
-   - The pipeline automatically selects the correct workspace based on the branch that triggered it
-6. **Save and run the pipeline** to deploy your PBIP to Fabric
+   - Save and run the pipeline to deploy your PBIP to Fabric
 
 ## GitHub Actions automation
 
@@ -356,10 +356,9 @@ jobs:
    - Add `AZURE_CREDENTIALS` with the JSON above
 
 4. **Update the workspace IDs in the workflow**:
-   - Edit the `workspace_ids` hashtable in the "Set workspace variables" step
+   - Edit the `workspace_ids` hashtable in the "Set workspace variables" step in `.github/workflows/deploy.yml`
    - Set your dev and prod workspace IDs
-   - The workflow automatically selects the correct workspace based on the branch that triggered it
-5. **Commit the workflow YAML** to your repository
+   - Commit and push the workflow YAML to your repository
 
 ## Related content
 
