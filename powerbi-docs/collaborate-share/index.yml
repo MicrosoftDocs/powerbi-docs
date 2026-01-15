@@ -10,6 +10,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-collaborate-share
   ms.topic: landing-page # Required
+  ms.update-cycle: 1095-days
   ms.collection: collection
   author: JulCsc
   ms.author: juliacawthra

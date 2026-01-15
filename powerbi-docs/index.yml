@@ -12,6 +12,7 @@ metadata:
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: powerbi-service
   ms.topic: hub-page # Required
+  ms.update-cycle: 1095-days
   ms.collection: collection
   author: JulCsc #Required; your GitHub user alias, with correct capitalization.
   ms.author: juliacawthra #Required; microsoft alias of author; optional team alias.
@@ -54,7 +55,7 @@ highlightedContent:
     # Card
     - title: Row-level security (RLS) in Power BI
       itemType: get-started
-      url: enterprise/service-admin-rls.md
+      url: /fabric/security/service-admin-row-level-security
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -191,13 +192,13 @@ conceptualContent:
         # Card
         - title: Enterprise
           links:
-            - url: enterprise/service-admin-licensing-organization.md
+            - url: /fabric/enterprise/powerbi/service-admin-licensing-organization
               itemType: overview
               text: Licensing for users in your organization
-            - url: enterprise/service-admin-power-bi-security.md
+            - url: /fabric/enterprise/powerbi/service-admin-power-bi-security
               itemType: concept
               text: Security
-            - url: enterprise/service-security-data-protection-overview.md
+            - url: /fabric/enterprise/powerbi/service-security-data-protection-overview
               itemType: concept
               text: Data protection
           # footerLink (optional)
@@ -207,10 +208,10 @@ conceptualContent:
         # Card
         - title: Administer Power BI
           links:
-            - url: admin/service-admin-administering-power-bi-in-your-organization.md
+            - url: /fabric/admin/microsoft-fabric-admin
               itemType: overview
               text: What is Power BI administration?
-            - url: admin/service-admin-portal.md
+            - url: /fabric/admin/admin-center
               itemType: how-to-guide
               text: Admin portal settings
             - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
@@ -289,7 +290,7 @@ conceptualContent:
         # Card
         - title: Troubleshooting
           links:
-            - url: troubleshoot/known-issues/power-bi-known-issues.md
+            - url: /fabric/get-started/fabric-known-issues
               itemType: overview
               text: Known issues for Fabric and Power BI features
             - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
