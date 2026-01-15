@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 01/14/2026
 ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
@@ -56,17 +56,26 @@ Use the zoom controls in your browser to increase or decrease the available canv
 
 ## Zoom in on a visual
 
-Sometimes it's difficult to see the details in a visual. You can focus on one visual by itself to make it bigger by using Focus mode. For more information, see [Focus mode and Full screen mode](end-user-focus.md).
+To examine a single visual in more detail, use **focus mode** or **full screen mode**.
 
-The following example shows a visual in Focus mode.
+### Focus mode
+
+Focus mode expands a visual to fill the canvas while keeping the Filters pane accessible. Hover over a visual and select the **Focus mode** icon, or select **More options (...)** > **Open in focus mode** on dashboard tiles.
 
 :::image type="content" source="media/end-user-report-view/power-bi-focus-mode.png" alt-text="A screenshot of a visual open in focus mode.":::
 
-The next example shows a visual in Full screen mode.
+In focus mode, you can view and modify filters to explore your data. Filter changes are saved automatically for report visuals (select **Reset to default** to discard), but not for dashboard tiles. For report visuals, all filter levels are available (Visual, Page, Drillthrough, and Report). For dashboard tiles, only Visual level filters are available.
+
+To exit, select **Exit focus mode** or **Back to report**.
+
+### Full screen mode
+
+Full screen mode removes all UI elements for presentations or kiosk displays. Select **View** > **Full screen** for reports, or the full screen icon for dashboards. To view a single visual in full screen, open it in focus mode first.
 
 :::image type="content" source="media/end-user-report-view/power-bi-visual-full-screen.png" alt-text="A screenshot of a visual open in full screen mode.":::
 
+Move your cursor to display navigation options at the bottom of the screen, including **Fit to page**, **Fit to width**, and page navigation arrows.
+
 ## Related content
 
-- [Compare focus mode and full screen mode](end-user-focus.md)
 - [Take a tour of the report Filters pane](end-user-report-filter.md)

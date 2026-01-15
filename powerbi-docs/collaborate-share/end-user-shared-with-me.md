@@ -1,6 +1,6 @@
 ---
-title: Display the dashboards and reports that others share with me
-description: Learn how to interact with the reports and dashboards that other Power BI users share with you.
+title: View Shared Dashboards and Reports in Power BI
+description: Learn how to view and interact with shared Power BI dashboards and reports. Discover how to access content from Shared with me, email links, and apps.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra
@@ -8,17 +8,18 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: product-power-bi, See content that others have shared with me
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 01/12/2026
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 
-# Display the dashboards and reports that others share with me
+# View shared dashboards and reports in Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Your colleagues create apps, reports, dashboards, scorecards, workspaces, and semantic models. When it comes time to share them with you or to ask for your collaboration, there are several ways that they can do this. In this article, we explain how to view and open content that others shared with you.
+Your colleagues create apps, reports, dashboards, scorecards, workspaces, and semantic models. When it's time to share these items with you or ask for your collaboration, they can use several methods. This article explains how to view and open content that others shared with you.
 
-:::image type="content" source="media/end-user-shared-with-me/power-bi-browses.png" alt-text="Screenshot showing the Shared with me item in the Browse menu.":::
+:::image type="content" source="media/end-user-shared-with-me/power-bi-browses.png" alt-text="Screenshot of the Shared with me item in the Browse menu.":::
 
 ## Interact with shared content
 
@@ -26,20 +27,20 @@ You have options for interacting with the shared dashboards and reports, dependi
 
 ## Licenses for viewing shared content
 
-To view content that others have shared with you, there are two options.
+To view content that others share with you, choose from two options.
 
-- **The content *isn't* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view shared content.
-- **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying semantic models. For more information, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+- **The content isn't in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view shared content.
+- **The content is in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports or create reports based on the underlying semantic models. For more information, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 
 ## View and open content from your *Shared with me* tab
 
-Content that was directly shared with you appears in your **Shared with me** tab. A link to shared content is sent to you in an email link or the *creator* or *owner* automatically installs it for you. To display the list, from the nav pane, select **Browse > Shared with me**. Scroll through **Shared with me** to see reports, dashboards, and scorecards.
+Content that others directly share with you appears in your **Shared with me** tab. You receive a link to shared content in an email link. The *creator* or *owner* can also automatically install the shared content for you. To display the list, select **Browse > Shared with me** from the nav pane. Scroll through **Shared with me** to see reports, dashboards, and scorecards.
 
 :::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list.png" alt-text="Screenshot of the nav pane, browse menu, and Shared with me window.":::
 
 From this list, you can [favorite](../consumer/end-user-favorite.md) and open content.
 
-If your **Shared with me** content list gets long, there are several options for finding what you need. Sort by one of the columns (1), use the keyword filter field (2), or use the Filters pane (3). To open the Filters pane, select **Filters** from the upper right corner.
+If your **Shared with me** content list gets long, use several options to find what you need. Sort by one of the columns (1), use the keyword filter field (2), or use the Filters pane (3). To open the Filters pane, select **Filters** from the upper right corner.
 
 :::image type="content" source="./media/end-user-shared-with-me/power-bi-shared-list-filters.png" alt-text="Screenshot of the options type, filter by keyword, and filter highlighted on the Shared with me window.":::
 
@@ -51,13 +52,13 @@ When designers create or update content, they often share that content in an ema
 
 ## View and open content from your *Apps* tab
 
-Apps that were directly shared with you and apps that you downloaded appear in your **Apps** tab. You receive these apps in one of the following ways:
+Your **Apps** tab shows apps that others share directly with you and apps you download. You get these apps in one of the following ways:
 
-- You received the app as a link in an email, and you selected the link.
-- The app *creator* or *owner* automatically installed the app for you.
-- You installed the app from [AppSource](../consumer/end-user-apps.md#get-a-new-app).
+1. You receive the app as a link in an email, and you select the link.
+1. The app *creator* or *owner* automatically installs the app for you.
+1. You install the app from [AppSource](../consumer/end-user-apps.md#get-a-new-app).
 
-Scroll through **Apps** to see reports, dashboards, and scorecards. To display the list, from the nav pane, select the **Apps** icon.
+Scroll through **Apps** to see reports, dashboards, and scorecards. To display the list, select the **Apps** icon from the nav pane.
 
 :::image type="content" source="media/end-user-shared-with-me/power-bi-app.png" alt-text="Screenshot of the Apps icon highlighted in the nav panel and apps listed in the main pane.":::
 
@@ -65,7 +66,7 @@ For more information, see [Apps in Power BI](../consumer/end-user-apps.md).
 
 ## Collaborate on content in a *workspace*
 
-One way that *creators* can share with you is by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role assigned to you: Viewer, Contributor, Member, Admin.
+*Creators* can share content by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role assigned to you: Viewer, Contributor, Member, or Admin.
 
 ## Related content
 
