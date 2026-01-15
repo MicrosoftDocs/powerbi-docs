@@ -173,7 +173,7 @@ If you're not sure whether your visual or report is too busy, test that by doing
 
 Ensure your reports have enough contrast between text and any background colors. WCAG 2.1 success criterion 1.4.3 states that text and background color should have a contrast ratio of at least 4.5:1. Use tools such as [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/), and [Accessible Colors](https://accessible-colors.com/) to check your report colors.
 
-Consider that some report viewers might have difficulty with color. Tools like [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) and [Vischeck](https://www.vischeck.com/vischeck/vischeckImage.php) simulate what report viewers with different visual abilities see. Using fewer colors or a monochrome palette in your report can help make your reports more accessible.
+Consider that some report viewers might have difficulty with color. Tools like [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) and [Vischeck](https://www.vischeck.com) simulate what report viewers with different visual abilities see. Using fewer colors or a monochrome palette in your report can help make your reports more accessible.
 
 Certain color combinations can be difficult for users to distinguish. These combinations include the following:
 
