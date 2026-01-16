@@ -10,10 +10,11 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
+  ms.update-cycle: 1095-days
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 09/24/2025
+  ms.date: 01/15/2026
 
 landingContent:
 
