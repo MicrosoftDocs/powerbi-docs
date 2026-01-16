@@ -380,8 +380,5 @@ Org app consumers without permissions to edit the org app can view, favorite, an
 ## Considerations and limitations
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
-
-- The app doesn't save filters that you set on a report page when you move from one page to another in a single report.
-- The app doesn't save filters that you set on a report item when you go to another item in the org app and then return to the previous report item.
-- The app doesn't offer reset to default for report items.
-- The app doesn't offer some report toolbar capabilities, like bookmarks.
+- Org apps do not support all report toolbar capabilities available in workspace apps, such as subscriptions, bookmarks, and comments.
+- In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
