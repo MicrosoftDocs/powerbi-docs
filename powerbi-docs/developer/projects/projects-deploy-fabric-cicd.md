@@ -256,10 +256,14 @@ stages:
    - Open Fabric portal and navigate to your workspace
    - Go to Workspace Settings > Manage access
    - Add the service principal with Contributor or Admin role
+
+> [!NOTE]
+> Service principals must be enabled at the tenant level to use Fabric APIs. For more information, see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
+
 3. **Create an Azure service connection** in Azure DevOps project settings:
    - Go to Project Settings > Service connections
-   - Create a new Azure Resource Manager service connection
-   - Use the service principal credentials
+   - Create a new Azure Resource Manager service connection using your service principal credentials
+   - For detailed instructions, see [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure)
    - Update the `azureSubscription` value in the YAML to match your service connection name
 4. **Update the workspace IDs in the YAML**:
    - Edit the `workspace_ids` variable in azure-pipelines.yml in your repository
@@ -269,6 +273,7 @@ stages:
    - Go to Pipelines > New pipeline
    - Select your repository and choose "Existing Azure Pipelines YAML file"
    - Select azure-pipelines.yml
+   - For detailed instructions, see [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
    - Save and run the pipeline to deploy your PBIP to Fabric
 
 ## GitHub Actions automation
@@ -342,6 +347,10 @@ jobs:
    - Open Fabric portal and navigate to your workspace
    - Go to Workspace Settings > Manage access
    - Add the service principal with Contributor or Admin role
+
+> [!NOTE]
+> Service principals must be enabled at the tenant level to use Fabric APIs. For more information, see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
+
 3. **Create the Azure credentials secret**:
    - Get your service principal credentials in JSON format:
      ```json
