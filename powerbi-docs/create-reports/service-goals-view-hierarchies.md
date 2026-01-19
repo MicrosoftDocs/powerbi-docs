@@ -16,6 +16,8 @@ ms.custom: intro-get-started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+
+
 Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can view and interact with hierarchies in scorecards two different ways.
 
 - [Scorecard list view](#scorecard-list-view)

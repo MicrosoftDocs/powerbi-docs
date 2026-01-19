@@ -18,6 +18,8 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+
+
 Metrics support cascading scorecards that roll up along hierarchies you set up of goals in your scorecard. Here are three useful scenarios where cascading scorecards provide an elegant, large-scale, and efficient solution:
 
 - Scenario 1: [Measuring organizational health across teams](#scenario-1-measuring-organizational-health-across-teams)
