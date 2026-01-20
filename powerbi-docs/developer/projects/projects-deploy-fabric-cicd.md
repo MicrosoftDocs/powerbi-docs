@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 1/20/2026
+ms.date: 01/20/2026
 ---
 
 # Deploy Power BI projects (PBIP) using fabric-cicd
@@ -15,13 +15,13 @@ ms.date: 1/20/2026
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is a Python library developed by Microsoft that provides a code-first method for developers to deploy Power BI Desktop project (PBIP) files from source control to Fabric workspaces.
+[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is a Python library developed by Microsoft that provides a code-first method for Fabric developers to deploy Fabric items from source control to workspaces using their code definition format, such as semantic models and reports using the PBIP file format.
 
 In this article, you learn how to:
 
 * Deploy PBIP files manually from your local machine
-* Automate deployments using Azure DevOps pipelines with branch-based workspace targeting
-* Automate deployments using GitHub Actions workflows with branch-based workspace targeting
+* Parameterize PBIP files for environment-specific configurations
+* Automate deployments with branch-based workspace targeting using Azure DevOps or GitHub Actions
 
 Learn more about PBIP format in [Power BI Desktop projects (PBIP)](./projects-overview.md) and [Fabric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
 
@@ -33,6 +33,7 @@ fabric-cicd is specifically designed for deploying source-controlled Fabric arti
 * **Python-native** - Seamless integration with modern Python-based DevOps workflows
 * **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
 * **Developer-friendly**: Simple Python scripts that can run locally or in CI/CD pipelines
+* **Flexible deployment control**: Deploy only specific item types, i.e., semantic models without reports, and ensure consistent configurations like default pages or parameters without manual intervention
 * **Orphan cleanup**: Automatically removes items from workspace that no longer exist in source control
 * **Reliable authentication**: Uses Azure Identity SDK with multiple authentication options
 
@@ -175,9 +176,46 @@ When you run `python deploy.py --workspace_id "11111111-1111-1111-1111-111111111
 3. Replaces them with the corresponding environment-specific `replace_value`
 4. Deploys the modified definitions to the target workspace
 
-## Azure DevOps automation
+## Automate deployment
 
-Automate PBIP deployments with Azure Pipelines. This example shows how to deploy to different workspaces based on the branch.
+You can automate PBIP deployments to run whenever code is merged into specific branches in your repository. The automation follows this logic:
+
+1. A pipeline or workflow triggers when code is pushed to a configured branch (e.g., `dev` or `main`)
+2. The branch name determines the target environment and workspace ID
+3. The deployment script runs automatically with the appropriate parameters
+4. Your PBIP artifacts deploy to the correct workspace for that environment
+
+This section covers setup steps common to both Azure DevOps and GitHub Actions, followed by platform-specific configuration instructions.
+
+### Set up
+
+Before configuring your CI/CD platform, complete these common setup steps:
+
+#### 1. Create a service principal
+
+Create a service principal in Azure AD with Contributor or Admin role on your Fabric workspaces.
+
+#### 2. Add service principal to Fabric workspaces
+
+1. Open Fabric portal and navigate to each target workspace (dev, prod)
+2. Go to Workspace Settings > Manage access
+3. Add the service principal with Contributor or Admin role
+
+> [!NOTE]
+> Service principals must be enabled at the tenant level to use Fabric APIs. For more information, see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
+
+#### 3. Configure branches in your repository
+
+Create the branches you'll use for automation. For the examples in this article:
+
+1. Create a `dev` branch for development environment deployments
+2. Create a `main` branch for production environment deployments
+
+You can customize branch names and add more environments by modifying the workspace mappings in the YAML files.
+
+### Azure DevOps
+
+Automate PBIP deployments with Azure Pipelines. When code is pushed to configured branches, the pipeline automatically deploys to the corresponding workspace.
 
 Create `azure-pipelines.yml` in your repository root:
 
@@ -242,36 +280,27 @@ stages:
                 }
 ```
 
-### Set up Azure DevOps
+#### Configure Azure DevOps
 
-1. **Create a service principal** in Azure AD with Contributor or Admin role on your Fabric workspaces
-2. **Add the service principal to your Fabric workspace**:
-   - Open Fabric portal and navigate to your workspace
-   - Go to Workspace Settings > Manage access
-   - Add the service principal with Contributor or Admin role
-
-> [!NOTE]
-> Service principals must be enabled at the tenant level to use Fabric APIs. For more information, see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
-
-3. **Create an Azure service connection** in Azure DevOps project settings:
+1. **Create an Azure service connection** in Azure DevOps project settings:
    - Go to Project Settings > Service connections
    - Create a new Azure Resource Manager service connection using your service principal credentials
    - For detailed instructions, see [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure)
    - Update the `azureSubscription` value in the YAML to match your service connection name
-4. **Update the workspace IDs in the YAML**:
-   - Edit the `workspace_ids` variable in azure-pipelines.yml in your repository
+2. **Update the workspace IDs in the YAML**:
+   - Edit the `workspace_ids` variable in azure-pipelines.yml
    - Set your dev and prod workspace IDs
-   - Commit and push the changes to source control
-5. **Create a new pipeline** in Azure DevOps:
+   - Commit and push the changes to your repository
+3. **Create the pipeline**:
    - Go to Pipelines > New pipeline
    - Select your repository and choose "Existing Azure Pipelines YAML file"
    - Select azure-pipelines.yml
    - For detailed instructions, see [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
    - Save and run the pipeline to deploy your PBIP to Fabric
 
-## GitHub Actions automation
+### GitHub Actions
 
-Automate PBIP deployments with GitHub Actions. This example shows how to deploy to different workspaces based on the branch.
+Automate PBIP deployments with GitHub Actions. When code is pushed to configured branches, the workflow automatically deploys to the corresponding workspace.
 
 Create `.github/workflows/deploy.yml` in your repository:
 
@@ -333,18 +362,9 @@ jobs:
           }
 ```
 
-### Set up GitHub Actions
+#### Configure GitHub Actions
 
-1. **Create a service principal** in Azure AD with Contributor or Admin role on your Fabric workspaces
-2. **Add the service principal to your Fabric workspace**:
-   - Open Fabric portal and navigate to your workspace
-   - Go to Workspace Settings > Manage access
-   - Add the service principal with Contributor or Admin role
-
-> [!NOTE]
-> Service principals must be enabled at the tenant level to use Fabric APIs. For more information, see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
-
-3. **Create the Azure credentials secret**:
+1. **Create the Azure credentials secret**:
    - Get your service principal credentials in JSON format:
      ```json
      {
@@ -357,7 +377,7 @@ jobs:
    - Go to GitHub repository Settings > Secrets and variables > Actions
    - Add `AZURE_CREDENTIALS` with the JSON above
 
-4. **Update the workspace IDs in the workflow**:
+2. **Update the workspace IDs in the workflow**:
    - Edit the `workspace_ids` hashtable in the "Set workspace variables" step in `.github/workflows/deploy.yml`
    - Set your dev and prod workspace IDs
    - Commit and push the workflow YAML to your repository
