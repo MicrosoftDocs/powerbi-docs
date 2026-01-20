@@ -36,6 +36,9 @@ fabric-cicd is specifically designed for deploying source-controlled Fabric arti
 * **Orphan cleanup**: Automatically removes items from workspace that no longer exist in source control
 * **Reliable authentication**: Uses Azure Identity SDK with multiple authentication options
 
+> [!NOTE]
+> For complete documentation, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
+
 ## Prerequisites
 
 Before you begin, ensure you have:
@@ -171,16 +174,6 @@ When you run `python deploy.py --workspace_id "11111111-1111-1111-1111-111111111
 2. Finds all instances of `find_value` in your PBIP definition files
 3. Replaces them with the corresponding environment-specific `replace_value`
 4. Deploys the modified definitions to the target workspace
-
-## Other advanced features
-
-fabric-cicd offers additional advanced features:
-
-* **Orphan cleanup**: Automatically remove items from the workspace that no longer exist in source control
-* **Multiple authentication methods**: Support for Azure CLI, managed identity, and service principal authentication
-* **Configuration-based deployment**: Define all deployment settings in a single YAML configuration file instead of Python code
-
-For complete documentation, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
 
 ## Azure DevOps automation
 
