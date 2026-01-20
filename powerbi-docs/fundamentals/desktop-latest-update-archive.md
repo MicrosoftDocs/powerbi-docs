@@ -20,15 +20,13 @@ This article describes previous updates to **Power BI Desktop** and the **Power 
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
-## November/December 2025 update
+## November 2025 update
 
 The November 2025 Power BI feature update brings several important announcements and enhancements across the platform. Key highlights include the deprecation of R and Python visuals in the "Embed for your customers" solution, significant updates to Copilot and AI capabilities—such as the standalone Copilot in Power BI mobile apps (preview) and improvements to Verified Answers—and new options for reporting, modeling, and data connectivity. There are also advancements in report visuals, with features like automatically expanding matrix columns and a generally available Card visual.
 
 For a quick summary of the November features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI November 2025 Feature Summary blog post](https://aka.ms/powerbinov2025update). You can also watch the [November demos](https://youtu.be/pRFeQWzUhn0).
 
 > **Download** the [November 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-11_x64.exe).
-
-> **Download** the [December 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-12_x64.exe).
 
 To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
 
