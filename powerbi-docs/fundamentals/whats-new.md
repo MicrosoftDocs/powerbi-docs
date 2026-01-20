@@ -60,7 +60,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
 | Updates on Editing Semantic Models in the Power BI Service | Models configured with incremental refresh can now be opened and edited in the Power BI Service. Note that you can't download these models as PBIX files, and Power Query editor isn't available for web editing. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
-| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. For more information, see [Database element (TMSL)](/analysis-services/tabular-models-scripting-language-objects/database-object-tmsl). |        |
+| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. |        |
 
 ## Developers and APIs
 
