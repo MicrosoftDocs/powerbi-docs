@@ -1,6 +1,6 @@
 ---
-title: See What's New in the November 2025 Power BI Update
-description: "Discover the November 2025 Power BI update: new features, Copilot improvements, and reporting enhancements. Learn what's new and get started today."
+title: See What's New in the January 2026 Power BI Update
+description: "Discover the January 2026 Power BI update: enhanced Copilot features, improved reporting capabilities, and new visualization options. Learn what's new and get started today."
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,77 +8,71 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: intro-whats-new
 ms.topic: concept-article
-ms.date: 11/18/2025
+ms.date: 1/20/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
-# What's new in Power BI: November 2025 update
+# What's new in Power BI: January 2026 update
 
-The November 2025 Power BI feature update brings several important announcements and enhancements across the platform. Key highlights include the deprecation of R and Python visuals in the "Embed for your customers" solution, significant updates to Copilot and AI capabilities—such as the standalone Copilot in Power BI mobile apps (preview) and improvements to Verified Answers—and new options for reporting, modeling, and data connectivity. There are also advancements in report visuals, with features like automatically expanding matrix columns and a generally available Card visual.
+The January 2026 Power BI feature update delivers powerful enhancements across the platform. Key highlights include improved Copilot capabilities with attaching reports and semantic models to chat, enhanced color picker and format pane improvements, modern visual tooltips now generally available, and markers in Azure Maps Visual. There are also important updates to semantic model editing, GB18030-2022 character set support, and the PBIR report format becoming the default.
 
-For a quick summary of the November features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI November 2025 Feature Summary blog post](https://aka.ms/powerbinov2025update). You can also watch the [November demos](https://youtu.be/pRFeQWzUhn0).
+For a quick summary of the January features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI January 2026 Feature Summary blog post](https://aka.ms/powerbijan2026update). You can also watch the [January demos](https://youtu.be/xYNx4a3aRZQ).
 
-> **Download** the [November 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [January 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
 
 ## Events and announcements
 
-- **Fabric Data Days**: Two months of learning, contests, live sessions, and community connection start November 4. See the [full schedule](https://aka.ms/fabricdatadays).
-- **FabCon**: March 16–20, 2026, Atlanta, GA. This community-led event includes keynotes, expert sessions, an expo hall, Power Hour, the Data Viz World Championship, and a party at the Georgia Aquarium. [Use code FABCOMM](https://aka.ms/fabcon) to get $200 off.
+- **Data Viz World Championships**: There's only one way to find out if you can be the world champion! By joining this global contest, you will have the opportunity to tackle three weekly challenges designed to stretch visualization skills and inspire innovation. Four finalists will be selected to compete for the title of world champion LIVE on stage at FabCon Atlanta.
+- **FabCon Americas 2026**: Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. The third annual FabCon Americas will feature sessions from your favorite Microsoft and community speakers, keynotes, more opportunities to Ask the Experts for 1:1 support, an engaging community lounge with opportunities to network and connect with your peers, a dedicated partner pre-day, a packed expo hall, attendee favorites Power Hour and the Data Viz World Championships live finals, and a can't-miss attendee party at the Georgia Aquarium. [Use code FABCOMM](https://aka.ms/fabcon) to get $200 off.
 
 ## General
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Announcing deprecation of R and Python visuals in "Embed for your customers" solution | In May 2026, Power BI is ending support for embedding reports and dashboards containing R or Python visuals using "Embed for your customers" (app owns data) and Publish to web scenarios. After this date, R or Python charts will display as blank. This doesn't affect "Embed for your organization" or "Secure embeddings to SharePoint, Website, or Portal." |        |
+| Deprecation of Power BI Q&A | Q&A, our legacy natural language tool, will be deprecated in December 2026. Moving forward, use Power BI Copilot, which provides a more advanced and integrated solution for querying data with natural language. |        |
+| SQL Server Reporting Services (SSRS) Report Viewer Web Part Support Discontinuation | Support for SSRS SharePoint Webpart, a component that allows you to embed on-premises paginated reports directly into SharePoint Server pages, will end on April 13, 2026. While the download will continue to be available, technical support will no longer be provided. |        |
+| The Power BI application is accessible within Teams for Microsoft 365 Operated by 21Vianet | Users can acquire the Power BI app from the app store, or admins can centrally install it for them. Once added, users can view their Power BI content in Teams by using the app, and pin Power BI items to Teams channels and chats. Note that certain features aren't supported in the Power BI app for Teams operated by 21Vianet environments. For more information, refer to the service description of [Power BI operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud). |        |
 
 ## Copilot and AI
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Ask anything, anywhere with Standalone Copilot in Power BI mobile apps | New standalone Copilot experience on mobile homepage with complete chat capabilities. Ask questions, get instant insights, and interact with generated visuals with citations. iOS apps support dictation for voice interaction. Requires activity linked to Fabric capacity. Semantic models must be [prepared for AI](../create-reports/copilot-prepare-data-ai.md); the mobile experience surfaces clear warnings when models aren't prepared. | ✔️ |
-| Updates to the standalone Copilot in Power BI | Copilot now automatically selects data sources when there's a strong match, eliminating the need to choose from a list. New entry points on the home page, suggested prompts for recently opened items, and improved experience for attaching items to questions. |          |
-| Improvements to the Report Copilot | Upgraded Report Copilot with better visual recommendations, expanded visual library, and improved context awareness. Creates entire report pages in seconds with more accurate and insightful results. Available in Power BI service and Desktop. |          |
-| Improvements to Verified Answers | Verified answers now inherit the entire visual state including slicers, cross-filters, and drill-through filters. Filter limit increased from 3 to 10 permutations. New card visual and Azure maps now supported. Improved filtering reliability. |          |
-| Remote Power BI Model Context Protocol Server for chat with your Data | Remote MCP server provides agents and MCP clients with tools to chat with data remotely, authenticated with Microsoft Entra ID. Includes tools for getting semantic model schema, generating DAX queries, and executing queries. | ✔️ |
+| Attach reference to Copilot chat in the Power BI mobile app | Attach a report or semantic model to Copilot chat as a grounded reference. To add a reference, tap the + icon or type / to search and select your desired item. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
+| Updating Prepped for AI setting name to Approved for Copilot | The setting to mark a model as prepped for AI is renamed to better reflect its purpose and functionality. For more information, see [Update your semantic model to work with Copilot](../create-reports/copilot-evaluate-data.md#update-your-semantic-model-to-work-with-copilot). |          |
+| Standalone Copilot Access on Power BI Home | New standalone Copilot entry point on the Power BI Home page for faster access to insights. You can switch back to Recommended content using the picker at the top of the Home page. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
 
 ## Reporting
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Automatically expand matrix columns to fill available space | Matrix visual now supports the **Grow to fit** option, distributing extra space evenly across columns when total column width is smaller than the visual container. Horizontal scrollbar behavior corrected. |        |
-| Card visual | **Now generally available** with support for hero images, dynamic collage layout, customizable display order for callout area/reference label/hero image, and consistent formatting controls across visuals. Images can be uploaded, provided via URL, or selected from dataset. This release also includes improvements to callout image alignment, background image fit, and reference label padding, plus an Autogrid behavior that prevents empty columns in collage layouts. Includes updated default styling and a consistent modern formatting experience across visuals. The legacy Card visual remains available. |        |
-| Enhancing Image visuals with styling, states, and more | Image visual now supports state-based formatting (All, Default, Hover, Pressed) and rich styling controls including background, border, shape, and effects. Expanded image sources (URL, data column, upload) and fit options (Fit, Fill, Center, Stretch). |        |
-| OneLake Catalog now supports user data functions for Translytical task flows | Fabric user data function selection improved with OneLake catalog. Browse, search, view details, and filter by My Functions or Endorsed in your org. Available when selecting functions for Data function actions. | ✔️ |
+| Field parameters persist hierarchy level setting | New report-level setting to restore pre-July 2025 behavior for field parameters' expansion and collapse of hierarchy levels. By default, hierarchy levels remain persistent, but you can turn off this feature. For more information, see [Let report readers use field parameters to change visuals](../create-reports/power-bi-field-parameters.md). |        |
+| Format Pane Improvements | Enhanced color picker with reset to default and back button to return from custom colors to theme colors. Makes color customization more intuitive and efficient. Reset individual formatting groups without impacting the rest of the section or the whole visual with granular reset options. Provides finer control for report formatting. For more information, see [Get started formatting report visualizations](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md). |          |
+| Introducing Markers in Azure Maps Visual | New Markers capability for Azure Maps Visual allows customized icons, varying sizes, and advanced formatting features to improve narrative clarity in geospatial analysis. Available in the next few weeks. For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context). |        |
+| Modern Visual Tooltips (Generally Available) | **Now generally available**. Enhanced tooltips with drill actions footer for drilling down, up, or through data points directly from the tooltip. Automatically match report theme colors with customization options. For more information, see [Create Visual Tooltips](../create-reports/desktop-tooltips.md). |        |
+| Column Sizing Update in Tables and Matrices | Columns are now sized by default based on content they contain, making tables and matrices more compact and easier to read. You can still use **Grow to Fit** to expand columns when needed. For more information, see [Create a table visualization](../visuals/power-bi-visualization-tables.md) and [Create matrix visualizations](../visuals/power-bi-visualization-matrix-visual.md). |        |
 
 ## Modeling
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Power BI Modeling MCP Server | Local MCP server enables AI agents to interact with Power BI models using natural language. Build and modify semantic models, perform bulk operations, apply best practices, and leverage agentic workflows. Available as Visual Studio Code extension. | ✔️ |
-| Semantic Model Version History | **Now generally available**. Automatically captures up to five versions when opening models in Editing mode, publishing/uploading .pbix files, or restoring versions. Versions can be restored from Office-like history pane. |        |
-| TMDL Visual Studio Code Extension | **Now generally available** with DAX semantic highlighting, Power Query support, breadcrumb navigation, code actions, code formatting, and localization. Essential for working with TMDL documents in Power BI Projects. |        |
+| Updates on Editing Semantic Models in the Power BI Service | Models configured with incremental refresh can now be opened and edited in the Power BI Service. Note that you can't download these models as PBIX files, and Power Query editor isn't available for web editing. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
+| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. For more information, see [Database element (TMSL)](/analysis-services/tmsl/database-element-tmsl). |        |
 
-## Data connectivity
+## Developers and APIs
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Spark and Impala Connectors | Implementation 2.0 **now generally available**, powered by open-source Arrow Database Connectivity (ADBC) driver. Delivers faster, more secure connectivity with reduced overhead, memory safety, and seamless integration across Fabric and Power BI Desktop. |        |
+| Power BI Enhanced Report Format (PBIR) as Default Format | PBIR is activated by default in the Power BI service as part of a phased rollout (full availability by the end of February). The March release sets PBIR as the default in Power BI Desktop. General Availability is planned for Q3 2026. For more information, see [Power BI Project (PBIP) and Azure DevOps](../developer/projects/projects-azdo.md). | ✔️ |
 
 ## Visualizations
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Activity Gauge by Powerviz | Advanced visual for measuring progress against targets for multiple categories. Features gauge customization, targets, data colors with 7 schemes and 30+ palettes, smart labels, center circle customization, interactive mouseover, fill patterns, conditional formatting, ranking, annotation, and grid view. |          |
-| Decomposition Tree – All Expanding | Now allows adding a legend field that creates more column charts beside each node showing breakdown from another dimension. Supports images in nodes. |          |
-| Dynamic chart legends in Zebra BI Charts | Chart legends automatically adapt to selected filter or scenario, eliminating confusion from static labels. Useful for financial planning and analysis when comparing forecast versions, year-over-year analysis, and regional reporting. |          |
-| Drill Down Bubble PRO by ZoomCharts | Create visually impressive bubble charts with intuitive UI interactions. Features drill down through multi-level hierarchy, data-driven formatting with custom marker colors/shapes/images, trendlines, thresholds, and area shading. Includes free Developer License for Power BI Desktop. |          |
-| Power BI Theme Generator | Rebuilt and expanded BIBB Report Theme Generator helps teams standardize look-and-feel and meet accessibility baselines. Features smarter color engine with contrast checks, gradients creation, AI-powered themes, preset brand colors, apply theme through Fabric, font selection, live preview, and advanced BI.ST mode. |          |
-| Power Gantt Chart by Nova Silva | Now supports task dependencies with Finish-to-Start (FS) dependencies visualized as arrows connecting tasks. Enables true project scheduling capability to understand task sequences, identify bottlenecks, and manage timelines. |          |
-| Synoptic Panel by OKVIZ | Transform any SVG image into an interactive visual. Perfect for floor plans, organizational charts, technical layouts, or geographical maps. Features flexible image loading, multi-level navigation, dynamic switching, Map Editor and Label Designer, advanced coloring, map search, and integrated security. |          |
+| Funnel Chart by Powerviz | Power BI-certified visual with four chart types in one visual for tracking progress through stages. Features include funnel settings, seven color schemes with more than 30 palettes, conversion rate analysis, fill patterns, conditional formatting, ranking, annotation, and grid view. Useful for sales funnel analysis, marketing campaigns, user onboarding, and website traffic. [Try it free](https://appsource.microsoft.com/product/power-bi-visuals/WA200001448). |          |
 
 ## Resources
 
@@ -99,7 +93,7 @@ If your organization needs an earlier version, download it. Use the most recent 
 - If you load a report from a newer release, get a warning, and then save it in a previous version, you lose information related to new features.
 - Only English versions of Power BI Desktop are archived.
 
-> **Download** the [November 2025 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [January 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Past updates
 
