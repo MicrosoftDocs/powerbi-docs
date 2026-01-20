@@ -22,7 +22,7 @@ Format strings exist on three levels:
 
 -	**Model**. Set a format string for fields in the model or use a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) to format your measure. The format string applies anywhere you use that field, unless a visual or element level format string overrides it. 
 -	**Visual**. Set format strings on any column, measure, or visual calculation that is on your visual, even if they already had a format string. In that case, the visual level format string overrides the model level format string. If you change the aggregation on a field, which invalidates a previously set visual level format string, the format string is removed. Visual level format strings for fields persist for fields, but not for visual calculations. If you set a visual level format string on a field and then remove and readd that field to the same visual, the visual level format string is reinstated. In contrast, for a visual calculation, the format string isn't reinstated. 
--	**Element**. Set a format string for data labels and for specific elements of the new card and the new slicer visuals. This level will be expanded to include more in the future. Any format string you set here overrides the format string set on the visual and model level.
+-	**Element**. Set a format string for data labels and for specific elements of the new card and the new slicer visuals. Any format string you set here overrides the format string set on the visual and model level.
 
 These levels are hierarchical, with the model level as the lowest level and the element level as the highest. A format string defined on a column, measure, or visual calculation on a higher level overrides what was defined on a lower level. 
 
@@ -75,7 +75,7 @@ To create an element level format string, open the format pane and find the form
 Custom format strings follow the VBA style syntax, common to Excel and other Microsoft products, but they don't support all syntax used in other products.
 
 > [!NOTE]
-> Visual level format strings currently use **.NET** date/time and numeric format tokens (temporary limitation). This means casing matters (`M` = month, `m` = minute). Model- and element-level custom format strings use the VBA-style tokens documented in the following tables. This limitation is removed in a future release so all levels use a unified syntax.
+> Visual level format strings currently use **.NET** date/time and numeric format tokens (temporary limitation). This means casing matters (`M` = month, `m` = minute). Model- and element-level custom format strings use the VBA-style tokens documented in the following tables. This limitation will be removed in a future release so all levels use a unified syntax.
 
 ### Troubleshooting unexpected month or minute values
 
@@ -234,8 +234,6 @@ The following table identifies the predefined **named date and time formats**:
 | **Short Date** | Display a date using your system's short date format. |
 | **Long Time** | Display a time using your system's long time format; includes hours, minutes, seconds. |
 | **Short Time** | Display a time using the 24-hour format, for example, 17:45. |
-
-Named numeric formats
 
 The following table identifies the predefined **named numeric formats**:
 

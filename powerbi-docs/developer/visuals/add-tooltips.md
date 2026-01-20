@@ -242,7 +242,7 @@ For example:
 See an example of the modern tooltips feature being used in the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) code.
 
 > [!NOTE]
-> Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. Keep in mind that the user will still have to **[enable the modern tooltip feature](../../create-reports/desktop-visual-tooltips.md#turn-on-the-new-tooltips)** in the report settings.
+> Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. 
 
 ## Related content
 
