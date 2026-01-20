@@ -33,7 +33,7 @@ fabric-cicd is specifically designed for deploying source-controlled Fabric arti
 * **Python-native** - Seamless integration with modern Python-based DevOps workflows
 * **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
 * **Developer-friendly**: Simple Python scripts that can run locally or in CI/CD pipelines
-* **Flexible deployment control**: Deploy only specific item types, i.e., semantic models without reports, and ensure consistent configurations like default pages or parameters without manual intervention
+* **Flexible deployment control**: Deploy only specific item types (e.g., semantic models without reports, or semantic models with or without data cache) and ensure consistent configurations like default pages or parameters without manual intervention
 * **Orphan cleanup**: Automatically removes items from workspace that no longer exist in source control
 * **Reliable authentication**: Uses Azure Identity SDK with multiple authentication options
 
