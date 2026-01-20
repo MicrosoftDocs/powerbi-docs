@@ -42,7 +42,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
 | Attach reference to Copilot chat in the Power BI mobile app | Attach a report or semantic model to Copilot chat as a grounded reference. To add a reference, tap the + icon or type / to search and select your desired item. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
-| Updating Prepped for AI setting name to Approved for Copilot | The setting to mark a model as prepped for AI is renamed to better reflect its purpose and functionality. For more information, see [Update your semantic model to work with Copilot](../create-reports/copilot-evaluate-data.md#update-your-semantic-model-to-work-with-copilot). |          |
+| Updating Prepped for AI setting name to Approved for Copilot | The setting to mark a model as prepped for AI is renamed to better reflect its purpose and functionality. For more information, see [Mark your model as approved for Copilot](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot). |          |
 | Standalone Copilot Access on Power BI Home | New standalone Copilot entry point on the Power BI Home page for faster access to insights. You can switch back to Recommended content using the picker at the top of the Home page. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
 
 ## Reporting
@@ -60,7 +60,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
 | Updates on Editing Semantic Models in the Power BI Service | Models configured with incremental refresh can now be opened and edited in the Power BI Service. Note that you can't download these models as PBIX files, and Power Query editor isn't available for web editing. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
-| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. For more information, see [Database element (TMSL)](/analysis-services/tmsl/database-element-tmsl). |        |
+| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. For more information, see [Database element (TMSL)](/analysis-services/tabular-models-scripting-language-objects/database-object-tmsl). |        |
 
 ## Developers and APIs
 
@@ -72,7 +72,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Funnel Chart by Powerviz | Power BI-certified visual with four chart types in one visual for tracking progress through stages. Features include funnel settings, seven color schemes with more than 30 palettes, conversion rate analysis, fill patterns, conditional formatting, ranking, annotation, and grid view. Useful for sales funnel analysis, marketing campaigns, user onboarding, and website traffic. [Try it free](https://appsource.microsoft.com/product/power-bi-visuals/WA200001448). |          |
+| Funnel Chart by Powerviz | Power BI-certified visual with four chart types in one visual for tracking progress through stages. Features include funnel settings, seven color schemes with more than 30 palettes, conversion rate analysis, fill patterns, conditional formatting, ranking, annotation, and grid view. Useful for sales funnel analysis, marketing campaigns, user onboarding, and website traffic. Available on AppSource. |          |
 
 ## Resources
 
