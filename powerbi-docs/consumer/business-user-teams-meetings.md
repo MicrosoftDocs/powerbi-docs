@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/25/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ms.custom: sfi-image-nochange
 #customer intent: As a business user, I want to understand how to use Power BI in Teams meetings so that I can effectively collaborate and make data-driven decisions during meetings.

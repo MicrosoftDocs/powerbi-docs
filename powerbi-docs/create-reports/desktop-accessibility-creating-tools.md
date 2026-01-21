@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/26/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Create reports in Power BI using accessibility tools

@@ -7,7 +7,8 @@ ms.reviewer: ikedeagu
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
-ms.date: 02/20/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a Power BI user I want to learn how to design refreshable reports in Excel with Power BI data
 ---

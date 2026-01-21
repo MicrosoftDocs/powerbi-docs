@@ -7,7 +7,8 @@ ms.reviewer: juliacawthra, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/25/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 #customer intent: As a Power BI user I want to curate metrics that matter.
 ---

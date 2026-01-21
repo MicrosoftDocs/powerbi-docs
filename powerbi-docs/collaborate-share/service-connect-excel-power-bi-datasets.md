@@ -7,7 +7,8 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
-ms.date: 02/20/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a user, I want to discover and analyze Power BI semantic models in Excel so that I can leverage Excel's capabilities for data analysis.
 ---
@@ -32,7 +33,7 @@ The following requirements must be met before you proceed:
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
 
 - You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
-- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Fabric capacity (F64 or greater) or Power BI Premium capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Discover Power BI semantic models in Excel

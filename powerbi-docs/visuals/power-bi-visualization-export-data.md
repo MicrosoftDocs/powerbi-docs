@@ -7,7 +7,8 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -198,8 +199,6 @@ If you find that you can't use this feature, reach out to the report owner and y
     For export from matrix visuals using *Data with current layout*, the export limit is 150,000 *data intersections*. Data intersections are the common points where different sets of data overlap.  For example, if you have a list of customers who bought laptops and another list of customers who bought tablets, the intersection would be the customers who bought both laptops and tablets. For a table visual, each row has one *data intersection*. For a matrix visual, each row can have **1 or more** *data intersections*, so the exported rows count can be less than 150,000. (For example, if a matrix visual has three *data intersections* per row, the maximum row count is 150,000 / 3 = 50,000 rows.) The message "_Exported data exceeded the allowed volume. Some data may have been omitted._" is added at the footer of the Excel file when the limit is hit. To avoid this scenario, consider limiting the dimensions or filtering the data.
 
 - Export using *Underlying data* doesn't work if:
-
-  - the version is older than 2016.
 
   - the tables in the model don't have a unique key.
 

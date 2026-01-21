@@ -9,7 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 02/25/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 # customer intent: As a Power BI user I want to learn how to view all Power BI tabs in Microsoft Teams.
 ---
 
