@@ -71,7 +71,7 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, you could create only one app per workspace. If you needed different apps within a workspace, you could create audiences that would show or hide content in your app based on permissions. By using org app items, you can create a unique app per need.
 - The included items, like reports, that you add to an org app aren't versioned copies of the source item. They're the original items in the same workspace as the org app item. Users who have access to the org app have access to the original version of the items added to the org app.
   - With workspace apps, all items you added to an app were automatically versioned when you published the app.
-- Since users have access to the source items, if they're provided a direct link to an included item, org app users can view the source items outside of the org app.
+- Since users have access to the source items, if they're given a direct link to an included item, org app users can view the source items outside of the org app.
   - With workspace apps, users couldn't view items outside the app, unless they had access to the original source item via another method, like direct access.
 - If a paginated report is built on a semantic model, a user given access to an org app automatically gets access to the model.
   - With workspace apps, users aren't automatically granted access to semantic models associated with paginated reports. App authors had to manually manage access to models.
@@ -262,7 +262,7 @@ For the full access management experience, select **Share > Manage access** to s
 Remember, when you give a user access to an org app item, they automatically get access to:
 
 - Items included in the org app from the same workspace.
-- Semantic models that reports source from in the same workspace *and* different workspaces.
+- The semantic models reports source from in the same workspace *and* different workspaces.
 
 ## Managing org app permissions, like removing users
 
@@ -283,7 +283,7 @@ Want to grant extra permissions to a user? Find the user you want to manage and 
 
 :::image type="content" source="media/org-app-items/org-app-item-permissions-modification-menu.png" alt-text="Screenshot of the org app permissions modification menu.":::
 
-- **Add reshare** allows users to share the org app item, included items, and underlying items with others. This permission means they can grant others access to the org app and propagate access to all items the org app is dependent on. Items include included reports, paginated reports, notebooks, maps, and real-time dashboards. Plus the underlying semantic models the report items depend on.
+- **Add reshare** allows users to share the org app item, included items, and underlying items with others. This permission means they can grant others access to the org app and propagate access to all items the org app is dependent on. Items include reports, paginated reports, notebooks, maps, and real-time dashboards. Plus the underlying semantic models the report items depend on.
 - **Remove reshare** removes a user's ability to share the org app item with others. Though anyone who has access to the org app by that user maintains access.
 - **Remove access** removes that user's access to the org app item, the included report items, and the semantic model items that reports in the org app source from. Unique to new org app items, access to the underlying semantic model items is removed when a user loses access to an org app. However, if a user has another form of access to an item, such as a semantic model, they maintain access to that item. Only their org app-based access is removed.
 
@@ -380,8 +380,5 @@ Org app consumers without permissions to edit the org app can view, favorite, an
 ## Considerations and limitations
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
-
-- The app doesn't save filters that you set on a report page when you move from one page to another in a single report.
-- The app doesn't save filters that you set on a report item when you go to another item in the org app and then return to the previous report item.
-- The app doesn't offer reset to default for report items.
-- The app doesn't offer some report toolbar capabilities, like bookmarks.
+- Org apps don't support all report toolbar capabilities available in workspace apps, such as subscriptions, bookmarks, and comments.
+- In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
