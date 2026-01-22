@@ -35,10 +35,6 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 - *Version: 2.150.1926.0  (January 2026), Released: January 21, 2026*
      - Support for January 2026 Power BI Report Server.
 
-
-15.0.1120.113- RS
-2.150.1926.0   PBIDRS
-
 ## September 2025
 
 ### Power BI Report Server
