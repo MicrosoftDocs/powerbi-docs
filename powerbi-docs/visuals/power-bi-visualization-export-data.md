@@ -242,6 +242,6 @@ When contacting the report owner or administrator, refer them to these articles:
 - When you use [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
   - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done by using a Service Principal.
   - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
-- Long running queries through a Gateway might timeout with the error "Executing the query for export data operation resulted in an error".
+- Long running queries through a Gateway might time out with the error "Executing the query for export data operation resulted in an error".
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
