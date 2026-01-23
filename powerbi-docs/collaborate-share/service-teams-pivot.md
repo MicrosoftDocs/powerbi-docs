@@ -16,10 +16,10 @@ ai-usage: ai-assisted
 
 # View all the Power BI tabs you use in Microsoft Teams
 
-This article describes how you can view all the Power BI tabs you've viewed in Microsoft Teams. They're kept on the **In Teams** pivot on the home experience in Power BI app for Teams. When you work in channels, you can add a Power BI report as a tab as an easy way to share with everyone, and ensure the most important data is always top of mind.
-When you use the Power BI app in Teams, you'll see a new **In Teams** pivot on your Power BI home. This new capability makes it easy to find Power BI tabs you’ve visited previously in Teams channels.
+This article describes how you can view all the Power BI tabs you use in Microsoft Teams. The Power BI tabs appear on the **In Teams** pivot in the home experience of the Power BI app for Teams. When you work in channels, you can add a Power BI report as a tab as an easy way to share with everyone, and ensure the most important data is always top of mind.
+When you use the Power BI app in Teams, you see a new **In Teams** pivot on your Power BI home. This new capability makes it easy to find Power BI tabs you visited previously in Teams channels.
 
-You could already access all your reports, dashboards, and Power BI organizational apps in the [Power BI app for Teams](service-microsoft-teams-app.md). You could find and install apps, discover semantic models to use in creating new reports, track your metrics, and more.
+You can already access all your reports, dashboards, and Power BI organizational apps in the [Power BI app for Teams](service-microsoft-teams-app.md). You can find and install apps, discover semantic models to use in creating new reports, track your metrics, and more.
 
 Now the home page in the Power BI app for Teams also gathers all your Power BI tabs in your Teams team channels in one place.
 
@@ -27,18 +27,18 @@ Now the home page in the Power BI app for Teams also gathers all your Power BI t
 
 Here are a few things to know about the **In Teams** list:
 
-- The list shows the 20 Power BI tabs you’ve used most recently in Team channels.
-- If you haven’t opened any Power BI tabs in Teams, the list won’t include any items.
-- The list won’t include Power BI tabs you use in chats, group chats, or in meetings.
+- The list shows the 20 Power BI tabs you used most recently in Team channels.
+- If you don't open any Power BI tabs in Teams, the list doesn't include any items.
+- The list doesn't include Power BI tabs you use in chats, group chats, or in meetings.
 - You can open the reports in the Power BI app for Teams.
-- Select the value in the **Location** column to navigate to the tab in the Teams channel and keep collaborating with your colleagues.
-- The **In Teams** pivot is only available in the Power BI app for Teams. You don’t see it in the Power BI service when using [app.powerbi.com](https://app.powerbi.com) in a web browser.
+- Select the value in the **Location** column to go to the tab in the Teams channel and keep collaborating with your colleagues.
+- The **In Teams** pivot is only available in the Power BI app for Teams. You don't see it in the Power BI service when using [app.powerbi.com](https://app.powerbi.com) in a web browser.
 
-## Known issues and limitations
+## Known problems and limitations
 
-Review these known issues and limitations:
+Review these known problems and limitations:
 
-- For information about other issues, see the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
+- For information about other problems, see the [Known problems and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
 
 ## Related content
 
