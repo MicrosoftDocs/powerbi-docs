@@ -20,6 +20,42 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
+## January 2026
+
+Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-january-2026-feature-summary/) for details.
+
+### Visualizations
+
+This release includes a variety of new and updated visuals from Microsoft partners and the broader community. These visuals enable richer storytelling, advanced exploration, and more engaging report experiences.
+- Activity Gauge by Powerviz
+- Decomposition Tree – All Expanding
+- Dynamic chart legends in Zebra BI Charts
+- Drill Down Bubble PRO by ZoomCharts
+- Power Gantt Chart by Nova Silva
+- Turn any image into data insights with Synoptic Panel by OKVIZ
+- Sankey Chart by Powerviz
+- Your Timeline Slicer: Reimagining Date Filtering for Modern Dashboards
+- Drill Down Scatter PRO by ZoomCharts
+- Multiple Sparklines
+- Performance Bar by JTA
+- Financial Reporting Matrix v8.2
+- ADWISE Advanced Column v 2.0
+- Zebra BI Tables: Calculated Reports in One Click and Brand Images
+- Word Cloud by Powerviz
+- Drill Down Combo Bar PRO by ZoomCharts
+- CAGR Arrows Now in Zebra BI Charts
+
+### Reporting features
+
+This release also includes several reporting enhancements to improve layout behavior, visual styling, and interaction options to help you build polished, intuitive, and modern reports.
+
+- Automatically expand matrix columns to fill available space
+- Card visual (Generally Available)
+- Enhancing Image visuals with styling, states, and more
+- Button slicer (Generally Available)
+- Automatically expand table columns to fill available space
+- Performance analyzer available when editing a report in the web
+
 ## September 2025
 
 Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2025-feature-summary/) for details.
