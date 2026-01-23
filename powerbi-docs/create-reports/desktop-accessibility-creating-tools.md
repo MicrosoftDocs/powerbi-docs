@@ -1,16 +1,17 @@
 ---
-title: Create reports in Power BI using accessibility tools
-description: Learn about the built-in accessibility tools and capabilities that help in the process of creating reports in Power BI.
+title: Create Accessible Reports in Power BI Desktop
+description: Learn how to create accessible reports in Power BI Desktop using keyboard navigation, screen readers, and high-contrast modes. Master KeyTips, pane navigation, and more.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/26/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
-# Create reports in Power BI using accessibility tools
+# Create accessible reports in Power BI Desktop
 
 For report creators who use accessibility tools to create reports, Power BI has many built-in capabilities that can help in the process.
 
@@ -20,7 +21,7 @@ This article describes the many types of accessibility tools available for repor
 
 ## App-level navigation
 
-When navigating in Power BI Desktop, you can move focus to the main areas of the app by pressing **Ctrl + F6**. Shifting focus in the main area of Power BI Desktop progresses in the following order:
+When you navigate in Power BI Desktop, press **Ctrl + F6** to move focus to the main areas of the app. Shifting focus in the main area of Power BI Desktop progresses in the following order:
 
 1. Objects on canvas
 1. Page tabs
@@ -28,7 +29,7 @@ When navigating in Power BI Desktop, you can move focus to the main areas of the
 1. View navigator
 1. Footer
 1. Sign in
-1. Yellow warning / error / updates bar
+1. Yellow warning, error, or updates bar
 
 In most cases, the common procedures to use in Power BI are **Enter** to select or enter an area, and **Esc** to exit.
 
@@ -36,17 +37,17 @@ In most cases, the common procedures to use in Power BI are **Enter** to select 
 
 Press **Alt** to see the little boxes called *KeyTips* over each command available in the current view of the ribbon. Then you can press the letter shown in the *KeyTip* that hovers over the command you want to use.
 
-For example, in the following image, the **Alt** key has been pressed to display KeyTips, which contain the letters for accessible commands. Pressing **M** opens the **Modeling** tab on the ribbon.
+For example, in the following image, the **Alt** key is pressed to display KeyTips, which contain the letters for accessible commands. Press **M** to open the **Modeling** tab on the ribbon.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-01.png" alt-text="Screenshot of Power BI Desktop showing KeyTips.":::
 
-Depending on which letter you press, you might see other KeyTips. For example, if the **Home** tab is active and you press **V**, the **View** tab is displayed along with the KeyTips for the groups in that **View** ribbon tab. You can continue pressing letters displayed in KeyTips until you press the letter of the specific command you want to use. To move to the previous set of KeyTips, press **Esc**. To cancel the action you’re taking and hide the KeyTips, press the **Alt** key.
+Depending on which letter you press, you might see other KeyTips. For example, if the **Home** tab is active and you press **V**, the **View** tab is displayed along with the KeyTips for the groups in that **View** ribbon tab. You can continue pressing letters displayed in KeyTips until you press the letter of the specific command you want to use. To move to the previous set of KeyTips, press **Esc**. To cancel the action you're taking and hide the KeyTips, press the **Alt** key.
 
 ## Visual pane navigation
 
 To navigate the **Visualizations** pane, make sure your focus is on the pane by pressing **Ctrl + F6** until you reach that pane. When you navigate through the visualizations pane, the focus first lands on the header. The tab order starts from the top and is shown in the following image:
 
-:::image type="content" source="media/desktop-accessibility/accessibility-create-reports-02.png" alt-text="Screenshot highlighting the tab order for the Visualizations pane.":::
+:::image type="content" source="media/desktop-accessibility/accessibility-create-reports-02.png" alt-text="Screenshot of the tab order for the Visualizations pane.":::
 
 1. The header title
 1. The expand and collapse carat
@@ -55,11 +56,11 @@ To navigate the **Visualizations** pane, make sure your focus is on the pane by 
 
 When focus is on the pane pivots, tabbing lands only on the icon for the pane that is selected. To switch to other panes, use arrow keys.
 
-When you get to the visuals, you can use arrow keys to navigate to a particular visual and press **Enter** to select it. A screen reader calls out if you’ve created a new chart and tells you the chart's type. It also tells you when you’ve changed a chart of a particular type to another type.
+When you get to the visuals, use arrow keys to navigate to a particular visual and press **Enter** to select it. A screen reader calls out if you create a new chart and tells you the chart's type. It also tells you when you change a chart of a particular type to another type.
 
 ## Fields well
 
-When focus is on the pane pivots, as described in the previous section, pressing tab again advances focus to the **Field** well.
+When you focus on the pane pivots, as described in the previous section, pressing tab again advances focus to the **Field** well.
 
 In the **Field** well, the focus order moves to:
 
@@ -72,11 +73,11 @@ The following image shows this focus progression ordering.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-04.png" alt-text="Screenshot highlighting the field well's focus progression.":::
 
-A screen reader reads out the well’s name and its tooltip. For each field in a well, a screen reader reads the field name and its tooltip. If a well is empty, the focus should move to the entire empty well. The screen reader should read the well name, tooltip, and that it's empty.
+A screen reader reads out the well’s name and its tooltip. For each field in a well, a screen reader reads the field name and its tooltip. If a well is empty, the focus moves to the entire empty well. The screen reader reads the well name, tooltip, and that it's empty.
 
 When the Field menu is open, you can move through it by using **Tab** or **Shift + Tab** or the **Up** and **Down** arrow keys. A screen reader calls out the option names.
 
-If you’d like to move a field from one bucket in the field well to another bucket, you can use your keyboard and the **Move** to option in the field well menu, as shown in the following image:
+If you want to move a field from one bucket in the field well to another bucket, use your keyboard and the **Move** to option in the field well menu, as shown in the following image:
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-05.png" alt-text="Screenshot of the options menu, showing the Move to option.":::
 
@@ -100,13 +101,13 @@ You can press **Tab** to navigate around the **Data** list. Similar to the forma
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-08.png" alt-text="Screenshot showing the focus progression for the Data list.":::
 
-To expand all the tables in the **Data** well, press **Alt + Shift + 9**. To collapse all the tables press **Alt + Shift + 1**. To expand a single table, press the **Right arrow** key. To collapse a single table, press the **Left arrow** key. Similar to the formatting pane, if a table is expanded, then tabbing and navigating through the fields list includes the fields that are being shown. A screen reader calls out whether you've expanded or collapsed a table.
+To expand all the tables in the **Data** well, press **Alt + Shift + 9**. To collapse all the tables press **Alt + Shift + 1**. To expand a single table, press the **Right arrow** key. To collapse a single table, press the **Left arrow** key. Similar to the formatting pane, if a table is expanded, then tabbing and navigating through the fields list includes the fields that are being shown. A screen reader calls out whether you expanded or collapsed a table.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-09.png" alt-text="Screenshot of the focus progression for the Data list with expanded tables.":::
 
 You can checkmark a field by navigating to the desired field and pressing **Enter**. A screen reader calls out the field the focus is on and whether the field is checked or unchecked.
 
-Mouse users typically drag-and-drop fields to the canvas or to the relevant filter buckets they desire. If you’d like to use your keyboard, you can add a field to a filter bucket by entering a field’s context menu by pressing **Shift + F10**. Then use arrow keys to navigate to **Add to filters** and press **Enter** on the type of filter to which you’d like to add the field.
+Mouse users typically drag and drop fields to the canvas or to the relevant filter buckets they desire. If you want to use your keyboard, add a field to a filter bucket by entering a field’s context menu by pressing **Shift + F10**. Then use arrow keys to navigate to **Add to filters** and press **Enter** on the type of filter to which you want to add the field.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-10.png" alt-text="Screenshot of the options menu, highlighting Add to filters and Visual-level filters.":::
 
@@ -115,7 +116,7 @@ Mouse users typically drag-and-drop fields to the canvas or to the relevant filt
 The **Selection** pane has the following focus order progression:
 
 1. Header title
-1. Collapse carat and the exit button
+1. Collapse caret and the exit button
 1. Layer and tab order switcher
 1. Move up in layer button
 1. Move down in layer button
@@ -132,40 +133,40 @@ When you get to the layer and tab order switcher, use the left and right arrow k
 When you get to the objects in the **Selection** pane, press **F6** to activate the **Selection** pane. After activating the **Selection** pane, you can use the **Up** and **Down** arrow keys to navigate to the different objects in the **Selection** pane.
 Once you’ve navigated to an object of interest, there are a few different actions you can take:
 
-* Press **Ctrl + Shift + S** to hide or show an object.
-* Press **Ctrl + Shift + F** to move up an object in the layer order.
-* Press **Ctrl + Shift + B** to move an object down in the layer order.
-* Press **Ctrl + Space** to multi-select objects.
+- Press **Ctrl + Shift + S** to hide or show an object.
+- Press **Ctrl + Shift + F** to move up an object in the layer order.
+- Press **Ctrl + Shift + B** to move an object down in the layer order.
+- Press **Ctrl + Space** to multi-select objects.
 
 ## Power BI Desktop dialogs
 
-All dialogs in Power BI Desktop are accessible through keyboard navigation and work with screen readers.
+You can access all dialogs in Power BI Desktop through keyboard navigation, and they work with screen readers.
 
 Dialogs in Power BI Desktop include:
 
-* Quick Measures dialog
-* Conditional Formatting & data bars dialog
-* Q&A Explorer dialog
-* Getting Started dialog
-* File menu and About dialog
-* Warning bar
-* File Restore dialog
-* Frowns dialog
+- Quick Measures dialog
+- Conditional Formatting & data bars dialog
+- Q&A Explorer dialog
+- Getting Started dialog
+- File menu and About dialog
+- Warning bar
+- File Restore dialog
+- Frowns dialog
 
 ## High contrast support
 
-When you use high-contrast modes in Windows, those settings and the palette you select are also applied to reports in Power BI Desktop.
+When you use high-contrast modes in Windows, Power BI Desktop applies those settings and the palette you select to reports.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-12-2.png" alt-text="Screenshot of the high contrast settings in Windows.":::
 
-Power BI Desktop automatically detects which high-contrast theme Windows uses and applies those settings to your reports. Those high-contrast colors follow the report when published to the Power BI service or elsewhere.
+Power BI Desktop automatically detects which high-contrast theme Windows uses and applies those settings to your reports. The high-contrast colors follow the report when you publish it to the Power BI service or elsewhere.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-05b-2.png" alt-text="Screenshot of the high contrast settings on the Power BI service.":::
 
 ## Related content
 
-* [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
-* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
-* [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
-* [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
-* [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
+- [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
+- [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
+- [Consume Power BI reports by using accessibility features](desktop-accessibility-consuming-tools.md)
+- [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
+- [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
