@@ -26,6 +26,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 - *Version: 1.25.9508.3237 (build 15.0.1120.113), Released: January 21, 2026*
     - Added support for SQL Server 2025 Enterprise Core Product ID (key).
+    - Add new advanced server property 'DisableMSRBConnect' with default value 'True'. This to restricts "Connected mode" requests from Microsoft Report Builder.
     - Fixed issue with verbose logging causing log file to grow too fast.
     - Removed support for Office Online Server (OOS) which allowed web viewing of XLSX workbooks which has been deprecated. [Learn More](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402)
     - Accessibility fixes.
