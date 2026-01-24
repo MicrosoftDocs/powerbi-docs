@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
-ms.date: 10/01/2025
+ms.date: 01/23/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Copilot is available in apps two ways: 
 * A report-scoped Copilot that can help users with summaries of the report in view or answer questions based on that report in view
-* An app-scoped Copilot (preview) that can help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
+* An app-scoped Copilot (preview) that can summarize the app based on items within, help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-and-report-copilot.png" alt-text="Screenshot of app-scoped Copilot and report-scoped Copilot." lightbox="media/copilot-apps-overview/app-copilot-and-report-copilot.png":::
 
