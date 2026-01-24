@@ -49,6 +49,8 @@ There are item types support by apps that app-scoped Copilot doesn't support:
 * Dashboards
 * Workbooks
 * Linked content, including link-embedded Power BI items such as reports.
+* 
+Additionally, app‑scoped Copilot doesn't recognize app navigation sections and doesn't refer to sections in its responses.
  
 ### How to use app-scoped Copilot (preview)
 App-scoped Copilot is available in tenants where Copilot is enabled and the app author enabled app-scoped Copilot and visible in the app navigation.
@@ -110,6 +112,7 @@ User feedback is important for continued Copilot improvements. After each Copilo
 
 ## Limitations and considerations for app users
 * In select cases app-scoped Copilot uses item names that app authors configure. The original item name may differ from the name shown in the app and used in app-scoped Copilot responses.
+* App‑scoped Copilot doesn't recognize app navigation sections and doesn't refer to sections in its responses.
 * Clicking an item link opens the item in a new browser tab.
 * Clicking a citation link opens the item in a new browser tab outside the app.
 * Conversations are cleared when navigating away from or closing Copilot in apps.
