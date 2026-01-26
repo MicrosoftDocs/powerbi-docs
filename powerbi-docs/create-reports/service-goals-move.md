@@ -16,11 +16,12 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-In some scenarios, you can hide a column, or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
+In some scenarios, you want to rename, hide, or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
 
 - Move goals and scorecards
 - Decide which columns that your scorecard users see
 - Decide the order columns are in
+- Change column names
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane." lightbox="media/service-goals-move/power-bi-goals-edit-columns.png":::
 
@@ -53,6 +54,18 @@ To reorder goals on the scorecard, or make them subgoals:
 
 1. You can also re-order columns in this view by dragging them up or down.
 1. Select **Apply**.
+
+## Rename a column
+
+In some scenarios, the column names that come with a scorecard aren't right for your organization’s needs. You can customize the names to reflect your organization’s terminology.
+
+1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to rename. Then select **Column settings**.
+1. Select the column you want to rename. To reset all column names to their default settings (that is, the original names), select **Reset to default** at the top.
+
+> [!NOTE]
+> Column names must be between 1 and 25 characters long.
+
+:::image type="content" source="media/service-goals-move/rename-column.png" alt-text="Screenshot depicting how to rename a column or reset it to the default name.":::
 
 ## Move or copy a scorecard (preview)
 
