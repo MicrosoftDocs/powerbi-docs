@@ -23,6 +23,8 @@ ai-usage: ai-assisted
 | F512<sup>2</sup>  |                 512 | P4/A7             |               64 |
 | F1024<sup>2</sup> |               1,024 | P5/A8             |              128 |
 | F2048<sup>2</sup> |               2,048 | N/A               |              N/A |
+| F4096<sup>2</sup> |               4,096 | N/A               |              N/A |
+| F8192<sup>2</sup> |               8,192 | N/A               |              N/A |
 
 <sup>1</sup> In the Microsoft 365 or [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) (user owns data) scenario, SKUs that are smaller than F64 require a Pro or Premium Per User (PPU) license, or a Power BI individual trial to consume Power BI content.
 
