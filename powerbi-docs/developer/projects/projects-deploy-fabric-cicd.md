@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 01/20/2026
+ai-usage: ai-assisted
 ---
 
 # Deploy Power BI projects (PBIP) using fabric-cicd
