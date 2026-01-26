@@ -18,7 +18,8 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-
+> [!WARNING]
+> Hierarchies in Scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
 
 Metrics support cascading scorecards that roll up along hierarchies you set up of goals in your scorecard. Here are three useful scenarios where cascading scorecards provide an elegant, large-scale, and efficient solution:
 
