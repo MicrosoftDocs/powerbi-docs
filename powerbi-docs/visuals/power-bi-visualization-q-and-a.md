@@ -16,6 +16,9 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](https://github.com/MicrosoftDocs/powerbi-docs/blob/main/powerbi-docs/create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 The Q&A visual users to ask natural language questions and get answers in the form of a visual. Business users can use the Q&A functionality to quickly get answers from their report data. *Designers* can use the Q&A features to quickly create visuals. If you're a report designer, this article is for you. You can double-click anywhere on a report and use natural language to get started.
 
 In this article, you create, format, and customize a Q&A visual. This visual type supports themes and other default formatting options available in Power BI. After you create the visual and save the report, the Q&A visual is available to your report users. Report users use the Q&A visual to ask questions about the data in the report, and see the answers to those questions in the form of charts and graphs. The one Q&A visual can be used over and over again. If the end user has edit permissions, they can save the charts and graphs as standalone visuals in the report. If the end user doesn't have edit permissions, they can use the Q&A visual to explore the report data but can't save the answers to their questions (in the form of charts and graphs) to the report. The Q&A visual behaves like any other Power BI visual and supports cross-filtering, cross-highlighting, and bookmarks. 
