@@ -161,6 +161,9 @@ Add a new page to your report. The new report page canvas is blank and shows the
 
    Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma next to data that has numeric values.
 
+   > [!NOTE]
+   > **Don't see sigma or calendar symbols?** These icons appear based on Power BI's automatic detection of data types. If your semantic model was imported differently or uses calculated columns, you might not see these symbols. The symbols are visual indicators only; your data still works correctly in visualizations regardless of whether the icons appear.
+
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
 1. Under **financials**, select the **Profit** data item, and then select the **Date** item. **Date** has a hierarchy, so expand **Date** and select **Quarter** and **Year**.
