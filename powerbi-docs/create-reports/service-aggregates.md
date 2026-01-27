@@ -103,7 +103,7 @@ Would give the following results:
 - **Maximum**:  150
 - **Minimum**: 100
 - **Count (Not Blanks):** 6
-- **Count (Distinct):** 4
+- **Count (Distinct):** 3
 - **Standard deviation:** 20.4124145...
 - **Variance:** 416.666...
 - **Median:** 125

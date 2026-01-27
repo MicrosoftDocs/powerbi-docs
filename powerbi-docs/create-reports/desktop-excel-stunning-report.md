@@ -89,7 +89,7 @@ In **Navigator**, you can *transform* or *load* the data. The preview lets you v
 
 1. The Power Query Editor opens. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, and then select **Whole Number**. In the **Change Column Type** dialog that opens, choose **Replace current**.
 
-    Changing data types is the data cleaning step that users most often. In this case, the units sold are in decimal form. It doesn't make sense to have 0.2 or 0.5 of a unit sold, so change it to a whole number.
+    Changing data types is the data cleaning step that users perform most often. In this case, the units sold are in decimal form. It doesn't make sense to have 0.2 or 0.5 of a unit sold, so change it to a whole number.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number.":::
 
