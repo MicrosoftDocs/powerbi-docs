@@ -49,7 +49,7 @@ There are item types support by apps that app-scoped Copilot doesn't support:
 * Dashboards
 * Workbooks
 * Linked content, including link-embedded Power BI items such as reports.
-* 
+  
 Additionally, app‑scoped Copilot doesn't recognize app navigation sections and doesn't refer to sections in its responses.
  
 ### How to use app-scoped Copilot (preview)
