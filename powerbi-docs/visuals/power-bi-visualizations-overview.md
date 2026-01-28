@@ -281,6 +281,14 @@ For even richer detail, you can create report page tooltips that display an enti
 
 For more information, see [Create tooltips based on report pages in Power BI](../create-reports/desktop-tooltips.md).
 
+## Visual calculations
+
+Visual calculations let you create DAX calculations directly on a visual, building on top of the semantic model calculations. Unlike model-level measures, visual calculations are stored on the visual itself and operate within the specific context of that visual's rows and columns.
+
+This approach makes it easier to create calculations like running totals, moving averages, percent of total, and ranking without needing to understand complex filter context. Visual calculations automatically take into account the row-specific context of each data point in the visual, making them ideal for fine-grained, visual-specific calculations.
+
+For more information, see [Visual calculations overview](../transform-model/desktop-visual-calculations-overview.md).
+
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
