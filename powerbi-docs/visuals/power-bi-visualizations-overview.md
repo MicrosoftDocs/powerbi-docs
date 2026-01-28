@@ -19,6 +19,12 @@ Visualizations, also called visuals, are the building blocks of Power BI reports
 
 This article provides an overview of the visualization categories available in Power BI to help you choose the right visual for your needs.
 
+## Preview visuals
+
+Some Power BI visuals are available in preview, which means they're still being developed and might change before general availability. Preview visuals let you try new features early and provide feedback to help shape the final product.
+
+To use preview visuals in Power BI Desktop, you typically need to enable them in **File** > **Options and settings** > **Options** > **Preview features**. Preview visuals might have limited functionality or known issues that are resolved before general release.
+
 ## Charts for comparison and trends
 
 These visuals help you compare values across categories or track changes over time.
@@ -113,9 +119,15 @@ Map visuals help you display geographic and spatial data. Power BI offers severa
 
 For a complete overview of map options, see [Map visualizations in Power BI](power-bi-map-visualizations-overview.md).
 
-## KPIs and gauges
+## Cards or callouts, KPIs, and gauges
 
-These visuals help you track progress toward goals and key metrics.
+These visuals help you highlight key values and track progress toward goals and key metrics.
+
+### Card visuals
+
+Card visuals display a single fact or data point prominently. The card visual supports both single-card and multi-card layouts, and can include images and detailed reference values within the visual. Use cards when a single number, such as total sales or market share, is the most important thing to track.
+
+For more information, see [Card visuals in Power BI](power-bi-visualization-card.md).
 
 ### KPI visuals
 
@@ -129,11 +141,11 @@ Radial gauge charts display a single value measuring progress toward a goal. The
 
 For more information, see [Gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 
-### Card visuals
+### Goals visual
 
-Card visuals display a single fact or data point prominently. Use them when a single number, such as total sales or market share, is the most important thing to track.
+The goals visual displays metrics and scorecards that help teams track progress toward business objectives. You can set targets, track current values, and visualize status with color-coded indicators.
 
-For more information, see [Card visuals in Power BI](power-bi-visualization-card.md).
+For more information, see [Get started with metrics in Power BI](../create-reports/service-goals-create.md).
 
 ## AI-powered visuals
 
@@ -165,7 +177,9 @@ For more information, see [Anomaly detection in Power BI](power-bi-visualization
 
 ## Filtering visuals
 
-Slicers are standalone visuals that filter other visuals on the page.
+Power BI provides multiple ways to filter data in your reports. All visuals can be filtered using the **Filters** pane, which lets you apply filters at the visual, page, or report level. For more direct interaction, slicers provide on-canvas filtering controls.
+
+For more information about the Filters pane, see [Filters pane in Power BI reports](../create-reports/power-bi-report-filter.md).
 
 ### Slicers
 
@@ -173,9 +187,36 @@ Slicers come in multiple formats including button, list, dropdown, and date rang
 
 For more information, see [Slicers in Power BI](power-bi-visualization-slicers.md).
 
+## Paginated report visual
+
+The paginated report visual lets you embed a paginated report within a Power BI report. This visual is useful when you need pixel-perfect formatting, print-ready layouts, or detailed tabular data that spans multiple pages.
+
+For more information, see [Paginated report visual in Power BI](paginated-report-visual.md).
+
 ## Other visuals
 
+### Image visual
+
+Image visuals display static or dynamic images in your reports. Dynamic images can change based on data values.
+
+For more information, see [Image visual in Power BI](power-bi-visualization-image-visual.md).
+
+### Text box and shapes
+
+Text boxes let you add titles, descriptions, and other text to your reports. You can also bind text to data fields for dynamic content. Shapes such as rectangles, ovals, lines, and arrows help you highlight areas or create visual structure in your reports.
+
+For more information, see [Add text boxes and shapes to Power BI reports](../create-reports/power-bi-reports-add-text-and-shapes.md).
+
+### Buttons and navigators
+
+Buttons enable interactivity in your reports, allowing users to trigger actions like navigating to other pages, applying bookmarks, or opening URLs. Page navigators and bookmark navigators provide built-in navigation controls for multi-page reports.
+
+For more information, see [Create buttons in Power BI](../create-reports/desktop-buttons.md).
+
 ### Q&A visual
+
+> [!IMPORTANT]
+> The Q&A visual is scheduled for deprecation in December 2026.
 
 The Q&A visual provides a text box where users can ask questions about data using natural language. Power BI interprets the query and creates an appropriate visualization.
 
@@ -193,12 +234,6 @@ Power Apps visuals let you embed Power Apps into Power BI reports, enabling user
 
 For more information, see [Power Apps visual in Power BI](power-bi-visualization-powerapp.md).
 
-### Image visual
-
-Image visuals display static or dynamic images in your reports. Dynamic images can change based on data values.
-
-For more information, see [Image visual in Power BI](power-bi-visualization-image-visual.md).
-
 ## Custom visuals
 
 Beyond built-in visuals, you can download additional visuals from [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) or create your own custom visuals.
@@ -215,6 +250,18 @@ When selecting a visual, consider:
 - **Available space**: Some visuals work better in smaller or larger areas
 
 For a complete reference of all visualization types, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+
+## Customize visuals with report themes
+
+Power BI report themes let you apply consistent formatting to all visuals in a report at once. Themes control colors, fonts, backgrounds, and other visual properties, giving your reports a unified look and feel.
+
+You can use built-in themes, customize them to match your organization's branding, or create your own themes from scratch. Custom themes can be exported as JSON files and shared across reports and teams, ensuring consistent styling across your organization's Power BI content.
+
+For more information, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md).
+
+You can also format individual visuals using the **Format** pane, which provides extensive options for customizing colors, labels, titles, backgrounds, borders, and more. Formatting applied directly to a visual takes precedence over report theme settings, allowing you to override the theme for specific visuals when needed.
+
+For more information, see [Get started formatting visuals](service-getting-started-with-color-formatting-and-axis-properties.md).
 
 ## Related content
 
