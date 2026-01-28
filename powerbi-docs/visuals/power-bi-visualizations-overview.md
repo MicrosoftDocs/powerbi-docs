@@ -15,7 +15,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Visualizations, also called visuals, are the building blocks of Power BI reports. They transform raw data into meaningful insights that help you understand patterns, trends, and relationships in your data. Power BI offers a wide variety of built-in visuals, each designed for specific scenarios and data types.
+Visualizations, also called visuals, are the building blocks of Power BI reports. They transform the curated data and DAX calculations from your [Power BI semantic model](../connect-data/service-datasets-understand.md) into meaningful insights that help you understand patterns, trends, and relationships in your data. Power BI offers a wide variety of built-in visuals, each designed for specific scenarios and data types.
+
+Visuals in a report interact with each other through cross-filtering and cross-highlighting, creating a fully interactive and dynamic experience. You can also drill through to other pages or even other reports to explore related data in more detail. For advanced scenarios like write-back, you can use [translytical task flows](../create-reports/translytical-task-flow-overview.md) to trigger actions and update data directly from your reports.
 
 This article provides an overview of the visualization categories available in Power BI to help you choose the right visual for your needs.
 
