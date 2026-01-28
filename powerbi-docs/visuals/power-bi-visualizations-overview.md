@@ -187,12 +187,6 @@ Slicers come in multiple formats including button, list, dropdown, and date rang
 
 For more information, see [Slicers in Power BI](power-bi-visualization-slicers.md).
 
-## Paginated report visual
-
-The paginated report visual lets you embed a paginated report within a Power BI report. This visual is useful when you need pixel-perfect formatting, print-ready layouts, or detailed tabular data that spans multiple pages.
-
-For more information, see [Paginated report visual in Power BI](paginated-report-visual.md).
-
 ## Other visuals
 
 ### Image visual
@@ -212,6 +206,12 @@ For more information, see [Add text boxes and shapes to Power BI reports](../cre
 Buttons enable interactivity in your reports, allowing users to trigger actions like navigating to other pages, applying bookmarks, or opening URLs. Page navigators and bookmark navigators provide built-in navigation controls for multi-page reports.
 
 For more information, see [Create buttons in Power BI](../create-reports/desktop-buttons.md).
+
+### Paginated report visual
+
+The paginated report visual lets you embed a paginated report within a Power BI report. This visual is useful when you need pixel-perfect formatting, print-ready layouts, or detailed tabular data that spans multiple pages.
+
+For more information, see [Paginated report visual in Power BI](paginated-report-visual.md).
 
 ### Q&A visual
 
@@ -262,6 +262,14 @@ For more information, see [Use report themes in Power BI Desktop](../create-repo
 You can also format individual visuals using the **Format** pane, which provides extensive options for customizing colors, labels, titles, backgrounds, borders, and more. Formatting applied directly to a visual takes precedence over report theme settings, allowing you to override the theme for specific visuals when needed.
 
 For more information, see [Get started formatting visuals](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+## Data-driven colors with conditional formatting
+
+Many visual properties, including colors, can be driven by your data using conditional formatting. You can set colors to change based on field values, rules you define, or color scales that map values to a gradient. This capability lets you highlight important data points, show status indicators, or create heat map effects within your visuals.
+
+Conditional formatting is available for backgrounds, font colors, data bars, icons, and web URLs in tables and matrices, as well as bar colors in charts and many other visual elements.
+
+For more information, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
 
 ## Related content
 
