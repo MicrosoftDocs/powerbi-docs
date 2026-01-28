@@ -297,6 +297,14 @@ For time-series data, you can also add forecasting to predict future values base
 
 For more information, see [Use the Analytics pane in Power BI](../transform-model/desktop-analytics-pane.md).
 
+## Small multiples
+
+Small multiples let you split a visual into multiple smaller versions, each showing a subset of the data based on a field you choose. This technique, also known as trellis or lattice charts, makes it easy to compare patterns across categories side by side.
+
+For example, you can take a single sales chart and split it by region, creating a grid of charts where each one shows sales for a different region. This approach helps you spot trends and outliers across categories that might be difficult to see when all the data is combined in one visual.
+
+For more information, see [Create small multiples in Power BI](power-bi-visualization-small-multiples.md).
+
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
