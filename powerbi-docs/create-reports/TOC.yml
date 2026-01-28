@@ -348,62 +348,86 @@
           href: tutorial-copilot-power-bi-explore-data.md
   - name: Visualizations
     items: 
-    - name: Visualization types in Power BI
+    # Overview and fundamentals
+    - name: Visualizations overview
+      href: ../visuals/power-bi-visualizations-overview.md
+    - name: Visualization types reference
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: Add visuals to a report
       href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane
       href: ../visuals/power-bi-report-visualizations.md
-    - name: Customize visual titles, backgrounds, legends, and more
-      href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: Show items with no data
-      href: desktop-show-items-no-data.md
-    - name: Show value as
-      href: desktop-show-value-as.md
-    - name: Apply data-point limits and strategies by visual type
-      href: ../visuals/power-bi-data-points.md
-    - name: Display a visual's underlying data
-      href: ../visuals/service-reports-show-data.md
-    - name: Get started formatting visuals
-      href: ../visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-    - name: Tips and tricks for color formatting
-      href: ../visuals/service-tips-and-tricks-for-color-formatting.md
-    - name: Copy and paste a report visualization
-      href: ../visuals/power-bi-visualization-copy-paste.md
-    - name: Export the data that was used to create a visualization to Excel
-      href: ../visuals/power-bi-visualization-export-data.md      
-    - name: Move, resize, and pop out a visual in a report
-      href: ../visuals/power-bi-visualization-move-and-resize.md
-    - name: Change how visuals interact in a report
-      href: service-reports-visual-interactions.md
-    - name: Customize x-axis and y-axis properties
-      href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Card visual
-      href: ../visuals/power-bi-visualization-card.md
-    - name: Button slicer
-      href: ../visuals/power-bi-visualization-button-slicer.md
-    - name: List slicer (preview)
-      href: ../visuals/power-bi-visualization-list-slicer.md
-    - name: Text slicer (preview)
-      href: ../visuals/power-bi-visualization-text-slicer.md
-    - name: Image visual
-      href: ../visuals/power-bi-visualization-image-visual.md
-    - name: Column charts
-      href: ../visuals/power-bi-visualization-column-charts.md
-    - name: Basic area charts
-      href: ../visuals/power-bi-visualization-basic-area-chart.md
-    - name: Combo charts
-      href: ../visuals/power-bi-visualization-combo-chart.md
-    - name: Pie and donut charts
-      href: ../visuals/power-bi-visualization-pie-donut-chart.md
-    - name: Funnel charts
-      href: ../visuals/power-bi-visualization-funnel-charts.md
-    - name: KPI visuals
-      href: ../visuals/power-bi-visualization-kpi.md
-    - name: Line charts
-      href: ../visuals/power-bi-line-chart.md
-    - name: Paginated report visuals
-      href: ../visuals/paginated-report-visual.md
+    # Working with visuals
+    - name: Working with visuals
+      items:
+      - name: Move, resize, and pop out visuals
+        href: ../visuals/power-bi-visualization-move-and-resize.md
+      - name: Copy and paste visuals
+        href: ../visuals/power-bi-visualization-copy-paste.md
+      - name: Change how visuals interact
+        href: service-reports-visual-interactions.md
+      - name: Export visual data to Excel
+        href: ../visuals/power-bi-visualization-export-data.md
+      - name: Show underlying data
+        href: ../visuals/service-reports-show-data.md
+      - name: Show items with no data
+        href: desktop-show-items-no-data.md
+      - name: Show value as
+        href: desktop-show-value-as.md
+    # Charts for comparison and trends
+    - name: Charts for comparison and trends
+      items:
+      - name: Column and bar charts
+        href: ../visuals/power-bi-visualization-column-charts.md
+      - name: Line charts
+        href: ../visuals/power-bi-line-chart.md
+      - name: Area charts
+        href: ../visuals/power-bi-visualization-basic-area-chart.md
+      - name: Combo charts
+        href: ../visuals/power-bi-visualization-combo-chart.md
+      - name: Ribbon charts
+        href: ../visuals/desktop-ribbon-charts.md
+      - name: Waterfall charts
+        href: ../visuals/power-bi-visualization-waterfall-charts.md
+    # Charts for part-to-whole
+    - name: Charts for part-to-whole
+      items:
+      - name: Pie and donut charts
+        href: ../visuals/power-bi-visualization-pie-donut-chart.md
+      - name: Treemaps
+        href: ../visuals/power-bi-visualization-treemaps.md
+      - name: Funnel charts
+        href: ../visuals/power-bi-visualization-funnel-charts.md
+    # Charts for distribution and relationships
+    - name: Charts for distribution and relationships
+      items:
+      - name: Scatter, bubble, and dot plot charts
+        href: ../visuals/power-bi-visualization-scatter.md
+      - name: High-density scatter charts
+        href: desktop-high-density-scatter-charts.md
+    # Tables and matrices
+    - name: Tables and matrices
+      items:
+      - name: Tables
+        href: ../visuals/power-bi-visualization-tables.md
+      - name: Matrix visuals
+        items: 
+        - name: Create a matrix visual
+          href: ../visuals/power-bi-visualization-matrix-visual.md
+        - name: Matrix format settings
+          href: ../visuals/power-bi-visualization-matrix-visual-format-settings.md
+        - name: Matrix considerations and limitations
+          href: ../visuals/power-bi-visualization-matrix-visual-considerations.md
+    # Cards, KPIs, and gauges
+    - name: Cards, KPIs, and gauges
+      items:
+      - name: Card visuals
+        href: ../visuals/power-bi-visualization-card.md
+      - name: KPI visuals
+        href: ../visuals/power-bi-visualization-kpi.md
+      - name: Radial gauge charts
+        href: ../visuals/power-bi-visualization-radial-gauge-charts.md
+    # Maps
     - name: Maps
       items:
       - name: Map visualizations overview
@@ -444,42 +468,92 @@
           href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
         - name: Manage the Azure Maps visual in your organization
           href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
-    - name: Matrix visuals
-      items: 
-      - name: Create a matrix visual
-        href: ../visuals/power-bi-visualization-matrix-visual.md
-      - name: Matrix visual format settings
-        href: ../visuals/power-bi-visualization-matrix-visual-format-settings.md
-      - name: Matrix visual considerations and limitations
-        href: ../visuals/power-bi-visualization-matrix-visual-considerations.md
-    - name: Power Apps visuals
-      href: ../visuals/power-bi-visualization-powerapp.md
-    - name: R visuals
-      href: ../visuals/service-r-visuals.md
-    - name: Create Power BI visuals with R
-      href: desktop-r-visuals.md
-    - name: Download and use R-powered Power BI visuals
-      href: desktop-r-powered-custom-visuals.md
-    - name: Radial gauge charts
-      href: ../visuals/power-bi-visualization-radial-gauge-charts.md
-    - name: Ribbon charts
-      href: ../visuals/desktop-ribbon-charts.md
-    - name: Scatter, bubble, and dot plot charts
-      href: ../visuals/power-bi-visualization-scatter.md
-    - name: High-density line sampling
-      href: desktop-high-density-sampling.md
-    - name: High-density sampling in scatter charts
-      href: desktop-high-density-scatter-charts.md
-    - name: Create small multiples
-      href: ../visuals/power-bi-visualization-small-multiples.md
-    - name: Interact with small multiples
-      href: ../visuals/power-bi-visualization-small-multiples-interact.md
-    - name: Tables in reports and dashboards
-      href: ../visuals/power-bi-visualization-tables.md
-    - name: Treemaps
-      href: ../visuals/power-bi-visualization-treemaps.md
-    - name: Waterfall charts
-      href: ../visuals/power-bi-visualization-waterfall-charts.md
+    # AI-powered visuals
+    - name: AI-powered visuals
+      items:
+      - name: Decomposition tree
+        href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: Key influencers
+        href: ../visuals/power-bi-visualization-influencers.md
+      - name: Smart narrative
+        href: ../visuals/power-bi-visualization-smart-narrative.md
+      - name: Anomaly detection
+        href: ../visuals/power-bi-visualization-anomaly-detection.md
+      - name: Q&A visual
+        href: ../visuals/power-bi-visualization-q-and-a.md
+    # Slicers and filtering
+    - name: Slicers and filtering
+      items:
+      - name: Slicers overview
+        href: ../visuals/power-bi-visualization-slicers.md
+      - name: Button slicer
+        href: ../visuals/power-bi-visualization-button-slicer.md
+      - name: List slicer (preview)
+        href: ../visuals/power-bi-visualization-list-slicer.md
+      - name: Text slicer (preview)
+        href: ../visuals/power-bi-visualization-text-slicer.md
+      - name: Filter date range with a slicer
+        href: ../visuals/desktop-slicer-filter-date-range.md
+    # Other visuals
+    - name: Other visuals
+      items:
+      - name: Image visual
+        href: ../visuals/power-bi-visualization-image-visual.md
+      - name: Text boxes and shapes
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: Buttons and navigators
+        href: desktop-buttons.md
+      - name: Paginated report visual
+        href: ../visuals/paginated-report-visual.md
+      - name: R visuals
+        href: ../visuals/service-r-visuals.md
+      - name: Create visuals with R
+        href: desktop-r-visuals.md
+      - name: R-powered custom visuals
+        href: desktop-r-powered-custom-visuals.md
+      - name: Power Apps visual
+        href: ../visuals/power-bi-visualization-powerapp.md
+    # Customize and format visuals
+    - name: Customize and format visuals
+      items:
+      - name: Get started with formatting
+        href: ../visuals/service-getting-started-with-color-formatting-and-axis-properties.md
+      - name: Customize titles, backgrounds, and legends
+        href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+      - name: Customize x-axis and y-axis
+        href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+      - name: Color formatting tips and tricks
+        href: ../visuals/service-tips-and-tricks-for-color-formatting.md
+      - name: Report themes
+        href: desktop-report-themes.md
+      - name: Conditional formatting
+        href: desktop-conditional-table-formatting.md
+      - name: Custom format strings
+        href: desktop-custom-format-strings.md
+    # Visual features
+    - name: Visual features
+      items:
+      - name: Tooltips and report page tooltips
+        href: desktop-tooltips.md
+      - name: Visual calculations
+        href: ../transform-model/desktop-visual-calculations-overview.md
+      - name: Analytics pane
+        href: ../transform-model/desktop-analytics-pane.md
+      - name: Small multiples
+        items:
+        - name: Create small multiples
+          href: ../visuals/power-bi-visualization-small-multiples.md
+        - name: Interact with small multiples
+          href: ../visuals/power-bi-visualization-small-multiples-interact.md
+      - name: Data-point limits by visual type
+        href: ../visuals/power-bi-data-points.md
+      - name: High-density line sampling
+        href: desktop-high-density-sampling.md
+    # Custom visuals
+    - name: Custom visuals
+      items:
+      - name: Power BI visuals from AppSource
+        href: ../developer/visuals/power-bi-custom-visuals.md
   - name: Artificial intelligence
     items: 
     - name: Insights (preview)
