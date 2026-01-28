@@ -237,6 +237,7 @@ Keep the following considerations and limitations in mind when you use automatic
 - Import storage mode doesn't support automatic page refresh. However, open reports update automatically if the underlying semantic model is refreshed and the user has write permissions. For situations when the refresh might become unreliable, see the [previous section](#impact-of-model-refresh-on-open-reports-when-using-import-mode).
 - Composite models that have at least one DirectQuery data source are supported.
 - You can only have one change detection measure per semantic model.
+- Service principals are not supported for change detection measures. 
 
 ### Performance diagnostics
 
@@ -305,6 +306,7 @@ If low-priority queries overload your capacity, take these actions:
 - Check whether you uploaded to a workspace with an attached Premium capacity. If you didn't, change detection won't work.
 - If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, make sure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
 - If you checked all of the items mentioned earlier, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it doesn't, the measure might not be a good choice to poll for data source changes.
+- Service principals are not yet supported. 
 
 **When connected to analysis services, I can't see the APR toggle**
 
