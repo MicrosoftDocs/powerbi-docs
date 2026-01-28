@@ -273,6 +273,14 @@ Conditional formatting is available for backgrounds, font colors, data bars, ico
 
 For more information, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
 
+## Tooltips
+
+Tooltips provide additional context when users hover over data points in a visual. By default, tooltips display the values for that data point, but you can customize them to show additional fields and measures.
+
+For even richer detail, you can create report page tooltips that display an entire report page when hovering over a data point. Report page tooltips offer a detailed and up-to-date deeper view of each data point, allowing you to show related charts, KPIs, or any other visuals that provide context without leaving the current view.
+
+For more information, see [Create tooltips based on report pages in Power BI](../create-reports/desktop-tooltips.md).
+
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
