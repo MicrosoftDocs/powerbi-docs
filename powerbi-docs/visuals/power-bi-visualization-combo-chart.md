@@ -3,7 +3,7 @@ title: Combo Chart in Power BI
 description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: ''
 ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -156,6 +156,25 @@ From here, you might want to:
 - [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
 - Save the report.
 - [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
+
+## Sync the axes to share a single scale
+
+When your combo chart has two Y axes with similar value ranges, you might want to sync them so they share a single scale. This approach makes it easier to compare the column and line values directly.
+
+To sync the axes:
+
+1. Select the paintbrush icon :::image type="icon" source="media/power-bi-visualization-combo-chart/power-bi-paintbrush.png"::: to open the **Formatting** pane.
+
+1. Expand **Secondary y-axis** and locate the **Range** options.
+
+1. Set both **Minimum** and **Maximum** to **Auto** to reset any custom range values.
+
+1. Turn off **Values** to hide the secondary axis labels. The line now uses the same scale as the columns.
+
+   > [!NOTE]
+   > If **Values** was already off, you might need to turn it on and then off again to force the shared axis behavior.
+
+After syncing, both the columns and line use the primary Y axis scale, making direct comparisons more intuitive.
 
 ## Cross-highlighting and cross-filtering
 
