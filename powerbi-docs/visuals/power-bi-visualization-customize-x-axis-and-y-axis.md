@@ -1,9 +1,9 @@
 ---
 title: Customize X-Axis and Y-Axis Properties
 description: Learn how to customize X-axis and Y-axis properties in Power BI visuals, including labels, titles, gridlines, colors, ranges, intervals, and dual-axis configurations for enhanced data visualization.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.custom:
    - video-removed
    - sample-retail-analysis-sample-PBIX

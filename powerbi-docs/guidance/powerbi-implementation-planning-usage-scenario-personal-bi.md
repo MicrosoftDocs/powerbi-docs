@@ -1,9 +1,9 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
 description: "Learn how Power BI personal BI is about private analytics for an individual."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

@@ -1,9 +1,9 @@
 ---
 title: "Kerberos SSO for SAP BW: gx64krb5 Guide"
 description: "Configure Kerberos single sign-on (SSO) for SAP BW using gx64krb5 library with Power BI service. Step-by-step setup guide with troubleshooting tips. Start now."
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

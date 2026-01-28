@@ -1,8 +1,8 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
@@ -420,7 +420,7 @@ The Power BI Windows app now opens directly in the new look. You land on the new
 
 Have a link to a report you don't have access to? Now you can request access directly from your Power BI Windows app!
 
-:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
+:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request-access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
 
 ## December 2021
 

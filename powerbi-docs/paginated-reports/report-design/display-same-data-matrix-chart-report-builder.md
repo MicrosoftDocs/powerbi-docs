@@ -1,7 +1,8 @@
 ---
-title: "Display the same data on a matrix and a chart in a Power BI paginated report | Microsoft Docs"
+title: Display the Same Data on a Matrix and a Chart in a Power BI Paginated Report
 description: Show the same data in a paginated report in a matrix and in a chart in Power BI Report Builder. Set properties on these data regions to include the specifics.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -19,7 +20,7 @@ ms.reviewer: saurkumar
   
  To use the matrix column group values as a legend for the chart, you must specify the colors for the series data on the chart, and then use the same colors as the fill colors for the background of the text boxes in the matrix cell that displays the group values. For more information, see [Specify Consistent Colors across Multiple Shape Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md).  
   
- At run-time, your report may appear cluttered if there are too many group values for your group definitions. You might need to filter values, combine groups, or adjust the threshold for the chart to combine groups for you. For more information, see [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)  
+ At run-time, your report might appear cluttered if there are too many group values for your group definitions. You might need to filter values, combine groups, or adjust the threshold for the chart to combine groups for you. For more information, see [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)  
   
   
 ## Add a matrix and chart to display the same data  

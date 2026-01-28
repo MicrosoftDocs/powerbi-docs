@@ -1,8 +1,8 @@
 ---
 title: Explore Reports in the Power BI Mobile Apps
 description: Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, and then interact with them in the mobile apps.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile

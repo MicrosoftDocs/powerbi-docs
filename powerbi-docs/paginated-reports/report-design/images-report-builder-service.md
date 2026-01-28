@@ -1,10 +1,11 @@
 ---
-title: "Images in Power BI paginated reports"
+title: Images in Power BI Paginated Reports
 description: Find out about images as items in paginated reports in Power BI Report Builder. These items contain a reference to an image embedded in a report or stored in a database.
-ms.date: 04/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -23,7 +24,7 @@ An image is a Power BI paginated report item that contains a reference to an ima
   
  Data-bound images can also be displayed from binary data stored in a database. For example, the pictures that appear alongside product names in a product list are database images. In the following picture, the images of bicycles are stored in a database and retrieved in the report to illustrate each product.  
   
- ![Screenshot showing table with data-bound images of bikes.](./media/data-bound-bikes.png "Screenshot showing table with data-bound images of bikes.")
+ :::image type="content" source="./media/data-bound-bikes.png" alt-text="Screenshot showing table with data-bound images of bikes." lightbox="./media/data-bound-bikes.png":::
 
 ##  <a name="EmbedImages"></a> Embed images
 

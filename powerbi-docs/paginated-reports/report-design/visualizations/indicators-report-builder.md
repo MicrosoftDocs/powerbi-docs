@@ -1,10 +1,11 @@
 ---
-title: "Indicators in a Power BI paginated report| Microsoft Docs"
+title: Indicators in a Power BI Paginated Report
 description: Learn about indicators, the small gauges that convey the state of a single data value in Power BI paginated reports in Report Builder. 
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -27,7 +28,7 @@ ms.reviewer: monaraya
   
  You can use indicators by themselves in dashboards or free-form reports, but they are most commonly used in tables or matrices to visualize data in rows or columns. The following diagram shows a table with a traffic light indicator that conveys year to date sales by sales person and territory.  
 
- ![Screenshot showing indicator table traffic light.](media/paginated-reports-visualizations/indicator-table-traffic-light.png "indicator table traffic light screenshot")  
+ :::image type="content" source="media/paginated-reports-visualizations/indicator-table-traffic-light.png" alt-text="Screenshot showing indicator table traffic light." lightbox="media/paginated-reports-visualizations/indicator-table-traffic-light.png":::  
   
  Power BI Report Builder provides built-in indicator sets and indicator icons to use as is, and you can also customize individual indicator icons and indicators sets to suit your needs.  
   
@@ -40,7 +41,7 @@ ms.reviewer: monaraya
   
  Like gauges, indicators are positioned inside a gauge panel. When you want to configure an indicator by using the **Indicators Properties** dialog box or the Properties pane, you need to select the indicator instead of the panel. Otherwise, the available options apply to the gauge panel options and you cannot configure the indicator. The following picture shows a selected indicator in its gauge panel.  
   
- ![Screenshot showing gauge panel with indicator.](media/paginated-reports-visualizations/gauge-panel-with-indicator.png "Screenshot of gauge panel with indicator.")  
+ :::image type="content" source="media/paginated-reports-visualizations/gauge-panel-with-indicator.png" alt-text="Screenshot showing gauge panel with indicator." lightbox="media/paginated-reports-visualizations/gauge-panel-with-indicator.png":::  
   
  Depending on how you want to depict the data value, gauges might be more effective than indicators. For more information, see [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md).  
   
@@ -51,10 +52,10 @@ ms.reviewer: monaraya
   
 |Indicator set|Indicator type|  
 |-------------------|--------------------|  
-|![Screenshot showing directional icons.](media/paginated-reports-visualizations/directional-icons.gif "Screenshot of directional icons")|Directional: indicates trends using up, down, flat (no change), up-trending, or down-trending arrows.|  
-|![Screenshot showing symbol icons.](media/paginated-reports-visualizations/symbol-icons.gif "Screenshot of symbol icons.")|Symbols: indicates states using commonly recognized symbols such as check marks and exclamation marks.|  
-|![Screenshot showing shape icons.](media/paginated-reports-visualizations/shape-icons.gif "Screenshot of shape icons.")|Shape: indicates conditions using commonly shapes such as traffic signs and diamond shapes.|  
-|![Screenshot showing rating icons.](media/paginated-reports-visualizations/rating-icons.gif "Screenshot of rating icons")|Ratings: indicates ratings by using common recognized shapes and symbols that show progressive values such as the number of quadrants in a square.|  
+|:::image type="content" source="media/paginated-reports-visualizations/directional-icons.gif" alt-text="Screenshot showing directional icons." lightbox="media/paginated-reports-visualizations/directional-icons.gif":::|Directional: indicates trends using up, down, flat (no change), up-trending, or down-trending arrows.|  
+|:::image type="content" source="media/paginated-reports-visualizations/symbol-icons.gif" alt-text="Screenshot showing symbol icons." lightbox="media/paginated-reports-visualizations/symbol-icons.gif":::|Symbols: indicates states using commonly recognized symbols such as check marks and exclamation marks.|  
+|:::image type="content" source="media/paginated-reports-visualizations/shape-icons.gif" alt-text="Screenshot showing shape icons." lightbox="media/paginated-reports-visualizations/shape-icons.gif":::|Shape: indicates conditions using commonly shapes such as traffic signs and diamond shapes.|  
+|:::image type="content" source="media/paginated-reports-visualizations/rating-icons.gif" alt-text="Screenshot showing rating icons." lightbox="media/paginated-reports-visualizations/rating-icons.gif":::|Ratings: indicates ratings by using common recognized shapes and symbols that show progressive values such as the number of quadrants in a square.|  
   
  After you choose an indicator set, you can customize the appearance of each indicator icon in the set by setting its properties in the dialog boxes for indicators or the Properties pane. You can use the built-in colors, icons, and sizes or expressions to configure indicators.  
   
@@ -78,7 +79,7 @@ ms.reviewer: monaraya
   
  The following diagram shows a report with a table that uses the directional indicator set, **Four Arrows (Colored)**, to indicate sales. The indicator icons in the report are configured to use shades of blue instead of the default colors: red, yellow, and green.  
   
- ![Screenshot showing indicator report blue arrows.](media/paginated-reports-visualizations/indicator-report-blue-arrows.png "Screenshot of indicator report blue arrows")  
+ :::image type="content" source="media/paginated-reports-visualizations/indicator-report-blue-arrows.png" alt-text="Screenshot showing indicator report blue arrows." lightbox="media/paginated-reports-visualizations/indicator-report-blue-arrows.png":::  
   
  For more information about adding, changing, and deleting indicators, see [Add or Delete an indicator &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-delete-an-indicator-report-builder-and-ssrs).  
   
@@ -106,7 +107,7 @@ ms.reviewer: monaraya
   
  The following diagram shows an indicator side by side and within a gauge.  
   
- ![Screenshot showing gauge panel with indicator and gauge.](media/paginated-reports-visualizations/gauge-panel-with-indicator-and-gauge.gif "Screenshot of gauge panel with indicator and gauge.")  
+ :::image type="content" source="media/paginated-reports-visualizations/gauge-panel-with-indicator-and-gauge.gif" alt-text="Screenshot showing gauge panel with indicator and gauge." lightbox="media/paginated-reports-visualizations/gauge-panel-with-indicator-and-gauge.gif":::  
   
  For more information, see [Include indicators and gauges in a gauge panel &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/include-indicators-and-gauges-in-a-gauge-panel-report-builder-and-ssrs).  
   

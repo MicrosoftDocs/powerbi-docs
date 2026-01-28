@@ -1,8 +1,8 @@
 ---
 title: In-Report Copilot in Power BI Mobile Apps
 description: "This article describes how to use the in-report Copilot in Power BI mobile apps to get summaries and insights for the report you're viewing."
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: concept-article #Don't change

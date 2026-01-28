@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to save views and settings in reports.
@@ -78,6 +79,14 @@ You can also select whether each bookmark applies other properties in the report
 - Choose between **All visuals** and **Selected visuals**.
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-bookmark-display.png" alt-text="Screenshot of a bookmark selected and the More options menu displayed.":::
+
+The bookmark options control which properties are captured and restored when you select the bookmark:
+
+- **Data**: Captures filter and slicer states. When enabled, selecting the bookmark applies any filters or slicer selections that were active when you created or updated the bookmark.
+- **Display**: Captures visual visibility and spotlight settings. When enabled, the bookmark restores which visuals are visible or hidden and whether spotlight mode is active.
+- **Current page**: When enabled, the bookmark navigates to the page that was active when you created it. When disabled, the bookmark only applies its settings to whichever page you're currently viewing.
+- **All visuals**: Applies the bookmark settings to every visual on the page.
+- **Selected visuals**: Applies the bookmark settings only to the visuals you select before creating or updating the bookmark. This option is useful when you want different bookmarks to affect different parts of your report.
 
 These capabilities are useful when you use bookmarks to switch between report views or selections of visuals. Because of this, you likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
 

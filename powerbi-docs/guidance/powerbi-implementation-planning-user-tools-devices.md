@@ -1,9 +1,9 @@
 ---
 title: "Power BI implementation planning: User tools and devices"
 description: "Learn about user tools and managing devices to enable and support Power BI consumers and authors in the organization."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

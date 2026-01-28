@@ -1,10 +1,11 @@
 ---
-title: "Scatter charts in Power BI paginated report | Microsoft Docs"
+title: Scatter Charts in Power BI Paginated Report
 description:  Find out how to use scatter charts in a Power BI paginated report, with values represented by point positions on a chart, to compare aggregated data across categories in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a scatter chart.  
   
- ![Screenshot of a Scatter chart.](media/paginated-reports-visualizations/scatter-chart.gif "Scatter chart")  
+ :::image type="content" source="media/paginated-reports-visualizations/scatter-chart.gif" alt-text="Screenshot of a Scatter chart." lightbox="media/paginated-reports-visualizations/scatter-chart.gif":::  
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   

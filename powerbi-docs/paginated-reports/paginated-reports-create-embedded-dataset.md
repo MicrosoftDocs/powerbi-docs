@@ -1,5 +1,5 @@
 ---
-title: "Create an embedded dataset for a Power BI paginated report"
+title: Create an Embedded Dataset for a Power BI Paginated Report
 description: Learn how to create an embedded dataset, based on an embedded data source, for a paginated report in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -30,11 +30,11 @@ Before you can create the dataset, you need to create a data source.
   
 1. In the **Report Data** pane in Power BI Report Builder, select **New** > **Dataset**.
 
-   :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-new-dataset.png" alt-text="Screenshot that shows option to create new dataset.":::
+   :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-new-dataset.png" alt-text="Screenshot that shows option to create new dataset." lightbox="media/paginated-reports-create-embedded-dataset/power-bi-paginated-new-dataset.png":::
 
 1. In the **Query** tab of the **Dataset Properties** dialog box, give the dataset a name. The embedded data source is already in the **Data source** box, or you can select **New** to create a different embedded data source.
  
-   :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties.png" alt-text="Screenshot of Dataset Properties dialog box.":::  
+   :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties.png" alt-text="Screenshot of Dataset Properties dialog box." lightbox="media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties.png":::  
 
 1. Under **Query type**, select the type of command or query to use for the dataset. 
     - **Text** runs a query to retrieve data from the database. It's the default and is used for most queries. Type a query or import a pre-existing query by selecting **Import**. To build the query graphically, select **Query Designer**. If you use the query designer to build a query, the text of the query appears in this box. Select the **Expression** (**fx**) button to use an expression to dynamically generate the query. 
@@ -43,7 +43,7 @@ Before you can create the dataset, you need to create a data source.
 
 1. In the Query Designer, you can see and interact with the tables and fields in the dataset, import a query, or edit as text. You can also add filters and parameters here. 
 
-    :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-edit-query.png" alt-text="Screenshot of Query Designer dialog box.":::
+    :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-edit-query.png" alt-text="Screenshot of Query Designer dialog box." lightbox="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-edit-query.png":::
 
 1. In the Query Designer, select **Run Query** to test it, then select **OK**.
 
@@ -58,7 +58,7 @@ Before you can create the dataset, you need to create a data source.
  
    The report opens in Report Design View. The data source, dataset, and dataset field collection appear in the **Report Data** pane, and you can continue designing your paginated report.  
 
-    :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-report-design-view.png" alt-text="Screenshot of Dataset in Report Design View."::: 
+    :::image type="content" source="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-report-design-view.png" alt-text="Screenshot of Dataset in Report Design View." lightbox="media/paginated-reports-create-embedded-dataset/power-bi-paginated-embedded-dataset-report-design-view.png"::: 
  
 ## Related content 
 

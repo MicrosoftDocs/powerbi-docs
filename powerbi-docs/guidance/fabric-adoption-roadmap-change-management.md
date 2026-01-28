@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Change management"
 description: "Learn about effective change management for Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

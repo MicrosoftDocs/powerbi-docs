@@ -1,5 +1,5 @@
 ---
-title: Consume reports in Power BI with accessibility tools
+title: Consume Reports in Power BI with Accessibility Tools
 description: Learn how to use Power BI's built-in accessibility features to make consuming reports more accessible.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 12/02/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to use built-in accessibility features.
 ---
@@ -20,8 +21,8 @@ Power BI has many built-in features to help people with disabilities more easily
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tool-01.png" alt-text="Screenshot showing the high contrast windows settings.":::
 There are a couple terms to know as you read through this article:
 
-* **Focus** is where your mouse is on the page. Focus is usually indicated by a blue border surrounding an object.
-* **Canvas** is the page area of your report.
+- **Focus** is where your mouse is on the page. Focus is usually indicated by a blue border surrounding an object.
+- **Canvas** is the page area of your report.
 
 The following sections describe the accessibility tools available for consuming Power BI reports.
 
@@ -103,7 +104,7 @@ The **Show data** feature is an HTML table that's only accessible to a screen re
 
 To exit the **Show data** view and return to a report, press **Esc**.
 
-### Show Visuals as Tables (preview)
+### Show visuals as tables (preview)
 
 Some users might prefer to consume data in a tabular format depending on their different learning styles and usage of assistive technologies. If you'd like to present your report in tabular format, you can press **Ctrl + Shift + F11** to switch to **Show Visuals as Table** view mode. With a single action, all pages in your report display most visuals in a table or matrix format, while still allowing interaction and cross-filtering capabilities.
 
@@ -111,16 +112,16 @@ To activate, select **View > Show visuals as tables**. To revert back to origina
 
 ## Limitations & notes
 
-* Show Visuals as Tables doesn't apply to dashboards
-* Show Visuals as Tables only applies to the current report you're viewing (each new report needs activated)
-* Show Visuals as Tables doesn't apply to the following visuals: slicers, cards, smart narrative, Power Apps, Paginated Report, Key Influencers, Q&A
+- Show Visuals as Tables doesn't apply to dashboards
+- Show Visuals as Tables only applies to the current report you're viewing (each new report needs activated)
+- Show Visuals as Tables doesn't apply to the following visuals: slicers, cards, smart narrative, Power Apps, Paginated Report, Key Influencers, Q&A
 
 ## Related content
 
 A collection of articles for Power BI accessibility:
 
-* [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
-* [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
-* [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
-* [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
-* [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
+- [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
+- [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
+- [Creating reports in Power BI using accessibility tools](desktop-accessibility-creating-tools.md)
+- [Keyboard shortcuts in Power BI Desktop](desktop-accessibility-keyboard-shortcuts.md)
+- [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)

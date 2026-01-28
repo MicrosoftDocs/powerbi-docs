@@ -1,7 +1,8 @@
 ---
-title: Intro to report data in Power BI Report Builder
+title: Intro to Report Data in Power BI Report Builder
 description: Learn introductory information about report data in Power BI Report Builder, such as how to create data sources.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -18,20 +19,19 @@ ms.reviewer: rpatkar
 
 ## Data in Report Builder
 
- ![Diagram of the dataset story in Report Builder.](../media/report-builder-data/paginated-dataset-story.png)  
+ :::image type="content" source="../media/report-builder-data/paginated-dataset-story.png" alt-text="Diagram of the dataset story in Report Builder." lightbox="../media/report-builder-data/paginated-dataset-story.png":::  
   
 1. **Data sources in the Report Data pane** A data source appears in the Report Data pane after you create an embedded data source.  
   
-2. **Connection dialog box** Use the Connection Dialog Box to build a connection string or to paste a connection string.  
+1. **Connection dialog box** Use the Connection Dialog Box to build a connection string or to paste a connection string.  
   
-3. **Data connection information** The connection string is passed to the data extension.  
+1. **Data connection information** The connection string is passed to the data extension.  
   
-4. **Credentials** Credentials are managed separately from the connection string.  
+1. **Credentials** Credentials are managed separately from the connection string.  
   
-5. **Data Extension/Data Provider** Connecting to the data can be through multiple data access layers.  
+1. **Data Extension/Data Provider** Connecting to the data can be through multiple data access layers.  
   
-6. **External data sources** Retrieve data from relational databases, multidimensional databases, SharePoint lists, or Web services.  
-
+1. **External data sources** Retrieve data from relational databases, multidimensional databases, SharePoint lists, or Web services.  
 
 ##  <a name="BkMk_ReportDataTerms"></a> Defining terms  
   

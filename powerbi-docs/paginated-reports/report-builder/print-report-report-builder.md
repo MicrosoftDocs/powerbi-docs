@@ -1,10 +1,11 @@
 ---
-title: "Print a report (Power BI Report Builder)"
+title: Print a Report (Power BI Report Builder)
 description: You can view and print a report from a browser, the Power BI service web portal, or any application that you use to view an exported report.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
-ms.date: 06/15/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -32,7 +33,7 @@ For more information about report paging, see [Pagination in Reporting Services 
 
 1. Open a report.
 
-1. On the Home tab, select **Run**.
+1. Select **Run** to preview the report.
 
 1. (optional) Select **Print Layout** to see how the report will look when it is printed.
 

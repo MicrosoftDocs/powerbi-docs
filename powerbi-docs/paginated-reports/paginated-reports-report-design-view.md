@@ -1,5 +1,5 @@
 ---
-title: "Get around Report Design View for paginated reports"
+title: Get Around Report Design View for Paginated Reports
 description: Learn how to use the Report Design View in Report Builder to create paginated reports that you can publish in the Power BI service.  
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 12/11/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 

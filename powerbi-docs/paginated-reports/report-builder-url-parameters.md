@@ -1,5 +1,5 @@
 ---
-title: "URL parameters in paginated reports in Power BI"
+title: URL Parameters in Paginated Reports in Power BI
 description: Learn how to send commands to paginated reports in Power BI by adding a parameter to a URL, which you can include in an email or Web page.
 author: JulCsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
 ms.custom: ""
-ms.date: 12/08/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
@@ -40,6 +40,8 @@ powerbiservicereporturl?rp:parameter=value&rdl:parameter=value
 ```
 
 ## Syntax description 
+
+The URL access syntax consists of the following components:
 
 ### powerbiservicereporturl 
 The Power BI service URL of your paginated report. For example: 
@@ -78,6 +80,8 @@ For examples of passing report parameters in a URL, see [Pass a report paramet
 You can use the following parameters as part of a URL to configure the look and feel of your paginated reports in Power BI. The most common parameters are listed in this section. Parameters are case-insensitive and begin with the parameter prefix `rdl:` if related to the output format.  
 
 ### Report commands (`rdl:`) 
+
+The following commands control report rendering and behavior.
 
 #### Export format
 Specifies the format in which to render and export a report. 

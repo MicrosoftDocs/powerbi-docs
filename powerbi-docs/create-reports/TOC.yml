@@ -302,6 +302,8 @@
           href: copilot-prepare-data-ai-verified-answers.md
         - name: AI instructions
           href: copilot-prepare-data-ai-instructions.md
+        - name: Settings
+          href: copilot-prepare-data-ai-settings.md
         - name: FAQ - Prep data for AI
           href: copilot-prepare-data-ai-faq.yml             
         - name: Enhance Q&A with Copilot
@@ -348,10 +350,8 @@
     items: 
     - name: Visualization types in Power BI
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: Add visuals to a report (part 1)
-      href: ../visuals/power-bi-report-add-visualizations-i.md
-    - name: Add visuals to a report (part 2)
-      href: ../visuals/power-bi-report-add-visualizations-ii.md
+    - name: Add visuals to a report
+      href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane
       href: ../visuals/power-bi-report-visualizations.md
     - name: Customize visual titles, backgrounds, legends, and more
@@ -405,7 +405,9 @@
     - name: Paginated report visuals
       href: ../visuals/paginated-report-visual.md
     - name: Maps
-      items: 
+      items:
+      - name: Map visualizations overview
+        href: ../visuals/power-bi-map-visualizations-overview.md
       - name: Shape map visuals (preview)
         href: ../visuals/desktop-shape-map.md
       - name: Filled maps (choropleth maps)
@@ -414,34 +416,34 @@
         href: ../visuals/power-bi-visualizations-arcgis.md
       - name: Tips and tricks for map visualizations
         href: ../visuals/power-bi-map-tips-and-tricks.md
-    - name: Azure Maps in Power BI
-      items: 
-      - name: Get started with Azure Maps visual
-        href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
-      - name: Convert maps and filled maps to Azure Maps visuals
-        href: /azure/azure-maps/power-bi-visual-conversion?context=/power-bi/create-reports/context/context
-      - name: Layers in the Azure Maps visual
-        href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
-      - name: Add a bubble layer
-        href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
-      - name: Add a bar chart layer
-        href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
-      - name: Add a pie chart layer
-        href: /azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context
-      - name: Add a heat map layer
-        href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
-      - name: Add a reference layer
-        href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
-      - name: Add a tile layer
-        href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
-      - name: Geocoding in Azure Maps visual
-        href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
-      - name: Show real-time traffic
-        href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
-      - name: Azure Maps Power BI visual Data Residency
-        href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
-      - name: Manage the Azure Maps visual in your organization
-        href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
+      - name: Azure Maps in Power BI
+        items: 
+        - name: Get started with Azure Maps visual
+          href: /azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context
+        - name: Convert maps and filled maps to Azure Maps visuals
+          href: /azure/azure-maps/power-bi-visual-conversion?context=/power-bi/create-reports/context/context
+        - name: Layers in the Azure Maps visual
+          href: /azure/azure-maps/power-bi-visual-understanding-layers?context=/power-bi/create-reports/context/context
+        - name: Add a bubble layer
+          href: /azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context
+        - name: Add a bar chart layer
+          href: /azure/azure-maps/power-bi-visual-add-bar-chart-layer?context=/power-bi/create-reports/context/context
+        - name: Add a pie chart layer
+          href: /azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context
+        - name: Add a heat map layer
+          href: /azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context
+        - name: Add a reference layer
+          href: /azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context
+        - name: Add a tile layer
+          href: /azure/azure-maps/power-bi-visual-add-tile-layer?context=/power-bi/create-reports/context/context
+        - name: Geocoding in Azure Maps visual
+          href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
+        - name: Show real-time traffic
+          href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
+        - name: Azure Maps Power BI visual Data Residency
+          href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
+        - name: Manage the Azure Maps visual in your organization
+          href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
     - name: Matrix visuals
       items: 
       - name: Create a matrix visual
@@ -578,8 +580,6 @@
       href: service-metrics-scorecard-refresh.md
     - name: Create subgoals
       href: service-goals-subgoals.md
-    - name: Create linked goals
-      href: service-metrics-linked-metrics.md
     - name: Create automated status rules
       href: service-goals-status-rules.md
     - name: Create custom statuses

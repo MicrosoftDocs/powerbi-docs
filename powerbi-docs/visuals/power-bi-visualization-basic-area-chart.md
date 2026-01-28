@@ -1,9 +1,9 @@
 ---
 title: Create Basic Area Charts in Power BI
 description: "Learn how to create basic area charts in Power BI to visualize sales trends and compare data over time. Follow step-by-step instructions."
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: concept-article

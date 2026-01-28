@@ -1,12 +1,13 @@
 ---
 title: Use Copilot with Power BI reports and semantic models
 description: Learn how to use Copilot in Power BI to create, consume, and enhance reports with AI-driven insights.
-author: denglishbi
-ms.author: daengli
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: daengli
 ms.service: powerbi
 ms.topic: concept-article
 ms.date: 05/07/2025
+ms.collection: ce-skilling-ai-copilot
 ---
 # Use Copilot with Power BI reports and semantic models
 

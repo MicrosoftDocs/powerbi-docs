@@ -1,9 +1,9 @@
 ---
 title: "When to use paginated reports in Power BI"
 description: "Guidance for when to use Power BI paginated reports."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

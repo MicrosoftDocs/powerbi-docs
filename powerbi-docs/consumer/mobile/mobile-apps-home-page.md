@@ -1,8 +1,8 @@
 ---
 title: 'Tour the Power BI mobile app home page'
 description: Discover the main features of the Power BI mobile app home page and learn how to navigate quickly. Start exploring now.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile

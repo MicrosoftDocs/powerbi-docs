@@ -1,7 +1,8 @@
 ---
-title: "Specify a chart area for a series in Power BI paginated report | Microsoft Docs"
+title: Specify a Chart Area for a Series in Power BI Paginated Report
 description: Find out about the chart area as a top-level container in a Power BI paginated report that includes the outer border, the chart title, and the legend in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -15,9 +16,9 @@ ms.reviewer: saurkumar
 
   In Power BI paginated reports, the *chart* is the top-level container that includes the outer border, the chart title, and the legend. By default, the chart contains one *chart area*. The chart area is not visible on the chart surface, but you can think of the chart area as a container that encompasses only the axis labels, the axis title and the plotting area of one or more series. The following illustration shows the concept of multiple chart areas within a single chart.  
   
- ![Screenshot of a chart area.](media/paginated-reports-visualizations/chart-areas-diagram.png "Shows a diagram of a chart area")  
+ :::image type="content" source="media/paginated-reports-visualizations/chart-areas-diagram.png" alt-text="Screenshot of a chart area." lightbox="media/paginated-reports-visualizations/chart-areas-diagram.png":::  
   
- By default, all series are added to the default chart area. When you are area, column, line, and scatter charts, any combination of these series can be displayed on the same chart area. If you have several series in the same chart area, the readability of the chart is reduced. You may want to separate the chart types into multiple chart areas. Using multiple chart areas will increase readability for easier comparisons. For example, price-volume stock charts often have different ranges of values, but comparisons can be made between the price and volume data over the same period of time.  
+ By default, all series are added to the default chart area. When you are area, column, line, and scatter charts, any combination of these series can be displayed on the same chart area. If you have several series in the same chart area, the readability of the chart is reduced. Consider separating the chart types into multiple chart areas. Using multiple chart areas will increase readability for easier comparisons. For example, price-volume stock charts often have different ranges of values, but comparisons can be made between the price and volume data over the same period of time.  
   
  The bar, polar, or shape series can only be combined with series of the same chart types in the same chart area. If you are using a Polar or Shape chart, consider using a separate chart data region for each field that you wish to show.  
   

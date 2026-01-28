@@ -1,10 +1,11 @@
 ---
-title: "Line charts in Power BI paginated reports | Microsoft Docs"
+title: Line Charts in Power BI Paginated Reports
 description: Use line charts in a Power BI paginated report to represent large amounts of data that occur over a period of time in Power BI Report Builder.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows a line chart that contains three series.  
   
- ![Screenshot of a Line chart](./media/paginated-reports-visualizations/line-chart.gif "line-chart")  
+ :::image type="content" source="./media/paginated-reports-visualizations/line-chart.gif" alt-text="Screenshot of a Line chart." lightbox="./media/paginated-reports-visualizations/line-chart.gif":::  
 
 ## Variations on line charts
   

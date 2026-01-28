@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Business alignment"
 description: "Learn about the importance of business alignment with organizational goals."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

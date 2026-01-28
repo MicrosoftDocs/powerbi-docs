@@ -1,38 +1,38 @@
 ---
-title: Power BI semantic model experience in Excel 
-description: Discover and analyze Power BI semantic models in Excel using PivotTables and other Excel capabilities, available in both Excel Desktop and Excel for the web.
+title: Power BI Semantic Model Experience in Excel 
+description: Discover and analyze Power BI semantic models in Excel using PivotTables in Excel Desktop and Excel for the web. Learn how to connect to live data.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
-ms.date: 02/20/2025
+ms.date: 01/21/2026
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 #customer intent: As a user, I want to discover and analyze Power BI semantic models in Excel so that I can leverage Excel's capabilities for data analysis.
 ---
 
 # Power BI semantic model experience in Excel
 
-In Excel Desktop or Excel for the web, you can discover all the Power BI semantic models that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities. With the Power BI semantic model experience in Excel, you can:  
+In Excel Desktop or Excel for the web, you can discover all the Power BI semantic models that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities. By using the Power BI semantic model experience in Excel, you can:  
 
-- Easily search for your Power BI data in Excel and analyze that data using PivotTables and connected tables.
+- Easily search for your Power BI data in Excel and analyze that data by using PivotTables and connected tables.
 - Navigate to the Data hub in the Power BI service (`https://app.powerbi.com`), where you can discover other data artifacts (including Power BI datamarts) and trusted data in your organization.
 - Get more insights on the semantic model you're exploring in Excel by viewing related Power BI reports.
 
 ## Requirements
 
-The following requirements must be met before you proceed:
+Before you proceed, make sure you meet the following requirements:
 
-- Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
-- For on-premises datasets, your organization’s tenant administrator also must enable the **Allow
--  XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
+- Your organization's tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. For more information, see the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
+- For on-premises datasets, your organization's tenant administrator must also enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. For more information, see the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
 - Your version of Excel Desktop must be an updated version of Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
 
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
 
 - You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
-- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in **My workspace** or a Fabric capacity (F64 or greater) or Power BI Premium capacity. For more information, see [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Discover Power BI semantic models in Excel
@@ -47,7 +47,7 @@ To connect to live Power BI semantic models from inside Excel, use one of these 
 
     :::image type="content" source="media/service-connect-excel-power-bi-datasets/get-data-from-power-bi.png" alt-text="Screenshot showing getting to Power BI data from the Data tab.":::
 
-After you select **From Power BI** using either of these options, a pane opens on the right of the screen that shows Power BI semantic models you have access to.
+After you select **From Power BI** by using either of these options, a pane opens on the right of the screen that shows Power BI semantic models you have access to.
 
 :::image type="content" source="media/service-connect-power-bi-datasets-excel/excel-datasets-pane.png" alt-text="Screenshot showing list of Power BI semantic model in Excel.":::
 
@@ -81,10 +81,10 @@ Review the following considerations and limitations:
 
 - After you select **From Power BI** in the Excel ribbon, the artifacts loaded in the pane aren't all the semantic models you have access to. They're a selection of your most used semantic models. Use the search bar in the pane to get more semantic models.
 - The **Insert Table** option is only available in Excel Desktop.
-- The order of Power BI semantic models in the pane may be different from their order in the Data hub in the Power BI service.
-- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it may take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLake data hub (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
+- The order of Power BI semantic models in the pane might be different from their order in the Data hub in the Power BI service.
+- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it might take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLake data hub (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
 - Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
-- The Power BI Datasets Excel add-in is currently unavailable in Excel for the web in all Sovereign clouds.
+- The Power BI Semantic models Excel add-in is currently unavailable in Excel for the web in all Sovereign clouds.
 
 ## Related content
 

@@ -1,9 +1,9 @@
 ---
 title: "Conduct proof of concept to migrate to Power BI"
 description: "Guidance on conducting a proof of concept when migrating to Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

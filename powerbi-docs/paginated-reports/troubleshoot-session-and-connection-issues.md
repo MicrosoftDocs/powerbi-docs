@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot paginated report session and connection issues"
+title: Troubleshoot Paginated Report Session and Connection Issues
 description: In this article, diagnose and fix session creation and connection issues with paginated reports.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 12/12/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 # Troubleshoot paginated report session and connection issues
@@ -18,17 +18,17 @@ Use this topic to help troubleshoot issues specific to report specific connectio
 
 ## Why do I get a "Your session has expired" message?
 
-When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
+When you're viewing paginated reports in the Power BI service, sessions might time out, presenting you with a "Your session has expired" notification.
 
 The session times out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
 
 ## Why do I get an "Error communicating with Analysis Service" message?
 
-Paginated reports time out after 600 seconds when using a Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
+Paginated reports time out after 600 seconds when using a Power BI DirectQuery semantic model as a source. After 600 seconds, you receive this error: 
           
 "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
           
-For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
+For paginated reports running longer than 10 minutes, use  the XMLA endpoint to connect to the Power BI semantic model.
 
 ## Why do I get a "There was an error when attempting to create a new session" message?
 

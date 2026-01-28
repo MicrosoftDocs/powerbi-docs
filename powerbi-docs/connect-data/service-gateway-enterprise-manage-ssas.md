@@ -1,9 +1,9 @@
 ---
 title: Manage SQL Server Analysis Services data sources
 description: Learn how to manage SQL Server Analysis Services (SSAS) data sources in both multidimensional and tabular mode for the on-premises data gateway.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

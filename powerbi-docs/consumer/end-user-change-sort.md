@@ -1,5 +1,5 @@
 ---
-title: Change how a chart is sorted in a report
+title: Change How a Chart Is Sorted in a Report
 description: Sort report visuals alphabetically, numerically, or by multiple columns in Power BI service, and learn how to save your changes.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 01/06/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
@@ -49,15 +50,15 @@ In some cases, the report designer sets up the visual to sort by month. If this 
 
 ## Sort by multiple columns
 
-Certain types of visualizations can be sorted by more than one column. The order you select the columns determines sort priority. 
+Certain types of visualizations can be sorted by more than one column. The order you select the columns determines sort priority.
 
 The data in this table is sorted by **Number of customers**. The small arrow in the column header indicates that the column is sorted. The arrow points down because the column is sorted in descending order.
 
-![Screenshot showing the first column sorted in descending order.](media/end-user-change-sort/power-bi-sort-column.png)
+:::image type="content" source="media/end-user-change-sort/power-bi-sort-column.png" alt-text="Screenshot of the first column sorted in descending order.":::
 
 You can sort multiple columns to create a sorting sequence. To add more columns to the sort order, select the Shift key while also selecting the column header you would like to add next in the sort order. For example, if you select **Number of customers** and then select Shift and **Total revenue**, then the table is sorted first by customers, then by revenue. The red outlines show areas where the sort order changed.
 
-![Screenshot showing a table sorted by two columns. Red outlines show changes.](media/end-user-change-sort/power-bi-sort-second.png)
+:::image type="content" source="media/end-user-change-sort/power-bi-sort-second.png" alt-text="Screenshot of a table sorted by two columns with red outlines showing changes.":::
 
 If you select Shift and then select the same column a second time, the sort direction (ascending or descending) is changed. If you select Shift and select a column you previously added to the sort order, that column moves to the back of the sort order.
 
@@ -65,7 +66,7 @@ If you select Shift and then select the same column a second time, the sort dire
 
 Power BI reports retain the filters, slicers, sorting, and other data view changes that you make, even if you're working in [Reading view](end-user-reading-view.md#reading-view). So, if you navigate away from a report, and return later, your sorting changes are saved. To revert your changes back to the report designer's settings, select **Reset to default** from the top menu on the report page.
 
-![Screenshot showing the reset to default button.](media/end-user-change-sort/power-bi-reset-green.png)
+:::image type="content" source="media/end-user-change-sort/power-bi-reset-green.png" alt-text="Screenshot of the reset to default button.":::
 
 The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out and you can't save your sort changes.
 

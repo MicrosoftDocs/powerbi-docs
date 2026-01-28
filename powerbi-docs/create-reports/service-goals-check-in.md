@@ -1,10 +1,9 @@
 ---
 title: Stay on top of your goals in Power BI
 description: In addition to seeing all your goals in one view, with scorecards you can dig deeper into the data, update your goals, and make notes on important events.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
-featuredvideoid: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: monicacl
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Stay on top of your goals
@@ -18,78 +17,79 @@ ms.date: 11/01/2025
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Metrics in Power BI let your customers curate their metrics and track them against key business objectives, in a single pane. In addition to seeing all your metrics in one view, scorecards make it easy for you to dig deeper into the data, update your metrics, make notes on important events. These features are covered in this article. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
+Scorecards in Power BI let you curate your goals and track them against key business objectives, all in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events. This article covers these features. You can also [follow your goals](service-goals-follow.md), to be notified when they change.
 
-## View metric details
+## View goal details
 
-The goals Details pane provides the entire history for the metric from the start date, including check-ins, status changes, and relevant notes.
+The goals **Details** pane provides the entire history for the goal from the start date, including check-ins, status changes, and relevant notes.
 
-- To access the details pane, open a scorecard and select the metric name. Power BI automatically shows the details pane.
+To access the details pane, open a scorecard and select the goal name. Power BI automatically shows the details pane.
+:::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="Screenshot of The Details pane for a goal.":::
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-details-pane.png" alt-text="Screenshot of The Details pane for a metric.":::
+## Filtering and keyword search
 
-## Filtering and keyword search 
+You can filter scorecards to view the goals that are labeled as a particular status. Select the summary cards at the top of the scorecard to see what is on track or at risk.
 
-You can filter scorecards to goals labeled as a particular status. Selecting the summary cards at the top of the scorecard makes it easy to see what is on track or at risk. 
+In the following screenshot, the highlighted goals are *at risk*.
 
-This metric is *at risk*.
+:::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Screenshot of goals filtered to status at risk via summary card." lightbox="media/service-goals-check-in/filtered-at-risk.png":::
 
-:::image type="content" source="media/service-goals-check-in/filtered-at-risk.png" alt-text="Screenshot of goals filtered to status at risk via summary card.":::
+In the following screenshot, the highlighted goal is *behind*.
 
-This metric is *behind*.
+:::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of goals filtered to status behind via summary card." lightbox="media/service-goals-check-in/filtered-behind.png":::
 
-:::image type="content" source="media/service-goals-check-in/filtered-behind.png" alt-text="Screenshot of goals filtered to status behind via summary card.":::
+There's also a keyword search that filters the scorecard down to goals that match the keyword. Select the **Filter** icon above the first goal and type the keywords you're looking for. The scorecard filters to show those results, without losing the context of any parent or child goal relationships, making it easy to quickly find a particular goal and see how it's doing.
 
-There's also a keyword search that filters the scorecard down to goals that match the keyword.  Select the **Filter** icon above the first metric and type the keywords you're looking for.  The scorecard filters to show those results, without losing the context of any parent/child metric relationships, making it easy to quickly find a particular metric and see how it's doing.
+The following screenshot shows a scorecard before filtering.
 
-The scorecard before filtering.
+:::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard." lightbox="media/service-goals-check-in/keyword-highlighted.png":::
 
-:::image type="content" source="media/service-goals-check-in/keyword-highlighted.png" alt-text="Screenshot Indicating location of keyword search on scorecard.":::
+The following screenshot shows a scorecard filtered with the keyword *attrition*.
 
-The scorecard filtered to *Premium*.
-
-:::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for premium product SKU.":::
+:::image type="content" source="media/service-goals-check-in/keyword-premium.png" alt-text="Screenshot of Keyword search results for goals related to attrition." lightbox="media/service-goals-check-in/keyword-premium.png" :::
 
 ## Update manual values
 
-1. In a scorecard, select the metric name.
-1. In the **Details** pane, select **New check-in**. 
-1. Complete the following actions in any order: 
+1. In a scorecard, select the goal name.
+1. In the **Details** pane, select **New check-in**.
+1. Complete the following actions:
 
-    Choose a **date**.
+   * Choose a **date**.
 
-    Enter a new or updated **value**.
+   * Enter a new or updated **value**.
 
-    Select a **status**.
- 
-   Optionally, include a **note**. 
+   * Select a **status**.
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-manual.png" alt-text="Screenshot of Manual check-in, set date, value, status, and note.":::
+   * Optionally, include a **note**.
 
-1. Select **Save**. 
+   :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-manual.png" alt-text="Screenshot of Manual check-in, set date, value, status, and note.":::
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to the metric.":::
+1. Select **Save**.
 
-## Update connected values 
+   The check-in details appear in the **Activity** section of the goal **Details** pane.
 
-1. In a scorecard, select the metric name.
-1. In the **Details** pane, select **New check-in**. 
-1. Complete the following actions in any order: 
+   :::image type="content" source="media/service-goals-check-in/power-bi-goals-check-in-posted.png" alt-text="Screenshot of Check-in is posted to the goal.":::
 
-    Choose a **date**. Choosing a date auto-populates the value for that day. You can't override a connected value. 
+## Update connected values
 
-    Select a **status**.
+1. In a scorecard, select the goal name.
+1. In the **Details** pane, select **New check-in**.
+1. Complete the following actions:
 
-    Optionally, include a **note**. 
+   * Choose a **date**. Choosing a date autopopulates the value for that day. You can't override a connected value.
 
-    :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Screenshot of Check-in for a connected metric.":::
+   * Select a **status**.
 
-1. Select **Save**. 
+   * Optionally, include a **note**.
+
+   :::image type="content" source="media/service-goals-check-in/power-bi-goals-new-check-in-connected.png" alt-text="Screenshot of Check-in for a connected goal.":::
+
+1. Select **Save**.
 
 ## Related content
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
-- [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
+* [Get started with goals in Power BI](service-goals-introduction.md)
+* [Create scorecards and manual goals in Power BI](service-goals-create.md)
+* [Create connected goals in Power BI](service-goals-create-connected.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

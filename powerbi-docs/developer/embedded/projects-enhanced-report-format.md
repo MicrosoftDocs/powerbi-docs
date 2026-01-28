@@ -2,15 +2,16 @@
 title: Create a Power BI report in enhanced report format
 description: The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) provides source-control friendly file formats to enhance development efficiency.
 author: billmath
-ms.author: juliacawthra
+ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/06/2024
+ms.date: 12/01/2025
 LocalizationGroup: Create reports
 no-loc:
 #customer intent: As a report creator, I want to learn how to use the Power BI enhanced report format (PBIR).
+ai-usage: ai-assisted
 ---
 # Create a Power BI report in enhanced report format
 
@@ -36,7 +37,7 @@ You can enhance report development efficiency in one of two ways:
 
 Unlike PBIR-legacy format (report.json), PBIR is a publicly documented format. This format allows modifications from non-Power BI applications. Each file has a public JSON schema, which documents each property and lets code editors like Visual Studio Code perform syntax validation while editing. On open, Power BI Desktop validates the changed PBIR files to guarantee successful loading.
 
-## How to enable it
+## Enable PBIR
 
 PBIR is currently in preview. You can only create or convert existing Power BI project files to PBIR by using Power BI Desktop. You must first enable the feature in Power BI Desktop preview features.
 
@@ -45,9 +46,9 @@ PBIR is currently in preview. You can only create or convert existing Power BI p
 
 During preview, Fabric Git Integration and Fabric REST APIs continue to use PBIR-legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format. At general availability (GA), PBIR will become the default report format.
 
-Refer to [PBIR documentation](/power-bi/developer/projects/projects-report#pbir-format) for more details.
+Refer to [PBIR documentation](../projects/projects-report.md#pbir-format) for more details.
 
-## Next steps
+## Related content
 
 - [Power BI embedded analytics overview](embedded-analytics-power-bi.md)
 - [The Power BI embedded analytics playground](power-bi-playground.md)

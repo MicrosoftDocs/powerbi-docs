@@ -1,9 +1,9 @@
 ---
 title: Get started with the remote Power BI MCP server
 description: Learn how to set up and configure the remote Power BI MCP server to enable AI agents to query Power BI semantic models.
-author: sgodderidge
-ms.author: sgodderidge
-ms.reviewer: ''
+author: billmath
+ms.author: billmath
+ms.reviewer: sgodderidge
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: get-started

@@ -1,5 +1,5 @@
 ---
-title: "Report parameters in Power BI Report Builder"
+title: Report Parameters in Power BI Report Builder
 description: Learn about common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
 author: JulCsc
 ms.author: juliacawthra
@@ -8,7 +8,8 @@ ms.subservice: report-builder
 ms.topic: concept-article
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 02/16/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Report parameters in Power BI Report Builder
@@ -37,19 +38,19 @@ Here are some of the most common ways to use parameters.
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota, and @SalesDate.  
 
-![Screenshot of View report with parameters.](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "View report with parameters")
+:::image type="content" source="media/report-builder-parameters/report-builder-parameters-power-bi-service.png" alt-text="Screenshot of View report with parameters." lightbox="media/report-builder-parameters/report-builder-parameters-power-bi-service.png":::
   
 1. **Parameters pane**. The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane.  
   
-2. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box, use the calendar control, or select **Go to today**.  
+1. **@SalesDate parameter**. The parameter **@SalesDate** is data type **DateTime**. The prompt **Select the Date** appears next to the text box. To modify the date, type a new date in the text box, use the calendar control, or select **Go to today**.  
   
-3. **@ShowAll parameter**. The parameter **@ShowAll** is data type **Boolean**. Use the radio buttons to specify **True** or **False**.  
+1. **@ShowAll parameter**. The parameter **@ShowAll** is data type **Boolean**. Use the radio buttons to specify **True** or **False**.  
   
-4. **Show or Hide Parameter Area handle**. On the report viewer toolbar, select this arrow to show or hide the parameters pane.  
+1. **Show or Hide Parameter Area handle**. On the report viewer toolbar, select this arrow to show or hide the parameters pane.  
   
-5. **@CategoryQuota parameter**. The parameter **@CategoryQuota** is data type **Float**, so it takes a numeric value. **@CategoryQuota** is set to allow multiple values.  
+1. **@CategoryQuota parameter**. The parameter **@CategoryQuota** is data type **Float**, so it takes a numeric value. **@CategoryQuota** is set to allow multiple values.  
   
-6. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
+1. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
 
 See how your customers interact with parameters in your paginated reports in the article [View parameters for paginated reports in the Power BI service](../../consumer/paginated-reports-view-parameters.md).
   
@@ -64,17 +65,17 @@ You can create report parameters in a few different ways.
   
 Add a dataset query that contains variables or a dataset stored procedure that contains input parameters. A dataset parameter is created for each variable or input parameter, and a report parameter is created for each dataset parameter.  
   
-![Screenshot of Report Builder Parameter Dataset Properties.](media/report-builder-parameters/report-builder-parameter-dataset.png "Report Builder Parameter Dataset Properties")
+:::image type="content" source="media/report-builder-parameters/report-builder-parameter-dataset.png" alt-text="Screenshot of Report Builder Parameter Dataset Properties." lightbox="media/report-builder-parameters/report-builder-parameter-dataset.png":::
 
 This image from Report Builder shows:  
 
 1. The report parameters in the **Report Data** pane.  
   
-2. The dataset with the parameters.  
+1. The dataset with the parameters.  
   
-3. The **Parameters** pane.  
+1. The **Parameters** pane.  
   
-4. The parameters listed in the **Dataset Properties** dialog box.  
+1. The parameters listed in the **Dataset Properties** dialog box.  
   
 ### Create a parameter manually
   

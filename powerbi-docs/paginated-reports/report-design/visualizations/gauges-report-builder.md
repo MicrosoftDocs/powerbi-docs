@@ -1,10 +1,11 @@
 ---
-title: "Gauges in a Power BI paginated report | Microsoft Docs"
+title: Gauges in a Power BI Paginated Report
 description: Display key performance indicators in a paginated report to illustrate values or to compare data by using a radial or linear gauge in Power BI Report Builder. 
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -25,7 +26,7 @@ ms.reviewer: monaraya
   
  There are two types of gauges: radial and linear. The following illustration shows the basic elements of a single radial gauge in the gauge panel.  
   
- ![Screenshot showing gauge elements diagram.](media/paginated-reports-visualizations/gauge-elements-diagram.png "Gauge elements diagram.")  
+ :::image type="content" source="media/paginated-reports-visualizations/gauge-elements-diagram.png" alt-text="Screenshot showing gauge elements diagram." lightbox="media/paginated-reports-visualizations/gauge-elements-diagram.png":::  
   
  For more information about using gauges as KPIs, see [Tutorial: Adding a KPI to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder).  
 
@@ -42,13 +43,13 @@ ms.reviewer: monaraya
   
 ### Radial gauge
   
- ![Screenshot showing radial gauge.](media/paginated-reports-visualizations/radial-gauge.gif "Image of radial gauge.")  
+ :::image type="content" source="media/paginated-reports-visualizations/radial-gauge.gif" alt-text="Screenshot showing radial gauge." lightbox="media/paginated-reports-visualizations/radial-gauge.gif":::  
   
  Radial gauge options: Radial, Radial with Mini Gauge, Two Scales, 90 Degrees Northeast, 90 Degrees Northwest, 90 Degrees Southwest, 90 Degrees Southeast, 180 Degrees North, 180 Degrees South, 180 Degrees West, 180 Degrees East, and Meter.  
   
 ### Linear gauge
   
- ![Screenshot showing linear gauge.](media/paginated-reports-visualizations/linear-gauge.gif "Image of linear gauge.")  
+ :::image type="content" source="media/paginated-reports-visualizations/linear-gauge.gif" alt-text="Screenshot showing linear gauge." lightbox="media/paginated-reports-visualizations/linear-gauge.gif":::  
   
  Linear gauge options: Horizontal, Vertical, Multiple Bar Pointers, Two Scales, Three Color Range, Logarithmic, Thermometer, Thermometer Fahrenheit/Celcius, and Bullet Graph.  
   

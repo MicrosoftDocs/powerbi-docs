@@ -1,10 +1,11 @@
 ---
-title: "Text boxes in Power BI paginated reports | Microsoft Docs"
+title: Text Boxes in Power BI Paginated Reports
 description: Find out about cells in a table or matrix that also contain text boxes in a Power BI paginated report. You can format them the same way as stand-alone text boxes in Power BI Report Builder.
-ms.date: 01/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -35,7 +36,7 @@ If you drag a report dataset field value directly to the report design surface, 
   
  The following picture shows three versions of a table report that groups data by month. The text box that contains the month value uses a different text box orientation.  
   
- ![Drawing showing three possible orientations for the month value.](../../media/report-builder-power-bi/rs-textbox-orientation.png) 
+ :::image type="content" source="../../media/report-builder-power-bi/rs-textbox-orientation.png" alt-text="Screenshot of drawing showing three possible orientations for the month value." lightbox="../../media/report-builder-power-bi/rs-textbox-orientation.png"::: 
   
  Orientation is set on the text box and applies to all the text in the box. You can't specify a different orientation for parts of the text box.  
   

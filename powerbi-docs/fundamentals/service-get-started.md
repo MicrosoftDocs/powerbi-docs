@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Get started creating in the Power BI service"
+title: "Tutorial: Get Started Creating in the Power BI Service"
 description: Learn how to get started with the Power BI online service (app.powerbi.com) by following the steps in this tutorial.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 09/30/2025
+ms.date: 12/01/2025
 ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
@@ -91,6 +91,13 @@ After you connect data to build a report, you're ready to start exploring. When 
 
 We can start by asking Copilot to review our data and suggest some visuals.
 
+> [!NOTE]
+> **If Copilot isn't available:** Copilot requires your organization to enable it and may not be available in all regions or for all license types. If you don't see Copilot:
+>
+> - Check with your administrator to see if Copilot is enabled for your organization.
+> - You can still complete this tutorial by creating visuals manually (skip to the [Create report visuals from scratch](#create-report-visuals-from-scratch) section).
+> - For more information about Copilot availability, see [Copilot for Power BI overview](../create-reports/copilot-introduction.md).
+
 ### Switch between report views
 
 Reports have two modes: **Editing** and **Reading**. To create a report, add visuals, and edit your report, use **Editing** mode. To view your report in progress, switch to the **Reading** view at the top of the page:
@@ -153,6 +160,9 @@ Add a new page to your report. The new report page canvas is blank and shows the
 1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
    Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma next to data that has numeric values.
+
+   > [!NOTE]
+   > **Don't see sigma or calendar symbols?** These icons appear based on Power BI's automatic detection of data types. If your semantic model was imported differently or uses calculated columns, you might not see these symbols. The symbols are visual indicators only; your data still works correctly in visualizations regardless of whether the icons appear.
 
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
@@ -302,6 +312,6 @@ When you delete a semantic model, the Power BI service also deletes all reports 
 
 ## Related content
 
-* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
-* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
+- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

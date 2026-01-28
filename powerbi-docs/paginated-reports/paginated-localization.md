@@ -1,5 +1,5 @@
 ---
-title: "View localized paginated reports in the Power BI service"
+title: View Localized Paginated Reports in the Power BI Service
 description: You can view paginated reports in your local or preferred language in the Power BI service.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 10/29/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # View localized paginated reports in the Power BI service
@@ -33,11 +34,11 @@ Another way to view the translated version is to append the url with **"?languag
 
 Here's the English **en-US** version of a sample report on the service:
 
-:::image type="content" source="media/paginated-localization/paginated-sales-summary-english.png" alt-text="Screenshot of the report in en-US.":::
+:::image type="content" source="media/paginated-localization/paginated-sales-summary-english.png" alt-text="Screenshot of the report in en-US." lightbox="media/paginated-localization/paginated-sales-summary-english.png":::
 
 Here's the German **de-DE** version of the localized report on the service:
 
-:::image type="content" source="media/paginated-localization/paginated-sales-summary-german.png" alt-text="Screenshot of report in de-DE.":::
+:::image type="content" source="media/paginated-localization/paginated-sales-summary-german.png" alt-text="Screenshot of report in de-DE." lightbox="media/paginated-localization/paginated-sales-summary-german.png":::
 
 ## Considerations and limitations
 

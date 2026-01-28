@@ -41,6 +41,20 @@ You can have more than one license at the same time. The service gives you the e
 > [!NOTE]
 > You need a paid license, either [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), to publish content to a Power BI app workspace, edit content, and share content with others.
 
+### Understanding license capabilities
+
+| Capability | Free license | Pro license | PPU license |
+|------------|--------------|-------------|-------------|
+| View shared content in Premium capacity | Yes | Yes | Yes |
+| View shared content in non-Premium workspaces | No | Yes | Yes |
+| Create content in My workspace | Yes | Yes | Yes |
+| Publish to app workspaces | No | Yes | Yes |
+| Share content with others | No | Yes | Yes |
+| Use PPU-only features | No | No | Yes |
+
+> [!TIP]
+> If you have a free license and want to share reports or publish to workspaces outside your personal My workspace, you need to upgrade to Pro or PPU. You can start a trial or purchase a license from your Account manager.
+
 For details about licenses and subscriptions, see [License types for Power BI and Fabric](service-features-license-type.md).
 
 ## Power BI Premium capacity subscription
@@ -62,7 +76,7 @@ For more info about Premium capacity, see [What is Microsoft Power BI Premium?](
 
 ## Find out which licenses you have
 
-To see your account information, sign in to Power BI in your browser (app.powerbi.com). Select your profile picture in the upper right corner. In the following screenshot, a user named Zalan has a free account and is signed up for a free trial. Other types of licenses are Pro and Premium per-user. To see more details about your account, select **View account** > **Subscriptions.**
+To see your account information, sign in to Power BI in your browser (app.powerbi.com). Select your profile picture in the upper right corner. In the following screenshots, the sample users illustrate how different license types appear. Other types of licenses are Pro and Premium per-user. To see more details about your account, select **View account** > **Subscriptions.**
 
 :::image type="content" source="media/end-user-license/power-bi-account-manager.png" alt-text="Screenshot of the menu that appears when you select your profile picture.":::
 
@@ -70,7 +84,7 @@ The first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro lice
 
 :::image type="content" source="media/end-user-license/power-bi-license-office.png" alt-text="Screenshot of Office portal subscriptions tab showing Office 365 E5 subscription.":::
 
-The second user, Zalan, has a free license. The license name is Fabric (Free).
+The second screenshot shows a user with a free license. The license name is Fabric (Free).
 
 :::image type="content" source="media/end-user-license/power-bi-license-free.png" alt-text="Screenshot of Office portal subscriptions tab for a free license.":::
 

@@ -1,8 +1,8 @@
 ---
 title: View dashboards in the Power BI mobile apps
 description: Learn how to view and interact with Power BI dashboards on your mobile device.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to

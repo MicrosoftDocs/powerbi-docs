@@ -1,9 +1,9 @@
 ---
 title: "Add or remove a gateway data source"
 description: Learn how to add or remove data sources to an on-premises gateway in Power BI. Get tips for managing your data sources efficiently.
-author: miquelladeboer
-ms.author: mideboer
-ms.reviewer: kgremban
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mideboer 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

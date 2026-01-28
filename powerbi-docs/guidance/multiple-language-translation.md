@@ -79,6 +79,10 @@ Data translation is harder to design and implement than the other two types of t
 
 A multiple-language report typically requires both metadata translations and report label translations. Some multiple-language projects require data translations, but others don't.
 
+## Limitations
+
+Multiple-language reports aren't supported with [Publish to web](../collaborate-share/service-publish-to-web.md). For more information about the limitations of Publish to web, see [Publish to web considerations and limitations](../collaborate-share/service-publish-to-web.md#considerations-and-limitations).
+
 ## Related content
 
 - [Use locale values in multiple-language Power BI reports](multiple-language-locale.md)

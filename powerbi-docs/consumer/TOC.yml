@@ -77,8 +77,6 @@
       href: end-user-reading-view.md
     - name: "Interact with visuals"
       href: end-user-visualizations.md
-    - name: "Different ways to zoom (Focus and Full screen)"
-      href: end-user-focus.md
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: "Drill down in a visualization"

@@ -1,9 +1,9 @@
 ---
 title: Download Power BI Report Server
 description: This page helps users download and install Power BI Report Server.
-author: petebro-MSFT
-ms.author: petebro
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
@@ -29,12 +29,12 @@ For details and more information about what's new in this release, see [Change l
 
 **[Download Power BI Report Server](https://aka.ms/pbireportserverexe)**
 
-PBIRS September 2025 is the latest generally available (GA) version.
+PBIRS January 2026 is the latest generally available (GA) version.
 
-- Release name: Power BI Report Server (September 2025)
-- Build number: 15.0.1119.121
-- Version: 1.24.9466.3830
-- Release date: December 1, 2025
+- Release name: Power BI Report Server (January 2026)
+- Build number: 15.0.1120.113
+- Version: 1.25.9508.3237
+- Release date: January 21, 2026
 
 ## System Requirements
 

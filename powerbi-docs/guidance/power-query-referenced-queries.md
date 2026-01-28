@@ -1,9 +1,9 @@
 ---
 title: "Referencing Power Query queries"
 description: "Guidance for defining Power Query queries that reference other queries and for optimizing data refresh performance."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article

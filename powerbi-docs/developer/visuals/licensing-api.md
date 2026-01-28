@@ -1,9 +1,9 @@
 ---
 title: Transactability and license enforcement
 description: This article discusses how to retrieve the Power BI visual's licenses and trigger the display of out of box license related notifications to the Power BI user.
-author: jennyfel
-ms.author: jennyfel
-ms.reviewer: billmath
+author: billmath
+ms.author: billmath
+ms.reviewer: jennyfel
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

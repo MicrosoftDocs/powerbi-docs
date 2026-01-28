@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Community of practice"
 description: "Establish a community of practice to help users drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
 ms.topic: concept-article
 ms.custom: fabric-cat

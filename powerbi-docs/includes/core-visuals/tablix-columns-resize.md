@@ -1,9 +1,9 @@
 ---
 title: Tablix columns resize
 description: Tablix columns resize options
-ms.reviewer: juliacawthra
-author: JulCsc
-ms.author: jterh
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include

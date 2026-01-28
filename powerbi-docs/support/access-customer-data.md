@@ -1,8 +1,8 @@
 ---
 title: Grant Consent for Power BI Customer Data Access
 description: Learn how to grant or revoke consent for Microsoft Support to access your Power BI customer data. Control your privacy during support requests with temporary, revocable permissions.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.topic: concept-article

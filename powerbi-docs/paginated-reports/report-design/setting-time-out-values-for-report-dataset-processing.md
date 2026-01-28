@@ -1,7 +1,8 @@
 ---
-title: "Set time-out values for Power BI paginated report dataset processing | Microsoft Docs"
+title: Set Time-Out Values for Power BI Paginated Report Dataset Processing
 description: In paginated reports, you can specify time-out values to set limits on how system resources are used.
-ms.date: 07/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -19,7 +20,7 @@ Most time-out errors occur during query processing. If you are encountering time
 
  Query time-out values are specified during report authoring when you define an embedded dataset. The time-out value is stored with the report, in the Timeout element of the report definition. By default, this value is set to 0 seconds, which results in an infinite timeout. 
  
-![Screenshot of Power BI semantic model properties.](../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png "Power BI semantic model properties")  
+:::image type="content" source="../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png" alt-text="Screenshot of Power BI semantic model properties." lightbox="../media/paginated-reports-create-embedded-dataset/power-bi-dataset-properties-timeout.png":::  
  
  Users who have permission to modify the properties of a published report can reset this value by editing the report definition file.
  The value you specify determines how long the Power BI service waits for query processing to complete when retrieving data from the report’s data source.

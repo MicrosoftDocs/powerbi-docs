@@ -1,7 +1,8 @@
 ---
-title: "Word device information settings for Power BI paginated reports"
+title: Word Device Information Settings for Power BI Paginated Reports
 description: Learn about the device information settings that are available for rendering Power BI paginated reports in Microsoft Word format.
-ms.date: 01/05/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -24,9 +25,9 @@ ms.author: juliacawthra
 |**OmitHyperlinks**|Indicates whether to omit the Hyperlink action on all items where it is set. The default value is **false**|  
 |**OmitDrillthroughs**|Indicates whether to omit the Drillthrough action on all items where it is set. The default value is **false**|  
   
-## Next steps
+## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)
 
   
   

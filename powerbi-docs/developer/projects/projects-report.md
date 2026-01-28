@@ -6,7 +6,7 @@ ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: article
+ms.topic: concept-article
 ms.date: 12/15/2025
 ---
 

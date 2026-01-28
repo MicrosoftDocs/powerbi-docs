@@ -1,7 +1,8 @@
 ---
-title: "Export Power BI paginated report to XML (Power BI Report Builder) | Microsoft Docs"
+title: Export Power BI Paginated Report to XML (Power BI Report Builder)
 description: In Power BI Report Builder, the XML rendering extension renders a Power BI paginated report to XML format. Import XML into a database, use as a message, or send to applications.
-ms.date: 10/16/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -138,7 +139,7 @@ The XML rendering extension returns a Power BI paginated report in XML format. T
   
  A non-repeating header is rendered as a child of the row or column that does not repeat with a group.  
   
- If a non-repeating member has no corresponding Tablix cells, it isn't rendered. This may occur in the case of a Tablix cell where it spans more than one column.  
+ If a non-repeating member has no corresponding Tablix cells, it isn't rendered. This might occur in the case of a Tablix cell where it spans more than one column.  
   
 #### Rows and columns that repeat with a group  
  Rows and columns that repeat within a group are rendered according to Tablix.DataElementOutput rules. The name for the element is taken from the DataElementName property.  

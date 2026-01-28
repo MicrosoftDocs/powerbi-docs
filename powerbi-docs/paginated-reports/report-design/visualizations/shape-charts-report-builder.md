@@ -1,12 +1,12 @@
 ---
-title: "Shape charts in Power BI paginated report | Microsoft Docs"
+title: Shape Charts in Power BI Paginated Report
 description: See how shape charts in a Power BI paginated report display value data as percentages of their whole in Power BI Report Builder. Shape charts are often used to show proportional comparisons between values in a set. 
-ms.date: 03/10/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: article
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -21,7 +21,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a funnel chart.  
   
- ![Screenshot of a Funnel chart.](media/paginated-reports-visualizations/funnel-chart.gif "Funnel chart")  
+ :::image type="content" source="media/paginated-reports-visualizations/funnel-chart.gif" alt-text="Screenshot of a Funnel chart." lightbox="media/paginated-reports-visualizations/funnel-chart.gif":::  
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
@@ -31,7 +31,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 ## Data considerations for shape charts  
   
-- Shape charts are popular in reports because of their visual impact. However, shape charts are a simplified chart type that may not best represent your data. Consider using a shape chart only once the data has been aggregated to seven data points or less. In general, use the shape chart to display only one category per data region.  
+- Shape charts are popular in reports because of their visual impact. However, shape charts are a simplified chart type that might not best represent your data. Consider using a shape chart only once the data has been aggregated to seven data points or less. In general, use the shape chart to display only one category per data region.  
   
 - Shape charts display each data group as a separate segment of the chart. You must add at least one data field and one category field. If more than one data field is added to a shape chart, the shape chart displays both data fields in the same chart.  
   

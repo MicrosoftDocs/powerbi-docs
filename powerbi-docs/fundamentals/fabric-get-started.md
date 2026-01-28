@@ -1,9 +1,9 @@
 ---
 title: "Tutorial: Microsoft Fabric for Power BI users"
 description: Learn how to use Microsoft Fabric with Power BI by creating a dimensional model and building a report.
-author: itsnotaboutthecell
-ms.author: alpowers
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
@@ -22,10 +22,10 @@ In this tutorial, you'll learn how to use Microsoft Fabric to prepare, load, and
 By the end of this tutorial, you'll be able to:
 
 > [!div class="checklist"]
-> * Prepare and load data into a lakehouse
-> * Orchestrate a data pipeline to refresh data and send an email on failure
-> * Create a semantic model in the Lakehouse
-> * Automatically create a report with quick create
+> - Prepare and load data into a lakehouse
+> - Orchestrate a data pipeline to refresh data and send an email on failure
+> - Create a semantic model in the Lakehouse
+> - Automatically create a report with quick create
 
 ## Prerequisites
 

@@ -1,7 +1,8 @@
 ---
-title: "Add a chart to a Power BI paginated report | Microsoft Docs"
+title: Add a Chart to a Power BI Paginated Report
 description: Learn how to add a chart to a Power BI paginated report when you want to summarize data in a visual format in Power BI Report Builder.
-ms.date: 03/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -44,7 +45,7 @@ When you want to summarize data in a visual format in a paginated report, use a 
   
 1. On the **Run** tab, select **Design** to continue working on the report.  
   
- On charts with axes, such as bar and column charts, the category axis may not display all the category labels. For more information about how to change the axis labels, see [Specify an axis interval in a Power BI paginated report (Power BI Report Builder)](specify-axis-interval-report-builder.md).
+ On charts with axes, such as bar and column charts, the category axis might not display all the category labels. For more information about how to change the axis labels, see [Specify an axis interval in a Power BI paginated report (Power BI Report Builder)](specify-axis-interval-report-builder.md).
   
 ## Related content
 
@@ -53,4 +54,3 @@ When you want to summarize data in a visual format in a paginated report, use a 
 - [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](empty-null-data-points-charts-report-builder.md)   
 - [Tutorial: Adding a Bar Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-bar-chart-to-your-report-report-builder)  
 - [Tutorial: Adding a Pie Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
- 
