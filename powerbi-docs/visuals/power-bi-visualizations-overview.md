@@ -289,6 +289,14 @@ This approach makes it easier to create calculations like running totals, moving
 
 For more information, see [Visual calculations overview](../transform-model/desktop-visual-calculations-overview.md).
 
+## Analytics pane
+
+Many visuals support adding analytics elements through the **Analytics** pane, which helps you highlight important trends and insights. You can add reference lines such as constant lines for X or Y axes, average lines, minimum and maximum lines, median lines, and percentile lines.
+
+For time-series data, you can also add forecasting to predict future values based on historical trends, and enable anomaly detection to automatically identify unexpected spikes or dips in your data. Some visuals also support error bars to show the variability or uncertainty in your measurements.
+
+For more information, see [Use the Analytics pane in Power BI](../transform-model/desktop-analytics-pane.md).
+
 ## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
