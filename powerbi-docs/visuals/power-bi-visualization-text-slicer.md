@@ -43,9 +43,9 @@ When you enter text in a text slicer and press **Enter** or select the apply but
 - **Remove a pill** - Select the dismiss (X) button on a pill to remove that filter value.
 - **View clustered pills** - When you have many filter values, pills cluster together to save space. Select the cluster to expand and view all individual pills.
 
-## Format apply and dismiss buttons
+## Format the text slicer
 
-You can customize the appearance of the apply button and dismiss buttons to match your report design. In the **Format** pane under **Visual**:
+You can customize the appearance of many elements in the text slicer to match your report design, including the apply and dismiss buttons. In the **Format** pane under **Visual**:
 
 - **Apply button** - Expand **Apply button** to access formatting options for the apply button.
 - **Dismiss button** - Expand **Filters** to access formatting options for the dismiss button on filter pills.
