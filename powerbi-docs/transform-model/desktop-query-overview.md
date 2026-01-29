@@ -1,8 +1,8 @@
 ---
 title: Query Overview in Power BI Desktop
 description: Learn how to use Power Query Editor in Power BI Desktop to connect to data sources, shape and transform data, and create queries with comprehensive ribbon tools and formatting options.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

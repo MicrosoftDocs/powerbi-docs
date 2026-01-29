@@ -1,8 +1,8 @@
 ---
 title: Create and Manage Relationships in Power BI Desktop
 description: Learn how to create and manage relationships in Power BI Desktop using autodetect and manual methods, including cardinality options, cross-filter directions, and relationship editing techniques.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

@@ -1,8 +1,8 @@
 ---
 title: Dataflows Considerations and Limitations
 description: Learn about limitations, restrictions, and supported connectors and features of dataflows in Power BI
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
