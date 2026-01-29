@@ -77,8 +77,6 @@
       href: end-user-reading-view.md
     - name: "Interact with visuals"
       href: end-user-visualizations.md
-    - name: "Types of visualizations"
-      href: ../visuals/power-bi-visualizations-overview.md
     - name: "Drill down in a visualization"
       href: ../create-reports/desktop-drillthrough.md
     - name: "How to use an ArcGIS map in Power BI"
