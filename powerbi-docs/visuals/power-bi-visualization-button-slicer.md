@@ -115,20 +115,9 @@ The button slicer supports conditional formatting for multiple elements, includi
 
 ## Paste values to select
 
-The **Paste** feature lets you apply multiple selections to a button slicer by pasting a list of values. You don't need to manually select each option one by one. This feature streamlines the filtering process, especially when working with large datasets or predefined lists.
+The Button slicer supports pasting values to quickly select multiple items at once. Copy values from external sources like Excel or Notepad, with each value on its own line, and paste them directly into the slicer to apply matching selections.
 
-Instead of spending time selecting items individually, you can copy values from external sources (like Excel, Notepad, or emails) and paste them directly into the slicer. The slicer then automatically recognizes and applies all matching selections at once.
-
-This approach not only saves time but also reduces the likelihood of overlooking values. It's perfect for scenarios where precision and speed are essential.
-
-In this section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
-
-1. To paste a set of values into a button slicer, open Excel. Create a new worksheet and enter your desired list of values. 
-1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your button slicer on the report canvas, and use **Ctrl-V** to paste the copied values, or use the slicer's ellipsis menu to paste the copied values. Each button with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
-
-    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-paste.png" alt-text="Screenshot of button slicer after pasting values showing selected names." lightbox="media/button-slicer-visual-highlights/button-slicer-paste.png":::
-
-Pasting values into the button slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
+For detailed instructions on using the paste feature, see [Paste values in slicers](power-bi-visualization-slicers.md#paste-values-in-slicers).
 
 ## Considerations and limitations
 

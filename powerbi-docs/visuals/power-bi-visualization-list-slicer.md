@@ -3,7 +3,6 @@ title: Create and Use a List Slicer (Preview)
 description: Learn how to create, customize, and use list slicers in Power BI Desktop. Filter data interactively with hierarchies, search, and conditional formatting. Try it now.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -141,20 +140,9 @@ Conditional formatting in list slicers helps you visually emphasize important da
 
 ## Paste values to select
 
-The **Paste** feature lets you apply multiple selections to a button slicer by pasting a list of values. You don't need to manually select each option one by one. This feature streamlines the filtering process, especially when working with large datasets or predefined lists.
+The List slicer supports pasting values to quickly select multiple items at once. Copy values from external sources like Excel or Notepad, with each value on its own line, and paste them directly into the slicer to apply matching selections.
 
-Instead of spending time selecting items individually, you can copy values from external sources (like Excel, Notepad, or emails) and paste them directly into the slicer. The slicer then automatically recognizes and applies all matching selections at once.
-
-This approach not only saves time but also reduces the likelihood of overlooking values. It's perfect for scenarios where precision and speed are essential.
-
-In the next section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
-
-1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. 
-1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your list slicer on the report canvas, or use the slicer's ellipsis menu, and paste the copied values. Each entry with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
-
-Pasting values into the list slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
-
-Next, take time to familiarize yourself with the considerations and limitations for list slicers.
+For detailed instructions on using the paste feature, see [Paste values in slicers](power-bi-visualization-slicers.md#paste-values-in-slicers).
 
 ## Considerations and limitations
 
@@ -176,6 +164,7 @@ This section provides a list of known considerations and limitations, designed t
   - During the preview phase, certain accessibility features such as keyboard navigation and screen-reader support might not be fully operational.
   - However, we're committed to ensuring that all functionalities comply with accessibility standards upon the conclusion of the preview period.
 - **Paste values**:
+  - Each value you want to select must be on its own line for the paste feature to work correctly.
   - You can paste up to 2,000 values into the List slicer; any extras are ignored.
   - Pasting new values removes all previous selections.
   - When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available entries, those values still act as filters; so, visuals might display as blank due to the absence of matching data.
