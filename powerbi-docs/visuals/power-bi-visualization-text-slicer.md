@@ -3,7 +3,6 @@ title: Create and Use a Text Slicer (Preview)
 description: Learn how to create and customize a Text slicer in Power BI Desktop for dynamic data filtering. Follow step-by-step instructions to enhance your reports with interactive text-based filters.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -71,7 +70,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 
 ## Create a text slicer
 
-In this quick and easy three-step guide, you create a **text slicer** in Power **BI Desktop**. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **text slicer** in Power **BI Desktop**. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your text slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **text slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
