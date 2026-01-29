@@ -3,7 +3,6 @@ title: Create and Use a List Slicer (Preview)
 description: Learn how to create, customize, and use list slicers in Power BI Desktop. Filter data interactively with hierarchies, search, and conditional formatting. Try it now.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -24,7 +23,7 @@ List slicers balance simplicity and flexibility, making them ideal for both novi
 > [!IMPORTANT]
 > The List slicer (preview)  is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-## Prerequisites
+## Prerequisites for the example
 
 In the following guide, use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
@@ -39,7 +38,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 
 ## Create a list slicer
 
-In this quick and easy three-step guide, you create a **List slicer** in Power **BI Desktop**. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **List slicer** in Power **BI Desktop**. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your list slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **List slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
@@ -93,7 +92,7 @@ Power BI’s list slicer includes a built-in search feature that helps users qui
 
 In the following section, you learn how to search and filter your list slicer by using a practical example, enabling you to quickly and easily locate specific items within long or hierarchical lists.
 
-1. Open the search box by selecting the three-dot **ellipsis menu (...)** in the top-right corner of your list slicer visual. From the dropdown, select **Search**. This action adds a search bar at the top of the slicer, so you can quickly find items without scrolling through the entire list.
+1. Open the search box by selecting the three-dot **ellipsis menu (...)** in the top-right corner of your list slicer visual. From the dropdown, select **Search**. Alternatively, select the slicer and press **Ctrl+F** to open the search bar. This action adds a search bar at the top of the slicer, so you can quickly find items without scrolling through the entire list.
 
 1. Select the **search bar** and start typing a name or keyword. For example, entering the letter **C** instantly filters the slicer to show only District Managers whose names begin with or contain the letter **C**.
 
@@ -141,20 +140,9 @@ Conditional formatting in list slicers helps you visually emphasize important da
 
 ## Paste values to select
 
-The **Paste** feature lets you apply multiple selections to a button slicer by pasting a list of values. You don't need to manually select each option one by one. This feature streamlines the filtering process, especially when working with large datasets or predefined lists.
+The List slicer supports pasting values to quickly select multiple items at once. Copy values from external sources like Excel or Notepad, with each value on its own line, and paste them directly into the slicer to apply matching selections.
 
-Instead of spending time selecting items individually, you can copy values from external sources (like Excel, Notepad, or emails) and paste them directly into the slicer. The slicer then automatically recognizes and applies all matching selections at once.
-
-This approach not only saves time but also reduces the likelihood of overlooking values. It's perfect for scenarios where precision and speed are essential.
-
-In the next section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
-
-1. To paste a set of values into a list slicer, open Excel. Create a new worksheet and enter your desired list of values. 
-1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your list slicer on the report canvas, or use the slicer's ellipsis menu, and paste the copied values. Each entry with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
-
-Pasting values into the list slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
-
-Next, take time to familiarize yourself with the considerations and limitations for list slicers.
+For detailed instructions on using the paste feature, see [Paste values in slicers](power-bi-visualization-slicers.md#paste-values-in-slicers).
 
 ## Considerations and limitations
 
@@ -163,10 +151,6 @@ This section provides a list of known considerations and limitations, designed t
 > [!IMPORTANT]
 > Because the List slicer is a preview feature in Power BI Desktop, the following considerations and limitations apply.
 
-- **Power BI service**:
-  - Users can't see the List slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
-  - The List slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release.
-  - Although the List slicer (preview) isn't directly available in the Power BI service, you can publish any List slicer (preview) you create in Power BI Desktop, making it visible in the Power BI service. This capability allows you to take advantage of the new features while ensuring compatibility and stability within the Service environment.
 - **Format settings**:
   - When you're formatting a List slicer (preview), you might notice that some of the format settings are in a different location, or the name of the setting is changed.
   - Often, new settings or controls are added from one product update to the next. Such changes are expected, as preview features are continuously under development.
@@ -175,10 +159,6 @@ This section provides a list of known considerations and limitations, designed t
 - **Accessibility**:
   - During the preview phase, certain accessibility features such as keyboard navigation and screen-reader support might not be fully operational.
   - However, we're committed to ensuring that all functionalities comply with accessibility standards upon the conclusion of the preview period.
-- **Paste values**:
-  - You can paste up to 2,000 values into the List slicer; any extras are ignored.
-  - Pasting new values removes all previous selections.
-  - When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available entries, those values still act as filters; so, visuals might display as blank due to the absence of matching data.
 - **Sort buttons**:
   - Sorting via the ellipsis menu is limited to Value; Label sorting is currently unavailable.
 - **Single select toggle**:
