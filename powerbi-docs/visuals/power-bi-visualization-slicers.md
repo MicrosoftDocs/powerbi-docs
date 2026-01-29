@@ -261,7 +261,7 @@ Other formatting options are **Off** by default. Turn **On** these options to co
 
 ## Search in slicers
 
-When working with slicers that contain many values, searching helps you quickly locate specific items without scrolling through the entire list. The search feature is available in both the original Slicer visual and the List slicer (preview), and is especially useful for large datasets.
+When working with slicers that contain many values, searching helps you quickly locate specific items without scrolling through the entire list.
 
 To enable and use search in a slicer:
 
@@ -285,16 +285,19 @@ To paste values into a slicer:
 
 The slicer selects all items that match your pasted values.
 
-The paste feature is available in the [Button slicer](power-bi-visualization-button-slicer.md) and [List slicer](power-bi-visualization-list-slicer.md) (preview).
-
 ## Considerations and limitations
 
 The following considerations and limitations apply to slicers:
 
 - By default, slicers filter all other visuals on the page, including other slicers. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this behavior.
 
+### Search
+
+- The search feature is available in the original Slicer visual and the [List slicer](power-bi-visualization-list-slicer.md) (preview).
+
 ### Paste values
 
+- The paste feature is available in the [Button slicer](power-bi-visualization-button-slicer.md) and [List slicer](power-bi-visualization-list-slicer.md) (preview).
 - Each value you want to select must be on its own line for the paste feature to work correctly.
 - You can paste up to 2,000 values into a slicer; any extras are ignored.
 - Pasting new values removes all previous selections.
