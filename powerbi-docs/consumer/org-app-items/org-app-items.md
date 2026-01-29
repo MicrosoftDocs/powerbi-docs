@@ -33,17 +33,17 @@ The preview for org apps is off by default for tenants. To enable the preview, y
 
 :::image type="content" source="media/org-app-items/org-app-fabric-admin-portal-tenant-settings.png" alt-text="Screenshot of the Fabric admin portal tenant settings for org apps.":::
 
-### Workspace license mode set to Pro, Fabric trial, or capacity
+### Workspace type set to Pro, Fabric trial, or capacity
 
-To create an org app item, a workspace must be in a specific license mode: Pro, Fabric trial, Premium capacity, or Fabric capacity. To configure a workspace license mode:
+To create an org app item, a workspace must be in a specific workspace type: Pro, Fabric trial, Premium capacity, or Fabric capacity. To configure a workspace type:
 
 1. Create or open the workspace where you want to create org app items.
 1. Select **workspace settings**.
 1. Depending on your tenant, select the **Premium** tab or **License info** tab.
-1. Select **Edit** to change the license mode for the workspace.
+1. Select **Edit** to change the workspace type.
 1. Select **Pro**, **Trial**, **Premium capacity**, or **Fabric capacity** (depending on what your tenant administrator configured).
 
-:::image type="content" source="media/org-app-items/org-app-workspace-license-mode-setting.png" alt-text="Screenshot of Fabric trial and capacity license modes.":::
+:::image type="content" source="media/org-app-items/org-app-workspace-license-mode-setting.png" alt-text="Screenshot of Fabric trial and capacity workspace types.":::
 
 When Microsoft tenant administrators turn on Fabric trials, users who create an org app are prompted to start a trial.
 
@@ -104,7 +104,7 @@ Org app items appear in your workspace list:
 
 ### Create a new org app item and add content
 
-From a shared workspace in the right license mode, select **New > Org app (preview)**.
+From a shared workspace with the right workspace type, select **New > Org app (preview)**.
 :::image type="content" source="media/org-app-items/org-app-workspace-new-menu.png" alt-text="Screenshot of the workspace new menu with org app item hovered.":::
 
 Enter a name for your app.

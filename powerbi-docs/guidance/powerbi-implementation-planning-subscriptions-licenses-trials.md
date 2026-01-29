@@ -126,7 +126,7 @@ After you've reviewed user licenses, you should next make some key decisions abo
 
 #### Decide which per-user licenses you need
 
-You should determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses _Premium per user_ license mode, then they also need a Power BI Premium Per User (PPU) license.
+You should determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses _Premium per user_ workspace type, then they also need a Power BI Premium Per User (PPU) license.
 
 Here's each of the [user license types](/fabric/enterprise/licenses#per-user-licenses) and their uses.
 
@@ -138,7 +138,7 @@ Here's each of the [user license types](/fabric/enterprise/licenses#per-user-lic
 - **Power BI Premium Per User (PPU) license**: A [PPU license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license) provides all Pro license capabilities and includes certain Premium features, on a per-user basis. It's a good choice for smaller organizations and teams that want to use specific features but don't need the full set of Fabric capabilities. For more information, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 
 > [!TIP]
-> You can mix and match user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on specific [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU license mode (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
+> You can mix and match user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on specific [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU workspace type (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
 
 #### Decide prerequisites for obtaining a user license
 

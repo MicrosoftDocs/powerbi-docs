@@ -95,7 +95,7 @@ When a semantic model creator [connects to a dataflow](../transform-model/deskto
 
 ### Dataflow advanced features
 
-There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its workspace type set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
