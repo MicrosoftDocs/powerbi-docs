@@ -417,5 +417,5 @@ The visualization evaluates all explanatory factors together. A factor might be 
 ## Related content
 
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
 - [How Power BI uses ML.NET to identify key influencers](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

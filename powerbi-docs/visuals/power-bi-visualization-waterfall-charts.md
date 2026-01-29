@@ -158,4 +158,4 @@ Let's take a closer look at the data to see what's contributing most to the chan
 ## Related content
 
 - [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)

@@ -90,7 +90,7 @@ Here are some helpful tips:
 
 - Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
 
-For more visualization-specific guidance, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md).  
 
 ## Learn more about dashboard design
 
