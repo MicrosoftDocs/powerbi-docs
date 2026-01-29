@@ -3,7 +3,6 @@ title: Create and Use a Button Slicer
 description: Learn how to create, customize, and use button slicers in Power BI Desktop. Filter data interactively with grid layouts, visual highlights, and conditional formatting.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
