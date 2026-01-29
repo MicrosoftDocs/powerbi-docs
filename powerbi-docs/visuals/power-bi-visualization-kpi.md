@@ -129,6 +129,6 @@ KPIs are also available on your mobile devices. It gives you the option to be al
 
 - [Tips and tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

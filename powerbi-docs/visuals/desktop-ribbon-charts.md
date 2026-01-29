@@ -119,4 +119,4 @@ Set formatting options for your data labels. In this example, we set the text co
 ## Related content
 
 - Create [scatter charts and bubble charts in Power BI](power-bi-visualization-scatter.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

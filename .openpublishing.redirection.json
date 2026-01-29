@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-types-for-reports-and-q-and-a.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "powerbi-docs/consumer/end-user-home.md",
       "redirect_url": "/power-bi/consumer/end-user-experience#home",
       "redirect_document_id": false
@@ -307,7 +312,7 @@
     },
     {
       "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": false
     },
     {
@@ -1122,7 +1127,7 @@
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-types-for-reports-and-q-and-a.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": true
     },
     {
@@ -1322,7 +1327,7 @@
     },
     {
       "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": false
     },
     {
