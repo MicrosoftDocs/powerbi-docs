@@ -151,10 +151,6 @@ This section provides a list of known considerations and limitations, designed t
 > [!IMPORTANT]
 > Because the List slicer is a preview feature in Power BI Desktop, the following considerations and limitations apply.
 
-- **Power BI service**:
-  - Users can't see the List slicer (preview) in the **Power BI service** because it's currently a preview feature exclusive to **Power BI Desktop**.
-  - The List slicer (preview) is in the preview phase and is only available within the Power BI Desktop environment. This limitation is a common practice for features that are still under development, allowing users to test and provide feedback before a broader release.
-  - Although the List slicer (preview) isn't directly available in the Power BI service, you can publish any List slicer (preview) you create in Power BI Desktop, making it visible in the Power BI service. This capability allows you to take advantage of the new features while ensuring compatibility and stability within the Service environment.
 - **Format settings**:
   - When you're formatting a List slicer (preview), you might notice that some of the format settings are in a different location, or the name of the setting is changed.
   - Often, new settings or controls are added from one product update to the next. Such changes are expected, as preview features are continuously under development.
