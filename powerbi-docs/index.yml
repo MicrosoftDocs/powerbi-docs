@@ -63,67 +63,67 @@ productDirectory:
   items:
     # Card
     - title: Get started with Power BI
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/get-started-icon.png
       summary: Start learning about Power BI, its capabilities, and how to use them.
       url: fundamentals/power-bi-overview.md
     # Card
     - title: What's new in Power BI?
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/whats-new-icon.png
       summary: Stay up-to-date with the latest features and updates in Power BI.
       url: fundamentals/whats-new.md
     # Card
     - title: Power BI Desktop
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/desktop-icon.png
       summary: Create reports and transform data with Power BI Desktop.
       url: fundamentals/desktop-getting-started.md
     # Card
     - title: Power BI service
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/service-icon.png
       summary: Share, collaborate, and manage content in the cloud.
       url: fundamentals/service-get-started.md
     # Card
     - title: Business users and mobile apps
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/mobile-icon.png
       summary: View and interact with reports and dashboards in the browser or on mobile devices.
       url: consumer/index.yml
     # Card
     - title: Connect to data
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/connect-data-icon.png
       summary: Connect to hundreds of data sources and bring your data together.
       url: connect-data/index.yml
     # Card
     - title: Transform and model data
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/transform-model-icon.png
       summary: Shape, combine, and model your data to create powerful analytics.
       url: transform-model/index.yml
     # Card
     - title: Create reports and dashboards
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/create-reports-icon.png
       summary: Build interactive visualizations and reports to uncover insights.
       url: create-reports/index.yml
     # Card
     - title: Collaborate and share
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/collaborate-share-icon.png
       summary: Share reports, dashboards, and apps with your organization.
       url: collaborate-share/index.yml
     # Card
     - title: Copilot in Power BI
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/copilot-icon.png
       summary: Leverage AI-powered assistance to enhance your data analysis and report creation.
       url: create-reports/copilot-introduction.md
     # Card
     - title: Paginated reports
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/paginated-reports-icon.png
       summary: Create pixel-perfect paginated reports for printing and sharing.
       url: paginated-reports/paginated-reports-report-builder-power-bi.md
     # Card
     - title: Develop and embed
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/developer-icon.png
       summary: Embed Power BI analytics in your apps and build custom visuals.
       url: developer/index.yml
     # Card
     - title: Guidance and best practices
-      imageSrc: ./media/power-bi-icon.png
+      imageSrc: ./media/guidance-icon.png
       summary: Learn best practices for implementing and optimizing Power BI.
       url: guidance/index.yml
 
