@@ -3,7 +3,6 @@ title: Create and Use a Button Slicer
 description: Learn how to create, customize, and use button slicers in Power BI Desktop. Filter data interactively with grid layouts, visual highlights, and conditional formatting.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -25,7 +24,7 @@ Among the various types of slicers, the button slicer stands out due to its uniq
 
 These features make the button slicer a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
 
-## Prerequisites
+## Prerequisites for the example
 
 In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
@@ -52,7 +51,7 @@ In the following guide, we're using the [Retail Analysis Sample PBIX file](http
 
 ## Create a button slicer
 
-In this quick and easy three-step guide, you create a **Button slicer** in Power BI Desktop. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **Button slicer** in Power BI Desktop. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your button slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **Button slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
@@ -115,29 +114,14 @@ The button slicer supports conditional formatting for multiple elements, includi
 
 ## Paste values to select
 
-The **Paste** feature lets you apply multiple selections to a button slicer by pasting a list of values. You don't need to manually select each option one by one. This feature streamlines the filtering process, especially when working with large datasets or predefined lists.
+The Button slicer supports pasting values to quickly select multiple items at once. Copy values from external sources like Excel or Notepad, with each value on its own line, and paste them directly into the slicer to apply matching selections.
 
-Instead of spending time selecting items individually, you can copy values from external sources (like Excel, Notepad, or emails) and paste them directly into the slicer. The slicer then automatically recognizes and applies all matching selections at once.
-
-This approach not only saves time but also reduces the likelihood of overlooking values. It's perfect for scenarios where precision and speed are essential.
-
-In this section, you learn how to use this feature with a practical example to maximize its effect on your workflow.
-
-1. To paste a set of values into a button slicer, open Excel. Create a new worksheet and enter your desired list of values. 
-1. After entering the names in Excel, highlight the cells containing your list (A1 to A3) and copy them. Next, return to Power BI, select your button slicer on the report canvas, and use **Ctrl-V** to paste the copied values, or use the slicer's ellipsis menu to paste the copied values. Each button with the matching names appears selected within the slicer, enabling straightforward filtering and analysis.
-
-    :::image type="content" source="media/button-slicer-visual-highlights/button-slicer-paste.png" alt-text="Screenshot of button slicer after pasting values showing selected names." lightbox="media/button-slicer-visual-highlights/button-slicer-paste.png":::
-
-Pasting values into the button slicer streamlines filtering by quickly selecting multiple relevant entries at once. You save time and effort during data analysis.
+For detailed instructions on using the paste feature, see [Paste values in slicers](power-bi-visualization-slicers.md#paste-values-in-slicers).
 
 ## Considerations and limitations
 
 This section lists the key considerations and limitations of the Button slicer in Power BI Desktop so you can anticipate filtering behavior and avoid confusion.
 
-- **Paste values**:
-  - You can paste up to 2,000 values into the button slicer; any extras are ignored.
-  - Pasting new values removes all previous selections.
-  - When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available buttons, those values are still used as filters; so visuals might display as blank due to the absence of matching data.
 - **Sort buttons**:
   - Sorting via the ellipsis menu is limited to **Value**. **Label** sorting is currently unavailable.
 - **Single select toggle**:
