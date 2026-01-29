@@ -3,11 +3,10 @@ title: Slicers in Power BI
 description: A Power BI slicer is an alternate way of filtering. It narrows the portion of the semantic model shown in the other visualizations in a report you design.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 01/28/2026
 ai-usage: ai-assisted
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
@@ -20,9 +19,22 @@ Suppose you want readers to view overall sales metrics and highlight performance
 
 :::image type="content" source="media/power-bi-visualization-slicers/slicer2.gif" alt-text="Screenshot of an animated Power BI slicer filtering related visuals on a report page.":::
 
-This article shows you how to create and format a basic slicer by using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals a slicer affects, syncing slicers across pages, and filtering and formatting slicers.
+Power BI offers several slicer visuals, each designed for different filtering scenarios. This article shows you how to create and format the original slicer visual by using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals a slicer affects, syncing slicers across pages, and filtering and formatting slicers.
 
-These other articles explain how to make specific types of slicers:
+## Types of slicers
+
+Power BI provides multiple slicer visuals to meet different filtering needs:
+
+| Slicer type | Description | Best for |
+|-------------|-------------|----------|
+| [Slicer](power-bi-visualization-slicers.md) | The original slicer visual with vertical list, tile, and dropdown styles. | General-purpose filtering with familiar controls. |
+| [Button slicer](power-bi-visualization-button-slicer.md) | Interactive buttons with customizable styles, grid layouts, and image support. | Visually appealing filtering with button-based interactions. |
+| [List slicer](power-bi-visualization-list-slicer.md) (preview) | Vertical list with hierarchies, search functionality, and conditional formatting. | Filtering large datasets with search and hierarchy support. |
+| [Text slicer](power-bi-visualization-text-slicer.md) (preview) | Free-form text input for custom filter criteria. | Exact string matching and flexible text-based filtering. |
+
+In addition to slicers, you can use the **Filters pane** to apply filters at the visual, page, or report level. The Filters pane provides a centralized location for managing all filters in your report. For more information, see [Format filters in Power BI reports](../create-reports/power-bi-report-filter.md).
+
+These other articles explain how to configure specific slicer behaviors:
 
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
 - [Relative date slicers](desktop-slicer-filter-date-range.md)
@@ -249,12 +261,50 @@ Other formatting options are **Off** by default. Turn **On** these options to co
 
 - **Shadow**: Add a drop shadow to the slicer. Under **General** > **Effects**.
 
+## Search in slicers
+
+When working with slicers that contain many values, searching helps you quickly locate specific items without scrolling through the entire list. The search feature is available in both the original Slicer visual and the List slicer (preview), and is especially useful for large datasets.
+
+To enable and use search in a slicer:
+
+1. Select the ellipsis (**...**) in the top-right corner of the slicer.
+1. Select **Search** from the dropdown menu. A search bar appears at the top of the slicer.
+1. Type a name or keyword in the search bar. The slicer instantly filters to show only matching entries.
+
+For example, entering the letter "C" filters the slicer to show only items that begin with or contain that letter.
+
+For more information about List slicer search capabilities, see [Search and filter list slicer](power-bi-visualization-list-slicer.md#search-and-filter-list-slicer).
+
+## Paste values in slicers
+
+The paste feature lets you apply multiple selections to a slicer by pasting a list of values from external sources like Excel, Notepad, or emails. Instead of selecting items one by one, you can paste values directly into the slicer, and it automatically recognizes and applies all matching selections.
+
+To paste values into a slicer:
+
+1. In an external application (such as Excel), create a list of values you want to filter by. Each value must be on its own line (for example, in separate rows in Excel or on separate lines in a text file).
+1. Copy the values to your clipboard.
+1. In Power BI, select the slicer on your report canvas.
+1. Press **Ctrl+V** to paste the values, or select the ellipsis (**...**) menu and choose the paste option.
+
+The slicer selects all items that match your pasted values.
+
+> [!NOTE]
+> - Each value you want to select must be on its own line for the paste feature to work correctly.
+> - You can paste up to 2,000 values into a slicer; any extras are ignored.
+> - When you paste values, the slicer applies exact-match filtering by only selecting items with values that precisely correspond. If pasted values don't match any available entries, those values still act as filters, so visuals might display as blank.
+
+The paste feature is available in the [Button slicer](power-bi-visualization-button-slicer.md) and [List slicer](power-bi-visualization-list-slicer.md) (preview).
+
 ## Related content
 
 Learn more about slicers in these articles:
 
+- [Button slicer](power-bi-visualization-button-slicer.md)
+- [List slicer](power-bi-visualization-list-slicer.md) (preview)
+- [Text slicer](power-bi-visualization-text-slicer.md) (preview)
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
 - [Relative date slicers](desktop-slicer-filter-date-range.md)
 - [Relative time slicers](../create-reports/slicer-filter-relative-time.md)
-- Responsive, [resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md)
+- [Responsive, resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md)
 - [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields
+- [Format filters in Power BI reports](../create-reports/power-bi-report-filter.md)
