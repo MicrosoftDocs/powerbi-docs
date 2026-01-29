@@ -21,7 +21,7 @@ The Text slicer visual in Power BI Desktop is an interactive element that enable
 This article shows you how to create and customize text slicers to enhance your Power BI reports with dynamic, text-based filtering capabilities.
 
 > [!IMPORTANT]
-> The Text slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> The Text slicer is currently in [preview](power-bi-visualizations-overview.md#preview-visuals).
 
 ## Text slicer modes
 
