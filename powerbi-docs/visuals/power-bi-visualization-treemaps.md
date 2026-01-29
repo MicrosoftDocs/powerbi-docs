@@ -191,4 +191,4 @@ Keep in mind the following information when working with treemaps in Power BI.
 ## Related content
 
 - Create [waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

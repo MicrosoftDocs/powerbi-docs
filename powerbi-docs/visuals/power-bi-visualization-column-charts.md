@@ -250,4 +250,4 @@ This section provides an updated list of known column chart considerations and l
 
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)

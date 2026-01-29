@@ -106,7 +106,7 @@ You can also use drag-and-drop with the **Data** and **Visualizations** panes to
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-2.png" alt-text="Screenshot that shows a column chart with FiscalMonth as the axis.":::
 
-1. To change the visualization type, in the **Visualizations** pane, select the **Area chart** button. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md):
+1. To change the visualization type, in the **Visualizations** pane, select the **Area chart** button. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualizations-overview.md):
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-3.png" alt-text="Screenshot that shows the Area chart button.":::
 
@@ -130,7 +130,7 @@ You can also use drag-and-drop with the **Data** and **Visualizations** panes to
 
 ## Related content
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
 - [Learn about interacting with visualizations](../consumer/end-user-reading-view.md)
 - [Move and resize a visualization](power-bi-visualization-move-and-resize.md)
 - [Power BI Community](https://community.powerbi.com/) 

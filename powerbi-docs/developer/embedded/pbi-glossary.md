@@ -93,7 +93,7 @@ A capacity is a dedicated set of resources reserved for exclusive use. It offers
 
 ### Card (visual type)
 
-A Power BI [visual type](../../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+A Power BI [visual type](../../visuals/power-bi-visualizations-overview.md).
 
 ### Card (Power BI Home)
 
