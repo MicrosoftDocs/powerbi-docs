@@ -1,8 +1,8 @@
 ---
 title: Creating a Dataflow
 description: Learn about the different options to create a dataflow or build on top of an existing dataflow in Power BI.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

@@ -1,8 +1,8 @@
 ---
 title: Configuring dataflow storage to use Azure Data Lake Gen 2 
 description: Learn how to configure a workspace or tenant  settings to store your dataflows in your organizations Azure Data Lake Gen 2 account.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

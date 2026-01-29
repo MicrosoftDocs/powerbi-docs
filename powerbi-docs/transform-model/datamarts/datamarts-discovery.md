@@ -2,8 +2,8 @@
 title: Discover data with Power BI datamarts (preview)
 description: Learn how to discover and utilize data using Power BI datamarts, including creating reports and exploring datamart details and lineage.
 #customer intent: As a Power BI user, I want to discover and use data from datamarts so that I can create insightful reports and analyses.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
