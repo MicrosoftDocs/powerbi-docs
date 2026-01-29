@@ -34,6 +34,9 @@ Power BI provides multiple slicer visuals to meet different filtering needs:
 
 In addition to slicers, you can use the **Filters pane** to apply filters at the visual, page, or report level. The Filters pane provides a centralized location for managing all filters in your report. For more information, see [Format filters in Power BI reports](../create-reports/power-bi-report-filter.md).
 
+> [!NOTE]
+> The examples in this article use the original Slicer visual. For instructions on using other slicer types, see the documentation for each specific slicer.
+
 These other articles explain how to configure specific slicer behaviors:
 
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
@@ -50,11 +53,6 @@ Use slicers to:
 - Show the current filter state without opening a drop-down list
 - Filter by columns that are hidden in data tables
 - Create focused reports by placing slicers next to key visuals
-
-Power BI slicers don't support:
-
-- Input fields
-- Drill-down options
 
 ## Create a slicer
 
@@ -288,12 +286,20 @@ To paste values into a slicer:
 
 The slicer selects all items that match your pasted values.
 
-> [!NOTE]
-> - Each value you want to select must be on its own line for the paste feature to work correctly.
-> - You can paste up to 2,000 values into a slicer; any extras are ignored.
-> - When you paste values, the slicer applies exact-match filtering by only selecting items with values that precisely correspond. If pasted values don't match any available entries, those values still act as filters, so visuals might display as blank.
-
 The paste feature is available in the [Button slicer](power-bi-visualization-button-slicer.md) and [List slicer](power-bi-visualization-list-slicer.md) (preview).
+
+## Considerations and limitations
+
+The following considerations and limitations apply to slicers:
+
+- By default, slicers filter all other visuals on the page, including other slicers. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this behavior.
+
+### Paste values
+
+- Each value you want to select must be on its own line for the paste feature to work correctly.
+- You can paste up to 2,000 values into a slicer; any extras are ignored.
+- Pasting new values removes all previous selections.
+- When you paste values, the slicer applies exact-match ("IS") filtering by only selecting items with values that precisely correspond. If pasted values don't match any available entries, those values still act as filters, so visuals might display as blank due to the absence of matching data.
 
 ## Related content
 

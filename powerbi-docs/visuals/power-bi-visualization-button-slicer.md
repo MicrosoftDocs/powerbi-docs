@@ -123,10 +123,6 @@ For detailed instructions on using the paste feature, see [Paste values in slice
 
 This section lists the key considerations and limitations of the Button slicer in Power BI Desktop so you can anticipate filtering behavior and avoid confusion.
 
-- **Paste values**:
-  - You can paste up to 2,000 values into the button slicer; any extras are ignored.
-  - Pasting new values removes all previous selections.
-  - When you paste values, the slicer applies exact-match ("IS") filtering by only selecting buttons with values that precisely correspond. If the pasted values don't match any available buttons, those values are still used as filters; so visuals might display as blank due to the absence of matching data.
 - **Sort buttons**:
   - Sorting via the ellipsis menu is limited to **Value**. **Label** sorting is currently unavailable.
 - **Single select toggle**:
