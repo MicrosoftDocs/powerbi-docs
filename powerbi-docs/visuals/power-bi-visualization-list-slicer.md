@@ -23,7 +23,7 @@ List slicers balance simplicity and flexibility, making them ideal for both novi
 > [!IMPORTANT]
 > The List slicer (preview)  is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-## Prerequisites
+## Prerequisites for the example
 
 In the following guide, use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
@@ -38,7 +38,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 
 ## Create a list slicer
 
-In this quick and easy three-step guide, you create a **List slicer** in Power **BI Desktop**. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **List slicer** in Power **BI Desktop**. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your list slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **List slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
@@ -92,7 +92,7 @@ Power BI’s list slicer includes a built-in search feature that helps users qui
 
 In the following section, you learn how to search and filter your list slicer by using a practical example, enabling you to quickly and easily locate specific items within long or hierarchical lists.
 
-1. Open the search box by selecting the three-dot **ellipsis menu (...)** in the top-right corner of your list slicer visual. From the dropdown, select **Search**. This action adds a search bar at the top of the slicer, so you can quickly find items without scrolling through the entire list.
+1. Open the search box by selecting the three-dot **ellipsis menu (...)** in the top-right corner of your list slicer visual. From the dropdown, select **Search**. Alternatively, select the slicer and press **Ctrl+F** to open the search bar. This action adds a search bar at the top of the slicer, so you can quickly find items without scrolling through the entire list.
 
 1. Select the **search bar** and start typing a name or keyword. For example, entering the letter **C** instantly filters the slicer to show only District Managers whose names begin with or contain the letter **C**.
 

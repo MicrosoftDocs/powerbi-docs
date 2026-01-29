@@ -265,9 +265,8 @@ When working with slicers that contain many values, searching helps you quickly 
 
 To enable and use search in a slicer:
 
-1. Select the ellipsis (**...**) in the top-right corner of the slicer.
-1. Select **Search** from the dropdown menu. A search bar appears at the top of the slicer.
-1. Type a name or keyword in the search bar. The slicer instantly filters to show only matching entries.
+1. Select the ellipsis (**...**) in the top-right corner of the slicer, and then select **Search** from the dropdown menu. Alternatively, select the slicer and press **Ctrl+F**.
+1. A search bar appears at the top of the slicer. Type a name or keyword in the search bar. The slicer instantly filters to show only matching entries.
 
 For example, entering the letter "C" filters the slicer to show only items that begin with or contain that letter.
 

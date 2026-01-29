@@ -25,7 +25,7 @@ Among the various types of slicers, the button slicer stands out due to its uniq
 
 These features make the button slicer a powerful tool for creating interactive and visually appealing reports, offering a user-friendly setup and comprehensive formatting options.
 
-## Prerequisites
+## Prerequisites for the example
 
 In the following guide, we're using the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
@@ -52,7 +52,7 @@ In the following guide, we're using the [Retail Analysis Sample PBIX file](http
 
 ## Create a button slicer
 
-In this quick and easy three-step guide, you create a **Button slicer** in Power BI Desktop. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **Button slicer** in Power BI Desktop. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your button slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **Button slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
