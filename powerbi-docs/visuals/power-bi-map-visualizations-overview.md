@@ -95,4 +95,4 @@ For step-by-step tutorials on creating specific map types, see the individual ar
 - [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md)
 - [Create and use filled maps (choropleth maps) in Power BI](power-bi-visualization-filled-maps-choropleths.md)
 - [Create ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)

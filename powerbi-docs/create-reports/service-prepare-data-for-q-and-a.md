@@ -29,7 +29,7 @@ Q&A has a set of core natural language understanding abilities that work across 
 For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities. You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more:
 
 - [Using Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)
-- [Visualization types you can specify in a Q&A query](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md)
 
 Or get started.
 

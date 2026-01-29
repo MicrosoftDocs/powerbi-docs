@@ -267,5 +267,5 @@ To create a new field, [use the Power BI Desktop Query Editor to add an Index Co
 ## Related content
 
 - Try [high-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).
 - For other questions, connect with the [Microsoft Power BI Community](https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi).

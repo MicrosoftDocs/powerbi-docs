@@ -251,8 +251,6 @@ When selecting a visual, consider:
 - **Your audience**: What level of detail do they need?
 - **Available space**: Some visuals work better in smaller or larger areas
 
-For a complete reference of all visualization types, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
-
 ## Customize visuals with report themes
 
 Power BI report themes let you apply consistent formatting to all visuals in a report at once. Themes control colors, fonts, backgrounds, and other visual properties, giving your reports a unified look and feel.
@@ -307,7 +305,6 @@ For more information, see [Create small multiples in Power BI](power-bi-visualiz
 
 ## Related content
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 - [Add visuals to a report](power-bi-report-add-visualizations.md)
 - [Map visualizations in Power BI](power-bi-map-visualizations-overview.md)
 - [Get started formatting visuals](service-getting-started-with-color-formatting-and-axis-properties.md)

@@ -351,8 +351,6 @@
     # Overview and fundamentals
     - name: Visualizations overview
       href: ../visuals/power-bi-visualizations-overview.md
-    - name: Visualization types reference
-      href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: Add visuals to a report
       href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane

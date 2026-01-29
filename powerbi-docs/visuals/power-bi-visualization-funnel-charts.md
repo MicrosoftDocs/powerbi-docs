@@ -129,4 +129,4 @@ For information about working with the **Filters** pane in Power BI, see [Add a 
 ## Related content
 
 - Create [radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).
