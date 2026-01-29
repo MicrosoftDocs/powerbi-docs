@@ -9,7 +9,6 @@ ms.subservice: pbi-visuals
 ms.topic: overview
 ms.date: 01/28/2026
 LocalizationGroup: Visualizations
-toc_rel: ../create-reports/TOC.yml
 ---
 
 # Visualizations overview in Power BI
