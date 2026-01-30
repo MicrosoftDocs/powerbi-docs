@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Conditional formatting in Power BI lets you dynamically change the appearance of your visuals based on data values. Instead of using static colors and styles, you can set colors to change based on field values, rules you define, or color scales that map values to a gradient. This capability helps you highlight important data points, show status indicators, or create heat map effects within your visuals.
+Conditional formatting in Power BI lets you dynamically change the appearance of your visuals based on data values. Instead of using static colors and styles, you can set colors to change based on field values, rules you define, or color scales that map values to a gradient. This capability helps you highlight important data points, show status indicators, or create heat map effects within your visuals. You can also create dynamic, expression-based titles and subtitles, and apply rich formatting options to tables and matrices.
 
 With conditional formatting, your reports become more intuitive and easier to interpret. Viewers can quickly identify trends, outliers, and key insights without needing to analyze raw numbers.
 
@@ -35,9 +35,16 @@ Conditional formatting is available for many Power BI visuals, though the specif
 | **Cards** | Callout values, labels, and other card elements |
 | **Gauges** | Target colors, callout values |
 | **KPIs** | Indicator colors, goal colors |
+| **Most visuals** | Titles, subtitles (expression-based) |
 
 > [!NOTE]
 > Line charts don't natively support conditional formatting for lines, shaded areas, or markers. Some visuals might have limited conditional formatting options compared to others.
+
+## Customize visual titles and subtitles
+
+You can use conditional formatting to create dynamic, expression-based titles and subtitles for your visuals. By creating DAX expressions based on fields, variables, or other programmatic elements, your visual titles and subtitles can automatically adjust based on filters, selections, or other user interactions.
+
+For detailed instructions on creating expression-based titles, see [Expression-based titles in Power BI Desktop](../create-reports/desktop-conditional-format-visual-titles.md).
 
 ## Access conditional formatting
 
@@ -141,6 +148,7 @@ Keep these considerations in mind when working with conditional formatting:
 
 ## Related content
 
+- [Expression-based titles in Power BI Desktop](../create-reports/desktop-conditional-format-visual-titles.md)
 - [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md)
 - [Tips and tricks for color formatting in reports](service-tips-and-tricks-for-color-formatting.md)
 - [Get started formatting report visualizations](service-getting-started-with-color-formatting-and-axis-properties.md)

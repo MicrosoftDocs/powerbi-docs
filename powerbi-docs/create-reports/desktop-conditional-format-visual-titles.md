@@ -20,6 +20,9 @@ You can create dynamic, customized titles for your Power BI visuals. By creating
 
 Creating dynamic titles, sometimes called *expression-based titles*, is straightforward.
 
+> [!TIP]
+> Conditional formatting is also available for other visual elements in Power BI, including colors, data bars, icons, and more. See [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md) for the full list of supported visuals and formatting options.
+
 ## Create a field for your title
 
 The first step in creating an expression-based title is to create a field in your model to use for the title.
@@ -72,5 +75,6 @@ There are a few limitations to the current implementation of expression-based ti
 
 This article described how to create DAX expressions that turn the titles of your visuals into dynamic fields that can change as users interact with your reports. You might find the following articles useful as well.
 
+* [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md)
 * [Apply conditional formatting in tables and matrixes](desktop-conditional-table-formatting.md)
 * [Set up drillthrough in Power BI reports](desktop-drillthrough.md)
