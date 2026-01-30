@@ -98,7 +98,7 @@ Some of these capabilities are available through the Copilot pane, whereas other
 
 ## Clear the Copilot chat
 
-The **clear chat** button removes the contents of the current conversation and any previous context set throughout the conversation. This action is essentially the same as starting a new chat. Note: This action doesn't refresh the underlying data.
+The **clear chat** button removes the contents of the current conversation and any previous context set throughout the conversation. This action is essentially the same as starting a new chat. Note that this action doesn't refresh the underlying data.
 Use **clear chat** when switching topics to avoid overloading Copilot with unrelated prior context. Clear the chat to ensure clear and focused responses.
 
 If you ask the same exact prompt on an unchanged semantic model (same schema, data, and custom instructions) within a rolling 24-hour window, Copilot responds from the cache for efficiency. You see the same response in this case. The **clear chat** button doesn't impact this. If you aren't expecting the same response, try changing your prompt or refreshing the underlying model.
