@@ -47,11 +47,11 @@ You can use the **Transform data** feature to edit the query before loading the 
 
 Select **Transform Data** to load the table and launch Power Query Editor. The **Query Settings** pane is displayed. If it's not, select **View** from the ribbon, then choose **Query Settings** to display the **Query Settings** pane. Here’s what the editor looks like.
 
-:::image type="content" source="media/desktop-connect-to-data/query-editor.png" alt-text="Screenshot that shows the Power Query Editor with Query Settings open." lightbox="media/desktop-connect-to-data/query-editor.png":::
+:::image type="content" source="media/desktop-connect-to-data/query-settings.png" alt-text="Screenshot that shows the Power Query Editor with Query Settings open." lightbox="media/desktop-connect-to-data/query-settings.png":::
 
 The final rank scores are text rather than numbers, and you need them to be numbers. No problem. First, clean the data so that there's no text in the column. Right-click the **Rank** column header, and select **Replace values...**. Enter `(same as 2024)` in the **Value to find** field, then select **OK**.
 
-:::image type="content" source="./media/desktop-connect-to-data/replace-values.png" alt-text="Screenshot that shows using the replace values function to remove text.":::
+:::image type="content" source="./media/desktop-connect-to-data/replace-values.png" alt-text="Screenshot that shows using the 'Replace values' function to remove text.":::
 
 Next, change the data type. Right-click the **Rank** header again. Select **Change Type** > **Whole Number** to change them. To choose more than one column, first select a column then choose **Shift**, select other adjacent columns, and then right-click a column header to change all selected columns. Use **Ctrl** to choose columns that aren't adjacent.
 
@@ -59,7 +59,7 @@ In **Query Settings**, the **APPLIED STEPS** reflect any changes that you made. 
 
 ![Applied steps](media/desktop-connect-to-data/applied-steps.png)
 
-You can make other changes to the table after it's loaded, but for now these changes are enough. When you're done, select **Close & Apply** from the **Home** ribbon, and Power BI Desktop applies the changes and closes Power Query Editor.
+You can make other changes to the table after it loads, but for now these changes are enough. When you're done, select **Close & Apply** from the **Home** ribbon, and Power BI Desktop applies the changes and closes Power Query Editor.
 
 ![Close and Apply](media/desktop-connect-to-data/close-apply.png)
 
@@ -67,7 +67,7 @@ With the data model loaded, in **Report** view in Power BI Desktop, you can begi
 
 :::image type="content" source="media/desktop-connect-to-data/visualize-data.png" alt-text="Drag a value to the canvas" lightbox="media/desktop-connect-to-data/visualize-data.png":::
 
-Of course, this model is simple, with a single data connection. Most Power BI Desktop reports have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model.
+This model is simple, with a single data connection. Most Power BI Desktop reports have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model.
 
 ## Related content
 
