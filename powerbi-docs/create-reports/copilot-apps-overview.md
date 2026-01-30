@@ -48,7 +48,7 @@ App-scoped Copilot supports the following item types included in an app:
 >
 > For more information about access considerations, see [publishing and updating apps](../collaborate-share/service-create-distribute-apps.md).
 
-Some item types support by apps aren't supported by app-scoped Copilot:
+Some item types supported by apps aren't supported by app-scoped Copilot:
 
 * Paginated reports
 * Dashboards

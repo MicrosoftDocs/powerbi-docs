@@ -134,7 +134,7 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 #### Access to a Copilot-supported capacity
 
-To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** Use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI automatically bills to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you can't use the standalone Copilot experience.*
+To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** Use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you can't use the standalone Copilot experience.*
 
 #### Autoselection of a Copilot workspace
 
