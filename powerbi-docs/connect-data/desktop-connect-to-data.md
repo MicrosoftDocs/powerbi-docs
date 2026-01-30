@@ -57,15 +57,15 @@ Next, change the data type. Right-click the **Rank** header again. Select **Chan
 
 In **Query Settings**, the **APPLIED STEPS** reflect any changes that you made. As you make more changes to the data, Power Query Editor records those changes in the **APPLIED STEPS** section, which you can adjust, revisit, rearrange, or delete as necessary.
 
-![Applied steps](media/desktop-connect-to-data/applied-steps.png)
+:::image type="content" source="media/desktop-connect-to-data/applied-steps.png" alt-text="Screenshot of the Applied Steps section in Query Settings.":::
 
 You can make other changes to the table after it loads, but for now these changes are enough. When you're done, select **Close & Apply** from the **Home** ribbon, and Power BI Desktop applies the changes and closes Power Query Editor.
 
-![Close and Apply](media/desktop-connect-to-data/close-apply.png)
+:::image type="content" source="media/desktop-connect-to-data/close-apply.png" alt-text="Screenshot of the Close and Apply button on the Home ribbon.":::
 
 With the data model loaded, in **Report** view in Power BI Desktop, you can begin creating visualizations by dragging fields onto the canvas or selecting them from the **Data** pane.
 
-:::image type="content" source="media/desktop-connect-to-data/visualize-data.png" alt-text="Drag a value to the canvas" lightbox="media/desktop-connect-to-data/visualize-data.png":::
+:::image type="content" source="media/desktop-connect-to-data/visualize-data.png" alt-text="Screenshot of a visualization on the canvas created by dragging a value from the Data pane." lightbox="media/desktop-connect-to-data/visualize-data.png":::
 
 This model is simple, with a single data connection. Most Power BI Desktop reports have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model.
 
@@ -81,4 +81,4 @@ You can do all sorts of things with Power BI Desktop. For more information on it
 
 Want to give us feedback? Great! Use the **Submit an Idea** menu item in Power BI Desktop or visit [Community Feedback](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). The Power BI team looks forward to hearing from you!
 
-![Submit an idea](media/desktop-connect-to-data/sendfeedback.png)
+:::image type="content" source="media/desktop-connect-to-data/sendfeedback.png" alt-text="Screenshot of the Submit an idea menu item in Power BI Desktop.":::
