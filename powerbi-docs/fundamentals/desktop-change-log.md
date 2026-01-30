@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 12/11/2025
+ms.date: 01/30/2026
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,15 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## January 2026 QFE 1 
+
+*Version 2.150.2102.0, Released: January 28, 2026*
+
+Bug fixes/improvements: 
+
+- Addressed the problem with view switcher icons not displaying correctly in Power BI Desktop, caused by a WebView2 regression.
+- Verified Answers doesn't support Dynamic M Query parameters. When a Dynamic M Query parameter is used as a filter, it's blocked in Verified Answers. If the filter is unconditional, the filter option is disabled in the "Available to viewers" section of the filter overlay.
 
 ## November 2025 QFE 3 
 
