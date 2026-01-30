@@ -1,8 +1,8 @@
 ---
 title: Many-to-many relationships in Power BI Desktop
 description: Learn how to use relationships with a many-to-many cardinality to more easily create data models that contain two or more data sources in Power BI Desktop.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

@@ -1,8 +1,8 @@
 ---
 title: Use quick measures for common and powerful calculations
 description: Learn how to use quick measures to provide ready-made DAX formulas that make quick work of common calculations.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

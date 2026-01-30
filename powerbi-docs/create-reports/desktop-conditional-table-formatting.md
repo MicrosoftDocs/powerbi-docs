@@ -15,10 +15,15 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+This article explains how to apply conditional formatting specifically to table and matrix visuals in Power BI. For an overview of conditional formatting across all visual types, see [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md).
+
 Conditional formatting in Power BI is a powerful way to make your data more engaging and easier to interpret. By applying customized colors, data bars, icons, or even web links to your tables and matrices, you can highlight trends, outliers, and key insights at a glance. Whether you're looking to emphasize high-performing metrics, visually rank data, or create interactive reports, this guide shows you how to bring your data to life with conditional formatting.
 
 > [!NOTE]
 > Conditional formatting is only available for values in tables and matrices, not for columns or rows in a matrix. You can format values, totals, and subtotals, but not row or column headers.
+
+> [!TIP]
+> Conditional formatting is also available for other visual types in Power BI, including column charts, bar charts, button slicers, cards, and more. See [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md) for the full list of supported visuals.
 
 ## Apply conditional formatting in Power BI
 
@@ -260,4 +265,5 @@ There are a few considerations to keep in mind when working with conditional tab
 
 ## Related content
 
-For more information about color formatting, see [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md).
+- [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md)
+- [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md)
