@@ -269,7 +269,7 @@ Many visual properties, including colors, can be driven by your data using condi
 
 Conditional formatting is available for backgrounds, font colors, data bars, icons, and web URLs in tables and matrices, as well as bar colors in charts and many other visual elements.
 
-For more information, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
+For more information, see [Conditional formatting in Power BI visuals](power-bi-visualization-conditional-formatting.md).
 
 ## Tooltips
 

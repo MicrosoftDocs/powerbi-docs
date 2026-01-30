@@ -1,8 +1,8 @@
 ---
 title: Use notebooks with a semantic model
 description: Learn how to use notebooks with semantic models in Power BI.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

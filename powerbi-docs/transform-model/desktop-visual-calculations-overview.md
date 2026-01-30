@@ -1,8 +1,8 @@
 ---
 title: Using visual calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
