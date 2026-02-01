@@ -82,7 +82,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | Yes |
-| [Direct Lake mode](/fabric/fundamentals/lakehouse-overview) optimized for large volumes of data to be quickly loaded into memory from delta tables available in the OneLake for high performance interactive analysis | No | Yes |
+| [Direct Lake mode](/fabric/data-engineering/lakehouse-overview) optimized for large volumes of data to be quickly loaded into memory from delta tables available in the OneLake for high performance interactive analysis | No | Yes |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../enterprise/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes  |
