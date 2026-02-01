@@ -95,7 +95,19 @@ For more information, see [Add visuals to a Power BI report](../visuals/power-bi
 
 ### Customize visuals
 
-Use the Format pane to customize colors, fonts, labels, titles, and other visual properties. You can also let report consumers personalize visuals to their preferences.
+Use the Format pane to customize colors, fonts, labels, titles, and other visual properties.
+
+For more information, see [Get started formatting visuals](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
+
+### Visual interactions
+
+Control how visuals interact with each other when users select data points. By default, selecting a data point in one visual cross-filters and cross-highlights other visuals on the page. You can customize these interactions to filter, highlight, or have no effect on specific visuals.
+
+For more information, see [Change how visuals interact in a Power BI report](service-reports-visual-interactions.md).
+
+### Personalize visuals
+
+Enable the personalize visual feature to let report viewers make temporary changes to visuals to suit their needs. Viewers can change the visual type, swap out fields, or adjust formatting without affecting the original report. This opens up self-service options for report viewers to explore data in the way that works best for them.
 
 For more information, see [Let users personalize visuals in a report](power-bi-personalize-visuals.md).
 
