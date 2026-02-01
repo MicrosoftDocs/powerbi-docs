@@ -305,7 +305,7 @@ When migrating AAS models that use OLEDB-based providers, consider the following
 }
 ```
 
-- Use the MSOLEDBSQL19 provider through an On-Prem Data Gateway (OPDGW). This option isn't enabled by default and must be explicitly turned on by using the following XMLA request. (Replace the ID and Name properties with the actual workspace name and don't forget to configure the semantic model connection to use an on-prem data gateway. Also make sure to install the MSOLEDBSQL19 on the selected OPDGW machine.)
+- Use the MSOLEDBSQL19 provider through an On-Premises Data Gateway (OPDGW). This option isn't enabled by default and must be explicitly turned on by using the following XMLA request. (Replace the ID and Name properties with the actual workspace name and don't forget to configure the semantic model connection to use an on-premises data gateway. Also make sure to install the MSOLEDBSQL19 on the selected OPDGW machine.)
 
 ```xml
 <Alter AllowCreate="true" ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
