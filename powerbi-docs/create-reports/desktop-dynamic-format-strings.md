@@ -314,11 +314,127 @@ When you select different **Country/Region** names in the slicer, the visuals sh
 
 1. Save your model.
 
+## Dynamic format strings for duration measures
+
+When you have duration data stored in milliseconds, displaying raw values like "3,600,000 ms" isn't user-friendly. You can use dynamic format strings to show "1.0 h" instead, while keeping the underlying measure in milliseconds for accurate calculations and comparisons.
+
+### Create a test table
+
+To try this pattern, create a calculated table with sample duration values:
+
+```dax
+Events = 
+DATATABLE(
+    "Event", STRING,
+    "DurationMs", INTEGER,
+    {
+        {"Quick click", 500},
+        {"Page load", 5000},
+        {"Report refresh", 120000},
+        {"Data export", 7200000}
+    }
+)
+```
+
+### Create the duration measure
+
+Create a measure that sums the duration and returns the raw milliseconds:
+
+```dax
+Duration (ms) = SUM(Events[DurationMs])
+```
+
+### Add the dynamic format string
+
+Add a dynamic format string that converts and formats the value into the appropriate time unit:
+
+```dax
+VAR ms = SELECTEDMEASURE()
+RETURN
+    SWITCH(
+        TRUE(),
+        ms < 1000, FORMAT(ms, "#,0") & " \m\s",
+        ms < 60000, "'" & FORMAT(ms / 1000, "#,0.0") & " s'",
+        ms < 3600000, "'" & FORMAT(ms / 60000, "#,0.0") & " m'",
+        "'" & FORMAT(ms / 3600000, "#,0.0") & " h'"
+    )
+```
+
+### How the format string works
+
+The following table shows how raw millisecond values convert to readable formats:
+
+| Raw value (ms) | Converted | Display |
+|----------------|-----------|---------|
+| 500 | 500 | 500 ms |
+| 5,000 | 5.0 | 5.0 s |
+| 120,000 | 2.0 | 2.0 m |
+| 7,200,000 | 2.0 | 2.0 h |
+
+The `SELECTEDMEASURE()` function retrieves the actual measure value, converts it to the appropriate unit, and then wraps it in a literal format string using single quotes.
+
+### Benefits of this approach
+
+- **Calculations stay accurate**: Your measure returns milliseconds, so totals, averages, and comparisons all work correctly.
+- **Display is human-readable**: Users see "2.5 s" instead of "2,500".
+- **One pattern, many measures**: Apply the same format string to all your duration measures.
+- **Charts work properly**: Unlike using `FORMAT()` in the measure itself, dynamic format strings preserve the numeric data type for visualizations.
+
+### Tips for duration format strings
+
+- Use `\m\s` to escape "ms" as literal text in format strings.
+- The single quotes (`'...'`) in the return statement force Power BI to treat the entire formatted string as a literal.
+- This pattern works with calculation groups too. Apply it once and format multiple measures automatically.
+
+> [!TIP]
+> If you have multiple duration measures that need this format string, consider creating a [DAX user-defined function](../transform-model/desktop-user-defined-functions-overview.md) to define the formatting logic once and reuse it across all your measures.
+
 ## Known problems and considerations
 
 - Visuals have formatting options that might affect how the format string appears. If the formatting unexpectedly appears in a visual, go to the visual **Visualizations** > **Format visual** options, search for **Display units**, and change them from **Auto** to **None**.
 
    :::image type="content" source="media/desktop-dynamic-format-strings/display-units.png" alt-text="Screenshot of Display units from auto to none." lightbox="media/desktop-dynamic-format-strings/display-units.png":::
+
+   To turn off display units for all visuals in a report, you can use a [custom report theme](desktop-report-themes.md). Create a JSON file with the following content and import it as a theme:
+
+   ```json
+   {
+     "$schema": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.149.json",
+     "name": "DisplayUnitsNone",
+     "visualStyles": {
+       "*": {
+         "*": {
+           "*": [
+             {
+               "displayUnits": 1,
+               "labelDisplayUnits": 1,
+               "titleDisplayUnits": 1,
+               "detailDisplayUnits": 1,
+               "valueDisplayUnits": 1,
+               "secLabelDisplayUnits": 1,
+               "titleLabelDisplayUnits": 1
+             }
+           ]
+         }
+       },
+       "cardVisual": {
+         "*": {
+           "*": [{
+               "$id": "default",
+               "displayUnits": 1,
+               "labelDisplayUnits": 1,
+               "titleDisplayUnits": 1,
+               "detailDisplayUnits": 1,
+               "valueDisplayUnits": 1,
+               "secLabelDisplayUnits": 1,
+               "titleLabelDisplayUnits": 1
+             }
+           ]
+         }
+       }
+     }
+   }
+   ```
 
 - You can reference the measure itself in its dynamic format string directly by using its name, such as [Measure A], or indirectly by using `SELECTEDMEASURE()`.
 - Dynamic format strings for measures apply only to model measures. You can't add dynamic format strings for *report measures* in a live connect report.
