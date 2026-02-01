@@ -233,6 +233,12 @@ Enable drillthrough between reports so users can navigate from one report to a d
 
 For more information, see [Use drillthrough in Power BI reports](desktop-drillthrough.md).
 
+## Translytical task flows (preview)
+
+Translytical task flows enable data write-back capabilities in Power BI reports, allowing users to update records, add annotations, or trigger actions in other systems directly from a report. Using Fabric user data functions, you can add, edit, or delete data in Fabric databases, or call external APIs to take action in other systems.
+
+For more information, see [Understand translytical task flows](translytical-task-flow-overview.md).
+
 ## Tooltips
 
 Tooltips provide additional context when users hover over data points.
