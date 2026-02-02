@@ -79,7 +79,7 @@ productDirectory:
       url: create-reports/index.yml
     # Card 5
     - title: Copilot in Power BI
-      imageSrc: /media/common/i_ai.svg
+      imageSrc: media/copilot-icon.svg
       summary: Use AI to generate reports, create narratives, summarize data, and discover insights.
       url: create-reports/copilot-introduction.md
     # Card 6
