@@ -104,27 +104,27 @@ tools:
   summary: Find guidance tailored to your role and how you work with Power BI.
   items:
     # Card 1
-    - title: "For report creators: Build reports, design visualizations, create dashboards, and share insights with your organization"
+    - title: I'm a report creator
       imageSrc: /media/common/i_design.svg
       url: personas/report-creator/index.yml
     # Card 2
-    - title: "For data modelers: Transform data, build relationships, write DAX measures, and optimize semantic models"
+    - title: I'm a data modeler
       imageSrc: /media/common/i_architecture.svg
       url: personas/data-modeler/index.yml
     # Card 3
-    - title: "For business users: View reports, explore data, ask questions with Q&A, set alerts, and use Power BI mobile"
+    - title: I'm a report consumer (business user)
       imageSrc: /media/common/i_account-management.svg
       url: personas/business-user/index.yml
     # Card 4
-    - title: "For developers: Embed Power BI in applications, build custom visuals, and automate with REST APIs"
+    - title: I'm a developer
       imageSrc: /media/common/i_code-edit.svg
       url: developer/index.yml
     # Card 5
-    - title: "For admins: Manage licensing, configure security, govern content, and monitor tenant usage"
+    - title: I'm an admin
       imageSrc: /media/common/i_management.svg
       url: /fabric/admin/
     # Card 6
-    - title: "For all: Best practices"
+    - title: Best practices
       imageSrc: /media/common/i_best-practices.svg
       url: guidance/index.yml
 
@@ -152,13 +152,6 @@ additionalContent:
               url: https://ideas.fabric.microsoft.com/
             - text: Stay up to date on the Power BI blog
               url: https://powerbi.microsoft.com/blog/
-        # Card
-        - title: Get involved
-          links:
-            - url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
-              text: Join a user group
-            - url: https://community.fabric.microsoft.com/t5/custom/page/page-id/UnifiedSearchPage?tabName=events
-              text: Join a local event
         # Card
         - title: Recognition programs
           links:
