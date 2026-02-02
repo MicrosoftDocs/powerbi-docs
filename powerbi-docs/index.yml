@@ -98,44 +98,36 @@ productDirectory:
       summary: Embed Power BI in applications, build custom visuals, and automate with APIs.
       url: developer/index.yml
 
-# productDirectory section - "Power BI by role" persona-based cards
-additionalProductDirectory:
+# tools section (Optional; Remove if not applicable.)
+tools:
   title: Power BI by role
   summary: Find guidance tailored to your role and how you work with Power BI.
   items:
     # Card 1
-    - title: For report creators
+    - title: "For report creators: Build reports, design visualizations, create dashboards, and share insights with your organization"
       imageSrc: /media/common/i_design.svg
-      summary: Build reports, design visualizations, create dashboards, and share insights with your organization.
       url: personas/report-creator/index.yml
     # Card 2
-    - title: For data modelers
+    - title: "For data modelers: Transform data, build relationships, write DAX measures, and optimize semantic models"
       imageSrc: /media/common/i_architecture.svg
-      summary: Transform data, build relationships, write DAX measures, and optimize semantic models.
       url: personas/data-modeler/index.yml
     # Card 3
-    - title: For business users
+    - title: "For business users: View reports, explore data, ask questions with Q&A, set alerts, and use Power BI mobile"
       imageSrc: /media/common/i_account-management.svg
-      summary: View reports, explore data, ask questions with Q&A, set alerts, and use Power BI mobile.
       url: personas/business-user/index.yml
     # Card 4
-    - title: For developers
+    - title: "For developers: Embed Power BI in applications, build custom visuals, and automate with REST APIs"
       imageSrc: /media/common/i_code-edit.svg
-      summary: Embed Power BI in applications, build custom visuals, and automate with REST APIs.
       url: developer/index.yml
     # Card 5
-    - title: For admins
+    - title: "For admins: Manage licensing, configure security, govern content, and monitor tenant usage"
       imageSrc: /media/common/i_management.svg
-      summary: Manage licensing, configure security, govern content, and monitor tenant usage.
       url: /fabric/admin/
     # Card 6
-    - title: Best practices
+    - title: "For all: Best practices"
       imageSrc: /media/common/i_best-practices.svg
-      summary: Plan your implementation, optimize performance, and drive adoption with proven guidance.
       url: guidance/index.yml
-      footerLink:
-        url: guidance/index.yml
-        text: See all guidance docs
+
 
 # additionalContent section - Community and related tools
 additionalContent:
@@ -148,41 +140,31 @@ additionalContent:
           links:
             - text: Power BI on YouTube
               url: https://www.youtube.com/@MicrosoftPowerBI
-              itemType: video 
             - text: Jumpstart your career with the Career Hub
               url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_fabricdocs_card_clp
-              itemType: training
             - text: Skill up with Microsoft Learn 30 Day Plans
               url: /training/topics/30-day-plans/
-              itemType: learn
         - title: Community resources
           links:
             - text: Ask questions in our forums
               url: https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi
-              itemType: reference 
             - text: Vote on and contribute product ideas
               url: https://ideas.fabric.microsoft.com/
-              itemType: deploy
             - text: Stay up to date on the Power BI blog
               url: https://powerbi.microsoft.com/blog/
-              itemType: learn
         # Card
         - title: Get involved
           links:
             - url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
-              itemType: get-started
               text: Join a user group
             - url: https://community.fabric.microsoft.com/t5/custom/page/page-id/UnifiedSearchPage?tabName=events
-              itemType: deploy
               text: Join a local event
         # Card
         - title: Recognition programs
           links:
             - url: https://mvp.microsoft.com/
-              itemType: whats-new
               text: MVP program
             - url: https://mvp.microsoft.com/studentambassadors
-              itemType: learn
               text: Microsoft Learn Student Ambassadors program
 
 
