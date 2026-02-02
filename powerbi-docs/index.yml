@@ -23,57 +23,74 @@ highlightedContent:
     - title: What is Power BI?
       itemType: overview
       url: fundamentals/power-bi-overview.md
-    - title: See the latest feature updates
-      itemType: whats-new
-      url: fundamentals/whats-new.md
+    - title: Download Power BI Desktop
+      itemType: download
+      url: fundamentals/desktop-get-the-desktop.md
     - title: Get started with the Power BI service
       itemType: get-started
       url: fundamentals/service-get-started.md
     - title: Create reports with Copilot
       itemType: how-to-guide
-      url: create-reports/copilot-create-reports.md
-    - title: Connect to data in Power BI Desktop
-      itemType: quickstart
-      url: connect-data/desktop-quickstart-connect-to-data.md
+      url: create-reports/copilot-introduction.md
+    - title: Share dashboards and reports
+      itemType: how-to-guide
+      url: collaborate-share/service-share-dashboards.md
     - title: Power BI samples
       itemType: sample
       url: create-reports/sample-datasets.md
+    - title: Troubleshoot data refresh
+      itemType: how-to-guide
+      url: connect-data/refresh-troubleshooting-refresh-scenarios.md
     - title: Microsoft Fabric for Power BI users
       itemType: concept
       url: fundamentals/fabric-get-started.md
-    - title: Troubleshoot Power BI
-      itemType: how-to-guide
-      url: troubleshoot/index.yml
 
-# 🔁 REPLACED productDirectory Fabric section with scenario-based organization
 additionalContent:
   sections:
     # Power BI by scenario
     - title: Power BI by scenario
       summary: Choose guidance based on how and where you use Power BI—across Microsoft Fabric workloads, desktop authoring, on-premises deployments, and embedded analytics.
       items:
-        - title: Use Power BI with Microsoft Fabric
-          summary: Build Power BI solutions using Fabric capacities, shared data, and Copilot across analytics workloads.
-          url: fundamentals/fabric-get-started.md
-
-        - title: Create Power BI reports and models
-          summary: Author Power BI reports and semantic models using desktop and paginated reporting tools.
-          url: fundamentals/desktop-getting-started.md
-
-        - title: Deploy Power BI on-premises
+        - title: Understand the Power BI service
+          summary: Learn about workspaces, dashboards, reports, semantic models, and how they work together.
+          url: fundamentals/service-basic-concepts.md
+        - title: Create a report from Excel
+          summary: Import Excel data and build a Power BI report step by step.
+          url: create-reports/desktop-excel-stunning-report.md
+        - title: Deploy on-premises
           summary: Run Power BI in on-premises environments using Report Server and the data gateway.
           url: report-server/get-started.md
-
-        - title: View and consume Power BI content
+        - title: View and explore reports
           summary: Consume reports and dashboards across devices and Microsoft 365 apps.
           url: consumer/index.yml
+        - title: Embed in applications
+          summary: Integrate Power BI analytics into custom applications using service principals and APIs.
+          url: developer/embedded/embed-service-principal.md
+        - title: Set up scheduled refresh
+          summary: Configure automatic refresh to keep semantic model data current.
+          url: connect-data/refresh-scheduled-refresh.md
+        - title: Follow best practices
+          summary: Apply proven patterns for enterprise-scale Power BI implementations.
+          url: guidance/index.yml
 
-        - title: Embed Power BI in applications
-          summary: Integrate Power BI analytics into custom applications using APIs and embedding.
-          url: developer/embedded/embedded-analytics-power-bi.md
-
-        - title: Administer and govern Power BI
-          summary: Manage tenants, security, capacity, and governance for Power BI—whether used with Microsoft Fabric or standalone.
+    # Power BI by role 
+    - title: Power BI by role
+      summary: Find guidance tailored to your role and how you work with Power BI.
+      items:
+        - title: For report creators
+          summary: Design reports and dashboards to visualize data for your organization.
+          url: personas/report-creator/index.yml
+        - title: For data modelers
+          summary: Build semantic models, write DAX, and optimize data for analysis.
+          url: personas/data-modeler/index.yml
+        - title: For business users
+          summary: View reports, explore data, and get insights to make decisions.
+          url: personas/business-user/index.yml
+        - title: For developers
+          summary: Embed Power BI, build custom visuals, and automate with APIs.
+          url: developer/index.yml
+        - title: For admins
+          summary: Manage capacity, configure settings, and govern your Power BI environment.
           url: /fabric/admin/
 
     # Power BI tools section 
@@ -92,29 +109,6 @@ additionalContent:
           url: connect-data/service-gateway-onprem.md
         - title: Power BI Embedded
           url: developer/embedded/embedded-analytics-power-bi.md
-
-    # Power BI by role 
-    - title: Power BI by role
-      summary: Find guidance tailored to your role and how you work with Power BI.
-      items:
-        - title: I'm a report creator
-          summary: Design reports and dashboards to visualize data for your organization.
-          url: personas/report-creator/index.yml
-        - title: I'm a data modeler
-          summary: Build semantic models, write DAX, and optimize data for analysis.
-          url: personas/data-modeler/index.yml
-        - title: I'm a business user
-          summary: View reports, explore data, and get insights to make decisions.
-          url: personas/business-user/index.yml
-        - title: I'm a developer
-          summary: Embed Power BI, build custom visuals, and automate with APIs.
-          url: developer/index.yml
-        - title: I'm an admin
-          summary: Manage capacity, configure settings, and govern your Power BI environment.
-          url: /fabric/admin/
-        - title: Best practices
-          summary: Learn proven patterns for enterprise-scale Power BI implementations.
-          url: guidance/index.yml
 
     # Community section 
     - title: Community
