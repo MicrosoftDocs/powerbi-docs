@@ -22,8 +22,8 @@ Microsoft Excel is one of the most widely used business applications and one of 
 Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Some features that this article describes are available only in later versions of Excel. Workbooks must be in the .xlsx or .xlsm file type and be smaller than 1 GB.
 
 > [!IMPORTANT]
-> > The following capabilities are deprecated and will no longer be available starting May 31, 2026:
-> - Creation of new semantic models using the legacy “old” import experience in Power BI Service will no longer be allowed.
+> The following capabilities are deprecated and will no longer be available starting May 31, 2026:
+> - Creation of semantic models using the legacy “old” import experience in Power BI Service will no longer be allowed. 
 >
 > The following capabilities are deprecated and will no longer be available starting July 31, 2026:
 > - Existing semantic models created using the legacy “old” import experience in Power BI Service will no longer refresh.
@@ -216,6 +216,7 @@ To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. S
 ## Legacy Excel and CSV import experience retirement
 
 The old Excel and CSV import experience in Power BI service, accessible through the **Create** page, is being retired. This section provides key dates, guidance on identifying affected semantic models, and answers to frequently asked questions.
+![Screenshot that shows the old Excel and CSV import experience in Power BI service that will be deprecated.](media/service-excel-workbook-files/LegacyExcelinPowerBIServiceScreenshot.png)  
 
 ### Key dates
 
