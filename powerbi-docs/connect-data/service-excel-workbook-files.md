@@ -216,7 +216,7 @@ To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. S
 ## Legacy Excel and CSV import experience retirement
 
 The old Excel and CSV import experience in Power BI service, accessible through the **Create** page, is being retired. This section provides key dates, guidance on identifying affected semantic models, and answers to frequently asked questions.
-![Screenshot that shows the old Excel and CSV import experience in Power BI service that will be deprecated.](media/service-excel-workbook-files/LegacyExcelinPowerBIServiceScreenshot.png)  
+![Screenshot that shows the old Excel and CSV import experience in Power BI service that will be deprecated.](media/service-excel-workbook-files/legacy-excel.png)  
 
 ### Key dates
 
