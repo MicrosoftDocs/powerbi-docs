@@ -168,7 +168,7 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
   :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot of the Developer settings in the Tenant settings section of the Admin portal. The option for embedding content in apps is turned on.":::
 
-* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Microsoft Entra ID.
+* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Microsoft Entra ID. For more information see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
 
   :::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot of the Developer settings section. The option for allowing service principals to use Power BI APIs is turned on for one security group.":::
 
