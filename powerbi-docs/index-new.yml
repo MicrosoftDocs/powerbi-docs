@@ -1,0 +1,281 @@
+### YamlMime:Hub
+
+title: Power BI documentation
+summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI.
+brand: power-bi
+
+metadata:
+  title: Power BI documentation
+  description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
+  services: service
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: hub-page
+  ms.collection: collection
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+  no-loc: [Copilot]
+
+# highlightedContent section - Maximum of 8 items
+highlightedContent:
+  items:
+    - title: What is Power BI?
+      itemType: overview
+      url: fundamentals/power-bi-overview.md
+    # Card
+    - title: Download Power BI Desktop
+      itemType: get-started
+      url: fundamentals/desktop-get-the-desktop.md
+    # Card
+    - title: Get started with Power BI Desktop
+      itemType: tutorial
+      url: fundamentals/desktop-getting-started.md
+    # Card
+    - title: Get started with the Power BI service
+      itemType: tutorial
+      url: fundamentals/service-get-started.md
+    # Card
+    - title: Create reports with Copilot
+      itemType: how-to-guide
+      url: create-reports/copilot-create-reports.md
+    # Card
+    - title: Microsoft Fabric for Power BI users
+      itemType: deploy
+      url: fundamentals/fabric-get-started.md
+    # Card
+    - title: Share dashboards and reports
+      itemType: how-to-guide
+      url: collaborate-share/service-share-dashboards.md
+    # Card
+    - title: What's new in Power BI
+      itemType: whats-new
+      url: fundamentals/whats-new.md
+
+# productDirectory section - "Explore Power BI" capability-based cards
+productDirectory:
+  title: Explore Power BI
+  summary: Learn about Power BI capabilities, from connecting to data through sharing insights with your organization.
+  items:
+    # Card 1
+    - title: Get started
+      imageSrc: /media/common/i_get-started.svg
+      summary: Download Power BI Desktop, learn the basics, and create your first report.
+      url: fundamentals/index.yml
+    # Card 2
+    - title: Connect to data
+      imageSrc: /media/common/i_data-collection.svg
+      summary: Connect to hundreds of data sources, configure gateways, and set up scheduled refresh.
+      url: connect-data/index.yml
+    # Card 3
+    - title: Transform and model data
+      imageSrc: /media/common/i_build.svg
+      summary: Shape data, build relationships, create measures with DAX, and optimize your semantic model.
+      url: transform-model/index.yml
+    # Card 4
+    - title: Create reports
+      imageSrc: /media/common/i_dashboard.svg
+      summary: Design interactive reports, add visualizations, create dashboards, and build paginated reports.
+      url: create-reports/index.yml
+    # Card 5
+    - title: Copilot in Power BI
+      imageSrc: /media/common/i_intelligent-search.svg
+      summary: Use AI to generate reports, create narratives, summarize data, and discover insights.
+      url: create-reports/copilot-introduction.md
+    # Card 6
+    - title: Share and collaborate
+      imageSrc: /media/common/i_share.svg
+      summary: Share reports, publish apps, collaborate in Teams, and manage workspaces.
+      url: collaborate-share/index.yml
+    # Card 7
+    - title: View and explore reports
+      imageSrc: /media/common/i_analytics-query.svg
+      summary: Consume reports, use Q&A natural language, set alerts, and access Power BI on mobile.
+      url: consumer/index.yml
+    # Card 8
+    - title: Develop and embed
+      imageSrc: /media/common/i_extend.svg
+      summary: Embed Power BI in applications, build custom visuals, and automate with APIs.
+      url: developer/index.yml
+
+# conceptualContent section - "Power BI by role" persona-based cards
+conceptualContent:
+  title: Power BI by role
+  summary: Find guidance tailored to your role and how you work with Power BI.
+  items:
+    # Card 1
+    - title: For report creators
+      links:
+        - url: fundamentals/desktop-getting-started.md
+          itemType: get-started
+          text: Get started with Power BI Desktop
+        - url: create-reports/desktop-report-view.md
+          itemType: concept
+          text: Report view in Power BI Desktop
+        - url: create-reports/copilot-create-reports.md
+          itemType: how-to-guide
+          text: Create reports with Copilot
+        - url: visuals/power-bi-report-visualizations.md
+          itemType: concept
+          text: Visualizations in Power BI
+      footerLink:
+        url: personas/report-creator/index.yml
+        text: See all report creator docs
+    # Card 2
+    - title: For data modelers
+      links:
+        - url: transform-model/desktop-relationships-understand.md
+          itemType: concept
+          text: Understand model relationships
+        - url: guidance/star-schema.md
+          itemType: concept
+          text: What is a star schema?
+        - url: transform-model/desktop-quickstart-learn-dax-basics.md
+          itemType: get-started
+          text: Learn DAX basics
+        - url: guidance/import-modeling-data-reduction.md
+          itemType: concept
+          text: Reduce data model size
+      footerLink:
+        url: personas/data-modeler/index.yml
+        text: See all data modeler docs
+    # Card 3
+    - title: For business users
+      links:
+        - url: consumer/end-user-consumer.md
+          itemType: get-started
+          text: Am I a Power BI business user?
+        - url: consumer/end-user-experience.md
+          itemType: get-started
+          text: Get around in the Power BI service
+        - url: consumer/end-user-q-and-a.md
+          itemType: concept
+          text: Ask questions with Q&A
+        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+          itemType: overview
+          text: Power BI mobile apps
+      footerLink:
+        url: personas/business-user/index.yml
+        text: See all business user docs
+    # Card 4
+    - title: For developers
+      links:
+        - url: developer/embedded/embedded-analytics-power-bi.md
+          itemType: overview
+          text: What is Power BI embedded analytics?
+        - url: developer/embedded/embed-sample-for-customers.md
+          itemType: tutorial
+          text: Embed for your customers
+        - url: developer/visuals/develop-power-bi-visuals.md
+          itemType: overview
+          text: Develop custom visuals
+        - url: /rest/api/power-bi/
+          itemType: reference
+          text: Power BI REST APIs
+      footerLink:
+        url: developer/index.yml
+        text: See all developer docs
+    # Card 5
+    - title: For admins
+      links:
+        - url: /fabric/enterprise/powerbi/service-admin-licensing-organization
+          itemType: overview
+          text: Power BI licensing for your organization
+        - url: /fabric/enterprise/powerbi/service-premium-what-is
+          itemType: concept
+          text: What is Power BI Premium?
+        - url: /fabric/enterprise/powerbi/service-admin-power-bi-security
+          itemType: concept
+          text: Power BI security
+        - url: /fabric/enterprise/powerbi/service-security-data-protection-overview
+          itemType: concept
+          text: Data protection in Power BI
+      footerLink:
+        url: /fabric/admin/
+        text: See all admin docs
+    # Card 6
+    - title: Best practices
+      links:
+        - url: guidance/fabric-adoption-roadmap.md
+          itemType: concept
+          text: Fabric adoption roadmap
+        - url: guidance/powerbi-implementation-planning-introduction.md
+          itemType: concept
+          text: Implementation planning
+        - url: guidance/power-bi-optimization.md
+          itemType: concept
+          text: Optimization guide
+        - url: guidance/powerbi-migration-overview.md
+          itemType: concept
+          text: Migrate to Power BI
+      footerLink:
+        url: guidance/index.yml
+        text: See all guidance docs
+
+# additionalContent section - Community and related tools
+additionalContent:
+  sections:
+    # Community section
+    - title: Community
+      summary: Discover Power BI learning resources, connect with the community, and get support.
+      items:
+        - title: Learning
+          links:
+            - text: Jumpstart your career with the Career Hub
+              url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_pbidocs_card_clp
+            - text: Explore learning paths on Microsoft Learn
+              url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+            - text: Power BI on YouTube
+              url: https://www.youtube.com/@MicrosoftPowerBI
+            - text: Get started with DAX
+              url: /training/paths/dax-power-bi/?WT.mc_id=powerbi_landingpage-docs-link
+        - title: Community resources
+          links:
+            - text: Ask questions in our forums
+              url: https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi
+            - text: Vote and contribute product ideas
+              url: https://ideas.fabric.microsoft.com/
+            - text: Power BI updates blog
+              url: https://powerbi.microsoft.com/blog/
+            - text: Sign up for the Fabric newsletter
+              url: https://community.fabric.microsoft.com/t5/Community-News/ct-p/Fabric_CommNews
+        - title: Get involved
+          links:
+            - text: Join a user group
+              url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
+            - text: Join a local event
+              url: https://community.fabric.microsoft.com/t5/custom/page/page-id/UnifiedSearchPage?tabName=events
+            - text: MVP program
+              url: https://mvp.microsoft.com/
+        - title: Support
+          links:
+            - text: Power BI support options
+              url: support/service-support-options.md
+            - text: Track Power BI service health
+              url: support/service-admin-health.md
+            - text: Troubleshoot refresh scenarios
+              url: connect-data/refresh-troubleshooting-refresh-scenarios.md
+            - text: Known issues
+              url: /fabric/get-started/fabric-known-issues
+
+    # Related content section
+    - title: Related content
+      items:
+        - title: Microsoft Fabric
+          summary: The unified platform to meet your organization's data and analytics needs.
+          url: /fabric
+        - title: Power Platform
+          summary: Build apps, automate workflows, and analyze data with low-code tools.
+          url: /power-platform
+        - title: Power BI Report Builder
+          summary: Author pixel-perfect paginated reports designed for printing or sharing.
+          url: paginated-reports/report-builder-power-bi.md
+        - title: Power BI Report Server
+          summary: Deploy reports on-premises with a web portal for Power BI and paginated reports.
+          url: report-server/index.yml
+        - title: Power BI REST APIs
+          summary: Automate Power BI with service endpoints for embedding, administration, and more.
+          url: /rest/api/power-bi/
+        - title: Power BI client APIs
+          summary: Embed Power BI using JavaScript or TypeScript client libraries.
+          url: /javascript/api/overview/powerbi/

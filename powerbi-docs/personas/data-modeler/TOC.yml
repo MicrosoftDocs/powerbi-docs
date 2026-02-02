@@ -1,0 +1,71 @@
+- name: Power BI for data modelers
+  href: index.yml
+  items:
+    - name: Get started with data modeling
+      items:
+        - name: Understand model relationships
+          href: ../../transform-model/desktop-relationships-understand.md
+        - name: What is a star schema?
+          href: ../../guidance/star-schema.md
+        - name: Understand storage modes
+          href: ../../transform-model/desktop-storage-mode.md
+        - name: Use the modeling view
+          href: ../../transform-model/desktop-modeling-view.md
+    - name: Transform data
+      items:
+        - name: Query overview
+          href: ../../transform-model/desktop-query-overview.md
+        - name: Common query tasks
+          href: ../../transform-model/desktop-common-query-tasks.md
+        - name: Add custom columns
+          href: ../../create-reports/desktop-add-custom-column.md
+        - name: Combine files from a folder
+          href: ../../transform-model/desktop-combine-binaries.md
+        - name: Query folding guidance
+          href: ../../guidance/power-query-folding.md
+    - name: Build your model
+      items:
+        - name: Create and manage relationships
+          href: ../../transform-model/desktop-create-and-manage-relationships.md
+        - name: Create measures
+          href: ../../transform-model/desktop-measures.md
+        - name: Create calculated columns
+          href: ../../transform-model/desktop-calculated-columns.md
+        - name: Create calculated tables
+          href: ../../transform-model/desktop-calculated-tables.md
+        - name: Create calculation groups
+          href: ../../transform-model/calculation-groups.md
+    - name: Learn DAX
+      items:
+        - name: Learn DAX basics
+          href: ../../transform-model/desktop-quickstart-learn-dax-basics.md
+        - name: DAX overview
+          href: /dax/dax-overview
+        - name: Create calculated columns tutorial
+          href: ../../transform-model/desktop-tutorial-create-calculated-columns.md
+        - name: Create measures tutorial
+          href: ../../transform-model/desktop-tutorial-create-measures.md
+        - name: DAX function reference
+          href: /dax/dax-function-reference
+    - name: Optimize performance
+      items:
+        - name: Reduce data model size
+          href: ../../guidance/import-modeling-data-reduction.md
+        - name: DirectQuery model guidance
+          href: ../../guidance/directquery-model-guidance.md
+        - name: Composite model guidance
+          href: ../../guidance/composite-model-guidance.md
+        - name: Optimization guide
+          href: ../../guidance/power-bi-optimization.md
+    - name: Advanced modeling
+      items:
+        - name: Composite models
+          href: ../../transform-model/desktop-composite-models.md
+        - name: Aggregations
+          href: ../../transform-model/aggregations-advanced.md
+        - name: Field parameters
+          href: ../../create-reports/power-bi-field-parameters.md
+        - name: Row-level security guidance
+          href: ../../guidance/rls-guidance.md
+        - name: Use external tools
+          href: ../../transform-model/desktop-external-tools.md

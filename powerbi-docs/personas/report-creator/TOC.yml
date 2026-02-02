@@ -1,0 +1,75 @@
+- name: Power BI for report creators
+  href: index.yml
+  items:
+    - name: Get started
+      items:
+        - name: Get Power BI Desktop
+          href: ../../fundamentals/desktop-get-the-desktop.md
+        - name: Get started with Power BI Desktop
+          href: ../../fundamentals/desktop-getting-started.md
+        - name: Get started with the Power BI service
+          href: ../../fundamentals/service-get-started.md
+        - name: What is Power BI?
+          href: ../../fundamentals/power-bi-overview.md
+    - name: Connect to data
+      items:
+        - name: Connect to data sources
+          href: ../../connect-data/desktop-connect-to-data.md
+        - name: Data sources in Power BI Desktop
+          href: ../../connect-data/desktop-data-sources.md
+        - name: Shape and combine data
+          href: ../../connect-data/desktop-shape-and-combine-data.md
+        - name: Connect to data in the Power BI service
+          href: ../../connect-data/service-get-data.md
+    - name: Design reports
+      items:
+        - name: Report view in Power BI Desktop
+          href: ../../create-reports/desktop-report-view.md
+        - name: Visualizations in Power BI
+          href: ../../visuals/power-bi-report-visualizations.md
+        - name: Use report themes
+          href: ../../create-reports/desktop-report-themes.md
+        - name: Add filters to reports
+          href: ../../create-reports/power-bi-report-filter.md
+        - name: Create bookmarks
+          href: ../../create-reports/desktop-bookmarks.md
+        - name: Add drillthrough
+          href: ../../create-reports/desktop-drillthrough.md
+        - name: Design for accessibility
+          href: ../../create-reports/desktop-accessibility-creating-reports.md
+        - name: Tips for report design
+          href: ../../create-reports/desktop-tips-and-tricks-for-creating-reports.md
+    - name: Use Copilot
+      items:
+        - name: Copilot in Power BI overview
+          href: ../../create-reports/copilot-introduction.md
+        - name: Create reports with Copilot
+          href: ../../create-reports/copilot-create-reports.md
+        - name: Create narratives with Copilot
+          href: ../../create-reports/copilot-create-narrative.md
+        - name: Write DAX queries with Copilot
+          href: ../../create-reports/copilot-ask-data-question.md
+    - name: Create dashboards
+      items:
+        - name: Introduction to dashboards
+          href: ../../create-reports/service-dashboards.md
+        - name: Dashboard tiles
+          href: ../../create-reports/service-dashboard-tiles.md
+        - name: Create a dashboard
+          href: ../../create-reports/service-dashboard-create.md
+        - name: Pin a tile to a dashboard
+          href: ../../create-reports/service-dashboard-pin-live-tile-from-report.md
+        - name: Dashboard design tips
+          href: ../../create-reports/service-dashboards-design-tips.md
+    - name: Share your work
+      items:
+        - name: Share reports
+          href: ../../collaborate-share/service-share-reports.md
+        - name: Share dashboards
+          href: ../../collaborate-share/service-share-dashboards.md
+        - name: Publish to the web
+          href: ../../collaborate-share/service-publish-to-web.md
+        - name: Create and distribute apps
+          href: ../../collaborate-share/service-create-distribute-apps.md
+        - name: Work in workspaces
+          href: ../../collaborate-share/service-new-workspaces.md
