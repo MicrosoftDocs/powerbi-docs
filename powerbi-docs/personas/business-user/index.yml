@@ -7,7 +7,7 @@ metadata:
   title: Power BI for business users
   description: Learn how to view reports, interact with visualizations, ask questions with Q&A, set alerts, and access Power BI on mobile devices.
   ms.service: powerbi
-  ms.subservice: powerbi-consumer
+  ms.subservice: pbi-explore
   ms.topic: landing-page
   ms.custom: persona-business-user
   author: JulCsc

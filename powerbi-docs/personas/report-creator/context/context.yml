@@ -3,6 +3,6 @@
 ### Context file for Power BI for report creators persona landing page
 ### 
 brand: power-bi
-breadcrumb_path: /power-bi/breadcrumb/toc.yml
+breadcrumb_path: /power-bi/breadcrumb/toc.json
 toc_rel: ../TOC.yml
 uhfHeaderId: MSDocsHeader-MSPowerBI
