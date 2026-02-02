@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Power BI documentation
-summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation covers cloud capabilities in Microsoft Fabric, standalone desktop and on-premises applications, and guidance tailored to your role—whether you create reports, model data, or consume insights.
 brand: power-bi
 
 metadata:
@@ -24,7 +24,7 @@ highlightedContent:
       itemType: overview
       url: fundamentals/power-bi-overview.md
     # Card
-    - title: What's new in Power BI
+    - title: See the latest feature updates
       itemType: whats-new
       url: fundamentals/whats-new.md
     # Card
@@ -52,68 +52,64 @@ highlightedContent:
       itemType: how-to-guide
       url: troubleshoot/index.yml
 
-# productDirectory section - "Power BI in Microsoft Fabric" cloud capabilities
+# productDirectory section (Optional; Remove if not applicable.)
 productDirectory:
-  title: Power BI in Microsoft Fabric
-  summary: Explore Power BI capabilities in the cloud as part of Microsoft Fabric's unified data and analytics platform.
+  sections:
+    - title: Power BI in Microsoft Fabric
+      summary: Explore Power BI capabilities in the cloud as part of Microsoft Fabric's unified data and analytics platform.
+      items:
+        # Card 1
+        - title: Copilot in Power BI
+          imageSrc: media/copilot-icon.png
+          url: create-reports/copilot-introduction.md
+        # Card 2
+        - title: Get started with the Power BI service
+          imageSrc: /media/common/i_get-started.svg
+          url: fundamentals/service-get-started.md
+        # Card 3
+        - title: Share and collaborate
+          imageSrc: /media/common/i_share.svg
+          url: collaborate-share/index.yml
+        # Card 4
+        - title: View and explore reports
+          imageSrc: /media/common/i_investigate.svg
+          url: consumer/index.yml
+        # Card 5
+        - title: Semantic models
+          imageSrc: /media/common/i_data-collection.svg
+          url: connect-data/service-datasets-understand.md
+        # Card 6
+        - title: Microsoft Fabric for Power BI users
+          imageSrc: media/fabric-icon.png
+          url: fundamentals/fabric-get-started.md
+
+# tools section (Optional; Remove if not applicable.)
+tools:
+  title: Power BI applications
+  summary: Download and deploy Power BI for authoring, on-premises hosting, and mobile access.
   items:
-    # Card 1
-    - title: Copilot in Power BI
-      imageSrc: media/copilot-icon.svg
-      summary: Use AI to generate reports, create narratives, summarize data, and discover insights.
-      url: create-reports/copilot-introduction.md
-    # Card 2
-    - title: Get started with the Power BI service
-      imageSrc: /media/common/i_get-started.svg
-      summary: Sign in to the Power BI service, navigate the interface, and publish your first report.
-      url: fundamentals/service-get-started.md
-    # Card 3
-    - title: Share and collaborate
-      imageSrc: /media/common/i_share.svg
-      summary: Share reports, publish apps, collaborate in Teams, and manage workspaces.
-      url: collaborate-share/index.yml
-    # Card 4
-    - title: View and explore reports
-      imageSrc: /media/common/i_investigate.svg
-      summary: Consume reports, use Q&A natural language, set alerts, and access Power BI on mobile.
-      url: consumer/index.yml
-    # Card 5
-    - title: Semantic models
-      imageSrc: /media/common/i_data-collection.svg
-      summary: Build reusable semantic models in Fabric for consistent metrics across your organization.
-      url: connect-data/service-datasets-understand.md
-    # Card 6
-    - title: Microsoft Fabric for Power BI users
-      imageSrc: /fabric/media/fabric-icon.svg
-      summary: Learn how Power BI integrates with OneLake, lakehouses, and other Fabric workloads.
-      url: fundamentals/fabric-get-started.md
+    - title: Power BI Desktop
+      imageSrc: /media/common/i_download.svg
+      url: fundamentals/desktop-getting-started.md
+    - title: Power BI Report Builder
+      imageSrc: /media/common/i_form.svg
+      url: paginated-reports/report-builder-power-bi.md
+    - title: Power BI Report Server
+      imageSrc: /media/common/i_server.svg
+      url: report-server/get-started.md
+    - title: Power BI Mobile
+      imageSrc: /media/common/i_mobile.svg
+      url: consumer/mobile/mobile-apps-for-mobile-devices.md
+    - title: On-premises data gateway
+      imageSrc: /media/common/i_sync.svg
+      url: connect-data/service-gateway-onprem.md
+    - title: Power BI Embedded
+      imageSrc: /media/common/i_code-edit.svg
+      url: developer/embedded/embedded-analytics-power-bi.md
 
 # additionalContent section - Power BI applications, roles, Community, and Related resources
 additionalContent:
   sections:
-    # Power BI applications section
-    - title: Power BI applications
-      summary: Download and deploy Power BI for authoring, on-premises hosting, and mobile access.
-      items:
-        - title: Power BI Desktop
-          summary: Create interactive reports and semantic models with this free Windows application.
-          url: fundamentals/desktop-getting-started.md
-        - title: Power BI Report Builder
-          summary: Author pixel-perfect paginated reports designed for printing or PDF export.
-          url: paginated-reports/report-builder-power-bi.md
-        - title: Power BI Report Server
-          summary: Deploy reports on-premises with a web portal for interactive and paginated reports.
-          url: report-server/get-started.md
-        - title: Power BI Mobile
-          summary: View and interact with reports on iOS, Android, and Windows devices.
-          url: consumer/mobile/mobile-apps-for-mobile-devices.md
-        - title: On-premises data gateway
-          summary: Keep data fresh by connecting the Power BI service to your on-premises data sources.
-          url: connect-data/service-gateway-onprem.md
-        - title: Power BI Embedded
-          summary: Embed interactive reports in your applications using REST APIs and client SDKs.
-          url: developer/embedded/embedded-analytics-power-bi.md
-
     # Power BI by role section
     - title: Power BI by role
       summary: Find guidance tailored to your role and how you work with Power BI.
@@ -163,10 +159,3 @@ additionalContent:
               url: https://mvp.microsoft.com/
             - text: Microsoft Learn Student Ambassadors program
               url: https://mvp.microsoft.com/studentambassadors
-
-    # Related resources section
-    - title: Related resources
-      items:
-        - title: Microsoft Fabric
-          summary: The unified analytics platform that includes Power BI and other data workloads.
-          url: /fabric
