@@ -24,49 +24,49 @@ highlightedContent:
       itemType: overview
       url: fundamentals/power-bi-overview.md
     # Card
-    - title: Download Power BI Desktop
-      itemType: get-started
-      url: fundamentals/desktop-get-the-desktop.md
-    # Card
-    - title: Get started with Power BI Desktop
-      itemType: tutorial
-      url: fundamentals/desktop-getting-started.md
+    - title: What's new in Power BI
+      itemType: whats-new
+      url: fundamentals/whats-new.md
     # Card
     - title: Get started with the Power BI service
-      itemType: tutorial
+      itemType: get-started
       url: fundamentals/service-get-started.md
     # Card
     - title: Create reports with Copilot
       itemType: how-to-guide
       url: create-reports/copilot-create-reports.md
     # Card
-    - title: Microsoft Fabric for Power BI users
-      itemType: deploy
-      url: fundamentals/fabric-get-started.md
+    - title: Connect to data in Power BI Desktop
+      itemType: quickstart
+      url: connect-data/desktop-quickstart-connect-to-data.md
     # Card
-    - title: Share dashboards and reports
+    - title: Power BI samples
+      itemType: sample
+      url: create-reports/sample-datasets.md
+    # Card
+    - title: Licenses and subscriptions
+      itemType: concept
+      url: fundamentals/end-user-license.md
+    # Card
+    - title: Troubleshoot Power BI
       itemType: how-to-guide
-      url: collaborate-share/service-share-dashboards.md
-    # Card
-    - title: What's new in Power BI
-      itemType: whats-new
-      url: fundamentals/whats-new.md
+      url: troubleshoot/index.yml
 
 # productDirectory section - "Power BI in Microsoft Fabric" cloud capabilities
 productDirectory:
   title: Power BI in Microsoft Fabric
-  summary: Explore Power BI capabilities in the cloud as part of Microsoft Fabric's unified analytics platform.
+  summary: Explore Power BI capabilities in the cloud as part of Microsoft Fabric's unified data and analytics platform.
   items:
     # Card 1
-    - title: Get started with the Power BI service
-      imageSrc: /media/common/i_get-started.svg
-      summary: Sign in to the Power BI service, navigate the interface, and publish your first report.
-      url: fundamentals/service-get-started.md
-    # Card 2
     - title: Copilot in Power BI
       imageSrc: media/copilot-icon.svg
       summary: Use AI to generate reports, create narratives, summarize data, and discover insights.
       url: create-reports/copilot-introduction.md
+    # Card 2
+    - title: Get started with the Power BI service
+      imageSrc: /media/common/i_get-started.svg
+      summary: Sign in to the Power BI service, navigate the interface, and publish your first report.
+      url: fundamentals/service-get-started.md
     # Card 3
     - title: Share and collaborate
       imageSrc: /media/common/i_share.svg
@@ -88,43 +88,12 @@ productDirectory:
       summary: Learn how Power BI integrates with OneLake, lakehouses, and other Fabric workloads.
       url: fundamentals/fabric-get-started.md
 
-# tools section (Optional; Remove if not applicable.)
-tools:
-  title: Power BI by role
-  summary: Find guidance tailored to your role and how you work with Power BI.
-  items:
-    # Card 1
-    - title: I'm a report creator
-      imageSrc: /media/common/i_design.svg
-      url: personas/report-creator/index.yml
-    # Card 2
-    - title: I'm a data modeler
-      imageSrc: /media/common/i_architecture.svg
-      url: personas/data-modeler/index.yml
-    # Card 3
-    - title: I'm a report consumer (business user)
-      imageSrc: /media/common/i_account-management.svg
-      url: personas/business-user/index.yml
-    # Card 4
-    - title: I'm a developer
-      imageSrc: /media/common/i_code-edit.svg
-      url: developer/index.yml
-    # Card 5
-    - title: I'm an admin
-      imageSrc: /media/common/i_management.svg
-      url: /fabric/admin/
-    # Card 6
-    - title: Best practices
-      imageSrc: /media/common/i_best-practices.svg
-      url: guidance/index.yml
-
-
-# additionalContent section - Community and related tools
+# additionalContent section - Power BI applications, roles, Community, and Related resources
 additionalContent:
   sections:
-    # Power BI tools section
-    - title: Power BI tools
-      summary: Author and deploy Power BI content with desktop applications and on-premises solutions.
+    # Power BI applications section
+    - title: Power BI applications
+      summary: Download and deploy Power BI for authoring, on-premises hosting, and mobile access.
       items:
         - title: Power BI Desktop
           summary: Create interactive reports and semantic models with this free Windows application.
@@ -144,6 +113,29 @@ additionalContent:
         - title: Power BI Embedded
           summary: Embed interactive reports in your applications using REST APIs and client SDKs.
           url: developer/embedded/embedded-analytics-power-bi.md
+
+    # Power BI by role section
+    - title: Power BI by role
+      summary: Find guidance tailored to your role and how you work with Power BI.
+      items:
+        - title: I'm a report creator
+          summary: Design reports and dashboards to visualize data for your organization.
+          url: personas/report-creator/index.yml
+        - title: I'm a data modeler
+          summary: Build semantic models, write DAX, and optimize data for analysis.
+          url: personas/data-modeler/index.yml
+        - title: I'm a business user
+          summary: View reports, explore data, and get insights to make decisions.
+          url: personas/business-user/index.yml
+        - title: I'm a developer
+          summary: Embed Power BI, build custom visuals, and automate with APIs.
+          url: developer/index.yml
+        - title: I'm an admin
+          summary: Manage capacity, configure settings, and govern your Power BI environment.
+          url: /fabric/admin/
+        - title: Best practices
+          summary: Learn proven patterns for enterprise-scale Power BI implementations.
+          url: guidance/index.yml
 
     # Community section
     - title: Community
@@ -165,13 +157,12 @@ additionalContent:
               url: https://ideas.fabric.microsoft.com/
             - text: Stay up to date on the Power BI blog
               url: https://powerbi.microsoft.com/blog/
-        # Card
         - title: Recognition programs
           links:
-            - url: https://mvp.microsoft.com/
-              text: MVP program
-            - url: https://mvp.microsoft.com/studentambassadors
-              text: Microsoft Learn Student Ambassadors program
+            - text: MVP program
+              url: https://mvp.microsoft.com/
+            - text: Microsoft Learn Student Ambassadors program
+              url: https://mvp.microsoft.com/studentambassadors
 
     # Related resources section
     - title: Related resources
