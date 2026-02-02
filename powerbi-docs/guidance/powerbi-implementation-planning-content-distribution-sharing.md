@@ -346,7 +346,7 @@ If you need to distribute content to consumers outside your organization, we str
 
 External users are made external guest users by an Azure administrator. If the guest user requires a license, a Microsoft 365 administrator can then assign a license to the guest user. These guest users can then access Fabric, including workspaces, apps, and items. Access to Fabric by external guest users can be controlled in the tenant settings by a Fabric administrator.
 
-Consumers don't require a Power BI Pro license to view content in a Fabric capacity. However, creators do require a Power BI Pro license to create and share Power BI content. Consumers require a Power BI Pro license to view content in a workspace that uses Pro or Premium per user (PPU) license mode.
+Consumers don't require a Power BI Pro license to view content in a Fabric capacity. However, creators do require a Power BI Pro license to create and share Power BI content. Consumers require a Power BI Pro license to view content in a workspace that uses Pro or Premium per user (PPU) workspace type.
 
 Microsoft Entra B2B requires that you enable specific settings in the Fabric admin portal. For an overview of the relevant settings a Fabric administrator can use to control how creators share content, see [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing).
 
@@ -420,14 +420,14 @@ Content creators always require a Power BI Pro license to share Power BI content
 
 Content consumers require a Power BI Pro license to:
 
-- Consume content that's in a workspace that doesn't use Fabric capacity license mode.
+- Consume content that's in a workspace that doesn't use Fabric capacity workspace type.
 - Share Power BI content with other consumers.
 - Preview shared .pbix files that are stored in OneDrive for Work or School, or SharePoint.
 - Use a Microsoft Entra B2B guest account that can't use BYOL.
 
 #### Scenario 4: Consumers require Power BI Pro or PPU licenses
 
-If content is published to a workspace that uses PPU license mode, then both content creators and content consumers require a PPU license to share and view that content.
+If content is published to a workspace that uses PPU workspace type, then both content creators and content consumers require a PPU license to share and view that content.
 
 Granting a user a Power BI Pro or PPU license doesn't automatically grant them Build or Write permissions to Power BI items that are already deployed to a workspace. Licenses affect what a user can do but have no effect on item permissions or the various roles within Fabric.
 
@@ -534,7 +534,7 @@ You're then ready to complete the following tasks:
 - **Create workspaces**: Create and share access to a workspace where creators should publish their content, if they don't have one already. Creators might need access to more than one workspace if they plan to use separate workspaces to develop, test, and share content with consumers. Alternatively, you might share access to an [existing workspace](#option-2-workspace-access) that contains other content that creators need access to (described later in this article).
 - **Allocate licenses**: Creators need different licenses depending on the content that they produce.
   - Power BI Pro licenses are always required to create and share Power BI content.
-  - PPU licenses are required to create and share content when the workspace uses PPU license mode.
+  - PPU licenses are required to create and share content when the workspace uses PPU workspace type.
   - No license is required to create and share Fabric items when the workspace is on Fabric capacity.
 
 #### Option 1: You provide access to creators
