@@ -88,75 +88,6 @@ productDirectory:
       summary: Learn how Power BI integrates with OneLake, lakehouses, and other Fabric workloads.
       url: fundamentals/fabric-get-started.md
 
-# conceptualContent section - "Power BI tools" standalone applications
-conceptualContent:
-  title: Power BI tools
-  summary: Author and deploy Power BI content with desktop applications and on-premises solutions.
-  items:
-    # Card 1
-    - title: Power BI Desktop
-      links:
-        - text: Download Power BI Desktop
-          url: fundamentals/desktop-get-the-desktop.md
-          itemType: download
-        - text: Get started with Power BI Desktop
-          url: fundamentals/desktop-getting-started.md
-          itemType: get-started
-        - text: Connect to data sources
-          url: connect-data/desktop-connect-to-data.md
-          itemType: how-to-guide
-        - text: Transform and shape data
-          url: connect-data/desktop-shape-and-combine-data.md
-          itemType: how-to-guide
-        - text: Create reports and visualizations
-          url: create-reports/desktop-report-view.md
-          itemType: how-to-guide
-        - text: Model data with DAX
-          url: transform-model/desktop-quickstart-learn-dax-basics.md
-          itemType: tutorial
-    # Card 2
-    - title: Power BI Report Server
-      links:
-        - text: What is Power BI Report Server?
-          url: report-server/get-started.md
-          itemType: overview
-        - text: Install Power BI Report Server
-          url: report-server/install-report-server.md
-          itemType: deploy
-        - text: Configure the web portal
-          url: report-server/configure-powerbi-mobile-apps-remote.md
-          itemType: how-to-guide
-        - text: Create reports for Report Server
-          url: report-server/quickstart-create-powerbi-report.md
-          itemType: quickstart
-        - text: Scheduled refresh in Report Server
-          url: report-server/scheduled-refresh.md
-          itemType: how-to-guide
-        - text: Compare Report Server vs. Power BI service
-          url: report-server/compare-report-server-service.md
-          itemType: concept
-    # Card 3
-    - title: Power BI Mobile
-      links:
-        - text: What are the mobile apps?
-          url: consumer/mobile/mobile-apps-for-mobile-devices.md
-          itemType: overview
-        - text: Get the mobile apps
-          url: consumer/mobile/mobile-android-app-get-started.md
-          itemType: download
-        - text: View reports on mobile
-          url: consumer/mobile/mobile-apps-view-phone-report.md
-          itemType: how-to-guide
-        - text: Copilot in mobile apps
-          url: consumer/mobile/mobile-copilot-overview.md
-          itemType: how-to-guide
-        - text: Set data alerts
-          url: consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-          itemType: how-to-guide
-        - text: Annotate and share
-          url: consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-          itemType: how-to-guide
-
 # tools section (Optional; Remove if not applicable.)
 tools:
   title: Power BI by role
@@ -191,6 +122,29 @@ tools:
 # additionalContent section - Community and related tools
 additionalContent:
   sections:
+    # Power BI tools section
+    - title: Power BI tools
+      summary: Author and deploy Power BI content with desktop applications and on-premises solutions.
+      items:
+        - title: Power BI Desktop
+          summary: Create interactive reports and semantic models with this free Windows application.
+          url: fundamentals/desktop-getting-started.md
+        - title: Power BI Report Builder
+          summary: Author pixel-perfect paginated reports designed for printing or PDF export.
+          url: paginated-reports/report-builder-power-bi.md
+        - title: Power BI Report Server
+          summary: Deploy reports on-premises with a web portal for interactive and paginated reports.
+          url: report-server/get-started.md
+        - title: Power BI Mobile
+          summary: View and interact with reports on iOS, Android, and Windows devices.
+          url: consumer/mobile/mobile-apps-for-mobile-devices.md
+        - title: On-premises data gateway
+          summary: Keep data fresh by connecting the Power BI service to your on-premises data sources.
+          url: connect-data/service-gateway-onprem.md
+        - title: Power BI Embedded
+          summary: Embed interactive reports in your applications using REST APIs and client SDKs.
+          url: developer/embedded/embedded-analytics-power-bi.md
+
     # Community section
     - title: Community
       summary: Discover Power BI learning resources, connect with the community, and get support.
@@ -219,25 +173,9 @@ additionalContent:
             - url: https://mvp.microsoft.com/studentambassadors
               text: Microsoft Learn Student Ambassadors program
 
-
-    # Related content section
-    - title: Related documentation
+    # Related resources section
+    - title: Related resources
       items:
         - title: Microsoft Fabric
-          summary: The unified platform to meet your organization's data and analytics needs.
+          summary: The unified analytics platform that includes Power BI and other data workloads.
           url: /fabric
-        - title: Power BI Report Builder
-          summary: Author pixel-perfect paginated reports designed for printing or sharing.
-          url: paginated-reports/report-builder-power-bi.md
-        - title: Power BI Report Server
-          summary: Deploy reports on-premises with a web portal for Power BI and paginated reports.
-          url: report-server/index.yml
-        - title: Power BI REST APIs
-          summary: Automate Power BI with service endpoints for embedding, administration, and more.
-          url: /rest/api/power-bi/
-        - title: Power BI client APIs
-          summary: Embed Power BI using JavaScript or TypeScript client libraries.
-          url: /javascript/api/overview/powerbi/
-        - title: Power Platform
-          summary: Build apps, automate workflows, and analyze data with low-code tools.
-          url: /power-platform
