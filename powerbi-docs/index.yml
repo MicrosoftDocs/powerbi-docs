@@ -48,7 +48,7 @@ highlightedContent:
 # productDirectory section - Power BI by scenario (with icons and links)
 productDirectory:
   title: Power BI by scenario
-  summary: Choose guidance based on how and where you use Power BI—across Microsoft Fabric workloads, desktop authoring, on-premises deployments, and embedded analytics.
+  summary: Choose guidance based on what you want to do with Power BI—understand the service, connect and analyze data, create and share reports, explore insights, or deliver analytics across Fabric, on-premises, and embedded scenarios.
   items:
     - title: Understand the Power BI service
       imageSrc: /media/common/i_overview.svg
