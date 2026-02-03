@@ -40,7 +40,22 @@ The element level format string is only available to specific visuals and data l
 
 ## How to use custom format strings
 
-To use custom format strings, first decide which level you want to work on: model, visual, or element.  
+To use custom format strings, first decide which level you want to work on: model, visual, or element.
+
+### Common format string examples
+
+Here are some commonly used format strings to get you started:
+
+| Format string | Example input | Example output | Description |
+|---------------|---------------|----------------|-------------|
+| `#,##0` | 1234567 | 1,234,567 | Number with thousands separator, no decimals |
+| `#,##0.00` | 1234.5 | 1,234.50 | Number with thousands separator, two decimals |
+| `0%` | 0.156 | 16% | Percentage, no decimals |
+| `0.0%` | 0.156 | 15.6% | Percentage, one decimal |
+| `$#,##0.00` | 1234.5 | $1,234.50 | Currency with two decimals |
+| `0.00" units"` | 42.5 | 42.50 units | Number with custom suffix |
+| `yyyy-MM-dd` | 1/15/2025 | 2025-01-15 | Date in ISO format |
+| `MMM d, yyyy` | 1/15/2025 | Jan 15, 2025 | Date with abbreviated month |  
 
 > [!IMPORTANT]  
 > **New card and other visuals:** If your custom format doesn't appear as expected (for example, you see `12K` instead of `11,732`), the visual's **Display units** setting is likely set to **Auto**. Change **Display units** to **None** before applying your custom format string. This change is especially common with new card visuals, data labels, and slicers. For more information, see [Troubleshooting unwanted automatic scaling](#troubleshooting-unwanted-automatic-scaling-k-m-b-suffixes).

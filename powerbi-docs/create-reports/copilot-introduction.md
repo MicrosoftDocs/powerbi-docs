@@ -1,12 +1,12 @@
 ---
 title: Overview of Copilot for Power BI 
-description: Read all about how Copilot works in Power BI.
+description: Discover how Copilot for Power BI uses generative AI to help you analyze data, create reports, and get insights. Learn about capabilities, requirements, and setup.
 author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
-ms.date: 12/01/2025
+ms.date: 01/30/2026
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ai-usage: ai-assisted
@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI, Copilot helps you use the transformational power of generative AI to get the most from your data. We have chat-based experiences where Copilot can help you with tasks from on-the-fly analysis for business users to data analysis expression (DAX) generation for advanced creators. We also have various AI-infused Copilot features throughout the product.  
+In Power BI, Copilot helps you use the transformational power of generative AI to get the most from your data. It provides chat-based experiences where Copilot can help you with tasks from on-the-fly analysis for business users to data analysis expression (DAX) generation for advanced creators. The product also includes various AI-infused Copilot features.  
 
 This article provides an overview of the Copilot capabilities for Power BI.
 
@@ -33,7 +33,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 
 ## Data preparation
 
-**Data needs to be prepared to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](copilot-prepare-data-ai.md).
+**You need to prepare data to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](copilot-prepare-data-ai.md).
 
 ## Capabilities
 
@@ -41,7 +41,7 @@ Copilot in Power BI offers a range of capabilities designed to enhance productiv
 
 ### Copilot for business users: Chat with your data
 
-For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question, otherwise it may answer from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, we have three chat-with-your-data experiences for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps (scoped to curated app content and supports verified answers by app authors).
+For business users, chatting with your data can mean many things. It might involve finding content. It could include asking for ad-hoc analyses or insights. You can also quickly create and analyze visuals. You might even get summaries of entire reports or focus on specific topics. All these tasks are similar to what you might ask your analyst to do when you have follow-up questions about a report they made. When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question. Otherwise, it answers from the large language model's (LLM) [general knowledge](https://go.microsoft.com/fwlink/?linkid=2325401). Right now, three chat-with-your-data experiences exist for business users: the standalone Copilot experience, the Copilot pane for reports, and Copilot in apps (scoped to curated app content and supports verified answers by app authors).
 
 #### The standalone Copilot experience (preview): Find data and ask questions about any item
 
@@ -58,17 +58,17 @@ The standalone Copilot can help with the following tasks:
 
 #### Copilot in apps (preview): Ask questions and get summaries scoped to an app
 
-The app-scoped Copilot experience is accessible from an app's left navigation, allowing users to search and ask questions based on the curated content included in that app—such as reports, dashboards, and related artifacts. Unlike the report-scoped Copilot pane (which is limited to the open report), app-scoped Copilot operates across the app's curated scope, providing summaries of app content and answers to questions based on what users have access to within the app.
+The app-scoped Copilot experience is accessible from an app's left navigation. It allows users to search and ask questions based on the curated content included in that app - such as reports, dashboards, and related artifacts. Unlike the report-scoped Copilot pane (which is limited to the open report), app-scoped Copilot operates across the app's curated scope. It provides summaries of app content and answers to questions based on what users have access to within the app.
 
 App-scoped Copilot supports verified answers prepared by app authors. When verified answers exist for common questions, Copilot can surface those author-provided responses to increase reliability and consistency. [Learn more about Copilot in apps](copilot-apps-overview.md).
- 
+
 ### Considerations and limitations
 
-Newly purchased capacity or capacity scale-up operations may take up to 24 hours for Copilot to recognize and become available for use.
+When you purchase new capacity or scale up capacity, it can take up to 24 hours for Copilot to recognize the change and become available for use.
 
-The standalone Copilot and Copilot in apps experiences aren't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English may occasionally return relevant responses, multilingual use isn't officially supported at this time.
+The standalone Copilot and Copilot in apps experiences aren't yet available in the following regions: India West, Indonesia Central, Korea South, Malaysia West, New Zealand North, Qatar Central, Taiwan North, Taiwan North West, UAE Central, France South, Germany North, Norway West. While prompts submitted in languages other than English might occasionally return relevant responses, multilingual use isn't officially supported at this time.
 
-Responses in app-scoped Copilot are limited to the app's included content and the permissions users have within the app. When verified answers are available, they may be prioritized and returned for matching questions.
+Responses in app-scoped Copilot are limited to the app's included content and the permissions users have within the app. When verified answers are available, the app might prioritize and return them for matching questions.
 
 #### The Copilot pane: Ask questions about an open report
 
@@ -96,12 +96,12 @@ Some of these capabilities are available through the Copilot pane, whereas other
 
 :::image type="content" source="media/copilot-introduction/copilot-build-reports.png" alt-text="Screenshot of Copilot building a report in Power BI." lightbox="media/copilot-introduction/copilot-build-reports.png":::
 
-### Copilot clear chat
+## Clear the Copilot chat
 
-The "clear chat" button removes the contents of the current conversation and any previous context set throughout the conversation. This is essentially the same as starting a new chat. Note: This doesn't refresh the underlying data.
-It's best to use "clear chat" when switching topics to avoid overloading Copilot with unrelated prior context. Clear the chat to ensure clear and focused responses.
+The **clear chat** button removes the contents of the current conversation and any previous context set throughout the conversation. This action is essentially the same as starting a new chat. Note that this action doesn't refresh the underlying data.
+Use **clear chat** when switching topics to avoid overloading Copilot with unrelated prior context. Clear the chat to ensure clear and focused responses.
 
-If you ask the same exact prompt on an unchanged semantic model (same schema, data, and custom instructions) within a rolling 24-hour window, Copilot responds from the cache for efficiency. It's expected behavior to receive the same response in this case. The "clear chat" button doesn't impact this. If you aren't expecting the same response, try changing your prompt or refreshing the underlying model.
+If you ask the same exact prompt on an unchanged semantic model (same schema, data, and custom instructions) within a rolling 24-hour window, Copilot responds from the cache for efficiency. You see the same response in this case. The **clear chat** button doesn't impact this. If you aren't expecting the same response, try changing your prompt or refreshing the underlying model.
 
 ## Copilot requirements
 
@@ -127,24 +127,24 @@ The following requirements pertain to the full-screen standalone Copilot experie
 
 #### Enable tenant settings
 
-- The setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) must be enabled at the tenant level. It isn't sufficient to enable it at the capacity level (that is, if delegated).
-- The tenant setting called [**Users can access a standalone, cross-item Power BI Copilot experience (preview)**](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview) must be enabled.
+- Enable the setting called [**Users can use Copilot and other features powered by Azure OpenAI**](/fabric/admin/service-admin-portal-copilot#users-can-use-copilot-and-other-features-powered-by-azure-openai) at the tenant level. Enabling it at the capacity level (that is, if delegated) isn't sufficient.
+- Enable the tenant setting called [**Users can access a standalone, cross-item Power BI Copilot experience (preview)**](copilot-enable-power-bi.md#enable-the-standalone-power-bi-copilot-experience-preview).
 
 :::image type="content" source="media/copilot-introduction/copilot-access-standalone-enabled.png" alt-text="Screenshot of the standalone Copilot admin screen with options enabled." lightbox="media/copilot-introduction/copilot-access-standalone-enabled.png":::
 
 #### Access to a Copilot-supported capacity
 
-To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** The recommended approach is to use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you aren't able to use the standalone Copilot experience.* 
+To use the standalone Copilot experience, **you must have access to a Copilot-supported capacity.** Use a dedicated [Fabric Copilot capacity (FCC)](/fabric/enterprise/fabric-copilot-capacity). If your organization has an FCC, all Copilot usage across Power BI is automatically billed to a single, centralized capacity. If your org doesn't have an FCC, standalone Copilot automatically selects a workspace linked to a capacity that supports Copilot (that is, it's linked to an F2 capacity or higher, it's in a supported region, and it's enabled for Copilot) for usage tracking and billing. *If you don't have access to an FCC or access to a workspace backed by a capacity that supports Copilot, you can't use the standalone Copilot experience.*
 
 #### Autoselection of a Copilot workspace
 
-We automatically select a workspace from a partially randomized list of eligible workspaces, weighted toward workspaces with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, we automatically reassign a new one and notify the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
+The service automatically selects a workspace from a partially randomized list of eligible workspaces, weighted toward workspaces with more available capacity. This approach helps balance usage and prevents overloading any single capacity. This selection persists across sessions as long as the workspace remains Copilot-enabled and has available capacity. If the workspace becomes disabled for Copilot or reaches its capacity limit, the service automatically reassigns a new one and notifies the user. If an FCC becomes available, it always overrides the autoselected workspace. Users receive a dismissible notification showing the chosen workspace and a direct option to change it.
 
 :::image type="content" source="media/copilot-introduction/workspace-autoselection.png" alt-text="Screenshot of the standalone Copilot confirmation that the workspace was autoassigned via autoselection." lightbox="media/copilot-introduction/workspace-autoselection.png":::
 
 #### Change your Copilot workspace
 
-You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, we only override it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, we alert you and provide options to select a new workspace manually or through autoselection.
+You can update your Copilot workspace anytime via **More > Manage workspace** in the standalone Copilot experience. Once you manually select a workspace, the service only overrides it if an FCC becomes available. If your chosen workspace becomes disabled or reaches its capacity limit, the service alerts you and provides options to select a new workspace manually or through autoselection.
 
 :::image type="content" source="media/copilot-introduction/workspace-manage.png" alt-text="Screenshot of the standalone Copilot more menu with the option to manage workspace." lightbox="media/copilot-introduction/workspace-manage.png":::
 
@@ -159,7 +159,7 @@ These requirements pertain to using Copilot within Power BI reports, including t
 - **Power BI service**:
   - The report must be located in a workspace linked to either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or a paid [Fabric](/fabric/enterprise/licenses) capacity. [Learn how to check your license type](copilot-enable-power-bi.md#use-copilot-for-power-bi-in-the-service).
   - To generate summarized insights in reports, you need at least *read access* to the workspace, report, or app.
-  - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model
+  - To add a narrative visual to a report or generate Copilot reports, you need *edit access* to the workspace or report, or *build access* to the semantic model.
 
 ### Requirements for app-scoped Copilot (preview)
 
@@ -169,11 +169,18 @@ These requirements pertain to using [app-scoped Copilot in Power BI apps](copilo
 - Like standalone Copilot, app-scoped Copilot uses an [FCC](/fabric/enterprise/fabric-copilot-capacity) or an [autoselected workspace](#autoselection-of-a-copilot-workspace) for usage tracking and billing. Or you can [manually select a workspace](#change-your-copilot-workspace).
 - The setting for showing Copilot in the app navigation must be enabled. This setting is unique per app and is managed while [publishing or updating an app](../collaborate-share/service-create-distribute-apps.md) under *Advanced settings* > *Show Copilot in app navigation*.
 
-
-:::image type="content" source="media/copilot-introduction/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
+:::image type="content" source="media/copilot-introduction/workspace-app-copilot-setting.png" alt-text="Screenshot of the app-scoped Copilot setting in Power BI app publishing options.":::
 
 > [!NOTE]
-> **Copilot in apps is on by default** and can be managed per app. 
+> **Copilot in apps is on by default** and can be managed per app.
+
+## Power BI Copilot compute usage
+
+The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) provides visibility into compute consumed by Copilot in Power BI. Capacity admins can use the **Item history** page to view a 30-day breakdown of Copilot usage, measured in capacity units (CUs). By filtering on the **Copilot in Fabric** operation, you can isolate all compute usage generated by Copilot requests and break it down by Power BI experience (report, semantic model, or mixed) to understand where compute demand originates.
+
+All Copilot CU consumption is processed as background capacity operations. This design smooths demand and prevents sudden compute spikes, helping ensure a more consistent experience across the capacity. Billing for Copilot in Fabric is driven only by token consumption. Any downstream actions that Copilot triggers, such as DAX queries, data refreshes, or email subscriptions, are billed separately through their standard Fabric pathways.
+
+For more information, see [Understand the metrics app item history page](/fabric/enterprise/metrics-app-item-history-page).
 
 ## Related content
 

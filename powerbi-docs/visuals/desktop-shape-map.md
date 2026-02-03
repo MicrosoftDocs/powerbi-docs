@@ -449,4 +449,4 @@ Use the following **Region keys** in this preview release to test **Shape map**.
 ## Related content
 
 - [Matrix visual in Power BI](desktop-matrix-visual.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)

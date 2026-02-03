@@ -1,8 +1,8 @@
 ---
 title: Configure Power BI Premium dataflow workloads
 description: Learn how to configure Power BI Premium for dataflow workloads, including enabling dataflows, refining settings, and optimizing performance.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: jeluitwi
 ms.service: powerbi
 ms.subservice: pbi-dataflows

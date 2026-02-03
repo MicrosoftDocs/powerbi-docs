@@ -1,8 +1,8 @@
 ---
 title: Configure Azure Log Analytics in Power BI
 description: Learn how to set up and configure Azure Log Analytics so that you can connect it to your data in Power BI.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

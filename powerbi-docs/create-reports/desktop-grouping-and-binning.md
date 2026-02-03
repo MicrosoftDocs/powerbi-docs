@@ -26,6 +26,14 @@ In Power BI Desktop, you can group data points to help you more clearly view, an
 
 To use grouping, select two or more elements on a visual by using Ctrl+Select. Then right-click one of the selected elements, scroll to **Group**, and choose **Group** from the context menu.
 
+To select multiple elements:
+
+1. Create or select a visual (such as a bar chart or column chart) on your report canvas.
+1. Click on one data point in the visual (such as a bar in a bar chart).
+1. Hold down **Ctrl** on your keyboard and click additional data points to add them to your selection. Selected items are highlighted.
+1. With multiple items selected, right-click one of the selected items.
+1. In the context menu, hover over **Group** and select **Group**.
+
 :::image type="content" source="media/desktop-grouping-and-binning/grouping-binning_1.png" alt-text="Screenshot of a sample bar graph, highlighting the Group data selection in the dropdown menu.":::
 
 Once you create it, the group is added to the **Legend** well for the visual with **(groups)** appended. The group also appears in the **Fields** list.

@@ -1,8 +1,8 @@
 ---
 title: External Tools in Power BI Desktop
 description: Learn how to use external tools in Power BI Desktop, including DAX Studio, Tabular Editor, ALM Toolkit, and Metadata Translator to extend data modeling, analysis, and lifecycle management capabilities.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

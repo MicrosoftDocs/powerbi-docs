@@ -3,7 +3,6 @@ title: Create and Use a Text Slicer (Preview)
 description: Learn how to create and customize a Text slicer in Power BI Desktop for dynamic data filtering. Follow step-by-step instructions to enhance your reports with interactive text-based filters.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -22,9 +21,41 @@ The Text slicer visual in Power BI Desktop is an interactive element that enable
 This article shows you how to create and customize text slicers to enhance your Power BI reports with dynamic, text-based filtering capabilities.
 
 > [!IMPORTANT]
-> The Text slicer (preview) is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> The Text slicer is currently in [preview](power-bi-visualizations-overview.md#preview-visuals).
 
-## Prerequisites
+## Text slicer modes
+
+The text slicer behaves differently depending on whether you add a data column to it:
+
+### With a data column (filtering mode)
+
+When you add a data column to the text slicer, it functions as a filter. The slicer filters your report visuals based on whether values in the data column contain any of the entered text strings. This mode is ideal for searching and filtering data when you don't know the exact values in advance.
+
+### Without a data column (input mode)
+
+When you don't add a data column to the text slicer, it acts as a pure input control. In this mode, filtering is disabled and the slicer becomes a parameter input mechanism. This configuration is useful for passing parameters to [translytical task flows](../create-reports/translytical-task-flow-button.md), such as comments, annotations, or values for writebacks and approvals.
+
+## Work with filter pills
+
+When you enter text in a text slicer and press **Enter** or select the apply button, the value converts to a pill (also called a chip or tag). These pills provide a visual representation of your active filters and offer several interactive features:
+
+- **Edit a pill** - Double-click any pill to edit its value. The pill becomes editable, allowing you to modify the filter text directly.
+- **Remove a pill** - Select the dismiss (X) button on a pill to remove that filter value.
+- **View clustered pills** - When you have many filter values, pills cluster together to save space. Select the cluster to expand and view all individual pills.
+
+## Format the text slicer
+
+You can customize the appearance of many elements in the text slicer to match your report design, including the apply and dismiss buttons. In the **Format** pane under **Visual**:
+
+- **Apply button** - Expand **Apply button** to access formatting options for the apply button.
+- **Dismiss button** - Expand **Filters** to access formatting options for the dismiss button on filter pills.
+
+You can adjust colors, borders, and other visual properties to ensure the text slicer integrates seamlessly with your report's look and feel.
+
+> [!TIP]
+> To hide the apply or dismiss buttons from the visual, set their **Icon size** to 0.
+
+## Prerequisites for the example
 
 In the following guide, use the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
 
@@ -39,7 +70,7 @@ In the following guide, use the [Retail Analysis Sample PBIX file](https://downl
 
 ## Create a text slicer
 
-In this quick and easy three-step guide, you create a **text slicer** in Power **BI Desktop**. Review the [Prerequisites](#prerequisites) section before following these steps.
+In this quick and easy three-step guide, you create a **text slicer** in Power **BI Desktop**. Review the [Prerequisites for the example](#prerequisites-for-the-example) section before following these steps.
 
 1. With the **Retail Analysis Sample PBIX** open, make sure you're on the Overview page by selecting the **Overview** tab. To make room for your text slicer, select and resize the scatter chart by dragging the dark **visualization handles**. Then, with nothing selected on the report canvas, select the **text slicer** icon in the **Build visual** tab on the **Visualizations** pane to create a new slicer on the report canvas.
 
@@ -74,10 +105,6 @@ This section provides a list of known considerations and limitations. It helps y
   - However, we're committed to ensuring that all functionalities comply with accessibility standards upon the conclusion of the preview period.
 - **Filter logic and operators**:
   - The Text slicer uses contains as its default filter logic and applies an or operator when multiple values are entered. This logic means that any record containing one or more of the input strings is returned.
-- **Text slicer as input control**:
-  - You can configure the text slicer as a pure input control by meeting the 'Field' assignment in the build pane. This configuration disables its filtering capability and transforms it into a parameter input mechanism.
-  - This setup is essential for Translytical Task Flows, especially when passing parameters that aren't tied to a specific data field, such as comments, annotations, or external triggers.
-  - When used this way, the slicer activates the User Data Function through a button, provided the parameter is marked as required. This configuration enables workflows like writebacks, approvals, or notifications, without relying on dataset-bound filtering.
 
 ## Related content
 

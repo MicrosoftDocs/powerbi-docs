@@ -104,5 +104,5 @@ For troubleshooting information, see [Power Apps visual for Power BI.](/powerapp
 
 ## Related content
 
-- [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Q&A visual](power-bi-visualization-q-and-a.md)
 - [Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)
