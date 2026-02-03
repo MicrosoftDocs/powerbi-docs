@@ -82,7 +82,6 @@ The **Select and filter data** window lists the fields that can be set dynamical
 
 In the **Email details** window, name the subscription, add recipients separated by commas or semicolons, and a subject, and select the type of attachment to use. Many of these fields offer the option to use the dynamic parameters. In this example, **Recipients** are dynamically added from the *Training data* semantic model, using the **Email** field. And, the email **Subject** is dynamically set using the **Manager name** parameter. The link icon :::image type="icon" source="media/dynamic-subscriptions/power-bi-icon.png" border="false"::: indicates that dynamic content is being used. 
 
-
 1. Name your subscription. 
 1. Manually enter recipient email addresses, or use the dropdown to select a value that dynamically selects recipients from the *Training data* semantic model.
 1. Manually add an email subject, or use the dropdown to dynamically create individualized subjects using the Manager name field from the *Training data* semantic model.  
