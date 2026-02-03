@@ -115,7 +115,7 @@ tools:
     - title: Report creators
       imageSrc: /media/common/i_dashboard.svg
       url: personas/report-creator/index.yml
-    - title: Data modelers
+    - title: Semantic model designers
       imageSrc: /media/common/i_architecture.svg
       url: personas/data-modeler/index.yml
     - title: Business users
