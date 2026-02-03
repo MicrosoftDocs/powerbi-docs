@@ -57,14 +57,14 @@ productDirectory:
           text: Learn the basics
         - url: fundamentals/service-get-started.md
           text: Get started
-    - title: Use Power BI with Microsoft Fabric
+    - title: Analyze data in Microsoft Fabric with Power BI
       imageSrc: media/fabric-icon.png
       links:
         - url: fundamentals/fabric-get-started.md
           text: Fabric for Power BI users
         - url: connect-data/service-datasets-understand.md
           text: Semantic models
-    - title: Create reports
+    - title: Create and publish reports 
       imageSrc: /media/common/i_design.svg
       links:
         - url: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
@@ -81,18 +81,18 @@ productDirectory:
     - title: View and explore reports
       imageSrc: /media/common/i_investigate.svg
       links:
-        - url: consumer/index.yml
-          text: For business users
-        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
-          text: Power BI Mobile
-    - title: Deploy on-premises
+        - url: consumer/end-user-report-open.md
+          text: View reports
+        - url: consumer/end-user-workspaces.md
+          text: Power BI workspaces
+    - title: Run Power BI on-premises
       imageSrc: /media/common/i_server.svg
       links:
-        - url: report-server/get-started.md
-          text: Power BI Report Server
         - url: connect-data/service-gateway-onprem.md
           text: On-premises data gateway
-    - title: Embed in applications
+        - url: connect-data/service-gateway-deployment-guidance.md
+          text: Gateway deployment guidance
+    - title: Embed Power BI in applications
       imageSrc: /media/common/i_code-edit.svg
       links:
         - url: developer/embedded/embed-service-principal.md
