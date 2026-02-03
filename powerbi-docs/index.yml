@@ -69,8 +69,10 @@ productDirectory:
       links:
         - url: connect-data/desktop-quickstart-connect-to-data.md
           text: Connect to data
-        - url: create-reports/desktop-excel-stunning-report.md
-          text: Create a report from Excel
+        - url: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+          text: Visualization types
+        - url: create-reports/desktop-sharepoint-save-share.md
+          text: Publish to SharePoint
     - title: Set up data refresh
       imageSrc: /media/common/i_sync.svg
       links:
@@ -139,7 +141,7 @@ additionalContent:
           summary: Create interactive reports and semantic models with this free Windows application.
           url: fundamentals/desktop-getting-started.md
         - title: Power BI Report Builder
-          summary: Author pixel-perfect paginated reports designed for printing or PDF export.
+          summary: Author paginated reports with tables, charts, and parameters using this free Windows application.
           url: paginated-reports/report-builder-power-bi.md
         - title: Power BI Report Server
           summary: Deploy reports on-premises with a web portal for interactive and paginated reports.
@@ -153,6 +155,15 @@ additionalContent:
         - title: Power BI Embedded
           summary: Embed interactive reports in your applications using REST APIs and client SDKs.
           url: developer/embedded/embedded-analytics-power-bi.md
+        - title: Azure Analysis Services
+          summary: Enterprise-grade analytical data models in the cloud, compatible with Power BI semantic models.
+          url: /azure/analysis-services/analysis-services-overview
+        - title: SQL Server Reporting Services
+          summary: On-premises reporting platform for paginated reports and mobile reports.
+          url: /sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports
+        - title: DAX reference
+          summary: Data Analysis Expressions (DAX) formula language for calculations in Power BI, Analysis Services, and Power Pivot.
+          url: /dax/dax-overview
 
     # Community section 
     - title: Community
