@@ -29,9 +29,9 @@ highlightedContent:
     - title: Get started with the Power BI service
       itemType: get-started
       url: fundamentals/service-get-started.md
-    - title: Create reports with Copilot
+    - title: Enable Copilot in Power BI
       itemType: how-to-guide
-      url: create-reports/copilot-introduction.md
+      url: create-reports/copilot-enable-power-bi.md
     - title: Share dashboards and reports
       itemType: how-to-guide
       url: collaborate-share/service-share-dashboards.md
@@ -57,48 +57,6 @@ productDirectory:
           text: Service concepts
         - url: fundamentals/service-get-started.md
           text: Get started
-    - title: Create reports
-      imageSrc: /media/common/i_design.svg
-      links:
-        - url: create-reports/desktop-excel-stunning-report.md
-          text: Create a report from Excel
-        - url: create-reports/copilot-introduction.md
-          text: Create reports with Copilot
-    - title: Deploy on-premises
-      imageSrc: /media/common/i_server.svg
-      links:
-        - url: report-server/get-started.md
-          text: Power BI Report Server
-        - url: connect-data/service-gateway-onprem.md
-          text: On-premises data gateway
-    - title: View and explore reports
-      imageSrc: /media/common/i_investigate.svg
-      links:
-        - url: consumer/index.yml
-          text: For business users
-        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
-          text: Power BI Mobile
-    - title: Embed in applications
-      imageSrc: /media/common/i_code-edit.svg
-      links:
-        - url: developer/embedded/embed-service-principal.md
-          text: Embed with service principal
-        - url: developer/embedded/embedded-analytics-power-bi.md
-          text: Power BI Embedded overview
-    - title: Set up data refresh
-      imageSrc: /media/common/i_sync.svg
-      links:
-        - url: connect-data/refresh-scheduled-refresh.md
-          text: Scheduled refresh
-        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
-          text: Troubleshoot refresh
-    - title: Follow best practices
-      imageSrc: /media/common/i_best-practices.svg
-      links:
-        - url: guidance/index.yml
-          text: Power BI guidance
-        - url: guidance/star-schema.md
-          text: Star schema design
     - title: Use Power BI with Microsoft Fabric
       imageSrc: media/fabric-icon.png
       links:
@@ -106,6 +64,48 @@ productDirectory:
           text: Fabric for Power BI users
         - url: connect-data/service-datasets-understand.md
           text: Semantic models
+    - title: Create reports
+      imageSrc: /media/common/i_design.svg
+      links:
+        - url: connect-data/desktop-quickstart-connect-to-data.md
+          text: Connect to data
+        - url: create-reports/desktop-excel-stunning-report.md
+          text: Create a report from Excel
+    - title: Set up data refresh
+      imageSrc: /media/common/i_sync.svg
+      links:
+        - url: connect-data/refresh-scheduled-refresh.md
+          text: Scheduled refresh
+        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
+          text: Troubleshoot refresh
+    - title: View and explore reports
+      imageSrc: /media/common/i_investigate.svg
+      links:
+        - url: consumer/index.yml
+          text: For business users
+        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+          text: Power BI Mobile
+    - title: Deploy on-premises
+      imageSrc: /media/common/i_server.svg
+      links:
+        - url: report-server/get-started.md
+          text: Power BI Report Server
+        - url: connect-data/service-gateway-onprem.md
+          text: On-premises data gateway
+    - title: Embed in applications
+      imageSrc: /media/common/i_code-edit.svg
+      links:
+        - url: developer/embedded/embed-service-principal.md
+          text: Embed with service principal
+        - url: developer/embedded/embedded-analytics-power-bi.md
+          text: Power BI Embedded overview
+    - title: Follow best practices
+      imageSrc: /media/common/i_best-practices.svg
+      links:
+        - url: guidance/index.yml
+          text: Power BI guidance
+        - url: guidance/star-schema.md
+          text: Star schema design
 
 # tools section - Power BI by role (with icons)
 tools:
