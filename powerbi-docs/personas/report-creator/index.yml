@@ -1,0 +1,112 @@
+### YamlMime:Landing
+
+title: Power BI for report creators
+summary: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI.
+
+metadata:
+  title: Power BI for report creators
+  description: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI Desktop and the Power BI service.
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.custom: persona-report-creator
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get Power BI Desktop
+            url: ../../fundamentals/desktop-get-the-desktop.md?context=/power-bi/personas/report-creator/context/context
+          - text: Get started with Power BI Desktop
+            url: ../../fundamentals/desktop-getting-started.md?context=/power-bi/personas/report-creator/context/context
+          - text: Get started with the Power BI service
+            url: ../../fundamentals/service-get-started.md?context=/power-bi/personas/report-creator/context/context
+          - text: What is Power BI?
+            url: ../../fundamentals/power-bi-overview.md?context=/power-bi/personas/report-creator/context/context
+
+  - title: Connect to data
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Connect to data sources
+            url: ../../connect-data/desktop-connect-to-data.md?context=/power-bi/personas/report-creator/context/context
+          - text: Data sources in Power BI Desktop
+            url: ../../connect-data/desktop-data-sources.md?context=/power-bi/personas/report-creator/context/context
+          - text: Shape and combine data
+            url: ../../connect-data/desktop-shape-and-combine-data.md?context=/power-bi/personas/report-creator/context/context
+          - text: Connect to data in the Power BI service
+            url: ../../connect-data/service-get-data.md?context=/power-bi/personas/report-creator/context/context
+
+  - title: Design reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Report view in Power BI Desktop
+            url: ../../create-reports/desktop-report-view.md?context=/power-bi/personas/report-creator/context/context
+          - text: Visualizations in Power BI
+            url: ../../visuals/power-bi-report-visualizations.md?context=/power-bi/personas/report-creator/context/context
+          - text: Use report themes
+            url: ../../create-reports/desktop-report-themes.md?context=/power-bi/personas/report-creator/context/context
+          - text: Add filters to reports
+            url: ../../create-reports/power-bi-report-filter.md?context=/power-bi/personas/report-creator/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Create bookmarks
+            url: ../../create-reports/desktop-bookmarks.md?context=/power-bi/personas/report-creator/context/context
+          - text: Add drillthrough
+            url: ../../create-reports/desktop-drillthrough.md?context=/power-bi/personas/report-creator/context/context
+          - text: Design for accessibility
+            url: ../../create-reports/desktop-accessibility-creating-reports.md?context=/power-bi/personas/report-creator/context/context
+          - text: Tips for report design
+            url: ../../create-reports/desktop-tips-and-tricks-for-creating-reports.md?context=/power-bi/personas/report-creator/context/context
+
+  - title: Use Copilot
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Copilot in Power BI overview
+            url: ../../create-reports/copilot-introduction.md?context=/power-bi/personas/report-creator/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Create reports with Copilot
+            url: ../../create-reports/copilot-create-reports.md?context=/power-bi/personas/report-creator/context/context
+          - text: Create narratives with Copilot
+            url: ../../create-reports/copilot-create-narrative.md?context=/power-bi/personas/report-creator/context/context
+          - text: Write DAX queries with Copilot
+            url: ../../create-reports/copilot-ask-data-question.md?context=/power-bi/personas/report-creator/context/context
+
+  - title: Create dashboards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction to dashboards
+            url: ../../create-reports/service-dashboards.md?context=/power-bi/personas/report-creator/context/context
+          - text: Dashboard tiles
+            url: ../../create-reports/service-dashboard-tiles.md?context=/power-bi/personas/report-creator/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Create a dashboard
+            url: ../../create-reports/service-dashboard-create.md?context=/power-bi/personas/report-creator/context/context
+          - text: Pin a tile to a dashboard
+            url: ../../create-reports/service-dashboard-pin-live-tile-from-report.md?context=/power-bi/personas/report-creator/context/context
+          - text: Dashboard design tips
+            url: ../../create-reports/service-dashboards-design-tips.md?context=/power-bi/personas/report-creator/context/context
+
+  - title: Share your work
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Share reports
+            url: ../../collaborate-share/service-share-reports.md?context=/power-bi/personas/report-creator/context/context
+          - text: Share dashboards
+            url: ../../collaborate-share/service-share-dashboards.md?context=/power-bi/personas/report-creator/context/context
+          - text: Publish to the web
+            url: ../../collaborate-share/service-publish-to-web.md?context=/power-bi/personas/report-creator/context/context
+          - text: Create and distribute apps
+            url: ../../collaborate-share/service-create-distribute-apps.md?context=/power-bi/personas/report-creator/context/context
+          - text: Work in workspaces
+            url: ../../collaborate-share/service-new-workspaces.md?context=/power-bi/personas/report-creator/context/context

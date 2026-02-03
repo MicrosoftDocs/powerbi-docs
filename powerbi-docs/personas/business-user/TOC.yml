@@ -1,0 +1,69 @@
+- name: Power BI for business users
+  href: index.yml
+  items:
+    - name: Get started
+      items:
+        - name: Am I a Power BI business user?
+          href: ../../consumer/end-user-consumer.md?context=/power-bi/personas/business-user/context/context
+        - name: Get around in the Power BI service
+          href: ../../consumer/end-user-experience.md?context=/power-bi/personas/business-user/context/context
+        - name: Sign in to Power BI
+          href: ../../consumer/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
+        - name: Find content with search
+          href: ../../consumer/end-user-search-sort.md?context=/power-bi/personas/business-user/context/context
+    - name: View reports
+      items:
+        - name: What is a report?
+          href: ../../consumer/end-user-reports.md?context=/power-bi/personas/business-user/context/context
+        - name: What is a dashboard?
+          href: ../../consumer/end-user-dashboards.md?context=/power-bi/personas/business-user/context/context
+        - name: Open and view a report
+          href: ../../consumer/end-user-report-open.md?context=/power-bi/personas/business-user/context/context
+        - name: Interact with visuals
+          href: ../../consumer/end-user-visualizations.md?context=/power-bi/personas/business-user/context/context
+        - name: Use filters
+          href: ../../consumer/end-user-report-filter.md?context=/power-bi/personas/business-user/context/context
+        - name: Use slicers
+          href: ../../consumer/end-user-slicer.md?context=/power-bi/personas/business-user/context/context
+    - name: Explore and interact
+      items:
+        - name: Use bookmarks
+          href: ../../consumer/end-user-bookmarks.md?context=/power-bi/personas/business-user/context/context
+        - name: Show data behind a visual
+          href: ../../consumer/end-user-analyze-visuals.md?context=/power-bi/personas/business-user/context/context
+        - name: Add comments to reports
+          href: ../../consumer/end-user-comment.md?context=/power-bi/personas/business-user/context/context
+        - name: Personalize visuals
+          href: ../../consumer/end-user-personalize-visuals.md?context=/power-bi/personas/business-user/context/context
+        - name: Export to PDF
+          href: ../../collaborate-share/end-user-pdf.md?context=/power-bi/personas/business-user/context/context
+    - name: Ask questions with Q&A
+      items:
+        - name: Q&A for business users
+          href: ../../consumer/end-user-q-and-a.md?context=/power-bi/personas/business-user/context/context
+        - name: Tips for asking questions
+          href: ../../consumer/end-user-q-and-a-tips.md?context=/power-bi/personas/business-user/context/context
+        - name: Q&A tutorial
+          href: ../../natural-language/end-user-q-and-a-tutorial.md?context=/power-bi/personas/business-user/context/context
+    - name: Stay informed
+      items:
+        - name: Subscribe to reports and dashboards
+          href: ../../collaborate-share/end-user-subscribe.md?context=/power-bi/personas/business-user/context/context
+        - name: Set data alerts
+          href: ../../consumer/end-user-alerts.md?context=/power-bi/personas/business-user/context/context
+        - name: View shared content
+          href: ../../collaborate-share/end-user-shared-with-me.md?context=/power-bi/personas/business-user/context/context
+        - name: Add favorites
+          href: ../../consumer/end-user-favorite.md?context=/power-bi/personas/business-user/context/context
+    - name: Power BI mobile
+      items:
+        - name: What are the mobile apps?
+          href: ../../consumer/mobile/mobile-apps-for-mobile-devices.md?context=/power-bi/personas/business-user/context/context
+        - name: Explore dashboards and reports
+          href: ../../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md?context=/power-bi/personas/business-user/context/context
+        - name: View reports on mobile
+          href: ../../consumer/mobile/mobile-apps-view-phone-report.md?context=/power-bi/personas/business-user/context/context
+        - name: Use Copilot on mobile
+          href: ../../consumer/mobile/mobile-copilot-overview.md?context=/power-bi/personas/business-user/context/context
+        - name: Set alerts in mobile apps
+          href: ../../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context
