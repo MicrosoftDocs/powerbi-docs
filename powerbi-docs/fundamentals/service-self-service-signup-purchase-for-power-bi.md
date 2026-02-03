@@ -117,7 +117,7 @@ Another way to start a trial of a paid Power BI license is to [start a trial of 
 If you don't have a work or school email account, you can still try Power BI. Sign up for a [Microsoft 365 trial](https://www.microsoft.com/microsoft-365/enterprise) to create a work email account (*onmicrosoft.com*) and a new tenant. The Microsoft 365 trial includes up to 25 licenses and you become the admin for the new tenant. A credit card is required to sign up, so be sure to cancel the trial before 30 days if you aren't ready to purchase.
 
 > [!NOTE]
-> Microsoft 365 trial availability varies by region and offering. Not all plans are available as self-service trials in all regions. Microsoft 365 Business Premium trials include Power BI Pro and are widely available. Check the [Microsoft 365 plans page](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-products) for current trial options in your region.
+> Microsoft 365 trial availability varies by region and offering. Not all plans are available as self-service trials in all regions. Microsoft 365 Business Premium trials include Power BI Pro and are widely available. Check the [Microsoft 365 plans page](https://www.microsoft.com/microsoft-365/business/microsoft-365-plans-and-pricing) for current trial options in your region.
 
 #### [Purchase](#tab/purchase)
 
