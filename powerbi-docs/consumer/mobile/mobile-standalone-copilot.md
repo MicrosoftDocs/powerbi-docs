@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 12/18/2025
+ms.date: 02/03/2026
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 #customer intent: As a Power BI mobile user, I want to use a full-screen Copilot experience to ask questions about my data from anywhere in the app without needing to open specific reports first.
@@ -106,7 +106,6 @@ Read about the [requirements to use the standalone Copilot experience](../../cre
 - Voice dictation is available only on iPhone and iPad devices.
 - Conversation context is maintained only during the current session and is cleared when you close the app or clear the chat.
 - The standalone Copilot experience is only available to customers with home tenants in geographical regions that support Fabric—so **it's only available** for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads). You don't need to have Fabric enabled to use Copilot, they just need to have home tenants in one of the listed regions.
-- Mobile standalone Copilot doesn't support Microsoft Entra B2B integration, which means that the Copilot button isn't available when user opens the external org from the mobile app.
 
 ## Related content
 
