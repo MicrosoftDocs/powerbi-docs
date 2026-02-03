@@ -54,7 +54,7 @@ productDirectory:
       imageSrc: /media/common/i_overview.svg
       links:
         - url: fundamentals/service-basic-concepts.md
-          text: Service concepts
+          text: Learn the basics
         - url: fundamentals/service-get-started.md
           text: Get started
     - title: Use Power BI with Microsoft Fabric
@@ -67,19 +67,17 @@ productDirectory:
     - title: Create reports
       imageSrc: /media/common/i_design.svg
       links:
-        - url: connect-data/desktop-quickstart-connect-to-data.md
-          text: Connect to data
         - url: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
           text: Visualization types
         - url: create-reports/desktop-sharepoint-save-share.md
           text: Publish to SharePoint
-    - title: Set up data refresh
+    - title: Connect to data
       imageSrc: /media/common/i_sync.svg
       links:
+        - url: connect-data/power-bi-data-sources.md
+          text: Power BI data sources
         - url: connect-data/refresh-scheduled-refresh.md
-          text: Scheduled refresh
-        - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
-          text: Troubleshoot refresh
+          text: Scheduled data refresh
     - title: View and explore reports
       imageSrc: /media/common/i_investigate.svg
       links:
