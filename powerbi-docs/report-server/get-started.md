@@ -31,7 +31,6 @@ For versions of SQL Server Enterprise Edition released prior to 2025, Power BI R
 
 Similar to SQL Server licensing, customers may run the Power BI Report Server software in a physical or virtual OSE with up to the number of cores included under their Fabric F64+ capacity. The number of Power BI v-cores available for each Fabric license can be found [here](/fabric/enterprise/licenses).
 
-If a customer purchases [Fabric F64+ reserved instances](/fabric/enterprise/licenses), a Power BI Pro license is required to publish both paginated and Power BI reports in PBIRS. However, for SQL Server editions, a Power BI Pro license is only required for publishing Power BI reports in PBIRS. A Power BI Pro license is not required to view and interact with paginated and Power BI reports on Power BI Report Server.
 
 > [!NOTE]
 > For Power BI Premium, Power BI Report Server is only included with P SKUs. It's not included with EM SKUs. Power BI Report Server is also **not** included with any F SKUs under F64 reserved instance.
