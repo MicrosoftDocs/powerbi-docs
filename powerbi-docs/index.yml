@@ -71,13 +71,6 @@ productDirectory:
           text: Visualization types
         - url: create-reports/desktop-sharepoint-save-share.md
           text: Publish to SharePoint
-    - title: Connect to data
-      imageSrc: /media/common/i_sync.svg
-      links:
-        - url: connect-data/power-bi-data-sources.md
-          text: Power BI data sources
-        - url: connect-data/refresh-scheduled-refresh.md
-          text: Scheduled data refresh
     - title: View and explore reports
       imageSrc: /media/common/i_investigate.svg
       links:
@@ -85,6 +78,13 @@ productDirectory:
           text: View reports
         - url: consumer/end-user-workspaces.md
           text: Power BI workspaces
+    - title: Connect to data
+      imageSrc: /media/common/i_sync.svg
+      links:
+        - url: connect-data/power-bi-data-sources.md
+          text: Power BI data sources
+        - url: connect-data/refresh-scheduled-refresh.md
+          text: Scheduled data refresh
     - title: Run Power BI on-premises
       imageSrc: /media/common/i_server.svg
       links:
@@ -117,7 +117,7 @@ tools:
       url: personas/report-creator/index.yml
     - title: Semantic model designers
       imageSrc: /media/common/i_architecture.svg
-      url: personas/data-modeler/index.yml
+      url: personas/semantic-model-designer/index.yml
     - title: Business users
       imageSrc: /media/common/i_account-management.svg
       url: personas/business-user/index.yml
