@@ -1,0 +1,75 @@
+- name: Power BI for report creators
+  href: index.yml
+  items:
+    - name: Get started
+      items:
+        - name: Get Power BI Desktop
+          href: ../../fundamentals/desktop-get-the-desktop.md?context=/power-bi/personas/report-creator/context/context
+        - name: Get started with Power BI Desktop
+          href: ../../fundamentals/desktop-getting-started.md?context=/power-bi/personas/report-creator/context/context
+        - name: Get started with the Power BI service
+          href: ../../fundamentals/service-get-started.md?context=/power-bi/personas/report-creator/context/context
+        - name: What is Power BI?
+          href: ../../fundamentals/power-bi-overview.md?context=/power-bi/personas/report-creator/context/context
+    - name: Connect to data
+      items:
+        - name: Connect to data sources
+          href: ../../connect-data/desktop-connect-to-data.md?context=/power-bi/personas/report-creator/context/context
+        - name: Data sources in Power BI Desktop
+          href: ../../connect-data/desktop-data-sources.md?context=/power-bi/personas/report-creator/context/context
+        - name: Shape and combine data
+          href: ../../connect-data/desktop-shape-and-combine-data.md?context=/power-bi/personas/report-creator/context/context
+        - name: Connect to data in the Power BI service
+          href: ../../connect-data/service-get-data.md?context=/power-bi/personas/report-creator/context/context
+    - name: Design reports
+      items:
+        - name: Report view in Power BI Desktop
+          href: ../../create-reports/desktop-report-view.md?context=/power-bi/personas/report-creator/context/context
+        - name: Visualizations in Power BI
+          href: ../../visuals/power-bi-report-visualizations.md?context=/power-bi/personas/report-creator/context/context
+        - name: Use report themes
+          href: ../../create-reports/desktop-report-themes.md?context=/power-bi/personas/report-creator/context/context
+        - name: Add filters to reports
+          href: ../../create-reports/power-bi-report-filter.md?context=/power-bi/personas/report-creator/context/context
+        - name: Create bookmarks
+          href: ../../create-reports/desktop-bookmarks.md?context=/power-bi/personas/report-creator/context/context
+        - name: Add drillthrough
+          href: ../../create-reports/desktop-drillthrough.md?context=/power-bi/personas/report-creator/context/context
+        - name: Design for accessibility
+          href: ../../create-reports/desktop-accessibility-creating-reports.md?context=/power-bi/personas/report-creator/context/context
+        - name: Tips for report design
+          href: ../../create-reports/desktop-tips-and-tricks-for-creating-reports.md?context=/power-bi/personas/report-creator/context/context
+    - name: Use Copilot
+      items:
+        - name: Copilot in Power BI overview
+          href: ../../create-reports/copilot-introduction.md?context=/power-bi/personas/report-creator/context/context
+        - name: Create reports with Copilot
+          href: ../../create-reports/copilot-create-reports.md?context=/power-bi/personas/report-creator/context/context
+        - name: Create narratives with Copilot
+          href: ../../create-reports/copilot-create-narrative.md?context=/power-bi/personas/report-creator/context/context
+        - name: Write DAX queries with Copilot
+          href: ../../create-reports/copilot-ask-data-question.md?context=/power-bi/personas/report-creator/context/context
+    - name: Create dashboards
+      items:
+        - name: Introduction to dashboards
+          href: ../../create-reports/service-dashboards.md?context=/power-bi/personas/report-creator/context/context
+        - name: Dashboard tiles
+          href: ../../create-reports/service-dashboard-tiles.md?context=/power-bi/personas/report-creator/context/context
+        - name: Create a dashboard
+          href: ../../create-reports/service-dashboard-create.md?context=/power-bi/personas/report-creator/context/context
+        - name: Pin a tile to a dashboard
+          href: ../../create-reports/service-dashboard-pin-live-tile-from-report.md?context=/power-bi/personas/report-creator/context/context
+        - name: Dashboard design tips
+          href: ../../create-reports/service-dashboards-design-tips.md?context=/power-bi/personas/report-creator/context/context
+    - name: Share your work
+      items:
+        - name: Share reports
+          href: ../../collaborate-share/service-share-reports.md?context=/power-bi/personas/report-creator/context/context
+        - name: Share dashboards
+          href: ../../collaborate-share/service-share-dashboards.md?context=/power-bi/personas/report-creator/context/context
+        - name: Publish to the web
+          href: ../../collaborate-share/service-publish-to-web.md?context=/power-bi/personas/report-creator/context/context
+        - name: Create and distribute apps
+          href: ../../collaborate-share/service-create-distribute-apps.md?context=/power-bi/personas/report-creator/context/context
+        - name: Work in workspaces
+          href: ../../collaborate-share/service-new-workspaces.md?context=/power-bi/personas/report-creator/context/context

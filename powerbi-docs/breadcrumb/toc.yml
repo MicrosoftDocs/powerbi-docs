@@ -19,3 +19,12 @@
       - name: Report Server
         tocHref: /power-bi/report-server/
         topicHref: /power-bi/report-server/index
+      - name: Report creators
+        tocHref: /power-bi/personas/report-creator/
+        topicHref: /power-bi/personas/report-creator/
+      - name: Semantic model designers
+        tocHref: /power-bi/personas/semantic-model-designer/
+        topicHref: /power-bi/personas/semantic-model-designer/
+      - name: Business users
+        tocHref: /power-bi/personas/business-user/
+        topicHref: /power-bi/personas/business-user/

@@ -1,0 +1,110 @@
+### YamlMime:Landing
+
+title: Power BI for business users
+summary: Learn how to view reports, explore data, ask questions, and stay informed with Power BI.
+
+metadata:
+  title: Power BI for business users
+  description: Learn how to view reports, interact with visualizations, ask questions with Q&A, set alerts, and access Power BI on mobile devices.
+  ms.service: powerbi
+  ms.subservice: pbi-explore
+  ms.topic: landing-page
+  ms.custom: persona-business-user
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Am I a Power BI business user?
+            url: ../../consumer/end-user-consumer.md?context=/power-bi/personas/business-user/context/context
+          - text: Get around in the Power BI service
+            url: ../../consumer/end-user-experience.md?context=/power-bi/personas/business-user/context/context
+          - text: Sign in to Power BI
+            url: ../../consumer/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
+          - text: Find content with search
+            url: ../../consumer/end-user-search-sort.md?context=/power-bi/personas/business-user/context/context
+
+  - title: View reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is a report?
+            url: ../../consumer/end-user-reports.md?context=/power-bi/personas/business-user/context/context
+          - text: What is a dashboard?
+            url: ../../consumer/end-user-dashboards.md?context=/power-bi/personas/business-user/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Open and view a report
+            url: ../../consumer/end-user-report-open.md?context=/power-bi/personas/business-user/context/context
+          - text: Interact with visuals
+            url: ../../consumer/end-user-visualizations.md?context=/power-bi/personas/business-user/context/context
+          - text: Use filters
+            url: ../../consumer/end-user-report-filter.md?context=/power-bi/personas/business-user/context/context
+          - text: Use slicers
+            url: ../../consumer/end-user-slicer.md?context=/power-bi/personas/business-user/context/context
+
+  - title: Explore and interact
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Use bookmarks
+            url: ../../consumer/end-user-bookmarks.md?context=/power-bi/personas/business-user/context/context
+          - text: Show data behind a visual
+            url: ../../consumer/end-user-analyze-visuals.md?context=/power-bi/personas/business-user/context/context
+          - text: Add comments to reports
+            url: ../../consumer/end-user-comment.md?context=/power-bi/personas/business-user/context/context
+          - text: Personalize visuals
+            url: ../../consumer/end-user-personalize-visuals.md?context=/power-bi/personas/business-user/context/context
+          - text: Export to PDF
+            url: ../../collaborate-share/end-user-pdf.md?context=/power-bi/personas/business-user/context/context
+
+  - title: Ask questions with Q&A
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Q&A for business users
+            url: ../../consumer/end-user-q-and-a.md?context=/power-bi/personas/business-user/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Tips for asking questions
+            url: ../../consumer/end-user-q-and-a-tips.md?context=/power-bi/personas/business-user/context/context
+      - linkListType: tutorial
+        links:
+          - text: Q&A tutorial
+            url: ../../natural-language/end-user-q-and-a-tutorial.md?context=/power-bi/personas/business-user/context/context
+
+  - title: Stay informed
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Subscribe to reports and dashboards
+            url: ../../collaborate-share/end-user-subscribe.md?context=/power-bi/personas/business-user/context/context
+          - text: Set data alerts
+            url: ../../consumer/end-user-alerts.md?context=/power-bi/personas/business-user/context/context
+          - text: View shared content
+            url: ../../collaborate-share/end-user-shared-with-me.md?context=/power-bi/personas/business-user/context/context
+          - text: Add favorites
+            url: ../../consumer/end-user-favorite.md?context=/power-bi/personas/business-user/context/context
+
+  - title: Power BI mobile
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are the mobile apps?
+            url: ../../consumer/mobile/mobile-apps-for-mobile-devices.md?context=/power-bi/personas/business-user/context/context
+      - linkListType: quickstart
+        links:
+          - text: Explore dashboards and reports
+            url: ../../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md?context=/power-bi/personas/business-user/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: View reports on mobile
+            url: ../../consumer/mobile/mobile-apps-view-phone-report.md?context=/power-bi/personas/business-user/context/context
+          - text: Use Copilot on mobile
+            url: ../../consumer/mobile/mobile-copilot-overview.md?context=/power-bi/personas/business-user/context/context
+          - text: Set alerts in mobile apps
+            url: ../../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context

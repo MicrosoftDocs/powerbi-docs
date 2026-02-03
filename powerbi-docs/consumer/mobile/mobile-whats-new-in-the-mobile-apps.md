@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 12/18/2025
+ms.date: 02/03/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,16 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## February 2026
+
+### Rotate your report view with a single tap
+
+You can now change the orientation of a report on your phone, even if orientation is locked on your device. A new **Rotate view** button in the report header menu lets you switch between portrait and landscape layouts without changing your device settings. This is especially useful when you want to see more data or get a different perspective on your reports.
+
+### Chat with your data as a guest on an external organization's site
+
+You can now use the standalone Copilot to chat with data from external organizations for faster insights. If you're a guest on an external organization's site, you can open the navigation tree or go to the bottom navigation menu and select the **Copilot** icon to start chatting with their data. This feature enables you to get AI-powered insights from data you have access to, even when that data belongs to another organization.
 
 ## December 2025
 
