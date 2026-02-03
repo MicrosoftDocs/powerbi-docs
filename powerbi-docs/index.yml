@@ -35,7 +35,7 @@ highlightedContent:
     - title: Share dashboards and reports
       itemType: how-to-guide
       url: collaborate-share/service-share-dashboards.md
-    - title: Power BI samples
+    - title: Get Power BI samples
       itemType: sample
       url: create-reports/sample-datasets.md
     - title: Troubleshoot data refresh
