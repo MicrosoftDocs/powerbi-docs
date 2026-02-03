@@ -1,0 +1,23 @@
+### YamlMime:Landing
+
+title: Power BI for semantic model designers
+summary: Learn how to transform data, create relationships, write DAX, and optimize semantic models in Power BI.
+
+metadata:
+  title: Power BI for semantic model designers
+  description: Learn how to transform data, build relationships, create measures with DAX, and optimize semantic models for performance in Power BI.
+  ms.service: powerbi
+  ms.subservice: pbi-transform-model
+  ms.topic: landing-page
+  ms.custom: persona-semantic-model-designer
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started with data modeling
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understand model relationships
+            url: ../../transform-model/desktop-relationships-understand.md

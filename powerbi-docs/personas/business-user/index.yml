@@ -1,0 +1,23 @@
+### YamlMime:Landing
+
+title: Power BI for business users
+summary: Learn how to view reports, explore data, ask questions, and stay informed with Power BI.
+
+metadata:
+  title: Power BI for business users
+  description: Learn how to view reports, interact with visualizations, ask questions with Q&A, set alerts, and access Power BI on mobile devices.
+  ms.service: powerbi
+  ms.subservice: pbi-explore
+  ms.topic: landing-page
+  ms.custom: persona-business-user
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Am I a Power BI business user?
+            url: ../../consumer/end-user-consumer.md

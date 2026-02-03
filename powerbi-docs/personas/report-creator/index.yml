@@ -1,0 +1,23 @@
+### YamlMime:Landing
+
+title: Power BI for report creators
+summary: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI.
+
+metadata:
+  title: Power BI for report creators
+  description: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI.
+  ms.service: powerbi
+  ms.subservice: pbi-reports-dashboards
+  ms.topic: landing-page
+  ms.custom: persona-report-creator
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get Power BI Desktop
+            url: ../../fundamentals/desktop-get-the-desktop.md
