@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: overview
 ms.date: 01/06/2026
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 
@@ -21,7 +22,9 @@ Power BI provides multiple map visualization options to suit various analytical 
 
 ## Azure maps
 
-**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](/azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context), [3D column](/azure/azure-maps/power-bi-visual-add-3d-column-layer?context=/power-bi/create-reports/context/context), [heat map](/azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context), [filled](/azure/azure-maps/power-bi-visual-filled-map?context=/power-bi/create-reports/context/context), [path layer](/azure/azure-maps/power-bi-visual-add-path-layer?context=/power-bi/create-reports/context/context), and [reference layers](/azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context). You can add [pie chart overlays](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context) and use [clustering](/azure/azure-maps/power-bi-visual-cluster-bubbles?context=/power-bi/create-reports/context/context).
+**Azure maps** for Power BI visual provides enterprise-grade mapping capabilities powered by Microsoft's Azure Maps platform. It supports [bubble](/azure/azure-maps/power-bi-visual-add-bubble-layer?context=/power-bi/create-reports/context/context), [3D column](/azure/azure-maps/power-bi-visual-add-3d-column-layer?context=/power-bi/create-reports/context/context), [heat map](/azure/azure-maps/power-bi-visual-add-heat-map-layer?context=/power-bi/create-reports/context/context), [filled](/azure/azure-maps/power-bi-visual-filled-map?context=/power-bi/create-reports/context/context), [marker](/azure/azure-maps/power-bi-visual-add-marker-layer?context=/power-bi/create-reports/context/context), [path layer](/azure/azure-maps/power-bi-visual-add-path-layer?context=/power-bi/create-reports/context/context), and [reference layers](/azure/azure-maps/power-bi-visual-add-reference-layer?context=/power-bi/create-reports/context/context). You can add [pie chart overlays](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context) and use [clustering](/azure/azure-maps/power-bi-visual-cluster-bubbles?context=/power-bi/create-reports/context/context).
+
+The **marker layer** enables you to use custom icons and images instead of basic shapes, with dynamic marker size scaling based on data metrics and customizable colors and transparency. Markers support distinct icons per category and can be rotated per data point using a pre-computed angle via conditional formatting. The marker layer integrates with path and reference layers to compose multi-layer map visuals that combine points, routes, and boundaries. These capabilities are available in both Power BI Desktop and Power BI service.
 
 > [!NOTE]
 > Administrators must enable the Azure map visual in the **Power BI Admin Portal** under **Integration** settings.
