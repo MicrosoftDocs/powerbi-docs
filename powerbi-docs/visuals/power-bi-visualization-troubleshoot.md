@@ -130,7 +130,7 @@ This section addresses potential problems that users might encounter when workin
 
 When you're setting visual-specific format options in Power BI, this action can override any of the predefined properties in a custom theme. Explicit formatting at the visual level takes precedence over theme-level settings. As a result, any custom theme settings don't apply if existing format options are set for a particular visual.
 
-For example, to allow [custom theme colors](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) to take effect, you need to reset the visual colors to default formatting. You can reset the colors by selecting **Reset to default** within the color formatting options of the visual. After you clear the specific formatting, the custom theme colors should apply as intended, if an explicit color isn't set for that visual.
+For example, to allow [custom theme colors](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-dont-stick-to-your-reports) to take effect, you need to reset the visual colors to default formatting. You can reset the colors by selecting **Reset to default** within the color formatting options of the visual. After you clear the specific formatting, the custom theme colors should apply as intended, if an explicit color isn't set for that visual.
 
 As another example, when you specify **Legend Position = Left** in a custom theme file, but specify something else at the visual level, you should always use **Reset to default** to allow the custom theme to apply.
 
