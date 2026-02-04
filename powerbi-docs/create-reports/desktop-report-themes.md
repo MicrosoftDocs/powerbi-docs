@@ -67,7 +67,7 @@ The following table shows the available built-in report themes.
 |------ |---------- |
 | Default | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-default.png" alt-text="Screenshot of the color sequence for the Default theme.":::|
 | Highrise | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-highrise.png" alt-text="Screenshot of the color sequence for the Highrise theme.":::|
-| Executive | :::image type="content" source="media/desktop-report-themes/report-the-themes-color-scheme-executive.png" alt-text="Screenshot of the color sequence for the Executive theme.":::|
+| Executive | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-executive.png" alt-text="Screenshot of the color sequence for the Executive theme.":::|
 | Frontier| :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-frontier.png" alt-text="Screenshot of the color sequence for the Frontier theme.":::|
 | Innovate | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-innovative.png" alt-text="Screenshot of the color sequence for the Innovate theme.":::|
 | Bloom | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-bloom.png" alt-text="Screenshot of the color sequence for the Bloom theme.":::|
@@ -80,7 +80,7 @@ The following table shows the available built-in report themes.
 | City park | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-city-park.png" alt-text="Screenshot of the color sequence for the City park theme.":::|
 | Classroom | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-classroom.png" alt-text="Screenshot of the color sequence for the Classroom theme.":::|
 | Color-blind safe | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png" alt-text="Screenshot of the color sequence for the Color blind safe theme.":::|
-| Electric | :::image type="content" source="media/desktop-report-themes/report-the-themes-color-scheme-electric.png" alt-text="Screenshot of the color sequence for the Electric theme.":::|
+| Electric | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-electric.png" alt-text="Screenshot of the color sequence for the Electric theme.":::|
 | High contrast | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-high-contrast.png" alt-text="Screenshot of the color sequence for the High contrast theme.":::|
 | Sunset | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-sunset.png" alt-text="Screenshot of the color sequence for the Sunset theme.":::|
 | Twilight | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-twilight.png" alt-text="Screenshot of the color sequence for the Twilight theme.":::|
@@ -113,7 +113,7 @@ To customize a theme directly in Power BI Desktop, select a theme that's close t
 
 You can find customizable theme settings in the following categories, reflected in the **Customize theme** window:
 
-- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#set-structural-colors).
+- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stay-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#set-structural-colors).
 - **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#set-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
 - **Visuals**: Visual settings include background, border, header, and tooltips.
 - **Page**: Page element settings include wallpaper and background.
