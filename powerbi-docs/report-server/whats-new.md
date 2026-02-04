@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 11/18/2025
+ms.date: 02/04/2025
 ms.custom: intro-whats-new
 ai-usage: ai-assisted
 ---
@@ -22,11 +22,12 @@ Reminder: [How you can find your report server product key](find-product-key.md)
 
 ## January 2026
 
-Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-january-2026-feature-summary/) for details.
+Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2026-feature-summary/) for details.
 
 ### Visualizations
 
 This release includes a variety of new and updated visuals from Microsoft partners and the broader community. These visuals enable richer storytelling, advanced exploration, and more engaging report experiences.
+
 - Activity Gauge by Powerviz
 - Decomposition Tree – All Expanding
 - Dynamic chart legends in Zebra BI Charts
@@ -45,7 +46,7 @@ This release includes a variety of new and updated visuals from Microsoft partne
 - Drill Down Combo Bar PRO by ZoomCharts
 - CAGR Arrows Now in Zebra BI Charts
 
-### Reporting features
+### Reporting
 
 This release also includes several reporting enhancements to improve layout behavior, visual styling, and interaction options to help you build polished, intuitive, and modern reports.
 
