@@ -39,18 +39,38 @@ The following section outlines steps to create and use drillthrough features in 
 
 To create a drillthrough page:
 
-1. Create a new report page in Power BI Desktop.
-1. In the Visualizations pane, locate the **Drillthrough filters** well.
-1. Drag the desired field (for example, `Customer Name`) into the **Drillthrough filters** well.
-1. Add visuals to the page that respond to the drillthrough filter, such as charts or tables that highlight key details.
+1. Open your report in Power BI Desktop.
+1. At the bottom of the report canvas, select the **+** (plus) icon to create a new page.
+1. Rename the page to describe its purpose (for example, "Product Details" or "Customer Details"). Right-click the page tab and select **Rename Page**.
+1. Select the new page to make it active.
+1. In the **Visualizations** pane on the right side of the screen, scroll down to find the **Drillthrough** section. If collapsed, select the arrow to expand it.
+1. Locate the **Drillthrough filters** well (also labeled as "Add drillthrough fields here").
+1. From the **Data** pane, drag the field you want to use as the drillthrough filter (for example, `Product Name` or `Customer Name`) into the **Drillthrough filters** well.
+1. After you add the field, Power BI automatically adds a back button to the page. This button allows users to return to the original page.
+1. Add visuals to the page that display detailed information about the filtered item. For example:
+   - Add a **Card** visual showing the selected product or customer name.
+   - Add a **Table** visual showing transaction history or order details.
+   - Add a **Line chart** showing trends over time for the selected item.
+
+> [!TIP]
+> The drillthrough page only shows data for the selected item. Design your visuals to take advantage of this focused context by displaying metrics and details that are meaningful at the individual item level.
 
 ## Use drillthrough from a visual
 
-To use drillthrough from a visual, follow these steps:
+After you set up a drillthrough page, users can navigate to it from any visual that contains the drillthrough field.
 
-1. Right-click a data point in a visual.
-1. Select the drillthrough page from the context menu.
-1. The drillthrough page opens and is filtered to the selected value.
+To use drillthrough from a visual:
+
+1. Navigate to a report page that has a visual containing the same field you added to the drillthrough filter (for example, a bar chart showing sales by product).
+1. Hover over a data point in the visual (for example, a specific product bar).
+1. Right-click the data point to open the context menu.
+1. In the context menu, look for **Drillthrough** and hover over it to see available drillthrough pages.
+1. Select the drillthrough page name (for example, "Product Details").
+1. The drillthrough page opens, filtered to show only data for the selected item.
+1. To return to the original page, select the **Back** button that Power BI automatically added to the drillthrough page.
+
+> [!NOTE]
+> If **Drillthrough** doesn't appear in the context menu, verify that the drillthrough filter field is present in the visual you're right-clicking. The field must exist in both the source visual and the drillthrough filter well.
 
 ## Add a drillthrough button
 
