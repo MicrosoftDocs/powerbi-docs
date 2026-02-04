@@ -15,20 +15,19 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, applying default visual formatting, or defining custom visual style presets. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
+By using Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, applying default visual formatting, or defining custom visual style presets. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions are described later in this article.
 
-You can select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
-![Screenshot of the Themes dropdown menu.](media/desktop-report-themes/report-themes-dropdown-menu.png)
+Select report themes by going to the **View** ribbon. In the **Themes** section, select the dropdown arrow, and then select the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
+:::image type="content" source="media/desktop-report-themes/report-themes-dropdown-menu.png" alt-text="Screenshot of the Themes dropdown menu.":::
 
-The two types of report themes:
+The two types of report themes are:
 
 - **Built-in** report themes provide different kinds of predefined color schemes. You select built-in report themes directly from the Power BI Desktop menu.
-
 - **Custom** report themes provide granular control over many aspects of a report theme, as described in [Customize report themes](#customize-report-themes) later in this article. You can create custom report themes by adjusting a current theme then saving it as a custom theme or by creating your own custom theme by using a JSON file.
 
 ## Ways to apply a report theme
 
-To apply a report theme to a Power BI Desktop report, you can select from the following options:
+To apply a report theme to a Power BI Desktop report, select from the following options:
 
 - Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop.
 - [Customize a theme](#customize-and-save-a-theme-in-power-bi-desktop) by using the **Customize theme** dialog.
@@ -42,16 +41,15 @@ To apply a report theme to a Power BI Desktop report, you can select from the fo
 Follow these steps to select from the available built-in report themes. See the [Built-in report themes](#built-in-report-themes) table for the default color sequence for each theme.
 
 1. On the **View** ribbon, select the dropdown arrow next to **Themes** .
+1. Select from the themes on the dropdown menu, including the new **Accessible themes**.
 
-2. Select from among the themes on the dropdown menu that appears, including the new **Accessible themes**.
+   :::image type="content" source="media/desktop-report-themes/available-report-themes.png" alt-text="Screenshot of the Power BI themes dropdown menu, highlighting all of the selections.":::
 
-   ![Screenshot of the Power BI themes dropdown menu, highlighting all of the selections.](media/desktop-report-themes/available-report-themes.png)
+   The report theme is now applied to the report.
 
-   Your report theme is now applied to the report.
+1. To browse the collection of themes created by members of the Power BI Community, select **Theme gallery** from the **Themes** dropdown menu.
 
-3. You can also browse the collection of themes created by members of the Power BI Community, by selecting **Theme gallery** from the Themes dropdown menu.
-
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Theme gallery.](media/desktop-report-themes/report-theme-gallery.png)
+   :::image type="content" source="media/desktop-report-themes/report-theme-gallery.png" alt-text="Screenshot of the Power BI Themes dropdown menu, highlighting Theme gallery.":::
 
     From the gallery, you can select a theme and download its associated JSON file.
 
@@ -59,7 +57,7 @@ Follow these steps to select from the available built-in report themes. See the 
 
     When successful, Power BI shows a dialog that the import was successful.
 
-   ![Screenshot of the successful Import theme dialog.](media/desktop-report-themes/report-themes-05.png)
+   :::image type="content" source="media/desktop-report-themes/report-themes-05.png" alt-text="Screenshot of the successful Import theme dialog.":::
 
 ### Built-in report themes
 
@@ -67,34 +65,34 @@ The following table shows the available built-in report themes.
 
 | Built-in report theme | Default color sequence |
 |------ |---------- |
-| Default | ![Diagram of the color sequence for the Default theme.](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-| Highrise | ![Diagram of the color sequence for the Highrise theme.](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Executive | ![Diagram of the color sequence for the Executive theme.](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-| Frontier| ![Diagram of the color sequence for the Frontier theme.](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Innovate | ![Diagram of the color sequence for the Innovate theme.](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-| Bloom | ![Diagram of the color sequence for the Bloom theme.](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-| Tidal| ![Diagram of the color sequence for the Tidal theme.](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-| Temperature | ![Diagram of the color sequence for the Temperature theme.](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-| Solar| ![Diagram of the color sequence for the Solar theme.](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-| Divergent | ![Diagram of the color sequence for the Divergent theme.](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-| Storm | ![Diagram of the color sequence for the Storm theme.](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-| Classic | ![Diagram of the color sequence for the Classic theme.](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-| City park | ![Diagram of the color sequence for the City park theme.](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-| Classroom | ![Diagram of the color sequence for the Classroom theme.](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-| Color-blind safe | ![Diagram of the color sequence for the Color blind safe theme.](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-| Electric | ![Diagram of the color sequence for the Electric theme.](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-| High contrast | ![Diagram of the color sequence for the High contrast theme.](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-| Sunset | ![Diagram of the color sequence for the Sunset theme.](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-| Twilight | ![Diagram of the color sequence for the Twilight theme.](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
-| Accessible default | :::image type="content" source="media/desktop-report-themes/accessible-theme-default.png" alt-text="Diagram of the color sequence for the Accessible default theme."::: |
-| Accessible city park |:::image type="content" source="media/desktop-report-themes/accessible-theme-city-park.png" alt-text="Diagram of the color sequence for the Accessible city park theme."::: |
-| Accessible tidal | :::image type="content" source="media/desktop-report-themes/accessible-theme-tidal.png" alt-text="Diagram of the color sequence for the Accessible tidal theme.":::|
-| Accessible neutral | :::image type="content" source="media/desktop-report-themes/accessible-theme-neutral.png" alt-text="Diagram of the color sequence for the Accessible neutral theme."::: |
-| Accessible orchid |:::image type="content" source="media/desktop-report-themes/accessible-theme-orchid.png" alt-text="Diagram of the color sequence for the Accessible orchid theme."::: |
+| Default | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-default.png" alt-text="Screenshot of the color sequence for the Default theme.":::|
+| Highrise | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-highrise.png" alt-text="Screenshot of the color sequence for the Highrise theme.":::|
+| Executive | :::image type="content" source="media/desktop-report-themes/report-the-themes-color-scheme-executive.png" alt-text="Screenshot of the color sequence for the Executive theme.":::|
+| Frontier| :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-frontier.png" alt-text="Screenshot of the color sequence for the Frontier theme.":::|
+| Innovate | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-innovative.png" alt-text="Screenshot of the color sequence for the Innovate theme.":::|
+| Bloom | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-bloom.png" alt-text="Screenshot of the color sequence for the Bloom theme.":::|
+| Tidal| :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-tidal.png" alt-text="Screenshot of the color sequence for the Tidal theme.":::|
+| Temperature | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-temperature.png" alt-text="Screenshot of the color sequence for the Temperature theme.":::|
+| Solar| :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-solar.png" alt-text="Screenshot of the color sequence for the Solar theme.":::|
+| Divergent | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-divergent.png" alt-text="Screenshot of the color sequence for the Divergent theme.":::|
+| Storm | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-storm.png" alt-text="Screenshot of the color sequence for the Storm theme.":::|
+| Classic | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-classic.png" alt-text="Screenshot of the color sequence for the Classic theme.":::|
+| City park | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-city-park.png" alt-text="Screenshot of the color sequence for the City park theme.":::|
+| Classroom | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-classroom.png" alt-text="Screenshot of the color sequence for the Classroom theme.":::|
+| Color-blind safe | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png" alt-text="Screenshot of the color sequence for the Color blind safe theme.":::|
+| Electric | :::image type="content" source="media/desktop-report-themes/report-the-themes-color-scheme-electric.png" alt-text="Screenshot of the color sequence for the Electric theme.":::|
+| High contrast | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-high-contrast.png" alt-text="Screenshot of the color sequence for the High contrast theme.":::|
+| Sunset | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-sunset.png" alt-text="Screenshot of the color sequence for the Sunset theme.":::|
+| Twilight | :::image type="content" source="media/desktop-report-themes/report-themes-color-scheme-twilight.png" alt-text="Screenshot of the color sequence for the Twilight theme.":::|
+| Accessible default | :::image type="content" source="media/desktop-report-themes/accessible-theme-default.png" alt-text="Screenshot of the color sequence for the Accessible default theme."::: |
+| Accessible city park |:::image type="content" source="media/desktop-report-themes/accessible-theme-city-park.png" alt-text="Screenshot of the color sequence for the Accessible city park theme."::: |
+| Accessible tidal | :::image type="content" source="media/desktop-report-themes/accessible-theme-tidal.png" alt-text="Screenshot of the color sequence for the Accessible tidal theme.":::|
+| Accessible neutral | :::image type="content" source="media/desktop-report-themes/accessible-theme-neutral.png" alt-text="Screenshot of the color sequence for the Accessible neutral theme."::: |
+| Accessible orchid |:::image type="content" source="media/desktop-report-themes/accessible-theme-orchid.png" alt-text="Screenshot of the color sequence for the Accessible orchid theme."::: |
 
 ## Customize report themes
 
-You can customize and standardize most of the elements listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop or through a report theme JSON file. The goal is to give you full control over your report's default look and feel on a granular level.
+You can customize and standardize most of the elements listed in the **Format** section of the **Visualizations** pane. Make these customizations directly in Power BI Desktop or through a report theme JSON file. By using these options, you have full control over your report's default look and feel on a granular level.
 
 You can customize report themes in the following ways:
 
@@ -103,15 +101,15 @@ You can customize report themes in the following ways:
 
 ### Customize and save a theme in Power BI Desktop
 
-To customize a theme directly in Power BI Desktop, you can select a theme that's close to what you like and make a few adjustments. First select the theme that's close and take the following steps:
+To customize a theme directly in Power BI Desktop, select a theme that's close to what you like and make a few adjustments. First, select the theme that's close and take the following steps:
 
 1. From the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**.
 
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Customize current theme.](media/desktop-report-themes/customize-current-report-theme.png)
+   :::image type="content" source="media/desktop-report-themes/customize-current-report-theme.png" alt-text="Screenshot of the Power BI Themes dropdown menu, highlighting Customize current theme.":::
 
-2. A dialog appears where you can make changes to the current theme, and then you can save your settings as a new theme.
+1. A dialog appears where you can make changes to the current theme. You can save your settings as a new theme.
 
-   ![Screenshot of the Customize theme dialog.](media/desktop-report-themes/report-themes-07.png)
+   :::image type="content" source="media/desktop-report-themes/report-themes-07.png" alt-text="Screenshot of the Customize theme dialog.":::
 
 You can find customizable theme settings in the following categories, reflected in the **Customize theme** window:
 
@@ -121,20 +119,20 @@ You can find customizable theme settings in the following categories, reflected 
 - **Page**: Page element settings include wallpaper and background.
 - **Filter pane**: Filter pane settings include background color, transparency, font and icon color, size, and filter cards.
 
-After you make your changes, select **Apply and save** to save your theme. Your can now use the theme in the current report and export it.
+After you make your changes, select **Apply and save** to save your theme. You can now use the theme in the current report and export it.
 
-Customizing the current theme in this way is fast and simple. However, you can also make finer adjustments to themes, which require modifying the theme's [JSON file](#report-theme-json-file-format).
+Customizing the current theme in this way is fast and simple. However, you can also make finer adjustments to themes by modifying the theme's [JSON file](#report-theme-json-file-format).
 
 > [!TIP]
-> You can customize the most common report theme options by using the controls in the **Customize theme** dialog. For more control, you can export a theme's JSON file and make fine-tuned adjustments by manually modifying the settings in that file. You can rename that JSON file and later import it.
+> You can customize the most common report theme options by using the controls in the **Customize theme** dialog. For more control, export a theme's JSON file and make fine-tuned adjustments by manually modifying the settings in that file. You can rename that JSON file and later import it.
 
 ### Update the base theme
 
-Power BI makes changes to themes, including new defaults for formatting settings, as a part of a new base theme. So as not to disturb existing reports, these changes don’t propagate to custom themes. If you customize a built-in theme, you might not see fixes to issues or updates to your reports without updating your base themes.
+Power BI updates themes, including new default formatting settings, as part of a new base theme. To avoid disrupting existing reports, these changes don't propagate to custom themes. If you customize a built-in theme, you might need to update your base themes to get fixes and updates.
 
-To see if you're using an outdated theme, on the **View** ribbon, select the **Themes** dropdown button and select **Customize current theme**. If your theme is out of date, a banner appears at the top of the **Customize theme** dialog, encouraging you to update to the latest base theme.
+To check if you're using an outdated theme, go to the **View** ribbon, select the **Themes** dropdown, and select **Customize current theme**. If your theme is out of date, a banner appears at the top of the **Customize theme** dialog, encouraging you to update to the latest base theme.
 
-Select **Update theme** to see the changes, then select **Apply**.
+Select **Update theme** to see the changes, and then select **Apply**.
 
 :::image type="content" source="media/desktop-report-themes/update-theme.png" alt-text="Screenshot showing the Update theme option.":::
 
@@ -142,63 +140,62 @@ Select **Update theme** to see the changes, then select **Apply**.
 
 You can also import a custom report theme file by following these steps:
 
-1. On the **View** ribbon, select the **Themes** dropdown button > **Browse for themes**.
+1. On the **View** ribbon, select the **Themes** dropdown > **Browse for themes**.
 
-   ![Screenshot of the Power BI Themes dropdown menu, highlighting Browse for themes.](media/desktop-report-themes/browse-report-themes.png)
+   :::image type="content" source="media/desktop-report-themes/browse-report-themes.png" alt-text="Screenshot of the Power BI Themes dropdown menu, highlighting Browse for themes.":::
 
    A window appears that you can use to go to the JSON theme file.
 
-2. In the following image, you can see holiday theme files. See the sample selection of a holiday theme for March, *St Patricks Day.json*.
+1. In the following image, you can see holiday theme files. See the sample selection of a holiday theme for March, *St Patricks Day.json*.
 
-   ![Screenshot of the dialog listing Holiday theme JSON files.](media/desktop-report-themes/report-themes_4.png)
+   :::image type="content" source="media/desktop-report-themes/report-themes_4.png" alt-text="Screenshot of the dialog listing Holiday theme JSON files.":::
 
-   When the theme file is loaded successfully, Power BI Desktop displays a success message.
+   When the theme file loads successfully, Power BI Desktop displays a success message.
 
-   ![Screenshot of the Import theme successful dialog.](media/desktop-report-themes/report-themes-05.png)
+   :::image type="content" source="media/desktop-report-themes/report-themes-05.png" alt-text="Screenshot of the Import theme successful dialog.":::
 
-See the [Example report theme JSON file](#example-report-theme-json-file) section in this article  continue exploring the St Patricks Day.json file.
+For more information, see the [Example report theme JSON file](#example-report-theme-json-file) section in this article. It continues exploring the *St Patricks Day.json* file.
 
-## How report theme colors stick with your reports
+## How report theme colors stay with your reports
 
 When you publish your report to the Power BI service, your report theme colors stay with it. The **Colors** section of the **Format** pane reflects your report theme.
 
 To view the available colors in a report theme:
 
 1. Select the report canvas or one of the visuals on the canvas.
-
-2. From the **Format** section of the **Visualization** pane, select **Color**.
+1. From the **Format** section of the **Visualization** pane, select **Color**.
 
     The **Theme colors** palette of the report theme opens.
 
-   ![Screenshot of the Theme colors palette with default selections.](media/desktop-report-themes/report-themes-color-palette.png)
+   :::image type="content" source="media/desktop-report-themes/report-themes-color-palette.png" alt-text="Screenshot of the Theme colors palette with default selections.":::
 
 In the example, after you apply the multitude of green and brown colors from the St. Patrick's Day report theme, you can view the theme colors. The colors are part of the imported and applied report theme.
 
 The colors in the color palette are relative to the current theme. For example, suppose you select the third color of the top row for a data point. Later, if you change to a different theme, that data point's color updates automatically to the third color of the top row in the new theme, just as you'd see when changing themes in Microsoft Office.
 
-Setting a report theme changes the default colors used in visuals throughout the report. Power BI maintains a list consisting of hundreds of colors to ensure visuals have plenty of unique colors to display in a report. When Power BI assigns colors to a visual's series, colors are selected as series colors are assigned. When you import a theme, the mapping of colors for data series is reset.
+Setting a report theme changes the default colors used in visuals throughout the report. Power BI maintains a list consisting of hundreds of colors to ensure visuals have plenty of unique colors to display in a report. When Power BI assigns colors to a visual's series, it selects colors as it assigns series colors. When you import a theme, you reset the mapping of colors for data series.
 
 ### Dynamic series
 
 Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals might change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
 
-Individual members of a dynamic series claim a color from the data color palette as they are read in. For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed reserves the earlier colors. Since the colors for individual dynamic series members aren't explicitly stored, this behavior might lead to the appearance that colors are changing at random, depending on which visuals are loaded first. You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
+Individual members of a dynamic series claim a color from the data color palette as they're read in. For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the earlier colors are reserved by the first visual to have its data request completed. Since the colors for individual dynamic series members aren't explicitly stored, this behavior might lead to the appearance that colors are changing at random, depending on which visuals are loaded first. You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
 
 ### Static series
 
-Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme doesn't apply to any of those explicitly defined colors.
+Conversely, for *static series*, you know the number of series and their order. For example, *Profit* and *Revenue* are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might need to change your slicer selections to see all potential series values and set their colors. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme doesn't apply to any of those explicitly defined colors.
 
-To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
+To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color is explicitly set.
 
-### Situations when report theme colors won't stick to your reports
+### Situations when report theme colors don't stick to your reports
 
-Suppose you apply a custom color set or individual color to a data point in a visual by using the **Custom color** option in the color picker. When you apply a report theme, it doesn't override that customized data point color.
+If you apply a custom color set or individual color to a data point in a visual by using the **Custom color** option in the color picker, applying a report theme doesn't override that customized data point color.
 
-Or, suppose you want to set the color of a data point by using the **Theme colors** section. When you apply a new report theme, those colors aren't updated. To get your default colors back so that they update when you apply a new report theme, select **Reset to default**, or select a color from the **Theme colors** palette in the color picker.
+If you want to set the color of a data point by using the **Theme colors** section, applying a new report theme doesn't update those colors. To get your default colors back so that they update when you apply a new report theme, select **Reset to default**, or select a color from the **Theme colors** palette in the color picker.
 
-![Screenshot of the Visualizations dropdown menu, highlighting Reset to default.](media/desktop-report-themes/report-themes-reset-default.png)
+:::image type="content" source="media/desktop-report-themes/report-themes-reset-default.png" alt-text="Screenshot of the Visualizations dropdown menu, highlighting Reset to default.":::
 
-Many Power BI visuals don't apply to report themes.
+Many Power BI visuals don't support report themes.
 
 ## Custom report theme files you can use right now
 
@@ -206,18 +203,18 @@ Want to get started with report themes? See the custom report themes in the [the
 
 - [Waveform theme](https://community.powerbi.com/t5/Themes-Gallery/Waveform/m-p/140536). This report theme was introduced in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of report themes. [Download Waveform.json](https://go.microsoft.com/fwlink/?linkid=843924).
 
-  ![Screenshot that shows the Waveform JSON theme.](media/desktop-report-themes/report-themes_10.png)
+  :::image type="content" source="media/desktop-report-themes/report-themes_10.png" alt-text="Screenshot of the Waveform JSON theme.":::
 
 - [Color-blind friendly theme](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597).
 This report theme is easier to read for the visually impaired. [Download ColorblindSafe-Longer.json](https://go.microsoft.com/fwlink/?linkid=843923).
 
-  ![Screenshot of the Color-blind Safe Longer JSON theme.](media/desktop-report-themes/report-themes_11.png)
+  :::image type="content" source="media/desktop-report-themes/report-themes_11.png" alt-text="Screenshot of the Color-blind Safe Longer JSON theme.":::
 
 - Valentine's Day theme.
 
-  ![Screenshot of the Valentine's Day JSON theme.](media/desktop-report-themes/report-themes_13.png)
+  :::image type="content" source="media/desktop-report-themes/report-themes_13.png" alt-text="Screenshot of the Valentine's Day JSON theme.":::
 
-  Here's the code for the Valentine's Day JSON file:
+Here's the code for the Valentine's Day JSON file:
 
    ```json
        {
@@ -252,11 +249,10 @@ To export the currently applied theme from Power BI Desktop:
 
 1. Select **View** and select the **Themes** dropdown menu.
 
-   ![Screenshot of the Themes dropdown menu, highlighting Save current theme.](media/desktop-report-themes/save-current-theme.png)
+   :::image type="content" source="media/desktop-report-themes/save-current-theme.png" alt-text="Screenshot of the Themes dropdown menu, highlighting Save current theme.":::
 
-2. Near the bottom of the dropdown menu, select **Save current theme**.
-
-3. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
+1. Near the bottom of the dropdown menu, select **Save current theme**.
+1. From the **Save As** dialog box, go to a directory in which to save the JSON file, and then select **Save**.
 
 ## Report theme JSON file format
 
@@ -268,13 +264,13 @@ At its most basic level, the theme JSON file has only one required line: `name`.
 }
 ```
 
-Other than `name`, everything else is optional, which means you're free to only add the properties you specifically want to format to the theme file. You can continue to use Power BI's defaults for the rest.
+Other than `name`, everything else is optional. Add only the properties you want to format to the theme file. You can continue to use Power BI's defaults for the rest.
 
-In a report theme JSON file, you define only the formatting that you want to change. Settings you don't specify in the JSON file revert to the Power BI Desktop default settings.
+In a report theme JSON file, define only the formatting that you want to change. Settings you don't specify in the JSON file revert to the Power BI Desktop default settings.
 
 When you create a JSON file, you can specify that all charts use a font size of 12, that certain visuals use a particular font family, or that data labels are turned off for specific chart types. By using a JSON file, you can create a report theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
 
-When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn’t understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever we change it in Power BI, so that you can ensure your theme files are always current.
+When you import your theme file, Power BI validates it to make sure it can successfully read its full contents. If Power BI finds fields it doesn't understand, it shows you a message letting you know that the theme file is invalid, and inviting you to reimport with a corrected theme file. Power BI also publishes the schema it uses to check your theme file in a public location, updating it automatically whenever Microsoft changes it in Power BI, so that you can ensure your theme files are always current.
 
 Power BI validates custom themes based on a *JSON schema*. This [JSON schema is available for download](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) for use with an IDE that supports JSON validation, which can help identify available formatting options and highlight invalid theme formatting. More information is available in the [Report Theme JSON Schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema).
 
@@ -288,13 +284,13 @@ A theme file has four main components:
 - [Text classes](#set-formatted-text-defaults)
 - [Visual styles](#set-visual-property-defaults-visualstyles)
 
-The following sections describe each in detail.
+The following sections describe each component in detail.
 
 ### Set theme colors
 
-Under `name`, you can add the following basic data color-related properties:
+Under `name`, add the following basic data color-related properties:
 
-- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list are used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition.
+- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list are used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation and hue adjustment and cycles over and over to generate unique colors without repetition.
 - `good`, `neutral`, `bad`: These properties set the status colors used by the waterfall chart and the KPI visual.
 - `maximum`, `center`, `minimum`, `null`: These colors set the various gradient colors in the conditional formatting dialog box.
 
@@ -327,7 +323,7 @@ A basic theme that defines these colors might appear as follows:
 
 ### Set structural colors
 
-Next, you can add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
+Next, add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
 The following table shows the six color classes you can format. The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop).
 
@@ -420,13 +416,13 @@ Here's a sample theme that sets the color classes:
 
 ### Set formatted text defaults
 
-Next, you can add text classes to your JSON file. Text classes are similar to color classes, but they allow you to update the font size, color, and family for groups of text across your report.
+Next, add text classes to your JSON file. Text classes are similar to color classes, but they allow you to update the font size, color, and family for groups of text across your report.
 
-You only need to set four of the 12 classes, called *primary classes*, to change all of the text formatting in your report. These four primary classes can be set in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) under the **Text** section: **General** corresponds to **label**, **Title** to **title**, **Cards and KPIs** to **callout**, and **Tab headers** to **header**.
+Set four of the 12 classes, called *primary classes*, to change all of the text formatting in your report. Set these four primary classes in the [**Customize theme** dialog box](#customize-and-save-a-theme-in-power-bi-desktop) under the **Text** section: **General** corresponds to **label**, **Title** to **title**, **Cards and KPIs** to **callout**, and **Tab headers** to **header**.
 
-Other text classes, considered *secondary classes*, automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color or a percentage larger or smaller text size compared to the primary class.
+*Secondary classes* automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color or a percentage larger or smaller text size compared to the primary class.
 
-Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), with a 12-point font. This class is used to format the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting but are made bold with the **bold label** class so that they stand out. However, you don't need to specify that class in the theme JSON. Power BI does so automatically. If you decide to specify labels that have a 14-point font in your theme, you don't need to also update the **bold label** class because it inherits text formatting from the **label** class.
+Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), with a 12-point font. This class formats the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting but are made bold with the **bold label** class so that they stand out. However, you don't need to specify that class in the theme JSON. Power BI does so automatically. If you decide to specify labels that have a 14-point font in your theme, you don't need to also update the **bold label** class because it inherits text formatting from the **label** class.
 
 The following table shows:
 
@@ -450,7 +446,7 @@ The following table shows:
 
 *\* Starred items are based on the first data color of the report theme.*
 
-You can use the `bold` Boolean setting to adjust the format. To make the text bold, use the following settings:
+Use the `bold` Boolean setting to adjust the format. To make the text bold, use the following settings:
 
 - `bold`: true
 - `titleBold`: true
@@ -492,7 +488,7 @@ Because secondary classes inherit from the primary classes, you don't need to se
 
 ### Set visual property defaults (`visualStyles`)
 
-To create an extended-format JSON file, with more detailed and granular control over all visual formatting in a report, add a `visualStyles` section to the JSON file to nest the formatting specifics. See the following example of the `visualStyles` section:
+To create an extended-format JSON file with more detailed and granular control over all visual formatting in a report, add a `visualStyles` section to the JSON file. This section nests the formatting specifics. See the following example of the `visualStyles` section:
 
 ```json
     "visualStyles": {
@@ -508,9 +504,9 @@ To create an extended-format JSON file, with more detailed and granular control 
 
 For the `visualName` and `cardName` sections, use a specific visual and card name. The `stylePresetName` can either be an asterisk ("*") to target the default visual style, or the `stylePresetName` can be a name to define a named style preset. The `propertyName` is a formatting option, and `propertyValue` is the value for that formatting option.
 
-For `visualName`, `stylePresetName`, and `cardName`, use an asterisk in quotes if you want that setting to apply to all visuals or cards that have a property. If you use an asterisk for both the visual and card names, you're effectively applying a setting globally in your report, such as a font size or specific font family for all text across all visuals.
+For `visualName`, `stylePresetName`, and `cardName`, use an asterisk in quotes if you want that setting to apply to all visuals or cards that have a property. If you use an asterisk for both the visual and card names, you effectively apply a setting globally in your report, such as a font size or specific font family for all text across all visuals.
 
-See the following example that sets a few properties through the visual styles:
+The following example sets a few properties through the visual styles:
 
 ```json
 {
@@ -555,29 +551,29 @@ This example makes the following settings:
 - Sets the bubble size for scatter charts to -10.
 
 > [!NOTE]
-> You need only specify the formatting elements you want to adjust. Any formatting elements that aren't included in the JSON file revert to their default values and settings.
+> You only need to specify the formatting elements you want to adjust. Any formatting elements that aren't included in the JSON file revert to their default values and settings.
 
 ### Style presets
 
-**Style presets** are predefined formatting options that can be applied to visual elements in a theme file, and are specific to the visual it is defined on. These presets allow you to change multiple formatting options simultaneously without manually adjusting each one. This feature enhances the customization capabilities of Power BI reports by enabling your ability to apply consistent styles across different visuals quickly.
+**Style presets** are predefined formatting options that you can apply to visual elements in a theme file. Each style preset is specific to the visual it’s defined on. These presets let you change multiple formatting options at once without adjusting each one manually. This feature enhances the customization capabilities of Power BI reports by enabling you to quickly apply consistent styles across different visuals.
 
 #### Introduction to style presets
 
-By creating and importing a custom JSON theme file that includes your desired style presets, the new Style presets menu option becomes visible within the **Format Visual** section of the **Visualizations pane**.
+When you create and import a custom JSON theme file that includes your desired style presets, the new **Style presets** menu option becomes visible within the **Format Visual** section of the **Visualizations pane**.
 
-Utilizing the **Style** dropdown, you can easily select any of your predefined style presets from the newly imported theme file to automatically apply formatting options to visual elements in your report, such as positioning elements or altering colors.
+By using the **Style** dropdown, you can select any of your predefined style presets from the newly imported theme file. The formatting options are automatically applied to visual elements in your report, such as positioning elements or altering colors.
 
    :::image type="content" source="media/desktop-report-themes/style-presets-example-00.png" alt-text="Screenshot displaying a Style presets menu on the Visuals tab of the Format visuals section in the Visualizations pane.":::
 
 #### How to define style presets
 
-To define style presets, you need to create a custom theme using a JSON file. The JSON file contains the formatting options for different visual elements, and as explained in this article, you can import this file to apply the custom theme that includes your style presets.
+To define style presets, create a custom theme by using a JSON file. The JSON file contains the formatting options for different visual elements. As explained in this article, you can import this file to apply the custom theme that includes your style presets.
 
    :::image type="content" source="media/desktop-report-themes/style-presets-json-01.png" alt-text="Screenshot of a JSON file displaying default Style preset, plus three defined Style presets customized according to the user's needs.":::
 
-When crafting a custom theme, you can specify which style preset will be the default after importing, as shown. If no preset is selected or defined, Power BI’s default settings are applied, ensuring there are always fallback formatting options for visual elements.
+When crafting a custom theme, you can specify which style preset is the default after importing, as shown. If you don't select or define a preset, Power BI’s default settings are applied. The default settings ensure there are always fallback formatting options for visual elements.
 
-The example theme depicted in the previous screenshot is displayed in the code block shown here:
+The example theme depicted in the previous screenshot is displayed in the following code block:
 
 ```json
 {
@@ -620,16 +616,16 @@ The example theme depicted in the previous screenshot is displayed in the code b
 
 #### Applying style presets
 
-Using the above custom theme, let's walk through an example of how we define and then use custom style presets on a visualization. Keep in mind that the style presets are specific to the visual it is defined on.
+Using the above custom theme, let's walk through an example of how to define and then use custom style presets on a visualization. Keep in mind that the style presets are specific to the visual they're defined on.
 
 The following steps outline the process to define and import a custom theme JSON file that includes style presets:
 
-1. Copy the code block shown above to create the JSON file using any text editor, then save the **Style Preset Demo Test.json** file on your computer.
+1. Copy the preceding code block to create the JSON file by using any text editor. Then save the **Style Preset Demo Test.json** file on your computer.
 1. In Power BI Desktop, go to the View ribbon and select the Themes dropdown button.
-1. Select Browse for themes and import the JSON file.
-1. The newly defined style presets are available in the Format Visual section of the Visualizations pane.
+1. Select **Browse for themes** and import the JSON file.
+1. The newly defined style presets are available in the **Format Visual** section of the **Visualizations** pane.
 
-After importing the custom theme, we can select 'Demo Preset 1' to set the legend position to the bottom center and change the gridline color of the value axis, as shown here:
+After importing the custom theme, select 'Demo Preset 1' to set the legend position to the bottom center and change the gridline color of the value axis, as shown here:
 
    :::image type="content" source="media/desktop-report-themes/style-presets-example-01.png" alt-text="Screenshot of the Style presets menu displaying Demo Preset 1.":::
 
@@ -643,9 +639,9 @@ An error message appears when the definition of a style preset isn't found for t
 
 ### Find visual properties to set
 
-[The report theme schema](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) can help you identify what properties are available to style with a report theme. By using the schema as a local reference in your theme file, you can use the autocomplete functionality of your IDE to identify available formatting options.
+[The report theme schema](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) helps you identify what properties are available to style with a report theme. By using the schema as a local reference in your theme file, you can use the autocomplete functionality of your IDE to identify available formatting options.
 
-For example, using Visual Studio Code's [support for JSON schema](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings), we can define a theme as follows with "reportThemeSchema.json" downloaded from the [schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) and placed in the same folder:
+For example, by using Visual Studio Code's [support for JSON schema](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings), you can define a theme as follows with "reportThemeSchema.json" downloaded from the [schema repository](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Report%20Theme%20JSON%20Schema) and placed in the same folder:
 
 ```json
 {
@@ -654,17 +650,17 @@ For example, using Visual Studio Code's [support for JSON schema](https://code.v
 }
 ```
 
-With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options available. Trigger autocomplete explicitly by using the key combination *Ctrl* + *Space*. The description pop-up shows the formatting item's display name and description as they show in the Formatting pane, if available:
+With this defined, you can use autocomplete in Visual Studio Code to understand the structure and available formatting options. Trigger autocomplete explicitly by using the key combination *Ctrl* + *Space*. The description pop-up shows the formatting item's display name and description as they show in the Formatting pane, if available:
 
 ![Screenshot of using the report theme schema to identify available formatting options.  The autocomplete menu within Visual Studio Code shows available formatting options.](media/desktop-report-themes/report-themes-schema.png)
 
 ### Tips for setting values
 
-Here are some helpful tips here about setting values.
+Here are some helpful tips about setting values.
 
 - Booleans are either true or false.
 - Strings must be in double quotes, as in "this is a string."
-- Numbers are just the value itself not in quotes.
+- Numbers are just the value itself without quotes.
 - When you use `dateTime`, the date must be an ISO date in single quotes, with "datetime" at the beginning. See the following example:
 
     "datetime'2022-10-05T14:48:00.000Z'"
@@ -701,7 +697,7 @@ You can copy this JSON and use it as a basis to create your own custom report th
 
 ### Considerations and limitations
 
-If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these themes, the text section of the theme dialog box isn't available for configuring.
+If you use one of the original themes, the Classic theme, or a custom theme that you import on top of one of these themes, you can't access the text section of the theme dialog box for configuring.
 
 Built-in themes affected by this limitation include the following themes:
 
@@ -714,10 +710,10 @@ Built-in themes affected by this limitation include the following themes:
 - Sunset
 - Twilight
 
-If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have the following options:
+If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box. However, if you want to use the text classes with one of the affected themes, you have the following options:
 
-- The quickest and easiest way to enable the text classes is to select the Default theme options.
-- If you want to keep your current custom theme to enable the text tab:
+- Select the Default theme options to enable the text classes.
+- If you want to keep your current custom theme and enable the text tab:
     1. Export your current theme.
     1. Select the default theme.
     1. Import the custom theme you exported in the first step.
