@@ -350,7 +350,7 @@ The following table shows the six color classes you can format. The **Color clas
 | | | Line chart forecast line color |
 | | | Map leader line color |
 | | | Filter pane and card text color |
-| | | Modern visual tooltips text and icon color (Preview)|
+| | | Modern visual tooltips text and icon color |
 | **secondLevelElements** |**foregroundNeutralSecondary**| Light [secondary text classes](#set-formatted-text-defaults) |
 | | | Label colors |
 | | | Legend label color |
@@ -391,13 +391,13 @@ The following table shows the six color classes you can format. The **Color clas
 | | | Combo chart background color |
 | | | Button fill color |
 | | | Filter pane and available  filter card background color |
-| | | Modern visual tooltips background color (Preview)|
+| | | Modern visual tooltips background color|
 | **secondaryBackground** | **backgroundNeutral** | Table and matrix grid outline color |
 | | | Shape map default color |
 | | | Ribbon chart ribbon fill color (when match series option is turned off) |
 | | | Disabled button fill color (when the background color isn't `FFFFFF`) |
 | | | Disabled button outline color (when the background color isn't `FFFFFF`) |
-| | | Modern visual tooltips separator line and hover color (Preview)|
+| | | Modern visual tooltips separator line and hover color|
 | **tableAccent** | | Table and matrix grid outline color (when present) |
 
 Here's a sample theme that sets the color classes:
