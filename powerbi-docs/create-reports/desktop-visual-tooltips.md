@@ -32,12 +32,23 @@ When a user hovers over a visual data point, the tooltip displays:
 
 - The **field name and value** for each field used in the visual.
 - **Additional fields** specifically placed in the **Tooltip** well.
-- Optional **actions**, such as:  
+- Optional **actions**, such as:
+
   - **Drill down** into the next level of a hierarchy
   - **Drill through** to a related report page
     These actions appear automatically when a visual supports them.  
 
 Tooltips provide fast insight while keeping the user inside the flow of the report.
+
+### Adjust tooltip behavior
+
+Most Power BI visuals support tooltips by default, but the available options vary slightly depending on the visual type. You can adjust how a tooltip behaves from the Format pane when a supported visual is selected.
+
+#### Find tooltip settings
+
+    1. Select a visual on the report canvas.
+    1. From the Visualizations pane, select the Format visual icon.
+    1. Under the General tab, expand the Tooltip card to access the settings for that visual.
 
 ## Considerations and limitations
 
