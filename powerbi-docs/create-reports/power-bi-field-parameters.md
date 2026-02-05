@@ -77,7 +77,10 @@ Parameter = {
 
 ## Persistence of hierarchy level
 
-By default, Power BI will retain the hierarchy level displayed in a matrix as field parameter selections change. This was introduced in July 2025. However, you can turn off this behavior using the **Persist hierarchy level** setting in the report settings to go back to the pre-July 2025 behavior.
+By default, Power BI will retain the hierarchy level displayed in a matrix as field parameter selections change. This was introduced in July 2025. However, you can turn off this behavior using the **Persist hierarchy level** setting in the report settings to go back to the pre-July 2025 behavior. Here is where to find this option:
+
+- In Power BI Desktop, navigate to Options and settings > Options > Current File > Report settings > Field Parameters > Persist hierarchy level.
+- In Fabric, navigate to the report settings and find Persist hierarchy level under Field parameter options.
 
 To illustrate the difference, consider a matrix showing a field parameter called Product Group and a column called Year on the rows, displaying Total sales. The field parameter allows selection of Category, Class, Color, or any combination. In this example, Category is selected, and the Categories are expanded, so you can see values broken down by Year: 
 
