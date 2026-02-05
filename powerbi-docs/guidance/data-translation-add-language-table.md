@@ -1,12 +1,13 @@
 ---
-title: Add the languages table to filter field parameters
+title: Add the Languages Table to Filter Field Parameters
 description: Learn how to use Power Query to create a languages table for multiple-language reports in Power BI.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Add the languages table to filter field parameters
 
@@ -15,13 +16,9 @@ As a content creator working with Power BI Desktop, there are many different way
 ## Add the table
 
 1. In Power BI Desktop, from the **Home** ribbon, select **Transform data** > **Transform data** to open the Power Query Editor.
-
 1. Under **Queries**, right-click and select **New Query** > **Blank Query** from the context menu.
-
 1. Select the new query. Under **Query Settings** > **Properties** > **Name**, enter *Languages* as the name of the query.
-
 1. From the **Home** ribbon, select **Advanced Editor**.
-
 1. Copy the following M code into the editor, then select **Done**.
 
    ```powerquery-m

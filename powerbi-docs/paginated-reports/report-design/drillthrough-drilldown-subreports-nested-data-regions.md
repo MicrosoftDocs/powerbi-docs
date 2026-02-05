@@ -1,12 +1,13 @@
 ---
-title: "Drillthrough, drilldown, subreports, and nested data regions in a Power BI paginated report"
+title: Drillthrough, Drilldown, Subreports, and Nested Data Regions in a Power BI Paginated Report
 description: Organize data in a Power BI paginated report to show the relationship of the general to the detailed and then display the data in a subreport or a separate drillthrough report.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 04/10/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)
 
@@ -14,7 +15,7 @@ ms.topic: conceptual
 
   You can organize data in a Power BI paginated report in a variety of ways to show the relationship of the general to the detailed.  You can put all the data in the report, but set it to be hidden until a user clicks to reveal details; this is a *drilldown* action. You can display the data in a data region, such as a table or chart, which is *nested* inside another data region, such as a table or matrix. You can display the data in a *subreport* that is completely contained within a main report. Or, you can put the detail data in *drillthrough* reports, separate reports that are displayed when a user clicks a link.  
   
-:::image type="content" source="media/paginated-drill-through/paginated-drillthrough-drill-down-subreports.png" alt-text="Screenshot showing drillthrough, drilldown, subreports, and nested data regions in a paginated report."::: 
+:::image type="content" source="media/paginated-drill-through/paginated-drillthrough-drill-down-subreports.png" alt-text="Screenshot showing drillthrough, drilldown, subreports, and nested data regions in a paginated report." lightbox="media/paginated-drill-through/paginated-drillthrough-drill-down-subreports.png"::: 
   
  A. Drillthrough report  
   
@@ -42,6 +43,8 @@ ms.topic: conceptual
   
   
 ##  <a name="Details"></a> Details of characteristics  
+
+The following sections describe the specific characteristics of each method.
   
 ###  <a name="Queries"></a> Queries they use  
  Subreports and drillthrough reports can use the same query data as the main report, or they can use a different one. Nested data use the same query.  

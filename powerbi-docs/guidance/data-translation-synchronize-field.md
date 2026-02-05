@@ -1,12 +1,13 @@
 ---
-title: Synchronize multiple field parameters
+title: Synchronize Multiple Field Parameters
 description: Learn how to synchronize a selected language can be synchronized across multiple field parameters in a multiple-language report in Power BI. 
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Synchronize multiple field parameters
 
@@ -15,14 +16,12 @@ A field parameter can support translations for a column in a multiple-language r
 ## Create a field parameter
 
 1. In Power BI Desktop, in the **Modeling** ribbon, select **New parameter** > **Fields**.
-
 1. In the **Parameters** dialog box, enter the name *Translated Category Names*.
 1. Populate the fields with the columns from the **Products** table for the desired languages.
 
    :::image type="content" source="./media/data-translation-synchronize-field/parameter-field-category.png" alt-text="Screenshot shows the Parameters dialog box with a name added and several fields selected." lightbox="./media/data-translation-synchronize-field/parameter-field-category.png":::
 
 1. Select **Create**.
-
 1. Open the Table view. Select the table to view the Data Analysis Expressions (DAX) code. Update the code to match the following code.
 
    ```dax
@@ -45,7 +44,7 @@ A field parameter can support translations for a column in a multiple-language r
 After you create the new field parameter, you need to update the model to use it.
 
 1. In Power BI Desktop, open the Model view.
-1. Locate the **Translated Category Names** table and the **Languages** table. 
+1. Locate the **Translated Category Names** table and the **Languages** table.
 1. Drag **LanguageId** from **Translated Category Names** to the **Languages** table to create a one-to-one relationship.
 
    :::image type="content" source="./media/data-translation-synchronize-field/language-relationship.png" alt-text="Screenshot shows the Model view with three tables, including the newly added Translated Category Name, in a one-to-one relationship to Languages.":::

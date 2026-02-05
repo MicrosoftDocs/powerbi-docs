@@ -1,12 +1,12 @@
 ---
 title: Use Model explorer in Power BI
 description: Learn how to use Model explorer to see and work with complex semantic models in a tree view in Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/28/2025
 LocalizationGroup: Transform and shape data
 ---

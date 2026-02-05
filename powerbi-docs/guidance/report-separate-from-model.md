@@ -1,12 +1,12 @@
 ---
 title: "Separate reports from models in Power BI Desktop"
 description: "Guidance for separating reports from models in Power BI Desktop."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

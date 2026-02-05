@@ -1,10 +1,11 @@
 ---
-title: "Add or delete a group in a data region in a Power BI paginated report | Microsoft Docs"
+title: Add or Delete a Group in a Data Region in a Power BI Paginated Report
 description: Consider adding a group to a data region in a Power BI paginated report to organize data by a specific value or set of expressions for display and calculations in Report Builder.
-ms.date: 06/27/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -29,7 +30,7 @@ In Power BI paginated reports, add a group to a data region when you want to org
     > [!NOTE]  
     >  If you do not see the Grouping pane, on the View tab, select **Grouping**.  
   
-2. Drop the field above or below the group hierarchy using the guide bar to place the group as a parent group or a child group to an existing group.  
+1. Drop the field above or below the group hierarchy using the guide bar to place the group as a parent group or a child group to an existing group.  
   
      The group is added with a default name, group expression, and sort expression that is based on the field name.  
   
@@ -37,11 +38,11 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
 1. In the Grouping pane, right-click a group that is a peer to the group that you want to add. Select **Add Group**, and then select **Adjacent Before** or **Adjacent After** to specify where to add the group. The **Tablix Group** dialog box opens.  
   
-2. In **Name**, type a name for the group.  
+1. In **Name**, type a name for the group.  
   
-3. In **Group expression**, type an expression or select the expression button (**fx**) to create an expression.  
+1. In **Group expression**, type an expression or select the expression button (**fx**) to create an expression.  
   
-4. Select **OK**.
+1. Select **OK**.
   
      A new group is added to the Grouping pane and a row or column on which to display group values is added to the tablix data region on the design surface.  
   
@@ -49,11 +50,11 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
 1. In the Grouping pane, right-click a group that is the innermost child group, but not the **Details** group. Select **Add Group**, and then select **Child Group**. The **Tablix Group** dialog box opens.  
   
-2. In **Group expression**, leave the expression blank. A details group has no expression.  
+1. In **Group expression**, leave the expression blank. A details group has no expression.  
   
-3. Select **Show detail data**.  
+1. Select **Show detail data**.  
   
-4. Select **OK**.
+1. Select **OK**.
   
      A new details group is added as a child group in the Grouping pane, and the row handle for the group you selected in step 1 displays the details group icon. For more information about handles, see [Tablix data region cells, rows, and columns (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).  
   
@@ -61,49 +62,49 @@ In Power BI paginated reports, add a group to a data region when you want to org
   
 1. On the report design surface, select anywhere in the tablix data region to select it. The Grouping pane displays the row and column groups.  
   
-2. Right-click the group, and then select **Group Properties**.  
+1. Right-click the group, and then select **Group Properties**.  
   
-3. In **Name**, type the name of the group.  
+1. In **Name**, type the name of the group.  
   
-4. In **Group expressions**, type or select a simple expression, or select the Expression (**fx**) button to create a group expression.  
+1. In **Group expressions**, type or select a simple expression, or select the Expression (**fx**) button to create a group expression.  
   
-5. Select **Add** to create additional expressions. All expressions you specify are combined using a logical AND to specify data for this group.  
+1. Select **Add** to create additional expressions. All expressions you specify are combined using a logical AND to specify data for this group.  
   
-6. (Optional) Select **Page Breaks** to set page break options.  
+1. (Optional) Select **Page Breaks** to set page break options.  
   
-7. (Optional) Select **Sorting** to select or type expressions that specify the sort order for values in the group.  
+1. (Optional) Select **Sorting** to select or type expressions that specify the sort order for values in the group.  
   
-8. (Optional) Select **Visibility** to select the visibility options for the item.  
+1. (Optional) Select **Visibility** to select the visibility options for the item.  
   
-9. (Optional) Select **Filters** to set filters for this group.  
+1. (Optional) Select **Filters** to set filters for this group.  
   
-10. (Optional) Select **Variables** to define variables scoped to this group and accessible from any child groups.  
+1. (Optional) Select **Variables** to define variables scoped to this group and accessible from any child groups.  
   
-11. Select **OK**.
+1. Select **OK**.
   
 ## Delete a group from a tablix data region  
   
 1. In the Grouping pane, right-click the group, and then click **Delete Group**.  
   
-2. In the **Delete Group** dialog box, select one of the following options:  
+1. In the **Delete Group** dialog box, select one of the following options:  
   
     - **Delete group and related rows and columns** Choose this option to delete the group definition and all related rows that display group data. For the details group, if the same row belongs to both detail and group data, only the detail data rows are deleted.  
   
     - **Delete group only** Choose this option to keep the structure of the tablix data region the same and delete only the group definition.  
   
-3. Select **OK**.
+1. Select **OK**.
   
 ## Delete a details group from a tablix data region  
   
 1. In the Grouping pane, right-click the details group, and then click **Delete Group**.  
   
-2. In the **Delete Group** dialog box, select one of the following options:  
+1. In the **Delete Group** dialog box, select one of the following options:  
   
     - **Delete group and related rows and columns** Choose this option to delete the group definition and all related rows that display group data. For the details group, if the same row belongs to both detail and group data, only the detail data rows are deleted.  
   
     - **Delete group only** Choose this option to keep the structure of the tablix data region the same and delete only the group definition.  
   
-3. Select **OK**.
+1. Select **OK**.
   
      The details group is deleted.  
   

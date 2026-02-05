@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 02/28/2025
 LocalizationGroup: Create reports
 ---
@@ -46,7 +46,7 @@ EN 301 549 is the Harmonized European Standard for Accessibility requirements fo
 
 ### Conformance Documentation
 
-To find updated conformance reports, search for Power BI in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/en-us/accessibility/conformance-reports)
+To find updated conformance reports, search for Power BI in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/accessibility/conformance-reports)
 
 ## Related content
 

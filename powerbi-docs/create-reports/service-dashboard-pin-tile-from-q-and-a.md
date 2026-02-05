@@ -1,5 +1,5 @@
 ---
-title: How to pin a tile to a dashboard from Q&A
+title: How to Pin a Tile to a Dashboard from Q&A
 description: Learn how to pin a tile to a Power BI dashboard from the Q&A question box by using natural language.
 author: julcsc
 ms.author: juliacawthra
@@ -7,13 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 #customer intent: As a Power BI user I want ot learn how to pin a tile to a dashboard in Power BI.
 ---
 # Pin a tile to a dashboard from Q&A
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 Q&A is a Power BI tool for exploring your data by using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
@@ -31,17 +35,17 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any semantic model that has a tile pinned to that dashboard.
 1. In the question box at the top of your dashboard, start typing what you want to know about your data.
 
-:::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the question and answer question box.":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the question and answer question box." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png":::
 
 1. For example, as you type "year over year revenue", the question box gives you suggestions. Select a suggestion or press Enter.
 
-    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png" alt-text="Screenshot of a question in the question box.":::
+    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png" alt-text="Screenshot of a question in the question box." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png":::
 
 1. To add the chart to your dashboard as a tile, select **Pin visual** in the upper right corner. If the dashboard has been shared with you, you aren't able to pin any visualizations.
 
 1. Pin the tile to an existing dashboard or to a new dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard-2.png" alt-text="Screenshot of the Pin to dashboard dialog.":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard-2.png" alt-text="Screenshot of the Pin to dashboard dialog." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard-2.png":::
 
    - Existing dashboard: select the name of the dashboard from the dropdown. Your choices are limited to only those dashboards within the current workspace.
    - New dashboard: type the name of the new dashboard, and it will be added to your current workspace.
@@ -50,16 +54,16 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
    A success message lets you know the visualization was added as a tile to your dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png" alt-text="Screenshot of the pinned to dashboard dialog.":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png" alt-text="Screenshot of the pinned to dashboard dialog." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-success.png":::
 1. Select **Go to dashboard** to see the new tile. There, you can [rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md) on your dashboard.
 
-   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="A screenshot of the dashboard with tiles.":::
+   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png" alt-text="Screenshot of the dashboard with tiles." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned-2.png":::
 
 ## Considerations and troubleshooting
 
 - When you start typing a question, Q&A immediately begins searching for the best answer from all semantic models associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
 
-  :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png" alt-text="screenshot of the tile pinned to the dashboard.":::
+  :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png" alt-text="Screenshot of the tile pinned to the dashboard." lightbox="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png":::
 
 - **How does Q&A know which semantic models to use**? Q&A has access to all semantic models that have at least one visualization pinned to that dashboard.
 

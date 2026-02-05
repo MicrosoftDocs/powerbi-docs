@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/22/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Ask questions of your data
 #customer intent: As a Power BI user I want to learn how to create question and answer visuals in Power Bi.
 ---
@@ -15,6 +16,9 @@ LocalizationGroup: Ask questions of your data
 # Create a Q&A visual in a dashboard in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. In this article, we look at two different ways of creating the same visualization: first, asking a question with Q&A in a dashboard, and second, building it in a report. We use the Power BI service to build the visual in the report, but the process is almost identical using Power BI Desktop.
 

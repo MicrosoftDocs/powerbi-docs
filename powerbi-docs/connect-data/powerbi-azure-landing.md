@@ -1,8 +1,9 @@
 ---
 title: Power BI for Azure users
 description: Learn how to get the most out of Power BI. See resources for embedding Power BI in apps, adding AI to Power BI, and using Power BI to analyze Azure data.
-author: willthom
-ms.author: willthom
+author: kgremban
+ms.author: kgremban
+ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: landing-page
@@ -48,4 +49,4 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
 
 **Enrich Power BI with Azure Machine Learning**:
 
-- [Azure Machine Learning and Power BI](/power-bi/transform-model/dataflows/dataflows-machine-learning-integration)
+- [Azure Machine Learning and Power BI](/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services)

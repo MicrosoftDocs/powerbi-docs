@@ -1,10 +1,11 @@
 ---
-title: "Set a No Data message for a data region (Power BI Report Builder)"
+title: Set a No Data Message for a Data Region (Power BI Report Builder)
 description: Learn how to set a no data message to show in a rendered report in place of a data region that has no data.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -20,7 +21,7 @@ ms.reviewer: rpatkar
 - The [NoDataText property](#set-the-nodatatext-property-for-a-color-scale-for-a-map) for the color scale for a map.
 - The [NoRowsMessage property](#set-the-norowsmessage-for-a-subreport) for a subreport when no datasets in the subreport have data at run time.
 
-At run time, the report processor runs the query for each dataset in a report and the dataset query may produce no result set. For a data region bound to an empty dataset, you can specify text to display instead of displaying an empty data region.
+At run time, the report processor runs the query for each dataset in a report and the dataset query might produce no result set. For a data region bound to an empty dataset, you can specify text to display instead of displaying an empty data region.
   
 ## Set the NoRowsMessage property for a table, matrix, or list  
   

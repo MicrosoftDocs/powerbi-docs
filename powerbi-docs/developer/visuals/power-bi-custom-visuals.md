@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 11/2/2024
+ms.date: 12/15/2025
 LocalizationGroup: Visualizations
 ms.custom: intro-overview, engagement-fy23
 #customer intent: As a Power BI user, I want to learn about the different sources for acquiring custom visuals so that I can enhance my Power BI reports.
@@ -23,7 +23,7 @@ ms.custom: intro-overview, engagement-fy23
 
 ## Core Power BI visuals
 
-Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
+Power BI comes with many out-of-the box visuals. These Power BI visuals are available in the visualization pane of both [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) and [Power BI service](https://app.powerbi.com), and can be used for creating and editing Power BI content.
 
 :::image type="content" source="media/power-bi-custom-visuals/power-bi-visualizations.png" alt-text="Screenshot of default the Power B I visualization pane as it appears in Power BI Desktop and Power B I service.":::
 

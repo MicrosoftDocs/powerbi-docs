@@ -6,8 +6,8 @@ ms.author: juliacawthra
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.topic: conceptual
-ms.date: 09/22/2025
+ms.topic: concept-article
+ms.date: 01/30/2026
 no-loc: [Copilot]
 ---
 
@@ -15,7 +15,59 @@ no-loc: [Copilot]
 
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
-See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## January 2026 QFE 1 
+
+*Version 2.150.2102.0, Released: January 28, 2026*
+
+Bug fixes/improvements: 
+
+- Addressed the problem with view switcher icons not displaying correctly in Power BI Desktop, caused by a WebView2 regression.
+- Verified Answers doesn't support Dynamic M Query parameters. When a Dynamic M Query parameter is used as a filter, it's blocked in Verified Answers. If the filter is unconditional, the filter option is disabled in the "Available to viewers" section of the filter overlay.
+
+## November 2025 QFE 3 
+
+*Version 2.149.1429.0, Released: December 5, 2025*
+
+Bug fixes/improvements: 
+
+- Addressed a regression where an empty schema was being returned when using more two or more models that contained only tables (with no measures or relationships). This caused errors such as "Something went wrong" or Copilot indicating no models or schema were available in multimodel authoring scenarios.
+
+## November 2025 QFE 2 
+
+*Version 2.149.1252.0, Released: December 1, 2025*
+
+Bug fixes/improvements: 
+
+- Live connect sessions are currently generating local resources and data indexing. Implemented a fix for Live connect sessions to use remote resources and interpret for QnA features.
+
+## November 2025 QFE 1 
+
+*Version 2.149.1203.0, Released: November 25, 2025*
+
+Bug fixes/improvements: 
+
+- Added enhanced error handling for browser runtime exceptions during page load, treating them as fatal errors.
+- Bug fix addressing the issue of alternate visual names not being recognized.
+
+## October 2025 QFE 2
+
+*Version  2.148.1477.0 Released: November 10, 2025*
+
+Bug fixes/improvements:
+
+- Fixed the issue where calculated tables were previously omitted from the refresh process.
+
+## October 2025 QFE 1
+
+*Version  2.148.1226.0 Released: October 28, 2025*
+
+Bug fixes/improvements:
+
+- Feature update to treat calculated tables as refreshable.
+- Resolved an issue where the user sees the "This query contains transformations that can't be used for DirectQuery" error when using the Snowflake connector in DirectQuery mode. Also resolved the "This step results in a query that is not supported in DirectQuery mode. Switch all tables to Import mode" error seen in the Snowflake connector.
+- Fixed scenarios when the user opens PBIP files with the connection or file errors and the Power BI Desktop hangs in the noninitialized state.
 
 ## September 2025 QFE 2 
 
@@ -967,7 +1019,7 @@ Bug fixes:
 
 ## Related content
 
-- [What's new in Power BI](desktop-latest-update.md)
+- [What's new in Power BI](whats-new.md)
 - [Previous monthly updates to Power BI](desktop-latest-update-archive.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

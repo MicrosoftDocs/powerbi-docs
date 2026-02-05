@@ -1,12 +1,13 @@
 ---
-title: "Add a language to a Power BI report in Translations Builder"
+title: "Add a Language to a Power BI Report in Translations Builder"
 description: Learn how to add a secondary language and translations to a Power BI report by using Translations Builder.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/21/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Add a language to a report in Translations Builder
 
@@ -39,9 +40,7 @@ Translations Builder abstracts away the differences between a language and a cul
 To add one or more secondary languages, follow these steps.
 
 1. Select **Add Language** to display the **Add Language** dialog box.
-
 1. Select a language in the list or use **Ctrl** to select multiple languages.
-
 1. Select **Add Language**.
 
    :::image type="content" source="./media/translation-builder-add-language/translations-builder-add-language.png" alt-text="Screenshot shows the Add Language button in Translations Builder.":::
@@ -70,13 +69,11 @@ If content creators speak all the languages involved, they can add and update tr
 You can't verify your multiple-language work in Power BI Desktop. Instead, you must test your work in the Power BI service in a workspace associated with a Premium capacity. After you add translation support with Translations Builder, follow these steps:
 
 1. In Power BI Desktop, save changes to the underlying .pbix file.
-
 1. In the **Home** ribbon, select **Publish**.
 
    :::image type="content" source="./media/translation-builder-add-language/power-bi-home-publish.png" alt-text="Screenshot shows the Power BI Desktop Home ribbon with the Publish button highlighted." lightbox="./media/translation-builder-add-language/power-bi-home-publish.png":::
 
 1. In the **Publish to Power BI** dialog box, highlight a workspace and then choose **Select**.
-
 1. When the publishing finishes, select the link to open the project in the Power BI service.
 
 After the report loads with its default language, select the browser address bar and add the following **language** parameter to the report URL.

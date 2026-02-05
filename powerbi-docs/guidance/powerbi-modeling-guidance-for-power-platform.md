@@ -1,12 +1,12 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Advanced data preparation"
 description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

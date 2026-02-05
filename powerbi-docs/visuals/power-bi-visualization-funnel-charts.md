@@ -1,15 +1,16 @@
 ---
 title: Create and use funnel charts in Power BI
 description: Learn how to work with Funnel charts in Power BI Desktop and the Power BI service.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.custom: video-qKRZPBnaUXM, sample-opportunityanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/28/2023
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Create and use funnel charts in Power BI
@@ -81,8 +82,7 @@ This tutorial uses the Opportunity Analysis Sample in the Power BI service.
 
 ---
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a basic funnel chart
 
@@ -129,4 +129,4 @@ For information about working with the **Filters** pane in Power BI, see [Add a 
 ## Related content
 
 - Create [radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

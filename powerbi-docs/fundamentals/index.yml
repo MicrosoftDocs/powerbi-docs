@@ -8,10 +8,11 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
   ms.topic: landing-page
+  ms.update-cycle: 1095-days
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 08/28/2025
+  ms.date: 01/15/2026
 
 landingContent:
   - title: Learn the basics
@@ -28,7 +29,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Power BI?
-            url: desktop-latest-update.md
+            url: whats-new.md
           - text: Desktop change log
             url: desktop-change-log.md
 

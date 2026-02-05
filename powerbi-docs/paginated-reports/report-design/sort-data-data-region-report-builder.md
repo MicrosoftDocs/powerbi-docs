@@ -1,10 +1,11 @@
 ---
-title: "Sort data in a data region in a Power BI paginated report | Microsoft Docs"
+title: Sort Data in a Data Region in a Power BI Paginated Report
 description: Learn how to change the sort order of data in a data region in a Power BI paginated report when a report first runs in Power BI Report Builder.
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

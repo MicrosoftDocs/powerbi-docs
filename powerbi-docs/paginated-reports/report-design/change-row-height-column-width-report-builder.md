@@ -1,10 +1,11 @@
 ---
-title: "Change row height or column width in a Power BI paginated report | Microsoft Docs"
+title: Change Row Height or Column Width in a Power BI Paginated Report
 description: Learn about setting a column width or a fixed row height with text box properties for rendered paginated reports in Power BI Report Builder. 
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -32,11 +33,11 @@ ms.reviewer: saurkumar
   
 1.  In Design view, select a cell in the table row.  
   
-     ![Screenshot of a Selected Cell in a Table.](media/table-select-cell.png "Screenshot of a Selected Cell in a Table.")   
+     :::image type="content" source="media/table-select-cell.png" alt-text="Screenshot of a Selected Cell in a Table." lightbox="media/table-select-cell.png":::   
   
 1.  In the **Properties** pane that displays, modify the **Height** property, and then select anywhere outside the **Properties** pane.  
   
-     ![Screenshot of Properties Pane for selected table cell.](media/cell-properties-pane.png "Screenshot of Properties Pane for selected table cell.")  
+     :::image type="content" source="media/cell-properties-pane.png" alt-text="Screenshot of Properties Pane for selected table cell." lightbox="media/cell-properties-pane.png":::  
   
 ## Prevent a row from automatically expanding vertically  
   

@@ -1,8 +1,8 @@
 ---
 title: Q&A tutorial for Power BI dashboards
 description: Learn how to explore a sample in the Power BI service and create a visual by using natural language in Q&A.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -14,6 +14,9 @@ LocalizationGroup: Ask questions of your data
 # Tutorial: Use Power BI Q&A to explore your data and create visuals on a dashboard
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
 

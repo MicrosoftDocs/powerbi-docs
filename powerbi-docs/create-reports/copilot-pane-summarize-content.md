@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/09/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
@@ -17,7 +17,7 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Copilot lets you create insightful summaries about their reports. Copilot takes the visuals that were curated and built by report authors and generates summaries, overviews, insights and answers grounded in the report data. You can access these summaries in the Copilot report pane or in the standalone Copilot agent in Power BI. 
+Copilot lets you create insightful summaries about your reports. Copilot takes the visuals that were curated and built by report authors and generates summaries, overviews, insights and answers grounded in the report data. You can access these summaries in the Copilot report pane or in the standalone Copilot agent in Power BI. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
@@ -50,11 +50,11 @@ Or you can select other prompts from the user prompt guide in the lower left-han
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/copilot-updated-prompt-guide.png":::
 
-After you choose a prompt, select **Enter** and watch Copilot generate your summary.
+After you choose a prompt, select **Enter** and watch Copilot generate your summary.  Once the summary begins, you can watch it update as it writes the response.
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing and updated view of the report summary response." lightbox="media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
 
-Copilot uses Azure OpenAI to look at the visual metadata on the report and create a natural language summary. It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that aren't currently applied. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.
+Copilot uses Azure OpenAI to look at the visual metadata on the report and create a natural language summary. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.  The summaries will give a general overview of the data that's currently visualized. 
 
 ## Citations
 
@@ -64,7 +64,7 @@ In a summary response from the Copilot pane, citations are provided within the s
 
 ## Custom prompts
 
-The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. 
+The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. You can even ask about data behind slicers and filters on your report page.  So long as the filter or slicer exists in the report, Copilot can filter the response for you.
  
 :::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="media/copilot-pane-summarize-content/bulleted-insights.png":::
 
@@ -76,8 +76,7 @@ Copilot allows you to generate a custom summary to fit your business needs. Here
 - Summarize the data in a way that allows me to use it in an email to leadership.
 - Summarize the data specific to Seattle, WA.
 
-> [!TIP] 
-> For nuanced summaries about filtered data, filters and slicers must be applied in the report.
+
 
 ## Benefits
 
@@ -92,7 +91,7 @@ This customization allows you to focus on nuanced aspects of the data that are r
 
 ## Answer questions about your report content in the Copilot pane
 
-The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow-up questions about your report or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report.
+The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow-up questions about your report or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report.  You can even ask about data behind different slicers and filters in your report, and the citation will reference the correct, filtered visual.  Some filter types are not supported, for example, relative date filters.
 
 ## Examples of questions you can ask 
 
@@ -127,7 +126,7 @@ In this immersive experience, you can also dive deeper into the visuals provided
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png" alt-text="Screenshot showing what happens when users explore in the full immersive summary in Copilot." lightbox="media/copilot-pane-summarize-content/copilot-explore-in-immersive.png":::
 
-Lastly, in the standalone experience, you are able to ask about report data behind filters and slicers, and get filtered answers and summaries back.  This is different from the report pane experience, but we will bring the filtering capability there soon.  Here is an example where I have asked Copilot specifically for a summary about Maui, rather than an overview.  
+Remember, you can filter. Here is an example where I have asked Copilot specifically for a summary about Maui, rather than an overview.  
 
 :::image type="content" source="media/copilot-create-narrative/copilot-filtered-summary.png" alt-text="Screenshot of a filtered summary and hover icon in standalone experience." lightbox="media/copilot-create-narrative/copilot-filtered-summary.png":::
 
@@ -188,13 +187,13 @@ The information we give is:
 
 The following are limitations and considerations across both experiences (also see the [best practices](#best-practices) section).
 
-- Filters and slicers aren't yet supported in summary REPORT PANE experiences (coming soon)
-- Filter limitations for standalone experience:
-  - Filters and slicers must exist on the report to be applied in standalone 
+- Filter limitations:
+  - Filters and slicers must exist on the report to be applied in Copilot responses
   - Page and report level filters are supported, visual level filters are not yet supported
   - Basic, categorical filters/slicers are supported
-  - Advanced filters/slicers aren't yet supported but are coming soon
-  - Filters with a high volume of instance values (filter options) may not work with a high degree of accuracy yet
+  - Advanced filters are supported, minus relative date/time filters, is/is not blank/empty, and numerical range filters (between X and Y).
+  - Field parameters are not supported as slicers/filter types.
+  
 - For the Copilot button to be available in reports, the report needs to be in:
   - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
   - A tenant where the admin settings are enabled.

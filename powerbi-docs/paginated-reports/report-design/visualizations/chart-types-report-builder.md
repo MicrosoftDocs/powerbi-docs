@@ -1,10 +1,11 @@
 ---
-title: "Chart types in a Power BI paginated report | Microsoft Docs"
+title: Chart Types in a Power BI Paginated Report
 description: Choose from unique chart characteristics to help you visualize your dataset and assist you in choosing an appropriate chart type in a paginated report in Power BI Report Builder.
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -14,7 +15,7 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-It is important to choose an appropriate chart type for the type of data that you are presenting in a Power BI paginated report. This determines how well the data can be interpreted when put in chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it may be better presented using an area, line, or scatter chart. For discussion on how to prepare your data depending on the chart type selected, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
+It is important to choose an appropriate chart type for the type of data that you are presenting in a Power BI paginated report. This determines how well the data can be interpreted when put in chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it might be better presented using an area, line, or scatter chart. For discussion on how to prepare your data depending on the chart type selected, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
 
 ## Choose a chart type
 
@@ -25,18 +26,18 @@ It is important to choose an appropriate chart type for the type of data that yo
   
 |Chart type|Display ratio data|Display stock data|Display linear data|Display multi-value data|  
 |----------------|------------------------|------------------------|-------------------------|-------------------------------|  
-|[Area charts in paginated reports (Power BI Report Builder)](area-charts-report-builder.md)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Bar charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Data Bars](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Column charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/column-charts-report-builder-and-ssrs)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Pie charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||||  
-|[Polar charts in Power BI paginated reports (Power BI Report Builder)](polar-charts-report-builder.md)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||||  
-|[Range charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs)|||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|  
-|[Scatter charts in Power BI paginated report (Power BI Report Builder)](scatter-charts-report-builder.md)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||  
-|[Shape charts in Power BI paginated report (Power BI Report Builder)](shape-charts-report-builder.md)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||||  
-|[Sparklines](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|  
-|[Stock charts in Power BI paginated reports (Power BI Report Builder)](stock-charts-report-builder.md)||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|  
+|[Area charts in paginated reports (Power BI Report Builder)](area-charts-report-builder.md)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Bar charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Data Bars](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Column charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/column-charts-report-builder-and-ssrs)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Pie charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||||  
+|[Polar charts in Power BI paginated reports (Power BI Report Builder)](polar-charts-report-builder.md)|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||||  
+|[Range charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs)|||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|  
+|[Scatter charts in Power BI paginated report (Power BI Report Builder)](scatter-charts-report-builder.md)|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||  
+|[Shape charts in Power BI paginated report (Power BI Report Builder)](shape-charts-report-builder.md)|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||||  
+|[Sparklines](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|  
+|[Stock charts in Power BI paginated reports (Power BI Report Builder)](stock-charts-report-builder.md)||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::||:::image type="content" source="media/paginated-reports-visualizations/green-check.png" alt-text="Screenshot showing Available." lightbox="media/paginated-reports-visualizations/green-check.png":::|  
 
 ## Related content
 

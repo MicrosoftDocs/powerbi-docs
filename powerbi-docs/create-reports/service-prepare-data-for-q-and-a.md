@@ -7,10 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Ask questions of your data
 ---
 # Make Excel data work well with Q&A in Power BI
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 If you create data models or build Excel workbooks for Power BI, this article can help you.
 
@@ -25,7 +29,7 @@ Q&A has a set of core natural language understanding abilities that work across 
 For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities. You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more:
 
 - [Using Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)
-- [Visualization types you can specify in a Q&A query](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md)
 
 Or get started.
 
@@ -35,14 +39,14 @@ Q&A relies on the names of tables, columns, and calculated fields to answer data
 
 Here are some tips for making the most of Q&A in your workbook:
 
-* Make sure your data is in an Excel table. Here's [how to create an Excel table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664).
-* Make sure the names of your tables, columns, and calculated fields make sense in natural speech.
+- Make sure your data is in an Excel table. Here's [how to create an Excel table](https://support.microsoft.com/office/create-and-format-tables-e81aa349-b006-4f8a-9806-5af9df0ac664).
+- Make sure the names of your tables, columns, and calculated fields make sense in natural speech.
   
-    For example, if you have a table with sales data, call the table “Sales”. Column names like “Year”, “Product”, “Sales Rep”, and “Amount” work well with Q&A.
+    For example, if you have a table with sales data, call the table "Sales". Column names like "Year", "Product", "Sales Rep", and "Amount" work well with Q&A.
 
-* If your workbook has a Power Pivot data model, you can do even more optimizations. Read [Demystifying Power BI Q&A part 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) from our in-house team of natural language experts.
+- If your workbook has a Power Pivot data model, you can do even more optimizations. Read [Demystifying Power BI Q&A part 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) from our in-house team of natural language experts.
 
-* Open the semantic model in Power BI Desktop. Create new columns and measures, concatenate fields to create unique values, and classify data by types such as dates, strings, geography, images, URLs, and more.
+- Open the semantic model in Power BI Desktop. Create new columns and measures, concatenate fields to create unique values, and classify data by types such as dates, strings, geography, images, URLs, and more.
 
 ## Related content
 

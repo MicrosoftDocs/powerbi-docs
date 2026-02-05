@@ -1,8 +1,8 @@
 ---
 title: Enter data directly into Power BI Desktop
 description: Find out how to easily add data directly into Power BI Desktop to use that data in your reports and visualizations.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi

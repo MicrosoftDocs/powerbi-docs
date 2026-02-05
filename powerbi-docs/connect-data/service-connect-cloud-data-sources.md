@@ -1,19 +1,18 @@
 ---
 title: Connect to cloud data sources in the Power BI service
 description: Learn how to connect to cloud data sources and share connections in the Power BI service.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/28/2025
+ms.date: 10/01/2025
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
 
 With Power BI, you can share cloud connections for semantic models and paginated reports, datamarts and dataflows, as well as Power Query Online experiences in *Get data*, enabling you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source, with different credentials or privacy settings, and share the connections with others, alleviating the need for those users to manage their own separate cloud connections. 
-
 
 ## Types of data connections
 
@@ -148,6 +147,8 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 * You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
 
 * Power BI Dataflow Gen1 and Fabric Dataflow Gen2 don't support sharable cloud connections. Other versions, like Power Apps dataflows, do support sharable cloud connections.
+
+* Group managed service account (gSMA) credentials are unsupported for SQL data connections. A gSMA isn't designed for running the data connection.
 
 ## Related content
 

@@ -1,14 +1,15 @@
 ---
-title: Create and manage relationships in Power BI Desktop
-description: Learn how to create and manage relationships in Power BI Desktop using autodetect and manual methods.
-author: JulCsc
-ms.author: juliacawthra
+title: Create and Manage Relationships in Power BI Desktop
+description: Learn how to create and manage relationships in Power BI Desktop using autodetect and manual methods, including cardinality options, cross-filter directions, and relationship editing techniques.
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/04/2024
+ms.date: 10/01/2025
 ms.custom: FY25Q1-Linter
+ai-usage: ai-assisted
 LocalizationGroup: Model your data
 #customer intent: As a Power BI Desktop user I want to learn to create and manage relationships.
 ---
@@ -29,10 +30,8 @@ On the **Modeling** tab, select **Manage relationships** \> **Autodetect**.
 ## Create a relationship manually
 
 1. On the **Modeling** tab, select **Manage relationships** \> **New**.
-
-2. In the **Create relationship** dialog box, in the first table drop-down list, select a table. Select the column you want to use in the relationship.
-
-3. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then select **OK**.
+1. In the **Create relationship** dialog box, in the first table drop-down list, select a table. Select the column you want to use in the relationship.
+1. In the second table drop-down list, select the other table you want in the relationship. Select the other column you want to use, and then select **OK**.
 
    :::image type="content" source="media/desktop-create-and-manage-relationships/manualrelationship2.gif" alt-text="Animation showing how to create a manual relationship.":::
 
@@ -42,8 +41,8 @@ If none of the tables selected for the relationship has unique values, you'll se
 
 If you encounter that error, there are a couple ways to fix the issue:
 
-* Use **Remove Duplicates** to create a column with unique values. The drawback to this approach is that you might lose information when duplicate rows are removed.  Often a key (row) is duplicated for good reason.
-* Add an intermediary table made of the list of distinct key values to the model, which is then linked to both original columns in the relationship.
+- Use **Remove Duplicates** to create a column with unique values. The drawback to this approach is that you might lose information when duplicate rows are removed.  Often a key (row) is duplicated for good reason.
+- Add an intermediary table made of the list of distinct key values to the model, which is then linked to both original columns in the relationship.
 
 For more information, see this [blog post](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
@@ -63,17 +62,17 @@ The other method of editing a relationship is using the **Relationship editor di
 
 From **Report view** do any of the following:
 
-* Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
-* Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
+- Select the **Modeling** ribbon > **Manage relationships**, then select the relationship and select **Edit**.
+- Select a table in the **Fields** list then select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then select **Edit**.
 
 From the Table view, select the **Table tools** ribbon > **Manage relationships**, then select the relationship and then choose **Edit**.
 
 From the **Model** view do any of the following:
 
-* Select the **Home** ribbon > **Manage relationships**, then choose the relationship and then select **Edit**.
-* Double-click any line between two tables.
-* Right-click any line between two tables and then choose **Properties**.
-* Select any line between two tables, then choose **Open relationship editor** in the **Properties** pane.
+- Select the **Home** ribbon > **Manage relationships**, then choose the relationship and then select **Edit**.
+- Double-click any line between two tables.
+- Right-click any line between two tables and then choose **Properties**.
+- Select any line between two tables, then choose **Open relationship editor** in the **Properties** pane.
 
 Finally, you can also edit a relationship from any view, right-click, or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship, and then select **Edit**
 
@@ -102,13 +101,10 @@ When you create or edit a relationship, you can configure more options. By defau
 
 The **Cardinality** option can have one of the following settings:
 
-**Many to one (\*:1)**: A many-to-one relationship is the most common, default type of relationship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
-
-**One to one (1:1)**: In a one-to-one relationship, the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
-
-**One to many (1:*)**: In a one-to-many relationship, the column in one table has only one instance of a particular value, and the other related table can have more than one instance of a value.
-
-**Many to many (\*:\*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](./desktop-many-to-many-relationships.md).
+- **Many to one (\*:1)**: A many-to-one relationship is the most common, default type of relationship. It means the column in a given table can have more than one instance of a value, and the other related table, often know as the lookup table, has only one instance of a value.
+- **One to one (1:1)**: In a one-to-one relationship, the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
+- **One to many (1:*)**: In a one-to-many relationship, the column in one table has only one instance of a particular value, and the other related table can have more than one instance of a value.
+- **Many to many (\*:\*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](./desktop-many-to-many-relationships.md).
 
 For more information about when to change cardinality, see [Understanding additional options](#understanding-additional-options).
 
@@ -138,10 +134,10 @@ Let’s go through a quick tutorial, to better show you how relationships work i
 >You can complete this lesson yourself:
 >
 > 1. Copy the following **ProjectHours** table into an Excel worksheet (excluding the title), select all of the cells, and then select **Insert** \> **Table**.
-> 2. In the **Create Table** dialog box, select **OK**.
-> 3. Select any table cell, select **Table Design** \> **Table Name**, and then enter *ProjectHours*.
-> 4. Do the same for the **CompanyProject** table.
-> 5. Import the data by using **Get Data** in Power BI Desktop. Select the two tables as a data source, and then select **Load**.
+> 1. In the **Create Table** dialog box, select **OK**.
+> 1. Select any table cell, select **Table Design** \> **Table Name**, and then enter *ProjectHours*.
+> 1. Do the same for the **CompanyProject** table.
+> 1. Import the data by using **Get Data** in Power BI Desktop. Select the two tables as a data source, and then select **Load**.
 
 The first table, **ProjectHours**, is a record of work tickets that record the number of hours a person has worked on a particular project.
 
@@ -193,14 +189,14 @@ If we look at the **ProjName** column in the **CompanyProject** table, we see th
 ### To create the new relationship
 
 1. Select **Manage relationships** from the **Modeling** tab.
-2. In **Manage relationships**, select **New** to open the **Create relationship** dialog box, where we can select the tables, columns, and any other settings we want for our relationship.
-3. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many sides of our relationship.
-4. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship.
-5. Accept the defaults for the relationship options, and then select **OK**.
+1. In **Manage relationships**, select **New** to open the **Create relationship** dialog box, where we can select the tables, columns, and any other settings we want for our relationship.
+1. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many sides of our relationship.
+1. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship.
+1. Accept the defaults for the relationship options, and then select **OK**.
 
    :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_create_compproj.png" alt-text="Screenshot of the Create relationship dialog box.":::
 
-6. In the **Manage relationships** dialog box, select **Close**.
+1. In the **Manage relationships** dialog box, select **Close**.
 
 In the interest of full disclosure, you just created this relationship the hard way. You could have selected **Autodetect** in the **Manage relationships** dialog box. In fact, autodetect would have automatically created the relationship for you when you loaded the data if both columns had the same name.
 
@@ -230,14 +226,13 @@ You can manage how Power BI treats and automatically adjusts relationships in yo
 
 There are three options that can be selected and enabled:
 
-* **Import relationships from data sources on first load**: This option is selected by default. When it's selected, Power BI checks for relationships defined in your data source, such as foreign key/primary key relationships in your data warehouse. If such relationships exist, they're mirrored into the Power BI data model when you initially load data. This option enables you to quickly begin working with your model, rather than requiring you find or define those relationships yourself.
-
-* **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your semantic model is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
+- **Import relationships from data sources on first load**: This option is selected by default. When it's selected, Power BI checks for relationships defined in your data source, such as foreign key/primary key relationships in your data warehouse. If such relationships exist, they're mirrored into the Power BI data model when you initially load data. This option enables you to quickly begin working with your model, rather than requiring you find or define those relationships yourself.
+- **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your semantic model is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
 
    > [!WARNING]
    > If you're using row-level security that relies on the defined relationships, we don't recommend selecting this option. If you remove a relationship that your RLS settings rely on, your model might become less secure.
 
-* **Autodetect new relationships after data is loaded**: This option is described in [Autodetect during load](#autodetect-during-load).
+- **Autodetect new relationships after data is loaded**: This option is described in [Autodetect during load](#autodetect-during-load).
 
 ## Future updates to the data require a different cardinality
 
@@ -344,8 +339,8 @@ If you have a table pattern like this, with loops, then cross filtering can crea
 
 As with active/inactive relationships, Power BI Desktop won’t allow a relationship to be set to **Both** if it will create ambiguity in reports. There are several different ways you can handle this situation. Here are the two most common:
 
-* Delete or mark relationships as inactive to reduce ambiguity. Then, you might be able to set a relationship cross filtering as **Both**.
-* Bring in a table twice (with a different name the second time) to eliminate loops. Doing so makes the pattern of relationships like a star schema. With a star schema, all of the relationships can be set to **Both**.
+- Delete or mark relationships as inactive to reduce ambiguity. Then, you might be able to set a relationship cross filtering as **Both**.
+- Bring in a table twice (with a different name the second time) to eliminate loops. Doing so makes the pattern of relationships like a star schema. With a star schema, all of the relationships can be set to **Both**.
 
 ## Wrong active relationship
 
@@ -387,9 +382,8 @@ Let’s look at an example. The first table is **ProjectTickets**, and the secon
 
 There are actually two relationships here:
 
-* Between **Employee** in the **EmployeeRole** table and **SubmittedBy** in the **ProjectTickets** table.
-
-* Between **OpenedBy** in the **ProjectTickets** table and **Employee** in the **EmployeeRole** table.
+- Between **Employee** in the **EmployeeRole** table and **SubmittedBy** in the **ProjectTickets** table.
+- Between **OpenedBy** in the **ProjectTickets** table and **Employee** in the **EmployeeRole** table.
 
  :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_activerelview.png" alt-text="Screenshot of a two-relationship example.":::
 
@@ -459,14 +453,15 @@ When you see the **Can't determine relationships between the fields** error, you
 1. Check your model. Is it set up appropriately for the types of questions you want answered from your analysis? Can you change some of the relationships between tables? Can you avoid creating an indirect *Many to Many*?
 
     Consider converting your reversed *V* shape schema to two tables, and use a direct *Many to Many* relationship between them as described in [apply many-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
-2. Add a constraint to the visual in the form of a summarized column or a model measure.
-3. If a summarized column is added and there still is an error, consider using a model measure.
+
+1. Add a constraint to the visual in the form of a summarized column or a model measure.
+1. If a summarized column is added and there still is an error, consider using a model measure.
 
 ## Related content
 
 For more information about models and relationships, see the following articles:
 
-* [Use composite models in Power BI Desktop](desktop-composite-models.md)
-* [Storage mode in Power BI Desktop](desktop-storage-mode.md)
-* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-* [Power BI data sources](../connect-data/power-bi-data-sources.md)
+- [Use composite models in Power BI Desktop](desktop-composite-models.md)
+- [Storage mode in Power BI Desktop](desktop-storage-mode.md)
+- [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+- [Power BI data sources](../connect-data/power-bi-data-sources.md)

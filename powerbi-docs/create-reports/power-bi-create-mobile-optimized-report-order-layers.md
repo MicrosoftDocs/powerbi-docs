@@ -8,7 +8,8 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/26/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 
@@ -24,7 +25,7 @@ The Selection pane lists all the visuals that are on the canvas. The order of th
 
 The Selection pane also has an appearance indication for each visual in the list, but it isn't possible to change the appearance in the Mobile layout view&mdash;this must be done in the regular desktop layout view.
 
-![Screenshot showing Selection pane and how to open it.](media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png)
+:::image type="content" source="media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png" alt-text="Screenshot showing Selection pane and how to open it.":::
 
 ## Related content
 

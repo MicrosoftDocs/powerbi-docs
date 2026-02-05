@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/13/2019
+ms.date: 11/01/2025
 ms.custom: intro-migration
+ai-usage: ai-assisted
 ---
 
 # Migrate a report server installation
@@ -20,7 +21,7 @@ Migration is defined as moving application data files to a new Power BI Report S
 * You want to move from SQL Server Reporting Services to Power BI Report Server
   
   > [!NOTE]
-  > There is not an inplace upgrade from SQL Server Reporting Services to Power BI Report Server. A migration is necessary.
+  > There isn't an in-place upgrade from SQL Server Reporting Services to Power BI Report Server. A migration is necessary.
 
 * You have a large-scale deployment or update requirements
 * You're changing the hardware or topology of your installation
@@ -30,30 +31,60 @@ Migration is defined as moving application data files to a new Power BI Report S
 
 Migrating from an SSRS (Native mode) instance to Power BI Report Server consists of a few steps.
 
-![Migrate from SSRS native mode to Power BI Report Server](media/migrate-report-server/migrate-from-ssrs-native.png "Migrate from SSRS native mode to Power BI Report Server")
+:::image type="content" source="media/migrate-report-server/migrate-from-ssrs-native.png" alt-text="Screenshot showing Migrate from SSRS native mode to Power BI Report Server.":::
+
+> [!NOTE]
+> Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released.
 
 > [!IMPORTANT]
-> Migrations from SQL Server 2022 Reporting Services currently aren't supported. These migrations will require migration to Power BI Report Server (May 2025) or later. 
+> Migrations from SQL Server 2022 Reporting Services and later require Power BI Report Server (May 2025) or later. 
 
 > [!NOTE]
-> SQL Server 2008 Reporting Services and later are supported for migration.
+> SQL Server 2008 Reporting Services and later versions are supported for migration.
 
-* Backup database, application, and configuration files
-* Back up the encryption key
-* Clone your report server database hosting your reports
-* Install Power BI Report Server. If you're using the same hardware, you can install Power BI Report Server on the same server as the SSRS instance. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
+1. Back up the encryption key.
+1. Back up the report server databases.
+1. Clone your report server database to the target SQL Server instance.
+1. Install Power BI Report Server. If you're using the same hardware, you can install Power BI Report Server on the same server as the SSRS instance. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
 
-> [!NOTE]
-> The instance name for the Power BI Report Server will be *PBIRS*.
+   > [!NOTE]
+   > The instance name for the Power BI Report Server will be *PBIRS*.
 
-* Configure the report server using Report Server Configuration Manager and connect to the cloned database.
-* Perform any cleanup needed for the SSRS (Native mode) instance
+1. Configure the report server using Report Server Configuration Manager and connect to the cloned database.
+1. Perform any cleanup needed for the SSRS (Native mode) instance.
+
+### Back up the encryption key
+
+Back up the encryption key before any migration. You need the encryption key to restore encrypted data such as stored credentials and connection strings.
+
+1. Open **Report Server Configuration Manager** and connect to your SSRS instance.
+1. Select **Encryption Keys** in the left pane.
+1. Select **Backup**, specify a file location, and enter a password to protect the key file.
+1. Store the backup file in a secure location separate from your database backups.
+
+### Back up the report server databases
+
+Back up both the report server catalog database (typically `ReportServer`) and the temporary database (typically `ReportServerTempDB`).
+
+1. Open **SQL Server Management Studio** and connect to the SQL Server instance hosting your report server databases.
+1. Right-click the `ReportServer` database, select **Tasks** > **Back Up**.
+1. Choose **Full** backup type and specify a backup destination.
+1. Repeat for the `ReportServerTempDB` database.
+
+### Clone the database to the target server
+
+Restore the backed-up databases to the SQL Server instance that will host the Power BI Report Server databases.
+
+1. In SQL Server Management Studio, connect to the target SQL Server instance.
+1. Right-click **Databases** and select **Restore Database**.
+1. Select **Device** and locate your backup file.
+1. Restore the database with the same name (for example, `ReportServer`).
 
 ## Migration to Power BI Report Server from SSRS (SharePoint-integrated mode)
 
 Migrating from an SSRS (SharePoint-integrated mode) to Power BI Report Server is not as straight forward as native mode. While these steps provide some guidance, you may have other files and assets within SharePoint that you need to manage outside of these steps.
 
-![Migrate from SSRS SharePoint-integrated mode to Power BI Report Server](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrate from SSRS SharePoint-integrated mode to Power BI Report Server")
+:::image type="content" source="media/migrate-report-server/migrate-from-ssrs-sharepoint.png" alt-text="Screenshot showing Migrate from SSRS SharePoint-integrated mode to Power BI Report Server.":::
 
 You need to migrate the specific report server content from SharePoint to your Power BI Report Server. You need to have already installed Power BI Report Server somewhere in your environment. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
 
@@ -79,22 +110,22 @@ rs.exe
 
 Migrating from one Power BI Report Server is the same process as migrating from SSRS (Native-mode).
 
-![Migrate from Power BI Report Server to Power BI Report Server](media/migrate-report-server/migrate-from-pbirs.png "Migrate from Power BI Report Server to Power BI Report Server")
+:::image type="content" source="media/migrate-report-server/migrate-from-pbirs.png" alt-text="Screenshot showing Migrate from Power BI Report Server to Power BI Report Server.":::
 
-* Backup database, application, and configuration files
-* Back up the encryption key
-* Clone your report server database hosting your reports
+1. Back up database, application, and configuration files.
+1. Back up the encryption key.
+1. Clone your report server database hosting your reports.
 
-> [!NOTE]
-> The name of the database must stay the same when restored to the Power BI Report Server.
+   > [!NOTE]
+   > The name of the database must stay the same when restored to the Power BI Report Server.
 
-* Install Power BI Report Server. You *can't* install Power BI Report Server on the same server as the one you're migrating from. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
+1. Install Power BI Report Server. You *can't* install Power BI Report Server on the same server as the one you're migrating from. For more information on installing Power BI Report Server, see [Install Power BI Report Server](install-report-server.md).
 
-> [!NOTE]
-> The instance name for the Power BI Report Server will be *PBIRS*.
+   > [!NOTE]
+   > The instance name for the Power BI Report Server will be *PBIRS*.
 
-* Configure the report server using Report Server Configuration Manager and connect to the cloned database.
-* Perform any cleanup needed for the old Power BI Report Server installation.
+1. Configure the report server using Report Server Configuration Manager and connect to the cloned database.
+1. Perform any cleanup needed for the old Power BI Report Server installation.
 
 ## Related content
 

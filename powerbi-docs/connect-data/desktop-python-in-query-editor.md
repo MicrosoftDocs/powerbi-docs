@@ -1,9 +1,9 @@
 ---
 title: Use Python in Power BI Power Query Editor
 description: Learn how to use Python in Power BI Desktop Power Query Editor for advanced analytics. This example fills in missing values by using a predictive model.
-author: otarb
-ms.author: otarb
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: otarb
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

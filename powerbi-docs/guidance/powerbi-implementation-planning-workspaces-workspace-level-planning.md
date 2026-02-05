@@ -1,9 +1,9 @@
 ---
 title: "Implementation Planning: Workspace-Level Workspaces"
 description: "Review the tactical Power BI planning decisions you make at the workspace level for workspaces in Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article
@@ -258,7 +258,7 @@ Some examples include:
 
 - _Data source workspaces_ for data warehouses, lakehouses, and SQL databases that store data
 - _Data transformation workspaces_ for data pipelines, notebooks, and dataflows that transform data
-- _Distribution workspaces_ for scorecards, metric sets, and organization applications that distribute data to users
+- _Distribution workspaces_ for scorecards and organization applications that distribute data to users
 
 The following diagram depicts an example of how you might separate workspaces by item type.
 

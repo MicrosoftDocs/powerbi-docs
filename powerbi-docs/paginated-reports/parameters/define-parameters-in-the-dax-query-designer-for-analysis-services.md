@@ -1,39 +1,40 @@
 ---
-title: "Define parameters in DAX for Analysis Services data source of a Power BI paginated report | Microsoft Docs"
+title: Define Parameters in DAX for Analysis Services Data Source of a Power BI Paginated Report
 description: In this article, you learn how to define query parameters in the DAX query designer for Analysis Services.
-ms.date: 04/11/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: nidenyse
-ms.author: dniwenshuti
-ms.reviewer:
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: dniwenshuti
 ---
 # Define parameters in DAX for Analysis Services data source of a Power BI paginated report
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-To parameterize a DAX query for a PBI dataset of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
+To parameterize a DAX query for a Power BI semantic model of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
  
 ## Define a query parameter in DAX in Design mode  
   
 1.  In the Report Data pane, right-click on a dataset created from a SQL Server Analysis Services data source type, and then click **Query**. The DAX query designer opens in Design mode.  
   
-2.  Drag a dimension to the filter area and drop it on the first cell in the **Dimension** column.  
+1.  Drag a dimension to the filter area and drop it on the first cell in the **Dimension** column.  
   
-3.  In the **Hierarchy** column, choose a value from the drop-down list.  
+1.  In the **Hierarchy** column, choose a value from the drop-down list.  
   
-4.  In the **Operator** column, choose an operator for the drop-down list.  
+1.  In the **Operator** column, choose an operator for the drop-down list.  
   
-5.  In the **Filter Expression** column, select individual values from the drop-down list, or click the **All** member to choose all values.  
+1.  In the **Filter Expression** column, select individual values from the drop-down list, or click the **All** member to choose all values.  
   
-6.  In the **Parameters** column, select the check box to create a report parameter.  
+1.  In the **Parameters** column, select the check box to create a report parameter.  
   
-7.  Click **Run**.  
+1.  Click **Run**.  
   
      After you run the query, click **Design** on the toolbar to toggle to Query mode to view the DAX query that was created. Do not change the query text in Query mode if you want to continue to use Design mode to develop the query. Click **Design** to toggle back to Design mode.  
   
-8.  Select **OK**.
+1.  Select **OK**.
   
      In the Report Data pane, expand the Parameters node to display the report parameter that was automatically created for the filter.  
   
@@ -45,7 +46,7 @@ To parameterize a DAX query for a PBI dataset of a Power BI paginated report, yo
 
 1. On the toolbar, click **Design** to toggle to Query mode.  
 
-1. On the DAX query designer toolbar, click **Query Parameters** (![Icon for the Query Parameters dialog box.](media/icon-query-parameter.gif "Icon for the Query Parameters dialog box.")). The Query Parameters dialog box opens.  
+1. On the DAX query designer toolbar, click **Query Parameters** (:::image type="content" source="media/icon-query-parameter.gif" alt-text="Icon for the Query Parameters dialog box." lightbox="media/icon-query-parameter.gif":::). The Query Parameters dialog box opens.  
 
 1. In the **Parameter** column, click **Enter Parameter**, and then type the name of a parameter.  
 

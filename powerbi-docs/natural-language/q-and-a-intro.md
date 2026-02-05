@@ -1,15 +1,19 @@
 ---
 title: Learn how to use natural language to explore data with Power BI Q&A
 description: Overview of using Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language queries.
-author: mohaali
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/12/2023
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A features in Power BI let you explore your data in your own words by using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
@@ -19,7 +23,6 @@ Power BI Q&A is free and available to all users. Use these links to find the art
 - [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
 - [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
 - [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 
-- [Use Q&A in mobile apps](../consumer/mobile/tutorial-mobile-apps-ios-qna.md). Use the Q&A virtual assistant in iOS and the Q&A visual on Android devices. 
 - If you have edit permission, you can save your Q&A visualization results [on a dashboard](end-user-q-and-a-tutorial.md) or [in a report](../create-reports/power-bi-visualization-introduction-to-q-and-a.md).
 
 ## How to use Q&A

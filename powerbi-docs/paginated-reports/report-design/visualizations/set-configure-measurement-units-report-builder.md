@@ -1,12 +1,12 @@
 ---
-title: "Set and configure measurement units in Power BI paginated report | Microsoft Docs"
+title: Set and Configure Measurement Units in Power BI Paginated Report
 description: Learn how to set and configure measurement units in a Power BI paginated report using expressions in Power BI Report Builder.
-ms.date: 03/30/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -27,46 +27,46 @@ ms.reviewer: saurkumar
   
 1.  Right-click the indicator you want to change and click **Indicator Properties**.  
   
-2.  Click **Values and States** in the left pane.  
+1.  Click **Values and States** in the left pane.  
   
-3.  In the **States Measurement Unit** list, click **Numeric**.  
+1.  In the **States Measurement Unit** list, click **Numeric**.  
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the value of the option.  
   
-4.  For each icon in the indicator set, update the values in the **Start** and **End** text boxes.  
+1.  For each icon in the indicator set, update the values in the **Start** and **End** text boxes.  
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the values of the **Start** and **End** options.  
   
     > [!NOTE]  
     >  The values in the **Start** and **End** text boxes must be numeric.  
   
-5.  Select **OK**.
+1.  Select **OK**.
   
 ## To use the percentage measurement unit  
   
 1.  Right-click the indicator you want to change and click **Indicator Properties**.  
   
-2.  Click **Values and States** in the left pane.  
+1.  Click **Values and States** in the left pane.  
   
-3.  In the **States Measurement Unit** list, click **Percentage**.  
+1.  In the **States Measurement Unit** list, click **Percentage**.  
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the value of the option.  
   
-4.  Optionally, change the **Minimum** and **Maximum** options to use specific values instead of automatically detecting the minimum and maximum values of the data that the indicator uses. The value of **Minimum** must be smaller than the value of **Maximum**.  
+1.  Optionally, change the **Minimum** and **Maximum** options to use specific values instead of automatically detecting the minimum and maximum values of the data that the indicator uses. The value of **Minimum** must be smaller than the value of **Maximum**.  
   
     > [!NOTE]  
     >  If you explicitly set minimum and maximum values, that value range is used by the indicator regardless of the actual the minimum and maximum values in the data. This means that values lower than the minimum and higher than the maximum are excluded from the evaluation that determine what indictor icon to show in the report.  
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the values of the option.  
   
-5.  For each icon in the indicator set, update the values in the **Start** and **End** text boxes.  
+1.  For each icon in the indicator set, update the values in the **Start** and **End** text boxes.  
   
      Optionally, click the **Expression** (*fx*) button to edit an expression that sets the values of the **Start** and **End** options.  
   
     > [!NOTE]  
     >  The values in the **Start** and **End** text boxes must be numeric.  
   
-6.  Select **OK**.
+1.  Select **OK**.
   
 ## Related content
 

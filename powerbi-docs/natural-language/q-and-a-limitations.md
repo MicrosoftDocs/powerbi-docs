@@ -1,14 +1,17 @@
 ---
 title: Limitations of Power BI Q&A
 description: Learn about the current limitations of Power BI Q&A, including the supported data sources, review question limitations, and teach Q&A limitations.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/04/2024
 ---
 # Limitations of Power BI Q&A
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 The [Q&A feature](../consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](../report-server/install-powerbi-desktop.md).  
 
@@ -68,7 +71,7 @@ Teach Q&A allows you to define unrecognized terms by assigning a word to a field
 - Products equal 100
 - Products < 100
 
-Currrently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
+Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
 
 ### Statements not supported
 

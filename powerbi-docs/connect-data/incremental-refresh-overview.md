@@ -1,8 +1,8 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI semantic models
 description: Learn how to configure incremental refresh and real-time data in Power BI semantic models. Improve refresh performance, reduce resource consumption, and capture fast-moving data efficiently.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -34,7 +34,7 @@ With each subsequent refresh, the query filters return only those rows within th
 
 :::image type="content" source="media/incremental-refresh-overview/incremental-refresh-rolling-window-pattern.png" alt-text="Graphic representing a rolling window pattern.":::
 
-The beauty of incremental refresh is that the service handles all of it for you based on the incremental refresh policies you define. In fact, the process and partitions created from it aren't visible in the service. In most cases, a well-defined incremental refresh policy is all that's necessary to significantly improve model refresh performance. However, the real-time DirectQuery partition is only supported for models in Premium capacities. Power BI Premium also enables more advanced partition and refresh scenarios through the [XML for Analysis (XMLA) endpoint](/power-bi/enterprise/service-premium-connect-tools).
+The beauty of incremental refresh is that the service handles all of it for you based on the incremental refresh policies you define. In fact, the process and partitions created from it aren't visible in the service. In most cases, a well-defined incremental refresh policy is all that's necessary to significantly improve model refresh performance. However, the real-time DirectQuery partition is only supported for models in Premium capacities. Power BI Premium also enables more advanced partition and refresh scenarios through the [XML for Analysis (XMLA) endpoint](/fabric/enterprise/powerbi/service-premium-connect-tools).
 
 ## Requirements
 

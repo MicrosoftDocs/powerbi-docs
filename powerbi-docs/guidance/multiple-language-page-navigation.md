@@ -1,8 +1,8 @@
 ---
 title: Add support for multiple-language page navigation
 description: Learn how to use buttons for navigation in a Power BI report without tabs. Translations Builder supports localization for button text.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
@@ -75,4 +75,4 @@ The report now has no visible tabs when you publish it to the Power BI service. 
 
 ## Related content
 
-- [Guidance for Power BI](overview.md)
+- [Guidance for Power BI](index.yml)

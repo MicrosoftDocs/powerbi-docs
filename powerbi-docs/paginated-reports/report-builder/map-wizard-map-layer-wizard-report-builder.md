@@ -1,10 +1,10 @@
 ---
-title: "Map Wizard and Map Layer Wizard (Power BI Report Builder) | Microsoft Docs"
+title: Map Wizard and Map Layer Wizard (Power BI Report Builder)
 description: Find out how to automate creating a map, adding a map layer, or changing map layer options with the Map Wizards or Map Layer Wizard in Power BI Report Builder.
-ms.date: 02/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-
 
 ms.topic: reference
 author: JulCsc
@@ -16,8 +16,7 @@ ms.reviewer: saurkumar
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 > [!IMPORTANT]
-> Following the __[announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps)__, the migration of paginated reports map visuals from Bing Maps to Azure Maps has begun. This migration will occur in two phases: first, migrating to Azure Maps in PBIRB, followed by migration to Azure Maps for paginated reports in the service. The initial phase is complete. Beginning with the September release of PBIRB, users can create map visuals powered by Azure Maps by default. However, paginated reports published in the service will continue to use Bing Maps until phase two is completed.
-> Paginated reports authors can revert back to Bing Maps for authoring in PBIRB until both phases are complete. To enable this, users must set the “RevertToBingMaps” registry key located in the “Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder” folder to 1. If the “Microsoft Power BI Report Builder” folder does not exist, it should be manually created before setting the registry key.
+> Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), we have migrated map visuals in paginated reports from Bing Maps to Azure Maps. With the September release of PBIRB, paginated report authors will, by default, create map visuals using Azure Maps. Additionally, all map visuals published to the service will use Azure Maps.
 
  In Power BI paginated reports, the Map Wizard and Map Layer Wizard automate the task of creating a map, adding a map layer, or changing map layer options on an existing layer.  
   
@@ -59,7 +58,7 @@ ms.reviewer: saurkumar
     -   [What does embedding spatial data do?](#Embed)  
    - [What is an Azure maps tile background?](#Tiles)  
       
-3.  [Choose map visualization](#Visualization). Choose the type of map to create.  
+1.  [Choose map visualization](#Visualization). Choose the type of map to create.  
   
     -   [What is the difference between a Basic Map, a Bubble Map, and an Analytical Map?](#MapType)  
   
@@ -69,19 +68,19 @@ ms.reviewer: saurkumar
   
     -   Choose map visualization: Points  
   
-4.  Choose a connection to a data source Choose map visualization: Points. Choose a data source connection or create one to an external data source that contains analytical data to display on the map.  
+1.  Choose a connection to a data source Choose map visualization: Points. Choose a data source connection or create one to an external data source that contains analytical data to display on the map.  
   
-5.  Design a query. Build a query that specifies the analytical data.  
+1.  Design a query. Build a query that specifies the analytical data.  
   
-6.  [Choose the analytical dataset](#AnalyticalData). Specify a data source for the analytical data.  
+1.  [Choose the analytical dataset](#AnalyticalData). Specify a data source for the analytical data.  
   
     -   [What is the difference between spatial data and analytical data?](#Diff)  
   
-7.  [Specify the match fields for spatial and analytical data](#SpecifyMatchFields). Build a relationship between the spatial data and analytical data so that the appearance of map elements can vary based on data.  
+1.  [Specify the match fields for spatial and analytical data](#SpecifyMatchFields). Build a relationship between the spatial data and analytical data so that the appearance of map elements can vary based on data.  
   
     -   [What is a match field?](#MatchFields)  
   
-8.  [Choose color theme and data visualization](#ThemeandVisualization). To specify how to visualize your data against the map background, specify the map theme, the fields to visualize, and what to vary: color, size, and/or marker type.  
+1.  [Choose color theme and data visualization](#ThemeandVisualization). To specify how to visualize your data against the map background, specify the map theme, the fields to visualize, and what to vary: color, size, and/or marker type.  
   
     -   [What does the theme do?](#Theme)  
   

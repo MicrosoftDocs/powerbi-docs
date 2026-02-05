@@ -1,12 +1,12 @@
 ---
 title: Implement time-based calculations in Power BI
 description: Learn how to use time intelligence to implement time-based calculations
-author: jeroenterheerdt
-ms.author: jterh
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/15/2025
 LocalizationGroup: Model your data
 no-loc: [SAMEPERIODLASTYEAR,TOTALYTD,TOTALQTD,TOTALMTD,TOTALWTD,DATEADD,PARALLELPERIOD,SUM,CALCULATE,PREVIOUSDAY,PREVIOUSMONTH]
@@ -56,7 +56,7 @@ Assuming you aren't using [auto date/time](desktop-auto-date-time.md), there are
 - [**Calendar-based time intelligence (preview)**](#calendar-based-time-intelligence-preview). Newer option, but requires a bit more work to set up. However, it also gives you better performance, more flexibility to work with non-Gregorian calendars and the ability to perform week-based calculations.
 
 > [!NOTE]
-> You need to [set your table as a date table](desktop-date-tables.md#benefits-of-setting-your-own-date-table) for specific scenarios.
+> You need to [set your table as a date table](desktop-date-tables.md#how-to-set-your-own-date-table) for specific scenarios.
 
 ## Classic time intelligence
 
@@ -575,30 +575,37 @@ In this case, `FullLastYearQuantityTimeRelatedOverride` returns the same results
 
 The elaborate example above shows that different time intelligence functions behave differently depending on whether columns are tagged as time-related in the calendar. [DATEADD](/dax/dateadd-function-dax) and [SAMEPERIODLASTYEAR](/dax/sameperiodlastyear-function-dax) only perform lateral time shifts. All other [time intelligence functions](/dax/time-intelligence-functions-dax) allow hierarchical time shifts.
 
-### Use DATEADD with calendars
+### Use DATEADD and DATESINPERIOD with calendars
 
-The [DATEADD](/dax/dateadd-function-dax) function has specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter in DATEADD. This happens, for example,  if you're showing data on the date level but set the `interval` parameter to DATEADD to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
+The [DATEADD](/dax/dateadd-function-dax) and [DATESINPERIOD](/dax/datesinperiod-function-dax) functions have specific parameters that allow fine-grained control over how shifts are performed when the selection is on a more granular level than the shift level indicated by `interval` parameter. This happens, for example,  if you're showing data on the date level but set the `interval` parameter to these functions to **MONTH**. For example, in a Gregorian calendar, when shifting a period that spans March 3 to 10 by a month will result in April 3 to 10. However, since months in Gregorian calendars vary in length, this can lead to ambiguities when shifting. Below are example scenarios based on a Gregorian calendar:
 
 #### Shift from a shorter to a longer period
 
 For example, shifting forward one month with a selection in February, so the target month is March.
-You can use the `extension` parameter to influence how the shift is performed:
+You can use the `extension` parameter on DATEADD to influence how the shift is performed:
 
 |Extension parameter value|Description|Result|
 |--|--|--|
 |`precise`|This keeps the original date range strictly.|February 25-28 is shifted to March 25-28.|
 |`extended`|Allows the window to expand toward the end of the month.|February 25-28 is shifted to March 25-31.|
+|`endaligned`|Aligns the end date with the end of the destination month when the selection reaches the end of its month; otherwise preserves relative positions.|February 28 is shifted to March 31, while February 27 is shifted to March 27.|
+
+> [!NOTE]
+> DATESINPERIOD provides a `endbehavior` parameter which offers the `precise` and `endaligned` options.
 
 #### Shift from a longer to a shorter period
 
 For example, shifting backward one month with a selection in March, so the target month is February.
 
-You can use the `truncation` parameter to influence how the shift is performed:
+You can use the `truncation` parameter on DATEADD to influence how the shift is performed:
 
 |Truncation parameter value|Description|Result|
 |--|--|--|
 |`anchored`|Anchors the result to the last valid date of the smaller month.|March 31 is shifted to February 28 (or 29 in  leap year).|
 |`blank`|When a shifted date doesn't exist, return *blank*.|Shifting March 31 back one month returns *blank* (since February 31 doesn't exist).|
+
+> [!NOTE]
+> This parameter is not available for DATEINPERIOD.
 
 ### Considerations for working with calendar-based time-intelligence
 
@@ -606,7 +613,7 @@ You can use the `truncation` parameter to influence how the shift is performed:
 - Performance of this preview feature isn't representative of the end product.
 - You can't author calendars in the Power BI Service yet.
 - You shouldn't use [auto date/time](desktop-auto-date-time.md) tables with custom calendars.
-- You can't use calendars with Live connect, Direct Lake, or composite models.
+- You can't use calendars with live connected or composite models.
 - We recommend you associate only the columns in your calendar that you want to use in time intelligence calculations.
 - Calendars are subject to both [real-time](#real-time-validations) and [offline](#offline-validations) validations. You can save your calendar despite offline validation errors, but resolving them first is recommended. Real-time validation failures must be fixed to save.
 - Each calendar must have a unique name within the data model
@@ -671,6 +678,8 @@ ADDCOLUMNS (
     "Date", [Date]
 )
 ```
+
+For more information and more options see [Date tables](../guidance/model-date-tables.md).
 
 ## Related content
 

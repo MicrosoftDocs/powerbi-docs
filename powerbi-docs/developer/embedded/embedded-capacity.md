@@ -6,8 +6,8 @@ ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 04/15/2025
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -77,6 +77,8 @@ In this table, a custom app refers to a web app created using embedded analytics
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
 
 >[!NOTE]
+> Azure Embedded (F SKU) capacities aren't supported in the GCC environment. Only EM and P SKUs are available for use in GCC. Azure Embedded capacities are supported in GCC High and DoD environments.
+>
 > To read more about **F SKU**s see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
@@ -112,7 +114,7 @@ More information about SKU limits, is available here:
 
 ### Embedded memory enhancements
 
-The amount of memory available on each node size is described in the *Max memory (GB)* column in the [Semantic model SKU limitation](/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation) table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an F64 capacity, a single dataset size is limited to 25 GB.
+The amount of memory available on each node size is described in the *Max memory (GB)* column in the [Semantic model SKU limitation](/fabric/enterprise/powerbi/service-premium-what-is#semantic-model-sku-limitation) table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an F64 capacity, a single dataset size is limited to 25 GB.
 
 ## Considerations and limitations
 

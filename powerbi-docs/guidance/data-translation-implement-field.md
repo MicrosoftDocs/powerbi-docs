@@ -1,12 +1,13 @@
 ---
-title: Implement data translation using field parameters
+title: Implement Data Translation Using Field Parameters
 description: Learn how to create a field parameter as part of a data translation approach to multiple-language reports in Power BI.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Implement data translation using field parameters
 

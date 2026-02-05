@@ -1,14 +1,15 @@
 ---
 title: Find Insights in your reports
 description: 'The Insights feature helps you easily explore and find insights such as anomalies and trends in your data as you interact and consume your reports.'
-author: aphilip94
-ms.author: anphil
-ms.reviewer: 
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: anphil
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 09/08/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: 
 ---
 # Find Insights in your reports (preview)

@@ -1,12 +1,12 @@
 ---
 title: Use Model view in Power BI Desktop
 description: Learn how to use Model view to see and work with complex semantic models in a visual format in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/03/2024
 LocalizationGroup: Transform and shape data
 ---

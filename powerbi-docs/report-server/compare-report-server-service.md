@@ -1,6 +1,6 @@
 ---
-title: Compare Power BI Report Server and the Power BI service
-description: This article compares the features of Power BI Report Server and the Power BI service.
+title: Compare Power BI Report Server and the Power BI Service
+description: Compare the features and capabilities of Power BI Report Server versus the Power BI service to understand which deployment option is right for your organization.
 author: JulCsc
 ms.author: juliacawthra
 keywords: 
@@ -8,13 +8,14 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 02/03/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
 # Compare Power BI Report Server and the Power BI service
 
-Power BI Report Server and the Power BI service have many similarities and some key differences. This table explains which is which.
+Power BI Report Server and the Power BI service have many similarities and some key differences. This table explains which features belong to each product.
 
 ## Features of Power BI Report Server and the Power BI service
 
@@ -36,8 +37,8 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Dynamic M Query Parameters | No | Yes | |
 | Export to Power Point (PPTX) | No | Yes | Export data for visuals to CSV or Excel options are available in Report Server. |
 | Gateway required | No | Yes for on-premises data sources |  |
-| Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
-| Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
+| Host and connect to Power BI shared semantic models | No | Yes | [Intro to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md) |
+| Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) | 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Paginated reports | Yes | Yes | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |
 | Personalize visuals | No | Yes | Consumers can [customize visual type or data fields](../create-reports/power-bi-personalize-visuals.md) without modifying the report itself. |
@@ -56,7 +57,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Python scripts and visuals | No | Yes | [Create Python scripts](../connect-data/desktop-python-scripts.md) and visuals in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with Python scripts or visuals to Power BI Report Server. |
 | Preview features | No | Yes |   |
 | Power BI visuals | Yes | Yes | [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) |
-| Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
+| Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://www.microsoft.com/power-platform/products/power-bi/report-server) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
 | Data Privacy Levels | No | Yes | [Data Privacy Levels](../enterprise/desktop-privacy-levels.md) are available for reports in the Power BI service. In Power BI Report Server, use [Role definitions](/sql/reporting-services/security/role-definitions-predefined-roles). |
 | Sensitivity Labels | No | Yes | [Sensitivity Labels](../enterprise/service-security-sensitivity-label-overview.md) |
 | Template apps | No | Yes | [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md) |
@@ -65,9 +66,9 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 These considerations and limitations apply to Power BI Report Server.
 
-The following Power BI service features are not supported within Power BI Report Server:
+The following Power BI service features aren't supported within Power BI Report Server:
 
-- **Export data – Data with current layout** option for all visuals, including the improvements to the Export to Excel experience for Power BI table and matrix visuals. Only the **Summarized data** option is supported within Power BI Report Server.
+- **Export data – Data with current layout** option for all visuals, including the improvements to the Export to Excel experience for Power BI table and matrix visuals. Power BI Report Server only supports the **Summarized data** option.
 - The key influencers visual.
 
 ## Related content

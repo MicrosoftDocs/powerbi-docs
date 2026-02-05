@@ -1,10 +1,11 @@
 ---
-title: "Export Power BI paginated report to a PDF File (Power BI Report Builder) | Microsoft Docs"
+title: Export Power BI Paginated Report to a PDF File (Power BI Report Builder)
 description: In Power BI Report Builder, the PDF rendering extension renders Power BI paginated reports to files that can be opened in Adobe Acrobat and other third-party PDF viewers.
-ms.date: 08/26/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -47,7 +48,7 @@ The PDF rendering extension renders paginated reports to files that can be opene
 ### Verifying fonts in a PDF file  
  Differences in PDF output occur most often when a font that does not support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the PDF rendering output on both the Power BI service and the client computers to verify that the report renders correctly.  
   
- Don't rely on viewing the report in Preview or exporting to HTML. The report will look correct due to automatic font substitution performed by Power BI Report Builder or by the browser, respectively. If Unicode Glyphs are missing in the default set that comes with Windows 11 server OS, you may see characters replaced with a question mark (?). If a font is missing on the client, you may see characters replaced with boxes (□).  
+ Don't rely on viewing the report in Preview or exporting to HTML. The report will look correct due to automatic font substitution performed by Power BI Report Builder or by the browser, respectively. If Unicode Glyphs are missing in the default set that comes with Windows 11 server OS, you might see characters replaced with a question mark (?). If a font is missing on the client, you might see characters replaced with boxes (□).  
   
  The fonts that are embedded in the PDF file are included in the Fonts property that is saved with the file, as metadata.
  

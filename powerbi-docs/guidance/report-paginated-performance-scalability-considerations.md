@@ -1,14 +1,12 @@
 ---
 title: "Performance and scalability considerations for paginated reports in Power BI service"
-
 description: "Guidance for improving performance and scalability of paginated reports in the service"
-
-author: nidenyse
-ms.author: dniwenshuti
-ms.reviewer: 
+author: dknappettmsft 
+ms.author: daknappe 
+ms.reviewer: dniwenshuti
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: 
 ms.date: 04/01/2025
 ---

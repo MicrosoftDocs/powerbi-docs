@@ -2,9 +2,9 @@
 metadata:
   title: On-premises data gateway FAQ - Power BI
   description: Learn the answers to frequently asked questions about the on-premises data gateway for Power BI and Azure Analysis Services.
-  author: arthiriyer
-  ms.author: arthii
-  ms.reviewer: ''
+  author: kgremban
+  ms.author: kgremban
+  ms.reviewer: arthii 
   ms.service: powerbi
   ms.subservice: powerbi-gateways
   ms.topic: faq

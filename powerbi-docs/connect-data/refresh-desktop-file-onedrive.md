@@ -1,8 +1,8 @@
 ---
 title: Refresh a Power BI Desktop File (pbix file) from OneDrive or SharePoint Online
 description: Refresh a Power BI Desktop File (pbix file) created from OneDrive, or SharePoint Online.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources

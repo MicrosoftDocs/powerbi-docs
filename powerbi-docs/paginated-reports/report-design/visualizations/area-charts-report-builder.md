@@ -1,10 +1,11 @@
 ---
-title: "Area charts in Power BI paginated reports | Microsoft Docs"
+title: Area Charts in Power BI Paginated Reports
 description: Learn how to use area charts in Power BI paginated report. Area charts display a series as a set of points connected by a line, with all the area filled in below the line in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  The following illustration shows an example of a stacked area chart. The data is well suited for display on a stacked area chart because the chart can display totals for all series and the proportion that each series contributes to the total.  
   
- ![Screenshot of an Area chart.](media/paginated-reports-visualizations/area-chart.gif "Area chart")  
+ :::image type="content" source="media/paginated-reports-visualizations/area-chart.gif" alt-text="Screenshot of an Area chart." lightbox="media/paginated-reports-visualizations/area-chart.gif":::  
 
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
@@ -37,7 +38,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - If there is only one series, a stacked area chart is drawn as an area chart.  
   
-- In a plain area chart, if the values in multiple series are similar, the areas may overlap, obscuring important data point values. You can resolve this issue by changing the chart type to a stacked area chart, which is designed to show multiple series on an area chart.  
+- In a plain area chart, if the values in multiple series are similar, the areas might overlap, obscuring important data point values. You can resolve this issue by changing the chart type to a stacked area chart, which is designed to show multiple series on an area chart.  
   
 - If your stacked area chart contains gaps, it is possible that your dataset includes empty values, which is shown as a vacant section on a stacked area chart. If your dataset includes empty values, consider inserting empty points on the chart. Adding empty points fills in the empty areas on the chart with a different color to indicate null or zero values. For more information, see [Add empty points to a chart &#40;Power BI Report Builder&#41;](add-empty-points-chart-report-builder.md).  
   

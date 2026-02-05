@@ -1,16 +1,19 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
 description: Learn how to use tooling to add and share synonyms, define and manage terms, and suggest questions in Power BI Q&A.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/02/2023
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 With Power BI Q&A *tooling*, you can improve the natural language experience for your users. As a designer or administrator, you interact with the natural language engine and make improvements in three areas: 
 

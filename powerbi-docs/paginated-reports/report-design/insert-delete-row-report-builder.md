@@ -1,10 +1,11 @@
 ---
-title: "Insert or delete a row in a Power BI paginated report | Microsoft Docs"
+title: Insert or Delete a Row in a Power BI Paginated Report
 description: Find out about adding or deleting rows in a tablix data region in a Power BI paginated report in Power BI Report Builder.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

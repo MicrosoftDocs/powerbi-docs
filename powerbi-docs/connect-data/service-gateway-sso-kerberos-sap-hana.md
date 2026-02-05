@@ -1,13 +1,14 @@
 ---
-title: Use Kerberos for single sign-on (SSO) to SAP HANA
-description: Configure your SAP HANA server to enable SSO from the Power BI service. This article includes troubleshooting.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: ''
+title: Configure Kerberos SSO for SAP HANA
+description: Learn how to configure Kerberos single sign-on (SSO) for SAP HANA in Power BI service. Includes step-by-step setup and troubleshooting guidance.
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 10/08/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Gateways
 ms.custom: sfi-image-nochange
 #customer intent: As a Power BI user I want to learn how to configure SSO for my SAP HANA server using Power BI.
@@ -15,10 +16,10 @@ ms.custom: sfi-image-nochange
 
 # Use Kerberos for SSO to SAP HANA
 
-This article describes how to configure your SAP HANA data source to enable single sign-on (SSO) from the Power BI service.
+This article describes how to configure Kerberos single sign-on (SSO) for your SAP HANA data source in the Power BI service. By enabling Kerberos SSO, users can securely access SAP HANA without repeatedly entering credentials, streamlining authentication and improving security.
 
 > [!IMPORTANT]
-> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
+> Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
 
 > [!NOTE]
 > Before you attempt to refresh an SAP HANA-based report that uses Kerberos SSO, complete the steps in both this article and [Configure Kerberos-based SSO](service-gateway-sso-kerberos.md).
@@ -31,15 +32,12 @@ To enable SSO for SAP HANA, complete the following steps:
    - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
    - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
    - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
-
 1. On the gateway computer, install the latest SAP HANA ODBC driver. The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
-
 1. Ensure that the SAP HANA server has been configured for Kerberos-based SSO. For more information about setting up SSO for SAP HANA by using Kerberos, see [Single sign-on using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html). Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
 We also recommend following these extra steps, which can yield a small performance improvement:
 
 1. In the gateway installation directory, look for and open this configuration file: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
-
 1. Look for the `FullDomainResolutionEnabled` property and change its value to `True`.
 
     ```xml
@@ -50,7 +48,7 @@ We also recommend following these extra steps, which can yield a small performan
 
 1. [Run a Power BI report](service-gateway-sso-kerberos.md#section-3-validate-configuration).
 
-## Troubleshoot
+## Troubleshoot Kerberos SSO issues
 
 This section provides instructions for troubleshooting using Kerberos for single sign-on (SSO) to SAP HANA in the Power BI service. By using these troubleshooting steps, you can self-diagnose and correct many issues you might be facing.
 
@@ -71,7 +69,7 @@ This issue has multiple symptoms.
 
 - When you try to create or refresh a report, you might see the following error message:
 
-   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of a 'Cannot load model' troubleshooting TLS/SSL error window." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png":::
+   :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png" alt-text="Screenshot of 'Cannot load model' troubleshooting TLS/SSL error window." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-01.png":::
 
 - When you investigate the *Mashup[date]\*.log*, you see the following error message:
 
@@ -81,11 +79,11 @@ This issue has multiple symptoms.
    the certificate chain was issued by an authority that is not trusted.
    ```
 
-#### Resolution
+#### Resolution for TLS/SSL certificate error
 
 To resolve this TLS/SSL error, go to the data source connection. Then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving TLS/SSL error window by disabling the certificate." :::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text="Screenshot of resolving TLS/SSL error window by disabling the certificate." :::
 
 After you've disabled this setting, the error message no longer appears.
 
@@ -99,13 +97,13 @@ About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel
 
 The important element in this log entry is the information that's displayed after the `ImpersonationLevel:` entry. Any value different from `Impersonation` reveals that impersonation isn't occurring properly.
 
-#### Resolution
+#### Resolution for impersonation issues
 
 You can set up `ImpersonationLevel` properly by following the instructions in [Grant the gateway service account local policy rights on the gateway](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
 After you've changed the configuration file, restart the gateway service for the change to take effect.
 
-#### Validation
+#### Validation of impersonation configuration
 
 Refresh or create the report, and then collect the gateway logs. Open the most recent *GatewayInfo* file and check the following string: `About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)`. Make sure that the `ImpersonationLevel` setting returns `Impersonation`.
 
@@ -121,11 +119,11 @@ If you see the following error: `The import [table] matches no exports. Did you 
 
 When you investigate further by using Wireshark traces, you reveal the error `KRB4KDC_ERR_S_PRINCIPAL_UNKOWN`, which means that the SPN wasn't found or doesn't exist. The following image shows an example:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="Screenshot showing a service principal name error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" :::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" alt-text="Screenshot of service principal name error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-07.png" :::
 
-#### Resolution
+#### Resolution for SPN issues
 
-To resolve SPN issues like this one, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database Hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
+To resolve SPN issues like this one, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database Hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/c786f2cfd976101493dfdf14cf9bcfb1.html).
 
 In addition, follow the resolution instructions described in the next section.
 
@@ -145,15 +143,15 @@ No credentials are available in the security package
 
 Capturing Wireshark traces reveals the following error: `KRB5KDC_ERR_BADOPTION`.
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="Screenshot showing a 'No credentials error'." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png":::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="Screenshot of 'No credentials error'." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png":::
 
 Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* file could be found but isn't in the **Services to which this account can present delegated credentials** list on the **Delegation** pane in the gateway service account.
 
-#### Resolution
+#### Resolution for no credentials issues
 
 To resolve the *No credentials* issue, follow the steps described in [Configure Kerberos constrained delegation](service-gateway-sso-kerberos.md#step-4-configure-kerberos-constrained-delegation). When completed properly, the Delegation pane in the gateway service account reflects the HansaWorld Database (HDB) file and fully qualified domain name (FQDN) in the list of **Services to which this account can present delegated credentials**.
 
-#### Validation
+#### Validation of delegation configuration
 
 Following the preceding steps should resolve the issue. If you still experience Kerberos issues, you might have a misconfiguration in the Power BI gateway or in the HANA server itself.
 
@@ -161,7 +159,7 @@ Following the preceding steps should resolve the issue. If you still experience 
 
 If you experience credentials errors, errors in the logs or traces expose errors that describe `Credentials are invalid` or similar errors. These errors might manifest differently on the data source side of the connection, such as SAP HANA. The following image shows an example error:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" alt-text="Screenshot showing an invalid credentials error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" :::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" alt-text="Screenshot of invalid credentials error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" :::
 
 #### Symptom 1
 
@@ -174,11 +172,11 @@ Name johnny@contoso.com@CONTOSO.COM with name type: GSS_KRB5_NT_PRINCIPAL_NAME
 johnny@contoso.com@CONTOSO.COM
 ```
 
-#### Resolution
+#### Resolution for credentials error symptom 1
 
 Follow the instructions described in [Set user-mapping configuration parameters on the gateway machine](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Microsoft Entra Connect** service.
 
-#### Validation
+#### Validation of user-mapping configuration
 
 After you've completed the validation, you can successfully load the report in the Power BI service.
 
@@ -194,11 +192,11 @@ AuthenticationInfo.cpp(00168) : ENTER getAuthenticationInfo
 Found no user with expected external name!
 ```
 
-#### Resolution
+#### Resolution for credentials error symptom 2
 
 Check the Kerberos external ID under **HANA User** to determine whether the IDs match properly.
 
-#### Validation
+#### Validation of HANA user configuration
 
 After you've resolved the issue, you can create or refresh reports in the Power BI service.
 

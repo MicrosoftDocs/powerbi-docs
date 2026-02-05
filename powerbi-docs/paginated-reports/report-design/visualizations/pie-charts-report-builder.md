@@ -1,10 +1,11 @@
 ---
-title: "Pie charts in Power BI paginated reports | Microsoft Docs"
-description:  Learn about displaying data as a proportion of the whole with the use of pie charts and doughnut charts in Power BI Report Builder. 
-ms.date: 04/24/2023
+title: Pie Charts in Power BI Paginated Reports
+description:  Learn about displaying data as a proportion of the whole with the use of pie charts and donut charts in Power BI Report Builder. 
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -13,19 +14,19 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  Pie charts and doughnut charts display data as a proportion of the whole in a paginated report. Pie charts are most commonly used to make comparisons between groups. Pie and doughnut charts, along with pyramid and funnel charts, comprise a group of charts known as shape charts. Shape charts have no axes. When a numeric field is dropped on a shape chart, the chart calculates the percentage of each value to the total. For more information on shape charts, see [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md).  
+  Pie charts and donut charts display data as a proportion of the whole in a paginated report. Pie charts are most commonly used to make comparisons between groups. Pie and donut charts, along with pyramid and funnel charts, comprise a group of charts known as shape charts. Shape charts have no axes. When a numeric field is dropped on a shape chart, the chart calculates the percentage of each value to the total. For more information on shape charts, see [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md).  
   
  The following illustration shows a 3-D pie chart with data labels formatted as percentages.  The legend is positioned in the right-center.  
   
- ![Screenshot of a pie chart.](./media/paginated-reports-visualizations/pie-chart.gif "pie-chart")  
+ :::image type="content" source="./media/paginated-reports-visualizations/pie-chart.gif" alt-text="Screenshot of a pie chart." lightbox="./media/paginated-reports-visualizations/pie-chart.gif":::  
 
 ## Variations  
   
 - **Exploded pie**. A pie chart where all of the slices are moved away from the center of the pie. In addition to the exploded pie chart, in which all slices are separated, you can create an exploded slice chart, in which only one slice is called out.  
   
-- **Doughnut**. A pie chart that has an open space in the center.  
+- **donut**. A pie chart that has an open space in the center.  
   
-- **Exploded doughnut**. A doughnut chart where all of the slices are moved away from the center of the doughnut.  
+- **Exploded donut**. A donut chart where all of the slices are moved away from the center of the donut.  
   
 - **3D Pie**. A pie chart that has a 3-D style applied.  
   
@@ -33,7 +34,7 @@ ms.reviewer: saurkumar
   
 ## Data considerations for display on a pie chart  
   
-- Pie charts are popular in reports because of their visual impact. However, pie charts are a very simplified chart type that may not best represent your data. Consider using a pie chart only after the data has been aggregated to seven data points or less.  
+- Pie charts are popular in reports because of their visual impact. However, pie charts are a very simplified chart type that might not best represent your data. Consider using a pie chart only after the data has been aggregated to seven data points or less.  
   
 - Pie charts display each data group as a separate slice on the chart. You must add at least one data field and one category field to the pie chart. If more than one data field is added to a pie chart, the pie chart will display both data fields in the same chart.  
   
@@ -51,7 +52,7 @@ ms.reviewer: saurkumar
 
  You can add special drawing styles to the pie chart to increase its visual impact. Drawing styles include bevel and concave effects. These effects are available only on a 2-D pie chart. The following illustration shows an example of the bevel and concave drawing styles on a pie chart.  
   
- ![Screenshot of a Pie Drawing Styles.](./media/paginated-reports-visualizations/pie-drawing-effects-concave-2.gif "pie-drawing-effects-concave-2")  
+ :::image type="content" source="./media/paginated-reports-visualizations/pie-drawing-effects-concave-2.gif" alt-text="Screenshot of a Pie Drawing Styles." lightbox="./media/paginated-reports-visualizations/pie-drawing-effects-concave-2.gif":::  
   
  For more information, see [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
   
@@ -62,7 +63,7 @@ ms.reviewer: saurkumar
 - How to display values as percentages on the chart: [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-percentage-values-on-a-pie-chart-report-builder-and-ssrs).
 - How to format numbers as percentages in your report: [Formatting Numbers and Dates &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs).  
   
-![Screenshot of a Pie chart with data point labels as percentages.](./media/paginated-reports-visualizations/pie-chart-percentages.gif "pie-chart-percentages")  
+:::image type="content" source="./media/paginated-reports-visualizations/pie-chart-percentages.gif" alt-text="Screenshot of a Pie chart with data point labels as percentages." lightbox="./media/paginated-reports-visualizations/pie-chart-percentages.gif":::  
   
 ## Prevent overlapped labels on a pie chart  
 

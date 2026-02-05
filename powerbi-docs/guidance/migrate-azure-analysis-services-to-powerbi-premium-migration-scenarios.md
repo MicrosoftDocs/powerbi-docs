@@ -1,12 +1,12 @@
 ---
 title: "Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios"
 description: "Scenario-based guidance to help you determine the right type and number of Power BI Premium licenses when migrating from Azure Analysis Services."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat, intro-migration
 ms.date: 12/30/2024
 ---
@@ -20,7 +20,7 @@ This article compares six hypothetical scenarios when migrating from Azure Analy
 > [!NOTE]
 > An attempt has been made to ensure these scenarios are representative of real customer migrations, however individual customer scenarios will of course differ. Also, this article doesn't include pricing details. You can find current pricing here:
 >
-> - [Power BI pricing](https://powerbi.microsoft.com/pricing/)
+> - [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 > - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 
 When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](migrate-azure-analysis-services-to-powerbi-premium.md#feature-comparison) that are only available to Power BI data models.
@@ -260,7 +260,7 @@ For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
 - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
-- [Power BI pricing](https://powerbi.microsoft.com/pricing/)
+- [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

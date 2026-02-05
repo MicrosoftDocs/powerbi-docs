@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 02/02/2025
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to learn how to integrate or embed a Power BI paginated report into an embedded analytics application.
 ---
 
@@ -30,7 +30,7 @@ To get started, you need:
 
 * A [capacity](#step-2---create-a-capacity)
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## [Embed for your organization](#tab/organization)
 
@@ -40,7 +40,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 * A Premium capacity. See [what size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-capacity-size-do-i-need-for-paginated-reports-)
 
-If you don't have **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+If you don't have **Power BI Pro**, [sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 
 ---
 
@@ -131,7 +131,7 @@ Follow the steps in the [embed content for your customers](embed-sample-for-cust
 * To use a **Power BI semantic model** as a data source:
 
   * Make sure the tenant setting [*Allow XMLA endpoints and Analyze in Excel with on-premises datasets*](../../enterprise/service-premium-connect-tools.md#security) is enabled.
-  * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/power-bi/enterprise/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to set up the endpoint once per capacity.
+  * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](/fabric/enterprise/powerbi/service-premium-connect-tools#to-enable-read-write-for-a-premium-capacity). You only need to set up the endpoint once per capacity.
   * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token) with the [dataset ID](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) specified in the request, and the [XmlaPermissions](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) set to *Read Only*.
 
 * To use a **single sign-on (SSO)** enabled data source:

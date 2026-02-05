@@ -1,13 +1,13 @@
 ---
 title: Using visual calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 10/01/2025
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, LOOKUP, LOOKUPWITHTOTALS, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
@@ -334,12 +334,12 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.
-* Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services versions released before version 2025 aren't supported.
 * Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
+* IntelliSense isn't available in Power BI embedded.
 
 ## Related content
 

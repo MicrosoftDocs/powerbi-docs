@@ -1,10 +1,11 @@
 ---
-title: "Display percentage values on pie charts in Power BI paginated report | Microsoft Docs"
+title: Display Percentage Values on Pie Charts in Power BI Paginated Report
 description: Learn how to display percentage values in a paginated report on a pie chart, in the legend or in the pie slices in Power BI Report Builder.
-ms.date: 03/17/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -13,10 +14,9 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-In Power BI paginated reports, by default the legend shows categories. You may also want percentages in the legend or the pie slices themselves.
+In Power BI paginated reports, by default the legend shows categories. You can also percentages in the legend or the pie slices themselves.
 
-![Screenshot of a pie-chart-other-slice, pie chart showing percentages for the slices of the pie.](media/paginated-reports-visualizations/pie-chart-other-slice.png "Screenshot of a pie chart showing percentages for the slices of the pie.") 
-
+:::image type="content" source="media/paginated-reports-visualizations/pie-chart-other-slice.png" alt-text="Screenshot of a pie-chart-other-slice, pie chart showing percentages for the slices of the pie." lightbox="media/paginated-reports-visualizations/pie-chart-other-slice.png"::: 
 
  The [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder) walks you through adding percentages to pie slices, if you'd like to try this with sample data first.
  
@@ -41,7 +41,7 @@ In Power BI paginated reports, by default the legend shows categories. You may a
   
 ## Related content
 
-* [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)
-* [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
-* [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
-* [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   
+- [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)
+- [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
+- [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   

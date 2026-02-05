@@ -1,5 +1,5 @@
 ---
-title: Set up row-level security in Power BI paginated reports
+title: Set Up Row-Level Security in Power BI Paginated Reports
 description: Learn how to set up row-level security (RLS) for paginated reports in Power BI.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/04/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 #Customer intent: As a paginated report creator, I want to set up row-level security to maintain privacy and security.
 ---
 
@@ -41,27 +42,27 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
 
 1. In the **Dataset Properties** window, from the left pane, select **Filter**.
 
-    ![Screenshot of the Power BI Report Builder filter.](media/paginated-rls/filter.png)
+    :::image type="content" source="media/paginated-rls/filter.png" alt-text="Screenshot of the Power BI Report Builder filter." lightbox="media/paginated-rls/filter.png":::
 
 1. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
 
-     ![Screenshot shows the value Color selected from the Expression menu.](media/paginated-rls/expression.png)
+     :::image type="content" source="media/paginated-rls/expression.png" alt-text="Screenshot shows the value Color selected from the Expression menu." lightbox="media/paginated-rls/expression.png":::
 
 1. Select the **Value** function button.
 
-    ![Screenshot shows Power BI Report Builder value.](media/paginated-rls/function.png)
+    :::image type="content" source="media/paginated-rls/function.png" alt-text="Screenshot shows Power BI Report Builder value." lightbox="media/paginated-rls/function.png":::
 
 1. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
 
-    ![Screenshot shows the Expression window with Built-in Fields selected as Category and ExecutionTime selected as Item.](media/paginated-rls/built-in-fields.png)
+    :::image type="content" source="media/paginated-rls/built-in-fields.png" alt-text="Screenshot shows the Expression window with Built-in Fields selected as Category and ExecutionTime selected as Item." lightbox="media/paginated-rls/built-in-fields.png":::
 
 1. From the **Item** list, select **UserID** > **OK**.
 
-    ![Screenshot shows Power BI Report Builder UserID.](media/paginated-rls/userid.png)
+    :::image type="content" source="media/paginated-rls/userid.png" alt-text="Screenshot shows Power BI Report Builder UserID." lightbox="media/paginated-rls/userid.png":::
 
 1. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID*.
 
-    ![Screenshot shows Power BI Report Builder dataset properties.](media/paginated-rls/verify.png)
+    :::image type="content" source="media/paginated-rls/verify.png" alt-text="Screenshot shows Power BI Report Builder dataset properties." lightbox="media/paginated-rls/verify.png":::
 
 1. Select **OK**.
 
@@ -69,24 +70,24 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
 
 1. In the **Dataset Properties** window, from the left navigation pane, select **Parameters**, then select **Add**.
 
-    ![Screenshot shows Power BI Report Builder parameters.](media/paginated-rls/parameters.png)
+    :::image type="content" source="media/paginated-rls/parameters.png" alt-text="Screenshot shows Power BI Report Builder parameters." lightbox="media/paginated-rls/parameters.png":::
 
 1. In the **Parameter Name** field enter **\@UserID**, and in the **Parameter Value** add **[&UserID]**.
 
-    ![Screenshot shows Power BI Report Builder parameter name.](media/paginated-rls/parameter-name.png)
+    :::image type="content" source="media/paginated-rls/parameter-name.png" alt-text="Screenshot shows Power BI Report Builder parameter name." lightbox="media/paginated-rls/parameter-name.png":::
 
 1. From the left pane, select  **Query**. In **Query**, add the **UserID** parameter as part of your query.
 
     This screenshot uses the color parameter as an example *(WHERE FinalTable.Color = @UserID)*. If needed, you can create a more complex query.
 
-    ![Screenshot shows Power BI Report Builder queries edit.](media/paginated-rls/query-edit.png)
+    :::image type="content" source="media/paginated-rls/query-edit.png" alt-text="Screenshot shows Power BI Report Builder queries edit." lightbox="media/paginated-rls/query-edit.png":::
 
 1. Select **OK**.
 
 ## Considerations and limitations
 
-* The Test as role/View as role feature doesn't work for paginated reports.
+- The Test as role/View as role feature doesn't work for paginated reports.
 
-## Next steps
+## Related content
 
 [Power BI Report Builder](report-builder-power-bi.md)

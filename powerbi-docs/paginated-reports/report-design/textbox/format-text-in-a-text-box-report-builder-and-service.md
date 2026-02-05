@@ -1,10 +1,11 @@
 ---
-title: "Format text in a text box in paginated reports (Power BI Report Builder) | Microsoft Docs"
+title: Format Text in a Text Box in Paginated Reports (Power BI Report Builder)
 description: Discover how to format text in a text box in paginated reports, and how to mix placeholder text and static text to create mail merges or templates for text in Power BI Report Builder. 
-ms.date: 01/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -19,11 +20,11 @@ In Power BI paginated reports, you can format any part of the text in a text box
   
 1.  On the **Insert** tab, select **Text Box**. Select the design surface, and then drag to create a box that is the size you want.  
   
-2.  Inside the text box, select the text you want to format.  
+1.  Inside the text box, select the text you want to format.  
   
-3.  Right-click the selected text, and select **Text Properties**.  
+1.  Right-click the selected text, and select **Text Properties**.  
   
-4.  Set formatting options. For example, on the **General** tab:  
+1.  Set formatting options. For example, on the **General** tab:  
   
     -   **Tooltip** Type text or an expression that evaluates to a ToolTip. The ToolTip appears when the user pauses the pointer over the item in a report  
   
@@ -33,27 +34,27 @@ In Power BI paginated reports, you can format any part of the text in a text box
   
          **HTML**  Display the selected text as HTML. If the expression value of the placeholder contains valid HTML tags, these tags will be rendered as HTML. For more information, see [Importing HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/importing-html-into-a-report-report-builder-and-ssrs).  
   
-5.  Select **OK**.  
+1.  Select **OK**.  
   
-6.  Repeat steps 2 through 5 for the remaining text you want to format.  
+1.  Repeat steps 2 through 5 for the remaining text you want to format.  
   
 ## Format text and placeholders differently in the same text box  
   
 1.  On the **Insert** tab, select **List**. Select the design surface, and then drag to create a box that is the size you want. The **Dataset Properties** dialog box opens. You can use a dataset embedded in your report. For more information, see [Dataset Properties Dialog Box, Query &#40;Report Builder&#41;](/sql/reporting-services/report-data/dataset-properties-dialog-box-query-report-builder).  
   
-2.  On the **Insert** tab, select **Text Box**. Select in the list, and then drag to create a box that is the size you want.  
+1.  On the **Insert** tab, select **Text Box**. Select in the list, and then drag to create a box that is the size you want.  
   
-3.  Type a label in the text box - for example, "**My Field**:".  
+1.  Type a label in the text box - for example, "**My Field**:".  
   
-4.  Drag a field from your dataset into the text box. A placeholder is created for your field.  
+1.  Drag a field from your dataset into the text box. A placeholder is created for your field.  
   
-5.  For basic formatting, select the placeholder text and then select one of the formatting options in the **Font** group on the **Home** tab. For example, select the **Bold** button.  
+1.  For basic formatting, select the placeholder text and then select one of the formatting options in the **Font** group on the **Home** tab. For example, select the **Bold** button.  
   
      For more formatting options, right-click the placeholder text, and then select **Placeholder Properties**.  
   
-6.  Select **OK**. In report design view, the text box should contain "**My Field**: [*FieldName*]", where *FieldName* is the name of your field.  
+1.  Select **OK**. In report design view, the text box should contain "**My Field**: [*FieldName*]", where *FieldName* is the name of your field.  
   
-7.  Select **Run**.  
+1.  Select **Run**.  
   
  The list repeats one time for every value in the field, and the *FieldName* placeholder is replaced each time by the value of that field in the dataset.  
   

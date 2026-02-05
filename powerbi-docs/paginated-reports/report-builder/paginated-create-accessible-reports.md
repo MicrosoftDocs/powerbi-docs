@@ -1,10 +1,11 @@
 ---
-title: "Accessibility features in Power BI paginated reports | Microsoft Docs"
+title: Accessibility Features in Power BI Paginated Reports
 description:  Learn about Power BI Report Builder accessibility features that help you create a paginated report that's inclusive and usable by all.
-ms.date: 05/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: cookiemccray
@@ -43,7 +44,7 @@ Let's explore each of these built-in accessibility features individually.
 
 By pressing the <kbd>Alt</kbd> key, you can see the keyboard shortcuts for the different menus for Power BI Report Builder. Here's the [detailed list of keyboard shortcuts](/sql/reporting-services/report-builder/keyboard-shortcuts-report-builder) for Power BI Report Builder. 
  
-:::image type="content" source="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png" alt-text="Screenshot showing Keyboard Shortcuts Image.":::
+:::image type="content" source="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png" alt-text="Screenshot showing Keyboard Shortcuts Image." lightbox="media/paginated-use-accessibility-tools/report-builder-accessible-key-tips.png":::
  
 > [!NOTE]
 > Keyboard navigation for accessibility is partially supported. You can't use the cancel button in the loading dialog.
@@ -52,7 +53,7 @@ By pressing the <kbd>Alt</kbd> key, you can see the keyboard shortcuts for the d
 
 Power BI Report Builder is screen-reader compatible. As a user navigates to any object on the app, the screen reader converts all the text into spoken words. As a report author, you can use a screen reader to create a paginated report. When you hover over any of the app menus, the screen reader reads the property description shown. 
 
-:::image type="content" source="media/paginated-use-accessibility-tools/paginated-property-description.png" alt-text="Screenshot showing screen reader reads the property description.":::
+:::image type="content" source="media/paginated-use-accessibility-tools/paginated-property-description.png" alt-text="Screenshot showing screen reader reads the property description." lightbox="media/paginated-use-accessibility-tools/paginated-property-description.png":::
 
 ### Accessible PDF export format in the service for report consumers  
 
@@ -67,11 +68,9 @@ PDF/UA specifies the technical requirements for assistive technology such as scr
 
 One of the key requirements of the PDF/UA is to create documents that are tagged, and the structure tree created by the document tags must reflect the document’s logical reading order. The ordinary PDF export format of paginated report isn't tagged, so it's important that you select the Accessible PDF export option  when you export your paginated report to PDF.  
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-accessible-pdf-structure-tree.png" alt-text="Screenshot showing Screen-reader preview of the structure tree of an Accessible PDF paginated report.":::
-
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-accessible-pdf-structure-tree.png" alt-text="Screenshot showing Screen-reader preview of the structure tree of an Accessible PDF paginated report." lightbox="media/paginated-create-accessible-reports/paginated-accessible-pdf-structure-tree.png":::
 
 *Screen-reader preview of the Structure Tree of an Accessible PDF paginated report*
-
 
 The [PDF Accessibility Checker](https://pac.pdf-accessibility.org/) is a digital tool for validating that a PDF document is in full compliance with PDF/UA. After exporting your Accessible PDF report document, use this tool to make sure your PDF document is compliant with PDF/UA, and make appropriate adjustments if the tool detects errors. 
 
@@ -81,7 +80,6 @@ The [PDF Accessibility Checker](https://pac.pdf-accessibility.org/) is a digital
 > When you create a well formatted Accessible PDF paginated report based on accessibility requirements, you still get an error from the PAC tool stating that the PDF/UA identifier is missing. The PDF/UA identifier isn't automatically written on the Accessible PDF, because there’s no guarantee that the report creator has taken the necessary steps to ensure that the PDF is in full compliance with PDF/UA.
 >
 > To correct this error, you need to add the appropriate PDF/UA identifier to your Accessible PDF to indicate that you've done the necessary work to make the PDF entirely PDF/UA compliant. You add the identifier by using Adobe Acrobat Pro, as described in the article [ACCESSIBLE PDFs: How to Add a PDF/UA Identifier](https://accessiblewebsiteservices.com/accessible-pdfs-how-to-add-a-pdf-ua-identifier/).
-
 
 ## Built-in accessibility features requiring configuration
 
@@ -99,21 +97,21 @@ Report authors and report consumers benefit from having accessibility tagging fo
 
 To enable row properties on a header or data cell, right-click a table row and select **Row properties**.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties.png" alt-text="Screenshot of select row properties.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties.png" alt-text="Screenshot of select row properties." lightbox="media/paginated-create-accessible-reports/paginated-row-properties.png":::
 
 Select the **Accessibility** menu, and decide which structure type you wish to overwrite.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties-dialog.png" alt-text="Screenshot of select the overwrite structure type.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-row-properties-dialog.png" alt-text="Screenshot of select the overwrite structure type." lightbox="media/paginated-create-accessible-reports/paginated-row-properties-dialog.png":::
 
 #### Enable text box properties
 
 To enable text box properties, right-click a text box and select **Text Box Properties**.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties.png" alt-text="Screenshot of select text box properties.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties.png" alt-text="Screenshot of select text box properties." lightbox="media/paginated-create-accessible-reports/paginated-text-box-properties.png":::
 
 Select the **Accessibility** menu and decide which structure type you wish to overwrite. You can add tags for **Heading H1-H6** to give the textbox a different semantic meaning in output formats like HTML and Accessible PDF.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties-dialog.png" alt-text="Screenshot of select a heading level from H1 to H6.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-text-box-properties-dialog.png" alt-text="Screenshot of select a heading level from H1 to H6." lightbox="media/paginated-create-accessible-reports/paginated-text-box-properties-dialog.png":::
 
 ### Provide Alt text 
 
@@ -127,16 +125,15 @@ In Power BI paginated reports, data visualization components are interpreted as 
 
 1. Select the line chart, and in the Properties pane, select the **Tooltip** property.
 
-    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-property.png" alt-text="Screenshot showing select the Tooltip property.":::
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-property.png" alt-text="Screenshot showing select the Tooltip property." lightbox="media/paginated-create-accessible-reports/paginated-tooltip-property.png":::
 
 1. Select **Expression** from the drop-down options, then write the Alt text you want to use.  
 
-    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-expression.png" alt-text="Screenshot showing write the Alt text you want to use.":::
-
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-tooltip-expression.png" alt-text="Screenshot showing write the Alt text you want to use." lightbox="media/paginated-create-accessible-reports/paginated-tooltip-expression.png":::
 
 The following image shows how the Alt text appears in the report. A screen reader reads the Alt text, providing the description of the image to people who are blind and people with other physical disabilities.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-line-chart-alt-text.png" alt-text="Screenshot showing how the Alt text appears in the report.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-line-chart-alt-text.png" alt-text="Screenshot showing how the Alt text appears in the report." lightbox="media/paginated-create-accessible-reports/paginated-line-chart-alt-text.png":::
 
 > [!NOTE]
 > A screen reader doesn't read the Alt texts in Power BI Report Builder, but the screen reader does read the Alt text in the Power BI service and Accessible PDF. However, screen readers don't read out Alt texts for text boxes in the Power BI service.
@@ -165,11 +162,11 @@ The following image uses black for formatting the report background, and yellow 
 
 To achieve the black background for the body, select the body. In the Properties pane, under the formatting options select the drop-down for background color and pick the black color. 
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-properties-background-color.png" alt-text="Screenshot showing Steps for applying color to a report background.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-properties-background-color.png" alt-text="Screenshot showing Steps for applying color to a report background." lightbox="media/paginated-create-accessible-reports/paginated-properties-background-color.png":::
 
 The following image shows the result of the black background formatting.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-report-black-background.png" alt-text="Screenshot showing Result of Page background color formatting.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-report-black-background.png" alt-text="Screenshot showing Result of Page background color formatting." lightbox="media/paginated-create-accessible-reports/paginated-report-black-background.png":::
 
 The other report objects have yellow formatting, following the same steps as above. You can also apply colors to an object by writing the hex code of the color on the color format option in the Properties pane.
 
@@ -177,11 +174,11 @@ The other report objects have yellow formatting, following the same steps as abo
 
 This image shows how the color yellow is applied to a matrix by selecting cells in the matrix and selecting **Font** color and **BorderColor** set to **Yellow**.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-yellow-matrix.png" alt-text="Screenshot showing the color yellow is applied to a matrix.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-yellow-matrix.png" alt-text="Screenshot showing the color yellow is applied to a matrix." lightbox="media/paginated-create-accessible-reports/paginated-yellow-matrix.png":::
 
 You see the result of the formatting in the following image.
 
-:::image type="content" source="media/paginated-create-accessible-reports/paginated-black-yellow-matrix.png" alt-text="Screenshot showing Result of applying color to a matrix as shown in previous image.":::
+:::image type="content" source="media/paginated-create-accessible-reports/paginated-black-yellow-matrix.png" alt-text="Screenshot showing Result of applying color to a matrix as shown in previous image." lightbox="media/paginated-create-accessible-reports/paginated-black-yellow-matrix.png":::
 
 ## Tips and considerations 
 
@@ -203,13 +200,13 @@ An example of a supported HTML tag is a hyperlink. The following images show the
 1. To add a hyperlink, first create a text box. 
 1. Right-click in the text box, and select **Create Placeholder**.
 
-     :::image type="content" source="media/paginated-create-accessible-reports/paginated-create-placeholder.png" alt-text="Screenshot showing select Create Placeholder.":::
+     :::image type="content" source="media/paginated-create-accessible-reports/paginated-create-placeholder.png" alt-text="Screenshot showing select Create Placeholder." lightbox="media/paginated-create-accessible-reports/paginated-create-placeholder.png":::
 
 1. In the **Placeholder Properties** dialog box, on the **General** tab, provide the placeholder in the label.
 1. In the **Value** box, provide the field from the dataset that contains HTML tags.
 1. In the **Tooltip** box, write your Alt text.
 
-    :::image type="content" source="media/paginated-create-accessible-reports/paginated-placeholder-properties.png" alt-text="Screenshot showing Placeholder Properties dialog box.":::
+    :::image type="content" source="media/paginated-create-accessible-reports/paginated-placeholder-properties.png" alt-text="Screenshot showing Placeholder Properties dialog box." lightbox="media/paginated-create-accessible-reports/paginated-placeholder-properties.png":::
 
 The following image shows how the hyperlink and Alt text appear in the report.
 

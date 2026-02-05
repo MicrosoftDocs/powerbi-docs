@@ -1,10 +1,11 @@
 ---
-title: "Improve accessibility in Power BI paginated reports with StructureTypeOverwrite | Microsoft Docs"
+title: Improve Accessibility in Power BI Paginated Reports with Structuretypeoverwrite
 description:  Learn about using the StructureTypeOverwrite property to improve accessibility in paginated reports.
-ms.date: 10/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rvpatkar
@@ -24,11 +25,11 @@ Let’s see an example how they can be helpful.
 
 Here's the design of a simple report. It has a report title and two tables with data. Each table has a text box label.  
 
-:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-simple-report.png" alt-text="Screenshot of a simple report with a report title and two tables with data.":::
+:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-simple-report.png" alt-text="Screenshot of a simple report with a report title and two tables with data." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-simple-report.png":::
 
-If we export this report to Accessible PDF without changing anything, we get this logical structure:  
+If you export this report to Accessible PDF without changing anything, you get this logical structure:  
 
-:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-before.png" alt-text="Screenshot showing logical structure before.":::
+:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-before.png" alt-text="Screenshot showing logical structure before." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-before.png":::
 
 As you can see, the first row (<TR>) of the table isn't marked with a <TH> header tag, as it should be.  
 
@@ -36,11 +37,11 @@ Paragraphs (text boxes) are presented as `<P>`.
 
 The screen reader preview shows that the report has no structure:  
 
-:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-before.png" alt-text="Screenshot showing screen reader with no structure.":::
+:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-before.png" alt-text="Screenshot showing screen reader with no structure." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-before.png":::
 
 After setting the new property, you can transform the PDF structure into this logical structure:  
 
-:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-after.png" alt-text="Screenshot showing added logical structure.":::
+:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-after.png" alt-text="Screenshot showing added logical structure." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-logical-structure-after.png":::
 
 You see that now you have a *Heading 1 (H1)* for the report title, and two *Heading 2 (H2)* for the table titles.
 
@@ -48,7 +49,7 @@ The first row of the table is correctly set with a <TH> tag that allows the PDF 
 
 Here's the new screen reader preview:  
 
-:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-after.png" alt-text="Screenshot showing Screen reader with structure.":::
+:::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-after.png" alt-text="Screenshot showing Screen reader with structure." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-screen-reader-preview-after.png":::
 
 ## Heading level for text boxes 
 
@@ -73,7 +74,7 @@ You can set the heading value in two different ways:
 1. Right-click a text box and select **Text Box Properties**.  
 1. In the **Accessibility** tab, in the **Overwrite structure type** box, select a heading level.  
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-text-box-properties-accessibility.png" alt-text="Screenshot showing Overwrite structure type box.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-text-box-properties-accessibility.png" alt-text="Screenshot showing Overwrite structure type box." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-text-box-properties-accessibility.png":::
 
 ### Textbox Property grid
 
@@ -81,7 +82,7 @@ You can set the heading value in two different ways:
 1. Select a text box.
 1. In the property grid, in the **Accessibility** property group, select a value in the **StructureTypeOverwrite** property.  
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-accessibility-property-structure-type-overwrite.png" alt-text="Screenshot showing Structure type overwrite property setting.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-accessibility-property-structure-type-overwrite.png" alt-text="Screenshot showing Structure type overwrite property setting." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-accessibility-property-structure-type-overwrite.png":::
 
 ### Benefits of headings
 
@@ -105,11 +106,11 @@ The default value is *None*. Here are the available values:
 1. Select a cell in a tablix. It should be outlined in a bold line.
 1. Right-click and select **Cell Properties**.
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-tablix-cell-properties.png" alt-text="Screenshot showing tablix cell properties.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-tablix-cell-properties.png" alt-text="Screenshot showing tablix cell properties." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-tablix-cell-properties.png":::
 
 1. In the **Accessibility** tab, you can set the property in the **Overwrite structure type** box.
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-cell-overwrite-structure-type.png" alt-text="Screenshot showing cell overwrite structure type.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-cell-overwrite-structure-type.png" alt-text="Screenshot showing cell overwrite structure type." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-cell-overwrite-structure-type.png":::
 
 1. Select one of the available structural cell values:  
 
@@ -123,11 +124,11 @@ The default value is *None*. Here are the available values:
 1. Select inside a table.
 1. Select the gray rectangle next to the row you want to set a property for and select **Row Properties**.
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-select-row.png" alt-text="Screenshot showing selecting row properties.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-select-row.png" alt-text="Screenshot showing selecting row properties." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-select-row.png":::
 
 1. In the **Row Properties** dialog on the **Accessibility** tab, set the new property.
 
-    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png" alt-text="Screenshot showing setting row properties on the Accessibility tab.":::
+    :::image type="content" source="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png" alt-text="Screenshot showing setting row properties on the Accessibility tab." lightbox="media/paginated-accessible-structure-type-overwrite/paginated-row-properties-accessibility.png":::
 
 ### Benefits of setting cell values
 

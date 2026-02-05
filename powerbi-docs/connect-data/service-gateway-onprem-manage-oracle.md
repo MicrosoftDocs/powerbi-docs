@@ -1,9 +1,9 @@
 ---
 title: Manage your data source - Oracle
 description: Learn how to manage the on-premises data gateway and Oracle data sources that belong to that gateway.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
@@ -42,7 +42,7 @@ After you install and configure OCMT properly, you can use Power BI Desktop or a
    > [!NOTE]
    > All queries to the data source run with these credentials. To learn more about credential storage, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
-1. Configure the **Privacy level** for your data source. This setting controls how data can combine for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+1. Configure the **Privacy level** for your data source. This setting controls how data can combine for scheduled refresh. The privacy-level setting doesn't apply to DirectQuery. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.microsoft.com/office/privacy-levels-power-query-cc3ede4d-359e-4b28-bc72-9bee7900b540).
 
 1. Select **Create**.
 

@@ -1,13 +1,13 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 09/08/2025
+ms.date: 02/03/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -16,8 +16,32 @@ Power BI Mobile app versions are released on a monthly cadence. The latest versi
 
 For related "What's New" information, see:
 
-* [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+- [What's new in Power BI](../../fundamentals/whats-new.md)
+- [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## February 2026
+
+### Rotate your report view with a single tap
+
+You can now change the orientation of a report on your phone, even if orientation is locked on your device. A new **Rotate view** button in the report header menu lets you switch between portrait and landscape layouts without changing your device settings. This is especially useful when you want to see more data or get a different perspective on your reports.
+
+### Chat with your data as a guest on an external organization's site
+
+You can now use the standalone Copilot to chat with data from external organizations for faster insights. If you're a guest on an external organization's site, you can open the navigation tree or go to the bottom navigation menu and select the **Copilot** icon to start chatting with their data. This feature enables you to get AI-powered insights from data you have access to, even when that data belongs to another organization.
+
+## December 2025
+
+### Attach a report or semantic model to Copilot chat
+
+Now you can attach a report or semantic model to your Copilot chat for more relevant answers. Just tap **+** or type **/** in the chat field to find and select an item, then Copilot focuses its answers on your data. For more information, see [Attach an item as reference](./mobile-standalone-copilot.md#attach-an-item-as-reference).
+
+## November 2025
+
+### Standalone Copilot comes to Power BI mobile apps (preview)
+
+The standalone Copilot experience is now available in the Power BI mobile apps. Access it from the Copilot button in the bottom navigation bar to ask questions about any report, semantic model, or data agent in your organization. Get AI-powered answers with textual summaries and interactive visuals, all without opening a specific report first. On iPhone and iPad, you can even use voice input to dictate your questions. This full-screen chat experience makes it easier than ever to explore your data on the go. For more information, see [Standalone Copilot in Power BI mobile apps (preview)](./mobile-standalone-copilot.md).
+
+:::image type="content" source="media/mobile-standalone-copilot/copilot-button-nav.png" lightbox="media/mobile-standalone-copilot/copilot-button-nav.png" alt-text="Screenshot of Power BI mobile app showing the Copilot button in the bottom navigation bar." border="false":::
 
 ## September 2025
 
@@ -406,7 +430,7 @@ The Power BI Windows app now opens directly in the new look. You land on the new
 
 Have a link to a report you don't have access to? Now you can request access directly from your Power BI Windows app!
 
-:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
+:::image type="content" source="media/mobile-whats-new-in-the-mobile-apps/power-bi-request-access-link-windows-app.png" alt-text="Screenshot of the request access link in the Windows app.":::
 
 ## December 2021
 
@@ -610,7 +634,7 @@ Now you can view your dashboards in full-screen mode, giving you more space to v
 We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md)!
 
 #### Enhanced security using device protection (preview) (Android)
-Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. [Learn about native secure access](mobile-native-secure-access.md)
+Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. 
 
 #### Scanning is now available on iPad
 Now, right from your iPad, you can scan barcodes to filter your reports, and use QR codes to open reports quickly.  
@@ -686,7 +710,7 @@ The Power BI mobile app now supports bookmarks created in Power BI. When you ope
 
 #### Android support for remote configuration of Report Server access settings
 
-We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices.
 
 #### Cross-report drillthrough
 
@@ -764,7 +788,7 @@ We integrated with Azure AD [new app protection-based conditional access capabil
 
 #### Device protection (iOS)
 
-Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](./mobile-native-secure-access.md).
+Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. 
 
 #### One page report Slideshow (Windows)
 
@@ -932,7 +956,7 @@ When report authors customize dashboard themes in the Power BI service, the look
 
 #### iOS: Configure Power BI iOS mobile app access to a report server remotely
 
-Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
+Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. 
 
 #### Power BI for Mixed Reality app (Preview)
 
@@ -982,7 +1006,7 @@ When you tap and hold on a report visual to access tooltips, you can now drag yo
 
 #### Report favorites
 
-Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](../end-user-favorite.md#mobile).
 
 #### View shared reports
 
@@ -1039,7 +1063,7 @@ Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.c
 
 #### iOS devices
 **New Q&A experience on iOS (Preview)**
-Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. 
 
 ### Responsive visuals
 **Responsive visual for phone reports and dashboards**
@@ -1076,7 +1100,7 @@ Read this [Developer guide](https://github.com/PowerBi-Projects/PowerBI-visuals/
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**
-Now you can [ask questions of your data with Q&A](mobile-apps-ios-qna.md) by talking rather than typing. 
+Now you can ask questions of your data with Q&A by talking rather than typing. 
 
 ### March 2017
 Read the [mobile apps feature summary for March 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
@@ -1114,7 +1138,7 @@ Now you can scroll in bar and column charts in a report by touching the chart it
 #### iOS devices
 **Ask questions of your data with a preview of Q&A** 
 
-With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on https://powerbi.com. Now it's also [available in the mobile app on your iPhone or iPad](mobile-apps-ios-qna.md).
+With Q&A, you ask questions about your data in your own words, and Power BI provides the answers. Q&A is already in the Power BI service on https://powerbi.com. Now it's also available in the mobile app on your iPhone or iPad.
 
 **Connect to more than one SSRS server** 
 
@@ -1160,10 +1184,7 @@ To make sure you can access your latest data while offline, we perform a refresh
 #### iOS devices
 **Annotate and share**
 
-Now you can annotate and share a tile, report, or visualization from the Power BI mobile app for iOS. 
-
-* [On the iPhone](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [On the iPad](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
+Now you can [annotate and share](mobile-share-dashboard-from-the-mobile-apps.md#annotate-and-share) a tile, report, or visualization from the Power BI mobile app for iOS. 
 
 **Request access to dashboards**
 
@@ -1237,7 +1258,7 @@ This custom visualization is now available on the Surface Hub
 ### August 2016
 #### All phones
 **Favorites** 
-View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
+View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](../end-user-favorite.md#mobile).
 
 **Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards.
 **Data-driven alerts**
@@ -1389,12 +1410,12 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 ### February 2016
 #### Android
-View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
+View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md). 
 
 #### Power BI app for Windows 10 devices
 View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 
-Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
+Faster time to insights on your Windows 10 mobile dashboards: Share a tile snapshot or open a report directly from the dashboard.
 
 ### January 2016
 

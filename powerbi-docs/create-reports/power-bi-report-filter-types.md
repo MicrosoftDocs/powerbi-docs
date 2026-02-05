@@ -6,15 +6,16 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 11/28/2022
+ms.topic: concept-article
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports
 
 Filters don't all behave the same way because they're not created the same way. How you create them influences how they behave in the filter pane in editing mode. This article describes the different kinds of filters, the different ways you create them, and the different things they're good for. For more information, see [add filters to reports](power-bi-report-add-filter.md).
 
-![Screenshot of a sample Power BI Filter pane.](media/power-bi-report-filter-types/power-bi-filter-pane.png)
+:::image type="content" source="media/power-bi-report-filter-types/power-bi-filter-pane.png" alt-text="Screenshot of a sample Power BI Filter pane.":::
 
 ## Compare filter types
 
@@ -50,13 +51,13 @@ These next filter types are less common, but you still want to understand them i
 
 Include and exclude filters are automatically added to the filter pane when you use the include or exclude functionality for a visual. If you can edit a report, you can delete, lock, hide, or sort this filter in the pane. You can't edit, clear, or rename an include or exclude filter because it's associated with the include and exclude functionality of visuals.
 
-![Screenshot of the Filters pane, highlighting the Exclude selection.](media/power-bi-report-filter-types/power-bi-filters-exclude.png)
+:::image type="content" source="media/power-bi-report-filter-types/power-bi-filters-exclude.png" alt-text="Screenshot of the Filters pane, highlighting the Exclude selection.":::
 
 ## Drill-down filters
 
 Drill-down filters are automatically added to the filter pane when you use the drill-down functionality for a visual in your report. If you can edit a report, you can edit or clear the filter in the pane. You can't delete, hide, lock, rename, or sort this filter because it's associated with the drill-down functionality of visuals. To remove the drill-down filter, select the drill-up button for the visual.
 
-![Screenshot of a visualization with Drill Mode set to On.](media/power-bi-report-filter-types/power-bi-filters-drill-down.png)
+:::image type="content" source="media/power-bi-report-filter-types/power-bi-filters-drill-down.png" alt-text="Screenshot of a visualization with Drill Mode set to On.":::
 
 ## Cross-drill filters
 
@@ -74,7 +75,7 @@ URL filters get added to the pane by adding a URL query parameter. If you can ed
 
 app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=Stores~2FStatus%20eq%20'Off'
 
-![Screenshot of the Status filter for a report URL set to off.](media/power-bi-report-filter-types/power-bi-filter-url.png)
+:::image type="content" source="media/power-bi-report-filter-types/power-bi-filter-url.png" alt-text="Screenshot of the Status filter for a report URL set to off.":::
 
 For more information, see [setting up URL filters](../collaborate-share/service-url-filters.md).
 
@@ -82,7 +83,7 @@ For more information, see [setting up URL filters](../collaborate-share/service-
 
 Pass-through filters are visual-level filters created through Q&A. If you can edit a report, you can delete, hide, or sort these filters in the pane. However, you can't rename, edit, clear, or lock these filters.
 
-![Screenshot of a visual, highlighting the information that has the pass-through filter applied.](media/power-bi-report-filter-types/power-bi-filters-qna.png)
+:::image type="content" source="media/power-bi-report-filter-types/power-bi-filters-qna.png" alt-text="Screenshot of a visual, highlighting the information that has the pass-through filter applied.":::
 
 ## Related content
 

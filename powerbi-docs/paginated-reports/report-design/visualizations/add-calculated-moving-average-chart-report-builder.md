@@ -1,7 +1,8 @@
 ---
-title: "Add a Calculated Moving Average to a Series on a Chart in a Power BI Paginated Report | Microsoft Docs"
+title: Add a Calculated Moving Average to a Series on a Chart in a Power BI Paginated Report
 description: Learn why you would add the Moving Average formula price indicator on a chart to identify trends in Power BI Report Builder.
-ms.date: 06/18/2025
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -15,17 +16,17 @@ ms.reviewer: saurkumar
 
 A moving average is an average of the data in your series, calculated over a defined period of time. In Power BI paginated reports, the moving average can be shown on the chart to identify significant trends.  
 
-![Screenshot of a column chart showing sales over time.](./media/paginated-reports-visualizations/report-builder-column-chart-tutorial.png "report-builder-column-chart-tutorial")
+:::image type="content" source="./media/paginated-reports-visualizations/report-builder-column-chart-tutorial.png" alt-text="Screenshot of a column chart showing sales over time." lightbox="./media/paginated-reports-visualizations/report-builder-column-chart-tutorial.png":::
 
 To add a moving average to a chart:
   
 1. Right-click on a value in the chart and select **Add Calculated Series**, as shown in the following image. The **Calculated Series Properties** dialog opens.
 
-   ![Screenshot of the add calculated series command highlighted in the local menu.](./media/paginated-reports-visualizations/menu-add-calculated-series.png "menu-add-calculated-series")
+   :::image type="content" source="./media/paginated-reports-visualizations/menu-add-calculated-series.png" alt-text="Screenshot of the add calculated series command highlighted in the local menu." lightbox="./media/paginated-reports-visualizations/menu-add-calculated-series.png":::
   
 1. In the **Calculated Series Properties** dialog, select the **Moving average** option from the **Formula** dropdown list.
 
-   ![Screenshot of the calculated series properties dialog.](./media/paginated-reports-visualizations/dialog-calculated-series-properties.png "dialog-calculated-series-properties")
+   :::image type="content" source="./media/paginated-reports-visualizations/dialog-calculated-series-properties.png" alt-text="Screenshot of the calculated series properties dialog." lightbox="./media/paginated-reports-visualizations/dialog-calculated-series-properties.png":::
   
 1. Specify an integer value for the **Period** that represents the period of the moving average.  
   

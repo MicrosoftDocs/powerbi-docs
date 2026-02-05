@@ -1,13 +1,14 @@
 ---
-title: "Custom code in expressions in a paginated report in Power BI Report Builder"
+title: Custom Code in Expressions in a Paginated Report in Power BI Report Builder
 description: Find out how to add references to custom code embedded in a paginated report.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 09/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---
@@ -36,7 +37,6 @@ For more information about each function, see <xref:System.Math>, <xref:System.C
 To include a reference to other less commonly used CLR namespaces, you must use a fully qualified reference, for example, <xref:System.Text.StringBuilder>. IntelliSense is not supported in the code pane of the **Expression** dialog box for these less commonly used functions.
 
 For more information, see [Visual Basic Runtime Library Members](/dotnet/visual-basic/language-reference/runtime-library-members) on MSDN.
-
 
 ## <a id="Embedded"></a> Include Embedded Code
 

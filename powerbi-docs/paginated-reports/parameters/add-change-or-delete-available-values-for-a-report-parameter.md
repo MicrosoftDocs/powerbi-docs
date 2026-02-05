@@ -1,12 +1,12 @@
 ---
-title: "Add or modify available values for a Power BI paginated report parameter | Microsoft Docs"
+title: Add or Modify Available Values for a Power BI Paginated Report Parameter
 description: In this article you learn to add, change, or delete available values for a Power BI paginated report parameter. Customize the list of choices a user can make in a paginated report for a parameter in Report Builder by specifying a list of available values to display to the user.
-ms.date: 01/23/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -28,7 +28,7 @@ ms.reviewer: saurkumar
     > [!NOTE]  
     >  If the Report Data pane is not visible, click **View** and then click **Report Data**.  
   
-2.  Click **Available Values**. Select an available values option:  
+1.  Click **Available Values**. Select an available values option:  
   
     -   Click **Specify values** to manually provide a list of values, and optionally, friendly names (the labels) for the values.  
   
@@ -47,7 +47,7 @@ ms.reviewer: saurkumar
   
          In **Label field**, choose the name of the field that provides the friendly names for the parameter. If there is no separate field for friendly names, choose the same field as you chose for the **Value** field.  
   
-3.  Select **OK**.
+1.  Select **OK**.
   
      When you preview the report, you see a drop-down list of available values for the parameter.  
   
@@ -55,11 +55,11 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, expand the Parameters node. Right-click the parameter and click **Parameter Properties**. The **Report Parameters** dialog box opens.  
   
-2.  Click **Available Values**.  
+1.  Click **Available Values**.  
   
-3.  In **Select from one of the following options**, click **None**.  
+1.  In **Select from one of the following options**, click **None**.  
   
-4.  Select **OK**.
+1.  Select **OK**.
   
      When you preview the report, the drop-down list of available values for the parameter no longer appears.  
   

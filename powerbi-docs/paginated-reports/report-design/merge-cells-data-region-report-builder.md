@@ -1,10 +1,11 @@
 ---
-title: "Merge cells in a data region in a Power BI paginated report | Microsoft Docs"
+title: Merge Cells in a Data Region in a Power BI Paginated Report
 description: Discover how to merge cells in a data region in a paginated report to combine cells, improve data region appearance, or provide spanning labels for column and row groups in Power BI Report Builder.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -21,9 +22,9 @@ You can only merge cells within each area of a data region: corner, column heade
   
 1.  In the data region on the report design surface, select the first cell to merge. Holding the left mouse button down, drag vertically or horizontally to select adjacent cells. The selected cells are highlighted.  
   
-2.  Right-click the selected cells and select **Merge Cells**. The selected cells are combined into a single cell.  
+1.  Right-click the selected cells and select **Merge Cells**. The selected cells are combined into a single cell.  
   
-3.  Repeat steps 1 and 2 to merge other adjacent cells in a data region.  
+1.  Repeat steps 1 and 2 to merge other adjacent cells in a data region.  
   
 ## Related content
 

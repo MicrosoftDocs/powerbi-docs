@@ -1,12 +1,12 @@
 ---
-title: "Format pointers on a gauge in Power BI paginated report | Microsoft Docs"
+title: Format Pointers on a Gauge in Power BI Paginated Report
 description: Find out how to indicate the current value of a gauge in a Power BI paginated report in Power BI Report Builder by formatting points on the gauge. 
-ms.date: 03/10/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

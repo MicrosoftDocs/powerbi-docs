@@ -1,12 +1,12 @@
 ---
 title: Model relationships in Power BI Desktop
 description: Learn about the purpose, basic design principles, and properties of data model relationships in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 09/05/2025
 ---

@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 01/11/2024
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to learn how to create an R-powered visual for Power BI so that I can use R scripts to create custom visuals in Power BI.
 ---
 
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+* A **Power BI Pro** account. [Sign up for a free trial](https://www.microsoft.com/power-platform/products/power-bi/pricing) before you begin.
 * An R engine. You can download one free from many locations, including the [Microsoft R Open download page](https://www.microsoft.com/download/details.aspx?id=51205) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.

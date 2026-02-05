@@ -1,14 +1,15 @@
 ---
-title: "Power BI gateway and Report Builder support for ODBC data sources"
+title: Power BI Gateway and Report Builder Support for ODBC Data Sources
 description: Learn how to configure ODBC data sources in the Power BI gateway and use ODBC data sources in Power BI Report Builder.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 09/28/2023
+ms.topic: concept-article
+ms.date: 12/01/2025
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources
@@ -24,14 +25,14 @@ Data Source Name (DSN) and driver connection strings are both supported.
 
 ## Before you install the Power BI gateway
 
-You need a Power BI gateway version February 2021 or later. We recommend installing the gateway on a separate computer from Power BI Report Builder or Power BI Desktop. There are some scenarios where using the same computer might cause problems. 
+You need a Power BI gateway version February 2021 or later. Install the gateway on a separate computer from Power BI Report Builder or Power BI Desktop. There are some scenarios where using the same computer might cause problems. 
 
 ## Install and configure Power BI Report Builder for ODBC data source
 
 The latest version of Power BI Report Builder already contains the ODBC data extension.
 
 1. Install the latest version of [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
-2. Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
+1. Install the 64-bit ODBC driver that you plan to use with Power BI Report Builder.
 
 ## Install Power BI gateway, configure ODBC data sources
 
@@ -42,19 +43,19 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     >[!NOTE]
     >Personal gateways aren't supported for paginated reports, because they require DirectQuery support.
 
-2. Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
-3. Install the 64-bit ODBC driver that you plan to use on the gateway computer.
+1. Refer to the article [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md) for information on setting it up.
+1. Install the 64-bit ODBC driver that you plan to use on the gateway computer.
 
     >[!NOTE]
     >File DSNs aren't supported. If you'd like to use a DSN, create a 64-bit [System DSN](/previous-versions/windows/desktop/odbc/dn170519(v=vs.85)) on the gateway computer.
 
 1. To configure an ODBC data source in the Power BI service, select **Manage connections and gateways** under **Settings**:
 
-    :::image type="content" source="media/paginated-reports-odbc-support/power-bi-manage-gateway.png" alt-text="Screenshot of Manage gateway option under settings.":::
+    :::image type="content" source="media/paginated-reports-odbc-support/power-bi-manage-gateway.png" alt-text="Screenshot of Manage gateway option under settings." lightbox="media/paginated-reports-odbc-support/power-bi-manage-gateway.png":::
 
 1. Select **New** at the top of the ribbon to add a new data source. Then choose **Add data source** >  **ODBC Data Source Type**:
 
-    :::image type="content" source="media/paginated-reports-odbc-support/configure-data-source.png" alt-text="Screenshot of data source settings.":::
+    :::image type="content" source="media/paginated-reports-odbc-support/configure-data-source.png" alt-text="Screenshot of data source settings." lightbox="media/paginated-reports-odbc-support/configure-data-source.png":::
 
 1. Paste in the connection string (System DSN or driver) and select an authentication method. For ODBC data sources, the following authentication methods are supported:
 
@@ -76,7 +77,7 @@ Certain drivers and configurations might not support all authentication methods.
 
 In addition to creating ODBC data sources in the gateway up front, you can create ODBC data sources on demand when you upload a paginated report. If an ODBC data source doesn’t exist, the upload process prompts you to create one:
 
-:::image type="content" source="media/paginated-reports-odbc-support/gateway-binding.png" alt-text="Screenshot of Create data source prompt.":::
+:::image type="content" source="media/paginated-reports-odbc-support/gateway-binding.png" alt-text="Screenshot of Create data source prompt." lightbox="media/paginated-reports-odbc-support/gateway-binding.png":::
 
 ## Limitations and considerations
 
@@ -92,7 +93,7 @@ Here are some of the limitations:
     >[!NOTE]
     >Some data sources might require specific formatting. You can use an expression to format the parameter in the preceding example. For example, `=Format(Parameters!Date.Value, "yyyy-MM-dd")`.
 
-- For some ODBC drivers, there's a behavior difference between the gateway and Power BI Report Builder. This may apply to all, some, or just one driver. One example is that the *Simba-BigQuery* query requires casting of the parameter if it's not a string type. 
+- For some ODBC drivers, there's a behavior difference between the gateway and Power BI Report Builder. This might apply to all, some, or just one driver. One example is that the *Simba-BigQuery* query requires casting of the parameter if it's not a string type. 
 
    Example error string: "A data source used by this report returned an error. An exception encountered while accessing the target data source ERROR [42000] [Simba][BigQuery] (70) Invalid query: No matching signature for operator = for argument types: INT64, STRING. Supported signature: ANY = ANY at [2:7]"
 

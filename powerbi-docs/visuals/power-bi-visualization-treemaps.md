@@ -1,15 +1,16 @@
 ---
 title: Treemaps in Power BI
 description: Learn how to create and configure treemaps in the Power BI service and Power BI Desktop.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 12/01/2025
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Treemaps in Power BI
@@ -59,7 +60,7 @@ Treemaps are a great choice for many scenarios:
 - Identify patterns, outliers, most-important contributors, and exceptions.
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro or Premium Per User (PPU) licenses. If both parties don't have individual paid licenses, the report needs to be saved in Premium capacity or Fabric F64 or greater capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Get the sample
 
@@ -190,4 +191,4 @@ Keep in mind the following information when working with treemaps in Power BI.
 ## Related content
 
 - Create [waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

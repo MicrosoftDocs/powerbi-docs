@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Tenant-level security planning"
 description: "Learn about tenant-level security planning for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/30/2024
 ms.custom:
   - fabric-cat

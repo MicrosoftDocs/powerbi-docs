@@ -6,8 +6,8 @@ ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 08/13/2024
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Power BI Desktop projects (PREVIEW)

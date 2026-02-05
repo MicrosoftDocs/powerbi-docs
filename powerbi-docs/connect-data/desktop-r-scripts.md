@@ -1,9 +1,8 @@
 ---
 title: Run R scripts in Power BI Desktop
 description: Learn how to run R scripts directly in Power BI Desktop and import the resulting semantic models into a Power BI Desktop data model.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to

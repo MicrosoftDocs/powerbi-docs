@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Get started creating in the Power BI service"
+title: "Tutorial: Get Started Creating in the Power BI Service"
 description: Learn how to get started with the Power BI online service (app.powerbi.com) by following the steps in this tutorial.
 author: julcsc
 ms.author: juliacawthra
@@ -7,11 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 09/24/2025
+ms.date: 12/01/2025
 ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
+ai-usage: ai-assisted
 ---
 
 # Tutorial: Get started creating in the Power BI service
@@ -42,7 +43,7 @@ In this tutorial, you complete the following tasks:
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), and select the **Account manager** icon. Choose **Free trial**.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account and plan on creating content, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a license. Open the Power BI service (app.powerbi.com), and select the **Account manager** icon. Choose **Free trial**.
 
 Although a paid or trial license is recommended, it isn't required for this tutorial. Even if you can't try the steps yourself, the description and screenshots still provide you with an introduction to working with data in the Power BI service.  
 
@@ -56,7 +57,7 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. Open the Power BI service (app.powerbi.com) in your browser.
 
-   Don't have an account? [Sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web).
+   Don't have an account? [Sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 1. [Download the Excel file](https://go.microsoft.com/fwlink/?LinkID=521962) that has the Financial Sample data.
 
@@ -89,6 +90,13 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. From the report canvas, you can pin the item to a dashboard to monitor the data for changes over time.
 
 We can start by asking Copilot to review our data and suggest some visuals.
+
+> [!NOTE]
+> **If Copilot isn't available:** Copilot requires your organization to enable it and may not be available in all regions or for all license types. If you don't see Copilot:
+>
+> - Check with your administrator to see if Copilot is enabled for your organization.
+> - You can still complete this tutorial by creating visuals manually (skip to the [Create report visuals from scratch](#create-report-visuals-from-scratch) section).
+> - For more information about Copilot availability, see [Copilot for Power BI overview](../create-reports/copilot-introduction.md).
 
 ### Switch between report views
 
@@ -153,6 +161,9 @@ Add a new page to your report. The new report page canvas is blank and shows the
 
    Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma next to data that has numeric values.
 
+   > [!NOTE]
+   > **Don't see sigma or calendar symbols?** These icons appear based on Power BI's automatic detection of data types. If your semantic model was imported differently or uses calculated columns, you might not see these symbols. The symbols are visual indicators only; your data still works correctly in visualizations regardless of whether the icons appear.
+
    :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
 1. Under **financials**, select the **Profit** data item, and then select the **Date** item. **Date** has a hierarchy, so expand **Date** and select **Quarter** and **Year**.
@@ -180,7 +191,7 @@ Add a new page to your report. The new report page canvas is blank and shows the
 
    :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
-   Your dashboard shows the tiles you pinned earlier when you were using Coplot plus the line chart that you created. 
+   Your dashboard shows the tiles you pinned earlier when you were using Copilot plus the line chart that you created. 
 
    :::image type="content" source="media/service-get-started/power-bi-dashboard-tiles.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." :::
 
@@ -301,6 +312,6 @@ When you delete a semantic model, the Power BI service also deletes all reports 
 
 ## Related content
 
-* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
-* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
+- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

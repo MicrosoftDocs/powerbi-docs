@@ -1,14 +1,15 @@
 ---
 title: Troubleshoot refresh scenarios
 description: This article provides ways to troubleshoot issues with refreshing data within the Power BI service, for various data sources and conditions.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/22/2025
+ms.date: 11/14/2025
 LocalizationGroup: Data refresh
+ai-usage: ai-assisted
 ---
 
 # Troubleshoot refresh scenarios
@@ -16,7 +17,7 @@ LocalizationGroup: Data refresh
 This article describes different scenarios you might encounter when refreshing data within the Power BI service.
 
 > [!NOTE]
-> If you encounter an issue or scenario not listed in this article you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter an issue or scenario not listed in this article you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://support.fabric.microsoft.com/support/).
 
 You should always ensure that basic requirements for refresh are met and verified:
 
@@ -104,7 +105,7 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. [Throttling](/fabric/enterprise/throttling) can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
+A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
 
 * Refresh during nonpeak times. Performing refresh operations during non-business hours or other non-peak times helps ensure that the overall usage in the capacity remains relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
 * Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica performs the semantic model during refresh while interactive queries are executed on the read-only replica.
@@ -127,6 +128,12 @@ This error indicates you have too many semantic models running refresh at the sa
 *Node level limit exceeded.*
  
 This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
+
+## Low memory situations
+
+Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
+
+If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Dataflows or datamart failures in Premium workspaces
 
@@ -172,15 +179,18 @@ If this error appears, the following steps can address the issue:
 2. For each *SummarizeColumns* expression, make the following changes:
 
   For a *SummarizeColumns* expression with *GB* on *Product* and *Geography*, for example:
-  ```
+
+  ```sql
   SummarizeColumns(
   Product[Color],
   Geography[Country],
   ...
   )
   ```
+
   Add *Product* and *Geography* as filters into *SummarizeColumns* so it looks like the following expression:
-  ```
+
+  ```sql
   SummarizeColumns(
   Product[Color],
   Geography[Country],
@@ -189,13 +199,28 @@ If this error appears, the following steps can address the issue:
   ...
   )
   ```
+
 These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
-## Connection errors when refreshing from Semantic Models
+## Connection errors when refreshing from semantic models
 
 The Analysis Services connector may encounter the error ```The connection either timed out or was lost```. This error is usually a transient error when the network connection fails, and a retry will succeed. 
  
 In some circumstances, this error can be more permanent when the results of the query are being used in a complex M expression, and the results of the query are not fetched quickly enough during execution of the M program. For example, this error can occur when a data refresh is copying from a Semantic Model and the M script involves multiple joins. In such scenarios, data might not be retrieved from the outer join for extended periods, leading to the connection being closed with the above error. To work around this issue, you can use the ```Table.Buffer``` function to cache the outer join table.
+
+## Dataflow refresh completes quickly without updating data
+
+If a dataflow refresh appears to complete in an unusually short time without throwing any errors, but the data isn't actually being updated, consider the following causes:
+
+* **All data already processed**: If you're using incremental refresh, the dataflow may have already processed all available new or changed data in a previous refresh. The refresh completes quickly because there's nothing new to process. Check your incremental refresh policy and the date range it covers.
+
+* **Incremental refresh filter issue**: Verify that your incremental refresh filter is correctly configured. If the filter excludes all data, the refresh completes without processing any rows.
+
+* **Linked or dependent dataflows**: If your dataflow references another dataflow and that upstream dataflow hasn't changed, Power BI might skip the refresh of dependent entities. Check whether any upstream dataflows have actually refreshed.
+
+* **No data changes at the source**: The dataflow might be connecting to a data source where no new data has been added or changed since the last refresh. In this case, the refresh completes successfully but no data is updated.
+
+To troubleshoot, download the refresh history CSV to view the **Rows processed** and **Bytes processed** metrics. If these values are zero or significantly lower than expected, it indicates that no new data was processed during the refresh. You can also manually trigger a full refresh (if not using incremental refresh) to verify that the dataflow can retrieve data properly.
 
 ## Related content
 

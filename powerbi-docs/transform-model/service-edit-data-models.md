@@ -1,9 +1,9 @@
 ---
 title: Edit semantic models in the Power BI service
 description: Learn how to edit semantic models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
-author: emlisa
-ms.author: emlisa
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: emlisa
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
@@ -292,13 +292,13 @@ Keep in mind the following considerations when interacting with the Power Query 
 * Dynamic data sources aren't supported in the Power Query editor.
 * When adding a new import data source using Power Query on the web, the semantic model doesn't automatically inherit the sensitivity label from that data source.
 * When importing data using Power Query in the Power BI service, relationships defined in the underlying data sources aren't automatically imported. These relationships must be manually recreated in the semantic model.
+* You cannot use the Power Query editor when editing models with incremental refresh in the web experience. 
 
 
 ### Unsupported semantic models
 
 The following scenarios don't support opening the semantic model in the service:
 
-* Semantic models that have incremental refresh.
 * Semantic models deployed through deployment pipelines can only be edited on the web in the development workspace. Editing in test and production workspaces isn't supported.
 * Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing.
 * Semantic models that have automatic aggregations configured.
@@ -312,7 +312,7 @@ To see which limitation is preventing you from opening your semantic model, hove
 
 ### Limitations
 
-There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
+There are still some functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
 
 * The refresh button within the web editor for semantic models is disabled for Direct Lake, DirectQuery, and composite models as well as models containing customer connectors or cube data sources. 
 * Setting a table as a feature table
@@ -326,9 +326,10 @@ There are still many functional gaps between the model view in Power BI desktop 
 
 
 Additionally, keep in mind the following: 
-* As you make changes to your semantic model, your changes will be automatically saved. [Semantic model version history](../transform-model/service-semantic-model-version-history.md) is supported for semantic models edited in the web and is still in preview. This feature allows you to recover from critical mistakes.
+* As you make changes to your semantic model, your changes will be automatically saved. [Semantic model version history](../transform-model/service-semantic-model-version-history.md) is supported for semantic models edited in the web. This feature allows you to recover from critical mistakes.
 * Editing on the web isn't available in collaborative workspaces if converting the model to [large semantic model storage format fails](https://go.microsoft.com/fwlink/?linkid=2309615). In this case you can still use Viewing mode to view but not edit the model.
 * The *Edit in Desktop* option from the Viewing/Editing mode toggle is available only for Direct Lake models. This launches live editing of the Direct Lake semantic model in Power BI Desktop, and it's supported only on Windows machines. All requirements for [live editing Direct Lake models in Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2314634) apply.
+
 
 
 ### Semantic models edited with external tools

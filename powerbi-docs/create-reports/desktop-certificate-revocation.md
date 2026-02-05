@@ -6,8 +6,9 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 03/06/2023
+ms.topic: concept-article
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ms.custom: sfi-image-nochange
 ---

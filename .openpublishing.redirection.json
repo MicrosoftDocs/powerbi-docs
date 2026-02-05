@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-types-for-reports-and-q-and-a.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "powerbi-docs/consumer/end-user-home.md",
       "redirect_url": "/power-bi/consumer/end-user-experience#home",
       "redirect_document_id": false
@@ -34,11 +39,6 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-column-bar-format.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "powerbi-docs/visuals/power-bi-visualization-card.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-new-card",
-      "redirect_document_id": true
     },
     {
       "source_path": "powerbi-docs/create-reports/power-bi-change-owner.md",
@@ -132,22 +132,42 @@
     },
     {
       "source_path": "powerbi-docs/consumer/get-started-metrics.md",
-      "redirect_url": "/power-bi/create-reports/get-started-metrics",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/get-started-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/create-metric-sets.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/create-metric-sets.md",
-      "redirect_url": "/power-bi/create-reports/create-metric-sets",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "powerbi-docs/consumer//view-explore-metrics.md",
-      "redirect_url": "/power-bi/create-reports//view-explore-metrics",
+      "source_path": "powerbi-docs/consumer/view-explore-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/view-explore-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/use-monitor-metrics.md",
-      "redirect_url": "/power-bi/create-reports/use-monitor-metrics",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/use-monitor-metrics.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-introduction",
       "redirect_document_id": false
     },
     {
@@ -292,7 +312,7 @@
     },
     {
       "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": false
     },
     {
@@ -961,6 +981,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "powerbi-docs/power-bi-report-add-visualizations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/power-bi-report-add-visualizations-i.md",
       "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-i",
       "redirect_document_id": true
@@ -969,6 +994,16 @@
       "source_path": "powerbi-docs/power-bi-report-add-visualizations-ii.md",
       "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations-ii",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-report-add-visualizations-ii.md",
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-report-add-visualizations-i.md",
+      "redirect_url": "/power-bi/visuals/power-bi-report-add-visualizations",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-report-change-visualization-type.md",
@@ -998,7 +1033,7 @@
     {
       "source_path": "powerbi-docs/power-bi-visualization-card.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-combo-chart.md",
@@ -1092,8 +1127,8 @@
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-types-for-reports-and-q-and-a.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/end-user-q-and-a-tutorial.md",
@@ -1292,7 +1327,7 @@
     },
     {
       "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": false
     },
     {
@@ -3217,8 +3252,13 @@
     },
     {
       "source_path": "powerbi-docs/service-connect-to-github.md",
-      "redirect_url": "/power-bi/connect-data/service-connect-to-github",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/connect-data/service-connect-to-github.md",
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-connect-to-office365mon.md",
@@ -3707,8 +3747,13 @@
     },
     {
       "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
-      "redirect_url": "/power-bi/connect-data/service-tutorial-connect-to-github",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/connect-data/service-tutorial-connect-to-github.md",
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
@@ -4627,12 +4672,12 @@
     },
     {
       "source_path": "powerbi-docs/transform-model/service-cognitive-services.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": true
     },
     {
       "source_path": "powerbi-docs/transform-model/service-dataflows-add-cdm-folder.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
@@ -4707,12 +4752,12 @@
     },
     {
       "source_path": "powerbi-docs/transform-model/service-machine-learning-automated.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/transform-model/service-machine-learning-integration.md",
-      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
       "redirect_document_id": false
     },
     {
@@ -6577,7 +6622,7 @@
     },
     {
       "source_path": "powerbi-docs/enterprise/index.yml",
-      "redirect_url": "/fabric/enterprise/powerbi/index",
+      "redirect_url": "/fabric/enterprise/index",
       "redirect_document_id": false
     },
     {
@@ -6802,7 +6847,7 @@
     }, 
     {
         "source_path": "powerbi-docs/transform-model/dataflows/dataflows-machine-learning-integration.md",
-        "redirect_url": "/power-bi/transform-model/",
+        "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
         "redirect_document_id": false
     }, 
     {
@@ -6849,6 +6894,152 @@
       "source_path": "powerbi-docs/support/service-tips-for-finding-help.md",
       "redirect_url": "/power-bi/support",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-share-dashboard-from-the-mobile-apps#annotate-and-share",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-favorites.md",
+      "redirect_url": "/power-bi/consumer/end-user-favorite#mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-ios-qna.md",
+      "redirect_url": "/power-bi/consumer/mobile/tutorial-mobile-apps-ios-qna",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-ios-siri-shortcuts.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-quick-access-shortcuts#siri-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-notification-center.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps#notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-tiles-in-the-mobile-apps.md",
+      "redirect_url": "/power-bi/consumer/end-user-tiles#mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-native-secure-access.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-configuration#data-protection-settings-ios-and-android",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/access-dataset-odata.md",
+      "redirect_url": "/power-bi/report-server/connect-data-sources#odata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/configure-powerbi-mobile-apps-remote.md",
+      "redirect_url": "/power-bi/consumer/mobile/mobile-app-configuration#remote-report-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/report-server/connect-data-source-apis-pre-oct-2020.md",
+      "redirect_url": "/power-bi/report-server/connect-data-source-apis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/desktop-latest-update.md",
+      "redirect_url": "/power-bi/fundamentals/whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-doughnut-charts.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-pie-donut-chart",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-list-slicer-considerations-limitations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-list-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-text-slicer-considerations-limitations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-text-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-visual-highlights.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-conditional-formatting.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/button-slicer-paste-values.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-button-slicer-considerations-limitations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-button-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/guidance/overview.md",
+      "redirect_url": "/power-bi/guidance/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/support/best-practices-creating-sr.md",
+      "redirect_url": "/power-bi/support/best-practices-creating-support-ticket",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-column-chart-format-settings.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-column-charts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-considerations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-column-charts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-new-card.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-considerations.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-card-visual-new-format-settings.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-create-desktop-report.md",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-create-report-service.md",
+      "redirect_url": "/power-bi/create-reports/copilot-create-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/service-quick-create-sharepoint-list.md",
+      "redirect_url": "/power-bi/connect-data/create-dataset-sharepoint-online-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-focus.md",
+      "redirect_url": "/power-bi/consumer/end-user-report-view#zoom-in-on-a-visual",
+      "redirect_document_id": false
     }
   ]
-}
+}                           
+    

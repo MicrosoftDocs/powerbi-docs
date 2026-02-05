@@ -1,10 +1,11 @@
 ---
-title: "Add a border to a Power BI paginated report | Microsoft Docs"
+title: Add a Border to a Power BI Paginated Report
 description: Define areas of a paginated report by adding borders to the headers, footers, and report body in Power BI Report Builder. 
-ms.date: 06/27/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -24,9 +25,9 @@ You can add a border to a Power BI paginated report by adding borders to the hea
     > [!NOTE]    
     >  If your report doesn't have headers, you can place borders around just the report body, or you can add headers from the **Insert** tab.    
     
-2. Right-click in the body outside any items on the design surface, and select **Body Properties**. On the **Border** tab, add a left and right border with the style you want.    
+1. Right-click in the body outside any items on the design surface, and select **Body Properties**. On the **Border** tab, add a left and right border with the style you want.    
     
-3. Right-click in the footer outside any items in the footer, and select **Footer Properties**. On the **Border** tab, add a left, bottom, and right border with the style you want.    
+1. Right-click in the footer outside any items in the footer, and select **Footer Properties**. On the **Border** tab, add a left, bottom, and right border with the style you want.    
     
 ## Related content
 

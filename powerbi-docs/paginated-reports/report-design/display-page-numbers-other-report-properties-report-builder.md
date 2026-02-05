@@ -1,10 +1,11 @@
 ---
-title: "Display page numbers or other Power BI paginated report properties | Microsoft Docs"
+title: Display Page Numbers or Other Power BI Paginated Report Properties
 description:  Add properties of your Power BI paginated report including page numbers, filenames, and titles, for display in page headers or footers. 
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -23,7 +24,7 @@ ms.reviewer: saurkumar
 - User ID   
 - Language  
   
- For a page number, you may want to add the word "Page" before the number. You may also want to show the total number of pages.  
+ For a page number, you might want to add the word "Page" before the number. You can also to show the total number of pages.  
    
 ## To add a page number or other report properties  
   
@@ -64,7 +65,7 @@ ms.reviewer: saurkumar
 
 ## Considerations and limitations
 
-- Calculating the total number of pages may slow performance when you run or preview your report. We don't fully paginate the report unless you go to the end, as the tooltip states. The question mark (**?**) is by design, but you can force full pagination. One way to force it is to add a hidden text box in the footer or header with the expression "=Globals!OverallTotalPages". The report has to generate every page to answer that expression. 
+- Calculating the total number of pages might slow performance when you run or preview your report. The report isn't fully paginated unless you go to the end, as the tooltip states. The question mark (**?**) is by design, but you can force full pagination. One way to force it is to add a hidden text box in the footer or header with the expression "=Globals!OverallTotalPages". The report has to generate every page to answer that expression. 
 
 - You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
 

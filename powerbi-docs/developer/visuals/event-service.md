@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 4/30/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to use the rendering events API so that I can notify Power BI that my visual is ready for export to PowerPoint or PDF.
 ---
 

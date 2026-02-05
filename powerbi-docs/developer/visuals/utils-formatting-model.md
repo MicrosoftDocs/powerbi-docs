@@ -8,7 +8,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/23/2024
+ms.date: 12/15/2025
 ms.custom: engagement-fy23
 ---
 

@@ -1,15 +1,16 @@
 ---
-title: Matrix visual format settings
+title: Matrix Visual Format Settings
 description: This document explains all available Format settings for matrix visuals in Power BI Desktop and Power BI Service.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/18/2024
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for matrix visuals so that I can effectively and more easily format my matrix visuals in Power BI Desktop and Power BI Service.
+ai-usage: ai-assisted
 ---
 
 # Matrix visual format settings
@@ -44,9 +45,28 @@ To format and customize your matrix visual in the **Power BI service**, select t
 
 ### Layout and style presets
 
-[!INCLUDE [layout-and-style-presets-style](../includes/core-visuals/layout-and-style-presets-style.md)]
-[!INCLUDE [layout-and-style-presets-layout](../includes/core-visuals/layout-and-style-presets-layout.md)]
-[!INCLUDE [layout-and-style-presets-repeat-row-headers](../includes/core-visuals/layout-and-style-presets-repeat-row-headers.md)]
+##### Style
+
+The Style setting allows you to choose from a set of predefined styles with unique combinations of colors and formatting that can be applied with a single click to change the overall look of your matrix visual. These styles include:
+- **Default**
+- **None**
+- **Minimal**
+- **Bold header**
+- **Alternating rows**
+- **Contrast alternating rows**
+- **Flashy rows**
+- **Bold header flashy rows**
+- **Sparse**
+- **Condensed**
+##### Layout
+
+The Layout menu offers three options for customizing the presentation of your data:
+- **Compact:** The default space-saving layout where row labels are displayed in a single column, and the hierarchy is represented through indentation, useful for displaying more data in less space.
+- **Outline:** Separates each level of the hierarchy into its own column, similar to the way a traditional pivot table displays data, making it easier to read and understand the hierarchy at a glance.
+- **Tabular:** Similar to the outline layout but without indentation. Each hierarchy level is still in its own column, but the data is presented in a flat structure.
+##### Repeat row headers
+
+This toggle controls whether the row headers are repeated on each page of a paginated report. When enabled, the row headers will appear at the top of each page, which can be particularly useful when you have a matrix that spans multiple pages, ensuring that the context of the data is not lost when moving between pages.
 
 ### Grid settings
 
@@ -68,8 +88,20 @@ The **Vertical gridlines** toggle, when enabled, allows you to add lines vertica
 
 The **Border** settings allow you to customize the appearance of the borders around the matrix and its individual sections, working with the settings as shown here.
 
-[!INCLUDE [grid-border-selection](../includes/core-visuals/grid-border-selection.md)]
-[!INCLUDE [grid-border-border-position](../includes/core-visuals/grid-border-border-position.md)]
+##### Selection
+
+This menu allows you to define the borders for different sections of the matrix. Here’s what each option in the Section menu means:
+- **All:** This option applies the border settings to the entire matrix, including column headers, row headers, and the values section
+- **Column header:** Selecting this option will apply the border settings only to the column headers of the matrix.
+- **Row header:** This option will apply the border settings exclusively to the row headers of the matrix.
+- **Values section:** This option will apply the border settings only to the area of the matrix where the data values are displayed.
+##### Border position
+
+This setting offers four options to specify the position of the Border:
+- **Top**
+- **Bottom**
+- **Left**
+- **Right**
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
@@ -77,8 +109,12 @@ The **Border** settings allow you to customize the appearance of the borders aro
 
 The Options menu includes options for row padding and global font size, to adjust the spacing and text size within the matrix visual.
 
-[!INCLUDE [grid-options-row-padding](../includes/core-visuals/grid-options-row-padding.md)]
-[!INCLUDE [grid-options-global-font-size](../includes/core-visuals/grid-options-global-font-size.md)]
+##### Row padding
+
+This setting controls the amount of space between rows, often making the matrix easier to read by adding more white space, while decreasing it can make the matrix more compact.
+##### Global font size
+
+This setting changes the font size for all text within the matrix visual. Increasing the font size can improve readability, especially when presenting to an audience or for users with visual impairments, while decreasing it can allow more data to be displayed on the screen.
 
 ### Blank rows settings
 
@@ -91,7 +127,13 @@ The **Blank rows** toggle is a feature that allows you to insert blank rows with
 
 The **Border** settings allow you to customize the appearance of the borders around the matrix and its individual sections, working with the settings as shown here.
 
-[!INCLUDE [blank-rows-border-border-position](../includes/core-visuals/blank-rows-border-border-position.md)]
+##### Border position
+
+This setting offers four options to specify the position of the Border:
+
+- **Top**
+- **Bottom**
+- **Top and bottom**
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
@@ -103,13 +145,21 @@ The **Border** settings allow you to customize the appearance of the borders aro
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-text-color](../includes/core-visuals/global-text-color.md)]
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
-[!INCLUDE [values-values-alternate-text-color](../includes/core-visuals/values-values-alternate-text-color.md)]
-[!INCLUDE [values-values-alternate-background-color](../includes/core-visuals/values-values-alternate-background-color.md)]
-[!INCLUDE [values-values-text-wrap](../includes/core-visuals/values-values-text-wrap.md)]
+##### Alternate text color
+
+This setting allows you to customize the color for alternating rows by selecting colors from the color palette.
+##### Alternate background color
+
+This setting allows you to customize the color for alternating rows by selecting colors from the color palette.
+##### Text wrap
+
+This toggle, when enabled, allows longer text to be displayed on multiple lines within a cell, preventing it from being cut off.
 
 #### Options
 
-[!INCLUDE [values-options-show-values-in-row-groups](../includes/core-visuals/values-options-show-values-in-row-groups.md)]
+##### Switch values to rows
+
+Enabling this toggle will switch the display of your values from columns to rows within the matrix.
 
 ### Column headers settings
 
@@ -118,8 +168,12 @@ The **Border** settings allow you to customize the appearance of the borders aro
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-text-color](../includes/core-visuals/global-text-color.md)]
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
-[!INCLUDE [column-headers-header-alignment](../includes/core-visuals/column-headers-header-alignment.md)]
-[!INCLUDE [column-headers-title-alignment](../includes/core-visuals/column-headers-title-alignment.md)]
+##### Header alignment
+
+This setting controls the header alignment, allowing you to choose between left, center, or right.
+##### Title alignment
+
+This setting controls the title alignment, allowing you to choose between left, center, or right.
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
 
 #### Options
@@ -133,14 +187,18 @@ The **Border** settings allow you to customize the appearance of the borders aro
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-text-color](../includes/core-visuals/global-text-color.md)]
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
-[!INCLUDE [row-headers-text-banded-row-color](../includes/core-visuals/row-headers-text-banded-row-color.md)]
-[!INCLUDE [global-alignment-text-&-values](../includes/core-visuals/global-alignment-text-&-values.md)]
+##### Banded row color
+
+This toggle, when enabled, extends the color settings from the Values section, and applies the same color format settings to the row headers in your matrix.
+[!INCLUDE [global-alignment-text-values](../includes/core-visuals/global-alignment-text-values.md)]
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
 
 #### +/- icons
 
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
-[!INCLUDE [row-headers-icons-size](../includes/core-visuals/row-headers-icons-size.md)]
+##### Size
+
+With this setting, you can customize the size, offering a range of 8 to 60 pixels.
 
 ### Column subtotals settings
 
@@ -148,13 +206,17 @@ The **Column subtotals** toggle allows you to control whether subtotals are disp
 
 #### Apply settings to
 
-[!INCLUDE [column-subtotals-apply-settings-to-per-column-level](../includes/core-visuals/column-subtotals-apply-settings-to-per-column-level.md)]
-[!INCLUDE [column-subtotals-apply-settings-to-column-level](../includes/core-visuals/column-subtotals-apply-settings-to-column-level.md)]
+##### Per column level
+
+This toggle, when enabled, lets you customize subtotals for individual columns.
+##### Column level
+
+Use this menu to set subtotal options for the entire column.
 
 #### Columns
 
-[!INCLUDE [column-&-row-subtotals-show-subtotal](../includes/core-visuals/column-&-row-subtotals-show-subtotal.md)]
-[!INCLUDE [column-&-row-subtotals-subtotal-label](../includes/core-visuals/column-&-row-subtotals-subtotal-label.md)]
+[!INCLUDE [column-row-subtotals-show-subtotal](../includes/core-visuals/column-row-subtotals-show-subtotal.md)]
+[!INCLUDE [column-row-subtotals-subtotal-label](../includes/core-visuals/column-row-subtotals-subtotal-label.md)]
 
 #### Values
 
@@ -169,14 +231,22 @@ The **Row subtotals** toggle allows you to control whether subtotals are display
 
 #### Apply settings to
 
-[!INCLUDE [row-subtotals-apply-settings-to-per-row-level](../includes/core-visuals/row-subtotals-apply-settings-to-per-row-level.md)]
-[!INCLUDE [row-subtotals-apply-settings-to-row-level](../includes/core-visuals/row-subtotals-apply-settings-to-row-level.md)]
+##### Per row level
+
+This toggle, when enabled, lets you customize subtotals for individual rows.
+##### Row level
+
+Use this menu to set subtotal options for the entire row hierarchy.
 
 #### Rows
 
-[!INCLUDE [column-&-row-subtotals-show-subtotal](../includes/core-visuals/column-&-row-subtotals-show-subtotal.md)]
-[!INCLUDE [column-&-row-subtotals-subtotal-label](../includes/core-visuals/column-&-row-subtotals-subtotal-label.md)]
-[!INCLUDE [row-subtotals-rows-position](../includes/core-visuals/row-subtotals-rows-position.md)]
+[!INCLUDE [column-row-subtotals-show-subtotal](../includes/core-visuals/column-row-subtotals-show-subtotal.md)]
+[!INCLUDE [column-row-subtotals-subtotal-label](../includes/core-visuals/column-row-subtotals-subtotal-label.md)]
+##### Position
+
+This setting allows you to specify the position of the Subtotal labels:
+- **Top**
+- **Bottom**
 
 #### Values
 
@@ -207,11 +277,11 @@ The **Row subtotals** toggle allows you to control whether subtotals are display
 
 #### Values
 
-If no grand total text color is explicitly defined, the subtotal text color is automatically inherited by the grand total.  
-* The grand total text color does **not** support an 'undefined' state.
+If no grand total text color is explicitly defined, the subtotal text color is automatically inherited by the grand total.
+- The grand total text color does **not** support an 'undefined' state.
 
-Similarly, if the grand total background color is not explicitly set, it will **inherit** the background color from the subtotal. 
-* Unlike text color, the grand total background color **does** support an 'undefined' option.
+Similarly, if the grand total background color is not explicitly set, it will **inherit** the background color from the subtotal.
+- Unlike text color, the grand total background color **does** support an 'undefined' option.
 
 > [!NOTE]
 > These color inheritance behaviors are currently under review and may change in future versions. Developers are strongly encouraged to **explicitly define** any grand total colors to avoid unintended styling
@@ -220,41 +290,84 @@ Similarly, if the grand total background color is not explicitly set, it will **
 
 #### Apply settings to
 
-[!INCLUDE [specific-column-apply-settings-to-series](../includes/core-visuals/specific-column-apply-settings-to-series.md)]
-[!INCLUDE [specific-column-apply-to-header](../includes/core-visuals/specific-column-apply-to-header.md)]
-[!INCLUDE [specific-column-apply-to-subtotals](../includes/core-visuals/specific-column-apply-to-subtotals.md)]
-[!INCLUDE [specific-column-apply-to-total](../includes/core-visuals/specific-column-apply-to-total.md)]
-[!INCLUDE [specific-column-apply-to-values](../includes/core-visuals/specific-column-apply-to-values.md)]
+##### Series
+
+This menu allows you to select individual columns (series) within your matrix, and apply specific formatting, allowing you to customize colors, font sizes, or conditional formatting rules for each column separately.
+##### Apply to header
+
+When this toggle is enabled, any formatting settings you apply will affect the column headers (the labels at the top of each column). You can adjust font styles, alignment, and other visual properties for the headers.
+##### Apply to subtotals
+
+Enabling this toggle will apply formatting settings to the subtotal rows within your matrix. Customize how subtotals are displayed, including font colors, background colors, and font sizes.
+##### Apply to total
+
+Similar to subtotals, this option lets you format the total row (if you have one) in your matrix. You can control font styles, colors, and other visual aspects for the total row.
+##### Apply to values
+
+When turned on, this toggle applies formatting rules to the actual data values within the matrix cells. You can set up conditional formatting, color scales, or other visual cues based on the data values.
 
 #### Values
 
 [!INCLUDE [global-text-color](../includes/core-visuals/global-text-color.md)]
 [!INCLUDE [global-background-color](../includes/core-visuals/global-background-color.md)]
-[!INCLUDE [global-alignment-text-&-values](../includes/core-visuals/global-alignment-text-&-values.md)]
-[!INCLUDE [specific-column-yaxis-values-display-units](../includes/core-visuals/specific-column-yaxis-values-display-units.md)]
-[!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
+[!INCLUDE [global-alignment-text-values](../includes/core-visuals/global-alignment-text-values.md)]
+###### Display units
+##### Display units
+
+The menu offers several options for defining the Display units:
+
+- **None**: Displays the value as is, without any unit.
+- **Thousands**: Divides the value by 1,000 and appends a "K" suffix.
+- **Millions**: Divides the value by 1,000,000 and appends an "M" suffix.
+- **Billions**: Divides the value by 1,000,000,000 and appends a "B" suffix.
+- **Trillions**: Divides the value by 1,000,000,000,000 and appends a "T" suffix.
+##### Value decimal places
+
+Allows you to specify the number of decimal places for values, with a selectable range from 0 to 15.
 
 ### Cell elements settings
 
 #### Apply settings to
 
-[!INCLUDE [cell-elements-series](../includes/core-visuals/cell-elements-series.md)]
-[!INCLUDE [cell-elements-background-color-toggle](../includes/core-visuals/cell-elements-background-color-toggle.md)]
-[!INCLUDE [cell-elements-font-color-toggle](../includes/core-visuals/cell-elements-font-color-toggle.md)]
-[!INCLUDE [cell-elements-data-bars-toggle](../includes/core-visuals/cell-elements-data-bars-toggle.md)]
-[!INCLUDE [cell-elements-icons-toggle](../includes/core-visuals/cell-elements-icons-toggle.md)]
-[!INCLUDE [cell-elements-web-url](../includes/core-visuals/cell-elements-web-url.md)]
+##### Series
+
+Allows you to select which data series that you want to apply formatting options to.
+##### Background color
+
+This toggle, when enabled, allows you to customize the background color using conditional formatting.
+##### Font color
+
+This toggle, when enabled, allows you to customize the font color using conditional formatting.
+##### Data bars
+
+This toggle, when enabled, lets you use conditional formatting to create horizontal bars that reflect the magnitude of data points. For example, longer bars for higher values.
+##### Icons
+
+This toggle, when enabled, lets you use conditional formatting to add visual indicators from a predefined set of icons or custom icons. For example, an up arrow for positive growth and a down arrow for negative growth.
+##### Web URL
+
+This toggle, when enabled, lets you use conditional formatting to embed web URLs, creating clickable links that lead to external websites or internal resources. For instance, link a product name to its detailed page on an internal or external website.
 
 ### URL icon settings
 
-[!INCLUDE [url-icon-values](../includes/core-visuals/url-icon-values.md)]
-[!INCLUDE [url-icon-column-headers](../includes/core-visuals/url-icon-column-headers.md)]
-[!INCLUDE [url-icon-row-headers](../includes/core-visuals/url-icon-row-headers.md)]
+##### Values
+
+This toggle, when enabled, lets you to create hyperlinks within individual cells. You can associate a URL field with specific data points for users to navigate to external web pages or resources.
+##### Column headers
+
+This toggle, when enabled, lets you replace the column header text with a clickable hyperlink icon. This is useful when you want to link to additional information related to the column or provide context-specific URLs.
+##### Row headers
+
+This toggle, when enabled, lets you replace the row header text with a clickable hyperlink icon. Users can click on the icon to access relevant URLs associated with each row.
 
 ### Image size settings
 
-[!INCLUDE [image-size-height](../includes/core-visuals/image-size-height.md)]
-[!INCLUDE [image-size-width](../includes/core-visuals/image-size-width.md)]
+##### Height
+
+This setting allows you to define the height of the image, offering a range of 8 to 512 pixels.
+##### Width
+
+This setting allows you to define the width of the image, offering a range of 8 to 512 pixels.
 
 ## Related content
 

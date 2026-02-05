@@ -6,8 +6,8 @@ ms.author: juliacawthra
 ms.reviewer: Maggie.Tsang
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 05/06/2025
+ms.topic: concept-article
+ms.date: 12/09/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -39,7 +39,7 @@ When you ask a question like "Find items about sales revenue," Copilot responds 
 
 In these search results, Copilot shows the item types that were found through the icons, the title of the item, the workspace the item belongs to, when you last opened it, the description if it has one, the metadata this item matched with from your input, and whether a report is part of an app.
 
-Copilot will generate a description of the item's content if the author hasn't added one. This description is generated from the [item's metadata](/power-bi/create-reports/copilot-search-new-content).
+Copilot generates a description of the item's content if the author hasn't added one. This description is generated from the [item's metadata](/power-bi/create-reports/copilot-search-new-content).
 
 The title includes a hyperlink that opens the item in a new tab. This lets you look at your item contents while still maintaining chat history to browse the other items or to continue chatting with your data.  
 
@@ -99,6 +99,7 @@ You might have an abundance of content. When multiple items are found, Copilot r
 - If the item is endorsed
 - If the item is popular or frequently viewed in your organization
 - If part of a workspace app or org app
+- If the item has been marked as approved for Copilot
 
 ## Make items more discoverable to Copilot
 
@@ -110,36 +111,32 @@ Here are some best practices to make your items more discoverable in the standal
 - **Apply an endorsement label**: Endorsement labels are a sign that content is trustworthy. Any creator with *edit access* can add a [**Promoted** label](../collaborate-share/service-endorsement-overview.md).  
 - ***Favorite*** **an item**: Marking an item as a *Favorite* is an explicit signal to Copilot that it's important to you. By marking an item as a *Favorite*, you're more likely to see it in your search results.
 
-## Limit Copilot search to items Prepped for AI
+## Limit Copilot search to items Approved for Copilot
 
-Workspace admins control whether Copilot can search all workspace content or just content that has been Prepped for AI. Workspace admins can make this change themselves in Workspace settings under __Delegated settings__ under the heading __Copilot and Azure OpenAI service__. Tenant admins can also make a default selection for the entire tenant, using the tenant setting **Only show AI-prepped items in the standalone Copilot in Power BI experience (preview)**. Changes to these settings will take up to 24 hours to reflect in the search experiences. 
+Workspace admins control whether Copilot can search all workspace content or just content that has been Approved for Copilot. Workspace admins can make this change themselves in Workspace settings under __Delegated settings__ under the heading __Copilot and Azure OpenAI service__. Tenant admins can also make a default selection for the entire tenant, using the tenant setting **Only show approved items in the standalone Copilot in Power BI experience (preview)**. Changes to these settings take up to 24 hours to reflect in the search experiences. 
 
+:::image type="content" source="media/copilot-search-new-content/workspace-setting-approved-for-copilot.png" alt-text="Screenshot of the delegated workspace setting to limit search to prepped content." lightbox="media/copilot-search-new-content/workspace-setting-approved-for-copilot.png":::
 
-![Delegated workspace setting to limit search to prepped content.](media/copilot-search-new-content/workspace-settings-limit-to-prepped.png)
+### When is an item Approved for Copilot?
+- For search purposes, Fabric data agents are always considered approved for Copilot. 
+- Power BI semantic models must have the [Approved for Copilot](/power-bi/create-reports/copilot-prepare-data-ai) checkbox selected by a creator. 
+- Once that setting is selected, all reports that use that model are also considered as approved for Copilot. 
+- Power BI workspace & org apps are considered as Approved for Copilot, but the reports inside those apps are only considered as approved if the report's semantic model was marked explicitly. This may result in users finding apps using search prompts, but they may not be able to answer data questions from those apps using the standalone Copilot experience. 
 
-### When is an item Prepped for AI?
-- For search purposes, Fabric data agents are always considered Prepped for AI. 
-- Power BI semantic models must have the [Prepped for AI](/power-bi/create-reports/copilot-prepare-data-ai) checkbox selected by a creator. 
-- Once that setting is selected, then all reports that use that model will also be considered as prepped for AI. 
-- Power BI workspace & org apps are considered as Prepped for AI, but the reports inside those apps are only considered as prepped if the report's semantic model was marked explicitly. This may result in users finding apps using search prompts, but they may not be able to answer data questions from those apps using the standalone Copilot experience. 
-
-In standalone Copilot, users will always be able to [manually attach items](/power-bi/create-reports/copilot-chat-with-data-standalone) to which they have access and ask questions of those items directly, even if the item is not prepped for Copilot. 
+In standalone Copilot, users can always [manually attach items](/power-bi/create-reports/copilot-chat-with-data-standalone) to which they have access and ask questions of those items directly, even if the item is not marked as Approved for Copilot. 
 
 ## Considerations and limitations
 
 - Copilot respects user permissions and only searches over attributes you have access to and doesn't provide search results containing items you can't access.
   - Copilot respects app audiences, if defined, and only searches over reports that you have access to within an app.
   - Copilot doesn't find semantic models [marked as discoverable](../collaborate-share/service-discovery.md#how-to-mark-a-semantic-model-as-discoverable) unless you already have direct access to the model.
-  - Users with only view access to semantic models will not see models in their search result listings, but can attach models directly to questions. Search lists will expand to include semantic models in a future release.
-  - Users with access to items via [M365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true) (sometimes called unified groups) will not be able to find those items with Copilot. Search lists will expand to show items users have access to via M365 groups in a future release.
-    
+  - Currently, users who have only *view* access to semantic models can't see models in their search result listings, but can attach models directly to questions. 
+  - Currently, users with access to items via [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true) (sometimes called unified groups) can't find those items with Copilot.
 - Copilot respects hidden elements such as hidden table and column names, and doesn't search over these fields.
-- Copilot will generate descriptions for reports to show in search responses alongside information like the report's name & workspace location to help users choose relevant reports. Copilot descriptions are refreshed at most daily when the report is updated. 
-
+- Copilot generates descriptions for reports to show in search responses alongside information like the report's name and workspace location to help users choose relevant reports. Copilot descriptions are refreshed at most daily when the report is updated. 
 - Copilot does not generate descriptions for other item types, like semantic models or Fabric data agents. 
-
 - Copilot best understands natural language. When you're searching for items through the standalone Copilot, adding more context can help with finding more relevant content. For example, searching for "Find reports about Q4 revenue over time" yields better results than a search for the keyword "Q4."
 - If edits are made directly to an item (for example, updating a visual, renaming titles), these changes are reflected in search results within five minutes. If edits are made indirectly to an item (such as renaming the workspace), the changes might take up to 24 hours to reflect in the search results.
-- Reports may not reflect the prepped status of the associated semantic model for up to 24 hours.
+- Reports may not reflect the approved status of the associated semantic model for up to 24 hours.
 - Search is a part of the standalone Copilot experience, subject to the same [limitations](/power-bi/create-reports/copilot-chat-with-data-standalone). 
 

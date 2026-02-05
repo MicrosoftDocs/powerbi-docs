@@ -1,10 +1,11 @@
 ---
-title: "Add a page break to a Power BI paginated report | Microsoft Docs"
+title: Add a Page Break to a Power BI Paginated Report
 description: Discover how to add a page break to rectangles, data regions, or groups within data regions in Power BI Report Builder to control the information on each page.
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

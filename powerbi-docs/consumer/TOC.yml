@@ -77,10 +77,6 @@
       href: end-user-reading-view.md
     - name: "Interact with visuals"
       href: end-user-visualizations.md
-    - name: "Different ways to zoom (Focus and Full screen)"
-      href: end-user-focus.md
-    - name: "Types of visualizations"
-      href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: "Drill down in a visualization"
       href: ../create-reports/desktop-drillthrough.md
     - name: "How to use an ArcGIS map in Power BI"
@@ -91,16 +87,12 @@
       href: end-user-q-and-a.md
     - name: "Tips and tricks for Q&A"
       href: end-user-q-and-a-tips.md
-    - name: "Use Copilot to generate summaries and insights (mobile)"
-      href: mobile/mobile-apps-copilot.md
   - name: "Set alerts, subscriptions, and notifications"
     items:
     - name: "Create a dashboard alert"
       href: end-user-alerts.md
     - name: "Set an alert on a report"
       href: business-user-set-alerts.md
-    - name: "Get notifications in the mobile apps"
-      href: mobile/mobile-apps-notification-center.md
     - name: "Set data alerts in the mobile apps"
       href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
   - name: "View paginated (pixel-perfect) reports"
@@ -112,7 +104,7 @@
     - name: "Interact with parameters"
       href: paginated-reports-view-parameters.md
   - name: "Use Power BI on mobile"
-    expanded: false
+    expanded: true
     items:
     - name: "Review basics and overview"
       items:
@@ -132,22 +124,26 @@
         href: mobile/mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
         href: mobile/mobile-reports-in-the-mobile-apps.md
-      - name: "Favorites in the mobile apps"
-        href: mobile/mobile-apps-favorites.md
       - name: "View reports optimized for your phone"
         href: mobile/mobile-apps-view-phone-report.md
       - name: "View org apps in mobile"
         href: mobile/mobile-apps-org-apps.md
       - name: "View on-premises KPIs and reports"
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - name: "Copilot in Power BI mobile apps"
+      items:
+      - name: "Overview of Copilot in mobile apps"
+        href: mobile/mobile-copilot-overview.md   
+      - name: "Standalone Copilot in mobile apps"
+        href: mobile/mobile-standalone-copilot.md
+      - name: "In-report Copilot in mobile apps"
+        href: mobile/mobile-apps-copilot.md
     - name: "Increase interaction and productivity"
       items:
+      - name: "Share a dashboard or report"
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Work with metrics"
         href: mobile/mobile-apps-metrics.md
-      - name: "Interact with tiles"
-        href: mobile/mobile-tiles-in-the-mobile-apps.md
-      - name: "Annotate and share"
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
       - name: "Create a deep link"
         href: mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location"
@@ -160,6 +156,8 @@
         href: mobile/mobile-apps-scan-barcode.md
       - name: "Use NFC tags"
         href: mobile/mobile-apps-nfc-tags.md
+      - name: "Ask questions with Q&A virtual analyst"
+        href: mobile/tutorial-mobile-apps-ios-qna.md
       - name: "Dark mode"
         href: mobile/mobile-apps-dark-mode.md
     - name: "Manage offline access, security, and administration"
@@ -170,8 +168,6 @@
         href: mobile/mobile-app-configuration.md
       - name: "Admin: Shared device mode"
         href: mobile/mobile-app-shared-device-mode.md
-      - name: "Protect with Face ID / Touch ID / Passcode / Fingerprint"
-        href: mobile/mobile-native-secure-access.md
       - name: "Access external org content (B2B)"
         href: mobile/mobile-apps-b2b.md
     - name: Platform specifics
@@ -180,10 +176,6 @@
         items:
         - name: "Get started with the iOS app"
           href: mobile/mobile-iphone-app-get-started.md
-        - name: "Q&A virtual analyst in iOS"
-          href: mobile/mobile-apps-ios-qna.md
-        - name: "Siri Shortcuts integration"
-          href: mobile/mobile-apps-ios-siri-shortcuts.md
         - name: "iOS device search integration"
           href: mobile/mobile-apps-ios-search-integration.md
         - name: "Apple Watch app"

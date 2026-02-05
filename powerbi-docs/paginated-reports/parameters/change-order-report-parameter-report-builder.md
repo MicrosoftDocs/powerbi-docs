@@ -1,12 +1,12 @@
 ---
-title: "Change the order of parameters in a Power BI paginated report | Microsoft Docs"
+title: Change the Order of Parameters in a Power BI Paginated Report
 description: Learn how to change the order of Power BI paginated report parameters when you have a dependent parameter that is listed out of order in Power BI Report Builder.
-ms.date: 01/25/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---
@@ -24,7 +24,7 @@ You can change the order of report parameters by doing either of the following:
   
 -   Click a parameter in the **Report Data** pane, and use the up and down arrow buttons to move the parameter higher or lower in the list, as shown in the following image.  When you change the order of the parameter in the **Report Data** pane, the location of the parameter in the parameters pane is changed.  
   
-     ![Screenshot showing changing the order of the parameters in the Report Data pane.](media/change-order-report-parameter-report-builder/change-order-parameters-report-data.png "Screenshot showing changing the order of the parameters in the Report Data pane.")  
+     :::image type="content" source="media/change-order-report-parameter-report-builder/change-order-parameters-report-data.png" alt-text="Screenshot showing changing the order of the parameters in the Report Data pane." lightbox="media/change-order-report-parameter-report-builder/change-order-parameters-report-data.png":::  
   
 -   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](customize-parameters-pane-report-builder.md).  
   

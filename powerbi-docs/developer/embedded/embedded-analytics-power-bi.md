@@ -6,7 +6,7 @@ ms.author: billmath
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 03/13/2025
+ms.date: 12/15/2025
 ms.custom: intro-overview
 #customer intent: As a developer, I want to learn about Power BI embedded analytics so that I can embed Power BI content in my applications.
 ---
@@ -72,6 +72,7 @@ The following table provides a comparison between the two Power BI embedded anal
 |To authenticate app users, use your own authentication method        |App users authenticate against Microsoft Entra ID         |
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
+|R & Python visuals are not supported|R & Python visuals are supported; region restrictions still apply|
 
 ## What are Power BI capacities?
 

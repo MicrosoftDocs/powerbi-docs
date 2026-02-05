@@ -1,8 +1,8 @@
 ---
 title: Understand and optimize dataflows refresh
 description: Learn how to use and optimize dataflow refreshes to get the best performance when you're working with your data in Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -134,7 +134,7 @@ Finally, consider optimizing your environment. You can optimize the Power BI env
   * Also evaluate bringing the data first into a staging dataflow, and referencing it downstream by using linked and computed entities.
 
 * Network latency can affect refresh performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region. To determine where your tenant is located, see [Find the default region for your organization](../../admin/service-admin-where-is-my-tenant-located.md). When users from a tenant access the Power BI service, their requests always route to that region. As requests reach the Power BI service, the service might then send extra requests, for example, to the underlying data source, or a data gateway—which are also subject to network latency.
-  * Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
+  * Tools such as Azure Speed Test provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
 
 ### High processor time
 

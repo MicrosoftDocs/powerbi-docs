@@ -6,7 +6,8 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
+ms.topic: concept-article
+ms.update-cycle: 1095-days
 ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
@@ -147,7 +148,7 @@ A dashboard offers the ability to ask questions about data in natural language t
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png" alt-text="Screenshot shows a pie chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png":::
 
-   Try some other visualizations. There are different bar charts, scatter charts, and line charts. You can select a table to display the data as numbers. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+   Try some other visualizations. There are different bar charts, scatter charts, and line charts. You can select a table to display the data as numbers. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md).
 
 1. To save your visualization to a dashboard, select **Pin visual**.
 

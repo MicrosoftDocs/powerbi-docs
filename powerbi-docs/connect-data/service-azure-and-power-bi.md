@@ -1,8 +1,8 @@
 ---
 title: Azure and Power BI
 description: Learn how to turn your data processing efforts into analytics and reports that provide real-time insights into your business with Azure and Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -51,7 +51,7 @@ You can expand as much as you need with Azure and Power BI. Harness multi-source
 
 ## Context insights with Power BI Embedded analytics
 
-Embed stunning, interactive data visualizations in applications, websites, portals, and more, to take advantage of your business data. With [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices. Power BI used with embedding analytics is to help you through your journey from Data to Knowledge to Insights to Actions. Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
+Embed stunning, interactive data visualizations in applications, websites, portals, and more, to take advantage of your business data. With [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices. Power BI used with embedding analytics is to help you through your journey from Data to Knowledge to Insights to Actions. Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://www.microsoft.com/power-platform/products/power-bi/developers).
 
 There's lots of information about Power BI APIs in the [Power BI Developer Portal](https://dev.powerbi.com).
 

@@ -1,12 +1,12 @@
 ---
-title: "Add or modify Power BI paginated report parameters | Microsoft Docs"
+title: Add or Modify Power BI Paginated Report Parameters
 description: In this article, you learn how to add, change, or delete Power BI paginated report parameters. Choose report data, connect related reports, and vary the report presentation with the addition of report parameters in a paginated report in Power BI Report Builder.
-ms.date: 01/23/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -21,19 +21,19 @@ ms.reviewer: saurkumar
   
 1.  In Power BI Report Builder, in the **Report Data** pane, right-click the **Parameters** node and click **Add Parameter**. The **Report Parameter Properties** dialog box opens.  
   
-2.  In **Name**, type the name of the parameter or accept the default name.  
+1.  In **Name**, type the name of the parameter or accept the default name.  
   
-3.  In **Prompt**, type the text that appears next to the parameter text box when the user runs the report.  
+1.  In **Prompt**, type the text that appears next to the parameter text box when the user runs the report.  
   
-4.  In **Data type**, select the data type for the parameter value.  
+1.  In **Data type**, select the data type for the parameter value.  
   
-5.  If the parameter can contain a blank value, select **Allow blank value**.  
+1.  If the parameter can contain a blank value, select **Allow blank value**.  
   
-6.  If the parameter can contain a null value, select **Allow null value**.  
+1.  If the parameter can contain a null value, select **Allow null value**.  
   
-7.  To allow a user to select more than one value for the parameter, select **Allow multiple values**.  
+1.  To allow a user to select more than one value for the parameter, select **Allow multiple values**.  
   
-8.  Set the visibility option.  
+1.  Set the visibility option.  
   
     -   To show the parameter on the toolbar at the top of the report, select **Visible**.  
   
@@ -41,13 +41,13 @@ ms.reviewer: saurkumar
   
     -   To hide the parameter and protect it from being modified on the report server after the report is published, select **Internal**. The report parameter can then only be viewed in the report definition. For this option, you must set a default value or allow the parameter to accept a null value.  
   
-9. Select **OK**.
+1. Select **OK**.
   
 ## Delete a report parameter  
   
 1.  In the **Report Data** pane, expand the **Parameters** node.  
   
-2.  Right-click the report parameter and click **Delete**.  
+1.  Right-click the report parameter and click **Delete**.  
   
 ## Related content  
 

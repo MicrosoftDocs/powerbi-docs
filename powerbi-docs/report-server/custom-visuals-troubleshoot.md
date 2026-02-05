@@ -1,13 +1,14 @@
 ---
 title: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with custom visuals in Power BI Desktop for Power BI Report Server.
-author: jeroenterheerdt
-ms.author: jterh
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: troubleshooting
-ms.date: 9/2/2021
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ---
 # Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
 
@@ -25,8 +26,8 @@ This problem happens in one of the following scenarios:
 To resolve this situation, follow the steps in this article.
 
 > [!NOTE]
-> Custom visuals only work with Power BI Report Server versions released after May 2021. Rendering issues encountered with custom visuals in prior versions can be resolved by upgrading the report server to the latest build. Find more details on how to upgrade a Power BI Report Server [here](/power-bi/report-server/upgrade).
-> 
+> Custom visuals only work with Power BI Report Server versions released after May 2021. Rendering issues encountered with custom visuals in prior versions can be resolved by upgrading the report server to the latest build. Find more details on [how to upgrade a Power BI Report Server](upgrade.md).
+
 ## Why this problem happens
 
 When you import the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visual. But it fails with the following error:
@@ -41,11 +42,8 @@ System.Net.Sockets.SocketException No such host is known.
 Use one of the following solutions to get the custom visual to load in Power BI Desktop for Power BI Report Server:
 
 - Ensure that the computer that has Power BI Desktop for Power BI Report Server is connected to the internet.
-
 - If the computer is connected to the internet but you still encounter the behavior, check whether the URL `https://pbivisuals.powerbi.com/` is blocked. If so, add the URL to an allowlist.
-
 - If the computer isn't allowed internet access, perform these steps:
-
   1. In **System Properties**, on the **Advanced** tab, select **Environment Variables**.
 
      :::image type="content" source="media/custom-visuals-troubleshoot/setting-environment-variable-1.png" alt-text="Screenshot that shows selections for opening settings for environment variables.":::
@@ -68,9 +66,9 @@ When you're establishing a connection to an on-premises SQL Server by using Powe
 To troubleshoot this error when you're using an on-premises data gateway, change the gateway configurations to update the `SqlTrustedServers` setting by using the following steps:
 
 1. On the local machine where the on-premises data gateway is installed, go to **C:\Program Files\On-premises data gateway**.
-2. Make a backup of the configuration file named **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**.
-3. Open the original **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config** configuration file and locate the `SqlTrustedServers` entry.
-4. Update the `SqlTrustedServers` value with the names of the SQL Server instances to trust and connect to.
+1. Make a backup of the configuration file named **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**.
+1. Open the original **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config** configuration file and locate the `SqlTrustedServers` entry.
+1. Update the `SqlTrustedServers` value with the names of the SQL Server instances to trust and connect to.
 
    The value contains a comma-delimited list of server names and supports an asterisk (**\***) as a wildcard. Consider the following example:
 

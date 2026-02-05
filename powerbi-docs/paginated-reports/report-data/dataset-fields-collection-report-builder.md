@@ -1,10 +1,11 @@
 ---
-title: "Dataset fields collection (Power BI Report Builder)"
+title: Dataset Fields Collection (Power BI Report Builder)
 description: Learn about dataset field collection. Dataset fields represent the data from a data connection. A field can represent either numeric or non-numeric data.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -35,7 +36,6 @@ ms.reviewer: rpatkar
   
  Calculated fields are local to a report.
 
-
 ### Using extended field properties
 
  Data sources that support multidimensional queries, such as SQL Server Analysis Services, support field properties on fields. Field properties appear in the result set for a query, but are not visible in the **Report Data** pane. They are still available to use in your report. To refer to a property for a field, drag the field onto the report, and change the default property **Value** to the field name of the property you want. For example, in an Analysis Services cube, you can define formats for values in the cube cells. The formatted value is available by using the field property **FormattedValue**. To use the value directly instead of using a value and setting the format property of the text box, drag the field to the text box and change the default expression `=Fields!FieldName.Value` to `=Fields!FieldName.FormattedValue`.  
@@ -54,9 +54,9 @@ ms.reviewer: rpatkar
   
   
 ##  <a name="DataTypes"></a> Field data types  
- When you create a dataset, the data types of the fields on the data source may not be exactly the data types used in a report. Data types may go through one or two mapping layers. The data processing extension or data provider may map data types from the data source to common language runtime (CLR) data types. The data types returned by data processing extensions are mapped to a subset of common language runtime (CLR) data types from the .NET Framework.  
+ When you create a dataset, the data types of the fields on the data source might not be exactly the data types used in a report. Data types might go through one or two mapping layers. The data processing extension or data provider might map data types from the data source to common language runtime (CLR) data types. The data types returned by data processing extensions are mapped to a subset of common language runtime (CLR) data types from the .NET Framework.  
   
- On the data source, the data is stored in data types supported by the data source. For example, data in a SQL Server database must be one of the supported SQL Server data types such as **nvarchar** or **datetime**. When you retrieve data from the data source, the data passes through a data processing extension or data provider that is associated with the data source type. Depending on the data processing extension, data may be converted from the data types used by data source into data types supported by the data processing extension. Reporting Services uses data types supported by the common language runtime (CLR). The data provider maps each column in the result set from the native data type to a .NET Framework common language runtime (CLR) data type.  
+ On the data source, the data is stored in data types supported by the data source. For example, data in a SQL Server database must be one of the supported SQL Server data types such as **nvarchar** or **datetime**. When you retrieve data from the data source, the data passes through a data processing extension or data provider that is associated with the data source type. Depending on the data processing extension, data might be converted from the data types used by data source into data types supported by the data processing extension. Reporting Services uses data types supported by the common language runtime (CLR). The data provider maps each column in the result set from the native data type to a .NET Framework common language runtime (CLR) data type.  
   
  At each stage, the data is represented by the data types as described in the following list:  
   
@@ -74,7 +74,7 @@ ms.reviewer: rpatkar
   
   
 ##  <a name="MissingFields"></a> Detect missing fields at run time  
- When the report is processed, the result set for a dataset may not contain values for all of the columns specified because the columns no longer exist on the data source. You can use the field property IsMissing to detect whether values for a field were returned at run-time. For more information, see [Dataset Fields Collection References &#40;Power BI Report Builder&#41;](../expressions/built-in-collections-dataset-fields-collection-references-report-builder.md).
+ When the report is processed, the result set for a dataset might not contain values for all of the columns specified because the columns no longer exist on the data source. You can use the field property IsMissing to detect whether values for a field were returned at run-time. For more information, see [Dataset Fields Collection References &#40;Power BI Report Builder&#41;](../expressions/built-in-collections-dataset-fields-collection-references-report-builder.md).
   
 ## Related content
 

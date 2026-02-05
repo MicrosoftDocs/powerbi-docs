@@ -1,10 +1,11 @@
 ---
-title: "Control the tablix data region display on a Power BI paginated report page | Microsoft Docs"
+title: Control the Tablix Data Region Display on a Power BI Paginated Report Page
 description: Learn about the properties that enable you to change how a Power BI paginated report appears when you view a table, matrix, or list data region in Power BI Report Builder. 
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -47,7 +48,7 @@ Table, matrix, and list data regions are all examples of *tablix* data regions. 
 ## Control how tablix row and column groups render  
  To control how a tablix data region groups render depends on the group structure. A tablix data region can have four areas, as shown in the following figure:  
   
- ![Screenshot of a Tablix data region areas.](media/tablix-areas.gif "Screenshot of a Tablix data region areas.")  
+ :::image type="content" source="media/tablix-areas.gif" alt-text="Screenshot of a Tablix data region areas." lightbox="media/tablix-areas.gif":::  
   
  The row group area and column group area contain group headers. When a tablix data region has group headers, you control how rows and columns repeat by setting properties on the **General** page of the **Tablix Properties** dialog Box.  
   

@@ -1,10 +1,11 @@
 ---
-title: "Interactive sort in a Power BI paginated report | Microsoft Docs"
+title: Interactive Sort in a Power BI Paginated Report
 description: Add interactive sort buttons to enable a user to toggle between ascending and descending order for rows in a table in a Power BI paginated report.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

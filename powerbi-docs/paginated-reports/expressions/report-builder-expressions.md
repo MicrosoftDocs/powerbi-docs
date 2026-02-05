@@ -1,12 +1,13 @@
 ---
-title: "Expressions in Power BI Report Builder"
+title: Expressions in Power BI Report Builder
 description: Learn how expressions are used throughout Power BI Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 01/18/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 ---
 # Expressions in Power BI Report Builder
@@ -21,7 +22,7 @@ Unlike applications such as Microsoft Excel where you work with data directly in
   
 As you design a report, many expressions for report items are set for you. For example, when you drag a field from the data pane to a table cell on the report design surface, the text box value is set to a simple expression for the field. In the following figure, the **Report Data** pane displays the dataset fields *ID*, *Name*, *SalesTerritory*, *Code*, and *Sales*. Three fields have been added to the table: `[Name]`, `[Code]`, and `[Sales]`. The notation `[Name]` on the design surface represents the underlying expression `=Fields!Name.Value`.  
   
-![Screenshot of Report Builder Design View.](media/report-builder-expressions/report-builder-data-design-preview.png)
+:::image type="content" source="media/report-builder-expressions/report-builder-data-design-preview.png" alt-text="Screenshot of Report Builder Design View." lightbox="media/report-builder-expressions/report-builder-data-design-preview.png":::
   
 When you preview the report, the report processor combines the table data region with the actual data from the data connection and displays a row in the table for every row in the result set.  
   
@@ -41,11 +42,11 @@ By default, expressions appear on the report design surface as *simple* or *comp
   
 The following figure shows typical simple and complex expressions for both text boxes and placeholder text.  
   
-![Screenshot of the expression default format.](media/report-builder-expressions/report-builder-expression-default-format.png) 
+:::image type="content" source="media/report-builder-expressions/report-builder-expression-default-format.png" alt-text="Screenshot of the expression default format." lightbox="media/report-builder-expressions/report-builder-expression-default-format.png"::: 
   
 To display sample values instead of text for expressions, apply formatting to the text box or placeholder text. The following figure shows the report design surface toggled to show sample values:  
   
-![Screenshot of expression sample values.](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
+:::image type="content" source="media/report-builder-expressions/report-builder-expression-sample-values-format.png" alt-text="Screenshot of expression sample values." lightbox="media/report-builder-expressions/report-builder-expression-sample-values-format.png":::  
 
 ## <a name="DisplayText"></a> Understand prefix symbols in simple expressions  
 

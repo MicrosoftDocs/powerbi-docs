@@ -1,12 +1,13 @@
 ---
-title: "Plan translation for multiple-language reports in Power BI"
+title: "Plan Translation for Multiple-Language Reports in Power BI"
 description: Learn about the types of translation used for multiple-language reports in Power BI and how Power BI supports metadata translation.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.date: 07/19/2023
+ms.topic: concept-article
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Plan translation for multiple-language reports in Power BI
 
@@ -77,6 +78,10 @@ Data translations also appear in the axes of cartesian visuals and in legends.
 Data translation is harder to design and implement than the other two types of translation. You must redesign the underlying data source with extra text columns for secondary language translations. Once the underlying data source has been extended with extra text columns, you can then use a powerful feature in Power BI Desktop called *Field Parameters*. This feature uses filters to control loading the data translations for a specific language.
 
 A multiple-language report typically requires both metadata translations and report label translations. Some multiple-language projects require data translations, but others don't.
+
+## Limitations
+
+Multiple-language reports aren't supported with [Publish to web](../collaborate-share/service-publish-to-web.md). For more information about the limitations of Publish to web, see [Publish to web considerations and limitations](../collaborate-share/service-publish-to-web.md#considerations-and-limitations).
 
 ## Related content
 

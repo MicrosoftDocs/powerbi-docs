@@ -1,15 +1,16 @@
 ---
-title: Use ribbon charts in Power BI
+title: Use Ribbon Charts in Power BI
 description: Learn how to create and consume ribbon charts in the Power BI Desktop.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 12/01/2025
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Create ribbon charts in Power BI
 
@@ -24,7 +25,7 @@ Ribbon charts are effective at showing how rank can change. The ribbon for the h
 :::image type="content" source="media/desktop-ribbon-charts/ribbon-charts-01.png" alt-text="Screenshot that shows a ribbon chart with data for Audio, Cell phones, and other categories displayed by year and quarter. The category with the highest rank is ":::
 
 > [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro or Premium Per User (PPU) licenses. If both parties don't have individual paid licenses, the report needs to be saved in Premium capacity or Fabric F64 or greater capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 
@@ -118,4 +119,4 @@ Set formatting options for your data labels. In this example, we set the text co
 ## Related content
 
 - Create [scatter charts and bubble charts in Power BI](power-bi-visualization-scatter.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

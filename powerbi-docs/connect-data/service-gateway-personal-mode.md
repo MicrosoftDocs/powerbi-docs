@@ -1,9 +1,9 @@
 ---
 title: Use a Personal Gateway in Power BI
 description: Learn when to use the Power BI on-premises data gateway (personal mode), how it differs from standard, and install it to securely refresh on-premises data.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

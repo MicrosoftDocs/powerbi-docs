@@ -1,10 +1,11 @@
 ---
-title: "Nested data regions in a Power BI paginated report | Microsoft Docs"
+title: Nested Data Regions in a Power BI Paginated Report
 description: Discover ways to nest a data region inside another data region in Power BI Report Builder. Display data summaries in a Power BI paginated report in a concise table or matrix. 
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -17,7 +18,7 @@ ms.reviewer: saurkumar
   
  For example, for a matrix (also called a *tablix*) that contains sales orders grouped by Store on rows and by Quarter on columns, you can add a table or chart to the corner cell to summarize the sales for all stores. Or add a chart to a matrix column header to show the sales contribution of the data in the column as a percentage of all sales.  
   
- ![Screenshot showing nested data region.](../report-design/media/nested-data-region.gif "Screenshot showing nested data region")  
+ :::image type="content" source="../report-design/media/nested-data-region.gif" alt-text="Screenshot showing nested data region." lightbox="../report-design/media/nested-data-region.gif":::  
  Text box in with a text label and a placeholder.
   
  In this illustration, the pie chart in the corner cell and the sparkline charts in the rows are nested data regions.  
@@ -62,7 +63,7 @@ ms.reviewer: saurkumar
   
  When data in your tablix contains grouping, the Gauge data region that is nested inside the tablix does not automatically inherit this group. You must add a matching group expression to the gauge in order to show the same information that is shown on the tablix. For example, if data in your tablix is grouped by Product, you must add a Product group expression to the gauge to show the same data. For more information, see [Gauges &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/gauges-report-builder.md) and [Add or delete a group in a data region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-delete-group-data-region-report-builder.md).  
   
- You must set the minimum and maximum values that will be displayed on the gauge scale. To specify the maximum value of the gauge, you can use an expression, such as `=Max!MyField.Value`. However, because this expression will be evaluated within the scope of the data in the cell only, the maximum of each gauge will not be the same for all rows in the tablix. This may make comparisons between gauges in the tablix more difficult to understand. Alternatively, you can specify a static value for the maximum. All rows inside of the tablix will show a gauge with this maximum value. For more information, see [Set a minimum or maximum on a gauge &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/set-minimum-maximum-gauge-report-builder.md).  
+ You must set the minimum and maximum values that will be displayed on the gauge scale. To specify the maximum value of the gauge, you can use an expression, such as `=Max!MyField.Value`. However, because this expression will be evaluated within the scope of the data in the cell only, the maximum of each gauge will not be the same for all rows in the tablix. This might make comparisons between gauges in the tablix more difficult to understand. Alternatively, you can specify a static value for the maximum. All rows inside of the tablix will show a gauge with this maximum value. For more information, see [Set a minimum or maximum on a gauge &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/set-minimum-maximum-gauge-report-builder.md).  
   
  If the data becomes too large on the gauge, consider using a scale multiplier to reduce the number of digits displayed. To specify a multiplier, you can right-click on the scale and select **Scale Properties**. When the **Scale Properties** dialog box opens, specify a value for **Multiplier**.  
   

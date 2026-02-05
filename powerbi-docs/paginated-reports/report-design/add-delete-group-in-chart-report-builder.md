@@ -1,10 +1,11 @@
 ---
-title: "Add or delete a group in a Power BI paginated report chart | Microsoft Docs"
+title: Add or Delete a Group in a Power BI Paginated Report Chart
 description: Find out how to add or delete groups, and how to create groups or nested groups in a Power BI paginated report by dragging dataset fields in Power BI Report Builder.
-ms.date: 09/07/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

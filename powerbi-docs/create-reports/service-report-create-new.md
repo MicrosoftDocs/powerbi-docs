@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create a report from an Excel file
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
@@ -64,7 +65,7 @@ Now that our semantic model is imported, let's start answering some questions. O
 
     :::image type="content" source="media/service-report-create-new/power-bi-report-step2.png" alt-text="Screenshot of the visual and the Visualizations pane, highlighting the Gauge template icon.":::
 
-1. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're close to our goal.
+1. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. This shows we're close to our goal.
 
     :::image type="content" source="media/service-report-create-new/power-bi-report-step3.png" alt-text="Screenshot of the Visualizations and Data panes, highlighting Target value and Goal.":::
 
@@ -74,7 +75,7 @@ Now that our semantic model is imported, let's start answering some questions. O
 
 ## Add an area chart and slicer to the report
 
-Our CMO has other questions for us to answer. They'd like to know how sales this year compare to last year. They'd also like to see the findings by district.
+Our CMO has other questions for us to answer. They want to know how sales this year compare to last year. They also want to see the findings by district.
 
 1. First, let's make some room on our canvas. Select the gauge and move it into the top-right corner. Then grab and drag one of the corners and make it smaller.
 

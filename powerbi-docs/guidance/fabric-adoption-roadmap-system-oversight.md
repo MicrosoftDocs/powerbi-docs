@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: System oversight"
 description: "Apply system oversight consisting of administrative activities to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -249,7 +249,7 @@ A user license is obtained via a subscription, which authorizes a certain number
 
 There are two approaches to procuring subscriptions.
 
-- **Centralized**: Microsoft 365 billing administrator purchases a subscription for [Pro or PPU](https://powerbi.microsoft.com/pricing/). It's the most common way to manage subscriptions and assign licenses.
+- **Centralized**: Microsoft 365 billing administrator purchases a subscription for [Pro or PPU](https://www.microsoft.com/power-platform/products/power-bi/pricing). It's the most common way to manage subscriptions and assign licenses.
 - **Decentralized**: Individual departments purchase a subscription via [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true).
 
 ### Self-service purchasing

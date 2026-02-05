@@ -1,10 +1,11 @@
 ---
-title: "Associate a query parameter with a report parameter for a paginated report (Power BI Report Builder) | Microsoft Docs"
+title: Associate a Query Parameter with a Report Parameter for a Paginated Report (Power BI Report Builder)
 description: Learn uses for Power BI paginated report parameters, the properties you can set, and how to associate a dataset query parameter with a report parameter.
-ms.date: 01/25/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ---
@@ -23,7 +24,7 @@ ms.author: juliacawthra
     > [!NOTE]  
     > If the Report Data pane is not visible, click **Report Data** on the **View** menu.  
   
-2.  In the column **Parameter Name**, find the name of the query parameter. Parameter names are automatically populated based on the query. Every time you change the query, the query is checked for new query parameters. Query parameters that you create manually are not changed when the query changes.  
+1.  In the column **Parameter Name**, find the name of the query parameter. Parameter names are automatically populated based on the query. Every time you change the query, the query is checked for new query parameters. Query parameters that you create manually are not changed when the query changes.  
   
     -   In **Parameter Name**, find the query parameter name as it exists in the query. You can also manually add a new query parameter and enter a name.  
   
@@ -32,7 +33,7 @@ ms.author: juliacawthra
         > [!NOTE]  
         > You are not limited to report parameters as values for a query parameter. You can use any expression that evaluates to a value for the parameter value.  
   
-3.  Repeat step 2 for additional query parameters.  
+1.  Repeat step 2 for additional query parameters.  
   
 ## Next steps
  [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)   

@@ -7,7 +7,7 @@ ms.reviewer: tebercov , david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/26/2024
+ms.date: 12/15/2025
 #customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 

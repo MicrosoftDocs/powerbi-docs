@@ -1,16 +1,17 @@
 ---
 title: Create and use filled maps (choropleth maps) in Power BI
 description: Learn how to create and use filled maps (choropleth maps) in Power BI Desktop and the Power BI service.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/02/2025
+ms.date: 10/01/2025
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 
 # Create and use filled maps (choropleth maps) in Power BI
@@ -93,8 +94,7 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 ---
 
-> [!NOTE]
-> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Create a filled map
 
@@ -237,11 +237,11 @@ If your semantic model already contains latitude and longitude data, Power BI ha
 
 :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-set-latitude-longitude.png" alt-text="Screenshot that shows how to set the latitude and longitude options for a filled map in Power BI." border="false":::
 
-If you don't have access to latitude and longitude data, but you have edit access to the semantic model, follow the instructions in [Maps in Power View](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7) to update your semantic model.
+If you don't have access to latitude and longitude data, but you have edit access to the semantic model, follow the instructions in [Maps in Power View](https://support.microsoft.com/office/maps-in-power-view-8a9b2af3-a055-4131-a327-85cc835271f7) to update your semantic model.
 
 For more information about map visualizations in Power BI, see [Tips and tricks for map visualizations](./power-bi-map-tips-and-tricks.md).
 
 ## Related content
 
 - Create a [shape map visualization in Power BI](desktop-shape-map.md).
-- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
+- Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

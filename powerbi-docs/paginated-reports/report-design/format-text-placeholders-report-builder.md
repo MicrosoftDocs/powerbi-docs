@@ -1,10 +1,11 @@
 ---
-title: "Format text and placeholders in Power BI paginated reports | Microsoft Docs"
+title: Format Text and Placeholders in Power BI Paginated Reports
 description: Improve readability of your Power BI paginated reports with format choices for fonts, styles, colors, and alignment within text or a data region in Power BI Report Builder.
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -17,7 +18,7 @@ A text box can be a Power BI paginated report item. It can also be an individual
   
  Font, size, color, and effects all contribute to the readability of a report. Font, font style, font size, and underline effects can be applied to text within a text box or data region. By default, the report font that is used is Arial, 10 points, and black. By using the **Text Box** and **Text Properties** dialog boxes, you can specify how the text appears when the report is rendered.  
   
- ![Screenshot showing Mixed Format Text.](../report-design/media/mixed-format-text.gif "Screenshot showing Mixed Format Text")  
+ :::image type="content" source="../report-design/media/mixed-format-text.gif" alt-text="Screenshot showing Mixed Format Text." lightbox="../report-design/media/mixed-format-text.gif":::  
   
  In this illustration, the text box itself has a border, and all the text is in the same text box, but the text has a variety of formatting.  
   
@@ -40,7 +41,7 @@ A text box can be a Power BI paginated report item. It can also be an individual
 ## Format placeholders and static text in a text box  
  You can format placeholders using the **Placeholder Properties** dialog box. You can format only the entire placeholder, not sections of the placeholder. If you want to see the underlying expression, you can pause your pointer on the placeholder. You can change the underlying expression by double-clicking the placeholder or right-clicking the placeholder and selecting **Placeholder Properties**. You can also specify a UI label using the **Label** property in **General** of the **Placeholder Properties** dialog box. This will be the text that is shown at design-time for the placeholder.  
   
- ![Screenshot showing Mixed Text and Placeholder.](../report-design/media/mixed-text-placeholder.gif "Screenshot showing Mixed Text and Placeholder")  
+ :::image type="content" source="../report-design/media/mixed-text-placeholder.gif" alt-text="Screenshot showing Mixed Text and Placeholder." lightbox="../report-design/media/mixed-text-placeholder.gif":::  
   
  In this illustration, a text box in a list contains both a label with bold formatting and a placeholder with no formatting.  
   

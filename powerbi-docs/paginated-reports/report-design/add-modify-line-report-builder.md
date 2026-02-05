@@ -1,10 +1,11 @@
 ---
-title: "Add and modify a line in a Power BI paginated report | Microsoft Docs"
+title: Add and Modify a Line in a Power BI Paginated Report
 description: Customize the appearance of reports by adding a graphical element to separate sections or by editing line properties to change color or style in Power BI Report Builder.
-ms.date: 09/07/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -28,7 +29,7 @@ ms.reviewer: saurkumar
 1.  To change the line properties, select the line on the design surface and then edit its properties in the **Border** section of the **Home** tab.    
     
     > [!NOTE]    
-    >  If you set the line style to **Double** and the line width is 1 1/2 pt or narrower, the line may not appear double when you run the report in Power BI Report Builder or Power BI web portal. It appears double when you export the report to other formats such as Microsoft Word and Acrobat PDF.    
+    >  If you set the line style to **Double** and the line width is 1 1/2 pt or narrower, the line might not appear double when you run the report in Power BI Report Builder or Power BI web portal. It appears double when you export the report to other formats such as Microsoft Word and Acrobat PDF.    
     
 ## Related content
 

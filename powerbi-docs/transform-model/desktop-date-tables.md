@@ -1,12 +1,12 @@
 ---
 title: Set and use date tables in Power BI Desktop
 description: Learn what date tables are, how to use them, and why you might want to set your tables as date tables in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/15/2025
 LocalizationGroup: Model your data
 ---
@@ -20,14 +20,16 @@ Many data analysts prefer to create their own date tables, which is fine. In **P
 
 :::image type="content" source="media/desktop-date-tables/date-tables_01.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table dialog box.":::
 
-## Benefits of setting your own date table
+> [!NOTE]
+> You don't need to identify your own date table with the **Mark as Date table** option if you use the recommended [Calendar-based time intelligence](desktop-time-intelligence.md#calendar-based-time-intelligence-preview) in Power BI [unless in specific circumstances](#when-you-must-mark-your-date-table). If you prefer to continue to use the the [Classic time intelligence functions in Power BI](desktop-time-intelligence.md#classic-time-intelligence) then you must mark your date table as a date table.
 
-The [Time intelligence functions in Power BI](/dax/time-intelligence-functions-dax) require some understanding of date calculations in your model. Setting your own date table or using [auto date/time](desktop-auto-date-time.md) enables these functions to work. There are specific situations in which you do need set your own date table:
+## When you must mark your date table
+You have to mark your date table if you use the [Classic time intelligence functions in Power BI](desktop-time-intelligence.md#classic-time-intelligence) or if any of the following scenarios apply to you:
 
 - The relationships between the date table and other tables in your model are based on columns of a different data type than Datetime. For example, if you load data from a source such as a data warehouse, specific columns that represent dates are often provided. These columns (also called surrogate keys) are often stored as a whole number and formatted as yyyy-mm-dd (for example: *20241231* to represent December 31, 2024). If you have relationships between the date table and other tables in your model that use such columns, you need to set your own date table in order use the time intelligence capabilities.
 - If you want to use [advanced date filters in Excel PivotTables or PivotCharts](https://support.microsoft.com/office/filter-dates-in-a-pivottable-or-pivotchart-571cc416-ba4d-4005-a01e-3d99306ccefc) based on Power BI data.
 
-## Set your own date table
+## How to set your own date table
 
 To set a **date table**, select the table you want to use as a date table in the **Fields** pane, then right-click the table and choose **Mark as date table > Mark as date table** in the menu that appears, as shown in the following image.
 
@@ -36,6 +38,9 @@ To set a **date table**, select the table you want to use as a date table in the
 You can also select the table and then choose **Mark as date table** from the **Table tools** ribbon, shown here.
 
 :::image type="content" source="media/desktop-date-tables/date-tables_02b.png" alt-text="Screenshot of Power BI Desktop showing the Mark as date table button and options filter.":::
+
+> ![NOTE]
+> If you are using [Calendar-based time intelligence](desktop-time-intelligence.md#calendar-based-time-intelligence-preview) then your screen will look differently and you will find the **Mark as date table** option in screen that appears after you select **Calendar options** in the ribbon or the right-click menu on the table.
 
 When you specify your own **date table**, Power BI Desktop performs the following validations of that column and its data, to ensure that the data:
 

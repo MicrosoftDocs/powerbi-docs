@@ -1,27 +1,38 @@
 ---
-title: Paginated report data sources in Power BI Report Server
-description: Learn about data sources that paginated reports (.rdl) can connect to in Power BI Report Server.
+title: Paginated Report Data Sources in Power BI Report Server
+description: Learn about paginated report data sources in Power BI Report Server, including supported connections and Oracle culture settings—explore options now.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 06/26/2020
+ms.topic: concept-article
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
-# Paginated report data sources  in Power BI Report Server
-Reporting Services paginated reports in Power BI Report Server support the same data sources that are supported in SQL Server Reporting Services. See the list of [Data sources supported by Reporting Services](/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+# Paginated report data sources in Power BI Report Server
+
+Paginated report data sources in Power BI Report Server match those in SQL Server Reporting Services, so you can reuse existing connectivity knowledge. This article summarizes supported sources and highlights using OData shared datasets and the Oracle UseInstalledUICulture setting.
+
+## Use a shared dataset as an OData feed
+
+To consume a shared dataset as an OData feed:
+
+1. Copy the dataset’s OData feed URL.
+1. In Power BI Desktop (Report Server compatible), select **Get Data > OData Feed**, then paste the URL.
+1. Enable **Open Type Columns** in **Advanced options** to shape the schema (optional).
+Continue with standard modeling. For more capabilities, see [OData feed connector](/power-query/connectors/odata-feed).
 
 ## Connect to Oracle data sources with UseInstalledUICulture
 
-To connect to Oracle data sources, Power BI Report Server uses the Oracle Data Provider for .NET (ODP.NET) which is NLS agnostic.
+Power BI Report Server uses the Oracle Data Provider for .NET (ODP.NET), which is NLS agnostic, to connect to Oracle data sources.
 
-By default, the report server uses the first client's UI culture to load ODP.NET.  As a result, all subsequent connections to Oracle from the report server will be in that initial UI culture until restart of the service.  This approach can cause issues rendering a report due to mismatches in UI culture formatting.
+By default, the report server uses the first client's UI culture to load ODP.NET. As a result, subsequent Oracle connections use that initial UI culture until you restart the service. This behavior can cause report rendering issues because of UI culture mismatches.
 
-To offer a better experience in Power BI Report Server, we have introduced a configuration setting named UseInstalledUICulture. When UseInstalledUICulture is set to true, the report server always loads ODP.NET in the server’s UI Culture instead of the first client’s culture.
-This setting is available in Power BI Report Server starting with the March 2020 Service Release.
+Power BI Report Server includes a configuration setting named `UseInstalledUICulture`. When you set `UseInstalledUICulture` to `true`, the report server loads ODP.NET in the server UI culture instead of the first client's culture. The setting is available starting with the March 2020 service release.
 
-To enable the feature, modify ORACLE extension entry rsreportserver.config file like below.
+To enable the feature, modify the ORACLE extension entry in the `rsreportserver.config` file as shown:
+
 ```xml
 <Extension Name="ORACLE" Type="Microsoft.ReportingServices.DataExtensions.OracleClientConnectionWrapper,Microsoft.ReportingServices.DataExtensions">
     <Configuration>
@@ -32,7 +43,6 @@ To enable the feature, modify ORACLE extension entry rsreportserver.config file 
 
 ## Related content
 
-Now that you've connected to your data source, [create a paginated report](quickstart-create-paginated-report.md).  
-
+- After you connect to your data source, [create a paginated report](quickstart-create-paginated-report.md).  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

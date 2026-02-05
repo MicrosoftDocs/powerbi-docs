@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Center of Excellence"
 description: "Establish a Center of Excellence (COE) to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

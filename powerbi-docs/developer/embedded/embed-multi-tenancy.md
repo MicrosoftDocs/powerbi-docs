@@ -6,8 +6,8 @@ ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 04/04/2025
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded
@@ -205,7 +205,7 @@ Before setting up a profile-based multitenant solution, you should be aware of t
 
 ### Scalability
 
-By separating the data into separate semantic models for each customer, you minimize the need for [large semantic models](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused semantic models to free memory for active semantic models. This optimization is impossible for a [single large semantic model](#row-level-security). By using multiple semantic models, you can also separate tenants into multiple Power BI capacities if necessary.
+By separating the data into separate semantic models for each customer, you minimize the need for [large semantic models](/fabric/enterprise/powerbi/service-premium-large-models). When the capacity gets overloaded, it can evict unused semantic models to free memory for active semantic models. This optimization is impossible for a [single large semantic model](#row-level-security). By using multiple semantic models, you can also separate tenants into multiple Power BI capacities if necessary.
 
 Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can access/create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
@@ -245,7 +245,7 @@ When buying a capacity, consider the limit on the number of parallel refreshes, 
 
 This article explains how to use profiles to create a separate semantic model for each customer. Alternatively, ISV applications can store all their customers' data in one large semantic model and use [Row-level security (RLS)](embedded-row-level-security.md) to protect each customer's data. This approach can be convenient for ISVs that have relatively few customers and small to medium-sized semantic models because:
 
-* They only have ot maintain one report and one semantic model
+* They only have to maintain one report and one semantic model
 * The onboarding process for new customers can be simplified
 
 Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI semantic model. This semantic model runs in a single capacity with its own scaling and other limitations.
@@ -260,9 +260,9 @@ Even if you use service principal profiles to separate your customers' data, you
 
 ### Power BI capacity limitations
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/power-bi/enterprise/service-premium-what-is#large-datasets).
-* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/power-bi/enterprise/service-premium-large-models) setting.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/fabric/enterprise/powerbi/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/fabric/enterprise/powerbi/service-premium-what-is#large-datasets).
+* To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/fabric/enterprise/powerbi/service-premium-large-models) setting.
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/fabric/enterprise/powerbi/service-premium-what-is#capacity-nodes).
 
 ### Manage service principals
 

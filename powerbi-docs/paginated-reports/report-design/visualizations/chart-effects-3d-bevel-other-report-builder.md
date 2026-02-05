@@ -1,16 +1,16 @@
 ---
-title: "3D, bevel, and other effects in Power BI paginated report charts | Microsoft Docs"
+title: 3D, Bevel, and Other Effects in Power BI Paginated Report Charts
 description: Discover how 3D effects in Power BI paginated reports can be used to provide depth and add visual impact to charts in Power BI Report Builder. 
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)
-
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -20,7 +20,7 @@ ms.reviewer: saurkumar
   
  For all chart types, you can add three-dimensional effects to a chart area in the **Chart Area Properties** dialog box by selecting **Enable 3D**. For more information, see [Add 3D Effects to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-3d-effects-report-builder.md).  
   
- Another way to add visual impact to charts is by adding bevel, emboss and texture styles in bar, column, pie and doughnut charts. For more information, see [Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
+ Another way to add visual impact to charts is by adding bevel, emboss and texture styles in bar, column, pie and donut charts. For more information, see [Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md).  
 
 ## Coordinate-based three-dimensional charts
 
@@ -47,7 +47,7 @@ ms.reviewer: saurkumar
   
 ## Shape-based three-dimensional charts
 
- Shape-based chart types (pie, doughnut, funnel, and pyramid) have fewer three-dimensional effects available. When working with shape-based chart types, you can change the rotation and inclination values only.  
+ Shape-based chart types (pie, donut, funnel, and pyramid) have fewer three-dimensional effects available. When working with shape-based chart types, you can change the rotation and inclination values only.  
   
 ## Rotations
 

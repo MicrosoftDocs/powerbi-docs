@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Team BI"
 description: "Learn how Power BI team BI is about small team collaboration."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -76,7 +76,7 @@ In addition to organizing content, a workspace forms a security boundary. Assign
 
 ### Power BI user licenses
 
-When collaborating in a workspace, all users must have a [Power BI Pro or Power BI Premium Per User (PPU) license](https://powerbi.microsoft.com/pricing/).
+When collaborating in a workspace, all users must have a [Power BI Pro or Power BI Premium Per User (PPU) license](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 > [!NOTE]
 > There's one exception to the requirement of a Power BI Pro or PPU license: When the workspace is assigned to Premium capacity or Fabric F64 or greater capacity, Fabric free license users (with proper permissions) can view the workspace (and/or Power BI app) content. This approach is described in the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario.

@@ -27,8 +27,6 @@
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "Connect to a GitHub sample"
-      href: service-tutorial-connect-to-github.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
@@ -59,6 +57,8 @@
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to the Power BI Release Plan report"  
+      href: service-connect-to-power-bi-release-plan.md
     - name: "Connect to cloud data sources in the Power BI service"
       href: service-connect-cloud-data-sources.md      
     - name: "Create and share cloud data sources in the Power BI service"
@@ -301,12 +301,14 @@
         href: service-connect-to-services.md
       - name: "Crisis Communication Presence Report"
         href: service-connect-to-crisis-communication-presence-report.md
-      - name: "Emissions Impact Dashboard for Azure"
-        href: service-connect-to-emissions-impact-dashboard.md
-      - name: "Emissions Impact Dashboard for Microsoft 365"
-        href: service-connect-emissions-impact-dashboard-microsoft-365.md
-      - name: "GitHub"
-        href: service-connect-to-github.md
+      - name: Connect to Emissions Impact Dashboard
+        items:
+        - name: "Emissions Impact Dashboard for Azure"
+          href: service-connect-to-emissions-impact-dashboard.md
+        - name: "Emissions Impact Dashboard for Microsoft 365"
+          href: service-connect-emissions-impact-dashboard-microsoft-365.md
+        - name: "Azure emissions calculation methodology"
+          href: azure-emissions-calculation-methodology.md  
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
       - name: "Office365Mon"

@@ -1,8 +1,8 @@
 ---
 title: Use the Analytics pane in Power BI Desktop
 description: Learn how to create dynamic reference lines for visuals using the Analytics pane in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -133,7 +133,7 @@ The *percentile line* is only available when using imported data in Power BI Des
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 
-* [What's new in Power BI?](../fundamentals/desktop-latest-update.md)
+* [What's new in Power BI?](../fundamentals/whats-new.md)
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)

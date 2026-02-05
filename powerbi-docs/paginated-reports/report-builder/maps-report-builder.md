@@ -1,10 +1,11 @@
 ---
-title: "Maps in a Power BI paginated report | Microsoft Docs"
+title: Maps in a Power BI Paginated Report
 description: Get acquainted with how to add a map to your paginated report showing business data against a geographical background in your paginated report in Power BI Report Builder. 
-ms.date: 02/13/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -13,18 +14,16 @@ ms.reviewer: monaraya
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-
   
 
 > [!IMPORTANT]
-> Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), the migration of paginated reports map visuals from Bing Maps to Azure Maps has begun. This migration will occur in two phases: first, migrating to Azure Maps in PBIRB, followed by migration to Azure Maps for paginated reports in the service. The initial phase is complete. Beginning with the September release of PBIRB, users can create map visuals powered by Azure Maps by default. However, paginated reports published in the service will continue to use Bing Maps until phase two is completed.
-> Paginated reports authors can revert back to Bing Maps for authoring in PBIRB until both phases are complete. To enable this, users must set the “RevertToBingMaps” registry key located in the “Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Report Builder” folder to 1. If the “Microsoft Power BI Report Builder” folder does not exist, it should be manually created before setting the registry key.
-> 
+> Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), we have migrated map visuals in paginated reports from Bing Maps to Azure Maps. With the September release of PBIRB, paginated report authors will, by default, create map visuals using Azure Maps. Additionally, all map visuals published to the service will use Azure Maps.
+
 To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
 
  A map contains a title, a viewport that specifies the center point and scale, an optional Azure map tile background for the viewport, one or more layers that display spatial data, and a variety of legends that help users interpret the data visualizations. The following illustration shows the basic parts of a map.  
 
- ![Screenshot showing how to add legend color scale and associated elements.](../media/paginated-reports-maps/map-elements.png "Screenshot showing how to add legend color scale and associated elements.")
+ :::image type="content" source="../media/paginated-reports-maps/map-elements.png" alt-text="Screenshot showing how to add legend color scale and associated elements." lightbox="../media/paginated-reports-maps/map-elements.png":::
   
  To start to use a map immediately, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder) or [Report Samples (Power BI Report Builder)](https://go.microsoft.com/fwlink/?LinkId=198283).  
   
@@ -128,7 +127,7 @@ To visualize business data against a geographical background, you can add a map 
 ##  <a name="Viewport"></a> Understanding the map viewport  
  After you specify map data for a report, you can limit the display area of the map by specifying a map *viewport*. By default, the viewport is the same area as the whole map. To crop the map, you can specify the center, zoom level, and maximum and minimum coordinates that define the area that you want to include in your report. To improve the display of the map in the report, you can move the legends, distance scale, and color scale outside the viewport. The following figure shows a viewport:  
   
- ![Screenshot showing the Map Viewport.](../media/paginated-reports-maps/map-view-port.png "Screenshot showing the Map Viewport.") 
+ :::image type="content" source="../media/paginated-reports-maps/map-view-port.png" alt-text="Screenshot showing the Map Viewport." lightbox="../media/paginated-reports-maps/map-view-port.png"::: 
 
   
 ## <a name="TileLayer"></a> Adding an Azure map tiles layer
@@ -168,7 +167,7 @@ To visualize business data against a geographical background, you can add a map 
 
  To work with layers, select a map on the report design surface to display the Map pane. The Map pane displays the list of layers that are defined for the map. Use this pane to select a layer to change the options, to change the drawing order of layers, to add a layer or run the Map Layer wizard, to hide or show a layer, and to change the view center and zoom level for the map viewport. The following figure shows a viewport:  
   
- ![Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.png "Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.")  
+ :::image type="content" source="../media/paginated-reports-maps/map-layer-zone.png" alt-text="Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options." lightbox="../media/paginated-reports-maps/map-layer-zone.png":::  
   
  For more information about map layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
@@ -179,11 +178,11 @@ To visualize business data against a geographical background, you can add a map 
   
 1.  **Layer properties.** Properties that apply to the whole layer. For example, use layer properties to set the source of analytical data or the visibility for the whole layer.  
   
-2.  **Polygon, Line, Point properties and Embedded Polygon, Line, Point properties.** Properties that apply to all map elements on a layer, whether the elements are from dynamic spatial data or embedded spatial data. For example, use polygon center point properties to set the fill color for bubbles to a gradient that fills bubble areas from dark blue to light blue and from top to bottom.  
+1.  **Polygon, Line, Point properties and Embedded Polygon, Line, Point properties.** Properties that apply to all map elements on a layer, whether the elements are from dynamic spatial data or embedded spatial data. For example, use polygon center point properties to set the fill color for bubbles to a gradient that fills bubble areas from dark blue to light blue and from top to bottom.  
   
-3.  **Color Rules, Size Rules, Width Rules, Marker Type Rules.** Rules apply properties to a layer when the layer has map elements that have a relationship to analytical data. The types of rules vary based on layer type. For example, use point size rules to vary bubble size based on population.  
+1.  **Color Rules, Size Rules, Width Rules, Marker Type Rules.** Rules apply properties to a layer when the layer has map elements that have a relationship to analytical data. The types of rules vary based on layer type. For example, use point size rules to vary bubble size based on population.  
   
-4.  **Override for Embedded Polygon, Line, or Point properties**. For embedded map elements, you can select the override option and change any property or data value. Any changes that you make to override rules for individual elements are irreversible. For example, you can highlight a specific store by using a pushpin marker.  
+1.  **Override for Embedded Polygon, Line, or Point properties**. For embedded map elements, you can select the override option and change any property or data value. Any changes that you make to override rules for individual elements are irreversible. For example, you can highlight a specific store by using a pushpin marker.  
   
  For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   

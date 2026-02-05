@@ -1,8 +1,8 @@
 ---
 title: Real-time streaming in Power BI
 description: Learn how to set up and use real-time data streaming in Power BI to keep your visuals and dashboards updated with live data.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -61,7 +61,7 @@ In practice, it's best to use streaming semantic models and their accompanying s
 
 ### PubNub streaming semantic model
 
-With a *PubNub streaming semantic model*, the Power BI web client uses the [PubNub SDK](https://www.pubnub.com/docs/sdks) to read an existing PubNub data stream. The Power BI service stores no data. Because the web client makes this call directly, if you allow only approved outbound traffic from your network, you must list traffic to PubNub as allowed. For instructions, see the [support article about approving outbound traffic for PubNub](https://support.pubnub.com/hc/en-us/articles/360051496672).
+With a *PubNub streaming semantic model*, the Power BI web client uses the [PubNub SDK](https://www.pubnub.com/docs/sdks) to read an existing PubNub data stream. The Power BI service stores no data. Because the web client makes this call directly, if you allow only approved outbound traffic from your network, you must list traffic to PubNub as allowed. For instructions, see the [support article about approving outbound traffic for PubNub](https://support.pubnub.com/hc/articles/360051496672).
 
 As with the streaming semantic model, the PubNub streaming semantic model has no underlying Power BI database. You can't build report visuals against the data that flows in, and can't use report functionality like filtering or Power BI visuals. You can visualize a PubNub streaming semantic model only by adding a tile to the dashboard and configuring a PubNub data stream as the source.
 

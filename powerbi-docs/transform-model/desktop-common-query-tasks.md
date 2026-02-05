@@ -1,8 +1,8 @@
 ---
 title: Perform common query tasks in Power BI Desktop
 description: Learn how to perform common query tasks by using the Power Query Editor in Power BI Desktop.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -140,7 +140,7 @@ Power Query Editor keeps all applied steps for each query as text that you can v
 
 :::image type="content" source="media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png" alt-text="Screenshot of Power Query Editor highlighting the Advanced Editor button on the View tab.":::
 
-Here's a screenshot of the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as *M*. For more information, see [Create Power Query formulas in Excel](https://support.office.com/article/learn-about-power-query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). To view the language specification itself, see [Power Query M language specification](/powerquery-m/power-query-m-language-specification).
+Here's a screenshot of the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as *M*. For more information, see [Create Power Query formulas in Excel](https://support.microsoft.com/office/create-power-query-formulas-in-excel-6bc50988-022b-4799-a709-f8aafdee2b2f). To view the language specification itself, see [Power Query M language specification](/powerquery-m/power-query-m-language-specification).
 
 :::image type="content" source="media/desktop-common-query-tasks/queryformulas_advancededitor.png" alt-text="Screenshot of the Advanced Editor dialog box with an example formula.":::
 

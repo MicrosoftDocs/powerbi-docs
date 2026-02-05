@@ -1,5 +1,5 @@
 ---
-title: "Git integration with paginated reports"
+title: Git Integration with Paginated Reports
 description: You can edit paginated reports using git integration in the Power BI service.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/28/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Git integration with paginated reports
@@ -35,7 +36,7 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
     > [!Note]
     > If the branch is new, you're prompted to **Create and sync**.
 
-1. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive or Sharepoint yet.
+1. Upload your *.rdl* file to the workspace on the service. OneDrive and SharePoint aren't supported yet.
 
     :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button." lightbox="media/page-view/paginated-reports-upload.png":::
 
@@ -74,6 +75,6 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
 
 - The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report Builder and republish the paginated report to the Power BI service.
 
-## Next steps
+## Related content
 
 - [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration)

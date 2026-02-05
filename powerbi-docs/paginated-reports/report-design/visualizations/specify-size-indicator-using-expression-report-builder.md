@@ -1,10 +1,11 @@
 ---
-title: "Specify the size of an indicator in Power BI paginated reports using an expression | Microsoft Docs"
+title: Specify the Size of an Indicator in Power BI Paginated Reports Using an Expression
 description: Discover ways to use size, in addition to color, direction, and shape, to maximize the visual impact of indicators in a Power BI paginated report in Power BI Report Builder.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -27,17 +28,17 @@ ms.reviewer: saurkumar
   
 1.  Select the indicator you want to change.  
   
-2.  In the Properties pane, locate the IndicatorStates property.  
+1.  In the Properties pane, locate the IndicatorStates property.  
   
      If the Properties pane is organized by category, you will find IndicatorStates in the **States** category.  
   
-3.  Select the ellipsis **(...)** button next to IndicatorStates. The **IndicatorState Collection Editor** dialog box opens.  
+1.  Select the ellipsis **(...)** button next to IndicatorStates. The **IndicatorState Collection Editor** dialog box opens.  
   
      Select all members of the collection.  
   
-4.  In the **Multi-Select Properties** list, select the down arrow next to ScaleFactor and then select **Expression**.  
+1.  In the **Multi-Select Properties** list, select the down arrow next to ScaleFactor and then select **Expression**.  
   
-5.  In the **Expression** dialog box write the expression.  
+1.  In the **Expression** dialog box write the expression.  
   
      The following sample expression makes the icon a different size based on the value of the **SalesYTD** field.  
   
@@ -45,9 +46,9 @@ ms.reviewer: saurkumar
   
      For more information, see [Expression Examples &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs).  
   
-6.  Select **OK**.
+1.  Select **OK**.
   
-7.  Select **OK**.
+1.  Select **OK**.
   
 ## Related content
 

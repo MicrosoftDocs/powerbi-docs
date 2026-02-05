@@ -8,7 +8,7 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 08/02/2024
+ms.date: 12/15/2025
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -23,7 +23,7 @@ Before you can create a capacity, you need the following:
 
 2. A **Power BI tenant:** At least one account in your Microsoft Entra tenant must be signed up for Power BI. Sign into Power BI from that account.
 
-3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
+3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to create an account, if you don't already have one.
 
 4. **Resource group:** Use a resource group you already have or [create a new one](/azure/azure-resource-manager/resource-group-overview).
 
@@ -143,7 +143,7 @@ You can view all the Power BI Embedded Azure CLI commands, in [Azure Power BI](/
 
 [Resource Manager template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. If you want to learn more about developing Resource Manager templates, see [Resource Manager documentation](/azure/azure-resource-manager/) and the [template reference](/azure/templates/).
 
-If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
+If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) account before you begin.
 
 ### Review the template
 

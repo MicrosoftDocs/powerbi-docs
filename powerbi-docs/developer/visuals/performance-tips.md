@@ -7,7 +7,7 @@ ms.reviewer: tebercov , asafmozes
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/15/2024
+ms.date: 12/15/2025
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to optimize my custom visual for performance so that it renders quickly and efficiently.
 ---
@@ -156,7 +156,7 @@ Check out the following third party sites for tips on improving canvas performan
 
 * [Fast load times](https://web.dev/fast/)
 * [Improving HTML5 Canvas performance](https://web.dev/canvas-performance/)
-* [Optimizing canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)
+* [Optimizing canvas](https://developer.mozilla.org/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)
 
 For example, learn how to [avoid unnecessary canvas state changes](https://web.dev/canvas-performance/#avoid-unnecessary-canvas-state-changes) by rendering by color instead of position.
 

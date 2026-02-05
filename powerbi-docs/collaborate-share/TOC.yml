@@ -74,7 +74,7 @@
       href: ../enterprise/service-security-apply-data-sensitivity-labels.md
   - name: Power BI in Teams
     items: 
-    - name: Collaborate in Teams, Outlook, & Office
+    - name: Collaborate in Teams
       href: service-collaborate-microsoft-teams.md
     - name: Add the Power BI app to Teams
       href: service-microsoft-teams-app.md
@@ -106,6 +106,8 @@
       href: service-power-bi-powerpoint-add-in-view-present.md
     - name: "Annotate your embedded Power BI visuals"
       href: service-power-bi-powerpoint-add-in-annotate.md
+    - name: "Manage add-ins with the Power BI Controller (preview)"
+      href: storytelling-powerbi-controller.md
     - name: "Information for the Power BI admin"
       href: service-power-bi-powerpoint-add-in-admin.md
     - name: "Deploying the add-in in national clouds"
@@ -160,5 +162,7 @@
       href: service-dataset-external-org-share-view.md
     - name: Information for Power BI admin
       href: service-dataset-external-org-share-admin.md
-  - name: "Use third-party apps"
+  - name: Collaborate in Outlook and Microsoft 365
+    href: service-power-bi-outlook-office.md      
+  - name: Use third-party apps
     href: service-power-bi-get-started-third-party-apps.md

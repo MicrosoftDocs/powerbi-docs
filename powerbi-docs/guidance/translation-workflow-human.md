@@ -1,12 +1,13 @@
 ---
-title: Enable workflows for human translation in Power BI reports
+title: Enable Workflows for Human Translation in Power BI Reports
 description: Learn about translations sheets, which Translations Builder uses to export and import .csv files for human translators to use to localize Power BI reports.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.date: 07/24/2023
+ms.topic: concept-article
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Enable workflows for human translation in Power BI reports
 

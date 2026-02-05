@@ -1,12 +1,11 @@
 ---
 title: Power BI security white paper
 description: A white paper that discusses and describes security architecture and implementation for Power BI.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/03/2025
 LocalizationGroup: Conceptual
 ---
@@ -151,11 +150,11 @@ Power BI Mobile cached data is deleted when the app is removed, when the user si
 
 Power BI Mobile doesn't access other application folders or files on the device.
 
-The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. [Learn more about additional identification](../consumer/mobile/mobile-native-secure-access.md).
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification, such as providing Face ID, Touch ID, or a passcode for iOS, and biometric data (Fingerprint ID) for Android. 
 
 ## Authentication to the Power BI service
 
-User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI, which follows the [Microsoft Entra auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/blog/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI, which follows the [Microsoft Entra auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### Authentication sequence
 
@@ -199,7 +198,7 @@ For more information about creating and managing deployments that span multiple 
 
 Power BI services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). For more information about where your data is stored and how it's used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
-Microsoft also provides datacenters for sovereign entities. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft also provides datacenters for sovereign entities. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://www.microsoft.com/power-platform/products/power-bi/clouds).
 
 ## Data handling
 
@@ -378,7 +377,7 @@ For more information, see [Sensitivity labels in Power BI](../enterprise/service
 
 ### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI
 
-Microsoft Purview's Data Loss Prevention (DLP) policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations, such as the European Union's General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA), and make sure their data in Power BI is managed.
+Microsoft Purview's Data Loss Prevention (DLP) policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations and make sure their data in Power BI is managed.
 
 When DLP policies for Power BI are set up:
 
@@ -499,7 +498,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * Some customers in certain geographies have an option to create a tenant in a national/regional cloud, where data storage and processing is kept separate from all other datacenters. National/Regional clouds have a slightly different type of security, since a separate data trustee operates the national/regional cloud Power BI service on behalf of Microsoft.
 
-  Alternatively, customers can also set up a tenant in a specific region. However, such tenants do not have a separate data trustee from Microsoft. Pricing for national/regional clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/).
+  Alternatively, customers can also set up a tenant in a specific region. However, such tenants do not have a separate data trustee from Microsoft. Pricing for national/regional clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national/regional clouds, see [Power BI national/regional clouds](https://www.microsoft.com/power-platform/products/power-bi/clouds).
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
@@ -529,6 +528,6 @@ For more information on Power BI, see the following resources.
 * [Getting started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
 * [Power BI API reference](/rest/api/power-bi/)
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
-* [Power BI national/regional clouds](https://powerbi.microsoft.com/clouds/)
+* [Power BI national/regional clouds](https://www.microsoft.com/power-platform/products/power-bi/clouds)
 * [Microsoft Fabric security fundamentals](/fabric/security/security-fundamentals)
 * [Privacy, security, and responsible use for Copilot in Power BI](/fabric/fundamentals/copilot-power-bi-privacy-security)

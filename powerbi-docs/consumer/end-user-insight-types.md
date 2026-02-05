@@ -1,111 +1,153 @@
 ---
-title: Types of Insights supported by Power BI
-description: Learn about Insights in Power BI how they work, what they can do, and why they help interpret your data.
+title: Get Power BI Insights
+description: Discover the types of insights Power BI finds automatically in your data, including trends, outliers, and patterns. Learn how each insight type helps you interpret data faster.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
-ms.date: 01/09/2025
+ms.topic: concept-article
+ms.date: 01/12/2026
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
-# Types of insights supported by Power BI
+# Get Power BI insights
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented as visuals called *Insights*. Insights are available for visuals on dashboards, visuals in reports, and entire report pages.
+Power BI insights help you discover important patterns in your data automatically. Instead of manually exploring every chart and number, you can ask Power BI to analyze your data and highlight interesting findings. Think of insights as your data assistant, pointing out trends, unusual values, and patterns you might have missed.
 
-To learn how to use dashboard Insights, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
+You can get insights from:
+
+- Dashboard tiles
+- Report visuals  
+- Report pages
+
+For step-by-step instructions, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
 
 :::image type="content" source="media/end-user-insight-types/power-bi-insight-lines.png" alt-text="Screenshot of a set of Insights with the Insights panel highlighted.":::
 
-## How does Insights work?
+## What insights reveal
 
-Power BI searches different subsets of your semantic model and applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles, report visuals, and report pages.
+Power BI examines your data and applies advanced algorithms to find meaningful patterns. When you request insights, Power BI creates new visuals that highlight discoveries like unusual spikes, hidden correlations, and seasonal patterns.
 
-## Some terminology
+The insights you see depend on your data. For dashboard tiles, you might see up to 10 different types of insights. For reports, Power BI automatically analyzes trends, unusual changes, and key performance indicators.
 
-Power BI uses statistical algorithms to uncover Insights. The algorithms are listed and described in the next section of this article. Before we get to the algorithms, here are definitions for some terms that might be unfamiliar.
+## Common terms
 
-* *Measure* - A measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.
-  
-* *Dimension* - Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a semantic model, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
+As you explore insights, you might encounter these terms:
 
-* *Correlation* - A correlation tells us how the behavior of things relates. If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, sales of red skateboards increase each time we run a tv marketing campaign.  Sales of the red skateboards and the tv marketing campaign are positively correlated.
+- **Measure**: Numbers you analyze, like sales totals, average scores, or counts. Measures answer questions like "how many?" and "how much?"
+- **Dimension**: Categories that organize your measures, like product names, regions, or time periods. Dimensions answer "what type?" and "where?"
+- **Correlation**: When two things change together in similar or opposite ways. For example, if ice cream sales increase when temperatures rise, they're positively correlated.
+- **Time series**: Data points shown over time, like daily sales, monthly website visits, or yearly revenue.
 
-* *Time series* - A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.
-  
-* *Continuous variable* - A continuous variable can be any value between its minimum and maximum limits, otherwise it's a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.  
+## Types of insights Power BI finds
 
-## What types of insights can you find?
+Here are the insights Power BI can discover in your data. Each one helps you understand your data from a different angle.
 
-For reports, Power BI proactively performs analyses for anomalies, trends, and KPIs. For dashboard tiles, Power BI can find 10 types of Insights.
+### Top and bottom performers
 
-### Category outliers (top/bottom)
+**What it finds**: Categories that stand out from the rest with much higher or lower values.
 
-Highlights cases where one or two categories have larger values than other categories.  
+**Why it matters**: You can quickly identify your best and worst performers without manually comparing every category.
 
-![Screenshot of a category outlier Insight report window.](./media/end-user-insight-types/pbi-auto-insight-type-category-outliers.png)
+**Example**: If you're looking at sales by product, this insight might show that Product A sells 10 times more than any other product.
 
-### Change points in a time series
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-category-outliers.png" alt-text="Screenshot of a category outlier Insight report window.":::
 
-Highlights when there are significant changes in trends in a time series of data.
+### Significant changes over time
 
-![Screenshot of an change points in time series Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-changepoint.png)
+**What it finds**: Points in time when your data shifted direction or changed dramatically.
 
-### Correlation
+**Why it matters**: Helps you spot when something important happened that affected your metrics.
 
-Detects cases where multiple measures show a similar pattern or trend when plotted against a category or value in the semantic model.
+**Example**: Customer complaints dropped sharply in March, coinciding with a new product release.
+
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-changepoint.png" alt-text="Screenshot of change points in time series Insight visual.":::
+
+### Correlated patterns
+
+**What it finds**: Multiple metrics that move together in similar or opposite directions.
+
+**Why it matters**: Reveals relationships between different aspects of your business.
+
+**Example**: Marketing spend and website traffic both increase during the same months.
 
 :::image type="content" source="./media/end-user-insight-types/power-bi-auto-insight-type-correlation.png" alt-text="Screenshot of a correlation Insight visual.":::
 
-### Low Variance
+### Consistent values
 
-Detects cases where data points for a dimension aren't far from the mean, so the *variance* is low. Let's say you have the measure "sales" and a dimension "region." And looking across the region you see that there's little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are similar across all regions.
+**What it finds**: When values are remarkably similar across different categories.
 
-![Screenshot of a low variance Insight visual.](./media/end-user-insight-types/power-bi-insights-low-variance.png)
+**Why it matters**: Shows when performance is evenly distributed, which might indicate stability or lack of differentiation.
 
-### Majority (Major factors)
+**Example**: All five regions have nearly identical customer satisfaction scores.
 
-Finds cases where most of a total value can be attributed to a single factor when broken down by another dimension.  
+:::image type="content" source="./media/end-user-insight-types/power-bi-insights-low-variance.png" alt-text="Screenshot of a low variance Insight visual.":::
 
-![Screenshot of a majority Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
+### Dominant contributors
 
-### Outliers
+**What it find**: One category that makes up most of the total value.
 
-This insight type uses a clustering model to find outliers not related to time in series data. Outliers detect when there are specific categories with values significantly different than the other categories.
+**Why it matters**: It highlights concentration risk or your biggest driver.
 
-![Screenshot of an outlier Insight Visual.](./media/end-user-insight-types/power-bi-outliers.png)
+**Example**: 80% of your revenue comes from one customer segment.
 
-### Overall trends in time series
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-majority.png" alt-text="Screenshot of a majority Insight visual.":::
 
-Detects upward or downward trends in time series data.
+### Unusual values
 
-![Screenshot of an overall trend Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-trend.png)
+**What it find**: Individual data points that don't fit the expected pattern.
 
-### Seasonality in time series
+**Why it matters**: It flags anomalies that might need investigation or represent special circumstances.
 
-Finds periodic patterns in time series data, such as weekly, monthly, or yearly seasonality.
+**Example**: One store's inventory levels are three times higher than all other stores.
 
-![Screenshot of a seasonality in time Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png)
+:::image type="content" source="./media/end-user-insight-types/power-bi-outliers.png" alt-text="Screenshot of an outlier Insight visual.":::
 
-### Steady share
+### Upward or downward trends
 
-Highlights cases where there's a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, for example "the east region," has a steady percentage of overall sales across that date/time dimension.
+**What it find**: Steady increases or decreases over time.
 
-The steady share insight is similar to the low variance insight, because they both relate to the lack of variance of a value across time. However, the steady share insight measures the lack of variance of the **percentage of overall** across time, while the low variance insight measures the lack of variance of the absolute measure values across a dimension.
+**Why it matters**: It shows the overall direction your metrics are moving.
 
-![Screenshot of a steady share Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-steadyshare.png)
+**Example**: Monthly active users have been steadily increasing for six months.
 
-### Time series outliers
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-trend.png" alt-text="Screenshot of an overall trend Insight visual.":::
 
-For data across a time series, detects when there are specific dates or times with values significantly different than the other date/time values.
+### Seasonal patterns
 
-![Screenshot of a time series Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
+**What it finds**: Recurring patterns that repeat at regular intervals like weekly, monthly, or yearly.
+
+**Why it matters**: Helps you anticipate cyclical changes and plan accordingly.
+
+**Example**: Sales spike every December and dip every February.
+
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png" alt-text="Screenshot of a seasonality in time Insight visual.":::
+
+### Stable proportions
+
+**What it finds**: When a category maintains the same percentage of the total over time, even as the total changes.
+
+**Why it matters**: Shows consistent market share or stable distribution.
+
+**Example**: The East region consistently represents 25% of total sales, whether monthly sales are $100,000 or $200,000.
+
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-steadyshare.png" alt-text="Screenshot of a steady share Insight visual.":::
+
+### Unusual dates or times
+
+**What it finds**: Specific dates or times with values that differ dramatically from other periods.
+
+**Why it matters**: Identifies exceptional days that might represent opportunities or problems.
+
+**Example**: Website crashes on Black Friday caused a traffic spike 500% higher than normal.
+
+:::image type="content" source="./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png" alt-text="Screenshot of a time series Insight visual.":::
 
 ## Related content
 
-* [View data insights on dashboard tiles with Power BI.](end-user-insights.md)
+- [View data insights on dashboard tiles with Power BI.](end-user-insights.md)
 
-More questions? Ask the [Power BI Community.](https://community.powerbi.com/)
+Have more questions? Ask the [Power BI Community](https://community.powerbi.com/).

@@ -1,13 +1,14 @@
 ---
-title: "View diagnostics  for Power BI paginated reports"
+title: View Diagnostics  for Power BI Paginated Reports
 description: Learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 06/19/2023
+ms.topic: concept-article
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 ---
 
@@ -17,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 
-:::image type="content" source="media/paginated-reports-diagnostics/diagnostics-card.png" alt-text="Screenshot of the dialog box for diagnostics."::: 
+:::image type="content" source="media/paginated-reports-diagnostics/diagnostics-card.png" alt-text="Screenshot of the dialog box for diagnostics." lightbox="media/paginated-reports-diagnostics/diagnostics-card.png"::: 
 
 Any user with at least a Contributor role in a workspace can use this feature. Read more about [workspace roles](../collaborate-share/service-roles-new-workspaces.md).
 
@@ -25,7 +26,7 @@ Any user with at least a Contributor role in a workspace can use this feature. R
 
 - On the **View** menu for a paginated report, select **Diagnostics**.
 
-    :::image type="content" source="media/paginated-reports-diagnostics/paginated-view-diagnostics.png" alt-text="Screenshot of the diagnostics ribbon option on the View menu.":::
+    :::image type="content" source="media/paginated-reports-diagnostics/paginated-view-diagnostics.png" alt-text="Screenshot of the diagnostics ribbon option on the View menu." lightbox="media/paginated-reports-diagnostics/paginated-view-diagnostics.png":::
 
     When you select the diagnostics button the dialog box appears.
 
@@ -54,7 +55,7 @@ The following table describes the data that's captured in the diagnostics dialog
 
 This feature isn't available in [Power BI apps](../consumer/end-user-apps.md) or in the [paginated report visual](../visuals/paginated-report-visual.md). It's designed for report authors to view performance data coming from a paginated report in the Power BI service.  
 
-## Next steps
+## Related content
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 

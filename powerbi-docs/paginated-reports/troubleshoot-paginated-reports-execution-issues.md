@@ -1,13 +1,14 @@
 ---
-title: "Troubleshoot paginated report execution issues"
+title: Troubleshoot Paginated Report Execution Issues
 description: In this article, diagnose and fix processing and rendering issues with paginated reports.
-author: julcsc
+author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 01/08/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 # Troubleshoot paginated report execution issues
 
@@ -27,12 +28,12 @@ In addition, the report expressions that are evaluated at run time must follow a
   
 Use the following list to help determine the cause of the error:
 
-* When a report has more than one dataset, an aggregate expression in a text box on the report body must specify a scope parameter. For example, `=First(Fields!FieldName.Value, "DataSet1")`.  
+- When a report has more than one dataset, an aggregate expression in a text box on the report body must specify a scope parameter. For example, `=First(Fields!FieldName.Value, "DataSet1")`.  
   
 To specify a scope parameter, provide the name of a dataset, data region, or group that is in scope for the report item. For more information, see these articles:
 
-* [Understanding Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and
-* [Expression Reference (Power BI Report Builder)](./expressions/report-builder-expressions.md)
+- [Understanding Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and
+- [Expression Reference (Power BI Report Builder)](./expressions/report-builder-expressions.md)
   
 ### Names of objects must be greater than 0 and less than or equal to 256 characters
 
@@ -78,22 +79,6 @@ For soft page-break renderers, to view all the data on one page, in Report prope
 > When a report has no page breaks, the entire report must be processed before you can view the first page.   
   
 For more information about categories of renderers, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
-
-## Why do I get a "Your session has expired" message?
-
-When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
-
-The session times out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
-
-## Why do I get an "Error communicating with Analysis Service" message?
-
-Paginated reports time out after 600 seconds when using a Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
-          
-"There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
-          
-For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
-
-  
 
 ## Related content
 

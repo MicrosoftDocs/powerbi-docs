@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 12/21/2024
+ms.date: 12/15/2025
 # customer intent: As a Power BI developer, I want to learn how to troubleshoot common issues that might occur when setting up my developer environment for creating custom Power BI visuals so that I can develop my visuals effectively.
 ---
 

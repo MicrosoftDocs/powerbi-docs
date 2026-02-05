@@ -1,10 +1,11 @@
 ---
-title: "Specify logarithmic scale in Power BI paginated reports | Microsoft Docs"
+title: Specify Logarithmic Scale in Power BI Paginated Reports
 description: Improve the appearance of your chart by making your data more manageable with a logarithmic scale on a chart in a Power BI paginated report.  
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -13,7 +14,7 @@ ms.reviewer: saurkumar
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  If you have data that is logarithmically proportional, you may want to consider using a logarithmic scale on a chart in a paginated report. This scale helps improve the appearance of the chart by making your data more manageable. Most logarithmic scales use a base of 10.  
+  If you have data that is logarithmically proportional, you might want to consider using a logarithmic scale on a chart in a paginated report. This scale helps improve the appearance of the chart by making your data more manageable. Most logarithmic scales use a base of 10.  
   
  This feature is only available on the value axis. The value axis is usually the vertical, or y-axis. On bar charts, however, it is the horizontal, or x-axis.  
   

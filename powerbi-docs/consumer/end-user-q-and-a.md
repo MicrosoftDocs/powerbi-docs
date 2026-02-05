@@ -1,12 +1,12 @@
 ---
 title: Q&A for Power BI business users
 description: Learn how you can use the Power BI Q&A feature and natural language capabilities with your report visuals.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/10/2025
 ms.custom: Sales and marketing app, Retail analysis
 LocalizationGroup: Ask questions of your data
@@ -14,6 +14,9 @@ LocalizationGroup: Ask questions of your data
 # Q&A for Power BI business users
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yynn.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 ## What is Q&A?
 
@@ -53,7 +56,7 @@ To learn more, see [Use Q&A in a report.](../natural-language/power-bi-tutorial-
 
 ### Use Q&A in mobile apps and embedded reports
 
-Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
+Q&A is available in Power BI iOS apps and in [Power BI embedded analytics](../developer/embedded/qanda.md) as well. 
 
 ## Considerations and limitations
 

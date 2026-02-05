@@ -7,7 +7,8 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/30/2025
+ms.date: 11/25/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
@@ -21,10 +22,10 @@ Power BI offers several ways to collaborate and share Power BI reports, dashboar
 - You need a [Power BI Pro or Premium Per User (PPU) license](../fundamentals/service-features-license-type.md) to share content, unless the content is in a [Premium capacity](../enterprise/service-premium-what-is.md).
 - Recipients also need a Power BI Pro or PPU license, unless the content is in a Premium or Fabric capacity.
 - To let recipients edit a shared report, assign them a workspace role that allows editing. See [Roles in workspaces](service-roles-new-workspaces.md) for details.
+- For recipients with free licenses to access shared reports, both the report and its underlying semantic model must be in Premium capacity. If the semantic model is in a different workspace that isn't in Premium capacity, free users will receive a prompt to upgrade their license.
 
 > [!NOTE]
-> - Only **P SKU**s and **F SKU**s F64 or larger let users with a Microsoft Fabric free license and the Viewer role use Power BI apps and shared content. Smaller **F SKU**s require a Pro license.
-> - The **F SKU** is part of Fabric. To learn more, see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
+> Only **P SKU**s and **F SKU**s F64 or larger let users with a Microsoft Fabric free license and the Viewer role use Power BI apps and shared content. Smaller **F SKU**s require a Pro license. The **F SKU** is part of Fabric. To learn more, see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ## Ways to collaborate and share
 
@@ -69,12 +70,14 @@ Power BI offers several ways to collaborate and share Power BI reports, dashboar
 
 ### Share outside your organization
 
+To share content with external users, your Power BI administrator must enable external sharing in the tenant settings. See [tenant settings for guest users](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-access-microsoft-fabric) for details.
+
 - Enter the external user's email address (Microsoft Entra B2B guests recommended).
 - Recipients must sign in to Power BI to view shared content.
 - Only direct recipients can access the shared content; forwarding the link does not grant access.
 - If RLS is implemented, external users only see data they're permitted to view.
 
-See [Microsoft Entra B2B guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) for more.
+For more information, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 ### Share with large groups
 
@@ -98,7 +101,7 @@ See [Microsoft Entra B2B guest users](/fabric/enterprise/powerbi/service-admin-e
 ## Considerations and limitations
 
 - Only reports can be shared via links that grant access; dashboards require direct access.
-- Sharing a report or dashboard also shares the underlying semantic model unless RLS is applied.
+- Sharing a report or dashboard also grants access to the underlying semantic model. For free users to access shared content, both the report and the underlying semantic model must be in Premium capacity. If the semantic model is stored in a different workspace that isn't in Premium capacity, free users will be prompted to upgrade their license even if the report itself is in Premium capacity.
 - Recipients can interact with content in Reading view but can't edit unless granted build permissions.
 - Analyze in Excel access can be restricted by admins.
 - You can't share reports distributed to you in an app; ask the app owner to add users and republish.

@@ -1,12 +1,13 @@
 ---
-title: Implement a data translation strategy 
+title: Implement a Data Translation Strategy 
 description: Understand when to choose data translation for your multiple-language project in Power BI and what elements to consider.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.date: 07/26/2023
+ms.topic: concept-article
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Implement a data translation strategy
 
@@ -31,9 +32,7 @@ A different use case introduces the requirement of data translations. The exampl
 If you have people that use different languages and locales to interact with the same database instance, you still need to address other considerations.
 
 - Examine the text-based columns that are candidates for translation. Determine how hard translating those text values is. Columns with short text values, like product names and product categories, are good candidates for data translations. Columns that hold longer text values, such as product descriptions, require more effort to generate high quality translations.
-
 - Consider the number of distinct values that require translation. You can easily translate product names in a database that holds 100 products. You can probably translate product names when the number gets up to 1000. What happens if the number of translated values reaches 10,000 or 100,000? If you can't rely on machine-generate translations, your translation team might have trouble scaling up to handle that volume of human translations.
-
 - Consider whether there's on-going maintenance. Every time someone adds a new record to the underlying database, there's the potential to introduce new text values that require translation. This consideration doesn't apply to metadata translation or report label translation. In those situations, you create a finite number of translations and then your work is done. Metadata translation and report label translation don't require on-going maintenance as long as the underlying semantic model schema and the report layout remain the same.
 
 There are several factors that go into deciding whether to use data translation. You must decide whether it's worth the time and effort required to implement data translation properly. You might decide that implementing metadata translations and report label translations goes far enough. If your primary goal is to make your reporting solution compliant with laws or regulations, you might also find that implementing data translations isn't a requirement.

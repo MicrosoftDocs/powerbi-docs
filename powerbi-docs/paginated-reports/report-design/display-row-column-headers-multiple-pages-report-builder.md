@@ -1,10 +1,11 @@
 ---
-title: "Show row and column headers on multiple pages in a Power BI paginated report | Microsoft Docs"
+title: Show Row and Column Headers on Multiple Pages in a Power BI Paginated Report
 description: Learn how to control repeating row and column headers on every page of a paginated report for a tablix data region that spans multiple pages in Power BI Report Builder.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -18,7 +19,7 @@ ms.reviewer: saurkumar
   
  How you control the rows and columns depends on whether the tablix data region has group headers. When you select a tablix data region that has group headers, a dotted line shows the tablix areas, as shown in the following figure:  
   
- ![Screenshot of the Tablix data region areas.](media/tablix-parts.gif "Screenshot of the Tablix data region areas.")  
+ :::image type="content" source="media/tablix-parts.gif" alt-text="Screenshot of the Tablix data region areas." lightbox="media/tablix-parts.gif":::  
   
  Row and column group headers are created automatically when you add groups by using the New Table or Matrix wizard or the New Chart wizard, by adding fields to the Grouping pane, or by using context menus. If the tablix data region has only a tablix body area and no group headers, the rows and columns are tablix members.  
   

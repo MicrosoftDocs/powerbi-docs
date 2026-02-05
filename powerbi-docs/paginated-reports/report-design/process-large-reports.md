@@ -1,5 +1,5 @@
 ---
-title: "Process large Power BI paginated reports | Microsoft Docs"
+title: Process Large Power BI Paginated Reports
 description: Find out how to run large paginated reports properly by following configuration and rendering recommendations.
 author: JulCsc
 ms.author: juliacawthra
@@ -7,7 +7,8 @@ ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 # Process large Power BI paginated reports
   Large Power BI paginated reports present certain processing challenges and require certain configurations if they are to run properly. Large reports shouldn't be run on demand unless you configure them to support pagination.  

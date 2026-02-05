@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: On-premises reporting"
 description: "Learn how Power BI on-premises reporting is about customer-managed reporting."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -52,7 +52,7 @@ The following are some key points to emphasize about the on-premises reporting s
 
 ### Report creator experience
 
-Content creators use a specific tool named [Power BI Desktop for Report Server](https://powerbi.microsoft.com/report-server/). This version of Power BI Desktop is updated three times per year and is compatible with the Power BI Report Server release cycle.
+Content creators use a specific tool named [Power BI Desktop for Report Server](https://www.microsoft.com/power-platform/products/power-bi/report-server). This version of Power BI Desktop is updated three times per year and is compatible with the Power BI Report Server release cycle.
 
 > [!NOTE]
 > For report creators who create content for both the Power BI service and Power BI Report Server, the two versions of Power BI Desktop can be installed side by side.
@@ -74,7 +74,7 @@ SQL Server hosts the Report Server databases. Most commonly, a SQL Server Databa
 
 ### Mobile access
 
-Additional configurations must be done to enable remote mobile access to Power BI Report Server. For more information, see [Configure Power BI mobile app access to Report Server remotely](../report-server/configure-powerbi-mobile-apps-remote.md).
+Additional configurations must be done to enable remote mobile access to Power BI Report Server.
 
 ### Licensing Power BI Report Server
 

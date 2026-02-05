@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: User tools and devices"
 description: "Learn about user tools and managing devices to enable and support Power BI consumers and authors in the organization."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -338,7 +338,7 @@ For more information, see [Strategy for file locations](powerbi-implementation-p
 
 ### Custom visuals
 
-Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://powerbi.microsoft.com/developers/custom-visualization/), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
+Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://www.microsoft.com/power-platform/products/power-bi/developers), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
 
 To use a custom visual in Power BI Desktop, it must first be installed on the machine of the content creator. There are several ways to distribute visuals to users.
 

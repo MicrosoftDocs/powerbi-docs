@@ -1,5 +1,5 @@
 ---
-title: 'Pin an entire report page to a Power BI dashboard'
+title: 'Pin an Entire Report Page to a Power BI Dashboard'
 description: Learn how to pin an entire live report page to a Power BI dashboard from a report and then interact with the tiles on that dashboard.
 author: julcsc
 ms.author: juliacawthra
@@ -8,8 +8,9 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2024
+ms.date: 12/01/2025
 ms.custom: video-removed
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 
@@ -31,13 +32,18 @@ Pinning live tiles from reports to dashboards is only available in the Power BI 
 
 Follow these step-by-step instructions to try pinning a live report to a dashboard for yourself.
 
-1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
+1. Open a report in the Power BI service.
 
-1. With no visualizations selected, from the menu bar, select the **Pin** icon.
+1. Navigate to the report page you want to pin.
+
+1. With no visualizations selected, select the **More options** (...) menu in the upper-right corner of the report, then select **Pin to a dashboard**.
 
    :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin.png" alt-text="Screenshot highlighting the Pin icon on the menu bar.":::
 
-1. Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
+   > [!NOTE]
+   > If you don't see the **Pin to a dashboard** option, make sure you have edit permissions for the report. You can't pin tiles from reports that are shared with you or reports where you only have view access.
+
+1. In the **Pin to dashboard** dialog, pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: *Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.*
 
    - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that were shared with you don't appear in the dropdown.
    - **New dashboard**: Enter the name of the new dashboard.
@@ -52,7 +58,7 @@ Open the dashboard to see the pinned live tile:
 
 1. From the nav pane, select the dashboard with the new live tile. There you can do things like [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned report page.
 
-1. Interact with the live tile. In the following screenshot, you can see how selecting a bar on the column chart cross-filters and cross-highlights the other visualizations on the tile.
+1. Interact with the live tile. In the following screenshot, selecting a bar on the column chart cross-filters and cross-highlights the other visualizations on the tile.
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::
 

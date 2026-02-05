@@ -1,10 +1,11 @@
 ---
-title: "Interactive sort and links in a Power BI paginated report | Microsoft Docs"
+title: Interactive Sort and Links in a Power BI Paginated Report
 description: Enable your users to change the sort order of values in a Power BI paginated report, show or hide items, or select links to other reports or Web pages in Power BI Report Builder.
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

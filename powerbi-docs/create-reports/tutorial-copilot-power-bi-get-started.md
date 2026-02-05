@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power BI tutorial - Get started
 description: Learn how to configure Power BI Desktop settings that are required for this end-to-end tutorial.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

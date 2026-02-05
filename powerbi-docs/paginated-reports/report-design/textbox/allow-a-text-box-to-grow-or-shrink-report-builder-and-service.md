@@ -1,10 +1,11 @@
 ---
-title: "Allow a text box to grow or shrink in a Power BI paginated report | Microsoft Docs"
+title: Allow a Text Box to Grow or Shrink in a Power BI Paginated Report
 description: Find out how to set property options in Power BI Report Builder paginated reports that let a text box expand or shrink based on its contents.
-ms.date: 01/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -19,7 +20,7 @@ ms.reviewer: rpatkar
   
 1.  Right-click the text box and select **Text Box Properties**.  
   
-2.  Select the **General** tab.  
+1.  Select the **General** tab.  
   
     -   To allow the text box to expand vertically based on its contents, select **Allow height to increase**.  
   

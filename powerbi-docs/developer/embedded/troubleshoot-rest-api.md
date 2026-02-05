@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 6/04/2024
+ms.date: 12/15/2025
 ---
 
 # Troubleshoot REST APIs

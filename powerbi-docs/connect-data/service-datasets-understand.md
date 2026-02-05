@@ -1,14 +1,15 @@
 ---
-title: Semantic models in the Power BI service
-description: Understand Power BI service semantic models, which represent a source of data ready for reporting and visualization.
-author: JulCsc
-ms.author: juliacawthra
+title: Semantic Models in the Power BI Service
+description: Learn about Power BI semantic models, including types, external-hosted models, Power BI Desktop models, Excel workbooks, row-level security, and ownership considerations for effective data management and reporting.
+author: kgremban
+ms.author: kgremban
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
 ms.custom: fabric-cat
-ms.date: 08/28/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to understand Power BI semantic models so that I can effectively create and manage data sources for reporting and visualization.
 ---
 
@@ -41,7 +42,7 @@ It often makes sense to connect to Analysis Services when there are existing mod
 
 SQL Server Analysis Services supports both multidimensional models, or cubes, and tabular models. As the following image shows, a live connection semantic model passes queries to externally hosted models.
 
-![Diagram that shows how a live connection semantic model passes queries to an externally hosted model.](media/service-datasets-understand/live-connection-dataset.png)
+:::image type="content" source="media/service-datasets-understand/live-connection-dataset.png" alt-text="Diagram that shows how a live connection semantic model passes queries to an externally hosted model.":::
 
 ### Power BI Desktop-developed models
 

@@ -1,10 +1,11 @@
 ---
-title: "Treemap and sunburst charts in a Power BI paginated report in SQL Server Reporting Services | Microsoft Docs"
+title: Treemap and Sunburst Charts in a Power BI Paginated Report in Sql Server Reporting Services
 description: Discover how to visually represent hierarchical data in a Power BI paginated report using a treemap or sunburst chart in Report Builder.
-ms.date: 03/29/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -20,7 +21,7 @@ A treemap chart divides the chart area into rectangles that represent the differ
 
 For example,  in the following image of the sample treemap, the Southwest territory is the largest and Germany is the smallest. Within the Southwest, Road Bikes are larger than Mountain Bikes.  
 
-![Screenshot showing treemap example.](media/paginated-reports-visualizations/treemap-example.png "Screenshot of treemap example")  
+:::image type="content" source="media/paginated-reports-visualizations/treemap-example.png" alt-text="Screenshot showing treemap example." lightbox="media/paginated-reports-visualizations/treemap-example.png":::  
   
 ### Insert a treemap chart and set up the sample AdventureWorks data  
 
@@ -29,25 +30,25 @@ For example,  in the following image of the sample treemap, the Southwest territ
   
 1. Right-click the design surface, then select **Insert** > **Chart**. Select the **Treemap** icon.
 
-    ![Screenshot showing treemap icon.](media/paginated-reports-visualizations/treemap-icon.png "Screenshot of treemap icon")  
+    :::image type="content" source="media/paginated-reports-visualizations/treemap-icon.png" alt-text="Screenshot showing treemap icon." lightbox="media/paginated-reports-visualizations/treemap-icon.png":::  
 
-2. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
+1. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
   
-3. Add the following fields from the sample data:  
+1. Add the following fields from the sample data:  
   
-    * **Values**: LineTotal
-    * **Category Groups** (in the following order):
+    - **Values**: LineTotal
+    - **Category Groups** (in the following order):
         1. CategoryName
         2. SubcategoryName
-    * **Series Groups**: TerritoryName  
+    - **Series Groups**: TerritoryName  
 
-    ![Screenshot showing treemap example properties.](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap example properties")
+    :::image type="content" source="media/paginated-reports-visualizations/treemap-example-properties.png" alt-text="Screenshot showing treemap example properties." lightbox="media/paginated-reports-visualizations/treemap-example-properties.png":::
   
-4. To optimize the page size for the general shape of a treemap, set the legend position to the bottom.  
+1. To optimize the page size for the general shape of a treemap, set the legend position to the bottom.  
   
-5. To add tooltips that display the subcategory and the line total, right-click **LineTotal**, and then select **Series Properties**.  
+1. To add tooltips that display the subcategory and the line total, right-click **LineTotal**, and then select **Series Properties**.  
   
-     ![Screenshot showing visualization series properties.](media/paginated-reports-visualizations/visualization-series-properties.png "Screenshot of visualization series properties")  
+     :::image type="content" source="media/paginated-reports-visualizations/visualization-series-properties.png" alt-text="Screenshot showing visualization series properties." lightbox="media/paginated-reports-visualizations/visualization-series-properties.png":::  
   
      Set the **Tooltip** property to the following value:  
   
@@ -57,15 +58,15 @@ For example,  in the following image of the sample treemap, the Southwest territ
   
     For more information, see [Show ToolTips on a series &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs).  
   
-6. Change the default chart title to **Categorized Sales by Territory**.  
+1. Change the default chart title to **Categorized Sales by Territory**.  
   
-7. The number of label values that are displayed are affected by the size of the font, the size of the overall chart area, and the size of specific rectangles. To see more labels, change the **Label Font** property of **LineTotal** to **10pt** from the default of **8pt**.  
+1. The number of label values that are displayed are affected by the size of the font, the size of the overall chart area, and the size of specific rectangles. To see more labels, change the **Label Font** property of **LineTotal** to **10pt** from the default of **8pt**.  
 
 ##  <a name="bkmk_sunburst_chart"></a> Sunburst chart  
 
 In a sunburst chart, the hierarchy is represented by a series of  circles. The highest level of  the hierarchy is in the center, and lower levels of the hierarchy are rings displayed outside the center.  The lowest level of the hierarchy is the outside ring.  
   
-![Screenshot showing sunburst example.](media/paginated-reports-visualizations/sunburst-example.png "Screenshot of sunburst example")  
+:::image type="content" source="media/paginated-reports-visualizations/sunburst-example.png" alt-text="Screenshot showing sunburst example." lightbox="media/paginated-reports-visualizations/sunburst-example.png":::  
   
 ### To insert a sunburst chart and set up the sample AdventureWorks data
 
@@ -74,32 +75,32 @@ In a sunburst chart, the hierarchy is represented by a series of  circles. The h
   
 1. Right-click the design surface, and then select **Insert** > **Chart**. Select the **Sunburst** icon.
 
-     ![Screenshot showing sunburst icon.](media/paginated-reports-visualizations/sunburst-icon.png "Screenshot of sunburst icon")  
+     :::image type="content" source="media/paginated-reports-visualizations/sunburst-icon.png" alt-text="Screenshot showing sunburst icon." lightbox="media/paginated-reports-visualizations/sunburst-icon.png":::  
   
-2. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
+1. Reposition and resize the chart. To use with the sample data, a chart that is 5 inches wide is a good start.  
   
-3. Add the following fields from the sample data:  
+1. Add the following fields from the sample data:  
 
-    * **Values**: LineTotal
-    * **Category Groups** (in the following order):
+    - **Values**: LineTotal
+    - **Category Groups** (in the following order):
         1. CategoryName
         2. SubcategoryName
         3. SalesReasonName
-    * **Series Groups**: TerritoryName  
+    - **Series Groups**: TerritoryName  
 
-    ![Screenshot showing treemap example properties.](media/paginated-reports-visualizations/treemap-example-properties.png "Screenshot of treemap example properties")
+    :::image type="content" source="media/paginated-reports-visualizations/treemap-example-properties.png" alt-text="Screenshot showing treemap example properties." lightbox="media/paginated-reports-visualizations/treemap-example-properties.png":::
   
-4. To optimize the page size for the general shape of a sunburst chart, set the legend position to the bottom.  
+1. To optimize the page size for the general shape of a sunburst chart, set the legend position to the bottom.  
   
-5. Change the default chart title to **Categorized Sales by Territory, with sales reason**.  
+1. Change the default chart title to **Categorized Sales by Territory, with sales reason**.  
   
-6. To add the values of the category groups to the sunburst as labels, set the label properties **Visible=true** and **UseValueAsLabel=false**.<br /><br /> The label values that are displayed are affected by the size of the font, the size of the overall chart area, and the size of specific rectangles.  To see more labels, change the **Label Font** property of **LineTotal** to **10pt** from the default of **8pt**.
+1. To add the values of the category groups to the sunburst as labels, set the label properties **Visible=true** and **UseValueAsLabel=false**.<br /><br /> The label values that are displayed are affected by the size of the font, the size of the overall chart area, and the size of specific rectangles.  To see more labels, change the **Label Font** property of **LineTotal** to **10pt** from the default of **8pt**.
 
-    ![Screenshot showing sunburst line total properties.](media/paginated-reports-visualizations/sunburst-line-total-properties.png "Screenshot of sunburst line total properties")
+    :::image type="content" source="media/paginated-reports-visualizations/sunburst-line-total-properties.png" alt-text="Screenshot showing sunburst line total properties." lightbox="media/paginated-reports-visualizations/sunburst-line-total-properties.png":::
   
-7. If you want a different range of colors, change the chart **Palette** property.  
+1. If you want a different range of colors, change the chart **Palette** property.  
 
-     ![Screenshot showing visualization palette.](media/paginated-reports-visualizations/visualization-palette.png "Screenshot of visualization palette")  
+     :::image type="content" source="media/paginated-reports-visualizations/visualization-palette.png" alt-text="Screenshot showing visualization palette." lightbox="media/paginated-reports-visualizations/visualization-palette.png":::  
 
 ##  <a name="bkmk_sample_data"></a> Sample AdventureWorks data
 
@@ -111,7 +112,7 @@ The query returns AdventureWorks sales order detail data with sales territory, p
   
      The query in this section is based on the AdventureWorks database, which is available for download from GitHub: [AdventureWorks 2016 full database backup](https://github.com/Microsoft/sql-server-samples/releases).  
 
-2. **Create a data source**.  
+1. **Create a data source**.  
   
     1. Under **Report Data**,  right-click **Data Sources**, and then select **Add data source**.  
   
@@ -129,7 +130,7 @@ The query returns AdventureWorks sales order detail data with sales territory, p
   
      For more information about creating a data source, see [Add and verify a data connection &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/add-and-verify-a-data-connection-report-builder-and-ssrs).  
   
-3. **Create a dataset**.  
+1. **Create a dataset**.  
   
     1. Under **Report Data**,  right-click **Datasets**, and then select **Add dataset**.  
   
@@ -168,10 +169,10 @@ The query returns AdventureWorks sales order detail data with sales territory, p
   
 ## Related content
 
-* [Shared dataset design view &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/shared-dataset-design-view-report-builder)
+- [Shared dataset design view &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/shared-dataset-design-view-report-builder)
 
-* [Show ToolTips on a series &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs)
+- [Show ToolTips on a series &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs)
 
-* [Tutorial: Treemaps in Power BI](https://support.powerbi.com/knowledgebase/articles/556200-tutorial-treemaps-in-power-bi)
+- [Tutorial: Treemaps in Power BI](https://support.powerbi.com/knowledgebase/articles/556200-tutorial-treemaps-in-power-bi)
 
-* [Treemap: Microsoft Research Data Visualization Apps for Office](https://research.microsoft.com/projects/msrdatavis/treemap.aspx)
+- [Treemap: Microsoft Research Data Visualization Apps for Office](https://research.microsoft.com/projects/msrdatavis/treemap.aspx)

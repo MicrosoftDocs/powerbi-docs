@@ -1,10 +1,11 @@
 ---
-title: "Tablix data region areas in a Power BI paginated report | Microsoft Docs"
+title: Tablix Data Region Areas in a Power BI Paginated Report
 description: "Learn about tablix data region areas in a Power BI paginated report."
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -14,16 +15,16 @@ ms.reviewer: saurkumar
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
  In a paginated report, a tablix data region has four areas that contain tablix cells:   
-* The [corner](#tablix-corner-area)  
-* The [column group area](#tablix-column-groups-area)  
-* The [row group area](#tablix-row-groups-area)
-* The [body](#tablix-body-area)
+- The [corner](#tablix-corner-area)  
+- The [column group area](#tablix-column-groups-area)  
+- The [row group area](#tablix-row-groups-area)
+- The [body](#tablix-body-area)
   
 Cells in each area have a distinct function. You add cells to the tablix body area to display detail and grouped data. Report Builder and Report Designer add cells to the row group or column group area when you create a group in order to display group instance values. Report Builder and Report Designer create tablix corner cells when both row groups and column groups exist.  
   
 On the design surface, dotted lines denote the four areas of a selected tablix data region. The following figure shows the areas for a tablix region with nested row groups based on category and subcategory, nested column groups based on geography and country/region, and an adjacent column group based on year.  
   
- ![Screenshot of the Tablix data region areas.](media/tablix-areas.gif "Screenshot of a Tablix data region areas.")  
+ :::image type="content" source="media/tablix-areas.gif" alt-text="Screenshot of the Tablix data region areas." lightbox="media/tablix-areas.gif":::  
   
  The following list describes each area. 
   
@@ -47,17 +48,17 @@ The tablix body is located in the lower right corner (lower left for RTL layout)
   
  The following figure shows the tablix data region in Preview.  
   
- ![Screenshot of a Preview, Tablix corner, row & column groups, body.](media/tablix-areas-preview.gif "Screenshot of a Preview, Tablix corner, row & column groups, body.")  
+ :::image type="content" source="media/tablix-areas-preview.gif" alt-text="Screenshot of a Preview, Tablix corner, row & column groups, body." lightbox="media/tablix-areas-preview.gif":::  
   
  The row group area displays two category group instances for Clothing and Components. The column group displays a geography group instance for North America, with two nested country/region group instances for Canada (CA) and the United States (US). In addition, the adjacent column displays two year group instances for 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with the category group shows subcategory totals, and the grand total row displays the category totals once for the data region.  
   
 ## Related content
 
-* [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
-* [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
-* [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
-* [Create a Matrix](create-matrix-report-builder.md)   
-* [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)   
-* [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
+- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
+- [Create a Matrix](create-matrix-report-builder.md)   
+- [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)   
+- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
   
   

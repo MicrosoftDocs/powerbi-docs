@@ -7,8 +7,8 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 03/12/2025
-
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
 ---
@@ -62,6 +62,26 @@ When the content in your workspace is ready, you can start the publishing proces
     :::image type="content" source="media/service-create-distribute-apps/setup-page.png" alt-text="Screenshot of Setup for your app.":::
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
+
+#### Manage app-scoped Copilot (preview) availability
+
+App-scoped Copilot lets users search across app reports, ask questions, and get summaries based on the curated content within the app (scoped to items they have access to). This full-page Copilot experience is accessible from app navigation and complements report-scoped Copilot: the app experience covers curated app content, while report-scoped Copilot applies within individual reports. See also [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric) to understand both entry points.
+
+These requirements pertain to using [Copilot in Power BI apps](../create-reports/copilot-apps-overview.md). Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app. App-scoped Copilot can surface verified answers prepared by authors; for more information, see [Copilot in Power BI apps](../create-reports/copilot-apps-overview.md).
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav.":::
+
+- The setting for showing Copilot in the app navigation must be enabled.
+- This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot in app navigation*.
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
+
+> [!NOTE]
+> **Copilot in apps is on by default** and can be managed per app.
+>
+> For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
+> For more information on turning Copilot on and off, generally for Power BI or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+
 
 #### Allow saving a copy of a report
 
@@ -123,7 +143,7 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 #### Add Power BI reports with paginated report visuals
 
-If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report will then work with the published version of the paginated report instead of the report stored in the workspace.
+If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report then works with the published version of the paginated report instead of the report stored in the workspace.
 
 During publishing, Power BI can detect reports with visuals that reference missing paginated reports:
 
@@ -338,7 +358,9 @@ Keep these things in mind when publishing apps and pushing them automatically to
 - Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App user view
-App users in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Users who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, users see the All tab view, which is a consolidated view showing all content that they have access to. App users can browse different audience group tabs to see the content for each group. 
+App users in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Users who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, users see the All tab view, which is a consolidated view showing all content that they have access to. App users can browse different audience group tabs to see the content for each group.
+
+When the app setting 'Show Copilot in app navigation' is enabled, users see a Copilot entry in the app navigation that allows them to ask questions and get summaries scoped to the app's visible content for their audience. 
 
 **The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::

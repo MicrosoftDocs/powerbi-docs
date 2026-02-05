@@ -1,10 +1,11 @@
 ---
-title: "Filter, group, and sort data in Power BI paginated reports | Microsoft Docs"
+title: Filter, Group, and Sort Data in Power BI Paginated Reports
 description: Learn about ways to control, organize, and sort Power BI paginated report data with expressions based on dataset fields, parameters in the Report Data pane of Power BI Report Builder. 
-ms.date: 06/26/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

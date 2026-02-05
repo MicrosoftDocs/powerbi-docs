@@ -1,10 +1,11 @@
 ---
-title: "Add a rectangle or container to a Power BI paginated report | Microsoft Docs"
+title: Add a Rectangle or Container to a Power BI Paginated Report
 description: Separate or emphasize areas of a report or provide a background for one or more report items using a customized rectangle in Power BI Report Builder.
-ms.date: 09/07/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -41,7 +42,7 @@ ms.reviewer: saurkumar
 1.  Select the arrow next to the **Border** button to determine which sides of the rectangle to change.    
     
     > [!NOTE]    
-    >  If you set the line style to **Double** and the line width is 1 1/2 pt or narrower, the line may not appear double when you run the report in Power BI Report Builder or in the Power BI web portal. It appears double when you export the report to other formats such as Microsoft Word and Acrobat PDF.    
+    >  If you set the line style to **Double** and the line width is 1 1/2 pt or narrower, the line might not appear double when you run the report in Power BI Report Builder or in the Power BI web portal. It appears double when you export the report to other formats such as Microsoft Word and Acrobat PDF.    
     
 ## Related content
 

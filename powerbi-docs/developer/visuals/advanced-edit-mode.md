@@ -6,8 +6,8 @@ ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 02/05/2025
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Advanced edit mode in Power BI visuals

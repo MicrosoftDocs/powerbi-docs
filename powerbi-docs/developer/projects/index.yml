@@ -53,6 +53,8 @@ landingContent:
         links:
         - text: "Introduction to deployment pipelines"
           url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
+        - text: "Deploy PBIP with fabric-cicd"
+          url: projects-deploy-fabric-cicd.md
         - text: "Azure DevOps Integration"
           url: projects-azdo.md
         - text: "Continuous integration with Azure DevOps and Git "

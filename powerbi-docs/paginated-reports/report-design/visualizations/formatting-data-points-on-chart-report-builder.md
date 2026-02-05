@@ -1,10 +1,11 @@
 ---
-title: "Format data points on a Power BI paginated report chart | Microsoft Docs"
+title: Format Data Points on a Power BI Paginated Report Chart
 description: Find out about different types of formatting of data points on charts in your paginated reports in Power BI Report Builder. 
-ms.date: 04/12/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: monaraya
@@ -43,7 +44,7 @@ In a Power BI paginated report, a data point is the smallest individual entity o
   
 - On stacked charts, data point labels are always positioned inside the series and the **Position** property on the series label is ignored.  
   
-- On all other chart types, you can reposition the data point label using the **Position** property on the series label. By default, the chart automatically calculates the position for data point labels to avoid label collisions. When you set a value for **Position**, all data point labels will be positioned the same way, which may cause the labels to overlap. Consider using this approach only when you have fewer data points.  
+- On all other chart types, you can reposition the data point label using the **Position** property on the series label. By default, the chart automatically calculates the position for data point labels to avoid label collisions. When you set a value for **Position**, all data point labels will be positioned the same way, which might cause the labels to overlap. Consider using this approach only when you have fewer data points.  
   
  For more information, see [Position Labels in a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/position-labels-in-a-chart-report-builder-and-ssrs).  
   
@@ -77,7 +78,7 @@ In a Power BI paginated report, a data point is the smallest individual entity o
   
 ## Increase readability in a chart with multiple data points
 
- If you have multiple series on your chart, it may reduce the readability of the chart data points. When adding multiple series to the chart, consider using a technique that distinguishes how to read and understand each series in the chart effectively. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
+ If you have multiple series on your chart, it might reduce the readability of the chart data points. When adding multiple series to the chart, consider using a technique that distinguishes how to read and understand each series in the chart effectively. For more information, see [Multiple Series on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs).  
   
  For simplicity, when you are using a Shape chart, consider adding only one data field and one category field. For more information, see [Shape Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/shape-charts-report-builder-and-ssrs). If your chart needs more than one data field and category field, consider changing the chart type. You can right-click the series and select **Change Chart Type**.  
   

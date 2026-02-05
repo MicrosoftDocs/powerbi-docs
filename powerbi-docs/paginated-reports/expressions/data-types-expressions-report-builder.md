@@ -1,13 +1,14 @@
 ---
-title: "Data types in expressions in a paginated report"
+title: Data Types in Expressions in a Paginated Report
 description: Explore how data types represent different kinds of data in a paginated report so that the data can be stored and processed in Report Builder.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---
@@ -39,7 +40,7 @@ Values that are specified in an RDL file must be an RDL data type. When the repo
 
 It is important to understand data types when you write expressions to compare or combine values, for example, when you define group or filter expressions, or calculate aggregates. Comparisons and calculations are valid only between items of the same data type. If the data types do not match, you must explicitly convert the data type in the report item by using an expression.
 
-The following list describes cases when you may need to convert data to a different data type:
+The following list describes cases when you might need to convert data to a different data type:
 
 - Comparing the value of a report parameter of one data type to a dataset field of a different data type.
 
@@ -99,11 +100,11 @@ When you connect to a data source with a data provider that does not provide con
 
 For most data types, the CLR provides default conversions so that you can concatenate values that are different data types into one string by using the & operator. For example, the following expression concatenates the text "The date and time are: " with a dataset field StartDate, which is a <xref:System.DateTime> value: `="The date and time are: " & Fields!StartDate.Value`.
 
-For some data types, you may need to include the ToString function. For example, the following expression shows the same example using the CLR data type <xref:System.DateTimeOffset>, which include the date, the time, and a time-zone offset relative to the UTC time zone: `="The time is: " & Fields!StartDate.Value.ToString()`.
+For some data types, you might need to include the ToString function. For example, the following expression shows the same example using the CLR data type <xref:System.DateTimeOffset>, which include the date, the time, and a time-zone offset relative to the UTC time zone: `="The time is: " & Fields!StartDate.Value.ToString()`.
 
 ### Convert a String Data Type to a CLR DateTime Data Type
 
-If a data processing extension does not support all data types defined on a data source, the data may be retrieved as text. For example, a **datetimeoffset(7)** data type value may be retrieved as a String data type. In Perth, Australia, the string value for July 1, 2008, at 6:05:07.9999999 A.M. would resemble:
+If a data processing extension does not support all data types defined on a data source, the data might be retrieved as text. For example, a **datetimeoffset(7)** data type value might be retrieved as a String data type. In Perth, Australia, the string value for July 1, 2008, at 6:05:07.9999999 A.M. would resemble:
 
 `2008-07-01 06:05:07.9999999 +08:00`
 

@@ -10,10 +10,11 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
+  ms.update-cycle: 1095-days
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 09/24/2025
+  ms.date: 01/15/2026
 
 landingContent:
 
@@ -29,8 +30,6 @@ landingContent:
         links:
           - text: Create a report from Excel
             url: service-from-excel-to-stunning-report.md
-          - text: Create a quick report from SharePoint
-            url: service-quick-create-sharepoint-list.md
 
   - title: Design and format your reports
     linkLists:
@@ -65,10 +64,8 @@ landingContent:
             url: insights.md
       - linkListType: how-to-guide
         links:
-          - text: Use Copilot to create a report in the service
-            url: copilot-create-report-service.md
-          - text: Use Copilot to create a report in Desktop
-            url: copilot-create-desktop-report.md
+          - text: Use Copilot to create a report
+            url: copilot-create-reports.md
           - text: Use Copilot to evaluate data
             url: copilot-evaluate-data.md
           - text: Use Copilot prompts for report pages

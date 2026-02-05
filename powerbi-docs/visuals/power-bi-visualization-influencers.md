@@ -1,15 +1,16 @@
 ---
 title: Key Influencers Visualizations Tutorial
 description: 'Tutorial: Create a key influencers visualization in Power BI'
-author: aphilip94
-ms.author: anphil
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: anphil
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: video-removed, sample-customer-feedback
 ms.topic: how-to
-ms.date: 06/25/2025
+ms.date: 09/30/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Create key influencers visualizations
 
@@ -411,10 +412,10 @@ The visualization evaluates all explanatory factors together. A factor might be 
 - If house size is fixed at 1,500 square feet, it's unlikely that a continuous increase in the number of bedrooms dramatically increases the house price.
 - Bedrooms might not be as important of a factor as it was before house size was considered.
 
-Sharing your report with a Power BI colleague requires that you both have individual Fabric or Power BI Pro licenses or that the report is saved in a Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
+[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
 
 ## Related content
 
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
 - [How Power BI uses ML.NET to identify key influencers](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

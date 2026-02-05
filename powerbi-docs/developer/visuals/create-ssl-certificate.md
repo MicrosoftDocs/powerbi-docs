@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.custom: linux-related-content
 ms.topic: how-to
-ms.date: 12/08/2023
+ms.date: 12/15/2025
 # customer intent: As a Power BI visual developer, I want to learn how to generate and install SSL certificates for Power BI visuals so that I can secure my visualizations.
 ---
 

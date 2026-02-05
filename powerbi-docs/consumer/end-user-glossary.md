@@ -1,5 +1,5 @@
 ---
-title: Glossary of the Power BI service
+title: Glossary of the Power BI Service
 description: Learn Power BI terminology with this glossary, which provides definitions to help you understand and navigate through the library of articles.
 author: julcsc
 ms.author: juliacawthra
@@ -7,8 +7,8 @@ services: power-bi
 ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
-ms.topic: conceptual
-ms.date: 09/30/2025
+ms.topic: concept-article
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they're reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -18,6 +18,17 @@ ai-usage: ai-assisted
 The Power BI service uses terms that can feel unfamiliar. Use this glossary to look them up—bookmark it. For an overview of the building blocks of the Power BI service, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md). That article gives a high-level overview of the parts and how they're connected.
 
 This glossary is a community effort. If you don't see a word here, ask us to add it (you can use the documentation feedback button at the bottom of this article).
+
+> [!TIP]
+> **New to Power BI?** Start with these essential terms:
+>
+> - **Dashboard**: A single-page view with the most important visualizations from your reports.
+> - **Report**: A multi-page collection of interactive visualizations based on your data.
+> - **Semantic model** (formerly dataset): The data that powers your reports and dashboards.
+> - **Workspace**: A container where you store and share dashboards, reports, and data.
+> - **Tile**: A single visualization displayed on a dashboard.
+>
+> For a complete introduction, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md).
 
 ## A
 
@@ -94,7 +105,7 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 
 ### Card (visual type)
 
-A Power BI [visualization type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+A Power BI [visualization type](../visuals/power-bi-visualizations-overview.md).
 
 ### Certified custom visual
 
@@ -134,11 +145,11 @@ A correlation tells us how the behavior of things is related. If their patterns 
 
 ### Cross-filter
 
-Applies to visual interactions. Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now displays only data points that apply to the Moderation segment.
+Applies to visual interactions. Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the donut chart cross-filters the line chart. The line chart now displays only data points that apply to the Moderation segment.
 
 ### Cross-highlight
 
-Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the donut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
 
 ### Custom visual
 
@@ -575,7 +586,7 @@ Numerical data to be visualized.
 
 ### Visual, visualization
 
-A chart. Some visuals are: bar chart, treemap, doughnut chart, map.
+A chart. Some visuals are: bar chart, treemap, donut chart, map.
 
 ### Visual interaction
 

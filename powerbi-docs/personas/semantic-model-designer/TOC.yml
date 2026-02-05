@@ -1,0 +1,72 @@
+- name: Power BI for semantic model designers
+  href: index.yml
+  items:
+    - name: Get started with data modeling
+      items:
+        - name: Understand model relationships
+          href: ../../transform-model/desktop-relationships-understand.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: What is a star schema?
+          href: ../../guidance/star-schema.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Understand storage modes
+          href: ../../transform-model/desktop-storage-mode.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Use the modeling view
+          href: ../../transform-model/desktop-modeling-view.md?context=/power-bi/personas/semantic-model-designer/context/context
+    - name: Transform data
+      items:
+        - name: Query overview
+          href: ../../transform-model/desktop-query-overview.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Common query tasks
+          href: ../../transform-model/desktop-common-query-tasks.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Add custom columns
+          href: ../../create-reports/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Combine files from a folder
+          href: ../../transform-model/desktop-combine-binaries.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Query folding guidance
+          href: ../../guidance/power-query-folding.md?context=/power-bi/personas/semantic-model-designer/context/context
+    - name: Build your model
+      items:
+        - name: Create and manage relationships
+          href: ../../transform-model/desktop-create-and-manage-relationships.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Create measures
+          href: ../../transform-model/desktop-measures.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Create calculated columns
+          href: ../../transform-model/desktop-calculated-columns.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Create calculated tables
+          href: ../../transform-model/desktop-calculated-tables.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Create calculation groups
+          href: ../../transform-model/calculation-groups.md?context=/power-bi/personas/semantic-model-designer/context/context
+    - name: Learn DAX
+      items:
+        - name: Learn DAX basics
+          href: ../../transform-model/desktop-quickstart-learn-dax-basics.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: DAX overview
+          href: /dax/dax-overview
+        - name: Create calculated columns tutorial
+          href: ../../transform-model/desktop-tutorial-create-calculated-columns.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Create measures tutorial
+          href: ../../transform-model/desktop-tutorial-create-measures.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: DAX function reference
+          href: /dax/dax-function-reference
+    - name: Optimize performance
+      items:
+        - name: Reduce data model size
+          href: ../../guidance/import-modeling-data-reduction.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: DirectQuery model guidance
+          href: ../../guidance/directquery-model-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Composite model guidance
+          href: ../../guidance/composite-model-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Optimization guide
+          href: ../../guidance/power-bi-optimization.md?context=/power-bi/personas/semantic-model-designer/context/context
+    - name: Advanced modeling
+      items:
+        - name: Composite models
+          href: ../../transform-model/desktop-composite-models.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Aggregations
+          href: ../../transform-model/aggregations-advanced.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Field parameters
+          href: ../../create-reports/power-bi-field-parameters.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Row-level security guidance
+          href: ../../guidance/rls-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: Use external tools
+          href: ../../transform-model/desktop-external-tools.md?context=/power-bi/personas/semantic-model-designer/context/context
+

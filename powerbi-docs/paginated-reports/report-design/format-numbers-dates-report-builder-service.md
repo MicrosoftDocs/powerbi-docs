@@ -1,5 +1,5 @@
 ---
-title: "Format numbers and dates in Power BI paginated reports | Microsoft Docs"
+title: Format Numbers and Dates in Power BI Paginated Reports
 
 description: Learn how to format numbers and dates in Power BI Report Builder data regions in a paginated report by selecting a format from the Number page of the data region's Properties dialog box.
 author: JulCsc
@@ -8,7 +8,7 @@ ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 # Format numbers and dates in paginated reports (Power BI Report Builder)
@@ -35,7 +35,7 @@ To format numbers in a table, matrix, or chart:
 | Custom | `#,##0.00` | `9876.543` | `9,876.54` |
 
 > [!NOTE]  
-> If the field’s data type is set to `String`, numeric formatting options may be unavailable. Ensure the field is typed correctly in the dataset.
+> If the field’s data type is set to `String`, numeric formatting options might be unavailable. Ensure the field is typed correctly in the dataset.
 
 ## Format dates and times
 
@@ -86,7 +86,7 @@ Only numeric formats are supported on value axes.
 
 ### Troubleshoot
 
-- If a format string is invalid, the report may display it as literal text.
+- If a format string is invalid, the report might display it as literal text.
 - Ensure the data type of the field matches the format type (for example, `DateTime` for date formats).
 - Use expressions for more control over formatting logic.
 

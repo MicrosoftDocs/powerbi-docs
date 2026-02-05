@@ -1,12 +1,12 @@
 ---
-title: "Export Power BI paginated report to a CSV file | Microsoft Docs"
+title: Export Power BI Paginated Report to a CSV File
 description: In Power BI Report Builder, the CSV rendering extension renders Power BI paginated reports to a plain text format that is readable and compatible with many applications.
-ms.date: 02/27/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

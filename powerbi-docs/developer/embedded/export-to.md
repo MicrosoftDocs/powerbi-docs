@@ -6,7 +6,7 @@ ms.author: billmath
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/27/2025
+ms.date: 12/15/2025
 ---
 
 # Export Power BI report to file

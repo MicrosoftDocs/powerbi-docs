@@ -1,10 +1,11 @@
 ---
-title: "Rectangles and lines in a Power BI paginated report | Microsoft Docs"
+title: Rectangles and Lines in a Power BI Paginated Report
 description: Discover how to create visual effects within a Power BI paginated report in Power BI Report Builder. Add features such as color or an image, a tooltip, or a bookmark on the Power BI paginated report.   
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

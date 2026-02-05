@@ -1,12 +1,12 @@
 ---
 title: Default member in multidimensional semantic models in Power BI
 description: Learn about how Power BI processes data from a multidimensional model based on where the default member is found.
-author: JulCsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---

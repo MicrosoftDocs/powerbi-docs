@@ -1,13 +1,14 @@
 ---
-title: "Add an expression to a paginated report"
+title: Add an Expression to a Paginated Report
 description: Find out about how to use expressions to define report item properties, filters, and parameter values in Power BI Report Builder.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---

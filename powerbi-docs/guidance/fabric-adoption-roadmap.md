@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap"
 description: "The overview of the Microsoft Fabric adoption roadmap series of articles."
-author: denglishbi
-ms.author: daengli
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

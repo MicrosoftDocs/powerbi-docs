@@ -1,12 +1,13 @@
 ---
-title: Load multiple-language reports
+title: Load Multiple-Language Reports
 description: Learn how to load multiple-language reports by using bookmarks or embedding reports that implement data translations in Power BI.
-author: JulCsc   
-ms.author: juliacawthra
+author: kgremban   
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 # Load multiple-language reports
 
@@ -54,7 +55,7 @@ When you embed a report with a **config** object like this which sets the **lang
 
 It's possible to apply a bookmark to an embedded a report. Instead, you can apply a filter directly on the **Languages** table as the report loads using the Power BI JavaScript API. There's no need to add bookmarks for filtering the **Languages** table if you only intend to use a report by using Power BI embedding.
 
-To apply a filtering during the loading process of an embedded report, register an event handler for the `loaded` event. When you register an event handler for an embedded report's `loaded` event, you can provide a JavaScript event handler that runs before the rendering process begins. This approach makes the `loaded` event the ideal place to register an event handler whose purpose is to apply the correct filtering on the **Languages** table. 
+To apply a filtering during the loading process of an embedded report, register an event handler for the `loaded` event. When you register an event handler for an embedded report's `loaded` event, you can provide a JavaScript event handler that runs before the rendering process begins. This approach makes the `loaded` event the ideal place to register an event handler whose purpose is to apply the correct filtering on the **Languages** table.
 
 Here's an example of JavaScript code that registers an event handler for the `loaded` event to apply a filter to the **Languages** table for Spanish.
 
@@ -89,4 +90,4 @@ report.on("loaded", async (event: any) => {
 
 ## Related content
 
-- [Guidance for Power BI](overview.md)
+- [Guidance for Power BI](index.yml)

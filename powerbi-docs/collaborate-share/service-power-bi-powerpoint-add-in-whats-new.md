@@ -7,16 +7,47 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: conceptual
+ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 07/21/2025
+ms.date: 11/30/2025
 ---
 
 # What's new in Power BI collaboration and integration
 
 This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
-**To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/desktop-latest-update.md).**
+**To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/whats-new.md).**
+
+## November 2025
+
+### Power BI app is available in Teams in Microsoft 365 Operated by 21Vianet
+
+Starting in November 2025, Power BI users in Microsoft 365 Operated by 21Vianet can now use the Power BI app for Teams. Users can get the app from the app store, or admins can get it for them. Access your Power BI content directly within Teams using the tailored experience built for Teams, and pin Power BI content to chats and channels using Tabs. After you install it, you can do almost everything in Microsoft Teams that you can do in the Power BI service.
+
+The following features aren't available in this release:
+
+- Power BI notifications in Microsoft Teams
+- Power BI adaptive cards
+- Content sharing through Microsoft Teams
+
+To learn more, see [Power BI service in Microsoft 365 Operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud).
+
+## October 2025
+
+### Power BI in Teams: Content shared in chats now opens in a dedicated window
+
+When you share Power BI content in Teams chats, it now opens in a separate, focused window within Teams. This improves usability by keeping the chat context intact while giving you a full experience for interacting with reports or dashboards.
+
+To learn more about this feature, see [Link preview cards in Microsoft Teams chats and channels](service-teams-link-preview.md) and the ["Power BI in Teams – Content Shared in Teams Chats Now Opens a Dedicated Separate Window Within Teams" blog post](https://powerbi.microsoft.com/blog/power-bi-in-teams-content-shared-in-teams-chats-now-opens-a-dedicated-separate-window-within-teams/).
+
+### Power BI Controller (preview)
+
+Power BI Controller (preview) is a task pane add-in that acts as a central command center for all Power BI add-ins in your presentation. With this feature, you can perform bulk actions across slides with one click.
+
+- **Bulk switch live/snapshot**: Toggle every embedded Power BI add-in in the deck between Live, Snapshot, or Public snapshot views with a single action—perfect for monthly business reviews or finalizing a shareable version.
+- **Sync with Power BI**: Ensure add-ins reflect the latest state without opening each slide.
+
+To learn more about this feature, see [Manage multiple add-ins with the Power BI Controller (preview)](storytelling-powerbi-controller.md).
 
 ## July 2025
 
@@ -124,7 +155,7 @@ You must have sharable links enabled for your organization to use this feature. 
 
 ### Suggested content
 
-It's easier to find and insert the Power BI reports you need for your presentation. Now, when you add the Power BI add-in to your slide, the add-in automatically scans the title of the slide and suggests Power BI content that might be relevant. Let's say the title of your slide is "New stores sales," for example. The add-in shows you a list of Power BI reports that contain data about sales. The add-in also shows you your recently visited Power BI reports, and makes it easy to access reports you're working on or frequently use. [Learn more about the new feature](https://powerbi.microsoft.com/en-us/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674248)
+It's easier to find and insert the Power BI reports you need for your presentation. Now, when you add the Power BI add-in to your slide, the add-in automatically scans the title of the slide and suggests Power BI content that might be relevant. Let's say the title of your slide is "New stores sales," for example. The add-in shows you a list of Power BI reports that contain data about sales. The add-in also shows you your recently visited Power BI reports, and makes it easy to access reports you're working on or frequently use. [Learn more about the new feature](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674248)
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/suggested-content.gif" alt-text="Screenshot showing suggest content for the Power BI add-in for PowerPoint.":::
 

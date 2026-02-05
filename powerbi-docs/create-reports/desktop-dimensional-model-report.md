@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: From dimensional model to stunning report in Power BI Desktop"
+title: "Tutorial: From Dimensional Model to Stunning Report in Power BI Desktop"
 description: In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 20 minutes.
 author: julcsc
 ms.author: juliacawthra
@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 09/19/2025
+ms.date: 12/01/2025
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
+ai-usage: ai-assisted
 ---
 
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
@@ -24,11 +25,11 @@ You work at AdventureWorks and your manager wants to see an executive summary re
 - Which country/region is the company seeing the most success in? 
 - Which product category and reseller business types should the company continue to invest in? 
 
-Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here’s what the final report looks like.
+Using our [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx), we can build this report in no time. Here's what the final report looks like.
 
 :::image type="content" source="media/desktop-dimensional-model-report/adventureworks-finished-report.png" alt-text="Screenshot of Finished AdventureWorks report.":::
 
-Want to see the finished product? You can also download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
+Want to see the finished product? You can also download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix).
 
 >[!NOTE]
 >If you'd rather work with data in SQL databases, the **[AdventureWorks sample databases](/sql/samples/adventureworks-install-configure)** article features links to downloadable AdventureWorks SQL sample databases in a GitHub repository. If you do go with a SQL database, you need to modify various steps in this tutorial.
@@ -49,7 +50,7 @@ In this tutorial, you learn how to:
 
 ## Get data: Download the sample 
 
-1. Download the [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx). 
+1. Download the [AdventureWorks Sales sample Excel workbook](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx). 
 
 1. Open Power BI Desktop. 
 
@@ -470,7 +471,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 ## Related content 
 
-- Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
+- Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
 - Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

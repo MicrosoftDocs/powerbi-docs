@@ -1,12 +1,13 @@
 ---
 title: Use Copilot with semantic models
 description: Discover how to use Copilot in Power BI to enhance data analytics, streamline semantic model development, and improve report consumption experiences.
-author: denglishbi
-ms.author: daengli
-ms.reviewer: sngun
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: daengli
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/15/2025
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Use Copilot with semantic models
@@ -108,7 +109,7 @@ The image shows the following prompt: *What was the profit % for the Australia s
 
 Aside from user prompts, the *Ask data questions* experience can also produce incorrect or unexpected results due to the quality or organization of the underlying semantic model. Examples of when your semantic model produces poor results include:
 
-- **Poor model design or implementation:** If your semantic model doesn't follow common best practices (such as a [star schema design](../guidance/star-schema.md)), then you're likely to get poor results with any consumption tool or experience. You should always strive for quality semantic models to get the most out of Power BI and Fabric. See also [Data modeling guidance for Power BI](../guidance/overview.md#data-modeling) for more tips and guidance to improve your Power BI semantic models.
+- **Poor model design or implementation:** If your semantic model doesn't follow common best practices (such as a [star schema design](../guidance/star-schema.md)), then you're likely to get poor results with any consumption tool or experience. You should always strive for quality semantic models to get the most out of Power BI and Fabric. See also [Data modeling guidance for Power BI](../guidance/index.yml) for more tips and guidance to improve your Power BI semantic models.
 
 - **Poor naming conventions:** If your fields have inconsistent or excessive naming conventions (such as acronyms, abbreviations, and punctuation), then users are more likely to make mistakes in their prompts and Copilot will get confused when referring to these fields. Copilot works best when tables, columns, and measures have names in human-readable English.
 
@@ -262,7 +263,7 @@ From here, you can add synonyms or relationships manually, or add suggested syno
 
 For more information about using the Q&A setup menu, see [Intro to Q&A tooling to train Power BI Q&A](/power-bi/natural-language/q-and-a-tooling-intro).
 
-Instead of using the Q&A setup window, you can also add synonyms and relationships by using linguistic schema YAML files. For more information, see the blog post [Editing Q&A linguistic schemas](https://powerbi.microsoft.com/en-us/blog/editing-q-a-linguistic-schemas/).
+Instead of using the Q&A setup window, you can also add synonyms and relationships by using linguistic schema YAML files. For more information, see the blog post [Editing Q&A linguistic schemas](https://powerbi.microsoft.com/blog/editing-q-a-linguistic-schemas/).
 
 We recommend that you use Copilot to generate synonyms as the first step when performing linguistic modeling for your semantic model. Then, you can curate the suggested synonyms, removing the ones that don't make sense, and adding additional synonyms where necessary. Ensure that you [share useful synonyms with your organization](../natural-language/q-and-a-tooling-intro.md#synonym-sharing) to reuse them.
 

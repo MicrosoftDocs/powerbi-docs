@@ -1,9 +1,8 @@
 ---
 title: Create a report on a SharePoint List in Power BI Desktop
 description: Follow this step-by-step tutorial to see how to transform your SharePoint List data into a Power BI report.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
@@ -23,13 +22,11 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 > [!VIDEO https://www.youtube.com/embed/OZO3x2NF8Ak]
 
-In the Power BI service, you can also [create a report quickly from data in a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md).
-
 If your purpose is to quickly create a semantic model in the Power BI service, you can do so directly from the SharePoint list. For more information, see [Create a semantic model from a SharePoint list](./create-dataset-sharepoint-online-list.md).
 
 ## Part 1: Connect to your SharePoint List
 
-1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+1. If you don't have it already, download and install [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).
 2. Open Power BI Desktop and in the **Home** tab of the ribbon, then select **Get data** > **More**.
 3. Select **Online Services**, and then select **SharePoint Online List**.  
 
@@ -92,4 +89,4 @@ If your purpose is to quickly create a semantic model in the Power BI service, y
 
 ## Related content
 
-- [Create a report quickly from a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md)
+- [Create a Power BI semantic model directly from a SharePoint list](../connect-data/create-dataset-sharepoint-online-list.md)

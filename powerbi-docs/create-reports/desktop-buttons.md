@@ -1,5 +1,5 @@
 ---
-title: Create and configure buttons in Power BI reports 
+title: Create and Configure Buttons in Power BI Reports
 description: You can add buttons in Power BI reports that make your reports behave like apps, and deepen engagement with users.
 author: julcsc
 ms.author: juliacawthra
@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/20/2024
+ms.date: 12/01/2025
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to create and configure buttons in my reports so that I can enhance user interaction and provide an app-like experience.
 ---
@@ -20,7 +21,7 @@ With *buttons* in Power BI, you can create reports that behave similarly to apps
 
 This article explains how to add buttons to reports in Power BI Desktop and in the Power BI service. It also covers button states and actions, and shows you how to configure them in Power BI.
 
-![Screenshot showing a Q&A button in Power BI.](media/desktop-buttons/power-bi-qna-button.png)
+:::image type="content" source="media/desktop-buttons/power-bi-qna-button.png" alt-text="Screenshot of a Q&A button in a Power BI report.":::
 
 > [!NOTE]
 > Creating a button requires Edit permission to the report. Sharing a report requires a Power BI Pro or PPU license or for the report to be saved in Premium capacity. For more information, see [Which license do I have](../fundamentals/service-features-license-type.md) and [What is Premium](../enterprise/service-premium-what-is.md).
@@ -73,7 +74,7 @@ To select how a button should appear for each state:
 
 In the following image, you see the **Style** card and **Icon** expanded. The **State** is **On hover**, and the **Icon type** is **Right arrow**.
 
-![Screenshot showing the On hover state of a button in a Power BI report.](media/desktop-buttons/power-bi-button-format.png)
+:::image type="content" source="media/desktop-buttons/power-bi-button-format.png" alt-text="Screenshot of the On hover state of a button in a Power BI report.":::
 
 ## Select the action for a button
 
@@ -84,8 +85,8 @@ Here are the options for button actions:
 - **Back** returns the user to the previous page of the report. This action is useful for drillthrough pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md).
 - **Drill through** navigates the user to a drillthrough page filtered to their selection, without using bookmarks. Learn more about [drillthrough buttons in reports](desktop-drillthrough.md).
-- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details. 
-- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#bookmark-navigator) for details.
+- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page and bookmark navigators](button-navigators.md) for details.
+- **Bookmark navigation** navigates the user to a different state in the report, either on the same or a different page, by using bookmarks. See [Create page and bookmark navigators](button-navigators.md#create-a-bookmark-navigator) for details.
 - **Q&A** opens a **Q&A Explorer** window. When your report readers select a Q&A button, the Q&A Explorer opens, and they can ask natural-language questions about your data.
 - **Web URL** opens a web page in a browser.
 - **Apply all slicers** and **Clear all slicers** buttons apply all the slicers or clear all the slicers on a page. See [Create Apply all slicers and Clear all slicers buttons in reports](buttons-apply-all-clear-all-slicers.md) for details.
@@ -100,11 +101,11 @@ To select a button action:
 
 1. On the **Button** tab of the **Format button** pane, turn the **Action** to **On**, and then expand the card.
 
-2. Expand **Action**, and then select the **Type** of button action.
+1. Expand **Action**, and then select the **Type** of button action.
 
-    ![Screenshot showing Action selections for a button in Power BI.](media/desktop-buttons/power-bi-button-action.png)
+    :::image type="content" source="media/desktop-buttons/power-bi-button-action.png" alt-text="Screenshot of Action selections for a button in Power BI.":::
 
-3. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
+1. Test the buttons you create for your report by selecting <kbd>Ctrl</kbd> and the button.
 
 ## Create page navigation
 
@@ -117,14 +118,14 @@ To set up a single-page navigation button:
 
 1. Create a button with **Page navigation** as the **Type** of **Action**, then select a page for the **Destination**.
 
-    ![Screenshot showing Page navigation action.](media/desktop-buttons/power-bi-page-navigation.png)
+    :::image type="content" source="media/desktop-buttons/power-bi-page-navigation.png" alt-text="Screenshot of the Page navigation action settings.":::
 
-2. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
+1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
     > [!NOTE]
     > If the text content of the tooltip matches the button text content, the tooltips are hidden to enhance the readability for accessibility tools.
 
-3. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
+1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Shapes and images for navigation
 
@@ -134,13 +135,13 @@ Page navigation action is also supported for shapes and images, not just buttons
 
 ## Buttons support fill images
 
-Power BI buttons support fill images. With fill images, you can customize the look and feel of your button, combined with the built-in button states: 
+Power BI buttons support fill images. With fill images, you can customize the look and feel of your button, combined with the built-in button states:
 
-* Default
-* On hover
-* On press
-* Disabled (for drillthrough)
-* Loading (for data functions)
+- Default
+- On hover
+- On press
+- Disabled (for drillthrough)
+- Loading (for data functions)
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Screenshot showing Drillthrough button fill images.":::
 

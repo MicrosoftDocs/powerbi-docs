@@ -1,8 +1,8 @@
 ---
 title: Use Copilot to create measure descriptions
 description: Learn how you can add descriptions to your semantic model measures with Fabric Copilot for Power BI.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

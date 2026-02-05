@@ -1,21 +1,22 @@
 ---
-title: Troubleshoot nested values returned as text
-description: Learn about how to fix nested values being converted to a string when using improper data source privacy settings.
-author: JulCsc
-ms.author: juliacawthra
+title: Troubleshoot Nested Values Returned as Text
+description: Fix nested values converted to text in Power BI service. Learn how to resolve data source privacy errors and prevent Table/Record conversion issues. Troubleshoot today.
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
-ms.custom: 
+ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 10/08/2024
+ms.date: 10/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
-# Troubleshooting nested values returned as text in the Power BI service
+# Troubleshoot nested values returned as text in the Power BI service
 
 This article describes an issue users may encounter where nested values are converted to a string due to improper data source privacy settings and explains how to address it.
 
-In the past, there have been cases where a report refreshes in Power BI Desktop, but fails on the Power BI service with an error like this text:
+In the past, there have been cases where a report refreshes in Power BI Desktop but fails on the Power BI service with an error like this:
 
 ```output
 We cannot convert the value "[Table]" to type Table
@@ -33,7 +34,7 @@ For more recent versions of Power BI, when the Firewall buffers a nested table, 
 We cannot return a value of type Table in this context
 ```
 
-## Effect on Load/Refresh
+## Effect on load/refresh
 
 This change motivated by Firewall buffering also extends to Load/Refresh. The behavior of loading nested tables, records, and lists to the Power BI Model and the Excel Data Model in Power Query for Excel has changed. Before, nested items were loaded as text values, such as `"[Table]"` or `"[Record]"`. Now, they're treated as errors. A `null` value is in the loaded table and error count increments in the load results.
 

@@ -7,7 +7,7 @@ ms.reviewer: shafeeq, jennyf
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/30/2025
+ms.date: 12/15/2025
 ---
 
 # Local Storage API

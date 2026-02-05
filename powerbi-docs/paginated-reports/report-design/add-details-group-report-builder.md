@@ -1,10 +1,11 @@
 ---
-title: "Add a details group to a Power BI paginated report | Microsoft Docs"
+title: Add a Details Group to a Power BI Paginated Report
 description: Find out about adding a details group to an existing tablix data region to display the detail data for a matrix in Power BI Report Builder.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

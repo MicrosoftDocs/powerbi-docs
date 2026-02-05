@@ -1,13 +1,14 @@
 ---
-title: "DataSources and DataSets collection references in a paginated report"
+title: Datasources and Datasets Collection References in a Paginated Report
 description: Learn about the collections of datasources and datasets. Find out how to make them available after the paginated report is published to a report server in Report Builder.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---
@@ -18,7 +19,7 @@ ms.update-cycle: 1825-days
   The **DataSources** collection represents all the data sources used in a paginated report. Similarly, the **DataSets** collection represents all the datasets for all the data sources in a report. Use the **Report Data** pane for a hierarchical view of report datasets organized under the data source they reference.  
   
 ## DataSources  
- The **DataSources** collection represents the data sources referenced in a published report definition. You may choose to include this information in your report to document the source of the report data. The following table describes the variables within the **DataSources** collection.  
+ The **DataSources** collection represents the data sources referenced in a published report definition. You can also to include this information in your report to document the source of the report data. The following table describes the variables within the **DataSources** collection.  
   
 |**Variable**|**Type**|**Description**|  
 |------------------|--------------|---------------------|  
@@ -30,7 +31,7 @@ The following expression returns the data source type for data source named "Dat
 ```
 
 ## DataSets  
- The **DataSets** collection represents the datasets referenced in a report definition. You may choose to include the query in the report in a text box, so a user interested in exactly which data is in the report can see the original command text. The following table describes the members of the **DataSets** collection.  
+ The **DataSets** collection represents the datasets referenced in a report definition. You can also to include the query in the report in a text box, so a user interested in exactly which data is in the report can see the original command text. The following table describes the members of the **DataSets** collection.  
   
 |**Member**|**Type**|**Description**|  
 |----------------|--------------|---------------------|  

@@ -6,21 +6,28 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 02/14/2023
+ms.topic: concept-article
+ms.date: 01/06/2026
+ai-usage: ai-assisted
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
 
 This article lays out the minimum hardware and software requirements to install and run Power BI Report Server. See [Capacity planning guidance for Power BI Report Server](capacity-planning.md) for more details.
 
-## Processor, Memory, and Operating System Requirements
+> [!NOTE]
+> Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server. No new versions of SQL Server Reporting Services (SSRS) will be released. Power BI Report Server is now the default on-premises reporting solution for SQL Server.
 
-This are the requirments for the latest generally available (GA) version. 
+> [!IMPORTANT]
+> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors with certain visuals in Power BI Desktop or Power BI Report Server. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
+
+## Processor, memory, and operating system requirements
+
+These are the requirements for the latest generally available (GA) version. 
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.8<br><br>If the server doesn't have internet access, you can manually install the .NET Framework from [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/en-us/help/4503548/).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.8 see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
+| .NET Framework |4.8 or later<br><br>If the server doesn't have internet access, you can manually install the required version of the .NET Framework. For most scenarios, [download the latest supported .NET Framework version for Windows](https://dotnet.microsoft.com/en-us/download/dotnet-framework).<br/><br/>If you specifically need .NET Framework 4.8, use the [Microsoft .NET Framework 4.8 (Offline Installer) for Windows](https://support.microsoft.com/help/4503548/).<br/><br/>For more information, recommendations, and guidance about .NET Framework deployment, see [.NET Framework Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers).<br/> |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
@@ -30,17 +37,17 @@ This are the requirments for the latest generally available (GA) version.
 > [!NOTE]
 > Installation of Power BI Report Server is supported on x64 processors only.
 
-
 ## Database server version requirements
 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
 * Azure SQL Managed Instance (Power BI Report Server January 2020 version and later)
+* SQL Server 2025
 * SQL Server 2022
 * SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016
-* SQL Server 2014
+* SQL Server 2014 SP3
 
 When you create the report server database on a remote computer, you have to configure the connection to use a domain user account or a service account with network access. If you decide to use a remote SQL Server instance, consider carefully which credentials the report server should use to connect to the SQL Server instance. For more information, see [Configure a Report Server Database Connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

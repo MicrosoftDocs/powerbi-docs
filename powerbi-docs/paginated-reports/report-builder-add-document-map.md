@@ -1,12 +1,13 @@
 ---
-title: "Create a document map or table of contents in paginated reports"
+title: Create a Document Map or Table of Contents in Paginated Reports
 description: Learn how to use a document map to provide a table of contents or a set of navigational links to report items in a rendered paginated report in Power BI Report Builder.
 author: julcsc
 ms.author: juliacawthra
-ms.date: 09/18/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---

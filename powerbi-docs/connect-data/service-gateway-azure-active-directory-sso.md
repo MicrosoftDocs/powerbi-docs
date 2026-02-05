@@ -1,9 +1,9 @@
 ---
 title: Microsoft Entra SSO
 description: Learn how you can enable single sign-on to access cloud data sources that rely on Microsoft Entra ID from the Power BI Admin portal.
-author: miquelladeboer
-ms.author: mideboer
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mideboer
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to

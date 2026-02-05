@@ -1,13 +1,14 @@
 ---
-title: "Built-in collections in expressions in a paginated report"
+title: Built-In Collections in Expressions in a Paginated Report
 description: Discover built-in collections in expressions to reference collections in a paginated report such as parameters, fields, datasets in your reports in Power BI Report Builder. 
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---

@@ -1,13 +1,14 @@
 ---
-title: "Built-in Globals and User references in a paginated report"
+title: Built-In Globals and User References in a Paginated Report
 description: Find out about the values that can be used in expressions to filter results in a paginated report in Power BI Report Builder.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
 ---
@@ -74,10 +75,10 @@ The following table describes the members of the **User** collection.
 
 ### Use Locale Settings
 
-You can use expressions to refer to the locale settings on a client computer through the **User.Language** value to determine how a report appears to the user. For example, you can create a report that uses a different query expression based on the locale value. The query may change to retrieve localized information from a different column depending on the language returned. You can also use an expression in the language settings of the report or report items based on this variable.
+You can use expressions to refer to the locale settings on a client computer through the **User.Language** value to determine how a report appears to the user. For example, you can create a report that uses a different query expression based on the locale value. The query might change to retrieve localized information from a different column depending on the language returned. You can also use an expression in the language settings of the report or report items based on this variable.
 
 > [!NOTE]  
-> While you can change the language settings of a report, you must be careful about any display issues this may cause. For example, changing the locale setting of the report can change the date format in the report, but it can also change the currency format. Unless there is a conversion process for the currency, this may cause the incorrect currency symbol to be displayed in the report. To avoid this, set the language information about the individual items that you want to change, or set the item with the currency data to a specific language.
+> While you can change the language settings of a report, you must be careful about any display issues this might cause. For example, changing the locale setting of the report can change the date format in the report, but it can also change the currency format. Unless there is a conversion process for the currency, this might cause the incorrect currency symbol to be displayed in the report. To avoid this, set the language information about the individual items that you want to change, or set the item with the currency data to a specific language.
 
 ## Next steps
 

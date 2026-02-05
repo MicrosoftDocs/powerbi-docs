@@ -1,12 +1,12 @@
 ---
 title: "Active vs inactive relationship guidance"
 description: "Guidance for using active or inactive model relationships."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/27/2024
 ---

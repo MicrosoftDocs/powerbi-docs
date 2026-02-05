@@ -1,23 +1,24 @@
 ---
-title: "Control page breaks, headings, columns, and rows in Power BI paginated reports"
+title: Control Page Breaks, Headings, Columns, and Rows in Power BI Paginated Reports
 description: Optimize viewing and printing of your tables, lists, or images in paginated reports with choices for page lengths, columns, headings, and rows in Power BI Report Builder.
-author: nidenyse
-ms.author: dniwenshuti
-ms.date: 04/11/2025
+author: JulCsc
+ms.author: juliacawthra
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
 ms.update-cycle: 1825-days
-ms.reviewer: jonhp
+ms.reviewer: dniwenshuti
 ---
 # Control page breaks, headings, columns, and rows in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
  A page break divides a Power BI paginated report into separate pages for viewing and printing purposes. Page breaks determine how the content fits within a page, specific to the export format chosen. Hard-paged formats such as PDF or Image will strictly fit or push content to pages. Logical-paged formats such as Excel, will determine a best fit between content size and the page. 
   
- Adding page breaks may also improve performance of large reports when they are processed. A rendered page is displayed while the rest of the pages are rendered in the background. This allows you to begin viewing the initial pages of the report while waiting for additional pages to become available.  
+ Adding page breaks might also improve performance of large reports when they are processed. A rendered page is displayed while the rest of the pages are rendered in the background. This allows you to begin viewing the initial pages of the report while waiting for additional pages to become available.  
   
  Page breaks can be added to report items such as a table, matrix, list, chart, gauge, or image. You can also add page breaks to groups in a table, matrix, or list. Page breaks can be added before, after, and between groups. Page breaks between groups are not added to the report by default.  
   

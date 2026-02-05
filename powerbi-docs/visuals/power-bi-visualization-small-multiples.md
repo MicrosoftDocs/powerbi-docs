@@ -1,14 +1,15 @@
 ---
-title: Create small multiples in Power BI
+title: Create Small Multiples in Power BI
 description: Small multiples, or trellising, split a visual into multiple versions of itself, presented side by side, with its data partitioned across these versions by a chosen dimension.
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: juliacawthra, rienhu
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers, rienhu
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/21/2024
+ms.date: 12/01/2025
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Create small multiples in Power BI
 

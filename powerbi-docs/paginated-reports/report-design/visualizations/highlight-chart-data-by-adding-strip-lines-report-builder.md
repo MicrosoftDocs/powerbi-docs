@@ -1,10 +1,11 @@
 ---
-title: "Highlight chart data by adding strip lines in Power BI paginated report | Microsoft Docs"
+title: Highlight Chart Data by Adding Strip Lines in Power BI Paginated Report
 description: Use strip lines in horizontal or vertical ranges in a Power BI paginated report to improve readability, highlight dates, or highlight a specific key range in Power BI Report Builder.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -29,9 +30,9 @@ ms.reviewer: saurkumar
   
      To show vertical strip lines, right-click the horizontal chart axis and select **Horizontal Axis Properties**.  
   
-2.  Select the **Use interlacing** option. Grey strip lines will appear on your chart.  
+1.  Select the **Use interlacing** option. Grey strip lines will appear on your chart.  
   
-3.  (Optional) Specify a color for the strip lines using the adjacent **Color** drop-down list.  
+1.  (Optional) Specify a color for the strip lines using the adjacent **Color** drop-down list.  
   
 ## Display interlaced strip lines at custom intervals on a chart  
   
@@ -41,13 +42,13 @@ ms.reviewer: saurkumar
   
      The axis properties are displayed in the Properties window.  
   
-2.  In the **Appearance** section of the Properties pane, for the StripLines property, select the Edit Collection (...) button to open the **ChartStripLine Collection Editor**.  
+1.  In the **Appearance** section of the Properties pane, for the StripLines property, select the Edit Collection (...) button to open the **ChartStripLine Collection Editor**.  
   
-3.  Select **Add** to add a new strip line to the collection.  
+1.  Select **Add** to add a new strip line to the collection.  
   
-4.  Select StripWidth to specify the width of the strip line, measured in inches on the report. If you are highlighting dates or times, select StripWidthType and select a time interval.  
+1.  Select StripWidth to specify the width of the strip line, measured in inches on the report. If you are highlighting dates or times, select StripWidthType and select a time interval.  
   
-5.  Type a value or expression for the Interval to specify how often the strip line will repeat.  For example, if you specify an interval of 10, and your strip line width is 5, strip lines will display at values of 0 to 5, 15 to 20, 30 to 35, and so on.  
+1.  Type a value or expression for the Interval to specify how often the strip line will repeat.  For example, if you specify an interval of 10, and your strip line width is 5, strip lines will display at values of 0 to 5, 15 to 20, 30 to 35, and so on.  
   
 > [!NOTE]  
 >  By default, Interval is set to Auto, which means the chart will not calculate an interval for custom strip lines. The chart only calculates intervals for strip lines if an interval value is set.  

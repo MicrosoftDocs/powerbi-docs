@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Deploy content"
 description: "This article helps you to deploy content as part of managing the content lifecycle."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -174,7 +174,7 @@ Azure Pipelines and other code-based tools can programmatically deploy content b
 > [!TIP]
 > When you use the Fabric or Power BI REST APIs, you must first create an app registration in Azure ([described here for Power BI Embedded](../developer/embedded/register-app.md)). This requires a Microsoft Entra ID tenant and an organizational user, and can be a complex process to set up the appropriate permissions. However, you can execute the Fabric REST APIs in notebooks without creating an app registration. This streamlines the setup and use of APIs in your solutions, so that you don't have to manage credentials or configure any setup prior to using the APIs.
 >
-> To use the Fabric REST APIs without registering an app, use [semantic link](/fabric/data-science/semantic-link-overview) in a Fabric notebook with the [FabricRestClientClass](/python/api/semantic-link-sempy/sempy.fabric.fabricrestclient?view=semantic-link-python&preserve-view=true) of [sempy](/python/api/semantic-link-sempy/sempy?view=semantic-link-python&preserve-view=true) to call the API.
+> To use the Fabric REST APIs without registering an app, use [semantic link](/fabric/data-science/semantic-link-overview) in a Fabric notebook with the [FabricRestClientClass](/python/api/semantic-link-sempy/sempy.fabric.fabricrestclient?view=semantic-link-python&preserve-view=true) of sempy to call the API.
 
 Together with automated testing, Azure Pipelines integration with Power BI helps you to achieve [continuous integration and continuous deployment (CI/CD)](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture?view=azure-devops&preserve-view=true).
 

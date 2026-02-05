@@ -1,21 +1,21 @@
 ---
-title: Use semantic model version history (preview)
+title: Use semantic model version history
 description: Learn how to access and recover items from semantic models using semantic model version history.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/12/2025
+ms.date: 11/18/2025
 ms.custom: 
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to use semantic model version history in Power BI.
 ---
 
-# Use semantic model version history (preview)
+# Use semantic model version history
 
-Power BI automatically configures semantic model version history for semantic models [edited on the web](service-edit-data-models.md). With version history, self-service users can recover from the most critical mistakes when editing their semantic models on the web. For full source control and support of more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model.
+Power BI automatically configures semantic model version history for semantic models [edited on the web](service-edit-data-models.md) or when live editing Direct Lake semantic models in Power BI Desktop. With version history, self-service users can recover from the most critical mistakes when editing their semantic models. For full source control and support of more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model.
 
 ## Open the version history pane
 
@@ -122,7 +122,7 @@ There is no additional charge for the storage used to capture versions in the se
 
 ## Considerations and limitations
 
-Semantic model version history is currently in preview. Keep the following in mind:
+Keep the following in mind:
 
 * Up to five versions are saved per model. Saving versions once reaching the five-version limit will overwrite the oldest version in version history.
 * Restoring versions older than 14 days is not supported. Note that this limitation isn't currently enforced by the product.
@@ -132,7 +132,8 @@ Semantic model version history is currently in preview. Keep the following in mi
 * You can't delete a version within a semantic model’s version history.
 * Semantic model version history is subjected to the same limitations as [editing data models in the Power BI service](service-edit-data-models.md). 
 * Version history won't be captured for semantic models that haven't yet upgraded to [enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md). Additionally, if a model with the old metadata format is published over a model in the enhanced metadata format, all previously captured semantic model versions for that model will be deleted.
-* Moving a model between capacities will delete its version history.
+* User information might not appear for versions created by background operations.
+* Version history is deleted when a workspace moves between capacities with different BYOK encryption keys or when a capacity’s BYOK encryption key changes.
 * You can't access versions in semantic model version history outside of the version history pane on the web. For full source control with greater flexibility and support for more versions, use [git integration](/fabric/cicd/git-integration/git-get-started), which can be used in combination with version history for the same semantic model. 
 * The data in your semantic model may become outdated after restoring to a previous version. To ensure you have the most recent data, complete a refresh after performing a restore. Refresh behavior may vary across storage modes. For example, Direct Lake models with [automatic updates](/fabric/get-started/direct-lake-overview#automatic-updates) configured will automatically update with the most recent data after a restore, without requiring you to manually initiate a refresh.
 * During a [failover](../enterprise/service-admin-failover.yml), read operations such as viewing semantic model version history remain available. However, operations that modify Power BI content, including saving a new version or restoring a previous version in semantic model version history, are not supported when Power BI is in failover mode.
@@ -146,10 +147,10 @@ A semantic model may fail to convert to the large semantic model storage format 
 
 ## Related content
 
-This article provided information about the preview for semantic model versions. For more information on data modeling in Power BI, see the following resources:
+This article provided information about semantic model version history. For more information on semantic modeling in Power BI, see the following resources:
 
-* [Edit data models in the Power BI service (preview)](service-edit-data-models.md#capacity-utilization-and-reporting)
-* [Direct Lake in Power BI Desktop (preview)](/fabric/get-started/direct-lake-power-bi-desktop)
+* [Edit data models in the Power BI service](service-edit-data-models.md#capacity-utilization-and-reporting)
+* [Direct Lake in Power BI Desktop](/fabric/get-started/direct-lake-power-bi-desktop)
 * [Get started with Git integration in Microsoft Fabric](/fabric/cicd/git-integration/intro-to-git-integration)
 * [Power BI Desktop projects Git integration](../developer/projects/projects-git.md)
 

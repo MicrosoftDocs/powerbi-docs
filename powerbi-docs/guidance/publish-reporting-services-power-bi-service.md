@@ -1,14 +1,15 @@
 ---
-title: "Publish .rdl files to Power BI from Power BI Report Server and Reporting Services"
+title: "Publish .rdl Files to Power BI from Power BI Report Server and Reporting Services"
 description: "This article provides step-by-step instructions for migrating .rdl files, or *paginated reports*, from SQL Server Reporting Services to the Power BI service."
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: JulCsc
-ms.author: juliacawthra
+ms.topic: concept-article
+author: kgremban
+ms.author: kgremban
 ms.reviewer: cookiemccray
-ms.date: 04/11/2023
+ms.date: 10/01/2025
 ms.custom:
+ai-usage: ai-assisted
 ---
 
 # Publish .rdl files to Power BI from Power BI Report Server and Reporting Services

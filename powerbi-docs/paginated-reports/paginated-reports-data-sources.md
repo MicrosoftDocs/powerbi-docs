@@ -1,13 +1,14 @@
 ---
-title: "Supported data sources for Power BI paginated reports"
+title: Supported Data Sources for Power BI Paginated Reports
 description: Learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 08/26/2024
+ms.topic: concept-article
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: sfi-image-nochange
 ---
 
@@ -63,15 +64,15 @@ Also, for paginated reports, a report publisher with a Power BI enterprise gatew
 
 For Azure SQL Database data sources, you need to set an authentication type before you run the report. That applies only when you use a data source for the first time in a workspace. That first time, you see the following message:
 
-![Screenshot of dialog box to Publish to Power BI.](media/paginated-reports-data-sources/power-bi-paginated-publishing.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-publishing.png" alt-text="Screenshot of dialog box to Publish to Power BI." lightbox="media/paginated-reports-data-sources/power-bi-paginated-publishing.png":::
 
 If you don't supply any credentials, an error occurs when you run the report. Select **Continue**  to go to the **Data source credentials** page for the report you just uploaded:
 
-![Screenshot of settings for the Azure SQL Database.](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png" alt-text="Screenshot of settings for the Azure SQL Database." lightbox="media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png":::
 
 Select the **Edit credentials** link for a given data source to bring up the **Configure** dialog box:
 
-![Screenshot of dialog box to Configure the Azure SQL Database.](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png" alt-text="Screenshot of dialog box to Configure the Azure SQL Database." lightbox="media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png":::
 
 For Azure SQL Database data sources, here are the supported authentication types:
 
@@ -85,7 +86,7 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 - When connecting to Fabric Lakehouse using SQL analytics endpoint, note that you cannot set Query type in Power BI Report Builder's Dataset Properties dialog. As a workaround, select Text option and invoke the stored procedure.
 
-## Next steps
+## Related content
 - [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
 

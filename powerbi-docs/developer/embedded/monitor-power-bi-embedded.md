@@ -1,9 +1,9 @@
 ---
 title: Monitor Power BI Embedded
 description: Learn how to monitor data from Microsoft Power BI Embedded by using Azure Monitor and PowerShell commands.
-ms.date: 07/30/2024
+ms.date: 12/15/2025
 ms.custom: horz-monitor
-ms.topic: conceptual
+ms.topic: concept-article
 author: billmath
 ms.author: billmath
 ms.service: powerbi

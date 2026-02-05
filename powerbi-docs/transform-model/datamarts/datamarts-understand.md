@@ -1,8 +1,8 @@
 ---
 title: Understand datamarts (preview)
 description:  Learn about best practices and concepts for datamarts, like incremental refresh and proactive caching.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

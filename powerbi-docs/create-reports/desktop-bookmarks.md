@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/18/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to save views and settings in reports.
@@ -23,7 +24,7 @@ There are many uses for bookmarking. For example, you can create a collection of
 ## Other articles about bookmarks
 
 - In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
-- After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
+- After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#create-a-bookmark-navigator) with a few more clicks.
 
 ## Create report bookmarks
 
@@ -78,6 +79,14 @@ You can also select whether each bookmark applies other properties in the report
 - Choose between **All visuals** and **Selected visuals**.
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-bookmark-display.png" alt-text="Screenshot of a bookmark selected and the More options menu displayed.":::
+
+The bookmark options control which properties are captured and restored when you select the bookmark:
+
+- **Data**: Captures filter and slicer states. When enabled, selecting the bookmark applies any filters or slicer selections that were active when you created or updated the bookmark.
+- **Display**: Captures visual visibility and spotlight settings. When enabled, the bookmark restores which visuals are visible or hidden and whether spotlight mode is active.
+- **Current page**: When enabled, the bookmark navigates to the page that was active when you created it. When disabled, the bookmark only applies its settings to whichever page you're currently viewing.
+- **All visuals**: Applies the bookmark settings to every visual on the page.
+- **Selected visuals**: Applies the bookmark settings only to the visuals you select before creating or updating the bookmark. This option is useful when you want different bookmarks to affect different parts of your report.
 
 These capabilities are useful when you use bookmarks to switch between report views or selections of visuals. Because of this, you likely want to turn off data properties, so that filters aren't reset when users switch views by selecting a bookmark.
 
@@ -137,7 +146,7 @@ It's important to note that slicers continue to filter a report page, regardless
 
 ## Assign bookmarks to buttons
 
-You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
+You can link bookmarks to shapes and images. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. Read more about [using buttons in Power BI](desktop-buttons.md). Consider also creating a [bookmark navigator](button-navigators.md#create-a-bookmark-navigator), which creates a set of buttons all linked automatically to a group of bookmarks.
 
 ## Power BI Desktop Bookmark
 

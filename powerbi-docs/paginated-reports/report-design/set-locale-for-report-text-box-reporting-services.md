@@ -1,10 +1,11 @@
 ---
-title: "Set the locale for a Power BI paginated report or text box | Microsoft Docs"
+title: Set the Locale for a Power BI Paginated Report or Text Box
 description: Use the Language property on a text box to provide the locale setting for formats in a Power BI paginated report that display data that differ by language and region in Power BI Report Builder.
-ms.date: 03/13/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -48,12 +49,12 @@ ms.reviewer: saurkumar
 The **User!Language** expression can be used to define translated parameter prompts based on the user's browser language. To do so, follow these steps:
 
 1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
-2. Specify the **Name** for the parameter.
-3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md). For example:
+1. Specify the **Name** for the parameter.
+1. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md). For example:
 
      ```=IIF(User!Language.StartsWith("en"), "Color", "Farbe")```
    
-    :::image type="content" source="media/set-locale-parameter-prompts-2.png" alt-text="Screenshot of locale for parameter prompt.":::
+    :::image type="content" source="media/set-locale-parameter-prompts-2.png" alt-text="Screenshot of locale for parameter prompt." lightbox="media/set-locale-parameter-prompts-2.png":::
 
     To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
 

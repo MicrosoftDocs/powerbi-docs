@@ -1,9 +1,9 @@
 ---
 title: Manage your data source - import and scheduled refresh
 description: Learn how to manage the on-premises data gateway and data sources that belong to that gateway for data sources that can be used with import and scheduled refresh.
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
@@ -39,7 +39,7 @@ After you fill in everything, select **Create**. If the action succeeds, you see
 
 ### Advanced settings
 
-Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Optionally, you can configure the privacy level for your data source. This setting controls how data can be combined. It's only used for scheduled refresh. To learn more about privacy levels for your data source, see [Privacy levels (Power Query)](https://support.microsoft.com/office/privacy-levels-power-query-cc3ede4d-359e-4b28-bc72-9bee7900b540).
 
 :::image type="content" source="media/service-gateway-enterprise-manage-scheduled-refresh/privacy-level-sql.png" alt-text="Screenshot of privacy level setting for SQL data source." :::
 

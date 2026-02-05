@@ -1,13 +1,13 @@
 ---
 title: What are Power BI template apps?
-description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
-author: JulCsc
-ms.author: juliacawthra
+description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer. 
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 12/16/2024
+ms.date: 11/04/2025
 ---
 
 # What are Power BI template apps?
@@ -64,22 +64,14 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 Here are the high-level steps.
 
 1. [Review the requirements](#requirements) to make sure you meet them.
-
-2. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use.
-
-3. Create a workspace for your template app in your tenant on the Power BI service (`app.powerbi.com`).
-
-4. Import your *.pbix* file and add content such as a dashboard to your app.
-
-5. Create a test package to test the template app yourself within your organization.
-
-6. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant.
-
-7. Submit the content to [Partner center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for publishing.
-
-8. Make your offer go *Live* in AppSource, and move your app to production in Power BI.
-
-9. Now you can start developing the next version in the same workspace, in preproduction.
+1. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use.
+1. Create a workspace for your template app in your tenant on the Power BI service (`app.powerbi.com`).
+1. Import your *.pbix* file and add content such as a dashboard to your app.
+1. Create a test package to test the template app yourself within your organization.
+1. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant.
+1. Submit the content to [Partner center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for publishing.
+1. Make your offer go *Live* in AppSource, and move your app to production in Power BI.
+1. Now you can start developing the next version in the same workspace, in preproduction.
 
 ## Requirements
 
@@ -104,9 +96,9 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 ## Known limitations
 
-| Feature | Known Limitation |
+| Feature | Known limitation |
 |---------|---------|
-| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, paginated reports (*.rdl* files), and Excel workbooks. |
+| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, semantic models with Direct Lake connections, paginated reports (*.rdl* files), and Excel workbooks. |
 |Contents:  Reports   | A single template app can't include more than 20 reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed. In other words, no support for push or streaming datasets. |
 |Contents: Dataflows | Not supported: Dataflows. |

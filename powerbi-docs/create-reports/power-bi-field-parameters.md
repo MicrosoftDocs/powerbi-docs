@@ -1,9 +1,9 @@
 ---
 title: Use report readers to change visuals
 description: Learn how to let report readers dynamically change the visuals in a report by using field parameters.
-author: jeroenterheerdt
-ms.author: jterh
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
@@ -74,6 +74,23 @@ Parameter = {
 
 > [!NOTE]
 > Notice how the DAX above defines four fields in the Parameter and for each field three columns are provided: a name, column reference and the order number. While it is possible to define extra columns in the DAX above, this is not supported and can lead to unexpected results. We recommend you define the three columns for each field and use unique values for all columns.
+
+## Persistence of hierarchy level
+
+By default, Power BI will retain the hierarchy level displayed in a matrix as field parameter selections change. This was introduced in July 2025. However, you can turn off this behavior using the **Persist hierarchy level** setting in the report settings to go back to the pre-July 2025 behavior. Here is where to find this option:
+
+- In Power BI Desktop, navigate to Options and settings > Options > Current File > Report settings > Field Parameters > Persist hierarchy level.
+- In Fabric, navigate to the report settings and find Persist hierarchy level under Field parameter options.
+
+To illustrate the difference, consider a matrix showing a field parameter called Product Group and a column called Year on the rows, displaying Total sales. The field parameter allows selection of Category, Class, Color, or any combination. In this example, Category is selected, and the Categories are expanded, so you can see values broken down by Year: 
+
+:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-start.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-start.png":::
+
+Now, when you change the field parameter from Category to Class, what happens depends on the Persist hierarchy level setting. If it's on, the matrix remains expanded, keeping the Year column visible; If it's off, the matrix collapses and displays only values for Class. Below is a comparison showing both behaviors based on whether the toggle is enabled or disabled. 
+
+|Persist hierarchy level setting **on**|Persist hierarchy level setting **off**|
+|---|---|
+|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are still expanded after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png":::|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are collapsed after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png":::|
 
 ## Limitations
 

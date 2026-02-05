@@ -1,8 +1,8 @@
 ---
 title: Using Azure Log Analytics in Power BI
 description: Overview of how to use log analytics in Power BI
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -54,12 +54,13 @@ These examples highlight the various ways you can use Azure Log Analytics with P
 
 In another article, you can see how to configure Azure Log Analytics to work with Power BI, with specific steps and requirements to get your logging working properly.
 
-
+> [!NOTE]
+> Analyzing Paginated Reports using Log Analytics is not supported instead consider using Azure audit logs.
 
 ## Considerations and limitations
 Keep the following considerations and limitations in mind when working with Azure Log Analytics and Power BI:
 
-* [Sovereign cloud](https://powerbi.microsoft.com/clouds/) support is currently limited to US Department of Defense and US Government Community Cloud High.
+* [Sovereign cloud](https://www.microsoft.com/power-platform/products/power-bi/clouds) support is currently limited to US Department of Defense and US Government Community Cloud High.
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
 * Azure Log Analytics doesn't support tenant migration.

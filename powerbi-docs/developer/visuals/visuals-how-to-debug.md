@@ -7,7 +7,7 @@ ms.reviewer: tebercov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 07/31/2024
+ms.date: 12/15/2025
 ---
 
 # Debug Power BI custom visuals

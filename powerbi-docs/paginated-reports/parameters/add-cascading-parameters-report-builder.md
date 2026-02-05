@@ -1,12 +1,12 @@
 ---
-title: "Add cascading parameters to a Power BI paginated report | Microsoft Docs"
+title: Add Cascading Parameters to a Power BI Paginated Report
 description: Find out how to use cascading parameters in your paginated reports in Power BI Report Builder to manage large amounts of report data. 
-ms.date: 01/23/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -25,24 +25,24 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
-2.  In **Name**, type the name of the dataset.  
+1.  In **Name**, type the name of the dataset.  
   
-3.  In **Data source**, choose the name of the data source or click **New** to create one.  
+1.  In **Data source**, choose the name of the data source or click **New** to create one.  
   
-4.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
+1.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
   
-5.  In **Query**, type the query to use to retrieve data for this report. The query must include the following parts:  
+1.  In **Query**, type the query to use to retrieve data for this report. The query must include the following parts:  
   
     - A list of data source fields. For example, in a Transact-SQL statement, the SELECT statement specifies a list of database column names from a given table or view.  
   
     - One query parameter for each cascading parameter. A query parameter limits the data retrieved from the data source by specifying certain values to include or exclude from the query. Typically, query parameters occur in a restriction clause in the query. For example, in a Transact-SQL SELECT statement, query parameters occur in the WHERE clause.  
   
-6.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
+1.  Click **Run** (**!**). After you include query parameters and then run the query, report parameters that correspond to the query parameters are automatically created.  
   
     > [!NOTE]  
     >  The order of query parameters the first time you run a query determines the order that they are created in the report. To change the order, see [Change the Order of a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/change-the-order-of-a-report-parameter-report-builder-and-ssrs)  
   
-7.  Select **OK**.
+1.  Select **OK**.
   
  Next, you will create a dataset that provides the values for the independent parameter.  
   
@@ -50,13 +50,13 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
-2.  In **Name**, type the name of the dataset.  
+1.  In **Name**, type the name of the dataset.  
   
-3.  In **Data source**, verify the name is the name of the data source you chose in step 1.  
+1.  In **Data source**, verify the name is the name of the data source you chose in step 1.  
   
-4.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
+1.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
   
-5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for independent parameters typically do not contain query parameters. For example, to create a query for a parameter that provides all category values, you might use a Transact-SQL statement similar to the following:  
+1.  In **Query**, type the query to use to retrieve values for this parameter. Queries for independent parameters typically do not contain query parameters. For example, to create a query for a parameter that provides all category values, you might use a Transact-SQL statement similar to the following:  
   
     ```  
     SELECT DISTINCT <column name> FROM <table>  
@@ -66,7 +66,7 @@ ms.reviewer: saurkumar
   
      Click **Run** (**!**). The result set shows the values that are available for this first parameter.  
   
-6.  Select **OK**.
+1.  Select **OK**.
   
  Next, you will set the properties of the first parameter to use this dataset to populate its available values at run-time.  
   
@@ -74,19 +74,19 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, in the Parameters folder, right-click the first parameter, and then click **Parameter Properties**.  
   
-2.  In **Name**, verify that the name of the parameter is correct.  
+1.  In **Name**, verify that the name of the parameter is correct.  
   
-3.  Click **Available Values**.  
+1.  Click **Available Values**.  
   
-4.  Click **Get values from a query**. Three fields appear.  
+1.  Click **Get values from a query**. Three fields appear.  
   
-5.  In **Dataset**, from the drop-down list, click the name of the dataset you created in the previous procedure.  
+1.  In **Dataset**, from the drop-down list, click the name of the dataset you created in the previous procedure.  
   
-6.  In **Value** field, click the name of the field that provides the parameter value.  
+1.  In **Value** field, click the name of the field that provides the parameter value.  
   
-7.  In **Label** field, click the name of the field that provides the parameter label.  
+1.  In **Label** field, click the name of the field that provides the parameter label.  
   
-8.  Select **OK**.
+1.  Select **OK**.
   
  Next, you will create a dataset that provides the values for a dependent parameter.  
   
@@ -94,13 +94,13 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, right-click a data source, and then click **Add Dataset**.  
   
-2.  In **Name**, type the name of the dataset.  
+1.  In **Name**, type the name of the dataset.  
   
-3.  In **Data source**, verify the name is the name of the data source you chose in step 1.  
+1.  In **Data source**, verify the name is the name of the data source you chose in step 1.  
   
-4.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
+1.  In **Query type**, choose the type of query for the selected data source. In this topic, query type **Text** is assumed.  
   
-5.  In **Query**, type the query to use to retrieve values for this parameter. Queries for dependent parameters typically include query parameters for each parameter that this parameter is dependent on. For example, to create a query for a parameter that provides all subcategory (dependent parameter) values for a category (independent parameter), you might use a Transact-SQL statement similar to the following:  
+1.  In **Query**, type the query to use to retrieve values for this parameter. Queries for dependent parameters typically include query parameters for each parameter that this parameter is dependent on. For example, to create a query for a parameter that provides all subcategory (dependent parameter) values for a category (independent parameter), you might use a Transact-SQL statement similar to the following:  
   
     ```  
     SELECT DISTINCT Subcategory FROM <table>   
@@ -109,7 +109,7 @@ ms.reviewer: saurkumar
   
      In the WHERE clause, Category is the name of a field from \<table> and @Category is a query parameter. This statement produces a list of subcategories for the category specified in @Category. At run time, this value will be filled in with the value that the user chooses for the report parameter that has the same name.  
   
-6.  Select **OK**.
+1.  Select **OK**.
   
  Next, you will set the properties of the second parameter to use this dataset to populate its available values at run time.  
   
@@ -117,33 +117,33 @@ ms.reviewer: saurkumar
   
 1.  In the Report Data pane, in the Parameters folder, right-click the first parameter, and then click **Parameter Properties**.  
   
-2.  In **Name**, verify that the name of the parameter is correct.  
+1.  In **Name**, verify that the name of the parameter is correct.  
   
-3.  Click **Available Values**.  
+1.  Click **Available Values**.  
   
-4.  Click **Get values from a query**.  
+1.  Click **Get values from a query**.  
   
-5.  In **Dataset**, from the drop-down list, click the name of the dataset you created in the previous procedure.  
+1.  In **Dataset**, from the drop-down list, click the name of the dataset you created in the previous procedure.  
   
-6.  In **Value** field, click the name of the field that provides the parameter value.  
+1.  In **Value** field, click the name of the field that provides the parameter value.  
   
-7.  In **Label** field, click the name of the field that provides the parameter label.  
+1.  In **Label** field, click the name of the field that provides the parameter label.  
   
-8.  Select **OK**.
+1.  Select **OK**.
   
 ## Test the cascading parameters  
   
 1.  Click **Run**.  
   
-2.  From the drop-down list for the first, independent parameter, choose a value.  
+1.  From the drop-down list for the first, independent parameter, choose a value.  
   
      The report processor runs the dataset query for the next parameter and passes it the value you chose for the first parameter. The drop-down list for the second parameter is populated with the available values based on the first parameter value.  
   
-3.  From the drop-down list for the second, dependent parameter, choose a value.  
+1.  From the drop-down list for the second, dependent parameter, choose a value.  
   
      The report does not run automatically after you choose the last parameter so that you can change your choice.  
   
-4.  Click **View Report**. The report updates the display based on the parameters you have chosen.  
+1.  Click **View Report**. The report updates the display based on the parameters you have chosen.  
   
 ## Related content
 

@@ -1,9 +1,9 @@
 ---
 title: "Troubleshoot report performance in Power BI"
 description: "Troubleshooting guide to diagnose slow report performance in Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting
@@ -60,7 +60,7 @@ If you determine there's no time pattern, next consider if slow performance is i
 
 Finally, if you determine there's no time pattern *and* slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md), as described earlier, to optimize the report or model (flowchart terminator 5).
 
-When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/) (flowchart terminator 6).
+When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://support.fabric.microsoft.com/support/) (flowchart terminator 6).
 
 ## Related content
 

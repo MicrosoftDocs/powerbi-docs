@@ -1,10 +1,11 @@
 ---
-title: "Text-based query designer user interface (Power BI Report Builder)"
+title: Text-Based Query Designer User Interface (Power BI Report Builder)
 description: Use the text-based query designer to specify a query using the query language supported by the data source, run the query, and view the results at design time. 
-ms.date: 09/11/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: rpatkar
@@ -31,14 +32,14 @@ ms.reviewer: rpatkar
 |------------|-----------------|  
 |**Edit As Text**|Toggle between the text-based query designer and the graphical query designer. Not all data source types support graphical query designers.|  
 |**Import**|Import an existing query from a file or report. Only file types `sql` and `rdl` are supported|  
-|![Screenshot of Run the query icon.](../media/report-builder-data/run-query-icon.png "Run the query.")|Run the query and display the result set in the Result pane.|  
+|:::image type="content" source="../media/report-builder-data/run-query-icon.png" alt-text="Screenshot of Run the query icon." lightbox="../media/report-builder-data/run-query-icon.png":::|Run the query and display the result set in the Result pane.|  
 |**Command Type**|Select **[Text](#command-type-text)**, **[StoredProcedure](#command-type-storedprocedure)**, or **TableDirect**. If a stored procedure has parameters, the **Define Query Parameters** dialog box appears when you select **Run** on the toolbar, and you can fill in values as needed. Support for command type varies by data source type. For example, only OLE DB and ODBC support **TableDirect**.<br /><br /> Note: If a stored procedure returns more than one result set, only the first result set is used to populate the dataset.|  
   
 ## Command type Text
 
  When you create a SQL Server dataset, the relational query designer opens by default. To switch to the text-based query designer, select the **Edit As Text** toggle button on the toolbar. The text-based query designer presents two panes: the Query pane and the Result pane. The following figure labels each pane.  
   
- ![Diagram of generic query designer, for relational data query.](../media/report-builder-data/query-pane-result-pane.png)  
+ :::image type="content" source="../media/report-builder-data/query-pane-result-pane.png" alt-text="Diagram of generic query designer, for relational data query." lightbox="../media/report-builder-data/query-pane-result-pane.png":::  
   
  The following table describes the function of each pane.  
   
@@ -63,7 +64,7 @@ SELECT Name FROM Person.ContactType
   
  The following figure shows the Query and Results panes when you run a stored procedure. In this case, the input parameters are constants.  
   
- ![Diagram of stored procedure in text-based query designer.](../media/report-builder-data/text-based-query-designer.png "Stored procedure in text-based query designer")  
+ :::image type="content" source="../media/report-builder-data/text-based-query-designer.png" alt-text="Diagram of stored procedure in text-based query designer." lightbox="../media/report-builder-data/text-based-query-designer.png":::  
   
  The following table describes the function of each pane.  
   

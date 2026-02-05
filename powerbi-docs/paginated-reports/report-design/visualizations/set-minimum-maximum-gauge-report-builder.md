@@ -1,12 +1,12 @@
 ---
-title: "Set a minimum or maximum on a gauge in Power BI paginated report | Microsoft Docs"
+title: Set a Minimum or Maximum on a Gauge in Power BI Paginated Report
 description: Learn how the gauge differs from the charts in a paginated report. In Power BI Report Builder, you define the minimum and maximum of the scale.
-ms.date: 04/24/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
 
-
-ms.topic: conceptual
+ms.topic: how-to
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -27,11 +27,11 @@ ms.reviewer: saurkumar
   
 1.  Right-click on the scale and select **Scale Properties**. The **Scale Properties** dialog box appears.  
   
-2.  In **General**, specify a value for **Minimum**. By default, this value is 0. Optionally, select the **Expression** (*fx*) button to edit the expression that sets the value of the option.  
+1.  In **General**, specify a value for **Minimum**. By default, this value is 0. Optionally, select the **Expression** (*fx*) button to edit the expression that sets the value of the option.  
   
-3.  Specify a value for **Maximum**. By default, this value is 100. Optionally, select the **Expression** (*fx*) button to edit the expression that sets the value of the option.  
+1.  Specify a value for **Maximum**. By default, this value is 100. Optionally, select the **Expression** (*fx*) button to edit the expression that sets the value of the option.  
   
-4.  (Optional) If the values for your minimum and maximum are large, specify a value for the **Multiply scale labels by** option. To specify a multiplier that reduces your scale, use a decimal number. For example, if you have a scale from 0 to 1000, you can specify a multiplier value of 0.01 to reduce the scale to read 0 to 10.  
+1.  (Optional) If the values for your minimum and maximum are large, specify a value for the **Multiply scale labels by** option. To specify a multiplier that reduces your scale, use a decimal number. For example, if you have a scale from 0 to 1000, you can specify a multiplier value of 0.01 to reduce the scale to read 0 to 10.  
   
 ## Related content  
 

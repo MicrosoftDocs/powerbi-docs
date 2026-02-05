@@ -1,8 +1,8 @@
 ---
 title: Model view in Power BI Desktop
 description: Learn how you can use Model view in Power BI Desktop to visualize the tables, column, and complex relationships in your model.
-author: JulCsc
-ms.author: juliacawthra
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

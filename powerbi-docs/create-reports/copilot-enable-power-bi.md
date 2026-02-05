@@ -1,16 +1,17 @@
 ---
 title: Enable Fabric Copilot for Power BI
 description: Enable Fabric Copilot for Power BI in your organizational tenant.
-author: shannonlindsay
-ms.author: shlindsay
-ms.reviewer: juliacawthra
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 01/20/2026
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 #customer intent: As a Power BI user, I want to learn how to enable Fabric Copilot for Power BI to use Copilot in the service and desktop.
 ---
 
@@ -31,12 +32,18 @@ There are three main settings related to Copilot that admins need to be aware of
 - [Enable Copilot setting](#enable-copilot-setting)
 - [Enable sharing data across geographic boundaries](#enable-sharing-data-across-geographic-boundaries)
 - [Enable the standalone Power BI Copilot experience (preview)](#enable-the-standalone-power-bi-copilot-experience-preview)
+- [Enable Copilot at the capacity level](#enable-copilot-at-the-capacity-level)
 
 If the admins disabled Copilot, see the following instructions to turn Copilot on.
 
 ## Enable Copilot setting
 
 Within the Fabric Admin portal, the **Copilot and Azure OpenAI Service** settings control whether Copilot is enabled for your organization and who can access it. Enabling Copilot in Fabric means that users can access Copilot across workloads. This means Copilot access isn't limited to a specific workload, like Power BI.
+
+To open the Fabric Admin portal:
+
+1. Go to [https://app.fabric.microsoft.com/admin-portal](https://app.fabric.microsoft.com/admin-portal), or
+1. In Power BI service, select the **Settings** gear icon in the upper right, then select **Admin portal**.
 
 :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" lightbox="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" alt-text="Screenshot of Copilot settings in the Fabric Admin portal.":::
 
@@ -59,6 +66,20 @@ Enabling this setting only applies if Azure OpenAI isn't available in your geogr
 > [!IMPORTANT]
 > If you have Fabric enabled, enabling Copilot in Fabric means that users can access Copilot across workloads. Copilot access isn't limited to a specific workload, like Power BI.
 
+## Enable Copilot at the capacity level
+
+In the tenant admin portal, admins can delegate the enablement of AI and Copilot features to capacity administrators.  **This AI and Copilot setting is automatically delegated to capacity administrators;  tenant administrators can't turn off the delegation.**
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-toggle.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that asks admins to enable delegation to capacity admins." lightbox="media/copilot-enable-power-bi/capacity-delegation-toggle.png":::
+
+The cross-geo setting stays disabled and doesn't autodelegate to capacity administrators. Capacity administrators see the **Copilot and Azure OpenAI Service (preview)** settings under **Capacity settings** > **Fabric capacity** > **Capacity name** > **Delegated tenant settings**. By default, the capacity setting inherits tenant-level settings. Capacity administrators can decide whether to override the tenant administrator’s selection. This means that even if Copilot isn't enabled on a tenant level, a capacity administrator can choose to enable Copilot for their capacity. With this level of control, it's easier to control which Fabric workspaces can use AI features like Copilot in Microsoft Fabric.
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-capacity-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that lets admins set cross-geo and delegated cross-geo." lightbox="media/copilot-enable-power-bi/capacity-delegation-capacity-settings.png":::
+
+Capacity admins can find delegated settings under **Capacity settings.**
+
+:::image type="content" source="media/copilot-enable-power-bi/capacity-delegation-delegated-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that lets capacity admins set Copilot." lightbox="media/copilot-enable-power-bi/capacity-delegation-delegated-settings.png":::
+
 ## Enable the standalone Power BI Copilot experience (preview)
 
 Enabling this setting allows users to access the standalone, cross-item Power BI Copilot experience.
@@ -67,15 +88,15 @@ Enabling this setting allows users to access the standalone, cross-item Power BI
 
 > [!IMPORTANT]
 > 
-> - **Standalone Copilot will be enabled by default:** Starting on or after September 5, 2025, this setting (and therefore the Standalone Copilot experience) will be enabled by default for all tenants where Copilot has already been turned on. To opt out of the default activation for your tenant, an admin will need to turn the setting on, then off again.
+> - **Standalone Copilot is enabled by default:** As of September 2025, this setting (and therefore the Standalone Copilot experience) is enabled by default for all tenants where Copilot is already turned on. To opt out of the default activation for your tenant and hide the Copilot icon from the left navigation bar, an admin can turn this setting off manually.
 >- **Copilot must be enabled at the tenant level:** *"Users can use Copilot and other features powered by Azure OpenAI"* must be enabled at the **tenant level** to use the standalone Copilot experience. It's not sufficient to enable it at the capacity level (that is, if it's been delegated).
 > - **Not all regions are supported:** The standalone Copilot experience is only available to customers with home tenants in geos that support Fabric—so it's only available for customers with home tenants in [this list](/fabric/admin/region-availability#all-workloads).
 
-## Only show AI-prepped items in the standalone Copilot in Power BI experience (preview) 
+## Only show approved items in the standalone Copilot in Power BI experience (preview) 
 
-Enabling this setting limits the standalone Power BI Copilot experience to [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as Prepped for AI.
+Enabling this setting limits the standalone Power BI Copilot experience to only [searching ](/power-bi/create-reports/copilot-search-new-content)for content that has been marked as **Approved for Copilot**.
 
-![Screenshot of the tenant setting to limit the standalone Power BI Copilot to items prepped for AI.](media/copilot-enable-power-bi/limit-to-prepped.png)
+![Screenshot of the tenant setting to limit the standalone Power BI Copilot to items approved for Copilot.](media/copilot-enable-power-bi/admin-setting-only-show-approved-items.png)
 
 > [!IMPORTANT]
 > The setting is delegated to workspace admins to determine when workspaces have sufficient high-value content to be broadly searched by Copilot.
@@ -161,8 +182,7 @@ We always welcome your feedback about our products. Especially during public pre
 ## Related content
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
-- [Create a report with Copilot in the Power BI service](copilot-create-report-service.md)
-- [Create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md)
+- [Create a report with Copilot in Power BI](copilot-create-reports.md)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)

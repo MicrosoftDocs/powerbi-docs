@@ -7,7 +7,7 @@ services: power-bi
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/09/2024
+ms.date: 12/15/2025
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
 
@@ -93,7 +93,7 @@ A capacity is a dedicated set of resources reserved for exclusive use. It offers
 
 ### Card (visual type)
 
-A Power BI [visual type](../../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+A Power BI [visual type](../../visuals/power-bi-visualizations-overview.md).
 
 ### Card (Power BI Home)
 
@@ -138,11 +138,11 @@ A correlation tells us how the behaviors of things are related.  If their patter
 ### Cross-filter
 
 Applies to visual interactions.
-Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
+Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the donut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
 
 ### Cross-highlight
 
-Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the donut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
 
 ### Custom visual
 
@@ -611,7 +611,7 @@ Numerical data to be visualized.
 
 ### Visual, visualization
 
-A chart. Some visuals are: bar chart, treemap, doughnut chart, map.
+A chart. Some visuals are: bar chart, treemap, donut chart, map.
 
 ### Visual interaction
 

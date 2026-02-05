@@ -1,10 +1,11 @@
 ---
-title: "Export Power BI paginated reports"
+title: Export Power BI Paginated Reports
 description: You can export a Power BI paginated report to another file format, like PowerPoint or PDF, using Power BI Report Builder.
-ms.date: 03/02/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar
@@ -28,16 +29,15 @@ You can export a Power BI paginated report to another file format, such as Power
  Report pagination might be affected when you export a report to a different format. When you preview a report, you are viewing the report as it is rendered by the HTML rendering extension, which follows soft-page break rules. When you export a report to a different file format, such as Adobe Acrobat (PDF), pagination is based on the physical page size, which follows hard-page break rules. Pages can also be separated by logical page breaks that you add to a report, but the actual length of a page varies based on the renderer type that you use. To change the pagination of your report, you must understand the pagination behavior of the rendering extension you choose. You might need to adjust the design of your report layout for this rendering extension. For more information see, [Page layout and rendering](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs).  
   
 
-
 ## <a name="bkmk_export_from_rb"></a> Export a report from Power BI Report Builder
 
 1.  Run or Preview the report.  
   
-2.  On the ribbon, select **Export**.  
+1.  On the ribbon, select **Export**.  
   
-     ![Screenshot of the Power BI Report Builder Export options.](../media/paginated-reports-export/export.png "Power BI Report Builder Export.")  
+     :::image type="content" source="../media/paginated-reports-export/export.png" alt-text="Screenshot of the Power BI Report Builder Export options." lightbox="../media/paginated-reports-export/export.png":::  
   
-3.  Select the format that you want to use.  
+1.  Select the format that you want to use.  
   
      The **Save As** dialog opens. By default, the file name is that of the report that you exported. Optionally, you can change the file name.  
   
@@ -45,18 +45,18 @@ You can export a Power BI paginated report to another file format, such as Power
   
 1.  From the Power BI service **Home** page, navigate to the report that you want to export.  
   
-2.  Select the report to render and preview the report.  
+1.  Select the report to render and preview the report.  
   
 
-3.  On the Report Viewer toolbar, select the **Export** drop-down arrow.  
+1.  On the Report Viewer toolbar, select the **Export** drop-down arrow.  
   
-     ![Screenshot of the Power BI service Export.](../media/paginated-reports-export/portal-export.png "Power BI service Export.") 
+     :::image type="content" source="../media/paginated-reports-export/portal-export.png" alt-text="Screenshot of the Power BI service Export." lightbox="../media/paginated-reports-export/portal-export.png"::: 
   
-4.  Select the format that you want to use.  
+1.  Select the format that you want to use.  
   
-5.  Select **Export**. A dialog appears asking you if you want to open or save the file.  
+1.  Select **Export**. A dialog appears asking you if you want to open or save the file.  
   
-6.  To view the report in the selected export format, select **Open**.  
+1.  To view the report in the selected export format, select **Open**.  
   
      \- or -  
   
@@ -114,7 +114,6 @@ If your report contains Unicode text with Arabic numbers or dates in Arabic, the
  ### Exporting reports with embedded or external images
  
 When you export a paginated report in PowerPoint format, if the report has an embedded or external image in the background, the image doesn't come up in the exported file. The same is true when you export to other formats like PDF. 
-
 
 ##  <a name="OtherWaysExportingReports"></a> Other ways to export reports  
  Exporting a report is an on-demand task that you perform when the report is open in the Power BI Report Builder. If you want to automate an export operation (for example, to export a report and send as email attachment on a recurring schedule), create a subscription that delivers the report to a shared folder.   

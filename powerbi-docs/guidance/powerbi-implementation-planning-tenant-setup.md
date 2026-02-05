@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Fabric tenant for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/30/2024
 ms.custom:
   - fabric-cat
@@ -36,7 +36,7 @@ Most organizations have one Microsoft Entra tenant, so it's commonly true that a
 Usually, Microsoft Entra ID is set up before a Fabric implementation begins. However, sometimes it's when you provision a cloud service that you become aware of the importance of Microsoft Entra ID.
 
 > [!TIP]
-> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. You might qualify for a non-production developer tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
+> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. You might qualify for a non-production developer tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/microsoft-365/try).
 
 
 ### Unmanaged tenant

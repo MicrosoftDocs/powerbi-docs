@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: 'sample=Sales&Returns'
 LocalizationGroup: Reports
 ---
@@ -102,7 +103,7 @@ Would give the following results:
 - **Maximum**:  150
 - **Minimum**: 100
 - **Count (Not Blanks):** 6
-- **Count (Distinct):** 4
+- **Count (Distinct):** 3
 - **Standard deviation:** 20.4124145...
 - **Variance:** 416.666...
 - **Median:** 125

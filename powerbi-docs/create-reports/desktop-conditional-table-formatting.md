@@ -6,18 +6,24 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 12/01/2025
 LocalizationGroup: Create reports
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to apply conditional formatting to tables and matrices so that I can visually highlight and interpret data trends effectively.
 ---
 # Apply conditional formatting in tables and matrices
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+This article explains how to apply conditional formatting specifically to table and matrix visuals in Power BI. For an overview of conditional formatting across all visual types, see [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md).
+
 Conditional formatting in Power BI is a powerful way to make your data more engaging and easier to interpret. By applying customized colors, data bars, icons, or even web links to your tables and matrices, you can highlight trends, outliers, and key insights at a glance. Whether you're looking to emphasize high-performing metrics, visually rank data, or create interactive reports, this guide shows you how to bring your data to life with conditional formatting.
 
 > [!NOTE]
 > Conditional formatting is only available for values in tables and matrices, not for columns or rows in a matrix. You can format values, totals, and subtotals, but not row or column headers.
+
+> [!TIP]
+> Conditional formatting is also available for other visual types in Power BI, including column charts, bar charts, button slicers, cards, and more. See [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md) for the full list of supported visuals.
 
 ## Apply conditional formatting in Power BI
 
@@ -52,9 +58,9 @@ The **Background color** and **Font color** options are the same, but affect the
 
 When you use the conditional formatting commands to open the **Background color** or **Font color** dialog, you can choose from the following **Format style** options:
 
-* [Color by color scale](#color-by-color-scale), or color gradient.
-* [Color by rules](#color-by-rules).
-* [Color by field values](#color-by-color-values).
+- [Color by color scale](#color-by-color-scale), or color gradient.
+- [Color by rules](#color-by-rules).
+- [Color by field values](#color-by-color-values).
 
 ## Color by color scale
 
@@ -125,10 +131,10 @@ If you have a field or measure with color name or hex value data, you can use co
 
 The field can use any color value listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). These color values can include:
 
-* 3-digit, 6-digit, or 8-digit hex codes, for example #3E4AFF. Make sure you include the # symbol at the start of the code.
-* RGB or RGBA values, like RGBA(234, 234, 234, 0.5).
-* HSL or HSLA values, like HSLA(123, 75%, 75%, 0.5).
-* Color names, such as Green, SkyBlue, or PeachPuff.
+- 3-digit, 6-digit, or 8-digit hex codes, for example #3E4AFF. Make sure you include the # symbol at the start of the code.
+- RGB or RGBA values, like RGBA(234, 234, 234, 0.5).
+- HSL or HSLA values, like HSLA(123, 75%, 75%, 0.5).
+- Color names, such as Green, SkyBlue, or PeachPuff.
 
 The following table has a color name associated with each state:
 
@@ -187,7 +193,26 @@ To show icons based on cell values:
 
 1. Select **Conditional formatting** for a field, then select **Icons**.
 1. In the **Icons** dialog, under **Format style**, select either **Rules** or **Field value**.
-1. Make your selections, then select **OK** to close the dialog and apply the conditional formatting.
+1. Under **Icon layout**, choose whether to display the icon to the left or right of the value, or show only the icon.
+1. Under **Style**, select an icon set. Power BI provides several built-in icon sets organized by category.
+1. If using **Rules**, configure the value ranges for each icon. You can adjust which icon appears for each range.
+1. Select **OK** to close the dialog and apply the conditional formatting.
+
+### Available icon sets
+
+Power BI provides built-in icon sets in the following categories:
+
+| Category | Icon sets |
+|----------|-----------|
+| **Directional** | Arrows (colored and gray variations), triangles, trend indicators |
+| **Shapes** | Traffic lights (with and without rims), circles, squares, diamonds, exclamation triangles |
+| **Indicators** | Flags, checkmarks, X marks, exclamation marks |
+| **Ratings** | Stars (full, half, quarter), bars, signal strength indicators |
+
+Within each icon set, individual icons represent different states (such as positive, neutral, or negative). Some sets have three icons, while others have four or five to provide more granular categorization.
+
+> [!TIP]
+> **Can't find a specific icon?** When you select an icon set, you can customize individual icons by selecting a different icon from any available set. In the **Icons** dialog, select the dropdown next to any rule's icon to see all available icons across all sets. For example, you can find status indicators like a gray circle with a horizontal line (representing "neutral" or "on hold") in the Shapes category.
 
 With icons applied to the **Affordability** column by rules, the example table looks like this:
 
@@ -233,11 +258,12 @@ In the resulting table, the formatting is based on the value in the **StatusColo
 
 There are a few considerations to keep in mind when working with conditional table formatting:
 
-* Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
-* You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "not a number," and is most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
-* Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the [color by color values example](#color-by-color-values). If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
-* When printing a report including data bars and background color, you must enable *Background graphics* in the print settings of the browser for the data bars and background colors to print properly.
+- Any table that doesn't have a grouping is displayed as a single row that doesn't support conditional formatting.
+- You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains *NaN* values. NaN means "not a number," and is most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid these errors.
+- Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the [color by color values example](#color-by-color-values). If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
+- When printing a report including data bars and background color, you must enable *Background graphics* in the print settings of the browser for the data bars and background colors to print properly.
 
 ## Related content
 
-For more information about color formatting, see [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md).
+- [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md)
+- [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md)

@@ -1,10 +1,11 @@
 ---
-title: "Explore the flexibility of a tablix data region in a Power BI paginated report | Microsoft Docs"
+title: Explore the Flexibility of a Tablix Data Region in a Power BI Paginated Report
 description: Discover the flexibility of a Power BI paginated report in Power BI Report Builder when you add a table, matrix, or list data region.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: saurkumar

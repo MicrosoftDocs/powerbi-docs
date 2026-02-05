@@ -6,8 +6,9 @@ manager:
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 04/11/2025
+ms.topic: concept-article
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.author: juliacawthra
 
 LocalizationGroup: Troubleshooting
@@ -28,7 +29,7 @@ Be sure that you're using the latest version of Power BI Desktop. Go to one of t
 
 ### Check your firewall and proxy settings
 
-If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](/fabric/security/power-bi-allow-list-urls). 
+If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](/fabric/security/power-bi-allow-list-urls).
 
 ### Check your network connectivity
 
@@ -54,7 +55,7 @@ Sign in to the Power BI service and try to upload the Power BI report from the t
 
 ### Error: "The remote server returned an error: (400) Bad Request."
 
-This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://powerbi.microsoft.com/pricing/). 
+This error can occur if you have a Power BI Pro license and are trying to publish a report that has a data model that's larger than one GB. The model memory size limit is one GB for Power BI Pro. If you want to publish larger reports, you need either a Premium per user license or a Premium capacity subscription. For more information, see [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 ### Error: "Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host."
 

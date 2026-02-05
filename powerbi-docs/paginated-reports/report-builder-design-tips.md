@@ -1,13 +1,15 @@
 ---
-title: "Design tips for reports in Power BI Report Builder"
+title: Design Tips for Reports in Power BI Report Builder
 description: Use the following tips to help design and control the appearance of your paginated reports in Power BI Report Builder. 
 author: JulCsc
 ms.author: juliacawthra
-ms.date: 01/18/2023
+ms.reviewer: ''
+ms.date: 12/01/2025
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
+ai-usage: ai-assisted
 ---
 # Design tips for reports in Power BI Report Builder
 
@@ -86,6 +88,8 @@ To help select the object that you want on the report design surface, use the ES
 
   
 ##  <a name="ReportItems"></a> Work with specific types of report items  
+
+The following sections provide tips for working with different report item types.
   
 ###  <a name="Parameters"></a> Work with parameters  
   
@@ -131,11 +135,11 @@ Use **Print Layout** and **Page Setup** on the report viewer toolbar to render a
   
 1. Remove all extra white space between data regions and on the edges of the report.  
   
-2. Reduce page margins in the **Report Properties** dialog box.  
+1. Reduce page margins in the **Report Properties** dialog box.  
   
-3. Use rectangles as containers to help control the way report items render.  
+1. Use rectangles as containers to help control the way report items render.  
   
-4. In column headers, change the text box property *WritingMode* to use vertical text.  
+1. In column headers, change the text box property *WritingMode* to use vertical text.  
 
 For more information, see [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md).
 
