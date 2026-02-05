@@ -1,6 +1,6 @@
 ---
 title: Create Page and Bookmark Navigators
-description: Find out how to use Power BI built-in navigators to quickly build page and bookmark navigation experiences in just a few steps.
+description: Learn how to use Power BI built-in navigators to quickly build page and bookmark navigation experiences. Create professional report navigation in just a few steps.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: jacindaeng
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRCPO
-ms.date: 10/28/2025
+ms.date: 02/05/2026
 LocalizationGroup: Create reports
 # customer intent: As a Power BI user, I want to find out how to use built-in navigators so that I can quickly add page and bookmark navigation experiences to my reports.
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-By using built-in navigators in Power BI, you can build page and bookmark navigation experiences in a few steps. These navigators should save hours of effort building and managing your page or bookmark navigation experiences.
+By using built-in navigators in Power BI, you can build page and bookmark navigation experiences in a few steps. These navigators save you hours of effort building and managing your page or bookmark navigation experiences.
 
 :::image type="content" source="media/desktop-buttons/example-report.png" alt-text="Screenshot of a Power BI report. On the side, a vertical navigator lists report pages. On the top, tabs are labeled with bookmark names." lightbox="media/desktop-buttons/example-report.png":::
 
@@ -25,7 +25,7 @@ You can find this capability in Power BI Desktop or the Power BI service.
 
 ## Video
 
-Watch this video showing how to add page and bookmark navigators, and then try it yourself.
+Watch this video to see how to add page and bookmark navigators, and then try it yourself.
 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
@@ -52,15 +52,15 @@ When you select **Page navigator**, Power BI automatically creates a page naviga
 
 :::image type="content" source="media/desktop-buttons/example-page-navigator.png" alt-text="Screenshot of a page navigator. Five buttons are aligned horizontally. Each is labeled with a page name like Home or Sales." lightbox="media/desktop-buttons/example-page-navigator.png":::
 
-The page navigator is automatically in sync with your report pages:
+The page navigator automatically syncs with your report pages:
 
 - The button labels match the page display names.
 - The ordering of the buttons matches the order of your report pages.
-- The selected button is for the current page.
-- The navigator is updated automatically as you add or remove pages in your report.
-- The button labels are updated automatically as you rename pages.
+- The selected button corresponds to the current page.
+- The navigator updates automatically as you add or remove pages in your report.
+- The button labels update automatically as you rename pages.
 
-If you want to further customize the pages that appear in the page navigator or are hidden, go to the **Format navigator** pane. Under **Pages**, adjust the settings for showing hidden pages and tooltip pages:
+To further customize the pages that appear in the page navigator or to hide pages, go to the **Format navigator** pane. Under **Pages**, adjust the settings for showing hidden pages and tooltip pages:
 
 :::image type="content" source="media/button-navigators/page-settings.png" alt-text="Screenshot of the Format navigator pane in Power BI. The Pages settings are highlighted, with controls for hiding and showing pages and tooltips." lightbox="media/button-navigators/page-settings.png":::
 
@@ -93,23 +93,23 @@ Power BI automatically creates a bookmark navigator for you:
 
 :::image type="content" source="media/desktop-buttons/example-bookmark-navigator.png" alt-text="Screenshot of a navigator with horizontally aligned buttons labeled with bookmark names. The Bookmarks configuration pane contains the same bookmarks.":::
 
-The bookmark navigator is automatically in sync with your report bookmarks:
+The bookmark navigator automatically stays in sync with your report bookmarks:
 
 - The button labels match the bookmark display names.
 - The ordering of the buttons matches the order of your report bookmarks.
-- The selected button is for the last selected bookmark.
-- The navigator is updated automatically as you add or remove bookmarks in your report.
-- The button labels are updated automatically as you rename bookmarks.
+- The selected button corresponds to the last selected bookmark.
+- The navigator updates automatically as you add or remove bookmarks in your report.
+- The button labels update automatically as you rename bookmarks.
 
-If you want to further customize the bookmarks that appear in the bookmark navigator or are hidden, go to the **Format navigator** pane, and then go to the **Bookmarks** tab:
+To customize which bookmarks appear in the bookmark navigator or to hide certain bookmarks, go to the **Format navigator** pane, and then go to the **Bookmarks** tab:
 
 :::image type="content" source="media/button-navigators/bookmark-settings.png" alt-text="Screenshot of the Format navigator pane in Power BI. The Bookmarks settings are highlighted. Controls for selecting bookmarks are available." lightbox="media/button-navigators/bookmark-settings.png":::
 
-By default, all bookmarks are shown in the bookmark navigator. However, you can create and select a specific bookmark group to show only the bookmarks within that group.
+By default, the bookmark navigator shows all bookmarks. However, you can create and select a specific bookmark group to show only the bookmarks within that group.
 
 :::image type="content" source="media/desktop-buttons/selecting-all-bookmarks-or-bookmark-group.png" alt-text="Screenshot of the Bookmarks tab in the Format navigator pane. The Bookmark list is expanded, and a bookmark named EU sales is selected.":::
 
-You also can turn on the **Allow deselection** option. If you do, users can deselect all the buttons in the bookmark navigator. This option is useful for building a toggle-like experience or offering a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here's an example of a deselected state:
+Turn on the **Allow deselection** option to let users deselect all the buttons in the bookmark navigator. This option is useful for building a toggle-like experience or offering a deselected default state. To set up either of these types of experiences, first create a bookmark with the desired deselected state. Here's an example of a deselected state:
 
 :::image type="content" source="media/desktop-buttons/example-unselected-state.png" alt-text="Screenshot of a report page that contains only a welcome message and a bookmark navigator. None of the bookmark navigator buttons are selected.":::
 
@@ -119,7 +119,7 @@ After you bookmark the deselected state, turn on **Allow deselection**. Under **
 
 ## Format navigators
 
-Just like for other buttons, there are lots of formatting options for the navigators, including the following settings:
+Just like other buttons, the navigators offer many formatting options. These options include the following settings:
 
 - Fill
 - Text
@@ -136,13 +136,13 @@ The navigators also include two more formatting options:
 
 ### Set the grid layout
 
-You can use the **Grid layout** tab to select from the following options for the navigator orientation:
+Use the **Grid layout** tab to select the navigator orientation from the following options:
 
 - Horizontal
 - Vertical
 - Grid  
 
-That tab also includes the option to change the **Padding** value between buttons in the navigator.
+This tab also includes the option to change the **Padding** value between buttons in the navigator.
 
 :::image type="content" source="media/button-navigators/grid-layout-settings.png" alt-text="Screenshot of the Format navigator pane in Power BI. The Grid layout settings are highlighted, with controls for orientation and padding.":::
 
@@ -154,7 +154,7 @@ You can customize the selected state of a navigator button. This option is usefu
 
 ## Set the page navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you might want to save space on your report canvas by having a single button to navigate to the page that the user selects:
+Use conditional formatting to set the navigation destination, based on the output of a measure you create in Power BI Desktop. For example, you might want to save space on your report canvas by having a single button to navigate to the page that the user selects:
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot of a dropdown list labeled Select a destination, with the Market details option selected. Next to the list, a green button is labeled Go.":::
 
@@ -204,18 +204,18 @@ To help ensure your approach of using the bookmark navigator meets accessibility
 
 - **Label bookmark buttons clearly and use meaningful alt text:**
   - Use clear, descriptive labels for bookmark buttons to ensure all users understand the purpose of each button.
-  - Use the **Alt text** field to provide an accessible name for the bookmark navigator. This helps screen reader users to clearly understand what content is being modified.
+  - Use the **Alt text** field to provide an accessible name for the bookmark navigator. This name helps screen reader users understand what content the bookmark navigator modifies.
   - For example, if a bookmark navigator includes buttons labeled “**Sales details**” and “**Sales summary**,” and these bookmarks modify a table visual named “**2025 sales data**,” then the alt text for the bookmark navigator should be “**2025 sales data modifier**.” 
 - **Maintain logical focus order for accessibility**:
-  - Position bookmark buttons and the content they modify close together in the report layout. This ensures that keyboard users can navigate directly between them (e.g., tabbing from the bookmark navigator to the visual).
-  - Avoid placing unrelated focusable elements (such as slicers) between the bookmark navigator and the modified content. This helps maintain smooth navigation and reinforces the connection between the bookmark and its associated data.
+  - Position bookmark buttons and the content they modify close together in the report layout. This positioning ensures that keyboard users can navigate directly between them (for example, tabbing from the bookmark navigator to the visual).
+  - Avoid placing unrelated focusable elements, such as slicers, between the bookmark navigator and the modified content. This practice helps maintain smooth navigation and reinforces the connection between the bookmark and its associated data.
 - **Name visuals to reflect bookmark context**:
   - Each visual should have a clear and descriptive name (alt text) that aligns with the labels used in the bookmark navigator (see the example in the first bullet).
-  - Ideally, this name should also appear as the visual’s title. Displaying it as a heading helps assistive technology users locate and understand the visual more easily.
+  - Ideally, this name should also appear as the visual’s title. Displaying it as a heading helps users of assistive technology locate and understand the visual more easily.
 
 ## Considerations and limitations
 
-- If the bold, italic, and underline settings are turned on for the default state of a navigator button, you can't turn them off for the selected state.
+- If you use two or more bookmark navigators on a report page, and the bookmarks in those groups control overlapping settings (such as filters, drill state, expansion, or formatting), the active bookmark shown on each navigator might not match what you expect. This behavior occurs because reports can have only one *active bookmark* at a time. Each navigator displays the last bookmark selected within that specific navigator, not necessarily the bookmark that's currently affecting the report. To avoid confusion, ensure that bookmarks in different groups control completely separate settings, and avoid using multiple bookmark navigators for complex analysis scenarios.
 - The bookmark navigator selected state isn't reflected in exports of the report.
 
 ## Related content
