@@ -123,6 +123,26 @@ StatusColor = SWITCH(
 
 After creating the measure, select **Field value** as the format style and choose your color measure as the field to base the formatting on.
 
+## Troubleshoot field errors in conditional formatting
+
+When a field used by conditional formatting is no longer available or is in an error state, Power BI displays visual indicators to help you identify and fix the issue.
+
+When you edit a visual with a conditional formatting error:
+
+- A **warning icon** appears in the visual header.
+- The **Format** pane shows a warning icon next to the section that contains the affected formatting option.
+- The specific formatting option displays an error message, such as "To fix the problem, pick a different field."
+
+:::image type="content" source="media/power-bi-visualization-conditional-formatting/conditional-formatting-field-error.png" alt-text="Screenshot showing a visual with conditional formatting errors. Warning icons appear in the visual header and Format pane, and an error message instructs the user to pick a different field.":::
+
+Field errors typically occur when:
+
+- The field used for conditional formatting is deleted from the semantic model.
+- The field is renamed, breaking the reference. This can happen when creating a report using a live connection to a semantic model.
+- A measure used for conditional formatting contains an error.
+
+To resolve a field error, open the conditional formatting dialog and select a different, valid field. You can also remove the conditional formatting entirely and reapply it with a new field.
+
 ## Considerations and limitations
 
 Keep these considerations in mind when working with conditional formatting:
