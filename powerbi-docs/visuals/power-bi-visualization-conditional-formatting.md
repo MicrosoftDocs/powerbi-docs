@@ -37,7 +37,7 @@ Conditional formatting is available for many Power BI visuals, though the specif
 | **KPIs** | Indicator colors, goal colors |
 
 > [!NOTE]
-> Line charts don't natively support conditional formatting for lines, shaded areas, or markers. Some visuals might have limited conditional formatting options compared to others.
+> Line charts don't natively support conditional formatting for lines, shaded areas, or markers. Some visuals offer fewer conditional formatting options than others.
 
 ## Access conditional formatting
 
@@ -87,10 +87,10 @@ Rules-based formatting applies specific colors based on conditions you define. T
 - Assign a specific color to each rule.
 - Use percentage-based rules or number-based rules depending on your needs.
 
-For example, you might use rules to color sales data green for values above target, yellow for values near target, and red for values below target.
+For example, you might use rules to color sales data green for values that exceed a target, yellow for values close to the target, and red for values that fall short of the target.
 
 > [!TIP]
-> When formatting fields that contain percentages, enter rule values as decimals (such as .25 for 25%) and select **Number** for the format, not **Percent**.
+> When formatting fields that contain percentages, enter rule values as decimals (such as 0.25 for 25%) and select **Number** for the format, not **Percent**.
 
 ### Field value
 
@@ -103,7 +103,7 @@ Field value formatting uses color values stored directly in your data. This styl
   - HSL or HSLA values
   - Color names (such as Green, SkyBlue, PeachPuff)
 
-Field value formatting is ideal when you want to implement custom business logic for colors or when color assignments are determined by your data source.
+Use field value formatting when you want to apply custom color logic or when your data source already contains color values.
 
 ## Create a color measure for conditional formatting
 
@@ -138,7 +138,7 @@ When you edit a visual with a conditional formatting error:
 Field errors typically occur when:
 
 - The field used for conditional formatting is deleted from the semantic model.
-- The field is renamed, breaking the reference. This can happen when creating a report using a live connection to a semantic model.
+- The field is renamed, breaking the reference. Broken references can occur when you create a report using a live connection to a semantic model.
 - A measure used for conditional formatting contains an error.
 
 To resolve a field error, open the conditional formatting dialog and select a different, valid field. You can also remove the conditional formatting entirely and reapply it with a new field.
