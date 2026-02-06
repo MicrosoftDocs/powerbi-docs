@@ -131,14 +131,14 @@ A **report page tooltip** gives authors complete layout control and is useful wh
 
 To create one:
 
-1. Add a new page to the report.
-2. Open the page’s **Format** pane and, under **Page information**, enable **Allow use as tooltip**. Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
+> 1. Add a new page to the report.
+> 1. Open the page’s **Format** pane and, under **Page information**, enable **Allow use as tooltip**. Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
 
-[image: Enabling Report Page Tooltip. “Enabling Tooltip in Page information for a report page tooltip.”]
+> [image: Enabling Report Page Tooltip. “Enabling Tooltip in Page information for a report page tooltip.”]
 
-3. Design the page using visuals, cards, KPIs, or layouts that best fit your scenario.
-4. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
-5. Select your custom page from the list.
+> 1. Design the page using visuals, cards, KPIs, or layouts that best fit your scenario.
+> 1. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
+> 1. Select your custom page from the list.
 
 Use report page tooltips when you want deeper contextual storytelling or richer data presentation beyond the default tooltip layout.
 
@@ -245,15 +245,15 @@ Help tooltips work especially well for new readers, complex report layouts, or s
 
 You can add a small animated GIF to a report page help tooltip to show users how an interaction works, such as drilling down or drilling up. When the help tooltip is set to a report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
 
-**Add an animated GIF to a help tooltip**
+> **Add an animated GIF to a help tooltip**
 
-1. Create a new report page.
-2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
-3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
-4. Adjust the fit and transparency so the animation is visible but not distracting.
-5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.
+> 1. Create a new report page.
+> 2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
+> 3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
+> 4. Adjust the fit and transparency so the animation is visible but not distracting.
+> 5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.
 
-When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
+> When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
 
 ### Tooltip testing and validation checklist
 
@@ -273,29 +273,29 @@ Before publishing a report or instructional article, verify:
 
 ### FAQ: Troubleshooting tooltip issues
 
-**Why doesn’t my tooltip appear?**
-  The visual may not support standard tooltips or the Tooltip toggle might be off.
+> **Why doesn’t my tooltip appear?**
+> The visual may not support standard tooltips or the Tooltip toggle might be off.
 
 **Why is the Actions footer missing?**
-  Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
+Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
 
 **Why can’t I add fields to the Tooltip well?**
-  Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.
+Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.
 
 **Why is my tooltip text tiny?**
-  Too many fields force font auto shrinking; reduce field count.
+Too many fields force font auto shrinking; reduce field count.
 
 **Why doesn’t my report page tooltip show?**
-  Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.
+Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.
 
 **Why is my Help tooltip icon missing?**
-  Make sure the Help tooltip is toggled on and the visual header is visible.
+Make sure the Help tooltip is toggled on and the visual header is visible.
 
 **Why does my Help tooltip show the wrong content?**
-  Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.
+Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.
 
 **Why is my Help tooltip difficult to read?**
-  Shorten the message or adjust theme colors for better contrast.
+Shorten the message or adjust theme colors for better contrast.
 
 ## Considerations and limitations
 
@@ -338,9 +338,9 @@ All other visuals that support tooltips use a more flexible default tooltip form
 Power BI uses an updated tooltip experience for supported visuals. The newer design improves readability and gives users consistent access to actions within the tooltip. Authors can keep the existing experience or switch to the newer style when updating a report.
 
 - **New reports automatically use the updated tooltip styling.**
-  Theme colors apply to the tooltip background, text, and separators, and the Actions footer is turned on for visuals that support drill actions.
+    Theme colors apply to the tooltip background, text, and separators, and the Actions footer is turned on for visuals that support drill actions.
 - **Existing reports continue to display tooltips the same way they were originally built.**
-  If Actions footer wasn’t enabled before, it remains off to preserve current behavior.
+    If Actions footer wasn’t enabled before, it remains off to preserve current behavior.
 - **When opening an older report, Power BI may display a prompt offering to update tooltips to the new defaults.**
       - Selecting Upgrade to modern defaults applies updated styling and turns on the Actions footer for all eligible visuals.
       - Selecting Keep existing tooltips preserves the original appearance and behavior.
