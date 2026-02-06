@@ -40,6 +40,8 @@ When a user hovers over a visual data point, the tooltip displays:
 
 Tooltips provide fast insight while keeping the user inside the flow of the report.
 
+[image: Tooltip displayed  “Tooltip displaying Field Name/ Value, Additional fields, and Drill down/through.”]
+
 ### Adjust tooltip behavior
 
 Most Power BI visuals support tooltips by default, but the available options vary slightly depending on the visual type. You can adjust how a tooltip behaves from the Format pane when a supported visual is selected.
@@ -49,6 +51,21 @@ Most Power BI visuals support tooltips by default, but the available options var
     1. Select a visual on the report canvas.
     1. From the Visualizations pane, select the Format visual icon.
     1. Under the General tab, expand the Tooltip card to access the settings for that visual.
+
+    These settings let you control whether tooltips appear, which type of tooltip to use, and how they’re styled.
+
+[image: Tooltip settings (format pane) “Tooltip settings for selected visual in Visualizations pane > Format visual > General tab.”]
+
+#### Tooltip settings and options
+
+After selecting a supported visual and expanding the Tooltip control in the Format pane, you can configure:
+
+- **Tooltip visibility:** Toggle tooltips On or Off for that visual.
+- **Tooltip type:** Choose between a Default tooltip or a Report page tooltip.
+- **Styling options:** Tooltips inherit their colors from the report theme. Format options let you refine Font, Label and Value color, Drill text and icon color, and Background color and transparency.
+- **Actions footer:** Some visuals support drill actions (Drill down, Drill through) directly in the tooltip footer. These actions appear only on visuals that support drill behavior.
+
+These settings apply per visual, giving report creators full control over how tooltips appear and behave across a report.
 
 ## Considerations and limitations
 
