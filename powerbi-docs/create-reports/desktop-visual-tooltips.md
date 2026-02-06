@@ -1,7 +1,7 @@
 ---
 title: Create Visual Tooltips
 description: Learn how to build hover‑based visual tooltips in Power BI with drill actions and theme‑based styling.
-author: BlairjJSArmstrong
+author: BlairJSArmstrong
 ms.author: v-blaira
 ms.reviewer: zodouglas
 ms.service: powerbi
@@ -30,13 +30,13 @@ This article introduces visual tooltips and shows you how to adjust their conten
 
 When a user hovers over a visual data point, the tooltip displays:
 
-    - The **field name and value** for each field used in the visual.
-    - **Additional fields** specifically placed in the **Tooltip** well.
-    - Optional **actions**, such as:
+- The **field name and value** for each field used in the visual.
+- **Additional fields** specifically placed in the **Tooltip** well.
+- Optional **actions**, such as:
 
-      - **Drill down** into the next level of a hierarchy
-      - **Drill through** to a related report page
-        These actions appear automatically when a visual supports them.  
+  - **Drill down** into the next level of a hierarchy
+  - **Drill through** to a related report page
+    These actions appear automatically when a visual supports them.  
 
 Tooltips provide fast insight while keeping the user inside the flow of the report.
 
