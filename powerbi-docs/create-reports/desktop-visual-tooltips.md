@@ -274,35 +274,35 @@ Before publishing a report or instructional article, verify:
 
 **Why doesn’t my tooltip appear?**
 
-*The visual may not support standard tooltips or the Tooltip toggle might be off.*
+  *The visual may not support standard tooltips or the Tooltip toggle might be off.*
 
 **Why is the Actions footer missing?**
 
-*Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.*
+  *Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.*
 
 **Why can’t I add fields to the Tooltip well?**
 
-*Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.*
+  *Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.*
 
 **Why is my tooltip text tiny?**
 
-*Too many fields force font auto shrinking; reduce field count.*
+  *Too many fields force font auto shrinking; reduce field count.*
 
 **Why doesn’t my report page tooltip show?**
 
-*Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.*
+  *Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.*
 
 **Why is my Help tooltip icon missing?**
 
-*Make sure the Help tooltip is toggled on and the visual header is visible.*
+  *Make sure the Help tooltip is toggled on and the visual header is visible.*
 
 **Why does my Help tooltip show the wrong content?**
 
-*Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.*
+  *Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.*
 
 **Why is my Help tooltip difficult to read?**
 
-*Shorten the message or adjust theme colors for better contrast.*
+  *Shorten the message or adjust theme colors for better contrast.*
 
 ## Considerations and limitations
 
