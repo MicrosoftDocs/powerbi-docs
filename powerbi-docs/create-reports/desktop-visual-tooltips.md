@@ -39,7 +39,7 @@ When a user hovers over a visual data point, the tooltip displays:
 
 Tooltips provide fast insight while keeping the user inside the flow of the report.
 
-[image: Tooltip displayed  “Tooltip displaying Field Name/ Value, Additional fields, and Drill down/through.”]
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Tooltip displaying Field Name/ Value, Additional fields, and Drill down/through.":::
 
 ### Adjust tooltip behavior
 
