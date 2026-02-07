@@ -98,7 +98,7 @@ Tooltips support interactive exploration through the Actions footer to expose Dr
 
 When the Actions footer is enabled in a supported visual, users can:
 
-- Select Drill down to navigate to the next hierarchy level
+- Select Drill down to navigate to the next hierarchy level  
 - Select Drill through to open a dedicated report page filtered to that data point
 
   Using actions from the tooltip avoids the need for right-click menus or header icons, making the report feel more intuitive and discoverable.
@@ -153,7 +153,7 @@ To create a strong user experience:
 - Align tooltip font sizes with overall report design
 - Use visual treatments that reflect current Power BI visuals
 
-This approach helps counter customer perceptions that “tooltips haven’t changed” while highlighting the visual polish now available in Power BI.
+  This approach helps counter customer perceptions that “tooltips haven’t changed” while highlighting the visual polish now available in Power BI.
 
 ### Choosing between default tooltips and report page tooltips
 
@@ -194,10 +194,10 @@ Use help tooltips to explain what the visual shows or define key terms. They als
 
 [image: Help tooltip settings (Format pane) “Help tooltip card under Visualizations > Format visual > General tab.”]
 
-When Help tooltips are turned on, a small icon appears in the visual header. Users can hover or select the icon to read the help content.
+   When Help tooltips are turned on, a small icon appears in the visual header. Users can hover or select the icon to read the help content.
 
-[!Note]
-Help tooltips and the help icon only appear when the visual header is shown.
+  > [!Note]
+  > Help tooltips and the help icon only appear when the visual header is shown.
 
 #### Choose the type of help content
 
@@ -206,7 +206,6 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 - **Typed text help**
 
   Use this text option for short explanations or simple instructions.
-
   1. In the **Help tooltip** card, choose **Text**.
   2. Enter a short message you wanat users to see. Keep it clear and action oriented.
   3. Preview the tooltip by hovering over the help icon in the visual header.
@@ -218,20 +217,19 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 - **Report page help**
 
   Use this option when you need more space or want to include visuals, KPIs, or structured examples.
-
   1. Create a new page in the report.
   2. In the page’s **Format** pane, turn on **Allow use as tooltip** under **Page information**.
   3. Design the page with the content you want users to see.
   4. Return to the visual. In Help tooltip, choose Report page and select your help page.
 
+  Report page help tooltips behave the same as regular report page tooltips. The only difference is that they open from the Help icon, not a data point.
+
 [image: Report page help tooltip “Help tooltip card with Report page selected and a help page chosen from the list.”]  
 [image: Help tooltip page settings “Page information with Allow use as tooltip turned on and a clear page name entered.”]
 
-  Report page help tooltips behave the same as regular report page tooltips. The only difference is that they open from the Help icon, not a data point.
-
 #### When to use Help tooltips
 
-Use Help tooltips when you want to:
+ Use Help tooltips when you want to:
 
 - Explain how to read a visual
 - Provide definitions, metric explanations, or instructions
@@ -239,19 +237,20 @@ Use Help tooltips when you want to:
 - Provide guidance without adding visible text to the canvas
 - Give users a way to learn about a visual without leaving the page
 
-Help tooltips work especially well for new readers, complex report layouts, or scenarios where in‑context help reduces confusion.
+ Help tooltips work especially well for new readers, complex report layouts, or scenarios where in‑context help reduces confusion.
 
   **TIP: Use an animated GIF in a report page help tooltip**  
   You can add a small animated GIF to a report page help tooltip to show users how an interaction works, such as drilling down or drilling up. When the help tooltip is set to a report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
 
-  **Add an animated GIF to a Help tooltip**  
+   **Add an animated GIF to a Help tooltip**  
+  
+   1. Create a new report page.
+   2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
+   3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
+   4. Adjust the fit and transparency so the animation is visible but not distracting.
+   5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.  
 
-  1. Create a new report page.
-  2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
-  3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
-  4. Adjust the fit and transparency so the animation is visible but not distracting.
-  5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.
-  When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
+   When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
 
 ### Tooltip testing and validation checklist
 
@@ -339,9 +338,11 @@ Power BI uses two types of default tooltips, and the experience varies depending
 Power BI uses an updated tooltip experience for supported visuals. The newer design improves readability and gives users consistent access to actions within the tooltip. Authors can keep the existing experience or switch to the newer style when updating a report.
 
 - **New reports automatically use the updated tooltip styling.**  
+
     Theme colors apply to the tooltip background, text, and separators, and the Actions footer is turned on for visuals that support drill actions.
 
 - **Existing reports continue to display tooltips the same way they were originally built.**  
+
     If Actions footer wasn’t enabled before, it remains off to preserve current behavior.
 
 - **When opening an older report, Power BI may display a prompt offering to update tooltips to the new defaults.**  
