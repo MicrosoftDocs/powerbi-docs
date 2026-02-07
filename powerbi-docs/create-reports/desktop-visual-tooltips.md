@@ -134,13 +134,13 @@ A **report page tooltip** gives authors complete layout control and is useful wh
   1. Add a new page to the report.
   2. From the **Visualizations** pane, select the **Format page** icon. Open the **Page information** section and enable the **Allow use as tooltip** toggle.
 
-    Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
+  Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-enable-report-page-tooltip.png" alt-text="Enabling and naming report page tooltip in Visualizations > Format page > Page information.":::
 
-  1. Design your custom page using visuals, cards, KPIs, or layouts that best fit your scenario.
-  2. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
-  3. Select your custom page from the list.
+  3. Design your custom page using visuals, cards, KPIs, or layouts that best fit your scenario.
+  4. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
+  5. Select your custom page from the list.
 
 Use report page tooltips when you want deeper contextual storytelling or richer data presentation beyond the default tooltip layout.
 
