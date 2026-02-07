@@ -312,7 +312,7 @@ Some visuals handle tooltips differently:
 
 - The **Key influencers** visual doesn’t use the standard tooltip system. Instead, it displays its own explanation panels, so tooltip settings don’t appear.
 
-- With **Tables and matrices**, tooltips appear when hovering a cell, and tooltip formatting options are available in the Format pane. However, tables and matrices do not expose a *Tooltip field* in the *Build* pane. Tooltip content reflects the cell’s value, not additional data fields.
+- With **Tables and matrices**, tooltips appear when hovering a cell, and tooltip formatting options are available in the *Format* pane. However, tables and matrices do not expose a *Tooltip field* in the *Build* pane. Tooltip content reflects the cell’s value, not additional data fields.
 
 The Tooltip **Actions footer** is not available for:
 
@@ -347,11 +347,11 @@ Power BI uses an updated tooltip experience for supported visuals. The newer des
 
 - **New reports automatically use the updated tooltip styling.**
 
-  Theme colors apply to the tooltip background, text, and separators, and the Actions footer is turned on for visuals that support drill actions.
+    Theme colors apply to the tooltip background, text, and separators, and the Actions footer is turned on for visuals that support drill actions.
 
 - **Existing reports continue to display tooltips the same way they were originally built.**
   
-  If Actions footer wasn’t enabled before, it remains off to preserve current behavior.
+    If Actions footer wasn’t enabled before, it remains off to preserve current behavior.
 
 - **When opening an older report, Power BI may display a prompt offering to update tooltips to the new defaults.**
 
