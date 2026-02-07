@@ -129,16 +129,16 @@ You can also fine-tune styling by changing these values for each visual in the *
 
 A **report page tooltip** gives authors complete layout control and is useful when you want a highly personalized or visual heavy tooltip.
 
-To create one:
+  To create a custom report page tooltip:
 
-1. Add a new page to the report.
-2. Open the page’s **Format** pane and, under **Page information**, enable **Allow use as tooltip**. Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
+  1. Add a new page to the report.
+  2. Open the page’s **Format** pane and, under **Page information**, enable **Allow use as tooltip**. Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
 
 [image: Enabling Report Page Tooltip. “Enabling Tooltip in Page information for a report page tooltip.”]
 
-3. Design the page using visuals, cards, KPIs, or layouts that best fit your scenario.
-4. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
-5. Select your custom page from the list.
+  3. Design the page using visuals, cards, KPIs, or layouts that best fit your scenario.
+  4. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
+  5. Select your custom page from the list.
 
 Use report page tooltips when you want deeper contextual storytelling or richer data presentation beyond the default tooltip layout.
 
@@ -245,17 +245,15 @@ Help tooltips work especially well for new readers, complex report layouts, or s
 
 You can add a small animated GIF to a report page help tooltip to show users how an interaction works, such as drilling down or drilling up. When the help tooltip is set to a report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
 
-  ```markdown
   **Add an animated GIF to a help tooltip**
 
-    1. Create a new report page.
-    2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
-    3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
-    4. Adjust the fit and transparency so the animation is visible but not distracting.
-    5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.
+  1. Create a new report page.
+  2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
+  3. In the Wallpaper or Canvas background settings, upload the GIF as the background image.
+  4. Adjust the fit and transparency so the animation is visible but not distracting.
+  5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.
 
-  When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
-  ```
+When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
 
 ### Tooltip testing and validation checklist
 
@@ -275,8 +273,8 @@ Before publishing a report or instructional article, verify:
 
 ### FAQ: Troubleshooting tooltip issues
 
-> **Why doesn’t my tooltip appear?**
-> The visual may not support standard tooltips or the Tooltip toggle might be off.
+**Why doesn’t my tooltip appear?**
+The visual may not support standard tooltips or the Tooltip toggle might be off.
 
 **Why is the Actions footer missing?**
 Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
