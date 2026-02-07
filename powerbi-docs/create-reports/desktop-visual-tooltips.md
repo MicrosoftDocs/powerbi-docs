@@ -245,7 +245,7 @@ Help tooltips work especially well for new readers, complex report layouts, or s
 
 - You can add a small animated GIF to a report page help tooltip to show users how an interaction works, such as drilling down or drilling up. When the help tooltip is set to a report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
 
-###### Add an animated GIF to a help tooltip
+##### Add an animated GIF to a Help tooltip
 
 1. Create a new report page.
 2. Open the page’s **Format** pane and turn on **Allow use as tooltip** under **Page information**.
@@ -265,44 +265,36 @@ Before publishing a report or instructional article, verify:
 - Tooltip placement does not obscure important parts of the visual.
 - Report page tooltips scale well on various screen sizes.
 - No tooltip shows inconsistent terminology or mismatched formatting.
-- Keep text short for Help tooltips, one or two brief sentences.
-- Write Help tooltips in plain language using the same terms as the visual.
-- Use report page Help when a definition needs an example or a small walkthrough.
-- Check contrast and readability in both light and dark themes.
+- Help tooltips with text have one or two brief sentences.
+- Help tooltips are written in plain language using the same terms as the visual.
+- Report page help tooltips are used when a definition needs an example or a small walkthrough.
+- Contrast and readability have been checked in both light and dark themes.
 
 ## FAQ: Troubleshooting tooltip issues
 
-**Why doesn’t my tooltip appear?**
+***Why doesn’t my tooltip appear?***  
+: The visual may not support standard tooltips or the Tooltip toggle might be off.
 
-  *The visual may not support standard tooltips or the Tooltip toggle might be off.*
+***Why is the Actions footer missing?***  
+: Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
 
-**Why is the Actions footer missing?**
+**Why can’t I add fields to the Tooltip well?**  
+Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.
 
-  *Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.*
+**Why is my tooltip text tiny?**  
+Too many fields force font auto shrinking; reduce field count.
 
-**Why can’t I add fields to the Tooltip well?**
+***Why doesn’t my report page tooltip show?***  
+Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.
 
-  *Tables, matrices, and certain visuals don’t expose a Tooltip field in the Build pane.*
+***Why is my Help tooltip icon missing?***  
+Make sure the Help tooltip is toggled on and the visual header is visible.
 
-**Why is my tooltip text tiny?**
+***Why does my Help tooltip show the wrong content?***  
+Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.
 
-  *Too many fields force font auto shrinking; reduce field count.*
-
-**Why doesn’t my report page tooltip show?**
-
-  *Confirm Tooltip is enabled in Page information and the visual’s Tooltip Type is set to Report page.*
-
-**Why is my Help tooltip icon missing?**
-
-  *Make sure the Help tooltip is toggled on and the visual header is visible.*
-
-**Why does my Help tooltip show the wrong content?**
-
-  *Confirm the selected type (Text or Report page) and, for report pages, check that Allow use as tooltip is on.*
-
-**Why is my Help tooltip difficult to read?**
-
-  *Shorten the message or adjust theme colors for better contrast.*
+***Why is my Help tooltip difficult to read?***  
+Shorten the message or adjust theme colors for better contrast.
 
 ## Considerations and limitations
 
@@ -310,9 +302,11 @@ Before publishing a report or instructional article, verify:
 
 Some visuals handle tooltips differently:
 
-- The **Key influencers** visual doesn’t use the standard tooltip system. Instead, it displays its own explanation panels, so tooltip settings don’t appear.
+- **Key influencers**  
+  This visual doesn’t use the standard tooltip system. Instead, it displays its own explanation panels, so tooltip settings don’t appear.
 
-- With **Tables and matrices**, tooltips appear when hovering a cell, and tooltip formatting options are available in the *Format* pane. However, tables and matrices do not expose a *Tooltip field* in the *Build* pane. Tooltip content reflects the cell’s value, not additional data fields.
+- **Tables and matrices**  
+  Tooltips appear when hovering a cell, and tooltip formatting options are available in the *Format* pane. However, tables and matrices do not expose a *Tooltip field* in the *Build* pane. Tooltip content reflects the cell’s value, not additional data fields.
 
 The Tooltip **Actions footer** is not available for:
 
