@@ -206,6 +206,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 - **Typed text help**
 
   Use this text option for short explanations or simple instructions.
+
   1. In the **Help tooltip** card, choose **Text**.
   2. Enter a short message you wanat users to see. Keep it clear and action oriented.
   3. Preview the tooltip by hovering over the help icon in the visual header.
@@ -217,6 +218,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 - **Report page help**
 
   Use this option when you need more space or want to include visuals, KPIs, or structured examples.
+  
   1. Create a new page in the report.
   2. In the page’s **Format** pane, turn on **Allow use as tooltip** under **Page information**.
   3. Design the page with the content you want users to see.
@@ -229,7 +231,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 
 #### When to use Help tooltips
 
- Use Help tooltips when you want to:
+  Use Help tooltips when you want to:
 
 - Explain how to read a visual
 - Provide definitions, metric explanations, or instructions
@@ -237,7 +239,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 - Provide guidance without adding visible text to the canvas
 - Give users a way to learn about a visual without leaving the page
 
- Help tooltips work especially well for new readers, complex report layouts, or scenarios where in‑context help reduces confusion.
+  Help tooltips work especially well for new readers, complex report layouts, or scenarios where in‑context help reduces confusion.
 
   **TIP: Use an animated GIF in a report page help tooltip**  
   You can add a small animated GIF to a report page help tooltip to show users how an interaction works, such as drilling down or drilling up. When the help tooltip is set to a report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
@@ -250,7 +252,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
    4. Adjust the fit and transparency so the animation is visible but not distracting.
    5. Return to the visual, open the Help tooltip settings, choose **Report page**, and select your help page.  
 
-   When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
+      When users open the Help tooltip from the Help icon in the visual header, the GIF animates inside the tooltip. This works well for showing actions like drill up or drill down without adding written instructions to the report.
 
 ### Tooltip testing and validation checklist
 
