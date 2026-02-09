@@ -39,10 +39,10 @@ PBIRS January 2026 is the latest generally available (GA) version.
 ## System Requirements
 
 - Supported Operating Systems:
-  - Windows 10
   - Windows 11
   - Windows Server 2019
   - Windows Server 2022
+  - Windows Server 2025
 - .NET Framework 4.8 or later
 - SQL Server Database Engine (2014 SP3 or later), to store the report server database.
 - SQL Server Analysis Services (2014 SP3 or later), for your Live Analysis Services data sources.
