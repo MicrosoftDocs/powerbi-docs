@@ -1,10 +1,10 @@
-- name: "The Power BI service for business users"
+- name: "Power BI for business users documentation"
   href: index.yml
   expanded: true
   items:
-  - name: "Understand your role and fundamentals"
+  - name: Overview
     items:
-    - name: "What is a Power BI business user?"
+    - name: "What is Power BI for business users?"
       href: end-user-consumer.md
     - name: "List of features"
       href: end-user-features.md

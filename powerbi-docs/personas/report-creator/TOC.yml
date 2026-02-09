@@ -1,16 +1,18 @@
 - name: Power BI for report creators
   href: index.yml
   items:
+    - name: Overview
+      items:
+        - name: What is Power BI for report creators?
+          href: ../../fundamentals/power-bi-overview.md?context=/power-bi/personas/report-creator/context/context
+        - name: Get started with Power BI Desktop
+          href: ../../fundamentals/desktop-getting-started.md?context=/power-bi/personas/report-creator/context/context
     - name: Get started
       items:
         - name: Get Power BI Desktop
           href: ../../fundamentals/desktop-get-the-desktop.md?context=/power-bi/personas/report-creator/context/context
-        - name: Get started with Power BI Desktop
-          href: ../../fundamentals/desktop-getting-started.md?context=/power-bi/personas/report-creator/context/context
         - name: Get started with the Power BI service
           href: ../../fundamentals/service-get-started.md?context=/power-bi/personas/report-creator/context/context
-        - name: What is Power BI?
-          href: ../../fundamentals/power-bi-overview.md?context=/power-bi/personas/report-creator/context/context
     - name: Connect to data
       items:
         - name: Connect to data sources

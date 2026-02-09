@@ -1,10 +1,10 @@
-- name: Create reports and dashboards in Power BI
+- name: Power BI reports and dashboards documentation
   href: index.yml
   items:
   - name: Overview
     expanded: true
     items: 
-      - name: Power BI reports overview
+      - name: What are Power BI reports?
         href: power-bi-reports-overview.md
       - name: Tour the report editor
         href: service-the-report-editor-take-a-tour.md

@@ -1,14 +1,20 @@
 - name: Power BI for business users
   href: index.yml
   items:
-    - name: Get started
+    - name: Overview
       items:
-        - name: Am I a Power BI business user?
+        - name: What is Power BI for business users?
           href: ../../consumer/end-user-consumer.md?context=/power-bi/personas/business-user/context/context
-        - name: Get around in the Power BI service
-          href: ../../consumer/end-user-experience.md?context=/power-bi/personas/business-user/context/context
+        - name: List of features
+          href: ../../consumer/end-user-features.md?context=/power-bi/personas/business-user/context/context
+        - name: Frequently asked questions
+          href: ../../consumer/end-user-faq.yml?context=/power-bi/personas/business-user/context/context
+    - name: Get started and sign in
+      items:
         - name: Sign in to Power BI
           href: ../../consumer/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
+        - name: Get around in the Power BI service
+          href: ../../consumer/end-user-experience.md?context=/power-bi/personas/business-user/context/context
         - name: Find content with search
           href: ../../consumer/end-user-search-sort.md?context=/power-bi/personas/business-user/context/context
     - name: View reports
