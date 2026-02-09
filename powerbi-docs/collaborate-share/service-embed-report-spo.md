@@ -189,6 +189,8 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 * [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
 
 * You can't view or access Power BI Apps embedded in a SharePoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
+  
+* Image URLs from a local network are not supported due to a recent browser security update that restricts requests to the user’s local network.
 
 ## Related content
 
