@@ -239,14 +239,14 @@ If your semantic model can be edited in the browser, downloaded, or has a schedu
 
 ### Use Power BI REST APIs to identify legacy semantic models
 
-Admins and users can identify semantic models created using the legacy Excel or CSV import experience by querying the Power BI REST APIs and inspecting the `ContentProviderType` property in the response.
+Admins and users can identify semantic models created using the legacy Excel or CSV import experience by querying the Power BI REST APIs for Datasets and inspecting the `ContentProviderType` property in the response.
 
 The following values indicate legacy import pipelines:
 
 | ContentProviderType value | Description |
 |---------------------------|-------------|
-| 6 | Legacy Excel import experience |
-| 60 | Legacy CSV import experience |
+| Excel | Legacy Excel import experience |
+| CSV | Legacy CSV import experience |
 
 Semantic models that return either value were created using deprecated import flows and are impacted by the legacy Excel and CSV retirement.
 
