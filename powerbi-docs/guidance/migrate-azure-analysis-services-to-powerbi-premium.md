@@ -1,6 +1,6 @@
 ---
-title: "Migrate from Azure Analysis Services to Power BI Premium or Power BI Embedded"
-description: "Guidance to help you migrate your Azure Analysis Services (AAS) data models to Power BI Premium or Power BI Embedded."
+title: "Migrate from Azure Analysis Services to Power BI"
+description: "Guidance to help you migrate your Azure Analysis Services (AAS) data models to a Fabric capacity subscription (F SKUs), Premium Per User (PPU), or Power BI Embedded (A-SKUs)."
 author: dknappettmsft 
 ms.author: daknappe
 ms.reviewer: daengli
@@ -8,14 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article
 ms.custom: fabric-cat, intro-migration
-ms.date: 12/30/2024
+ms.date: 02/01/2026
+ai-usage: ai-assisted
 ---
 
-# Migrate from Azure Analysis Services to Power BI Premium
+# Migrate from Azure Analysis Services to Power BI
 
-This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium or Power BI Embedded.
-
-[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides guidance and rationale to help migrate AAS databases to a Fabric capacity subscription (F SKUs), Premium Per User (PPU), or Power BI Embedded (A-SKUs). Fabric includes Power BI as one of its workloads and supports all the enterprise features that were previously available in Power BI Premium (P-SKUs). Premium Per User (PPU) includes Power BI Premium features but doesn't create or include a Fabric capacity. Power BI Embedded remains a separate offering for Independent Software Vendors (ISVs).
 
 ## Background
 
@@ -25,10 +24,8 @@ For over two decades, Microsoft has continued to make deep investments in enterp
 
 > [!NOTE]
 > In this article, the terms data model, BI model, tabular model, database, and Power BI semantic model have the same meaning. This article commonly uses the terms *data model* for AAS model and *semantic model* for Power BI model.
->
-> Also, while this article describes the process of migrating to Power BI Premium, it also applies to Power BI Embedded.
 
-In recent years, Microsoft has taken great strides to deliver AAS capabilities to [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/). To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI Premium workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
+In recent years, Microsoft has taken great strides to deliver AAS capabilities to Power BI Fabric and Power BI Embedded. To that end, Power BI instantly inherited a large ecosystem of developers, partners, BI tools, and solutions that were built up over decades. Today, the full set of Power BI workloads, features, and capabilities now results in a modern, cloud BI platform that goes far beyond comparable functionality available in AAS or SSAS.
 
 Today, many customers have Power BI reports that [live connect](../connect-data/desktop-report-lifecycle-datasets.md) to AAS. Naturally, these customers are asking whether there's an opportunity to consolidate by hosting their data models alongside their reports in Power BI. They often ask questions like:
 
@@ -37,32 +34,32 @@ Today, many customers have Power BI reports that [live connect](../connect-data/
 - What capabilities are available only in Power BI?
 - How do we compare costs between AAS and Power BI?
 - Why is Microsoft converging enterprise and self-service BI?
-- How do we migrate from AAS to Power BI Premium?
+- How do we migrate from AAS to Power BI?
 - Is AAS marked for deprecation?
 - What's Microsoft's roadmap for enterprise data models?
 
 Answers to many of these questions are described in this article.
 
 > [!NOTE]
-> The decision to migrate to Power BI Premium depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We expect to see organic migration to Power BI Premium over time, and our intention is that it happens on terms that the customer is comfortable with.
+> The decision to migrate to Power BI in Fabric or Power BI Embedded depends on the requirements of each customer. Customers should carefully evaluate additional benefits in order to make an informed decision. We expect to see organic migration to Power BI over time, and our intention is that it happens on terms that the customer is comfortable with.
 >
-> To be clear, currently there aren't any plans to deprecate AAS. There is a priority to focus investment on Power BI Premium for enterprise data modeling, and so the additional value provided by Power BI Premium will increase over time. Customers who choose Power BI Premium can expect to benefit from alignment with the Microsoft BI product roadmap.
+> To be clear, currently there aren't any plans to deprecate AAS. There is a priority to focus investment on Power BI in Fabric for enterprise data modeling, and so the additional value provided by Power BI will increase over time. Customers who choose Power BI in Fabric can expect to benefit from alignment with the unified Microsoft Fabric and BI product roadmap.
 
 ### Convergence of self-service and enterprise BI
 
 Consolidation of items (like reports and dashboards) in Power BI results in simplified discovery and management due to co-location. Once consolidated, there's no need to bridge the gap between AAS and Power BI. Central IT teams can then more easily adopt self-service items that have become popular yet are resulting in a management burden for the business. IT can take over such items. They can operationalize them for mission-critical decision making based on governed data that's aligned with corporate standards and with lineage transparency. Simplifying this workflow by sharing a common platform promotes better collaboration between the business and IT.
 
-### Power BI Premium
+### Power BI in Fabric
 
-Thanks to its distributed architecture, Power BI Premium is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Power BI Premium SKUs, customers can achieve increased performance and throughput.
+Thanks to its distributed architecture, Power BI in Fabric is less sensitive to overall load, temporal spikes, and high concurrency. By consolidating capacities to larger Fabric SKUs, customers can achieve increased performance and throughput.
 
-Scalability benefits associated with Power BI Premium are described [later in this article](#scalability-benefits).
+Scalability benefits associated with Fabric SKUs are described [later in this article](#scalability-benefits).
 
 ## Feature comparison
 
-AAS provides the Analysis Services database engine for hosting data models, which is a core component of a Microsoft enterprise BI architecture. In fact, Power BI Premium is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Power BI Premium. The table focuses on - but isn't limited to - Power BI semantic model-related capabilities.
+AAS provides the Analysis Services database engine for hosting data models, which is a core component of the Microsoft enterprise BI architecture. In fact, Power BI in Fabric is a superset of AAS because it provides much more functionality. The following table lists features supported in AAS and Fabric. The table focuses on - but isn't limited to - Power BI semantic model-related capabilities.
 
-| **Feature** | **AAS** | **Power BI Premium** |
+| **Feature** | **AAS** | **Fabric** |
 |:-|:-:|:-:|
 | **Premium workloads** |||
 | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md), which are ideal for reports that are designed to be printed, especially when table data overflows to multiple pages | No | Yes |
@@ -85,6 +82,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Automatic aggregations](../enterprise/aggregations-auto.md), which use state-of-the-art machine learning (ML) to continuously optimize DirectQuery performance | No | Yes |
 | [User-defined aggregations](../transform-model/aggregations-advanced.md), which can improve query performance over very large DirectQuery tables | No | Yes |
 | [Query scale-out](/azure/analysis-services/analysis-services-scale-out), which distributes client queries among replicated servers | Yes | Yes |
+| [Direct Lake mode](/fabric/data-engineering/lakehouse-overview) optimized for large volumes of data to be quickly loaded into memory from delta tables available in the OneLake for high performance interactive analysis | No | Yes |
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../enterprise/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes  |
@@ -98,10 +96,10 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | Microsoft Information Protection (MIP) [sensitivity labels](../enterprise/service-security-sensitivity-label-overview.md) and integration with [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) for data loss prevention | No | Yes |
 | Content [endorsement](../collaborate-share/service-endorse-content.md), to promote or certify valuable, high-quality Power BI items | No | Yes |
 | **Semantic modeling** |||
-| Compatibility with Power BI Desktop | No | Yes |
+| Compatibility with Power BI Desktop and Web modelling | No | Yes |
 | [Composite models](../transform-model/desktop-composite-models.md) including using [DirectQuery for Power BI semantic models and AAS](../connect-data/desktop-directquery-datasets-azure-analysis-services.md) | No | Yes  |
 | [Translations](/analysis-services/tabular-models/translations-in-tabular-models-analysis-services) for multi-language model versions observed by the Power BI service | No | Yes |
-| Analysis Service engine semantic modeling | Yes | Yes |
+| Analysis Services engine semantic modeling | Yes | Yes |
 | **Model management** |||
 | [Incremental refresh](../connect-data/incremental-refresh-overview.md), which uses policies to automate partition management and can help deliver near real-time reporting (see hybrid tables) | No | Yes |
 | [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), which manage the lifecycle of Power BI content | No | Yes |
@@ -131,29 +129,29 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 
 ## Cost comparison
 
-When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](#feature-comparison) that are only available to Power BI data models.
+When comparing Fabric to AAS costs, be sure to consider factors beyond price per core. Power BI in Fabric provides reduced cost of ownership and increased business value, with [many features](#feature-comparison) only available to Power BI data models.
 
-Also, assuming you already use Power BI in your organization, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
+Also, assuming you already use Power BI in your organization, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Fabric SKUs. To determine the target profile, be sure to consider the following points:
 
 - Region requirements.
 - The largest AAS data model size in each region.
 - The number of users in each region.
 - The number of users required to develop and manage content.
-- CPU consumption across AAS and Power BI Premium.
+- CPU consumption across AAS and Power BI in Fabric.
 
 > [!IMPORTANT]
-> CPU consumption across AAS and Power BI Premium may vary significantly due to numerous factors. Factors can include the use of other workloads on the same capacities, refresh patterns, and query patterns. We recommended that you perform in-depth analysis to quantify comparative CPU consumption across AAS and Power BI Premium for migrated models.
+> CPU consumption across AAS and Power BI in Fabric may vary significantly due to numerous factors. Factors can include the use of other workloads on the same capacities, refresh patterns, and query patterns. We recommend that you perform in-depth analysis to quantify comparative CPU consumption across AAS and Power BI in Fabric for migrated models.
 
 > [!TIP]
 > To help determine the right type and number of licenses for your business requirements and circumstances, see [this related article](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md).
 
 ### Consolidation opportunity
 
-Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items in Power BI Premium. Consolidation makes the larger sized Premium SKUs more economically viable and can help to provide higher levels of throughput and scalability.
+Many AAS customers already have Power BI reports that connect to AAS. So, migration to Power BI can represent an opportunity to consolidate BI items on Fabric SKUs. Consolidation makes the larger sized Fabric SKUs more economically viable and can help to provide higher levels of throughput and scalability.
 
 ### PPU licenses
 
-The Premium Per User (PPU) license is a per-user license that provides a lower-cost price point for Premium. PPU licenses are typically purchased by small and medium-sized companies. They support all the Premium capabilities for data modeling listed earlier.
+The Premium Per User (PPU) license is a per-user license that provides a lower-cost price point for Premium capabilities. PPU licenses are typically purchased by small and medium-sized companies. They support all the Premium capabilities for data modeling listed earlier but don't support Fabric workloads (Lakehouse, Warehouse, Notebooks, KQL, and others).
 
 > [!TIP]
 > It's possible to incrementally upgrade Power BI Pro licenses to PPU licenses.
@@ -174,23 +172,23 @@ For more information, see:
 
 ## Scalability benefits
 
-[Power BI Premium](../enterprise/service-premium-what-is.md) delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
+Power BI in Fabric delivers scalability, performance, and cost-of-ownership benefits not available in AAS.
 
-Power BI Premium provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
+Power BI in Fabric provides features that enable fast interactive analysis over big data. Such features include aggregations, composite models, and hybrid tables. Each feature offers a different way to optimally combine import and DirectQuery storage modes, effectively reducing memory use. AAS, on the other hand, doesn't support these capabilities; the entire data model uses either import or DirectQuery storage mode.
 
-Power BI Premium limits memory per semantic model, and not per capacity or server. Conversely, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
+Power BI in Fabric limits memory per semantic model, and not per capacity or server. Conversely, AAS requires all data models fit in memory on a single server. That requirement can compel customers with large data models to purchase larger SKU sizes.
 
-Thanks to the distributed nature of the Premium architecture, more semantic models can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
+Thanks to the distributed nature of the Fabric architecture, more semantic models can be refreshed in parallel. Performing concurrent refreshes on the same AAS server can lead to refresh errors due to exceeding server memory limits.
 
-In Power BI Premium, CPU consumption during refresh is spread across 24-hour periods. Power BI Premium [evaluates capacity throughput](../enterprise/service-premium-concepts.md) to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Premium customers should decide on the optimal SKU size for their overall CPU consumption requirements.
+On Fabric capacities, CPU consumption during refresh is spread across 24-hour periods. Power BI evaluates capacity throughput to provide resilience to temporal spikes in demand for compute resources. When necessary, it can delay refreshes until sufficient resources become available. This automatic behavior reduces the need for customers to perform detailed analysis and manage automation scripts to scale servers up or down. Customers should decide on the optimal SKU size for their overall CPU consumption requirements.
 
-Another advantage of Power BI Premium is that it's able to dynamically balance the semantic models depending on the load of the system. This automatic behavior ensures busy/active semantic models get the necessary memory and CPU resources, while more idle semantic models can be evicted or migrated to other nodes. Semantic models are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole semantic model. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Power BI capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
+Another advantage of Power BI in Fabric is that it's able to dynamically balance the semantic models depending on the load of the system. This automatic behavior ensures busy/active semantic models get the necessary memory and CPU resources, while more idle semantic models can be evicted or migrated to other nodes. Semantic models are candidates for eviction when they're not used. They'll be loaded on-demand so that only the required data is loaded into memory without having to load the whole semantic model. On the other hand, AAS requires all data models be fully loaded in memory always. This requirement means queries to AAS can rely on the data model being available, but – especially for Fabric capacities with a high number of data models when some of them are used infrequently – dynamic memory management can make more efficient use of memory.
 
-Lastly, Power BI Premium is able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
+Lastly, Fabric SKUs are able to better utilize next-generation hardware rollouts to benefit from scalability and performance enhancements.
 
 ## Considerations and limitations
 
-There are considerations and limitations to factor into your planning before migrating to Power BI Premium.
+There are considerations and limitations to factor into your planning before migrating to Power BI in Fabric.
 
 ### Permissions
 
@@ -207,26 +205,26 @@ When you migrate a data model from AAS to Power BI Premium, you must take the fo
 
 ### Refresh automation
 
-Power BI Premium supports XMLA endpoint-enabled APIs for scripting, such as [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference), [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and the PowerShell [SqlServer module](https://www.powershellgallery.com/packages/SqlServer/). These APIs have almost symmetric interfaces to AAS. For more information, see [Semantic model connectivity with the XMLA endpoint (Client applications and tools)](../enterprise/service-premium-connect-tools.md#client-applications-and-tools).
+F-SKUs, PPU, and A-SKUs support XMLA endpoint-enabled APIs for scripting, such as [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference), [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and the PowerShell [SqlServer module](https://www.powershellgallery.com/packages/SqlServer/). These APIs have almost symmetric interfaces to AAS. For more information, see [Semantic model connectivity with the XMLA endpoint (Client applications and tools)](../enterprise/service-premium-connect-tools.md#client-applications-and-tools).
 
-Compatibility with services for automation, including [Azure Functions](/azure/azure-functions/functions-overview), [Azure Automation](/azure/automation/overview), and [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), is enabled in the same way.
+Compatibility with services for automation, including [Azure Functions](/azure/azure-functions/functions-overview), [Azure Automation](/azure/automation/overview), and [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) as well as Fabric notebooks through [Semantic Link (SemPy)](/fabric/data-science/semantic-link-overview) and Semantic Link Labs, is enabled in the same way.
 
-Generally, scripts and processes that automate [partition management and processing](https://github.com/microsoft/Analysis-Services/tree/master/AsPartitionProcessing) in AAS will work in Power BI Premium. Bear in mind that Power BI Premium semantic models support the [incremental refresh feature](../connect-data/incremental-refresh-overview.md), which provides automated partition management for tables that frequently load new and updated data.
+Generally, scripts and processes that automate [partition management and processing](https://github.com/microsoft/Analysis-Services/tree/master/AsPartitionProcessing) in AAS will work in Power BI. Bear in mind that Power BI semantic models support the [incremental refresh feature](../connect-data/incremental-refresh-overview.md), which provides automated partition management for tables that frequently load new and updated data.
 
 Like for AAS, you can use a service principal as an automation account for Power BI semantic model management operations, such as refreshes. For more information, see [Semantic model connectivity with the XMLA endpoint (Service principals)](../enterprise/service-premium-connect-tools.md#service-principals).
 
 ### Custom security
 
-Like for AAS, applications can use a service principal to query a Power BI Premium per capacity or Power BI Embedded semantic model by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
+Like for AAS, applications can use a service principal to query a semantic model on F-SKUs or A-SKUs by using the [CustomData](../developer/embedded/embed-azure-analysis-services.md#dynamic-security---rls) feature.
 
-However, you can't assign a service principal to a model role in Power BI Premium. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
+However, you can't assign a service principal to a model role in Power BI. Instead, a service principal gains access by assignment to the workspace **admin** or **member** role.
 
 > [!NOTE]
 > You can't use the CustomData feature when querying Premium Per User (PPU) semantic models because it would be in violation of the [license terms and conditions](../enterprise/service-premium-connect-tools.md#terms-of-use).
 
 ### Impersonation for testing
 
-Impersonation techniques, including the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) and the [Roles](/analysis-services/instances/connection-string-properties-analysis-services#roles) connection string properties, are supported by AAS and Power BI Premium. You typically use them when testing security roles.
+Impersonation techniques, including the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) and the [Roles](/analysis-services/instances/connection-string-properties-analysis-services#roles) connection string properties, are supported by AAS and Power BI. You typically use them when testing security roles.
 
 ### Network security
 
@@ -254,15 +252,15 @@ For information on how to set up gateway data sources for Power BI Premium, see 
 
 ### Server properties
 
-Unlike AAS, Power BI Premium doesn't support [server properties](/analysis-services/server-properties/server-properties-in-analysis-services). Instead, you manage [Premium capacity settings](../enterprise/service-admin-premium-workloads.md#semantic-models).
+Unlike AAS, Power BI doesn't support [server properties](/analysis-services/server-properties/server-properties-in-analysis-services). Instead, you manage [Premium capacity settings](../enterprise/service-admin-premium-workloads.md#semantic-models).
 
 ### Link files
 
-Unlike AAS, Power BI Premium doesn't support [alias server names](/azure/analysis-services/analysis-services-server-alias).
+Unlike AAS, Power BI doesn't support [alias server names](/azure/analysis-services/analysis-services-server-alias).
 
 ### Dynamic management views (DMVs)
 
-Some [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) that work in AAS aren't accessible in Power BI Premium because they require Analysis Services server-admin permissions. Power BI has workspace roles, but there isn't a workspace role that grants the equivalent of Analysis Services server-admin permissions.
+Some [DMVs](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) that work in AAS aren't accessible in Power BI because they require Analysis Services server-admin permissions. Power BI has workspace roles, but there isn't a workspace role that grants the equivalent of Analysis Services server-admin permissions.
 
 ### PowerShell
 
@@ -274,11 +272,11 @@ However, the [Az.AnalysisServices module](https://www.powershellgallery.com/pack
 
 AAS integrates with Azure Monitor for [diagnostic logging](/azure/analysis-services/analysis-services-logging). The most common target for AAS logs is to Log Analytics workspaces.
 
-Power BI Premium also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
+Power BI also supports [logging to Log Analytics workspaces](../transform-model/log-analytics/desktop-log-analytics-overview.md). Currently, the events sent to Log Analytics are mainly AS engine events. However, not all events supported for AAS are supported for Power BI. The Log Analytics schema for Power BI contains differences compared to AAS, which means existing queries on AAS may not work in Power BI.
 
 Power BI offers another diagnostic logging capability that isn't offered in AAS. For more information, see [Use the Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
-SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI Premium. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
+SQL Server Extended Events (xEvents) are supported in AAS but not in Power BI. For more information, see [Monitor Analysis Services with SQL Server Extended Events](/analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events).
 
 ### Business-to-business (B2B)
 
@@ -288,18 +286,55 @@ To identify the user, Power BI utilizes a unique name claim in Microsoft Entra I
 
 ### Scale-out
 
-[Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) is supported by Power BI Premium. For more information see [Power BI semantic model scale out](../enterprise/service-premium-scale-out.md).
+[Azure Analysis Services scale-out](/azure/analysis-services/analysis-services-scale-out) is supported by Power BI. For more information see [Power BI semantic model scale out](../enterprise/service-premium-scale-out.md).
+
+### OLEDB-based provider data sources
+
+Unlike AAS, Power BI doesn't support cloud connections using SQL OLEDB providers (SQLOLEDB, SQLNCLI*, MSOLEDBSQL*). For more information, see [Power BI data sources](../connect-data/power-bi-data-sources.md).
+
+When migrating AAS models that use OLEDB-based providers, consider the following options:
+
+- Change the provider data source to use the SqlClient.Net provider. The following Tabular Model Scripting Language (TMSL) script illustrates this approach.
+
+```json
+{
+    "name": "[CONNECTION_NAME]",
+    "connectionString": "[CONNECTION_STRING]",
+    "provider": "Microsoft.Data.SqlClient",
+    "impersonationMode": "impersonateServiceAccount"
+}
+```
+
+- Use the MSOLEDBSQL19 provider through an On-Premises Data Gateway (OPDGW). This option isn't enabled by default and must be explicitly turned on by using the following XMLA request. (Replace the ID and Name properties with the actual workspace name and don't forget to configure the semantic model connection to use an on-premises data gateway. Also make sure to install the MSOLEDBSQL19 on the selected OPDGW machine.)
+
+```xml
+<Alter AllowCreate="true" ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <Object />
+  <ObjectDefinition>
+    <Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500">
+      <ID>[WORKSPACE_NAME]</ID>
+      <Name>[WORKSPACE_NAME]</Name>
+      <ServerProperties>
+        <ServerProperty>
+          <Name>Feature\PBIP\AllowNativeSQLProviderOverride</Name>
+          <Value>1</Value>
+        </ServerProperty>
+      </ServerProperties>
+    </Server>
+  </ObjectDefinition>
+</Alter>
+```
 
 ## Migration feature
 
-The Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI migrates as AAS database to a semantic model in Power BI Premium, Power BI Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](../enterprise/aas-pbi-migration-overview.md).
+The Microsoft Azure Analysis Services to Microsoft Power BI migration feature in Power BI migrates as AAS database to a semantic model in a Fabric, Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](/fabric/enterprise/powerbi/aas-pbi-migration-overview).
 
 ## Related content
 
 For more information about this article, check out the following resources:
 
 - [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
-- [Migrate Azure Analysis Services to Power BI](../enterprise/aas-pbi-migration-overview.md)
+- [Migrate Azure Analysis Services to Power BI](/fabric/enterprise/powerbi/aas-pbi-migration-overview)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
 

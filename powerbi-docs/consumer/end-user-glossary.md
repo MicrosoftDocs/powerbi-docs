@@ -105,7 +105,7 @@ Power BI Home displays rectangular and square pictures that represent dashboards
 
 ### Card (visual type)
 
-A Power BI [visualization type](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+A Power BI [visualization type](../visuals/power-bi-visualizations-overview.md).
 
 ### Certified custom visual
 

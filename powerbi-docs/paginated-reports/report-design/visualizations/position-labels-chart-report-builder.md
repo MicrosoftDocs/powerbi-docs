@@ -28,7 +28,7 @@ Because each chart type in a Power BI paginated report has a different shape, da
   
 1. On the design surface, right-click the chart and select **Show Data Labels**.  
   
-1. Open the Properties pane. On the **View** tab, select **Properties**.  
+1. Open the Properties pane by pressing **F4**, or by selecting **View** > **Properties Window** from the menu bar.
   
 1. On the design surface, select the chart. The properties for the chart are displayed in the Properties pane.  
   
@@ -42,7 +42,7 @@ Because each chart type in a Power BI paginated report has a different shape, da
   
 1. On the design surface, right-click the chart and select **Show Data Labels**.  
   
-1. Open the Properties pane. On the **View** tab, select **Properties**  
+1. Open the Properties pane by pressing **F4**, or by selecting **View** > **Properties Window** from the menu bar.
   
 1. On the design surface, select the chart. The properties for the chart are displayed in the Properties pane.  
   
@@ -59,7 +59,7 @@ Because each chart type in a Power BI paginated report has a different shape, da
   
 1. On the design surface, right-click the chart and select **Show Data Labels**.  
   
-1. Open the Properties pane. On the **View** tab, select **Properties**  
+1. Open the Properties pane by pressing **F4**, or by selecting **View** > **Properties Window** from the menu bar.
   
 1. On the design surface, select the chart. The properties for the chart are displayed in the Properties pane.  
   
@@ -75,7 +75,7 @@ Because each chart type in a Power BI paginated report has a different shape, da
   
 1. On the design surface, right-click the chart and select **Show Data Labels**.  
   
-1. Open the Properties pane. On the **View** tab, select **Properties**  
+1. Open the Properties pane by pressing **F4**, or by selecting **View** > **Properties Window** from the menu bar.
   
 1. On the design surface, select the series. The properties for the series are displayed in the Properties pane.  
   

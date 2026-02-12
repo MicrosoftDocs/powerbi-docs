@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article
 ms.custom: fabric-cat, no-azure-ad-ps-ref
-ms.date: 12/30/2024
+ms.date: 02/04/2026
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -440,7 +440,6 @@ You can create and run [PowerShell](/powershell/scripting/overview) scripts in m
 Here are several common options.
 
 - **[Visual Studio Code](https://code.visualstudio.com/docs)**: A modern, lightweight source code editor. It's a freely available open-source tool that's supported on multiple platforms, including Windows, macOS, and Linux. You can use Visual Studio Code with many languages, including [PowerShell](https://code.visualstudio.com/docs/languages/powershell) (by using the PowerShell extension).
-- **[Azure Data Studio](/sql/azure-data-studio/)**: A tool for creating scripts and notebooks. It's built on top of Visual Studio Code. Azure Data Studio is available independently, or with SQL Server Management Studio (SSMS). There are many extensions, including an extension for [PowerShell](/sql/azure-data-studio/extensions/powershell-extension).
 - **[Azure Cloud Shell](/azure/cloud-shell/overview)**: An alternative to working with PowerShell locally. You can access [Azure Cloud Shell](/azure/cloud-shell/overview) from a browser.
 - **[Azure Functions](/azure/azure-functions/functions-reference-powershell)**: An alternative to working with PowerShell locally. Azure Functions is an Azure service that lets you write and run code in a serverless environment. PowerShell is one of several languages that it supports.
 

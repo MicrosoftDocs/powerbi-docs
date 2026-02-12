@@ -22,6 +22,12 @@ Microsoft Excel is one of the most widely used business applications and one of 
 Power BI supports importing or connecting to workbooks created in Excel 2007 and later. Some features that this article describes are available only in later versions of Excel. Workbooks must be in the .xlsx or .xlsm file type and be smaller than 1 GB.
 
 > [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting May 31, 2026:
+> - Creation of semantic models using the legacy “old” import experience in Power BI Service will no longer be allowed. 
+>
+> The following capabilities are deprecated and will no longer be available starting July 31, 2026:
+> - Existing semantic models created using the legacy “old” import experience in Power BI Service will no longer refresh.
+>  
 > The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
 > - Upload of local workbooks to Power BI workspaces will no longer be allowed.
 > - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
@@ -206,6 +212,71 @@ Invoke-PowerBIRestMethod -Url "https://api.powerbi.com/v1.0/myorg/admin/workbook
 ```
 
 To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. See [Power BI Cmdlets reference](/powershell/power-bi/overview) for details. You'll need to call **Login-PowerBIServiceAccount** commandlet before calling **Invoke-PowerBIRestMethod**.
+
+## Legacy Excel and CSV import experience retirement
+
+The old Excel and CSV import experience in Power BI service, accessible through the **Create** page, is being retired. This section provides key dates, guidance on identifying affected semantic models, and answers to frequently asked questions.
+![Screenshot that shows the old Excel and CSV import experience in Power BI service that will be deprecated.](media/service-excel-workbook-files/legacy-excel.png)  
+
+### Key dates
+
+| Date | What happens |
+|------|--------------|
+| May 31, 2026 | Creation of new semantic models using the old import experience is no longer supported. |
+| July 31, 2026 | Existing semantic models created using the old import experience no longer refresh. |
+
+After July 31, 2026, reports built on these semantic models display stale data. You need to recreate these reports if the data needs to be refreshable for your report consumers.
+
+### How to identify affected semantic models
+
+Semantic models created by the legacy import experience have the following characteristics:
+
+- Can't be edited in the browser
+- Can't be downloaded
+- Have no options to schedule a refresh
+
+If your semantic model can be edited in the browser, downloaded, or has a scheduled refresh option, you're already using the current Excel and CSV connectors, and there's no impact on your semantic model and reports.
+
+### Use Power BI REST APIs to identify legacy semantic models
+
+Admins and users can identify semantic models created using the legacy Excel or CSV import experience by querying the Power BI REST APIs for Datasets and inspecting the `ContentProviderType` property in the response.
+
+The following values indicate legacy import pipelines:
+
+| ContentProviderType value | Description |
+|---------------------------|-------------|
+| Excel | Legacy Excel import experience |
+| CSV | Legacy CSV import experience |
+
+Semantic models that return either value were created using deprecated import flows and are impacted by the legacy Excel and CSV retirement.
+
+For more information on using the Power BI REST APIs, see [Power BI REST API reference](/rest/api/power-bi/).
+
+### Frequently asked questions
+
+#### Are Excel and CSV files still supported as data sources?
+
+Yes. Excel and CSV files remain valid data sources for Power BI semantic models and reports. You can use them to create reports in the Power BI service from the **Create** page or in Power BI Desktop. Only the old import experience is being retired.
+
+#### Who is affected by this change?
+
+This change affects users who created reports using the old experience to import an Excel or CSV file from the **Create** page in the service. There's no impact for users who created semantic models in Power BI Desktop.
+
+#### Can I still view and edit my existing reports after July 31, 2026?
+
+Yes. Reports can still be consumed and edited after July 31, 2026, but the data no longer stays in sync with the source Excel or CSV file.
+
+#### What should I do to keep my reports refreshing?
+
+You need to recreate reports that were built using the legacy import experience. Use one of the current methods described in [Import Excel data into Power BI](#import-excel-data-into-power-bi) or create your semantic model in Power BI Desktop.
+
+#### How do I know if my semantic model uses the legacy experience?
+
+If your semantic model can't be edited in the browser, can't be downloaded, and has no scheduled refresh option, it was created using the legacy import experience. Alternatively, use the Power BI REST APIs to check the `ContentProviderType` property as described in [Use Power BI REST APIs to identify legacy semantic models](#use-power-bi-rest-apis-to-identify-legacy-semantic-models).
+
+#### Is there a workaround to keep my existing reports updating?
+
+No. There's no workaround or fix to keep reports created with the legacy experience updating past July 31, 2026. You need to recreate these reports using the current Excel and CSV connectors.
 
 ## Troubleshooting and limitations
 

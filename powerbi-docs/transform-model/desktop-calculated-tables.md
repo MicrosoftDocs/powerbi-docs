@@ -1,8 +1,8 @@
 ---
 title: Use Calculated Tables in Power BI Desktop
 description: Learn how to save time creating tables from data you already loaded in Power BI Desktop by using calculated tables.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

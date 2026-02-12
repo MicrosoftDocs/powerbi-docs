@@ -65,7 +65,7 @@ The administrator or the designer can disable your ability to see or use these f
 
 - [Basics of the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Open a report in the Power BI service](end-user-report-open.md)
-- [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md)
 
 > [!TIP]
 > **Want to practice creating your own reports?** Power BI includes built-in sample datasets you can use for hands-on learning. See [Get samples for Power BI](../create-reports/sample-datasets.md) to download sample files or connect to sample data directly in the Power BI service.

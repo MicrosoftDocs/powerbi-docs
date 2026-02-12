@@ -221,4 +221,4 @@ The shape map can use statistics or dynamic limits.
 
 ## Related content
 
-- [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md)

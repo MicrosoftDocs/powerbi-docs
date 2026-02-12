@@ -1,8 +1,8 @@
 ---
 title: Table Storage Mode in Power BI Semantic Models
 description: Become familiar with Power BI table storage modes. Find out how to control whether data is cached in memory for reports in Power BI semantic models.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

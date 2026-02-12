@@ -89,7 +89,7 @@ In **Navigator**, you can *transform* or *load* the data. The preview lets you v
 
 1. The Power Query Editor opens. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, and then select **Whole Number**. In the **Change Column Type** dialog that opens, choose **Replace current**.
 
-    Changing data types is the data cleaning step that users most often. In this case, the units sold are in decimal form. It doesn't make sense to have 0.2 or 0.5 of a unit sold, so change it to a whole number.
+    Changing data types is the data cleaning step that users perform most often. In this case, the units sold are in decimal form. It doesn't make sense to have 0.2 or 0.5 of a unit sold, so change it to a whole number.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number.":::
 
@@ -123,6 +123,11 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 > [!IMPORTANT]
 > **DAX expressions not working?** If you're using a non-English locale (such as Spanish, French, or German), you might need to use semicolons (`;`) instead of commas (`,`) to separate function arguments in DAX formulas. For example, use `DATE(2013;01;01)` instead of `DATE(2013,01,01)`. Also, make sure the table name in your formula matches exactly what appears in your Data pane (it should be **financials** if you followed the earlier steps).
+>
+> **Syntax error when pasting?** If you copy a DAX formula from this article and paste it into Power BI Desktop, you might see a "syntax is incorrect" or similar error message. This error can happen if:
+> - Quotation marks are converted to "smart quotes" (curly quotes) during copy. Replace any curly quotes (`"` or `"`) with straight quotes (`"`).
+> - Hidden characters or line breaks are introduced during copy. Delete the formula and retype it manually, or paste into a plain text editor first to remove formatting.
+> - Your regional settings require different separators (see the locale note above).
 
 ### Create a new measure
 
@@ -161,6 +166,12 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
     ```dax
     Calendar = CALENDAR(DATE(2013;01;01);DATE(2014;12;31))
     ```
+
+    > [!TIP]
+    > **Getting a syntax error?** If you see "The syntax for this expression is incorrect," check these common problems:
+    > - **Regional settings**: Use semicolons (`;`) instead of commas (`,`) if your region requires it (see alternate formula above).
+    > - **Smart quotes**: Replace curly quotes (`"` or `"`) with straight quotes (`"`).
+    > - **Hidden characters**: If copying doesn't work, manually type the formula instead.
 
 1. Select the check mark to commit.
 
@@ -213,7 +224,7 @@ Create a line chart to see which month and year had the highest profit.
    
    1. Select the dropdown arrow next to the **Date** field in the X-axis well.
    
-   1. Select **Date Hierarchy** from the menu. This groups your data by Year, Quarter, Month, and Day levels.
+   1. Select **Date Hierarchy** from the menu. This selection groups your data by Year, Quarter, Month, and Day levels.
    
    1. In the X-axis well, clear the checkboxes next to **Quarter** and **Day** to show only **Year** and **Month** on the chart.
 
@@ -230,16 +241,16 @@ Create a line chart to see which month and year had the highest profit.
 
 ### Visual 3: Profit by country/region
 
-Create a map to see which country/region had the highest profits.
+Create a map to see which country or region has the highest profits.
 
 1. From the Data pane, drag the **Country/Region** field to a blank area on your report canvas. Power BI automatically creates a map visual.
 
 1. Drag the **Profit** field to the map. Power BI adds bubbles representing the relative profit of each location to the map visual.
 
-1. Verify the map shows bubbles on each country/region. If you see a different map style (such as a filled/shaded map), select the visual, then in the **Visualizations** pane, select the **Map** icon (globe with dots) to switch to a bubble map.
+1. Verify the map shows bubbles on each country or region. If you see a different map style, such as a filled or shaded map, select the visual. Then, in the **Visualizations** pane, select the **Map** icon (globe with dots) to switch to a bubble map.
 
    > [!NOTE]
-   > The map visual type depends on your Power BI settings and region. If you see an Azure Maps visual or a different style, the steps still work the same way. The key result is seeing relative profit sizes for each country/region.
+   > The map visual type depends on your Power BI settings and region. If you see an Azure Maps visual or a different style, the steps still work the same way. The key result is seeing relative profit sizes for each country or region.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual showing profit by country." lightbox="media/desktop-excel-stunning-report/power-bi-map-visual.png":::
 
@@ -249,7 +260,7 @@ Create a map to see which country/region had the highest profits.
 
 Create a bar chart to determine which companies and segments to invest in.
 
-1. Drag the two charts you created to be side by side in the top half of the canvas. Save some room on the left side of the canvas.
+1. Drag the two charts you created so they're side by side in the top half of the canvas. Save some room on the left side of the canvas.
 1. Select a blank area in the lower half of your report canvas.
 
 1. In the Data pane, select the **Sales**, **Product**, and **Segment** fields.

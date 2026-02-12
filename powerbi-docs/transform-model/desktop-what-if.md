@@ -1,8 +1,8 @@
 ---
 title: Use Parameters to Visualize Variables
 description: Find out how to create your own parameters in Power BI Desktop so that you can adjust variable values and observe the impact on your reports.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.custom: FY25Q1-Linter
 ms.service: powerbi

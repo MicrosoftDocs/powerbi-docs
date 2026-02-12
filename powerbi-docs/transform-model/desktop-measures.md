@@ -1,8 +1,8 @@
 ---
 title: Measures in Power BI Desktop
 description: Become familiar with measures in Power BI Desktop. Find out how you can create various types of measures, use them in reports, and organize them.
-author: kgremban
-ms.author: kgremban
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

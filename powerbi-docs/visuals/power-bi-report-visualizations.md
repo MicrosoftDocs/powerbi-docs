@@ -31,7 +31,7 @@ If you're new to Power BI, or need a refresher, use these links to learn the bas
 
 ## Add a visualization in Power BI
 
-[Create visualizations](power-bi-report-add-visualizations.md) on your report pages. Browse the [list of available visualizations and available visualization tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md).
+[Create visualizations](power-bi-report-add-visualizations.md) on your report pages. Browse the [list of available visualizations and available visualization tutorials](power-bi-visualizations-overview.md).
 
 ## Upload a visualization from a file or from AppSource
 
@@ -84,6 +84,6 @@ In the Power BI service, when you have the visualization the way you want it, yo
 
 ## Related content
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
 - [Where to find Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)
 - [Create your own Power BI visuals](../developer/visuals/develop-power-bi-visuals.md)

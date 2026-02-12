@@ -1,0 +1,112 @@
+### YamlMime:Landing
+
+title: Power BI for semantic model designers
+summary: Learn how to transform data, create relationships, write DAX, and optimize semantic models in Power BI.
+
+metadata:
+  title: Power BI for semantic model designers
+  description: Learn how to transform data, build relationships, create measures with DAX, and optimize semantic models for performance in Power BI.
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.custom: persona-semantic-model-designer
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.date: 02/02/2026
+
+landingContent:
+  - title: Get started with data modeling
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Understand model relationships
+            url: ../../transform-model/desktop-relationships-understand.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: What is a star schema?
+            url: ../../guidance/star-schema.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Understand storage modes
+            url: ../../transform-model/desktop-storage-mode.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Use the modeling view
+            url: ../../transform-model/desktop-modeling-view.md?context=/power-bi/personas/semantic-model-designer/context/context
+
+  - title: Transform data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Query overview
+            url: ../../transform-model/desktop-query-overview.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Common query tasks
+            url: ../../transform-model/desktop-common-query-tasks.md?context=/power-bi/personas/semantic-model-designer/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Add custom columns
+            url: ../../create-reports/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Combine files from a folder
+            url: ../../transform-model/desktop-combine-binaries.md?context=/power-bi/personas/semantic-model-designer/context/context
+      - linkListType: concept
+        links:
+          - text: Query folding guidance
+            url: ../../guidance/power-query-folding.md?context=/power-bi/personas/semantic-model-designer/context/context
+
+  - title: Build your model
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage relationships
+            url: ../../transform-model/desktop-create-and-manage-relationships.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Create measures
+            url: ../../transform-model/desktop-measures.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Create calculated columns
+            url: ../../transform-model/desktop-calculated-columns.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Create calculated tables
+            url: ../../transform-model/desktop-calculated-tables.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Create calculation groups
+            url: ../../transform-model/calculation-groups.md?context=/power-bi/personas/semantic-model-designer/context/context
+
+  - title: Learn DAX
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Learn DAX basics
+            url: ../../transform-model/desktop-quickstart-learn-dax-basics.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: DAX overview
+            url: /dax/dax-overview
+      - linkListType: tutorial
+        links:
+          - text: Create calculated columns tutorial
+            url: ../../transform-model/desktop-tutorial-create-calculated-columns.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Create measures tutorial
+            url: ../../transform-model/desktop-tutorial-create-measures.md?context=/power-bi/personas/semantic-model-designer/context/context
+      - linkListType: reference
+        links:
+          - text: DAX function reference
+            url: /dax/dax-function-reference
+
+  - title: Optimize performance
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Reduce data model size
+            url: ../../guidance/import-modeling-data-reduction.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: DirectQuery model guidance
+            url: ../../guidance/directquery-model-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Composite model guidance
+            url: ../../guidance/composite-model-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Optimization guide
+            url: ../../guidance/power-bi-optimization.md?context=/power-bi/personas/semantic-model-designer/context/context
+
+  - title: Advanced modeling
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Composite models
+            url: ../../transform-model/desktop-composite-models.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Aggregations
+            url: ../../transform-model/aggregations-advanced.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Field parameters
+            url: ../../create-reports/power-bi-field-parameters.md?context=/power-bi/personas/semantic-model-designer/context/context
+      - linkListType: how-to-guide
+        links:
+          - text: Row-level security guidance
+            url: ../../guidance/rls-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
+          - text: Use external tools
+            url: ../../transform-model/desktop-external-tools.md?context=/power-bi/personas/semantic-model-designer/context/context
