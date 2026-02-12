@@ -21,17 +21,23 @@ Organizations might need to move their Power BI tenant to a different region for
 
 Moving your Power BI tenant between regions requires Microsoft support assistance and careful planning. The location you select during sign-up determines your default data region, and self-service migration isn't supported. If you need to change your default data location, contact Microsoft support to manage the tenant remapping to the new region for you, after you have taken a back up of everything you want to retain. Post tenant remapping you can restore from the backup you have taken.
 
+Full cross-region tenant migration isn't offered at this time for Power BI or Fabric capacities. Please consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) or Tenant Remapping process described above.
+
+
 > [!CAUTION]
 > This article describes how to request a tenant remapping to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remapping process leads to data loss and requires reconfiguration of your tenant. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Considerations and limitations
 
-- Cross-region tenant migration isn't supported for Azure Government Community Cloud environments (GCC and GCC High).
-- Cross-region tenant migration isn't offered for Power BI or Fabric capacities. Consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium).
-- We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the remapping at any time.
-- Remapping requires about three hours of downtime. During the remapping, users can't access Power BI and see the "owl error message."
-- The remap process causes all data and metadata in the tenant to be deleted.
+- The Tenant Remap process causes all data and metadata in the tenant to be deleted. 
 - It's your responsibility to back up and restore your data as the support team can't help with those actions. However, if you encounter any technical issue during the back-up and restore, the support team can help with troubleshooting.
+- Remapping requires about three hours of downtime. During the remapping, users can't access Power BI and see the "owl error message."
+- Plan for additional downtime during restore of previously backup artifacts.
+- We prioritize service reliability and deployment schedules can change, so we might need to reschedule during the remapping at any time.
+ 
+- Cross-region tenant migration isn't supported for Azure Government Community Cloud environments (GCC and GCC High).
+- Full cross-region tenant migration isn't offered at this time for Power BI or Fabric capacities. 
+
 
 ## Prerequisites
 
