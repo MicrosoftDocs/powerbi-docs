@@ -1,22 +1,23 @@
 ---
-title: Overview of Copilot for Power BI apps
-description: Read all about how Copilot works in Power BI apps.
+title: "Copilot for Power BI Apps: Report and App-Scoped AI Features"
+description: Discover how Copilot for Power BI apps uses AI to summarize reports, find items, and answer data questions. Learn about report-scoped and app-scoped features.
 author: julcsc
 ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
-ms.date: 01/23/2025
+ms.date: 02/04/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
 
-# Overview of Copilot for Power BI apps
+# Copilot for Power BI apps: Report and app-scoped AI features
 
-Copilot is available in apps in two ways:
+Copilot for Power BI apps helps you interact with your data more efficiently by using AI-powered features. Copilot is available in apps in two ways:
 
-* A report-scoped Copilot that can help users with summaries of the report in view or answer questions based on that report in view.
+* A report-scoped Copilot that helps users by providing summaries of the report in view or answers questions based on that report in view.
 * An app-scoped Copilot (preview) that can summarize the app based on items within, help users find items in the app based on their interests, summarize an item in the app, or answer questions based on items in the app.
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-and-report-copilot.png" alt-text="Screenshot of app-scoped Copilot and report-scoped Copilot." lightbox="media/copilot-apps-overview/app-copilot-and-report-copilot.png":::
@@ -33,7 +34,7 @@ App-scoped Copilot is available in workspace apps. Copilot for apps is similar t
 
 :::image type="content" source="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png" alt-text="Screenshot of app-scoped Copilot open within an app." lightbox="media/copilot-apps-overview/app-scoped-copilot-open-in-app.png":::
 
-### Item types supported by app-scoped Copilot (preview)
+### Supported item types
 
 App-scoped Copilot supports the following item types included in an app:
 
@@ -57,9 +58,9 @@ Some item types supported by apps aren't supported by app-scoped Copilot:
   
 Additionally, app‑scoped Copilot doesn't recognize app navigation sections and doesn't refer to sections in its responses.
 
-### How to use app-scoped Copilot (preview)
+### Availability and access
 
-App-scoped Copilot is available in tenants where Copilot is enabled and the app author enabled app-scoped Copilot. It's visible in the app navigation.
+App-scoped Copilot is available in tenants where Copilot is enabled and the app author enabled app-scoped Copilot. The **Copilot** option appears in the app navigation.
 
 > [!NOTE]
 > **Copilot in apps is on by default** and you can manage it per app.
@@ -67,17 +68,17 @@ App-scoped Copilot is available in tenants where Copilot is enabled and the app 
 > For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
 > To learn more about turning Copilot on and off generally for Power BI, or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
-To open app-scoped Copilot, select **Copilot** in the app navigation:
 :::image type="content" source="media/copilot-apps-overview/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav." lightbox="media/copilot-apps-overview/workspace-app-copilot-in-app-nav.png":::
 
-If the app author chooses to collapse the app navigation by default, users need to expand the app navigation to view it and see **Copilot**:
+If the app author configures a collapsed app navigation by default, users expand the app navigation to access **Copilot**.
+
 :::image type="content" source="media/copilot-apps-overview/expand-app-nav.png" alt-text="Screenshot of button to select for expanding app nav with app nav then expanded.":::
 
 App users' Copilot activity must be linked to a capacity. Learn more about the [general requirements for Copilot use](copilot-introduction.md#general-requirements) and how [capacity assignment and autoselection works](copilot-introduction.md#access-to-a-copilot-supported-capacity).
 
-#### Summarize the app
+### Summarize the app
 
-Copilot helps you understand what reporting is available in the app. You can ask Copilot to summarize the app by using prompts like:
+Copilot helps users understand what reporting is available in the app. Prompts like the following examples generate app summaries:
 
 * "Summarize the reporting in this app."
 * "What's this app about?"
@@ -87,18 +88,18 @@ Copilot helps you understand what reporting is available in the app. You can ask
 
 Copilot reviews the report descriptions and provides a topical summary of the app’s reporting. This topical summary helps you find items of interest and ask Copilot focused questions. Copilot answers these questions using the context available in the app’s reporting.
 
-#### Find items in the app
+### Find items in the app
 
-You can ask Copilot to find reports you have access to in the app. In response, you get a hyperlinked list of relevant items, with helpful descriptions to make it easy for you to find the right thing. Learn more about [searching for items](copilot-search-new-content.md). Selecting an item listed in the results opens that item in a new tab within the app.
+Copilot can find reports that users have access to in the app. Responses include a hyperlinked list of relevant items with helpful descriptions to guide users to the right content. Learn more about [searching for items](copilot-search-new-content.md). Selecting an item in the results opens it in a new tab within the app.
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-find-item-then-open-item.png" alt-text="Screenshot of item search results from app-scoped Copilot with an item opened after selection." lightbox="media/copilot-apps-overview/app-copilot-find-item-then-open-item.png":::
 
 > [!TIP]
-> After getting back search results, continue the conversation by asking Copilot to "Summarize [report name]" or ask Copilot, "What is revenue for the month to date using [report name]?"
+> After search results appear, users can continue the conversation by asking Copilot to "Summarize [report name]" or "What is revenue for the month to date using [report name]?"
 
-#### Summarize an item in the app
+### Summarize an item in the app
 
-Copilot can provide summaries about an entire report or a specific topic within that report. You can use prompts like:
+Copilot can provide summaries about an entire report or a specific topic within that report. Prompts like the following examples generate item summaries:
 
 * "Give me a summary about customer sentiment on smart materials."
 * "Summarize trends in sales last year."
@@ -107,7 +108,7 @@ Copilot can provide summaries about an entire report or a specific topic within 
 
 Summaries in the app-scoped Copilot experience include both textual insights and relevant visuals within the narrative. Currently, summaries are only available for reports, not for semantic models. Learn more about [summarizing a report or topic](copilot-pane-summarize-content.md).
 
-#### Ask questions and get answers based on an item in the app
+### Ask questions and get answers based on an item in the app
 
 The app-scoped Copilot experience can summarize data from reports and use the report visuals to answer specific questions. Copilot works with you to understand your topic of interest and use that context to identify the right report to use as its source. When Copilot identifies a strong match, it selects the item in the background and answers immediately. When more context is needed, Copilot asks simple clarifying questions to narrow it down.
 
@@ -116,30 +117,30 @@ Learn more about [asking questions about your data](copilot-ask-data-question.md
 
 :::image type="content" source="media/copilot-apps-overview/app-copilot-question-close-up.png" alt-text="Screenshot of data question in app-scoped Copilot with item selected and answer returned." lightbox="media/copilot-apps-overview/app-copilot-question-close-up.png":::
 
-#### Attach an item from the app to summarize or ask questions
+### Attach an item from the app to summarize or ask questions
 
-At times, you might want to ask questions about your data based on a specific item. In app-scoped Copilot, you can attach a specific report for Copilot to reference.
+App-scoped Copilot supports attaching a specific report as a reference when you ask questions about data. Use the **Add content for Copilot to reference** option to specify exactly which report Copilot should use.
 
-If you know exactly which report, attach it to your chat by using the **Add content for Copilot to reference** option.
 :::image type="content" source="media/copilot-apps-overview/app-copilot-attach-item.png" alt-text="Screenshot of button to attach item for Copilot to reference." lightbox="media/copilot-apps-overview/app-copilot-attach-item.png":::
 
-It then appears in the Copilot conversation and is used to answer your questions.
+The selected report appears in the Copilot conversation and serves as the source for answering questions.
 
 ## Clear chat
 
-The **clear chat** button removes the contents of the current conversation and any previous context set throughout the conversation. Clearing the chat is essentially the same as starting a new chat. Chats are also cleared when you navigate away from app-scoped Copilot.
+The **clear chat** button removes the contents of the current conversation and any previous context set throughout the conversation. Clearing the chat is essentially the same as starting a new chat. Users also clear chats when they navigate away from app-scoped Copilot.
 
-See [Clear the Copilot chat](copilot-introduction.md#clear-the-copilot-chat) for more information about how clear chat works for Copilot in Power BI.
+For more information about how clear chat works for Copilot in Power BI, see [Clear the Copilot chat](copilot-introduction.md#clear-the-copilot-chat).
 
 ## Share feedback
 
-User feedback is important for continued Copilot improvements. After each Copilot response, users can provide feedback on the response by selecting the feedback buttons corresponding with their sentiment.
+User feedback is important for continued Copilot improvements. Feedback buttons appear after each Copilot response, so users can indicate their sentiment about the response.
 
 :::image type="content" source="media/copilot-apps-overview/copilot-feedback.png" alt-text="Screenshot of button to provide feedback on Copilot.":::
 
 ## Limitations and considerations
 
 * **For app users**:
+
   * In select cases, app-scoped Copilot uses item names that app authors configure. The original item name might differ from the name shown in the app and used in app-scoped Copilot responses.
   * App‑scoped Copilot doesn't recognize app navigation sections and doesn't refer to sections in its responses.
   * Clicking an item link opens the item in a new browser tab.
