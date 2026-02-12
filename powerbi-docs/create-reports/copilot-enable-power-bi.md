@@ -118,7 +118,7 @@ Check your license type in the **Workspace settings**.
 
     :::image type="content" source="media/copilot-enable-power-bi/workspace-settings-license.png" alt-text="Screenshot of the Premium section of the workspace settings, with arrows pointing to Premium capacity and Fabric capacity.":::
 
-    You can see which license mode is applied to your workspace under **Premium**. If license modes are grayed out, this workspace doesn't have access to the appropriate capacity.
+    You can see which workspace type is applied to your workspace under **Premium**. If workspace types are grayed out, this workspace doesn't have access to the appropriate capacity.
 
 When you're using the standalone Copilot experience and don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need to select a workspace that has the required capacity for Copilot.
 
