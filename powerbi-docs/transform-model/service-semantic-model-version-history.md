@@ -126,7 +126,6 @@ Keep the following in mind:
 
 * Up to five versions are saved per model. Saving versions once reaching the five-version limit will overwrite the oldest version in version history.
 * Restoring versions older than 14 days is not supported. Note that this limitation isn't currently enforced by the product.
-* Version history isn't supported for semantic models stored in *My Workspace*.
 * The semantic model must first be opened on the web or opened for Direct Lake live editing in Power BI Desktop before versions begin being captured for the model. 
 * You can't make changes to your semantic model when the model is being restored to a previous version. 
 * You can't delete a version within a semantic model’s version history.

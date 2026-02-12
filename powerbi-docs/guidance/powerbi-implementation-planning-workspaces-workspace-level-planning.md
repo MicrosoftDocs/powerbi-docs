@@ -86,7 +86,7 @@ Another key area of the Fabric adoption roadmap is [content delivery scope](fabr
 - **Enterprise BI**: Content is delivered broadly across organizational boundaries to the largest number of target consumers. In this scenario, the workspace is primarily for collaboration efforts. For enterprise BI scenarios, content is commonly viewed in a Power BI app instead of directly viewed in the workspace.
 
 > [!TIP]
-> When you plan your workspaces, consider the needs of the audience when determining the workspace [license mode](/fabric/enterprise/licenses). The type of license assigned to the workspace affects the features that are available, including who can view or manage workspace content.
+> When you plan your workspaces, consider the needs of the audience when determining the [workspace type](/fabric/enterprise/licenses#workspace). The type assigned to the workspace affects the features that are available, including who can view or manage workspace content.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
@@ -94,7 +94,7 @@ _Checklist_ of key decisions and actions when you consider expectations for how 
 
 > [!div class="checklist"]
 > - **Consider expectations for viewing content**: Determine how you expect consumers to view content that's been published to the workspace. Consider whether viewing will happen directly in the workspace directly or by using a different method.
-> - **Determine who the content will be delivered to**: Consider who the target audience is. Also consider the workspace license mode, especially when you expect a significant number of content viewers.
+> - **Determine who the content will be delivered to**: Consider who the target audience is. Also consider the workspace type, especially when you expect a significant number of content viewers.
 > - **Evaluate needs for a Power BI app**: Consider what the workspace purpose is as it relates to the content distribution requirements. A requirement for a Power BI app can influence decisions about creating a workspace.
 > - **Consider expectations for content delivery scope**: Consider how the different content delivery scopes (personal BI, team BI, departmental BI, and enterprise BI) will influence how you design and use workspaces.
 
@@ -431,9 +431,9 @@ For more information about planning for domains in your tenant, see [Workspace d
 
 You can set up several settings for each individual workspace. These settings can significantly influence how collaboration occurs, who is allowed to access the workspace, and the level of data reusability across Fabric workloads.
 
-### Workspace license mode
+### Workspace type
 
-Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode) setting. You can set a workspace license mode to **Pro**, **Premium per user**, **Premium capacity**, **Embedded**, **Fabric capacity**, or **Trial**.
+Each workspace has a [workspace type](/fabric/get-started/workspaces#workspace-type) setting. You can set a workspace type to **Pro**, **Premium per user**, **Premium capacity**, **Embedded**, **Fabric capacity**, or **Trial**.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
@@ -449,11 +449,11 @@ The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-_Checklist_ of key decisions and actions when you consider workspace license mode:
+_Checklist_ of key decisions and actions when you consider workspace type:
 
 > [!div class="checklist"]
 > - **Consider which features are required for each workspace**: Determine the feature requirements of each workspace. Consider differences in workload and which users you intend to access the workspace.
-> - **Set the workspace license mode**: Review and update each workspace license mode according to which features are needed by each workspace.
+> - **Set the workspace type**: Review and update each workspace type according to which features are needed by each workspace.
 
 ### Workspace lifecycle management
 
@@ -520,7 +520,7 @@ _Checklist_ of key decisions and actions when you plan for workspace integration
 > - **Configure the tenant-level storage account**: In the Fabric admin portal, set the tenant-level Data Lake Storage Gen2 storage account.
 > - **Decide whether workspace administrators can connect a storage account**: Have discussions to understand the needs of decentralized teams, and whether individual teams are currently maintaining their own Azure Storage accounts. Decide whether this capability should be enabled.
 > - **Configure the admin setting for workspace-level storage**: In the Fabric admin portal, enable the option that allows workspace administrators to connect their own storage account.
-> - **Set the workspace-level Azure Storage connections**: Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use semantic model backups, ensure the workspace license mode is set to capacity or PPU.
+> - **Set the workspace-level Azure Storage connections**: Specify the Azure Storage account for each individual workspace. You must set the storage account prior to creating any Power BI dataflows in the workspace. If you intend to use semantic model backups, ensure the workspace type is set to capacity or PPU.
 > - **Update your workspace management documentation**: Ensure that your workspace management documentation includes information about how to assign Data Lake Storage Gen2 storage accounts correctly. Make the information available in your centralized portal and in training materials.
 
 ### Workspace integration with Log Analytics
@@ -541,7 +541,7 @@ _Checklist_ of key decisions and actions when you plan for workspace integration
 > [!div class="checklist"]
 > - **Decide whether workspace administrators can connect to Log Analytics**: Determine whether all or some workspace administrators are permitted to use Log Analytics to analyze workspace-level logs. If access is restricted to only certain people, decide which group to use.
 > - **Set up the tenant setting for Log Analytics connections**: In the Fabric admin portal, set the tenant setting according to the decision for which workspace administrators set connections.
-> - **Set the Log Analytics workspace for each workspace**: In the workspace settings, specify the Log Analytics information for each workspace. To capture workspace-level logs, ensure that the workspace license mode is set to capacity or PPU.
+> - **Set the Log Analytics workspace for each workspace**: In the workspace settings, specify the Log Analytics information for each workspace. To capture workspace-level logs, ensure that the workspace type is set to capacity or PPU.
 > - **Update your workspace management documentation**: Ensure that your workspace management documentation includes information about how to assign a workspace to Log Analytics.
 
 ### Other workspace properties
