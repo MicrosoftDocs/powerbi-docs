@@ -48,10 +48,10 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Report creators develop paginated reports by using Power BI Report Builder. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | Power BI Report Builder queries data from one or more data source types. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | When ready, report creators publish their Power BI Report Builder file (.rdl) to the Power BI service. |
-| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Multiple Power BI item types can be published to a workspace that has Fabric capacity, Premium capacity, or Premium Per User license mode. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Multiple Power BI item types can be published to a workspace that has Fabric capacity, Premium capacity, or Premium Per User workspace type. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | In the enterprise BI scenario, use of [Fabric capacity](/fabric/enterprise/licenses) or [Premium capacity](../enterprise/service-premium-what-is.md) (rather than Premium Per User) is depicted. This choice is made to support content delivery to many content viewers who have a free Fabric license. |
 | ![Item 10](../media/legend-number/legend-number-10-fabric.svg) | Some, or all, reports and dashboards are published as a [Power BI app](../consumer/end-user-apps.md). The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
-| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Power BI app users are added to app audiences, which are assigned read-only permission. App settings, app content, and app audiences are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (Fabric (free), Power BI Pro, or Premium Per User) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a license mode of **Fabric capacity** or **Premium capacity** (free users cannot access workspace content when it's assigned a license mode of **Premium per user** or **Embedded**). |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Power BI app users are added to app audiences, which are assigned read-only permission. App settings, app content, and app audiences are managed separately from the workspace. In an enterprise BI scenario, users with any type of Power BI license (Fabric (free), Power BI Pro, or Premium Per User) can be assigned as a viewer of the app. This feature applies only when the workspace is assigned a workspace type of **Fabric capacity** or **Premium capacity** (free users cannot access workspace content when it's assigned a workspace type of **Premium per user** or **Embedded**). |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | The Power BI mobile apps are also available for viewing app and workspace content. |
 | ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). |
 | ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | Users assigned to the administrator, member, or contributor workspace roles can publish and manage workspace content. |
@@ -82,9 +82,9 @@ A Power BI [workspace](../collaborate-share/service-create-the-new-workspaces.md
 
 The [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario describes the use of separate workspaces.
 
-### Workspace license mode
+### Workspace type
 
-A workspace license mode can be assigned to **Pro**, **Premium per user** (PPU), **Premium per capacity**, or **Embedded**. This choice impacts [feature availability](../fundamentals/service-features-license-type.md), as well as which users can access the content in the workspace and the associated Power BI app. An enterprise BI scenario often involves many consumers of the content. So, it can be cost effective to use the **Premium per capacity** license mode to distribute content to users with a free license.
+A workspace type can be assigned to **Pro**, **Premium per user** (PPU), **Premium per capacity**, or **Embedded**. This choice impacts [feature availability](../fundamentals/service-features-license-type.md), as well as which users can access the content in the workspace and the associated Power BI app. An enterprise BI scenario often involves many consumers of the content. So, it can be cost effective to use the **Premium per capacity** workspace type to distribute content to users with a free license.
 
 ### Power BI app publication
 
@@ -98,7 +98,7 @@ For enterprise BI, it's a best practice to limit workspace access to those who a
 
 ### Distribute content to Fabric free license users
 
-Users with a Fabric free license (or Power BI Pro or PPU license) can view content when granted app access or are added to a workspace role—provided the workspace is assigned to Premium capacity. This ability to distribute content to users with a free license is not available for any of the other workspace license modes, including **Pro**, **Premium per user**, or **Embedded**.
+Users with a Fabric free license (or Power BI Pro or PPU license) can view content when granted app access or are added to a workspace role—provided the workspace is assigned to Premium capacity. This ability to distribute content to users with a free license is not available for any of the other workspace types, including **Pro**, **Premium per user**, or **Embedded**.
 
 ### Power BI Premium capacity license
 

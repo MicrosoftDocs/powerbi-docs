@@ -4807,7 +4807,12 @@
     },
     {
       "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
-      "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+      "redirect_url": "https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/desktop-send-smile-privacy-statement.md",
+      "redirect_url": "https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/",
       "redirect_document_id": false
     },
     {

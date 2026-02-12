@@ -1,23 +1,40 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently asked end-user questions in Power BI
-  description: Browse a list of frequently asked questions and answers about the Power BI service and the Power BI mobile apps.
+  title: Power BI FAQ - Common questions for business users
+  description: Find answers to frequently asked questions about Power BI, including what Power BI is, licensing differences, mobile apps, and how to get started.
   author: julcsc
   ms.author: juliacawthra
   ms.reviewer: juliacawthra
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: faq
-  ms.date: 02/07/2024
+  ms.date: 02/04/2026
   ms.custom: licensing support
+  ai-usage: ai-assisted
   LocalizationGroup: Get started
-title: Frequently asked questions about Power BI
+title: Power BI FAQ - Common questions for business users
 summary: |
   [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]  
+
+  Get answers to common questions about Power BI for business users. This FAQ covers the basics of Power BI, licensing options (Pro, Premium Per User, and Premium), mobile apps, and how to get started.
+  
+  > [!TIP]
+  > For a list of features available to business users, see [Feature list for business users](end-user-features.md).
 
 sections:
   - name: Ignored
     questions:
+      - question: |
+         Is Power BI free?
+        answer: |
+          Power BI has both free and paid options:
+          
+          - **Power BI Desktop** is free to download and use for creating reports
+          - **Power BI service (free)** lets you view content shared with you if it's in a Premium capacity workspace
+          - **Power BI Pro** and **Premium Per User (PPU)** are paid licenses that let you share content and access all features
+          
+          Many business users can view and interact with Power BI content for free if their organization has Power BI Premium capacity. To learn more, see [What type of license do I have?](../fundamentals/end-user-license.md).
+
       - question: |
          What's the Microsoft Power BI service?
         answer: |
@@ -53,7 +70,7 @@ sections:
       - question: |
          What do I need as a business user to get started with the Power BI service?
         answer: |
-          If your company purchased Power BI licenses or a Premium capacity account, all you need to start is a Web browser and credentials. To log in, use your work email address and a password (set by your Power BI administrator).  
+          If your company purchased Power BI licenses or a Premium capacity account, all you need to start is a Web browser and credentials. To sign in, use your work email address and a password (set by your Power BI administrator).  
           
           You can also sign up for the Power BI service as an individual. For more information, see [the Power BI self-service sign-up process](../fundamentals/service-self-service-signup-for-power-bi.md).
           
@@ -65,7 +82,7 @@ sections:
       - question: |
          Does Power BI support mobile devices?
         answer: |
-          Yes. Power BI has native apps for Android phones and tablets, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store.  
+          Yes. Power BI has native apps for Android phones and tablets, iOS devices, and Windows devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store.  
           
           * [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
           * [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
@@ -106,7 +123,6 @@ sections:
           Learn more about Power BI security, privacy, and compliance here:
           
           * [Power BI Security white paper](../guidance/white-paper-powerbi-security.md)
-          
           * [Power BI security support article](../enterprise/service-admin-power-bi-security.md)
           
       - question: |
@@ -115,6 +131,16 @@ sections:
           Like many other Microsoft services and software, Power BI provides an easy way to undo your last command.
           
           * To **undo** your last action or last few actions, press CTRL+Z.
+
+      - question: |
+         How do I get help with Power BI?
+        answer: |
+          There are several ways to get help with Power BI:
+          
+          * **Power BI Community** - Ask questions and get answers from other users at [community.powerbi.com](https://community.powerbi.com/)
+          * **Power BI support** - Create a support ticket at the [Power BI support page](https://support.fabric.microsoft.com/support/)
+          * **Documentation** - Browse the [Power BI documentation](/power-bi/) for guides and tutorials
+          * **Your IT help desk** - Contact your organization's Power BI administrator for help with access, licenses, or organization-specific issues
           
 additionalContent: |
 
@@ -122,5 +148,6 @@ additionalContent: |
    
   *  [What is a Power BI business user?](end-user-consumer.md)
   *  [How does a business user interact with Power BI?](end-user-reading-view.md)
+  *  [Feature list for business users](end-user-features.md)
   *  More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
   *  Still have an issue? Visit the [Power BI support page](https://support.fabric.microsoft.com/support/)

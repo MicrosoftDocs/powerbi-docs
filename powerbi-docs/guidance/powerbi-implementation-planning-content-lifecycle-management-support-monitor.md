@@ -99,7 +99,7 @@ Consider the following points when supporting both [data creators](powerbi-imple
   - [OneLake security](/fabric/onelake/onelake-security)
   - [Files in OneDrive and SharePoint](../create-reports/desktop-sharepoint-save-share.md) and [Power BI files that consumers view from OneDrive and SharePoint](../collaborate-share/service-sharepoint-viewer.md)
 - **How to get access to new functionality**: What should an author do when they need to use functionality that they don't currently have access to? A few common situations include:
-  - [Workspace license mode](/fabric/enterprise/licenses#workspace)
+  - [Workspace type](/fabric/enterprise/licenses#workspace)
   - [Capacity](/fabric/enterprise/licenses#capacity-license) management and (SKU) size.
 - **How to update data connectivity**: If an author needs access to a gateway or a connection, what's the procedure they should follow to request updates (if they don't have [permissions](/data-integration/gateway/manage-security-roles))? Common situations include:
   - [Adding a new data source connection](../connect-data/service-gateway-data-sources.md)
