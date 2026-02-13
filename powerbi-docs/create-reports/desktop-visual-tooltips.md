@@ -48,12 +48,10 @@ Most visuals show tooltips by default, but the options can change depending on t
 #### Find tooltip settings
 
 1. Select a visual on the report canvas.
-2. From the Visualizations pane, select the Format visual icon.
-3. Under the General tab, expand the Tooltip card to access the settings for that visual.
+1. From the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **General** tab, expand the **Tooltips** card to access the settings for that visual.
 
 These settings control when tooltips appear, which tooltip type is used, and how each tooltip is styled.
-
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-card.png" alt-text="Screenshot of Tooltips card settings in Visualizations pane > Format visual > General tab.":::
 
 ### Tooltip settings and options
 
@@ -62,9 +60,10 @@ After selecting a supported visual and expanding the Tooltip control in the Form
 - **Tooltip visibility:** Toggle tooltips On or Off for that visual.
 - **Tooltip type:** Choose between a **Default** tooltip or a **Report page** tooltip.
 - **Styling options:** Tooltips inherit their colors from the report theme.  
-  Format options let you refine **Font**, **Label color**, **Value color**, **Drill text and icon color**, plus **Background** settings for **Color** and **Transparency**.
-- **Actions footer:** Some visuals support drill actions (Drill down, Drill through) directly in the tooltip footer.  
-  These actions appear only on visuals that support drill behavior.
+  **Text** settings let you refine **Font**, **Label color**, **Value color**, **Drill text and icon color**, plus **Background** settings for **Color** and **Transparency**.
+- **Actions footer:** Some visuals support drill actions (Drill down, Drill through) directly in the tooltip footer. Drill actions appear only on visuals that support drill behavior.
+
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-card.png" alt-text="Screenshot of Tooltips card settings in Visualizations pane > Format visual > General tab.":::
 
 These settings apply per visual, giving report creators full control over how tooltips appear and behave across a report.
 
@@ -79,16 +78,15 @@ Many visuals support the full default tooltip experience. These visuals show a T
 - Pie and donut charts
 - Ribbon, funnel, and waterfall charts
 
-These visuals show a tooltip when the user hovers over a data point such as a bar, column, point, or segment.  
-Keep in mind that tooltips can vary between visuals. For more information, see the [Considerations and Limitations](#considerations-and-limitations) section.
+These visuals show a tooltip when the user hovers over a data point such as a bar, column, point, or segment. Keep in mind that tooltips can vary between visuals. For more information, see the [Considerations and Limitations](#considerations-and-limitations) section.
 
 ### Customize tooltip content
 
 You can enrich a tooltip by adding fields that aren’t already used in the visual. This added context gives readers more context without adding clutter to the visual itself.
 
 1. Select the visual.
-2. In the Visualizations pane > Build visual, drag one or more fields into the Tooltip field well.
-3. Hover a data point to confirm those fields appear in the tooltip.
+1. In the **Visualizations** pane > **Build visual**, drag one or more fields into the **Tooltip** field well.
+1. Hover a data point to confirm those fields appear in the tooltip.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-field-well.png" alt-text="Screenshot of resulting Tooltip after adding fields to the Tooltip field well, in the Visualizations pane, under Build visual.":::
 
@@ -98,12 +96,12 @@ Tooltips support interactive exploration through the Actions footer to expose Dr
 
 When the Actions footer is enabled in a supported visual, users can:
 
-- Select Drill down to navigate to the next hierarchy level  
-- Select Drill through to open a dedicated report page filtered to that data point
-
-  Using actions from the tooltip avoids the need for right-click menus or header icons, making the report feel more intuitive and discoverable.
+- Select **Drill down** to navigate to the next hierarchy level  
+- Select **Drill through** to open a dedicated report page filtered to that data point
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-drill-down-through.png" alt-text="Screenshot of Tooltip, showing Drill-down and Drill-through actions in the Actions footer.":::
+
+Using actions from the tooltip avoids the need for right-click menus or header icons, making the report feel more intuitive and discoverable.
 
 ### Style tooltips using themes
 
@@ -118,8 +116,8 @@ Theme elements control:
 To adjust tooltip styling across a report:
 
 1. In Power BI Desktop, open the **View** tab.
-2. Select **Customize current theme** > **Visuals**.
-3. Select the **Tooltip** section to adjust **Label text color**, **Value text color**, **Drill text and icon color**, and **Background color**.
+1. Select **Customize current theme** > **Visuals**.
+1. Select the **Tooltip** section to adjust **Label text color**, **Value text color**, **Drill text and icon color**, and **Background color**.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-customize-report-theme.png" alt-text="Screenshot of Tooltip styling options, in the Customize current theme dialog.":::
 
@@ -132,15 +130,12 @@ A **report page tooltip** gives authors complete layout control and is useful wh
   To create a custom report page tooltip:
 
   1. Add a new page to the report.
-  2. From the **Visualizations** pane, select the **Format page** icon. Open the **Page information** section and enable the **Allow use as tooltip** toggle.
-
-  Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
+  1. From the **Visualizations** pane, select the **Format page** icon. Open the **Page information** section and enable the **Allow use as tooltip** toggle. Remember to give the page a clear **Name** so users can quickly recognize it and understand its purpose when choosing it in the Tooltip settings.
+  1. Design your custom page using visuals, cards, KPIs, or layouts that best fit your scenario.
+  1. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
+  1. Select your custom page from the list.
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-enable-report-page-tooltip.png" alt-text="Screenshot of Visualizations > Format page > Page information with 'Allow use as tooltip' enabled, and Name as 'My Report Page Tooltip'.":::
-
-  1. Design your custom page using visuals, cards, KPIs, or layouts that best fit your scenario.
-  2. Return to your main report page, select a visual, and under **Tooltip** > **Type**, choose **Report page**.
-  3. Select your custom page from the list.
 
 Use report page tooltips when you want deeper contextual storytelling or richer data presentation beyond the default tooltip layout.
 
@@ -187,17 +182,17 @@ Use help tooltips to explain what the visual shows or define key terms. They als
 #### Turn on Help tooltip
 
 1. Select the visual on the report canvas.
-2. In the **Visualizations** pane, select **Format visual**.
-3. On the **General** tab, make sure **Header icons** is enabled, then expand the card.
-4. Under Header icons, expand the **Icons** dropdown and enable the **Help tooltip** toggle.
-5. Now that the **Help tooltip** section is revealed, verify the **Help tooltip icon** appears in the **Visual header**.
+1. In the **Visualizations** pane, select **Format visual**.
+1. On the **General** tab, make sure **Header icons** is enabled, then expand the card.
+1. Under Header icons, expand the **Icons** dropdown and enable the **Help tooltip** toggle.
+1. Now that the **Help tooltip** section is revealed, verify the **Help tooltip icon** appears in the **Visual header**.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-enable-help-tooltip.png" alt-text="Screenshot of Visualizations pane > Format visual > General, with Header icons enable + expanded, Icons exapanded, Help tooltip enabled, and Help tooltip icon visible in Visual header.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-enable-help-tooltip.png" alt-text="Screenshot of Visualizations pane > Format visual > General. Header icons enabled and expanded, Icons expanded, Help tooltip enabled, and Help tooltip icon visible in Visual header.":::
 
    When Help tooltips are turned on, a small icon appears in the visual header. Users can hover or select the icon to view the help content.
 
   > [!Note]
-  > The Help tooltip and the help icon only appears when **Header icons** are enabled and the **Visual header** is visible.
+  > The Help tooltip and the help icon only appear when **Header icons** are enabled and the **Visual header** is visible.
 
 #### Choose the type of Help tooltip content
 
@@ -208,8 +203,8 @@ Help tooltips support two content types. Pick the one that fits your scenario.
   Use this text option for short explanations or simple instructions.
 
   1. In the **Help tooltip** card, choose **Text**.
-  2. Enter a short message you want users to see. Keep it clear and action oriented.
-  3. Preview the tooltip by hovering over the Help icon in the Visual header.
+  1. Enter a short message you want users to see. Keep it clear and action oriented.
+  1. Preview the tooltip by hovering over the Help icon in the Visual header.
 
   Typed text isn’t data‑driven. It gives you a simple space to describe the visual, clarify what readers are looking at, and suggest what they might do next.
 
