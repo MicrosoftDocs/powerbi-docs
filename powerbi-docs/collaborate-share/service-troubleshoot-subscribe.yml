@@ -114,7 +114,7 @@ sections:
 
           ### Periods of peak demand
 
-          The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. At times of peak demand, you might see a delay of about 15 minutes. Email delivery should never exceed 24 hours. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator, or IT help desk for assistance. 
+          The time you set your subscription to begin is when the subscription starts to process. Once the report processing is complete, the subscription is queued and sent to the e-mail recipients. In rare cases during peak demand, email delivery may be delayed. Delivery can take longer than expected but shouldn't exceed 24 hours. If you experience a longer delay, ensure that the address no-reply-powerbi@microsoft.com is on the safe sender list. Another recommendation is to run your data refresh and email subscriptions at different times to ensure timely delivery. If the issue persists, contact your Power BI administrator, or IT help desk for assistance. 
           
           ### Email software is blocking delivery
 
