@@ -21,7 +21,7 @@ Organizations might need to move their Power BI tenant to a different region for
 
 Moving a Power BI tenant between regions requires Microsoft Support assistance and careful planning. The region you choose during sign‑up determines your tenant's default data location, and self‑service region changes aren't supported. To change the default data region, you must contact Microsoft Support to request a tenant remapping to the new region. Before the remapping, you're responsible for backing up all content and settings you want to retain. After the tenant remapping completes, you can restore your data from those backups.
 
-Full cross-region tenant migration isn't offered at this time for Power BI or Fabric capacities. Please consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) or Tenant Remapping process described above.
+Full cross‑region tenant migration isn't supported for Power BI or Fabric capacities at this time. As alternatives, consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) or the tenant remapping process described previously.
 
 
 > [!CAUTION]
