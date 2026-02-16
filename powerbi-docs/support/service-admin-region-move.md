@@ -29,7 +29,7 @@ Full cross-region tenant migration isn't offered at this time for Power BI or Fa
 
 ## Considerations and limitations
 
-- The Tenant Remap process causes all data and metadata in the tenant to be deleted. 
+- Tenant remapping deletes all data and metadata in the tenant. You're responsible for backing up and restoring all content. Microsoft Support can’t perform backups or restores, but can assist with troubleshooting issues you encounter during those steps.
 - It's your responsibility to back up and restore your data as the support team can't help with those actions. However, if you encounter any technical issue during the back-up and restore, the support team can help with troubleshooting.
 - The remapping process requires approximately three hours of service downtime. During this time, users can't access Power BI and will see the "owl" error message.
 - Plan for additional downtime after remapping to restore previously backed-up artifacts. 
