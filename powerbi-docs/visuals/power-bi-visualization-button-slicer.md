@@ -135,5 +135,5 @@ This section lists the key considerations and limitations of the Button slicer i
 ## Related content
 
 - [List slicer](power-bi-visualization-list-slicer.md)
-- [Text slicer](power-bi-visualization-text-slicer.md)
+- [Input slicer](power-bi-visualization-input-slicer.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

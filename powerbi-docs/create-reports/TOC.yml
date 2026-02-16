@@ -518,8 +518,8 @@
         href: ../visuals/power-bi-visualization-button-slicer.md
       - name: List slicer (preview)
         href: ../visuals/power-bi-visualization-list-slicer.md
-      - name: Text slicer (preview)
-        href: ../visuals/power-bi-visualization-text-slicer.md
+      - name: Input slicer
+        href: ../visuals/power-bi-visualization-input-slicer.md
       - name: Filter date range with a slicer
         href: ../visuals/desktop-slicer-filter-date-range.md
     # Other visuals
