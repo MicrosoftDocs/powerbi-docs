@@ -3,11 +3,11 @@ title: Create Visual Tooltips in Power BI
 description: Learn how to build hover‑based visual tooltips in Power BI with drill actions and theme‑based styling.
 author: BlairJSArmstrong
 ms.author: v-blaira
-ms.reviewer: zodouglas
+ms.reviewer: DataZoeMS
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/06/2026
+ms.date: 02/17/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
