@@ -1,5 +1,5 @@
 ---
-title: Create Visual Tooltips
+title: Create Visual Tooltips in Power BI
 description: Learn how to build hover‑based visual tooltips in Power BI with drill actions and theme‑based styling.
 author: BlairJSArmstrong
 ms.author: v-blaira
@@ -24,7 +24,7 @@ When someone hovers over elements in a visual, the key field values are displaye
 
 This article introduces visual tooltips and shows how to change their content and layout. These changes help the tooltips match your report’s style and give users a consistent experience. With these steps, you can create reports that feel clear, consistent, and easy for users to explore.
 
-## Using tooltips in Power BI
+## Use tooltips in Power BI
 
 ### How Power BI displays tooltips
 
@@ -88,7 +88,7 @@ You can enrich a tooltip by adding fields that aren’t already used in the visu
 1. In the **Visualizations** pane > **Build visual**, drag one or more fields into the **Tooltip** field well.
 1. Hover a data point to confirm those fields appear in the tooltip.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-field-well.png" alt-text="Screenshot of resulting Tooltip after adding fields to the Tooltip field well, in the Visualizations pane, under Build visual.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-field-well.png" alt-text="Tooltip displaying field name and value after fields are added to the Tooltip field well in the Build visual pane.":::
 
 ### Use drill actions from the actions footer
 
@@ -98,6 +98,7 @@ When the Actions footer is enabled in a supported visual, users can:
 
 - Select **Drill down** to navigate to the next hierarchy level  
 - Select **Drill through** to open a dedicated report page filtered to that data point
+- Select **Drill up** to navigate to the previous hierarchy level, whenever displayed  
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-drill-down-through.png" alt-text="Screenshot of Tooltip, showing Drill-down and Drill-through actions in the Actions footer.":::
 
@@ -152,11 +153,13 @@ To create a strong user experience:
 
   This approach helps counter customer perceptions that “tooltips haven’t changed” while highlighting the visual polish now available in Power BI.
 
-### Choosing between default tooltips and report page tooltips
+### Choose Default tooltips or Report page tooltips
 
-**Default tooltips** are lightweight and work well for simple visuals or dashboards where users need quick facts without losing their place in the report.
+Power BI gives you two ways to show tooltip information. Each option serves a different purpose, depending on how much context users need and how deeply you want them to explore. Some scenarios call for quick answers, while others benefit from richer context.
 
-**Report page tooltips** are helpful when users need more explanation. They can include extra calculations, comparisons, KPIs, or visuals that don’t fit inside a small hover card.
+Option 1: **Default tooltips** are lightweight and work well for simple visuals or dashboards where users need quick facts without losing their place in the report.
+
+Option 2: **Report page tooltips** are helpful when users need more explanation. They can include extra calculations, comparisons, KPIs, or visuals that don’t fit inside a small hover card.
 
 Choosing the right type improves performance and clarity.
 
@@ -225,7 +228,7 @@ Help tooltips support two content types. Pick the one that fits your scenario.
 >You can use an animated GIF in a Report page Help tooltip to show users how an interaction works.
 
   **Use an animated GIF in a Report page Help tooltip**  
-  You can add a small animated GIF to a Report page Help tooltip to show users how an interaction works, such as drilling down or drilling up. When the Help tooltip is set to a Report page, the GIF starts playing when the tooltip opens. It continues to animate while the user hovers over the tooltip. This animation creates a simple visual cue without adding instructions on the report canvas.
+  Add a small animated GIF to a report page Help tooltip to show interactions like drilling. The GIF starts playing as soon as the tooltip opens and continues to animate while the user hovers over it. This idea is an easy way to show an interaction without adding more text or cluttering the report.
 
    **Add an animated GIF to a Help tooltip**  
   
@@ -301,7 +304,7 @@ Some visuals handle tooltips differently:
   This visual doesn’t use the standard tooltip system. Instead, it displays its own explanation panels, so tooltip settings don’t appear.
 
 - **Tables and matrices**  
-  Tooltips appear when hovering a cell, and tooltip formatting options are available in the *Format* pane. However, tables and matrices don't expose a *Tooltip field* in the *Build* pane. Tooltip content reflects the cell’s value, not additional data fields.
+  Tooltips appear when hovering a cell, and tooltip formatting options are available in the *Format* pane. However, tables and matrices don't expose a *Tooltip field* in the *Build* pane. When you hover over a table or matrix cell, the tooltip just shows that cell’s value. It doesn't pull in extra fields.
 
 The Tooltip **Actions footer** isn't available for:
 
@@ -320,8 +323,7 @@ Power BI uses two types of default tooltips, and the experience varies depending
   Line charts use a dedicated tooltip style that's different from all other visuals:
   - The tooltip shows the series marker, series name, and value for each visible series.
   - The axis value (typically the X-axis value) appears at the top of the tooltip in bold.
-  - Only a limited number of series lines can be displayed at once.
-    Power BI currently shows up to 15 series in a single line chart tooltip; any additional series are hidden.
+  - Only a limited number of series lines can be displayed at once. Power BI currently shows up to 15 series in a line chart tooltip, and hides the rest.
 
 - **Tooltip behavior for other supported visuals**
 
