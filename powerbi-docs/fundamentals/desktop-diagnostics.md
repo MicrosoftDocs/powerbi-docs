@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 02/28/2025
+ms.date: 02/17/2026
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ---
 # Power BI Desktop diagnostics collection
@@ -173,3 +174,5 @@ You can do all sorts of things with Power BI Desktop. For more information about
 - [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 - [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 - [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+- [Use Performance Analyzer to examine report element performance](../create-reports/desktop-performance-analyzer.md)
+- [Capture diagnostic information from the Power BI service](../support/service-admin-capturing-additional-diagnostic-information-for-power-bi.md)

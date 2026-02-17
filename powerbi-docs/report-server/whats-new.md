@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 02/04/2025
+ms.date: 02/17/2026
 ms.custom: intro-whats-new
 ai-usage: ai-assisted
 ---
@@ -63,7 +63,7 @@ Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summ
 
 ### General announcements
 
-#### SQL Server 2025 Updates
+#### SQL Server 2025 updates
 
 Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server (PBIRS). No new versions of SQL Server Reporting Services (SSRS) will be released. PBIRS becomes the default on-premises reporting solution for SQL Server.
 
@@ -73,9 +73,9 @@ Starting with the September 2025 release, Power BI Desktop for Power BI Report S
 
 **Migration guidance:**
 
-- Administrators and authors should migrate from 32-bit to 64-bit Power BI Desktop for Report Server.
-- Download the latest 64-bit version from the [Power BI Report Server download page](download-powerbi-report-server.md).
-- For supported architectures and system requirements, see [Hardware and software requirements for installing Power BI Report Server](system-requirements.md).
+1. Administrators and authors should migrate from 32-bit to 64-bit Power BI Desktop for Report Server.
+1. Download the latest 64-bit version from the [Power BI Report Server download page](download-powerbi-report-server.md).
+1. For supported architectures and system requirements, see [Hardware and software requirements for installing Power BI Report Server](system-requirements.md).
 
 ### Visualizations
 
@@ -463,7 +463,7 @@ In November 2022, Power BI announced the upcoming change in color accent to teal
 
 The Power BI brand color and icon logo remain yellow.
 
-#### Publish .rdl &.pbix files to Power BI from Power BI Report Server
+#### Publish .rdl and .pbix files to Power BI from Power BI Report Server
 
 - Power BI Pro licenses now support [paginated reports](../consumer/end-user-paginated-report.md).
 - Power BI Report Server has a [new tool to migrate .rdl reports to the Power BI service](../guidance/publish-reporting-services-power-bi-service.md). The new migration tool is available in the January 2023 release.

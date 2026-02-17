@@ -1,8 +1,8 @@
 ---
 title: Create data function buttons
 description: Learn how to configure buttons in Power BI desktop with the data function action to enable translytical task flows.
-author: kgremban
-ms.author: kgremban
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service

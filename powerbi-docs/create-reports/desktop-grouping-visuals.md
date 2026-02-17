@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 02/17/2026
 ms.custom: sample-sales-and-marketing, sample-sales-and-returns
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 

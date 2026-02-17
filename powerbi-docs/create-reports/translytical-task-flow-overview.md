@@ -1,8 +1,8 @@
 ---
 title: Understand translytical task flows
 description: Learn how translytical task flows enable data write-back capabilities in Power BI reports with user data functions in Fabric.
-author: kgremban
-ms.author: kgremban
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service

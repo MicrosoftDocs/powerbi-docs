@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 02/28/2025
+ms.date: 02/17/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # High-density line sampling in Power BI

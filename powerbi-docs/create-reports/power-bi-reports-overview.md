@@ -1,9 +1,9 @@
 ---
 title: Overview of Power BI reports
 description: Learn about Power BI reports and the key features for creating interactive, data-driven reports in Power BI Desktop and the Power BI service.
-author: DataZoeMS
-ms.author: zoedouglas
-ms.reviewer: ''
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: overview
