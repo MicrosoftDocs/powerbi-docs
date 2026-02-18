@@ -83,7 +83,10 @@ Use these formats when applying custom format strings at the **model level** in 
 
 #### Date and time formats (.NET syntax for visual level)
 
-Use these formats when applying custom format strings at the **visual level** (for example, on the new card visual). Note: uppercase `M` = month, lowercase `m` = minutes.
+Use these formats when applying custom format strings at the **visual level** (for example, on the new card visual). 
+
+> [!NOTE]
+> Uppercase `M` = month, lowercase `m` = minutes.
 
 | Format string | Example input | Example output | Description |
 |---------------|---------------|----------------|-------------|
