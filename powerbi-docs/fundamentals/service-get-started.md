@@ -141,11 +141,11 @@ To continue editing the report, select **Edit** from the top menu bar.
 
 1. Ask Copilot to suggest content.
 
-```copilot-prompt
-Suggest content for a new report page.
- ```
-
-Select **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+   ```copilot-prompt
+   Suggest content for a new report page.
+    ```
+   
+   Select **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
 
 1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard.
 
