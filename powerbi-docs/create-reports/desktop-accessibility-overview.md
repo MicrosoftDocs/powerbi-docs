@@ -34,10 +34,10 @@ Power BI is committed to the following accessibility standards. The standards he
 
 Web Content Accessibility Guidelines (WCAG) help make web content accessible to people with disabilities. The following are key principles of the guidelines:
 
-1. **Perceivable**: Users must be able to perceive information and user interface components.
-1. **Operable**: Users must be able to operate user interface components and navigation.
-1. **Understandable**: Users must be able to understand information and the operation of the user interface.
-1. **Robust**: Content can be interpreted by a wide range of user agents, including assistive technologies.
+- **Perceivable**: Users must be able to perceive information and user interface components.
+- **Operable**: Users must be able to operate user interface components and navigation.
+- **Understandable**: Users must be able to understand information and the operation of the user interface.
+- **Robust**: Content can be interpreted by a wide range of user agents, including assistive technologies.
 
 ### US Accessibility Conformance
 
