@@ -25,8 +25,6 @@ This tutorial is an introduction to some of the features of the *Power BI servic
 
 In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md)?
 
-If you're a report *reader* or *viewer* rather than a creator, check out the [Getting around in the Power BI service](../consumer/end-user-experience.md) tutorial.
-
 In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
@@ -143,11 +141,11 @@ To continue editing the report, select **Edit** from the top menu bar.
 
 1. Ask Copilot to suggest content.
 
-```copilot-prompt
-Suggest content for a new report page.
- ```
-
-Select **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
+   ```copilot-prompt
+   Suggest content for a new report page.
+    ```
+   
+   Select **Profit Analysis by Product** > **Create**. Copilot creates a new report page for you and names it *Profit Analysis by Product*.
 
 1. Select another visual to pin to your dashboard. Select **Profit by Product** and pin it to the same dashboard.
 
