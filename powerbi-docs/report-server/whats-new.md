@@ -454,7 +454,7 @@ This release has updates for the Report Server web portal, modeling, and reporti
 ### Report Server
 
 - [Accent color update](#power-bi-report-server-accent-color-update)
-- [.rdl and .pbix file migration tool](#publish-rdl-pbix-files-to-power-bi-from-power-bi-report-server)
+- [.rdl and .pbix file migration tool](#publish-rdl-and-pbix-files-to-power-bi-from-power-bi-report-server)
 - New .rdl report community: Join the [on-premises .rdl migration user group](https://community.powerbi.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI).
 
 #### Power BI Report Server accent color update
