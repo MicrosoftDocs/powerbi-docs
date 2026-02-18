@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 09/15/2025
+ms.date: 02/18/2026
 LocalizationGroup: Get started
 ai-usage: ai-assisted
 ms.custom:
@@ -46,8 +46,8 @@ When you open Power BI Desktop, you’ll see a user-friendly interface designed 
 
 - **Ribbon**: Contains tabs like **Home**, **Insert**, and **Modeling** with tools for data and visuals.
 - **Report canvas**: The main area where you build and arrange your visuals.
-- **Fields pane**: Shows the tables and fields from your data model.
-- **Visualizations pane**: Lets you choose and customize chart types.
+- **Fields pane**: Located on the right side of the screen, shows the tables and fields from your data model. Use this pane to drag fields onto your visuals or check boxes to add them to the canvas.
+- **Visualizations pane**: Also on the right side, above or below the Fields pane. Lets you choose and customize chart types.
 
 Spend a moment exploring the layout—it’s designed to be intuitive and flexible.
 
