@@ -68,6 +68,8 @@ Follow these steps to get started with Power BI:
 1. **Share and collaborate**: Publish to the Power BI service, share with your team, and collaborate in real time.
 1. **Administer and secure**: Manage access, set up security roles, and monitor usage.
 
+For a detailed breakdown of Power BI service capabilities organized by user role (creators versus consumers), see [Basics of the Power BI service](service-basic-concepts.md).
+
 ## Power BI Desktop versus the Power BI service
 
 Power BI has two main components: **Power BI Desktop** and the **Power BI service**. Desktop is best for data modeling and report creation, while the service is ideal for sharing and collaboration. Both can connect to data sources and create visualizations. There's also a **Power BI Mobile app** for viewing reports on the go.
