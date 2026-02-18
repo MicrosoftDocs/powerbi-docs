@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 
 # Get data from Excel workbook files
 
-Microsoft Excel is one of the most widely used business applications and one of the most common data sources for Power BI.
+Microsoft Excel is one of the most widely used business applications and one of the most common data sources for Power BI. This article covers importing Excel data into the Power BI service. To import Excel data using Power BI Desktop, see [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md#connect-power-bi-to-excel).
 
 ## Supported workbooks
 

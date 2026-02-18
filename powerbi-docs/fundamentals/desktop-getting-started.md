@@ -31,12 +31,9 @@ With Power BI Desktop, you can:
 
 ## Install Power BI Desktop
 
-To get started, you need to install Power BI Desktop on your computer:
+To get started, you need to install Power BI Desktop on your computer. You can install it from the **Microsoft Store** (recommended for automatic updates) or download it directly from the Microsoft Download Center.
 
-1. You can install it from the **Microsoft Store** (recommended for automatic updates), or download it directly from the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
-1. Choose the version that matches your system (32-bit or 64-bit) if downloading manually.
-1. Download and run the installer.
-1. Follow the prompts to complete the installation.
+For detailed installation instructions, system requirements, and troubleshooting tips, see [Get Power BI Desktop](desktop-get-the-desktop.md).
 
 Once installed, launch Power BI Desktop from your Start menu or desktop.
 
@@ -53,7 +50,7 @@ Spend a moment exploring the layout—it’s designed to be intuitive and flexib
 
 ## Connect Power BI to Excel
 
-Many users start with Excel data, and Power BI makes it easy to bring that data into your reports. 
+Many users start with Excel data, and Power BI makes it easy to bring that data into your reports. This section covers importing Excel data into Power BI Desktop. To import Excel files directly into the Power BI service (with OneDrive or SharePoint integration), see [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md).
 
 ### Import data from Excel into Power BI Desktop
 
@@ -65,7 +62,7 @@ To get started with building reports in Power BI, you first need to bring in you
 1. In the Navigator pane, select the worksheet or table you want to import.
 1. Select **Load** to bring the data into Power BI.
 
-This allows you to build reports and visualizations using your Excel data.
+This allows you to build reports and visualizations using your Excel data. If your Excel workbook already contains Power Query queries or Power Pivot models, you can import the entire workbook using **File > Import > Power Query, Power Pivot, Power View**. For more information, see [Import Excel workbooks into Power BI Desktop](../connect-data/desktop-import-excel-workbooks.md).
 
 ### Analyze Power BI data in Excel
 
@@ -89,7 +86,7 @@ Once your data is loaded, you may need to clean or reshape it before building vi
    - **Change Data Type** to ensure fields are correctly formatted
 1. When you're done, select **Close & Apply** to save your changes and return to the main view.
 
-Cleaning your data ensures your visuals are accurate and meaningful.
+Cleaning your data ensures your visuals are accurate and meaningful. For a comprehensive guide to Power Query Editor features and advanced transformation scenarios, see [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md).
 
 ## Create your first visualizations
 
