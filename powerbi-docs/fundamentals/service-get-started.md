@@ -25,8 +25,6 @@ This tutorial is an introduction to some of the features of the *Power BI servic
 
 In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md)?
 
-If you're a report *reader* or *viewer* rather than a creator, check out the [Getting around in the Power BI service](../consumer/end-user-experience.md) tutorial.
-
 In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
