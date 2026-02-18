@@ -62,7 +62,7 @@ Find details for each visual type in the following sections.
 
 ### Area chart
 
-For more information about area chart visuals, see [How the new line sampling algorithm works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works).
+For more information about area chart visuals, see [How the line sampling algorithm works](../create-reports/desktop-high-density-sampling.md#how-the-line-sampling-algorithm-works).
 
 ### Bar or column chart
 
@@ -116,7 +116,7 @@ Trend axis limits:
 
 ### Line chart
 
-For more information about line chart visuals, see [How the new line sampling algorithm works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works).
+For more information about line chart visuals, see [How the line sampling algorithm works](../create-reports/desktop-high-density-sampling.md#how-the-line-sampling-algorithm-works).
 
 ### Line chart, high density
 
