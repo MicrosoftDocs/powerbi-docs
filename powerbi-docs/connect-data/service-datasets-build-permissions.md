@@ -22,6 +22,7 @@ Users also need Build permission to do the following actions:
 - Export underlying Power BI data.
 - Build new content on the semantic model, such as with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 - Access the data via the XML for Analysis (XMLA) endpoint.
+- Query semantic model through a Fabric Data Agent
 
 ## How users get Build permission
 
