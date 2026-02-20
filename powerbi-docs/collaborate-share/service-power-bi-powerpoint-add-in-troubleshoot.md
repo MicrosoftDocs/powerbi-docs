@@ -113,6 +113,10 @@ If you get the **Cannot run Power BI** error even though you're sure that WebVie
 
 ![Briefcase address bar indicator for sites marked as "work"](./media/service-power-bi-powerpoint-add-in-troubleshoot/power-bi-add-in-microsoft-edge-wip-notify.png)
 
+## Sign-in and account issues
+
+If the live report page doesn’t load or repeatedly prompts for sign-in, this could mean PowerPoint and Power BI are signed in with different work accounts. Sign in to PowerPoint using the same work account that has access to the report, then restart PowerPoint and try again.
+
 ### More resources
 
 * [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
