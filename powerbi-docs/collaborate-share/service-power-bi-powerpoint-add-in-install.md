@@ -149,6 +149,8 @@ Use the following procedure to create a shareable link to a report in your prese
 - **Sensitivity labels aren't automatically applied to exported presentations**: When you export a Power BI report with a sensitivity label to PowerPoint, the label isn't automatically applied to the resulting presentation. To help protect your data, manually apply the appropriate sensitivity label to the PowerPoint file after export.
 For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
+- **PowerPoint and Power BI must be signed in using the same work account to add a live report page.** The Power BI and PowerPoint add-ins require the same work account to be signed in. If different accounts are used, the report page might not load.
+
 ## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
