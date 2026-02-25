@@ -105,7 +105,7 @@ The card visual introduces a dynamic *collage* layout, letting you highl
 
 When you select a category header to filter other visuals, the following limitations apply:
 
-- The selected category header doesn't dim to indicate it's selected.
+- The selected category header doesn't indicate it's selected.
 - Selection only works when the category header position is set to top or bottom. Left or right positions don't support selection.
 - To deselect a category header, you must select somewhere else on the card. Selecting the category header again doesn't deselect it.
 - You can't use **Edit interactions** to control which visuals the card filters.
