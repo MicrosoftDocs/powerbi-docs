@@ -7,7 +7,7 @@ ms.reviewer: ruiromano, justinmartin
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 01/20/2026
+ms.date: 02/26/2026
 ai-usage: ai-assisted
 ---
 
@@ -32,11 +32,11 @@ fabric-cicd is specifically designed for deploying source-controlled Fabric arti
 
 * **Uses Fabric native REST APIs** - Built on official Microsoft Fabric APIs, ensuring compatibility and long-term support
 * **Python-native** - Seamless integration with modern Python-based DevOps workflows
-* **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
-* **Developer-friendly**: Simple Python scripts that can run locally or in CI/CD pipelines
-* **Flexible deployment control**: Deploy only specific item types (e.g., semantic models without reports, or semantic models with or without data cache) and ensure consistent configurations like default pages or parameters without manual intervention
-* **Orphan cleanup**: Automatically removes items from workspace that no longer exist in source control
-* **Reliable authentication**: Uses Azure Identity SDK with multiple authentication options
+* **Parameterization** - Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
+* **Developer-friendly** - Simple Python scripts that can run locally or in CI/CD pipelines
+* **Flexible deployment control** - Deploy only specific item types (e.g., semantic models without reports, or semantic models with or without data cache) and ensure consistent configurations like default pages or parameters without manual intervention
+* **Orphan cleanup** - Automatically removes items from workspace that no longer exist in source control
+* **Reliable authentication** - Uses Azure Identity SDK with multiple authentication options
 
 > [!NOTE]
 > For complete documentation, see the [fabric-cicd documentation](https://microsoft.github.io/fabric-cicd/latest/).
@@ -97,23 +97,23 @@ Create a `deploy.py` file in your project directory:
 
 ```python
 import argparse
-import sys
 from azure.identity import InteractiveBrowserCredential, AzureCliCredential
 from fabric_cicd import FabricWorkspace, publish_all_items
 
 parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
-parser.add_argument("--workspace_id", type=str, required=True, help="Target workspace ID")
+parser.add_argument("--workspace_name", type=str, required=False, help="Target workspace name", default="PBIP Fabric CICD Dev")
 parser.add_argument("--environment", type=str, default="dev", help="Environment name")
+parser.add_argument("--spn-auth", type=bool, default=False, help="Use SPN authentication via Azure CLI")
 args = parser.parse_args()
 
-# Use AzureCliCredential in CI/CD, fall back to InteractiveBrowserCredential for local
-try:
-    credential = AzureCliCredential()
-except Exception:
+# Use InteractiveBrowserCredential for local development, AzureCliCredential for CI/CD pipelines
+if not args.spn_auth:
     credential = InteractiveBrowserCredential()
+else:
+    credential = AzureCliCredential()
 
 workspace_params = {
-    "workspace_id": args.workspace_id,
+    "workspace_name": args.workspace_name,
     "environment": args.environment,
     "repository_directory": ".",
     "item_type_in_scope": ["SemanticModel", "Report"],
@@ -126,11 +126,14 @@ publish_all_items(target_workspace)
 
 ### 4. Deploy
 
-Run the deployment script with your workspace ID:
+Run the deployment script with your workspace name:
 
 ```bash
-python deploy.py --workspace_id "11111111-1111-1111-1111-111111111111"
+python deploy.py --workspace_name "PBIP Fabric CICD Dev"
 ```
+
+> [!NOTE]
+> You can also use the workspace ID (GUID) by replacing `workspace_name` with `workspace_id` in both the script's `workspace_params` dictionary and the command-line argument.
 
 Your browser opens for authentication. After signing in, fabric-cicd deploys your PBIP files to the target workspace. You see progress messages like:
 
@@ -171,7 +174,7 @@ find_replace:
       prod: "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"  # Prod lakehouse
 ```
 
-When you run `python deploy.py --workspace_id "11111111-1111-1111-1111-111111111111" --environment dev`, fabric-cicd automatically:
+When you run `python deploy.py --workspace_name "PBIP Fabric CICD Dev" --environment dev`, fabric-cicd automatically:
 1. Reads the parameter.yml file
 2. Finds all instances of `find_value` in your PBIP definition files
 3. Replaces them with the corresponding environment-specific `replace_value`
@@ -228,11 +231,11 @@ trigger:
       - main
 
 variables:
-  - name: workspace_ids
+  - name: workspace_names
     value: |
       {
-        "dev": "11111111-1111-1111-1111-111111111111",
-        "main": "22222222-2222-2222-2222-222222222222"
+        "dev": "PBIP Fabric CICD Dev",
+        "main": "PBIP Fabric CICD Prod"
       }
   - name: environments
     value: |
@@ -267,13 +270,13 @@ stages:
                 $branch_ref = $env:BUILD_SOURCEBRANCH
                 $branch_name = $branch_ref -replace '^refs/heads/', ''
                 
-                $workspace_ids = '$(workspace_ids)' | ConvertFrom-Json
+                $workspace_names = '$(workspace_names)' | ConvertFrom-Json
                 $environments = '$(environments)' | ConvertFrom-Json
                 
-                $workspace_id = $workspace_ids.$branch_name
+                $workspace_name = $workspace_names.$branch_name
                 $environment = $environments.$branch_name
                 
-                python -u deploy.py --workspace_id "$workspace_id" --environment "$environment"
+                python -u deploy.py --spn-auth True --workspace_name "$workspace_name" --environment "$environment"
                 
                 if ($LASTEXITCODE -ne 0) {
                     Write-Error "Deployment failed with exit code: $LASTEXITCODE"
@@ -288,9 +291,9 @@ stages:
    - Create a new Azure Resource Manager service connection using your service principal credentials
    - For detailed instructions, see [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure)
    - Update the `azureSubscription` value in the YAML to match your service connection name
-2. **Update the workspace IDs in the YAML**:
-   - Edit the `workspace_ids` variable in azure-pipelines.yml
-   - Set your dev and prod workspace IDs
+2. **Update the workspace names in the YAML**:
+   - Edit the `workspace_names` variable in azure-pipelines.yml
+   - Set your dev and prod workspace names
    - Commit and push the changes to your repository
 3. **Create the pipeline**:
    - Go to Pipelines > New pipeline
@@ -329,9 +332,9 @@ jobs:
         run: |
           $branch_name = "${{ github.ref_name }}"
           
-          $workspace_ids = @{
-            "dev" = "11111111-1111-1111-1111-111111111111"
-            "main" = "22222222-2222-2222-2222-222222222222"
+          $workspace_names = @{
+            "dev" = "PBIP Fabric CICD Dev"
+            "main" = "PBIP Fabric CICD Prod"
           }
           
           $environments = @{
@@ -339,23 +342,24 @@ jobs:
             "main" = "prod"
           }
           
-          $workspace_id = $workspace_ids[$branch_name]
+          $workspace_name = $workspace_names[$branch_name]
           $environment = $environments[$branch_name]
           
-          echo "workspace_id=$workspace_id" >> $env:GITHUB_OUTPUT
+          echo "workspace_name=$workspace_name" >> $env:GITHUB_OUTPUT
           echo "environment=$environment" >> $env:GITHUB_OUTPUT
       
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscriptions: true
       
       - name: Deploy PBIP to Fabric
         shell: pwsh
         run: |
           pip install fabric-cicd
           
-          python -u deploy.py --workspace_id "${{ steps.workspace.outputs.workspace_id }}" --environment "${{ steps.workspace.outputs.environment }}"
+          python -u deploy.py --spn-auth True --workspace_name "${{ steps.workspace.outputs.workspace_name }}" --environment "${{ steps.workspace.outputs.environment }}"
           
           if ($LASTEXITCODE -ne 0) {
               Write-Error "Deployment failed with exit code: $LASTEXITCODE"
@@ -371,16 +375,15 @@ jobs:
      {
        "clientId": "<service-principal-client-id>",
        "clientSecret": "<service-principal-secret>",
-       "subscriptionId": "<azure-subscription-id>",
        "tenantId": "<azure-tenant-id>"
      }
      ```
    - Go to GitHub repository Settings > Secrets and variables > Actions
    - Add `AZURE_CREDENTIALS` with the JSON above
 
-2. **Update the workspace IDs in the workflow**:
-   - Edit the `workspace_ids` hashtable in the "Set workspace variables" step in `.github/workflows/deploy.yml`
-   - Set your dev and prod workspace IDs
+2. **Update the workspace names in the workflow**:
+   - Edit the `workspace_names` hashtable in the "Set workspace variables" step in `.github/workflows/deploy.yml`
+   - Set your dev and prod workspace names
    - Commit and push the workflow YAML to your repository
 
 ## Related content
