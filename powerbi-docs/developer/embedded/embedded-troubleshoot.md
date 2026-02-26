@@ -106,7 +106,7 @@ When you register a Microsoft Entra app, there are two parameters called *object
 
 If you're using Power BI Embedded and Microsoft Entra direct authentication, you might receive a message like the previous message when you try to sign in, because direct authentication isn't enabled.
 
-You can turn direct authentication back on using an [Microsoft Entra policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+You can turn direct authentication back on using a [Microsoft Entra policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this policy only on a per-app basis.
 
