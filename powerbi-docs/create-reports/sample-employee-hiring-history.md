@@ -29,7 +29,7 @@ This tour explores the Employee Hiring and History built-in sample in the Power 
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 

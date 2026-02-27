@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Another way to add a new [dashboard tile](../consumer/end-user-tiles.md) is by pinning an entire report page. This method allows you to pin more than one visualization at a time. Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. Changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.
+Another way to add a new [dashboard tile](../explore-reports/end-user-tiles.md) is by pinning an entire report page. This method allows you to pin more than one visualization at a time. Also, when you pin an entire page, the tiles are *live*; you can interact with them right there on the dashboard. Changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.
 
 :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png" alt-text="Screenshot of live tile page pinned from the report." lightbox="media/service-dashboard-pin-live-tile-from-report/power-bi-pin-entire-page.png":::
 
@@ -67,6 +67,6 @@ Open the dashboard to see the pinned live tile:
 
 ## Related content
 
-- [Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)
+- [Dashboards for business users of the Power BI service](../explore-reports/end-user-dashboards.md)
 
 More questions? Ask the [Power BI Community](https://community.powerbi.com/).

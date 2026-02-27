@@ -27,7 +27,7 @@ We recommend you consider using a Power BI paginated report when:
 
 ## Legacy reports
 
-When you already have SQL Server Reporting Services (SSRS) [Report Definition Language (RDL)](/sql/reporting-services/reports/report-definition-language-ssrs) reports, you can choose to redevelop them as [Power BI reports](../consumer/end-user-reports.md), or migrate them as paginated reports to Power BI. For more information, see [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md).
+When you already have SQL Server Reporting Services (SSRS) [Report Definition Language (RDL)](/sql/reporting-services/reports/report-definition-language-ssrs) reports, you can choose to redevelop them as [Power BI reports](../explore-reports/end-user-reports.md), or migrate them as paginated reports to Power BI. For more information, see [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md).
 
 Once published to a Power BI workspace, paginated reports are available side by side with Power BI reports. They can then be easily distributed using [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 

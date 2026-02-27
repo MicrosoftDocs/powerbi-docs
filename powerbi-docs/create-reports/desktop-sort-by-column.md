@@ -24,7 +24,7 @@ Here's a common example. You have a Month Name column, and when you add it to a 
 :::image type="content" source="media/desktop-sort-by-column/power-bi-alphabetical-sort-chart.png" alt-text="Screenshot of a line chart in Power BI Desktop.":::
 
 > [!NOTE]
-> When you're reading a report, you can also change how the values in a visual are sorted. See [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md) for details.
+> When you're reading a report, you can also change how the values in a visual are sorted. See [Change how a chart is sorted in a Power BI report](../explore-reports/end-user-change-sort.md) for details.
 
 ## Set the column to use for sorting
 
@@ -104,6 +104,6 @@ With so many options for sorting your visuals, creating just the chart or image 
 
 You might also be interested in the following articles:
 
-- [Change how a chart is sorted in a Power BI report](../consumer/end-user-change-sort.md)
+- [Change how a chart is sorted in a Power BI report](../explore-reports/end-user-change-sort.md)
 - [Use cross-report drillthrough in Power BI Desktop](desktop-drillthrough.md)
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)

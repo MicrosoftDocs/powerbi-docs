@@ -17,9 +17,9 @@ LocalizationGroup: Reports
 
 You can create and edit reports in both the Power BI service and Power BI Desktop. In the Power BI service, you create and edit reports in **Editing view**. In Power BI Desktop, you create and edit reports in [Report view](desktop-report-view.md). This article covers Editing view in the Power BI service.
 
-The Power BI service has two different modes for interacting with reports: [Reading view](../consumer/end-user-reading-view.md) for report *business users* and Editing view for report owners and creators. You need a Power BI Pro or Premium Per User (PPU) license to share reports and to edit reports created by others. Without a Pro or Premium Per User (PPU) license, you can create reports in your My Workspace, but you can't [share them](../collaborate-share/service-share-reports.md).
+The Power BI service has two different modes for interacting with reports: [Reading view](../explore-reports/end-user-reading-view.md) for report *business users* and Editing view for report owners and creators. You need a Power BI Pro or Premium Per User (PPU) license to share reports and to edit reports created by others. Without a Pro or Premium Per User (PPU) license, you can create reports in your My Workspace, but you can't [share them](../collaborate-share/service-share-reports.md).
 
-In report Editing view, you have flexibility in both exploring and designing a report. All the [Reading view](../consumer/end-user-reading-view.md) functionality is available plus much more.
+In report Editing view, you have flexibility in both exploring and designing a report. All the [Reading view](../explore-reports/end-user-reading-view.md) functionality is available plus much more.
 
 ## Prerequisites
 
@@ -47,6 +47,6 @@ A Power BI Pro or Premium Per User (PPU) license is required to edit reports cre
 
 ## Related content
 
-* [Power BI capabilities for business users](../consumer/end-user-reading-view.md)
+* [Power BI capabilities for business users](../explore-reports/end-user-reading-view.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

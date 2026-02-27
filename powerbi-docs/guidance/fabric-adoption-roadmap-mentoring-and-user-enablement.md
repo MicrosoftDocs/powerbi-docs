@@ -83,7 +83,7 @@ During a review, an expert from the COE evaluates self-service Fabric content de
 
 Here are some examples of when a best practices review could be beneficial.
 
-- The sales team has a [Power BI app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
+- The sales team has a [Power BI app](../explore-reports/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
 - The finance team would like to [assign a workspace to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new Fabric solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 

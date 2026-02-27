@@ -21,11 +21,11 @@ LocalizationGroup: Dashboards
 
 Q&A is a Power BI tool for exploring your data by using natural language. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
 
-In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md) in the Power BI service, ask a question by using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../consumer/end-user-q-and-a.md).
+In this how-to article, we open a [dashboard](../explore-reports/end-user-dashboards.md) in the Power BI service, ask a question by using natural language to create a visualization, and pin that visualization to the dashboard. Dashboards aren't available in Power BI Desktop. For information on using Q&A with other Power BI tools and content, see the [Power BI Q&A overview](../explore-reports/end-user-q-and-a.md).
 
 ## Prerequisites
 
-- You just need a [Fabric free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../fundamentals/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
 - You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample dashboard](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
@@ -72,7 +72,7 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 ## Related content
 
 - [Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
-- [Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Display content in more detail: focus mode and full screen mode](../explore-reports/end-user-report-view.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

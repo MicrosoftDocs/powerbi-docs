@@ -24,7 +24,7 @@ A Power BI visualization is constructed using data from your semantic models. If
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Show as a table* and *Export Data* are both available in Power BI Desktop and the Power BI service. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the semantic model](../consumer/end-user-show-data.md).
+> *Show as a table* and *Export Data* are both available in Power BI Desktop and the Power BI service. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the semantic model](../create-reports/end-user-show-data.md).
 
 ## Using *Show as a table*
 
@@ -56,7 +56,7 @@ To follow this tutorial in Power BI Desktop, download the [Opportunity Analysis 
 
 ## Using Show records
 
-You can also focus on one data record in a visualization, and drill into the details behind it. For more information, see [Use Visual table and Data point table in Power BI](../consumer/end-user-show-data.md).
+You can also focus on one data record in a visualization, and drill into the details behind it. For more information, see [Use Visual table and Data point table in Power BI](../create-reports/end-user-show-data.md).
 
 ## Considerations and troubleshooting
 

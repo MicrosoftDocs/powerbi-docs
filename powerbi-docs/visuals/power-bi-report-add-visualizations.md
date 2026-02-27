@@ -131,6 +131,6 @@ You can also use drag-and-drop with the **Data** and **Visualizations** panes to
 ## Related content
 
 - [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
-- [Learn about interacting with visualizations](../consumer/end-user-reading-view.md)
+- [Learn about interacting with visualizations](../explore-reports/end-user-reading-view.md)
 - [Move and resize a visualization](power-bi-visualization-move-and-resize.md)
 - [Power BI Community](https://community.powerbi.com/) 

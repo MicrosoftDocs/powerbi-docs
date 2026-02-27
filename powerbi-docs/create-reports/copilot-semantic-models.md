@@ -339,7 +339,7 @@ You should only use Copilot to consume semantic models once you've taken the nec
 > [!TIP]
 > Consider using [tags to label semantic models](/fabric/governance/tags-apply) as ready for Copilot consumption. This can be a convenient way to allow data consumers to identify models that they can use with Copilot and expect better results. Alternatively, you can also consider the readiness of a semantic model for use with Copilot as a criteria for its [endorsement](/fabric/governance/endorsement-overview) to promoted or even [certified](/fabric/admin/endorsement-certification-enable) status.
 >
-> If your models aren't ready for use with Copilot in Power BI, but users still want the flexibility to interrogate the data themselves, consider using [personalize visuals](power-bi-personalize-visuals.md?tabs=powerbi-desktop). Alternatively, you can show users how to use [explorations of the data](../consumer/explore-data-service.md) or to [connect to the semantic model](../connect-data/desktop-report-lifecycle-datasets.md) from Power BI Desktop or Excel to create their own reports.
+> If your models aren't ready for use with Copilot in Power BI, but users still want the flexibility to interrogate the data themselves, consider using [personalize visuals](power-bi-personalize-visuals.md?tabs=powerbi-desktop). Alternatively, you can show users how to use [explorations of the data](../explore-reports/explore-data-service.md) or to [connect to the semantic model](../connect-data/desktop-report-lifecycle-datasets.md) from Power BI Desktop or Excel to create their own reports.
 
 ### Power BI Desktop
 
@@ -347,7 +347,7 @@ In Power BI Desktop, you can ask data questions of your semantic model by using 
 
 You can also use the DAX query view to consume a semantic model by generating DAX queries. Advanced users of Power BI might do this if they prefer to explore data using code.
 
-However, for most data consumers, it's generally more convenient and more efficient to consume and explore a semantic model by adding visuals to the report canvas, or using other items like [explorations](../consumer/explore-data-service.md) or Analyze-in-Excel pivot tables. These items typically have a simpler user interface and user experience better suited to exploring and understanding data than natural language chat-like experiences, such as Copilot.
+However, for most data consumers, it's generally more convenient and more efficient to consume and explore a semantic model by adding visuals to the report canvas, or using other items like [explorations](../explore-reports/explore-data-service.md) or Analyze-in-Excel pivot tables. These items typically have a simpler user interface and user experience better suited to exploring and understanding data than natural language chat-like experiences, such as Copilot.
 
 > [!TIP]
 > You can use Copilot experiences in Power BI when connected to semantic models that are published to Pro or PPU workspaces. The only requirement is that you configure Power BI Desktop to consume Copilot from a F64 workspace; this occurs independently of which semantic model that you connect to and consume.

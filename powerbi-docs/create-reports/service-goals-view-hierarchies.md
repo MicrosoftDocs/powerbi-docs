@@ -1,10 +1,8 @@
 ---
-title: View hierarchies in Power BI Scorecards
+title: View hierarchies in Power BI scorecards
 description: You can view  and interact with hierarchies for a scorecard two different ways.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -12,12 +10,12 @@ ms.date: 11/30/2024
 ms.custom: intro-get-started
 #customer intent: As a Power BI user I want to learn about how to get started with hierarchies in Power BI.
 ---
-# View hierarchies in Power BI Scorecards
+# View hierarchies in Power BI scorecards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 > [!WARNING]
-> Hierarchies in Scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
+> Hierarchies in scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
 
 Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can view and interact with hierarchies in scorecards two different ways.
 
@@ -56,7 +54,7 @@ Customize the heatmap view in the **Display settings** dialog box.
 
 :::image type="content" source="media/service-goals-get-started-hierarchies/hierarchies-heatmap-display-settings.png" alt-text="A screenshot of heatmap view display settings.":::
 
-## Considerations and Limitations
+## Considerations and limitations
 
 - Premium or Pay-per-user (PPU) workspace is required.
 - There are data limits on hierarchies:

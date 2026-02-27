@@ -39,7 +39,7 @@ There are licenses that apply to an individual (per-user) and a license (often a
 
 ### Free per-user license
 
-Users with free licenses can use the Power BI service to connect to data and create reports and dashboards for their own use. They can't use the Power BI sharing or collaborating features with others, or publish content to other people's workspaces. However, Pro and PPU users can share content and collaborate with free users if the content is saved in workspaces hosted in Premium capacity, Fabric F64, or greater capacity. To learn more about workspaces, see [Types of workspaces](../consumer/end-user-workspaces.md#types-of-workspaces). To learn more about features available to users with a free license, see [Power BI service feature list](../consumer/end-user-features.md).
+Users with free licenses can use the Power BI service to connect to data and create reports and dashboards for their own use. They can't use the Power BI sharing or collaborating features with others, or publish content to other people's workspaces. However, Pro and PPU users can share content and collaborate with free users if the content is saved in workspaces hosted in Premium capacity, Fabric F64, or greater capacity. To learn more about workspaces, see [Types of workspaces](../collaborate-share/end-user-workspaces.md#types-of-workspaces). To learn more about features available to users with a free license, see [Power BI service feature list](../fundamentals/end-user-features.md).
 
 ### Pro license
 
@@ -65,7 +65,7 @@ Learn more about capacity options in [Microsoft Fabric capacity licenses](/fabri
 
 For a comparison of Power BI Pro and Power BI Premium, see the *Power BI features comparison* section of [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
-To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](end-user-license.md).
+To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../fundamentals/end-user-features.md) and [Types of licenses for Power BI consumers](end-user-license.md).
 
 ## Related content
 

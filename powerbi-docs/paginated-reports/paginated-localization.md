@@ -49,5 +49,5 @@ When publishing/uploading a report from Power BI Report Builder
 
 ## Related content
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

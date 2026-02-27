@@ -1,4 +1,4 @@
-- name: Power BI troubleshooting and known issues
+- name: Power BI troubleshooting documentation
   href: index.yml
   expanded: true
   items:
@@ -27,7 +27,9 @@
       - name: Troubleshoot report performance in Power BI
         href: ../guidance/report-performance-troubleshoot.md
       - name: Troubleshoot the Power BI add-in for PowerPoint
-        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md 
+        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md
+      - name: "Fix 'corporate SSL certificate untrusted' on Android"
+        href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md 
     - name: Capacity management
       expanded: false
       items:

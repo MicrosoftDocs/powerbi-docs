@@ -8,7 +8,8 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 02/04/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI to discover where distributions vary

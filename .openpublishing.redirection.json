@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/collaborate-share/end-user-shared-with-me.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-shared-with-me",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/visuals/power-bi-visualization-types-for-reports-and-q-and-a.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": true
@@ -52,8 +57,13 @@
     },
     {
       "source_path": "powerbi-docs/create-reports/service-metrics-follow.md",
-      "redirect_url": "/power-bi/create-reports/service-goals-follow",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/create-reports/service-goals-check-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/service-goals-follow.md",
+      "redirect_url": "/power-bi/create-reports/service-goals-check-in",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/create-reports/service-metrics-submetrics.md",
@@ -1402,12 +1412,12 @@
     },
     {
       "source_path": "powerbi-docs/service-shared-with-me.md",
-      "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
+      "redirect_url": "/power-bi/explore-reports/end-user-shared-with-me",
       "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/consumer/end-user-shared-with-me.md",
-      "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
+      "redirect_url": "/power-bi/explore-reports/end-user-shared-with-me",
       "redirect_document_id": true
     },
     {
@@ -4807,7 +4817,12 @@
     },
     {
       "source_path": "powerbi-docs/desktop-send-smile-privacy-statement.md",
-      "redirect_url": "/power-bi/fundamentals/desktop-send-smile-privacy-statement",
+      "redirect_url": "https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/desktop-send-smile-privacy-statement.md",
+      "redirect_url": "https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/",
       "redirect_document_id": false
     },
     {
@@ -6617,7 +6632,7 @@
     },
     {
       "source_path": "powerbi-docs/enterprise/desktop-privacy-levels.md",
-      "redirect_url": "/fabric/enterprise/powerbi/desktop-privacy-levels",
+      "redirect_url": "/power-query/privacy-levels",
       "redirect_document_id": false
     },
     {
@@ -6962,7 +6977,12 @@
     },
     {
       "source_path": "powerbi-docs/visuals/power-bi-visualization-text-slicer-considerations-limitations.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-text-slicer",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-input-slicer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-text-slicer.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-input-slicer",
       "redirect_document_id": false
     },
     {
@@ -7038,6 +7058,481 @@
     {
       "source_path": "powerbi-docs/consumer/end-user-focus.md",
       "redirect_url": "/power-bi/consumer/end-user-report-view#zoom-in-on-a-visual",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-features.md",
+      "redirect_url": "/power-bi/fundamentals/end-user-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-workspaces.md",
+      "redirect_url": "/power-bi/collaborate-share/end-user-workspaces",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/org-app-items/org-app-cicd.md",
+      "redirect_url": "/power-bi/developer/embedded/org-app-cicd",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-download-samples.md",
+      "redirect_url": "/power-bi/fundamentals/mobile-apps-download-samples",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-deep-link-specific-location.md",
+      "redirect_url": "/power-bi/developer/embedded/mobile-apps-deep-link-specific-location",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-nfc-tags.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-nfc-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-app-configuration.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-app-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-app-shared-device-mode.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-app-shared-device-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md",
+      "redirect_url": "/power-bi/troubleshoot/mobile-android-app-error-corporate-ssl-account-is-untrusted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-dataset-refresh.md",
+      "redirect_url": "/power-bi/connect-data/mobile-apps-dataset-refresh",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-launch-item.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-launch-item",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-app-interaction-settings.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-app-interaction-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/business-user-teams-create-reports.md",
+      "redirect_url": "/power-bi/collaborate-share/business-user-teams-create-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content.md",
+      "redirect_url": "/power-bi/explore-reports/copilot-pane-summarize-content",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/copilot-chat-with-data-standalone.md",
+      "redirect_url": "/power-bi/explore-reports/copilot-chat-with-data-standalone",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/org-app-items/org-app-items.md",
+      "redirect_url": "/power-bi/explore-reports/org-app-items",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-alerts.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-analyze-visuals.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-analyze-visuals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-app-view.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-app-view",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-apps.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-arcgis.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-arcgis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-bookmarks.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-bookmarks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-buttons.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-buttons",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-change-sort.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-change-sort",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-comment.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-comment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-dashboard-open.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-dashboard-open",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-dashboards.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-experience.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-experience",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-favorite.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-favorite",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-fresh.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-fresh",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-glossary.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-glossary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-insight-types.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-insight-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-insights.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-insights",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-interactions.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-interactions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-paginated-report.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-paginated-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-personalize-visuals.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-personalize-visuals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-print.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-print",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-q-and-a-tips.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-q-and-a-tips",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-q-and-a.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-q-and-a",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-reading-view.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-reading-view",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-related.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-related",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-report-filter.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-report-filter",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-report-open.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-report-open",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-report-view.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-report-view",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-reports.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-search-sort.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-search-sort",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-sign-in.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-sign-in",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-slicer.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-slicer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-spotlight.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-spotlight",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-tiles.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-tiles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-visualizations.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-visualizations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/explore-data-service.md",
+      "redirect_url": "/power-bi/explore-reports/explore-data-service",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/paginated-reports-view-parameters.md",
+      "redirect_url": "/power-bi/explore-reports/paginated-reports-view-parameters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/paginated-reports-view-power-bi-service.md",
+      "redirect_url": "/power-bi/explore-reports/paginated-reports-view-power-bi-service",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/business-user-teams-meetings.md",
+      "redirect_url": "/power-bi/explore-reports/business-user-teams-meetings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/business-user-teams-goals.md",
+      "redirect_url": "/power-bi/explore-reports/business-user-teams-goals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/business-user-teams-share-data.md",
+      "redirect_url": "/power-bi/explore-reports/business-user-teams-share-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/business-user-set-alerts.md",
+      "redirect_url": "/power-bi/explore-reports/business-user-set-alerts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/copilot-pane-summarize-content.md",
+      "redirect_url": "/power-bi/explore-reports/copilot-pane-summarize-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/copilot-chat-with-data-standalone.md",
+      "redirect_url": "/power-bi/explore-reports/copilot-chat-with-data-standalone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-android-app-get-started.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-android-app-get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-app-quick-access-shortcuts.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-app-quick-access-shortcuts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apple-watch.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apple-watch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-b2b.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-b2b",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-copilot.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-copilot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-dark-mode.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-dark-mode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-real-world-context.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-data-in-real-world-context",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-for-mobile-devices.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-for-mobile-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-geographic-filtering.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-geographic-filtering",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-home-page.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-home-page",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-ios-search-integration.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-ios-search-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-metrics.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-metrics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-offline-data.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-offline-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-org-apps.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-org-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-qr-code.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-qr-code",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-quickstart-view-dashboard-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-scan-barcode.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-scan-barcode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-split-screen.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-split-screen",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-supported-languages.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-supported-languages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-view-dashboard.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-view-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-apps-view-phone-report.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-apps-view-phone-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-copilot-overview.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-copilot-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-iphone-app-get-started.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-iphone-app-get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-reports-in-the-mobile-apps.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-reports-in-the-mobile-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-set-data-alerts-in-the-mobile-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-share-dashboard-from-the-mobile-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-standalone-copilot.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-standalone-copilot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/mobile-whats-new-in-the-mobile-apps.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/mobile-whats-new-in-the-mobile-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/mobile/tutorial-mobile-apps-ios-qna.md",
+      "redirect_url": "/power-bi/explore-reports/mobile/tutorial-mobile-apps-ios-qna",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/index.yml",
+      "redirect_url": "/power-bi/explore-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-accessibility-consuming-tools.md",
+      "redirect_url": "/power-bi/explore-reports/desktop-accessibility-consuming-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-consumer.md",
+      "redirect_url": "/power-bi/personas/business-user/end-user-consumer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/end-user-faq.yml",
+      "redirect_url": "/power-bi/personas/business-user/end-user-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/consumer/context/context.yml",
+      "redirect_url": "/power-bi/personas/business-user/context/context",
       "redirect_document_id": false
     }
   ]

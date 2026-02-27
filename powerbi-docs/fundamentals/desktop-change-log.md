@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 01/30/2026
+ms.date: 02/19/2026
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## January 2026 QFE 2 
+
+*Version 2.150.2455.0, Released: February 12, 2026* 
+
+Bug fixes/improvements: 
+
+- Addressed an issue of missing ADBC driver assemblies.
 
 ## January 2026 QFE 1 
 

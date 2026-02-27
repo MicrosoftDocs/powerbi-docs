@@ -81,7 +81,7 @@ The strategy you choose for read-only consumers can be different. It should be b
 
 ### Power BI app permissions
 
-A [Power BI app](../consumer/end-user-apps.md) delivers a collection of reports, dashboards, and workbooks to consumers. An app provides the best user experience for consumers because:
+A [Power BI app](../explore-reports/end-user-apps.md) delivers a collection of reports, dashboards, and workbooks to consumers. An app provides the best user experience for consumers because:
 
 - The app's navigation pane provides a simple and intuitive user experience. It's a nicer experience than accessing content directly in a workspace.
 - Content can be logically organized into sections (which are like folders) in the app's navigation pane.
@@ -166,7 +166,7 @@ The capability to add the semantic model Reshare or Build permissions while publ
 
 #### App pre-installation rights
 
-After you publish a Power BI app, a user typically needs to [install](../consumer/end-user-app-view.md) it so they can open it. A user can install an app from the Apps page in the Power BI service, or by using a link they've received from another user. They'll be able to find (and install) an app when they're included in at least one audience of the app.
+After you publish a Power BI app, a user typically needs to [install](../explore-reports/end-user-app-view.md) it so they can open it. A user can install an app from the Apps page in the Power BI service, or by using a link they've received from another user. They'll be able to find (and install) an app when they're included in at least one audience of the app.
 
 An alternative approach to install an app is to _push_ it to app consumers. It results in the pre-installation of the app so that it automatically shows up in the Apps page in the Power BI service. This approach is a convenience for consumers because they don't need to find and install the app. However, pre-installed apps can become an annoyance for users because they might become overwhelmed by too many apps that aren't relevant to them.
 

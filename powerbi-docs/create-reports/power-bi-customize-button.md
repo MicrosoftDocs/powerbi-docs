@@ -82,5 +82,5 @@ Just like Power BI built-in shapes, Power BI buttons can have artistic effects t
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
 - [Create and configure buttons in Power BI reports](desktop-buttons.md)
-- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
+- [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md)
 - [Create a drillthrough button in Power BI](desktop-drillthrough.md)

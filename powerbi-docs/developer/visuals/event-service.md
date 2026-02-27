@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 12/15/2025
+ms.date: 02/27/2026
 #customer intent: As a Power BI visual developer, I want to learn how to use the rendering events API so that I can notify Power BI that my visual is ready for export to PowerPoint or PDF.
 ---
 
@@ -19,94 +19,106 @@ These events let listeners (primarily, *export to PDF* and *export to PowerPoint
 >[!IMPORTANT]
 >Any visual that exports data (for example, to a PowerPoint or *.pdf* file) must contain rendering events to ensure that the export doesn't begin before the visual finished rendering.
 
-The **rendering events API** consists of three methods that should be called during rendering:
+The **rendering events API** consists of three methods to call during rendering:
 
-* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
+* `renderingStarted`: Call this method to indicate that rendering started. **Always call this method as the first line of your *update* method**, since that's where the rendering process begins.
 
-* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the **last line of code executed** when the visual updates. It's usually, but not always, the last line of the update method.
+* `renderingFinished`: Call this method when rendering completes successfully, to notify listeners that the visual's image is ready for export. **This call should be the last line of code that runs** when the visual updates. It's usually, but not always, the last line of the update method.
 
-* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process wasn't completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
+* `renderingFailed`: Call this method if a problem occurs during rendering, to notify listeners that rendering didn't complete. You can pass an optional string to provide a reason for the failure.
 
 > [!NOTE]
 > *Rendering events* are a requirement for visuals certification. Without them your visual won't be approved by the Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
 ## How to use the rendering events API
 
-To call the rendering methods, you have to first import them from the *IVisualEventService*.
+To call the rendering methods, first import the `IVisualEventService` type.
 
-1. In your `visual.ts` file, include the line:
+1. In your `visual.ts` file, add the following import:
 
     ```typescript
     import IVisualEventService = powerbi.extensibility.IVisualEventService;
     ```
 
-2. In the `IVisual` class include the line:
+2. In the `IVisual` class, add a private field:
 
     ```typescript
     private events: IVisualEventService;
     ```
 
-3. In the `constructor` method of the `IVisual` class
+3. In the `constructor` method of the `IVisual` class, initialize the field:
 
     ```typescript
     this.events = options.host.eventService;
     ```
 
-You can now call the methods
+You can now call
 `this.events.renderingStarted(options);`,
 `this.events.renderingFinished(options);`, and
 `this.events.renderingFailed(options);` where appropriate in your *update* method.
 
-## Example 1: Visual without animations
+## Rendering event lifecycle
 
-Here's an example of a simple visual that uses the *render events* API.
+Follow these rules in every `update()` cycle:
+
+1. Call `renderingStarted` when rendering begins.
+1. Call exactly one completion method for that cycle:
+   - `renderingFinished` when rendering succeeds, or
+   - `renderingFailed` when rendering fails.
+1. For async rendering, call `renderingFinished` only after rendering is truly complete.
+
+> [!IMPORTANT]
+> Don't let the `update()` method exit without signaling completion. After you call `renderingStarted`, you must always call either `renderingFinished` or `renderingFailed`.
+
+## Code implementation patterns
+
+### Synchronous update with failure handling
 
 ```typescript
-    export class Visual implements IVisual {
-        ...
-        private events: IVisualEventService;
-        ...
+public update(options: VisualUpdateOptions): void {
+  this.host.eventService.renderingStarted(options);
 
-        constructor(options: VisualConstructorOptions) {
-            ...
-            this.events = options.host.eventService;
-            ...
-        }
-
-        public update(options: VisualUpdateOptions) {
-            this.events.renderingStarted(options);
-            ...
-            this.events.renderingFinished(options);
-        }
+  try {
+    this.renderView(options); // visual rendering logic
+    this.host.eventService.renderingFinished(options);
+  } catch (error) {
+    this.host.eventService.renderingFailed(options, String(error));
+    throw error;
+  }
+}
 ```
 
-## Example 2: Visual with animations
-
-If the visual has animations or asynchronous functions for rendering, the `renderingFinished` method should be called after the animation or inside async function, even if it's not the last line of the *update* method.
+### Asynchronous update with failure handling
 
 ```typescript
-    export class Visual implements IVisual {
-        ...
-        private events: IVisualEventService;
-        private element: HTMLElement;
-        ...
+public async update(options: VisualUpdateOptions): Promise<void> {
+  this.host.eventService.renderingStarted(options);
 
-        constructor(options: VisualConstructorOptions) {
-            ...
-            this.events = options.host.eventService;
-            this.element = options.element;
-            ...
-        }
+  try {
+    await this.renderAsync(options); // visual rendering logic
+    this.host.eventService.renderingFinished(options);
+  } catch (error) {
+    this.host.eventService.renderingFailed(options, String(error));
+    throw error;
+  }
+}
+```
 
-        public update(options: VisualUpdateOptions) {
-            this.events.renderingStarted(options);
-            ...
-            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
-            d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
-                // renderingFinished called after transition end
-                this.events.renderingFinished(options);
-            });
-        }
+### Promise chain with `.then().catch()`
+
+```typescript
+public update(options: VisualUpdateOptions): void {
+  this.host.eventService.renderingStarted(options);
+
+  this.renderAsync(options) // visual rendering logic
+    .then(() => {
+      this.host.eventService.renderingFinished(options);
+    })
+    .catch((error) => {
+      this.host.eventService.renderingFailed(options, String(error));
+      throw error;
+    });
+}
 ```
 
 ## Related content

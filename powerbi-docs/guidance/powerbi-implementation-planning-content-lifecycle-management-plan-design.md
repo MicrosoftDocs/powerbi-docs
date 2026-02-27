@@ -119,7 +119,7 @@ You can re-use a shared semantic model by using the following downstream item ty
   - [Activator (formerly Reflex)](/fabric/real-time-intelligence/data-activator/activator-introduction)
   - [AI skills](/fabric/data-science/concept-ai-skill)
   - [Copilot](../create-reports/copilot-ask-data-question.md)
-  - [Explorations](../consumer/explore-data-service.md)
+  - [Explorations](../explore-reports/explore-data-service.md)
   - [Notebooks](/fabric/data-science/read-write-power-bi-python) (via the [Semantic Link](/fabric/data-science/semantic-link-power-bi?tabs=sql) and [semantic-link-labs](https://github.com/microsoft/semantic-link-labs) libraries)
 
 The following sections give an overview of important considerations when you use semantic models with some of these items.
@@ -132,7 +132,7 @@ The following sections give an overview of important considerations when you use
 There are several different ways in which users can engage with semantic models via reports:
 - **Viewing reports.** The standard scenario, in which a user views data in a report that you distribute or share with them.
 - **Connecting to the semantic model and creating a new report.** With [build permissions](../connect-data/service-datasets-build-permissions.md), users can create a new report in Power BI Desktop or in the Power BI service. This report has a live connection to the shared semantic model. Users can also convert the live connected report to a new composite semantic model that queries the original by using DirectQuery.
-- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../consumer/explore-data-service.md) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../consumer/explore-data-service.md#permissions-requirements-and-limitations).
+- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../explore-reports/explore-data-service.md) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../explore-reports/explore-data-service.md#permissions-requirements-and-limitations).
 - **Personalizing report visuals, in which users can change field and formatting.** [Personalize visuals](../create-reports/power-bi-personalize-visuals.md?tabs=powerbi-desktop) works similar to an exploration, but it only requires read permissions, and doesn't create a new item. Personalize visuals also use any perspectives that a user applies to a report page, which limits the available fields that a user can see and use.
 
 These various scenarios create a number of considerations that you must keep in mind for your semantic models, such as:

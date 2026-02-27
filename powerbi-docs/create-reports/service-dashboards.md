@@ -20,7 +20,7 @@ A Power BI *dashboard* is a single page, often called a canvas, that tells a sto
 
 ![Screenshot of an example Power BI dashboard.](media/service-dashboards/power-bi-dashboard2.png)
 
-Dashboards are a feature of the Power BI service. They're not available in Power BI Desktop. You can't create dashboards on mobile devices, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
+Dashboards are a feature of the Power BI service. They're not available in Power BI Desktop. You can't create dashboards on mobile devices, but you can [view and share](../explore-reports/mobile/mobile-apps-view-dashboard.md) them there.
 
 ## Dashboard basics
 
@@ -53,7 +53,7 @@ The ability to create a dashboard is considered a *creator* feature and requires
 ## Dashboards versus reports
 
 
-[Reports](../consumer/end-user-reports.md) and dashboards seem similar because they're both canvases filled with visualizations, but there are major differences, as you can see in the following table.
+[Reports](../explore-reports/end-user-reports.md) and dashboards seem similar because they're both canvases filled with visualizations, but there are major differences, as you can see in the following table.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
@@ -61,7 +61,7 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | Data sources | One or more reports and one or more semantic models per dashboard | A single semantic model per report |
 | Drilling down in visuals | Only if you [pin an entire report page](service-dashboard-pin-live-tile-from-report.md) to a dashboard. | Yes |
 | Available in Power BI Desktop | No | Yes. You can build and view reports in Power BI Desktop. |
-| Filtering | No. You can't filter or slice a dashboard. You can filter a [dashboard tile in focus mode](../consumer/end-user-focus.md#work-in-focus-mode), but can't save the filter. | Yes. There are many different ways to filter, highlight, and slice. |
+| Filtering | No. You can't filter or slice a dashboard. You can filter a [dashboard tile in focus mode](../explore-reports/end-user-report-view.md#focus-mode), but can't save the filter. | Yes. There are many different ways to filter, highlight, and slice. |
 | [Feature content on colleagues' Home page](../collaborate-share/service-featured-content.md#feature-a-dashboard-or-report)  | Yes | Yes |
 | Favorites | Yes. You can set multiple dashboards as *favorites*. | Yes. You can set multiple reports as *favorites*. |
 | Natural language queries (Q&A) | Yes | Yes, provided you have edit permissions for the report and underlying semantic model. |

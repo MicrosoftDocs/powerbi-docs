@@ -326,7 +326,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * Reuse of visual calculations using copy/paste or other mechanisms isn't available.
 * You can't filter on visual calculations.
 * A visual calculation can't refer to itself on the same or different detail level.
-* [Personalization](../consumer/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
+* [Personalization](../explore-reports/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
 * You can't pin a visual that uses visual calculations or hidden fields to [a dashboard](../create-reports/service-dashboards.md).
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
 * When exporting data from visuals, visual calculation results aren't included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).

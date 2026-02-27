@@ -1,10 +1,8 @@
 ---
-title: Get Started with Hierarchies in Power BI Scorecards
+title: Get started with hierarchies in Power BI scorecards
 description: You can set up a hierarchy for a scorecard and map the Power BI semantic models referenced by your metrics to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with hierarchies in scorecards
@@ -20,7 +18,7 @@ ai-usage: ai-assisted
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 > [!WARNING]
-> Hierarchies in Scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
+> Hierarchies in scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
 
 Metrics support cascading scorecards that roll up along hierarchies you set up in your scorecard. You can set up a hierarchy for a scorecard and map the Power BI semantic models referenced by your goals to the hierarchy levels and owner fields, automatically creating a new scorecard view for each slice of your data.
 

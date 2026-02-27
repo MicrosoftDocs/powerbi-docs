@@ -176,4 +176,4 @@ You can always cancel your free subscription, cancel a purchase, or end your tri
 
 - [Power BI quickstart for getting an individual license](service-self-service-signup-for-power-bi.md).
 - [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
-- [Power BI features by license type](../consumer/end-user-features.md)
+- [Power BI features by license type](../fundamentals/end-user-features.md)

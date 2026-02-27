@@ -23,6 +23,11 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ## January 2026
 
 ### Power BI Report Server
+- *Version: 1.25.9552.1669 (build 15.0.1120.119), Released: February 25, 2026*
+    - Fixed issue where certain types of Power BI Reports lead to excessive crash dumps being created.
+
+> [!NOTE] 
+> There is a known issue with build 15.0.1120.113 of January 2026 PBIRS where excessive crash dumps are created. All users are advised to move to a later release to avoid this issue.
 
 - *Version: 1.25.9508.3237 (build 15.0.1120.113), Released: January 21, 2026*
     - Added support for SQL Server 2025 Enterprise Core Product ID (key).

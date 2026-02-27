@@ -19,7 +19,7 @@ Creating template apps in Power BI requires attention to multiple components bey
 - **Queries**. With queries, you [connect](desktop-connect-to-data.md) and [transform](../transform-model/desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 - **Data model**. In the data model, you create [relationships](../transform-model/desktop-create-and-manage-relationships.md), [measures](../transform-model/desktop-measures.md), and Q&A improvements.  
 - **Report pages**. [Report pages](../create-reports/desktop-report-view.md) include visuals and filters to provide insights into your data.
-- **Dashboard** and **tiles**. [Dashboards](../consumer/end-user-dashboards.md) and [tiles](../create-reports/service-dashboard-create.md) offer an overview of the insights included.
+- **Dashboard** and **tiles**. [Dashboards](../explore-reports/end-user-dashboards.md) and [tiles](../create-reports/service-dashboard-create.md) offer an overview of the insights included.
 - **Sample data**. A sample makes your app discoverable immediately after installation.
 
 You might be familiar with each piece as existing Power BI features. When you build a template app, there are other things to consider for each piece. This article describes theses considerations along with tips other helpful information related to authoring template apps.

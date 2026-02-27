@@ -48,7 +48,7 @@ Because dashboards are meant to show important information at a glance, having a
 
 ## Make use of full-screen mode
 
-When presenting a dashboard, display it in [full-screen mode](../consumer/end-user-focus.md) and without distractions.
+When presenting a dashboard, display it in [full-screen mode](../explore-reports/end-user-report-view.md) and without distractions.
 
 ## Accent the most important information
 
@@ -88,7 +88,7 @@ Here are some helpful tips:
 
 - Remove unnecessary data labels from your charts. Users can usually understand values in bar charts without displaying the actual number.
 
-- Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
+- Pay attention to how [charts are sorted](../explore-reports/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
 
 For more visualization-specific guidance, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md).  
 

@@ -1,8 +1,8 @@
 ---
 title: Understand translytical task flows
 description: Learn how translytical task flows enable data write-back capabilities in Power BI reports with user data functions in Fabric.
-author: kgremban
-ms.author: kgremban
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -40,7 +40,7 @@ Ready to get started?
 
 Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Using Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
 
-For example, the following Power BI report lets you modify the discount value seen in the table without ever leaving the report. When you enter the new value in the text slicer and select **Submit discount**, a Fabric User data function automatically updates the data source records that match the applied filters. 
+For example, the following Power BI report lets you modify the discount value seen in the table without ever leaving the report. When you enter the new value in the input slicer and select **Submit discount**, a Fabric User data function automatically updates the data source records that match the applied filters. 
 
 :::image type="content" source="./media/translytical-task-flow-overview/example-write-back.gif" alt-text="Animated gif that shows a Power BI report that includes an interactive interface for modifying a data record." lightbox="./media/translytical-task-flow-overview/example-write-back.gif":::
 
@@ -68,7 +68,7 @@ For working samples of user data functions, see [Translytical task flow examples
 
 Translytical task flows are currently in public preview, and also rely on other features in public preview. Make sure that the required features are enabled in Power BI Desktop.
 
-In Power BI Desktop, you need to enable translytical task flows, text slicers, and list slicers.
+In Power BI Desktop, you need to enable translytical task flows and list slicers.
 
 Use the following steps to enable preview features in Power BI:
 
@@ -77,8 +77,9 @@ Use the following steps to enable preview features in Power BI:
 1. Select the following features:
 
    * **Translytical task flows**
-   * **Text slicer visual** for scenarios that require freeform input.
    * **List slicer visual** for scenarios that require slicer selection.
+
+The input slicer is generally available and doesn't require enabling a preview feature.
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
@@ -86,7 +87,7 @@ Translytical task flows work by using [user data functions in Fabric](/fabric/da
 
 Currently, the following limitations apply to translytical task flows:
 
-* Only the new preview slicers (button slicer, list slicer, and text slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
+* Only the new preview slicers (button slicer, list slicer, and input slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
 * PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
 * Power BI Embedded isn't supported.
 

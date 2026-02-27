@@ -225,4 +225,4 @@ After you save the report, you see a success or failure notification in the top 
 
 ## Related content
 
-- [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../../explore-reports/paginated-reports-view-power-bi-service.md)

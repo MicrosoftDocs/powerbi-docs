@@ -138,6 +138,6 @@ Same as the general troubleshooting steps for reports with data access issues. S
 
 - [Subreports in Power BI paginated reports](subreports.md).
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md).
 
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).

@@ -4,7 +4,7 @@ title: Power BI MCP server documentation
 summary: Learn about the Power BI Model Context Protocol (MCP) servers and how they enable AI assistants to interact with Power BI semantic models for intelligent data insights and automated task completion.
 
 metadata:
-  title: Power BI MCP server documentation
+  title: MCP server documentation
   description: Learn about the Power BI Model Context Protocol (MCP) servers, an integration solution that enables AI assistants to interact with Power BI semantic models.
   services: powerbi
   ms.service: powerbi

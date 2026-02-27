@@ -1,0 +1,330 @@
+# =============================================================================
+# DOCUMENTATION ROOT (REQUIRED)
+# =============================================================================
+- name: Power BI report exploration documentation
+  href: index.yml
+
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
+- name: Overview
+  items:
+  - name: Explore reports in Power BI
+    href: explore-reports-overview.md
+
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+- name: Get started
+  items:
+  - name: Sign in for the first time
+    href: end-user-sign-in.md
+  - name: Get around the Power BI service
+    href: end-user-experience.md
+  - name: Search and sort content
+    href: end-user-search-sort.md
+  - name: Find content shared with you
+    href: end-user-shared-with-me.md
+  - name: Apps
+    items:
+    - name: Apps in Power BI
+      href: end-user-apps.md
+    - name: Install and use apps
+      href: end-user-app-view.md
+    - name: Get started with org apps (preview)
+      href: org-app-items.md
+
+# =============================================================================
+# OPEN AND NAVIGATE REPORTS
+# =============================================================================
+- name: Open and navigate reports
+  items:
+  - name: Reports
+    items:
+    - name: Reports overview
+      href: end-user-reports.md
+    - name: Open a report
+      href: end-user-report-open.md
+    - name: Interact with reports
+      href: end-user-reading-view.md
+    - name: Change report display settings
+      href: end-user-report-view.md
+  - name: Dashboards
+    items:
+    - name: Dashboards overview
+      href: end-user-dashboards.md
+    - name: Open a dashboard
+      href: end-user-dashboard-open.md
+    - name: Interact with dashboard tiles
+      href: end-user-tiles.md
+  - name: Paginated reports
+    items:
+    - name: Paginated reports overview
+      href: end-user-paginated-report.md
+    - name: View a paginated report
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interact with parameters
+      href: paginated-reports-view-parameters.md
+  - name: View related content
+    href: end-user-related.md
+  - name: Check content freshness
+    href: end-user-fresh.md
+
+# =============================================================================
+# FIND WHAT MATTERS IN A REPORT
+# =============================================================================
+- name: Find what matters in a report
+  items:
+  - name: Use Q&A
+    items:
+    - name: Q&A overview
+      href: end-user-q-and-a.md
+    - name: Tips and tricks for Q&A
+      href: end-user-q-and-a-tips.md
+  - name: Use Copilot
+    items:
+    - name: Summarize report content
+      href: copilot-pane-summarize-content.md
+    - name: Chat with your data
+      href: copilot-chat-with-data-standalone.md
+    - name: "Tutorial: Discover data"
+      href: ../create-reports/tutorial-copilot-power-bi-discover-data.md?context=/power-bi/explore-reports/context/context
+    - name: "Tutorial: Explore data"
+      href: ../create-reports/tutorial-copilot-power-bi-explore-data.md?context=/power-bi/explore-reports/context/context
+
+# =============================================================================
+# INTERACT WITH VISUALS
+# =============================================================================
+- name: Interact with visuals
+  items:
+  - name: Work with visuals in a report
+    href: end-user-visualizations.md
+  - name: Use ArcGIS maps
+    href: end-user-arcgis.md
+  - name: Interact with small multiples
+    href: ../visuals/power-bi-visualization-small-multiples-interact.md?context=/power-bi/explore-reports/context/context
+  - name: Filter and slice data
+    items:
+    - name: Use filters
+      href: end-user-report-filter.md
+    - name: Use slicers
+      href: end-user-slicer.md
+    - name: Understand cross-filtering
+      href: end-user-interactions.md
+    - name: Change sort order
+      href: end-user-change-sort.md
+  - name: Drill into details
+    items:
+    - name: Use buttons and actions
+      href: end-user-buttons.md
+    - name: Use Explore (preview)
+      href: explore-data-service.md
+
+# =============================================================================
+# ANALYZE AND UNCOVER INSIGHTS
+# =============================================================================
+- name: Analyze and uncover insights
+  items:
+  - name: View automatic insights
+    href: end-user-insights.md
+  - name: Types of insights
+    href: end-user-insight-types.md
+  - name: Analyze fluctuations in visuals
+    href: end-user-analyze-visuals.md
+  - name: Understand anomaly detection
+    href: ../visuals/power-bi-visualization-anomaly-detection.md?context=/power-bi/explore-reports/context/context
+
+# =============================================================================
+# COMPARE AND EVALUATE DATA
+# =============================================================================
+- name: Compare and evaluate data
+  items:
+  - name: View data behind a visual
+    href: ../visuals/service-reports-show-data.md?context=/power-bi/explore-reports/context/context
+  - name: Understand data point limits
+    href: ../visuals/power-bi-data-points.md?context=/power-bi/explore-reports/context/context
+
+# =============================================================================
+# CUSTOMIZE AND SAVE VIEWS
+# =============================================================================
+- name: Customize and save views
+  items:
+  - name: Personalize visuals
+    href: end-user-personalize-visuals.md
+  - name: Create and use bookmarks
+    href: end-user-bookmarks.md
+  - name: Spotlight visuals
+    href: end-user-spotlight.md
+  - name: Favorite content
+    href: end-user-favorite.md
+
+# =============================================================================
+# EXPORT AND WORK WITH REPORT DATA
+# =============================================================================
+- name: Export and work with report data
+  items:
+  - name: Export data from a visual
+    href: ../visuals/power-bi-visualization-export-data.md?context=/power-bi/explore-reports/context/context
+  - name: Export a report to PDF
+    href: ../collaborate-share/end-user-pdf.md?context=/power-bi/explore-reports/context/context
+  - name: Export a report to PowerPoint
+    href: ../collaborate-share/end-user-powerpoint.md?context=/power-bi/explore-reports/context/context
+  - name: Download reports to Desktop
+    href: ../create-reports/service-export-to-pbix.md?context=/power-bi/explore-reports/context/context
+  - name: Print reports and dashboards
+    href: end-user-print.md
+
+# =============================================================================
+# SHARE AND DISCUSS INSIGHTS
+# =============================================================================
+- name: Share and discuss insights
+  items:
+  - name: Add comments
+    href: end-user-comment.md
+  - name: Subscribe to reports and dashboards
+    href: ../collaborate-share/end-user-subscribe.md?context=/power-bi/explore-reports/context/context
+  - name: Set alerts on reports
+    href: business-user-set-alerts.md
+  - name: Set alerts on dashboards
+    href: end-user-alerts.md
+  - name: Use Power BI in Teams
+    items:
+    - name: Use data for productive meetings
+      href: business-user-teams-meetings.md
+    - name: Use metrics to drive results
+      href: business-user-teams-goals.md
+    - name: Lead data-driven discussions
+      href: business-user-teams-share-data.md
+
+# =============================================================================
+# USE ACCESSIBILITY TOOLS
+# =============================================================================
+- name: Use accessibility tools
+  items:
+  - name: Accessibility overview
+    href: ../create-reports/desktop-accessibility-overview.md?context=/power-bi/explore-reports/context/context
+  - name: Use accessibility features
+    href: desktop-accessibility-consuming-tools.md
+  - name: Keyboard shortcuts
+    href: ../create-reports/desktop-accessibility-keyboard-shortcuts.md?context=/power-bi/explore-reports/context/context
+
+# =============================================================================
+# EXPLORE REPORTS ON MOBILE
+# =============================================================================
+- name: Explore reports on mobile
+  items:
+  - name: Overview
+    items:
+    - name: What are the mobile apps?
+      href: mobile/mobile-apps-for-mobile-devices.md
+    - name: What's new in the mobile apps
+      href: mobile/mobile-whats-new-in-the-mobile-apps.md
+    - name: Meet the home page
+      href: mobile/mobile-apps-home-page.md
+  - name: View content
+    items:
+    - name: Explore dashboards and reports
+      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+    - name: View dashboards
+      href: mobile/mobile-apps-view-dashboard.md
+    - name: View reports
+      href: mobile/mobile-reports-in-the-mobile-apps.md
+    - name: View reports optimized for your phone
+      href: mobile/mobile-apps-view-phone-report.md
+    - name: View org apps
+      href: mobile/mobile-apps-org-apps.md
+    - name: View on-premises KPIs and reports
+      href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+  - name: Use Copilot
+    items:
+    - name: Overview of Copilot in mobile apps
+      href: mobile/mobile-copilot-overview.md
+    - name: Standalone Copilot
+      href: mobile/mobile-standalone-copilot.md
+    - name: In-report Copilot
+      href: mobile/mobile-apps-copilot.md
+  - name: Interact and share
+    items:
+    - name: Share a dashboard or report
+      href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+    - name: Work with metrics
+      href: mobile/mobile-apps-metrics.md
+    - name: Filter a report by location
+      href: mobile/mobile-apps-geographic-filtering.md
+    - name: Use data in real-world context
+      href: mobile/mobile-apps-data-in-real-world-context.md
+    - name: Scan QR codes
+      href: mobile/mobile-apps-qr-code.md
+    - name: Scan barcodes
+      href: mobile/mobile-apps-scan-barcode.md
+    - name: Ask questions with Q&A virtual analyst
+      href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Dark mode
+      href: mobile/mobile-apps-dark-mode.md
+    - name: Access reports with NFC tags
+      href: mobile/mobile-apps-nfc-tags.md
+  - name: Offline access and external content
+    items:
+    - name: View your data offline
+      href: mobile/mobile-apps-offline-data.md
+    - name: Access external org content (B2B)
+      href: mobile/mobile-apps-b2b.md
+  - name: Platform specifics
+    items:
+    - name: iOS
+      items:
+      - name: Get started with the iOS app
+        href: mobile/mobile-iphone-app-get-started.md
+      - name: iOS device search integration
+        href: mobile/mobile-apps-ios-search-integration.md
+      - name: Apple Watch app
+        href: mobile/mobile-apple-watch.md
+    - name: Android
+      items:
+      - name: Get started with the Android app
+        href: mobile/mobile-android-app-get-started.md
+      - name: Use Android app shortcuts
+        href: mobile/mobile-app-quick-access-shortcuts.md
+  - name: Advanced features
+    items:
+    - name: Work side by side with other apps
+      href: mobile/mobile-apps-split-screen.md
+    - name: Configure interaction settings
+      href: mobile/mobile-app-interaction-settings.md
+    - name: Choose your startup view
+      href: mobile/mobile-apps-launch-item.md
+    - name: Use shared device mode
+      href: mobile/mobile-app-shared-device-mode.md
+    - name: Remote app configuration
+      href: mobile/mobile-app-configuration.md
+  - name: Mobile resources
+    items:
+    - name: Supported languages
+      href: mobile/mobile-apps-supported-languages.md
+
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+- name: Resources
+  items:
+  - name: Glossary and terminology
+    href: end-user-glossary.md
+  - name: Contribute to Fabric docs
+    href: /contribute/
+  - name: Microsoft Q & A
+    href: /answers/
+  - name: Provide feedback
+    items:  
+    - name: Fabric ideas
+      href: https://ideas.fabric.microsoft.com/
+    - name: Azure feedback
+      href: https://feedback.azure.com/    
+  - name: Community
+    href: https://community.fabric.microsoft.com/
+  - name: Service updates
+    href: https://azure.microsoft.com/updates/    
+  - name: Azure Status
+    href: https://azure.status.microsoft/
+  - name: Microsoft Learn training
+    href: /training/fabric/
+

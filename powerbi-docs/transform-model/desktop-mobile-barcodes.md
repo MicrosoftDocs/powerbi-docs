@@ -13,7 +13,7 @@ LocalizationGroup: Model your data
 
 # Tag barcode fields in Power BI Desktop
 
-In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so that Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, you can let someone in your organization [scan a barcode](../consumer/mobile/mobile-apps-scan-barcode.md) on a product by using the Power BI mobile app on their iOS or Android device. This barcode lets them see any report that includes it. When they open the report, it automatically filters to the data related to that barcode.
+In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so that Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. Then, you can let someone in your organization [scan a barcode](../explore-reports/mobile/mobile-apps-scan-barcode.md) on a product by using the Power BI mobile app on their iOS or Android device. This barcode lets them see any report that includes it. When they open the report, it automatically filters to the data related to that barcode.
 
 ## Categorize barcode data
 
@@ -50,7 +50,7 @@ Power BI recognizes these barcode formats if you can tag them in a Power BI repo
 
 ## Related content
 
-* [Scan barcodes from the mobile app to get filtered data](../consumer/mobile/mobile-apps-scan-barcode.md)
-* [Issues with scanning a barcode](../consumer/mobile/mobile-apps-scan-barcode.md#issues-with-scanning-a-barcode)
+* [Scan barcodes from the mobile app to get filtered data](../explore-reports/mobile/mobile-apps-scan-barcode.md)
+* [Issues with scanning a barcode](../explore-reports/mobile/mobile-apps-scan-barcode.md#issues-with-scanning-a-barcode)
 * [Specify data categories in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)

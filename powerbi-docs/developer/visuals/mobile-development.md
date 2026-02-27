@@ -15,7 +15,7 @@ ms.date: 12/15/2025
 
 Mobile devices allow users to connect to their data anytime and anywhere.
 
-[Power BI apps for Windows, iOS, and Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) enable business users to have a comprehensive view of their data that's always at their fingertips.
+[Power BI apps for Windows, iOS, and Android](../../explore-reports/mobile/mobile-apps-for-mobile-devices.md) enable business users to have a comprehensive view of their data that's always at their fingertips.
 
 As a developer creating Power BI visuals, you must address the unique constraints of each mobile device to reach as many users as possible and provide the best mobile experience.
 
@@ -61,7 +61,7 @@ The following functions are optional. The optional functions can be used to crea
   The same settings can be applied to the visuals in desktop browsers and, if needed, be overridden to adapt the visual to smaller screens.
 
   > [!NOTE]
-  > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations should be considered. See [Display content in Focus mode](../../consumer/end-user-focus.md).
+  > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations should be considered. See [Display content in Focus mode](../../explore-reports/end-user-report-view.md).
 
 * **Recommended interactivity**
 
@@ -73,7 +73,7 @@ The following functions are optional. The optional functions can be used to crea
 
 ## Supported browsers and devices
 
-Power BI visuals must render on all devices that support Power BI apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
+Power BI visuals must render on all devices that support Power BI apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../explore-reports/mobile/mobile-apps-for-mobile-devices.md).
 
 ## Related content
 

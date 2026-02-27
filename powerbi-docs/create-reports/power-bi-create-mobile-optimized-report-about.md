@@ -47,5 +47,5 @@ If you created the mobile-optimized report in the Power BI service, just save th
 ## Related content
 
 * [Start creating a mobile optimized report in mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
-* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
+* [View Power BI reports optimized for your phone](../explore-reports/mobile/mobile-apps-view-phone-report.md).
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).

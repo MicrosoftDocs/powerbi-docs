@@ -13,7 +13,7 @@ ms.custom: intro-installation
 
 # Install, share, and update template apps in your organization
 
-Are you a Power BI analyst? Here you can learn more about [template apps](service-template-apps-overview.md) and how to connect to many of the services that you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../consumer/end-user-apps.md).
+Are you a Power BI analyst? Here you can learn more about [template apps](service-template-apps-overview.md) and how to connect to many of the services that you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](../explore-reports/end-user-apps.md).
 
 :::image type="content" source="media/service-template-apps-install-distribute/power-bi-all-apps.png" alt-text="Screenshot of the Power BI apps page in the main pane." lightbox="media/service-template-apps-install-distribute/power-bi-all-apps.png":::
 

@@ -4,7 +4,6 @@ description: Set up subscriptions to receive email notifications and stay up to 
 author: kgremban
 ms.author: kgremban
 ms.reviewer: 'anphil'
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -78,6 +77,6 @@ You can see all the subscriptions for a scorecard.
 
 - [Get started with goals in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
+- [Stay on top of your goals in Power BI](service-goals-check-in.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

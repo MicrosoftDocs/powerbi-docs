@@ -27,6 +27,6 @@ Want to improve Quick Insights results? If you're a semantic model owner, try th
 
 ## Related content
 
-* [Power BI quick insights](../consumer/end-user-insights.md)
+* [Power BI quick insights](../explore-reports/end-user-insights.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -1,4 +1,4 @@
-- name: "Power BI embedded analytics documentation"
+- name: Power BI embedded analytics documentation
   href: index.yml
   expanded: true
   items:
@@ -26,12 +26,16 @@
       href: change-permissions.md
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
+    - name: "CI/CD for org apps"
+      href: org-app-cicd.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md
   - name: "Embed content"
     items:
+    - name: "Create deep links for Power BI mobile apps"
+      href: mobile-apps-deep-link-specific-location.md
     - name: "Embed using service principal"
       href: embed-service-principal.md
     - name: "Embed using service principal and a certificate"
@@ -114,6 +118,18 @@
     items:
     - name: "Embedded analytics solution accelerators"
       href: embedded-analytics-accelerators.md
+  - name: Power BI mobile app administration
+    items:
+    - name: "Configure mobile app settings (MDM)"
+      href: ../../explore-reports/mobile/mobile-app-configuration.md
+    - name: "Shared device mode for mobile apps"
+      href: ../../explore-reports/mobile/mobile-app-shared-device-mode.md
+    - name: "Configure interaction settings"
+      href: ../../explore-reports/mobile/mobile-app-interaction-settings.md
+    - name: "Set up a launch item"
+      href: ../../explore-reports/mobile/mobile-apps-launch-item.md
+    - name: "Use NFC tags with Power BI"
+      href: ../../explore-reports/mobile/mobile-apps-nfc-tags.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"

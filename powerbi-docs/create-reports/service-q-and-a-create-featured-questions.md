@@ -24,7 +24,7 @@ If you have edit permission for a semantic model, you can add your own featured 
 
 ## Prerequisites
 
-- You just need a [Fabric free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../fundamentals/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
 - You need a Power BI Pro license to add featured questions in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
@@ -58,7 +58,7 @@ This article uses the Retail Analysis sample. Follow these step-by-step instruct
 
 ## Related content
 
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

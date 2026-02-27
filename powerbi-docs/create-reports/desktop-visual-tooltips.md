@@ -51,7 +51,7 @@ You can also enable or disable the **Actions** footer at any time by using the *
 
 ## Styling and color
 
-For visual tooltips, the report's [theme colors](desktop-report-themes.md#set-structural-colors) determine the styling and color:
+For visual tooltips, the report's [theme colors](report-themes-create-custom.md#set-structural-colors) determine the styling and color:
 
 - The **Background elements** color sets the tooltip background.
 - The **First-level elements** color sets the text and icon color.

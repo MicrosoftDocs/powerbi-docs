@@ -53,10 +53,10 @@ The following table describes the data that's captured in the diagnostics dialog
 
 ## Considerations and limitations
 
-This feature isn't available in [Power BI apps](../consumer/end-user-apps.md) or in the [paginated report visual](../visuals/paginated-report-visual.md). It's designed for report authors to view performance data coming from a paginated report in the Power BI service.  
+This feature isn't available in [Power BI apps](../explore-reports/end-user-apps.md) or in the [paginated report visual](../visuals/paginated-report-visual.md). It's designed for report authors to view performance data coming from a paginated report in the Power BI service.  
 
 ## Related content
 
-[View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+[View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md)
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

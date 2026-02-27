@@ -21,7 +21,7 @@ This *Insights* feature helps you easily explore and find insights such as anoma
 **Did you know?** Power BI has other insights features that use artificial intelligence (AI):
 
 - [Insights for *individual visuals*](desktop-insights.md) analyzes and explains the fluctuations of data points in visuals.
-- [Insights for *dashboard tiles*](../consumer/end-user-insights.md) looks at the data being used to render that tile, and presents them in interactive visuals.
+- [Insights for *dashboard tiles*](../explore-reports/end-user-insights.md) looks at the data being used to render that tile, and presents them in interactive visuals.
 - [Quick Insights for *datasets*](service-insights.md) automatically generates data insights on a dataset in the Power BI service.
 
 ## License requirements
@@ -158,5 +158,5 @@ If no explanations are found, you see this message: "We didn’t find any signif
 For more information about insights, see the following articles:
 
 - [Apply insights in Power BI to explain fluctuations in visuals](desktop-insights.md)
-- [View data insights on dashboard tiles with Power BI](../consumer/end-user-insights.md)
+- [View data insights on dashboard tiles with Power BI](../explore-reports/end-user-insights.md)
 - [Generate data insights on your semantic model automatically with Power BI](service-insights.md)

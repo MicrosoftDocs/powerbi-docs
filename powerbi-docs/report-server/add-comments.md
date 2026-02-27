@@ -35,7 +35,7 @@ In the Comments pane, you can see any existing comments.
 Your comment shows in the pane on the web portal, along with any previous comments. They don't appear with the report on in the Power BI mobile apps.
 
 > [!TIP]
-> Did you know? You can [annotate Power BI reports in the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md#annotate-and-share) and share the annotated reports with others.
+> Did you know? You can [annotate Power BI reports in the Power BI mobile apps](../explore-reports/mobile/mobile-share-dashboard-from-the-mobile-apps.md#annotate-and-share) and share the annotated reports with others.
 
 ## Permissions
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect Excel to Power BI Semantic Models 
 description: Power BI makes it easy for you to discover and connect to centralized and secure data from wherever you work, including Microsoft Excel and Microsoft Teams.
 author: JulCsc

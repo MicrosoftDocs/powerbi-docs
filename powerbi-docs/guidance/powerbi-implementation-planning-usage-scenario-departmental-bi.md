@@ -70,7 +70,7 @@ The [managed self-service BI](powerbi-implementation-planning-usage-scenario-man
 
 ### Power BI app publication
 
-For departmental BI, a [Power BI app](../consumer/end-user-apps.md) works well for content distribution to consumers (rather than direct workspace access, which is described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). A Power BI app provides the best experience for consumers because it presents a set of related content with a user-friendly navigation experience. A Power BI app is particularly useful in situations where there's a larger and more diverse number of consumers, or when the content developer doesn't work closely with the app consumers.
+For departmental BI, a [Power BI app](../explore-reports/end-user-apps.md) works well for content distribution to consumers (rather than direct workspace access, which is described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). A Power BI app provides the best experience for consumers because it presents a set of related content with a user-friendly navigation experience. A Power BI app is particularly useful in situations where there's a larger and more diverse number of consumers, or when the content developer doesn't work closely with the app consumers.
 
 ### Power BI app permissions
 

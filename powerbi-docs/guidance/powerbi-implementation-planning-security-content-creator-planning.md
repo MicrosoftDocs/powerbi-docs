@@ -374,7 +374,7 @@ Some data sources support [single-sign on (SSO)](../connect-data/service-gateway
 
 #### Privacy levels
 
-[Data privacy levels](../enterprise/desktop-privacy-levels.md) specify isolation levels that define the degree that one data source is isolated from other data sources. When appropriately set, they ensure that Power Query only transmits compatible data between sources. When Power Query can transmit data between data sources, it can result in more efficient queries that reduce the volume of data that's sent to Power BI. When it can't transmit data between data sources, it can result in slower performance.
+[Data privacy levels](/power-query/privacy-levels) specify isolation levels that define the degree that one data source is isolated from other data sources. When appropriately set, they ensure that Power Query only transmits compatible data between sources. When Power Query can transmit data between data sources, it can result in more efficient queries that reduce the volume of data that's sent to Power BI. When it can't transmit data between data sources, it can result in slower performance.
 
 There are three privacy levels.
 
@@ -397,7 +397,7 @@ Privacy levels can be set for each data source:
 
 There's a Power BI Desktop security option that allows ignoring privacy levels to improve performance. You might use this option to improve query performance while developing a data model when there's no risk of breaching data security (because you're working with development or test data that isn't sensitive). However, this setting isn't honored by the Power BI service.
 
-For more information, see [Power BI Desktop privacy levels](../enterprise/desktop-privacy-levels.md).
+For more information, see [Power BI Desktop privacy levels](/power-query/privacy-levels).
 
 #### Native database queries
 
@@ -774,7 +774,7 @@ For more information, see [Deployment pipeline access](powerbi-implementation-pl
 
 The XMLA endpoint uses the XMLA protocol to expose all features of a tabular data model, including some [data modeling operations](../transform-model/desktop-external-tools.md#data-modeling-operations) that aren't supported by Power BI Desktop. You can use the [Tabular Object Model (TOM) API](/analysis-services/tom/tom-pbi-datasets) to make programmatic changes to a data model.
 
-The XMLA endpoint also provides connectivity. You can only connect to a semantic model when the workspace has its license mode set to **Premium per user**, **Premium per capacity**, or **Embedded**. Once a connection is made, an XMLA-compliant tool can operate on the data model to read or write data. For more information about how you can use the XMLA endpoint for managing a semantic model, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
+The XMLA endpoint also provides connectivity. You can only connect to a semantic model when the workspace has its workspace type set to **Premium per user**, **Premium per capacity**, or **Embedded**. Once a connection is made, an XMLA-compliant tool can operate on the data model to read or write data. For more information about how you can use the XMLA endpoint for managing a semantic model, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
 
 Access through the XMLA endpoint will honor existing permissions. Workspace administrators, members, and contributors implicitly have semantic model Write permission, which means they can deploy new semantic models from Visual Studio and execute [Tabular Modeling Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=asallproducts-allversions&preserve-view=true) scripts in SQL Server Management Studio (SSMS).
 

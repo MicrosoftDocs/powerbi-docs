@@ -52,7 +52,7 @@ Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, 
 
 If you must make breaking changes to your models, we recommend you either:
 
-- [View related content for the semantic model](../consumer/end-user-related.md) in the Power BI service.
+- [View related content for the semantic model](../explore-reports/end-user-related.md) in the Power BI service.
 - Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
 
 Both options allow you to quickly identify any related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related item. In fact, it's a hyperlink that opens an email message addressed to the contact.
@@ -64,7 +64,7 @@ We recommend you contact the owner of each related item to let them know of any 
 For more information related to this article, check out the following resources:
 
 - [Connect to semantic model in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
-- [View related content in the Power BI service](../consumer/end-user-related.md)
+- [View related content in the Power BI service](../explore-reports/end-user-related.md)
 - [Data lineage](../collaborate-share/service-data-lineage.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

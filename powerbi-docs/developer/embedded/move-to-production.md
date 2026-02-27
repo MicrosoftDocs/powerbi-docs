@@ -68,7 +68,7 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
 1. Select the **Premium** tab, and do the following:
 
-   1. Under **License mode**, select the type of capacity you created: **Premium per capacity** or **Embedded**.
+   1. Under **Workspace type**, select the type of capacity you created: **Premium per capacity** or **Embedded**.
 
    1. Select the capacity you created.
 

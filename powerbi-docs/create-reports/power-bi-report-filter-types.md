@@ -89,7 +89,7 @@ Pass-through filters are visual-level filters created through Q&A. If you can ed
 
 - [Add filters to reports](power-bi-report-add-filter.md)
 
-- [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
+- [Take a tour of the report Filters pane](../explore-reports/end-user-report-filter.md)
 
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 

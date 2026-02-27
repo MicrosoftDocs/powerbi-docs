@@ -47,7 +47,7 @@ Creating a translytical task flow requires three tasks to enable your automated 
 
 * **Visualize data**
 
-  Create a Power BI report that displays the source data and interactive elements that call the data function. In this tutorial, we use a text slicer to collect the product description from the user and send it to the user data function. Then, the report refreshes to show the updated table.
+  Create a Power BI report that displays the source data and interactive elements that call the data function. In this tutorial, we use an input slicer to collect the product description from the user and send it to the user data function. Then, the report refreshes to show the updated table.
 
 ## Create a SQL database
 
@@ -229,18 +229,15 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-table.png" alt-text="Screenshot that shows the Power BI report with one table added to it.":::
 
-1. In the **Visualizations** menu, select the **Text slicer** icon.
+1. In the **Visualizations** menu, select the **Input slicer** icon.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/text-slicer.png" alt-text="Screenshot that shows selecting the 'text slicer' visualization to add to the report.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/text-slicer.png" alt-text="Screenshot that shows selecting the input slicer visualization to add to the report.":::
 
-   >[!TIP]
-   >If you don't see the text slicer icon, make sure that the **Text slicer** preview feature is enabled in Power BI Desktop. For more information, see [Required preview features](./translytical-task-flow-overview.md#required-preview-features).
+   An input slicer visual appears in your report window.
 
-   A text slicer visual appears in your report window.
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-slicer.png" alt-text="Screenshot that shows the Power BI report with an input slicer added to it.":::
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-slicer.png" alt-text="Screenshot that shows the Power BI report with a text slicer added to it.":::
-
-1. Select the text slicer and use the **Format visual** > **General** > **Title** options to give the text slicer the following title: `Write a new product description`.
+1. Select the input slicer and use the **Format visual** > **General** > **Title** options to give the input slicer the following title: `Write a new product description`.
 
 1. On the taskbar, select the **Insert** menu and add a **Blank** button to the report. Drag the button under the text slicer.
 

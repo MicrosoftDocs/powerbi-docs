@@ -107,7 +107,7 @@ After you create a capacity, assign your workspace to that capacity. To complete
 
     :::image type="content" source="media/embed-paginated-reports/workspace-settings.png" alt-text="A screenshot that shows how to select Workspace settings.":::
 
-1. Select **Premium** and the license mode for the capacity you created. Then select **Save**.
+1. Select **Premium** and the workspace type for the capacity you created. Then select **Save**.
 
 1. After you save the changes, a diamond icon appears next to the app workspace name.
 

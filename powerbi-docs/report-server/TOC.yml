@@ -39,7 +39,7 @@
       - name: "Subscriptions"
         href: /sql/reporting-services/working-with-subscriptions-web-portal
       - name: "Using the mobile app"
-        href: ../consumer/mobile/mobile-apps-for-mobile-devices.md
+        href: ../explore-reports/mobile/mobile-apps-for-mobile-devices.md
     - name: Report server for developers
       items: 
       - name: "Report server for developers"

@@ -38,7 +38,7 @@ Not only does this feature allow for new exploration capabilities, it also inclu
 - Reset all their changes for a visual.
 - Clear out their recent changes.
 
-After report readers personalize a report, they can [create personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to save their personalizations. To learn how report readers can use this feature, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
+After report readers personalize a report, they can [create personal bookmarks](../explore-reports/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to save their personalizations. To learn how report readers can use this feature, see [Personalize visuals in your reports](../explore-reports/end-user-personalize-visuals.md).
 
 ## Enable personalization in a report
 
@@ -142,11 +142,11 @@ Be aware of the following limitations.
 
 - The feature isn't supported for publish to web.
 - Export to PowerPoint and PDF don't capture personalized visuals.
-- User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
+- User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../explore-reports/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
 - The Power BI mobile apps for iOS and Android tablets support this feature. The Power BI mobile apps for phones don't support this feature. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Related content
 
-- [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
+- [Personalize visuals in your reports](../explore-reports/end-user-personalize-visuals.md).
 
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).

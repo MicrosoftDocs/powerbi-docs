@@ -71,35 +71,19 @@ There are a few things to keep in mind about the Visual Query editor:
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The sign-in process is the same as the sign-in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The sign-in process is the same as the sign-in process for Power BI.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with S Q L and Azure data studio.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with SQL.":::
 
 ### When to Use In-Built Querying vs External SQL Tooling
 
 The no-code visual query editor and datamart editor are available within Power BI for your datamart. The no-code visual query editor enables users who aren't familiar with the SQL language, while the datamart editor is helpful for quick monitoring of the SQL DB.
 
-For a querying experience that provides a more comprehensive utility, combining a broad group of graphical tools with many rich script editors, SQL Server Management Studio (SSMS) and Azure Data Studio (ADS) are more robust development environments.
-
-### When to Use SQL Server Management Studio vs Azure Data Studio
-
-While both analysis experiences offer extensive development environments for SQL querying, each environment is tailored toward separate use cases.
-
-You can use SSMS for:
-
-* Complex administrative or platform configuration
-* Security management, including user management and configuration of security features
-* Live query statistics or client statistics
-
-Use ADS for:
-
-* macOS and Linux users
-* Mostly editing or executing queries
-* Quick charting and visualizing set results
+For a querying experience that provides a more comprehensive utility, combining a broad group of graphical tools with many rich script editors, SQL Server Management Studio (SSMS) is a more robust development environment.
 
 ### Get the T-SQL connection string
 
-For developers and analysts with SQL experience, using SQL Server Management Studio or Azure Data Studio as an extension to Power BI datamarts can provide a more thorough querying environment.
+For developers and analysts with SQL experience, using SQL Server Management Studio as an extension to Power BI datamarts can provide a more thorough querying environment.
 
 To connect to a datamart’s SQL endpoint with client tooling, navigate to the semantic model settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
@@ -109,7 +93,7 @@ To connect to a datamart’s SQL endpoint with client tooling, navigate to the s
 
 To use SQL Server Management Studio (SSMS), you must be using SSMS Version 18.0 or above. When you open SQL Server Management Studio, the **Connect to Server** window appears. You can open it manually by selecting **Object Explorer > Connect > Database Engine**.
 
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screenshot of the database engine option in S S M S.":::
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screenshot of the database engine option in SSMS.":::
 
 Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Microsoft Entra ID - MFA authentication is supported.
 

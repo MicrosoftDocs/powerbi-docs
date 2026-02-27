@@ -1,4 +1,4 @@
-﻿- name: "Power BI guidance documentation"
+- name: "Power BI guidance documentation"
   href: index.yml
   expanded: true
   items:

@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 
 **APPLIES TO:** [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
-You can feature dashboards, reports, and apps so they appear in the **Recommended** section of your colleagues' Power BI [Home page in Simplified view](../consumer/end-user-home.md), and in the **Featured** section in *Expanded* view. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help them find what they need. The content has to be in a workspace that they have access to.
+You can feature dashboards, reports, and apps so they appear in the **Recommended** section of your colleagues' Power BI [Home page in Simplified view](../explore-reports/end-user-experience.md), and in the **Featured** section in *Expanded* view. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help them find what they need. The content has to be in a workspace that they have access to.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Power BI Featured content on Home":::
 

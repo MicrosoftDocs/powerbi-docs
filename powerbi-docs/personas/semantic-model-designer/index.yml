@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Power BI for semantic model designers
+title: Power BI semantic model designer documentation
 summary: Learn how to transform data, create relationships, write DAX, and optimize semantic models in Power BI.
 
 metadata:
-  title: Power BI for semantic model designers
+  title: Semantic model designer documentation
   description: Learn how to transform data, build relationships, create measures with DAX, and optimize semantic models for performance in Power BI.
   ms.service: powerbi
   ms.subservice: powerbi-service

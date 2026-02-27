@@ -22,7 +22,7 @@ The following table describes the four levels of permission that control access 
 
 |Permission  |Description  |
 |------------|-------------|
-|Read        |Allows users to access and interact with reports and other solutions (such as composite models on Premium/PPU workspaces) that read data from the semantic model.</br>This includes the ability to use the [Explore](../consumer/explore-data-service.md) feature to interact with the data in these semantic models.|
+|Read        |Allows users to access and interact with reports and other solutions (such as composite models on Premium/PPU workspaces) that read data from the semantic model.</br>This includes the ability to use the [Explore](../explore-reports/explore-data-service.md) feature to interact with the data in these semantic models.|
 |Build       |Allows user to build new content from the semantic model and find content that uses the semantic model.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows user to pull the data into Analyze in Excel.<br>Allows querying using external APIs such as XMLA.<br>Allows user to see hidden data fields. |
 |Reshare     |Allows user to grant semantic model access. |
 |Write       |Allows user to republish the semantic model.<br>Allows user to [backup and restore the semantic model](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the semantic model via XMLA.<br>Allows user to manually trigger a refresh of the semantic model using **Refresh now**.<br>Allows user to edit semantic model settings, except scheduled refresh, credentials, and automatic aggregations.|

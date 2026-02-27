@@ -1,4 +1,4 @@
-- name: "Power BI MCP server documentation"
+- name: Power BI MCP server documentation
   href: index.yml
   expanded: true
   items:

@@ -117,6 +117,6 @@ For more information about features that are similar or interact with buttons, t
 
 - [Optimize Power BI Desktop](desktop-optimize-ribbon.md)
 - [Create page and bookmark navigators](button-navigators.md)
-- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
+- [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 

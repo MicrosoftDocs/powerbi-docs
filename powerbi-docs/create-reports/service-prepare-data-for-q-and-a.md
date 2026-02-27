@@ -50,7 +50,7 @@ Here are some tips for making the most of Q&A in your workbook:
 
 ## Related content
 
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)
 - [Enable Q&A for live connections in Power BI](service-q-and-a-direct-query.md)
 - [Data sources for the Power BI service](../connect-data/service-get-data.md)

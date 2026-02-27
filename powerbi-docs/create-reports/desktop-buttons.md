@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With *buttons* in Power BI, you can create reports that behave similarly to apps, and create an environment that gives users opportunities to further interact with Power BI content. When you share your reports in the Power BI service, buttons provide an app-like experience. The article [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md) describes how readers experience buttons in your reports.
+With *buttons* in Power BI, you can create reports that behave similarly to apps, and create an environment that gives users opportunities to further interact with Power BI content. When you share your reports in the Power BI service, buttons provide an app-like experience. The article [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md) describes how readers experience buttons in your reports.
 
 This article explains how to add buttons to reports in Power BI Desktop and in the Power BI service. It also covers button states and actions, and shows you how to configure them in Power BI.
 
@@ -153,7 +153,7 @@ Under **Style**, set **Fill** to **On**, and then **Browse** for an image for ea
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
-- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
+- [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md)
 - [Create page and bookmark navigators](button-navigators.md)
 - [Create report bookmarks in Power BI to share insights and build stories](desktop-bookmarks.md)
 - [Set up drillthrough in Power BI reports](desktop-drillthrough.md)

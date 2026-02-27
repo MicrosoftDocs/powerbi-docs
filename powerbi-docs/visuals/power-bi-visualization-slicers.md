@@ -30,7 +30,7 @@ Power BI provides multiple slicer visuals to meet different filtering needs:
 | [Slicer](power-bi-visualization-slicers.md) | The original slicer visual with vertical list, tile, and dropdown styles. | General-purpose filtering with familiar controls. |
 | [Button slicer](power-bi-visualization-button-slicer.md) | Interactive buttons with customizable styles, grid layouts, and image support. | Visually appealing filtering with button-based interactions. |
 | [List slicer](power-bi-visualization-list-slicer.md) (preview) | Vertical list with hierarchies, search functionality, and conditional formatting. | Filtering large datasets with search and hierarchy support. |
-| [Text slicer](power-bi-visualization-text-slicer.md) (preview) | Free-form text input for custom filter criteria. | Exact string matching and flexible text-based filtering. |
+| [Input slicer](power-bi-visualization-input-slicer.md) | Free-form text input with configurable filter operators. | Exact string matching, partial matching, and flexible text-based filtering. |
 
 In addition to slicers, you can use the **Filters pane** to apply filters at the visual, page, or report level. The Filters pane provides a centralized location for managing all filters in your report. For more information, see [Format filters in Power BI reports](../create-reports/power-bi-report-filter.md).
 
@@ -309,7 +309,7 @@ Learn more about slicers in these articles:
 
 - [Button slicer](power-bi-visualization-button-slicer.md)
 - [List slicer](power-bi-visualization-list-slicer.md) (preview)
-- [Text slicer](power-bi-visualization-text-slicer.md) (preview)
+- [Input slicer](power-bi-visualization-input-slicer.md)
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md)
 - [Relative date slicers](desktop-slicer-filter-date-range.md)
 - [Relative time slicers](../create-reports/slicer-filter-relative-time.md)

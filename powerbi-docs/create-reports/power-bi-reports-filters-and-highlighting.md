@@ -19,7 +19,7 @@ LocalizationGroup: Reports
 There are many ways to filter and highlight reports in Power BI. Putting all of that information in one article would be a lot, so we've broken it into these sections:
 
 * Introduction to filters and highlighting, the article you're reading now.
-* How [filters and highlighting work in Reading view](../consumer/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options.
+* How [filters and highlighting work in Reading view](../explore-reports/end-user-interactions.md) in the Power BI service. What you can do is more limited than Editing view, but you still have a wide range of filtering and highlighting options.
 * How to [create filters in the Filters pane](power-bi-report-add-filter.md) in Power BI Desktop and the Power BI service. When you have editing permissions for a report, you can create, modify, and delete filters in reports.
 * After you add filters, you can [format the filters](power-bi-report-filter.md) to act the way you want and to look like the rest of the report.
 * You've learned how filters and highlighting work by default. Now learn how to [change the way visualizations on a page filter and highlight each other](service-reports-visual-interactions.md).
@@ -80,7 +80,7 @@ In Reading view, you explore the data by modifying the existing filters. You're 
 
 :::image type="content" source="../media/power-bi-reset-icon.png" alt-text="Screenshot of the Reset to default icon.":::
 
-Learn more about Reading view: [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md).
+Learn more about Reading view: [Take a tour of the report Filters pane](../explore-reports/end-user-report-filter.md).
 
 ### Filters in Editing view
 
@@ -105,7 +105,7 @@ You can explore the relationships between the visuals in your report without usi
 - **Cross-highlighting** Selecting a value in one visual highlights the related data in visuals such as column and bar charts. Cross-highlighting doesn't remove the unrelated data from those visuals. The unrelated data is still visible but dimmed.
 - **Cross-filtering** Selecting a value in one visual acts more like a filter in other visuals, such as line charts, scatter charts, and maps. In those visuals, only the related data remains visible. The unrelated data isn't visible, just as you'd see with a filter.
 
-To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../consumer/end-user-interactions.md#cross-filter-and-cross-highlight) section of "How visuals cross-filter each other in a Power BI report."
+To remove the highlighting, select the value again, or select any empty space in the same visual. For more examples, see the [Cross-filtering and cross-highlighting](../explore-reports/end-user-interactions.md#cross-filter-and-cross-highlight) section of "How visuals cross-filter each other in a Power BI report."
 
 :::image type="content" source="media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif" alt-text="Animation showing cross-filtering and cross-highlighting.":::
 
@@ -113,7 +113,7 @@ To remove the highlighting, select the value again, or select any empty space in
 
 - [Add a filter to a report in Editing view](power-bi-report-add-filter.md)
 - [Format filters in Power BI reports](power-bi-report-filter.md)
-- [Take a tour of report filters](../consumer/end-user-report-filter.md)
-- [How report visuals cross-filter and cross-highlight each other in a report](../consumer/end-user-interactions.md)
+- [Take a tour of report filters](../explore-reports/end-user-report-filter.md)
+- [How report visuals cross-filter and cross-highlight each other in a report](../explore-reports/end-user-interactions.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
