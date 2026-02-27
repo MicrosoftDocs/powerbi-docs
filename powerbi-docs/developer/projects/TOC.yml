@@ -4,7 +4,7 @@
   items:
   - name: Overview
     items:
-    - name: "Power BI Desktop projects overview"
+    - name: "What is Power BI Desktop projects?"
       href: projects-overview.md
   - name: Power BI Desktop projects
     expanded: true
