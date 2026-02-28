@@ -5,7 +5,7 @@
   - name: Overview
     expanded: true
     items: 
-    - name: "Power Query Editor overview"
+    - name: "What is Power Query Editor?"
       href: desktop-query-overview.md
   - name: Tutorials
     expanded: true

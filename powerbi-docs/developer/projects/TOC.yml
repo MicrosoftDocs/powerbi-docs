@@ -2,11 +2,13 @@
   href: index.yml
   expanded: true
   items:
+  - name: Overview
+    items:
+    - name: "What is Power BI Desktop projects?"
+      href: projects-overview.md
   - name: Power BI Desktop projects
     expanded: true
     items: 
-    - name: "Power BI Desktop projects overview"
-      href: projects-overview.md
     - name: "Project semantic model folder"
       href: projects-dataset.md
     - name: "Project report folder"
