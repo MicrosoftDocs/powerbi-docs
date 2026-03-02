@@ -77,7 +77,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Fabric Copilot capacity tenant setting default update | Beginning on or after February 8, 2026, the tenant setting **Capacities can be designated as Fabric Copilot capacities** will be enabled by default for all tenants. This only updates the tenant setting—it won't modify existing capacity configurations. For more information, see [Fabric Copilot capacity](../admin/service-admin-portal-copilot.md). |          |
+| Fabric Copilot capacity tenant setting default update | Beginning on or after February 8, 2026, the tenant setting **Capacities can be designated as Fabric Copilot capacities** will be enabled by default for all tenants. This only updates the tenant setting—it won't modify existing capacity configurations. For more information, see [Fabric Copilot capacity](/fabric/admin/service-admin-portal-copilot). |          |
 
 ## Resources
 
