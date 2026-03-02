@@ -1,6 +1,6 @@
 ---
-title: See What's New in the January 2026 Power BI Update
-description: "Discover the January 2026 Power BI update: enhanced Copilot features, improved reporting capabilities, and new visualization options. Learn what's new and get started today."
+title: See What's New in the February 2026 Power BI Update
+description: "Discover the February 2026 Power BI update: expanded Copilot prompt limits, Input slicer generally available, new DAX functions, and more. Learn what's new and get started today."
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,71 +8,76 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: intro-whats-new
 ms.topic: concept-article
-ms.date: 1/20/2026
+ms.date: 2/24/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
-# What's new in Power BI: January 2026 update
+# What's new in Power BI: February 2026 update (version 2.151.1052.0)
 
-The January 2026 Power BI feature update delivers powerful enhancements across the platform. Key highlights include improved Copilot capabilities with attaching reports and semantic models to chat, enhanced color picker and format pane improvements, modern visual tooltips now generally available, and markers in Azure Maps Visual. There are also important updates to semantic model editing, GB18030-2022 character set support, and the PBIR report format becoming the default.
+Power BI's February 2026 update is here, bringing smarter Copilot and AI experiences, more flexible ways to interact with reports, polished visuals, and useful modeling enhancements—plus a few important updates to keep in mind. With FabCon right around the corner, it's the perfect time to explore what's new and get excited about what's next.
 
-For a quick summary of the January features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI January 2026 Feature Summary blog post](https://aka.ms/powerbijan2026update). You can also watch the [January demos](https://youtu.be/xYNx4a3aRZQ).
+For a quick summary of the February features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI February 2026 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2026-feature-summary/). You can also watch the [February demos](https://youtu.be/O21vXCpYdCc).
 
-> **Download** the [January 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [February 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
 
 ## Events and announcements
 
-- **Data Viz World Championships**: There's only one way to find out if you can be the world champion! By joining this global contest, you will have the opportunity to tackle three weekly challenges designed to stretch visualization skills and inspire innovation. Four finalists will be selected to compete for the title of world champion LIVE on stage at FabCon Atlanta.
-- **FabCon Americas 2026**: Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. The third annual FabCon Americas will feature sessions from your favorite Microsoft and community speakers, keynotes, more opportunities to Ask the Experts for 1:1 support, an engaging community lounge with opportunities to network and connect with your peers, a dedicated partner pre-day, a packed expo hall, attendee favorites Power Hour and the Data Viz World Championships live finals, and a can't-miss attendee party at the Georgia Aquarium. [Use code FABCOMM](https://aka.ms/fabcon) to get $200 off.
+- **Data Viz World Championships finalists**: Meet the four finalists heading to the finals at FabCon, where they battle it out for the title of 2026 Power BI DataViz World Champion. [Learn more](https://developer.microsoft.com/reactor/events/26851/) about how to register for the session and view entries.
+- **FabCon Americas 2026**: Less than one month away! Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. [Register](https://aka.ms/fabcon) with code FABCOMM to save $200.
 
 ## General
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Deprecation of Power BI Q&A | Q&A, our legacy natural language tool, will be deprecated in December 2026. Moving forward, use Power BI Copilot, which provides a more advanced and integrated solution for querying data with natural language. |        |
-| SQL Server Reporting Services (SSRS) Report Viewer Web Part Support Discontinuation | Support for SSRS SharePoint Webpart, a component that allows you to embed on-premises paginated reports directly into SharePoint Server pages, will end on April 13, 2026. While the download will continue to be available, technical support will no longer be provided. |        |
-| The Power BI application is accessible within Teams for Microsoft 365 Operated by 21Vianet | Users can acquire the Power BI app from the app store, or admins can centrally install it for them. Once added, users can view their Power BI content in Teams by using the app, and pin Power BI items to Teams channels and chats. Note that certain features aren't supported in the Power BI app for Teams operated by 21Vianet environments. For more information, refer to the service description of [Power BI operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud). |        |
+| Deprecation of Hierarchies in Power BI scorecards | Starting April 15, 2026, the Hierarchies feature in Power BI Scorecards will be removed. The Heatmap view, which was tied to hierarchies, will also be discontinued. Scorecards themselves continue to work as usual. For more information, see [Create scorecards and manual goals](../create-reports/service-goals-create.md). |        |
+| Deprecation of SSRS, PBIRS and SSAS Management Packs in SCOM | Microsoft has announced the deprecation of the System Center Operations Manager (SCOM) Management Packs for SQL Server Reporting Services (SSRS), Power BI Report Server (PBIRS), and SQL Server Analysis Services (SSAS). These management packs will no longer be supported after January 2027. |        |
+| Deprecation of legacy Import Excel & CSV experience in Power BI Service | Entry points to the legacy experience will be removed on May 31, 2026, and semantic models created using the legacy experience will stop refreshing on July 31, 2026. For guidance, see [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md). |        |
+| Deprecation of the Simba Vertica ODBC driver | The Simba Vertica ODBC Driver begins its deprecation process in February 2026. Customers should transition to the Vertica ODBC driver. For more details, see [Power Query Vertica database connector](/power-query/connectors/vertica-database#use-vertica-odbc-driver). |        |
 
 ## Copilot and AI
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Attach reference to Copilot chat in the Power BI mobile app | Attach a report or semantic model to Copilot chat as a grounded reference. To add a reference, tap the + icon or type / to search and select your desired item. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
-| Updating Prepped for AI setting name to Approved for Copilot | The setting to mark a model as prepped for AI is renamed to better reflect its purpose and functionality. For more information, see [Mark your model as approved for Copilot](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot). |          |
-| Standalone Copilot Access on Power BI Home | New standalone Copilot entry point on the Power BI Home page for faster access to insights. You can switch back to Recommended content using the picker at the top of the Home page. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
+| Expanded prompt input character limit | Based on customer feedback, the character limit for Copilot input increased from 500 characters to 10K in all Copilot surfaces, including Standalone, Report pane, Apps, Mobile, and Embed. For more information, see [Use Copilot with Power BI reports and semantic models](../create-reports/copilot-reports-overview.md). |          |
 
 ## Reporting
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Field parameters persist hierarchy level setting | New report-level setting to restore pre-July 2025 behavior for field parameters' expansion and collapse of hierarchy levels. By default, hierarchy levels remain persistent, but you can turn off this feature. For more information, see [Let report readers use field parameters to change visuals](../create-reports/power-bi-field-parameters.md). |        |
-| Format Pane Improvements | Enhanced color picker with reset to default and back button to return from custom colors to theme colors. Makes color customization more intuitive and efficient. Reset individual formatting groups without impacting the rest of the section or the whole visual with granular reset options. Provides finer control for report formatting. For more information, see [Get started formatting report visualizations](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md). |          |
-| Introducing Markers in Azure Maps Visual | New Markers capability for Azure Maps Visual allows customized icons, varying sizes, and advanced formatting features to improve narrative clarity in geospatial analysis. Available in the next few weeks. For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context). |        |
-| Modern Visual Tooltips (Generally Available) | **Now generally available**. Enhanced tooltips with drill actions footer for drilling down, up, or through data points directly from the tooltip. Automatically match report theme colors with customization options. For more information, see [Create Visual Tooltips](../create-reports/desktop-tooltips.md). |        |
-| Column Sizing Update in Tables and Matrices | Columns are now sized by default based on content they contain, making tables and matrices more compact and easier to read. You can still use **Grow to Fit** to expand columns when needed. For more information, see [Create a table visualization](../visuals/power-bi-visualization-tables.md) and [Create matrix visualizations](../visuals/power-bi-visualization-matrix-visual.md). |        |
+| Filter or enter data in reports with Input slicer (Generally Available) | The Text Slicer is now renamed to Input Slicer and is **generally available**. This interactive visual lets you filter data using free-form text input with flexible options like exact match, contains, or starts with. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-text-slicer.md). |        |
+| Paste selections into any report slicer | The paste context menu feature on the slicer visual lets you apply multiple selections by pasting a list of values directly into your slicer. For more information, see [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md?tabs=powerbi-desktop#paste-values-in-slicers). |        |
+| Card visual updates | The new Card visual default increased from 5 to 10 callouts. Selecting a category name now filters other visuals on the page. For more information, see [Create a card visual in Power BI](../visuals/power-bi-visualization-card.md?tabs=powerbi-desktop). |        |
+| Fonts compatible with non-Windows devices for Power BI reports | Default fonts such as Segoe UI in Power BI reports when viewed on a non-Windows device now show as expected. For more information, see [Supported Browsers for Power BI and Fabric](power-bi-browsers.md). |        |
+| Preview visuals update | Preview visuals now display "(Preview)" after their name and will soon appear below the divider line with custom and other unpinned visuals. For more information, see [Report visualizations](../visuals/power-bi-report-visualizations.md). |        |
+| Conditional formatting dialog updates | Enhanced conditional formatting dialog with a wider dropdown menu and helpful tooltips that display field names for easier selection. For more information, see [Apply Conditional Table Formatting](../create-reports/desktop-conditional-table-formatting.md). |        |
+| Improved error dialogs in Power BI Desktop | Additional error details for visuals in Power BI reports are now available in Power BI Desktop. For more information, see [Troubleshoot Visualizations in Power BI](../visuals/power-bi-visualization-troubleshoot.md). |        |
+| Azure Maps visual updates | Enhanced performance for Azure Maps visual with pie charts and new endpoint regions for Korea and Brazil. For more information, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started). |        |
+| Fewer steps to insight in Power BI apps | A more conversational Copilot experience in Power BI apps—just ask your question and Copilot does the work by finding the right reports or data. Copilot can also summarize what reporting is available in an app. For more information, see [Copilot for Power BI apps](../create-reports/copilot-apps-overview.md). |        |
+| Org Apps now feature Persistent Report Filters and Reset Functionality | Org apps (Preview) have been updated to retain Power BI report filters, slicers, and other data view changes. The persistent filters setting is enabled by default for all reports. For more information, see [Org apps](../consumer/org-app-items/org-app-items.md). | ✔️ |
 
 ## Modeling
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Updates on Editing Semantic Models in the Power BI Service | Models configured with incremental refresh can now be opened and edited in the Power BI Service. Note that you can't download these models as PBIX files, and Power Query editor isn't available for web editing. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
-| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. |        |
-
-## Developers and APIs
-
-| Feature | Description | Currently in preview |
-|---------|-------------|:------:|
-| Power BI Enhanced Report Format (PBIR) as Default Format | PBIR is activated by default in the Power BI service as part of a phased rollout (full availability by the end of February). The March release sets PBIR as the default in Power BI Desktop. General Availability is planned for Q3 2026. For more information, see [Power BI Project (PBIP) and Azure DevOps](../developer/projects/projects-azdo.md). | ✔️ |
+| TABLEOF and NAMEOF DAX functions | New TABLEOF function returns a reference to the table associated with a given column, measure, or calendar. NAMEOF returns the name of a table, column, measure, or calendar as a text string. These functions help write DAX that's safer and easier to maintain. For more information, see [TABLEOF](/dax/tableof-function-dax) and [NAMEOF](/dax/nameof-function-dax). |        |
 
 ## Visualizations
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Funnel Chart by Powerviz | Power BI-certified visual with four chart types in one visual for tracking progress through stages. Features include funnel settings, seven color schemes with more than 30 palettes, conversion rate analysis, fill patterns, conditional formatting, ranking, annotation, and grid view. Useful for sales funnel analysis, marketing campaigns, user onboarding, and website traffic. Available on AppSource. |          |
+| Drill Down Pie PRO (Filter) by ZoomCharts | Pie PRO (Filter) enhances pie and donut charts with advanced labeling, category level reference markers, one-click drill down, and images on slices. [Get it on AppSource](https://appsource.microsoft.com/product/WA200001678). |          |
+| Rich titles in Zebra BI Charts | Rich titles let you structure context across multiple lines for clearer hierarchy and faster comprehension. [Learn more](https://bit.ly/3LEKmLc). |          |
+| Rose Donut Pie Chart by Powerviz | Build four types of charts—rose, rose donut, donut, and pie—with 30+ color palettes, smart labels, conditional formatting, and more. [Get it on AppSource](https://appsource.microsoft.com/product/power-bi-visuals/truvizinc1674781244292.rose-donut-pie-chart-by-powerviz). |          |
+
+## Other
+
+| Feature | Description | Currently in preview |
+|---------|-------------|:--------:|
+| Fabric Copilot capacity tenant setting default update | Beginning on or after February 8, 2026, the tenant setting **Capacities can be designated as Fabric Copilot capacities** will be enabled by default for all tenants. This only updates the tenant setting—it won't modify existing capacity configurations. For more information, see [Fabric Copilot capacity](/fabric/admin/service-admin-portal-copilot). |          |
 
 ## Resources
 
@@ -93,7 +98,7 @@ If your organization needs an earlier version, download it. Use the most recent 
 - If you load a report from a newer release, get a warning, and then save it in a previous version, you lose information related to new features.
 - Only English versions of Power BI Desktop are archived.
 
-> **Download** the [January 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [February 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Past updates
 

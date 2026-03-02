@@ -87,7 +87,7 @@ Translytical task flows work by using [user data functions in Fabric](/fabric/da
 
 Currently, the following limitations apply to translytical task flows:
 
-* Only the new preview slicers (button slicer, list slicer, and input slicer) are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
+* Only the button slicer, list slicer (preview), and input slicer are automatically recognized as input controls for function parameters. If you need to use old slicers, you need to create a data analysis expression (DAX) measure to reference those inputs.
 * PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
 * Power BI Embedded isn't supported.
 

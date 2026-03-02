@@ -116,6 +116,8 @@ You can use Fabric deployment pipeline to deploy your org app across different e
 
 To learn how to use deployment pipelines, see [Introduction to deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).
 
+For complex multi-workspace deployments or Git-based CI/CD workflows with environment-specific configurations, you can also use the [fabric-cicd tool](../projects/projects-deploy-fabric-cicd.md), which can consume org app definitions from Git and apply transformations across Dev/Test/Prod stages.
+
 > [!NOTE]
 > Limitation: Org apps (preview) cannot be deployed across stages using service principals.
 

@@ -31,6 +31,10 @@ This article provides an overview of the Copilot capabilities for Power BI.
 >
 > **If you have questions about privacy or security with Copilot**, see [Privacy, security, and responsible use for Copilot in Power BI](/fabric/get-started/copilot-power-bi-privacy-security).
 
+## Prompt limits
+
+Copilot for Power BI supports up to 10,000 characters per prompt in all Copilot surfaces, including the standalone experience, the report Copilot pane, Copilot in apps, Power BI Mobile, and Power BI Embedded. This expanded limit allows you to provide longer, more detailed instructions and richer context in a single message.
+
 ## Data preparation
 
 **You need to prepare data to work with Copilot.** Model owners need to invest in prepping their data for AI to ensure Copilot understands the unique business context, prioritizes the right information, and delivers responses that are consistent, reliable, and aligned with your goals. Without this prep, Copilot can struggle to interpret data correctly - leading to generic, inaccurate, or even misleading outputs. Learn how to [prep your data](copilot-prepare-data-ai.md).

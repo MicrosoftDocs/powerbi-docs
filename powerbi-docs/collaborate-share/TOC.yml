@@ -2,8 +2,10 @@
   href: index.yml
   expanded: true
   items:
-  - name: "What's new in Power BI collaboration and integration"
-    href: service-power-bi-powerpoint-add-in-whats-new.md
+  - name: Overview
+    items:
+    - name: "What's new in Power BI collaboration and integration"
+      href: service-power-bi-powerpoint-add-in-whats-new.md
   - name: Share, publish, & endorse your work
     items: 
     - name: "Content endorsement"
