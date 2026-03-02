@@ -17,7 +17,7 @@ Many organizations want to use scorecards in processes that help them achieve re
 
 ## Create a flow
 
-1. On the **Metrics** hub page, select the scorecard you want to update.
+1. On the **Scorecards** hub page, select the scorecard you want to update.
 
 1. Select the **Create a flow** button in the ribbon.
 
@@ -29,7 +29,7 @@ Many organizations want to use scorecards in processes that help them achieve re
 
 1. Select a trigger to start your flow.
 
-From here, you can create and customize your flows to help automate business processes related to your scorecards. Using Power Automate with your Power BI metrics helps your teams and organization respond more quickly to changing conditions, and use data to take better actions.
+From here, you can create and customize your flows to help automate business processes related to your scorecards. Using Power Automate with your Power BI scorecard helps your teams and organization respond more quickly to changing conditions, and use data to take better actions.
 
  :::image type="content" source="media/service-metrics-power-automate/example-goals-flow.png" alt-text="Screenshot of An example of a flow you set up in Power Automate for your scorecard." lightbox="media/service-metrics-power-automate/example-goals-flow.png":::
 

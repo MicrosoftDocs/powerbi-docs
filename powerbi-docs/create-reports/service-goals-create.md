@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create scorecards
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 03/02/2026
 ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual goals in Power BI
@@ -35,11 +35,11 @@ You need a Power BI Pro license to author and share goals in standard workspaces
 
 1. Sign in to the [Power BI service](https://app.powerbi.com) in your browser.
 
-1. Select **Metrics** in the navigation pane to open the Metrics hub.
+1. Select **Scorecards** in the navigation pane to open the Scorecards hub.
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-left-nav.png" alt-text="Screenshot of Select Metrics in the left nav.":::
+    :::image type="content" source="media/service-goals-create/power-bi-scorecards.png" alt-text="Screenshot of Select Scorecards in the left nav.":::
 
-1. In the Metrics hub, select **New scorecard**.
+1. In the Scorecards hub, select **New scorecard**.
 
     A new scorecard opens, which you can start populating with goals.
 
