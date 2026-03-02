@@ -103,7 +103,7 @@ from fabric_cicd import FabricWorkspace, publish_all_items
 parser = argparse.ArgumentParser(description="Deploy PBIP to Fabric")
 parser.add_argument("--workspace_name", type=str, required=False, help="Target workspace name", default="PBIP Fabric CICD Dev")
 parser.add_argument("--environment", type=str, default="dev", help="Environment name")
-parser.add_argument("--spn-auth", type=bool, default=False, help="Use SPN authentication via Azure CLI")
+parser.add_argument("--spn-auth", action="store_true", help="Use SPN authentication via Azure CLI")
 args = parser.parse_args()
 
 # Use InteractiveBrowserCredential for local development, AzureCliCredential for CI/CD pipelines
@@ -276,7 +276,7 @@ stages:
                 $workspace_name = $workspace_names.$branch_name
                 $environment = $environments.$branch_name
                 
-                python -u deploy.py --spn-auth True --workspace_name "$workspace_name" --environment "$environment"
+                python -u deploy.py --spn-auth --workspace_name "$workspace_name" --environment "$environment"
                 
                 if ($LASTEXITCODE -ne 0) {
                     Write-Error "Deployment failed with exit code: $LASTEXITCODE"
@@ -359,7 +359,7 @@ jobs:
         run: |
           pip install fabric-cicd
           
-          python -u deploy.py --spn-auth True --workspace_name "${{ steps.workspace.outputs.workspace_name }}" --environment "${{ steps.workspace.outputs.environment }}"
+          python -u deploy.py --spn-auth --workspace_name "${{ steps.workspace.outputs.workspace_name }}" --environment "${{ steps.workspace.outputs.environment }}"
           
           if ($LASTEXITCODE -ne 0) {
               Write-Error "Deployment failed with exit code: $LASTEXITCODE"
