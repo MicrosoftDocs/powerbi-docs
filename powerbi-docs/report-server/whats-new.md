@@ -24,6 +24,12 @@ Reminder: [How you can find your report server product key](find-product-key.md)
 
 Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2026-feature-summary/) for details.
 
+### Announcements
+
+#### Deprecation of SCOM Management Packs for SSRS, PBIRS, and SSAS
+
+Microsoft has announced the deprecation of the System Center Operations Manager (SCOM) Management Packs for SQL Server Reporting Services (SSRS), Power BI Report Server (PBIRS), and SQL Server Analysis Services (SSAS). While these management packs remain available, they'll no longer be supported after January 2027, and no future updates are planned—including compatibility with SQL Server 2025 or SCOM 2025. Plan your transition to modern, Azure-based monitoring solutions. For full details, see the [Deprecation Announcement](https://techcommunity.microsoft.com/blog/sqlserver/deprecation-announcement-ssrspbirs-and-ssas-management-packs-for-scom/4486497).
+
 ### Visualizations
 
 This release includes a variety of new and updated visuals from Microsoft partners and the broader community. These visuals enable richer storytelling, advanced exploration, and more engaging report experiences.

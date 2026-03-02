@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is a Python library developed by Microsoft that provides a code-first method for Fabric developers to deploy Fabric items from source control to workspaces using their code definition format, such as semantic models and reports using the PBIP file format.
+[fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) is an officially supported, Microsoft-backed open-source Python library that provides a code-first method for Fabric developers to deploy Fabric items from source control to workspaces using their code definition format, such as semantic models and reports using the PBIP file format. The tool integrates with Fabric Git Integration, Fabric REST APIs, and Fabric CLI to enable consistent deployment flows across workspaces.
 
 In this article, you learn how to:
 
@@ -31,6 +31,7 @@ Learn more about PBIP format in [Power BI Desktop projects (PBIP)](./projects-ov
 fabric-cicd is specifically designed for deploying source-controlled Fabric artifacts and offers several advantages:
 
 * **Uses Fabric native REST APIs** - Built on official Microsoft Fabric APIs, ensuring compatibility and long-term support
+* **Automated dependency handling** - Determines the correct deployment order and resolves dependencies between items (such as publishing semantic models before reports), reducing manual sequencing and minimizing deployment errors
 * **Python-native** - Seamless integration with modern Python-based DevOps workflows
 * **Parameterization**: Built-in support for environment-specific configurations (workspace IDs, data sources, connection strings)
 * **Developer-friendly**: Simple Python scripts that can run locally or in CI/CD pipelines

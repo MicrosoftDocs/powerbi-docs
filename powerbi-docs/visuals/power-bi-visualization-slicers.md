@@ -297,7 +297,7 @@ The following considerations and limitations apply to slicers:
 
 ### Paste values
 
-- The paste feature is available in the [Button slicer](power-bi-visualization-button-slicer.md) and [List slicer](power-bi-visualization-list-slicer.md) (preview).
+- The paste feature is available in the [Input slicer](power-bi-visualization-input-slicer.md), [Button slicer](power-bi-visualization-button-slicer.md), and [List slicer](power-bi-visualization-list-slicer.md) (preview). For Button and List slicers, paste applies exact-match selection. For the Input slicer, pasted values are evaluated using the selected operator (for example, Contains any, Starts with any, Is any).
 - Each value you want to select must be on its own line for the paste feature to work correctly.
 - You can paste up to 2,000 values into a slicer; any extras are ignored.
 - Pasting new values removes all previous selections.
