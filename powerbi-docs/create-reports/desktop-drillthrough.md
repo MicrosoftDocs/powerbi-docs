@@ -7,7 +7,7 @@ ms.subservice: pbi-reports-dashboards
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
-ms.date: 09/02/2025
+ms.date: 03/02/2026
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix"
 LocalizationGroup: Create reports
 ai-usage: ai-assisted
@@ -142,6 +142,10 @@ If drillthrough pages show outdated or missing data, follow these suggestions:
 
 > [!NOTE]
 > For large datasets, like those used in pacing dashboards, refresh previews for all tables before publishing to avoid partial updates.
+
+## Considerations and limitations
+
+- When you right-click a visual to access drillthrough, the order of drillthrough pages listed in the context menu might differ between Power BI Desktop and the Power BI service. In Desktop, pages appear in the same order as the report page tabs. After you publish to the service, the page order in the drillthrough menu might change and not match the tab order in the report.
 
 ## Related content
 
