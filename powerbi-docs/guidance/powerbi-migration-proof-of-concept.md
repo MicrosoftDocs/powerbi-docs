@@ -72,7 +72,7 @@ If you're migrating from a legacy BI platform where reports reference relational
 In the BI industry, a dashboard is a collection of visuals that displays key metrics on a single page. However, in Power BI, a dashboard represents a specific visualization feature that can only be created in the Power BI service. When migrating a dashboard from a legacy BI platform, you have two choices:
 
 - The legacy dashboard can be recreated as a Power BI *report*. Most reports are created with Power BI Desktop. Paginated reports and Excel reports are alternative options, too.
-- The legacy dashboard can be recreated as a Power BI *dashboard*. [Dashboards](../consumer/end-user-dashboards.md) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
+- The legacy dashboard can be recreated as a Power BI *dashboard*. [Dashboards](../explore-reports/end-user-dashboards.md) are a visualization feature of the Power BI service. Dashboard visuals are often created by pinning visuals from one or more reports, Q&A, or Quick Insights.
 
 > [!TIP]
 > Because dashboards are a Power BI content type, refrain from using the word *dashboard* in the report or dashboard name.

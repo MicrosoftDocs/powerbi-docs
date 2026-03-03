@@ -39,6 +39,6 @@ In Power BI Desktop, open a report with at least one visualization, or [create a
 ## Related content
 
 - [Resize a visualization on a dashboard](../create-reports/service-dashboard-edit-tile.md)
-- [Focus mode and full screen mode](../consumer/end-user-focus.md)
+- [Focus mode and full screen mode](../explore-reports/end-user-report-view.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

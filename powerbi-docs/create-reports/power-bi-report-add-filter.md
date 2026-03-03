@@ -24,7 +24,7 @@ This article explains how to add a visualization filter, page filter, or report 
 - For an overview of filters, see [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).
 - For information about the various kinds of filters that Power BI offers, from the manual and automatic to the drillthrough and pass-through, see [Types of filters in Power BI reports](power-bi-report-filter-types.md).
 - To find out how to make filters look and act the way you want, see [Format filters in Power BI reports](power-bi-report-filter.md).
-- To find out how to interact with filters in report Reading view, see [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md). In the Power BI service, you interact with reports in two different views: Reading view and Editing view. This article describes how to create filters in Power BI Desktop and in report Editing view in the Power BI service.
+- To find out how to interact with filters in report Reading view, see [Take a tour of the report Filters pane](../explore-reports/end-user-report-filter.md). In the Power BI service, you interact with reports in two different views: Reading view and Editing view. This article describes how to create filters in Power BI Desktop and in report Editing view in the Power BI service.
 
 ## Levels of filters in the Filters pane
 
@@ -167,6 +167,6 @@ Keep in mind that as the report creator, you can save filters with the report. T
 
 ## Related content
 
-- [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
+- [Take a tour of the report Filters pane](../explore-reports/end-user-report-filter.md)
 - [Types of filters in Power BI reports](power-bi-report-filter-types.md)
 - [Power BI forums](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)

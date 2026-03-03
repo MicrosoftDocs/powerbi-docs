@@ -1,10 +1,8 @@
 ---
-title: Arrange Columns, Goals, and Scorecards
+title: Arrange columns, goals, and scorecards
 description: Learn how to customize your Power BI scorecards to meet your teams' needs by arranging columns, goals, and scorecards effectively for your team.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -31,11 +29,11 @@ To reorder goals on the scorecard, or make them subgoals:
 
 1. Select a goal and drag it up or down. Indent it slightly to make it a subgoal of another goal.
 
-  :::image type="content" source="media/service-goals-move/power-bi-move-metric.png" alt-text="Screenshot that shows moving a goal, and making it a subgoal." lightbox="media/service-goals-move/power-bi-move-metric.png":::
+    :::image type="content" source="media/service-goals-move/power-bi-move-metric.png" alt-text="Screenshot that shows moving a goal, and making it a subgoal." lightbox="media/service-goals-move/power-bi-move-metric.png":::
 
 1. When you make it a subgoal, it takes the color of the goal it's under.
 
-  :::image type="content" source="media/service-goals-move/power-bi-moved-metric.png" alt-text="Screenshot that shows the moved subgoal." lightbox="media/service-goals-move/power-bi-moved-metric.png":::
+    :::image type="content" source="media/service-goals-move/power-bi-moved-metric.png" alt-text="Screenshot that shows the moved subgoal." lightbox="media/service-goals-move/power-bi-moved-metric.png":::
 
 ## Hide or move a column
 

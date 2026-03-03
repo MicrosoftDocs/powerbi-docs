@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 02/04/2025
+ms.date: 02/17/2026
 ms.custom: intro-whats-new
 ai-usage: ai-assisted
 ---
@@ -23,6 +23,12 @@ Reminder: [How you can find your report server product key](find-product-key.md)
 ## January 2026
 
 Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2026-feature-summary/) for details.
+
+### Announcements
+
+#### Deprecation of SCOM Management Packs for SSRS, PBIRS, and SSAS
+
+Microsoft has announced the deprecation of the System Center Operations Manager (SCOM) Management Packs for SQL Server Reporting Services (SSRS), Power BI Report Server (PBIRS), and SQL Server Analysis Services (SSAS). While these management packs remain available, they'll no longer be supported after January 2027, and no future updates are planned—including compatibility with SQL Server 2025 or SCOM 2025. Plan your transition to modern, Azure-based monitoring solutions. For full details, see the [Deprecation Announcement](https://techcommunity.microsoft.com/blog/sqlserver/deprecation-announcement-ssrspbirs-and-ssas-management-packs-for-scom/4486497).
 
 ### Visualizations
 
@@ -63,7 +69,7 @@ Read the Power BI blog post, [Power BI Report Server September 2025 Feature Summ
 
 ### General announcements
 
-#### SQL Server 2025 Updates
+#### SQL Server 2025 updates
 
 Starting with SQL Server 2025, Microsoft is consolidating all on-premises reporting services under Power BI Report Server (PBIRS). No new versions of SQL Server Reporting Services (SSRS) will be released. PBIRS becomes the default on-premises reporting solution for SQL Server.
 
@@ -73,9 +79,9 @@ Starting with the September 2025 release, Power BI Desktop for Power BI Report S
 
 **Migration guidance:**
 
-- Administrators and authors should migrate from 32-bit to 64-bit Power BI Desktop for Report Server.
-- Download the latest 64-bit version from the [Power BI Report Server download page](download-powerbi-report-server.md).
-- For supported architectures and system requirements, see [Hardware and software requirements for installing Power BI Report Server](system-requirements.md).
+1. Administrators and authors should migrate from 32-bit to 64-bit Power BI Desktop for Report Server.
+1. Download the latest 64-bit version from the [Power BI Report Server download page](download-powerbi-report-server.md).
+1. For supported architectures and system requirements, see [Hardware and software requirements for installing Power BI Report Server](system-requirements.md).
 
 ### Visualizations
 
@@ -454,7 +460,7 @@ This release has updates for the Report Server web portal, modeling, and reporti
 ### Report Server
 
 - [Accent color update](#power-bi-report-server-accent-color-update)
-- [.rdl and .pbix file migration tool](#publish-rdl-pbix-files-to-power-bi-from-power-bi-report-server)
+- [.rdl and .pbix file migration tool](#publish-rdl-and-pbix-files-to-power-bi-from-power-bi-report-server)
 - New .rdl report community: Join the [on-premises .rdl migration user group](https://community.powerbi.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI).
 
 #### Power BI Report Server accent color update
@@ -463,9 +469,9 @@ In November 2022, Power BI announced the upcoming change in color accent to teal
 
 The Power BI brand color and icon logo remain yellow.
 
-#### Publish .rdl &.pbix files to Power BI from Power BI Report Server
+#### Publish .rdl and .pbix files to Power BI from Power BI Report Server
 
-- Power BI Pro licenses now support [paginated reports](../consumer/end-user-paginated-report.md).
+- Power BI Pro licenses now support [paginated reports](../explore-reports/end-user-paginated-report.md).
 - Power BI Report Server has a [new tool to migrate .rdl reports to the Power BI service](../guidance/publish-reporting-services-power-bi-service.md). The new migration tool is available in the January 2023 release.
 
 You can migrate reports without Report Server downtime or disruption to your report users. You don’t need to remove any data or reports. You can keep your current environment in place until you’re ready to retire it.

@@ -1,13 +1,14 @@
 ---
 title: Use custom format strings in Power BI Desktop
-description: Learn how to use custom format strings in Power BI Desktop to customize how fields appear in visuals.
+description: Learn how to use custom format strings in Power BI Desktop to customize how fields appear in visuals. Includes syntax reference, examples, and troubleshooting tips.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 02/18/2026
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
@@ -20,11 +21,11 @@ By using custom format strings in **Power BI Desktop**, you can customize how fi
 
 Format strings exist on three levels:
 
--	**Model**. Set a format string for fields in the model or use a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) to format your measure. The format string applies anywhere you use that field, unless a visual or element level format string overrides it. 
--	**Visual**. Set format strings on any column, measure, or visual calculation that is on your visual, even if they already had a format string. In that case, the visual level format string overrides the model level format string. If you change the aggregation on a field, which invalidates a previously set visual level format string, the format string is removed. Visual level format strings for fields persist for fields, but not for visual calculations. If you set a visual level format string on a field and then remove and readd that field to the same visual, the visual level format string is reinstated. In contrast, for a visual calculation, the format string isn't reinstated. 
--	**Element**. Set a format string for data labels and for specific elements of the new card and the new slicer visuals. Any format string you set here overrides the format string set on the visual and model level.
+- **Model**. Set a format string for fields in the model or use a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) to format your measure. The format string applies anywhere you use that field, unless a visual or element level format string overrides it.
+- **Visual**. Set format strings on any column, measure, or visual calculation that is on your visual, even if they already had a format string. In that case, the visual level format string overrides the model level format string. If you change the aggregation on a field, which invalidates a previously set visual level format string, the format string is removed. Visual level format strings for fields persist for fields, but not for visual calculations. If you set a visual level format string on a field and then remove and readd that field to the same visual, the visual level format string is reinstated. In contrast, for a visual calculation, the format string isn't reinstated.
+- **Element**. Set a format string for data labels and for specific elements of the new card and the new slicer visuals. Any format string you set here overrides the format string set on the visual and model level.
 
-These levels are hierarchical, with the model level as the lowest level and the element level as the highest. A format string defined on a column, measure, or visual calculation on a higher level overrides what was defined on a lower level. 
+These levels are hierarchical, with the model level as the lowest level and the element level as the highest. A format string defined on a column, measure, or visual calculation on a higher level overrides what was defined on a lower level.
 
 Since visual calculations aren't in the model, they can't have a format string set on the model level but can have one on the visual or element level. Measures and columns can have format strings on all three levels:
 
@@ -34,7 +35,7 @@ Since visual calculations aren't in the model, they can't have a format string s
 | Visual | Selected visual | Measures, Columns, Visual Calculations |
 | Model | All visuals, all pages, all reports on the same model | Measures, Columns |
 
-:::image type="image" source="media/desktop-custom-format-strings/custom-format-strings-levels.png" alt-text="Diagram showing the three levels of format strings available (model, visual, element). It shows that visual calculations can only have visual and element level format strings, while measures and columns can have format strings on all levels." lightbox="media/desktop-custom-format-strings/custom-format-strings-levels-larger.png":::
+:::image type="content" source="media/desktop-custom-format-strings/custom-format-strings-levels.png" alt-text="Diagram showing the three levels of format strings available (model, visual, element). It shows that visual calculations can only have visual and element level format strings, while measures and columns can have format strings on all levels." lightbox="media/desktop-custom-format-strings/custom-format-strings-levels-larger.png":::
 
 The element level format string is only available to specific visuals and data labels at this time.
 
@@ -44,20 +45,59 @@ To use custom format strings, first decide which level you want to work on: mode
 
 ### Common format string examples
 
-Here are some commonly used format strings to get you started:
+Here are some commonly used format strings to get you started.
+
+> [!IMPORTANT]
+> **Before using these examples:** The new card visual and visual-level formatting currently require .NET syntax, while model-level and element-level formatting use VBA syntax. Numeric formats (like `#,##0`) work the same in both, but date and time formats differ. Also, you must set **Display units** to **None** on the new card visual, or you'll see K/M/B suffixes regardless of your format string. See [Troubleshooting unwanted automatic scaling](#troubleshooting-unwanted-automatic-scaling-k-m-b-suffixes).
+
+#### Numeric formats (work at all levels)
 
 | Format string | Example input | Example output | Description |
 |---------------|---------------|----------------|-------------|
 | `#,##0` | 1234567 | 1,234,567 | Number with thousands separator, no decimals |
 | `#,##0.00` | 1234.5 | 1,234.50 | Number with thousands separator, two decimals |
+| `0` | 1234.56 | 1235 | Whole number, no thousands separator |
+| `00000` | 42 | 00042 | Fixed-width with leading zeros (for example, ID numbers) |
 | `0%` | 0.156 | 16% | Percentage, no decimals |
 | `0.0%` | 0.156 | 15.6% | Percentage, one decimal |
 | `$#,##0.00` | 1234.5 | $1,234.50 | Currency with two decimals |
+| `€#,##0.00` | 1234.5 | €1,234.50 | Currency with Euro symbol |
+| `#,##0.00;(#,##0.00)` | -1234.5 | (1,234.50) | Negative numbers in parentheses |
+| `#,##0.00;-#,##0.00;"Zero"` | 0 | Zero | Custom text for zero values |
 | `0.00" units"` | 42.5 | 42.50 units | Number with custom suffix |
-| `yyyy-MM-dd` | 1/15/2025 | 2025-01-15 | Date in ISO format |
-| `MMM d, yyyy` | 1/15/2025 | Jan 15, 2025 | Date with abbreviated month |  
+| `0.0" °C"` | 23.4 | 23.4 °C | Number with degree symbol |
+| `0.00E+00` | 1234567 | 1.23E+06 | Scientific notation |
 
-> [!IMPORTANT]  
+#### Date and time formats (VBA syntax for model level)
+
+Use these formats when applying custom format strings at the **model level** in the Properties pane.
+
+| Format string | Example input | Example output | Description |
+|---------------|---------------|----------------|-------------|
+| `m/d/yyyy` | 1/15/2025 | 1/15/2025 | Date with numeric month |
+| `mmm d, yyyy` | 1/15/2025 | Jan 15, 2025 | Date with abbreviated month |
+| `mmmm d, yyyy` | 1/15/2025 | January 15, 2025 | Date with full month name |
+| `dddd, mmmm d` | 1/15/2025 | Wednesday, January 15 | Full day and month names |
+| `h:nn AM/PM` | 14:30 | 2:30 PM | 12-hour time format |
+| `hh:nn:ss` | 14:30:05 | 14:30:05 | 24-hour time with seconds |
+
+#### Date and time formats (.NET syntax for visual level)
+
+Use these formats when applying custom format strings at the **visual level** (for example, on the new card visual). 
+
+> [!NOTE]
+> Uppercase `M` = month, lowercase `m` = minutes.
+
+| Format string | Example input | Example output | Description |
+|---------------|---------------|----------------|-------------|
+| `M/d/yyyy` | 1/15/2025 | 1/15/2025 | Date with numeric month |
+| `MMM d, yyyy` | 1/15/2025 | Jan 15, 2025 | Date with abbreviated month |
+| `MMMM d, yyyy` | 1/15/2025 | January 15, 2025 | Date with full month name |
+| `dddd, MMMM d` | 1/15/2025 | Wednesday, January 15 | Full day and month names |
+| `h:mm tt` | 14:30 | 2:30 PM | 12-hour time format |
+| `HH:mm:ss` | 14:30:05 | 14:30:05 | 24-hour time with seconds |
+
+> [!NOTE]
 > **New card and other visuals:** If your custom format doesn't appear as expected (for example, you see `12K` instead of `11,732`), the visual's **Display units** setting is likely set to **Auto**. Change **Display units** to **None** before applying your custom format string. This change is especially common with new card visuals, data labels, and slicers. For more information, see [Troubleshooting unwanted automatic scaling](#troubleshooting-unwanted-automatic-scaling-k-m-b-suffixes).
 
 ### Add a model level format string
@@ -101,6 +141,7 @@ If a custom format shows minutes where you expected a month:
 1. Use `nn` for minutes in VBA-style contexts to avoid confusion with month symbols.
 
 ### Troubleshooting unwanted automatic scaling (K, M, B suffixes)
+>
 > [!NOTE]
 > This section addresses the most common issue users encounter when custom format strings appear not to work, especially with the **new card** visual.
 If your visual shows a suffix such as K (thousands), M (millions), or B (billions) even though you set a custom number format (for example `#.###` or `#,##0`), the suffix usually isn't coming from the custom format string. The **Display units** (autoscaling) setting on the visual or element applies it.
@@ -114,16 +155,27 @@ If your visual shows a suffix such as K (thousands), M (millions), or B (billion
 **How to remove the K/M/B suffix:**
 
 1. Select the visual.
-1. Open the **Format** pane.
-1. Locate the numeric value settings (for example **General > Data format**, **Visual > Data labels**, **Callout value**, or **Values** for the new card).
-1. Set **Display units** (sometimes labeled **Units** or **Value units**) to **None** (not Auto).
-1. Reapply (or confirm) the desired custom format string (for example `#,##0`, `0`, `0.0`, `#,##0.###`).
+1. Open the **Format** pane (paint roller icon).
+1. Locate the **Display units** setting based on your visual type:
+
+   | Visual type | Path to Display units |
+   |-------------|----------------------|
+   | **New card** | **Visual** > **Callout values** > **Values** > **Display units** |
+   | **Card (classic)** | **Visual** > **Callout value** > **Display units** |
+   | **KPI** | **Visual** > **Callout value** > **Display units** |
+   | **Gauge** | **Visual** > **Callout value** > **Display units** |
+   | **Data labels** (bar, column, line charts) | **Visual** > **Data labels** > **Values** > **Display units** |
+   | **Slicer** | **Visual** > **Slicer settings** > **Options** > **Display units** |
+   | **Table/Matrix values** | **General** > **Data format** > (select field) > **Display units** |
+
+1. Change **Display units** from **Auto** to **None**.
+1. Apply or confirm your custom format string (for example `#,##0`, `0`, `0.0`).
 
 **If still present:**
 
 - Check for an element-level override (for example data label settings) also set to Auto.
 - Confirm you didn't embed a literal "K" in the custom format (for example `0" K"`).  
-- For model-level measures, ensure no DAX logic already scales the value (for example dividing by 1000).
+- For model-level measures, ensure no DAX logic already scales the value (for example dividing by 1,000).
 
 **Example comparison:**
 
@@ -215,8 +267,8 @@ Custom format strings don't support hex or escape sequences (for example, `\u00B
 | Superscript squared | `0" m²"` | `25 m²` | Paste `²` (U+00B2). |
 
 > [!TIP]  
-> To insert a symbol: 
-> 
+> To insert a symbol:
+>
 > - Windows: Press `Win + .` (emoji/symbol panel) or use an ALT code (for example, hold `Alt`, type `0176` on numeric keypad for °).  
 > - Copy/paste from a character map.  
 > Once the literal is in the format string, it's treated as plain text.
@@ -263,7 +315,7 @@ The following table identifies the predefined **named numeric formats**:
 
 ### Other date and time formatting characters
 
-The following supplemental characters apply (not already covered):
+The following table describes supplemental characters that apply to date and time formatting (not already covered):
 
 | Character | Description |
 | --- | --- |
@@ -299,7 +351,7 @@ The following table identifies characters you can use to create **user-defined n
 
 For more information, see:
 
-* [VBA format strings](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
-* [Measures in Power BI Desktop](../transform-model/desktop-measures.md)
-* [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
-* [Conditional formatting in tables](desktop-conditional-table-formatting.md)
+- [VBA format strings](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+- [Measures in Power BI Desktop](../transform-model/desktop-measures.md)
+- [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
+- [Conditional formatting in tables](desktop-conditional-table-formatting.md)

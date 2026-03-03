@@ -94,4 +94,4 @@ By using this approach, you can leverage the strengths of both report types: int
 ## Related content
 
 - [Create paginated reports that you can export in the Power BI service](paginated-formatted-table.md)
-- [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../../explore-reports/paginated-reports-view-power-bi-service.md)

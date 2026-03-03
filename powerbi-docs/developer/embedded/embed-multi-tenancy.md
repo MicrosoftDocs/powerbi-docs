@@ -108,7 +108,7 @@ Each profile needs to:
   }
   ```
 
-* Grant [access permissions](/power-bi/consumer/end-user-workspaces#permissions-in-the-workspaces) to the workspace. The service principal profile must have *Admin* access to the workspace.
+* Grant [access permissions](../../collaborate-share/end-user-workspaces.md#permissions-in-the-workspaces) to the workspace. The service principal profile must have *Admin* access to the workspace.
 
 * [Assign the workspace to a capacity](azure-pbie-create-capacity.md)
 
@@ -123,7 +123,7 @@ Each profile needs to:
   }
   ```
 
-Read more about [Power BI workspaces](/power-bi/consumer/end-user-workspaces).
+Read more about [Power BI workspaces](/power-bi/collaborate-share/end-user-workspaces).
 
 ## Import reports and semantic models
 

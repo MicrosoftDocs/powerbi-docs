@@ -85,7 +85,7 @@ Consider using this approach when:
 
 - Content creators prefer to manually control content publishing to the Fabric portal.
 - Content creators use a third-party tool to develop and manage the content.
-- Content will be published to a workspace that uses Premium per user (PPU), Premium capacity, or Fabric capacity license mode.
+- Content will be published to a workspace that uses Premium per user (PPU), Premium capacity, or Fabric capacity workspace type.
 - Content creators aren't familiar with Azure DevOps or Git.
 - Content comprises only semantic models.
 
@@ -221,7 +221,7 @@ Deployment pipelines allow you to set up two or more stages (such as development
 
 Consider using deployment pipelines when:
 
-- Content is deployed to workspaces with PPU, Premium capacity, or Fabric capacity license mode.
+- Content is deployed to workspaces with PPU, Premium capacity, or Fabric capacity workspace type.
 - Content item types and scenarios are supported by deployment pipelines.
 
 Consider another approach than deployment pipelines when:

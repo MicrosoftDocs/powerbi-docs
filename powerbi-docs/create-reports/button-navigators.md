@@ -223,5 +223,5 @@ To help ensure your approach of using the bookmark navigator meets accessibility
 For more information about features that are similar or interact with buttons, see the following articles:
 
 - [Create and configure buttons in Power BI reports](desktop-buttons.md)
-- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
+- [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md)
 - [Drillthrough in Power BI reports: Navigate to detailed insights](desktop-drillthrough.md)

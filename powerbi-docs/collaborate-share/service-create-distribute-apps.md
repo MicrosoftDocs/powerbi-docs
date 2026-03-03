@@ -371,7 +371,7 @@ When the app setting 'Show Copilot in app navigation' is enabled, users see a Co
 **Audience group two, *Sales Team***
 :::image type="content" source="media/service-create-distribute-apps/audience-sales-team-view.png" alt-text="Screenshot showing Sales team view for app consumers.":::
 
-Read more about how [app users experience apps](../consumer/end-user-app-view.md).
+Read more about how [app users experience apps](../explore-reports/end-user-app-view.md).
 
 ## Unpublish an app
 Any Admin or Member of a workspace can unpublish the app.
@@ -390,7 +390,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
 - App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of items included in the app.
-- In some cases an app can be too large to update. In these cases a *Can't update the app* message is displayed and the app must be optimized before updating. To optimize a large app try one or more of the following: reduce the number of items in the app; convert reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md); recreate the app as an [org app](../consumer/org-app-items/org-app-items.md). After optimizing the app, try to update it again. If the *Can't update the app* message persists, continue to optimize the app until update is successful.
+- In some cases an app can be too large to update. In these cases a *Can't update the app* message is displayed and the app must be optimized before updating. To optimize a large app try one or more of the following: reduce the number of items in the app; convert reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md); recreate the app as an [org app](../explore-reports/org-app-items.md). After optimizing the app, try to update it again. If the *Can't update the app* message persists, continue to optimize the app until update is successful.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
@@ -421,7 +421,7 @@ Additional things to keep in mind about publishing apps:
 ## Related content
 
 - [Create apps in *workspaces*](service-create-the-new-workspaces.md)
-- [Install and use apps in Power BI](../consumer/end-user-apps.md)
+- [Install and use apps in Power BI](../explore-reports/end-user-apps.md)
 - [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 - [Power BI Admin Portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

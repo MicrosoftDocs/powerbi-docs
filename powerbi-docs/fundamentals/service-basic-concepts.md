@@ -46,12 +46,12 @@ The following table lists some of the key concepts and terms used in the Power B
 
 | Term  | Definition | Learn more |
 |----|---|---|
-| Visualization | A type of chart built by Power BI designers to display data from reports and semantic models; visualizations are interactive and allow slicing, filtering, and drilling into data | [Interact with visuals in reports, dashboards, and apps](../consumer/end-user-visualizations.md) |
+| Visualization | A type of chart built by Power BI designers to display data from reports and semantic models; visualizations are interactive and allow slicing, filtering, and drilling into data | [Interact with visuals in reports, dashboards, and apps](../explore-reports/end-user-visualizations.md) |
 | Semantic model (formerly known as dataset) | A container of data used by designers to build reports, dashboards, and apps; can combine multiple data sources into a single model  | [How do designers assign permissions to semantic models?](../connect-data/service-datasets-build-permissions.md)<br><br>[How semantic models are shared with colleagues](../collaborate-share/service-share-dashboards.md) |
-| Dashboard| A single screen with tiles of interactive visuals, text, and graphics, often used to monitor metrics or tell a story. | [Dashboards for the Power BI service business users](../consumer/end-user-dashboards.md) |
-| Report | One or more pages of interactive visuals, text, and graphics based on a single semantic model, often organized to address specific questions or areas of interest. | [Reports in Power BI](../consumer/end-user-reports.md)<br><br>[Reports versus dashboards](../consumer/end-user-reports.md#dashboards-versus-reports) |
-| App | A collection of dashboards, reports, and semantic models bundled together for sharing with individuals, groups, or organizations. | [End-user apps](../consumer/end-user-apps.md) |
-| Workspace| A collaborative area where designers store and manage collections of dashboards and reports. Business users are assigned roles to interact with the content. | [Learn more about workspaces](../consumer/end-user-workspaces.md) |
+| Dashboard| A single screen with tiles of interactive visuals, text, and graphics, often used to monitor metrics or tell a story. | [Dashboards for the Power BI service business users](../explore-reports/end-user-dashboards.md) |
+| Report | One or more pages of interactive visuals, text, and graphics based on a single semantic model, often organized to address specific questions or areas of interest. | [Reports in Power BI](../explore-reports/end-user-reports.md)<br><br>[Reports versus dashboards](../explore-reports/end-user-reports.md#dashboards-versus-reports) |
+| App | A collection of dashboards, reports, and semantic models bundled together for sharing with individuals, groups, or organizations. | [End-user apps](../explore-reports/end-user-apps.md) |
+| Workspace| A collaborative area where designers store and manage collections of dashboards and reports. Business users are assigned roles to interact with the content. | [Learn more about workspaces](../collaborate-share/end-user-workspaces.md) |
 | License and subscription | Determines the level of access and features available to users in the Power BI service, such as free, Pro, or Premium licenses. | [Organizational licenses and subscriptions for Fabric and Power BI](../enterprise/service-admin-licensing-organization.md)<br><br>[Licenses and subscriptions for business users](end-user-license.md) |
 | Capacity | A dedicated set of resources used to enhance performance and scalability for Power BI content, often associated with Premium features. | [Manage your Fabric capacity](/fabric/admin/capacity-settings) |
 | Workbook | An Excel file uploaded to the Power BI service, which can be viewed or used as a data source for reports and dashboards. | [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md)<br><br>[Publish to Power BI from Microsoft Excel](../connect-data/service-publish-from-excel.md) |
@@ -61,6 +61,6 @@ The following table lists some of the key concepts and terms used in the Power B
 ## Related content
 
 - [What is Power BI?](power-bi-overview.md)
-- [Get around in Power BI service](../consumer/end-user-experience.md)
+- [Get around in Power BI service](../explore-reports/end-user-experience.md)
 - [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

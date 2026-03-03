@@ -52,7 +52,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 1. **View Report**. After you enter parameter values, select **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
 
-See how your customers interact with parameters in your paginated reports in the article [View parameters for paginated reports in the Power BI service](../../consumer/paginated-reports-view-parameters.md).
+See how your customers interact with parameters in your paginated reports in the article [View parameters for paginated reports in the Power BI service](../../explore-reports/paginated-reports-view-parameters.md).
   
 ## <a name="bkmk_Create_Parameters"></a> Create parameters
 

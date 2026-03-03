@@ -1,4 +1,4 @@
-﻿---
+---
 title: Monitor usage of Power BI semantic models in Excel  
 description: If you are a Power BI administrator, you might want to track who is connecting to your organization's Power BI data from Excel to ensure there's no unauthorized access to the data.
 author: JulCsc

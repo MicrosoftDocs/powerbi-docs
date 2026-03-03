@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 
 In Power BI Desktop and in the Power BI service, you use the *report editor* to design the reports your consumers see, with charts, tables, maps, and other visuals. It's similar in the two environments. Typically, you start creating a report in Power BI Desktop. Then you publish it to the Power BI service, where you can continue modifying it. You create the dashboards in the Power BI service based on your reports.
 
-After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share the reports, your end users can interact with them in Reading view in the Power BI service, but they can't edit them. For more information, see [what report consumers can do in the Power BI service](../consumer/end-user-reading-view.md).
+After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share the reports, your end users can interact with them in Reading view in the Power BI service, but they can't edit them. For more information, see [what report consumers can do in the Power BI service](../explore-reports/end-user-reading-view.md).
 
 In the Power BI service, the report editor is only available in Editing View. To open a report in Editing view, you must be a report owner or creator, or have at least a Contributor role in the workspace that houses the report.
 
@@ -141,7 +141,7 @@ Power BI uses many different icons to indicate the types of fields in a report. 
 
 - [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
 - [Work with Report view in Power BI Desktop](desktop-report-view.md)
-- [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md)
+- [View Power BI reports optimized for your phone](../explore-reports/mobile/mobile-apps-view-phone-report.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

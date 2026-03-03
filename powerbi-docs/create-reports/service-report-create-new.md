@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel file. Once you understand the basics of creating a report, check out the [Related content](#related-content) for more articles.
+You've read [Reports in Power BI](../explore-reports/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel file. Once you understand the basics of creating a report, check out the [Related content](#related-content) for more articles.
 
 ## Prerequisites
 

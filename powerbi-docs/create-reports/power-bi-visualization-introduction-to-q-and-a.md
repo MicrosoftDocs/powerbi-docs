@@ -26,7 +26,7 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 ## Prerequisites
 
-- You just need a [Fabric free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../fundamentals/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
 - You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md). You also need at least a Contributor role in that workspace. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - To follow along, you must use a report that you can edit, use one of the samples available with Power BI.
 
@@ -96,7 +96,7 @@ You see they ended up with the same visual. Creating it this way wasn't too comp
 ## Related content
 
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 - [Make Excel data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

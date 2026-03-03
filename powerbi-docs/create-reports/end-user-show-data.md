@@ -83,7 +83,7 @@ When you select **Show as a table** or **Show data point as a table**, Power BI 
 
 ### Show the data that creates a report visual
 
-1. In the Power BI service, [open a report](../consumer/end-user-report-open.md) and select a visual.  
+1. In the Power BI service, [open a report](../explore-reports/end-user-report-open.md) and select a visual.  
 2. To show the data underlying the visual, select **More options** (...) and choose **Show as a table**.
    
    :::image type="content" source="./media/end-user-show-data/power-bi-show-data-vertical.png" alt-text="Screenshot with Show as a table selected from the More options dropdown.":::
@@ -143,4 +143,4 @@ There are all sorts of report formatting and data management features in **Power
 - [Create a drillthrough button in Power BI](desktop-drillthrough.md)
 - [Use gridlines and snap-to-grid in Power BI reports](desktop-gridlines-snap-to-grid.md)
 - [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    
-- [Power BI reports](../consumer/end-user-reports.md)
+- [Power BI reports](../explore-reports/end-user-reports.md)

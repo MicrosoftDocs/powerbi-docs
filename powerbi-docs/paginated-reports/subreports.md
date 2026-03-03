@@ -119,6 +119,6 @@ The main report and subreports must be in the same workspace. Otherwise, the sub
 
 - [Troubleshoot subreports in Power BI paginated reports](subreports-troubleshoot.md)
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md)
 
 - More questions? [Ask the Power BI community](https://community.powerbi.com/)

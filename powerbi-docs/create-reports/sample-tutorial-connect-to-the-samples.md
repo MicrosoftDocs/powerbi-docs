@@ -41,7 +41,7 @@ The prerequisites depend on whether you're using the Power BI service or Power B
 
 ### Power BI service (app.powerbi.com)
 
-- You need a [Fabric free license](../consumer/end-user-features.md) to explore samples and save them to your workspace in the [Power BI service](https://app.powerbi.com). [Sign up for a free trial](https://aka.ms/try-fabric) if you don't have access.
+- You need a [Fabric free license](../fundamentals/end-user-features.md) to explore samples and save them to your workspace in the [Power BI service](https://app.powerbi.com). [Sign up for a free trial](https://aka.ms/try-fabric) if you don't have access.
 
 ### Power BI Desktop
 
@@ -135,7 +135,7 @@ In this tutorial, you can also explore the semantic model directly:
 
 ### Explore quick insights
 
-One easy way of exploring a semantic model is to run [quick insights](../consumer/end-user-insights.md).
+One easy way of exploring a semantic model is to run [quick insights](../explore-reports/end-user-insights.md).
 
 1. In your workspace, find the **Retail Analysis Sample** semantic model.
 1. Select the ellipsis (**...**) for more options to explore the semantic model.

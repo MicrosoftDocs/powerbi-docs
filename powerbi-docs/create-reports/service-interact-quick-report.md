@@ -62,7 +62,7 @@ Next, use the right-click context menu for the fields in **Your Data** to adjust
 
 :::image type="content" source="media/service-interact-quick-report/field-aggregation-menu.png" alt-text="Screenshot showing the field aggregation menu.":::
 
-You can also customize individual visuals using the [Personalize this visual](../consumer/end-user-personalize-visuals.md) feature. When you hover over a visual, you see the button to launch the customization experience.
+You can also customize individual visuals using the [Personalize this visual](../explore-reports/end-user-personalize-visuals.md) feature. When you hover over a visual, you see the button to launch the customization experience.
 
 :::image type="content" source="media/service-interact-quick-report/personalize-this-visual-button.png" alt-text="Screenshot showing Personalize this visual icon.":::
  
@@ -95,7 +95,7 @@ When going through this creation process, you’re creating a model behind the s
 
 ## Related content
 
-- [Reports in Power BI](../consumer/end-user-reports.md)
+- [Reports in Power BI](../explore-reports/end-user-reports.md)
 - [Create auto-generated "quick" reports](service-quick-create-report.md) in the Power BI service
 - [Create a Power BI semantic model directly from a SharePoint list](../connect-data/create-dataset-sharepoint-online-list.md)
 - [Create a report quickly from Dynamics 365](dynamics-quick-create-report.md)

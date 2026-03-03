@@ -323,6 +323,8 @@ There are still some functional gaps between the model view in Power BI desktop 
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * When modifying your semantic model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+* Data Load settings defined in the Options dialog in Power BI Desktop aren’t available for viewing or modification in the web experience. However, any changes made to these settings in Desktop persist and are respected when the semantic model is edited in the web experience.
+
 
 
 Additionally, keep in mind the following: 

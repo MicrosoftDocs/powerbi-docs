@@ -33,7 +33,7 @@ Users can hover over any visual to see a read-only list of the filters or slicer
 
 :::image type="content" source="media/power-bi-report-filter/power-bi-filter-visual.png" alt-text="Screenshot that shows the list of filters for a visual.":::
 
-Read about [how report readers use filters](../consumer/end-user-report-filter.md) in report Reading mode.
+Read about [how report readers use filters](../explore-reports/end-user-report-filter.md) in report Reading mode.
 
 ## Build the Filters pane
 
@@ -305,7 +305,7 @@ Publish-to-web doesn't display the Filters pane. If you're planning to publish a
 
 ## Related content
 
-- [How to use report filters](../consumer/end-user-report-filter.md)
+- [How to use report filters](../explore-reports/end-user-report-filter.md)
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 - [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 

@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Power BI for report creators
+title: Power BI report creator documentation
 summary: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI.
 
 metadata:
-  title: Power BI for report creators
+  title: Report creator documentation
   description: Learn how to build reports, design visualizations, and deliver insights to your organization with Power BI Desktop and the Power BI service.
   ms.service: powerbi
   ms.subservice: powerbi-service

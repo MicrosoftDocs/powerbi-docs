@@ -100,6 +100,7 @@ This script declares two PowerShell variables to make it easier to reuse the scr
 $UserEmailAddr = 'jordan@contoso.com'
 $ActivityDate = '2023-03-15'
 #----------------------------------------------------------------------
+#Optional: remove -User $UserEmailAddr to search for all responses.
 #View activity events:
 Get-PowerBIActivityEvent `
     -StartDateTime ($ActivityDate + 'T00:00:00.000') `
@@ -317,7 +318,7 @@ Here's a sample JSON response. It includes two activities that the user performe
 
 ## Example 4: View three activities for N days
 
-Sometimes you might want to investigate several related activities. This example shows how to retrieve three specific activities for the previous seven days. It focuses on activities related to [Power BI apps](../consumer/end-user-apps.md) including creating an app, updating an app, and installing an app.
+Sometimes you might want to investigate several related activities. This example shows how to retrieve three specific activities for the previous seven days. It focuses on activities related to [Power BI apps](../explore-reports/end-user-apps.md) including creating an app, updating an app, and installing an app.
 
 ### Sample request 4
 
@@ -391,6 +392,9 @@ $FullResults = $FullResults | ConvertTo-Json
 
 #Display results on the screen:
 $FullResults
+
+#Optional - Save results to a file when they are too large to display:
+#$FullResults | Out-File -FilePath "C:\ActivityLogResults.json"
 ```
 
 ### Sample response 4
@@ -519,13 +523,12 @@ $ConvertedResults = $Events | ConvertFrom-Json
 $FilteredResults = $ConvertedResults `
     | 
     Select-Object `
-    @{Name="ActivityDateTime";Expression={$PSItem.CreationTime}}, ` #alias name
+    @{Name="ActivityDateTime";Expression={$PSItem.CreationTime}}, `
     Activity, `
     UserId, `
     ArtifactName, `
     WorkspaceName `
     | 
-    #Filter the results:
     Where-Object {($PSItem.WorkspaceName -eq $WorkspaceName)}
 
 #View the filtered results:

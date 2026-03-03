@@ -1,5 +1,5 @@
 ---
-title: Get Started with Goals in Power BI
+title: Get started with goals in Power BI
 description: Learn about goals and scorecards in Power BI to track key business objectives, promote accountability, and improve visibility for teams and initiatives.
 author: kgremban
 ms.author: kgremban

@@ -1,10 +1,8 @@
 ---
-title: "Scenarios: When to Use Hierarchies in Power BI Scorecards"
+title: "Scenarios: When to use hierarchies in Power BI scorecards"
 description: Hierarchies are a popular feature in Power BI. Here are a few useful scenarios to help you get started in your organization.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
@@ -19,7 +17,7 @@ ai-usage: ai-assisted
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 > [!WARNING]
-> Hierarchies in Scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
+> Hierarchies in scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.
 
 Metrics support cascading scorecards that roll up along hierarchies you set up of goals in your scorecard. Here are three useful scenarios where cascading scorecards provide an elegant, large-scale, and efficient solution:
 
@@ -51,7 +49,7 @@ This view shows both hierarchies selected.
 
 ## Scenario 3: Organizational hierarchies
 
-We often see senior leadership use scorecards driven by organizational hierarchies. There's a set of metrics that the company tracks along an organizational hierarchy – in many cases, compliance metrics.  Each person’s team is required to meet these standards. Leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
+Senior leadership often uses scorecards driven by organizational hierarchies. There's a set of metrics that the company tracks along an organizational hierarchy, in many cases compliance metrics. Each person's team is required to meet these standards. Leadership needs a fast and easy way to see the overall numbers and break them down according to the org hierarchy to see whose team is performing well, and who is behind.
 
 This scorecard uses the organizational hierarchy as the scorecard hierarchy, so that all metrics are broken down by the accountable person.  The heatmap view is also useful in this scenario. It allows you to get a deeper, side by side glance of whose team is red and whose is green, and identify specific teams that need to increase compliance performance.  The heatmap view of organizational scorecards drives alignment and clarity at every level of the business.
 

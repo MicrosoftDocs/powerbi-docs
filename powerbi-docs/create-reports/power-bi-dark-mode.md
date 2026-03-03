@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 When you create reports in Power BI Desktop, you can choose different modes, depending on what you're more comfortable looking at. For example, *Dark mode* replaces all the chrome around the design surface with white-on-black text instead of black-on-white.
 
 > [!NOTE]
-> This article is about dark mode in Power BI Desktop. For information about dark mode in Power BI Mobile, see [Dark mode in Power BI Mobile](../consumer/mobile/mobile-apps-dark-mode.md).
+> This article is about dark mode in Power BI Desktop. For information about dark mode in Power BI Mobile, see [Dark mode in Power BI Mobile](../explore-reports/mobile/mobile-apps-dark-mode.md).
 
 ## Select a mode
 
@@ -82,4 +82,4 @@ Try the different modes and see which you prefer.
 
 - [Create reports in Power BI with Copilot](copilot-create-reports.md)
 - [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
-- [Dark mode in Power BI Mobile](../consumer/mobile/mobile-apps-dark-mode.md)
+- [Dark mode in Power BI Mobile](../explore-reports/mobile/mobile-apps-dark-mode.md)

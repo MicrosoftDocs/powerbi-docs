@@ -105,7 +105,7 @@ For these APIs:
 
 * Embedding items using Data Lake Storage (DLS) requires V2 of the [Generate token API](/rest/api/power-bi/embed-token/generate-token).
 
-* You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
+* You can't create an embed token for [**My workspace**](../../collaborate-share/end-user-workspaces.md#types-of-workspaces).
 
 ## Related content
 

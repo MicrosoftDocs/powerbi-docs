@@ -38,7 +38,7 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
    - Ask the app creator to resend it.
    - Find the original email with the link to the app.
    - Check your Notifications center to see if the notification for that app is still listed.
-   - Check [your organization's AppSource](../consumer/end-user-apps.md).
+   - Check [your organization's AppSource](../explore-reports/end-user-apps.md).
 
 ## Remove members from a workspace
 
@@ -73,7 +73,7 @@ To delete a workspace, you must have an Admin role in workspace.
 
 This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete:
 
-- Remove [(unfavorite) a dashboard](../consumer/end-user-favorite.md#unfavorite-content)
+- Remove [(unfavorite) a dashboard](../explore-reports/end-user-favorite.md#unfavorite-content)
 - Delete [Dashboard tiles](service-dashboard-edit-tile.md#delete-the-tile)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

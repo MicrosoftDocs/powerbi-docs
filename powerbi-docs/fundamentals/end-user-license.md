@@ -20,7 +20,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a [business user](../consumer/end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've used Power BI for a while, you probably notice that some features only work if you have a certain type of license, subscription, or permissions.
+As a [business user](../personas/business-user/end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've used Power BI for a while, you probably notice that some features only work if you have a certain type of license, subscription, or permissions.
 
 What you can do in the Power BI service depends on three things:
 
@@ -30,7 +30,7 @@ What you can do in the Power BI service depends on three things:
 
 :::image type="content" source="media/end-user-license/power-bi-questions-small.png" alt-text="Illustration that shows a person with questions about licenses and permissions surrounding them.":::
 
-This article describes the capabilities of each license type and how the location where content is stored affects what you can do with it. You learn how to check your license and subscription information, and find where your content is stored. For more information about workspace *roles* and *permissions*, see [Collaborate in workspaces](../consumer/end-user-workspaces.md).
+This article describes the capabilities of each license type and how the location where content is stored affects what you can do with it. You learn how to check your license and subscription information, and find where your content is stored. For more information about workspace *roles* and *permissions*, see [Collaborate in workspaces](../collaborate-share/end-user-workspaces.md).
 
 ## Licenses
 
@@ -61,14 +61,14 @@ For details about licenses and subscriptions, see [License types for Power BI an
 
 Premium is an organizational subscription that lets you store content in a virtual container called a Power BI Premium capacity. With Premium capacity, anyone with permissions, whether they're inside or outside your organization, can use content stored in this virtual container. This use includes users with free licenses.
 
-Premium capacity lets users with paid licenses share content widely without needing paid licenses for people who view the content. The person who creates content in Premium capacity uses a paid license to connect to data sources, model data, and create reports, dashboards, and apps that are saved to a workspace in Premium capacity. Users without a paid license can use a workspace in Power BI Premium capacity, as long as they have a [role in that workspace](../consumer/end-user-workspaces.md).
+Premium capacity lets users with paid licenses share content widely without needing paid licenses for people who view the content. The person who creates content in Premium capacity uses a paid license to connect to data sources, model data, and create reports, dashboards, and apps that are saved to a workspace in Premium capacity. Users without a paid license can use a workspace in Power BI Premium capacity, as long as they have a [role in that workspace](../collaborate-share/end-user-workspaces.md).
 
 > [!IMPORTANT]
 > For free users to access reports, both the report and its underlying semantic model must be in Premium capacity. If the report is in Premium capacity but the semantic model is in a workspace that isn't in Premium capacity, free users will receive a prompt to upgrade their license to Pro, PPU, or a trial.
 
 When users with a free license try to use a workspace in Premium capacity, and they aren't assigned a role in that workspace, they see a prompt to upgrade their license to Pro, PPU, or a trial.
 
-Within workspaces in Premium capacity, creators assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**. The roles creators assign to their colleagues, and the licenses the colleagues have, determine how those colleagues can interact with the content. For more information, see [workspace permissions and roles](../consumer/end-user-workspaces.md#permissions-in-the-workspaces).
+Within workspaces in Premium capacity, creators assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**. The roles creators assign to their colleagues, and the licenses the colleagues have, determine how those colleagues can interact with the content. For more information, see [workspace permissions and roles](../collaborate-share/end-user-workspaces.md#permissions-in-the-workspaces).
 
 When a creator makes and publishes an app, they give access to individuals or entire organizations. How you interact with the app's content depends on the specific access permissions you have. For example, you might be able to view the app, connect to the underlying semantic models, make copies of reports, or share the content.
 
@@ -112,7 +112,7 @@ If you don't see any diamond icons, it can mean that no colleague has shared con
 
 ## Put it all together
 
-Organizations set up Power BI subscriptions and licenses in different ways. From a business user's perspective, a common scenario gives you a free license. Your organization buys a Premium subscription, the admin assigns Pro licenses to a small group of users, and all the other users have free licenses. Typically, the admin assigns a Pro license to employees who create and share content. Pro users create [workspaces](../consumer/end-user-workspaces.md) and add dashboards, reports, semantic models, apps, and other content to those workspaces. To let free users collaborate in those workspaces, the admin or Pro user assigns the workspaces to Premium capacity and gives free users permissions (roles) to that workspace.
+Organizations set up Power BI subscriptions and licenses in different ways. From a business user's perspective, a common scenario gives you a free license. Your organization buys a Premium subscription, the admin assigns Pro licenses to a small group of users, and all the other users have free licenses. Typically, the admin assigns a Pro license to employees who create and share content. Pro users create [workspaces](../collaborate-share/end-user-workspaces.md) and add dashboards, reports, semantic models, apps, and other content to those workspaces. To let free users collaborate in those workspaces, the admin or Pro user assigns the workspaces to Premium capacity and gives free users permissions (roles) to that workspace.
 
 |License type  |Not in Premium capacity | Premium capacity  |
 |---------|---------|---------|
@@ -126,7 +126,7 @@ In the following diagram, the left side shows Pro users who create and share con
 
     :::image type="content" source="media/end-user-license/power-bi-dedicated.jpg" alt-text="Screenshot of Premium and shared capacity workspaces, and the users that can interact with each.":::
 
-Power BI Pro creators share and collaborate with other Pro users in either workspace. Power BI Pro users can only share and collaborate with free users by using Workspace B, which is in Premium capacity. The creator assigns roles to collaborators within the workspace. Your role determines what actions you can take. Power BI business users usually get the Viewer role. For more information, see [Permissions in the workspaces](../consumer/end-user-workspaces.md#permissions-in-the-workspaces).
+Power BI Pro creators share and collaborate with other Pro users in either workspace. Power BI Pro users can only share and collaborate with free users by using Workspace B, which is in Premium capacity. The creator assigns roles to collaborators within the workspace. Your role determines what actions you can take. Power BI business users usually get the Viewer role. For more information, see [Permissions in the workspaces](../collaborate-share/end-user-workspaces.md#permissions-in-the-workspaces).
 
 ## Considerations and limitations
 
@@ -147,6 +147,6 @@ Power BI Pro creators share and collaborate with other Pro users in either works
 
 ## Related content
 
-- [Am I a Power BI business user?](../consumer/end-user-consumer.md)  
+- [Am I a Power BI business user?](../personas/business-user/end-user-consumer.md)  
 - [Purchase Power BI](https://www.microsoft.com/power-platform/products/power-bi/pricing)  
-- [Features for free users](../consumer/end-user-features.md)
+- [Features for free users](../fundamentals/end-user-features.md)

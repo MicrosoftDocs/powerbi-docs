@@ -31,11 +31,11 @@ This article covers how to:
 * [Delete a tile](#delete)
 
   > [!TIP]
-  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](../consumer/end-user-tiles.md).
+  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](../explore-reports/end-user-tiles.md).
 
 ## Prerequisites
 
-You just need a [Fabric free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
+You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
 
 ## Get the sample
 
@@ -144,9 +144,9 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 ## Related content
 
-* [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
+* [Dashboard tiles in Power BI](../explore-reports/end-user-tiles.md)
 
-* [Dashboards in Power BI](../consumer/end-user-dashboards.md)
+* [Dashboards in Power BI](../explore-reports/end-user-dashboards.md)
 
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

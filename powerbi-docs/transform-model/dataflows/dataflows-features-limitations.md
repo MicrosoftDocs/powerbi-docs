@@ -33,6 +33,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 - Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) aren't supported for dataflows and datamarts in Premium workspaces.
 - When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
 - The following characters aren't allowed in Dataflow entities:  `\` `/`
+- When the ownership of a Dataflow Gen1 is transferred, its data sources connections become invalid, due to the new owner not being authenticated against the original connections. This is expected according to the design. To overcome the situation, after taking ownership of a Dataflow Gen1, make sure to open the dataflow in Power Query Online, if there is an existing gateway mapping, remove it, and then reassign it. If there is no gateway mapping, make sure to authenticate to the data sources, and save the changes.
 
 ## Dataflow authoring
 

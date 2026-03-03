@@ -1,4 +1,4 @@
-- name: Connect to data in Power BI
+- name: Power BI data connection documentation
   href: index.yml
   expanded: true
   items:
@@ -247,6 +247,8 @@
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Refresh semantic models in Power BI mobile apps"
+        href: mobile-apps-dataset-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"

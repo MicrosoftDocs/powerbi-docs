@@ -55,7 +55,7 @@ To learn more about this feature, see [Manage multiple add-ins with the Power BI
 
 We're pleased to share that the new left navigation menu has launched in the Power BI app for Teams. This enhancement streamlines the way you move through the app, making it easier to find and access your Power BI content within Teams. The redesigned menu brings a more user-friendly layout, helping you quickly locate essential tools and features. Try out the updated navigation today to enjoy a more seamless Power BI experience.
 
-:::image type="content" source="../consumer/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI app open in Teams with the Create tab and Paste or manually enter data option selected." lightbox="../consumer/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png":::
+:::image type="content" source="../explore-reports/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png" alt-text="Screenshot of the Power BI app open in Teams with the Create tab and Paste or manually enter data option selected." lightbox="../explore-reports/media/business-user-teams-create-reports/teams-power-bi-create-paste-manually.png":::
 
 ## March 2025
 

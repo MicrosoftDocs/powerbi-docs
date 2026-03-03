@@ -68,7 +68,7 @@
           "ms.subservice": {
               "collaborate-share/**/*.md": "pbi-collaborate-share",
               "connect-data/**/*.md": "pbi-data-sources",
-              "consumer/**/*.md": "pbi-explore",
+              "explore-reports/**/*.md": "pbi-explore",
               "create-reports/**/*.md": "pbi-reports-dashboards",
               "developer/**/*.md": "powerbi-developer",
               "enterprise/**/*.md": "powerbi-admin",

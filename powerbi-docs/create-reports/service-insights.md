@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 Do you have a new semantic model and aren't sure where to start? Need to build a dashboard quickly? Want to look for insights you might have missed?
 
-Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire semantic model (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
+Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire semantic model (quick insights). You can also run [quick insights on a specific dashboard tile](../explore-reports/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
 > The insights feature doesn't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
@@ -26,7 +26,7 @@ Run quick insights to generate interesting visualizations based on your data. Th
 > Row-level security (RLS) isn't supported by quick insights, even in import mode.
 >
 
-We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
+We built the insights feature on a growing [set of advanced analytical algorithms](../explore-reports/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 
 ## Run quick insights on a semantic model
 
@@ -43,7 +43,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
     :::image type="content" source="media/service-insights/power-bi-tab.png" alt-text="Screenshot highlighting Get quick insights from the More options menu.":::
 
-1. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your semantic model.
+1. Power BI uses [various algorithms](../explore-reports/end-user-insight-types.md) to search for trends in your semantic model.
 
     :::image type="content" source="media/service-insights/pbi_autoinsightssearching.png" alt-text="Screenshot of the Searching for insights dialog.":::
 
@@ -97,6 +97,6 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 ## Related content
 
 * [Optimize your data for Power BI quick insights](service-insights-optimize.md).
-* [Types of Insights supported by Power BI](../consumer/end-user-insight-types.md).
+* [Types of Insights supported by Power BI](../explore-reports/end-user-insight-types.md).
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/).

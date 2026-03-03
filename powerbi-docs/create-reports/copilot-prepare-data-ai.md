@@ -191,7 +191,7 @@ When you upgrade to the new Copilot tooling format, you permanently disable Q&A 
 
 :::image type="content" source="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png" alt-text="Screenshot of the Q&A visual after migration to Copilot tooling file format." lightbox="media/copilot-prep-data/copilot-migrate-from-qa-desktop-qa-error.png":::
 
-For more information about all Q&A features, see [Q&A in Power BI documentation](/power-bi/consumer/end-user-q-and-a).
+For more information about all Q&A features, see [Q&A in Power BI documentation](/power-bi/explore-reports/end-user-q-and-a).
 
 **The following Q&A tooling metadata is migrated to the new Copilot tooling format**. Other metadata, such as [Linguistic Relationships](/power-bi/natural-language/q-and-a-tooling-intro#relationships), isn't migrated. If you want to keep that metadata, you can [export the linguistic schema](/power-bi/natural-language/q-and-a-tooling-advanced#export-then-import-a-yaml-file) before upgrading.
 

@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Connect to data in Power BI
+title: Power BI data connection documentation
 summary: Learn how to connect Power BI to a wide variety of data sources, configure gateways, and manage data refresh. This documentation helps you get data into Power BI Desktop and the Power BI service, whether it's on-premises or in the cloud.
 
 metadata:
-  title: Connect to data in Power BI
+  title: Data connection documentation
   description: Power BI makes it easy to bring your data to life. Whether you're connecting to cloud services, on-premises databases, or custom data sources, this documentation helps you take action. Learn how to connect, refresh, transform, and manage your data using Power BI Desktop and the Power BI service. Start with the basics or dive into advanced scenarios like DirectQuery, gateways, and incremental refresh.
   services: powerbi
   ms.service: powerbi

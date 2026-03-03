@@ -122,7 +122,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national/regional clouds, the **Power BI** tab isn't available.
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
-- When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
+- When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../explore-reports/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
 - When embedding Power BI organizational apps in Teams Tabs, items that can't be embedded in Teams will open in a new browser window. 
 - For the best experience using links, use links created by the **Share** option in Power BI.
 - Links don't support [query string parameters](service-url-filters.md). 

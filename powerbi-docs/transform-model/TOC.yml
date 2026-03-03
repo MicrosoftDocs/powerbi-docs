@@ -1,11 +1,11 @@
-- name: Transform, shape, and model data in Power BI
+- name: Power BI data transformation, shaping, and modeling documentation
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
     items: 
-    - name: "Power Query Editor overview"
+    - name: "What is Power Query Editor?"
       href: desktop-query-overview.md
   - name: Tutorials
     expanded: true

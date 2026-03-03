@@ -105,7 +105,7 @@ The following report server item types, however, can't be migrated to Power BI:
 - **Report models**: deprecated.
 - **Report parts**: deprecated.
 
-If your .rdl reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md), when it makes sense.
+If your .rdl reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../explore-reports/end-user-reports.md), when it makes sense.
 
 For more information about supported data sources for paginated reports in the Power BI service, see [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md#other-data-sources).
 

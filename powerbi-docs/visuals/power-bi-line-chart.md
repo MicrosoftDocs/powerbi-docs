@@ -1,4 +1,4 @@
-﻿---
+---
 title: Line Charts in Power BI
 description: Learn how to create and customize line charts in Power BI to visualize trends and patterns over time.
 author: JulCsc

@@ -121,5 +121,5 @@ The following list presents known considerations and limitations for the image v
 ## Related content
 
 - [List slicer](power-bi-visualization-list-slicer.md)
-- [Text slicer](power-bi-visualization-text-slicer.md)
+- [Input slicer](power-bi-visualization-input-slicer.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

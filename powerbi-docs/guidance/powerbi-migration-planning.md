@@ -57,9 +57,9 @@ One of the first decisions is to choose the Power BI product. It's a decision be
 
 It's helpful to understand how consumers of a solution prefer to view reports and dashboards. Questions to ask include:
 
-- Will a [Power BI app](../consumer/end-user-apps.md) (which comprises reports and dashboards from a single workspace) be the best way to deliver content to consumers, or will direct access to a workspace be sufficient for content viewers?
+- Will a [Power BI app](../explore-reports/end-user-apps.md) (which comprises reports and dashboards from a single workspace) be the best way to deliver content to consumers, or will direct access to a workspace be sufficient for content viewers?
 - Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
-- Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
+- Will consumers access content using [mobile devices](../explore-reports/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
 ## Decide whether other content can be created
 

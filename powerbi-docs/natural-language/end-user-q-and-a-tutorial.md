@@ -22,7 +22,7 @@ Q&A is available throughout Power BI, and this article focuses on using Q&A on a
 
 ## Prerequisites  
 
-- Read the Q&A intro article [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
+- Read the Q&A intro article [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md).
 - Sign up for a [free or trial license for the Power BI service](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 
 - Open the Power BI service in a browser.
@@ -73,7 +73,7 @@ Once you're familiar with the data, head back to the dashboard and place your cu
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot shows the Q&A screen with suggested questions.":::
 
-Don't see the Q&A box? See [Considerations and limitations](../consumer/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
+Don't see the Q&A box? See [Considerations and limitations](../explore-reports/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
 
 ## Use Q&A on a dashboard in the Power BI service
 
@@ -132,8 +132,8 @@ Let's try it out.
 
 ## Related content
 
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
-- [Tips for asking questions in Power BI Q&A](../consumer/end-user-q-and-a-tips.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
+- [Tips for asking questions in Power BI Q&A](../explore-reports/end-user-q-and-a-tips.md)
 - [Make Excel data work well with Q&A in Power BI](../create-reports/service-prepare-data-for-q-and-a.md)
 - [Enable Q&A for live connections in Power BI](../create-reports/service-q-and-a-direct-query.md)
 - [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)

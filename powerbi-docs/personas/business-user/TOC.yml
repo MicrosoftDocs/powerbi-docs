@@ -1,69 +1,312 @@
-- name: Power BI for business users
+# =============================================================================
+# DOCUMENTATION ROOT (REQUIRED)
+# =============================================================================
+- name: Power BI business user documentation
   href: index.yml
+
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
+- name: Overview
   items:
-    - name: Get started
-      items:
-        - name: Am I a Power BI business user?
-          href: ../../consumer/end-user-consumer.md?context=/power-bi/personas/business-user/context/context
-        - name: Get around in the Power BI service
-          href: ../../consumer/end-user-experience.md?context=/power-bi/personas/business-user/context/context
-        - name: Sign in to Power BI
-          href: ../../consumer/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
-        - name: Find content with search
-          href: ../../consumer/end-user-search-sort.md?context=/power-bi/personas/business-user/context/context
+  - name: What is a Power BI business user?
+    href: end-user-consumer.md
+
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+- name: Get started
+  items:
+  - name: Sign in for the first time
+    href: ../../explore-reports/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
+  - name: Get around the Power BI service
+    href: ../../explore-reports/end-user-experience.md?context=/power-bi/personas/business-user/context/context
+  - name: Search and sort content
+    href: ../../explore-reports/end-user-search-sort.md?context=/power-bi/personas/business-user/context/context
+  - name: Find content shared with you
+    href: ../../explore-reports/end-user-shared-with-me.md?context=/power-bi/personas/business-user/context/context
+  - name: Apps
+    items:
+    - name: Apps in Power BI
+      href: ../../explore-reports/end-user-apps.md?context=/power-bi/personas/business-user/context/context
+    - name: Install and use apps
+      href: ../../explore-reports/end-user-app-view.md?context=/power-bi/personas/business-user/context/context
+    - name: Get started with org apps (preview)
+      href: ../../explore-reports/org-app-items.md?context=/power-bi/personas/business-user/context/context
+  - name: Glossary and terminology
+    href: ../../explore-reports/end-user-glossary.md?context=/power-bi/personas/business-user/context/context
+  - name: Frequently asked questions
+    href: end-user-faq.yml
+
+# =============================================================================
+# VIEW REPORTS AND DASHBOARDS
+# =============================================================================
+- name: View reports and dashboards
+  items:
+  - name: Reports
+    items:
+    - name: Reports overview
+      href: ../../explore-reports/end-user-reports.md?context=/power-bi/personas/business-user/context/context
+    - name: Open a report
+      href: ../../explore-reports/end-user-report-open.md?context=/power-bi/personas/business-user/context/context
+    - name: Change report display settings
+      href: ../../explore-reports/end-user-report-view.md?context=/power-bi/personas/business-user/context/context
+    - name: Interact with reports
+      href: ../../explore-reports/end-user-reading-view.md?context=/power-bi/personas/business-user/context/context
+  - name: Dashboards
+    items:
+    - name: Dashboards overview
+      href: ../../explore-reports/end-user-dashboards.md?context=/power-bi/personas/business-user/context/context
+    - name: Open a dashboard
+      href: ../../explore-reports/end-user-dashboard-open.md?context=/power-bi/personas/business-user/context/context
+    - name: Interact with dashboard tiles
+      href: ../../explore-reports/end-user-tiles.md?context=/power-bi/personas/business-user/context/context
+  - name: Paginated reports
+    items:
+    - name: Paginated reports overview
+      href: ../../explore-reports/end-user-paginated-report.md?context=/power-bi/personas/business-user/context/context
+    - name: View a paginated report
+      href: ../../explore-reports/paginated-reports-view-power-bi-service.md?context=/power-bi/personas/business-user/context/context
+    - name: Interact with parameters
+      href: ../../explore-reports/paginated-reports-view-parameters.md?context=/power-bi/personas/business-user/context/context
+  - name: View related content
+    href: ../../explore-reports/end-user-related.md?context=/power-bi/personas/business-user/context/context
+  - name: Check content freshness
+    href: ../../explore-reports/end-user-fresh.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# UNDERSTAND DATA AND INSIGHTS
+# =============================================================================
+- name: Understand data and insights
+  items:
+  - name: View automatic insights
+    href: ../../explore-reports/end-user-insights.md?context=/power-bi/personas/business-user/context/context
+  - name: Types of insights
+    href: ../../explore-reports/end-user-insight-types.md?context=/power-bi/personas/business-user/context/context
+  - name: Analyze fluctuations in visuals
+    href: ../../explore-reports/end-user-analyze-visuals.md?context=/power-bi/personas/business-user/context/context
+  - name: Understand anomaly detection
+    href: ../../visuals/power-bi-visualization-anomaly-detection.md?context=/power-bi/personas/business-user/context/context
+  - name: View data behind a visual
+    href: ../../visuals/service-reports-show-data.md?context=/power-bi/personas/business-user/context/context
+  - name: Understand data point limits
+    href: ../../visuals/power-bi-data-points.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# EXPLORE DATA TO ANSWER QUESTIONS
+# =============================================================================
+- name: Explore data to answer questions
+  items:
+  - name: Filter and interact
+    items:
+    - name: Interact with visuals
+      href: ../../explore-reports/end-user-visualizations.md?context=/power-bi/personas/business-user/context/context
+    - name: Understand cross-filtering
+      href: ../../explore-reports/end-user-interactions.md?context=/power-bi/personas/business-user/context/context
+    - name: Change sort order
+      href: ../../explore-reports/end-user-change-sort.md?context=/power-bi/personas/business-user/context/context
+    - name: Use filters
+      href: ../../explore-reports/end-user-report-filter.md?context=/power-bi/personas/business-user/context/context
+    - name: Use slicers
+      href: ../../explore-reports/end-user-slicer.md?context=/power-bi/personas/business-user/context/context
+    - name: Use buttons and actions
+      href: ../../explore-reports/end-user-buttons.md?context=/power-bi/personas/business-user/context/context
+    - name: Use Explore (preview)
+      href: ../../explore-reports/explore-data-service.md?context=/power-bi/personas/business-user/context/context
+    - name: Use ArcGIS maps
+      href: ../../explore-reports/end-user-arcgis.md?context=/power-bi/personas/business-user/context/context
+    - name: Interact with small multiples
+      href: ../../visuals/power-bi-visualization-small-multiples-interact.md?context=/power-bi/personas/business-user/context/context
+  - name: Use Q&A
+    items:
+    - name: Q&A overview
+      href: ../../explore-reports/end-user-q-and-a.md?context=/power-bi/personas/business-user/context/context
+    - name: Tips and tricks for Q&A
+      href: ../../explore-reports/end-user-q-and-a-tips.md?context=/power-bi/personas/business-user/context/context
+  - name: Use Copilot
+    items:
+    - name: Summarize report content
+      href: ../../explore-reports/copilot-pane-summarize-content.md?context=/power-bi/personas/business-user/context/context
+    - name: Chat with your data
+      href: ../../explore-reports/copilot-chat-with-data-standalone.md?context=/power-bi/personas/business-user/context/context
+    - name: "Tutorial: Discover data"
+      href: ../../create-reports/tutorial-copilot-power-bi-discover-data.md?context=/power-bi/personas/business-user/context/context
+    - name: "Tutorial: Explore data"
+      href: ../../create-reports/tutorial-copilot-power-bi-explore-data.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# PERSONALIZE YOUR EXPERIENCE
+# =============================================================================
+- name: Personalize your experience
+  items:
+  - name: Personalize visuals
+    href: ../../explore-reports/end-user-personalize-visuals.md?context=/power-bi/personas/business-user/context/context
+  - name: Create and use bookmarks
+    href: ../../explore-reports/end-user-bookmarks.md?context=/power-bi/personas/business-user/context/context
+  - name: Spotlight visuals
+    href: ../../explore-reports/end-user-spotlight.md?context=/power-bi/personas/business-user/context/context
+  - name: Favorite content
+    href: ../../explore-reports/end-user-favorite.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# COLLABORATE AND SHARE INSIGHTS
+# =============================================================================
+- name: Collaborate and share insights
+  items:
+  - name: Add comments
+    href: ../../explore-reports/end-user-comment.md?context=/power-bi/personas/business-user/context/context
+  - name: Export a report to PDF
+    href: ../../collaborate-share/end-user-pdf.md?context=/power-bi/personas/business-user/context/context
+  - name: Export a report to PowerPoint
+    href: ../../collaborate-share/end-user-powerpoint.md?context=/power-bi/personas/business-user/context/context
+  - name: Export data from a visual
+    href: ../../visuals/power-bi-visualization-export-data.md?context=/power-bi/personas/business-user/context/context
+  - name: Print reports and dashboards
+    href: ../../explore-reports/end-user-print.md?context=/power-bi/personas/business-user/context/context
+  - name: Use Power BI in Teams
+    items:
+    - name: Use data for productive meetings
+      href: ../../explore-reports/business-user-teams-meetings.md?context=/power-bi/personas/business-user/context/context
+    - name: Use metrics to drive results
+      href: ../../explore-reports/business-user-teams-goals.md?context=/power-bi/personas/business-user/context/context
+    - name: Lead data-driven discussions
+      href: ../../explore-reports/business-user-teams-share-data.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# STAY INFORMED WITH ALERTS AND SUBSCRIPTIONS
+# =============================================================================
+- name: Stay informed with alerts and subscriptions
+  items:
+  - name: Subscribe to reports and dashboards
+    href: ../../collaborate-share/end-user-subscribe.md?context=/power-bi/personas/business-user/context/context
+  - name: Set alerts on reports
+    href: ../../explore-reports/business-user-set-alerts.md?context=/power-bi/personas/business-user/context/context
+  - name: Set alerts on dashboards
+    href: ../../explore-reports/end-user-alerts.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# USE POWER BI ON MOBILE
+# =============================================================================
+- name: Use Power BI on mobile
+  items:
+  - name: Overview
+    items:
+    - name: What are the mobile apps?
+      href: ../../explore-reports/mobile/mobile-apps-for-mobile-devices.md?context=/power-bi/personas/business-user/context/context
+    - name: What's new in the mobile apps
+      href: ../../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context
+    - name: Meet the home page
+      href: ../../explore-reports/mobile/mobile-apps-home-page.md?context=/power-bi/personas/business-user/context/context
+  - name: View content
+    items:
+    - name: Explore dashboards and reports
+      href: ../../explore-reports/mobile/mobile-apps-quickstart-view-dashboard-report.md?context=/power-bi/personas/business-user/context/context
+    - name: View dashboards
+      href: ../../explore-reports/mobile/mobile-apps-view-dashboard.md?context=/power-bi/personas/business-user/context/context
     - name: View reports
+      href: ../../explore-reports/mobile/mobile-reports-in-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context
+    - name: View reports optimized for your phone
+      href: ../../explore-reports/mobile/mobile-apps-view-phone-report.md?context=/power-bi/personas/business-user/context/context
+    - name: View org apps
+      href: ../../explore-reports/mobile/mobile-apps-org-apps.md?context=/power-bi/personas/business-user/context/context
+    - name: View on-premises KPIs and reports
+      href: ../../explore-reports/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md?context=/power-bi/personas/business-user/context/context
+  - name: Use Copilot
+    items:
+    - name: Overview of Copilot in mobile apps
+      href: ../../explore-reports/mobile/mobile-copilot-overview.md?context=/power-bi/personas/business-user/context/context
+    - name: Standalone Copilot
+      href: ../../explore-reports/mobile/mobile-standalone-copilot.md?context=/power-bi/personas/business-user/context/context
+    - name: In-report Copilot
+      href: ../../explore-reports/mobile/mobile-apps-copilot.md?context=/power-bi/personas/business-user/context/context
+  - name: Interact and share
+    items:
+    - name: Share a dashboard or report
+      href: ../../explore-reports/mobile/mobile-share-dashboard-from-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context
+    - name: Work with metrics
+      href: ../../explore-reports/mobile/mobile-apps-metrics.md?context=/power-bi/personas/business-user/context/context
+    - name: Filter a report by location
+      href: ../../explore-reports/mobile/mobile-apps-geographic-filtering.md?context=/power-bi/personas/business-user/context/context
+    - name: Use data in real-world context
+      href: ../../explore-reports/mobile/mobile-apps-data-in-real-world-context.md?context=/power-bi/personas/business-user/context/context
+    - name: Scan QR codes
+      href: ../../explore-reports/mobile/mobile-apps-qr-code.md?context=/power-bi/personas/business-user/context/context
+    - name: Scan barcodes
+      href: ../../explore-reports/mobile/mobile-apps-scan-barcode.md?context=/power-bi/personas/business-user/context/context
+    - name: Ask questions with Q&A virtual analyst
+      href: ../../explore-reports/mobile/tutorial-mobile-apps-ios-qna.md?context=/power-bi/personas/business-user/context/context
+    - name: Dark mode
+      href: ../../explore-reports/mobile/mobile-apps-dark-mode.md?context=/power-bi/personas/business-user/context/context
+  - name: Offline access and external content
+    items:
+    - name: View your data offline
+      href: ../../explore-reports/mobile/mobile-apps-offline-data.md?context=/power-bi/personas/business-user/context/context
+    - name: Access external org content (B2B)
+      href: ../../explore-reports/mobile/mobile-apps-b2b.md?context=/power-bi/personas/business-user/context/context
+  - name: Platform specifics
+    items:
+    - name: iOS
       items:
-        - name: What is a report?
-          href: ../../consumer/end-user-reports.md?context=/power-bi/personas/business-user/context/context
-        - name: What is a dashboard?
-          href: ../../consumer/end-user-dashboards.md?context=/power-bi/personas/business-user/context/context
-        - name: Open and view a report
-          href: ../../consumer/end-user-report-open.md?context=/power-bi/personas/business-user/context/context
-        - name: Interact with visuals
-          href: ../../consumer/end-user-visualizations.md?context=/power-bi/personas/business-user/context/context
-        - name: Use filters
-          href: ../../consumer/end-user-report-filter.md?context=/power-bi/personas/business-user/context/context
-        - name: Use slicers
-          href: ../../consumer/end-user-slicer.md?context=/power-bi/personas/business-user/context/context
-    - name: Explore and interact
+      - name: Get started with the iOS app
+        href: ../../explore-reports/mobile/mobile-iphone-app-get-started.md?context=/power-bi/personas/business-user/context/context
+      - name: iOS device search integration
+        href: ../../explore-reports/mobile/mobile-apps-ios-search-integration.md?context=/power-bi/personas/business-user/context/context
+      - name: Apple Watch app
+        href: ../../explore-reports/mobile/mobile-apple-watch.md?context=/power-bi/personas/business-user/context/context
+    - name: Android
       items:
-        - name: Use bookmarks
-          href: ../../consumer/end-user-bookmarks.md?context=/power-bi/personas/business-user/context/context
-        - name: Show data behind a visual
-          href: ../../consumer/end-user-analyze-visuals.md?context=/power-bi/personas/business-user/context/context
-        - name: Add comments to reports
-          href: ../../consumer/end-user-comment.md?context=/power-bi/personas/business-user/context/context
-        - name: Personalize visuals
-          href: ../../consumer/end-user-personalize-visuals.md?context=/power-bi/personas/business-user/context/context
-        - name: Export to PDF
-          href: ../../collaborate-share/end-user-pdf.md?context=/power-bi/personas/business-user/context/context
-    - name: Ask questions with Q&A
-      items:
-        - name: Q&A for business users
-          href: ../../consumer/end-user-q-and-a.md?context=/power-bi/personas/business-user/context/context
-        - name: Tips for asking questions
-          href: ../../consumer/end-user-q-and-a-tips.md?context=/power-bi/personas/business-user/context/context
-        - name: Q&A tutorial
-          href: ../../natural-language/end-user-q-and-a-tutorial.md?context=/power-bi/personas/business-user/context/context
-    - name: Stay informed
-      items:
-        - name: Subscribe to reports and dashboards
-          href: ../../collaborate-share/end-user-subscribe.md?context=/power-bi/personas/business-user/context/context
-        - name: Set data alerts
-          href: ../../consumer/end-user-alerts.md?context=/power-bi/personas/business-user/context/context
-        - name: View shared content
-          href: ../../collaborate-share/end-user-shared-with-me.md?context=/power-bi/personas/business-user/context/context
-        - name: Add favorites
-          href: ../../consumer/end-user-favorite.md?context=/power-bi/personas/business-user/context/context
-    - name: Power BI mobile
-      items:
-        - name: What are the mobile apps?
-          href: ../../consumer/mobile/mobile-apps-for-mobile-devices.md?context=/power-bi/personas/business-user/context/context
-        - name: Explore dashboards and reports
-          href: ../../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md?context=/power-bi/personas/business-user/context/context
-        - name: View reports on mobile
-          href: ../../consumer/mobile/mobile-apps-view-phone-report.md?context=/power-bi/personas/business-user/context/context
-        - name: Use Copilot on mobile
-          href: ../../consumer/mobile/mobile-copilot-overview.md?context=/power-bi/personas/business-user/context/context
-        - name: Set alerts in mobile apps
-          href: ../../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md?context=/power-bi/personas/business-user/context/context
+      - name: Get started with the Android app
+        href: ../../explore-reports/mobile/mobile-android-app-get-started.md?context=/power-bi/personas/business-user/context/context
+      - name: Use Android app shortcuts
+        href: ../../explore-reports/mobile/mobile-app-quick-access-shortcuts.md?context=/power-bi/personas/business-user/context/context
+  - name: Advanced features
+    items:
+    - name: Work side by side with other apps
+      href: ../../explore-reports/mobile/mobile-apps-split-screen.md?context=/power-bi/personas/business-user/context/context
+  - name: Mobile resources
+    items:
+    - name: Supported languages
+      href: ../../explore-reports/mobile/mobile-apps-supported-languages.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# WORK ACCESSIBLY AND EFFICIENTLY
+# =============================================================================
+- name: Work accessibly and efficiently
+  items:
+  - name: Use accessibility features
+    href: ../../explore-reports/desktop-accessibility-consuming-tools.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# WHAT BUSINESS USERS DON'T MANAGE
+# =============================================================================
+- name: What business users don't manage
+  items:
+  - name: Understand workspaces
+    href: ../../collaborate-share/end-user-workspaces.md?context=/power-bi/personas/business-user/context/context
+  - name: Understand licenses
+    href: ../../fundamentals/end-user-license.md?context=/power-bi/personas/business-user/context/context
+
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+- name: Resources
+  items:
+  - name: Contribute to Fabric docs
+    href: /contribute/
+  - name: Microsoft Q & A
+    href: /answers/
+  - name: Provide feedback
+    items:  
+    - name: Fabric ideas
+      href: https://ideas.fabric.microsoft.com/
+    - name: Azure feedback
+      href: https://feedback.azure.com/    
+  - name: Community
+    href: https://community.fabric.microsoft.com/
+  - name: Service updates
+    href: https://azure.microsoft.com/updates/    
+  - name: Azure Status
+    href: https://azure.status.microsoft/
+  - name: Microsoft Learn training
+    href: /training/fabric/
+

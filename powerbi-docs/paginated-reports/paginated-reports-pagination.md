@@ -102,6 +102,6 @@ For more information about how these properties work when reports are exported t
   
 ## Related content
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md)
 - [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)

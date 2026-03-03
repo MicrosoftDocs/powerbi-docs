@@ -23,6 +23,11 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ## January 2026
 
 ### Power BI Report Server
+- *Version: 1.25.9552.1669 (build 15.0.1120.119), Released: February 25, 2026*
+    - Fixed issue where certain types of Power BI Reports lead to excessive crash dumps being created.
+
+> [!NOTE] 
+> There is a known issue with build 15.0.1120.113 of January 2026 PBIRS where excessive crash dumps are created. All users are advised to move to a later release to avoid this issue.
 
 - *Version: 1.25.9508.3237 (build 15.0.1120.113), Released: January 21, 2026*
     - Added support for SQL Server 2025 Enterprise Core Product ID (key).
@@ -55,6 +60,9 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Desktop (optimized for Power BI Report Server)
 
 Note: This is the first release of Power BI Desktop for RS that will not include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.147.5030.0  (September 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
 
 - *Version: 2.147.1088.0  (September 2025), Released: September 22, 2025*
      - Support for September 2025 Power BI Report Server.
@@ -94,6 +102,9 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 > [!NOTE]
 > This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.143.4379.0  (May 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
 
 - *Version: 2.143.4379.0  (May 2025), Released: October 6, 2025*
      - Security updates

@@ -23,7 +23,7 @@ There are many uses for bookmarking. For example, you can create a collection of
 
 ## Other articles about bookmarks
 
-- In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
+- In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../explore-reports/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
 - After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#create-a-bookmark-navigator) with a few more clicks.
 
 ## Create report bookmarks
@@ -57,7 +57,7 @@ When you create a bookmark, the following elements are saved with the bookmark:
 - Sort order
 - Drill location
 - Visibility of an object (by using the **Selection** pane)
-- The focus or [Spotlight mode of any visible object](../consumer/end-user-spotlight.md)
+- The focus or [Spotlight mode of any visible object](../explore-reports/end-user-spotlight.md)
 
 Configure a report page as you want it to appear in the bookmark. After your report page and visuals are arranged how you want them, select **Add** from the **Bookmarks** pane to add a bookmark.
 
@@ -113,7 +113,7 @@ When you have a collection of bookmarks you'd like to present in order, you can 
 
     :::image type="content" source="media/desktop-bookmarks/service-bookmarks-pane-view-slide-show.png" alt-text="Screenshot of how to select the visual to view in the Bookmarks pane.":::
 
-Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slideshow) in the Power BI service.
+Read more about [using bookmarks as a slideshow](../explore-reports/end-user-bookmarks.md#bookmarks-as-a-slideshow) in the Power BI service.
 
 ## Visibility: Using the Selection pane
 
@@ -236,6 +236,6 @@ In this release of bookmark features, there are a few considerations and limitat
 
 For more information about features that are similar or interact with bookmarks, see the following articles:
 
-- [Personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md)
+- [Personal bookmarks in the Power BI service](../explore-reports/end-user-bookmarks.md)
 - [Build a bookmark navigation experience](button-navigators.md)
 - [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)

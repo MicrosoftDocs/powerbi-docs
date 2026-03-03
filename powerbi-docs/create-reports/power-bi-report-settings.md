@@ -22,7 +22,7 @@ With the report settings in Power BI Desktop and the Power BI service, you can c
 It might be helpful to first read:
 
 - [Create a report from an Excel file in the Power BI service](service-report-create-new.md), to understand the report creation experience.
-- [Reports in Power BI](../consumer/end-user-reports.md), to understand your report readers' experience.
+- [Reports in Power BI](../explore-reports/end-user-reports.md), to understand your report readers' experience.
 
 ## Prerequisites
 

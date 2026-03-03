@@ -66,7 +66,7 @@ Use the usage metrics reports to:
 - Determine which report pages users access most frequently.
 - Find reports that haven't been viewed recently.
 - View high-level report performance statistics. These statistics can help guide report design optimization efforts, and identify reports that could have intermittent or consistent performance issues.
-- Understand which consumption methods (for example, browser or [Power BI mobile app](../consumer/mobile/mobile-apps-for-mobile-devices.md)) report consumers use. This information can help report creators decide how much effort to put into [optimizing reports for mobile use](../create-reports/power-bi-create-mobile-optimized-report-about.md).
+- Understand which consumption methods (for example, browser or [Power BI mobile app](../explore-reports/mobile/mobile-apps-for-mobile-devices.md)) report consumers use. This information can help report creators decide how much effort to put into [optimizing reports for mobile use](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
 > [!TIP]
 > Power BI captures usage metrics for activity that occurs for content that's been published to the Power BI service (including when it's rendered by using [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)). Access to usage metrics is just one reason to encourage report creators to publish their reports to the Power BI service, rather than sharing Power BI Desktop files.

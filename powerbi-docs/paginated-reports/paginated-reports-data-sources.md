@@ -88,6 +88,6 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 ## Related content
 - [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md).
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

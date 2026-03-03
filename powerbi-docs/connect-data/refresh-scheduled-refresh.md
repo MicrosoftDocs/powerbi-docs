@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/18/2025
+ms.date: 02/13/2026
 LocalizationGroup: Data refresh
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
@@ -24,14 +24,39 @@ This article describes the options available for scheduled refresh for the [On-p
 > [!NOTE]
 > You can configure semantic model refresh with **Fabric Data Pipelines** using refresh templates (**Fabric required**). Examples include scheduled monthly refreshes and cascading refresh workflows. Refresh templates offer **additional capabilities beyond the standard Scheduled refresh**, making it easier to manage complex scenarios. See [Refresh templates](data-pipeline-templates.md) for details.
 
-
 To get to the **Schedule refresh** screen:
 
 1. Go to the workspace and select a semantic model from the workspace content list.
 
 1. On the semantic model details page, select **Refresh** > **Schedule refresh**.
 
-    :::image type="content" source="media/refresh-scheduled-refresh/dataset-schedule-refresh.png" alt-text="Screenshot of schedule refresh menu option on a semantic model details page in the Power BI service.":::
+    :::image type="content" source="media/refresh-scheduled-refresh/semantic-model-schedule-refresh.png" alt-text="Screenshot of schedule refresh menu option on a semantic model details page in the Power BI service.":::
+
+## Scheduled refresh
+
+The **Refresh** section is where you define the frequency and time slots to refresh the semantic model. Some data sources don't require a gateway to be configurable for refresh, while other data sources require a gateway.
+
+In a DirectQuery or live connection scenario, most source data isn't imported and therefore doesn't rely on scheduled refresh. However, some metadata (for example, role security updates) can still require the service to process the model. When a semantic model qualifies for performance optimization, **Refresh** can appear under the **Optimize performance** section.
+
+Set the **Configure a refresh schedule** slider to **On** to configure the settings.
+
+> [!NOTE]
+> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time.
+
+:::image type="content" source="media/refresh-scheduled-refresh/scheduled-refresh.png" alt-text="Screenshot of scheduled refresh settings showing frequency and time slots for a semantic model.":::
+
+> [!NOTE]
+> Inactivity pause: After two months of inactivity, scheduled refresh on your semantic model is paused. A semantic model is considered inactive when no user has visited any dashboard or report built on it. Any view by any user (including via an app or Embedded scenario) resets the inactivity counter. When scheduled refresh is paused, the semantic model owner is emailed and the refresh schedule is displayed as **Disabled**. To resume, open any report or dashboard that uses the semantic model, then re-enable the schedule if needed.
+
+### Refresh frequency limits
+
+The maximum number of scheduled refreshes per day depends on the license/capacity:
+
+* Power BI Pro: Up to 8 scheduled refreshes per day.
+* Power BI Premium per user (PPU) and Premium / Fabric capacity (F SKU / EM / P / Fabric capacity): Up to 48 scheduled refreshes per day.
+* Additional on-demand (manual or API) refreshes also count toward resource usage; see limits in [Data refresh](refresh-data.md#data-refresh).
+
+For Fabric capacities, consider orchestrating complex refresh patterns with Data Factory pipelines or notebook jobs when you need dependencies or monthly cadence.
 
 ## Gateway and cloud connections
 
@@ -69,36 +94,7 @@ If you're using the on-premises data gateway to refresh data, you don't need to 
 > [!NOTE]
 > When connecting to on-premises SharePoint for data refresh, Power BI supports only *Anonymous*, *Basic*, and *Windows (NTLM/Kerberos)* authentication mechanisms. Power BI does not support *ADFS* or any *Forms-Based Authentication* mechanisms for data refresh of on-premises SharePoint data sources.
 
-## Scheduled refresh
-
-The **Refresh** section is where you define the frequency and time slots to refresh the semantic model. Some data sources don't require a gateway to be configurable for refresh, while other data sources require a gateway.
-
-In a DirectQuery or live connection scenario, most source data isn't imported and therefore doesn't rely on scheduled refresh. However, some metadata (for example, role security updates) can still require the service to process the model. When a semantic model qualifies for performance optimization, **Refresh** can appear under the **Optimize performance** section.
-
-Set the **Configure a refresh schedule** slider to **On** to configure the settings.
-
-> [!NOTE]
-> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner. Refresh can begin as early as five minutes before the scheduled refresh time.
-
-:::image type="content" source="media/refresh-scheduled-refresh/scheduled-refresh.png" alt-text="Screenshot of scheduled refresh settings showing frequency and time slots for a semantic model.":::
-
-> [!NOTE]
-> Inactivity pause: After two months of inactivity, scheduled refresh on your semantic model is paused. A semantic model is considered inactive when no user has visited any dashboard or report built on it. Any view by any user (including via an app or Embedded scenario) resets the inactivity counter. When scheduled refresh is paused, the semantic model owner is emailed and the refresh schedule is displayed as **Disabled**. To resume, open any report or dashboard that uses the semantic model, then re-enable the schedule if needed.
-
-### Refresh frequency limits
-
-The maximum number of scheduled refreshes per day depends on the license/capacity:
-
-* Power BI Pro: Up to 8 scheduled refreshes per day.
-* Power BI Premium per user (PPU) and Premium / Fabric capacity (F SKU / EM / P / Fabric capacity): Up to 48 scheduled refreshes per day.
-* Additional on-demand (manual or API) refreshes also count toward resource usage; see limits in [Data refresh](refresh-data.md#data-refresh).
-
-For Fabric capacities, consider orchestrating complex refresh patterns with Data Factory pipelines or notebook jobs when you need dependencies or monthly cadence.
-
 ## What's supported?
-
-> [!NOTE]
-> Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
 > [!TIP]
 > Power BI does not have a monthly refresh interval option. However, you can use Power Automate (formerly Microsoft Flow) to create a custom refresh interval that occurs monthly, as described in this [blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/).
@@ -128,10 +124,28 @@ For information about supported data sources, see [Power BI data sources](power-
 
 ## Troubleshooting
 
-Sometimes refreshing data might not go as expected, typically due to an issue connected with a gateway. See these gateway troubleshooting articles for tools and known issues.
+Sometimes refreshing data might not go as expected, typically due to an issue connected with a gateway. To diagnose refresh issues:
+
+1. **View refresh history**: Go to the workspace, select the semantic model, then select **Refresh** > **Refresh history**. You can see the status, start time, duration, and error message for each refresh attempt.
+1. **Check the gateway status**: In the semantic model settings, open the **Gateway and cloud connections** section to confirm your gateway is online.
+1. **Update credentials**: If credentials have expired or changed, go to **Data source credentials** in the semantic model settings and re-enter them.
+
+> [!NOTE]
+> Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
+>
+> **To re-enable refresh after consecutive failures:**
+>
+> 1. Go to the semantic model settings and select **Refresh** > **Schedule refresh**.
+> 1. Resolve the underlying issue (for example, update expired credentials in **Data source credentials**).
+> 1. Set the **Configure a refresh schedule** slider back to **On** and select **Apply**.
+>
+> To view failure details, select the semantic model, then select **Refresh** > **Refresh history**. The refresh history shows the status, duration, and error messages for each refresh attempt.
+
+For more gateway-specific troubleshooting, see these articles:
 
 * [Troubleshoot the on-premises data gateway](service-gateway-onprem-tshoot.md)
 * [Troubleshoot Power BI gateway (personal mode)](service-admin-troubleshooting-power-bi-personal-gateway.md)
+* [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)
 
 ## Related content
 

@@ -32,7 +32,7 @@ Power BI Q&A uses the text and schema values from your data source to determine 
 For more information, see:
 
 * [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md)
-* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 
 ## Enable Q&A
 
@@ -67,6 +67,6 @@ The feature has some limitations:
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

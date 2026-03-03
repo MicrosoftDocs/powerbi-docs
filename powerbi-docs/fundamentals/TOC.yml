@@ -1,14 +1,18 @@
-- name: Get started with Power BI - documentation
+- name: Power BI get started documentation
   href: index.yml
   items:
-    - name: What is Power BI?
-      href: power-bi-overview.md
-    - name: Get Power BI Desktop
-      href: desktop-get-the-desktop.md
-    - name: Basics of Power BI service
-      href: service-basic-concepts.md
-    - name: What's new in the latest Power BI update?
-      href: whats-new.md
+    - name: Overview
+      items:
+        - name: What is Power BI?
+          href: power-bi-overview.md
+        - name: Basics of Power BI service
+          href: service-basic-concepts.md
+        - name: What's new in the latest Power BI update?
+          href: whats-new.md
+    - name: Get started
+      items:
+        - name: Get Power BI Desktop
+          href: desktop-get-the-desktop.md
     - name: Tutorials
       items:
         - name: Get started with Power BI Desktop
@@ -17,6 +21,8 @@
           href: service-get-started.md
         - name: Get started with Microsoft Fabric and Power BI
           href: fabric-get-started.md
+        - name: Download samples in the Power BI mobile apps
+          href: mobile-apps-download-samples.md
     - name: Licensing
       items:
         - name: Sign up or purchase Power BI as an individual
@@ -33,14 +39,14 @@
           href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
     - name: Resources
       items:
+        - name: Power BI feature list for business users
+          href: end-user-features.md
         - name: Videos
           href: videos.md
         - name: Power BI updates archive
           href: desktop-latest-update-archive.md
         - name: Power BI Desktop change log
           href: desktop-change-log.md
-        - name: Power BI Desktop Send a Smile Privacy Statement
-          href: desktop-send-smile-privacy-statement.md
         - name: Power BI Desktop diagnostics
           href: desktop-diagnostics.md
         - name: Supported languages and countries/regions

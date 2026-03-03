@@ -17,7 +17,7 @@ LocalizationGroup: Ask questions of your data
 > [!IMPORTANT]
 > Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. Q&A is available on dashboards in the Power BI service and can be added to reports in the Power BI service or Power BI Desktop. This article is written for business users, and explains how to use the Q&A feature in a report. The examples used are from the Power BI service, but the process is almost identical in Desktop Report view. For an introduction to Q&A, see [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words. Q&A is available on dashboards in the Power BI service and can be added to reports in the Power BI service or Power BI Desktop. This article is written for business users, and explains how to use the Q&A feature in a report. The examples used are from the Power BI service, but the process is almost identical in Desktop Report view. For an introduction to Q&A, see [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md).
 
 These articles cover using Q&A in other scenarios in Power BI:
 
@@ -27,7 +27,7 @@ These articles cover using Q&A in other scenarios in Power BI:
 
 ## Use Q&A in a report
 
-There are two ways report creators add Q&A functionality to a report--with a Q&A visual and with a Q&A button. You don't see Q&A in a report unless a report creator added one of these Q&A options. If you have Edit permissions to a report, you can add your own Q&A visuals and buttons to reports, see [add a Q&A button to a report](../consumer/end-user-buttons.md) or [add a Q&A visual to a report](../visuals/power-bi-visualization-q-and-a.md) 
+There are two ways report creators add Q&A functionality to a report--with a Q&A visual and with a Q&A button. You don't see Q&A in a report unless a report creator added one of these Q&A options. If you have Edit permissions to a report, you can add your own Q&A visuals and buttons to reports, see [add a Q&A button to a report](../explore-reports/end-user-buttons.md) or [add a Q&A visual to a report](../visuals/power-bi-visualization-q-and-a.md) 
 
 ### Use Q&A in a report
 
@@ -106,7 +106,7 @@ At the current time, Power BI Q&A only supports answering natural language queri
 
 ## Related content
 
-- [Q&A basics](../consumer/end-user-q-and-a.md)
+- [Q&A basics](../explore-reports/end-user-q-and-a.md)
 - [Use a Q&A visual on a dashboard](end-user-q-and-a-tutorial.md)
 - [Convert a Q&A visual into a standalone visual in a report](../visuals/power-bi-visualization-q-and-a.md)
 - [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)

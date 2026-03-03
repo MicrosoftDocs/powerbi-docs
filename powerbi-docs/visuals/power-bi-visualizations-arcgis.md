@@ -29,7 +29,7 @@ Combining authoritative data layers with spatial analysis helps you explore the 
 This demographic layer helps you see how household income and store locations affect current sales and future purchasing, advertising, and site selection.
 
 > [!TIP]
-> To learn how report consumers experience ArcGIS for Power BI, see [Interact with ArcGIS maps that are shared with you](../consumer/end-user-arcgis.md).
+> To learn how report consumers experience ArcGIS for Power BI, see [Interact with ArcGIS maps that are shared with you](../explore-reports/end-user-arcgis.md).
 >
 > For more information, go to [Esri's ArcGIS for Power BI](https://www.esri.com/powerbi):
 >
@@ -505,7 +505,7 @@ This table compares standard features for all Power BI users and features for si
 
 ## Related content
 
-- [Interact with an ArcGIS map that has been shared with you](../consumer/end-user-arcgis.md)
+- [Interact with an ArcGIS map that has been shared with you](../explore-reports/end-user-arcgis.md)
 - [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  
 - More questions? Try asking the [Esri ArcGIS for Power BI Community](https://community.powerbi.com/t5/Desktop/ArcGIS-Maps-for-Power-BI-Preview-Discussion/td-p/72947).
 - [Esri's ArcGIS Maps for Power BI documentation](https://www.esri.com/en-us/arcgis/products/arcgis-for-microsoft/get-started)

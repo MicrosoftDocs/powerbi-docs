@@ -40,7 +40,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | When ready, the content creator publishes their file to Power BI Report Server. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content is published to a [folder](../report-server/getting-around.md) in Power BI Report Server. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Report consumers view reports published to Power BI Report Server. |
-| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../explore-reports/mobile/mobile-apps-for-mobile-devices.md). |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Server administrators manage the Windows server infrastructure. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Database administrators manage Power BI Report Server, including the report server databases, and SQL Server Agent. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md). |

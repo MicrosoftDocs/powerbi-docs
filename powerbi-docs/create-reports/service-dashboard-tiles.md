@@ -23,7 +23,7 @@ A tile is a snapshot of your data that you pin to the dashboard. You can create 
 
 :::image type="content" source="media/service-dashboard-tiles/power-bi-dashboard.png" alt-text="Screenshot of a Power BI dashboard with multiple tiles.":::
 
-Dashboards and dashboard tiles are features of Power BI service, and aren't available in Power BI Desktop. You can't create dashboards on mobile devices, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them.
+Dashboards and dashboard tiles are features of Power BI service, and aren't available in Power BI Desktop. You can't create dashboards on mobile devices, but you can [view and share](../explore-reports/mobile/mobile-apps-view-dashboard.md) them.
 
 Besides pinning tiles, you can create standalone tiles directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control. Standalone tiles include text boxes, images, videos, streaming data, and web content.
 
@@ -67,9 +67,9 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
 
     From here, you can:
 
-     - [Add comments to the dashboard](../consumer/end-user-comment.md).
-     - [Open the report that was used to create this tile](../consumer/end-user-reports.md).
-     - [View in focus mode](../consumer/end-user-focus.md).
+     - [Add comments to the dashboard](../explore-reports/end-user-comment.md).
+     - [Open the report that was used to create this tile](../explore-reports/end-user-reports.md).
+     - [View in focus mode](../explore-reports/end-user-report-view.md).
      - [Export the data used in the tile](../visuals/power-bi-visualization-export-data.md).
      - [Edit the title and subtitle and add a hyperlink](service-dashboard-edit-tile.md).
      - [Run insights](service-insights.md).

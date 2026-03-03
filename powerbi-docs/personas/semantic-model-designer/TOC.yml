@@ -1,16 +1,18 @@
-- name: Power BI for semantic model designers
+- name: Power BI semantic model designer documentation
   href: index.yml
   items:
+    - name: Overview
+      items:
+        - name: What is Power BI for semantic model designers?
+          href: ../../transform-model/desktop-modeling-view.md?context=/power-bi/personas/semantic-model-designer/context/context
+        - name: What is a star schema?
+          href: ../../guidance/star-schema.md?context=/power-bi/personas/semantic-model-designer/context/context
     - name: Get started with data modeling
       items:
         - name: Understand model relationships
           href: ../../transform-model/desktop-relationships-understand.md?context=/power-bi/personas/semantic-model-designer/context/context
-        - name: What is a star schema?
-          href: ../../guidance/star-schema.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Understand storage modes
           href: ../../transform-model/desktop-storage-mode.md?context=/power-bi/personas/semantic-model-designer/context/context
-        - name: Use the modeling view
-          href: ../../transform-model/desktop-modeling-view.md?context=/power-bi/personas/semantic-model-designer/context/context
     - name: Transform data
       items:
         - name: Query overview

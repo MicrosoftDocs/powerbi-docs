@@ -20,7 +20,7 @@ Set alerts to notify you when data in your dashboards changes beyond the limits 
 
 You can set alerts on tiles in your My Workspace. You can also set alerts if someone shares a dashboard that's in a [Premium capacity](../enterprise/service-premium-what-is.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard by using **Add tile** > **Custom streaming data**.
 
-Only you can see the alerts you set, even if you share your dashboard. Similarly, the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms. You can set and view data alerts [in the Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can automate and integrate alerts with Power Automate. If you want to try it yourself, see [Integrate Power BI data alerts with Power Automate](../collaborate-share/service-flow-integration.md).
+Only you can see the alerts you set, even if you share your dashboard. Similarly, the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms. You can set and view data alerts [in the Power BI mobile apps](../explore-reports/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can automate and integrate alerts with Power Automate. If you want to try it yourself, see [Integrate Power BI data alerts with Power Automate](../collaborate-share/service-flow-integration.md).
 
 > [!NOTE]
 > This article shows you how to set alerts on **dashboards**. To learn how to set alerts on **reports**, see [Create Fabric Activator alerts in Power BI reports](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi).
@@ -67,7 +67,7 @@ There are many ways to manage your alerts:
 
 - From a [dashboard tile](#dashboard-tile).
 - From the [Power BI **Settings** menu](#power-bi-settings-menu).
-- On a tile in the [Power BI mobile apps](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+- On a tile in the [Power BI mobile apps](../explore-reports/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### Dashboard tile
 
@@ -97,7 +97,7 @@ There are many ways to manage your alerts:
 ## Related content
 
 - [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md)
-- [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+- [Set data alerts on your mobile device](../explore-reports/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 - [What is Power BI?](../fundamentals/power-bi-overview.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

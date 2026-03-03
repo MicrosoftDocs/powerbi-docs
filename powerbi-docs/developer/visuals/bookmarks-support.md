@@ -33,7 +33,7 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 Let's say you want to create several bookmarks on a report page with each bookmark having different data points selected.
 
-First, select one or more data points in your visual. The visual passes your selections to the host. Then select **Add** in the [**Bookmark pane**](../../consumer/end-user-bookmarks.md). Power BI saves the current selections for the new bookmark.
+First, select one or more data points in your visual. The visual passes your selections to the host. Then select **Add** in the [**Bookmark pane**](../../explore-reports/end-user-bookmarks.md). Power BI saves the current selections for the new bookmark.
 
 Do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
@@ -193,5 +193,5 @@ To save a property value as a filter state, set the object property as `"filterS
 
 ## Related content
 
-- [What are bookmarks](../../consumer/end-user-bookmarks.md)
+- [What are bookmarks](../../explore-reports/end-user-bookmarks.md)
 - [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#create-report-bookmarks)

@@ -158,6 +158,6 @@ If download times out when using a REST API to export a report, then use the Pow
 
 ## Related content
 
-- [Reports in Power BI](../consumer/end-user-reports.md)
+- [Reports in Power BI](../explore-reports/end-user-reports.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md)

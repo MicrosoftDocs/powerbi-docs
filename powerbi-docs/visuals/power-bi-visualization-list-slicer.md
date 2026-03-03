@@ -171,6 +171,6 @@ This section provides a list of known considerations and limitations, designed t
 
 ## Related content
 
-- [Text slicer](power-bi-visualization-text-slicer.md)
+- [Input slicer](power-bi-visualization-input-slicer.md)
 - [Button slicer](power-bi-visualization-button-slicer.md)
 - [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

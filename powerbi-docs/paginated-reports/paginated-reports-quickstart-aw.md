@@ -41,7 +41,7 @@ To create the paginated report, complete the following prerequisites:
 
 The license requirements for publishing Power BI paginated reports (.rdl files) are the same as for Power BI reports (.pbix files).
 
-- With a free license, you can publish paginated reports to **My Workspace** in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../consumer/end-user-features.md#licenses).
+- With a free license, you can publish paginated reports to **My Workspace** in the Power BI service. For more information, see [Feature availability for users with free licenses in the Power BI service](../fundamentals/end-user-features.md#licenses).
 - With a Power BI Pro license or a Power BI Premium Per User (PPU) license, you can publish paginated reports to other workspaces. You also need at least a [contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) in the workspace.
 
 ## Create the matrix with a wizard

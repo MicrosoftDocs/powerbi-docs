@@ -148,4 +148,4 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - [Performance and scalability for paginated reports.](/power-bi/guidance/report-paginated-performance-scalability-considerations)
 
 - [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
-- [Search for and sort content](../consumer/end-user-search-sort.md).
+- [Search for and sort content](../explore-reports/end-user-search-sort.md).

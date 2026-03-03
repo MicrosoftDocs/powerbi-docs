@@ -3,8 +3,6 @@ title: Create linked goals in the Power BI service
 description: Show the same goal on multiple scorecards across workspaces. All updates are reflected in all goal locations.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -70,8 +68,7 @@ If you link a rollup goal onto a different scorecard, it continues to show its c
 
 ## Related content
 
-- [Get started with goals in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
-- [Create connected goals in Power BI](service-goals-create-connected.md)
+- [Create subgoals in the Power BI service](service-goals-subgoals.md)
 
 Have more questions? [Try the Power BI Community](https://community.powerbi.com/).

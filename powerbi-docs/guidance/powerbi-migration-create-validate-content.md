@@ -107,7 +107,7 @@ The main ways to grant access to Power BI content are:
 
 It's the time to double-check semantic model details like field names, formatting, sorting, and default summarization behavior. Interactive report features, such as [slicers](../visuals/power-bi-visualization-slicers.md), [drill-down actions](../create-reports/desktop-drillthrough.md), [drillthrough actions](../create-reports/desktop-drillthrough.md), [expressions](../create-reports/desktop-conditional-format-visual-titles.md), [buttons](../create-reports/desktop-buttons.md), or [bookmarks](../create-reports/desktop-bookmarks.md), should all be verified, too.
 
-During the development process, the Power BI solution should be published to a development workspace in the Power BI service on a regular basis. Verify all functionality works as expected in the service, such as the rendering of custom visuals. It's also a good time to do further testing. Test [scheduled refresh](../connect-data/refresh-scheduled-refresh.md), [Q&A](../consumer/end-user-q-and-a.md), and how reports and dashboards look on a [mobile device](../consumer/mobile/mobile-apps-for-mobile-devices.md).
+During the development process, the Power BI solution should be published to a development workspace in the Power BI service on a regular basis. Verify all functionality works as expected in the service, such as the rendering of custom visuals. It's also a good time to do further testing. Test [scheduled refresh](../connect-data/refresh-scheduled-refresh.md), [Q&A](../explore-reports/end-user-q-and-a.md), and how reports and dashboards look on a [mobile device](../explore-reports/mobile/mobile-apps-for-mobile-devices.md).
 
 ### Validate performance
 

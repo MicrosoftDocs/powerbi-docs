@@ -74,6 +74,6 @@ To connect directly to individual sheets in your account, you can use the Smarts
 ## Related content
 
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](../consumer/end-user-apps.md)
+* [Install and use apps in Power BI](../explore-reports/end-user-apps.md)
 * [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

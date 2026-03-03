@@ -32,18 +32,18 @@ In every case, the report is filtered when recipients first open it. They can cl
 
 Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). Again, the report is filtered when recipients first open it. They can clear the filter selections in the report.
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). To learn more about interacting with reports that have been shared with you, see [Working with content shared with you](end-user-shared-with-me.md).
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). To learn more about interacting with reports that have been shared with you, see [Working with content shared with you](../explore-reports/end-user-shared-with-me.md).
 
 ## Share via link
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Select **Share** and make sure **Include my changes** is selected: 
 
     :::image type="content" source="media/service-share-reports/include-my-changes-setting.png" alt-text="Screenshot of sharing Share via link.":::
 
 ## Share a report in Teams
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. You can access **Chat in Teams** from the action bar: 
 
     ![Screenshot showing Chat in Teams in action bar.](media/service-share-reports/power-bi-chat-teams-action-bar.png)
@@ -56,7 +56,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
 You can also share individual visuals.
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Right-click a visual, then select **Share > Link to this visual**.
 
     :::image type="content" source="./media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png" alt-text="Screenshot showing Visual right-click menu with Share submenu expanded.":::
@@ -77,7 +77,7 @@ You can share live, filtered report pages or visuals by adding them to a PowerPo
 
 If you prefer to share directly to users, you can also share your filtered report through direct access sharing. 
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Select **Share** > **More options (...)** > **Manage permissions**: 
 
     ![Screenshot showing Manage permissions filter.](media/service-share-reports/manage-permissions-filter.png)
@@ -131,6 +131,6 @@ Things to keep in mind about sharing reports:
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a report or dashboard](service-share-dashboards.md)
-* [Interact with content that has been shared with you](end-user-shared-with-me.md)
+* [Interact with content that has been shared with you](../explore-reports/end-user-shared-with-me.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.

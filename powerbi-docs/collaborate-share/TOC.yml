@@ -1,9 +1,11 @@
-- name: Collaborate, share, and integrate across products with Power BI
+- name: Power BI collaboration documentation
   href: index.yml
   expanded: true
   items:
-  - name: "What's new in Power BI collaboration and integration"
-    href: service-power-bi-powerpoint-add-in-whats-new.md
+  - name: Overview
+    items:
+    - name: "What's new in Power BI collaboration and integration"
+      href: service-power-bi-powerpoint-add-in-whats-new.md
   - name: Share, publish, & endorse your work
     items: 
     - name: "Content endorsement"
@@ -12,8 +14,6 @@
       href: service-discovery.md
     - name: "Share reports and dashboards"
       href: service-share-dashboards.md
-    - name: "Find content shared with you"
-      href: end-user-shared-with-me.md
     - name: "Export a report to PDF"
       href: end-user-pdf.md
     - name: "Request or grant access to a report"
@@ -50,6 +50,8 @@
     items: 
     - name: "Workspaces in Power BI"
       href: service-new-workspaces.md
+    - name: "Workspaces for business users"
+      href: end-user-workspaces.md
     - name: "Create workspaces"
       href: service-create-the-new-workspaces.md
     - name: "Roles in workspaces"
@@ -81,13 +83,13 @@
     - name: Embed reports in Teams tabs
       href: service-embed-report-microsoft-teams.md
     - name: Use data for productive meetings  
-      href: ../consumer/business-user-teams-meetings.md?context=/power-bi/collaborate-share/context/context
+      href: ../explore-reports/business-user-teams-meetings.md?context=/power-bi/collaborate-share/context/context
     - name: Use metrics to improve results  
-      href: ../consumer/business-user-teams-goals.md?context=/power-bi/collaborate-share/context/context
+      href: ../explore-reports/business-user-teams-goals.md?context=/power-bi/collaborate-share/context/context
     - name: Lead data-driven discussions  
-      href: ../consumer/business-user-teams-share-data.md?context=/power-bi/collaborate-share/context/context
+      href: ../explore-reports/business-user-teams-share-data.md?context=/power-bi/collaborate-share/context/context
     - name: Create reports from your Teams data  
-      href: ../consumer/business-user-teams-create-reports.md?context=/power-bi/collaborate-share/context/context
+      href: business-user-teams-create-reports.md
     - name: "Chat in Teams directly"
       href: service-share-report-teams.md
     - name: "Understand link preview cards in Teams chats"

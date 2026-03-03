@@ -246,7 +246,7 @@ Here are some of the types of files that might be involved in a Power BI impleme
   - **Power BI Desktop files**: The .pbix files that have been downloaded from the Power BI service.
   - **PowerPoint and PDF files**: The PowerPoint presentations (.pptx) and PDF documents downloaded from the Power BI service.
   - **Excel and CSV files**: Data exported from reports in the Power BI service.
-  - **Paginated report files**: The files exported from paginated reports in the Power BI service. Excel, PDF, and PowerPoint are supported. Other [export file formats](../consumer/end-user-paginated-report.md#export-the-paginated-report) exist for paginated reports as well, including Word, XML, or web archive. When using the [export files to reports API](/rest/api/power-bi/reports/export-to-file-in-group), image formats are also supported.
+  - **Paginated report files**: The files exported from paginated reports in the Power BI service. Excel, PDF, and PowerPoint are supported. Other [export file formats](../explore-reports/end-user-paginated-report.md#export-the-paginated-report) exist for paginated reports as well, including Word, XML, or web archive. When using the [export files to reports API](/rest/api/power-bi/reports/export-to-file-in-group), image formats are also supported.
   - **Email files**: Email images and attachments from subscriptions.
 
 You'll need to make some decisions about where users can or can't store files. Typically, that process involves creating a governance policy that users can refer to. The locations for source files and exported files should be secured to ensure appropriate access by authorized users.

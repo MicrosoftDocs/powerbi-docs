@@ -1,8 +1,8 @@
 ---
 title: Create data function buttons
 description: Learn how to configure buttons in Power BI desktop with the data function action to enable translytical task flows.
-author: kgremban
-ms.author: kgremban
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -46,15 +46,15 @@ When you write your own functions for translytical task flow scenarios, follow t
 
 ## Configure inputs for function parameters
 
-Each parameter that your user data function takes as input needs to map to an element in the Power BI report. This element can be a button, list, or text slicer; a data field; or measures.
+Each parameter that your user data function takes as input needs to map to an element in the Power BI report. This element can be a button, list, or input slicer; a data field; or measures.
 
 ### Slicers as input controls
 
-The three supported slicer types (button, list, and text) are all preview features, sometimes called *new slicers*. Make sure you enable them as described in the prerequisites.
+The three supported slicer types (button, list, and input) are all preview features, sometimes called *new slicers*. Make sure you enable them as described in the prerequisites.
 
 To use a button or list slicer as a parameter, it needs to be linked to a data field from the **Data** pane. If you want to use a button or list slicer only as an input control and not to filter data, remove all visual interactions through **Edit interactions**. For more information about editing interactions, see [Change how visuals interact in a Power BI report](./service-reports-visual-interactions.md).
 
-To use a text slicer as a parameter, linking it to a data field is optional. Link it to a data field only if you want to filter data in the report. Otherwise, create it without using a data field from the **Data** pane. 
+To use an input slicer as a parameter, linking it to a data field is optional. Link it to a data field only if you want to filter data in the report. Otherwise, create it without using a data field from the **Data** pane. 
 
 ### Data fields or measures as input controls
 
@@ -109,7 +109,7 @@ On a report page, you can create a section with slicers that don't interact with
 
 The following example shows an interactive section with three elements:
 
-* A *text slicer* to input a new order ID
+* An *input slicer* to input a new order ID
 * A *button slicer* to select the order status from one of three options
 * A *button* to submit the input from the slicers to a user data function 
 
