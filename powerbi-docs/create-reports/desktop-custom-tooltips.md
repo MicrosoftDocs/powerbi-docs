@@ -47,7 +47,7 @@ You can further customize a tooltip by applying aggregation functions to fields.
 
 ## Use quick measures
 
-In Power BI Desktop, you can can use **quick measures** to quickly and easily perform common, powerful calculations. For more information, see [Create quick measures](../transform-model/desktop-quick-measures.md).
+In Power BI Desktop, you can use **quick measures** to quickly and easily perform common, powerful calculations. For more information, see [Create quick measures](../transform-model/desktop-quick-measures.md).
 
 ## Enable tooltip autoscale (preview)
 
