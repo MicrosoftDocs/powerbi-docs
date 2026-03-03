@@ -58,9 +58,6 @@ After you create the tooltip report page, configure it to register as a tooltip 
 > If your tooltip page appears blank or doesn't populate, make sure you add fields to **Tooltip fields** and that your visuals reference those fields. The tooltip page must contain visuals and be set as a tooltip in **Page Information**.
 
 1. Turn the **Tooltip** slider to **On** in the **Page Information** card to make the page a tooltip.
-
-   :::image type="content" source="media/desktop-tooltips/desktop-tooltips-07.png" alt-text="Screenshot of tooltip slider to indicate the page is a tooltip.":::
-
 1. Specify the fields for which you want the report tooltip to appear. Drag the fields into **Tooltip fields** in the **Fields** section of the **Visualizations** pane. For visuals in the report that include the specified fields, the tooltip appears. In the following image, the *Total Defect Qty* field is dragged into **Tooltip fields**.
 
    :::image type="content" source="media/desktop-tooltips/desktop-tooltips-08.png" alt-text="Screenshot of fields to determine where the tooltip appears.":::
