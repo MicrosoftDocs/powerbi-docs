@@ -389,6 +389,8 @@
     # Overview and fundamentals
     - name: Visualizations overview
       href: ../visuals/power-bi-visualizations-overview.md
+    - name: Choose the best visual for your data
+      href: ../visuals/power-bi-visualization-best-practices.md
     - name: Add visuals to a report
       href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane
