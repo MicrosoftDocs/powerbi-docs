@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Stay on top of your goals
 ms.topic: how-to
-ms.date: 02/26/2026
+ms.date: 03/02/2026
 
 #customer intent: As a Power BI user I want to learn how to follow and keep track of my goals on Power BI scorecards.
 ---
@@ -90,17 +90,17 @@ The following screenshot shows a scorecard filtered with the keyword *attrition*
 
 Use the *Follow* functionality to quickly access goals you're interested in and stay up to date on the activity on these goals. You can follow goals as you're browsing through different scorecards and later access all your followed goals in one place. So, you can get a quick overview of the goals you care about, without having to navigate to different scorecards often.
 
-To follow, hover over the goal in the scorecard to select the **Follow metric** icon.
+To follow, hover over the goal in the scorecard to select the **Follow goal** icon.
 
-:::image type="content" source="media/service-goals-follow/follow-metric.png" alt-text="Screenshot of following a goal.":::
+:::image type="content" source="media/service-goals-follow/follow-goal.png" alt-text="Screenshot of following a goal.":::
 
 To see all your followed goals, go to the Scorecards hub and select **Following**.
 
-:::image type="content" source="media/service-goals-follow/following-metrics.png" alt-text="Screenshot of followed goals in Scorecards hub." lightbox="media/service-goals-follow/following-metrics.png":::
+:::image type="content" source="media/service-goals-follow/following-goals.png" alt-text="Screenshot of followed goals in Scorecards hub." lightbox="media/service-goals-follow/following-goals.png":::
 
 Once you follow a goal, you get Teams notifications whenever the goal definition is updated. Examples of an update are when a check-in is added or an automated status rule changes the status of the goal. Read more about [notifications in Teams](../collaborate-share/service-teams-notifications.md).
 
-To unfollow and stop getting Teams notifications, hover over the goals and select the **Unfollow goal**.
+To unfollow and stop getting Teams notifications, hover over the goals and select **Unfollow goal**.
 
 You can also [create email subscriptions for your scorecards](service-goals-subscriptions.md) to receive regular updates.
 
