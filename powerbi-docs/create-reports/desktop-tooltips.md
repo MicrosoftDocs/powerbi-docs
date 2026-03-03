@@ -26,9 +26,6 @@ You can create multiple tooltip pages. Each tooltip page can be associated with 
 
 :::image type="content" source="media/desktop-tooltips/desktop-tooltips-00a.png" alt-text="Screenshot of report tooltips for Power BI.":::
 
-> [!TIP]
-> You might be interested in trying the new visual tooltips, currently in preview. They can include drill-down and drillthrough actions, and can reflect report theme styling. Read more about [visual tooltips](desktop-visual-tooltips.md).
-
 ## Create a report tooltip page
 
 1. Create a new report page by selecting the **+** button along the bottom of the canvas in the page tabs area, beside the last page in the report.
