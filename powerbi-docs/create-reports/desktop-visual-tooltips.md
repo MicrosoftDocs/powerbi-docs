@@ -100,16 +100,13 @@ To enable Help tooltips:
 
 ## Troubleshoot tooltip problems
 
-- **Tooltip doesn't appear**: The visual might not support standard tooltips or the Tooltip toggle might be off. The following visuals support the full tooltip experience, including a Tooltip field well in the Build pane:
+- **Tooltip doesn't appear**: The visual might not support standard tooltips or the Tooltip toggle might be off. For visual-specific differences and exceptions, see [Considerations and limitations](#considerations-and-limitations). The following visuals support the full tooltip experience, including a Tooltip field well in the Build pane:
   - Bar and column charts
   - Line and area charts
   - Treemaps
   - Scatter and bubble charts
   - Pie and donut charts
   - Ribbon, funnel, and waterfall charts
-
-  For visual-specific differences and exceptions, see [Considerations and limitations](#considerations-and-limitations).
-
 - **Report page tooltip doesn't appear**: Confirm Tooltip is enabled in Page information and the visual's Tooltip Type is set to Report page.
 - **Actions footer is missing**: Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
 - **Can't add fields to the Tooltip well**: Tables, matrices, and certain visuals don't expose a Tooltip field in the Build pane.
