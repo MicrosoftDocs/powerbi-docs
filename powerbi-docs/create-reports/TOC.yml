@@ -208,7 +208,7 @@
         href: desktop-visual-tooltips.md
       - name: Customize tooltips
         href: desktop-custom-tooltips.md
-      - name: Add report tooltips to enhance your visuals
+      - name: Create report tooltips
         href: desktop-tooltips.md
     - name: Data display in tables
       items:

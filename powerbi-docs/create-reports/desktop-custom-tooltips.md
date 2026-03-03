@@ -1,13 +1,13 @@
 ---
-title: Customize Tooltips in Power BI Desktop and Service
-description: Learn how to create and customize tooltips for visuals in Power BI Desktop and the Power BI service using drag-and-drop fields and aggregations.
+title: Customize Tooltips in Power BI
+description: Learn how to customize tooltips for Power BI visuals using drag-and-drop fields and aggregations. Add context and detail to your reports with custom tooltips.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: ZoeDouglas
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 03/03/2026
 LocalizationGroup: Create reports
 ai-usage: ai-assisted
 ---
@@ -16,54 +16,57 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Tooltips provide an elegant way to give contextual information and detail to data points on a visual. The following image shows a tooltip applied to a chart in Power BI Desktop. You can customize tooltips in Power BI Desktop and in the Power BI service.
-
-> [!TIP]
-> **Quick customization:** Drag any field from your data into the **Tooltips** bucket in the Visualizations pane to add it to your tooltip. For more advanced tooltips, see [Create tooltips based on report pages](desktop-tooltips.md).
+Tooltips provide contextual information and detail for data points on a visual. You can customize tooltips in Power BI Desktop and the Power BI service.
 
 :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-1.png" alt-text="Screenshot of the default tooltip showing data point value and category on a chart in Power BI.":::
 
-When you create a visualization, the default tooltip displays the data point's value and category. Many situations call for customizing the tooltip information. Customizing tooltips provides context and information for users viewing the visual. By using custom tooltips, you can specify more data points that display as part of the tooltip.
+When you create a visualization, the default tooltip displays the data point's value and category. Custom tooltips let you specify additional data points to display.
 
-## How to customize tooltips
+> [!TIP]
+> For more advanced tooltips based on custom report pages, see [Create tooltips based on report pages](desktop-tooltips.md).
 
-To create a customized tooltip, drag a field into the **Tooltips** bucket in the **Fields** well of the **Visualizations** pane, as shown in the following image. In the following image, three fields are placed into the **Tooltips** bucket.
+## Add fields to the tooltip field well
 
-:::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-2.png" alt-text="Screenshot of the Visualizations pane showing three fields added to the Tooltips bucket.":::
+1. Select the visual you want to customize.
+1. In the **Build visual** pane, drag a field into the **Tooltip** field well. You can add multiple fields. In the following image, three fields are added to the **Tooltip** field well.
 
-After you add fields to **Tooltips**, hovering over a data point on the visualization shows the values for those fields.
+   :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-2.png" alt-text="Screenshot of the Build visual pane showing three fields added to the Tooltip field well.":::
 
-:::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-3.png" alt-text="Screenshot of a custom tooltip displaying multiple field values when hovering over a data point.":::
+1. Hover over a data point on the visualization to see the values for the fields you added.
 
-## Customize tooltips with aggregation or quick measures
+   :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-3.png" alt-text="Screenshot of a custom tooltip displaying multiple field values when hovering over a data point.":::
 
-You can further customize a tooltip by selecting an aggregation function. Select the arrow beside the field in the **Tooltips** bucket. Then select from the available options.
+## Apply aggregation functions
 
-:::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-4.png" alt-text="Screenshot of the Tooltips bucket showing the dropdown menu for selecting aggregation functions.":::
+You can further customize a tooltip by applying aggregation functions to fields.
 
-In Power BI Desktop, you can also select a *quick measure*. Read about [creating quick measures](../transform-model/desktop-quick-measures.md) in Power BI Desktop.
+1. In the **Tooltip** field well, select the arrow beside the field you want to aggregate.
+1. Select from the available aggregation options.
 
-There are many ways to customize tooltips, using any field available in your semantic model, to convey quick information and insights to users viewing your dashboards or reports.
+   :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-4.png" alt-text="Screenshot of the Tooltip field well showing the dropdown menu for selecting aggregation functions.":::
 
-## Allow tooltips to auto-scale (preview)
+## Use quick measures
 
-You can change a report setting so that tooltips adjust their size automatically based on the canvas size.
+In Power BI Desktop, you can use **quick measures** to quickly and easily perform common, powerful calculations. For more information, see [Create quick measures](../transform-model/desktop-quick-measures.md).
+
+## Enable tooltip autoscale (preview)
+
+You can configure tooltips to adjust their size automatically based on the canvas size.
 
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
-In Power BI Desktop, select **File** > **Options and settings** > **Options**.
+1. Select **File** > **Options and settings** > **Options**.
+1. Under **Current file**, select **Report settings**.
+1. Select **Tooltip size is affected by canvas size**.
 
-Under **Current file**, select **Report settings**, and select **Tooltip size is affected by canvas size**.
-
-:::image type="content" source="media/desktop-custom-tooltips/desktop-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in Power BI Desktop.":::
+   :::image type="content" source="media/desktop-custom-tooltips/desktop-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in Power BI Desktop.":::
 
 ### [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, select More options (...) next to a report > **Settings**.
+1. Select **More options** (...) next to a report, and then select **Settings**.
+1. In the **Settings** pane, select **Tooltip size is affected by canvas size**.
 
-In the **Settings** pane, select **Tooltip size is affected by canvas size**.
-
-:::image type="content" source="media/desktop-custom-tooltips/service-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in the Power BI service.":::
+   :::image type="content" source="media/desktop-custom-tooltips/service-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in the Power BI service.":::
 
 ---
 
@@ -74,3 +77,7 @@ In the **Settings** pane, select **Tooltip size is affected by canvas size**.
 ## Related content
 
 - [Create tooltips based on report pages](desktop-tooltips.md)
+- [Create visual tooltips](desktop-visual-tooltips.md)
+- [Set up drillthrough in Power BI reports](desktop-drillthrough.md)
+- [Custom visuals (AppSource Visuals)](../developer/visuals/develop-power-bi-visuals.md)
+- [Decomposition trees](../visuals/power-bi-visualization-decomposition-tree.md)
