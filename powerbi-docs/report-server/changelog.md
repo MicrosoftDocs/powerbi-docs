@@ -61,6 +61,9 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 Note: This is the first release of Power BI Desktop for RS that will not include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
 
+- *Version: 2.147.5030.0  (September 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
+
 - *Version: 2.147.1088.0  (September 2025), Released: September 22, 2025*
      - Support for September 2025 Power BI Report Server.
 
@@ -99,6 +102,9 @@ Note: This is the first release of Power BI Desktop for RS that will not include
 
 > [!NOTE]
 > This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.143.4379.0  (May 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
 
 - *Version: 2.143.4379.0  (May 2025), Released: October 6, 2025*
      - Security updates
