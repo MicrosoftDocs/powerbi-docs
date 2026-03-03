@@ -25,7 +25,7 @@ When you create a visualization, the default tooltip displays the data point's v
 > [!TIP]
 > For more advanced tooltips based on custom report pages, see [Create tooltips based on report pages](desktop-tooltips.md).
 
-## Customize tooltips
+## Add fields to the tooltip field well
 
 1. Select the visual you want to customize.
 1. In the **Build visual** pane, drag a field into the **Tooltip** field well. You can add multiple fields. In the following image, three fields are added to the **Tooltip** field well.
@@ -36,7 +36,7 @@ When you create a visualization, the default tooltip displays the data point's v
 
    :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-3.png" alt-text="Screenshot of a custom tooltip displaying multiple field values when hovering over a data point.":::
 
-## Customize tooltips with aggregation or quick measures
+## Apply aggregation functions
 
 You can further customize a tooltip by applying aggregation functions to fields.
 
@@ -45,9 +45,11 @@ You can further customize a tooltip by applying aggregation functions to fields.
 
    :::image type="content" source="media/desktop-custom-tooltips/custom-tooltips-4.png" alt-text="Screenshot of the Tooltip field well showing the dropdown menu for selecting aggregation functions.":::
 
-In Power BI Desktop, you can also use quick measures in tooltips. For more information, see [Create quick measures](../transform-model/desktop-quick-measures.md).
+## Use quick measures
 
-## Allow tooltips to autoscale (preview)
+In Power BI Desktop, you can can use **quick measures** to quickly and easily perform common, powerful calculations. For more information, see [Create quick measures](../transform-model/desktop-quick-measures.md).
+
+## Enable tooltip autoscale (preview)
 
 You can configure tooltips to adjust their size automatically based on the canvas size.
 
