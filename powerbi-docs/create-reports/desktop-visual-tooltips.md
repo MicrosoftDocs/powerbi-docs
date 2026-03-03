@@ -18,13 +18,7 @@ LocalizationGroup: Create reports
 
 Tooltips display contextual information when users hover over data points in visuals. They help users understand data without clicking or navigating away from the report.
 
-When you hover over a visual, the tooltip shows field values and any other fields you add. If the visual supports drill actions, users can explore hierarchies and related pages directly from the tooltip. This article shows how to configure tooltip content, styling, and behavior.
-
-## Use tooltips in Power BI
-
-### How Power BI displays tooltips
-
-When a user hovers over a visual data point, the tooltip displays:
+When you hover over a visual, the tooltip shows field values and any other fields you add. If the visual supports drill actions, users can explore hierarchies and related pages directly from the tooltip. This article shows how to configure tooltip content, styling, and behavior. The tooltip displays:
 
 - The **field name and value** for each field used in the visual.  
 - **Additional fields** that you add in the **Tooltip** field well. To learn how to add fields and customize tooltip content, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).  
@@ -37,7 +31,7 @@ Tooltips provide fast insight while keeping the user inside the flow of the repo
 
 :::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-example.png" alt-text="Screenshot of Tooltip displaying Field Name and Value, Additional fields, and Drill down/through.":::
 
-### Tooltip settings
+## Configure tooltip settings
 
 Find tooltip settings in the **Format visual** pane under **General** > **Tooltips**. Select a visual on the report canvas, and then select the **Format visual** icon from the **Visualizations** pane to access these settings.
 
@@ -48,7 +42,7 @@ Available settings include:
 - **Styling options:** Tooltips inherit colors from the report theme. **Text** settings let you refine **Font**, **Label color**, **Value color**, and **Drill text and icon color**. **Background** settings control **Color** and **Transparency**.
 - **Actions footer:** Some visuals support drill actions (Drill down, Drill through) directly in the tooltip footer. Drill actions appear only on visuals that support drill behavior.
 
-### Use drill actions from the actions footer
+## Use drill actions from the actions footer
 
 Tooltips support interactive exploration through the **Actions** footer to expose **Drill down** and **Drill through**.
 
@@ -60,7 +54,7 @@ When you enable the **Actions** footer in a supported visual, users can:
 
 By using actions from the tooltip, users don't need to use right-click menus or header icons. This approach makes the report feel more intuitive and discoverable.
 
-### Style tooltips by using themes
+## Style tooltips by using themes
 
 Tooltip styling automatically aligns with the report theme, making the experience consistent and accessible.
 
@@ -86,7 +80,7 @@ Use a **report page tooltip** when you need richer context—like key performanc
 
 For detailed steps, see [Create tooltips based on report pages](desktop-tooltips.md).
 
-### Add Help tooltips to visuals
+## Add Help tooltips to visuals
 
 Help tooltips add quick guidance directly on a visual through a small **Help tooltip** icon in the visual header. When enabled, users can select the icon to view either short text or a full report page with richer content.
 
@@ -104,52 +98,25 @@ To enable Help tooltips:
 > [!TIP]
 > You can add an animated GIF as the background of a report page Help tooltip to demonstrate interactions like drilling.
 
-### Visuals that support tooltips
+## Troubleshoot tooltip problems
 
-The following visuals support the full tooltip experience, including a Tooltip field well in the Build pane:
+- **Tooltip doesn't appear**: The visual might not support standard tooltips or the Tooltip toggle might be off. The following visuals support the full tooltip experience, including a Tooltip field well in the Build pane:
+  - Bar and column charts
+  - Line and area charts
+  - Treemaps
+  - Scatter and bubble charts
+  - Pie and donut charts
+  - Ribbon, funnel, and waterfall charts
 
-- Bar and column charts
-- Line and area charts
-- Treemaps
-- Scatter and bubble charts
-- Pie and donut charts
-- Ribbon, funnel, and waterfall charts
+  For visual-specific differences and exceptions, see [Considerations and limitations](#considerations-and-limitations).
 
-For visual-specific differences and exceptions, see [Considerations and limitations](#considerations-and-limitations).
-
-## FAQ: Troubleshoot tooltip problems
-
-**Why doesn't my tooltip appear?**
-
-The visual might not support standard tooltips or the Tooltip toggle might be off.
-
-**Why is the Actions footer missing?**
-
-Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
-
-**Why can't I add fields to the Tooltip well?**
-
-Tables, matrices, and certain visuals don't expose a Tooltip field in the Build pane.
-
-**Why is my tooltip text tiny?**
-
-Too many fields force font auto shrinking. Reduce field count for better readability.
-
-**Why doesn't my report page tooltip show?**
-
-Confirm Tooltip is enabled in Page information and the visual's Tooltip Type is set to Report page.
-
-**Why is my Help tooltip icon missing?**
-
-Make sure **Help tooltip** is toggled on and the visual header is visible.
-
-**Why does my Help tooltip show the wrong content?**
-
-Confirm the selected type (Text or Report page) and, for report pages, check the **Allow use as tooltip** setting to make sure it's enabled.
-
-**Why is my Help tooltip difficult to read?**
-
-Shorten the message or adjust theme colors for better contrast.
+- **Report page tooltip doesn't appear**: Confirm Tooltip is enabled in Page information and the visual's Tooltip Type is set to Report page.
+- **Actions footer is missing**: Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
+- **Can't add fields to the Tooltip well**: Tables, matrices, and certain visuals don't expose a Tooltip field in the Build pane.
+- **Tooltip text is too small**: Too many fields force font auto shrinking. Reduce field count for better readability.
+- **Help tooltip icon is missing**: Make sure **Help tooltip** is toggled on and the visual header is visible.
+- **Help tooltip shows the wrong content**: Confirm the selected type (Text or Report page) and, for report pages, check the **Allow use as tooltip** setting to make sure it's enabled.
+- **Help tooltip is hard to read**: Shorten the message or adjust theme colors for better contrast.
 
 ## Considerations and limitations
 
