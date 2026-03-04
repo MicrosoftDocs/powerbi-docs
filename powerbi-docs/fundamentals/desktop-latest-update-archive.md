@@ -3094,7 +3094,7 @@ The following updates are new to the Power BI service this month:
 
 ### Others
 * Visualizing views in Dynamics 365 with Power BI (general availability) [[video]](https://youtu.be/Wiznd0dn29k?t=982)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518284)
-* More ways to optimize Power BI performance [[video]](https://youtu.be/Wiznd0dn29k?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518285)   [[article]](../create-reports/desktop-evaluation-configuration.md)  
+* More ways to optimize Power BI performance [[video]](https://youtu.be/Wiznd0dn29k?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518285)   [[article]](../transform-model/desktop-evaluation-configuration.md)  
 * Release notes and ideas update  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518286)
 
 
@@ -4030,7 +4030,7 @@ The following updates are new to Power BI Desktop this month:
 
 ### Modeling
 * New way of expressing Date and DateTime values   [[video]](https://youtu.be/thmvP1I6QVs?t=133)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419591)  
-* Evaluation configuration settings [[video]](https://youtu.be/thmvP1I6QVs?t=258) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419592)  [[article]](../create-reports/desktop-evaluation-configuration.md)
+* Evaluation configuration settings [[video]](https://youtu.be/thmvP1I6QVs?t=258) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419592)  [[article]](../transform-model/desktop-evaluation-configuration.md)
 
 
 ### Data connectivity
@@ -7277,7 +7277,7 @@ The following updates were new to **Power BI Desktop** in June:
 
 ### Query Editing:
 
--   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](../create-reports/desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
+-   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](../transform-model/desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
 
 
 
@@ -7367,7 +7367,7 @@ The following updates were new to Power BI Desktop in April 2017:
 
 ### Query Editing:
 
--   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](../create-reports/desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
+-   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](../transform-model/desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
 -   Split column (by delimiter/number of characters) into rows [[video]](https://youtu.be/AWMaIaI8G2Y?t=16m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#splitColumnIntoRows)
 -   Group by: basic mode [[video]](https://youtu.be/AWMaIaI8G2Y?t=17m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#basicGroupBy)
 -   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)

@@ -39,7 +39,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Add custom columns
-            url: ../../create-reports/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
+            url: ../../transform-model/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
           - text: Combine files from a folder
             url: ../../transform-model/desktop-combine-binaries.md?context=/power-bi/personas/semantic-model-designer/context/context
       - linkListType: concept

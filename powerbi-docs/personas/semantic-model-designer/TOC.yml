@@ -20,7 +20,7 @@
         - name: Common query tasks
           href: ../../transform-model/desktop-common-query-tasks.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Add custom columns
-          href: ../../create-reports/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
+          href: ../../transform-model/desktop-add-custom-column.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Combine files from a folder
           href: ../../transform-model/desktop-combine-binaries.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Query folding guidance
