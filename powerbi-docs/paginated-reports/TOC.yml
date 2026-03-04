@@ -1,5 +1,6 @@
 - name: Power BI paginated reports documentation
   href: index.yml
+  expanded: true
   items:
 # =============================================================================
 # OVERVIEW (REQUIRED)
@@ -662,8 +663,6 @@
       href: ./page-view.md
     - name: Git integration with paginated reports
       href: ./paginated-github-integration.md
-    - name: Evaluation configuration for Report Builder
-      href: ./paginated-evaluation-configuration.md
 # =============================================================================
 # RESOURCES (don't change this - standardized with Fabric)
 # =============================================================================

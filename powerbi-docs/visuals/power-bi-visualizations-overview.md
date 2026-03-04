@@ -22,7 +22,7 @@ Unlike static charts, Power BI visuals are interactive and dynamic. Users can se
 This article explains how visualizations work in Power BI and how to use them effectively in your reports.
 
 > [!TIP]
-> For a comprehensive catalog of all available visuals with guidance on when to use each one, example scenarios, and best practices, see [Choose the best visual for your data](power-bi-visualization-best-practices.md).
+> For a comprehensive catalog of all available visuals with guidance on when to use each one, example scenarios, and best practices, see [Choose the best visual for your data](power-bi-visualization-decision-guide.md).
 
 ## How visualizations work
 
@@ -47,7 +47,7 @@ Figuring out what kind of visual best suits your needs depends on:
 - **Your analysis goal**: Compare values, show trends, reveal relationships, or track progress
 - **Your audience**: Executives need high-level summaries, while analysts need detailed data
 
-For more information, see [Choose the best visual for your data](power-bi-visualization-best-practices.md).
+For more information, see [Choose the best visual for your data](power-bi-visualization-decision-guide.md).
 
 ## Visual interactions
 
@@ -121,7 +121,7 @@ For more information, see [Power BI custom visuals](../developer/visuals/power-b
 
 ## Related content
 
-- [Choose the best visual for your data](power-bi-visualization-best-practices.md) - Comprehensive catalog of all Power BI visuals with guidance on when to use each type
+- [Choose the best visual for your data](power-bi-visualization-decision-guide.md) - Comprehensive catalog of all Power BI visuals with guidance on when to use each type
 - [Add visuals to a Power BI report](power-bi-report-add-visualizations.md)
 - [Change how visuals interact in a report](../create-reports/service-reports-visual-interactions.md)
 - [Get started formatting visuals](service-getting-started-with-color-formatting-and-axis-properties.md)

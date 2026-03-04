@@ -1,5 +1,6 @@
 - name: Power BI report and dashboard creation documentation
   href: index.yml
+  expanded: true
   items:
 # =============================================================================
 # OVERVIEW (REQUIRED)
@@ -196,7 +197,7 @@
     - name: Visualizations overview
       href: ../visuals/power-bi-visualizations-overview.md
     - name: Choose the best visual for your data
-      href: ../visuals/power-bi-visualization-best-practices.md
+      href: ../visuals/power-bi-visualization-decision-guide.md
     - name: Add visuals to a report
       href: ../visuals/power-bi-report-add-visualizations.md
     - name: Customize the Visualization pane
