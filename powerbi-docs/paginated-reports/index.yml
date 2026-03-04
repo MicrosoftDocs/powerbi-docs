@@ -1,0 +1,109 @@
+### YamlMime:Landing
+
+title: Power BI paginated reports documentation
+summary: Learn how to create pixel-perfect, print-ready paginated reports in Power BI. Design professional reports with tables, charts, and maps that you can export to PDF, Excel, Word, and other formats.
+
+metadata:
+  title: Paginated reports documentation
+  description: Learn how to create and publish paginated reports in Power BI using Report Builder or the web authoring experience. Export reports to PDF, Excel, Word, and other formats.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: pbi-reports-dashboards
+  ms.topic: landing-page # Required
+  ms.update-cycle: 1095-days
+  ms.collection: collection
+  author: julcsc
+  ms.author: juliacawthra
+  ms.date: 03/03/2026
+
+landingContent:
+
+  - title: Get started with paginated reports
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are paginated reports in Power BI?
+            url: paginated-reports-report-builder-power-bi.md
+          - text: Report Definition Language
+            url: report-definition-language.md
+      - linkListType: get-started
+        links:
+          - text: Get Power BI Report Builder
+            url: download-powerbi-report-builder.md
+          - text: Access the paginated report editor
+            url: web-authoring/get-started-paginated-formatted-table.md
+      - linkListType: quickstart
+        links:
+          - text: Create and upload a paginated report
+            url: paginated-reports-quickstart-aw.md
+          - text: Get around Report Design View
+            url: paginated-reports-report-design-view.md
+
+  - title: Design report layouts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Plan a report
+            url: report-builder-planning-report.md
+          - text: Design tips
+            url: report-builder-design-tips.md
+      - linkListType: how-to-guide
+        links:
+          - text: Tables, matrixes, and lists
+            url: report-builder-tables-matrices-lists.md
+          - text: Add a chart to a report
+            url: report-design/visualizations/add-chart-report-report-builder.md
+          - text: Maps in paginated reports
+            url: report-builder/maps-report-builder.md
+          - text: Embed an image in a report
+            url: report-design/embed-image-report-report-builder-service.md
+          - text: Create parameters
+            url: parameters/paginated-reports-create-parameters.md
+          - text: Add filters to a report
+            url: report-design/add-filter-report-builder.md
+          - text: Use expressions in reports
+            url: expressions/expression-uses-reports-report-builder.md
+
+  - title: Publish and export reports
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Publish a paginated report
+            url: paginated-reports-save-to-power-bi-service.md
+          - text: Publish .rdl files to Power BI
+            url: ../guidance/publish-reporting-services-power-bi-service.md
+          - text: Edit a report from the Power BI service
+            url: paginated-reports-edit-service.md
+          - text: Create a report with a shared semantic model
+            url: report-builder-shared-datasets.md
+          - text: Embed a paginated report
+            url: paginated-reports-embed.md
+      - linkListType: concept
+        links:
+          - text: Export to PDF
+            url: device-info/pdf-device-information-settings.md
+          - text: Export to Excel
+            url: device-info/excel-device-information-settings.md
+          - text: Export to Word
+            url: device-info/word-device-information-settings.md
+
+  - title: Explore samples and resources
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Sample Power BI paginated reports
+            url: paginated-reports-samples.md
+      - linkListType: how-to-guide
+        links:
+          - text: Plan to migrate .rdl reports to Power BI
+            url: ../guidance/migrate-ssrs-reports-to-power-bi.md
+          - text: Use the RDL Migration tool
+            url: ../guidance/using-rdl-migration-tool.md
+      - linkListType: reference
+        links:
+          - text: Paginated reports FAQ
+            url: paginated-reports-faq.yml
+          - text: Supported data sources
+            url: paginated-reports-data-sources.md
+          - text: Troubleshoot design issues
+            url: troubleshoot-paginated-reports-design-issues.md

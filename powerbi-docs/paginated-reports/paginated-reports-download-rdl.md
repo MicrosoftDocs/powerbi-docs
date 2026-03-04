@@ -22,7 +22,7 @@ This article explains how to create a paginated report from a Power BI report or
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
 
 > [!IMPORTANT]
-> This article describes the workflow for creating paginated reports in Power BI Report Builder (desktop application). The Power BI service also offers a web-based paginated report authoring experience. For information about the web authoring experience and its current capabilities, see [Get started creating paginated reports in the Power BI service](web-authoring/get-started-paginated-formatted-table.md).
+> This article describes the workflow for creating paginated reports in Power BI Report Builder (desktop application). The Power BI service also offers a web-based paginated report authoring experience. For information about the web authoring experience and its current capabilities, see [Access the paginated report editor in the Power BI service](web-authoring/get-started-paginated-formatted-table.md).
 
 ## Create the paginated report
 

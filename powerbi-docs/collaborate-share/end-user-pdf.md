@@ -90,7 +90,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - Visio visuals
     - [The Copilot narrative visual](../create-reports/copilot-narrative-visual-embed-power-bi.md)
-* Visual [displayed as a Data point table or displayed with "Show data point as a table,"](../create-reports/end-user-show-data.md) can't be exported to PDF.
+* Visual [displayed as a Data point table or displayed with "Show data point as a table,"](../explore-reports/end-user-show-data.md) can't be exported to PDF.
 * R and Py visuals will not render when exported using REST APIs.
 
 ### Reports that can't be exported
@@ -104,7 +104,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * Export to PDF isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the export fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
 * Semantic model refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
-* Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/end-user-show-data.md) are included in the export, but the visual displays in its default state, without the table. 
+* Visuals [displayed as a Data table or displayed with "Show as a table"](../explore-reports/end-user-show-data.md) are included in the export, but the visual displays in its default state, without the table. 
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service or Power BI Desktop.
 * Background images are cropped with the visualization's bounding area. Also, when you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document. Or, remove backgrounds before exporting.
 

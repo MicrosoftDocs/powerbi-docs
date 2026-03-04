@@ -139,6 +139,8 @@
 # =============================================================================
 - name: Compare and evaluate data
   items:
+  - name: Show the data used to create a visual
+    href: end-user-show-data.md
   - name: View data behind a visual
     href: ../visuals/service-reports-show-data.md?context=/power-bi/explore-reports/context/context
   - name: Understand data point limits

@@ -1032,7 +1032,7 @@
     },
     {
       "source_path": "powerbi-docs/power-bi-visualization-best-practices.md",
-      "redirect_url": "/power-bi/visuals/power-bi-visualization-best-practices",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-decision-guide",
       "redirect_document_id": true
     },
     {
@@ -7534,6 +7534,26 @@
       "source_path": "powerbi-docs/consumer/context/context.yml",
       "redirect_url": "/power-bi/personas/business-user/context/context",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-add-column-from-example.md",
+      "redirect_url": "/power-bi/transform-model/desktop-add-column-from-example",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-add-custom-column.md",
+      "redirect_url": "/power-bi/transform-model/desktop-add-custom-column",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-evaluation-configuration.md",
+      "redirect_url": "/power-bi/transform-model/desktop-evaluation-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/end-user-show-data.md",
+      "redirect_url": "/power-bi/explore-reports/end-user-show-data",
+      "redirect_document_id": true
     }
   ]
 }                           

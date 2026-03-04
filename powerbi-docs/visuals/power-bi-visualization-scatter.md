@@ -262,7 +262,7 @@ If your data doesn't include a specific row number or ID, you can create a field
 
 :::image type="content" source="media/power-bi-visualization-scatter/pbi-scatter-t-shoot-2.png" alt-text="Screenshot of a scatter chart with a new field named TempTime added to the Values option." border="true":::
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your semantic model. Then add this column to your visual's **Values** option.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../transform-model/desktop-add-custom-column.md) to your semantic model. Then add this column to your visual's **Values** option.
 
 ## Related content
 

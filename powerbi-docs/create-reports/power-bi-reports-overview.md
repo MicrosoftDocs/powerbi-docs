@@ -379,7 +379,7 @@ For more information, see [Automatic page refresh in Power BI](desktop-automatic
 
 Configure how Power BI evaluates DAX queries in your report. Evaluation settings can affect performance and resource usage.
 
-For more information, see [Evaluation configuration settings in Power BI Desktop](desktop-evaluation-configuration.md).
+For more information, see [Evaluation configuration settings in Power BI Desktop](../transform-model/desktop-evaluation-configuration.md).
 
 ## Accessibility
 

@@ -53,7 +53,7 @@ The administrator or the designer can disable your ability to see or use these f
 |[Dig into the visual by adding and modifying visual filters.](end-user-report-filter.md)|No|Yes|No|
 |Hover over a visual to reveal more details and tooltips.|Yes|Yes|Yes|
 |[How visuals cross-filter and cross-highlight each other in a Power BI report.](end-user-interactions.md)|No|Yes|n/a |
-|[Show the data used to create the visual](../create-reports/end-user-show-data.md).|No|Yes|No|
+|[Show the data used to create the visual](end-user-show-data.md).|No|Yes|No|
 |[Change the way the visual is sorted](end-user-change-sort.md).|No| Yes|You can change sort by rewording the question.|
 |[Add a spotlight to a visual](end-user-spotlight.md).|No|Yes|No|
 |[Export data to Excel from a Power BI dashboard tile or a report visual.](/power-bi/visuals/power-bi-visualization-export-data)|Yes|Yes|No|

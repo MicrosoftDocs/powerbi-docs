@@ -984,7 +984,7 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-- Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../create-reports/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
+- Registry settings improvement: now registry settings are applied according to the [Desktop evaluation configuration](../transform-model/desktop-evaluation-configuration.md) article and impact evaluations are done in the Analysis Services process (msmdsrv.exe) as well as the Power BI Desktop process (PBIDesktop.exe).
 
 ## April 2021 QFE 2
 

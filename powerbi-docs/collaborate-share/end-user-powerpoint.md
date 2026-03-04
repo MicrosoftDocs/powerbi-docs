@@ -100,7 +100,7 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 - [Power Automate visuals](../create-reports/power-bi-automate-visual.md)
 - [The Paginated report visual](../visuals/paginated-report-visual.md)
 - Visio visuals
-- Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../create-reports/end-user-show-data.md) can't export to PowerPoint
+- Visuals [displayed as a Data point table or displayed with "Show data point as a table"](../explore-reports/end-user-show-data.md) can't export to PowerPoint
 - R and Python visuals don't render when exported using REST APIs.
 
 ### Reports that can't be exported
@@ -121,7 +121,7 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 - If the report uses a custom font, that font is replaced with a default font.
 - [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 - The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon :::image type="icon" source="media/end-user-powerpoint/power-bi-settings-icon.png" border="false"::: > **Settings** > **General** > **Language**.
-- Visuals [displayed as a Data table or displayed with "Show as a table"](../create-reports/end-user-show-data.md) export the visual in its default state, without the table.
+- Visuals [displayed as a Data table or displayed with "Show as a table"](../explore-reports/end-user-show-data.md) export the visual in its default state, without the table.
 - Visuals in a drill-down state are exported in their default state.
 - If you access a report using a bookmark, the export is also executed against the bookmark (filters are the same as the bookmark) and *not* against the filters applied when the export is triggered. You can get around this by creating a bookmark with the required filters and then export the report.
 - Export to PowerPoint isn't currently supported for tenants in the China North region.

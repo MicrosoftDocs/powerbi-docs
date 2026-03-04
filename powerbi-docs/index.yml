@@ -64,13 +64,13 @@ productDirectory:
           text: Fabric for Power BI users
         - url: connect-data/service-datasets-understand.md
           text: Semantic models
-    - title: Create and publish reports 
+    - title: Create reports and dashboards
       imageSrc: /media/common/i_design.svg
       links:
-        - url: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-          text: Visualization types
-        - url: create-reports/desktop-sharepoint-save-share.md
-          text: Publish to SharePoint
+        - url: create-reports/power-bi-reports-overview.md
+          text: Make a Power BI report
+        - url: create-reports/service-dashboards.md
+          text: Design a Power BI dashboard
     - title: View and explore reports
       imageSrc: /media/common/i_investigate.svg
       links:

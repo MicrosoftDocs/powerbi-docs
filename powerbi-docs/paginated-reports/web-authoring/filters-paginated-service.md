@@ -51,4 +51,4 @@ You can also search for the value that you are looking for.
 
 ## Related content
 
-- [Create exportable paginated reports in the Power BI service](../web-authoring/paginated-formatted-table.md)
+- [Author paginated reports in the Power BI service](../web-authoring/paginated-formatted-table.md)
