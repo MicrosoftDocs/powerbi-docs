@@ -120,7 +120,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 
 ## Geographic data
 
-**When to use**: You have location-based data like countries, states, cities, or coordinates.
+**When to use**: You have location-based data like countries/regions, states, cities, or coordinates.
 
 **Best visuals**:
 
@@ -131,7 +131,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 
 **Example scenarios**:
 
-- Sales by country or state
+- Sales by country/region or state
 - Store locations with performance metrics
 - Population density by region
 - Delivery routes and territories
