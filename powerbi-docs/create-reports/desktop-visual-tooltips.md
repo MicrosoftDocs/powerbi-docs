@@ -1,91 +1,154 @@
 ---
-title: Create Visual Tooltips
-description: Learn how modern visual tooltips in Power BI Desktop and Power BI service let you create rich hover-based tooltips with drill actions and theme-based styling for visuals in your reports.
-author: julcsc
+title: Create Visual Tooltips in Power BI
+description: Learn how to create and customize visual tooltips in Power BI reports. Configure tooltip content, styling, drill actions, and report page tooltips to enhance data insights.
+author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: sunaraya
+ms.reviewer: ZoeDouglas
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/13/2026
+ms.date: 03/03/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 
-# Create visual tooltips
+# Create visual tooltips in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Visual tooltips in Power BI improve usability, accessibility, and interactivity across visuals. Starting in January 2026, modern visual tooltips are the default for new reports, with theme-based styling and the **Actions** footer enabled. Existing reports keep their current tooltip settings.
+Tooltips display contextual information when users hover over data points in visuals. They help users understand data without clicking or navigating away from the report.
 
-When you hover over a visual data point, a tooltip shows the field name and value. By default, the tooltip displays the fields used in the visual. You can show more fields in the tooltip by adding them to the visual's **Tooltip** field well. If a visual has these actions available, the tooltip also provides actions like [drill down and drill through](../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md).
+When you hover over a visual, the tooltip shows field values and any other fields you add. If the visual supports drill actions, users can explore hierarchies and related pages directly from the tooltip. This article shows how to configure tooltip content, styling, and behavior. The tooltip displays:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of an example of a modern visual tooltip.":::
+- The **field name and value** for each field used in the visual.  
+- **Additional fields** that you add in the **Tooltip** field well. To learn how to add fields and customize tooltip content, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).  
+- Optional **actions**, such as:  
+  - **Drill down** into the next level of a hierarchy  
+  - **Drill through** to a related report page  
+    These actions appear automatically when a visual supports them.  
 
-You can turn off the tooltip for any visual in the visual formatting options. If you want full control of a visual tooltip, you can create a [visual tooltip report page](desktop-tooltips.md) to use instead of the default tooltip.
+Tooltips provide fast insight while keeping the user inside the flow of the report.
 
-## Actions footer
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-example.png" alt-text="Screenshot of Tooltip displaying Field Name and Value, Additional fields, and Drill down/through.":::
 
-The optional tooltip **Actions** footer shows drill down and up, along with drill through on a data point, without needing to use the right-click menu or the header icons for the visual.
+## Configure tooltip settings
 
-:::image type="content" source="media/desktop-visual-tooltips/drill-down-and-through-tooltips.png" alt-text="Screenshot of the Actions footer with the Drill down and Drill through options outlined.":::
+Find tooltip settings in the **Format visual** pane under **General** > **Tooltips**. Select a visual on the report canvas, and then select the **Format visual** icon from the **Visualizations** pane to access these settings.
 
-For example, when you hover over the **word** data point in a bar chart, you can **Drill down** on the data point or **Drill through**. If you select **Drill down**, the visual updates to display the next level in the hierarchy and filter to **Word**. If you select **Drill through**, you see which pages you can drill through to. In this example, choose either the **Market Basket Analysis** or the **Category details** page.
+Available settings include:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-drill-through.png" alt-text="Screenshot of a tooltip with Drill through options highlighted.":::
+- **Tooltip visibility:** Toggle tooltips On or Off for that visual.
+- **Tooltip type:** Choose between a **Default** tooltip or a **Report page** tooltip.
+- **Styling options:** Tooltips inherit colors from the report theme. **Text** settings let you refine **Font**, **Label color**, **Value color**, and **Drill text and icon color**. **Background** settings control **Color** and **Transparency**.
+- **Actions footer:** Some visuals support drill actions (Drill down, Drill through) directly in the tooltip footer. Drill actions appear only on visuals that support drill behavior.
 
-If you select **Market Basket Analysis** in the tooltip, you drill through to the Market Basket Analysis page, filtered to *Word* and any other filters on the source data point.
+## Use drill actions from the actions footer
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png" alt-text="Screenshot of the drill through to the Market Basket Analysis page." lightbox="media/desktop-visual-tooltips/power-bi-visual-tooltip-drill-through-market-basket.png":::
+Tooltips support interactive exploration through the **Actions** footer to expose **Drill down** and **Drill through**.
 
-### Upgrade tooltips in existing reports
+When you enable the **Actions** footer in a supported visual, users can:
 
-If an existing report doesn't use modern visual tooltips, a dialog appears when you open the report asking if you want to upgrade.
+- Select **Drill down** to go to the next hierarchy level  
+- Select **Drill through** to open a dedicated report page filtered to that data point
+- Select **Drill up** to go to the previous hierarchy level, whenever displayed  
 
-- Select **Upgrade to modern defaults** to update all visuals in your report with the **Actions** footer enabled.
-- Select **Use old tooltips** to keep the tooltips unchanged.
+By using actions from the tooltip, users don't need to use right-click menus or header icons. This approach makes the report feel more intuitive and discoverable.
 
-You can also enable or disable the **Actions** footer at any time by using the **Format** pane.
+## Style tooltips by using themes
 
-:::image type="content" source="media/desktop-visual-tooltips/actions-format-pane.png" alt-text="Screenshot of the format pane options for the tooltip with Actions outlined." lightbox="media/desktop-visual-tooltips/actions-format-pane.png":::
+Tooltip styling automatically aligns with the report theme, making the experience consistent and accessible.
 
-## Styling and color
+Theme elements control:
 
-For visual tooltips, the report's [theme colors](report-themes-create-custom.md#set-structural-colors) determine the styling and color:
+- **Background color** (mapped to Background elements)
+- **Text and icon color** (mapped to First-level elements)
+- **Separator and hover color** (mapped to Secondary background elements)
 
-- The **Background elements** color sets the tooltip background.
-- The **First-level elements** color sets the text and icon color.
-- The **Secondary background elements** color sets the separator line and the hover color on the tooltip.
+To adjust tooltip styling across a report:
 
-For example, this tooltip uses the **Default** theme style:
+1. In Power BI Desktop, open the **View** tab.
+1. Select **Customize current theme** > **Visuals**.
+1. Select the **Tooltip** section to adjust **Label text color**, **Value text color**, **Drill text and icon color**, and **Background color**.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example.png" alt-text="Screenshot of a modern visual tooltip with the default theme.":::
+:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltips-customize-report-theme.png" alt-text="Screenshot of Tooltip styling options, in the Customize current theme dialog.":::
 
-Here's an example with the **Innovate** theme:
+You can also fine-tune styling for each visual in the **Visualizations** pane, on the **Visual** tab, in the **Format visual** section.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-innovate.png" alt-text="Screenshot of a modern visual tooltip with the Innovate theme.":::
+### Create a custom report tooltip page
 
-Here's an example with the **Frontier** theme:
+Use a **report page tooltip** when you need richer context—like key performance indicators (KPIs), comparisons, or supporting visuals—that doesn't fit in a default hover card. Create a dedicated report page, enable **Allow use as tooltip** in the page's **Page information** settings, then assign it to a visual by setting **Tooltip** > **Type** to **Report page**.
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-example-frontier.png" alt-text="Screenshot of a modern visual tooltip with the Frontier theme.":::
+For detailed steps, see [Create tooltips based on report pages](desktop-tooltips.md).
 
-To customize the styling further in Power BI Desktop, update the **Tooltip** theme in the **Customize theme** dialog:
+## Add Help tooltips to visuals
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-visual-tooltip-customize-theme.png" alt-text="Screenshot of the Customize theme dialog showing Tooltip customizations.":::
+Help tooltips add quick guidance directly on a visual through a small **Help tooltip** icon in the visual header. When enabled, users can select the icon to view either short text or a full report page with richer content.
 
-You can also format tooltips for each visual by customizing the settings in the **Format** pane:
+To enable Help tooltips:
 
-:::image type="content" source="media/desktop-visual-tooltips/power-bi-desktop-visual-tooltip-format.png" alt-text="Screenshot of the Visualizations pane Tooltips dropdown menu.":::
+1. Select a visual, then go to **Format visual** > **General** > **Header icons**.
+1. Expand **Icons** and turn on **Help tooltip**.
+1. Choose your content type:
+   - **Typed text help** for short explanations
+   - **Report page help** for richer content with visuals and KPIs (see [Create tooltips based on report pages](desktop-tooltips.md) for steps)
+
+> [!NOTE]
+> The **Help tooltip** icon only appears when **Header icons** are enabled and the **Visual header** is visible.
+
+> [!TIP]
+> You can add an animated GIF as the background of a report page Help tooltip to demonstrate interactions like drilling.
+
+## Troubleshoot tooltip problems
+
+- **Tooltip doesn't appear**: The visual might not support standard tooltips or the Tooltip toggle might be off. For visual-specific differences and exceptions, see [Considerations and limitations](#considerations-and-limitations). The following visuals support the full tooltip experience, including a Tooltip field well in the Build pane:
+  - Bar and column charts
+  - Line and area charts
+  - Treemaps
+  - Scatter and bubble charts
+  - Pie and donut charts
+  - Ribbon, funnel, and waterfall charts
+- **Report page tooltip doesn't appear**: Confirm Tooltip is enabled in Page information and the visual's Tooltip Type is set to Report page.
+- **Actions footer is missing**: Only visuals with drillable hierarchies or drill-through mapping show the Actions footer.
+- **Can't add fields to the Tooltip well**: Tables, matrices, and certain visuals don't expose a Tooltip field in the Build pane.
+- **Tooltip text is too small**: Too many fields force font auto shrinking. Reduce field count for better readability.
+- **Help tooltip icon is missing**: Make sure **Help tooltip** is toggled on and the visual header is visible.
+- **Help tooltip shows the wrong content**: Confirm the selected type (Text or Report page) and, for report pages, check the **Allow use as tooltip** setting to make sure it's enabled.
+- **Help tooltip is hard to read**: Shorten the message or adjust theme colors for better contrast.
 
 ## Considerations and limitations
 
-The tooltip actions footer isn't available in the following scenarios:
+For limitations specific to report page tooltips, see [Considerations and limitations](desktop-tooltips.md#considerations-and-limitations) in the report page tooltips article.
 
-- [Report page tooltips](desktop-tooltips.md)
-- [Custom visuals](../developer/visuals/develop-power-bi-visuals.md) (AppSource visuals)
-- [Decomposition trees](../visuals/power-bi-visualization-decomposition-tree.md)
+### Tooltip capabilities by visual type
+
+- **Key influencers:** Displays its own explanation panels instead of standard tooltips. Tooltip settings don't appear.
+- **Tables and matrices:** Show cell value only on hover. Tooltip formatting options are available in the Format pane, but tables and matrices don't expose a Tooltip field well in the Build pane.
+- **Decomposition trees:** Show standard tooltips but don't support the Actions footer.
+- **Custom visuals from AppSource:** Show standard tooltips where supported but don't support the Actions footer.
+- **Report page tooltips:** Don't support the Actions footer.
+
+### Default tooltip differences
+
+- **Line charts:** Show series marker, name, and value for up to 15 series. The X-axis value appears bold at the top.
+- **Other visuals:** List each field name and value. No limit on fields, but many fields cause font shrinking.
+
+### Tooltip behavior changes
+
+- **New reports:** Use updated theme-based styling. Actions footer turns on automatically for supported visuals.
+- **Existing reports:** Keep original tooltip appearance. Actions footer stays off if it wasn't enabled before.
+- **Upgrade prompt:** When opening older reports, Power BI might prompt you to upgrade to modern defaults or keep existing tooltips.
+
+### Help tooltip limits
+
+- Help icon visibility depends on visual header settings.
+- Typed text help doesn't respond to slicers or filters.
+- Report page help can respond to filters you design into the page.
+- Theme colors apply to the help tooltip frame.
 
 ## Related content
 
 - [Create tooltips based on report pages](desktop-tooltips.md)
+- [Customize tooltips in Power BI](desktop-custom-tooltips.md)
 - [Set up drillthrough in Power BI reports](desktop-drillthrough.md)
+- [Custom visuals (AppSource)](../developer/visuals/develop-power-bi-visuals.md)
+- [Decomposition trees](../visuals/power-bi-visualization-decomposition-tree.md)
