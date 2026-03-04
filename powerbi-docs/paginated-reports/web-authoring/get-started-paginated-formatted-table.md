@@ -1,6 +1,6 @@
 ---
-title: Get Started Creating Paginated Reports in the Power BI Service
-description: In this article, you learn all the ways your can start creating a paginated report in the Power BI service.
+title: Access the Paginated Report Editor in the Power BI Service
+description: Learn the different ways you can access and launch the paginated report editor in the Power BI service.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
@@ -10,27 +10,27 @@ ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
-# Get started creating paginated reports in the Power BI service
+# Access the paginated report editor in the Power BI service
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-This article describes how to start creating a paginated report in the Power BI service. Use this feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
+This article describes the different ways you can access and launch the paginated report editor in the Power BI service. Use this feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
 
 > [!IMPORTANT]
 > The methods in this article create *new*, standalone paginated reports. You can't add paginated report pages to an existing Power BI report (.pbix file) or convert a Power BI report into a paginated report. Paginated reports and Power BI reports are separate report types with different file formats and capabilities. For ways to use both report types together, see [Use paginated reports with Power BI reports](#use-paginated-reports-with-power-bi-reports).
 
 To create a paginated report from the Power BI service, you can start in a number of places:
 
-- [List view in the Power BI service](#list-view-in-the-power-bi-service)
-- [Data hub view in the Power BI service](#data-hub-view-in-the-power-bi-service)
-- [The Dataset details page in the Power BI service](#the-dataset-details-page-in-the-power-bi-service)
-- [Power BI Desktop](#power-bi-desktop)
+- [Start from list view in the Power BI service](#start-from-list-view-in-the-power-bi-service)
+- [Start from data hub view in the Power BI service](#start-from-data-hub-view-in-the-power-bi-service)
+- [Start from the dataset details page in the Power BI service](#start-from-the-dataset-details-page-in-the-power-bi-service)
+- [Start from Power BI Desktop](#start-from-power-bi-desktop)
 
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../../includes/power-bi-paginated-prerequisites.md)]
 
-## List view in the Power BI service
+## Start from list view in the Power BI service
 
 1. Go to list view for any workspace, including **My Workspace**.
 1. Select **More options (...)** for a Power BI semantic model, and then select **Create formatted table**. 
@@ -39,7 +39,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 
 1. [Create your paginated report](paginated-formatted-table.md).
 
-## Data hub view in the Power BI service
+## Start from data hub view in the Power BI service
 
 1. Go to Data hub view in the Power BI service.
 1. Select **More options (...)** next to a dataset > **Create paginated report**.
@@ -48,7 +48,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 
 1. [Create your paginated report](paginated-formatted-table.md).
 
-## The Dataset details page in the Power BI service
+## Start from the dataset details page in the Power BI service
 
 1. Select a dataset in the Data hub view of the Power BI service.
 1. Under **Visualize this data**, select **Create a report** > **Paginated report**.
@@ -57,7 +57,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 
 1. [Create your paginated report](paginated-formatted-table.md).
 
-## Power BI Desktop
+## Start from Power BI Desktop
 
 1. Open Power BI Desktop, and on the **Insert** tab, select **Visual gallery**. Scroll down to the **Other** section and select **Paginated report**.
 
@@ -93,5 +93,5 @@ By using this approach, you can leverage the strengths of both report types: int
 
 ## Related content
 
-- [Create paginated reports that you can export in the Power BI service](paginated-formatted-table.md)
+- [Author paginated reports in the Power BI service](paginated-formatted-table.md)
 - [View a paginated report in the Power BI service](../../explore-reports/paginated-reports-view-power-bi-service.md)
