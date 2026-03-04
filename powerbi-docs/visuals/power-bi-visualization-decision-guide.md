@@ -20,20 +20,38 @@ Selecting the right visualization is essential for communicating insights effect
 
 This article is your comprehensive guide to Power BI visualizations. It catalogs all built-in visual types, explains when to use each one, provides example scenarios, and shares best practices for creating effective reports. For an overview of how visualizations work in Power BI, see [Visualizations overview](power-bi-visualizations-overview.md).
 
-## Start with your goal
+## Plan your visual
+
+### Start with your goal
 
 Before selecting a visual, clarify what you want to communicate. Different visuals work best for different tasks:
 
-- **Comparison**: Show how values differ across categories or segments.
-- **Trends**: Reveal patterns and changes over time.
-- **Distribution**: Understand how data spreads across a range.
-- **Relationships**: Display correlations between variables.
-- **Part-to-whole**: Show how components contribute to a total.
-- **Location**: Present geographic or spatial patterns.
-- **Ranking**: Highlight top or bottom performers.
-- **Progress**: Track performance against goals or targets.
+| Category | When to use |
+|----------|-------------|
+| [Categorical comparisons](#categorical-comparisons) | Show how values differ across categories or segments. |
+| [Time-based trends](#time-based-trends) | Reveal patterns and changes over time. |
+| [Part-to-whole relationships](#part-to-whole-relationships) | Show how components contribute to a total. |
+| [Distribution and relationships](#distribution-and-relationships) | Understand how data is distributed or identify relationships between variables. |
+| [Sequential processes](#sequential-processes) | Show stages in a process where items flow from one stage to the next. |
+| [Geographic data](#geographic-data) | Present location-based data with geographic or spatial patterns. |
+| [Key metrics and progress](#key-metrics-and-progress) | Highlight a single important value or track progress toward a goal. |
+| [Detailed data and exact values](#detailed-data-and-exact-values) | Show exact numbers, multiple measures, or enable detailed record drill-down. |
+| [AI-powered exploration](#ai-powered-exploration) | Identify patterns, anomalies, or influencers with AI assistance. |
+| [Slicers and filtering](#slicers-and-filtering) | Provide on-canvas filtering controls for interactive data exploration. |
+| [Other specialized visuals](#other-specialized-visuals) | Use specialized functionality beyond standard data visualization. |
 
-## Categorical comparisons
+### Consider your audience
+
+Different audiences have different needs and levels of familiarity with data:
+
+- **Executives**: Prefer high-level summaries with key metrics. Use cards, KPIs, and simple charts.
+- **Analysts**: Need detailed data and the ability to explore. Use tables, matrices, and interactive visuals with drill-through.
+- **Operational teams**: Focus on current status and trends. Use line charts, bar charts, and gauges.
+- **External stakeholders**: Might need more explanation. Use clear labels, titles, and consider adding smart narratives.
+
+## Choose your visual type
+
+### Categorical comparisons
 
 **When to use**: You need to compare values across different categories, products, regions, or segments.
 
@@ -48,7 +66,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Customer count by region
 - Budget vs. actual spending by department
 
-## Time-based trends
+### Time-based trends
 
 **When to use**: You need to show changes, patterns, or trends over time.
 
@@ -66,7 +84,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Quarterly sales performance
 - Year-over-year comparisons
 
-## Part-to-whole relationships
+### Part-to-whole relationships
 
 **When to use**: You need to show how individual parts make up a total.
 
@@ -85,7 +103,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Sales composition by product line
 - Storage space by file type
 
-## Distribution and relationships
+### Distribution and relationships
 
 **When to use**: You need to understand how data is distributed or identify relationships between variables.
 
@@ -102,7 +120,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Distribution of customer ages
 - Analyzing large datasets with thousands of data points
 
-## Sequential processes
+### Sequential processes
 
 **When to use**: You need to show stages in a process where items flow from one stage to the next.
 
@@ -118,7 +136,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Profit and loss statement
 - Recruitment process stages
 
-## Geographic data
+### Geographic data
 
 **When to use**: You have location-based data like countries/regions, states, cities, or coordinates.
 
@@ -137,7 +155,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Delivery routes and territories
 - Custom sales territories
 
-## Key metrics and progress
+### Key metrics and progress
 
 **When to use**: You need to highlight a single important value or track progress toward a goal.
 
@@ -154,7 +172,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Sales quota attainment
 - Project completion percentage
 
-## Detailed data and exact values
+### Detailed data and exact values
 
 **When to use**: Your audience needs to see exact numbers, multiple measures, or drill into detailed records.
 
@@ -170,7 +188,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Employee roster with demographics
 - Transaction details
 
-## AI-powered exploration
+### AI-powered exploration
 
 **When to use**: You're exploring data and need help identifying patterns, anomalies, or influencers.
 
@@ -190,7 +208,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 - Exploring multi-dimensional data without predefined paths
 - Asking ad-hoc questions during presentations
 
-## Slicers and filtering
+### Slicers and filtering
 
 **When to use**: You need to provide on-canvas filtering controls for report viewers to explore data interactively.
 
@@ -210,7 +228,7 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 
 For an overview of all slicer options, see [Slicers in Power BI](power-bi-visualization-slicers.md).
 
-## Other specialized visuals
+### Other specialized visuals
 
 **When to use**: You need specialized functionality beyond standard data visualization.
 
@@ -233,159 +251,63 @@ For an overview of all slicer options, see [Slicers in Power BI](power-bi-visual
 - Show statistical models or forecasts using R or Python
 - Enable data write-back or approval workflows with Power Apps
 
-## Consider your audience
+## Avoid these common visualization mistakes
 
-Different audiences have different needs and levels of familiarity with data:
+- **Using 3D charts**: 3D effects distort perception and make accurate comparison difficult. Stick to 2D visuals for data accuracy.
+- **Too many pie slices**: Pie charts with more than eight slices become difficult to interpret. Use bar charts or treemaps instead.
+- **Inconsistent scales**: When you display multiple charts for comparison, use the same scale and axis ranges. Inconsistent scales mislead viewers.
+- **Overusing multiple colors**: Too many colors create visual clutter. Use color purposefully to highlight important data or group related items.
+- **Mixing large and small values**: If you combine measures with vastly different scales (millions versus thousands) on the same axis, the smaller values become invisible. Use combo charts with dual axes or separate visuals.
+- **Unclear time periods**: Be consistent with time periods across visuals. Don't mix last month data on one chart with year-to-date data on another chart without clear labels.
 
-- **Executives**: Prefer high-level summaries with key metrics. Use cards, KPIs, and simple charts.
-- **Analysts**: Need detailed data and the ability to explore. Use tables, matrices, and interactive visuals with drill-through.
-- **Operational teams**: Focus on current status and trends. Use line charts, bar charts, and gauges.
-- **External stakeholders**: Might need more explanation. Use clear labels, titles, and consider adding smart narratives.
+## Follow these best practices for effective visuals
 
-## Common visualization mistakes to avoid
+- **Use appropriate chart types**:
+  - **Bar charts** work better than pie charts for comparing values. People compare length more accurately than they compare angles or areas.
+  - **Line charts** are ideal for continuous data over time. Use column charts when you want to emphasize individual period values.
+  - **Scatter charts** reveal correlations and outliers that tables can't show.
+- **Simplify and focus**:
+  - Remove unnecessary elements like excessive gridlines, borders, or labels.
+  - Keep titles clear and descriptive.
+  - Use tooltips for additional detail instead of cluttering the visual.
+  - Limit the number of visuals per page to avoid overwhelming viewers.
+- **Leverage formatting and themes**:
+  - **[Report themes](../create-reports/desktop-report-themes.md)**: Apply consistent colors, fonts, and backgrounds across all visuals in a report at once. Use built-in themes or create custom themes that match your organization's branding. Export themes as JSON files to share across reports and teams. Override theme settings for individual visuals when needed by using the Format pane.
+  - **[Conditional formatting](power-bi-visualization-conditional-formatting.md)**: Use data-driven colors to highlight important values automatically. Apply color scales that map values to gradients for heat map effects. Add data bars and icons to tables and matrices for quick visual comparison. Set rules to change colors based on thresholds (for example, red for below target, green for above). Apply conditional formatting to backgrounds, fonts, bars, and web URLs.
+  - **[Number formatting](../create-reports/desktop-custom-format-strings.md)**: Format numbers appropriately (for example, "3.4M" instead of "3,400,000"). Use consistent decimal places across related visuals. Consider your audience's locale and currency preferences.
+- **[Create tooltips](../create-reports/desktop-tooltips.md)**:
+  - **Basic tooltips**: Customize tooltips to show extra fields beyond what's displayed in the visual. Include context like percentages, comparisons, or related measures. Keep tooltip content concise and relevant.
+  - **Report page tooltips**: Report page tooltips are powerful for providing rich context. For example, hovering over a sales figure could show a mini dashboard with trend lines, top products, and regional breakdown. Create entire report pages that appear when you hover over data points. Show detailed breakdowns, trends, or KPIs without leaving the current view. Use consistent sizing and design for a professional appearance. Filter the tooltip page to the hovered context automatically.
+- **Enable interaction**:
+  - Configure cross-filtering and cross-highlighting to let visuals interact.
+  - Add drill-through pages for detailed analysis.
+  - Use slicers for user-controlled filtering.
+  - Create bookmarks to guide viewers through key insights.
 
-### Using 3D charts
+## Enhance your reports with advanced features
 
-3D effects distort perception and make accurate comparison difficult. Stick to 2D visuals for data accuracy.
+Once you master basic visuals, consider the following advanced features to enhance your reports.
 
-### Too many pie slices
-
-Pie charts with more than eight slices become difficult to interpret. Use bar charts or treemaps instead.
-
-### Inconsistent scales
-
-When you display multiple charts for comparison, use the same scale and axis ranges. Inconsistent scales mislead viewers.
-
-### Overusing multiple colors
-
-Too many colors create visual clutter. Use color purposefully to highlight important data or group related items.
-
-### Mixing large and small values
-
-If you combine measures with vastly different scales (millions versus thousands) on the same axis, the smaller values become invisible. Use combo charts with dual axes or separate visuals.
-
-### Unclear time periods
-
-Be consistent with time periods across visuals. Don't mix last month data on one chart with year-to-date data on another chart without clear labels.
-
-## Best practices for effective visuals
-
-### Use appropriate chart types
-
-- **Bar charts** work better than pie charts for comparing values. People compare length more accurately than they compare angles or areas.
-- **Line charts** are ideal for continuous data over time. Use column charts when you want to emphasize individual period values.
-- **Scatter charts** reveal correlations and outliers that tables can't show.
-
-### Simplify and focus
-
-- Remove unnecessary elements like excessive gridlines, borders, or labels.
-- Keep titles clear and descriptive.
-- Use tooltips for additional detail instead of cluttering the visual.
-- Limit the number of visuals per page to avoid overwhelming viewers.
-
-### Leverage formatting and themes
-
-**Report themes**:
-
-- Apply consistent colors, fonts, and backgrounds across all visuals in a report at once.
-- Use built-in themes or create custom themes that match your organization's branding.
-- Export themes as JSON files to share across reports and teams.
-- Override theme settings for individual visuals when needed by using the Format pane.
-
-**Conditional formatting**:
-
-- Use data-driven colors to highlight important values automatically.
-- Apply color scales that map values to gradients for heat map effects.
-- Add data bars and icons to tables and matrices for quick visual comparison.
-- Set rules to change colors based on thresholds (for example, red for below target, green for above).
-- Apply conditional formatting to backgrounds, fonts, bars, and web URLs.
-
-**Number formatting**:
-
-- Format numbers appropriately (for example, "3.4M" instead of "3,400,000").
-- Use consistent decimal places across related visuals.
-- Consider your audience's locale and currency preferences.
-
-For more information, see [Report themes](../create-reports/desktop-report-themes.md), [Conditional formatting](power-bi-visualization-conditional-formatting.md), and [Custom format strings](../create-reports/desktop-custom-format-strings.md).
-
-### Enhance with tooltips
-
-**Basic tooltips**:
-
-- Customize tooltips to show extra fields beyond what's displayed in the visual.
-- Include context like percentages, comparisons, or related measures.
-- Keep tooltip content concise and relevant.
-
-**Report page tooltips**:
-
-- Create entire report pages that appear when you hover over data points.
-- Show detailed breakdowns, trends, or KPIs without leaving the current view.
-- Use consistent sizing and design for a professional appearance.
-- Filter the tooltip page to the hovered context automatically.
-
-Report page tooltips are powerful for providing rich context. For example, hovering over a sales figure could show a mini dashboard with trend lines, top products, and regional breakdown.
-
-For more information, see [Create tooltips](../create-reports/desktop-tooltips.md).
-
-### Enable interaction
-
-- Configure cross-filtering and cross-highlighting to let visuals interact.
-- Add drill-through pages for detailed analysis.
-- Use slicers for user-controlled filtering.
-- Create bookmarks to guide viewers through key insights.
-
-## Advanced visual features
-
-Once you master basic visuals, consider these advanced features to enhance your reports:
-
-### Visual calculations
-
-Visual calculations create DAX calculations directly on a visual without modifying the semantic model:
-
-- **Running totals**: Show cumulative values across rows in your visual.
-- **Moving averages**: Smooth out fluctuations to reveal trends.
-- **Percent of total**: Display each value as a percentage of the whole.
-- **Ranking**: Show position relative to other values.
-- **Period comparisons**: Calculate differences from previous periods.
-
-Visual calculations are simpler than model measures for visual-specific logic because they automatically work within the visual's row and column context.
-
-For more information, see [Visual calculations](../transform-model/desktop-visual-calculations-overview.md).
-
-### Analytics pane
-
-Add analytics elements to highlight trends and insights:
-
-- **Reference lines**: Show averages, medians, min/max, or custom constant values.
-- **Forecasting**: Predict future values based on historical trends in time-series data.
-- **Trend lines**: Add linear, polynomial, or other regression lines to scatter charts.
-- **Error bars**: Display variability or uncertainty in measurements.
-
-The Analytics pane is ideal for presentations where you need to emphasize specific benchmarks or projections.
-
-For more information, see [Analytics pane](../transform-model/desktop-analytics-pane.md).
-
-### Small multiples
-
-Split a single visual into multiple smaller versions to compare patterns:
-
-- **Use case**: Compare the same metric across categories (for example, sales trends for each region).
-- **Benefit**: Spot outliers and patterns that are hidden when all data is combined.
-- **Layout**: Arrange in grids with consistent sizing for easy comparison.
-
-Small multiples work well in presentations and dashboards where you need to show "the same story" across different segments.
-
-For more information, see [Small multiples](power-bi-visualization-small-multiples.md).
-
-## Test with real users
-
-After creating your visuals:
-
-- Show them to a colleague unfamiliar with the data.
-- Ask what they see first and what conclusions they draw.
-- Verify their interpretation matches your intent.
-
-Refine based on feedback. The best visual is the one that makes your insight immediately clear to your intended audience.
+- **[Visual calculations](../transform-model/desktop-visual-calculations-overview.md)**: Visual calculations are simpler than model measures for visual-specific logic because they automatically work within the visual's row and column context. Visual calculations create DAX calculations directly on a visual without modifying the semantic model:
+  - **Running totals**: Show cumulative values across rows in your visual.
+  - **Moving averages**: Smooth out fluctuations to reveal trends.
+  - **Percent of total**: Display each value as a percentage of the whole.
+  - **Ranking**: Show position relative to other values.
+  - **Period comparisons**: Calculate differences from previous periods.
+- **[Analytics pane](../transform-model/desktop-analytics-pane.md)**: The Analytics pane is ideal for presentations where you need to emphasize specific benchmarks or projections. Add analytics elements to highlight trends and insights:
+  - **Reference lines**: Show averages, medians, min/max, or custom constant values.
+  - **Forecasting**: Predict future values based on historical trends in time-series data.
+  - **Trend lines**: Add linear, polynomial, or other regression lines to scatter charts.
+  - **Error bars**: Display variability or uncertainty in measurements.
+- **[Small multiples](power-bi-visualization-small-multiples.md)**: Small multiples work well in presentations and dashboards where you need to show "the same story" across different segments. Split a single visual into multiple smaller versions to compare patterns:
+  - **Use case**: Compare the same metric across categories (for example, sales trends for each region).
+  - **Benefit**: Spot outliers and patterns that are hidden when all data is combined.
+  - **Layout**: Arrange in grids with consistent sizing for easy comparison.
+- **Test with real users**: The best visual is the one that makes your insight immediately clear to your intended audience. After creating your visuals:
+  - Show them to a colleague unfamiliar with the data.
+  - Ask what they see first and what conclusions they draw.
+  - Verify their interpretation matches your intent.
+  - Refine based on feedback.
 
 ## Related content
 

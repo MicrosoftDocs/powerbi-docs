@@ -7,8 +7,8 @@ metadata:
   title: Paginated reports documentation
   description: Learn how to create and publish paginated reports in Power BI using Report Builder or the web authoring experience. Export reports to PDF, Excel, Word, and other formats.
   services: powerbi
-  ms.service: power-bi
-  ms.subservice: pbi-paginated-reports
+  ms.service: powerbi
+  ms.subservice: pbi-reports-dashboards
   ms.topic: landing-page # Required
   ms.update-cycle: 1095-days
   ms.collection: collection
