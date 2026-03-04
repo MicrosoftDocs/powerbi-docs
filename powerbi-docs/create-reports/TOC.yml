@@ -190,7 +190,7 @@
       href: power-bi-personalize-visuals.md
     - name: Set visual query limits
       href: desktop-set-visual-query-limits.md
-- name: Add and configure visuals
+- name: Visualize your data
   items: 
   # Overview and fundamentals
   - name: Visualizations overview
@@ -385,11 +385,9 @@
       href: ../visuals/power-bi-data-points.md
     - name: High-density line sampling
       href: desktop-high-density-sampling.md
-  # Custom visuals
-  - name: Custom visuals
-    items:
-    - name: Power BI visuals from AppSource
-      href: ../developer/visuals/power-bi-custom-visuals.md
+  # AppSource visuals
+  - name: Get visuals from AppSource
+    href: ../developer/visuals/power-bi-custom-visuals.md
 - name: Use Q&A and natural language
   items: 
   - name: Q&A tooling introduction
