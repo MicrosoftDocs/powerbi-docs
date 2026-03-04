@@ -64,7 +64,7 @@ productDirectory:
           text: Fabric for Power BI users
         - url: connect-data/service-datasets-understand.md
           text: Semantic models
-    - title: Create and reports and dashboards
+    - title: Create reports and dashboards
       imageSrc: /media/common/i_design.svg
       links:
         - url: create-reports/power-bi-reports-overview.md
