@@ -1,6 +1,6 @@
 ---
-title: Create Paginated Reports That You Can Export in the Power BI Service (Preview)
-description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service, and then export it.
+title: Author Paginated Reports in the Power BI Service (Preview)
+description: Learn how to use the interactive paginated report editor in the Power BI service to create formatted tables, add images and text, and export to multiple formats.
 author: JulCsc
 ms.author: juliacawthra
 ms.service: powerbi
@@ -10,21 +10,21 @@ ms.date: 12/01/2025
 ai-usage: ai-assisted
 ---
 
-# Create paginated reports that you can export in the Power BI service (Preview)
+# Author paginated reports in the Power BI service (Preview)
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-In this article, you learn how to create a paginated report with all the data from your Power BI semantic model, and then export it. The feature lets you quickly create a paginated report on the web, and apply styling. You can then export it using the rich export functionality of paginated reports, which retains the applied formatting & styling.
+This article shows you how to use the paginated report editor to create formatted tables with all the data from your Power BI semantic model. You can apply styling, add images and text, configure headers and footers, and export to multiple formats with full formatting fidelity.
 
 You can use the feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
 
 ## Prerequisites
 
-See the **Prerequisites** section in [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
+See the **Prerequisites** section in [Access the paginated report editor in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
 
 ## Get started
 
-See the article [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md) for all the ways you can get started creating paginated reports in the Power BI service.
+See the article [Access the paginated report editor in the Power BI service](get-started-paginated-formatted-table.md) for all the ways you can access and launch the paginated report editor.
 
 No matter which way you start, the new paginated report online editing experience opens.
 

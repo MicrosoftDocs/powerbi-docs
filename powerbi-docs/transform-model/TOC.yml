@@ -136,7 +136,11 @@
     - name: Transform and shape data
       items: 
       - name: "Combine files (binaries)"
-        href: desktop-combine-binaries.md     
+        href: desktop-combine-binaries.md
+      - name: "Add a column from examples"
+        href: desktop-add-column-from-example.md
+      - name: "Add a custom column"
+        href: desktop-add-custom-column.md     
     - name: Model your data
       items: 
       - name: "Create quick measures for common calculations"
@@ -179,3 +183,5 @@
       href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md
+    - name: "Evaluation configuration for DAX queries"
+      href: desktop-evaluation-configuration.md
