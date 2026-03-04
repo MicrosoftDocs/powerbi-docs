@@ -18,10 +18,14 @@
         href: service-the-report-editor-take-a-tour.md
       - name: Work with Report view
         href: desktop-report-view.md
+      - name: Interact with a report in Editing view
+        href: service-interact-with-a-report-in-editing-view.md
       - name: Home in Power BI Desktop
         href: desktop-home.md
       - name: Power BI modern ribbon
         href: desktop-ribbon.md
+      - name: Tips and tricks for creating reports
+        href: desktop-tips-and-tricks-for-creating-reports.md
       - name: Paginated reports documentation
         href: ../paginated-reports/index.yml
   - name: Learn with tutorials
@@ -152,6 +156,12 @@
         href: power-bi-customize-button.md
       - name: Create bookmarks to save and share insights
         href: desktop-bookmarks.md
+      - name: Find insights in your reports
+        href: insights.md
+      - name: Insights for individual visuals
+        href: desktop-insights.md
+      - name: Find where data is different
+        href: desktop-insights-find-where-different.md
       - name: Create page and bookmark navigators
         href: button-navigators.md
       - name: Power Automate button visual
@@ -200,6 +210,8 @@
         href: ../visuals/power-bi-visualization-copy-paste.md
       - name: Change how visuals interact
         href: service-reports-visual-interactions.md
+      - name: Work with aggregates
+        href: service-aggregates.md
       - name: Export visual data to Excel
         href: ../visuals/power-bi-visualization-export-data.md
       - name: Show underlying data
@@ -396,6 +408,8 @@
       href: service-prepare-data-for-q-and-a.md
     - name: Create featured questions for Q&A
       href: service-q-and-a-create-featured-questions.md
+    - name: Use Q&A with DirectQuery
+      href: service-q-and-a-direct-query.md
     - name: Enhance Q&A with Copilot
       href: ../natural-language/q-and-a-copilot-enhancements.md
   - name: Create with Copilot
@@ -406,14 +420,42 @@
       href: copilot-enable-power-bi.md 
     - name: Copilot in Power BI Desktop
       href: copilot-power-bi-desktop.md
+    - name: Copilot for Power BI reports
+      href: copilot-reports-overview.md
+    - name: Copilot for Power BI apps
+      href: copilot-apps-overview.md
     - name: Create reports in Power BI with Copilot
       href: copilot-create-reports.md
-    - name: Write prompts for Copilot report pages
-      href: copilot-prompts-report-pages.md
+    - name: Ask Copilot a data question
+      href: copilot-ask-data-question.md
     - name: Create a narrative visual of a page
       href: copilot-create-narrative.md
+    - name: Write prompts for Copilot report pages
+      href: copilot-prompts-report-pages.md
     - name: Write prompts for Copilot narratives
       href: copilot-prompts-narratives.md
+    - name: Copilot summaries in subscriptions
+      href: copilot-summaries-in-subscriptions.md
+    - name: Search for new content with Copilot
+      href: copilot-search-new-content.md
+    - name: Use Copilot with semantic models
+      href: copilot-semantic-models.md
+    - name: Copilot integration
+      href: copilot-integration.md
+    - name: Prepare your data for AI
+      items:
+      - name: Prepare your data for AI overview
+        href: copilot-prepare-data-ai.md
+      - name: AI data schemas
+        href: copilot-prepare-data-ai-data-schema.md
+      - name: AI instructions
+        href: copilot-prepare-data-ai-instructions.md
+      - name: Verified answers
+        href: copilot-prepare-data-ai-verified-answers.md
+      - name: AI settings
+        href: copilot-prepare-data-ai-settings.md
+      - name: Prepare data for AI FAQ
+        href: copilot-prepare-data-ai-faq.yml
     - name: Tutorial for Copilot in Power BI
       items: 
       - name: Introduction to Copilot in Power BI
@@ -438,6 +480,10 @@
         href: dynamics-quick-create-report.md
       - name: Create a quick report in Jupyter
         href: jupyter-quick-report.md
+      - name: Quick insights for datasets
+        href: service-insights.md
+      - name: Optimize insights
+        href: service-insights-optimize.md
   - name: Optimize for mobile
     items:
       - name: About mobile-optimized reports
@@ -534,6 +580,12 @@
       href: desktop-troubleshoot-publish.md
     - name: Create a QR code for a report
       href: service-create-qr-code-for-report.md
+    - name: Set a contact for reports and dashboards
+      href: service-item-contact.md
+    - name: Rename reports and dashboards
+      href: service-rename.md
+    - name: Delete reports and dashboards
+      href: service-delete.md
   - name: Optimize performance
     items:
     - name: Performance Analyzer
