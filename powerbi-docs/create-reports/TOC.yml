@@ -390,6 +390,12 @@
     href: ../developer/visuals/power-bi-custom-visuals.md
 - name: Use Q&A and natural language
   items: 
+  - name: Introduction to Q&A
+    href: ../natural-language/q-and-a-intro.md
+  - name: Use Q&A to explore and create visuals in reports
+    href: ../natural-language/power-bi-tutorial-q-and-a.md
+  - name: Use Q&A to explore and create visuals on dashboards
+    href: ../natural-language/end-user-q-and-a-tutorial.md
   - name: Q&A tooling introduction
     href: ../natural-language/q-and-a-tooling-intro.md
   - name: Q&A tooling advanced
@@ -408,6 +414,10 @@
     href: service-q-and-a-create-featured-questions.md
   - name: Use Q&A with DirectQuery
     href: service-q-and-a-direct-query.md
+  - name: Q&A data sources
+    href: ../natural-language/q-and-a-data-sources.md
+  - name: Q&A limitations
+    href: ../natural-language/q-and-a-limitations.md
   - name: Enhance Q&A with Copilot
     href: ../natural-language/q-and-a-copilot-enhancements.md
 - name: Create with Copilot
