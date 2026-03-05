@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with goals
 ms.topic: feature-guide
-ms.date: 12/01/2025
+ms.date: 03/02/2026
 ms.custom: intro-get-started
 ai-usage: ai-assisted
 #customer intent: As a Power BI user I want to learn what goals are and how to use Goals in my Power BI scorecards.
@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 
 By using scorecards in Power BI, you can curate your goals and track them against key business objectives, all in a single view. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 
-:::image type="content" source="media/service-goals-introduction/power-bi-goals-hub.png" alt-text="Screenshot of goals page with goals, scorecards, and samples.":::
+:::image type="content" source="media/service-goals-introduction/power-bi-scorecards-hub.png" alt-text="Screenshot of goals page with goals, scorecards, and samples.":::
 
 ## License requirements
 
@@ -33,9 +33,9 @@ Goals are a Pro feature. Users can access various aspects of the experience depe
 
 If you don't meet the minimum requirements for any of these permissions, contact your Power BI administrator before you begin.
 
-## Explore the Metrics hub page
+## Explore the Scorecards hub page
 
-After you sign in to the Power BI service, select **Metrics** from the navigation pane. Power BI displays your Metrics hub page. As a new user, your Metrics hub page is empty until you create your first scorecard.
+After you sign in to the Power BI service, select **Scorecards** from the navigation pane. Power BI displays your Scorecards hub page. As a new user, your Scorecards hub page is empty until you create your first scorecard.
 
 Ready to create your first scorecard? Learn how in [Create scorecards and manual goals in Power BI](service-goals-create.md).
 
@@ -114,7 +114,7 @@ Scorecards have goal-level permissions roles. While workspace permissions give v
 
 ## Next steps
 
-Now that you understand what goals are and how to navigate the Metrics hub, you're ready to create your first scorecard:
+Now that you understand what goals are and how to navigate the Scorecards hub, you're ready to create your first scorecard:
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Set permissions for your scorecards](service-goals-set-permissions.md)
@@ -122,6 +122,6 @@ Now that you understand what goals are and how to navigate the Metrics hub, you'
 
 **For administrators:**
 
-- [Metrics hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
+- [Scorecards hub tenant settings](/fabric/admin/service-admin-portal-goals-settings)
 
 Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
