@@ -25,7 +25,7 @@ Goal-level permissions let you set specific view and update permissions at the g
   
 Follow these steps to get started setting up your permissions.
 
-1. On the **Metrics** hub page, select the scorecard you want to update.
+1. On the **Scorecards** hub page, select the scorecard you want to update.
 1. Select the **Edit** pencil.
 1. Select the **Settings** cog to open the **Scorecard settings** pane.
 1. Select the new **Permissions** tab.

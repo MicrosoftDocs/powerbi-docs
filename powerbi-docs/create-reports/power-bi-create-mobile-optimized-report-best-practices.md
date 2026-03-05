@@ -102,7 +102,7 @@ The following table lists the standard visuals, classified by their minimum reco
   | **Line and clustered column chart** | L |
   | **Line and stacked column chart** | L |
   | **Line chart** | L |
-  | **Metrics** | L |
+  | **Scorecards** | L |
   | **Pie chart** | L |
   | **Python visual** | L |
   | **Q&A** | L |
