@@ -161,7 +161,8 @@ sections:
 
       - question: |
            Why does Copilot say it can't see a field in my semantic model even though it's part of the AI schema? 
-        answer: | In scenarios where your semantic model schema is too large for Copilot to render a response, the schema of the model will be reduced for Copilot to be able to understand the schema and generate a response. You can tell when this is happening by downloading the Copilot Diagnostics and checking for "AgentSchemaReduced" in the warnings.
+        answer: | 
+        In scenarios where your semantic model schema is too large for Copilot to render a response, the schema of the model will be reduced for Copilot to be able to understand the schema and generate a response. You can tell when this is happening by downloading the Copilot Diagnostics and checking for "AgentSchemaReduced" in the warnings.
         
   - name: Prep data for AI
     questions:
