@@ -158,6 +158,10 @@ sections:
            I'm trying to get Copilot to return different answers based on the domains or user groups. Which feature should I use?
         answer: |
           The capabilities as they exist today are limited to broad consumption. You can't currently create a glossary based on different groups, or define a term in two different ways. For example, engineers might define *usage* as *number of times clicked*, but product managers might define *usage* as *paying customers in a given month*. You can't currently give *usage* different definitions in the same model.
+
+      - question: |
+           Why does Copilot say it can't see a field in my semantic model even though it's part of the AI schema? 
+        answer: | In scenarios where your semantic model schema is too large for Copilot to render a response, the schema of the model will be reduced for Copilot to be able to understand the schema and generate a response. You can tell when this is happening by downloading the Copilot Diagnostics and checking for "AgentSchemaReduced" in the warnings. 
   
   - name: Prep data for AI
     questions:
