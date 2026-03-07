@@ -252,11 +252,11 @@ Here are some considerations when you're planning how to handle licensing for gu
 - How will your process for assigning user licenses be different when an external user is involved?
 - Does the external user work for an organization that has Microsoft Entra ID set up? In that case, their credentials can be managed by their home tenant. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
 - Which external users are consumers only versus those who need to create and publish content?
-- In what situations will a license be provided by the external user (known as bring-your-own-license, or BYOL). In what circumstances will a license be provided by your organization? For more information, see the licensing topic in [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md#licensing).
+- In what situations will a license be provided by the external user (known as bring-your-own-license, or BYOL). In what circumstances will a license be provided by your organization? For more information, see the licensing topic in [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#licensing).
 - Which type of guest invitation process will you use? There are different capabilities for occasional versus planned guest user invitations. The user experience is different as well. For more information, see [Guest invitation process](powerbi-implementation-planning-security-tenant-level-planning.md#guest-invitation-process).
 
 > [!TIP]
-> For more information, see the [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md). It's a good resource to learn about strategies for handling external users.
+> For more information, see the [Microsoft Entra B2B white paper](/fabric/enterprise/powerbi/service-admin-entra-b2b). It's a good resource to learn about strategies for handling external users.
 
 ### Step 3: Update user licenses
 

@@ -338,11 +338,11 @@ This approach is beneficial when:
 
 #### Option 2: Create a Microsoft Entra B2B guest account for external consumers
 
-[Microsoft Entra B2B](/azure/active-directory/b2b/what-is-b2b) is a good option to [distribute content to external consumers](whitepaper-azure-b2b-power-bi.md#alternative-option-1-create-duplicate-identities-for-partner-users). With this approach, an Azure administrator adds the external consumer as an external guest user in Microsoft Entra ID. If the external user is required to access content, the Azure administrator or a Microsoft 365 administrator can provision a per-user license for the identity.
+[Microsoft Entra B2B](/azure/active-directory/b2b/what-is-b2b) is a good option to [distribute content to external consumers](/fabric/enterprise/powerbi/service-admin-entra-b2b). With this approach, an Azure administrator adds the external consumer as an external guest user in Microsoft Entra ID. If the external user is required to access content, the Azure administrator or a Microsoft 365 administrator can provision a per-user license for the identity.
 
 External users can also use bring-your-own-license (BYOL) to bring licenses from their organizations to access content that requires a per-user license. When the guest user has an appropriate license, creators can then share content with them.
 
-If you need to distribute content to consumers outside your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md).
+If you need to distribute content to consumers outside your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 External users are made external guest users by an Azure administrator. If the guest user requires a license, a Microsoft 365 administrator can then assign a license to the guest user. These guest users can then access Fabric, including workspaces, apps, and items. Access to Fabric by external guest users can be controlled in the tenant settings by a Fabric administrator.
 
@@ -352,10 +352,10 @@ Microsoft Entra B2B requires that you enable specific settings in the Fabric adm
 
 Here are some scenarios where you can use Microsoft Entra B2B to deliver content to external consumers:
 
-- [Direct collaboration between organizations](whitepaper-azure-b2b-power-bi.md#case-1-direct-collaboration-between-organizations)
-- [Parent and subsidiaries or affiliates](whitepaper-azure-b2b-power-bi.md#case-2-parent-and-its-subsidiaries-or-affiliates)
-- [Shared tenant among partner organizations](whitepaper-azure-b2b-power-bi.md#case-3-shared-environment-across-partners)
-- [Distribution to many external partners](whitepaper-azure-b2b-power-bi.md#case-4-distribution-to-hundreds-or-thousands-of-external-partners)
+- [Direct collaboration between organizations](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Parent and subsidiaries or affiliates](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Shared tenant among partner organizations](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Distribution to many external partners](/fabric/enterprise/powerbi/service-admin-entra-b2b)
 
 This approach is beneficial when:
 
