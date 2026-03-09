@@ -32,15 +32,15 @@ highlightedContent:
     - title: Enable Copilot in Power BI
       itemType: how-to-guide
       url: create-reports/copilot-enable-power-bi.md
+    - title: Choose from end-to-end scenarios
+      itemType: tutorial
+      url: fundamentals/power-bi-learning-path-directory.md
     - title: Share dashboards and reports
       itemType: how-to-guide
       url: collaborate-share/service-share-dashboards.md
     - title: Get Power BI samples
       itemType: sample
       url: create-reports/sample-datasets.md
-    - title: Troubleshoot data refresh
-      itemType: how-to-guide
-      url: connect-data/refresh-troubleshooting-refresh-scenarios.md
     - title: Read about the latest updates
       itemType: whats-new
       url: fundamentals/whats-new.md

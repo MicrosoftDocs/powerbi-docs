@@ -145,7 +145,7 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Understand model relationships](../transform-model/desktop-relationships-understand.md) - Create relationships
     1. [Create your own measures](../transform-model/desktop-tutorial-create-measures.md) - Build DAX measures
     1. [Create calculated columns](../transform-model/desktop-tutorial-create-calculated-columns.md) - Add computed fields
-    1. [DAX function reference](/analysis-services/dax/dax-function-reference) - Complete DAX reference
+    1. [DAX function reference](/dax/dax-function-reference) - Complete DAX reference
     1. [Implement time-based calculations](../transform-model/desktop-time-intelligence.md) - Time intelligence patterns
     1. [Use calculation groups](../transform-model/calculation-groups.md) - Advanced calculations
     1. [Tabular modeling](/analysis-services/tabular-models/tabular-models-ssas) - Best practices for data models
@@ -160,9 +160,9 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Create buttons](../create-reports/desktop-buttons.md) - Add navigation and actions
     1. [Add drillthrough](../create-reports/desktop-drillthrough.md) - Enable detailed exploration
     1. [Use report page tooltips](../create-reports/desktop-tooltips.md) - Rich hover information
-    1. [Add drillthrough buttons](../create-reports/desktop-drillthrough.md#drillthrough-buttons) - Advanced drillthrough navigation
-    1. [Cross-report drillthrough](../create-reports/desktop-drillthrough.md#cross-report-drillthrough) - Link multiple reports
-    1. [Use the selection pane](../create-reports/service-the-report-editor-take-a-tour.md#the-selection-pane) - Manage visual layers
+    1. [Add drillthrough buttons](../create-reports/desktop-drillthrough.md#add-a-drillthrough-button) - Advanced drillthrough navigation
+    1. [Cross-report drillthrough](../create-reports/desktop-drillthrough.md#enable-cross-report-drillthrough) - Link multiple reports
+    1. [Use the selection pane](../create-reports/desktop-bookmarks.md#visibility-using-the-selection-pane) - Manage visual layers
     1. [Group visuals in a report](../create-reports/desktop-grouping-visuals.md) - Organize layouts
     1. [Apply conditional formatting](../create-reports/desktop-conditional-table-formatting.md) - Dynamic visual styling
     1. [Use Performance Analyzer](../create-reports/performance-analyzer.md) - Diagnose and optimize report performance
@@ -196,7 +196,7 @@ This article provides curated, sequential lists of documentation for common Powe
 - **Goal:** Understand how Power BI fits into Fabric and when to use broader Fabric capabilities
 - **Suggested learning sequence:**
     1. [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview) - Understand the unified platform
-    1. [Power BI in Microsoft Fabric](/fabric/get-started/fabric-power-bi) - How Power BI integrates
+    1. [Power BI in Microsoft Fabric](/fabric/fundamentals/microsoft-fabric-overview) - How Power BI integrates
     1. [End-to-end tutorials in Fabric](/fabric/get-started/end-to-end-tutorials) - Complete scenarios
     1. [Lakehouses in Fabric](/fabric/data-engineering/lakehouse-overview) - Unified data storage
     1. [Data pipelines in Fabric](/fabric/data-factory/data-factory-overview) - Data orchestration
@@ -268,7 +268,7 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Semantic model modes](../connect-data/service-dataset-modes-understand.md) - Import vs DirectQuery vs Composite
     1. [Use composite models](../transform-model/desktop-composite-models.md) - Combine import and DirectQuery
     1. [Direct Lake mode](/fabric/get-started/direct-lake-overview) - Fabric's high-performance query mode
-    1. [Connect to Fabric lakehouses](/fabric/data-engineering/lakehouse-power-bi-reporting) - Report on lakehouse data
+    1. [Connect to Fabric lakehouses](/fabric/data-engineering/lakehouse-sql-analytics-endpoint) - Report on lakehouse data
     1. [DirectQuery model guidance](/power-bi/guidance/directquery-model-guidance) - Performance optimization
     1. [Implement row-level security](../connect-data/desktop-tutorial-row-level-security-onprem-ssas-tabular.md) - Secure DirectQuery
 
