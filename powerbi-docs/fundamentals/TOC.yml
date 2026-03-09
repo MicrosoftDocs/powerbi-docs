@@ -1,22 +1,30 @@
 - name: Power BI get started documentation
   href: index.yml
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
     - name: Overview
       items:
         - name: What is Power BI?
           href: power-bi-overview.md
-        - name: Basics of Power BI service
-          href: service-basic-concepts.md
         - name: What's new in the latest Power BI update?
           href: whats-new.md
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
     - name: Get started
       items:
+        - name: Sign in to Power BI
+          href: ../explore-reports/end-user-sign-in.md
+        - name: Navigate the Power BI service
+          href: ../explore-reports/end-user-experience.md
+        - name: Basics of Power BI service
+          href: service-basic-concepts.md
+        - name: Find your learning path
+          href: power-bi-learning-path-directory.md
         - name: Get Power BI Desktop
           href: desktop-get-the-desktop.md
-        - name: Power BI learning paths
-          href: power-bi-learning-path-directory.md
-    - name: Tutorials
-      items:
         - name: Get started with Power BI Desktop
           href: desktop-getting-started.md
         - name: Get started with the Power BI service
@@ -25,7 +33,9 @@
           href: fabric-get-started.md
         - name: Download samples in the Power BI mobile apps
           href: mobile-apps-download-samples.md
-    - name: Licensing
+        - name: Video playlists
+          href: videos.md
+    - name: Understand licensing
       items:
         - name: Sign up or purchase Power BI as an individual
           href: service-self-service-signup-purchase-for-power-bi.md
@@ -33,18 +43,16 @@
           href: service-self-service-sign-up-help.md
         - name: Features by license type
           href: service-features-license-type.md
+        - name: Features available to free users
+          href: end-user-features.md
         - name: Licenses and subscriptions for business users
           href: end-user-license.md
-    - name: Security
+    - name: Get help
       items:
-        - name: Security baseline
-          href: /security/benchmark/azure/baselines/power-bi-security-baseline?toc=/power-bi/fundamentals/toc.json
-    - name: Resources
+        - name: Power BI support options
+          href: ../support/service-support-options.md
+    - name: Check compatibility and updates
       items:
-        - name: Power BI feature list for business users
-          href: end-user-features.md
-        - name: Videos
-          href: videos.md
         - name: Power BI updates archive
           href: desktop-latest-update-archive.md
         - name: Power BI Desktop change log
@@ -55,3 +63,28 @@
           href: supported-languages-countries-regions.md
         - name: Supported browsers
           href: power-bi-browsers.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+- name: Resources
+  items:
+  - name: Glossary and terminology
+    href: end-user-glossary.md
+  - name: Contribute to Fabric docs
+    href: /contribute/
+  - name: Microsoft Q & A
+    href: /answers/
+  - name: Provide feedback
+    items:  
+    - name: Fabric ideas
+      href: https://ideas.fabric.microsoft.com/
+    - name: Azure feedback
+      href: https://feedback.azure.com/    
+  - name: Community
+    href: https://community.fabric.microsoft.com/
+  - name: Service updates
+    href: https://azure.microsoft.com/updates/    
+  - name: Azure Status
+    href: https://azure.status.microsoft/
+  - name: Microsoft Learn training
+    href: /training/fabric/
