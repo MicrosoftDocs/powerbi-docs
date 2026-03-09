@@ -19,6 +19,10 @@
           href: ../explore-reports/end-user-sign-in.md
         - name: Navigate the Power BI service
           href: ../explore-reports/end-user-experience.md
+        - name: Search and find content in the Power BI service
+          href: ../explore-reports/end-user-search-sort.md
+        - name: View shared dashboards and reports in Power BI
+          href: ../explore-reports/end-user-shared-with-me.md
         - name: Basics of Power BI service
           href: service-basic-concepts.md
         - name: Find your learning path
@@ -45,8 +49,20 @@
           href: service-features-license-type.md
         - name: Features available to free users
           href: end-user-features.md
+        - name: Licensing guide for organizations
+          href: /fabric/enterprise/powerbi/service-admin-power-bi-licensing
         - name: Licenses and subscriptions for business users
           href: end-user-license.md
+        - name: Understand Microsoft Fabric licenses
+          href: /fabric/enterprise/licenses
+    - name: Understand content types
+      items:
+        - name: Apps in Power BI
+          href: ../explore-reports/end-user-apps.md
+        - name: Reports in Power BI
+          href: ../explore-reports/end-user-reports.md
+        - name: Dashboards in Power BI
+          href: ../explore-reports/end-user-dashboards.md
     - name: Get help
       items:
         - name: Power BI support options
