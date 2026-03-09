@@ -13,6 +13,8 @@
       items:
         - name: Get Power BI Desktop
           href: desktop-get-the-desktop.md
+        - name: Power BI learning paths
+          href: power-bi-learning-path-directory.md
     - name: Tutorials
       items:
         - name: Get started with Power BI Desktop
