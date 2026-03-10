@@ -8,36 +8,24 @@
   items:
   - name: Power BI reports overview
     href: power-bi-reports-overview.md
-  - name: Tour the report editor
-    href: service-the-report-editor-take-a-tour.md
 # =============================================================================
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
   items:
-  - name: Home in Power BI Desktop
-    href: desktop-home.md
-  - name: Power BI modern ribbon
-    href: desktop-ribbon.md
-  - name: Optimize ribbon in Power BI Desktop
-    items:
-    - name: Optimize ribbon overview
-      href: desktop-optimize-ribbon.md
-    - name: DirectQuery optimization scenarios
-      href: desktop-optimize-ribbon-scenarios.md
-  - name: Work with Report view
+  - name: Tour the report editor
+    href: service-the-report-editor-take-a-tour.md
+  - name: Use report view
     href: desktop-report-view.md
-  - name: On-object interaction
-    href: power-bi-on-object-interaction.md
-  - name: Dark mode in Power BI Desktop
-    href: power-bi-dark-mode.md
+  - name: Use editing view
+    href: service-interact-with-a-report-in-editing-view.md
   - name: Paginated reports documentation
     href: ../paginated-reports/index.yml
   - name: Learn with tutorials
     items:
     - name: "Power BI Desktop: From Excel to report"
       href: desktop-excel-stunning-report.md
-    - name: "Power BI Desktop: Dimensional model to report"
+    - name: "Power BI Desktop: From dimensional model to report"
       href: desktop-dimensional-model-report.md
     - name: "Power BI service: From Excel to report"
       href: service-from-excel-to-stunning-report.md
@@ -86,6 +74,27 @@
     - name: Financial workbook sample
       href: sample-financial-download.md
 # =============================================================================
+# SETTINGS AND PREFERENCES
+# =============================================================================
+- name: Understand settings and preferences
+  items:
+  - name: Power BI Home
+    href: desktop-home.md
+  - name: Power BI ribbon
+    href: desktop-ribbon.md
+  - name: Optimize ribbon in Power BI Desktop
+    items:
+    - name: Optimize ribbon overview
+      href: desktop-optimize-ribbon.md
+    - name: DirectQuery optimization scenarios
+      href: desktop-optimize-ribbon-scenarios.md
+  - name: On-object interaction
+    href: power-bi-on-object-interaction.md
+  - name: Dark mode in Power BI Desktop
+    href: power-bi-dark-mode.md
+  - name: Change report settings
+    href: power-bi-report-settings.md
+# =============================================================================
 # DESIGN REPORTS
 # =============================================================================
 - name: Design Power BI reports
@@ -106,8 +115,6 @@
       href: end-user-show-data.md
     - name: Set visual query limits
       href: desktop-set-visual-query-limits.md
-  - name: Change report settings
-    href: power-bi-report-settings.md
   - name: Report layout and design
     items:
     - name: Add visual elements to reports
@@ -246,8 +253,6 @@
     items:
     - name: Tips and tricks for creating reports
       href: desktop-tips-and-tricks-for-creating-reports.md
-    - name: Interact with a report in Editing view
-      href: service-interact-with-a-report-in-editing-view.md
     - name: Work with aggregates
       href: service-aggregates.md
     - name: Analyze in Excel
