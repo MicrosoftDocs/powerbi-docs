@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-The **token-based identity** allows an ISV to use an [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
+The **token-based identity** allows an ISV to use a [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
 
 ISV customers that keep and manage their data in **Azure SQL Database** can keep their data secure in their tenant when integrating with **Power BI Embedded** in the ISV app.
 

@@ -616,7 +616,7 @@ Here are some actions to identify when to audit subscriptions, trials, and cost 
 - **A workspace was assigned to, or removed from, a capacity**: Look for the _MigrateWorkspaceIntoCapacity_ activity or the _RemoveWorkspacesFromCapacity_ activity in the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
 > [!TIP]
-> When you navigate the Azure Portal, don't be confused by the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
+> When you navigate the Azure portal, don't be confused by the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
 
 > [!IMPORTANT]
 > The information presented in this step isn't intended to be an all-inclusive list of ways to audit the data. Rather, it's intended to provide you with ideas to get you started with your auditing efforts. For other ideas, we recommend that you consult with your billing administrators.

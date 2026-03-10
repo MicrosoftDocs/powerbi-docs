@@ -15,7 +15,7 @@ ms.date: 12/15/2025
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either an [Microsoft Entra token](#azure-ad-token), an [embed token](#embed-token), or both.
+Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either a [Microsoft Entra token](#azure-ad-token), an [embed token](#embed-token), or both.
 
 In the [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for-your-customers) solution, the application generates an embed token that grants your web users access to Power BI content.
 
@@ -28,7 +28,7 @@ In the [*embed for your organization*](./embedded-analytics-power-bi.md#embed-fo
 
 ## Microsoft Entra token
 
-For both [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for-your-customers) and [*embed for your organization*](./embedded-analytics-power-bi.md#embed-for-your-organization) solutions, you need an [Microsoft Entra token](/azure/databricks/dev-tools/api/latest/aad/). The Microsoft Entra token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
+For both [*embed for your customers*](./embedded-analytics-power-bi.md#embed-for-your-customers) and [*embed for your organization*](./embedded-analytics-power-bi.md#embed-for-your-organization) solutions, you need a [Microsoft Entra token](/azure/databricks/dev-tools/api/latest/aad/). The Microsoft Entra token is required for all [REST API](/rest/api/power-bi/) operations, and it expires after an hour.
 
 * In the *embed for your customers* solution, the Microsoft Entra token is used to generate the embed token.
 
