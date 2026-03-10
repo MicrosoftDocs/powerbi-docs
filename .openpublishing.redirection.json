@@ -7554,6 +7554,11 @@
       "source_path": "powerbi-docs/create-reports/end-user-show-data.md",
       "redirect_url": "/power-bi/explore-reports/end-user-show-data",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/fundamentals/videos.md",
+      "redirect_url": "/power-bi/fundamentals/whats-new#resources",
+      "redirect_document_id": false
     }
   ]
 }                           

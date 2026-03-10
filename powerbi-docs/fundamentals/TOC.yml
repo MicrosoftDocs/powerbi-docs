@@ -24,7 +24,7 @@
       href: ../explore-reports/end-user-shared-with-me.md
     - name: Basics of Power BI service
       href: service-basic-concepts.md
-    - name: Find your learning path
+    - name: End-to-end scenarios
       href: power-bi-learning-path-directory.md
     - name: Get Power BI Desktop
       href: desktop-get-the-desktop.md
@@ -36,8 +36,6 @@
       href: fabric-get-started.md
     - name: Download samples in the Power BI mobile apps
       href: mobile-apps-download-samples.md
-    - name: Video playlists
-      href: videos.md
 - name: Understand licensing
   items:
     - name: Sign up or purchase Power BI as an individual
@@ -62,10 +60,6 @@
       href: ../explore-reports/end-user-reports.md
     - name: Dashboards in Power BI
       href: ../explore-reports/end-user-dashboards.md
-- name: Get help
-  items:
-    - name: Power BI support options
-      href: ../support/service-support-options.md
 - name: Check compatibility and updates
   items:
     - name: Power BI updates archive
@@ -78,6 +72,8 @@
       href: supported-languages-countries-regions.md
     - name: Supported browsers
       href: power-bi-browsers.md
+- name: Power BI support documentation
+  href: ../support/index.yml
 # =============================================================================
 # RESOURCES (don't change this - standardized with Fabric)
 # =============================================================================

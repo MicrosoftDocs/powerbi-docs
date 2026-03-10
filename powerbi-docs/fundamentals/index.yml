@@ -82,8 +82,6 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-          - text: Video playlists
-            url: videos.md
           - text: What's new in Power BI?
             url: whats-new.md
           - text: Desktop change log

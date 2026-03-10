@@ -1,6 +1,6 @@
 ---
-title: Power BI Learning Paths for Every Skill Level
-description: Explore curated Power BI learning paths for beginners, report creators, data analysts, admins, and developers. Find the right path for your role and skill level.
+title: End‑to‑End Power BI Scenarios for Any Skill Level
+description: Explore curated Power BI scenario paths for beginners, report creators, data analysts, admins, and developers. Find the right path for your role and skill level.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: 
@@ -13,18 +13,18 @@ ms.custom: ""
 LocalizationGroup: Get started
 ---
 
-# Power BI learning paths for every skill level
+# End‑to‑end Power BI scenarios for any skill level
 
 This article provides curated, sequential lists of documentation for common Power BI scenarios. Each path takes you from start to finish for a specific use case, building knowledge progressively.
 
 > [!NOTE]
-> Although all of these learning paths begin with Power BI documentation, some paths might also include links to other areas in Microsoft Learn for complete end-to-end coverage.
+> Although all of these paths begin with Power BI documentation, some paths might also include links to other areas in Microsoft Learn for complete end-to-end coverage.
 
-## Learning path selection guide
+## Scenario selection guide
 
-**Not sure which path to start with?** Use this guide:
+**Not sure which path to follow?** Use this guide:
 
-| Which best describes you? | Suggested learning path |
+| Which best describes you? | Recommended path |
 |--------------|-------------------|
 | Brand new to business intelligence (BI) tools | [Path 1: New Power BI user](#1-new-power-bi-user-start-with-power-bi) |
 | An Excel power user | [Path 2: Excel user](#2-excel-user-transition-to-power-bi-from-excel) |
@@ -304,12 +304,12 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Subscribe to goal updates](../create-reports/service-goals-subscriptions.md) - Stay informed on progress
     1. [Automate goals with Power Automate](../create-reports/service-metrics-power-automate.md) - Trigger workflows from metrics
 
-## Next steps
+## Related content
 
-After completing a learning path:
-
-1. **Practice** - Apply what you learned with your own data.
-1. **Explore samples** - Learn from [Power BI samples](../create-reports/sample-datasets.md).
-1. **Join the community** - Visit the [Power BI Community](https://community.powerbi.com/).
-1. **Stay current** - Check [What's new in Power BI](whats-new.md) monthly.
-1. **Get certified** - Consider [Microsoft Power BI certification](/certifications/power-bi-data-analyst-associate/).
+- [Collaboration documentation](../collaborate-share/index.yml)
+- [Data connection documentation](../connect-data/index.yml)
+- [Data transformation, shaping, and modeling documentation](../transform-model/index.yml)
+- [Developer documentation](../developer/index.yml)
+- [Report and dashboard creation documentation](../create-reports/index.yml)
+- [Report exploration documentation](../explore-reports/index.yml)
+- [Report Server documentation](../report-server/index.yml)
