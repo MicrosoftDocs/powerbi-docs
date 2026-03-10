@@ -203,6 +203,6 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 
 ## Related content
 
-- [Watch Power BI videos](../fundamentals/videos.md)
+- [Power BI YouTube channel and playlists](../fundamentals/whats-new.md#resources)
 - [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 - [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

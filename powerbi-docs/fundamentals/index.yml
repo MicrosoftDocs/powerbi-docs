@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Power BI get started documentation
-summary: Power BI documentation provides expert information and answers to get you started using Power BI.
+summary: Start here to choose the right Power BI entry point, learn how to navigate the service, understand common content types, and find licensing and help resources.
 metadata:
   title: Get started documentation
-  description: Power BI documentation provides expert information and answers to get you started using Power BI.
+  description: Start here to choose the right Power BI entry point, learn how to navigate the service, understand common content types, and find licensing and help resources.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
@@ -12,41 +12,77 @@ metadata:
   ms.collection: collection
   author: julcsc
   ms.author: juliacawthra
-  ms.date: 01/15/2026
+  ms.date: 03/09/2026
 
 landingContent:
-  - title: Learn the basics
+  - title: Choose your starting point
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: What is Power BI?
             url: power-bi-overview.md
-          - text: Basic concepts
-            url: service-basic-concepts.md
+          - text: Find your learning path
+            url: power-bi-learning-path-directory.md
+          - text: Get started with Microsoft Fabric and Power BI
+            url: fabric-get-started.md
 
-  - title: Stay up to date
+  - title: Sign in and find your way
     linkLists:
-      - linkListType: whats-new
+      - linkListType: how-to-guide
+        links:
+          - text: Sign in to Power BI
+            url: ../explore-reports/end-user-sign-in.md
+          - text: Navigate the Power BI service
+            url: ../explore-reports/end-user-experience.md
+          - text: Search and find content in the Power BI service
+            url: ../explore-reports/end-user-search-sort.md
+          - text: View shared dashboards and reports in Power BI
+            url: ../explore-reports/end-user-shared-with-me.md
+
+  - title: Understand what you're looking at
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Basics of Power BI service
+            url: service-basic-concepts.md
+          - text: Apps in Power BI
+            url: ../explore-reports/end-user-apps.md
+          - text: Reports in Power BI
+            url: ../explore-reports/end-user-reports.md
+          - text: Dashboards in Power BI
+            url: ../explore-reports/end-user-dashboards.md
+
+  - title: Choose the right experience
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Get Power BI Desktop
+            url: desktop-get-the-desktop.md
+          - text: Get started with Power BI Desktop
+            url: desktop-getting-started.md
+          - text: Get started with the Power BI service
+            url: service-get-started.md
+          - text: Download samples in the Power BI mobile apps
+            url: mobile-apps-download-samples.md
+
+  - title: Understand licensing and get help
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Features by license type
+            url: service-features-license-type.md
+          - text: Understand Microsoft Fabric licenses
+            url: /fabric/enterprise/licenses
+          - text: Features available to free users
+            url: end-user-features.md
+          - text: Power BI support options
+            url: ../support/service-support-options.md
+
+  - title: Keep learning and stay current
+    linkLists:
+      - linkListType: learn
         links:
           - text: What's new in Power BI?
             url: whats-new.md
           - text: Desktop change log
             url: desktop-change-log.md
-
-  - title: Get started with Power BI
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Sign up for Power BI
-            url: service-self-service-signup-for-power-bi.md
-          - text: Start using Power BI Desktop
-            url: desktop-getting-started.md
-          - text: Start using the Power BI service
-            url: service-get-started.md
-
-  - title: Watch and learn
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Power BI videos
-            url: videos.md
