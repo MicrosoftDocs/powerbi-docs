@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 04/09/2026
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, LOOKUP, LOOKUPWITHTOTALS, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
-# Using visual calculations (preview)
-
-> [!NOTE]
-> Visual calculations are currently in  **preview**.
+# Using visual calculations
 
 A visual calculation is a DAX calculation defined and executed directly on a visual. Visual calculations make it easier to create calculations that were previously hard to create, leading to simpler DAX, easier maintenance, and better performance.
 
@@ -40,7 +37,7 @@ Visual calculations differ from the other calculations options in DAX:
 
 For a more in-depth comparison of ways of adding calculations in Power BI, see [Using calculations options in Power BI Desktop](desktop-calculations-options.md).
 
-Once you enable visual calculations, you can:
+With visual calculations, you can:
 
 * Add visual calculations to your reports
 * Hide certain fields
@@ -48,12 +45,6 @@ Once you enable visual calculations, you can:
 * Make flexible visual calculations by referring to the visual's axes
 
 The following sections provide details about how each of the elements, described in the previous bullets, work with visual calculations.
-
-## Enable visual calculations
-
-Before September 2024, to use visual calculations, you must enable it in **Options and Settings** > **Options** > **Preview features**. Select **Visual calculations** and select **OK**. Visual calculations are enabled after Power BI Desktop is restarted.
-
-From September 2024 onwards, this step is no longer necessary as visual calculations are enabled by default. While they're still in preview, you can use the above settings to disable visual calculations if preferred.
 
 ## Adding a visual calculation
 
@@ -305,41 +296,39 @@ Step 9: Enjoy your conditional formatted visual!
 
 ## Considerations and limitations
 
-Visual calculations are currently in preview, and during preview, you should be aware of the following considerations and limitations:
+### Unsupported visual types
 
-* Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
-* The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Slicer
-  * R visual
-  * Python visual
-  * Key Influencers
-  * Decomposition Tree
-  * Q&A
-  * Smart Narrative
-  * Metrics
-  * Paginated Report
-  * Power Apps
-  * Power Automate
-  * Small multiples
-  * Play axis on Scatter chart
-* Performance of this feature isn't representative of the end product.
-* Reuse of visual calculations using copy/paste or other mechanisms isn't available.
-* You can't filter on visual calculations.
-* A visual calculation can't refer to itself on the same or different detail level.
-* [Personalization](../explore-reports/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
-* You can't pin a visual that uses visual calculations or hidden fields to [a dashboard](../create-reports/service-dashboards.md).
-* You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
-* When exporting data from visuals, visual calculation results aren't included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
-* You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
-* You can't set [data categories](desktop-data-categorization.md) on visual calculations.
-* You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
-* You can't change the sort order for visual calculations.
-* Live connections to SQL Server Analysis Services versions released before version 2025 aren't supported.
-* Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
-* [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
-* You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
-* You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
-* IntelliSense isn't available in Power BI embedded.
+Visual calculations and hidden fields don't work with the following visuals:
+
+* Slicer, R visual, Python visual
+* Key Influencers, Decomposition Tree, Q&A, Smart Narrative
+* Metrics, Paginated Report, Power Apps, Power Automate
+* Small multiples, Play axis on Scatter chart
+* Custom visuals
+
+### Unsupported features
+
+The following features aren't available with visual calculations:
+
+* Filtering, sorting, or [changing aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated)
+* Self-referencing (a calculation can't refer to itself)
+* Copy/paste or reuse across visuals
+* [Data categories](desktop-data-categorization.md), [data limits](../visuals/power-bi-data-points.md), or [show items with no data](../create-reports/desktop-show-items-no-data.md)
+* [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md) (can't set or use as format string)
+* [Personalization](../explore-reports/end-user-personalize-visuals.md) of visual calculations or hidden fields
+* *See records* drill-through
+* IntelliSense in Power BI embedded
+
+### Publishing and sharing limitations
+
+* Can't pin to [dashboards](../create-reports/service-dashboards.md)
+* Can't use [Publish to web](../collaborate-share/service-publish-to-web.md)
+* Data exports exclude visual calculation results; hidden fields only appear in [underlying data](../visuals/power-bi-visualization-export-data.md) exports
+
+### Other limitations
+
+* [Field parameters](../create-reports/power-bi-field-parameters.md) work with visual calculations but have some limitations.
+* Live connections to SQL Server Analysis Services require version 2025 or later.
 
 ## Related content
 
