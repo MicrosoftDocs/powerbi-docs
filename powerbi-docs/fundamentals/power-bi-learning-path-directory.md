@@ -27,7 +27,7 @@ This article provides curated, sequential lists of documentation for common Powe
 | Which best describes you? | Recommended path |
 |--------------|-------------------|
 | Brand new to business intelligence (BI) tools | [Path 1: New Power BI user](#1-new-power-bi-user-start-with-power-bi) |
-| An Excel power user | [Path 2: Excel user](#2-excel-user-transition-to-power-bi-from-excel) |
+| Transitioning from Excel to Power BI | [Path 2: Excel user](#2-excel-user-transition-to-power-bi-from-excel) |
 | Only viewing reports, not creating | [Path 3: Business user](#3-business-user-view-and-explore-reports) |
 | Building your first reports | [Path 4: Report creator](#4-report-creator-build-your-first-reports) |
 | Using Copilot to create reports | [Path 5: Copilot user](#5-copilot-user-ai-powered-report-creation) |
