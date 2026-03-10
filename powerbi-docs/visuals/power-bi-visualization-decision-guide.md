@@ -157,7 +157,7 @@ Different audiences have different needs and levels of familiarity with data:
 
 ### Key metrics and progress
 
-**When to use**: You need to highlight a single important value or track progress toward a goal.
+**When to use**: You need to highlight a single important value or track progress toward a goal. For team-based goal tracking and scorecards, see [Goals in Power BI](../create-reports/service-goals-introduction.md).
 
 **Best visuals**:
 
@@ -199,6 +199,9 @@ Different audiences have different needs and levels of familiarity with data:
 - **[Anomaly detection](power-bi-visualization-anomaly-detection.md)**: Automatically identify unusual spikes or dips in time series data.
 - **[Smart narrative](power-bi-visualization-smart-narrative.md)**: Generate text summaries that explain trends and key takeaways.
 - **[Q&A visual](power-bi-visualization-q-and-a.md)**: Ask questions about your data using natural language and get automatic visualizations.
+
+> [!IMPORTANT]
+> The Q&A visual is scheduled for deprecation in December 2026.
 
 **Example scenarios**:
 
