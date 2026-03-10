@@ -26,7 +26,7 @@ This article shows you how to:
 
 > [!TIP]
 > **Advanced scenario:** For custom agents using Service Principal authentication, see:
-> - [Azure AI Foundry MCP tools](/azure/ai-foundry/agents/how-to/tools/model-context-protocol)
+> - [Microsoft Foundry MCP tools](/azure/ai-foundry/agents/how-to/tools/model-context-protocol)
 > - [Power BI service principal setup](/power-bi/developer/embedded/embed-service-principal?tabs=azure-portal#step-3---enable-the-power-bi-service-admin-settings)
 
 

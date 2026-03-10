@@ -85,15 +85,15 @@ Integrating with AI Azure services requires that you have an active Azure subscr
 For guidance on how to integrate with the different AI services in Azure, see:
 
 - [Azure OpenAI Services](/fabric/data-science/ai-services/how-to-use-openai-via-rest-api)
-- [Azure AI Translator](/fabric/data-science/ai-services/how-to-use-text-translator?tabs=rest)
+- [Azure Translator in Foundry Tools](/fabric/data-science/ai-services/how-to-use-text-translator?tabs=rest)
 
-#### Integrate Azure AI Services in Power Query
+#### Integrate Foundry Tools in Power Query
 
-You can invoke specific AI functions in Power Query by using Azure AI Services. These functions run by using Fabric capacity or Premium capacity for a selected workspace. They can derive useful information from less-structured text or image data.
+You can invoke specific AI functions in Power Query by using Foundry Tools. These functions run by using Fabric capacity or Premium capacity for a selected workspace. They can derive useful information from less-structured text or image data.
 
 #### Integrate Azure Machine Learning in Power Query
 
-Similarly to how you can use Azure AI Services, you can apply machine learning models to your data by invoking dynamic Power Query functions. These machine learning models must have schema files generated in Python by the model creator.
+Similarly to how you can use Foundry Tools, you can apply machine learning models to your data by invoking dynamic Power Query functions. These machine learning models must have schema files generated in Python by the model creator.
 
 Dataflow Gen1 creators can also use AutoML to create their own machine learning models by using Power BI during data preparation. Creators can choose from different types of models including binary prediction, general classification, or regression models. Next, they train these models with input data, and evaluate the results before applying the model to new or updated data after dataflow refresh.
 

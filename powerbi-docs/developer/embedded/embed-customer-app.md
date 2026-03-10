@@ -34,7 +34,7 @@ In this tutorial, you learn how to embed:
 
 * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md)
 
-* An [Microsoft Entra app](register-app.md)
+* A [Microsoft Entra app](register-app.md)
 
 * A .NET Core 5 model view controller (MVC) app
 
@@ -76,7 +76,7 @@ To embed Power BI content in an embed-for-your-customers solution, follow these 
 
 ## Step 1 - Configure your Microsoft Entra app and service principal
 
-In this tutorial, you use a service principal to authenticate your web app against Microsoft Entra ID. You also need a Microsoft Entra app, which makes it possible to generate an [Microsoft Entra token](embed-tokens.md#azure-ad-token). By using the Microsoft Entra token, your web app can call Power BI REST APIs and embed Power BI items, such as reports, dashboards, and tiles.
+In this tutorial, you use a service principal to authenticate your web app against Microsoft Entra ID. You also need a Microsoft Entra app, which makes it possible to generate a [Microsoft Entra token](embed-tokens.md#azure-ad-token). By using the Microsoft Entra token, your web app can call Power BI REST APIs and embed Power BI items, such as reports, dashboards, and tiles.
 
 Follow the [service principal instructions](embed-service-principal.md) to create a Microsoft Entra app and enable the app's service principal to work with your Power BI content.
 
@@ -289,7 +289,7 @@ In this tutorial, the *appsettings.json* file contains sensitive information, su
 
 ### Get the Microsoft Entra access token and call the Power BI service
 
-In order to embed Power BI content like reports and dashboards, your app needs to get an [Microsoft Entra token](embed-tokens.md#azure-ad-token). To get the token, you need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-a-new-report).
+In order to embed Power BI content like reports and dashboards, your app needs to get a [Microsoft Entra token](embed-tokens.md#azure-ad-token). To get the token, you need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-a-new-report).
 
 The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service. The .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor injects an instance of the .NET Core configuration service by using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from *appsettings.json*. The `ITokenAcquisition` parameter, which is named `tokenAcquisition`, holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library. The `ITokenAcquisition` parameter is used to acquire access tokens from Microsoft Entra ID.
 
