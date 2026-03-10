@@ -1,0 +1,59 @@
+=== ANALYSIS: PM Feedback vs. Current State ===
+
+PM'S KEY CONCERNS:
+
+1. SEMANTIC MODEL POSITIONING ✅ ADDRESSED
+   - PM: "You are missing the semantic model entirely...we take data into a semantic model and visualize the data through the data model"
+   - STATUS: FIXED in power-bi-visualizations-overview.md
+   - Evidence: 
+     * Line 20: "converting curated data and DAX calculations from your semantic model"
+     * Line 32: "Every visual in Power BI connects to your semantic model through field mappings"
+
+2. "DESIGN REPORT LAYOUTS" SECTION NAME ⚠️ POTENTIAL ISSUE
+   - PM: "We don't even have report layouts...it's all manual, but I don't want layouts called out when we don't have any"
+   - Current TOC has: "Design report layouts" as a section header
+   - CONSIDERATION: The section contains valid layout-related tasks (gridlines, grouping visuals, text boxes)
+   - QUESTION FOR USER: Is this just about renaming the section, or removing it entirely?
+
+3. REPORT SETTINGS LOCATION ⚠️ POTENTIAL ISSUE
+   - PM: "Report settings have nothing to do with the layout, that's more interactivity and features"
+   - Current: power-bi-report-settings.md is under "Design report layouts"
+   - File content confirms: It's about interactivity (filters, personalization, page tabs)
+   - CONSIDERATION: Should move to a different section OR create new section for report features/interactivity
+
+4. DATA MODEL ITEMS IN FORMATTING SECTION ⚠️ POTENTIAL ISSUE
+   - PM: "Grouping and binning, sort by another column are data model things"
+   - Current: These are under "Apply formatting and themes"
+   - Files:
+     * desktop-grouping-and-binning.md
+     * desktop-sort-by-column.md
+     * desktop-inline-hierarchy-labels.md
+   - STATUS: NOT in transform-model TOC
+   - CONSIDERATION: These might belong in transform-model TOC, OR they might be correctly placed here for report authoring context
+
+5. CONDITIONAL FORMATTING LOCATION ✅ APPEARS OK AS-IS
+   - PM: "Conditional formatting doesn't belong here, that's formatting visuals and should be its own section"
+   - Current: "Apply conditional table formatting" IS under "Apply formatting and themes"
+   - STATUS: This seems correctly organized already, BUT let me verify what PM meant
+
+6. DYNAMIC FORMAT STRINGS ✅ APPEARS OK AS-IS
+   - PM: "Dynamic format strings for measures is also for visual formatting"
+   - Current: IS under "Apply formatting and themes"
+   - STATUS: Correctly placed
+
+7. UI FEATURES IN GET STARTED ⚠️ QUESTION
+   - PM: "on-object, dark mode are report building UI things"
+   - PM: "optimize is nothing to do with layouts. that's interactivity and helper for building reports"
+   - Current: These ARE in "Get started" section
+   - STATUS: Might be OK where they are as UI/getting started features
+
+SUMMARY:
+✅ Semantic model positioning - FIXED
+✅ Dynamic format strings - Already correct
+✅ Conditional formatting - Already correct  
+⚠️  "Design report layouts" section name - May need review
+⚠️  Report settings placement - May need to move
+⚠️  Data model items (grouping/binning, sort, hierarchies) - May need review
+
+RECOMMENDATION: 
+Ask user if PM's concerns about TOC organization are already addressed by having these items accessible in create-reports TOC for the report authoring workflow, even if conceptually they're "data model" things.

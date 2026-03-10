@@ -92,8 +92,12 @@
   items:
   - name: Add visuals to a report
     href: ../visuals/power-bi-report-add-visualizations.md
-  - name: Control visual behavior
+  - name: Prepare and control visuals
     items:
+    - name: Apply grouping and binning
+      href: desktop-grouping-and-binning.md
+    - name: Sort one column by another
+      href: desktop-sort-by-column.md
     - name: Let users customize visuals
       href: power-bi-personalize-visuals.md
     - name: Change how visuals interact
@@ -102,7 +106,9 @@
       href: end-user-show-data.md
     - name: Set visual query limits
       href: desktop-set-visual-query-limits.md
-  - name: Design report layouts
+  - name: Change report settings
+    href: power-bi-report-settings.md
+  - name: Report layout and design
     items:
     - name: Add visual elements to reports
       href: desktop-visual-elements-for-reports.md
@@ -116,8 +122,6 @@
       href: power-bi-reports-add-text-and-shapes.md
     - name: Add a hyperlink to a text box
       href: service-add-hyperlink-to-text-box.md
-    - name: Change report settings
-      href: power-bi-report-settings.md
   - name: Apply formatting and themes
     items:
     - name: Use report themes in Power BI
@@ -134,10 +138,6 @@
       href: desktop-dynamic-format-strings.md
     - name: Create dynamic, expression-based titles
       href: desktop-conditional-format-visual-titles.md
-    - name: Apply grouping and binning
-      href: desktop-grouping-and-binning.md
-    - name: Sort one column by another
-      href: desktop-sort-by-column.md
     - name: Use inline hierarchy labels
       href: desktop-inline-hierarchy-labels.md
   - name: Filter and slice data
