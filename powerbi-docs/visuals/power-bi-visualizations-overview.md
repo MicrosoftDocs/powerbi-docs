@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 Power BI visualizations transform your data into interactive charts, graphs, and maps that reveal patterns and trends at a glance. They are the primary way to communicate data insights, converting curated data and DAX calculations from your semantic model into meaningful visual representations that make relationships immediately clear.
 
-Unlike static charts, Power BI visuals are interactive and dynamic. Users can select, filter, drill down, and explore data across multiple visuals on a page. Each interaction automatically updates related visuals. This dynamic behavior enables self-service exploration and deeper understanding without requiring technical expertise.
+Unlike static charts, Power BI visuals are interactive and dynamic. Users can select, filter, drill down, and explore data across multiple visuals on a page. Each interaction automatically updates related visuals. This dynamic behavior enables self-service exploration and deeper understanding without requiring technical expertise. For advanced scenarios like write-back, you can use [translytical task flows](../create-reports/translytical-task-flow-overview.md) to trigger actions and update data directly from your reports.
 
 This article explains how visualizations work in Power BI and how to use them effectively in your reports.
 
