@@ -32,7 +32,6 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 | [Time-based trends](#time-based-trends) | Reveal patterns and changes over time. |
 | [Part-to-whole relationships](#part-to-whole-relationships) | Show how components contribute to a total. |
 | [Distribution and relationships](#distribution-and-relationships) | Understand how data is distributed or identify relationships between variables. |
-| [Sequential processes](#sequential-processes) | Show stages in a process where items flow from one stage to the next. |
 | [Geographic data](#geographic-data) | Present location-based data with geographic or spatial patterns. |
 | [Key metrics and progress](#key-metrics-and-progress) | Highlight a single important value or track progress toward a goal. |
 | [Detailed data and exact values](#detailed-data-and-exact-values) | Show exact numbers, multiple measures, or enable detailed record drill-down. |
@@ -76,6 +75,7 @@ Different audiences have different needs and levels of familiarity with data:
 - **[Area charts](power-bi-visualization-basic-area-chart.md)**: Show magnitude of change over time. Stacked area charts display multiple series contributing to a total.
 - **[Ribbon charts](desktop-ribbon-charts.md)**: Display rank changes over time, showing which categories lead in each period.
 - **[Column charts](power-bi-visualization-column-charts.md)**: Use when you want to emphasize individual period values rather than continuous trends.
+- **[Waterfall charts](power-bi-visualization-waterfall-charts.md)**: Show how positive and negative values contribute to a running total over time or across categories.
 
 **Example scenarios**:
 
@@ -83,6 +83,7 @@ Different audiences have different needs and levels of familiarity with data:
 - Daily website traffic
 - Quarterly sales performance
 - Year-over-year comparisons
+- Profit and loss statement showing contributions
 
 ### Part-to-whole relationships
 
@@ -92,6 +93,7 @@ Different audiences have different needs and levels of familiarity with data:
 
 - **[Pie and donut charts](power-bi-visualization-pie-donut-chart.md)**: Best with fewer than eight categories. Use when the precise comparison between slices isn't critical, but the part-to-whole relationship is important.
 - **[Treemaps](power-bi-visualization-treemaps.md)**: Display hierarchical data as nested rectangles. Excellent for showing proportions when you have many categories or need to show hierarchy.
+- **[Funnel charts](power-bi-visualization-funnel-charts.md)**: Visualize sequential stages with progressively decreasing values. Commonly used for conversion tracking and pipeline analysis.
 - **[100% stacked column or bar charts](power-bi-visualization-column-charts.md)**: Compare proportions across multiple groups. Each bar represents 100% divided among components.
 
 **Avoid**: Pie and donut charts when you need precise comparison. People find it difficult to compare angles and areas accurately.
@@ -102,6 +104,8 @@ Different audiences have different needs and levels of familiarity with data:
 - Budget allocation across departments
 - Sales composition by product line
 - Storage space by file type
+- Sales pipeline stages
+- Website conversion funnel
 
 ### Distribution and relationships
 
@@ -119,22 +123,6 @@ Different audiences have different needs and levels of familiarity with data:
 - Product cost vs. profit margin
 - Distribution of customer ages
 - Analyzing large datasets with thousands of data points
-
-### Sequential processes
-
-**When to use**: You need to show stages in a process where items flow from one stage to the next.
-
-**Best visuals**:
-
-- **[Funnel charts](power-bi-visualization-funnel-charts.md)**: Visualize sequential stages with progressively decreasing values. Commonly used for conversion tracking.
-- **[Waterfall charts](power-bi-visualization-waterfall-charts.md)**: Show how positive and negative values contribute to a running total.
-
-**Example scenarios**:
-
-- Sales pipeline stages
-- Website conversion funnel
-- Profit and loss statement
-- Recruitment process stages
 
 ### Geographic data
 
@@ -157,7 +145,7 @@ Different audiences have different needs and levels of familiarity with data:
 
 ### Key metrics and progress
 
-**When to use**: You need to highlight a single important value or track progress toward a goal.
+**When to use**: You need to highlight a single important value or track progress toward a goal. For team-based goal tracking and scorecards, see [Goals in Power BI](../create-reports/service-goals-introduction.md).
 
 **Best visuals**:
 
@@ -198,7 +186,6 @@ Different audiences have different needs and levels of familiarity with data:
 - **[Key influencers](power-bi-visualization-influencers.md)**: Understand which factors most influence a selected metric.
 - **[Anomaly detection](power-bi-visualization-anomaly-detection.md)**: Automatically identify unusual spikes or dips in time series data.
 - **[Smart narrative](power-bi-visualization-smart-narrative.md)**: Generate text summaries that explain trends and key takeaways.
-- **[Q&A visual](power-bi-visualization-q-and-a.md)**: Ask questions about your data using natural language and get automatic visualizations.
 
 **Example scenarios**:
 
@@ -206,7 +193,6 @@ Different audiences have different needs and levels of familiarity with data:
 - Identifying factors that influence sales performance
 - Detecting unusual patterns in website traffic
 - Exploring multi-dimensional data without predefined paths
-- Asking ad-hoc questions during presentations
 
 ### Slicers and filtering
 
