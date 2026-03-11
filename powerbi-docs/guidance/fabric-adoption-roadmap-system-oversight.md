@@ -319,7 +319,7 @@ Administrators can help by following best practices themselves. Administrators c
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/fabric/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/fabric/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b) whitepaper.
 
 ### Information protection and data loss prevention
 
@@ -504,7 +504,7 @@ For more information about system oversight and Fabric administration, see the f
 - [Administrator in a Day Training – Day 1](https://aka.ms/AdmPBI1)
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
 - [Power BI security whitepaper](white-paper-powerbi-security.md)
-- [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
+- [External guest users whitepaper](/fabric/enterprise/powerbi/service-admin-entra-b2b)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 
 In the [next article](fabric-adoption-roadmap-change-management.md) in the Microsoft Fabric adoption roadmap series, learn about effective change management.

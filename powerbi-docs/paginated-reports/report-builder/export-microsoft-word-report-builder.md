@@ -120,9 +120,9 @@ See [Create a document map or table of contents (Power BI Report Builder)](/sql/
   
  The following topics provide additional information about setting Office and Word options.  
   
--   Change the editing language in **Microsoft Office Language Preferences** or **Word Options** dialog box in Word. For more information, see [Enable the use of other languages in your Office programs](https://office.microsoft.com/word-help/enable-the-use-of-other-languages-in-your-office-programs-HA010354783.aspx?CTT=1).  
+-   Change the editing language in **Microsoft Office Language Preferences** or **Word Options** dialog box in Word. For more information, see [Add an editing or authoring language or set language preferences in Office](https://support.microsoft.com/office/add-an-editing-or-authoring-language-or-set-language-preferences-in-office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d).
   
--   Add Office language packs and then change the editing language. For more information, see [Enable the use of other languages in your Office programs](https://office.microsoft.com/word-help/enable-the-use-of-other-languages-in-your-office-programs-HA010354783.aspx?CTT=1) and [Office Language Options](https://office.microsoft.com/language/).  
+-   Add Office language packs and then change the editing language. For more information, see [Add an editing or authoring language or set language preferences in Office](https://support.microsoft.com/office/add-an-editing-or-authoring-language-or-set-language-preferences-in-office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d) and [Office Language Options](https://office.microsoft.com/language/).  
   
 > [!NOTE]  
 >  When you change the editing language in **Microsoft Office Language Preferences** or the **Word Options** dialog box in Word, the change applies to all Office programs.  
