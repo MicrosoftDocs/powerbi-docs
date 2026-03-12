@@ -275,6 +275,11 @@ To copy the values for more than one cell:
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
+## Custom totals (preview)
+
+[!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
+
+
 ## Considerations and troubleshooting
 
 Review the following considerations for working with tables in Power BI.
