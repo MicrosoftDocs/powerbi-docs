@@ -360,6 +360,19 @@
     - name: Delete almost anything
       href: service-delete.md
 # =============================================================================
+# STYLE YOUR REPORT
+# =============================================================================
+- name: Style your report
+  items:
+  - name: Visual defaults in Power BI reports
+    href: power-bi-reports-visual-defaults.md
+  - name: Use report themes in Power BI
+    href: desktop-report-themes.md
+  - name: Create custom report themes
+    href: report-themes-create-custom.md
+  - name: Use organizational themes (preview)
+    href: desktop-organizational-themes.md
+# =============================================================================
 # VISUALIZE YOUR DATA
 # =============================================================================
 - name: Visualize your data
