@@ -3,7 +3,7 @@ title: Custom totals
 description: Custom totals
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: jterh
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include

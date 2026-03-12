@@ -3,7 +3,7 @@ title: Create and Format Table Visualizations in Power BI
 description: Learn how to create, format, and optimize table visualizations in Power BI reports and dashboards, including resizing column widths. Discover best-use scenarios.  
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals

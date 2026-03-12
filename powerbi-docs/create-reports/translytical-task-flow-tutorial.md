@@ -3,7 +3,7 @@ title: Tutorial - Create translytical task flow
 description: In this tutorial, learn how to enable and create translytical task flows with Fabric user data functions.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial

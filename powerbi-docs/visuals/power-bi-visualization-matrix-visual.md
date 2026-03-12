@@ -3,7 +3,7 @@ title: Create a Matrix Visual in Power BI
 description: Learn how to create and customize matrix visuals in Power BI Desktop and Power BI service to display and analyze data across multiple dimensions with hierarchical structures and aggregations.
 ms.author: juliacawthra
 author: JulCsc
-ms.reviewer: jterh
+ms.reviewer: zoedouglas
 ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
