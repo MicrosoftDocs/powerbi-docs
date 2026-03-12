@@ -3,7 +3,7 @@ title: Create and Format Table Visualizations in Power BI
 description: Learn how to create, format, and optimize table visualizations in Power BI reports and dashboards, including resizing column widths. Discover best-use scenarios.  
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -274,6 +274,11 @@ To copy the values for more than one cell:
 ## Adjust column width
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
+
+## Custom totals (preview)
+
+[!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
+
 
 ## Considerations and troubleshooting
 

@@ -3,7 +3,7 @@ title: Tutorial - Create translytical task flow
 description: In this tutorial, learn how to enable and create translytical task flows with Fabric user data functions.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 #customer intent:
 ---
 
-# Tutorial: Create a translytical task flow (preview)
+# Tutorial: Create a translytical task flow
 
 In this end-to-end tutorial, you create an example translytical task flow that writes back to a SQL Database in Fabric. To help illustrate the end-to-end step-up experience, we focus on a translytical task flow for a data annotation scenario.
 
@@ -25,12 +25,8 @@ In this tutorial, you learn how to:
 
 If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fundamentals/fabric-trial).
 
->[!NOTE]
->The translytical task flow feature is currently in public preview.
-
 ## Prerequisites
 
-* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI Desktop.
 * Power BI Desktop. If you don't have Power BI Desktop installed on your device, follow the instructions in [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 
 ## Overview
@@ -255,9 +251,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    | **Data function** | Select your data function. For example, **write_one_to_sql_db**. |
 
    >[!TIP]
-   >If you don't see the **Data function** option, make sure that the **Translytical task flows** preview feature is enabled in Power BI desktop.
-   >
-   >If you do see the **Data function** option but don't see your user data function, make sure that your data function returns a string.
+   >If you don't see your user data function, make sure that your data function returns a string.
 
 1. Once you select your data function, more parameters appear to represent the parameters that the function takes. Provide the following values:
 
