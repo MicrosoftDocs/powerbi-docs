@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 04/09/2026
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the button slicer feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
@@ -62,6 +62,27 @@ In this quick and easy three-step guide, you create a **Button slicer** in Power
    :::image type="content" source="media/button-slicer/button-slicer-district-highlighted.png" lightbox="media/button-slicer/button-slicer-district-highlighted.png" alt-text="Screenshot of the Data pane, District table, DM selected and highlighted, slicer on canvas displaying  nine tiles with truncated district manager names.":::
 
 1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane. This icon grants you access to all available format settings. You can tailor the slicer's appearance and functionality to your specific requirements.
+
+## Customize button layout
+
+In the **Multi-button layout** section of the Format pane, you can control how buttons are sized within the visual container.
+
+### Fixed size
+
+Toggle **Fixed size** on to specify the exact pixel dimensions for each button. When the visual container isn't large enough to display all buttons at the specified size, scroll bars appear automatically. As you resize the visual, buttons maintain their specified dimensions rather than scaling proportionally.
+
+- For **Vertical** arrangement, set the **Height** value in pixels.
+- For **Horizontal** arrangement, set the **Width** value in pixels.
+- For **Grid** arrangement, set both **Height** and **Width** values in pixels.
+
+### Fit to space
+
+**Fit to space** (renamed from **Autogrid**) controls how buttons fill the visual container:
+
+- **On**: Buttons grow or shrink to fill the visual container based on the buttons present. No space is reserved for unoccupied slots.
+- **Off**: The visual reserves space for the specified number of buttons, even when fewer buttons exist.
+
+Fixed size and Fit to space are mutually exclusive. When Fixed size is enabled, Fit to space is disabled since dimensions are now controlled explicitly.
 
 ## Use visual highlights
 

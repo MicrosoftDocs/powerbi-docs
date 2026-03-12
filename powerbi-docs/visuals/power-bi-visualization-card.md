@@ -7,7 +7,7 @@ ms.reviewer: jacindaeng
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
@@ -76,6 +76,15 @@ Let's dive into layout features that make your visuals more organized and visual
 Within each of these parts of the card, you can further customize the look and feel including gaps, padding, backgrounds, and more.
 
 :::image type="content" source="media/power-bi-visualization-card-visual/multicard-layout.png" alt-text="Screenshot of the Visualizations pane with Format visual and Visual tab selected, all Format controls highlighted." lightbox="media/power-bi-visualization-card-visual/multicard-layout.png":::
+
+### Fixed size and Fit to space
+
+In the **Multicard layout** section, you can control how cards are sized within the visual container:
+
+- **Fixed size**: Toggle this option on to specify the exact pixel dimensions for each card. When the visual container isn't large enough to display all cards at the specified size, scroll bars appear automatically. As you resize the visual, cards maintain their specified dimensions rather than scaling proportionally.
+- **Fit to space**: When on, cards grow or shrink to fill the visual container based on the cards present. When off, the visual reserves space for the specified number of cards, even when fewer cards exist.
+
+Fixed size and Fit to space are mutually exclusive. When Fixed size is enabled, Fit to space is disabled since dimensions are now controlled explicitly.
 
 ## Add an image
 
@@ -217,7 +226,7 @@ During preview, the card visual's default behavior was different to how it now b
    
 - **Reference label outer padding:** During preview, **reference labels** had an **outer padding** setting that unintentionally affected the callout area by pushing elements out of place around the divider. Now the **outer padding** setting is removed from **reference labels**.
 
-- **Autogrid columns:** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **autogrid**, it arranges cards to fill the visual container based the cards present. This setting can be toggled off to return to previous behavior.
+- **Fit to space (renamed from Autogrid):** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **Fit to space**, it arranges cards to fill the visual container based on the cards present. This setting can be toggled off to return to previous behavior.
 
 ### Format settings
 
