@@ -532,7 +532,17 @@
     - name: Color formatting tips and tricks
       href: ../visuals/service-tips-and-tricks-for-color-formatting.md
     - name: Conditional formatting
-      href: ../visuals/power-bi-visualization-conditional-formatting.md
+      items:
+      - name: Conditional formatting overview
+        href: ../visuals/power-bi-visualization-conditional-formatting.md
+      - name: Apply conditional table formatting
+        href: desktop-conditional-table-formatting.md
+      - name: Create dynamic, expression-based titles
+        href: desktop-conditional-format-visual-titles.md
+    - name: Create dynamic format strings for measures
+      href: desktop-dynamic-format-strings.md
+    - name: Use inline hierarchy labels
+      href: desktop-inline-hierarchy-labels.md
   # Visual features
   - name: Use advanced visual features
     items:
@@ -550,8 +560,8 @@
       href: ../visuals/power-bi-data-points.md
     - name: High-density line sampling
       href: desktop-high-density-sampling.md
-  # Get custom visuals from AppSource
-  - name: Get visuals from AppSource
+  # Custom visuals
+  - name: Get custom visuals
     href: ../developer/visuals/power-bi-custom-visuals.md
 # =============================================================================
 # CREATE WITH COPILOT
