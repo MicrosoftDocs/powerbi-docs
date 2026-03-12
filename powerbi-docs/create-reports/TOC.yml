@@ -605,6 +605,8 @@
       href: copilot-prepare-data-ai-verified-answers.md
     - name: AI settings
       href: copilot-prepare-data-ai-settings.md
+    - name: Optimize your semantic model for Copilot
+      href: copilot-evaluate-data.md
     - name: Prepare data for AI FAQ
       href: copilot-prepare-data-ai-faq.yml
   - name: Tutorial for Copilot in Power BI
