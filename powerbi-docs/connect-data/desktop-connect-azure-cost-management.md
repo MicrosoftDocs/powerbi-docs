@@ -136,8 +136,7 @@ When you select **Load**, the data is loaded into Power BI Desktop. Once the dat
 
 The following considerations and limitations apply to the Microsoft Cost Management data connector:
 
-*The Microsoft Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements are also not supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. More information: Tutorial - Create and manage exported data from Microsoft Cost Management
-https://learn.microsoft.com/en-us/power-query/connectors/azure-cost-management
+* The Microsoft Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements also aren't supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Microsoft Cost Management](/power-query/connectors/azure-cost-management).
 * Power BI doesn't support data row requests exceeding one million rows. Instead, you can try using the export feature described in [Create and manage Cost Management exports](/azure/cost-management-billing/costs/tutorial-export-acm-data).
 * The Microsoft Cost Management data connector doesn't work with Office 365 GCC customer accounts.
 * **Data refresh:** Cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day.
