@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 03/03/2026
+ms.date: 03/16/2026
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ---
@@ -28,16 +28,15 @@ Before selecting a visual, clarify what you want to communicate. Different visua
 
 | Category | When to use |
 |----------|-------------|
-| [Categorical comparisons](#categorical-comparisons) | Show how values differ across categories or segments. |
-| [Time-based trends](#time-based-trends) | Reveal patterns and changes over time. |
-| [Part-to-whole relationships](#part-to-whole-relationships) | Show how components contribute to a total. |
-| [Distribution and relationships](#distribution-and-relationships) | Understand how data is distributed or identify relationships between variables. |
-| [Geographic data](#geographic-data) | Present location-based data with geographic or spatial patterns. |
-| [Key metrics and progress](#key-metrics-and-progress) | Highlight a single important value or track progress toward a goal. |
-| [Detailed data and exact values](#detailed-data-and-exact-values) | Show exact numbers, multiple measures, or enable detailed record drill-down. |
-| [AI-powered exploration](#ai-powered-exploration) | Identify patterns, anomalies, or influencers with AI assistance. |
-| [Slicers and filtering](#slicers-and-filtering) | Provide on-canvas filtering controls for interactive data exploration. |
-| [Other specialized visuals](#other-specialized-visuals) | Use specialized functionality beyond standard data visualization. |
+| [Compare trends with charts](#compare-trends-with-charts) | Show how values differ across categories or segments, and reveal patterns and changes over time. |
+| [Show part-to-whole relationships](#show-part-to-whole-relationships) | Show how components contribute to a total. |
+| [Explore distributions and relationships](#explore-distributions-and-relationships) | Understand how data is distributed or identify relationships between variables. |
+| [Display data in tables and matrices](#display-data-in-tables-and-matrices) | Show exact numbers, multiple measures, or enable detailed record drill-down. |
+| [Use cards, KPIs, and gauges](#use-cards-kpis-and-gauges) | Highlight a single important value or track progress toward a goal. |
+| [Map your data](#map-your-data) | Present location-based data with geographic or spatial patterns. |
+| [Use AI-powered visuals](#use-ai-powered-visuals) | Identify patterns, anomalies, or influencers with AI assistance. |
+| [Filter with slicers](#filter-with-slicers) | Provide on-canvas filtering controls for interactive data exploration. |
+| [Use other visuals](#use-other-visuals) | Use specialized functionality beyond standard data visualization. |
 
 ### Consider your audience
 
@@ -50,42 +49,31 @@ Different audiences have different needs and levels of familiarity with data:
 
 ## Choose your visual type
 
-### Categorical comparisons
+### Compare trends with charts
 
-**When to use**: You need to compare values across different categories, products, regions, or segments.
+**When to use**: You need to compare values across different categories, products, regions, or segments, or show changes, patterns, and trends over time.
 
 **Best visuals**:
 
-- **[Bar and column charts](power-bi-visualization-column-charts.md)**: Use horizontal bars when category names are long or when you have many categories. Use vertical columns for time periods or shorter names.
-- **[Combo charts](power-bi-visualization-combo-chart.md)**: Use these charts when you're comparing two measures with different scales, like revenue (millions) and units sold (thousands).
+- **[Bar and column charts](power-bi-visualization-column-charts.md)**: Use horizontal bars when category names are long or when you have many categories. Use vertical columns for time periods or shorter names. Column charts work well for both categorical comparisons and time-based data when you want to emphasize individual period values.
+- **[Line charts](power-bi-line-chart.md)**: Emphasize the overall shape and pattern of change over time. Ideal for continuous time series data.
+- **[Area charts](power-bi-visualization-basic-area-chart.md)**: Show magnitude of change over time. Stacked area charts display multiple series contributing to a total.
+- **[Combo charts](power-bi-visualization-combo-chart.md)**: Combine column and line charts to compare multiple measures with different scales, like revenue (millions) and units sold (thousands). Useful for both categorical comparisons and time trends.
+- **[Ribbon charts](desktop-ribbon-charts.md)**: Display rank changes over time, showing which categories lead in each period.
+- **[Waterfall charts](power-bi-visualization-waterfall-charts.md)**: Show how positive and negative values contribute to a running total over time or across categories.
 
 **Example scenarios**:
 
 - Sales by product category
 - Customer count by region
 - Budget vs. actual spending by department
-
-### Time-based trends
-
-**When to use**: You need to show changes, patterns, or trends over time.
-
-**Best visuals**:
-
-- **[Line charts](power-bi-line-chart.md)**: Emphasize the overall shape and pattern of change. Ideal for continuous time series data.
-- **[Area charts](power-bi-visualization-basic-area-chart.md)**: Show magnitude of change over time. Stacked area charts display multiple series contributing to a total.
-- **[Ribbon charts](desktop-ribbon-charts.md)**: Display rank changes over time, showing which categories lead in each period.
-- **[Column charts](power-bi-visualization-column-charts.md)**: Use when you want to emphasize individual period values rather than continuous trends.
-- **[Waterfall charts](power-bi-visualization-waterfall-charts.md)**: Show how positive and negative values contribute to a running total over time or across categories.
-
-**Example scenarios**:
-
 - Monthly revenue growth
 - Daily website traffic
 - Quarterly sales performance
 - Year-over-year comparisons
 - Profit and loss statement showing contributions
 
-### Part-to-whole relationships
+### Show part-to-whole relationships
 
 **When to use**: You need to show how individual parts make up a total.
 
@@ -107,7 +95,7 @@ Different audiences have different needs and levels of familiarity with data:
 - Sales pipeline stages
 - Website conversion funnel
 
-### Distribution and relationships
+### Explore distributions and relationships
 
 **When to use**: You need to understand how data is distributed or identify relationships between variables.
 
@@ -124,7 +112,40 @@ Different audiences have different needs and levels of familiarity with data:
 - Distribution of customer ages
 - Analyzing large datasets with thousands of data points
 
-### Geographic data
+### Display data in tables and matrices
+
+**When to use**: Your audience needs to see exact numbers, multiple measures, or drill into detailed records.
+
+**Best visuals**:
+
+- **[Tables](power-bi-visualization-tables.md)**: Display detailed data in rows and columns. Use when exact values are more important than visual patterns.
+- **[Matrix visuals](power-bi-visualization-matrix-visual.md)**: Show data across multiple dimensions with hierarchies. Automatically aggregates and supports drill-down.
+
+**Example scenarios**:
+
+- Product catalog with multiple attributes
+- Financial statements with subtotals
+- Employee roster with demographics
+- Transaction details
+
+### Use cards, KPIs, and gauges
+
+**When to use**: You need to highlight a single important value or track progress toward a goal. For team-based goal tracking and scorecards, see [Goals in Power BI](../create-reports/service-goals-introduction.md).
+
+**Best visuals**:
+
+- **[Card visuals](power-bi-visualization-card.md)**: Display a single important number prominently. Use for key metrics that don't need context.
+- **[KPI visuals](power-bi-visualization-kpi.md)**: Show current value, target, and status. Ideal for tracking performance against goals.
+- **[Gauge charts](power-bi-visualization-radial-gauge-charts.md)**: Display a single value's progress toward a goal using a radial gauge.
+
+**Example scenarios**:
+
+- Total revenue or profit
+- Customer satisfaction score
+- Sales quota attainment
+- Project completion percentage
+
+### Map your data
 
 **When to use**: You have location-based data like countries/regions, states, cities, or coordinates.
 
@@ -143,40 +164,7 @@ Different audiences have different needs and levels of familiarity with data:
 - Delivery routes and territories
 - Custom sales territories
 
-### Key metrics and progress
-
-**When to use**: You need to highlight a single important value or track progress toward a goal. For team-based goal tracking and scorecards, see [Goals in Power BI](../create-reports/service-goals-introduction.md).
-
-**Best visuals**:
-
-- **[Card visuals](power-bi-visualization-card.md)**: Display a single important number prominently. Use for key metrics that don't need context.
-- **[KPI visuals](power-bi-visualization-kpi.md)**: Show current value, target, and status. Ideal for tracking performance against goals.
-- **[Gauge charts](power-bi-visualization-radial-gauge-charts.md)**: Display a single value's progress toward a goal using a radial gauge.
-
-**Example scenarios**:
-
-- Total revenue or profit
-- Customer satisfaction score
-- Sales quota attainment
-- Project completion percentage
-
-### Detailed data and exact values
-
-**When to use**: Your audience needs to see exact numbers, multiple measures, or drill into detailed records.
-
-**Best visuals**:
-
-- **[Tables](power-bi-visualization-tables.md)**: Display detailed data in rows and columns. Use when exact values are more important than visual patterns.
-- **[Matrix visuals](power-bi-visualization-matrix-visual.md)**: Show data across multiple dimensions with hierarchies. Automatically aggregates and supports drill-down.
-
-**Example scenarios**:
-
-- Product catalog with multiple attributes
-- Financial statements with subtotals
-- Employee roster with demographics
-- Transaction details
-
-### AI-powered exploration
+### Use AI-powered visuals
 
 **When to use**: You're exploring data and need help identifying patterns, anomalies, or influencers.
 
@@ -194,7 +182,7 @@ Different audiences have different needs and levels of familiarity with data:
 - Detecting unusual patterns in website traffic
 - Exploring multi-dimensional data without predefined paths
 
-### Slicers and filtering
+### Filter with slicers
 
 **When to use**: You need to provide on-canvas filtering controls for report viewers to explore data interactively.
 
@@ -214,7 +202,7 @@ Different audiences have different needs and levels of familiarity with data:
 
 For an overview of all slicer options, see [Slicers in Power BI](power-bi-visualization-slicers.md).
 
-### Other specialized visuals
+### Use other visuals
 
 **When to use**: You need specialized functionality beyond standard data visualization.
 
@@ -224,6 +212,11 @@ For an overview of all slicer options, see [Slicers in Power BI](power-bi-visual
 - **[Text boxes and shapes](../create-reports/power-bi-reports-add-text-and-shapes.md)**: Add titles, descriptions, annotations, or visual structure to reports.
 - **[Buttons and navigators](../create-reports/desktop-buttons.md)**: Create interactive navigation between report pages or trigger actions like bookmarks.
 - **[Paginated report visual](paginated-report-visual.md)**: Embed pixel-perfect paginated reports within Power BI reports for print-ready layouts.
+- **[Q&A visual](power-bi-visualization-q-and-a.md)**: Provides a text box where users can ask questions about data using natural language. Power BI interprets the query and creates an appropriate visualization.
+
+  > [!IMPORTANT]
+  > The Q&A visual is scheduled for deprecation in December 2026.
+
 - **[R visuals](service-r-visuals.md)**: Create custom visualizations using R programming for advanced statistical analysis.
 - **[Python visuals](../create-reports/desktop-r-visuals.md)**: Use Python libraries for specialized visualizations and machine learning outputs.
 - **[Power Apps visual](power-bi-visualization-powerapp.md)**: Embed interactive Power Apps directly in reports for data entry or complex workflows.
@@ -234,6 +227,7 @@ For an overview of all slicer options, see [Slicers in Power BI](power-bi-visual
 - Add explanatory text or report instructions
 - Create navigation menus for multi-page reports
 - Include detailed tabular reports with page breaks
+- Ask natural language questions about your data
 - Show statistical models or forecasts using R or Python
 - Enable data write-back or approval workflows with Power Apps
 
