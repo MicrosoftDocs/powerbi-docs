@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 10/01/2025
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 # customer intent: As a Power BI user, I want to find out how to use shareable cloud connections in the Power BI service so that I can set up multiple connections to the same data source, share my connections with others, and centralize data source connection management.
 ---
 
@@ -93,7 +94,15 @@ If you open the **Gateway and cloud connections** settings of a semantic model b
 
 ## Granular access control
 
-Power BI enforces granular access control for shareable cloud connections. For all other data types, you can turn on access control at the tenant, workspace, and semantic model level. The following image combines screenshots of the settings at those three levels:
+Power BI enforces granular access control for shareable cloud connections. For all other data types, you can turn on access control at the tenant, workspace, and semantic model level.
+
+You can find the granular access control setting at each level:
+
+- **Tenant level**: In the Power BI service, go to **Settings** > **Admin portal** > **Tenant settings**. Search for the granular access control setting under the **Integration settings** section.
+- **Workspace level**: Open the workspace, select **Settings**, and look for the granular access control option.
+- **Semantic model level**: Go to the semantic model's **Settings** page, and expand the **Gateway and cloud connections** section.
+
+The following image combines screenshots of the settings at those three levels:
 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png" alt-text="Screenshots of tenant, workspace, and dataset granular access control settings, combined into one image. Each screenshot shows a toggle or checkbox." lightbox="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png":::
 
