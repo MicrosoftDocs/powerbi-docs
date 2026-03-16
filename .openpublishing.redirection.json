@@ -7559,6 +7559,11 @@
       "source_path": "powerbi-docs/fundamentals/videos.md",
       "redirect_url": "/power-bi/fundamentals/whats-new#resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/visuals/power-bi-visualization-decision-guide.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
+      "redirect_document_id": false
     }
   ]
 }                           

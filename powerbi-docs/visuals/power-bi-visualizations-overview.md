@@ -3,12 +3,13 @@ title: Overview of visualizations in Power BI
 description: Learn about the different types of visualizations available in Power BI and how to choose the right visual for your data.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: overview
 ms.date: 01/28/2026
 LocalizationGroup: Visualizations
+toc_rel: ../create-reports/TOC.yml
 ---
 
 # Visualizations overview in Power BI

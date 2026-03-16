@@ -21,7 +21,7 @@ The List slicer (preview)  in Power BI is an interactive visual that filters dat
 List slicers balance simplicity and flexibility, making them ideal for both novice users and advanced report builders. You can apply hierarchies, search functionality, and conditional formatting to enhance your filtering experience.
 
 > [!IMPORTANT]
-> The List slicer is currently in [preview](power-bi-visualizations-overview.md#custom-and-preview-visuals).
+> The List slicer is currently in [preview](power-bi-visualizations-overview.md#preview-visuals).
 
 ## Prerequisites for the example
 
