@@ -366,8 +366,6 @@
   items:
   - name: Visualizations overview
     href: ../visuals/power-bi-visualizations-overview.md
-  - name: Choose the best visual for your data
-    href: ../visuals/power-bi-visualization-decision-guide.md
   - name: Customize the Visualization pane
     href: ../visuals/power-bi-report-visualizations.md
   # Working with visuals
