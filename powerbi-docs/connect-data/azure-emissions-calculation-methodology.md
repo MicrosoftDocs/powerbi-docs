@@ -13,8 +13,6 @@ ai-usage: ai-assisted
 ---
 # Azure emissions calculation methodology
 
-[!INCLUDE[eid-deprecation](../includes/emissions-impact-dashboard-retirement.md)]
-
 Microsoft's Azure emissions calculation methodology determines the carbon emissions from Azure and Microsoft 365 cloud computing resources. This methodology covers scope 1, 2, and 3 carbon emissions calculated from the manufacture, packaging, transportation, use, and end-of-life phases of data center hardware in all Microsoft-owned and leased data centers. The emissions and usage measured by this methodology are for Microsoft's Azure and Microsoft 365 cloud only. The Microsoft 365 methodology is limited to emissions associated with using the following products:
 
 - Microsoft Exchange Online
