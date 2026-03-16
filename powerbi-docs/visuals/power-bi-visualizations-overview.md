@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: overview
-ms.date: 03/03/2026
+ms.date: 03/16/2026
 LocalizationGroup: Visualizations
 ---
 
@@ -39,7 +39,17 @@ This live connection between visuals and data ensures reports always reflect cur
 
 ## Visual selection
 
-Power BI offers more than 40 built-in visual types, including charts for comparison and trends, tables and matrices, maps, AI-powered visuals, slicers, and specialized visuals like gauges and KPIs.
+Power BI offers a comprehensive set of built-in visual types organized by purpose:
+
+- **[Compare trends with charts](power-bi-visualization-decision-guide.md#compare-trends-with-charts)**: Bar, column, line, area, combo, ribbon, and waterfall charts
+- **[Show part-to-whole relationships](power-bi-visualization-decision-guide.md#show-part-to-whole-relationships)**: Pie, donut, treemap, and funnel charts  
+- **[Explore distributions and relationships](power-bi-visualization-decision-guide.md#explore-distributions-and-relationships)**: Scatter, bubble, and high-density scatter charts
+- **[Display data in tables and matrices](power-bi-visualization-decision-guide.md#display-data-in-tables-and-matrices)**: Tables and matrix visuals for detailed data with drill-down capabilities
+- **[Use cards, KPIs, and gauges](power-bi-visualization-decision-guide.md#use-cards-kpis-and-gauges)**: Highlight key metrics and track progress toward goals
+- **[Map your data](power-bi-visualization-decision-guide.md#map-your-data)**: Filled maps, Azure Maps, shape maps, and ArcGIS maps
+- **[Use AI-powered visuals](power-bi-visualization-decision-guide.md#use-ai-powered-visuals)**: Decomposition tree, key influencers, smart narrative, and anomaly detection
+- **[Filter with slicers](power-bi-visualization-decision-guide.md#filter-with-slicers)**: Button, list, input, and date range slicers for on-canvas filtering
+- **[Use other visuals](power-bi-visualization-decision-guide.md#use-other-visuals)**: Images, text boxes, buttons, paginated reports, R/Python visuals, and Power Apps
 
 Figuring out what kind of visual best suits your needs depends on:
 
@@ -47,7 +57,7 @@ Figuring out what kind of visual best suits your needs depends on:
 - **Your analysis goal**: Compare values, show trends, reveal relationships, or track progress
 - **Your audience**: Executives need high-level summaries, while analysts need detailed data
 
-For more information, see [Choose the best visual for your data](power-bi-visualization-decision-guide.md).
+For detailed guidance on when to use each visual type with example scenarios and best practices, see [Choose the best visual for your data](power-bi-visualization-decision-guide.md).
 
 ## Visual interactions
 
