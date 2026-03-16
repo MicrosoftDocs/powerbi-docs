@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Connect to the Emissions Impact Dashboard for Azure
 
-[!INCLUDE[eid-deprecation](../includes/eid-deprecation.md)]
+[!INCLUDE[eid-deprecation](../includes/emissions-impact-dashboard-deprecation.md)]
 
 View your cloud-based carbon emissions today with the Emissions Impact Dashboard for Azure.
 

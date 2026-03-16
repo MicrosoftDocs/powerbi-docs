@@ -16,7 +16,7 @@ ms.custom:
 
 # Connect to the Emissions Impact Dashboard for Microsoft 365
 
-[!INCLUDE[eid-deprecation](../includes/eid-deprecation.md)]
+[!INCLUDE[eid-deprecation](../includes/emissions-impact-dashboard-deprecation.md)]
 
 Calculate emissions from your tenant's usage of Microsoft 365 with the Emissions Impact Dashboard for Microsoft 365.
 
