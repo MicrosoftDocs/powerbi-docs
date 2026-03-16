@@ -20,6 +20,8 @@ Configuring incremental refresh includes creating RangeStart and RangeEnd parame
 
 ## Create parameters
 
+Incremental refresh requires RangeStart and RangeEnd parameters to define the time window for each refresh operation. You can't configure incremental refresh without these parameters. Power BI uses them to generate date-based partitions for your data, so your source table must have a date or date/time column to filter on.
+
 In this task, you'll use Power Query Editor to create RangeStart and RangeEnd parameters with default values. The default values apply only when filtering the data to be loaded into the model in Power BI Desktop. The values you enter should include only a small amount of the most recent data from your data source. When published to the service, the incremental refresh policy overrides these time range values. That is, the policy creates windows of incoming data, one after another.
 
 1. In Power BI Desktop, select **Transform data** on the **Home** ribbon to open Power Query Editor.
