@@ -7,12 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
 ms.reviewer: lsuresh
-ms.date: 10/01/2025
+ms.date: 03/16/2026
 LocalizationGroup: Connect to services
 ms.custom: sfi-image-nochange
 ---
 
 # Connect to the Emissions Impact Dashboard for Azure
+
+[!INCLUDE[eid-deprecation](../includes/emissions-impact-dashboard-retirement.md)]
 
 View your cloud-based carbon emissions today with the Emissions Impact Dashboard for Azure.
 

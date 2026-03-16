@@ -6,7 +6,7 @@ ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 03/16/2026
 LocalizationGroup: Connect to services
 no-loc: [Copilot]
 ms.custom:
@@ -15,6 +15,8 @@ ms.custom:
 ---
 
 # Connect to the Emissions Impact Dashboard for Microsoft 365
+
+[!INCLUDE[eid-deprecation](../includes/emissions-impact-dashboard-retirement.md)]
 
 Calculate emissions from your tenant's usage of Microsoft 365 with the Emissions Impact Dashboard for Microsoft 365.
 
