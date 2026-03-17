@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 Power BI's March 2026 update delivers powerful enhancements across reporting, AI, modeling, and visuals. Translytical task flows move to general availability, enabling end users to take action directly from reports. Modern visual defaults (preview) bring a fresh Fluent 2 design to your reports. Direct Lake in OneLake reaches general availability, unlocking incredible performance directly against OneLake. Plus, custom totals, series label leader lines, updated Copilot experiences, and expanded DAX capabilities make this a feature-packed release.
 
-For a quick summary of the March features, read on. For a detailed look at these updates and more enhancements, see the [Power BI March 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-march-2026-feature-summary/). You can also watch the March demos.
+For a quick summary of the March features, read on. For a detailed look at these updates and more enhancements, see the [Power BI March 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-march-2026-feature-summary/). You can also [watch the March demos](https://youtu.be/INwbDNhRMG0).
 
 > **Download** the [March 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
