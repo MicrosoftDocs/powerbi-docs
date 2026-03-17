@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 03/16/2026
+ms.date: 09/09/2025
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
@@ -42,13 +42,6 @@ Let’s begin with the report experience. Here, you’re inside of a Power BI Re
 The Copilot pane opens. 
 
 :::image type="content" source="../create-reports/media/copilot-pane-summarize-content/copilot-report-copilot-pane.png" alt-text="Screenshot showing the Copilot pane open." lightbox="../create-reports/media/copilot-pane-summarize-content/copilot-report-copilot-pane.png":::
-### Copilot pane interface
-
-The Copilot pane provides a streamlined interface for interacting with your report data. Key features include:
-
-- **Suggested prompts**: When you first open the pane, you see button suggestions for common tasks. These starter prompts disappear after you begin your conversation to provide more space for responses. If you need to access starter prompts again, you can find them in the prompt guide (book icon) or clear your chat to start over.
-- **Input box**: The input box remains enabled while Copilot processes your request, allowing you to type your next prompt. However, you need to wait until the current prompt finishes processing before you can submit the next one.
-- **Response actions**: Each response includes actions at the bottom, including the copy button and feedback buttons, making it easy to reuse content or provide feedback on the quality of responses.
  
 You can choose from suggested prompts of summaries from the main Copilot menu such as "What is this report page about?” or “Prep a summary for my team.”
 
@@ -206,16 +199,6 @@ The following are limitations and considerations across both experiences (also s
 - Copilot summaries only consider visuals with less than 30K rows of data. If more data is included in visuals, Copilot answers using the semantic model itself, not the report visual.
 - Copilot summaries may not work accurately on table/matrix visuals with more than 500 rows. If the visual surpasses 100 rows, Copilot answers using the semantic model itself, not the report visual.
 - The standalone Copilot experience isn't yet available in the following regions: Spain Central, Qatar, India-West, and Mexico.
-
-## Provide feedback with diagnostics
-
-Copilot includes an updated feedback dialog that allows you to share diagnostics with your feedback submission. When you select the thumbs up or thumbs down button on a Copilot response, you can:
-
-- **Add comments**: Provide specific details about what worked well or what needs improvement.
-- **Attach diagnostics**: Include diagnostic information with your feedback submission. Diagnostics provide conversational context to your rating and are helpful during support case investigations.
-- **Preview diagnostics**: Before submitting, you can preview the diagnostics file to ensure you aren't sending any sensitive information.
-
-Sharing diagnostics with your feedback helps the product team better understand your experience and improve Copilot capabilities.
 
 ## Send feedback
 
