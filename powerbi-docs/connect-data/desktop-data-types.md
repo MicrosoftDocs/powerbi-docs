@@ -32,6 +32,8 @@ In Power BI Desktop, you can determine and specify a column's data type in the P
 
   ![Screenshot of Table View, showing the Data type dropdown selection.](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
+You can also set data types in Power Query M code by using the Advanced Editor. For more information about M data types and the `Table.TransformColumnTypes` function, see [Data types in Power Query](/power-query/data-types) and [Types and type conversion](/powerquery-m/type-conversion).
+
 The Data type dropdown selection in Power Query Editor has two data types not present in Table view or Report view: **Date/Time/Timezone** and **Duration**. When you load a column with these data types into the Power BI model, a **Date/Time/Timezone** column converts into a **Date/time** data type, and a **Duration** column converts into a **Decimal number** data type.
 
 The **Binary** data type isn't supported outside of the Power Query Editor. In the Power Query Editor, you can use the **Binary** data type when you load binary files if you convert it to other data types before loading it into the Power BI model. The **Binary** selection exists in the Table view and Report view menus for legacy reasons, but if you try to load **Binary** columns into the Power BI model, you might run into errors.
