@@ -1,6 +1,6 @@
 ---
-title: See What's New in the February 2026 Power BI Update
-description: "Discover the February 2026 Power BI update: expanded Copilot prompt limits, Input slicer generally available, new DAX functions, and more. Learn what's new and get started today."
+title: See What's New in the March 2026 Power BI Update
+description: "Discover the March 2026 Power BI update: translytical task flows now generally available, modern visual defaults preview, Direct Lake in OneLake GA, custom totals, and more. Learn what's new and get started today."
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,76 +8,66 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: intro-whats-new
 ms.topic: concept-article
-ms.date: 2/24/2026
+ms.date: 3/17/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
-# What's new in Power BI: February 2026 update (version 2.151.1052.0)
+# What's new in Power BI: March 2026 update
 
-Power BI's February 2026 update is here, bringing smarter Copilot and AI experiences, more flexible ways to interact with reports, polished visuals, and useful modeling enhancements—plus a few important updates to keep in mind. With FabCon right around the corner, it's the perfect time to explore what's new and get excited about what's next.
+Power BI's March 2026 update delivers powerful enhancements across reporting, AI, modeling, and visuals. Translytical task flows move to general availability, enabling end users to take action directly from reports. Modern visual defaults (preview) bring a fresh Fluent 2 design to your reports. Direct Lake in OneLake reaches general availability, unlocking incredible performance directly against OneLake. Plus, custom totals, series label leader lines, updated Copilot experiences, and expanded DAX capabilities make this a feature-packed release.
 
-For a quick summary of the February features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI February 2026 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2026-feature-summary/). You can also watch the [February demos](https://youtu.be/O21vXCpYdCc).
+For a quick summary of the March features, read on. For a detailed look at these updates and more enhancements, see the [Power BI March 2026 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-march-2026-feature-summary/). You can also watch the March demos.
 
-> **Download** the [February 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [March 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
-
-## Events and announcements
-
-- **Data Viz World Championships finalists**: Meet the four finalists heading to the finals at FabCon, where they battle it out for the title of 2026 Power BI DataViz World Champion. [Learn more](https://developer.microsoft.com/reactor/events/26851/) about how to register for the session and view entries.
-- **FabCon Americas 2026**: Less than one month away! Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. [Register](https://aka.ms/fabcon) with code FABCOMM to save $200.
 
 ## General
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Deprecation of Hierarchies in Power BI scorecards | Starting April 15, 2026, the Hierarchies feature in Power BI Scorecards will be removed. The Heatmap view, which was tied to hierarchies, will also be discontinued. Scorecards themselves continue to work as usual. For more information, see [Create scorecards and manual goals](../create-reports/service-goals-create.md). |        |
-| Deprecation of SSRS, PBIRS and SSAS Management Packs in SCOM | Microsoft has announced the deprecation of the System Center Operations Manager (SCOM) Management Packs for SQL Server Reporting Services (SSRS), Power BI Report Server (PBIRS), and SQL Server Analysis Services (SSAS). These management packs will no longer be supported after January 2027. |        |
-| Deprecation of legacy Import Excel & CSV experience in Power BI Service | Entry points to the legacy experience will be removed on May 31, 2026, and semantic models created using the legacy experience will stop refreshing on July 31, 2026. For guidance, see [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md). |        |
-| Deprecation of the Simba Vertica ODBC driver | The Simba Vertica ODBC Driver begins its deprecation process in February 2026. Customers should transition to the Vertica ODBC driver. For more details, see [Power Query Vertica database connector](/power-query/connectors/vertica-database#use-vertica-odbc-driver). |        |
+| Upcoming deprecation of old file picker experience in Power BI Desktop | Deprecation is planned for the old file picker experience in Power BI Desktop in April. The updated file picker, announced last January, provides a more intuitive way of navigating between files and folders and becomes the default experience. No action is required from users. |        |
 
 ## Copilot and AI
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Expanded prompt input character limit | Based on customer feedback, the character limit for Copilot input increased from 500 characters to 10K in all Copilot surfaces, including Standalone, Report pane, Apps, Mobile, and Embed. For more information, see [Use Copilot with Power BI reports and semantic models](../create-reports/copilot-reports-overview.md). |          |
+| Copilot pane user experience update | The Copilot pane in Reports and Apps has an updated user experience that matches the look and feel of the standalone Copilot experience. Button suggestions disappear after starting your conversation (accessible via prompt guide or clear chat). The input box remains enabled while processing requests, so you can type your next prompt. The copy action is moved to the bottom of responses next to feedback buttons. For more information, see [Summarize a report with Copilot](../explore-reports/copilot-pane-summarize-content.md). |          |
+| Copilot feedback update | Across all Power BI Copilot experiences, an updated feedback dialog now allows you to add diagnostics with your submission. Sharing diagnostics with thumbs up or down feedback provides conversational context and is helpful during support investigations. You can preview the diagnostics file before submission to ensure you aren't sending sensitive information. For more information, see [Summarize a report with Copilot](../explore-reports/copilot-pane-summarize-content.md#provide-feedback-with-diagnostics). |          |
 
 ## Reporting
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Filter or enter data in reports with Input slicer (Generally Available) | The Text Slicer is now renamed to Input Slicer and is **generally available**. This interactive visual lets you filter data using free-form text input with flexible options like exact match, contains, or starts with. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-text-slicer.md). |        |
-| Paste selections into any report slicer | The paste context menu feature on the slicer visual lets you apply multiple selections by pasting a list of values directly into your slicer. For more information, see [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md?tabs=powerbi-desktop#paste-values-in-slicers). |        |
-| Card visual updates | The new Card visual default increased from 5 to 10 callouts. Selecting a category name now filters other visuals on the page. For more information, see [Create a card visual in Power BI](../visuals/power-bi-visualization-card.md?tabs=powerbi-desktop). |        |
-| Fonts compatible with non-Windows devices for Power BI reports | Default fonts such as Segoe UI in Power BI reports when viewed on a non-Windows device now show as expected. For more information, see [Supported Browsers for Power BI and Fabric](power-bi-browsers.md). |        |
-| Preview visuals update | Preview visuals now display "(Preview)" after their name and will soon appear below the divider line with custom and other unpinned visuals. For more information, see [Report visualizations](../visuals/power-bi-report-visualizations.md). |        |
-| Conditional formatting dialog updates | Enhanced conditional formatting dialog with a wider dropdown menu and helpful tooltips that display field names for easier selection. For more information, see [Apply Conditional Table Formatting](../create-reports/desktop-conditional-table-formatting.md). |        |
-| Improved error dialogs in Power BI Desktop | Additional error details for visuals in Power BI reports are now available in Power BI Desktop. For more information, see [Troubleshoot Visualizations in Power BI](../visuals/power-bi-visualization-troubleshoot.md). |        |
-| Azure Maps visual updates | Enhanced performance for Azure Maps visual with pie charts and new endpoint regions for Korea and Brazil. For more information, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started). |        |
-| Fewer steps to insight in Power BI apps | A more conversational Copilot experience in Power BI apps—just ask your question and Copilot does the work by finding the right reports or data. Copilot can also summarize what reporting is available in an app. For more information, see [Copilot for Power BI apps](../create-reports/copilot-apps-overview.md). |        |
-| Org Apps now feature Persistent Report Filters and Reset Functionality | Org apps (Preview) have been updated to retain Power BI report filters, slicers, and other data view changes. The persistent filters setting is enabled by default for all reports. For more information, see [Org apps](../consumer/org-app-items/org-app-items.md). | ✔️ |
+| Translytical task flows (Generally Available) | **Now generally available**. Translytical task flows let end users take action directly from Power BI reports—updating records, adding data, or triggering workflows in other systems—without leaving the report. Translytical task flows use Fabric user data functions to connect reports to underlying data sources. Common scenarios include editing data records in place, adding annotations, deleting outdated entries, and calling external APIs like Azure OpenAI. Data write-back supports Fabric SQL databases, Fabric warehouses, and Fabric lakehouses (for files). For more information, see [Understand translytical task flows](../create-reports/translytical-task-flow-overview.md). |        |
+| Modern visual defaults and customizing theme improvements (Preview) | Power BI Desktop visuals now start with a modern look. This preview introduces an updated base theme aligned with Fluent 2, featuring subtitles, uniform padding, style presets, and a gray canvas background at 1080x1920px by default. Charts display with smooth lines, slicers default to dropdown mode, and buttons have a refreshed appearance—all without manual formatting. Enable the preview in Options > Preview features by turning on **modern visual defaults** and **customizing theme improvements**. Published reports retain the new base theme for editing in the browser. The theme schema also supports setting page size and defining reusable named colors. For more information, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md). | ✔️ |
+| Custom totals (Preview) | Table and matrix visuals now support custom totals, giving you more control over what the total row displays for a specific column. By default, the total row shows the result of evaluating the measure across the entire filter context. With custom totals, you can easily change the total row value to the sum, min, max, count (distinct), or count of the displayed rows. Right-click a numerical column or use the Build pane to choose **Customize total calculation**. Custom totals are based on visual calculations. For more information, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md). | ✔️ |
+| Series label leader lines for line charts | Leader lines for series labels are now available on line charts and related visuals, making it easier to understand which line belongs to which label – especially in dense or overlapping scenarios. When enabled, leader lines visually connect each series label to its corresponding data point. The feature includes smart layout logic to avoid label collisions, along with formatting options for line style, width, and transparency. Leader lines turn on automatically when series labels are enabled for new reports. Series labels are also selectable, which highlights a line and displays markers. You can select more than one by holding down the CTRL key. For more information, see [Line charts in Power BI](../visuals/power-bi-line-chart.md). |        |
+| Report Theme Updates | This month introduces two enhancements to custom report themes. You can now define a default page size directly in your theme file. When you add a page section to your theme JSON, any new pages added to your report automatically use those dimensions. You can also now reference structural theme colors such as background and foreground in your theme JSON. For more information, see [Create custom report themes in Power BI Desktop](../create-reports/report-themes-create-custom.md). |        |
+| Input slicer now supports conditional formatting | The input slicer now supports conditional formatting (Fx) across multiple visual elements in the formatting pane. You can apply dynamic formatting rules to text colors, icon colors, borders, and accent bars based on measures or field values in your data. Elements that support conditional formatting include Filters (text color, dismiss button color), Filter operator (text and icon color), Apply button (icon color), and Input box (placeholder text color and accent bar color), as well as background and border colors for each. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-input-slicer.md). |        |
 
 ## Modeling
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| TABLEOF and NAMEOF DAX functions | New TABLEOF function returns a reference to the table associated with a given column, measure, or calendar. NAMEOF returns the name of a table, column, measure, or calendar as a text string. These functions help write DAX that's safer and easier to maintain. For more information, see [TABLEOF](/dax/tableof-function-dax) and [NAMEOF](/dax/nameof-function-dax). |        |
+| Direct Lake in OneLake (Generally Available) | **Now generally available**. Power BI is standardizing on open-data formats by adopting Delta Lake and Parquet. Direct Lake storage mode accelerates time to data-driven decisions by unlocking incredible performance directly against OneLake, without the need to manage costly, time-consuming data refreshes for large volumes of data. Direct Lake in OneLake works from Power BI Desktop, providing compatibility with OneLake security, more modeling features, and faster query performance. When creating a new Direct Lake semantic model from the SQL analytics endpoint page, you can select either Direct Lake on OneLake or Direct Lake on SQL. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview). |        |
+| TMDL View in web modeling (Preview) | TMDL View on the Web introduces a code-first semantic modeling experience directly in the browser. Developers can script, modify, and apply changes to model objects directly in a code editor using Tabular Model Definition Language (TMDL) without switching to Desktop or downloading model files. This experience provides immediate code-level visibility into all semantic model metadata (tables, measures, relationships, and more), enabling bulk edits, automation of repetitive tasks, and reuse of definitions. For more information, see [Work with TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md). | ✔️ |
+| DAX user-defined functions (Preview) | This month's ongoing preview of DAX user-defined functions includes several updates: A new INFO.USERDEFINEDFUNCTIONS() function returns information about user-defined functions in your model. Power BI now keeps DAX code in sync when you rename tables, columns, or measures, with automatic dependency tracking for user-defined functions. New type hints (CalendarRef, ColumnRef, MeasureRef, TableRef) provide more expressive power beyond the existing AnyVal, Scalar, Table, and AnyRef. "Quick queries" for Functions in DAX Query View now supports "Define with references and evaluate." Formula bar is available for creating or modifying UDF expressions in Model Explorer. Syntax highlighting support for UDFs in TMDL View. Support for JSDoc block tags to author UDF description and parameters using the triple slash prefix (///). Support for up to 256 UDF parameters (increased from 12). For more information, see [DAX user-defined functions](../transform-model/desktop-user-defined-functions-overview.md). | ✔️ |
+
+## Data connectivity
+
+| Feature | Description | Currently in preview |
+|---------|-------------|:------:|
+| IBM Netezza ODBC Driver (Generally Available) | **Now generally available**. The IBM Netezza ODBC driver provides a more reliable, supported path forward as Microsoft transitions away from the embedded Simba driver. This update ensures continued connectivity, long-term support, and a more future-ready experience for organizations using the Netezza connector. Customers don't need to install a new connector; you can reuse your existing connector but need to install the new IBM Netezza ODBC driver. For more information, see [IBM Netezza connector](/power-query/connectors/netezza). |        |
+| QuickBooks Online Connector Retirement | The QuickBooks Online connector is retiring and won't be supported after March 2026. After retirement, customers can't create new connections, and existing connections might stop working. |        |
 
 ## Visualizations
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:--------:|
-| Drill Down Pie PRO (Filter) by ZoomCharts | Pie PRO (Filter) enhances pie and donut charts with advanced labeling, category level reference markers, one-click drill down, and images on slices. [Get it on AppSource](https://appsource.microsoft.com/product/WA200001678). |          |
-| Rich titles in Zebra BI Charts | Rich titles let you structure context across multiple lines for clearer hierarchy and faster comprehension. [Learn more](https://bit.ly/3LEKmLc). |          |
-| Rose Donut Pie Chart by Powerviz | Build four types of charts—rose, rose donut, donut, and pie—with 30+ color palettes, smart labels, conditional formatting, and more. [Get it on AppSource](https://appsource.microsoft.com/product/power-bi-visuals/truvizinc1674781244292.rose-donut-pie-chart-by-powerviz). |          |
-
-## Other
-
-| Feature | Description | Currently in preview |
-|---------|-------------|:--------:|
-| Fabric Copilot capacity tenant setting default update | Beginning on or after February 8, 2026, the tenant setting **Capacities can be designated as Fabric Copilot capacities** will be enabled by default for all tenants. This only updates the tenant setting—it won't modify existing capacity configurations. For more information, see [Fabric Copilot capacity](/fabric/admin/service-admin-portal-copilot). |          |
+| AI Narrative auto refresh | Instead of clicking **Refresh** every time you select a slicer in a report with the AI Narrative visual, use the **Auto refresh** toggle in the visualizations pane. This toggle enables the summary to update automatically whenever a slicer selection changes, creating a smoother and more efficient reporting experience. For more information, see [Create smart narrative summaries](../visuals/power-bi-visualization-smart-narrative.md). |          |
 
 ## Resources
 
@@ -98,7 +88,7 @@ If your organization needs an earlier version, download it. Use the most recent 
 - If you load a report from a newer release, get a warning, and then save it in a previous version, you lose information related to new features.
 - Only English versions of Power BI Desktop are archived.
 
-> **Download** the [February 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [March 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Past updates
 
