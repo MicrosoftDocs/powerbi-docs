@@ -313,13 +313,7 @@ The **Refresh** section is where you define the frequency and time slots to refr
 
 Having configured a refresh schedule, the semantic model settings page informs you about the next refresh time, as in the screenshot above. If you want to refresh the data sooner, to test your gateway and data source configuration, for example, perform an on-demand refresh by using the **Refresh now** option on the semantic model settings page. On-demand refreshes don't affect the next scheduled refresh time.
 
-> [!TIP]
-> Power BI does not have a monthly refresh interval option. However, you can use Power Automate (formerly Microsoft Flow) to create a custom refresh interval that occurs monthly, as described in the following [Power BI blog post](https://powerbi.microsoft.com/blog/refresh-your-power-bi-dataset-using-microsoft-flow/).
-
-Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best-effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
-
-> [!NOTE]
-> Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
+For details on refresh timing behavior, frequency limits, monthly refresh workarounds, and how the service handles consecutive failures, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ### Getting refresh failure notifications
 
