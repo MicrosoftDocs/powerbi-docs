@@ -12,18 +12,14 @@ LocalizationGroup: Create reports
 #customer intent:
 ---
 
-# Create a data function button in Power BI (preview)
+# Create a data function button in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 You can create a *data function* button in Power BI Desktop and Power BI service. This button takes input from the user and calls a function to take action.
 
->[!NOTE]
->The translytical task flow feature is currently in public preview.
-
 ## Prerequisites
 
-* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI and Fabric.
 * Create a [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview). For examples, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
   >[!IMPORTANT]
@@ -50,7 +46,7 @@ Each parameter that your user data function takes as input needs to map to an el
 
 ### Slicers as input controls
 
-The three supported slicer types (button, list, and input) are all preview features, sometimes called *new slicers*. Make sure you enable them as described in the prerequisites.
+You can use button, list, or input slicers as input controls for your data function parameters.
 
 To use a button or list slicer as a parameter, it needs to be linked to a data field from the **Data** pane. If you want to use a button or list slicer only as an input control and not to filter data, remove all visual interactions through **Edit interactions**. For more information about editing interactions, see [Change how visuals interact in a Power BI report](./service-reports-visual-interactions.md).
 
@@ -79,9 +75,6 @@ Create a data function button and configure it to connect report elements or use
 1. From the **Type** dropdown menu, select **Data function**.
 
    Once you select the data function option, the following parameters appear: **Workspace**, **Function set**, and **Data function**.
-
-   >[!TIP]
-   >If you don't see the **Data function** option, make sure that the **Translytical task flows** preview feature is enabled in Power BI desktop.
 
 1. Provide the following values for your button:
 

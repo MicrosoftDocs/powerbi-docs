@@ -3,7 +3,7 @@ title: Create a Matrix Visual in Power BI
 description: Learn how to create and customize matrix visuals in Power BI Desktop and Power BI service to display and analyze data across multiple dimensions with hierarchical structures and aggregations.
 ms.author: juliacawthra
 author: JulCsc
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -112,6 +112,10 @@ To refreeze the row headers, right-click on the row headers again and select **F
 ### Adjust column width
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
+
+### Custom totals (preview)
+
+[!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
 
 ## Related content
 
