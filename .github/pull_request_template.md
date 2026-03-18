@@ -8,7 +8,7 @@ If you are working internally at Microsoft:
 >
 >
 
-**Who is your primary Skilling team contact?** \@mention them individually tag them and let them review the PR before signing off.
+**Who is your primary Learn docs team contact?** \@mention them individually tag them and let them review the PR before signing off.
 
 >
 >
