@@ -251,7 +251,7 @@ The chart adds a second line with its own axis scale on the right side. This app
 
 To display separate lines for each product:
 
-1. Drag **Product** to the **Legend** field well.
+- Drag **Product** to the **Legend** field well.
 
 The chart now shows one line per product, each with a distinct color. The legend identifies which line represents each product.
 
