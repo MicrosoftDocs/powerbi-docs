@@ -129,24 +129,6 @@
       href: power-bi-reports-add-text-and-shapes.md
     - name: Add a hyperlink to a text box
       href: service-add-hyperlink-to-text-box.md
-  - name: Apply formatting and themes
-    items:
-    - name: Use report themes in Power BI
-      href: desktop-report-themes.md
-    - name: Use organizational themes (preview)
-      href: desktop-organizational-themes.md
-    - name: Create custom report themes
-      href: report-themes-create-custom.md
-    - name: Apply conditional table formatting
-      href: desktop-conditional-table-formatting.md
-    - name: Display custom format strings
-      href: desktop-custom-format-strings.md
-    - name: Create dynamic format strings for measures
-      href: desktop-dynamic-format-strings.md
-    - name: Create dynamic, expression-based titles
-      href: desktop-conditional-format-visual-titles.md
-    - name: Use inline hierarchy labels
-      href: desktop-inline-hierarchy-labels.md
   - name: Filter and slice data
     items:
     - name: Filters and highlighting in reports
@@ -360,6 +342,19 @@
     - name: Delete almost anything
       href: service-delete.md
 # =============================================================================
+# STYLE YOUR REPORT
+# =============================================================================
+- name: Style your report
+  items:
+  - name: Visual defaults in Power BI reports
+    href: power-bi-reports-visual-defaults.md
+  - name: Use report themes in Power BI
+    href: desktop-report-themes.md
+  - name: Create custom report themes
+    href: report-themes-create-custom.md
+  - name: Use organizational themes (preview)
+    href: desktop-organizational-themes.md
+# =============================================================================
 # VISUALIZE YOUR DATA
 # =============================================================================
 - name: Visualize your data
@@ -530,7 +525,19 @@
     - name: Color formatting tips and tricks
       href: ../visuals/service-tips-and-tricks-for-color-formatting.md
     - name: Conditional formatting
-      href: ../visuals/power-bi-visualization-conditional-formatting.md
+      items:
+      - name: Conditional formatting overview
+        href: ../visuals/power-bi-visualization-conditional-formatting.md
+      - name: Apply conditional table formatting
+        href: desktop-conditional-table-formatting.md
+      - name: Create dynamic, expression-based titles
+        href: desktop-conditional-format-visual-titles.md
+    - name: Create dynamic format strings for measures
+      href: desktop-dynamic-format-strings.md
+    - name: Display custom format strings
+      href: desktop-custom-format-strings.md
+    - name: Use inline hierarchy labels
+      href: desktop-inline-hierarchy-labels.md
   # Visual features
   - name: Use advanced visual features
     items:
@@ -548,8 +555,8 @@
       href: ../visuals/power-bi-data-points.md
     - name: High-density line sampling
       href: desktop-high-density-sampling.md
-  # Get custom visuals from AppSource
-  - name: Get visuals from AppSource
+  # Custom visuals
+  - name: Get custom visuals
     href: ../developer/visuals/power-bi-custom-visuals.md
 # =============================================================================
 # CREATE WITH COPILOT

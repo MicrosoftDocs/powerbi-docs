@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 11/30/2025
+ms.date: 03/18/2026
 ---
 
 # What's new in Power BI collaboration and integration
@@ -17,6 +17,12 @@ ms.date: 11/30/2025
 This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../fundamentals/whats-new.md).**
+
+## March 2026
+
+### Export live data to PowerPoint while in edit mode
+
+You can now export live Power BI data to PowerPoint directly from a report while in edit mode, allowing you to bring in live reports without leaving your editing workflow. For more information about adding live data to PowerPoint, see [Enhance storytelling in PowerPoint presentations with the Power BI add-in](service-power-bi-powerpoint-add-in-about.md).
 
 ## November 2025
 
