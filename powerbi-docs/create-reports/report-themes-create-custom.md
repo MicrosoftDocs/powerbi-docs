@@ -488,7 +488,7 @@ You can use an enumeration to format dropdown menus by setting menu options to a
 
 ## Example report theme JSON file
 
-Here's the *St Patricks Day.json* file in its entirety:
+Here's the *St Patrick's Day.json* file in its entirety:
 
  ```json
     {
@@ -524,6 +524,7 @@ The Semantic Link Labs library provides functions to work with report themes thr
 
 ## Related content
 
+- [Visual defaults in Power BI reports](power-bi-reports-visual-defaults.md)
 - [Use report themes in Power BI Desktop](desktop-report-themes.md)
 - [Apply report themes with the JavaScript API](/javascript/api/overview/powerbi/apply-report-themes)
 - [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)

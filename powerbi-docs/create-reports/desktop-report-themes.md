@@ -163,9 +163,11 @@ Customizing the current theme in this way is easy but limited. However, you can 
 
 The base theme is the underlying default styling that Power BI applies before any customizations. When you apply a custom theme, it layers on top of the base theme. Any styles defined in the custom theme override the corresponding styles in the base theme, while styles not specified in the custom theme fall back to the base theme defaults. The base theme may be updated with Power BI releases. To avoid disrupting existing reports, these changes don't automatically get applied.
 
+For more information about available base themes, including the Fluent 2 preview, see [Visual defaults in Power BI reports](power-bi-reports-visual-defaults.md).
+
 To check if you're using the latest and to update base theme, follow these steps.
 
-1.Go to the **View** ribbon, select the **Themes** dropdown, and select **Customize current theme**. 
+1. Go to the **View** ribbon, select the **Themes** dropdown, and select **Customize current theme**. 
 
 1. If your theme is out of date, a banner appears at the top of the **Customize theme** dialog, encouraging you to update your base theme.
 
@@ -284,6 +286,7 @@ Elements that are considered part of the interface can't be changed using a repo
 
 ## Related content
 
+- [Visual defaults in Power BI reports](power-bi-reports-visual-defaults.md)
 - [Create custom report themes in Power BI Desktop](report-themes-create-custom.md)
 - [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)
 - [Tips and tricks for color formatting](../visuals/service-tips-and-tricks-for-color-formatting.md)
