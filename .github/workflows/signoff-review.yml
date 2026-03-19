@@ -1,0 +1,868 @@
+name: User can sign off PR
+
+permissions:
+  pull-requests: write
+  statuses: write
+      
+on: 
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+    build:
+        name: Run Script
+        if: github.repository_visibility == 'private'
+        runs-on: ubuntu-latest
+        steps:
+          - name: Script
+            shell: pwsh
+            env: 
+              PayloadJson: ${{ toJSON(github) }}
+              AccessToken: ${{ secrets.GITHUB_TOKEN }}
+              # For testing set to a little used folder as the only target
+              MonitoredFolders: '[
+                    "powerbi-docs/"
+                ]'
+  
+            run: |
+  
+                # Print out current date and time
+                $currentDateTime = Get-Date
+                $currentDateTimeString = "{0:yyyy-MM-dd HH:mm:ss}" -f $currentDateTime
+                Write-Output "Run start: $currentDateTimeString"
+
+                # Get GitHub data and event
+                $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+                $GitRequestEvent = $GitHubData.event_name
+                if ($GitRequestEvent -eq "issue_comment") 
+                {
+                    $PrGitHubLink = $GitHubData.event.issue.html_url
+                }
+
+                $AccessToken = $env:AccessToken
+                $MonitoredFolders = $env:MonitoredFolders | ConvertFrom-Json
+
+                $DefaultBranch = $GitHubData.event.repository.default_branch
+                If ($GitRequestEvent -eq "issue_comment") {$GitHubState = $GitHubData.event.issue.state} ElseIf ($GitRequestEvent -eq "pull_request_target") {$GitHubState = $GitHubData.event.pull_request.state}
+                $GitHubAction = $GitHubData.event.action
+                $GitHubSender = $GitHubData.event.sender.login
+                $GitHubRepoName = $GitHubData.event.repository.name
+                $CommentUser = $GitHubData.event.comment.user.login
+                $PullRequestOpener = $GitHubData.event.pull_request.user.login
+                
+                If ($GitRequestEvent -eq "issue_comment") 
+                {   
+                    $PrIssueNumber = $GitHubData.event.issue.number
+                    $PrUrl = $GitHubData.event.issue.pull_request.url
+                    $IssueUrl = $GitHubData.event.issue.url
+                    $CommentsUrl = $GitHubData.event.issue.comments_url
+                }
+                ElseIf ($GitRequestEvent -eq "pull_request_target") 
+                {
+                    $PrIssueNumber = $GitHubData.event.pull_request.number
+                    $PrUrl = $GitHubData.event.pull_request.html_url
+                    $IssueUrl = $GitHubData.event.pull_request.issue_url
+                    $CommentsUrl = $GitHubData.event.pull_request.comments_url
+                }
+
+                If ($GitRequestEvent -eq "issue_comment") {$PrUrl = $GitHubData.event.issue.pull_request.url} ElseIf ($GitRequestEvent -eq "pull_request_target") {$PrUrl = $GitHubData.event.pull_request.url}
+                $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
+                $UserPermissionPROpenerUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$PullRequestOpener/permission" )
+                $RepoLabelUrl = $GitHubData.event.repository.labels_url
+                
+                $GitHubHeaders = @{}
+                $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+                $GitHubHeaders.Add("User-Agent", "OfficeDocs")
+
+                $StatusHelpUrl = "https://dev.azure.com/msft-skilling/Content/_wiki/wikis/Database%20Docs/2358/Partner-publishing-workflow"
+                $StatusCheckName = "PR signed off by content team"
+                $Status = @{}
+                $Status.Add("context", $StatusCheckName)
+                $Status.Add("target_url", $StatusHelpUrl)
+
+                $CatastrophicError = $False
+
+                $ContentApprovalMessage = "Approved by content team."
+                $ContentNeedsReviewMessage = "Needs review by content team when ready for sign off."
+                $ContentInReviewMessage = "PR is currently being reviewed by content team for approval."
+
+                $SignOffString = "#sign-off"
+                $ReviewingString = "#review-pr"
+                $ApprovedString = "#approve-pr"
+                $SignOffRegex = "\s*$SignOffString\s*"
+                $ReviewingRegex = "\s*$ReviewingString\s*"
+                $ApprovedRegex = "\s*$ApprovedString\s*"
+
+                $EscalationEmail = "[Fabric Plus Docs Team](mailto:kfollisteam@microsoft.com?subject=[PR%20REVIEW]%20Question%20on%20$GitHubRepoName%20PR%20$PrIssueNumber&body=$PrGitHubLink)"
+                $ContentLeadsUrl = "[the content lead in your area](https://dev.azure.com/msft-skilling/Content/_dashboards/dashboard/49b7bc0d-63e5-496d-a0cc-bbef87dfbc2a)"
+                $PROpenMessage = "Thank you for your contribution! All PRs will be reviewed and approved by the content team. They will remain in a pending state until approved even after they successfully build and stage. When you are ready for the content team to publish this PR, sign off as normal. If you have any questions, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
+                $NeedsContentTeamReviewMessage = "The content team will review this pr and work with you to publish your changes. Thank you for working with us to improve content quality for our customers!`n`n**To expedite your review**, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
+                $CurrentlyInReviewMessage = "This PR is currently assigned to the content team for review. It must be reviewed and approved by the content team before merging.`n`n**To expedite your review**, please reach out to $ContentLeadsUrl or email the $EscalationEmail."
+                $AssignedReviewerMessage = "Assigning the pull request to @!!USER!! for review. #assign: !!USER!!"
+                $CheckFailed = $False
+
+                $ContentReviewNeededLabelColor = "eeee88"
+                $ContentReviewNeededLabelDescription = "The pull request requires a review from the content team."
+                $ContentReviewNeededLabel = "needs-content-team-review"
+                $ContentReviewInProgressLabelColor = "33DDFF"
+                $ContentReviewInProgressLabelDescription = "A content team review has been initiated."
+                $ContentReviewInProgressLabel = "content-team-review"
+                $ContentApprovedLabelColor = "2A8000"
+                $ContentApprovedLabelDescription = "The content team approved the pull request."
+                $ContentApprovedLabel = "pr-approved"
+
+                Write-Host "Repo: $GitHubRepoName"
+                Write-Host "Sender: $GitHubSender"
+                Write-Host "Request event: $GitRequestEvent"
+                Write-Host "GitHub action: $GitHubAction"
+                Write-Host "GitHub state: $GitHubState"
+                Write-Host "Default branch: $DefaultBranch"
+                Write-Host "PR number: $PrIssueNumber"
+                Write-Host "Issue URL: $IssueUrl"
+                Write-Host "PR URL: $PrGitHubLink"
+                Write-Host "User Permission URL: $UserPermissionUrl"
+                Write-Host "User Permission URL (PR Opener): $UserPermissionPROpenerUrl"
+                Write-Host "Commenter user name: $CommentUser"
+                Write-Host "Pull request opener name: $PullRequestOpener"
+
+                # Make the job summary section show up so the job always looks consistent.
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+
+                #####################
+                #####################
+                # Initialize-Labels
+
+                Function Initialize-Labels
+                {
+                    Write-Host "Initialize labels needed by the workflow"
+                    Initialize-Label -LabelName $ContentReviewNeededLabel -LabelColor $ContentReviewNeededLabelColor -LabelDescription $ContentReviewNeededLabelDescription
+                    Initialize-Label -LabelName $ContentReviewInProgressLabel -LabelColor $ContentReviewInProgressLabelColor -LabelDescription $ContentReviewInProgressLabelDescription
+                    Initialize-Label -LabelName $ContentApprovedLabel -LabelColor $ContentApprovedLabelColor -LabelDescription $ContentApprovedLabelDescription
+                }
+
+                #####################
+                #####################
+                # Initialize-Label
+
+                Function Initialize-Label {
+
+                    [CmdletBinding()]
+                    param(
+                        $LabelName,
+                        $LabelColor,
+                        $LabelDescription
+                    )
+
+                    # Check if label exists on the *REPO*.
+                    $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName
+                    
+                    If (!$LabelExists) 
+                    {
+                        # Create label on the *REPO* if it doesn't exist.
+                        New-RepoLabel -RepoUri $RepoLabelUrl -Name $LabelName -Color $LabelColor -Description $LabelDescription
+                    }
+                }
+
+                #####################
+                #####################
+                # Test-RepoLabel
+
+                Function Test-RepoLabel {
+
+                    [CmdletBinding()]
+                    param(
+
+                        $Name,
+                        $RepoUri      
+                    )
+
+                    # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+                    $LabelUri = $RepoUri.Replace("{/name}","/$Name")
+
+                    # Check to see if the label we want exists in the repo
+                    Try {
+
+                        Write-Host "Checking to see if label $Name exists in repo URL $LabelUri."
+
+                        $LabelResults = Invoke-WebRequest -UseBasicParsing -Uri $LabelUri -Headers $GitHubHeaders  -ErrorAction Stop
+                        $LabelFound = $True
+                        
+                    } Catch {
+
+                        # OK if label doesn't exist. Just means we need to create it.
+                        $LabelFound = $False
+
+                    }
+
+                    # Return boolean to calling statement
+                    $LabelFound
+
+                }
+
+                #####################
+                #####################
+                # New-RepoLabel
+
+                Function New-RepoLabel {
+
+                    [CmdletBinding()]
+                    param(
+
+                        $Name,
+                        $Color,
+                        $Description,
+                        $RepoUri
+                    )
+
+                    # Remove placeholder text from repo URL
+                    $RepoUri = $RepoUri.Replace("{/name}","")
+                    $Result = $Null
+
+                    # Construct the JSON statement that will be sent to GitHub as the body of the web request. Include the name of the label, its color, and description. 
+                    # Convert hash table to JSON
+                    $Body = @{}
+                    $Body.Add("name", $Name)
+                    $Body.Add("color", $Color)
+                    $Body.Add("description", $description)
+                    $Body = $Body | ConvertTo-Json
+
+                    # Try to submit the request to GitHub API to create the label
+                    Try {
+
+                        Write-Host "Creating label $Name in repo $RepoUri."
+                        
+                        $Result = Invoke-RestMethod -Uri $RepoUri -Headers $GitHubHeaders  -Body $Body -Method POST
+
+                    } Catch {
+
+                        Write-Error "ERROR: Failed to create new label $Name on repo $RepoUri. Error: $($Error[0].Exception.Message)."
+                    }
+                }
+
+                #####################
+                #####################
+                # Test-PrLabel
+                Function Test-PrLabel {
+
+                    [CmdletBinding()]
+                    param(
+
+                        $LabelArray,
+                        $IssueUrl      
+                    )
+
+                    # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+                    $IssueLabelUrl = "$IssueUrl/labels"
+                    $LabelHashTable = @{}
+                    $LabelResults = $Null
+
+                    # Get list of labels on issue/PR
+                    Try 
+                    {
+                        $LabelResults = Invoke-RestMethod -Uri $IssueLabelUrl -Headers $GitHubHeaders  -ErrorAction Stop
+                    } 
+                    Catch 
+                    {
+                        Write-Error "ERROR: Failed to get list of labels on $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
+                    }
+
+                    ForEach ($Label in $LabelArray) {
+
+                        If ($LabelResults -ne $Null) {
+
+                            If ($LabelResults.name.Contains($Label)) {
+
+                                $LabelHashTable.Add($Label, $True)
+
+                            } Else {
+
+                                $LabelHashTable.Add($Label, $False)
+                            }
+
+                        } Else {
+
+                            $LabelHashTable.Add($Label, $False)
+                        }
+                    }
+
+
+                    # Return array of labels on Issue/PR
+                    Return $LabelHashTable
+                }
+
+                #####################
+                #####################
+                # Set-PrLabel
+
+                Function Set-PrLabel {
+
+                    param(
+                        $IssueUrl,
+                        $LabelName               
+                    )
+
+                    # Check to see if the label exists on the *PR*.
+                    $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
+
+                    # Only add the label if it doesn't already exist on the *PR*
+                    If (!$LabelResultsArray.$LabelName)
+                    {
+                        # Construct label URL based on issue or pull request URL
+                        $IssueLabelUrl = "$IssueUrl/labels"
+
+                        # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
+                        # Convert array to JSON
+                        $Body = @()
+                        $Body += $LabelName
+                        $Body = ConvertTo-Json -InputObject $Body
+
+                        # Try to submit the request to GitHub API to apply they label to the issue or pull request
+                        Try 
+                        {
+                            Write-Host "Setting label $LabelName on URL $IssueLabelUrl."
+
+                            $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
+                        } 
+                        Catch 
+                        {
+                            Write-Error "ERROR: Failed to set label $LabelName on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
+                        }
+                    }
+                    Else
+                    {
+                        Write-Host "Label $LabelName already exists on PR"
+                    }
+                }
+
+                #####################
+                #####################
+                Function Remove-Label 
+                {
+                    param(
+                        $IssueUrl,
+                        $LabelName               
+                    )
+
+                    Write-Host "Remove $LabelName"
+
+                    # Check to see if the approved label exists on the *PR* and remove it
+                    $LabelResultsArray = Test-PrLabel -LabelArray $LabelName -IssueUrl $IssueUrl
+                    if ($LabelResultsArray.$LabelName)
+                    {
+                        Write-Host "Removing "$LabelName" label from PR."
+                        $LabelUrlName = $LabelName.Replace(" ", "%20")
+                        $LabelUrl = "$IssueUrl/labels/$LabelUrlName"
+                        Write-Host "$LabelUrl"
+
+                        $Result = Invoke-WebRequest -UseBasicParsing -Uri $LabelUrl -Headers $GitHubHeaders -Method Delete -ErrorAction Stop
+
+                        Write-Host "Successfully removed $LabelName label."
+                    }                 
+                }
+
+                #####################
+                #####################
+                # Test-MonitoredFolders
+                
+                Function Test-MonitoredFolders {
+                                
+                    [CmdletBinding()]
+                    param(
+
+                        $PrFileList,
+                        $MonitoredFolderList    
+                    )
+
+                    $MonitoredFolderFound = $False
+
+                    ForEach ($MonitoredFolder in $MonitoredFolderList) {
+
+                        write-host $MonitoredFolder
+                    
+                        $MonitoredFolderFound = [bool]($PrFileList | Where {$_.filename -like "*$MonitoredFolder*"})
+
+                        If ($MonitoredFolderFound) {
+                            Break
+                        }
+                    }
+
+                    Return $MonitoredFolderFound
+                }
+
+                #####################
+                #####################
+                # Set-PrComment
+
+                Function Set-PrComment 
+                {
+                    [cmdletbinding()]
+                    Param(
+                        [Parameter(Mandatory=$True)]
+                        $Message
+                    )
+                    
+                    Write-Host "Adding comment in pr..."
+
+                    $BodyHash = @{}
+                    $BodyHash.body = $Message
+                    $BodyJson = $BodyHash | ConvertTo-Json
+
+                    Try 
+                    {
+                        $Result = Invoke-WebRequest -UseBasicParsing -Uri $CommentsUrl -Body $BodyJson -Headers $GitHubHeaders -Method POST -ErrorAction Stop
+                    
+                        $PostCommentSuccess = $True
+                    }
+                    Catch 
+                    {
+                        $PostCommentSuccess = $False
+
+                        Write-Host "ERROR: Failed to submit message to PR conversation. Error: $($error[0].Exception.Message)."
+                    }
+
+                    Return $PostCommentSuccess
+                }
+
+                #####################
+                #####################
+                # Add-PrAssignee
+
+                Function Add-PrAssignee 
+                {
+                    param
+                    (
+                        $PrData,
+                        $GitHubAssignee
+                    )
+
+                    Try
+                    {
+                        $Assignees = $PrData.assignees
+                        $CurrentAssignees = $PrData.assignees | ForEach-Object { $_.login }
+
+                        Write-Host "Current assignees: $CurrentAssignees"
+
+                        $AlreadyAdded = $False
+
+                        # Loop through each of the eligible assignees found in the PR.
+                        ForEach ($User in $Assignees) 
+                        {
+                            If ($User.login -eq $GitHubAssignee) 
+                            {
+                                Write-Host "Found matching user already assigned to PR"
+                                $AlreadyAdded = $True
+                            } 
+                        }
+
+                        if (-not $AlreadyAdded)
+                        {
+                            # User is not already assigned to the PR. Assign them using the #assign comment
+                            # that PR Merger will read and act on
+
+                            Write-Host "Adding user $GitHubAssignee to $IssueUrl"
+
+                            $AssignedReviewerMessage = $AssignedReviewerMessage -replace "!!USER!!", $GitHubAssignee
+
+                            Set-PrComment -Message $AssignedReviewerMessage
+                        }
+                        else
+                        {
+                            Write-Host "User $GitHubAssignee already assigned to PR."
+                        }
+                    }
+                    Catch
+                    {
+                        Write-Host "Error assigning user to PR! Error: $($error[0].Exception.Message)."
+                    }
+                }
+
+                #####################
+                #####################
+                #     Workflow      #         
+                #####################
+                #####################               
+
+                Try
+                {
+                    # Get PR data so we can get the base branch of the PR. Doing this here so we don't need to do unnecessary calls if other criteria fail.
+                    $PrData = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $PrUrl
+                    $TargetBranch = $PrData.base.ref
+                    $StatusUrl = $PrData.statuses_url
+                    $PrHtmlUrl = $PrData.html_url
+
+                    Write-Host "PR status url: $StatusUrl"
+                    
+                    # Only run checks if target is default branch. Otherwise let it pass.
+                    #
+                    # To test against a target branch other than the default branch (main), set "$DefaultBranch" to the name of a test branch
+                    # and place this workflow in that branch's .github/workflows folder. Then create another test branch off the first, and create
+                    # a PR to the target test branch. Remember to comment out or remove the $DefaultBranch assignment after testing. :)
+                    #
+                    # $DefaultBranch = "do-not-merge-signoff-workflow"
+                    #
+                    # For now using folder check rather than the branch check for testing
+
+                    # Check to see if this is a branch that is being monitored:
+                    Write-Host "Target branch: $TargetBranch"
+                    $TargetingMonitoredBranch = ($TargetBranch -eq $DefaultBranch)
+                    Write-Host "Branch is targeted for monitoring: $TargetingMonitoredBranch"
+
+                    # Check to see if this is an actionable comment
+                    Write-Host "GitHub Request Event: $GitRequestEvent"
+                    Write-Host "GitHub Action: $GitHubAction"
+                    $SignOffFound = $false
+                    $ReviewingFound = $false
+                    $ApprovedFound = $false
+                    $ActionableComment = $false
+                    $PROpenEvent = $false
+                    $EventIsCommentCreated = (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created")))
+                    If ($EventIsCommentCreated) 
+                    {
+                        Write-Host "Comment added on PR."
+
+                        # Get the contents of the comment that was added to the PR
+                        $CommentBody = $GitHubData.event.comment.body
+
+                        Write-Host "Comment:"
+                        Write-Host "--------------------------"
+                        Write-Host "$CommentBody"
+                        Write-Host "--------------------------"
+
+                        # Check to see if comment includes #sign-off, #reviewing, or #approved
+                        $SignOffFound = $CommentBody -match $SignOffRegex
+                        $ReviewingFound = $CommentBody -match $ReviewingRegex
+                        $ApprovedFound = $CommentBody -match $ApprovedRegex
+
+                        $ActionableComment = ($SignOffFound -or $ApprovedFound -or $ReviewingFound)
+                    }
+                    ElseIf (($GitRequestEvent -eq "pull_request_target") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize")))
+                    {
+                        Write-Host "Non-comment GitHub Event"
+                        Write-Host "Pull request action $GitHubAction. Setting sign off check to pending."
+
+                        $PROpenEvent = $true
+
+                        $Status.state = "pending"
+                        $Status.description = "Waiting for sign off."
+                    }
+                    else
+                    {
+                        Write-Host "GitHub event not a PR comment"
+                    }
+
+                    if ($PROpenEvent)
+                    {
+                        # This runs when the PR is opened and does a check on the PR opener, not the commenter
+
+                        # Get permission level of user who created the PR. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                        # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                        $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionPROpenerUrl).role_name
+
+                        Write-Host "User $PullRequestOpener permission level: $UserPermission."
+
+                        # If user has write or above, allow check to pass. If not, provide a welcome message
+                        If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")  -or ($UserPermission -eq "triage"))
+                        {
+                            Write-Host "Approving as pull request creator $PullRequestOpener has permission."
+
+                            Initialize-Labels
+
+                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                            $Status.state = "success"
+                            $Status.description = "Pull request opener $PullRequestOpener is pre-approved."                            
+                        }
+                        Else
+                        {
+                            # Provide a welcome message
+                            Write-Host "User creating PR is not pre-approved. Adding welcome message."
+
+                            Set-PrComment $PROpenMessage
+                        }
+                        
+                        $ActionableComment = $True
+                    }
+                    else
+                    {
+                        # This was a comment on the PR so look for action tags
+
+                        Write-Host "Regex result found $SignOffString : $SignOffFound."
+                        Write-Host "Regex result found $ReviewingString : $ReviewingFound."
+                        Write-Host "Regex result found $ApprovedString : $ApprovedFound."
+
+                        # Check to see if it is a monitored folder
+                        # Get the list of files on the PR.
+                        Write-Host "Checking for monitored folders in PR"
+                        $PrFiles = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri "$PrUrl/files"
+
+                        # Check to see if any files in the PR exist in one or more monitored branches. Only a single
+                        # file needs to be in a monitored branch for the workflow to block the PR.
+                        $MonitoredFoldersFound = Test-MonitoredFolders -PrFileList $PrFiles -MonitoredFolderList $MonitoredFolders
+
+                        # Check to see what labels are already on the PR
+                        Initialize-Labels
+                        $LabelReviewNeededArray = Test-PrLabel -LabelArray $ContentReviewNeededLabel -IssueUrl $IssueUrl
+                        $LabelReviewInProgressArray = Test-PrLabel -LabelArray $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                        $LabelApprovedArray = Test-PrLabel -LabelArray $ContentApprovedLabel -IssueUrl $IssueUrl
+
+                        $ReviewNeededLabelSet = $LabelReviewNeededArray.$ContentReviewNeededLabel
+                        $ReviewInProgressLabelSet = $LabelReviewInProgressArray.$ContentReviewInProgressLabel
+                        $ApprovedLabelSet = $LabelApprovedArray.$ContentApprovedLabel
+                        
+                        Write-Host "Monitored folders found: $MonitoredFoldersFound"
+
+                        # Workflow processing:
+                        If (-not $TargetingMonitoredBranch)
+                        {
+                            Write-Host "Approving as $TargetBranch branch is not being monitored."
+
+                            $ActionableComment = $True
+
+                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                            $Status.state = "success"
+                            $Status.description = "Target branch not $DefaultBranch, so approving by default."
+                        }
+                        ElseIf (-not $MonitoredFoldersFound)
+                        {
+                            Write-Host "Approving as no monitored folders found."
+
+                            $ActionableComment = $True
+
+                            Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                            $Status.state = "success"
+                            $Status.description = "No monitored folders. Allowing sign off." 
+                        }
+                        ElseIf (-not $ActionableComment)
+                        {
+                            Write-Host "Comment not sign off, review, or approval."
+
+                            # Check to see if the content team has approved this yet
+                            # If so, always return success. If not, always keep at pending until approved.
+                            if ($ApprovedLabelSet)
+                            {
+                                $ActionableComment = $True
+                                
+                                Write-Host "Content team already approved. Returning success."
+                                $Status.state = "success"
+                                $Status.description = $ContentApprovalMessage
+                            }
+                            else
+                            {
+                                # The comment was not one to take action on
+                                # In the past, we returned pending, but below we are just not returning 
+                                # any status from the workflow so we don't change anything
+
+                                # This status is left in case we want to go back to pending in this case
+                                Write-Host "Folders monitored and no content team approval yet. Returning pending."
+                                $Status.state = "pending"
+                                $Status.description = $ContentNeedsReviewMessage
+                            }
+                        }
+                        Else
+                        {
+                            # The branch is targeted, the folder is monitored, and the comment contains an action
+
+                            Initialize-Labels
+
+                            Write-Host "String $SignOffString or $ApprovedString or $ReviewingString found on PR/Issue #$PrIssueNumber."
+                            
+                            # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                            # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                            $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
+
+                            Write-Host "User $CommentUser permission level: $UserPermission."
+
+                            # If user has write or above, allow check to pass. If not, add content team review label.
+                            If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "admin")  -or ($UserPermission -eq "triage")) 
+                            {
+                                Write-Host "User $CommentUser has the permission level: $UserPermission. Pass check."
+
+                                If ($SignOffFound -or $ApprovedFound) 
+                                {
+                                    # Set the properties on the $Status object to allow the check to pass. $Status will be sent to GitHub at the end of the workflow.                                   
+                                    $Status.state = "success"
+                                    $Status.description = $ContentApprovalMessage
+
+                                    Write-Host "Adding $ContentApprovedLabel label to the PR"
+                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentApprovedLabel
+
+                                    If ($ApprovedFound)
+                                    {
+                                        # If explicitly approved, set the content team reviewed label as well for tracking
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+                                    }
+
+                                    Write-Host "Removing other labels"
+                                    # Don't remove the in progress label as we can see this to see what we reviewed
+                                    # Remove-Label -LabelName $ContentReviewInProgressLabel -IssueUrl $IssueUrl
+                                    Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                    # Also assign the user to the PR. This way the person who gave approval or signed off
+                                    # can shepherd the PR through the final stages of publishing.
+                                    Write-Host "Assigning $CommentUser to the PR"
+                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
+                                }
+                                ElseIf ($ReviewingFound)
+                                {
+                                    Write-Host "Adding $ContentReviewInProgressLabel label to the PR"
+
+                                    # Status is pending while reviewing
+                                    $Status.state = "pending"
+                                    $Status.description = $ContentInReviewMessage
+
+                                    Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewInProgressLabel
+
+                                    # Content team is explicitly setting this back to review state, so remove any approved tags and add review tag.
+                                    Write-Host "Removing other labels"
+                                    Remove-Label -LabelName $ContentApprovedLabel -IssueUrl $IssueUrl
+                                    Remove-Label -LabelName $ContentReviewNeededLabel -IssueUrl $IssueUrl
+
+                                    # Also assign the user to the PR. This way the person who added the reviewing label
+                                    # can shepherd the PR through the final stages of publishing.
+                                    Write-Host "Assigning $CommentUser to the PR"                                
+                                    Add-PrAssignee -PrData $PrData -GitHubAssignee $CommentUser
+                                }
+                            } 
+                            Else 
+                            {
+                                # If the content team has already approved, report success.
+                                # Technically, this means that once approved they could sneak other changes in, but maybe that is ok as we would see.
+
+                                If ($ApprovedLabelSet)
+                                {
+                                    Write-Host "Content team already approved. Returning success."
+                                    $Status.state = "success"
+                                    $Status.description = $ContentApprovalMessage                             
+                                }
+                                Else
+                                {
+                                    # Check failed. Add label.
+                                    Write-Host "One or more files in monitored folders and user $CommentUser has the permission level: $UserPermission. Fail check."
+
+                                    If ($ReviewInProgressLabelSet)
+                                    {
+                                        Write-Host "$ContentReviewInProgressLabel already set, so not changing label or status."
+
+                                        # Already in review so just keep the same status and message
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentInReviewMessage
+
+                                        Write-Host "User signed off without permissions but it is already in review with content team"
+                                        Set-PrComment $CurrentlyInReviewMessage
+                                    }
+                                    Else
+                                    {
+                                        Write-Host "Adding the $ContentReviewNeededLabel label."
+                                        Set-PrLabel -IssueUrl $IssueUrl -LabelName $ContentReviewNeededLabel
+                                        
+                                        # Even though the check failed, leave the status as pending.
+                                        # It is always pending until the content team has approved.
+                                        $Status.state = "pending"
+                                        $Status.description = $ContentNeedsReviewMessage
+
+                                        Set-PrComment $NeedsContentTeamReviewMessage
+                                    }
+
+                                    $CheckFailed = $True
+                                }
+                            }                  
+                        }
+
+                        if ($Status.state -ne "success")
+                        {
+                            # If the state is anything other than success, attempt to remove the ready-to-merge label
+                            # and add the do-not-merge label
+                            Write-Host "Removing ready-to-merge label"
+                            Remove-Label -LabelName "ready-to-merge" -IssueUrl $IssueUrl
+                            Write-Host "Adding the do-not-merge label"
+                            Set-PrLabel -LabelName "do-not-merge" -IssueUrl $IssueUrl
+                        }
+                    }
+                }
+                Catch
+                {
+                    # Capture and display detailed exception information
+                    Write-Host "An error occurred: $($_.Exception.Message)"
+                    Write-Host "Exception type: $($_.Exception.GetType().FullName)"
+                    Write-Host "Line number: $($_.InvocationInfo.ScriptLineNumber)"
+                    Write-Host "Position: $($_.InvocationInfo.OffsetInLine)"
+                    Write-Host "Script name: $($_.InvocationInfo.ScriptName)"
+                    Write-Host "Error line: $($_.InvocationInfo.Line)"
+
+                    # Read and display the line of code that caused the error
+                    $scriptPath = $($_.InvocationInfo.ScriptName)
+                    if ($scriptPath) {
+                        $lines = Get-Content -Path $scriptPath
+                        $errorLine = $_.InvocationInfo.ScriptLineNumber
+                        Write-Host "Code at error line $errorLine : $($lines[$errorLine - 1])"
+                    }
+
+                    # For catastrophic failure, make sure to not block PRs
+                    $Status.state = "success"
+                    $Status.description = "Unexpected error in workflow. Allowing sign off."
+                    $CatastrophicError = $True                     
+                }
+
+                # Get ready to send $Status to GitHub. First need to convert the $Status object to JSON. Then set a couple variables to prepare for an attempt loop
+                # to deal with transient communication failures that may prevent the workflow from setting the status.
+                $StatusJson = $Status | ConvertTo-Json
+                $SuccessfulPost = $False
+                $RetryCount = 0
+        
+                Write-Host "Reporting Status:"
+                Write-Host "$StatusJson"
+
+                # Loop to try set the status on the PR. Keep trying until either the status is successfully posted or we run out of attempts.
+                # In the unlikely event of a water landing or failure of all six attempts, the status will not set and the user will need to 
+                # submit a new sign off request.
+                if ($ActionableComment)
+                {
+                    # Only post a status back if an actionable comment was provided.
+                    # Otherwise leave as expected with no result. 
+                    # This keeps the previous status unless explicitly changed.
+                    Do 
+                    {                  
+                        Try 
+                        {
+            
+                            # Send POST request to GitHub 
+                            Invoke-RestMethod -Headers $GitHubHeaders -Uri $StatusUrl -Method POST -Body $StatusJson -ErrorAction Stop 
+                            $SuccessfulPost = $True
+                        } 
+                        Catch 
+                        {
+            
+                            # If the request fails for any reason, retry it after a delay, up to six times.
+                            $RetryCount++
+                            Start-Sleep 1
+                        }
+                    } Until (($SuccessfulPost) -or ($RetryCount -gt 5))
+                }
+
+                # Print out current date and time
+                $currentDateTime = Get-Date
+                $currentDateTimeString = "{0:yyyy-MM-dd HH:mm:ss}" -f $currentDateTime
+                Write-Output "Run end: $currentDateTimeString"
+
+                If ($CheckFailed) 
+                {
+                    # Populates the job summary if a user doesn't have permissions to sign off.
+                    echo "# Pull request validation error" >> $env:GITHUB_STEP_SUMMARY
+                    echo "" >> $env:GITHUB_STEP_SUMMARY
+                    echo "The user $CommentUser with permission level $UserPermission tried to sign off PR: $PrHtmlUrl but doesn't have the necessary permissions to do so. Please contact the content team to request sign off." >> $env:GITHUB_STEP_SUMMARY
+                } 
+                ElseIf ($CatastrophicError)
+                {
+                    # Makes sure the workflow looks failed so we can investigate the bug
+
+                    echo "# Pull request validation error" >> $env:GITHUB_STEP_SUMMARY
+                    echo "" >> $env:GITHUB_STEP_SUMMARY
+                    echo "The user $CommentUser with permission level $UserPermission tried to sign off PR: $PrHtmlUrl. There was an unexpected error in the workflow, so sign-off was allowed to prevent blocking PRs. Please contact the developer of the workflow to investigate." >> $env:GITHUB_STEP_SUMMARY
+
+                    # Force the workflow to fail so the validation failure can be tracked in Actions. In this workflow, this has no effect other than logging the failure.
+                    Throw "User $CommentUser signed off but an unexpected error occurred. Please contact contact team to investigate the workflow. Sign off allowed to prevent blocking PRs."
+                }
