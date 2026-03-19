@@ -44,7 +44,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. From the top menu bar, select the question mark (**?**) to open the Fabric Help Pane. In the Help pane, enter a keyword to find a recommended solution and relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.
 
-   ![Screenshot showing how to filter the Help pane results.](media/service-support-options/help-pane-search-with-recommended-solution.png)
+   ![Screenshot of filtering the Help pane results.](media/service-support-options/help-pane-search-with-recommended-solution.png)
    
       > [!NOTE]
    > - **For GCC and other national/regional cloud customers:** The standard Fabric support page workflow might redirect you to the commercial Power BI page, which prevents you from submitting your support ticket. If you're a GCC, GCC High, DoD, or China cloud customer, you must use the dedicated [National Cloud Support](https://www.microsoft.com/power-platform/products/power-bi/clouds#Support) portal to create your support case based on your specific environment.
@@ -57,7 +57,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. If the guidance doesn't resolve your issue, scroll down, select **Contact Support**, then select your support plan. You can select either using the **Microsoft Fabric Subscription** or your Unified or Premier support plan.
 
-   ![Screenshot that shows how to select support contract in help pane.](media/create-support-ticket/selecting-support-contract-in-help-pane.png)
+   ![Screenshot of selecting a support contract in help pane.](media/create-support-ticket/selecting-support-contract-in-help-pane.png)
    
 1. If you have a *Unified* or *Premier* support plan that doesn't appear under **Support plan**, select **Add new contract** and fill in the fields. If you don't know your access or contract ID or are interested in purchasing a [Unified support contract](/power-bi/support/service-support-options), contact your service admin or Customer Success Account Manager (CSAM).
 
