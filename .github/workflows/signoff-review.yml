@@ -3,8 +3,6 @@ name: User can sign off PR
 permissions:
   pull-requests: write
   statuses: write
-  issues: write
-  contents: read
       
 on: 
   issue_comment:
@@ -25,8 +23,7 @@ jobs:
               AccessToken: ${{ secrets.GITHUB_TOKEN }}
               # For testing set to a little used folder as the only target
               MonitoredFolders: '[
-                    "powerbi-docs/fundamentals/",
-                    "powerbi-docs/create-reports/"
+                    "powerbi-docs/"
                 ]'
   
             run: |
@@ -48,7 +45,6 @@ jobs:
                 $MonitoredFolders = $env:MonitoredFolders | ConvertFrom-Json
 
                 $DefaultBranch = $GitHubData.event.repository.default_branch
-                # $DefaultBranch = "release-signoff-workflow"
                 If ($GitRequestEvent -eq "issue_comment") {$GitHubState = $GitHubData.event.issue.state} ElseIf ($GitRequestEvent -eq "pull_request_target") {$GitHubState = $GitHubData.event.pull_request.state}
                 $GitHubAction = $GitHubData.event.action
                 $GitHubSender = $GitHubData.event.sender.login
