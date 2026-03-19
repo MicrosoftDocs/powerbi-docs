@@ -133,14 +133,19 @@ When you select  **Export**, your browser prompts you to save the file. Once sav
 
 What you see when you select **Underlying data** can vary. Understanding these details might require the help of your admin or IT department. In Power BI Desktop or the Power BI service, in the reporting view, a *measure* appears in the **Fields** list with a calculator icon. :::image type="icon" source="media/power-bi-visualization-export-data/power-bi-calculator.png" border="false"::: You can create measures in Power BI Desktop.
 
+If a visual contains *only measures from a measures‑only table*, Power BI cannot return row‑level data. In this case, exporting underlying data produces a single value per measure which represents the final evaluated result of each measure.
+
 | Visual contains | What you see in export  |
 |---------------- | ---------------------------|
 | Aggregates | the *first* aggregate and nonhidden data from the entire table for that aggregate |
 | Aggregates | related data - if the visual uses data from other data tables that are  *related* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
+| Measures | all measures themselves do *not* store data |
 | Measures | all measures in the visual *and* all measures from any data table containing a measure used in the visual |
 | Measures | all nonhidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1) |
 | Measures only | all nonhidden columns from all related tables (to expand the measure) |
+| Measures only | all measures‑only table contains calculation logic (DAX) but *no rows* |
 | Measures only | summarized data for any duplicate rows for model measures |
+
 
 > [!IMPORTANT]
 > Export underlying data doesn't include datetime or variations columns. It doesn't include numeric columns if there's an aggregation. Additionally, [visual calculation](../transform-model/desktop-visual-calculations-overview.md) results aren't included.
