@@ -153,93 +153,11 @@ You specify the thresholds or ranges for the conditional formatting rules. For m
 
 With conditional formatting for tables, you can specify icons, URLs, cell background colors, and font colors based on cell values. You can also apply gradient coloring to show value distribution across a numerical range.
 
-### Set background color shading
+For detailed step-by-step instructions on all conditional formatting options for tables, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md). The following is a brief overview of the most common options:
 
-A common use for conditional table formatting is to change the cell background color based on the corresponding numerical data value. You can set static colors for specific custom values, or instruct Power BI to determine the cell color based on the data value.
-
-The **Background color** option offers a gradient that can range in color from the lowest to highest value for the category. You can configure the color gradient and specify how to choose the cell background color based on the gradient.
-
-By default, Power BI uses a gradient that spans across two primary colors from red to green. The **Minimum** value color applies to the lowest value in the range. This value is the darkest shade of red. The **Maximum** value color applies to the highest value in the range. This value is the darkest shade of green. Midrange values for the category are colored with shades of red or green depending on the specific data value.
-
-Let's modify the background color for a column that has numerical data values.
-
-1. Select the table visual.
-1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Choose the **Average Unit Price** column.
-1. On the menu, select **Conditional formatting** > **Background color**.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-color.png" alt-text="Screenshot of how to open the Conditional formatting menu for a selected column in the Visualizations pane." border="false":::
-
-   The **Background color** dialog opens.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-dialog.png" alt-text="Screenshot of the Background color dialog with the color gradient spanning two primary colors, from red to green." border="false":::
-
-1. On the dialog, select the **Add a middle color** option to expose the optional **Center** color value.
-
-   The gradient updates to include the default **Center** color value (yellow). The category values for the column can now be represented with a gradient that spans three primary colors.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-configure-background-color.png" alt-text="Screenshot of the Background color dialog with the center or middle value option available for configuration.":::
-
-1. Choose colors for the **Minimum** (lowest) and **Maximum** (highest) values.
-1. Choose a color for the **Center** (middle) option for values within the range.
-1. Select **OK** to apply your changes to the specified column.
-
-The following illustration shows how Power BI applies a color gradient to the cells in the **Average Unit Price Last Year** column. In this example, the column data is sorted in descending order, from highest to lowest value.
-
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-background-column-updates.png" alt-text="Screenshot of how Power BI applies the color gradient to the values in the specified column." border="false":::
-
-### Replace numbers with data bars
-
-You can replace numerical values in the table presentation with **Data bars**. Bars of color that represent data can be easier to scan and analyze than many numerical values.
-
-Power BI shows negative and positive data values in the table by using different bar colors. By default, **Negative** values are shaded red and **Positive** values are shaded green. This approach is similar to the default settings for the **Minimum** and **Maximum** values in the background color gradient.
-
-Each bar is the same height, which is based on the table row cell height. The length of each bar represents the numerical amount of the data. A higher number value is shown with a longer bar compared to other bars in the same column.
-
-Let's add another column to the table with a field that has both positive and negative data values. We can configure the column data to display as color bars rather than numbers.
-
-1. On the **Data** pane, expand **Sales** and select the **Total Sales Variance** checkbox.
-
-   Power BI adds the new field to the **Columns** section of the **Visualizations** pane.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-add-column.png" alt-text="Screenshot of how to add the Total Sales Variance column to the table." border="false":::
-
-1. On the **Visualizations** pane, expand the drop-down menu for the **Total Sales Variance** field under **Columns**, and select **Conditional formatting** > **Data bars**.
-1. On the **Data bars** dialog, configure how to apply conditional formatting for the data in the selected column.
-
-   - Choose colors for the **Positive bar** and **Negative bar** options.
-   - Select the **Show bar only** option.
-   - Make any other changes you'd like.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-configure-data-bars.png" alt-text="Screenshot of how to configure data bars for a selected table column." border="false":::
-
-1. Select **OK**.
-
-   Power BI updates the table data presentation style. Data bars replace the numerical values for the selected column.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-data-bars.png" alt-text="Screenshot of how Power BI updates the table column to replace numerical values with data bars." border="false":::
-
-### Use visual cues
-
-Another formatting option is to add visual cues to the table with conditional **Icons**. Icons are like data bars. They present information about the data in a more visual manner that's easier to scan and analyze than numbers.
-
-1. On the **Visualizations** pane, expand the drop-down menu for the **This Year Sales** field under **Columns**, and select **Conditional formatting** > **Icons**.
-1. On the **Icons** dialog, configure how to use conditional icons to represent the data in the selected column.
-
-   The default presentation uses three different icons based on the numerical value. Each icon represents values for one third of all the values (lowest, middle, and highest) for a range of 33 percentage points. The default position for an icon is to the left of the number within the column.
-
-   - Choose your preferences for **Icon layout**, **Icon alignment**, and **Style**.
-   - Configure your desired presentation settings according to the numerical values for the column data.
-   - Make any other changes you'd like.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-configure-icons.png" alt-text="Screenshot of how to configure icons to represent data for a selected table column." border="false":::
-
-1. Select **OK**.
-
-   Power BI updates the table data presentation style. Icons are added to the left of the numerical values for the selected column.
-
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-conditional-format-icons.png" alt-text="Screenshot of how Power BI updates the table column to show icons to the left of the numbers in the selected column." border="false":::
-
-For more information about conditional formatting, see [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md).
+- **Background color shading**: Apply a color gradient to cell backgrounds based on numerical values. Configure minimum, maximum, and optional center colors to represent value ranges visually.
+- **Data bars**: Replace numerical values with color bars that represent data magnitude, making columns easier to scan at a glance.
+- **Icons**: Add visual cues such as arrows or KPI icons next to values to represent data ranges or categories.
 
 ## Copy table values into other applications
 
