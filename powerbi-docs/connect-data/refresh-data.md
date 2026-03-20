@@ -398,8 +398,7 @@ Refresh warnings aren't available in the [Power BI REST APIs](/rest/api/power-bi
 
 > [!NOTE]
 > This feature is rolling out gradually. Before the feature reaches your tenant, Power BI doesn't capture refresh warnings. Any warnings from refresh history entries that occurred before the feature was enabled won't be displayed retroactively. In that case, the refresh history might look like the following screenshot:
-
-:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-03.png" alt-text="Screenshot showing refresh history entries with no visible warnings listed, demonstrating how the refresh history appears before the refresh warnings feature was enabled.":::
+> :::image type="content" source="media/refresh-data/refresh-completed-with-warnings-03.png" alt-text="Screenshot showing refresh history entries with no visible warnings listed, demonstrating how the refresh history appears before the refresh warnings feature was enabled.":::
 
 ## Visualize semantic model refresh details
 
