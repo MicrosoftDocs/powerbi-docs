@@ -386,6 +386,21 @@ A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium
 > [!NOTE]
 > You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
 
+## Refresh completed with warnings
+If a refresh succeeds but warnings occur during the data refresh or query cache refresh, Power BI captures and displays the warnings in the refresh history. These warnings typically require your attention. Without action, the report might show unexpected results, or the semantic model might fail to refresh or query in the future.
+
+:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-01.png" alt-text="Screenshot of refresh history with refresh warnings.":::
+:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-02.png" alt-text="Screenshot of refresh history with refresh warning details.":::
+
+A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) doesn't show refresh warnings in the refresh history, even if warnings occur. Instead, refresh warnings appear directly in the XMLA response.
+
+Refresh warnings aren't available in the [Power BI REST APIs](/rest/api/power-bi/).
+
+> [!NOTE]
+> This feature is rolling out gradually. Before the feature reaches your tenant, Power BI doesn't capture refresh warnings. Any warnings from refresh history entries that occurred before the feature was enabled won't be displayed retroactively. In that case, the refresh history might look like the following screenshot:
+
+:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-03.png" alt-text="Screenshot showing refresh history entries with no visible warnings listed, demonstrating how the refresh history appears before the refresh warnings feature was enabled.":::
+
 ## Visualize semantic model refresh details
 
 In the **Fabric Monitoring Hub** you can centrally monitor Microsoft Fabric activities. The hub displays refresh activities for all semantic models including the status of its most recent refresh. When selecting an activity name, you can access a dedicated **Semantic Model Refresh Detail** page that provides comprehensive information about the selected refresh activity.
