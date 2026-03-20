@@ -7536,6 +7536,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "powerbi-docs/troubleshoot/index.yml",
+      "redirect_url": "/power-bi/support/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/create-reports/desktop-add-column-from-example.md",
       "redirect_url": "/power-bi/transform-model/desktop-add-column-from-example",
       "redirect_document_id": true
