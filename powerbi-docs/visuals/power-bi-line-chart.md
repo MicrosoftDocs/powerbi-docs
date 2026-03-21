@@ -25,7 +25,7 @@ Power BI offers four line chart variants:
 - **Stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-stacked-area-chart.png":::
 - **100% stacked area chart** :::image type="icon" source="media/power-bi-line-chart/icon-100-stacked-area-chart.png":::
 
-Lines are also available on combo charts, which combine lines with columns or areas. For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
+Lines are also available on combo charts, which combine lines with columns. For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
 
 ## Sample data
 
@@ -132,14 +132,16 @@ To follow along with the examples in this article, create a calculated table wit
 Add measures to aggregate the sample data. Open the TMDL view (**View** > **TMDL view**), navigate to the **Units sold** table definition, and add the following measures:
 
 ```tmdl
-measure 'Total units sold' = SUM('Units sold'[Online]) + SUM('Units sold'[Store])
-    formatString: #,##0
+createOrReplace
+	ref table 'Units sold'
+		measure 'Total units sold' = SUM('Units sold'[Online]) + SUM('Units sold'[Store])
+			formatString: #,##0
 
-measure 'Units sold online' = SUM('Units sold'[Online])
-    formatString: #,##0
+		measure 'Units sold online' = SUM('Units sold'[Online])
+			formatString: #,##0
 
-measure 'Units sold in store' = SUM('Units sold'[Store])
-    formatString: #,##0
+		measure 'Units sold in store' = SUM('Units sold'[Store])
+			formatString: #,##0
 ```
 
 Alternatively, create the measures by selecting **Modeling** > **New measure** and entering each expression.
@@ -176,13 +178,12 @@ Enhance your line chart with data labels and markers to make data points more vi
 Customize how lines appear in your chart by expanding the **Lines** card in **Format visual**:
 
 - **Color**: Set the line color for each series.
-- **Stroke width**: Adjust the line thickness.
+- **Width**: Adjust the line thickness.
 - **Line style**: Choose Solid, Dashed, Dotted, or Custom. When you select Custom, additional options appear:
   - **Dash array**: Define a custom dash pattern using space-separated values (for example, "5 5 0 5" creates a dash-dot pattern).
   - **Scale by width**: When enabled, the dash pattern scales proportionally with line width.
   - **Dash cap**: Choose the shape of dash endpoints: Flat, Round, or Square.
-- **Shade area**: Fill the area below the line with color.
-- **Interpolation**: Control how points connect. **Straight** draws direct lines between points, **Smooth** creates curved connections (with **Monotone** or **Cardinal** curve options), and **Stepped** creates right-angle transitions.
+- **Interpolation**: Control how points connect. **Straight** draws direct lines between points, **Smooth** creates curved connections (with **Monotone** or **Cardinal** curve options), and **Step** creates right-angle transitions.
 
 :::image type="content" source="media/power-bi-line-charts/line-chart-line-interpolation-type.png" alt-text="Screenshot of a line chart showing different interpolation types including straight, smooth, and stepped line styles.":::
 
@@ -195,7 +196,7 @@ Customize how lines appear in your chart by expanding the **Lines** card in **Fo
 ### Add markers
 
 1. In **Format visual**, expand the **Markers** card.
-1. Toggle **Show for all series** to **On**.
+1. Toggle **Show for all series** or **Show for all categories** to **On**.
 1. Expand **Shape** to select a marker style (circle, square, diamond, triangle, or others).
 1. Use **Color** to match or contrast with your line color.
 
@@ -203,11 +204,12 @@ Customize how lines appear in your chart by expanding the **Lines** card in **Fo
 
 The Format visual pane provides additional customization options:
 
-- **Style presets**: Apply predefined visual styles.
+- **Style presets**: Apply predefined visual styles from the report theme.
 - **X-axis** and **Y-axis**: Control axis type, titles, labels, ranges, and gridlines. See [Configure axis options](#configure-axis-options) for details.
-- **Legend**: Position and format the legend.
+- **Legend**: Position and format the legend with multiple lines on the chart.
 - **Gridlines**: Show or hide horizontal and vertical gridlines.
 - **Zoom slider**: Enable interactive range selection on either axis.
+- **Series labels**: Show the label of the line next to the line.
 - **Plot area background**: Add a background image to the chart area.
 
 ### Configure axis options
@@ -222,7 +224,7 @@ The X-axis and Y-axis cards provide many options to control how axes display you
 
 ## Display multiple line series
 
-Line charts can show multiple data series (also called multiple series) simultaneously, allowing you to compare trends across categories or measures. There are two ways to create multiple series:
+Line charts can show multiple lines or multiple line series simultaneously, allowing you to compare trends across categories or measures. There are two ways to create multiple series:
 
 - **Static series**: Add multiple measures to the **Y-axis** well. Each measure becomes a separate line with a fixed name.
 - **Dynamic series**: Add a field to the **Legend** well. The chart creates one line for each unique value in that field. The number of lines adjusts automatically as data changes.
@@ -271,13 +273,13 @@ To enable series labels:
 1. Select your line chart and open **Format visual** in the Visualizations pane.
 1. Expand the **Series labels** card and toggle it to **On**.
 
-Series labels include leader lines that connect the label to its line. The leader line automatically points to the closest marker, even when the endpoint is further along the chart or when you use zoom sliders to change the visible X-axis range.
+Series labels include **leader lines** connecting the label to its line. The leader line automatically points to the closest marker, even when the endpoint is further along the chart or when you use zoom sliders to change the visible X-axis range.
 
 :::image type="content" source="media/power-bi-line-charts/line-chart-dynamic-series-leader-lines.png" alt-text="Screenshot of a line chart with series labels and leader lines connecting labels to their corresponding data lines.":::
 
 ### Customize series label appearance
 
-To make labels easier to identify when lines are close together:
+To make labels easier to identify when lines:
 
 1. In the **Series labels** card, expand **Background**.
 1. Toggle **Match series color** to **On** to give each label a background color that matches its line.
