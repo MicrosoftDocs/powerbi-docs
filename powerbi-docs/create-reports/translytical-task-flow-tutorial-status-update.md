@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 > * Create a SQL database in Fabric with project and status tracking tables.
 > * Set up a variable library to store configuration securely.
 > * Configure user data functions that update status, request updates, and send Teams notifications.
-> * Optionally set up Lakehouse mirroring with materialized views for Direct Lake mode.
+> * Optionally set up Lakehouse shortcuts with materialized views for Direct Lake views.
 > * Integrate user data functions with a Power BI report using data function buttons.
 
 If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fundamentals/fabric-trial).
@@ -463,19 +463,21 @@ Create a user data functions item that handles status updates and Teams notifica
 > [!NOTE]
 > Functions used with Power BI data function buttons must return a string (`-> str`). Power BI displays this return value to the user after the function executes, providing feedback about the action's result.
 
-## (Optional) Set up Lakehouse mirroring for Direct Lake
+## (Optional) Set up Lakehouse shortcuts for Direct Lake views
 
-For optimal analytics performance, you can mirror your SQL database tables to a Lakehouse and use Direct Lake mode. This approach provides fast queries while still supporting write-back through the SQL database.
+Fabric SQL Database stores all data as Delta tables in OneLake, so you can create a Direct Lake semantic model directly on the SQL database tables. However, Direct Lake can't read views from a SQL database—only tables. To use a view with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define the view there.
 
-### Enable database mirroring
+### Create shortcuts to the SQL database tables
 
 1. In your Fabric workspace, create a new **Lakehouse** and enable schemas.
 
-1. In your SQL database, select **Mirroring** from the ribbon.
+1. In the Lakehouse Explorer, select **New shortcut** > **Microsoft OneLake**.
 
-1. Select the `Project` and `Status updates` tables to mirror.
+1. Browse to your SQL database and select the `Project` table.
 
-1. The tables sync to the Lakehouse in the `dbo` schema automatically.
+1. Repeat to create a shortcut for the `Status updates` table.
+
+The shortcuts provide read access to the underlying Delta tables without duplicating data.
 
 ### Create a materialized lake view
 
@@ -508,14 +510,15 @@ Create a materialized view in the Lakehouse that computes the latest status for 
 1. Schedule the view refresh by selecting **Schedules** > **On** and setting the frequency.
 
 > [!NOTE]
-> Mirrored tables are read-only, so the materialized view uses full refresh. The SQL database remains the write target for the user data functions.
+> The SQL database remains the write target for user data functions. The Lakehouse shortcuts provide read-only access for analytics through the materialized view.
 
 ## Create the Power BI report
 
 You can connect to your data using either DirectQuery or Direct Lake:
 
 - **DirectQuery to SQL Database**: Real-time data, supports write-back through user data functions.
-- **Direct Lake via Lakehouse**: Faster analytics queries, data refreshes based on mirroring and materialized view schedule.
+- **Direct Lake to SQL Database tables**: Fabric SQL Database stores data as Delta tables in OneLake, so Direct Lake can read tables directly.
+- **Direct Lake via Lakehouse (for views)**: Direct Lake can't read views from SQL Database. To use views with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define materialized views there.
 
 > [!TIP]
 > Avoid Import mode for translytical scenarios. With Import, the semantic model must be refreshed before updated values appear in the report, which breaks the real-time feedback loop.
