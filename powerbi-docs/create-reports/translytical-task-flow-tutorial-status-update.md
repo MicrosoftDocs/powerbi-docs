@@ -782,8 +782,13 @@ Add two buttons: one for updating status and one for requesting a status update.
    | `notes` | Slicer | Text slicer visual (auto-clear enabled) |
    | `updatedDate` | Measure | `[Updated date]` measure |
 
+1. In the **Format** pane under **Action**, enable **Refresh the report after successful outcome**. This setting automatically refreshes the report page after the function executes successfully.
+
    > [!TIP]
    > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
+
+> [!NOTE]
+> The automatic report refresh shows updated data immediately for DirectQuery and Direct Lake storage modes. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration.":::
 
@@ -806,6 +811,8 @@ Add two buttons: one for updating status and one for requesting a status update.
    | `projectId` | Measure | `[Selected project id]` measure |
    | `requestedBy` | Measure | `[Updated by]` measure |
    | `message` | Slicer | Text slicer visual (auto-clear enabled) |
+
+1. Optionally enable **Refresh the report after successful outcome** in the **Format** pane under **Action**.
 
 1. Save your report and publish it to the Power BI service.
 
