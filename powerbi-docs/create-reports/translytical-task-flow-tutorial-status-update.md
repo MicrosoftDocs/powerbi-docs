@@ -817,19 +817,23 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 ### Test the request status update flow
 
-1. Open your published report in the Power BI service.
+The following image shows the numbered steps for requesting a status update from a project owner.
 
-1. Select a project row in the table to set the filter context.
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the numbered steps for requesting a status update: 1) select a project, 2) enter a message, 3) select Send teams message to channel, 4) see confirmation, 5) Teams notification appears with Update Project Status button.":::
 
-1. Enter a message in the input slicer (for example, "Please provide an update on this project").
+1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
-1. Select the **Request update** button.
+1. **Or send a message to the teams channel** - Enter a message in the input slicer (for example, "Can we get an update on this?").
 
-1. Check your Teams channel for the request notification.
+1. Select the **Send teams message to channel** button.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the report flow for requesting a status update from a project owner.":::
+1. A **Request submitted** confirmation appears when the action completes successfully.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-asking-for-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams requesting a status update.":::
+1. Check your Teams channel for the **Project Status Update** Adaptive Card with the request details.
+
+1. The project owner can select **Update Project Status** in the Adaptive Card to open the report and update their status.
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-asking-for-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams requesting a status update with the Update Project Status button.":::
 
 ### Test the update status flow
 
