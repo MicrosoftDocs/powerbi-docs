@@ -1,15 +1,14 @@
 ---
 title: Create a card visual in Power BI
-description: This article provides an understanding of the card visual and a quick three-step guide on how to build a card visual in Power BI Desktop.
+description: Learn how to create and customize the card visual in Power BI, including callout images, categories, reference labels, and data-driven SVG images.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 03/22/2026
 ai-usage: ai-assisted
-ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the card visual so that I can effectively and more easily build card visuals in Power BI Desktop.
 ---
@@ -18,9 +17,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The **card visual** in Power BI is a versatile tool for presenting summary measures in a visually appealing format. Each card can display a specific measure, such as total sales or profit growth, and you can customize it to reflect your objectives and key results (OKRs). This flexibility allows you to group multiple cards within a single visual, format them to match your report, and share a comprehensive overview in each card.
+The **card visual** in Power BI displays key metrics in a flexible, visually appealing format. Each card shows a measure value with optional callout images, reference labels, and supporting details. You can display multiple cards in a single visual, break them down by categories, and customize layouts to match your report design.
 
-Combining multiple measures and reference labels in one visual improves the report performance by reducing visual load time and optimizing underlying queries to the semantic model.
+Combining multiple measures and reference labels in one visual improves report performance by reducing visual load time and optimizing underlying queries to the semantic model. You can also use data-driven images to create custom visualizations that respond to your data.
 
 > [!NOTE]
 > The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. Reports with the legacy card visual continue to use the legacy card visual.
@@ -94,6 +93,9 @@ The layout of category sections is controlled by the **Multi-category layout** s
 
 Follow this walkthrough to build a comprehensive card visual step by step.
 
+> [!NOTE]
+> This walkthrough uses the [modern visual defaults preview](../create-reports/power-bi-reports-visual-defaults.md) turned on. Enable this feature in **Options** > **Preview features** > **Modern visual defaults and customize theme improvements** to match the examples shown.
+
 ### Sample data
 
 To follow along with the examples in this walkthrough, create a calculated table with sample data in a blank Power BI Desktop report.
@@ -127,26 +129,30 @@ To follow along with the examples in this walkthrough, create a calculated table
 Add measures to aggregate the sample data. Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
 
 ```tmdl
-measure Units = SUM('Product Line Sales'[_Units])
-    formatString: #,##0
+createOrReplace
 
-measure Revenue = SUM('Product Line Sales'[_Revenue])
-    formatString: $#,##0
+	ref table 'Product Line Sales'
 
-measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
-    formatString: $#,##0
+		measure Units = SUM('Product Line Sales'[_Units])
+			formatString: #,##0
 
-measure Returns = SUM('Product Line Sales'[_Returns])
-    formatString: #,##0
+		measure Revenue = SUM('Product Line Sales'[_Revenue])
+			formatString: $#,##0
 
-measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
-    formatString: 0.0%
+		measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
+			formatString: $#,##0
 
-measure 'Return rate' = DIVIDE([Returns], [Units])
-    formatString: 0.0%
+		measure Returns = SUM('Product Line Sales'[_Returns])
+			formatString: #,##0
 
-measure 'Revenue variance' = [Revenue] - [Revenue target]
-    formatString: $#,##0
+		measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
+			formatString: 0.0%
+
+		measure 'Return rate' = DIVIDE([Returns], [Units])
+			formatString: 0.0%
+
+		measure 'Revenue variance' = [Revenue] - [Revenue target]
+			formatString: $#,##0
 ```
 
 Alternatively, create the measures by selecting **Modeling** > **New measure** and entering each expression.
@@ -160,6 +166,8 @@ Alternatively, create the measures by selecting **Modeling** > **New measure** a
 1. Drag **Units** to the **Values** field well.
 
 You now have a multi-card visual displaying total revenue and total units.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-basic-card.png" alt-text="Screenshot of a basic card visual displaying total revenue and total units.":::
 
 ### Add a callout image
 
@@ -180,7 +188,6 @@ createOrReplace
 				RETURN
 				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16'%3E%3Crect x='1' y='3' width='38' height='10' fill='none' stroke='%23808080' stroke-width='2' rx='2'/%3E%3Crect x='1' y='3' width='" & FORMAT(_FillWidth, "0") & "' height='10' fill='%23404040' rx='2'/%3E%3Ctext x='45' y='12' font-size='10' fill='%23404040'%3E%25%3C/text%3E%3C/svg%3E"
 			displayFolder: Images
-			lineageTag: 73d5fc74-c2b7-428e-81b9-0cc283171e70
 			dataCategory: ImageUrl
 
 		/// Generates an SVG callout image that visualizes revenue percentage to target as a bar whose length and direction reflect the variance from 100% achievement. Used in visual elements like cards or tables to show at-a-glance over- or under-performance versus the revenue target.
@@ -193,7 +200,6 @@ createOrReplace
 				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='20' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23107C10'/%3E%3C/svg%3E",
 				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='" & FORMAT(20 - _BarLength, "0") & "' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23D13438'/%3E%3C/svg%3E")
 			displayFolder: Images
-			lineageTag: d8a2caf9-40b2-48f7-afe7-2a65b7958fe0
 			dataCategory: ImageUrl
 ```
 
@@ -213,6 +219,8 @@ To add the callout images:
 
 Each card now displays a data-driven image in the callout area alongside its metric value.
 
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-callout-image.png" alt-text="Screenshot of a card visual with callout images showing data-driven SVG visualizations next to the metric values.":::
+
 ### Show by category
 
 Add a category to display your data broken down by segment.
@@ -223,25 +231,167 @@ Add a category to display your data broken down by segment.
 
 The card visual now shows a separate section for each product line and channel combination, with each section displaying units and revenue along with their callout images.
 
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-show-by-category.png" alt-text="Screenshot of a card visual broken down by product line and channel categories.":::
+
+### Add a category header background image
+
+Add a background image to your category headers to make each category stand out further. For this example, add a measure that generates an SVG gradient image.
+
+Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+
+```tmdl
+createOrReplace
+
+	ref table 'Product Line Sales'
+
+		/// Generates an SVG gradient background image for category headers.
+		measure 'Category image' =
+				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='40'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23e0e0e0;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23f5f5f5;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='40' fill='url(%23grad)'/%3E%3C/svg%3E"
+			displayFolder: Images
+			dataCategory: ImageUrl
+```
+
+To add the category header background image:
+
+1. Select your card visual.
+1. In the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **Visual** tab, expand **Category header**.
+1. In the **Apply settings to** dropdown, select **All**.
+1. Expand the **Background** section and toggle it to **On**.
+1. Toggle **Add image** to **On**.
+1. Set **Image source** to **Select from data**.
+1. Select **Category image** from the field dropdown.
+1. Set **Image fit** to **Fill**.
+1. Set **Transparency** to **50%**.
+
+Each category header now displays a subtle gradient background that helps visually separate the different category sections. You can also add individual images to each category by selecting a specific category in the **Apply settings to** dropdown.
+
 ### Add reference labels
 
-Reference labels provide additional context for your main metric.
+Reference labels provide additional context for your main metric. You can also add detail values to reference labels for more granular information.
 
-1. Drag **Units** and **Revenue % to target** to the **Reference labels** field well.
+1. In the **Visualizations** pane, select the **Format visual** icon.
 
-Your card now displays revenue as the main callout, with units and percentage to target as supporting reference labels.
+1. Under the **Visual** tab, expand the **Reference labels** section.
+
+1. In the **Apply settings to** dropdown, select **Units**.
+
+1. Drag **Returns** to the **Add label** data field.
+
+1. In the **Add label** dropdown, select **Returns**.
+
+1. Expand the **Detail** section and toggle it to **On**.
+
+1. Drag **Return rate** to the **Details** data field.
+
+1. In the **Apply settings to** dropdown, select **Revenue**.
+
+1. Drag **Revenue variance** to the **Add label** data field.
+
+1. In the **Add label** dropdown, select **Revenue variance**.
+
+1. Expand the **Detail** section and toggle it to **On**.
+
+1. Drag **Revenue % to target** to the **Details** data field.
+
+Your cards now display reference labels with details: the Units card shows returns with return rate, and the Revenue card shows revenue variance with percentage to target. You can further format reference labels, including using conditional formatting to adjust colors based on values.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-reference-labels.png" alt-text="Screenshot of a card visual with reference labels showing returns and revenue variance with detail values.":::
 
 ### Add a top-level image
 
-Add a prominent image to the card that displays outside the callout area.
+Add a prominent image to the card that displays outside the callout area. You can use this feature to show product images, store images, or manager photos. In this example, we create bespoke SVG images that combine callout imagery and reference label details into a single custom visualization.
+
+Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+
+```tmdl
+createOrReplace
+
+	ref table 'Product Line Sales'
+
+		/// Generates an SVG image combining units visualization with returns and return rate information.
+		measure 'Units image' =
+				VAR _Units = [Units]
+				VAR _Returns = [Returns]
+				VAR _ReturnRate = [Return rate]
+				VAR _ReturnRatePct = FORMAT(_ReturnRate, "0.0%")
+				VAR _UnitsFormatted = FORMAT(_Units, "#,##0")
+				VAR _ReturnsFormatted = FORMAT(_Returns, "#,##0")
+				RETURN
+				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EReturns: " & _ReturnsFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ERate: " & _ReturnRatePct & "%3C/text%3E%3Crect x='5' y='40' width='100' height='8' fill='%23e0e0e0' rx='2'/%3E%3Crect x='5' y='40' width='" & FORMAT(MIN(100, (1-_ReturnRate)*100), "0") & "' height='8' fill='%23107C10' rx='2'/%3E%3C/svg%3E"
+			displayFolder: Images
+			dataCategory: ImageUrl
+
+		/// Generates an SVG image combining revenue visualization with variance and percentage to target information.
+		measure 'Revenue image' =
+				VAR _Revenue = [Revenue]
+				VAR _Variance = [Revenue variance]
+				VAR _PctToTarget = [Revenue % to target]
+				VAR _VarianceFormatted = FORMAT(_Variance, "$#,##0")
+				VAR _PctFormatted = FORMAT(_PctToTarget, "0.0%")
+				VAR _IsPositive = _Variance >= 0
+				VAR _BarWidth = MIN(50, ABS(_Variance) / 1000)
+				RETURN IF(_IsPositive,
+				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EVar: " & _VarianceFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ETo target: " & _PctFormatted & "%3C/text%3E%3Cline x1='60' y1='40' x2='60' y2='55' stroke='%23404040' stroke-width='1'/%3E%3Crect x='60' y='43' width='" & FORMAT(_BarWidth, "0") & "' height='8' fill='%23107C10'/%3E%3C/svg%3E",
+				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EVar: " & _VarianceFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ETo target: " & _PctFormatted & "%3C/text%3E%3Cline x1='60' y1='40' x2='60' y2='55' stroke='%23404040' stroke-width='1'/%3E%3Crect x='" & FORMAT(60 - _BarWidth, "0") & "' y='43' width='" & FORMAT(_BarWidth, "0") & "' height='8' fill='%23D13438'/%3E%3C/svg%3E")
+			displayFolder: Images
+			dataCategory: ImageUrl
+```
+
+To add the top-level images:
 
 1. In the **Visualizations** pane, select the **Format visual** icon.
-1. Under the **Visual** tab, expand the **Image** card.
-1. In the **Apply settings to** dropdown, choose which card to configure, or leave it as **All** to apply to all cards.
-1. Toggle **Image** to **On**.
-1. Select your image source and add your image.
 
-The image appears in its own section of the card, separate from the callout and reference labels. Use the **Cards** > **Layout** settings to adjust the arrangement of the callout, image, and reference labels sections.
+1. Under the **Visual** tab, expand the **Image** section.
+
+1. In the **Apply settings to** dropdown, select **Cards** = **Units**.
+
+1. Toggle **Image** to **On**.
+
+1. Set **Image source** to **Select from data**.
+
+1. Select **Units image** from the field dropdown.
+
+1. Set **Image fit** to **Fill**.
+
+1. In the **Apply settings to** dropdown, select **Cards** = **Revenue**.
+
+1. Toggle **Image** to **On**.
+
+1. Set **Image source** to **Select from data**.
+
+1. Select **Revenue image** from the field dropdown.
+
+1. Set **Image fit** to **Fill**.
+
+With the bespoke SVG image approach, you can consolidate the reference label and detail information into the image itself. To streamline the card layout:
+
+1. Under **Callout**, turn off the **Image** toggle for each card to remove the callout images.
+
+1. Under **Reference labels**, remove any reference labels you added by deleting them from the **Add label** data fields.
+
+1. Under **Cards** > **Layout**, set **Arrangement** to **Horizontal**.
+
+1. Set the **Order** to **Image**, **Callout**, **Reference labels**.
+
+1. Set **Callout size** to **40%**.
+
+The image now appears in its own section of the card with a horizontal layout that emphasizes the custom SVG visualization alongside the callout value.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-top-level-image.png" alt-text="Screenshot of a card visual with a horizontal layout showing custom SVG images alongside callout values.":::
+
+## Legacy single card and multi-card visuals
+
+Before the November 2025 release, Power BI included two separate card visuals: the **single card** visual for displaying one measure and the **multi-card** visual for displaying multiple measures. These legacy visuals remain available for backward compatibility. Existing reports using these visuals continue to render without changes.
+
+The new **card visual** replaces both legacy visuals and is recommended for new reports. When you select the Card icon in the Visualizations pane, it creates the new card visual introduced in the November 2025 general availability release.
+
+To access the legacy single card and multi-card visuals:
+
+1. In the **Visualizations** pane, select the three dots (**...**).
+1. Select **Restore default visuals**.
+
+The legacy visuals appear in the unpinned area of the Visualizations pane, where custom visuals typically appear. Users who need to maintain legacy behavior should continue using existing legacy card visuals in their reports.
 
 ## Considerations and limitations
 
@@ -286,7 +436,7 @@ Padding can be set in a custom theme file or added to your own custom theme file
   }
 }
 ```
-See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes) documentation or more information.
+For more information, see [Power BI report themes](../create-reports/desktop-report-themes.md).
 
 
 #### Why is there a reference label area on cards without a reference label?
@@ -322,7 +472,7 @@ This setting can be set in a custom theme file or added to your own custom theme
   }
 }
 ```
-See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes) documentation or more information.
+For more information, see [Power BI report themes](../create-reports/desktop-report-themes.md).
 
 #### Why can’t I see my image settings in the format pane?
 
@@ -337,10 +487,6 @@ To fix the image, in the format pane, adjust the **Callout** > **Image** setting
 #### Why is my category header image gone?
 
 Go to **Category header** settings and turn back on **add image**. Your image should still be there.
-
-#### Where did the legacy card and multi-card visuals go?
-
-The legacy single card and multi-card visuals reappear if you go to the three dots in the visualization pane and choose **Restore default visuals**. In a report having one of these visuals they may show in the unpinned area of the visualization pane, where you generally find custom visuals.  
 
 #### Why does the new card visual in a published report look different than it looks in Desktop?
 
@@ -371,10 +517,6 @@ During preview, the card visual's default behavior was different to how it now b
 - In earlier versions of the card visual, the **Callout** image was available as part of the **Image card**. This image is now in the **Callout** section of the **Format** pane.
 - Certain **Layout** arrangements might affect existing reports that used the card visual during its public preview phase. This effect is due to updates made to all card components as part of the general availability release, including enhancements to layout, styling, and image handling.
 - If you previously relied on the Image card layout, update your visuals accordingly by using the Format pane to access and configure the Callout image settings.
-
-### Legacy Card visual
-
-The previous (legacy) Card visual remains available for backward compatibility. Existing reports using the legacy Card visual continue to render without changes. The new Card visual is recommended for new reports. When you select the Card icon in the Visualizations pane, it creates the new Card visual introduced in the November 2025 general availability release. Users who need to maintain legacy behavior should continue using existing legacy Card visuals in their reports.
 
 ## Related content
 
