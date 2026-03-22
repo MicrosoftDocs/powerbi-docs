@@ -171,13 +171,10 @@ For example, if your Teams channel changes or you need to point to a different r
 
    | Variable name | Type | Description |
    |--------------|------|-------------|
-   | `TEAMS_WEBHOOK_URL` | Secret | Your Teams incoming webhook URL |
+   | `TEAMS_WEBHOOK_URL` | String | Your Teams incoming webhook URL |
    | `POWERBI_REPORT_URL` | String | URL to your Power BI report (added after publishing) |
 
 1. Select **Save** after adding each variable.
-
-> [!TIP]
-> Use the **Secret** type for sensitive values like webhook URLs. Secrets are encrypted and not visible in logs or the UI after saving.
 
 ### Get a Teams webhook URL
 
