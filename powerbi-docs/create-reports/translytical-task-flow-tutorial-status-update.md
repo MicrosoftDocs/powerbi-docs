@@ -815,11 +815,27 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 ## Test the workflow
 
-### Test the update status flow
+### Test the request status update flow
 
 1. Open your published report in the Power BI service.
 
 1. Select a project row in the table to set the filter context.
+
+1. Enter a message in the input slicer (for example, "Please provide an update on this project").
+
+1. Select the **Request update** button.
+
+1. Check your Teams channel for the request notification.
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the report flow for requesting a status update from a project owner.":::
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-asking-for-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams requesting a status update.":::
+
+### Test the update status flow
+
+1. In the Teams notification, select **Update Project Status** to open the report.
+
+1. Select the project row in the table to set the filter context.
 
 1. Use the button slicer to select a new status (for example, "In Progress").
 
@@ -834,20 +850,6 @@ Add two buttons: one for updating status and one for requesting a status update.
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the report flow for updating a project's status.":::
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-on-status-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams after a status update.":::
-
-### Test the request status update flow
-
-1. Select a different project row in the table.
-
-1. Enter a message in the input slicer (for example, "Please provide an update on this project").
-
-1. Select the **Request update** button.
-
-1. Check your Teams channel for the request notification, which includes a link back to the report for the project owner to update their status.
-
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the report flow for requesting a status update from a project owner.":::
-
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-asking-for-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams requesting a status update.":::
 
 ## Related content
 
