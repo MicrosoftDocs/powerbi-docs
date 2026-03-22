@@ -460,6 +460,9 @@ Create a user data functions item that handles status updates and Teams notifica
 
 1. Select **Publish** to deploy the function.
 
+> [!NOTE]
+> Functions used with Power BI data function buttons must return a string (`-> str`). Power BI displays this return value to the user after the function executes, providing feedback about the action's result.
+
 ## (Optional) Set up Lakehouse mirroring for Direct Lake
 
 For optimal analytics performance, you can mirror your SQL database tables to a Lakehouse and use Direct Lake mode. This approach provides fast queries while still supporting write-back through the SQL database.
