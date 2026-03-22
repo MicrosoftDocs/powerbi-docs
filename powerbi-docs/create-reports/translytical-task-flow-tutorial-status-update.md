@@ -52,6 +52,10 @@ The workflow creates a continuous feedback loop between report users:
 
 1. **See real-time update and send notification** — The report refreshes immediately to show the new status, and a notification posts to Teams confirming the change.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the report flow for requesting a status update from a project owner.":::
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the report flow for updating a project's status.":::
+
 ### Architecture
 
 The solution connects these components within Microsoft Fabric:
@@ -501,6 +505,8 @@ Fabric SQL Database stores all data as Delta tables in OneLake, so you can creat
 
 The shortcuts provide read access to the underlying Delta tables without duplicating data.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/lakehouse-add-shortcut-and-materialized-lake-view-options.png" alt-text="Screenshot showing the Lakehouse options for adding shortcuts and materialized lake views.":::
+
 ### Create a materialized lake view
 
 Create a materialized view in the Lakehouse that computes the latest status for each project:
@@ -531,6 +537,8 @@ Create a materialized view in the Lakehouse that computes the latest status for 
 
 1. Schedule the view refresh by selecting **Schedules** > **On** and setting the frequency.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/materialized-lake-view-schedule-and-create-options.png" alt-text="Screenshot showing the materialized lake view schedule and create options.":::
+
 > [!NOTE]
 > The SQL database remains the write target for user data functions. The Lakehouse shortcuts provide read-only access for analytics through the materialized view.
 
@@ -559,6 +567,8 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 1. When prompted for storage mode, select **DirectQuery**.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/power-bi-semantic-model-directquery.png" alt-text="Screenshot showing the DirectQuery semantic model in Power BI.":::
+
 ### Option B: Connect via Direct Lake (for analytics performance)
 
 1. In the Power BI service, select **Create** > **OneLake catalog**.
@@ -571,6 +581,8 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 > [!NOTE]
 > With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Rename the columns in the semantic model to match your measures.
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/power-bi-semantic-model-direct-lake.png" alt-text="Screenshot showing the Direct Lake semantic model in Power BI.":::
 
 ### Create the Status Options calculated table
 
@@ -690,6 +702,8 @@ These measures serve multiple purposes:
 
 The report layout guides users through a clear workflow: select a project, choose a new status, add notes, then execute the update.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/power-bi-report-design.png" alt-text="Screenshot showing the complete Power BI report design with project table, status slicer, notes input, and action buttons.":::
+
 #### Create the project table
 
 1. Add a **Table** visual to display project information.
@@ -768,6 +782,10 @@ Add two buttons: one for updating status and one for requesting a status update.
    > [!TIP]
    > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration.":::
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
+
 #### Request status update button
 
 1. Add another **Button** > **Data function**.
@@ -790,6 +808,8 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 1. Copy the report URL and add it to your variable library as `POWERBI_REPORT_URL`.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" alt-text="Screenshot showing the send Teams message button in the Power BI report.":::
+
 ## Test the workflow
 
 ### Test the update status flow
@@ -808,6 +828,10 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 1. Check your Teams channel for the Adaptive Card notification with the status change details.
 
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/user-data-function-update-project-status-flow.png" alt-text="Diagram showing the data flow when updating project status from Power BI to SQL database and Teams.":::
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/adaptive-card-on-status-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams after a status update.":::
+
 ### Test the request status update flow
 
 1. Select a different project row in the table.
@@ -817,6 +841,10 @@ Add two buttons: one for updating status and one for requesting a status update.
 1. Select the **Request update** button.
 
 1. Check your Teams channel for the request notification, which includes a link back to the report for the project owner to update their status.
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/user-data-function-send-teams-notification-flow.png" alt-text="Diagram showing the data flow when requesting a status update from Power BI to Teams.":::
+
+:::image type="content" source="media/translytical-task-flow-tutorial-status-update/adaptive-card-asking-for-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams requesting a status update.":::
 
 ## Related content
 
