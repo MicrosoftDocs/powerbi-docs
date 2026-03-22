@@ -777,11 +777,13 @@ The report layout guides users through a clear workflow: select a project, choos
 
 #### Add input slicers for notes
 
-1. Add a **Text slicer** (input slicer) for users to enter notes about the status update.
+1. Add an **Input slicer** for users to enter notes about the status update.
 
 1. Set the title to **3) Add notes for this status update**.
 
-1. Optionally, add a second text slicer titled **Or send a message to the Teams channel** for the request update workflow.
+1. Add another input slicer for the message field used by the request status update button.
+
+1. Set the title to **Or send a message to the teams channel**.
 
 > [!TIP]
 > Give each input slicer a descriptive title. When you configure a data function button, slicers appear in the parameter dropdown by their title, making it easier to identify the correct one. After configuration, you can hide the title on the report canvas if needed.
@@ -852,7 +854,7 @@ Add two buttons: one for updating status and one for requesting a status update.
    | `projectId` | Measure | `[Selected project id]` measure |
    | `newStatus` | Slicer | Button slicer visual (auto-clear enabled) |
    | `updatedBy` | Measure | `[Updated by]` measure |
-   | `notes` | Slicer | Text slicer visual (auto-clear enabled) |
+   | `notes` | Slicer | Input slicer visual (auto-clear enabled) |
    | `updatedDate` | Measure | `[Updated date]` measure |
 
 1. In the **Format** pane under **Action**, enable **Refresh the report after successful outcome**. This setting automatically refreshes the report page after the function executes successfully.
@@ -883,7 +885,7 @@ Add two buttons: one for updating status and one for requesting a status update.
    |-----------|--------------|----------|
    | `projectId` | Measure | `[Selected project id]` measure |
    | `requestedBy` | Measure | `[Updated by]` measure |
-   | `message` | Slicer | Text slicer visual (auto-clear enabled) |
+   | `message` | Slicer | Input slicer visual (auto-clear enabled) |
 
 1. Optionally enable **Refresh the report after successful outcome** in the **Format** pane under **Action**.
 
