@@ -133,31 +133,31 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Sums the _Units column in the 'Product Line Sales' table to return the total units sold.
+		/// Total number of products sold across all channels and product lines.
 		measure Units = SUM('Product Line Sales'[_Units])
 			formatString: #,##0
 
-		/// Calculate total revenue by summing the _Revenue column from the 'Product Line Sales' table.
+		/// Total sales revenue generated from all transactions.
 		measure Revenue = SUM('Product Line Sales'[_Revenue])
 			formatString: $#,##0
 
-		/// Calculates the total revenue target from the '_Revenue Target' column in the current filter context.
+		/// The planned revenue goal used to measure sales performance.
 		measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
 			formatString: $#,##0
 
-		/// Sums the total number of product returns recorded in the 'Product Line Sales' table.
+		/// Total number of products returned by customers.
 		measure Returns = SUM('Product Line Sales'[_Returns])
 			formatString: #,##0
 
-		/// Calculates the percentage of actual revenue achieved versus the revenue target by dividing [Revenue] by [Revenue target].
+		/// Shows how close actual revenue is to the target (100% = on target, >100% = exceeding).
 		measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
 			formatString: 0.0%
 
-		/// Calculates the return rate by dividing the number of returned units by the total units.
+		/// Percentage of sold units that were returned (lower is better).
 		measure 'Return rate' = DIVIDE([Returns], [Units])
 			formatString: 0.0%
 
-		/// Calculates the difference between actual revenue and revenue target to show the revenue variance.
+		/// Dollar amount above or below the revenue target (positive = exceeding, negative = behind).
 		measure 'Revenue variance' = [Revenue] - [Revenue target]
 			formatString: $#,##0
 ```
@@ -187,7 +187,7 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Generates an SVG image data URI that visually represents the percentage of unreturned units based on the Return rate measure, scaling the fill width up to a fixed maximum.
+		/// Visual indicator showing the percentage of products not returned, displayed as a progress bar.
 		measure 'Units callout image' =
 				VAR _ReturnRate = [Return rate]
 				VAR _UnreturnedPct = (1 - _ReturnRate) * 100
@@ -197,7 +197,7 @@ createOrReplace
 			displayFolder: Images
 			dataCategory: ImageUrl
 
-		/// Generates an SVG callout image that visualizes revenue percentage to target as a bar whose length and direction reflect the variance from 100% achievement. Used in visual elements like cards or tables to show at-a-glance over- or under-performance versus the revenue target.
+		/// Visual indicator showing revenue performance vs target, with green bar for above target and red for below.
 		measure 'Revenue callout image' =
 				VAR _PctToTarget = [Revenue % to target]
 				VAR _VariancePct = (_PctToTarget - 1) * 100
@@ -264,10 +264,9 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Generates a 64x64 SVG image dynamically based on Product Line (color)
-		/// and Channel (pattern). Product Line A=blue, B=green, C=purple.
-		/// Online channel uses waves pattern, Retail uses dots pattern.
-		/// Returns a data URI for use as an image in visuals.
+		/// Background image for category headers with colors by product line
+		/// (A=blue, B=green, C=purple) and patterns by channel
+		/// (Online=waves, Retail=dots).
 		measure 'Category image' =
 
 				-- Get the current filter context values
@@ -398,7 +397,7 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Generates an SVG status card that visualizes units return performance with a progress bar, pill label, and dynamic colors/text based on whether the return rate is at or below 5%.
+		/// Status card showing return performance with ON TRACK/NEEDS ATTENTION indicator and return details.
 		measure 'Units image' =
 				VAR _Units = [Units]
 				VAR _Returns = [Returns]
@@ -435,7 +434,7 @@ createOrReplace
 			displayFolder: Images
 			dataCategory: ImageUrl
 
-		/// Generates an SVG-based KPI image summarizing revenue performance versus target, including variance, percent to target, and on/off-track status using conditional colors, text, and bar visuals.
+		/// Status card showing revenue performance with ON TRACK/NEEDS ATTENTION indicator and variance details.
 		measure 'Revenue image' =
 				VAR _Revenue = [Revenue]
 				VAR _Target = [Revenue target]
