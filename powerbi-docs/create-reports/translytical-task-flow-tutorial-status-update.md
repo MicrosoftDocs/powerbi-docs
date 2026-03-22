@@ -157,7 +157,9 @@ This scenario uses a project tracking dataset. Follow the steps in [Create a SQL
 
 ## Set up a variable library
 
-Store sensitive configuration like the Teams webhook URL in a variable library rather than in your code.
+A variable library stores configuration values separately from your function code. This separation provides a key benefit: you can update values like webhook URLs or report links without editing or republishing your user data functions.
+
+For example, if your Teams channel changes or you need to point to a different report, update the variable library value and the change takes effect immediately—no code changes required.
 
 1. In your Fabric workspace, select **+ New item**.
 
@@ -173,6 +175,9 @@ Store sensitive configuration like the Teams webhook URL in a variable library r
    | `POWERBI_REPORT_URL` | String | URL to your Power BI report (added after publishing) |
 
 1. Select **Save** after adding each variable.
+
+> [!TIP]
+> Use the **Secret** type for sensitive values like webhook URLs. Secrets are encrypted and not visible in logs or the UI after saving.
 
 ### Get a Teams webhook URL
 
