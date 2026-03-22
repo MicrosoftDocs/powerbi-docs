@@ -539,13 +539,13 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 ### Option B: Connect via Direct Lake (for analytics performance)
 
-1. In your Fabric workspace, select your Lakehouse.
+1. In the Power BI service, select **Create** > **OneLake catalog**.
 
-1. Select **New semantic model** from the ribbon.
+1. Find your Lakehouse.
 
 1. Select the shortcut tables (`Project`, `Status updates`) and the materialized view (`project_status`).
 
-1. Open in Power BI Desktop via **Live edit** to add measures and relationships.
+1. Edit the semantic model in the web modeling experience to add measures and relationships.
 
 > [!NOTE]
 > With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Adjust your measures accordingly.
