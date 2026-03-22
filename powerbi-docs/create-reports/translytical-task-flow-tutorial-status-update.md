@@ -538,36 +538,119 @@ You can connect to your data using either DirectQuery or Direct Lake:
 > [!NOTE]
 > With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Adjust your measures accordingly.
 
-### Create supporting measures
+### Create the Status Options calculated table
 
-Create measures to support the data function button parameters:
+Create a calculated table that provides the status values for the button slicer. Run this TMDL script in Power BI Desktop:
 
-```dax
-Selected project id = SELECTEDVALUE(Project[Project id], -1)
+```tmdl
+createOrReplace
 
-Updated by = USERPRINCIPALNAME()
+	table 'Status Options'
 
-Updated date = FORMAT(NOW(), "yyyy-MM-ddTHH:mm:ss")
+		column Status
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Status]
+			sortByColumn: 'Sort Order'
 
-Update button text = 
-    VAR SelectedProject = SELECTEDVALUE(Project[Project name], "")
-    VAR SelectedStatus = SELECTEDVALUE('Status Options'[Status], "")
-    RETURN IF(
-        SelectedProject <> "" && SelectedStatus <> "",
-        "Update " & SelectedProject & " to " & SelectedStatus,
-        "Select a project and status"
-    )
+		column Description
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Description]
 
-Request update button text = 
-    VAR SelectedProject = SELECTEDVALUE(Project[Project name], "")
-    RETURN IF(
-        SelectedProject <> "",
-        "Request update for " & SelectedProject,
-        "Select a project"
-    )
+		column 'Sort Order'
+			isHidden
+			formatString: 0
+			summarizeBy: sum
+			isNameInferred
+			sourceColumn: [Sort Order]
+
+		column 'Status Color'
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Status Color]
+
+		partition 'Status Options' = calculated
+			mode: import
+			source =
+				DATATABLE(
+				    "Status", STRING,
+				    "Description", STRING,
+				    "Sort Order", INTEGER,
+				    "Status Color", STRING,
+				    {
+				        { "Not Started", "Project has been created but work has not begun", 1, "#808080" },
+				        { "In Progress", "Active work is being performed on the project", 2, "#0078D4" },
+				        { "On Hold", "Project is paused pending resources, decisions, or dependencies", 3, "#FFB900" },
+				        { "Completed", "All project deliverables have been finished", 4, "#107C10" },
+				        { "Cancelled", "Project has been terminated and will not be completed", 5, "#D13438" }
+				    }
+				)
 ```
 
-These button text measures serve two purposes: they provide dynamic labeling and validate that required selections are made. When a user selects a project row in a table or other visual, `SELECTEDVALUE` captures that selection. The measure then provides clear feedback about what action the button performs.
+### Create supporting measures
+
+Create a calculated table to hold the measures that support the data function buttons. Run this TMDL script in Power BI Desktop:
+
+```tmdl
+createOrReplace
+
+	ref table 'Translytical task flow'
+
+		measure 'Selected project id' = SELECTEDVALUE(Project[Project id])
+			formatString: 0
+
+		measure 'Updated by' = USERPRINCIPALNAME()
+
+		measure 'Updated date' = FORMAT(TODAY(), "yyyy-mm-dd")
+
+		measure 'Update status button text' = "Update the status of " & SELECTEDVALUE(Project[Project name]) & " to " & SELECTEDVALUE('Status Options'[Status])
+
+		measure 'Latest status' =
+				IF(HASONEVALUE(Project[Project id]),
+				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Status])),
+				BLANK())
+
+		measure 'Latest notes' =
+				IF(ISINSCOPE(Project[Project name]), 
+				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Notes])), 
+				BLANK())
+
+		measure 'Preview of status update' = ```
+				VAR _ProjectId = SELECTEDVALUE(Project[Project id], 0)
+				VAR _ProjectName = SELECTEDVALUE(Project[Project name], "")
+				VAR _PreviousStatus = [Latest Status]
+				VAR _NewStatus = SELECTEDVALUE('Status Options'[Status], "N/A")
+				VAR _UpdatedBy = [Updated by]
+				VAR _UpdatedDate = FORMAT(NOW(), "YYYY-MM-DD HH:mm")
+				VAR _NL = UNICHAR(10)
+				RETURN 
+				IF(_ProjectId = 0 || _NewStatus = "N/A",
+				    "⚠️ Select a project and new status to preview",
+				    "📋 Teams Notification Preview" & _NL &
+				    "━━━━━━━━━━━━━━━━━━━━" & _NL &
+				    "Project: " & _ProjectName & _NL &
+				    "Status: " & _PreviousStatus & " → " & _NewStatus & _NL &
+				    "Updated By: " & _UpdatedBy & _NL &
+				    "Date: " & _UpdatedDate & _NL &
+				    "Notes: See above" & _NL &
+				    "━━━━━━━━━━━━━━━━━━━━" & _NL &
+				    "📨 This will be sent to Teams"
+				)
+				```
+```
+
+> [!NOTE]
+> If you don't have a `Translytical task flow` table, first create it as a calculated table with `= {1}` or add the measures to an existing table.
+
+These measures serve multiple purposes:
+
+- **Selected project id**: Captures the selected project from a table or other visual
+- **Updated by**: Returns the current user's email via `USERPRINCIPALNAME()`
+- **Updated date**: Returns today's date formatted for the UDF
+- **Update status button text**: Provides dynamic labeling for the update button
+- **Latest status/notes**: Show current values in the report using `LASTNONBLANKVALUE`
+- **Preview of status update**: Shows what the Teams notification will contain before sending
 
 ### Design the report
 
@@ -586,7 +669,7 @@ Add two buttons: one for updating status and one for requesting a status update.
 1. In the **Insert** tab, select **Button** > **Data function**.
 
 1. In the **Format** pane, configure the button:
-   - Set **Text** to your `[Update button text]` measure for dynamic labeling.
+   - Set **Text** to your `[Update status button text]` measure for dynamic labeling.
    - Select your published `update_project_status` function.
 
 1. Map the function parameters:
@@ -604,7 +687,7 @@ Add two buttons: one for updating status and one for requesting a status update.
 1. Add another **Button** > **Data function**.
 
 1. In the **Format** pane, configure the button:
-   - Set **Text** to your `[Request update button text]` measure.
+   - Set **Text** to a measure like `"Request update for " & SELECTEDVALUE(Project[Project name])`.
    - Select your published `request_status_update` function.
 
 1. Map the function parameters:
