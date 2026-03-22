@@ -798,8 +798,35 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 ## Related content
 
+**Translytical task flows**
+
 - [Understand translytical task flows](./translytical-task-flow-overview.md)
 - [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md)
 - [Create a data function button in Power BI](./translytical-task-flow-button.md)
+
+**Report visuals**
+
+- [Create buttons in Power BI reports](./desktop-buttons.md)
+- [Use the button slicer visual](../visuals/power-bi-visualization-button-slicer.md)
+- [Use the input slicer visual](../visuals/power-bi-visualization-input-slicer.md)
+
+**DAX functions**
+
+- [SELECTEDVALUE function (DAX)](/dax/selectedvalue-function-dax)
+- [USERPRINCIPALNAME function (DAX)](/dax/userprincipalname-function-dax)
+
+**Fabric data**
+
 - [User data functions overview](/fabric/data-engineering/user-data-functions/user-data-functions-overview)
-- [Create and manage variable libraries](/fabric/cicd/variable-library/get-started-variable-libraries)
+- [Create user data functions](/fabric/data-engineering/user-data-functions/create-user-data-functions-portal)
+- [Connect user data functions to data sources](/fabric/data-engineering/user-data-functions/connect-to-data-sources)
+- [Create and manage variable libraries](/fabric/cicd/variable-library/variable-library-overview)
+- [Fabric SQL Database overview](/fabric/database/sql/overview)
+- [Lakehouse overview](/fabric/data-engineering/lakehouse-overview)
+- [Direct Lake overview](/fabric/fundamentals/direct-lake-overview)
+- [Materialized lake views overview](/fabric/data-engineering/materialized-lake-views/overview-materialized-lake-view)
+
+**Microsoft Teams**
+
+- [Create an incoming webhook in Teams](/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook)
+- [Adaptive Cards](https://adaptivecards.microsoft.com/)
