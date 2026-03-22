@@ -548,7 +548,7 @@ You can connect to your data using either DirectQuery or Direct Lake:
 1. Edit the semantic model in the web modeling experience to add measures and relationships.
 
 > [!NOTE]
-> With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Adjust your measures accordingly.
+> With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Rename the columns in the semantic model to match your measures.
 
 ### Create the Status Options calculated table
 
