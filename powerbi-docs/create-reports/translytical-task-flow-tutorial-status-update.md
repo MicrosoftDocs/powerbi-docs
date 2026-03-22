@@ -760,7 +760,7 @@ The report layout guides users through a clear workflow: select a project, choos
 
 #### Create the button slicer for status selection
 
-1. Add a **Button slicer** visual (also called Advanced slicer).
+1. Add a **Button slicer** visual.
 
 1. In the **Values** field, add `Status Options[Status]`.
 
