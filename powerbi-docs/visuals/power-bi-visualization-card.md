@@ -3,7 +3,7 @@ title: Create a card visual in Power BI
 description: This article provides an understanding of the card visual and a quick three-step guide on how to build a card visual in Power BI Desktop.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: jacindaeng
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -25,79 +25,223 @@ Combining multiple measures and reference labels in one visual improves the repo
 > [!NOTE]
 > The **(new) card visual** became generally available as the **card visual** with the November 2025 Power BI release. Reports with the legacy card visual continue to use the legacy card visual.
 
-## Prerequisites
-
-In the following guide, you use the [Retail Analysis Sample file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). Use the steps for your environment:
-
-# [Power BI Desktop](#tab/powerbi-desktop)
-
-> [!IMPORTANT]
-> Always make sure you have the [latest version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
-
-1. Launch **Power BI Desktop**.
-1. From the left-side navigation pane, select **Open**, or select **File > Open** from the menu.
-1. Locate and select your copy of the **Retail Analysis Sample PBIX**. The file opens in report view.
-
-# [Power BI service](#tab/powerbi-service)
-
-1. Sign in to the Power BI service (`app.powerbi.com`).
-1. From the left-side navigation pane, select **Learn**.
-1. On the **Learning center** page, under **Sample reports**, locate and select **Retail Analysis Sample**. It opens in Reading mode and adds the dashboard, report, and semantic model to your workspace.
-1. At the top of the report, select **Edit** to switch to the Report editor (Edit mode).
-
----
-
-[!INCLUDE[sharing-license-requirements](../includes/share-license-requirements.md)]
-
 ## Create a card visual
 
-You can create a card visual in several ways:
+1. In the **Visualizations** pane, select the **Build visual** tab, then select the **Card** visual from the visual gallery.
 
-- Start from the **Visualizations** pane and select the **card visual** icon.
-- Expand the **Data** pane, select the necessary data fields, then select the **card visual** icon from the **Visualizations** pane.
-- In Power BI Desktop, you can also start from the **Insert** ribbon, select **New visual**, then select the **card visual** icon from the **Visualizations** pane.
-
-For this article, use the first option:
-
-1. From the **Visualizations** pane, make sure the **Build visual** tab is selected, then select the **card visual** icon in the visual gallery.
-
-1. Use the **Data** pane to add data to the visual. You can add data by selecting each field in the **Data** pane, dragging the fields to the field wells on the **Visualizations** pane, or dragging the fields directly to the visual placeholder on the report canvas. Expand the **Sales** group, then drag **StoreCount** and **TotalSalesLY** to the **Value** field well. You see that each data field you added is displayed as its own card.
+1. Add a measure or any data column to the **Values** field well.
 
    :::image type="content" source="media/power-bi-visualization-card-visual/build-card.png" alt-text="Screenshot of the Data pane with StoreCount and TotalSalesLY measures added to the Value field well in the Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card.png":::
 
-1. To customize your visual, select the **Format visual** icon in the **Visualizations** pane. You can access all available settings under the **Visual** and **General** tabs. This access allows you to tailor the chart's appearance and functionality to your specific requirements.
-
-You successfully created a card visual with Power BI. Now that you understand how to build a card visual, let's explore some of the other key features that this visual offers.
+You now have a simple card. You can add as many values as you like and more cards appear.
 
 ## Customize the card visual layout
 
-Let's dive into layout features that make your visuals more organized and visually appealing. Under the **Visual** tab, you can find different parts of the card visual to customize. The **Multicategory layout** formats the organization of the category headers (such as Canada, Germany). The **Multicard layout** customizes the layout of the cards within each category. Each card can have three sections: callout, hero image, and reference label. To understand the difference between callouts and hero images, see the [Add an image](#add-an-image) section. **Reference labels layout** controls how the reference labels are organized.
-
-Within each of these parts of the card, you can further customize the look and feel including gaps, padding, backgrounds, and more.
+The card visual offers several layout options to make your visuals more organized and visually appealing. Access these settings by selecting the **Format visual** icon in the **Visualizations** pane, then select the **Visual** tab.
 
 :::image type="content" source="media/power-bi-visualization-card-visual/multicard-layout.png" alt-text="Screenshot of the Visualizations pane with Format visual and Visual tab selected, all Format controls highlighted." lightbox="media/power-bi-visualization-card-visual/multicard-layout.png":::
 
+### Card layout
+
+The **Cards** > **Layout** controls how elements are arranged within each card. Each card can have three sections: callout, image, and reference labels. Use these settings to adjust the positioning, alignment, and spacing of these elements.
+
+The card visual includes a dynamic *collage* layout that lets you highlight one section while the other two share the remaining space. You can also customize the display order of the callout, reference label, and hero image and give them each different background colors.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/enhanced-layout.png" alt-text="Screenshot of the Image pane with the card and image settings you can apply." lightbox="media/power-bi-visualization-card-visual/enhanced-layout.png":::
+
+### Callout layout
+
+The **Callout** > **Layout** controls the vertical alignment and size of the callout within the callout section of each card.
+
+### Reference labels layout
+
+The **Reference labels layout** controls how reference labels are organized within the reference labels section of each card. You can customize the look and feel including gaps, padding, backgrounds, and more.
+
+### Multi-card layout
+
+The **Multi-card layout** customizes how multiple cards fit within the visual container. When you have multiple values, this setting controls the arrangement of cards. 
+
+### Multi-category layout
+
+The **Multi-category layout** formats how each category section is laid out (such as Canada, Germany). Use this setting when you have categories added to your card visual. Within each category section, cards are arranged according to the multi-card layout settings.
+
 ## Add an image
 
-The card visual in Power BI lets you create visually appealing cards that combine metrics with two image options for better context and branding:
+The card visual in Power BI lets you create visually appealing cards that combine metrics with multiple image options, including:
 
-- **Callout**: A value, label, or image that provides subtle enhancements that work well for branding elements or small visual cues without overwhelming the metric display.
-- **Hero image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card.
+- **Image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card. Configure this in the **Image** section of the format pane.
+- **Callout image**: A smaller image within the callout that provides subtle enhancements, working well for branding elements or small visual cues without overwhelming the metric display. Configure this in **Callout** > **Image**.
+- **Category header background image**: A background image for category headers when you have categories added to the card visual. Configure this in the **Category header** section.
 
 To add images to your card visual: 
 
-- **Add a hero image:** With the card visual selected, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card. Select your card in the **Cards** dropdown, and then set the **Image** toggle to *on*. 
-- **Add a callout image**: From the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Callout** card. Ensure your card is selected in the **Apply settings**, expand the **Image** controls, and then set the **Image** toggle to *on*. 
+- **Add an image:** With the card visual selected, select the **Format visual** icon in the **Visualizations** pane. Under the **Visual** tab, expand the **Image** card. Select your card in the **Cards** dropdown, and then set the **Image** toggle to *on*. 
+- **Add a callout image**: From the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Callout** card. Ensure your card is selected in the **Apply settings**, expand the **Image** controls, and then set the **Image** toggle to *on*. 
 
-For both image types, you can add it by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
+For all image types, you can add by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
 
 :::image type="content" source="media/power-bi-visualization-card-visual/add-image.png" alt-text="Screenshot of the Visual pane with the Image selections shown to upload an image and customize it." lightbox="media/power-bi-visualization-card-visual/add-image.png":::
 
-## Apply enhanced formatting customizations 
+## Add categories
 
-The card visual introduces a dynamic *collage* layout, letting you highlight one section while the other two share the remaining space. You can also customize the display order of the callout, reference label, and hero image and give them each different background colors.  
+You can add categories to your card visual by dragging a field into the **Categories** field well in the **Build visual** section of the **Visualizations** pane. When you add a category, the card visual expands to display a separate section for each category value, with each section showing data sliced to that category.
 
-:::image type="content" source="media/power-bi-visualization-card-visual/enhanced-layout.png" alt-text="Screenshot of the Image pane with the card and image settings you can apply." lightbox="media/power-bi-visualization-card-visual/enhanced-layout.png":::
+The category headers are selectable and filter other visuals in the report when selected. This behavior lets users interact with your card visual to explore data across different segments.
+
+The layout of category sections is controlled by the **Multi-category layout** section in the format pane under the **Visual** tab. Within each category section, the arrangement of individual cards is still controlled by the **Multi-card layout** section. Elements within each card, such as the callout, image, and reference labels, are controlled by the **Cards** > **Layout** section.
+
+## Card walkthrough
+
+Follow this walkthrough to build a comprehensive card visual step by step.
+
+### Sample data
+
+To follow along with the examples in this walkthrough, create a calculated table with sample data in a blank Power BI Desktop report.
+
+1. Open Power BI Desktop and create a new blank report.
+1. Select **Modeling** > **New table**.
+1. Paste the following DAX expression:
+
+   ```dax
+   Product Line Sales =
+   DATATABLE(
+       "Product Line", STRING,
+       "Channel", STRING,
+       "_Units", INTEGER,
+       "_Revenue", INTEGER,
+       "_Revenue Target", INTEGER,
+       "_Returns", INTEGER,
+       {
+           {"A", "Online", 1200, 84000, 80000, 45},
+           {"A", "Retail", 800, 48600, 60000, 154},
+           {"B", "Online", 2400, 168000, 150000, 89},
+           {"B", "Retail", 1600, 112000, 120000, 640},
+           {"C", "Online", 600, 72000, 70000, 18},
+           {"C", "Retail", 950, 114000, 100000, 31}
+       }
+   )
+   ```
+
+1. Press **Enter** to create the table.
+
+Add measures to aggregate the sample data. Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+
+```tmdl
+measure Units = SUM('Product Line Sales'[_Units])
+    formatString: #,##0
+
+measure Revenue = SUM('Product Line Sales'[_Revenue])
+    formatString: $#,##0
+
+measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
+    formatString: $#,##0
+
+measure Returns = SUM('Product Line Sales'[_Returns])
+    formatString: #,##0
+
+measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
+    formatString: 0.0%
+
+measure 'Return rate' = DIVIDE([Returns], [Units])
+    formatString: 0.0%
+
+measure 'Revenue variance' = [Revenue] - [Revenue target]
+    formatString: $#,##0
+```
+
+Alternatively, create the measures by selecting **Modeling** > **New measure** and entering each expression.
+
+### Create a basic card
+
+1. In the **Visualizations** pane, select the **Build visual** tab, then select the **Card** visual from the visual gallery.
+
+1. Drag **Revenue** to the **Values** field well.
+
+1. Drag **Units** to the **Values** field well.
+
+You now have a multi-card visual displaying total revenue and total units.
+
+### Add a callout image
+
+Add an image to the callout area to make your card more visually engaging. For this example, add two measures that generate SVG images based on the data.
+
+Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+
+```tmdl
+createOrReplace
+
+	ref table 'Product Line Sales'
+
+		/// Generates an SVG image data URI that visually represents the percentage of unreturned units based on the Return rate measure, scaling the fill width up to a fixed maximum.
+		measure 'Units callout image' =
+				VAR _ReturnRate = [Return rate]
+				VAR _UnreturnedPct = (1 - _ReturnRate) * 100
+				VAR _FillWidth = MIN(38, MAX(0, _UnreturnedPct * 0.38))
+				RETURN
+				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16'%3E%3Crect x='1' y='3' width='38' height='10' fill='none' stroke='%23808080' stroke-width='2' rx='2'/%3E%3Crect x='1' y='3' width='" & FORMAT(_FillWidth, "0") & "' height='10' fill='%23404040' rx='2'/%3E%3Ctext x='45' y='12' font-size='10' fill='%23404040'%3E%25%3C/text%3E%3C/svg%3E"
+			displayFolder: Images
+			lineageTag: 73d5fc74-c2b7-428e-81b9-0cc283171e70
+			dataCategory: ImageUrl
+
+		/// Generates an SVG callout image that visualizes revenue percentage to target as a bar whose length and direction reflect the variance from 100% achievement. Used in visual elements like cards or tables to show at-a-glance over- or under-performance versus the revenue target.
+		measure 'Revenue callout image' =
+				VAR _PctToTarget = [Revenue % to target]
+				VAR _VariancePct = (_PctToTarget - 1) * 100
+				VAR _IsPositive = _VariancePct >= 0
+				VAR _BarLength = MIN(20, ABS(_VariancePct) * 0.4)
+				RETURN IF(_IsPositive,
+				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='20' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23107C10'/%3E%3C/svg%3E",
+				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='" & FORMAT(20 - _BarLength, "0") & "' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23D13438'/%3E%3C/svg%3E")
+			displayFolder: Images
+			lineageTag: d8a2caf9-40b2-48f7-afe7-2a65b7958fe0
+			dataCategory: ImageUrl
+```
+
+To add the callout images:
+
+1. Select your card visual.
+1. In the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **Visual** tab, expand **Callout**.
+1. In the **Apply settings to** dropdown, select **Units**.
+1. Expand **Image** and toggle it to **On**.
+1. Set **Image type** to **Select from data**.
+1. Select **Units callout image** from the field dropdown.
+1. In the **Apply settings to** dropdown, select **Revenue**.
+1. Expand **Image** and toggle it to **On**.
+1. Set **Image type** to **Select from data**.
+1. Select **Revenue callout image** from the field dropdown.
+
+Each card now displays a data-driven image in the callout area alongside its metric value.
+
+### Show by category
+
+Add a category to display your data broken down by segment.
+
+1. In the **Data** pane, drag **Product Line** to the **Categories** field well.
+
+1. Drag **Channel** to the **Categories** field well to further break down the data by sales channel within each product line.
+
+The card visual now shows a separate section for each product line and channel combination, with each section displaying units and revenue along with their callout images.
+
+### Add reference labels
+
+Reference labels provide additional context for your main metric.
+
+1. Drag **Units** and **Revenue % to target** to the **Reference labels** field well.
+
+Your card now displays revenue as the main callout, with units and percentage to target as supporting reference labels.
+
+### Add a top-level image
+
+Add a prominent image to the card that displays outside the callout area.
+
+1. In the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **Visual** tab, expand the **Image** card.
+1. In the **Apply settings to** dropdown, choose which card to configure, or leave it as **All** to apply to all cards.
+1. Toggle **Image** to **On**.
+1. Select your image source and add your image.
+
+The image appears in its own section of the card, separate from the callout and reference labels. Use the **Cards** > **Layout** settings to adjust the arrangement of the callout, image, and reference labels sections.
 
 ## Considerations and limitations
 
@@ -182,13 +326,13 @@ See the [Power BI report themes](/power-bi/create-reports/desktop-report-themes)
 
 #### Why can’t I see my image settings in the format pane?
 
-During preview, the callout image was added using the **image** section of the format pane and showed in the callout area next to the text. After November 2025, those images previously added were kept in the callout area, and their settings move to **Callout** > **Image** section in the format pane. Setting the **image** section of the format pane now adds a new hero image to the card with its own area. 
+During preview, the callout image was added using the **Image** section of the format pane and showed in the callout area next to the text. After November 2025, those images previously added were kept in the callout area, and their settings moved to **Callout** > **Image** section in the format pane. Setting the **Image** section of the format pane now adds a new image to the card with its own area. 
 
 #### Why is my image now zoomed in?
 
 During preview, the default settings for size of the image had some bugs corrected by the November 2025 update. Depending on your initial settings, the image can look “zoomed in” or different from before.
 
-To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit** or **center**, and check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level **image** section is now for the hero image.
+To fix the image, in the format pane, adjust the **Callout** > **Image** settings for **image fit** to be **fit** or **center**, and check the **size** and **image area size** controls in the same formatting section. Note this setting is in a new location, and the top-level **Image** section is now for the card image.
 
 #### Why is my category header image gone?
 
