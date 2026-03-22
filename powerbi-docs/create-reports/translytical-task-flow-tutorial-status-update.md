@@ -747,6 +747,9 @@ The report layout guides users through a clear workflow: select a project, choos
 
 1. Optionally, add a second text slicer titled **Or send a message to the Teams channel** for the request update workflow.
 
+> [!TIP]
+> Give each input slicer a descriptive title. When you configure a data function button, slicers appear in the parameter dropdown by their title, making it easier to identify the correct one. After configuration, you can hide the title on the report canvas if needed.
+
 #### Add the preview table
 
 1. Add a **Table** visual with a single column: the `[Preview of status update]` measure.
