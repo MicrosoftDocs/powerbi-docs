@@ -161,13 +161,13 @@ Alternatively, create the measures by selecting **Modeling** > **New measure** a
 
 1. In the **Visualizations** pane, select the **Build visual** tab, then select the **Card** visual from the visual gallery.
 
-1. Drag **Revenue** to the **Values** field well.
-
 1. Drag **Units** to the **Values** field well.
 
-You now have a multi-card visual displaying total revenue and total units.
+1. Drag **Revenue** to the **Values** field well.
 
-:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-basic-card.png" alt-text="Screenshot of a basic card visual displaying total revenue and total units.":::
+You now have a multi-card visual displaying total units and total revenue.
+
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-basic-card.png" alt-text="Screenshot of a basic card visual displaying total units and total revenue.":::
 
 ### Add a callout image
 
@@ -212,10 +212,14 @@ To add the callout images:
 1. Expand **Image** and toggle it to **On**.
 1. Set **Image type** to **Select from data**.
 1. Select **Units callout image** from the field dropdown.
+1. Set **Image fit** to **Center**.
+1. Set **Size** to **20 px** to make the bar more visible.
 1. In the **Apply settings to** dropdown, select **Revenue**.
 1. Expand **Image** and toggle it to **On**.
 1. Set **Image type** to **Select from data**.
 1. Select **Revenue callout image** from the field dropdown.
+1. Set **Image fit** to **Center**.
+1. Set **Size** to **40 px**.
 
 Each card now displays a data-driven image in the callout area alongside its metric value.
 
@@ -228,6 +232,15 @@ Add a category to display your data broken down by segment.
 1. In the **Data** pane, drag **Product Line** to the **Categories** field well.
 
 1. Drag **Channel** to the **Categories** field well to further break down the data by sales channel within each product line.
+
+1. In the **Visualizations** pane, select the **Format visual** icon.
+
+1. Under the **Visual** tab, expand **Multi-category layout**.
+
+1. Expand **Layout**, toggle **Autogrid** to **Off**, and set **Rows** to **6** to display all categories.
+
+> [!NOTE]
+> When **Autogrid** is on, the maximum number of rows is 4. To display more rows, turn off **Autogrid**.
 
 The card visual now shows a separate section for each product line and channel combination, with each section displaying units and revenue along with their callout images.
 
@@ -244,9 +257,78 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Generates an SVG gradient background image for category headers.
+		/// Generates a 64x64 SVG image dynamically based on Product Line (color)
+		/// and Channel (pattern). Product Line A=blue, B=green, C=purple.
+		/// Online channel uses waves pattern, Retail uses dots pattern.
+		/// Returns a data URI for use as an image in visuals.
 		measure 'Category image' =
-				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='40'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23e0e0e0;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23f5f5f5;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='40' fill='url(%23grad)'/%3E%3C/svg%3E"
+
+				-- Get the current filter context values
+				VAR _ProductLine = SELECTEDVALUE('Product Line Sales'[Product Line])
+				VAR _Channel = SELECTEDVALUE('Product Line Sales'[Channel])
+
+				-- Define fill colors by Product Line (URL-encoded hex)
+				-- A = Blue (#0078D4), B = Green (#107C10), C = Purple (#8764B8)
+				VAR _FillColor =
+					SWITCH(
+						_ProductLine,
+						"A", "%230078D4",
+						"B", "%23107C10",
+						"C", "%238764B8",
+						"%23808080"  -- Default gray
+					)
+
+				-- Define stroke/pattern colors (lighter variants)
+				VAR _StrokeColor =
+					SWITCH(
+						_ProductLine,
+						"A", "%2350A0E0",
+						"B", "%2350B050",
+						"C", "%23A090D0",
+						"%23A0A0A0"  -- Default gray
+					)
+
+				-- Waves pattern for Online channel (4 horizontal wave lines)
+				VAR _WavesPattern =
+					"<path d='M0,8 Q8,0 16,8 T32,8 T48,8 T64,8 " &
+					"M0,24 Q8,16 16,24 T32,24 T48,24 T64,24 " &
+					"M0,40 Q8,32 16,40 T32,40 T48,40 T64,40 " &
+					"M0,56 Q8,48 16,56 T32,56 T48,56 T64,56' " &
+					"stroke='" & _StrokeColor & "' stroke-width='3' fill='none'/>"
+
+				-- Dots pattern for Retail channel (offset grid of circles)
+				VAR _DotsPattern =
+					-- Row 1: 4 dots at y=8
+					"<circle cx='8' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='24' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='40' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='56' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
+					-- Row 2: 3 dots at y=24 (offset)
+					"<circle cx='16' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='32' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='48' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
+					-- Row 3: 4 dots at y=40
+					"<circle cx='8' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='24' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='40' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='56' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
+					-- Row 4: 3 dots at y=56 (offset)
+					"<circle cx='16' cy='56' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='32' cy='56' r='4' fill='" & _StrokeColor & "'/>" &
+					"<circle cx='48' cy='56' r='4' fill='" & _StrokeColor & "'/>"
+
+				-- Select pattern based on Channel
+				VAR _Pattern =
+					IF(_Channel = "Online", _WavesPattern, _DotsPattern)
+
+				-- Assemble final SVG with data URI prefix
+				RETURN
+					"data:image/svg+xml;utf8," &
+					"<svg xmlns='http://www.w3.org/2000/svg' " &
+						"width='64' height='64' viewBox='0 0 64 64'>" &
+						"<rect width='64' height='64' fill='" & _FillColor & "'/>" &
+						_Pattern &
+					"</svg>"
 			displayFolder: Images
 			dataCategory: ImageUrl
 ```
