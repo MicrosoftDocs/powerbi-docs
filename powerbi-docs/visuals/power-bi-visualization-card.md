@@ -391,31 +391,78 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
-		/// Generates an SVG image combining units visualization with returns and return rate information.
+		/// Generates an SVG status card that visualizes units return performance with a progress bar, pill label, and dynamic colors/text based on whether the return rate is at or below 5%.
 		measure 'Units image' =
 				VAR _Units = [Units]
 				VAR _Returns = [Returns]
 				VAR _ReturnRate = [Return rate]
-				VAR _ReturnRatePct = FORMAT(_ReturnRate, "0.0%")
-				VAR _UnitsFormatted = FORMAT(_Units, "#,##0")
+				VAR _IsOnTrack = _ReturnRate <= 0.05  // 5% threshold
+
+				// Formatting
 				VAR _ReturnsFormatted = FORMAT(_Returns, "#,##0")
+				VAR _RateFormatted = FORMAT(_ReturnRate * 100, "0.0") & "%25"
+
+				// Filled rect - shows unreturned % (higher fill = better)
+				VAR _UnreturnedPct = (1 - _ReturnRate) * 100
+				VAR _FillWidth = MIN(80, MAX(0, _UnreturnedPct * 0.8))
+
+				// Colors - light red background when needs attention
+				VAR _BgFill = IF(_IsOnTrack, "none", "%23FDE7E9")
+				VAR _StatusTextColor = IF(_IsOnTrack, "%23605E5C", "%23A80000")
+				VAR _StatusText = IF(_IsOnTrack, "ON TRACK", "NEEDS ATTENTION")
+				VAR _PillFill = IF(_IsOnTrack, "%23F3F2F1", "%23FFFFFF")
+				VAR _PillStroke = IF(_IsOnTrack, "%23605E5C", "%23D83B01")
+				VAR _PillText = IF(_IsOnTrack, "%23323130", "%23A80000")
+				VAR _BarFill = IF(_IsOnTrack, "%23404040", "%23D83B01")
+				VAR _BarStroke = IF(_IsOnTrack, "%23808080", "%23D83B01")
+
 				RETURN
-				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EReturns: " & _ReturnsFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ERate: " & _ReturnRatePct & "%3C/text%3E%3Crect x='5' y='40' width='100' height='8' fill='%23e0e0e0' rx='2'/%3E%3Crect x='5' y='40' width='" & FORMAT(MIN(100, (1-_ReturnRate)*100), "0") & "' height='8' fill='%23107C10' rx='2'/%3E%3C/svg%3E"
+				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='80' viewBox='0 0 200 80'%3E" &
+				"%3Crect x='0' y='0' width='200' height='80' rx='4' fill='" & _BgFill & "'/%3E" &
+				"%3Ctext x='100' y='18' text-anchor='middle' font-family='Segoe UI' font-size='12' font-weight='600' fill='" & _StatusTextColor & "'%3E" & _StatusText & "%3C/text%3E" &
+				"%3Crect x='60' y='28' width='80' height='12' fill='none' stroke='" & _BarStroke & "' stroke-width='1.5' rx='2'/%3E" &
+				"%3Crect x='60' y='28' width='" & FORMAT(_FillWidth, "0") & "' height='12' fill='" & _BarFill & "' rx='2'/%3E" &
+				"%3Crect x='30' y='48' width='140' height='22' rx='11' fill='" & _PillFill & "' stroke='" & _PillStroke & "' stroke-width='1.5'/%3E" &
+				"%3Ctext x='100' y='63' text-anchor='middle' font-family='Segoe UI' font-size='11' font-weight='600' fill='" & _PillText & "'%3E" & _ReturnsFormatted & " returns (" & _RateFormatted & ")%3C/text%3E" &
+				"%3C/svg%3E"
 			displayFolder: Images
 			dataCategory: ImageUrl
 
-		/// Generates an SVG image combining revenue visualization with variance and percentage to target information.
+		/// Generates an SVG-based KPI image summarizing revenue performance versus target, including variance, percent to target, and on/off-track status using conditional colors, text, and bar visuals.
 		measure 'Revenue image' =
 				VAR _Revenue = [Revenue]
+				VAR _Target = [Revenue target]
 				VAR _Variance = [Revenue variance]
 				VAR _PctToTarget = [Revenue % to target]
-				VAR _VarianceFormatted = FORMAT(_Variance, "$#,##0")
-				VAR _PctFormatted = FORMAT(_PctToTarget, "0.0%")
-				VAR _IsPositive = _Variance >= 0
-				VAR _BarWidth = MIN(50, ABS(_Variance) / 1000)
-				RETURN IF(_IsPositive,
-				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EVar: " & _VarianceFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ETo target: " & _PctFormatted & "%3C/text%3E%3Cline x1='60' y1='40' x2='60' y2='55' stroke='%23404040' stroke-width='1'/%3E%3Crect x='60' y='43' width='" & FORMAT(_BarWidth, "0") & "' height='8' fill='%23107C10'/%3E%3C/svg%3E",
-				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Ctext x='5' y='15' font-size='10' fill='%23666'%3EVar: " & _VarianceFormatted & "%3C/text%3E%3Ctext x='5' y='30' font-size='10' fill='%23666'%3ETo target: " & _PctFormatted & "%3C/text%3E%3Cline x1='60' y1='40' x2='60' y2='55' stroke='%23404040' stroke-width='1'/%3E%3Crect x='" & FORMAT(60 - _BarWidth, "0") & "' y='43' width='" & FORMAT(_BarWidth, "0") & "' height='8' fill='%23D13438'/%3E%3C/svg%3E")
+				VAR _IsOnTrack = _PctToTarget >= 1
+
+				// Formatting
+				VAR _VarianceAbs = ABS(_Variance)
+				VAR _VarianceFormatted = IF(_Variance >= 0, "%2B", "-") & FORMAT(_VarianceAbs / 1000, "#,##0") & "K"
+				VAR _PctFormatted = IF(_PctToTarget >= 1, "%2B", "") & FORMAT((_PctToTarget - 1) * 100, "0.0") & "%25"
+
+				// Colors - light red background when needs attention
+				VAR _BgFill = IF(_IsOnTrack, "none", "%23FDE7E9")
+				VAR _StatusTextColor = IF(_IsOnTrack, "%23605E5C", "%23A80000")
+				VAR _StatusText = IF(_IsOnTrack, "ON TRACK", "NEEDS ATTENTION")
+				VAR _PillFill = IF(_IsOnTrack, "%23F3F2F1", "%23FFFFFF")
+				VAR _PillStroke = IF(_IsOnTrack, "%23605E5C", "%23D83B01")
+				VAR _PillText = IF(_IsOnTrack, "%23323130", "%23A80000")
+
+				// IBCS variance bar
+				VAR _BarX = IF(_Variance >= 0, 100, 100 - MIN(40, ABS((_PctToTarget - 1) * 100) * 0.8))
+				VAR _BarW = MIN(40, ABS((_PctToTarget - 1) * 100) * 0.8)
+				VAR _BarColor = IF(_Variance >= 0, "%23605E5C", "%23D83B01")
+
+				RETURN
+				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='80' viewBox='0 0 200 80'%3E" &
+				"%3Crect x='0' y='0' width='200' height='80' rx='4' fill='" & _BgFill & "'/%3E" &
+				"%3Ctext x='100' y='18' text-anchor='middle' font-family='Segoe UI' font-size='12' font-weight='600' fill='" & _StatusTextColor & "'%3E" & _StatusText & "%3C/text%3E" &
+				"%3Cline x1='100' y1='24' x2='100' y2='44' stroke='%23808080' stroke-width='1'/%3E" &
+				"%3Crect x='" & FORMAT(_BarX, "0") & "' y='28' width='" & FORMAT(_BarW, "0") & "' height='12' fill='" & _BarColor & "'/%3E" &
+				"%3Crect x='30' y='50' width='140' height='22' rx='11' fill='" & _PillFill & "' stroke='" & _PillStroke & "' stroke-width='1.5'/%3E" &
+				"%3Ctext x='100' y='65' text-anchor='middle' font-family='Segoe UI' font-size='11' font-weight='600' fill='" & _PillText & "'%3E" & _VarianceFormatted & " (" & _PctFormatted & ")%3C/text%3E" &
+				"%3C/svg%3E"
 			displayFolder: Images
 			dataCategory: ImageUrl
 ```
