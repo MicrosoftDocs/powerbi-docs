@@ -833,21 +833,21 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 ### Test the update status flow
 
-1. In the Teams notification, select **Update Project Status** to open the report.
+The following image shows the numbered steps for updating a project status.
 
-1. Select the project row in the table to set the filter context.
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the numbered steps for updating a project status: 1) select a project, 2) choose a status, 3) add notes, 4) select Update, 5) see confirmation, 6) Teams notification appears.":::
 
-1. Use the button slicer to select a new status (for example, "In Progress").
+1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
-1. Enter notes in the input slicer (for example, "Started development this week").
+1. **What is the new status?** - Use the button slicer to select a new status (for example, **In Progress**).
 
-1. Select the **Update** button.
+1. **Add notes for this status update** - Enter notes in the input slicer (for example, "Started to record demo").
 
-1. Watch the report refresh to show the updated status.
+1. Select the **Update** button to write the status change back to the lakehouse and send a Teams notification.
 
-1. Check your Teams channel for the Adaptive Card notification with the status change details.
+1. A **Request submitted** confirmation appears when the action completes successfully.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the report flow for updating a project's status.":::
+1. Check your Teams channel for the **Project Status Update** Adaptive Card with the status change details.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/adaptive-card-on-status-update.png" alt-text="Screenshot showing the Adaptive Card notification in Teams after a status update.":::
 
