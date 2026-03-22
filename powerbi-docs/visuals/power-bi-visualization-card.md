@@ -133,24 +133,31 @@ createOrReplace
 
 	ref table 'Product Line Sales'
 
+		/// Sums the _Units column in the 'Product Line Sales' table to return the total units sold.
 		measure Units = SUM('Product Line Sales'[_Units])
 			formatString: #,##0
 
+		/// Calculate total revenue by summing the _Revenue column from the 'Product Line Sales' table.
 		measure Revenue = SUM('Product Line Sales'[_Revenue])
 			formatString: $#,##0
 
+		/// Calculates the total revenue target from the '_Revenue Target' column in the current filter context.
 		measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
 			formatString: $#,##0
 
+		/// Sums the total number of product returns recorded in the 'Product Line Sales' table.
 		measure Returns = SUM('Product Line Sales'[_Returns])
 			formatString: #,##0
 
+		/// Calculates the percentage of actual revenue achieved versus the revenue target by dividing [Revenue] by [Revenue target].
 		measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
 			formatString: 0.0%
 
+		/// Calculates the return rate by dividing the number of returned units by the total units.
 		measure 'Return rate' = DIVIDE([Returns], [Units])
 			formatString: 0.0%
 
+		/// Calculates the difference between actual revenue and revenue target to show the revenue variance.
 		measure 'Revenue variance' = [Revenue] - [Revenue target]
 			formatString: $#,##0
 ```
