@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > * Create a SQL database in Fabric with project and status tracking tables.
-> * Set up a variable library to store configuration securely.
+> * Set up a variable library to store configuration separately.
 > * Configure user data functions that update status, request updates, and send Teams notifications.
 > * Optionally set up Lakehouse shortcuts with materialized views for Direct Lake views.
 > * Integrate user data functions with a Power BI report using data function buttons.
