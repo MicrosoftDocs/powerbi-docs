@@ -189,7 +189,7 @@ For example, if your Teams channel changes or you need to point to a different r
 1. Copy the webhook URL and add it to your variable library as `TEAMS_WEBHOOK_URL`.
 
 > [!IMPORTANT]
-> Treat the webhook URL as a secret. Anyone with this URL can post messages to your Teams channel.
+> Anyone with this URL can post messages to your Teams channel.
 
 ## Create the user data functions
 
