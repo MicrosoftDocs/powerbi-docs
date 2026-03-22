@@ -21,7 +21,8 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Create a SQL database in Fabric with project and status tracking tables.
 > * Set up a variable library to store configuration securely.
-> * Configure user data functions that update status and send Teams notifications.
+> * Configure user data functions that update status, request updates, and send Teams notifications.
+> * Optionally set up Lakehouse mirroring with materialized views for Direct Lake mode.
 > * Integrate user data functions with a Power BI report using data function buttons.
 
 If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fundamentals/fabric-trial).
@@ -338,6 +339,116 @@ Create a user data functions item that handles status updates and Teams notifica
        
        requests.post(webhook_url, headers={"Content-Type": "application/json"}, 
                      data=json.dumps(adaptive_card), timeout=30)
+
+
+   @udf.connection(argName="sqlDb", alias="ProjectTrackingDb")
+   @udf.connection(argName="varLib", alias="ProjectVariables")
+   @udf.function()
+   def request_status_update(
+       sqlDb: fn.FabricSqlConnection,
+       varLib: fn.FabricVariablesClient,
+       projectId: int,
+       requestedBy: str,
+       message: str
+   ) -> str:
+       """
+       Sends a Teams notification requesting a status update for a project.
+       """
+       logging.info(f"Requesting status update for Project ID: {projectId}")
+       
+       connection = sqlDb.connect()
+       cursor = connection.cursor()
+       
+       try:
+           # Get project details
+           cursor.execute("""
+               SELECT [Project name], [Project manager] 
+               FROM [Project] 
+               WHERE [Project id] = ?
+           """, (projectId,))
+           project_row = cursor.fetchone()
+           
+           if not project_row:
+               raise fn.UserThrownError(f"Project with ID {projectId} not found.")
+           
+           project_name = project_row[0]
+           project_manager = project_row[1]
+           
+           # Get current status
+           cursor.execute("""
+               SELECT TOP 1 [Status], [Updated date]
+               FROM [Status updates] 
+               WHERE [Project id] = ? 
+               ORDER BY [Update id] DESC
+           """, (projectId,))
+           status_row = cursor.fetchone()
+           current_status = status_row[0] if status_row else "Not Started"
+           last_updated = status_row[1].strftime("%Y-%m-%d") if status_row else "Never"
+           
+           # Send Teams notification
+           _send_status_request(varLib, project_name, project_manager, 
+                               current_status, last_updated, requestedBy, message)
+           
+           return f"Status update requested for '{project_name}' from {project_manager}"
+           
+       finally:
+           cursor.close()
+           connection.close()
+
+
+   def _send_status_request(varLib, project_name, project_manager, current_status, 
+                           last_updated, requested_by, message):
+       """Helper function to send status update request via Teams."""
+       import requests
+       import json
+       
+       variables = varLib.getVariables()
+       webhook_url = variables.get("TEAMS_WEBHOOK_URL")
+       report_url = variables.get("POWERBI_REPORT_URL")
+       
+       if not webhook_url:
+           return
+       
+       adaptive_card = {
+           "type": "message",
+           "attachments": [{
+               "contentType": "application/vnd.microsoft.card.adaptive",
+               "content": {
+                   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                   "type": "AdaptiveCard",
+                   "version": "1.4",
+                   "body": [
+                       {
+                           "type": "TextBlock",
+                           "size": "Large",
+                           "weight": "Bolder",
+                           "text": "📢 Status Update Requested"
+                       },
+                       {
+                           "type": "FactSet",
+                           "facts": [
+                               {"title": "Project:", "value": project_name},
+                               {"title": "Owner:", "value": project_manager},
+                               {"title": "Current Status:", "value": current_status},
+                               {"title": "Last Updated:", "value": last_updated},
+                               {"title": "Requested By:", "value": requested_by}
+                           ]
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": f"**Message:** {message}" if message else "",
+                           "wrap": True
+                       }
+                   ],
+                   "actions": [
+                       {"type": "Action.OpenUrl", "title": "Update Status", "url": report_url}
+                   ] if report_url else []
+               }
+           }]
+       }
+       
+       requests.post(webhook_url, headers={"Content-Type": "application/json"}, 
+                     data=json.dumps(adaptive_card), timeout=30)
    ```
 
 1. Configure the connections:
@@ -347,9 +458,61 @@ Create a user data functions item that handles status updates and Teams notifica
 
 1. Select **Publish** to deploy the function.
 
+## (Optional) Set up Lakehouse mirroring for Direct Lake
+
+For optimal analytics performance, you can mirror your SQL database tables to a Lakehouse and use Direct Lake mode. This approach provides fast queries while still supporting write-back through the SQL database.
+
+### Enable database mirroring
+
+1. In your Fabric workspace, create a new **Lakehouse** and enable schemas.
+
+1. In your SQL database, select **Mirroring** from the ribbon.
+
+1. Select the `Project` and `Status updates` tables to mirror.
+
+1. The tables sync to the Lakehouse in the `dbo` schema automatically.
+
+### Create a materialized lake view
+
+Create a materialized view in the Lakehouse that computes the latest status for each project:
+
+1. In the Lakehouse, select **Manage materialized lake views (preview)**.
+
+1. Open a new notebook with Spark SQL.
+
+1. Run the following query:
+
+   ```sql
+   CREATE MATERIALIZED LAKE VIEW IF NOT EXISTS dbo.project_status AS
+   SELECT 
+       p.`Project id` AS ProjectId,
+       p.`Project name` AS ProjectName,
+       COALESCE(ls.LatestStatus, 'Not Started') AS LatestStatus,
+       ls.LatestNotes
+   FROM dbo.Project p
+   LEFT JOIN (
+       SELECT 
+           `Project id` AS ProjectId,
+           `Status` AS LatestStatus,
+           `Notes` AS LatestNotes,
+           ROW_NUMBER() OVER (PARTITION BY `Project id` ORDER BY `Update id` DESC) AS RowNum
+       FROM dbo.`Status updates`
+   ) ls ON p.`Project id` = ls.ProjectId AND ls.RowNum = 1;
+   ```
+
+1. Schedule the view refresh by selecting **Schedules** > **On** and setting the frequency.
+
+> [!NOTE]
+> Mirrored tables are read-only, so the materialized view uses full refresh. The SQL database remains the write target for the user data functions.
+
 ## Create the Power BI report
 
-### Connect to your data
+You can connect to your data using either DirectQuery or Direct Lake:
+
+- **DirectQuery to SQL Database**: Real-time data, supports write-back through user data functions.
+- **Direct Lake via Lakehouse**: Faster analytics queries, data refreshes based on mirroring and materialized view schedule.
+
+### Option A: Connect via DirectQuery (recommended for write-back scenarios)
 
 1. Open Power BI Desktop.
 
@@ -358,6 +521,19 @@ Create a user data functions item that handles status updates and Teams notifica
 1. Enter your Fabric SQL database connection details.
 
 1. Select the `Project`, `Status updates`, and `Project status` tables/view.
+
+### Option B: Connect via Direct Lake (for analytics performance)
+
+1. In your Fabric workspace, select your Lakehouse.
+
+1. Select **New semantic model** from the ribbon.
+
+1. Select the mirrored tables (`Project`, `Status updates`) and the materialized view (`project_status`).
+
+1. Open in Power BI Desktop via **Live edit** to add measures and relationships.
+
+> [!NOTE]
+> With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Adjust your measures accordingly.
 
 ### Create supporting measures
 
@@ -378,6 +554,14 @@ Update button text =
         "Update " & SelectedProject & " to " & SelectedStatus,
         "Select a project and status"
     )
+
+Request update button text = 
+    VAR SelectedProject = SELECTEDVALUE(Project[Project name], "")
+    RETURN IF(
+        SelectedProject <> "",
+        "Request update for " & SelectedProject,
+        "Select a project"
+    )
 ```
 
 ### Design the report
@@ -388,7 +572,11 @@ Update button text =
 
 1. Add an input slicer for users to enter notes about the status change.
 
-### Add the data function button
+### Add the data function buttons
+
+Add two buttons: one for updating status and one for requesting a status update.
+
+#### Update status button
 
 1. In the **Insert** tab, select **Button** > **Data function**.
 
@@ -406,11 +594,29 @@ Update button text =
    | `notes` | Input slicer value |
    | `updatedDate` | `[Updated date]` measure |
 
+#### Request status update button
+
+1. Add another **Button** > **Data function**.
+
+1. In the **Format** pane, configure the button:
+   - Set **Text** to your `[Request update button text]` measure.
+   - Select your published `request_status_update` function.
+
+1. Map the function parameters:
+
+   | Parameter | Bound to |
+   |-----------|----------|
+   | `projectId` | `[Selected project id]` measure |
+   | `requestedBy` | `[Updated by]` measure |
+   | `message` | Input slicer value |
+
 1. Save your report and publish it to the Power BI service.
 
 1. Copy the report URL and add it to your variable library as `POWERBI_REPORT_URL`.
 
 ## Test the workflow
+
+### Test the update status flow
 
 1. Open your published report in the Power BI service.
 
@@ -426,9 +632,20 @@ Update button text =
 
 1. Check your Teams channel for the Adaptive Card notification with the status change details.
 
+### Test the request status update flow
+
+1. Select a different project row in the table.
+
+1. Enter a message in the input slicer (for example, "Please provide an update on this project").
+
+1. Select the **Request update** button.
+
+1. Check your Teams channel for the request notification, which includes a link back to the report for the project owner to update their status.
+
 ## Related content
 
 - [Understand translytical task flows](./translytical-task-flow-overview.md)
 - [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md)
 - [Create a data function button in Power BI](./translytical-task-flow-button.md)
 - [User data functions overview](/fabric/data-engineering/user-data-functions/user-data-functions-overview)
+- [Create and manage variable libraries](/fabric/cicd/variable-library/get-started-variable-libraries)
