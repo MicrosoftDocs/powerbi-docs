@@ -666,11 +666,58 @@ These measures serve multiple purposes:
 
 ### Design the report
 
-1. Create a table visual that displays project information with columns from the `Project status` view.
+The report layout guides users through a clear workflow: select a project, choose a new status, add notes, then execute the update.
 
-1. Add a button slicer with status options: Not Started, In Progress, On Hold, Completed, Cancelled.
+#### Create the project table
 
-1. Add an input slicer for users to enter notes about the status change.
+1. Add a **Table** visual to display project information.
+
+1. Add these columns from your data:
+   - `Product name`
+   - `Project name`
+   - `Target end date`
+   - `Description`
+   - `Latest status` (from the Status or Project status table/view)
+   - `Latest notes`
+
+1. Set the title to **1) Pick a project to update**.
+
+1. Sort by **Target end date** ascending to show upcoming deadlines first.
+
+1. Enable row selection so clicking a row sets the filter context for the data function buttons.
+
+#### Create the button slicer for status selection
+
+1. Add a **Button slicer** visual (also called Advanced slicer).
+
+1. In the **Values** field, add `Status Options[Status]`.
+
+1. In the **Label** field, add `FIRST(Status Options[Description])` to show the description beneath each status.
+
+1. In the **Format** pane:
+   - Set **Style** to **Cards**.
+   - Set **Orientation** to **Horizontal**.
+   - Set **Max tiles** to **5** (one for each status).
+
+1. Configure conditional formatting to color each card by the `Status Color` field.
+
+1. Set the title to **2) Pick a new status**.
+
+#### Add input slicers for notes
+
+1. Add a **Text slicer** (input slicer) for users to enter notes about the status update.
+
+1. Set the title to **3) Add notes for this status update**.
+
+1. Optionally, add a second text slicer titled **Or send a message to the Teams channel** for the request update workflow.
+
+#### Add the preview table
+
+1. Add a **Table** visual with a single column: the `[Preview of status update]` measure.
+
+1. Set the title to **Preview update**.
+
+This shows users what their Teams notification will look like before they send it.
 
 ### Add the data function buttons
 
@@ -680,35 +727,42 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 1. In the **Insert** tab, select **Button** > **Data function**.
 
-1. In the **Format** pane, configure the button:
-   - Set **Text** to your `[Update status button text]` measure for dynamic labeling.
-   - Select your published `update_project_status` function.
+1. In the **Format** pane, configure the button text:
+   - Set **Default text** to your `[Update status button text]` measure for dynamic labeling (for example, "Update the status of Session ABC to In Progress").
+   - Set **Disabled text** to static text like "Pick a project, new status, and add notes first".
+
+1. Select your published `update_project_status` function.
 
 1. Map the function parameters:
 
-   | Parameter | Bound to |
-   |-----------|----------|
-   | `projectId` | `[Selected project id]` measure |
-   | `newStatus` | `SELECTEDVALUE('Status Options'[Status])` |
-   | `updatedBy` | `[Updated by]` measure |
-   | `notes` | Input slicer value |
-   | `updatedDate` | `[Updated date]` measure |
+   | Parameter | Binding type | Bound to |
+   |-----------|--------------|----------|
+   | `projectId` | Measure | `[Selected project id]` measure |
+   | `newStatus` | Slicer | Button slicer visual (auto-clear enabled) |
+   | `updatedBy` | Measure | `[Updated by]` measure |
+   | `notes` | Slicer | Text slicer visual (auto-clear enabled) |
+   | `updatedDate` | Measure | `[Updated date]` measure |
+
+   > [!TIP]
+   > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
 
 #### Request status update button
 
 1. Add another **Button** > **Data function**.
 
-1. In the **Format** pane, configure the button:
-   - Set **Text** to a measure like `"Request update for " & SELECTEDVALUE(Project[Project name])`.
-   - Select your published `request_status_update` function.
+1. In the **Format** pane, configure the button text:
+   - Set **Default text** to static text like "Send Teams message to channel".
+   - Set **Disabled text** to "Pick a project and type in a message first".
+
+1. Select your published `request_status_update` function.
 
 1. Map the function parameters:
 
-   | Parameter | Bound to |
-   |-----------|----------|
-   | `projectId` | `[Selected project id]` measure |
-   | `requestedBy` | `[Updated by]` measure |
-   | `message` | Input slicer value |
+   | Parameter | Binding type | Bound to |
+   |-----------|--------------|----------|
+   | `projectId` | Measure | `[Selected project id]` measure |
+   | `requestedBy` | Measure | `[Updated by]` measure |
+   | `message` | Slicer | Text slicer visual (auto-clear enabled) |
 
 1. Save your report and publish it to the Power BI service.
 
