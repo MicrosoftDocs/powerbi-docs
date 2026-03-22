@@ -825,7 +825,7 @@ Add two buttons: one for updating status and one for requesting a status update.
    > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
 
 > [!NOTE]
-> The automatic report refresh shows updated data immediately for DirectQuery and Direct Lake storage modes. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
+> The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed page shows updated data immediately. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration.":::
 
