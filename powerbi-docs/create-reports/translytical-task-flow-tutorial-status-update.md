@@ -158,16 +158,20 @@ This scenario uses a project tracking dataset. Follow the steps in [Create a SQL
 
 Store sensitive configuration like the Teams webhook URL in a variable library rather than in your code.
 
-1. In your Fabric workspace, select **+ New item** > **Variable Library**.
+1. In your Fabric workspace, select **+ New item**.
 
-1. Name it `ProjectVariables`.
+1. Scroll down to the **Develop data** section and select **Variable library**.
 
-1. Add the following variables:
+1. Name the variable library `ProjectVariables` and select **Create**.
+
+1. Select **+ New variable** and add the following variables:
 
    | Variable name | Type | Description |
    |--------------|------|-------------|
    | `TEAMS_WEBHOOK_URL` | Secret | Your Teams incoming webhook URL |
    | `POWERBI_REPORT_URL` | String | URL to your Power BI report (added after publishing) |
+
+1. Select **Save** after adding each variable.
 
 ### Get a Teams webhook URL
 
