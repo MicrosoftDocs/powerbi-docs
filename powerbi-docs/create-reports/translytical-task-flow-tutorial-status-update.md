@@ -523,15 +523,19 @@ You can connect to your data using either DirectQuery or Direct Lake:
 > [!TIP]
 > Import mode can also be used—there's no limitation on storage mode. With Import, the semantic model must be refreshed before updated values appear in the report.
 
-### Option A: Connect via DirectQuery (recommended for write-back scenarios)
+### Option A: Connect via DirectQuery
 
 1. Open Power BI Desktop.
 
-1. Select **Get data** > **SQL Server database**.
+1. Select **OneLake catalog**.
 
-1. Enter your Fabric SQL database connection details.
+1. Find your Fabric SQL database.
+
+1. Select **Connect to SQL analytics endpoint**.
 
 1. Select the `Project`, `Status updates`, and `Project status` tables/view.
+
+1. When prompted for storage mode, select **DirectQuery**.
 
 ### Option B: Connect via Direct Lake (for analytics performance)
 
@@ -539,7 +543,7 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 1. Select **New semantic model** from the ribbon.
 
-1. Select the mirrored tables (`Project`, `Status updates`) and the materialized view (`project_status`).
+1. Select the shortcut tables (`Project`, `Status updates`) and the materialized view (`project_status`).
 
 1. Open in Power BI Desktop via **Live edit** to add measures and relationships.
 
