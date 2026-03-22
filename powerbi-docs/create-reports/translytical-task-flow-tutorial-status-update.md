@@ -800,13 +800,35 @@ This shows users what their Teams notification will look like before they send i
 
 Add two buttons: one for updating status and one for requesting a status update.
 
+#### Configure dynamic button text
+
+Use dynamic text on your data function buttons to show users exactly what action will occur when they select the button. Instead of a generic label like "Update," the button can display context-specific text like "Update the status of Session ABC to In Progress."
+
+To configure dynamic button text:
+
+1. Create a measure that generates the button label. For example, this measure combines the selected project name and new status:
+   ```dax
+   Update status button text = 
+       "Update the status of " & SELECTEDVALUE(Project[Project name]) & " to " & SELECTEDVALUE('Status Options'[Status])
+   ```
+
+1. In the **Format** pane for the data function button, expand **Button** > **Text**.
+
+1. Set **Default text** to your dynamic measure (`[Update status button text]`).
+
+1. Set **Disabled text** to static text that tells users what selections are required (for example, "Pick a project, new status, and add notes first").
+
+The button displays the disabled text until all required parameters have values. Once the user makes their selections, the button shows the dynamic text describing the specific action.
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration using a measure for default text and static text for disabled state.":::
+
 #### Update status button
 
 1. In the **Insert** tab, select **Button** > **Data function**.
 
-1. In the **Format** pane, configure the button text:
-   - Set **Default text** to your `[Update status button text]` measure for dynamic labeling (for example, "Update the status of Session ABC to In Progress").
-   - Set **Disabled text** to static text like "Pick a project, new status, and add notes first".
+1. Configure the button text as described in [Configure dynamic button text](#configure-dynamic-button-text), using:
+   - **Default text**: `[Update status button text]` measure
+   - **Disabled text**: "Pick a project, new status, and add notes first"
 
 1. Select your published `update_project_status` function.
 
@@ -827,8 +849,6 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 > [!NOTE]
 > The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed page shows updated data immediately. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
-
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration.":::
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
 
@@ -851,6 +871,8 @@ Add two buttons: one for updating status and one for requesting a status update.
    | `message` | Slicer | Input slicer visual (auto-clear enabled) |
 
 1. Optionally enable **Refresh the report after successful outcome** in the **Format** pane under **Action**.
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" alt-text="Screenshot showing the send Teams message button in the Power BI report.":::
 
 #### (Optional) Add a drill-through button and page
 
@@ -883,8 +905,6 @@ You can add a drill-through page to show the full history of status updates for 
 1. Save your report and publish it to the Power BI service.
 
 1. Copy the report URL and add it to your variable library as `POWERBI_REPORT_URL`.
-
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" alt-text="Screenshot showing the send Teams message button in the Power BI report.":::
 
 ## Test the workflow
 
