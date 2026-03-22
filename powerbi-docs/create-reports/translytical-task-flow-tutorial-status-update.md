@@ -758,8 +758,6 @@ The report layout guides users through a clear workflow: select a project, choos
 
 1. Sort by **Target end date** ascending to show upcoming deadlines first.
 
-1. Enable row selection so clicking a row sets the filter context for the data function buttons.
-
 #### Create the button slicer for status selection
 
 1. Add a **Button slicer** visual (also called Advanced slicer).
