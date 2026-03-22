@@ -485,9 +485,37 @@ Create a user data functions item that handles status updates and Teams notifica
 > [!NOTE]
 > Functions used with Power BI data function buttons must return a string (`-> str`). Power BI displays this return value to the user after the function executes, providing feedback about the action's result.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/user-data-function-update-project-status-flow.png" alt-text="Diagram showing the data flow when updating project status from Power BI to SQL database and Teams.":::
+### Understanding the update_project_status function
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/user-data-function-send-teams-notification-flow.png" alt-text="Diagram showing the data flow when requesting a status update from Power BI to Teams.":::
+The `update_project_status` function writes a new status record to the SQL database and sends a Teams notification. When a user selects the update button in the report, the following flow occurs:
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/user-data-function-update-project-status-flow.png" alt-text="Diagram showing the data flow when updating project status: Power BI calls the function, which writes to the SQL database and sends a Teams notification.":::
+
+1. **Power BI calls the function** - The data function button passes parameters (project ID, new status, notes, etc.) to the user data function.
+
+1. **Validate inputs** - The function validates the date format and checks that the status value is one of the allowed options.
+
+1. **Query current state** - The function retrieves the previous status and project name from the database.
+
+1. **Insert new record** - A new row is inserted into the `Status updates` table with the new status, timestamp, and notes.
+
+1. **Send Teams notification** - The helper function `_send_teams_update` posts an Adaptive Card to your Teams channel showing the status change.
+
+1. **Return result** - The function returns a success message that Power BI displays to the user.
+
+### Understanding the request_status_update function
+
+The `request_status_update` function sends a Teams notification asking a project owner to provide a status update. This function doesn't write to the database—it only sends a message.
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/user-data-function-send-teams-notification-flow.png" alt-text="Diagram showing the data flow when requesting a status update: Power BI calls the function, which queries project details and sends a Teams notification.":::
+
+1. **Power BI calls the function** - The data function button passes the project ID, requester name, and message to the function.
+
+1. **Query project details** - The function retrieves the project name, project manager, and current status from the database.
+
+1. **Send Teams notification** - The helper function `_send_status_request` posts an Adaptive Card to your Teams channel with the request details and an **Update Project Status** button that links back to the report.
+
+1. **Return result** - The function returns a confirmation message that Power BI displays to the user.
 
 ## (Optional) Set up Lakehouse shortcuts for Direct Lake views
 
