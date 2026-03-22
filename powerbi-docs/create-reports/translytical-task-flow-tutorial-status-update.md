@@ -521,7 +521,7 @@ You can connect to your data using either DirectQuery or Direct Lake:
 - **Direct Lake via Lakehouse (for views)**: Direct Lake can't read views from SQL Database. To use views with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define materialized views there.
 
 > [!TIP]
-> Avoid Import mode for translytical scenarios. With Import, the semantic model must be refreshed before updated values appear in the report, which breaks the real-time feedback loop.
+> Import mode can also be used—there's no limitation on storage mode. With Import, the semantic model must be refreshed before updated values appear in the report.
 
 ### Option A: Connect via DirectQuery (recommended for write-back scenarios)
 
