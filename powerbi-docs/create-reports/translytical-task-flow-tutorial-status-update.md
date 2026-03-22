@@ -512,6 +512,9 @@ You can connect to your data using either DirectQuery or Direct Lake:
 - **DirectQuery to SQL Database**: Real-time data, supports write-back through user data functions.
 - **Direct Lake via Lakehouse**: Faster analytics queries, data refreshes based on mirroring and materialized view schedule.
 
+> [!TIP]
+> Avoid Import mode for translytical scenarios. With Import, the semantic model must be refreshed before updated values appear in the report, which breaks the real-time feedback loop.
+
 ### Option A: Connect via DirectQuery (recommended for write-back scenarios)
 
 1. Open Power BI Desktop.
@@ -563,6 +566,8 @@ Request update button text =
         "Select a project"
     )
 ```
+
+These button text measures serve two purposes: they provide dynamic labeling and validate that required selections are made. When a user selects a project row in a table or other visual, `SELECTEDVALUE` captures that selection. The measure then provides clear feedback about what action the button performs.
 
 ### Design the report
 
