@@ -114,11 +114,14 @@ This scenario uses a project tracking dataset. Follow the steps in [Create a SQL
    ```sql
    INSERT INTO [Project] ([Project id], [Project name], [Product name], [Description], [Priority], [Start date], [Target end date], [Budget], [Project manager], [Department], [Created date], [Created by], [Is active])
    VALUES
-   (1, 'Website Redesign', 'Customer Portal', 'Complete redesign of the customer-facing website', 'High', '2026-01-15', '2026-03-20', 50000.00, 'Alex Kim', 'Engineering', '2026-01-15', 'Admin', 1),
-   (2, 'Mobile App v2', 'Mobile Platform', 'Major update to the mobile application', 'Critical', '2026-02-01', '2026-05-19', 75000.00, 'Jordan Lee', 'Product', '2026-02-01', 'Admin', 1),
-   (3, 'Data Migration', 'Infrastructure', 'Migrate legacy data to new platform', 'High', '2026-03-01', '2026-04-15', 30000.00, 'Sam Chen', 'Data Engineering', '2026-02-20', 'Admin', 1),
-   (4, 'Security Audit', 'Compliance', 'Annual security compliance audit', 'High', '2026-01-10', '2026-02-28', 25000.00, 'Taylor Smith', 'Security', '2026-01-10', 'Admin', 1),
-   (5, 'Customer Portal', 'Customer Portal', 'New self-service portal for customers', 'Medium', '2025-12-01', '2026-03-20', 45000.00, 'Morgan Davis', 'Engineering', '2025-12-01', 'Admin', 1);
+   (1, 'Best Practices with Power BI - FabCon Atlanta', 'FabCon Atlanta', 'Session covering Power BI best practices for enterprise deployments', 'High', '2026-01-15', '2026-03-20', 5000.00, 'person1@somecompany.com', 'Developer Relations', '2026-01-15', 'Admin', 1),
+   (2, 'Translytical Task Flows - Build', 'Microsoft Build', 'Deep dive into translytical workloads and real-time analytics patterns', 'Critical', '2026-02-01', '2026-05-19', 7500.00, 'person2@somecompany.com', 'Product Engineering', '2026-02-01', 'Admin', 1),
+   (3, 'Advanced DAX Patterns - FabCon Barcelona', 'FabCon Barcelona', 'Workshop on complex DAX calculations and optimization techniques', 'High', '2026-03-01', '2026-09-15', 6000.00, 'person1@somecompany.com', 'Developer Relations', '2026-02-20', 'Admin', 1),
+   (4, 'Semantic Modeling Deep Dive - Ignite', 'Microsoft Ignite', 'Comprehensive session on semantic model design and best practices', 'High', '2026-01-10', '2026-11-18', 8000.00, 'person2@somecompany.com', 'Product Engineering', '2026-01-10', 'Admin', 1),
+   (5, 'Custom Visuals in Power BI - FabCon Atlanta', 'FabCon Atlanta', 'Hands-on lab for building custom visuals with the Power BI SDK', 'Medium', '2025-12-01', '2026-03-20', 4500.00, 'person1@somecompany.com', 'Developer Relations', '2025-12-01', 'Admin', 1),
+   (6, 'TMDL for Version Control - Build', 'Microsoft Build', 'Session on using TMDL for semantic model source control and CI/CD', 'Critical', '2025-11-15', '2026-02-15', 5500.00, 'person2@somecompany.com', 'Product Engineering', '2025-11-15', 'Admin', 1),
+   (7, 'Real-time Analytics with Power BI - Ignite', 'Microsoft Ignite', 'Showcase of Direct Lake and real-time streaming capabilities', 'High', '2026-02-10', '2026-11-18', 7000.00, 'person1@somecompany.com', 'Developer Relations', '2026-02-10', 'Admin', 1),
+   (8, 'Semantic Modeling Workshop - FabCon Barcelona', 'FabCon Barcelona', 'Interactive workshop on building enterprise-grade semantic models', 'High', '2026-04-01', '2026-09-15', 6500.00, 'person2@somecompany.com', 'Product Engineering', '2026-02-25', 'Admin', 1);
    ```
 
 1. Insert sample status updates:
@@ -126,11 +129,29 @@ This scenario uses a project tracking dataset. Follow the steps in [Create a SQL
    ```sql
    INSERT INTO [Status updates] ([Update id], [Project id], [Status], [Updated date], [Updated by], [Notes])
    VALUES
-   (1, 1, 'Not Started', '2026-01-15', 'Alex Kim', 'Project kickoff scheduled'),
-   (2, 1, 'In Progress', '2026-01-20', 'Alex Kim', 'Development started'),
-   (3, 2, 'Not Started', '2026-02-01', 'Jordan Lee', 'Requirements gathering'),
-   (4, 3, 'In Progress', '2026-03-01', 'Sam Chen', 'Migration scripts ready'),
-   (5, 4, 'Completed', '2026-02-15', 'Taylor Smith', 'Audit passed with no findings');
+   (1, 1, 'Not Started', '2026-01-15', 'person1@somecompany.com', 'Session abstract submitted and approved'),
+   (2, 1, 'In Progress', '2026-01-25', 'person1@somecompany.com', 'Outline completed, starting slide deck'),
+   (3, 1, 'In Progress', '2026-02-10', 'person1@somecompany.com', 'Demo environment setup in progress'),
+   (4, 1, 'In Progress', '2026-02-25', 'person1@somecompany.com', 'First draft of presentation complete, scheduling dry run'),
+   (5, 2, 'Not Started', '2026-02-01', 'person2@somecompany.com', 'Session proposal accepted for Build'),
+   (6, 2, 'In Progress', '2026-02-08', 'person2@somecompany.com', 'Research phase - gathering customer scenarios'),
+   (7, 2, 'In Progress', '2026-02-15', 'person2@somecompany.com', 'Architecture diagrams drafted'),
+   (8, 2, 'In Progress', '2026-02-24', 'person2@somecompany.com', 'Building demo lakehouse environment'),
+   (9, 3, 'Not Started', '2026-02-20', 'person1@somecompany.com', 'Call for speakers submission pending review'),
+   (10, 4, 'Not Started', '2026-01-10', 'person2@somecompany.com', 'Initial brainstorming session with PM team'),
+   (11, 4, 'In Progress', '2026-01-20', 'person2@somecompany.com', 'Content outline approved by leadership'),
+   (12, 4, 'In Progress', '2026-02-05', 'person2@somecompany.com', 'Sample semantic models being developed'),
+   (13, 5, 'Not Started', '2025-12-01', 'person1@somecompany.com', 'Lab environment requirements documented'),
+   (14, 5, 'In Progress', '2025-12-15', 'person1@somecompany.com', 'SDK samples being prepared'),
+   (15, 5, 'On Hold', '2026-01-10', 'person1@somecompany.com', 'Paused - waiting on SDK v5 release for new features'),
+   (16, 6, 'Not Started', '2025-11-15', 'person2@somecompany.com', 'Session planning initiated'),
+   (17, 6, 'In Progress', '2025-12-01', 'person2@somecompany.com', 'GitHub Actions workflow samples created'),
+   (18, 6, 'In Progress', '2026-01-15', 'person2@somecompany.com', 'Dry run completed with internal team'),
+   (19, 6, 'Completed', '2026-02-15', 'person2@somecompany.com', 'Session delivered at internal summit, ready for Build'),
+   (20, 7, 'Not Started', '2026-02-10', 'person1@somecompany.com', 'Topic approved for Ignite breakout session'),
+   (21, 7, 'In Progress', '2026-02-18', 'person1@somecompany.com', 'Eventstream demo scenarios identified'),
+   (22, 7, 'In Progress', '2026-02-26', 'person1@somecompany.com', 'Direct Lake performance benchmarks in progress'),
+   (23, 8, 'Not Started', '2026-02-25', 'person2@somecompany.com', 'Workshop format and duration confirmed');
    ```
 
 ## Set up a variable library
