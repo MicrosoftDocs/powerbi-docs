@@ -40,12 +40,34 @@ This tutorial creates a project tracking solution where users can update project
 1. Sends an Adaptive Card notification to Microsoft Teams
 1. Refreshes the report to show the updated data
 
-The architecture connects these components:
+### User flow
 
-- **Fabric SQL Database** - Stores project and status update records
-- **Variable Library** - Securely stores the Teams webhook URL
-- **User Data Functions** - Handles the write-back and Teams notification logic
-- **Power BI Report** - Provides the user interface for viewing and updating status
+The workflow creates a continuous feedback loop between report users:
+
+1. **Request update via Teams from report** — A user selects a project in the report and sends a status update request. The request posts to Teams with a link back to the report.
+
+1. **Receive notification in Teams and open report** — The project owner sees the notification in Teams and selects the link to open the report.
+
+1. **Update status in report** — The project owner selects the project, chooses a new status, adds notes, and selects the update button.
+
+1. **See real-time update and send notification** — The report refreshes immediately to show the new status, and a notification posts to Teams confirming the change.
+
+### Architecture
+
+The solution connects these components within Microsoft Fabric:
+
+| Component | Purpose |
+|-----------|---------|
+| **Fabric SQL Database** | Stores project and status update records. Contains the `Project` table, `Status updates` table, and `Project status` view. |
+| **Lakehouse** (optional) | Provides shortcuts to the SQL database tables for Direct Lake views. Use when you need materialized views for analytics. |
+| **Variable Library** | Stores configuration values like the Teams webhook URL and report URL. Update values without republishing functions. |
+| **User Data Functions** | Python functions that handle the write-back to SQL and send Teams notifications via Adaptive Cards. |
+| **Power BI Report** | The user interface where users view projects, select new statuses, and trigger updates via data function buttons. |
+| **Microsoft Teams** | Receives Adaptive Card notifications with status changes and links back to the report. |
+
+The data flows in two directions:
+- **Read path**: Power BI reads from the SQL database (via DirectQuery) or Lakehouse (via Direct Lake) to display current project status.
+- **Write path**: When a user selects a data function button, Power BI calls the user data function, which writes to the SQL database and posts to Teams.
 
 ## Create a SQL database
 
