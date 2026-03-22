@@ -758,6 +758,43 @@ The report layout guides users through a clear workflow: select a project, choos
 
 This shows users what their Teams notification will look like before they send it.
 
+#### Add the drill-through button
+
+Add a button in the top right of the report that navigates to a detail page showing the full status update history for the selected project.
+
+1. In the **Insert** tab, select **Button** > **Blank**.
+
+1. In the **Format** pane under **Button**, set the text:
+   - **Default text**: "See all status updates"
+   - **Disabled text**: "Pick a project to see all status updates"
+
+1. Under **Action**, enable the action and set:
+   - **Type**: **Drillthrough**
+   - **Destination**: Select your status history page
+
+The button is disabled until the user selects a project row in the table.
+
+#### Create the status history drill-through page
+
+Create a dedicated page to display the full history of status updates for a selected project.
+
+1. Add a new page and name it **Status update history**.
+
+1. In the **Format** pane for the page, expand **Page information** and enable **Drillthrough**. Add `Project[Product name]` as the drillthrough field.
+
+1. Add the following visuals:
+
+   | Visual type | Purpose |
+   |-------------|---------|
+   | **Card** | Displays the total count of status updates for the project |
+   | **Button slicer** | Shows the breakdown of updates by status (Not Started, In Progress, On Hold, Completed, Cancelled) |
+   | **Table** | Lists all status updates with columns: Update id, Updated date, Status, Notes, Updated by |
+   | **Line chart** | Shows update activity over time with Updated date on the X-axis and count of updates on the Y-axis |
+
+1. Add a **Back** button so users can return to the main report page. In the **Insert** tab, select **Button** > **Back**.
+
+This page lets users view the complete audit trail of status changes for any project, which is useful for tracking project progress and accountability.
+
 ### Add the data function buttons
 
 Add two buttons: one for updating status and one for requesting a status update.
