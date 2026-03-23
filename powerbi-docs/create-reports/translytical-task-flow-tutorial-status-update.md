@@ -669,32 +669,7 @@ Create a calculated table to hold the measures that support the data function bu
 ```tmdl
 createOrReplace
 
-	ref table 'Translytical task flow'
-
-		/// Returns the Project ID when a single project is selected. Used as a parameter for the update_project_status and request_status_update functions.
-		measure 'Selected project id' = SELECTEDVALUE(Project[Project id])
-			formatString: 0
-
-		/// Returns the email address of the current user. Used to track who made each status update.
-		measure 'Updated by' = USERPRINCIPALNAME()
-
-		/// Returns today's date in ISO format. Used as the timestamp for status updates.
-		measure 'Updated date' = FORMAT(TODAY(), "yyyy-mm-dd")
-
-		/// Provides dynamic text for the update button showing the selected project and new status.
-		measure 'Update status button text' = "Update the status of " & SELECTEDVALUE(Project[Project name]) & " to " & SELECTEDVALUE('Status Options'[Status])
-
-		/// Returns the most recent status for the selected project by finding the last non-blank status value.
-		measure 'Latest status' =
-				IF(HASONEVALUE(Project[Project id]),
-				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Status])),
-				BLANK())
-
-		/// Returns the most recent notes for the selected project. Only evaluates when a project is in scope.
-		measure 'Latest notes' =
-				IF(ISINSCOPE(Project[Project name]), 
-				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Notes])), 
-				BLANK())
+	table 'Translytical task flow'
 
 		/// Generates a preview of the Teams notification that will be sent when the user updates the status. Shows a warning if required selections are missing.
 		measure 'Preview of status update' = ```
@@ -719,10 +694,46 @@ createOrReplace
 				    "📨 This will be sent to Teams"
 				)
 				```
+
+		/// Returns the email address of the current user. Used to track who made each status update.
+		measure 'Updated by' = USERPRINCIPALNAME()
+
+		/// Returns the most recent notes for the selected project. Only evaluates when a project is in scope.
+		measure 'Latest notes' =
+				IF(ISINSCOPE(Project[Project name]),
+				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Notes])),
+				BLANK())
+
+		/// Returns the most recent status for the selected project by finding the last non-blank status value.
+		measure 'Latest status' =
+				IF(HASONEVALUE(Project[Project id]),
+				LASTNONBLANKVALUE('Status updates'[Update id], MAX('Status updates'[Status])),
+				BLANK())
+
+		/// Returns the Project ID when a single project is selected. Used as a parameter for the update_project_status and request_status_update functions.
+		measure 'Selected project id' = SELECTEDVALUE(Project[Project id])
+			formatString: 0
+
+		/// Returns today's date in ISO format. Used as the timestamp for status updates.
+		measure 'Updated date' = FORMAT(TODAY(), "yyyy-mm-dd")
+
+		/// Provides dynamic text for the update button showing the selected project and new status.
+		measure 'Update status button text' = "Update the status of " & SELECTEDVALUE(Project[Project name]) & " to " & SELECTEDVALUE('Status Options'[Status])
+
+		column Value
+			isHidden
+			formatString: 0
+			summarizeBy: sum
+			isNameInferred
+			sourceColumn: [Value]
+
+		partition 'Translytical task flow' = calculated
+			mode: import
+			source = {1}
 ```
 
 > [!NOTE]
-> If you don't have a `Translytical task flow` table, first create it as a calculated table with `= {1}`, then hide the column. Hiding all columns converts it to a measure table, which displays a special icon and always appears at the top of the Data pane for easy access.
+> This script creates the `Translytical task flow` table with a hidden column. Hiding all columns converts it to a measure table, which displays a special icon and always appears at the top of the Data pane for easy access.
 
 These measures serve multiple purposes:
 
