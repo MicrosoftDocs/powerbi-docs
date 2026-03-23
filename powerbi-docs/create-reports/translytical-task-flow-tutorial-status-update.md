@@ -916,6 +916,8 @@ You can add a drill-through page to show the full history of status updates for 
 
 Once published, you can use the translytical task flow to request a status update:
 
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the numbered steps for requesting a status update: 1) select a project, 2) enter a message, 3) select Send teams message to channel, 4) see confirmation, 5) Teams notification appears with Update Project Status button.":::
+
 1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
 1. **Or send a message to the teams channel** - Enter a message in the input slicer (for example, "Can we get an update on this?").
@@ -933,6 +935,8 @@ Once published, you can use the translytical task flow to request a status updat
 ### Test the update status flow
 
 Once published, you can use the translytical task flow to update a project status:
+
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the numbered steps for updating a project status: 1) select a project, 2) choose a status, 3) add notes, 4) select Update, 5) see confirmation, 6) Teams notification appears.":::
 
 1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
