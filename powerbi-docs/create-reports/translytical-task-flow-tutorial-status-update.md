@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 > * Create a SQL database in Fabric with project and status tracking tables.
 > * Set up a variable library to store configuration separately.
 > * Configure user data functions that update status, request updates, and send Teams notifications.
-> * Optionally set up Lakehouse shortcuts with materialized views for Direct Lake views.
+> * Optionally set up Lakehouse shortcuts with materialized lake views for Direct Lake views.
 > * Integrate user data functions with a Power BI report using data function buttons.
 
 If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fundamentals/fabric-trial).
@@ -59,9 +59,10 @@ The solution connects these components within Microsoft Fabric:
 | Component | Purpose |
 |-----------|---------|
 | **Fabric SQL Database** | Stores project and status update records. Contains the `Project` table, `Status updates` table, and `Project status` view. |
-| **Lakehouse** (optional) | Provides shortcuts to the SQL database tables for Direct Lake views. Use when you need materialized views for analytics. |
+| **Lakehouse** (optional) | Provides shortcuts to the SQL database tables for Direct Lake views. Use when you need materialized lake views for analytics. |
 | **Variable Library** | Stores configuration values like the Teams webhook URL and report URL. Update values without republishing functions. |
 | **User Data Functions** | Python functions that handle the write-back to SQL and send Teams notifications via Adaptive Cards. |
+| **Power BI Semantic Model** | Defines the data model, relationships, and measures. Built with the report in Power BI Desktop, but exists as a separate item in the Power BI service. |
 | **Power BI Report** | The user interface where users view projects, select new statuses, and trigger updates via data function buttons. |
 | **Microsoft Teams** | Receives Adaptive Card notifications with status changes and links back to the report. |
 
@@ -71,7 +72,7 @@ The data flows in two directions:
 
 ## Create a SQL database
 
-This scenario uses a project tracking dataset. Follow the steps in [Create a SQL database in Fabric](/fabric/database/sql/create) to create a new SQL database in your Fabric workspace.
+This scenario uses project tracking data. Follow the steps in [Create a SQL database in Fabric](/fabric/database/sql/create) to create a new SQL database in your Fabric workspace.
 
 ### Create the database tables
 
@@ -200,15 +201,7 @@ For example, if your Teams channel changes or you need to point to a different r
 
 ### Get a Teams webhook URL
 
-1. In Microsoft Teams, navigate to the channel where you want to receive status updates.
-
-1. Select **...** (more options) next to the channel name, then select **Connectors**.
-
-1. Search for **Incoming Webhook** and select **Configure**.
-
-1. Name it (for example, "Project Status Bot") and select **Create**.
-
-1. Copy the webhook URL and add it to your variable library as `TEAMS_WEBHOOK_URL`.
+Follow the steps in [Create an Incoming Webhook](/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet) to create a webhook for your Teams channel. After creating the webhook, copy the URL and add it to your variable library as `TEAMS_WEBHOOK_URL`.
 
 > [!IMPORTANT]
 > Anyone with this URL can post messages to your Teams channel.
@@ -525,9 +518,9 @@ Fabric SQL Database stores all data as Delta tables in OneLake, so you can creat
 
 1. In your Fabric workspace, create a new **Lakehouse** and enable schemas.
 
-1. In the Lakehouse Explorer, select **New shortcut** > **Microsoft OneLake**.
+1. In the Lakehouse Explorer, right-click any schema (such as **dbo**) and select **New table shortcut**.
 
-1. Browse to your SQL database and select the `Project` table.
+1. In the OneLake Catalog, browse to your SQL database and select the `Project` table.
 
 1. Repeat to create a shortcut for the `Status updates` table.
 
@@ -537,7 +530,7 @@ The shortcuts provide read access to the underlying Delta tables without duplica
 
 ### Create a materialized lake view
 
-Create a materialized view in the Lakehouse that computes the latest status for each project:
+Create a materialized lake view in the Lakehouse that computes the latest status for each project:
 
 1. In the Lakehouse, select **Manage materialized lake views (preview)**.
 
@@ -568,7 +561,7 @@ Create a materialized view in the Lakehouse that computes the latest status for 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/materialized-lake-view-schedule-and-create-options.png" alt-text="Screenshot showing the materialized lake view schedule and create options.":::
 
 > [!NOTE]
-> The SQL database remains the write target for user data functions. The Lakehouse shortcuts provide read-only access for analytics through the materialized view.
+> The SQL database remains the write target for user data functions. The Lakehouse shortcuts provide read-only access for analytics through the materialized lake view.
 
 ## Create the Power BI report
 
@@ -576,7 +569,7 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 - **DirectQuery to SQL Database**: Real-time data, supports write-back through user data functions.
 - **Direct Lake to SQL Database tables**: Fabric SQL Database stores data as Delta tables in OneLake, so Direct Lake can read tables directly.
-- **Direct Lake via Lakehouse (for views)**: Direct Lake can't read views from SQL Database. To use views with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define materialized views there.
+- **Direct Lake via Lakehouse (for views)**: Direct Lake can't read views from SQL Database. To use views with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define materialized lake views there.
 
 > [!TIP]
 > Import mode can also be used—there's no limitation on storage mode. With Import, the semantic model must be refreshed before updated values appear in the report.
@@ -603,12 +596,12 @@ You can connect to your data using either DirectQuery or Direct Lake:
 
 1. Find your Lakehouse.
 
-1. Select the shortcut tables (`Project`, `Status updates`) and the materialized view (`project_status`).
+1. Select the shortcut tables (`Project`, `Status updates`) and the materialized lake view (`project_status`).
 
 1. Edit the semantic model in the web modeling experience to add measures and relationships.
 
 > [!NOTE]
-> With Direct Lake, column names from the materialized view don't have spaces (for example, `ProjectId` instead of `Project id`). Rename the columns in the semantic model to match your measures.
+> With Direct Lake, column names from the materialized lake view don't have spaces (for example, `ProjectId` instead of `Project id`). Rename the columns in the semantic model to match your measures.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-semantic-model-direct-lake.png" alt-text="Screenshot showing the Direct Lake semantic model in Power BI.":::
 
