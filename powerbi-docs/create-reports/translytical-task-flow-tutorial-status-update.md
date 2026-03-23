@@ -1,9 +1,9 @@
 ---
 title: Tutorial - Create a status update workflow
 description: In this tutorial, learn how to create a translytical task flow that tracks project status and posts updates to Microsoft Teams.
-author: zoedouglas
-ms.author: zoedouglas
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
@@ -478,7 +478,7 @@ Create a user data functions item that handles status updates and Teams notifica
 > [!NOTE]
 > Functions used with Power BI data function buttons must return a string (`-> str`). Power BI displays this return value to the user after the function executes, providing feedback about the action's result.
 
-### Understanding the update_project_status function
+### Understand the update_project_status function
 
 The `update_project_status` function writes a new status record to the SQL database and sends a Teams notification. When a user selects the update button in the report, the following flow occurs:
 
@@ -496,7 +496,7 @@ The `update_project_status` function writes a new status record to the SQL datab
 
 1. **Return result** - The function returns a success message that Power BI displays to the user.
 
-### Understanding the request_status_update function
+### Understand the request_status_update function
 
 The `request_status_update` function sends a Teams notification asking a project owner to provide a status update. This function doesn't write to the database—it only sends a message.
 
