@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 02/03/2026
+ms.date: 03/27/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## March 2026
+
+### In-report Copilot now offers a full chat experience
+
+The in-report Copilot in the Power BI mobile apps now provides a full conversational chat experience. You can ask custom questions about a report using natural language, get summaries and insights, and ask follow-up questions to explore your data further. For more information, see [In-report Copilot in Power BI mobile apps](./mobile-apps-copilot.md).
 
 ## February 2026
 
