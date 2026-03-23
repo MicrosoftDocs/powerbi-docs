@@ -36,9 +36,9 @@ If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fu
 
 This tutorial creates a project tracking solution where users can update project status directly from a Power BI report. When a user updates a status, the system:
 
-1. Writes the new status to the SQL database
-1. Sends an Adaptive Card notification to Microsoft Teams
-1. Refreshes the report to show the updated data
+1. Writes the new status to the SQL database.
+1. Sends an Adaptive Card notification to Microsoft Teams.
+1. Refreshes the report to show the updated data.
 
 ### User flow
 
@@ -567,7 +567,7 @@ Create a materialized lake view in the Lakehouse that computes the latest status
 
 You can connect to your data using either DirectQuery or Direct Lake:
 
-- **DirectQuery to SQL Database**: Real-time data, supports write-back through user data functions.
+- **DirectQuery to SQL Database**: Real-time data supports write-back through user data functions.
 - **Direct Lake to SQL Database tables**: Fabric SQL Database stores data as Delta tables in OneLake, so Direct Lake can read tables directly.
 - **Direct Lake via Lakehouse (for views)**: Direct Lake can't read views from SQL Database. To use views with Direct Lake, create shortcuts to the SQL database tables in a Lakehouse, then define materialized lake views there.
 
@@ -744,7 +744,7 @@ These measures serve multiple purposes:
 
 The report layout guides users through a clear workflow: select a project, choose a new status, add notes, then execute the update.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-design.png" alt-text="Screenshot showing the complete Power BI report design with project table, status slicer, notes input, and action buttons.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-design.png" lightbox="../media/translytical-task-flow-tutorial-status-update/power-bi-report-design.png" alt-text="Screenshot showing the complete Power BI report design with project table, status slicer, notes input, and action buttons.":::
 
 #### Create the project table
 
@@ -832,7 +832,7 @@ Add two buttons: one for updating status and one for requesting a status update.
 > [!NOTE]
 > The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed page shows updated data immediately. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" lightbox="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
 
 #### Request status update button
 
@@ -854,7 +854,7 @@ Add two buttons: one for updating status and one for requesting a status update.
 
 1. Optionally enable **Refresh the report after successful outcome** in the **Format** pane under **Action**.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" alt-text="Screenshot showing the send Teams message button in the Power BI report.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" lightbox="../media/translytical-task-flow-tutorial-status-update/power-bi-report-send-teams-message-button.png" alt-text="Screenshot showing the send Teams message button in the Power BI report.":::
 
 #### Configure dynamic button text
 
@@ -876,7 +876,7 @@ To configure dynamic button text:
 
 The button displays the disabled text until all required parameters have values. Once the user makes their selections, the button shows the dynamic text describing the specific action.
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration using a measure for default text and static text for disabled state.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" lightbox="../media/translytical-task-flow-tutorial-status-update/button-dynamic-text-setup.png" alt-text="Screenshot showing the button format pane with dynamic text configuration using a measure for default text and static text for disabled state.":::
 
 #### (Optional) Add a drill-through button and page
 
@@ -916,7 +916,7 @@ You can add a drill-through page to show the full history of status updates for 
 
 Once published, you can use the translytical task flow to request a status update:
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the numbered steps for requesting a status update: 1) select a project, 2) enter a message, 3) select Send teams message to channel, 4) see confirmation, 5) Teams notification appears with Update Project Status button.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" lightbox="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-asking-for-update.png" alt-text="Screenshot showing the numbered steps for requesting a status update: 1) select a project, 2) enter a message, 3) select Send teams message to channel, 4) see confirmation, 5) Teams notification appears with Update Project Status button.":::
 
 1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
@@ -936,7 +936,7 @@ Once published, you can use the translytical task flow to request a status updat
 
 Once published, you can use the translytical task flow to update a project status:
 
-:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the numbered steps for updating a project status: 1) select a project, 2) choose a status, 3) add notes, 4) select Update, 5) see confirmation, 6) Teams notification appears.":::
+:::image type="content" source="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" lightbox="../media/translytical-task-flow-tutorial-status-update/report-consumer-flow-updating-project-status.png" alt-text="Screenshot showing the numbered steps for updating a project status: 1) select a project, 2) choose a status, 3) add notes, 4) select Update, 5) see confirmation, 6) Teams notification appears.":::
 
 1. **Pick a project to update** - Select a project row in the table to set the filter context.
 
