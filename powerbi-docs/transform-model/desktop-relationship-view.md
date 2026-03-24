@@ -40,7 +40,7 @@ If your model has fewer than 75 tables, Model view shows all of your tables. If 
 
 There are all sorts of things you can do with Power BI Desktop. For more information on data sources, see the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel in Power BI Desktop](/power-query/connectors/excel)

@@ -147,7 +147,7 @@ To save your work, select **File** \> **Save** (or **File** \> **Save As**), as 
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 - [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 - [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
