@@ -173,8 +173,10 @@
     items:
     - name: Understand translytical task flows
       href: translytical-task-flow-overview.md
-    - name: Translytical task flow tutorial
+    - name: "Tutorial: Data write-back"
       href: translytical-task-flow-tutorial.md
+    - name: "Tutorial: Status updates"
+      href: translytical-task-flow-tutorial-status-update.md
     - name: Create data function buttons
       href: translytical-task-flow-button.md
   - name: Add tooltips
