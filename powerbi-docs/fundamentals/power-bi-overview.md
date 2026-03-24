@@ -26,7 +26,7 @@ Jump to the section that matches what you're trying to do:
 |---|---|
 | **Business user** viewing and exploring reports | [Basics of the Power BI service](service-basic-concepts.md) |
 | **Report creator** building or publishing reports | [Get started with Power BI Desktop](desktop-getting-started.md) |
-| **Decision maker** evaluating Power BI | [Power BI and Microsoft Fabric](#power-bi-and-microsoft-fabric) and [Core features](#core-features-of-power-bi-desktop-and-the-power-bi-service) |
+| **Decision maker** evaluating Power BI | [Power BI and Microsoft Fabric](#power-bi-and-microsoft-fabric) and [Core features](#core-features-of-power-bi-desktop-and-power-bi-service) |
 | **Administrator** setting up Power BI for my org | [Get started with the admin portal](/fabric/admin/admin-center) |
 | **Developer** embedding or extending Power BI | [Power BI developer documentation](../developer/index.yml) |
 

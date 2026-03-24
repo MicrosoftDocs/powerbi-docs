@@ -28,7 +28,7 @@ This glossary is a community effort. If you don't see a word here, ask us to add
 > - **Workspace**: A container where you store and share dashboards, reports, and data.
 > - **Tile**: A single visualization displayed on a dashboard.
 >
-> For detailed definitions with links to learn more, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#power-bi-service-concepts).
+> For detailed definitions with links to learn more, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#key-power-bi-service-concepts-and-terms).
 
 ## A
 
@@ -159,7 +159,7 @@ Visuals that the community and Microsoft create. Download them from Microsoft Ap
 
 ### Dashboard
 
-A single page with tiles of interactive visuals, text, and graphics that tells a story using the most important elements from your reports. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#power-bi-service-concepts).
+A single page with tiles of interactive visuals, text, and graphics that tells a story using the most important elements from your reports. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#key-power-bi-service-concepts-and-terms).
 
 ### Data connector
 
@@ -489,7 +489,7 @@ Links from dashboard tiles to other dashboards and reports that are shared direc
 
 ### Report
 
-One or more pages of interactive visuals, text, and graphics based on a single semantic model. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#power-bi-service-concepts).
+One or more pages of interactive visuals, text, and graphics based on a single semantic model. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#key-power-bi-service-concepts-and-terms).
 
 ### Report editor
 
@@ -519,7 +519,7 @@ Simple screenshots of a report can be emailed using the send a screenshot featur
 
 ### Semantic model
 
-A container of data used to build reports, dashboards, and apps; can combine multiple data sources into a single model. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#power-bi-service-concepts).
+A container of data used to build reports, dashboards, and apps; can combine multiple data sources into a single model. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#key-power-bi-service-concepts-and-terms).
 
 ### Service
 
@@ -604,7 +604,7 @@ An Excel workbook to be used as a data source. Workbooks can contain a data mode
 
 ### Workspace
 
-A collaborative area where designers store and manage collections of dashboards, reports, and semantic models. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#power-bi-service-concepts).
+A collaborative area where designers store and manage collections of dashboards, reports, and semantic models. For more information, see [Basics of the Power BI service](../fundamentals/service-basic-concepts.md#key-power-bi-service-concepts-and-terms).
 
 ## X
 

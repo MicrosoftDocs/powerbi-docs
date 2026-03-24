@@ -24,11 +24,11 @@ Not sure which option to use? Start here:
 | Scenario | Best method | Requirements |
 |---|---|---|
 | Share a specific report or dashboard with named people | [Direct link or access](#share-reports-and-dashboards) | Pro/PPU license or Premium capacity |
-| Distribute polished content to a large team or your whole org | [Publish an app](#publish-apps) | Pro/PPU license to publish; free license to consume in Premium/Fabric capacity |
-| Co-author or collaborate on content with a team | [Workspace](#workspaces) | Assign workspace roles (Admin, Member, Contributor) |
-| Share and discuss reports in Microsoft Teams | [Teams integration](#microsoft-teams-integration) | Power BI app for Teams |
-| Share with people outside your organization | [External sharing](#share-outside-your-organization) | Admin must enable external sharing; users sign in with Microsoft Entra B2B |
-| Share with a large audience via a security group | [Security group access](#share-with-large-groups) | Pro/PPU license or Premium capacity |
+| Distribute polished content to a large team or your whole org | [Publish an app](#publish-apps-to-distribute-content) | Pro/PPU license to publish; free license to consume in Premium/Fabric capacity |
+| Co-author or collaborate on content with a team | [Workspace](#collaborate-using-workspaces) | Assign workspace roles (Admin, Member, Contributor) |
+| Share and discuss reports in Microsoft Teams | [Teams integration](#share-reports-in-microsoft-teams) | Power BI app for Teams |
+| Share with people outside your organization | [External sharing](#share-power-bi-content-outside-your-organization) | Admin must enable external sharing; users sign in with Microsoft Entra B2B |
+| Share with a large audience via a security group | [Security group access](#share-with-large-groups-using-security-groups-or-apps) | Pro/PPU license or Premium capacity |
 
 ## Prerequisites
 
