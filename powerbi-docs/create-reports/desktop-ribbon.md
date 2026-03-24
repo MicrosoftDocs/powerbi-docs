@@ -33,7 +33,7 @@ The ribbon includes the following features:
 
 ## Related content
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)

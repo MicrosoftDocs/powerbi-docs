@@ -210,7 +210,7 @@ This issue might resolve after later Windows updates are released.
 
 After you install Power BI Desktop, see the following content to help you get up and running quickly:
 
-- [What is Power BI Desktop?](desktop-what-is-desktop.md)
+- [What is Power BI?](power-bi-overview.md)
 - [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 - [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
