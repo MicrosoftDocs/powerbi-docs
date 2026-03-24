@@ -387,18 +387,13 @@ A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium
 > You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
 
 ## Refresh completed with warnings
-If a refresh succeeds but warnings occur during the data refresh or query cache refresh, Power BI captures and displays the warnings in the refresh history. These warnings typically require your attention. Without action, the report might show unexpected results, or the semantic model might fail to refresh or query in the future.
+When you refresh data in the Power BI service, the process might complete with warnings. For example, a DAX measure might refer to an invalid table or function name, as in the screenshot below. Power BI captures these warnings and displays them in the refresh history with a status of **Completed**, and a callout in the message that the operation finished with warnings. It's a good idea to check the refresh history for warnings occasionally, because if left unaddressed, warnings can lead to unexpected results in your reports or cause future refreshes to fail.
 
 :::image type="content" source="media/refresh-data/refresh-completed-with-warnings-01.png" alt-text="Screenshot of refresh history with refresh warnings.":::
-:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-02.png" alt-text="Screenshot of refresh history with refresh warning details.":::
 
-A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) doesn't show refresh warnings in the refresh history, even if warnings occur. Instead, refresh warnings appear directly in the XMLA response.
+Power BI logs a warning whenever the refresh operation succeeds but encounters a non-fatal issue during processing. Common examples include a DAX expression that references a column or table that no longer exists, a measure that calls an unrecognized function, or a data type mismatch between the source and the semantic model. In these cases, the data is updated, but the affected calculations might return errors or blank results in your reports. Outdated data gateway versions could be another reason for a warning to let you know that an outdated data gateway might soon stop working. Refresh exceeding memory limits can also trigger warnings.
 
-Refresh warnings aren't available in the [Power BI REST APIs](/rest/api/power-bi/).
-
-> [!NOTE]
-> This feature is rolling out gradually. Before the feature reaches your tenant, Power BI doesn't capture refresh warnings. Any warnings from refresh history entries that occurred before the feature was enabled won't be displayed retroactively. In that case, the refresh history might look like the following screenshot:
-> :::image type="content" source="media/refresh-data/refresh-completed-with-warnings-03.png" alt-text="Screenshot showing refresh history entries with no visible warnings listed, demonstrating how the refresh history appears before the refresh warnings feature was enabled.":::
+However, Power BI does not log a warning when the refresh is initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) — even if non-fatal issues occur during processing. If you use a XMLA-based tool, refresh warnings appear directly in the XMLA response. If you use the [Power BI REST APIs](/rest/api/power-bi/) to perform refreshes, warnings are logged in the refresh history, but the [Datasets - Get Refresh History](/rest/api/power-bi/datasets/get-refresh-history-in-group) and [Get Refresh Execution Details](/rest/api/power-bi/datasets/get-refresh-execution-details) REST APIs do not include warnings in their responses.
 
 ## Visualize semantic model refresh details
 
