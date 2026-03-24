@@ -106,7 +106,7 @@ You can save the information that **performance analyzer** creates about a repor
 
 For more information about **Power BI Desktop** and how to get started, see the following articles.
 
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [DAX queries](/dax/dax-queries)
 - [DAX query view](/power-bi/transform-model/dax-query-view)

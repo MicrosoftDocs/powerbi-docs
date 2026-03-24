@@ -87,7 +87,7 @@ If you run into problems when connecting to your data, you can contact [LinkedIn
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Import Excel workbooks into Power BI Desktop](desktop-import-excel-workbooks.md)

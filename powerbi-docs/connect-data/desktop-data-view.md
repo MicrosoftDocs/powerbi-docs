@@ -59,7 +59,7 @@ You can also use the keyboard shortcut by pressing **Ctrl+C**. Copying elements 
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
