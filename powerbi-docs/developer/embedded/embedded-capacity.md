@@ -72,9 +72,11 @@ In this table, a custom app refers to a web app created using embedded analytics
 |----------|---------|-----------------|-----------------|
 |          | (F SKU) | (A SKU)         | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |✔        |
-|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✔        |✖         |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
-|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
+|[Embed for your organization](embed-sample-for-your-organization.md)<sup>1</sup></br>(user owns data)     |✔        |✔         |✔         |
+|Microsoft 365 apps<sup>1</sup></br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✔        |✔         |
+
+<sup>1</sup> Except for F64+ and P capacities, users need a Power BI Pro, Premium Per User or Power BI Individual Trial.
 
 >[!NOTE]
 > Azure Embedded (F SKU) capacities aren't supported in the GCC environment. Only EM and P SKUs are available for use in GCC. Azure Embedded capacities are supported in GCC High and DoD environments.
