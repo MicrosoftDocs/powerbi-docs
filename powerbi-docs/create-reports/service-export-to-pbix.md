@@ -146,7 +146,6 @@ This section lists the limitations of downloading a .pbix file. This section is 
 - Downloading a report/dataset as .pbix from the service after deploying them with Git integration is not recommended, as the results are unreliable.
 
 ### Download Mode Limitations (copy of report and data versus live connect):
-> [!div class="mx-tdBreakAll"]
 > |Limitation|Copy of your report and data|Live Connection|
 > |-------------|----------|---------|
 > |Reports based on Direct Lake semantic models|No|Yes|
