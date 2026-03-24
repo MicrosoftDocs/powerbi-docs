@@ -153,7 +153,7 @@ Applies to visual interactions. Cross-highlighting retains all the original data
 
 ### Custom visual
 
-Visuals that the community and Microsoft create. Download them from Microsoft AppSource to use in Power BI reports.
+Visuals that the community and Microsoft create. Download them from the Microsoft commercial marketplace to use in Power BI reports.
 
 ## D
 

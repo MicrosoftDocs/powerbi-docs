@@ -24,7 +24,7 @@ The ribbon includes the following features:
 * **Search bar** - Select the search bar to find actions based on the current state of your report. As you type, search results update and buttons provide help or next steps.
 * **Themes gallery** - The **Themes** gallery on the **View** tab shows previews of color combinations and fonts, similar to PowerPoint themes.
 * **Dynamic content** - The ribbon dynamically displays and arranges icons based on context, showing only the options available to you.
-* **Collapsability** - Collapse the ribbon into a single line to save space. The collapsed ribbon dynamically displays items based on your context.
+* **Collapsibility** - Collapse the ribbon into a single line to save space. The collapsed ribbon dynamically displays items based on your context.
 * **Keytips** - Press **Alt** to activate keytips, then press the shown keys to navigate and select buttons using the keyboard.
 * **Custom format strings** - Select a measure or column to display a **Measure tools** or **Column tools** contextual tab. Type custom format strings directly in the dropdown box.
 * **Visuals gallery** - Access visualizations directly from the ribbon to quickly add them to your report.

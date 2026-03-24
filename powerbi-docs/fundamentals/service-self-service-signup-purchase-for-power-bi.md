@@ -90,9 +90,9 @@ For example, your organization might provide you with Microsoft 365. Some versio
 
 If your organization purchased a Power BI subscription and enabled self-service for your account, you can sign up by using one of the following methods:
 
-1. Open Power BI in a browser (app.powerbi.com).
-1. Select a **Try for free** type of button.
-1. Select a Power BI link in an email. Colleagues share Power BI items in email. If you never opened Power BI before, selecting one of these links initiates signing up for a license.
+- Open Power BI in a browser (app.powerbi.com).
+- Select a **Try for free** type of button.
+- Select a Power BI link in an email. Colleagues share Power BI items in email. If you never opened Power BI before, selecting one of these links initiates signing up for a license.
 
     :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email containing a shared Power BI dashboard or report link that initiates the sign-up process.":::
 

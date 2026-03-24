@@ -44,7 +44,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 ## Key points
 
-The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your organization.
+The following are some key points to emphasize about programmatically embedding Power BI content in a custom application for your organization.
 
 ### Use cases
 
