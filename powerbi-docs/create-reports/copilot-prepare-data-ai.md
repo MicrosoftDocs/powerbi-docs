@@ -145,32 +145,6 @@ When you mark your semantic model as **approved for Copilot**, the standalone Co
 
 Authors can also turn on an admin setting to [only show **approved items** in the standalone Copilot experience](/power-bi/create-reports/copilot-enable-power-bi#only-show-approved-items-in-the-standalone-copilot-in-power-bi-experience-preview).
 
-## Copilot tooling file format
-
-When you save as a [**Power BI Project (PBIP)**](/power-bi/developer/projects/projects-overview), all Copilot metadata is stored in a single `Copilot/` folder. This structure makes it easier to edit Copilot settings by using code editors and enables seamless collaboration through Git.
-
-Example structure of the `Copilot/` folder for a semantic model:
-
-```text
-PBIP/
-├── Model.SemanticModel/
-│   ├── definition/
-│   ├── Copilot/
-│   │   ├── Instructions/
-│   │   │   ├── instructions.md
-│   │   │   ├── version.json
-│   │   ├── VerifiedAnswers/
-│   │   │   ├── definitions/
-│   │   │   ├── version.json
-│   │   ├── schema.json
-│   │   ├── examplePrompts.json
-│   │   ├── settings.json
-│   │   └── version.json
-│   └── definition.pbism
-```
-
-Learn more about these files in [Power BI Project documentation](/power-bi/developer/projects/projects-dataset#copilot-folder).
-
 ## Upgrade to Copilot tooling format
 
 If your semantic model still uses the [Q&A tooling](/power-bi/natural-language/q-and-a-tooling-intro) format (using [Linguistic Schema](/power-bi/natural-language/q-and-a-tooling-advanced#whats-a-linguistic-schema)) to store Copilot metadata, the next time you open **Prep data for AI**, you see a prompt to migrate to the new Copilot experience.
