@@ -112,7 +112,7 @@ Say you're working in Power BI Desktop without an internet connection and you op
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
 
 - Limitations when [downloading a .pbix file from a report](#report-download-limitations).
-- Limitations when [downloading a .pbix file from a semantic model](#limitations-when-downloading-a-semantic-model-pbix-file).
+- Limitations when [downloading a .pbix file from a semantic model](#semantic-model-download-limitations).
 
 ### Report Download Limitations
 
@@ -155,19 +155,26 @@ This section lists the limitations of downloading a .pbix file. This section is 
 > |Downloading a report that is created in the Power BI service or Power BI Desktop which is based on a semantic model in My Workspace|Yes|No|
 > |Sample reports|Yes|No|
 
-### Limitations when downloading a semantic model .pbix file
+### Semantic Model Download Limitations
 
-* To download the .pbix file, you must be at least a Contributor to the workspace.
-* Semantic models with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
-* Semantic models migrated from Azure Analysis Services by using the [Azure Analysis Services to Power BI Premium migration feature](../enterprise/aas-pbi-migration-overview.md) can't be downloaded to a .pbix file.
-* Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
-* You can't download semantic models based on data imported from OneDrive for work or school.
-* You can't download Direct Lake semantic models.
-* Downloading a .pbix is subject to size limitations. The maximum size allowed is the smaller of the following: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), or 10GB. 
-* Downloading a .pbix and its data with a data model size larger than 10GB isn't supported. Alternatively, you can download the .pbix attached to such large data models in [live connected report mode](#download-modes).
-* Semantic models with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox **Delete automatic aggregations tables**.
-* Attempting to concurrently download a semantic model enabled for large semantic model storage format might result in errors.
-* Semantic models enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these semantic models.
+#### Permission requirements
+- To download the .pbix file, you must be at least a Contributor to the workspace.
+
+#### Model configuration restrictions
+- Semantic models with incremental refresh can't be downloaded to a .pbix file. 
+- You can't download Direct Lake semantic models.  
+- Semantic models with automatic aggregations enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox Delete automatic aggregations tables.
+
+#### Migration and data source restrictions
+- Semantic models migrated from Azure Analysis Services by using the Azure Analysis Services to Power BI Premium migration feature can't be downloaded to a .pbix file.  
+- You can't download semantic models based on data imported from OneDrive for work or school. 
+
+#### Other 
+- Downloading a .pbix file after deployment isn't supported as part of the deployment pipeline (ALM). 
+- Downloading a .pbix and its data with a data model size larger than 10GB isn't supported. Alternatively, you can download the .pbix attached to such large data models in live connected report mode 
+- Downloading a .pbix is subject to size limitations. The maximum size allowed is the smaller of the following: maximum offline semantic model size for the capacity SKU, or 10GB. 
+- Attempting to concurrently download a semantic model enabled for large semantic model storage format might result in errors.  
+- Semantic models enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these semantic models. 
 
 ## Troubleshoot common problems
 
