@@ -3,11 +3,11 @@ title: Prepare Your Data for AI
 description: Learn how to prepare your data for AI in Power BI using AI data schemas, verified answers, and AI instructions to optimize Copilot performance and improve insights.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kaurharleen
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/01/2026
+ms.date: 05/08/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
