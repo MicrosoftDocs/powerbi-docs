@@ -81,7 +81,7 @@ Each visual also has a card in the **Formatting** section of the **Visualization
 :::image type="content" source="media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png" alt-text="Screenshot of formatting options for the Visual header.":::
 
 > [!NOTE]
-> The visibility of toggles don't affect your report when you're authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are visible during editing, especially warning icons that alert you to issues while editing.
+> The visibility of toggles doesn't affect your report when you're authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are visible during editing, especially warning icons that alert you to issues while editing.
 
 For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace**, selecting **More options** next to the report, and then choosing **Settings**. There you see settings for the report for which you selected **Settings**. You can adjust the settings from there, under **Visual options**, as shown in the following image.
 
@@ -97,7 +97,7 @@ The new visual header is the default behavior for all new reports. For existing 
 
 For more information about Power BI Desktop and how to get started, see:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)

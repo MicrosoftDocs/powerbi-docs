@@ -27,9 +27,11 @@ The following example shows a translytical task flow that connects a Power BI re
 
 :::image type="content" source="./media/translytical-task-flow-overview/example-request-discount.gif" alt-text="Animated gif that shows a user requesting a discount for opportunities found in a Power BI report, and that request surfacing as a Teams post." lightbox="./media/translytical-task-flow-overview/example-request-discount.gif":::
 
-Ready to get started?
+Ready to get started? Choose from two end-to-end tutorials:
 
-* If you want to follow an end-to-end tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md). This tutorial guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report with a data function button.
+* **Data write-back tutorial**: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md) guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report to enable data annotation scenarios.
+
+* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to post status updates from a Power BI report to Microsoft Teams channels.
 
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
 
@@ -76,6 +78,8 @@ The following service limitations can also affect your translytical task flows:
 
 ## Next steps
 
-* If you want to follow an end-to-end tutorial to build your first translytical task flow, see [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md). This tutorial guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report with a data function button.
+* **Data write-back tutorial**: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md) guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report to enable data annotation scenarios.
+
+* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to post status updates from a Power BI report to Microsoft Teams channels.
 
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).

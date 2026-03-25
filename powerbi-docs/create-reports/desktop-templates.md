@@ -71,7 +71,7 @@ You might also be interested in learning about **Query Parameters**:
 
 In addition, there are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data Types in Power BI Desktop](../connect-data/desktop-data-types.md)
 - [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
