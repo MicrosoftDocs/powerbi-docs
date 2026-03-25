@@ -3,7 +3,7 @@ title: Power BI Desktop project semantic model folder
 description: Learn about the Power BI Desktop project semantic model folder.
 author: billmath
 ms.author: billmath
-ms.reviewer: ruiromano
+ms.reviewer: harleenkaur
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
@@ -22,7 +22,6 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [Copilot\ folder](#copilot-folder)
 - [DAXQueries\ folder](#daxqueries-folder)
 - [TMDLScripts\ folder](#tmdlscripts-folder)
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
