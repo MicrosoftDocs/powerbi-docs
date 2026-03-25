@@ -171,7 +171,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 #### Other 
 - Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations). 
 - Downloading a .pbix and its data with a data model size larger than 10GB isn't supported. Alternatively, you can download the .pbix attached to such large data models in live connected report mode 
-- Downloading a .pbix is subject to size limitations. The maximum size allowed depends on the minimum of two factors:[maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), and the customizable max offline semantic model size. Downloading a .pbix where the data model size is larger than 50 GB isn't supported. Downloading a .pbix file that's larger than any of these limits is only supported when the .pbix is in [live connected report mode](#download-modes). 
+- Downloading a .pbix is subject to size limitations. The maximum size allowed depends on the minimum of two factors:[maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), or 10GB. 
 - Attempting to concurrently download a semantic model enabled for large semantic model storage format might result in errors.  
 - Semantic models enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these semantic models. 
 
