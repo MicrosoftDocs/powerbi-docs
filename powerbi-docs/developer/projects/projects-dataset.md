@@ -3,7 +3,7 @@ title: Power BI Desktop project semantic model folder
 description: Learn about the Power BI Desktop project semantic model folder.
 author: billmath
 ms.author: billmath
-ms.reviewer: ruiromano
+ms.reviewer: harleenkaur
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
@@ -22,7 +22,6 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [Copilot\ folder](#copilot-folder)
 - [DAXQueries\ folder](#daxqueries-folder)
 - [TMDLScripts\ folder](#tmdlscripts-folder)
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
@@ -106,55 +105,6 @@ Contains diagram metadata that defines the structure of the semantic model assoc
 Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
-
-### Copilot\ folder
-
-Contains all the [Copilot tooling](/power-bi/create-reports/copilot-prepare-data-ai) metadata and settings configured for the semantic model. 
-
-#### Instructions\instructions.md
-
-Contains the [AI instructions](/power-bi/create-reports/copilot-prepare-data-ai-instructions) configured for the semantic model, stored as a markdown file.
-
-#### schema.json
-
-Contains the [Schema selection](/power-bi/create-reports/copilot-prepare-data-ai-data-schema) and field synonyms configured for the semantic model. 
-
-For more information, see the [schema.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/schema).
-
-#### VerifiedAnswers\ folder
-
-Contains the configured [Verified answers](/power-bi/create-reports/copilot-prepare-data-ai-verified-answers) for the semantic model, using [PBIR format](/power-bi/developer/projects/projects-report?tabs=v2%2Cdesktop#pbir-format)
-
-Each verified answer is stored in its own folder within the `definitions\` directory:
-
-```text
-Copilot/
-├── VerifiedAnswers/
-│   ├── definitions/
-│   │   ├── [verified answer ID]/
-│   │   │   ├── definition.json
-│   │   │   ├── filters.json
-│   │   │   ├── visualSource.json
-│   ├── version.json
-```
-
-#### settings.json
-
-Contains top level Copilot tooling settings. 
-
-For more information, see the [settings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/settings).
-
-#### examplePrompts.json
-
-Contains example prompts set up for the semantic model used by Copilot **Zero Prompt** experiences.
-
-For more information, see the [examplePrompts.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/examplePrompts).
-
-#### version.json
-
-This file tracks the version of the feature’s file structure. The version is updated whenever the file representation changes, such as when a new file is added.
-
-For more information, see the [version.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/version).
 
 ### DAXQueries\ folder
 
