@@ -150,7 +150,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 > |-------------|----------|---------|
 > |Reports based on Direct Lake semantic models|No|Yes|
 > |Reports created in the Power BI service that are based on a single semantic model that's configured for [incremental refresh](../connect-data/incremental-refresh-configure.md) can only be downloaded in live connected report mode|No|Yes|
-> |Downloading a .pbix is subject to size limitations. Downloading a .pbix file that's larger than these limits|No|Yes|
+> Downloading a .pbix is subject to size limitations. The maximum size allowed depends on the minimum of two factors:[maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), and the customizable max offline semantic model size. Downloading a .pbix where the data model size is larger than 50 GB isn't supported. Downloading a .pbix file that's larger than any of these limits is only supported when the .pbix is in [live connected report mode](#download-modes).|No|Yes|
 > |Downloading a report that is created in the Power BI service or Power BI Desktop which is based on a semantic model in My Workspace|Yes|No|
 > |Sample reports|Yes|No|
 
