@@ -1,13 +1,13 @@
 ---
-title: Download a report from the Power BI service to Power BI Desktop
+title: Download a Report from the Power BI Service to Power BI Desktop
 description: Download a report from the Power BI service to a Power BI Desktop file
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: jterh
+ms.reviewer: aambalavanan
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 03/26/2026
 ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
@@ -26,25 +26,23 @@ There are two ways to download a .pbix file, each with different results and con
 
 ## Prerequisites
 
-* To download a .pbix file, you at least must be a Contributor to the workspace.
+To download a .pbix file, you at least must be a Contributor to the workspace.
 
 ## Download a report as a .pbix file
 
 To download a report as a .pbix file, follow these steps:
 
 1. In the Power BI service, open the report you want to download. You can download the report in Reading view or Editing view.
-
-2. From the top menu bar, select **File** > **Download this file**.
+1. From the top menu bar, select **File** > **Download this file**.
 
     If this option isn't shown or is disabled, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
-3. In the dialog box, choose what type of download you want. You can choose between downloading the report including the data or the report with a live connection to the data. See [Download modes](#download-modes) in this article for more information. Pick a mode and select **Download** to start the download process.
+1. In the dialog box, choose what type of download you want. You can choose between downloading the report including the data or the report with a live connection to the data. See [Download modes](#download-modes) in this article for more information. Pick a mode and select **Download** to start the download process.
 
     :::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
 
-4. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
-
-5. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
+1. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
+1. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
 
 ### Download modes
 
@@ -80,7 +78,6 @@ To download a semantic model as a .pbix file, follow these steps:
     If this option isn't shown, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
 1. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
-
 1. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
 
 ## Parity between Power BI Desktop and the service
@@ -91,15 +88,13 @@ When you open a .pbix file in Power BI Desktop, you might see a warning message 
 
 If you need to see the latest version of the report that you worked on in the Power BI service (app.powerbi.com), you need to view the report there.
 
-## Working offline
+## Work offline
 
 Say you're working in Power BI Desktop without an internet connection and you open a report with an [AppSource Power BI visual](./../developer/visuals/power-bi-custom-visuals.md#appsource-power-bi-visuals). If you hadn't previously saved the report while Power BI Desktop was online, the visual won't render. To fix this problem, follow these steps:
 
 1. Make sure you're working online.
-
-2. Open the report in Power BI Desktop. If your connection was reestablished after you opened the report, close the report and reopen it.
-
-3. Save the report. After you've saved the report, you can open it again without an internet connection, and the Power BI visual works.
+1. Open the report in Power BI Desktop. If your connection was reestablished after you opened the report, close the report and reopen it.
+1. Save the report. After you've saved the report, you can open it again without an internet connection, and the Power BI visual works.
 
 ## Considerations
 
@@ -111,46 +106,80 @@ Say you're working in Power BI Desktop without an internet connection and you op
 
 This section lists the limitations of downloading a .pbix file. This section is split into two parts:
 
-- Limitations when [downloading a .pbix file from a report](#limitations-when-downloading-a-report-pbix-file).
-- Limitations when [downloading a .pbix file from a semantic model](#limitations-when-downloading-a-semantic-model-pbix-file).
+- Limitations when [downloading a .pbix file from a report](#report-download-limitations).
+- Limitations when [downloading a .pbix file from a semantic model](#semantic-model-download-limitations).
 
-### Limitations when downloading a report .pbix file
+### Report download limitations
 
-* You can download a file while in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a semantic model in another workspace, you need to be at least a Contributor to that workspace as well.
-* If you create a [report by using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a semantic model in another workspace, you can't download it.
-* Reports created in Power BI Desktop must be *published* or *uploaded* to the Power BI service before you can download them.
-* If you create a report in the Power BI service, you have to save it before you can download it.
-* You can't download reports based on Direct Lake semantic models.
-* You can't download reports based on semantic models that are imported from OneDrive for work or school.
-* You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
-* The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
-* You can't download the eight original built-in sample .pbix files from the Power BI service. However, you can [download those same .pbix files](sample-datasets.md) from the Power BI samples article.
-* You can only download usage metric reports in [live connected report mode](#download-modes).
-* You can't download a copy of a report if the copy is saved in a workspace other than where the original report is saved.
-* If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix still contains the old data source.
-* If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You need to open the .pbix file in Power BI Desktop and reconnect to the semantic model again before updating the file in OneDrive and SharePoint. 
-* Reports created in the Power BI service that are based on a single semantic model that's configured for [incremental refresh](../connect-data/incremental-refresh-configure.md) can only be downloaded in [live connected report mode](#download-modes).
-* If you create a Power BI report based on a semantic model in one workspace and publish the report to a different workspace, you can download the report in [live connected report mode](#download-modes) only if the semantic model is configured for [incremental refresh](../connect-data/incremental-refresh-configure.md).
-* Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
-* Downloading a .pbix is subject to size limitations. The maximum sized allowed depends on the minimum of two factors: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size) and the customizable max offline semantic model size. Downloading a .pbix where the data model size is larger than 50 GB isn't supported. Downloading a .pbix file that's larger than any of these limits is only supported when the .pbix is in [live connected report mode](#download-modes).
-* You can't download reports that are created in the Power BI service or Power BI Desktop and based on a semantic model in **My Workspace** in [live connected report mode](#download-modes).
-* If you disable the switch in the tenant settings described in [Control the use of semantic models across workspaces](../connect-data/service-datasets-admin-across-workspaces.md), your users can't download a .pbix file from copied reports or reports created from semantic models in a different workspace.
-* Attempting to concurrently download a report based on a semantic model enabled for large semantic model storage format might result in errors.
-* Reports that are based on a semantic model enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these reports.
+#### Permissions and workspace requirements
 
-### Limitations when downloading a semantic model .pbix file
+- You can download a file while in either Reading view or [Editing view](./service-interact-with-a-report-in-editing-view.md). You must be at least a Contributor to the workspace that the report is in. If the report is based on a semantic model in another workspace, you need to be at least a Contributor to that workspace as well. 
 
-* To download the .pbix file, you must be at least a Contributor to the workspace.
-* Semantic models with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file.
-* Semantic models migrated from Azure Analysis Services by using the [Azure Analysis Services to Power BI Premium migration feature](../enterprise/aas-pbi-migration-overview.md) can't be downloaded to a .pbix file.
-* Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
-* You can't download semantic models based on data imported from OneDrive for work or school.
-* You can't download Direct Lake semantic models.
-* Downloading a .pbix is subject to size limitations. The maximum size allowed is the smaller of the following: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), or 10GB. 
-* Downloading a .pbix and its data with a data model size larger than 10GB isn't supported. Alternatively, you can download the .pbix attached to such large data models in [live connected report mode](#download-modes).
-* Semantic models with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox **Delete automatic aggregations tables**.
-* Attempting to concurrently download a semantic model enabled for large semantic model storage format might result in errors.
-* Semantic models enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these semantic models.
+#### Report creation and state
+
+- If you create a [report by using the **Create** button](service-quick-create-report.md), and it's based on a semantic model in another workspace, you can't download it.  
+- Reports created in Power BI Desktop must be published or uploaded to the Power BI service before you can download them.  
+- If you create a report in the Power BI service, you have to save it before you can download it. 
+- The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
+
+#### Data source restrictions
+
+- You can't download reports based on semantic models that are imported from OneDrive for work and school.
+- You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
+
+#### Workspace and copy restrictions
+
+- You can't download a copy of a report if the copy is saved in a workspace other than where the original report is saved.
+- If you create a Power BI report based on a semantic model in one workspace and publish the report to a different workspace, you can download the report in live connected report mode only if the semantic model is configured for incremental refresh.
+
+#### Deployment pipelines
+
+- Downloading a .pbix file after deployment isn't supported as part of the deployment pipeline (Fabric Application lifecycle management [ALM]).
+
+#### Other
+
+- If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix still contains the old data source.  
+- If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You need to open the .pbix file in Power BI Desktop and reconnect to the semantic model again before updating the file in OneDrive and SharePoint.  
+- Attempting to concurrently download a report based on a semantic model enabled for large semantic model storage format might result in errors.  
+- Reports that are based on a semantic model enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these reports.
+- Usage metrics report can't be downloaded. However in some cases this option might be available and if so, you can only download in [live connected report mode](#download-modes).
+- Template App reports can’t be downloaded.
+- Downloading a report/dataset as .pbix from the service after deploying them with Git integration is not recommended, as the results are unreliable.
+
+### Download mode limitations (copy of report and data versus live connect)
+
+|Limitation|Copy of your report and data|Live connection|
+|-------------|----------|---------|
+|Reports based on Direct Lake semantic models|No|Yes|
+|Reports created in the Power BI service that are based on a single semantic model that's configured for [incremental refresh](../connect-data/incremental-refresh-configure.md) can only be downloaded in live connected report mode|No|Yes|
+|Downloading a .pbix is subject to size limitations. The maximum size allowed depends on the minimum of two factors: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size) and the customizable max offline semantic model size. Downloading a .pbix where the data model size is larger than 50 GB isn't supported. Downloading a .pbix file that's larger than any of these limits is only supported when the .pbix is in [live connected report mode](#download-modes).|No|Yes|
+|Downloading a report that is created in the Power BI service or Power BI Desktop that is based on a semantic model in My Workspace|Yes|No|
+|Sample reports|Yes|No|
+
+### Semantic model download limitations
+
+#### Permission requirements
+
+- To download the .pbix file, you must be at least a Contributor to the workspace.
+
+#### Model configuration restrictions
+
+- Semantic models with [incremental refresh](../connect-data/incremental-refresh-configure.md) can't be downloaded to a .pbix file. 
+- You can't download Direct Lake semantic models.  
+- Semantic models with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox Delete automatic aggregations tables.
+
+#### Migration and data source restrictions
+
+- Semantic models migrated from Azure Analysis Services by using the [Azure Analysis Services to Power BI Premium migration feature](../enterprise/aas-pbi-migration-overview.md) can't be downloaded to a .pbix file.  
+- You can't download semantic models based on data imported from OneDrive for work or school. 
+
+#### Other 
+
+- Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations). 
+- Downloading a .pbix and its data with a data model size larger than 10GB isn't supported. Alternatively, you can download the .pbix attached to such large data models in live connected report mode 
+- Downloading a .pbix is subject to size limitations. The maximum size allowed depends on the minimum of two factors:[maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size), or 10GB. 
+- Attempting to concurrently download a semantic model enabled for large semantic model storage format might result in errors.  
+- Semantic models enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these semantic models. 
 
 ## Troubleshoot common problems
 
