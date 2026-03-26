@@ -66,7 +66,7 @@ The following are some key points to emphasize about the enterprise BI scenario.
 
 ### Choice of report authoring tools
 
- [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is a tool to develop highly interactive reports, whereas [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) is a tool to develop paginated reports. For more information about when to use paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
+ [Power BI Desktop](../fundamentals/power-bi-overview.md) is a tool to develop highly interactive reports, whereas [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) is a tool to develop paginated reports. For more information about when to use paginated reports, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
 Excel reports can also be published to the Power BI service (not depicted in the scenario diagram) when a PivotTable or PivotChart better meets reporting requirements.
 

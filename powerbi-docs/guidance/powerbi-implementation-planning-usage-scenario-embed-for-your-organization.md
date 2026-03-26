@@ -33,7 +33,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 | Item | Description |
 | --- | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](../fundamentals/power-bi-overview.md). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an [On-premises data gateway](../connect-data/service-gateway-onprem.md) or VNet gateway for data refresh, like those that reside within a private organizational network. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application have [permission to view (or create or modify) Power BI content](powerbi-implementation-planning-security-report-consumer-planning.md) because they belong to a workspace role or they have direction permissions. |
@@ -44,7 +44,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 ## Key points
 
-The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your organization.
+The following are some key points to emphasize about programmatically embedding Power BI content in a custom application for your organization.
 
 ### Use cases
 

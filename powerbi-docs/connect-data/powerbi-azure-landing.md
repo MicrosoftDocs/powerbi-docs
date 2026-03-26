@@ -23,7 +23,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
 
 **Get started creating with Power BI**:
 
-- [Start with Power BI Desktop](../fundamentals/desktop-what-is-desktop.md)
+- [Start with Power BI Desktop](../fundamentals/power-bi-overview.md)
 - [Start with the Power BI service](../fundamentals/power-bi-overview.md)
 - [What is Power BI Report Server?](../report-server/get-started.md)
 

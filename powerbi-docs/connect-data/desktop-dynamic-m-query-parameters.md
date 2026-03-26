@@ -304,7 +304,7 @@ There are some considerations and limitations to take into account when you use 
 For more information about Power BI Desktop capabilities, check out the following resources:
 
 - [DirectQuery in Power BI](desktop-directquery-about.md)
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data types in Power BI Desktop](desktop-data-types.md)
 - [Tutorial: Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

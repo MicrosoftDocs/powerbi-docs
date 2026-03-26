@@ -151,10 +151,10 @@ For example, you can run Power BI Desktop with the following options and paramet
 
 ### Install Power BI Desktop on remote machines
 
-If you're deploying Power BI Desktop to your users with a tool that requires a Windows installer file (*.msi* file), you can extract the *.msi* file from the Power BI Desktop installer *.exe* file. Use a third-party tool, such as WiX Toolset.
+If you're deploying Power BI Desktop to your users with a tool that requires a Windows installer file (*.msi* file), you can extract the *.msi* file from the Power BI Desktop installer *.exe* file. Use a non-Microsoft tool, such as WiX Toolset.
 
 > [!NOTE]
-> As a third-party product, WiX Toolset options might change without notice. Check their documentation for the most up-to-date information.
+> As a non-Microsoft product, WiX Toolset options might change without notice. Check their documentation for the most up-to-date information.
 
 1. On the computer where you downloaded the Power BI Desktop installer, install the latest version of the [WiX Toolset](https://wixtoolset.org/).
 1. Open a command-line window as an administrator and navigate to the folder where you installed WiX Toolset.
@@ -210,7 +210,7 @@ This issue might resolve after later Windows updates are released.
 
 After you install Power BI Desktop, see the following content to help you get up and running quickly:
 
-- [What is Power BI Desktop?](desktop-what-is-desktop.md)
+- [What is Power BI?](power-bi-overview.md)
 - [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 - [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)

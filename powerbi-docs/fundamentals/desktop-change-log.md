@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: concept-article
-ms.date: 03/03/2026
+ms.date: 03/25/2026
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](whats-new.md) for more information about new features. 
+
+## March 2026 QFE 1
+
+*Version 2.152.1057.0, Released: 3/24/2026*
+
+Bug fixes/improvements:
+
+- Fixed issues with data label positioning in column charts.
 
 ## February 2026 QFE 1 
 

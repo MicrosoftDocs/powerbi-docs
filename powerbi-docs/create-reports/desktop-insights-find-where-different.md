@@ -139,7 +139,7 @@ In addition, the following model types and data sources are currently not suppor
 
 For more information, see:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query Overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)

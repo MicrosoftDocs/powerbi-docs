@@ -26,7 +26,7 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 
 - You need a Microsoft Power BI license to publish to web from My Workspace. 
 - You need a Microsoft Power BI Pro or Premium Per User license to publish to web from workspaces. 
-- Publish to web is available for reports you can edit in your My Workspace and workspaces.  
+- Publish to web is available for reports you can edit in your My Workspace and workspaces (you must have **edit** permissions on the model and **reshare** permissions on the report).
 - It isn't available for reports shared with you, or ones relying on row-level security to secure data. 
 - Your report viewers don't need to be Power BI users.
 - **Your Power BI administrator must enable the Publish to web tenant setting.** If you're an administrator, see [Enable Publish to web as an administrator](#enable-publish-to-web-as-an-administrator).
