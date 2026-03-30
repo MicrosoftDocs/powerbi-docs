@@ -19,6 +19,15 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
 
+## March 2026
+	
+Version 15.7.1816.327, released March 30, 2026
+	
+- Fixed sign in issues with Power BI Service
+- Fixed issue where my workspace wouldn't resolve properly for some users
+- Fixed MDX query returning empty results for parameters
+- Fixed issue releasing on Microsoft Store
+
 ## September 2025
 
 Version 15.7.1815.334, released September 11, 2025
