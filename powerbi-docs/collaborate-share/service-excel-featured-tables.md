@@ -1,16 +1,16 @@
 ---
 title: Access Power BI featured tables in Excel
 description: Learn how to use featured tables to link your data in Microsoft Excel to data from Power BI.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ikedeagu
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, office-integration
 ---
 
 # Access Power BI featured tables in Excel organization data types

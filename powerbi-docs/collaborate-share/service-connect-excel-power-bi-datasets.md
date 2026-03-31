@@ -1,9 +1,10 @@
 ---
 title: Power BI Semantic Model Experience in Excel 
 description: Discover and analyze Power BI semantic models in Excel using PivotTables in Excel Desktop and Excel for the web. Learn how to connect to live data.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: lukaszp
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article

@@ -1,9 +1,10 @@
 ---
 title: Chat in Microsoft Teams directly from the Power BI service
 description: Learn how to share Power BI dashboards, reports, and semantic models directly to Microsoft Teams from the Power BI service.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: maya.bendov
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

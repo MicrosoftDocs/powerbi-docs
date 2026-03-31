@@ -1,9 +1,10 @@
 ---
 title: Power BI Add-in for PowerPoint - Admin Info
 description: Learn how to manage the Power BI add-in for PowerPoint in your organization. Get essential admin guidance on requirements, licensing, deployment, and tenant settings.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

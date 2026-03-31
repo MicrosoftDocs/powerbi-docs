@@ -2,9 +2,10 @@
 title: Manage Multiple Add-ins With the Power BI Controller (Preview)
 description: Learn how to use the Power BI Controller (preview) to manage multiple Power BI add-ins in PowerPoint presentations efficiently.
 #customer intent: As a Power BI user, I want to learn how to manage multiple add-ins in my PowerPoint presentations.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft
+ms.author: daknappe
 ms.reviewer: mayabendov
+ms.custom: office-integration
 ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

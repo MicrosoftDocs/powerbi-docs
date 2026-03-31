@@ -1,9 +1,10 @@
 ---
 title: Embed Power BI reports in Microsoft Teams
 description: Learn how to easily embed interactive Power BI reports in Microsoft Teams channels and chats.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

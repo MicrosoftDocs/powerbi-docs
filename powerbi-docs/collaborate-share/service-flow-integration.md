@@ -1,16 +1,16 @@
 ---
 title: Integrate Power BI Data Alerts with Power Automate
 description: Learn how to create Power Automate flows triggered by Power BI data alerts to automate email notifications, calendar events, and other workflow actions.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Get started
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, office-integration
 ---
 
 # Integrate Power BI data alerts with Power Automate

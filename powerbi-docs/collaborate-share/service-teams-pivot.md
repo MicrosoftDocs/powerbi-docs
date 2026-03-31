@@ -1,9 +1,10 @@
 ---
 title: View all the Power BI tabs you use in Microsoft Teams
 description: Learn how you can view all the Power BI tabs in Microsoft Teams. Those tabs are on the In Teams pivot on the home experience in Power BI app for Teams.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

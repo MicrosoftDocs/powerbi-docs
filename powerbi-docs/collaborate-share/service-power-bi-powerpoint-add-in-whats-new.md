@@ -1,9 +1,10 @@
 ---
 title: What's new in Power BI collaboration and integration
 description: Learn about features as they're introduced for collaborating and sharing with Power BI add-ins and integrations.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

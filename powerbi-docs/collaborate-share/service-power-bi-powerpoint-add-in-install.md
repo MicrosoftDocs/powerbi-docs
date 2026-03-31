@@ -1,9 +1,10 @@
 ---
 title: Add a Live Power BI Report Page to PowerPoint
 description: Learn how to install the Power BI PowerPoint add-in in a PowerPoint slide.
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft
+ms.author: daknappe
 ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

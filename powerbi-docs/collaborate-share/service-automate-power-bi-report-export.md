@@ -1,16 +1,16 @@
 ---
 title: Export and Email a Report with Power Automate
 description: In this article, you use Power Automate to automate the export and distribution of Power BI reports in various supported formats and scenarios.  
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 02/18/2026
 ai-usage: ai-assisted
 LocalizationGroup: Get started
-ms.custom: sfi-image-nochange
+ms.custom: sfi-image-nochange, office-integration
 ---
 # Export and email a Power BI report with Power Automate
 

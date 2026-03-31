@@ -1,9 +1,10 @@
 ---
 title: Use Power BI in Microsoft Outlook and Microsoft 365
 description: Learn how to use the Power BI app in Microsoft Outlook and Microsoft 365 to access and collaborate on Power BI content.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

@@ -1,9 +1,10 @@
 ---
 title: Troubleshoot the Power BI add-in for PowerPoint
 description: Learn how to troubleshoot issues with the Power BI add-in for PowerPoint. 
-author: JulCsc
-ms.author: juliacawthra
+author: dknappettmsft
+ms.author: daknappe
 ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

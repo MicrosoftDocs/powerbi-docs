@@ -1,9 +1,10 @@
 ---
 title: Collaborate with Power BI in Teams
 description: Discover how to collaborate on Power BI reports and dashboards in Microsoft Teams. Embed interactive content, share insights, and enable teamwork.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share

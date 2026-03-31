@@ -1,9 +1,10 @@
 ---
 title: Design Refreshable Reports in Excel with Power BI Data
 description: Learn how to design refreshable reports in Excel with Power BI data. Analyze your data using PivotTables, Excel tables, and refresh data with live connections.
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ikedeagu
+author: dknappettmsft
+ms.author: daknappe
+ms.reviewer: mayabendov
+ms.custom: office-integration
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
