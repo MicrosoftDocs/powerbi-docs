@@ -85,7 +85,7 @@ The auto-create mobile layout feature is now GA! This feature enables you to eas
 
 Understanding which reports were created from a semantic model in Power BI is crucial to judging the consistency and reliability of data being used across different reports, particularly in collaborative environments where multiple stakeholders rely on accurate data to make informed decisions. When you know that reports are linked to a common semantic model, you can trust that metrics and calculations are standardized.
 
-To see a semantic model's related reports, open the model in the app and tap **Linked content** on the info pane. You'll see the related reports you have access to, including those located in different workspaces. The name of the workspace each report is located in is shown directly below the report's name.
+To see a semantic model's related reports, open the model in the app and select **Linked content** on the info pane. The related reports you have access to are shown, including those in different workspaces. Each report's workspace name appears directly below the report name.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-linked-content.png" alt-text="Screenshot showing the Linked content tab of the semantic model info pane in the Power BI mobile app." border="false":::
 
