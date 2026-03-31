@@ -85,4 +85,4 @@ For more information about this problem, see [Republish or replace a semantic mo
 
 ### Duplicate reports appear in workspace after publishing
 
-In rare cases, publishing over an unstable network connection may result in duplicate copies of the report appearing in your workspace. To resolve this, you can safely remove the duplicates. To help prevent this, ensure you have a reliable network connection before publishing.
+In rare cases, publishing over an unstable network connection may result in duplicate copies of the report appearing in your workspace. To resolve the issue, you can safely remove the duplicates. For best results, publish over a reliable network connection.
