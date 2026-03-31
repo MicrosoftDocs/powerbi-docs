@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 In Excel Desktop or Excel for the web, you can discover all the Power BI semantic models that you have access to. You can explore that data in Excel spreadsheets using PivotTables and other Excel capabilities. By using the Power BI semantic model experience in Excel, you can:  
 
 - Easily search for your Power BI data in Excel and analyze that data by using PivotTables and connected tables.
-- Navigate to the Data hub in the Power BI service (`https://app.powerbi.com`), where you can discover other data artifacts (including Power BI datamarts) and trusted data in your organization.
+- Navigate to the Data hub in the Power BI service (`https://app.powerbi.com`), where you can discover other data artifacts and trusted data in your organization.
 - Get more insights on the semantic model you're exploring in Excel by viewing related Power BI reports.
 
 ## Requirements

@@ -2967,7 +2967,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Introducing tenant setting for Power BI datamarts (preview) [[video]](https://youtu.be/Vlo7dJgr4WM?t=877)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053189)  [[article]](../transform-model/datamarts/datamarts-overview.md)
 
 
 > [!NOTE]
@@ -3134,7 +3133,6 @@ The following updates are new to Power BI Desktop this month:
 ### Data connectivity
 * MariaDB (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
 * Google Sheets (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
-* Certified connectors availability in Power BI dataflows and datamarts [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518273)   [[article]](/power-query/connectors/)  
 
 
 > [!NOTE]
@@ -3220,7 +3218,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Connect to datamarts (preview) [[video]](https://youtu.be/iVbxzo-L7TM?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099842)
 * Display name support in the Dataverse connector [[video]](https://youtu.be/iVbxzo-L7TM?t=1127)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099843)
 * Many connector updates (update) [[video]](https://youtu.be/iVbxzo-L7TM?t=1233)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099844)
 
@@ -3304,7 +3301,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Connect to datamarts (preview) [[video]](https://youtu.be/gu_5Q3z-qpc?t=288)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516665)
 * Many new data connectors [[video]](https://youtu.be/gu_5Q3z-qpc?t=555)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516668)
 * Many connector updates (update) [[video]](https://youtu.be/gu_5Q3z-qpc?t=497)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516666)
 

@@ -17,7 +17,7 @@ ms.date: 12/30/2024
 
 This data-level auditing article is targeted at multiple audiences:
 
-- **Data creators and workspace administrators**: Users who need to understand usage, adoption, and performance of the semantic models, dataflows, and datamarts that they create, publish, and share.
+- **Data creators and workspace administrators**: Users who need to understand usage, adoption, and performance of the semantic models and dataflows that they create, publish, and share.
 - **Power BI administrators**: The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators might also need to collaborate with content creators when troubleshooting performance.
 - **Power BI capacity administrators**: The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
@@ -27,7 +27,7 @@ This data-level auditing article is targeted at multiple audiences:
 
 The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
-Achieving good performance in reports and visuals isn't possible when the underlying semantic model and/or data source isn't performing well. This article focuses on auditing and monitoring of semantic models, dataflows, and datamarts. It's the second article in the auditing and monitoring series because the tools and techniques are more complex than what's described in the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article. Ideally, you create shared semantic models (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article.
+Achieving good performance in reports and visuals isn't possible when the underlying semantic model and/or data source isn't performing well. This article focuses on auditing and monitoring of semantic models and dataflows. It's the second article in the auditing and monitoring series because the tools and techniques are more complex than what's described in the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article. Ideally, you create shared semantic models (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article.
 
 Because Power BI semantic models are built upon the Analysis Services tabular engine, you can connect to a local data model (in Power BI Desktop) or a Premium semantic model (in the Power BI service) as if it's an Analysis Services database. Therefore, many of the auditing and monitoring capabilities of Analysis Services are supported for Power BI Premium semantic models.
 
@@ -368,7 +368,7 @@ Sometimes, Power BI accesses a data source through a [data gateway](../connect-d
 
 ## Data refresh monitoring
 
-A [data refresh](../connect-data/refresh-data.md) operation involves importing data from underlying data source(s) into a Power BI semantic model, dataflow, or datamart. You can schedule a data refresh operation or run it on-demand.
+A [data refresh](../connect-data/refresh-data.md) operation involves importing data from underlying data source(s) into a Power BI semantic model or dataflow. You can schedule a data refresh operation or run it on-demand.
 
 ### Service-level agreement
 
@@ -430,12 +430,6 @@ You can track user activities for Power BI dataflows with the Power BI activity 
 
 > [!TIP]
 > There are many best practices that you can adopt to optimize your dataflow designs. For more information, see [Dataflows best practices](../transform-model/dataflows/dataflows-best-practices.md).
-
-## Datamart monitoring
-
-A Power BI [datamart](../transform-model/datamarts/datamarts-overview.md) includes several integrated components, including a dataflow, a managed database, and a semantic model. Refer to the previous sections of this article to learn about auditing and monitoring of each component.
-
-You can track user activities for Power BI datamarts by using the Power BI activity log. For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
 ## Related content
 

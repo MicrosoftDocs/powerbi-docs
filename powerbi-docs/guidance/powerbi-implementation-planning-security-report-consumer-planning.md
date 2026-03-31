@@ -297,12 +297,10 @@ Shared views are a temporary concept. They automatically expire after 180 days. 
 
 The most common ways for consumers to interact with Power BI are with apps, workspaces, and per-item permissions (previously described in this article).
 
-There are other techniques that consumers can use to query Power BI data. Each of the following query techniques requires semantic model or datamart Build permission.
+There are other techniques that consumers can use to query Power BI data. Each of the following query techniques requires semantic model Build permission.
 
 - **Analyze in Excel**: Consumers who prefer to use Excel can query a Power BI semantic model by using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md). This capability is a great alternative to exporting data to Excel because the data isn't duplicated. With a live connection to the semantic model, users can create PivotTables, charts, and slicers. They can then publish the workbook to a workspace in the Power BI service which allows consumers to open it and interact with it.
 - **XMLA endpoint**: Consumers can query a semantic model by connecting to the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). An application that's XMLA-compliant can connect to, query, and consume a semantic model that's stored in a Premium workspace. This capability is helpful when consumers want to use a Power BI semantic model as their data source for a data visualization tool outside of the Microsoft ecosystem.
-- **Datamart editor**: Consumers can query a Power BI datamart by using the [datamart editor](../transform-model/datamarts/datamarts-analyze.md#visual-query). It's a web-based visual query editor for creating no-code queries. There's also a web-based SQL editor for when consumers prefer to write SQL queries. Both editors query the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in semantic model).
-- **SQL endpoint**: Consumers can query a Power BI datamart by using the [SQL endpoint](../transform-model/datamarts/datamarts-analyze.md#analyze-outside-the-editor). They can use tools like Azure Data Studio or SQL Server Management Studio (SSMS) to run SQL queries. The SQL endpoint directs queries to the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in semantic model).
 
 For more information about the Build permission, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
@@ -313,7 +311,6 @@ For more information about the Build permission, see the [Content creator securi
 > [!div class="checklist"]
 > - **Create guidance for users on using Analyze in Excel**: Provide documentation and training for consumers on the best way to reuse existing semantic models with Excel.
 > - **Create guidance for users on using the XMLA endpoint**: Provide documentation and training for consumers on the best way to reuse existing semantic models with the XMLA endpoint.
-> - **Create guidance for users on datamart queries**: Provide documentation and training for consumers on the available techniques for querying Power BI datamarts.
 
 ## Request access workflow for consumers
 
@@ -384,7 +381,7 @@ You can plan to create fewer semantic models and reports by enforcing data secur
 
 For example, consider that you can share a single sales report with all salespeople (consumers), knowing that each salesperson will only see sales results for their region. This approach allows you to avoid the complexity of creating separate reports _per region_ that would need to be shared with the salespeople from that sales region.
 
-Some organizations have specific requirements for [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted) semantic models or datamarts. For data that will be widely used, there might be a requirement to use data security.
+Some organizations have specific requirements for [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted) semantic models. For data that will be widely used, there might be a requirement to use data security.
 
 You can accomplish data security in multiple ways.
 
@@ -456,16 +453,6 @@ Here are the permission rules that determine whether RLS is enforced.
 
 For more information about RLS, see [Restrict access to Power BI model data](/learn/modules/enforce-power-bi-model-security/2-restrict-access-to-power-bi-model-data).
 
-#### RLS for datamarts
-
-Power BI datamarts can also enforce RLS. However, the implementation is different.
-
-The main difference is that RLS for datamarts is set up in the Power BI service, rather than in Power BI Desktop.
-
-Another difference is that datamarts enforce RLS on both the semantic model and the managed Azure SQL Database that's associated with the datamart. Enforcing RLS at both layers provides consistency and flexibility. The same RLS filters are applied regardless of how the user queries the data, whether it's by connecting to the semantic model or to the managed Azure SQL Database.
-
-For more information, see [RLS for datamarts](../transform-model/datamarts/datamarts-access-control.md#row-level-security).
-
 ### Object-level security
 
 [Object-level security (OLS)](/fabric/security/service-admin-object-level-security) allows a data modeler to restrict access to specific tables and columns, and their metadata. You typically use OLS to ensure sensitive columns, like employee salary, aren't visible to certain users. While it isn't possible to restrict access to measures, any measure that references a restricted column will itself be restricted.
@@ -494,4 +481,4 @@ For more information about OLS, see [Restrict access to Power BI model objects](
 
 ## Related content
 
-In the [next article in this series](powerbi-implementation-planning-security-content-creator-planning.md), learn about security planning for content creators who are responsible for creating semantic models, dataflows, datamarts, reports, or dashboards.
+In the [next article in this series](powerbi-implementation-planning-security-content-creator-planning.md), learn about security planning for content creators who are responsible for creating semantic models, dataflows, reports, or dashboards.

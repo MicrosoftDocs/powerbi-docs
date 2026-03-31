@@ -135,7 +135,6 @@ The capabilities in the Power BI service for authoring and editing content are c
 There are some types of Power BI items that can be created in the web-based experience, such as:
 
 - Dataflows
-- Datamarts
 - Paginated reports
 - Power BI reports
 - Dashboards

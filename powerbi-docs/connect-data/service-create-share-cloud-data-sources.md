@@ -19,7 +19,6 @@ In the Power BI service, you can create, share, and manage cloud connections for
 
 - Semantic models
 - Paginated reports
-- Datamarts
 - Dataflows
 - Power Query Online experiences that you access by selecting **Get data**
 
