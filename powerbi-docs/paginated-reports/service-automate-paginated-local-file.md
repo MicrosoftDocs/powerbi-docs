@@ -1,18 +1,18 @@
 ---
-title: Save a paginated report to a local folder with Power Automate
+title: Save a Paginated Report to a Local Folder with Power Automate
 description: In this article, you use a template to set up recurring exports of a paginated report to your file system, in a desired format. 
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: pbi-collaborate-share
+ms.subservice: report-builder
 ms.topic: how-to
 ms.date: 11/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Get started
 ms.custom: sfi-image-nochange
 ---
-# Save a Power BI paginated report to a local folder  with Power Automate
+# Save a Power BI paginated report to a local folder with Power Automate
 
 With [Power Automate](/power-automate/getting-started), you can automate exporting and distributing Power BI paginated reports to a variety of supported formats and scenarios. In this article, you use a template to set up recurring exports of a paginated report to your file system, in a desired format. See the Prerequisites if it's your first time using the Export to File for Paginated Reports action in a Power Automate flow.
 

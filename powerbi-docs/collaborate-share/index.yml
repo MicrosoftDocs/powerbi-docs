@@ -87,7 +87,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Export paginated reports with Power Automate
-            url: service-automate-paginated-integration.md
+            url: ../paginated-reports/service-automate-paginated-integration.md
       - linkListType: how-to-guide
         links:
           - text: Integrate data alerts with Power Automate

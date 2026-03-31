@@ -286,7 +286,7 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Expressions in paginated reports](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs) - Advanced report expressions
     1. [Report items and design](/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs) - Design patterns and best practices
     1. [Publish a paginated report](../paginated-reports/paginated-reports-save-to-power-bi-service.md) - Share your work
-    1. [Automate exports to SharePoint](../collaborate-share/service-automate-paginated-onedrive-sharepoint.md) - Automation
+    1. [Automate exports to SharePoint](../paginated-reports/service-automate-paginated-onedrive-sharepoint.md) - Automation
 
 ## 15. Goals and metrics: Track business objectives
 
