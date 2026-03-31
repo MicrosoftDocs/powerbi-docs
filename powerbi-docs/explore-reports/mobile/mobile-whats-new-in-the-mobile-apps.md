@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 02/03/2026
+ms.date: 03/27/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## March 2026
+
+### In-report Copilot now offers a full chat experience
+
+The in-report Copilot in the Power BI mobile apps now provides a full conversational chat experience. You can ask custom questions about a report using natural language, get summaries and insights, and ask follow-up questions to explore your data further. For more information, see [In-report Copilot in Power BI mobile apps](./mobile-apps-copilot.md).
 
 ## February 2026
 
@@ -79,7 +85,7 @@ The auto-create mobile layout feature is now GA! This feature enables you to eas
 
 Understanding which reports were created from a semantic model in Power BI is crucial to judging the consistency and reliability of data being used across different reports, particularly in collaborative environments where multiple stakeholders rely on accurate data to make informed decisions. When you know that reports are linked to a common semantic model, you can trust that metrics and calculations are standardized.
 
-To see a semantic model's related reports, open the model in the app and tap **Linked content** on the info pane. You'll see the related reports you have access to, including those located in different workspaces. The name of the workspace each report is located in is shown directly below the report's name.
+To see a semantic model's related reports, open the model in the app and select **Linked content** on the info pane. The related reports you have access to are shown, including those in different workspaces. Each report's workspace name appears directly below the report name.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-linked-content.png" alt-text="Screenshot showing the Linked content tab of the semantic model info pane in the Power BI mobile app." border="false":::
 
