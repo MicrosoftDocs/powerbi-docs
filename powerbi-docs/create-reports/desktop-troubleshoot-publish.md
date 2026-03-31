@@ -82,3 +82,7 @@ This problem can occur in the following scenarios.
    You can download the original report (not the live-connected one). You should be able to publish that copy correctly to overwrite the original report. If you need a separate live-connected report, you can publish it with a different name.
 
 For more information about this problem, see [Republish or replace a semantic model published from Power BI Desktop](desktop-upload-desktop-files.md#republish-or-replace-a-semantic-model-published-from-power-bi-desktop).
+
+### Duplicate reports appear in workspace after publishing
+
+In rare cases, publishing over an unstable network connection may result in duplicate copies of the report appearing in your workspace. To resolve this, you can safely remove the duplicates. To help prevent this, ensure you have a reliable network connection before publishing.

@@ -87,6 +87,8 @@ To learn more about creating folders in Microsoft Fabric workspaces, read the [c
   - If you first publish a report using Import mode, you can't overwrite the report and the semantic model with a DirectQuery or Live Connect based report.
   - If you first publish a report using a live connection, then change the storage mode or the target semantic model in Power BI Desktop, you can't overwrite the report when you republish.
 
+- Publishing over an unstable network connection may in rare cases result in duplicate reports appearing in your workspace. To resolve this, you can safely remove the duplicates.
+
 ## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
