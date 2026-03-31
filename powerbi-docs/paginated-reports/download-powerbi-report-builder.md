@@ -29,20 +29,19 @@ For details and more information about what's new in this release, see [Change l
 
 **[Download Power BI Report Builder](https://aka.ms/pbireportbuilderexe)**
 
-PBIRB September 2025 is the current generally available (GA) version.
+PBIRB March 2026 is the current generally available (GA) version.
 
 - Release name: Power BI Report Builder
-- Build number: 15.7.1815.334
-- Release date: September 11, 2025
+- Build number: 15.7.1816.327
+- Release date: March 30, 2026
 
 ## System requirements
 
 - Supported Operating Systems:
-  - Windows 10
   - Windows 11
-  - Windows Server 2016
   - Windows Server 2019
   - Windows Server 2022
+  - Windows Server 2025
 - .NET Framework 4.8 or later
 - 80 MB of available hard disk space
 - 512 MB of RAM
