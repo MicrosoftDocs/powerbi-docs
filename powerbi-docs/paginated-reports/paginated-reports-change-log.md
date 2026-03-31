@@ -7,7 +7,7 @@ ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
-ms.date: 12/01/2025
+ms.date: 03/31/2026
 ai-usage: ai-assisted
 ---
 
@@ -23,7 +23,7 @@ Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-bu
 	
 Version 15.7.1816.327, released March 30, 2026
 	
-- Fixed sign in issues with Power BI Service
+- Fixed sign-in issues with Power BI Service
 - Fixed issue where my workspace wouldn't resolve properly for some users
 - Fixed MDX query returning empty results for parameters
 - Fixed issue releasing on Microsoft Store
@@ -32,8 +32,8 @@ Version 15.7.1816.327, released March 30, 2026
 
 Version 15.7.1815.334, released September 11, 2025
 
-- Default map in Power BI Report Builder to use Azure Maps instead of Bing Maps APIs.
-- Fixed issue where login dialog would not prompt users to login when editing paginated report from Power BI workspace
+- Default map in Power BI Report Builder to use Azure Maps instead of Bing Maps APIs
+- Fixed issue where sign-in dialog didn't prompt users to sign in when editing paginated report from Power BI workspace
 - Added data limits for Azure Analysis Services data sources
 
 ## March 2025
@@ -51,7 +51,7 @@ Version 15.7.1814.616, released March 25, 2025
 
 Version 15.7.1813.16, released November 12, 2024
 
-- Fixed Power Query Online log in issue.
+- Fixed Power Query Online sign in issue.
 
 ## September 2024
 
@@ -59,7 +59,7 @@ Version 15.7.1812.222, released September 16, 2024
 
 - Power Query Online general availability.
 - Fixed issue editing data sources for PBI semantic models in a folder.
-- Fixed issue with sign in dialog in some cases.
+- Fixed issue with sign-in dialog in some cases.
 - Fixed issue preventing Report Builder being able to use window's "Run As A Different User."
 - Enhanced migration of SQL Azure based RDL reports in RdlMigration tool.
 - Added some additional telemetry.
