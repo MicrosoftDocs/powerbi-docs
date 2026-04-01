@@ -42,7 +42,7 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
 ## Chat about data with rich links and cards
 
-When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making. For information on sharing and chatting about Power BI content in Teams, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/service-share-report-teams.md#chat-about-power-bi-content-in-microsoft-teams).
+When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making. For information on sharing and chatting about Power BI content in Teams, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/office-integration/service-share-report-teams.md#chat-about-power-bi-content-in-microsoft-teams).
 
 ### Send your colleagues links to reports
 
@@ -69,7 +69,7 @@ If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
 ## Related content
 
-- [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
+- [Add the Power BI app to Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)
-- [Create reports from data in Microsoft Teams](../collaborate-share/business-user-teams-create-reports.md)
+- [Create reports from data in Microsoft Teams](../collaborate-share/office-integration/business-user-teams-create-reports.md)

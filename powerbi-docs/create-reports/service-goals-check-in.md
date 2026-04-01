@@ -98,7 +98,7 @@ To see all your followed goals, go to the Scorecards hub and select **Following*
 
 :::image type="content" source="media/service-goals-follow/following-goals.png" alt-text="Screenshot of followed goals in Scorecards hub." lightbox="media/service-goals-follow/following-goals.png":::
 
-Once you follow a goal, you get Teams notifications whenever the goal definition is updated. Examples of an update are when a check-in is added or an automated status rule changes the status of the goal. Read more about [notifications in Teams](../collaborate-share/service-teams-notifications.md).
+Once you follow a goal, you get Teams notifications whenever the goal definition is updated. Examples of an update are when a check-in is added or an automated status rule changes the status of the goal. Read more about [notifications in Teams](../collaborate-share/office-integration/service-teams-notifications.md).
 
 To unfollow and stop getting Teams notifications, hover over the goals and select **Unfollow goal**.
 

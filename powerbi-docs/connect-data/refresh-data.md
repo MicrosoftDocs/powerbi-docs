@@ -465,9 +465,6 @@ Stopping a semantic model refresh is useful when you want to stop a refresh of a
 
 To cancel a semantic model refresh, you need to be a contributor, member, or an admin of the semantic model's workspace. Semantic model refresh cancellation only works with semantic models that use [Import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [Composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
 
-> [!NOTE]
-> Semantic models created as part of datamarts aren't supported.
-
 To start a refresh, go to the semantic model you want to refresh, then select **Refresh now**.
 
 :::image type="content" source="media/refresh-data/start-dataset-refresh.png" alt-text="Screenshot of the refreshing a semantic model.":::

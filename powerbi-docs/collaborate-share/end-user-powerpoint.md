@@ -1,9 +1,8 @@
 ---
 title: Export Entire Reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
-author: julcsc
+author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
@@ -19,9 +18,9 @@ There are several different ways that Power BI and PowerPoint work together. In 
 
 Another option is to embed a live version of your report page in PowerPoint. You can interact with your data just as you would in Power BI. For more information about embedding a live report page, visit these articles:
 
-- [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)
-- [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)
-- [Administer the Power BI add-in for PowerPoint](service-power-bi-powerpoint-add-in-admin.md)
+- [Add a live Power BI report page in PowerPoint](office-integration/service-power-bi-powerpoint-add-in-install.md)
+- [Use the Power BI Add-in for PowerPoint](office-integration/service-power-bi-powerpoint-add-in-view-present.md)
+- [Administer the Power BI add-in for PowerPoint](office-integration/service-power-bi-powerpoint-add-in-admin.md)
 
 ## Export a report to PowerPoint
 
@@ -129,7 +128,7 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 
 ## Related content
 
-- [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)
-- [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)
+- [Add a live Power BI report page in PowerPoint](office-integration/service-power-bi-powerpoint-add-in-install.md)
+- [Use the Power BI Add-in for PowerPoint](office-integration/service-power-bi-powerpoint-add-in-view-present.md)
 - [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)
 - [Print a report](../explore-reports/end-user-print.md)
