@@ -242,6 +242,9 @@ Avoid using a variety of visualizations just for the sake of variety. Visualizat
 
 For more visualization-specific guidance, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md).
 
+>[!NOTE]
+> While Power Query in the Query Editor is *case sensitive*, DAX and the Power BI engine is **case insensitive** when data is loaded into the front-end.
+
 ### Learn more about Best Practice Dashboard Design
 
 A few of our favorite books include:
