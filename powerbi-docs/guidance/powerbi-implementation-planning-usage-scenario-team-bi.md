@@ -46,7 +46,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The content is published to a workspace. Its primary purpose is to provide information and enable collaboration for a small team. Content creators can also create or edit some content in a workspace. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | All users assigned to a [workspace role](../collaborate-share/service-roles-new-workspaces.md) (viewer or higher) view and interact with content in the workspace. One option is to sign in to the Power BI service using a web browser. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The Power BI mobile apps are also available for viewing published content. |
-| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). They can use the Power BI app for Microsoft Teams or view reports that are embedded within a team channel. Users can also have private chats with each other and receive notifications directly in Teams. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md). They can use the Power BI app for Microsoft Teams or view reports that are embedded within a team channel. Users can also have private chats with each other and receive notifications directly in Teams. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Users assigned to the administrator, member, or contributor [workspace role](../collaborate-share/service-roles-new-workspaces.md) can publish and manage workspace content. |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Scheduled data refresh can be set up in the Power BI service to keep imported data—in semantic models or dataflows—up to date. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
@@ -83,7 +83,7 @@ When collaborating in a workspace, all users must have a [Power BI Pro or Power 
 
 ### Reuse existing semantic models
 
-The reuse of existing semantic models is important for team collaboration. It helps to promote a *single version of the truth*. It's particularly important when a small number of semantic model creators support many report creators. A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) can connect a report to an existing semantic model, avoiding the need to create another semantic model. Alternatively, when users prefer to create an Excel report, they can use the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) feature. This type of connectivity is preferred to exporting data to Excel because it:
+The reuse of existing semantic models is important for team collaboration. It helps to promote a *single version of the truth*. It's particularly important when a small number of semantic model creators support many report creators. A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) can connect a report to an existing semantic model, avoiding the need to create another semantic model. Alternatively, when users prefer to create an Excel report, they can use the [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) feature. This type of connectivity is preferred to exporting data to Excel because it:
 
 - Avoids creating duplicate semantic models.
 - Reduces the risk of inconsistent data and calculations.
@@ -93,7 +93,7 @@ To access an existing semantic model, the content creator must have [Build permi
 
 ### Power BI integration with Microsoft Teams
 
-Using a modern collaboration tool like Microsoft Teams engages users to make data-driven decisions. Microsoft Teams supports collaborative discussions about data while viewing Power BI content within a natural workflow. To learn about more collaboration options, see [Collaborate in Microsoft Teams with Power BI](../collaborate-share/service-collaborate-microsoft-teams.md).
+Using a modern collaboration tool like Microsoft Teams engages users to make data-driven decisions. Microsoft Teams supports collaborative discussions about data while viewing Power BI content within a natural workflow. To learn about more collaboration options, see [Collaborate in Microsoft Teams with Power BI](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md).
 
 ### Gateway setup
 

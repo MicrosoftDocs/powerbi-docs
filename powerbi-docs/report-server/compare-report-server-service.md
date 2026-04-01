@@ -21,7 +21,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 | Features | Power BI Report Server | Power BI Service | Notes |
 |---------|---------|---------|---------|
-| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) |
+| Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) |
 | Bookmarks | No | Yes| Bookmarks in the [Power BI service](../explore-reports/end-user-bookmarks.md) |
 | Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
 | Data sources | Cloud and/or on-premises | Cloud and/or on-premises |  |

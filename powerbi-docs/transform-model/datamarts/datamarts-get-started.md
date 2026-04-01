@@ -215,7 +215,7 @@ The following table describes the datamart context menu options:
 
 | Menu Option | Option Description |
 | --- | --- |
-| Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated semantic model. Learn more about [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) |
+| Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated semantic model. Learn more about [Analyze in Excel](/power-bi/collaborate-share/office-integration/service-analyze-in-excel) |
 | Create report | Build a Power BI report in DirectQuery mode. Learn more about [get started creating in the Power BI service](/power-bi/fundamentals/service-get-started#step-1-get-data) |
 | Delete | Delete semantic model from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items are deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
 | Manage permissions | Enables users to add other recipients with specified permissions, similar to allowing the sharing of an underlying semantic model or allowing to build content with the data associated with the underlying semantic model.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-04.png" alt-text="Screenshot of the datamart grant people access menu."::: |
