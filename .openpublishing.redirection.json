@@ -982,7 +982,7 @@
     },
     {
       "source_path": "powerbi-docs/publisher-for-excel.md",
-      "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
       "redirect_document_id": false
     },
     {
@@ -1292,7 +1292,7 @@
     },
     {
       "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content-teams.md",
-      "redirect_url": "/power-bi/collaborate-share/service-teams-link-preview",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-teams-link-preview",
       "redirect_document_id": false
     },
     {
@@ -2322,8 +2322,8 @@
     },
     {
       "source_path": "powerbi-docs/desktop-troubleshooting-analyze-in-excel.md",
-      "redirect_url": "/power-bi/collaborate-share/desktop-troubleshooting-analyze-in-excel",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-cannot-sign-in.md",
@@ -2512,12 +2512,12 @@
     },
     {
       "source_path": "powerbi-docs/service-analyze-in-excel.md",
-      "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/collaborate-share/service-tutorial-analyze-in-excel.md",
-      "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
       "redirect_document_id": false
     },
     {
@@ -2552,13 +2552,13 @@
     },
     {
       "source_path": "powerbi-docs/service-embed-report-microsoft-teams.md",
-      "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-embed-report-spo.md",
-      "redirect_url": "/power-bi/collaborate-share/service-embed-report-spo",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-embed-report-spo",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-embed-secure.md",
@@ -2572,8 +2572,8 @@
     },
     {
       "source_path": "powerbi-docs/service-flow-integration.md",
-      "redirect_url": "/power-bi/collaborate-share/service-flow-integration",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-flow-integration",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-govde-faq.md",
@@ -2797,7 +2797,7 @@
     },
     {
       "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
-      "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
       "redirect_document_id": false
     },
     {
@@ -6852,12 +6852,12 @@
     }, 
     {
         "source_path": "powerbi-docs/collaborate-share/service-teams-analytics.md",
-        "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
+        "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
         "redirect_document_id": false
     }, 
     {
         "source_path": "powerbi-docs/consumer/business-user-teams-collaboration-data.md",
-        "redirect_url": "/power-bi/collaborate-share/service-collaborate-microsoft-teams",
+        "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
         "redirect_document_id": false
     }, 
     {
@@ -7122,8 +7122,8 @@
     },
     {
       "source_path": "powerbi-docs/consumer/business-user-teams-create-reports.md",
-      "redirect_url": "/power-bi/collaborate-share/business-user-teams-create-reports",
-      "redirect_document_id": true
+      "redirect_url": "/power-bi/collaborate-share/office-integration/business-user-teams-create-reports",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content.md",
@@ -7564,6 +7564,176 @@
       "source_path": "powerbi-docs/visuals/power-bi-visualization-decision-guide.md",
       "redirect_url": "/power-bi/visuals/power-bi-visualizations-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-collaborate-microsoft-teams.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-microsoft-teams-app.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-microsoft-teams-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-embed-report-microsoft-teams.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-embed-report-microsoft-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/business-user-teams-create-reports.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/business-user-teams-create-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-share-report-teams.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-share-report-teams",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-teams-link-preview.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-teams-link-preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-teams-pivot.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-teams-pivot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-teams-notifications.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-teams-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-embed-report-spo.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-embed-report-spo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-sharepoint-viewer.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-sharepoint-viewer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-about.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-install.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-view-present.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-view-present",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-annotate.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-annotate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/storytelling-powerbi-controller.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/storytelling-powerbi-controller",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-admin.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-admin",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-national-clouds.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-national-clouds",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-troubleshoot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-powerpoint-add-in-whats-new.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-connect-power-bi-datasets-excel.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-connect-power-bi-datasets-excel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-connect-excel-power-bi-datasets.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-connect-excel-power-bi-datasets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-analyze-in-excel.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-analyze-power-bi-datasets-excel.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-power-bi-datasets-excel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-excel-featured-tables.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-excel-featured-tables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-monitor-usage-power-bi-datasets-excel.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-monitor-usage-power-bi-datasets-excel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-create-excel-featured-tables.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-create-excel-featured-tables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/desktop-troubleshooting-analyze-in-excel.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-flow-integration.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-flow-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-power-bi-report-export.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-automate-power-bi-report-export",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-excel-sharepoint-list.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-excel-sharepoint-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-integration.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-local-file.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-local-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-onedrive-sharepoint.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-onedrive-sharepoint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-power-bi-outlook-office.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-outlook-office",
+      "redirect_document_id": true
     }
   ]
 }                           

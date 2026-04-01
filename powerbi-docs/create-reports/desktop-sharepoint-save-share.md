@@ -147,7 +147,7 @@ To share a file stored in OneDrive or SharePoint the following requirements must
 - The feature is enabled through the options menu in Power BI Desktop.
 - The feature is enabled by your Power BI Admin.
 
-Learn more about how users can [view Power BI files in their browser](../collaborate-share/service-sharepoint-viewer.md) through links shared with them via Power BI Desktop.
+Learn more about how users can [view Power BI files in their browser](../collaborate-share/office-integration/service-sharepoint-viewer.md) through links shared with them via Power BI Desktop.
 
 ## Considerations and limitations
 

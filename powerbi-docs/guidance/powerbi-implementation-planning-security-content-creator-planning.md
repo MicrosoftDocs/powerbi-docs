@@ -466,7 +466,7 @@ The semantic model Read permission is primarily targeted at consumers. This perm
 In addition to semantic model Read permission, content creators also need the semantic model [Build permission](../connect-data/service-datasets-build-permissions.md). Specifically, the Build permission allows report creators to:
 
 - Create new Power BI reports based on the semantic model.
-- Connect to the semantic model by using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+- Connect to the semantic model by using [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md).
 - Query the semantic model by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Export Power BI report visual underlying data (instead of the summarized data retrieved by the visual).
 - Create a [DirectQuery connection to a Power BI semantic model](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). In this case, the new semantic model connects to one or more existing Power BI semantic models (known as _chaining_). To query chained semantic models, the semantic model creator will need Build permission for all upstream semantic models. For more information, see [Chained semantic models](#chained-semantic-models) later in this article.
@@ -585,9 +585,9 @@ For more information, see the [Tenant-level security planning](powerbi-implement
 
 #### Featured tables
 
-In Power BI Desktop, semantic model creators can set a model table to become a [featured table](../collaborate-share/service-create-excel-featured-tables.md). When the semantic model is published to the Power BI service, report creators can use the Data Types Gallery in Excel to find the featured table, allowing them to add featured table data to augment their Excel worksheets.
+In Power BI Desktop, semantic model creators can set a model table to become a [featured table](../collaborate-share/office-integration/service-create-excel-featured-tables.md). When the semantic model is published to the Power BI service, report creators can use the Data Types Gallery in Excel to find the featured table, allowing them to add featured table data to augment their Excel worksheets.
 
-The _Allow connections to featured tables_ tenant setting allows Fabric administrators to set up which groups of users can access featured tables. It's targeted at Excel users who want to [access Power BI featured tables in Excel organization data types](../collaborate-share/service-excel-featured-tables.md). We recommend that you leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. That way, you can encourage the use of featured tables.
+The _Allow connections to featured tables_ tenant setting allows Fabric administrators to set up which groups of users can access featured tables. It's targeted at Excel users who want to [access Power BI featured tables in Excel organization data types](../collaborate-share/office-integration/service-excel-featured-tables.md). We recommend that you leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. That way, you can encourage the use of featured tables.
 
 #### Custom visual permissions
 
@@ -800,10 +800,10 @@ The _Embed content in apps_ tenant setting allows Power BI administrators to con
 
 #### Embedding in PowerPoint
 
-The _Enable Power BI add-in for PowerPoint_ tenant setting allows Power BI administrators to control which users can [embed Power BI report pages in PowerPoint presentations](../collaborate-share/service-power-bi-powerpoint-add-in-about.md). When appropriate, enable this setting for specific groups, such as report creators.
+The _Enable Power BI add-in for PowerPoint_ tenant setting allows Power BI administrators to control which users can [embed Power BI report pages in PowerPoint presentations](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md). When appropriate, enable this setting for specific groups, such as report creators.
 
 > [!NOTE]
-> For this capability to work, users must install the Power BI add-in for PowerPoint. To use the add-in, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). For more information, see [Power BI add-in for PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
+> For this capability to work, users must install the Power BI add-in for PowerPoint. To use the add-in, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). For more information, see [Power BI add-in for PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md).
 
 Educate report creators to be cautious about where they save their PowerPoint presentations and who they share them with. That's because an image of the Power BI report visuals is shown to users when they open the presentation. That image is captured from the last time the PowerPoint file was connected. However, the image could inadvertently reveal data that the receiving user doesn't have permission to see.
 

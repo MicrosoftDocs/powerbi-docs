@@ -23,11 +23,11 @@
       expanded: false
       items: 
       - name: Troubleshoot connecting Excel to Power BI data
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+        href: ../collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel.md
       - name: Troubleshoot report performance in Power BI
         href: ../guidance/report-performance-troubleshoot.md
       - name: Troubleshoot the Power BI add-in for PowerPoint
-        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md
+        href: ../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-troubleshoot.md
       - name: "Fix 'corporate SSL certificate untrusted' on Android"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md 
     - name: Capacity management

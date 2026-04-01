@@ -186,7 +186,7 @@ With a visual active, select **More options** (...) and choose **Show as a table
 
 In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file don't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility. For more information, visit [Export the data that was used to create a visualization](../visuals/power-bi-visualization-export-data.md).
 
-Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
+Exporting isn't limited to individual visuals; you can export entire reports to Excel or PowerPoint to share with your colleagues. For more information, see [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) and [Power BI in PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md).
 
 > [!NOTE]
 > Export / Analyze in Excel and PowerPoint features can be disabled by your admin. Export respects security: row-level security (RLS), object-level security (OLS), and any applied filters/slicers at the time of export. Large exports are subject to service limits.

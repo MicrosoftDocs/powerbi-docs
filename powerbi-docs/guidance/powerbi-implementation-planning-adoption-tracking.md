@@ -211,7 +211,7 @@ Here are some examples of positive behaviors that you might want to encourage.
 - Separation of development and production workspaces (instead of publishing directly to the workspace from which content is shared with consumers).
 - Sharing reports and dashboards from apps instead of workspaces or items.
 - Active engagement among a community of practice.
-- Use of [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel) or live connected tables in Excel.
+- Use of [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md#analyze-in-excel) or live connected tables in Excel.
 
 Here are some examples of negative behaviors that you might want to discourage.
 
