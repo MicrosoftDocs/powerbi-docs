@@ -219,7 +219,7 @@ Answers are provided at the end of this article.
 
 ## Considerations
 
-Please note that whilst Power Query Editor is case sensitive, DAX and the Analysis Services engine that powers Power BI is **case insensitive** when data is loaded into the front-end. As such, users need to take this into account when building DAX queries.
+Consider that while Power Query Editor is *case sensitive*, DAX and the Analysis Services engine that powers Power BI are *case insensitive* once data is loaded into the front end. Keep this distinction in mind when writing DAX queries.
 
 ## Summary
 
