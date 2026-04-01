@@ -14,7 +14,7 @@ metadata:
   ms.collection: collection
   author: JulCsc
   ms.author: juliacawthra
-  ms.date: 01/15/2026
+  ms.date: 04/01/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,12 +26,32 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Ways to share your work
-            url: service-share-dashboards.md
+          - text: Collaborate and share Power BI content
+            url: collaborate-share-overview.md
       - linkListType: concept
         links:
           - text: "Workspaces"
             url: service-new-workspaces.md
+          - text: "Content endorsement"
+            url: service-endorsement-overview.md
+
+  # Card (optional)
+  - title: Collaborate in workspaces
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Roles in workspaces"
+            url: service-roles-new-workspaces.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create workspaces"
+            url: service-create-the-new-workspaces.md
+          - text: "Give access to workspaces"
+            url: service-give-access-new-workspaces.md
+          - text: "Data lineage"
+            url: service-data-lineage.md
+          - text: "Semantic model impact analysis"
+            url: service-dataset-impact-analysis.md
 
   # Card (optional)
   - title: Collaborate in Microsoft Teams
@@ -46,6 +66,8 @@ landingContent:
             url: service-microsoft-teams-app.md
           - text: Get notifications in Teams about Power BI activity
             url: service-teams-notifications.md
+          - text: Embed reports in Teams
+            url: office-integration/service-embed-report-microsoft-teams.md
 
   # Card (optional)
   - title: Share your work
@@ -62,37 +84,53 @@ landingContent:
             url: service-share-dashboards.md
           - text: "Filter and share a report"
             url: service-share-reports.md
-          - text: "Share a semantic model"
-            url: ../connect-data/service-datasets-share.md
 
   # Card (optional)
-  - title: Integrate with other services
+  - title: Integrate with Microsoft 365 apps
     linkLists:
       - linkListType: concept
         links:
-          - text: "Azure and Power BI"
-            url: ../connect-data/service-azure-and-power-bi.md
           - text: "Analyze in Excel"
             url: office-integration/service-analyze-in-excel.md
+          - text: "Connect Excel to Power BI semantic models"
+            url: office-integration/service-connect-power-bi-datasets-excel.md
+          - text: "Access Power BI featured tables in Excel"
+            url: office-integration/service-excel-featured-tables.md
+          - text: "Power BI add-in for PowerPoint"
+            url: office-integration/service-power-bi-powerpoint-add-in-about.md
+          - text: "View Power BI files in OneDrive and SharePoint"
+            url: office-integration/service-sharepoint-viewer.md
+          - text: "Use Power BI in Microsoft Outlook"
+            url: office-integration/service-power-bi-outlook-office.md
       - linkListType: how-to-guide
         links:
-          - text: "Add a live report page to PowerPoint"
-            url: service-power-bi-powerpoint-add-in-about.md
-          - text: "Embed in SharePoint Online"
-            url: service-embed-report-spo.md
+          - text: "Embed a report in SharePoint Online"
+            url: office-integration/service-embed-report-spo.md
+          - text: "Integrate Power BI data alerts with Power Automate"
+            url: office-integration/service-flow-integration.md
+          - text: "Export and email reports with Power Automate"
+            url: office-integration/service-automate-power-bi-report-export.md
+          - text: "Add a Power Automate button to a report"
+            url: ../create-reports/power-bi-automate-visual.md
 
   # Card (optional)
-  - title: Integrate with Power Automate
+  - title: Share semantic models
     linkLists:
       - linkListType: concept
         links:
-          - text: Export paginated reports with Power Automate
-            url: ../paginated-reports/service-automate-paginated-integration.md
+          - text: "Semantic models across workspaces"
+            url: ../connect-data/service-datasets-across-workspaces.md
+          - text: "Semantic model permissions"
+            url: ../connect-data/service-datasets-permissions.md
+          - text: "In-place semantic model sharing with external users"
+            url: service-dataset-external-org-share-about.md
       - linkListType: how-to-guide
         links:
-          - text: Integrate data alerts with Power Automate
-            url: office-integration/service-flow-integration.md
-          - text: Email Power BI reports with Power Automate
-            url: office-integration/service-automate-power-bi-report-export.md
+          - text: "Share access to a semantic model"
+            url: ../connect-data/service-datasets-share.md
+          - text: "Manage semantic model access permissions"
+            url: ../connect-data/service-datasets-manage-access-permissions.md
+          - text: "Share semantic models with external users"
+            url: service-dataset-external-org-share-provider.md
 
 
