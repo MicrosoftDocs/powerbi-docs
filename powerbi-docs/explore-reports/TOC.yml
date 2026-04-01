@@ -261,6 +261,8 @@
       href: mobile/mobile-apps-scan-barcode.md
     - name: Ask questions with Q&A virtual analyst
       href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Set data alerts
+      href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
     - name: Dark mode
       href: mobile/mobile-apps-dark-mode.md
     - name: Access reports with NFC tags
