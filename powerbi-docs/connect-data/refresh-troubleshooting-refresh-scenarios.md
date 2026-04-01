@@ -135,11 +135,11 @@ Load balancing across semantic models is managed automatically by the system. In
 
 If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
 
-## Dataflows or datamart failures in Premium workspaces
+## Dataflow failures in Premium workspaces
 
-Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you might receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+Some connectors aren't supported for dataflows in Premium workspaces. When using an unsupported connector, you might receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
 
-The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
+The following connectors aren't supported for dataflows in Premium workspaces:
 
 * Linkar
 * Actian
@@ -162,7 +162,7 @@ The following connectors aren't supported for dataflows and datamarts in Premium
 * StarburstPresto
 * TibcoTdv
 
-The use of the previous list of connectors with dataflows or datamarts is only supported in workspaces that aren't Premium.
+The use of the previous list of connectors with dataflows is only supported in workspaces that aren't Premium.
 
 ## There was a problem refreshing the dataflow, the gateway version you're using isn't supported
 
