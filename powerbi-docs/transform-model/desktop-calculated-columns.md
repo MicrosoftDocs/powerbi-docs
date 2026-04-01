@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/28/2025
+ms.date: 03/31/2026
 LocalizationGroup: Model your data
 ---
 # Create calculated columns in Power BI Desktop
@@ -47,6 +47,40 @@ Now Jeff has the wanted field.
 Jeff can now add it to the report canvas along with the number of shipments. With minimal effort, Jeff now has a **CityState** field that can be added to just about any type of visualization. When Jeff creates a new map, Power BI Desktop already knows how to read the city and state values in the new column.
 
 :::image type="content" source="media/desktop-calculated-columns/calccolinpbid_citystatemap.png" alt-text="Screenshot of Power BI Desktop showing data represented in a Map visual.":::
+
+## Expression Context
+
+The Expression Context property determines whether user-context-aware DAX expressions such as the following can be dynamically evaluated.
+
+- [USERCULTURE](/dax/userculture-function-dax)
+- [USERPRINCIPALNAME](/dax/userprincipalname-function-dax)
+- [USEROBJECTID](/dax/userobjectid-function-dax)
+- [USERNAME](/dax/username-function-dax)
+- [CUSTOMDATA](/dax/customdata-function-dax)
+
+User-context-aware calculated columns enable unique scenarios such as data translations for multi-lingual semantic models. See [data translations](../guidance/multiple-language-translation.md) for more information.
+
+The Expression Context property can be set as a calculated-column property.
+
+:::image type="content" source="media/desktop-calculated-columns/calccolinpbid_expressioncontext.png" alt-text="Screenshot of Power BI Desktop showing the Expression Context property for a calculated column.":::
+
+## Materialization and performance
+
+Calculated-column materialization should be taken into consideration with regard to performance optimization. DAX authoring best practices should be adhered to avoid expensive operations on evaluation of calculated columns.
+
+- Unmaterialized calculated columns can negatively impact query performance because values need to be derived at query time.
+- Materialized calculated columns can negatively impact refresh performance because values need to be derived at refresh time.
+
+The following table shows the combinations of [table storage mode](desktop-storage-mode.md) and supported Expression Context settings.
+
+| Storage mode | Standard (default) | User Context |
+|---|---|---|
+| Import | Materialized | Unmaterialized |
+| Direct Lake on OneLake | Unmaterialized | Unmaterialized |
+| Direct Lake on SQL | N/A | N/A |
+| DirectQuery | Unmaterialized | Unmaterialized |
+| Dual | Materialized (Import), unmaterialized (DirectQuery) | Unmaterialized |
+| DirectQuery on Power BI semantic models | Unmaterialized | N/A |
 
 ## Related content
 
