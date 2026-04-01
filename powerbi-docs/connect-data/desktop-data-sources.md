@@ -113,7 +113,6 @@ The **Microsoft Fabric** category provides the following data connections:
 
 * Power BI semantic models
 * Dataflows
-* Datamarts (preview)
 * Warehouses
 * Lakehouses
 * KQL Databases

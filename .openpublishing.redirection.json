@@ -5932,7 +5932,7 @@
     },
     {
       "source_path": "powerbi-docs/admin/service-admin-portal-datamart.md",
-      "redirect_url": "/fabric/admin/service-admin-portal-datamart",
+      "redirect_url": "/fabric/admin/microsoft-fabric-admin",
       "redirect_document_id": false
     },
     {
@@ -6117,7 +6117,52 @@
     },
     {
       "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
-      "redirect_url": "/power-bi/transform-model/datamarts/datamarts-discovery",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-overview.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-understand.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-get-started.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-analyze.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-discovery.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-manage-permissions.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-create-reports.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-access-control.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/datamarts/datamarts-administration.md",
+      "redirect_url": "/power-bi/transform-model/",
       "redirect_document_id": false
     },
     {
