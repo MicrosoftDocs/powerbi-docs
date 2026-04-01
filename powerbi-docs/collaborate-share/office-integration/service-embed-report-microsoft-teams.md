@@ -25,7 +25,7 @@ To embed a report on the **Power BI** tab in Teams, you need to meet these requi
 - You have at least a Viewer role in the workspace that hosts the item. 
 - You have permission to view the organizational app
  
-For information about the different roles, see [Roles in workspaces](service-roles-new-workspaces.md).
+For information about the different roles, see [Roles in workspaces](../service-roles-new-workspaces.md).
 
 To view a report on the **Power BI** tab in Teams, your users need to meet these requirements:
 
@@ -120,13 +120,13 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 
 - In Microsoft Teams, when you export data from a visual in a Power BI report, the data is automatically saved to your *Downloads* folder. It's an Excel file called **data (*n*).xlsx**, where *n* is the number of times you've exported data to the same folder.
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
-- [URL filters](service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
+- [URL filters](../service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national/regional clouds, the **Power BI** tab isn't available.
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
-- When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../explore-reports/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
+- When you view Power BI tabs in Teams mobile, the best viewing experience is through the [Power BI mobile apps](../../explore-reports/mobile/mobile-apps-for-mobile-devices.md). In the Teams Mobile tabs list, select **More options (...)** > **Open in browser**. When you have the Power BI mobile app installed on your device, the report opens in the Power BI mobile app. 
 - When embedding Power BI organizational apps in Teams Tabs, items that can't be embedded in Teams will open in a new browser window. 
 - For the best experience using links, use links created by the **Share** option in Power BI.
-- Links don't support [query string parameters](service-url-filters.md). 
+- Links don't support [query string parameters](../service-url-filters.md). 
 - Links don't support personal bookmarks, since those can't be shared with other users. 
 - Cross-tenant links aren't supported.
 - The option to pin reports to tabs isn't supported for shared channels.

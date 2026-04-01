@@ -43,7 +43,7 @@ In general, for Power BI to work in Microsoft Teams, ensure these elements:
 
 ## Grant access to reports
 
-Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permission to view the report. You need to [allow users to view the report in Power BI](service-share-dashboards.md). You can use a Microsoft 365 Group for your team to make it easier.
+Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permission to view the report. You need to [allow users to view the report in Power BI](../service-share-dashboards.md). You can use a Microsoft 365 Group for your team to make it easier.
 
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
@@ -56,7 +56,7 @@ You can integrate a Power BI report in Teams and share it with external users. F
 
 1. Invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b) for details.
 1. Give the external user permission on the report. Assign individual permissions.
-1. Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#use-an-in-product-link-to-upgrade-your-license) or get a Premium Per User (PPU) license.
+1. Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../../fundamentals/service-self-service-signup-for-power-bi.md#use-an-in-product-link-to-upgrade-your-license) or get a Premium Per User (PPU) license.
 
 ## Known issues and limitations
 
@@ -64,7 +64,7 @@ You can integrate a Power BI report in Teams and share it with external users. F
 - You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - Users without a Power BI license or permission to access the report see a "Content isn't available" message.
 - You might have issues if you use Internet Explorer 10. 
-- The **Power BI** tab for Microsoft Teams doesn't support [URL filters](service-url-filters.md).
+- The **Power BI** tab for Microsoft Teams doesn't support [URL filters](../service-url-filters.md).
 - In US Government Community Cloud, the Power BI app for Microsoft Teams and the new tab are available. However, the following experiences aren't available:
   - Power BI messaging extension, which provides link previews, search, and link unfurling
   - Power BI activity feed notifications

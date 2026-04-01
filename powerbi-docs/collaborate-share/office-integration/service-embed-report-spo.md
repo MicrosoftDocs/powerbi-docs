@@ -27,8 +27,8 @@ For **Embed report in SharePoint Online** reports to work:
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To use an embedded report, users must sign in to the Power BI service to activate their Power BI license.
 * To embed a web part in SharePoint Online, you need a Power BI Pro or Premium Per User (PPU) license.
-* For [Embedding for your organization (user owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who views the embedded content.
-* For [Embedding for your customers (app owns data)](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) customers, there are no licensing requirements for the end user.
+* For [Embedding for your organization (user owns data)](../../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-organization) customers, a SKUs equivalent to [F64 or higher](/fabric/enterprise/licenses#capacity-and-skus) is needed to allow free Power BI users to consume a report. If you have a SKU smaller than F64, then a Pro license or Premium Per User (PPU) is required for each user who views the embedded content.
+* For [Embedding for your customers (app owns data)](../../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) customers, there are no licensing requirements for the end user.
 * SharePoint Embed is now supported in air gap environments.
 
 ## Embed your report
@@ -183,11 +183,11 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 
 * Power BI doesn't support the same localized languages that SharePoint Online does. As a result, you might not see proper localization within the embedded report.
 
-* You might encounter issues if you use Internet Explorer 10. Here's a link  [supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
+* You might encounter issues if you use Internet Explorer 10. Here's a link  [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md).
 
 * The classic SharePoint Server isn't supported with this web part.
 
-* [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
+* [URL filters](../service-url-filters.md) aren't supported with the SharePoint Online web part.
 
 * You can't view or access Power BI Apps embedded in a SharePoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
   
@@ -196,9 +196,9 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 ## Related content
 
 * [Allow users to create modern pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-* [Publish an app in Power BI](service-create-distribute-apps.md)  
-* [Share Power BI reports and dashboards with coworkers and others](service-share-dashboards.md)  
+* [Publish an app in Power BI](../service-create-distribute-apps.md)  
+* [Share Power BI reports and dashboards with coworkers and others](../service-share-dashboards.md)  
 * [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
-* [Embed a report in a secure portal or website](service-embed-secure.md)
+* [Embed a report in a secure portal or website](../service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

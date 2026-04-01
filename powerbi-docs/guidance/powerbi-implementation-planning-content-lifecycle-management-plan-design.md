@@ -112,7 +112,7 @@ You can re-use a shared semantic model by using the following downstream item ty
   - [Reports](../connect-data/desktop-report-lifecycle-datasets.md)
   - [Paginated reports](../paginated-reports/report-builder-shared-datasets.md)
   - [Scorecards](../create-reports/service-goals-create.md)
-  - [Excel (analyze in Excel pivot tables)](../collaborate-share/service-analyze-in-excel.md)
+  - [Excel (analyze in Excel pivot tables)](../collaborate-share/office-integration/service-analyze-in-excel.md)
   - [Semantic models (composite models)](../transform-model/desktop-composite-models.md)
 
 - Microsoft Fabric
@@ -147,7 +147,7 @@ These various scenarios create a number of considerations that you must keep in 
 
 #### Excel (analyze in Excel pivot tables)
 
-If users have build permissions to a model, then they can also [connect to a semantic model from Excel](../collaborate-share/service-analyze-in-excel.md) and query it by using MDX from an Excel pivot table. This can be useful when users prefer to work in Excel to explore or analyze data, themselves.
+If users have build permissions to a model, then they can also [connect to a semantic model from Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) and query it by using MDX from an Excel pivot table. This can be useful when users prefer to work in Excel to explore or analyze data, themselves.
 
 When using analyze in Excel to query your semantic model, you need to consider the following: 
 
@@ -245,7 +245,7 @@ To collaborate and communicate in Microsoft Teams, you use supporting services t
 - **[Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998)**: Content owners can use Planner to create plans, which they use to track tasks and scope content work. Tasks can describe issues, bugs, or features in the solution, and the corresponding stakeholders.
 - **[SharePoint](/sharepoint/teams-connected-sites)**: Content creators can store and manage files in a Microsoft Teams document library or connected site for each channel. Content files stored in SharePoint can use version control to help track and manage content changes. For more information about tracking and managing changes by using SharePoint, see [Stage 2: Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#version-control-by-using-sharepoint-or-onedrive-for-work-and-school).
 - **[Approvals](/microsoftteams/approval-admin#overview-of-approvals)**: Content creators and owners can set up and use workflows to approve content changes or releases after review.
-- **[Fabric and Power BI](../collaborate-share/service-collaborate-microsoft-teams.md)**: Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
+- **[Fabric and Power BI](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md)**: Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
 - **Other integrations**: Content creators can make use of other Microsoft or third-party services that integrate with Microsoft Teams to best fit their preferred workflow and needs.
 
 We recommend that you define a structured process for how content creators should use Microsoft Teams to collaborate. Ensure that you determine:
@@ -351,7 +351,7 @@ When you store files in SharePoint, consider the following points.
 
 - **Organization**: Ensure that you maintain a consistent and logical structure so it's straightforward to find specific files. Use good naming conventions, organize files in folders, and archive files that are no longer relevant for ongoing projects.
 - **OneDrive refresh**: You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for work or school site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
-- **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
+- **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/office-integration/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/office-integration/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
 
 > [!TIP]
 > When you collaborate by using Microsoft Teams, consider storing files in the channel document library. This approach helps centralize files and facilitates collaboration.

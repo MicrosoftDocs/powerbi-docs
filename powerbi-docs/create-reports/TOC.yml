@@ -240,7 +240,7 @@
     - name: Work with aggregates
       href: service-aggregates.md
     - name: Analyze in Excel
-      href: ../collaborate-share/service-analyze-in-excel.md
+      href: ../collaborate-share/office-integration/service-analyze-in-excel.md
     - name: Add a column from an example
       href: ../transform-model/desktop-add-column-from-example.md
     - name: Add a custom column

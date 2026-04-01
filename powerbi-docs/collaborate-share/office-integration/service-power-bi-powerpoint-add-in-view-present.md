@@ -74,7 +74,7 @@ To put a border around the add-in, open **[Style options](#style-options)** and 
 Data insights help you explore and find insights such as anomalies and trends as you consume and interact with your data. With the add-in, you can easily generate insights, which you can then paste directly into your slide or copy to the clipboard for pasting elsewhere, such as in the slide's notes.
 
 > [!NOTE]  
-> Not all visuals can generate insights. See [Smart narrative considerations and limitations](../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
+> Not all visuals can generate insights. See [Smart narrative considerations and limitations](../../visuals/power-bi-visualization-smart-narrative.md#considerations-and-limitations) for details.
 >  
 > Once you've copied an insight to the slide or clipboard, the text is static and won't change when the data changes. To update the insight, you need to regenerate it.
 
@@ -143,7 +143,7 @@ Controls that help you work with your data in PowerPoint are described below.
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-data-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint data options menu.":::
 
 - **Filter**: Shows or hides the filters pane, where you can filter your data, just like in the Power BI service. This option is available only if filters have been defined on the page or visual.
-- **Data Insights**: Generates [insights](../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
+- **Data Insights**: Generates [insights](../../create-reports/insights.md) displays them in a dialog as editable text. You can then either paste them directly onto the slide or copy them to the clipboard for use elsewhere.
 - **Annotations**: Show or hide any [data point annotations](#add-data-point-annotations-to-visuals) that exist on the visual. When annotations are hidden, a green dot appears on the Data options icon to indicate that hidden annotations are present. The Annotations option is only available for visuals that have been embedded as single visuals, not as part of a whole report page.
 - **Refresh**: Refreshes the report page or visual with the latest data from the Power BI service. Note: Refresh doesn't trigger getting data from the data sources.
 - **Reset**: Provides two options:
@@ -183,7 +183,7 @@ Expands or collapses the toolbar across the bottom of the report or visual. This
 
 ## Keyboard Shortcuts
 
-To get around the report, you can use the usual [Power BI keyboard shortcuts](../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
+To get around the report, you can use the usual [Power BI keyboard shortcuts](../../create-reports/desktop-accessibility-keyboard-shortcuts.md), with the following exceptions:
 
 | Keyboard shortcut | Action |
 | --- | --- |

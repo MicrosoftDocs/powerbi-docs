@@ -35,39 +35,39 @@ Workspaces are shared environments where teams can create, organize, and manage 
 
 Bring Power BI reports and dashboards into Teams channels and meetings, share report links with rich preview cards, and get notified about important data changes without leaving Teams.
 
-- [Collaborate in Teams](service-collaborate-microsoft-teams.md)
-- [Add the Power BI app to Teams](service-microsoft-teams-app.md)
-- [Embed reports in Teams tabs](service-embed-report-microsoft-teams.md)
+- [Collaborate in Teams](office-integration/service-collaborate-microsoft-teams.md)
+- [Add the Power BI app to Teams](office-integration/service-microsoft-teams-app.md)
+- [Embed reports in Teams tabs](office-integration/service-embed-report-microsoft-teams.md)
 
 ## Power BI in SharePoint
 
 Embed live, interactive Power BI reports directly in SharePoint Online pages, or view Power BI reports stored in OneDrive and SharePoint without switching apps.
 
-- [Embed a report in SharePoint Online](service-embed-report-spo.md)
-- [View reports in SharePoint and OneDrive](service-sharepoint-viewer.md)
+- [Embed a report in SharePoint Online](office-integration/service-embed-report-spo.md)
+- [View reports in SharePoint and OneDrive](office-integration/service-sharepoint-viewer.md)
 
 ## Power BI in PowerPoint
 
 Add live, interactive Power BI report pages to PowerPoint slides, annotate visuals with data-point comments, and present data directly from your deck.
 
-- [About storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md)
-- [Add live data to PowerPoint](service-power-bi-powerpoint-add-in-install.md)
-- [View and present live data in PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)
+- [About storytelling with Power BI in PowerPoint](office-integration/service-power-bi-powerpoint-add-in-about.md)
+- [Add live data to PowerPoint](office-integration/service-power-bi-powerpoint-add-in-install.md)
+- [View and present live data in PowerPoint](office-integration/service-power-bi-powerpoint-add-in-view-present.md)
 
 ## Power BI and Excel
 
 Connect Excel to Power BI semantic models to analyze live data using PivotTables, use featured tables as Excel data types, and monitor how your organization's data is being used in Excel.
 
-- [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)
-- [Use Power BI featured tables in Excel](service-excel-featured-tables.md)
-- [Create Excel workbooks with refreshable data](service-analyze-in-excel.md)
+- [Connect Excel to Power BI semantic models](office-integration/service-connect-power-bi-datasets-excel.md)
+- [Use Power BI featured tables in Excel](office-integration/service-excel-featured-tables.md)
+- [Create Excel workbooks with refreshable data](office-integration/service-analyze-in-excel.md)
 
 ## Power BI and Power Automate
 
 Automate report distribution, trigger workflows from Power BI data alerts, and schedule exports of both standard and paginated reports.
 
-- [Integrate data alerts with Power Automate](service-flow-integration.md)
-- [Export and email reports with Power Automate](service-automate-power-bi-report-export.md)
+- [Integrate data alerts with Power Automate](office-integration/service-flow-integration.md)
+- [Export and email reports with Power Automate](office-integration/service-automate-power-bi-report-export.md)
 
 ## Share semantic models with external users
 
@@ -80,9 +80,9 @@ Share Power BI semantic models with guest users in external organizations by usi
 
 Access and collaborate on Power BI content directly inside Microsoft Outlook and other Microsoft 365 apps.
 
-- [Use Power BI in Outlook and Microsoft 365](service-power-bi-outlook-office.md)
+- [Use Power BI in Outlook and Microsoft 365](office-integration/service-power-bi-outlook-office.md)
 
 ## Related content
 
-- [What's new in Power BI collaboration and integration](service-power-bi-powerpoint-add-in-whats-new.md)
+- [What's new in Power BI collaboration and integration](office-integration/service-power-bi-powerpoint-add-in-whats-new.md)
 - [Ways to share your work in Power BI](service-share-dashboards.md)

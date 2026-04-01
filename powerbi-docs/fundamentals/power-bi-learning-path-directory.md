@@ -66,9 +66,9 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Power BI service: Excel to report](../create-reports/service-from-excel-to-stunning-report.md) - Transform Excel data
     1. [Import Excel workbooks](../connect-data/desktop-import-excel-workbooks.md) - Bring Excel data into Power BI
     1. [Analyze sales data from Excel and an OData feed](../connect-data/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md) - Combine data sources
-    1. [Connect to Power BI datasets from Excel](../collaborate-share/service-analyze-power-bi-datasets-excel.md) - Use Power BI data in Excel
-    1. [Create Excel featured tables](../collaborate-share/service-create-excel-featured-tables.md) - Bridge Power BI and Excel
-    1. [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) - Pivot Power BI data in Excel
+    1. [Connect to Power BI datasets from Excel](../collaborate-share/office-integration/service-analyze-power-bi-datasets-excel.md) - Use Power BI data in Excel
+    1. [Create Excel featured tables](../collaborate-share/office-integration/service-create-excel-featured-tables.md) - Bridge Power BI and Excel
+    1. [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) - Pivot Power BI data in Excel
 
 ## 3. Business user: View and explore reports
 
@@ -181,9 +181,9 @@ This article provides curated, sequential lists of documentation for common Powe
     1. [Filter and share a report](../collaborate-share/service-share-reports.md) - Share filtered views
     1. [Create and distribute apps](../collaborate-share/service-create-distribute-apps.md) - Package content for distribution
     1. [Fabric workspaces](/fabric/get-started/workspaces) - Organize content in Fabric
-    1. [Collaborate in Microsoft Teams](../collaborate-share/service-collaborate-microsoft-teams.md) - Integrate with Teams
-    1. [Embed report in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md) - Add reports to Teams
-    1. [Embed report in SharePoint Online](../collaborate-share/service-embed-report-spo.md) - Integrate with SharePoint
+    1. [Collaborate in Microsoft Teams](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md) - Integrate with Teams
+    1. [Embed report in Microsoft Teams](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md) - Add reports to Teams
+    1. [Embed report in SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md) - Integrate with SharePoint
     1. [Subscribe to reports and dashboards](../collaborate-share/end-user-subscribe.md) - Set up email subscriptions
     1. [Create per recipient subscriptions](../collaborate-share/power-bi-dynamic-report-subscriptions.md) - Personalized subscriptions
     1. [Endorse your content](../collaborate-share/service-endorse-content.md) - Promote trusted content

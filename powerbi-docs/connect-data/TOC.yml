@@ -338,7 +338,7 @@
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot analyze in Excel"
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+        href: ../collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
       - name: "Troubleshoot importing Access and Excel .xls files"

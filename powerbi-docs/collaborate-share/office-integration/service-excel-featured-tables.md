@@ -122,7 +122,7 @@ The Excel Data Types Gallery and connected experiences to Power BI featured tabl
 
 ## Security
 
-You see only featured tables from semantic models you have permission to access in Power BI. When refreshing data, you must have permission to access the semantic model in Power BI to retrieve the rows. You need [Build or Write permission on the semantic model](../connect-data/service-datasets-build-permissions.md) in Power BI.
+You see only featured tables from semantic models you have permission to access in Power BI. When refreshing data, you must have permission to access the semantic model in Power BI to retrieve the rows. You need [Build or Write permission on the semantic model](../../connect-data/service-datasets-build-permissions.md) in Power BI.
  
 Excel caches the data returned for the entire row. Anyone you share the Excel file with can see the data for all the fields in all the linked cells.
 

@@ -16,7 +16,7 @@ ms.date: 6/23/2025
 
 # Chat in Microsoft Teams directly from the Power BI service
 
-You can open a Teams chat about Power BI dashboards, reports, visuals, and semantic models directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [semantic models](../connect-data/service-dataset-details-page.md#supported-actions) in the Power BI service.
+You can open a Teams chat about Power BI dashboards, reports, visuals, and semantic models directly from the Power BI service. Use the **Chat in Teams** feature to quickly start conversations when you view reports, dashboards, and [semantic models](../../connect-data/service-dataset-details-page.md#supported-actions) in the Power BI service.
 
 ## Requirements
 

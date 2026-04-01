@@ -51,7 +51,7 @@ In the Data Types Gallery in Excel, users can find data from *featured tables* i
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for the English-language search. Searching in other languages might not result in accurate matches. 
-- Featured tables use Power BI Q&A indexing when users query data in those tables. For more information, see [How does indexing work with Q&A](../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa).
+- Featured tables use Power BI Q&A indexing when users query data in those tables. For more information, see [How does indexing work with Q&A](../../natural-language/q-and-a-data-sources.md#how-does-indexing-work-with-qa).
 - Most numerical columns are not considered for matching. If the Row label or Key column is numeric, they're included for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
@@ -63,7 +63,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 ### Considerations
 
-- You can [promote or certify semantic models in Power BI](../collaborate-share/service-endorse-content.md), which is called *endorsement*. Excel prioritizes tables in endorsed semantic models in the Data Types Gallery. Excel lists featured tables in certified semantic models first, then tables in promoted semantic models. Excel lists featured tables in unendorsed semantic models after that. 
+- You can [promote or certify semantic models in Power BI](../service-endorse-content.md), which is called *endorsement*. Excel prioritizes tables in endorsed semantic models in the Data Types Gallery. Excel lists featured tables in certified semantic models first, then tables in promoted semantic models. Excel lists featured tables in unendorsed semantic models after that. 
 - Creating featured tables is available by default. You can change the **Featured tables** capability through **File** > **Options and Settings** > **Options** > **Preview Features**.
 - You can use Excel files with a data model to publish featured tables. Load the data into Power BI Desktop and then publish the featured table.
 

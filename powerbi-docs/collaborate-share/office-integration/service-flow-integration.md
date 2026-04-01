@@ -19,7 +19,7 @@ Use [Power Automate](/power-automate/getting-started) to integrate Power BI with
 
 ## Prerequisites
 
-This article shows how to create two different flows: one from a template and one from scratch. To follow along, [create a data alert in Power BI](../create-reports/service-set-data-alerts.md), and [sign up for Power Automate](https://flow.microsoft.com/#home-signup). It's free!
+This article shows how to create two different flows: one from a template and one from scratch. To follow along, [create a data alert in Power BI](../../create-reports/service-set-data-alerts.md), and [sign up for Power Automate](https://flow.microsoft.com/#home-signup). It's free!
 
 ## Create a flow from a template
 
@@ -38,7 +38,7 @@ This template has one trigger, a Power BI data alert, and one action, to send an
 
     :::image type="content" source="media/service-flow-integration/power-automate-power-bi-mail.png" alt-text="Screenshot of the Power Automate Power BI to mail option.":::
 
-1. In the **Alert ID** box, select a Power BI data alert. To learn how to create an alert, see [Data alerts in Power BI](../create-reports/service-set-data-alerts.md).
+1. In the **Alert ID** box, select a Power BI data alert. To learn how to create an alert, see [Data alerts in Power BI](../../create-reports/service-set-data-alerts.md).
 
     :::image type="content" source="media/service-flow-integration/power-automate-select-alert-id.png" alt-text="Screenshot of the Alert ID dropdown showing available Power BI data alerts.":::
 
@@ -77,7 +77,7 @@ In this task, you create a simple flow from scratch that's triggered by a Power 
 
 ### Build your flow
 
-1. In the **Alert ID** box, select the name of your alert. To learn how to create an alert, see [Data alerts in Power BI](../create-reports/service-set-data-alerts.md).
+1. In the **Alert ID** box, select the name of your alert. To learn how to create an alert, see [Data alerts in Power BI](../../create-reports/service-set-data-alerts.md).
 
     :::image type="content" source="media/service-flow-integration/power-automate-select-alert-id-scratch.png" alt-text="Screenshot of the Alert ID dropdown where you select your data alert.":::
 
@@ -102,6 +102,6 @@ In this task, you create a simple flow from scratch that's triggered by a Power 
 
 - [Get started with Power Automate](/power-automate/getting-started/)
 - [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
-- [Create a Power Automate button visual](../create-reports/power-bi-automate-visual.md)
+- [Create a Power Automate button visual](../../create-reports/power-bi-automate-visual.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

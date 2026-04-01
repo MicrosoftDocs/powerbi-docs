@@ -175,7 +175,7 @@ You can activate Copilot for secure web or portal embedded reports by selecting 
 
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
-* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
+* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](office-integration/service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
 * The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They're blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
@@ -189,5 +189,5 @@ You can activate Copilot for secure web or portal embedded reports by selecting 
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Filter a report using query string parameters in the URL](service-url-filters.md)
-* [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
+* [Embed with report web part in SharePoint Online](office-integration/service-embed-report-spo.md)
 * [Publish to web from Power BI](service-publish-to-web.md)

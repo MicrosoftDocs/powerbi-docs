@@ -33,7 +33,7 @@ Before you proceed, make sure you meet the following requirements:
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
 
 - You must have **Build** permission to the Power BI semantic model or have at least a **Contributor** role in the Power BI workspace containing your semantic model.
-- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in **My workspace** or a Fabric capacity (F64 or greater) or Power BI Premium capacity. For more information, see [Power BI licenses](../fundamentals/service-features-license-type.md).
+- You must have a Fabric license: Fabric (free), Pro, or Premium Per User (PPU). Fabric (free) license users can only work with datasets in **My workspace** or a Fabric capacity (F64 or greater) or Power BI Premium capacity. For more information, see [Power BI licenses](../../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
 ## Discover Power BI semantic models in Excel

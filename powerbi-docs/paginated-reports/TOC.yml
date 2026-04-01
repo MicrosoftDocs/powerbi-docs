@@ -580,7 +580,7 @@
       href: ./report-builder/export-xml-report-builder.md
     - name: XML device information settings
       href: ./device-info/xml-device-information-settings.md
-- name: Use Power Automate
+- name: Automate report export and delivery
   items:
     - name: Export paginated reports with Power Automate
       href: service-automate-paginated-integration.md
