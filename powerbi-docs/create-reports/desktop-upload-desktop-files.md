@@ -85,7 +85,7 @@ To learn more about creating folders in Microsoft Fabric workspaces, read the [c
 - The following storage mode conversions aren't supported during republish:
   - If you first publish a report using Import mode, you can't overwrite the report and the semantic model with a DirectQuery or Live Connect based report.
   - If you first publish a report using a live connection, then change the storage mode or the target semantic model in Power BI Desktop, you can't overwrite the report when you republish.
-- Publishing over an unstable network connection can, in rare cases, result in duplicate reports appearing in your workspace. To resolve the issue, you can safely remove the duplicates.
+- In rare cases, publishing over an unstable network connection can result in duplicate copies of the report appearing in your workspace. To resolve the issue, you can safely remove the duplicates.
 
 ## Related content
 
