@@ -137,7 +137,7 @@ Administration audit logs show these events for featured tables:
 - **AnalyzedByExternalApplication**: Gives admins visibility into which users are accessing which featured tables.
 - **UpdateFeaturedTables**: Gives admins visibility into which users are publishing and updating featured tables.
 
-For a complete list of audit log events, see [Track user activities in Power BI](../admin/service-admin-auditing.md).
+For a complete list of audit log events, see [Track user activities in Power BI](/fabric/admin/service-admin-portal-audit-usage).
 
 ## Considerations and limitations
 

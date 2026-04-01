@@ -11,7 +11,7 @@ ms.topic: concept-article
 LocalizationGroup: Share your work
 ms.date: 01/21/2026
 ai-usage: ai-assisted
-ms.custom: sfi-image-nochange, office-integration
+ms.custom: sfi-image-nochange, office-integration
 #customer intent: As a Power BI user I want to show notifications in the Power BI activity feed.
 ---
 

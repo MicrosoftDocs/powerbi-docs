@@ -45,7 +45,7 @@ The Power BI Controller opens in a panel with the supported commands. During the
 - Change view modes from snapshot or public snapshot to live (and vice versa)
 - Sync with Power BI
 
-:::image type="content" source="media/power-bi-controller/power-bi-controller-powerpoint.png" alt-text="Screenshot of a PowerPoint presentation showing the Power BI Controller pane with options to reset or change view mode for all add-ins in the presentation.":::
+:::image type="content" source="../media/power-bi-controller/power-bi-controller-powerpoint.png" alt-text="Screenshot of a PowerPoint presentation showing the Power BI Controller pane with options to reset or change view mode for all add-ins in the presentation.":::
 
 > [!NOTE]
 > The presentation file must be **saved** before the controller can execute any command.

@@ -22,7 +22,7 @@ To identify users connecting to Power BI semantic models from Excel desktop or E
 
 1. Open PowerShell.
 
-2. Run the [Get-PowerBIActivityEvent](../admin/service-admin-auditing.md#get-powerbiactivityevent-cmdlet) cmdlet to download event data for the **AnalyzedByExternalApplication** activity. The **AnalyzedByExternalApplication** activity identifies users who interact with semantic models published to the Power BI service from an external application. Here's a sample cmdlet for a day's activity data: 
+2. Run the [Get-PowerBIActivityEvent](/fabric/admin/service-admin-portal-audit-usage#get-powerbiactivityevent-cmdlet) cmdlet to download event data for the **AnalyzedByExternalApplication** activity. The **AnalyzedByExternalApplication** activity identifies users who interact with semantic models published to the Power BI service from an external application. Here's a sample cmdlet for a day's activity data: 
 
     ```powershell
     Get-PowerBIActivityEvent - StartDateTime '2022-03-15T00:00:00' -EndDateTime '2022-03-15T23:59:59' -ActivityType 'AnalyzedByExternalApplication' 

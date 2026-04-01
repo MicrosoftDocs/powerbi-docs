@@ -153,7 +153,7 @@ Contact the SharePoint Online page owner to help resolve the issue.
 
 ## Licensing
 
-Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](../enterprise/service-premium-what-is.md#capacities-and-skus)**.
+Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per User (PPU) license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](/power-bi/enterprise/service-premium-what-is#capacities-and-skus)**.
 
 ## Enable Copilot in embedded reports in SharePoint
 You can activate Copilot for embedded reports by selecting the "Enable Copilot" checkbox in the embedded reports dialog. Keep in mind that this feature requires an active Copilot tenant switch and either Power BI Premium or paid Fabric capacity in your workspace. Once enabled, users can interact directly with Copilot within the embedded report.
@@ -198,7 +198,7 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 * [Allow users to create modern pages](https://support.microsoft.com/office/allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Publish an app in Power BI](../service-create-distribute-apps.md)  
 * [Share Power BI reports and dashboards with coworkers and others](../service-share-dashboards.md)  
-* [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+* [What is Power BI Premium?](/power-bi/enterprise/service-premium-what-is)
 * [Embed a report in a secure portal or website](../service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -36,7 +36,7 @@ There are a few features that you can access only in the Power BI service in a b
 Install the Power BI app in Microsoft Teams to ensure the following elements are in place:
 
 - Power BI app is enabled in the Teams Admin center apps list.
-- Your users with Fabric (Free) licenses can access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
+- Your users with Fabric (Free) licenses can access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](/power-bi/enterprise/service-premium-what-is) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.

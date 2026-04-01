@@ -2323,7 +2323,7 @@
     {
       "source_path": "powerbi-docs/desktop-troubleshooting-analyze-in-excel.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/power-bi-cannot-sign-in.md",
@@ -2513,7 +2513,7 @@
     {
       "source_path": "powerbi-docs/service-analyze-in-excel.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-analyze-in-excel",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/collaborate-share/service-tutorial-analyze-in-excel.md",
@@ -2553,12 +2553,12 @@
     {
       "source_path": "powerbi-docs/service-embed-report-microsoft-teams.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-embed-report-spo.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-embed-report-spo",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-embed-secure.md",
@@ -2573,7 +2573,7 @@
     {
       "source_path": "powerbi-docs/service-flow-integration.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-flow-integration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/service-govde-faq.md",
@@ -7123,7 +7123,7 @@
     {
       "source_path": "powerbi-docs/consumer/business-user-teams-create-reports.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/business-user-teams-create-reports",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/create-reports/copilot-pane-summarize-content.md",
@@ -7708,6 +7708,26 @@
     {
       "source_path": "powerbi-docs/collaborate-share/service-automate-power-bi-report-export.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-automate-power-bi-report-export",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-excel-sharepoint-list.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-excel-sharepoint-list",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-integration.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-local-file.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-local-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/service-automate-paginated-onedrive-sharepoint.md",
+      "redirect_url": "/power-bi/paginated-reports/service-automate-paginated-onedrive-sharepoint",
       "redirect_document_id": true
     },
     {

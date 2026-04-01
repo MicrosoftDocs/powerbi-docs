@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: concept-article
-ms.custom: , office-integration
+ms.custom: office-integration
 ms.date: 12/01/2025
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
@@ -161,7 +161,7 @@ To view a Power BI file in OneDrive or SharePoint, the data must be in **import*
 
 ## Audit logs
 
-When you save and view Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through audit logs. Some activities for these files are logged through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log), while others are logged through the [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log).
+When you save and view Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through audit logs. Some activities for these files are logged through [unified audit logs](/fabric/admin/service-admin-portal-audit-usage#use-the-audit-log), while others are logged through the [Power BI activity log](/fabric/admin/service-admin-portal-audit-usage#use-the-activity-log).
 
 OneDrive and SharePoint events are audited in the Microsoft 365 audit logs. Some of the events include:
 
@@ -176,7 +176,7 @@ Interaction with the Power BI file is audited in Power BI activity logs. Some of
 - View
 - Open report
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](/fabric/admin/service-admin-portal-audit-usage). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](/fabric/admin/service-admin-portal-audit-usage#use-the-audit-log) through the Power BI [Admin portal](/power-bi/admin/service-admin-portal).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](/microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 
@@ -204,7 +204,7 @@ Admins can see the workspaces created in the Power BI service on the **Workspace
 
 Admins can't modify workspaces (delete, modify access) from the Power BI Service.
 
-When you open a Power BI report in OneDrive or SharePoint the data is stored in your Power BI [home tenant region](../admin/service-admin-where-is-my-tenant-located.md) until the file is deleted or unopened for a few days.
+When you open a Power BI report in OneDrive or SharePoint the data is stored in your Power BI [home tenant region](/power-bi/admin/service-admin-where-is-my-tenant-located) until the file is deleted or unopened for a few days.
 
 ### Collaborating on reports
 
