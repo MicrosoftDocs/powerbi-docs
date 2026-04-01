@@ -43,7 +43,8 @@ Take a look at the list of articles under the **Power BI reports** header in the
 
 ## Considerations and troubleshooting
 
-A Power BI Pro or Premium Per User (PPU) license is required to edit reports created by others and to share your reports with others. If you don't have a Pro or Premium Per User (PPU) license, you can still create reports, but you can't [share them](../collaborate-share/service-share-reports.md).
+* A Power BI Pro or Premium Per User (PPU) license is required to edit reports created by others and to share your reports with others. If you don't have a Pro or Premium Per User (PPU) license, you can still create reports, but you can't [share them](../collaborate-share/service-share-reports.md).
+* While Power Query in the Query Editor is *case sensitive*, DAX and the Power BI engine is **case insensitive** when data is loaded into the front-end.
 
 ## Related content
 
