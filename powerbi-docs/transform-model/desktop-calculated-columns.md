@@ -62,7 +62,7 @@ User-context-aware calculated columns enable unique scenarios such as data trans
 
 The Expression Context property can be set as a calculated-column property.
 
-:::image type="content" source="media/desktop-calculated-columns/calccolinpbid_expressioncontext.png" alt-text="Screenshot of Power BI Desktop showing the Expression Context property for a calculated column.":::
+:::image type="content" source="media/desktop-calculated-columns/calculated-column-expression-context.png" alt-text="Screenshot of Power BI Desktop showing the Expression Context property for a calculated column.":::
 
 ## Materialization and performance
 
