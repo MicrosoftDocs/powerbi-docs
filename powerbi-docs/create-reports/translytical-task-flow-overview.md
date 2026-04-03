@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 05/16/2025
+ms.date: 04/03/2026
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to learn how to create reports that allow readers to edit the data source so that end users have interactive access to their data.
 ---
@@ -68,7 +68,6 @@ For working samples of user data functions, see [Translytical task flow examples
 Currently, the following limitations apply to translytical task flows:
 
 * User data functions must return a `str` type to be added to a report.
-* PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
 * Power BI Embedded is supported only for secure embed scenarios.
 
 The following service limitations can also affect your translytical task flows:
