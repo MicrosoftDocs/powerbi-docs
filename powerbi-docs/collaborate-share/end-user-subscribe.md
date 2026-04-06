@@ -97,7 +97,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     - **Report page preview (for Power BI reports only)**: Include a preview of the report page in the body of the email.
 
     > [!CAUTION]
-    > Sensitivity labels aren't applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
+    > Sensitivity labels aren't applied to a subscription's email or preview image. To protect against exposure of sensitive data, turn off **Preview image**.  
 
     - **Data activator**, **Trigger alert using Data activator**: Select this to learn how to use Data activator to set alerts on report visuals.  
 
@@ -370,15 +370,15 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 ### General
   
 - The **Save** or **Save and Close** button will be disabled if there are errors. You must fix all errors to save the subscription.
-- Custom messages are used differently in subscriptions for reports and dashboards. For reports, the message will appear above the preview in the body of the email. For dashboards, the message will appear below the preview.
+- Custom messages are used differently in subscriptions for reports and dashboards. For reports, the message appears above the preview in the body of the email. For dashboards, the message appears below the preview.
 
 - Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI.
-- Users with subdomain email addresses are generally treated as external users. They can only set up subscriptions or receive emails from subscriptions when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled.
+- Users with subdomain email addresses are treated as external users. They can set up subscriptions or receive subscription emails only when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled.
 - Subscription emails aren’t delivered to external recipients for workspaces backed by a trial capacity or a Premium Per User (PPU) license.
 - If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription.
-- Transactional copy within the body of the email is not localized.
+- Transactional copy within the body of the email isn’t localized.
 
 ### Row-level security (RLS)
 
