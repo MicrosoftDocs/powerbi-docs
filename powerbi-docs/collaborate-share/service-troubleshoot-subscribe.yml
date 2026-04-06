@@ -19,7 +19,9 @@ summary: |
   > [!NOTE]
   > Looking for help with Power BI licensing or purchasing? See [Fabric and Power BI licenses and subscriptions](../fundamentals/end-user-license.md).
   
-  If you have trouble with a scenario that isn't listed here, you can get help on the [community site](https://community.powerbi.com/) or create a [support ticket](https://support.fabric.microsoft.com/support/). 
+  If you have trouble with a scenario that isn't listed here, you can get help on the [community site](https://community.powerbi.com/).
+
+  You can also create a [support ticket](https://support.fabric.microsoft.com/support/).
   
   To learn how to create an email subscription, see [Email subscriptions for reports and dashboards](end-user-subscribe.md).
 
@@ -29,7 +31,7 @@ sections:
       - question: |
           Is the Power BI subscription email legitimate?
         answer: |
-          Yes, emails from **no-reply-powerbi@microsoft.com** are legitimate Power BI subscription emails. This is the official sender address for all Power BI report and dashboard subscriptions.
+          Yes, emails from **no-reply-powerbi@microsoft.com** are legitimate Power BI subscription emails. This email address is the official sender for all Power BI report and dashboard subscriptions.
           
           ### Verify the sender address
 
@@ -64,7 +66,11 @@ sections:
 
           ### Account or license issues
 
-          A subscription ends if the Power BI Pro or Premium Per User (PPU) license expires, the report or dashboard is deleted by the owner, or the user account used to create the subscription is deleted. 
+          A subscription ends in these situations:
+
+          - The Power BI Pro or Premium Per User (PPU) license expires.
+          - The report or dashboard is deleted by the owner.
+          - The user account that created the subscription is deleted.
           
           ### Email issues
 
@@ -80,9 +86,9 @@ sections:
 
           ### Delivery is intentionally limited for some external recipients
 
-          In some cases, subscription emails are intentionally not delivered by design.
+          In some cases, Power BI intentionally doesn’t deliver subscription emails.
 
-          If a subscription includes **external recipients**, emails aren’t delivered when the workspace is backed by:
+          If a subscription includes **external recipients**, Power BI doesn’t deliver emails when the workspace is backed by:
 
           - A **trial capacity**
           - A **Premium Per User (PPU)** license
@@ -162,7 +168,7 @@ sections:
 
           ### Too many dashboard tiles
 
-          Dashboards with more than 25 pinned tiles, or four pinned live report pages, might not render fully in subscription emails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly. 
+          Dashboards with more than 25 pinned tiles, or four pinned live report pages, might not render fully in subscription emails sent to users. We suggest that you contact the dashboard designer. Ask them to reduce pinned tiles to fewer than 25 and pinned live reports to fewer than four to ensure that the email renders correctly.
 
           ### Tile type not supported
 
@@ -171,7 +177,7 @@ sections:
       - question: |
           How do I access the report or dashboard in the Power BI service?
         answer: |
-          You can choose to give subscription recipients access to open and view the content in Power BI by selecting **Permission to access the report or dashboard in Power BI** and whether to include a link to this content by selecting **Link to report or dashboard in Power BI**. 
+          You can give subscription recipients access to open and view content in Power BI by selecting **Permission to access the report or dashboard in Power BI**. You can also include a link by selecting **Link to report or dashboard in Power BI**.
 
           ### Recipients don't have access to the report or dashboard
 
@@ -186,7 +192,7 @@ sections:
       - question: |
           Why does the email link open the app instead of the Power BI website on my mobile device?
         answer: |
-          ### If you have the Power BI app installed, this is expected behavior
+          ### If you have the Power BI app installed, this behavior is expected
 
           When you receive the subscription email, it includes a link to **Go to report or dashboard**. On mobile devices with Power BI apps installed, selecting this link launches the app (as opposed to the default action of opening the report or dashboard on the Power BI website).
 
@@ -201,7 +207,7 @@ sections:
           There are certain Power BI features that don't work when using the subscription feature.
 
           - For dashboard subscriptions, if any tiles have row level security (RLS) applied, those tiles don't display.
-          - Dataset refresh operations using an XMLA endpoint. 
+          - Dataset refresh operations that use an XMLA endpoint.
           - For dashboard subscriptions, certain types of tiles aren't yet supported. These tiles include: streaming tiles, video tiles, custom web content tiles.
           - Certain Power BI visuals aren't supported. When you subscribe to a report containing these visuals, they display an error symbol. 
           - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
