@@ -27,7 +27,7 @@ Subscribe yourself and others to Power BI reports, dashboards, and paginated rep
 
 ## Subscribe to a report or dashboard in the Power BI service
 
-It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails and at what time. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
+Stay up to date on your most important dashboards and reports. Subscribe to reports and dashboards that matter most to you, and Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails and at what time. Set up to 24 subscriptions per report or dashboard, and provide unique recipients, times, and frequencies for each subscription.  
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-emails.png" alt-text="Screenshot showing email for subscription to a report.":::
 
@@ -75,10 +75,10 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You can choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
 
     > [!TIP]
-    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the week day checkboxes. If you select **Monthly**, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the week day checkboxes. If you select **Monthly**, enter the days of the month you want to receive the subscription email.
 
    - If you choose **Hourly**, **Daily**, **Weekly**, or **Monthly**, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.
-   - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific day(s) of the month or select the **Last day of month** option. If you choose **Last day of month**, the report is delivered on that day.
+   - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific days of the month or select the **Last day of month** option. If you choose **Last day of month**, the report is delivered on that day.
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-schedule-last-day-of-month.png" alt-text="Screenshot showing the last day of month option.":::
 
@@ -99,7 +99,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
     > [!CAUTION]
     > Sensitivity labels aren't applied to a subscription's email or preview image. To protect against exposure of sensitive data, turn off **Preview image**.  
 
-    - **Data activator**, **Trigger alert using Data activator**: Select this to learn how to use Data activator to set alerts on report visuals.  
+    - **Data activator**, **Trigger alert using Data activator**: Select this option to learn how to use Data activator to set alerts on report visuals.  
 
 You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** only send an email after the first scheduled refresh on that day. All dates and times are normalized to UTC when checking for the first dataset refresh of the day.
 
@@ -150,7 +150,7 @@ When you create a subscription, add other email addresses in the same domain to 
 You can create a Microsoft 365 group in different ways. For example, you can create a group in Outlook, a distribution group in Teams, or a mail-enabled security group. The Microsoft 365 distribution group for Teams doesn't work for mail enablement, so you can't use it for direct sharing and email subscriptions.
 
 > [!NOTE]
-> Workspaces backed by a Premium Per User (PPU) license are different from those backed by a Premium capacity, and they don't support subscribing group aliases.  
+> Workspaces backed by a Premium Per User (PPU) license differ from those backed by a Premium capacity and don’t support subscribing group aliases.
 
 ## Save changes to a subscribed report
 
@@ -273,7 +273,7 @@ Fabric administrators have control over subscriptions.
 
 - [Users can set up email subscriptions](/fabric/admin/service-admin-portal-export-sharing) for all members of the organization.
 
-- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](/fabric/admin/service-admin-portal-export-sharing).
+- To allow email subscriptions to external users, enable this setting for all members of the organization or for specific users. See [Users can send email subscriptions to external users](/fabric/admin/service-admin-portal-export-sharing).
 
 - [Enable specific attachment formats](/fabric/admin/service-admin-portal-export-sharing) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
 - [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions. Consider assigning B2B guest users the Viewer workspace role. The Viewer role limits access to underlying data and the ability to edit content.
@@ -373,7 +373,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Custom messages are used differently in subscriptions for reports and dashboards. For reports, the message appears above the preview in the body of the email. For dashboards, the message appears below the preview.
 
 - Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI.
-- Users with subdomain email addresses are treated as external users. They can set up subscriptions or receive subscription emails only when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled.
+- Users with subdomain email addresses are treated as external users. They can set up subscriptions or receive subscription emails only when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled in the admin portal.
 - Subscription emails aren’t delivered to external recipients for workspaces backed by a trial capacity or a Premium Per User (PPU) license.
 - If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
