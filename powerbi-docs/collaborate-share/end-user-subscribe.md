@@ -33,12 +33,24 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 ## Requirements
 
-The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
-- A Power BI Pro or [Premium Per User (PPU) license](../fundamentals/end-user-license.md), or
-- Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md)
+To create a subscription for yourself, you need permissions to access the report or dashboard and **either**:
 
-Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions) and see [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+- A Power BI Pro or [Premium Per User (PPU) license](../fundamentals/end-user-license.md), or  
+- Access to a workspace backed by a paid [Power BI Premium capacity](../enterprise/service-premium-what-is.md)
+
+Your Fabric admin (previously Power BI admin) must enable subscriptions in your tenant. See:
+- [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions)
+- [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions)
+
+> [!IMPORTANT]
+> External email recipients are supported **only** for subscriptions in workspaces backed by a paid (non‑PPU) Premium capacity.
+>
+> - Subscriptions in **trial capacity workspaces** can’t be sent to external email addresses.
+> - Subscriptions in **Premium Per User (PPU) workspaces** don’t support external recipients.
+>
+> These limitations are enforced at subscription creation and edit time, and subscriptions won’t execute for external recipients if the workspace doesn’t meet these requirements.
 
 ## Subscribe to a report or dashboard
 
