@@ -119,11 +119,19 @@ The system applies sensitivity labels to subscription email attachments but not 
 
 ## Subscribe others
 
+> [!IMPORTANT]
+> Adding external recipients to subscriptions is supported only for workspaces backed by a paid (non‑PPU) capacity.
+>
+> - Subscriptions in **trial capacity** workspaces can’t be sent to external email addresses.
+> - Subscriptions in **Premium Per User (PPU)** workspaces don’t support external recipients.
+>
+> These limitations apply regardless of tenant settings and are enforced at subscription creation and edit time.
+
 To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
 - A Pro or PPU license with Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 - To be part of the organization. [B2B guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
-- If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license.
+- If the report or dashboard isn’t hosted in a paid Premium capacity, you can still subscribe internal users. Subscribing external recipients requires the workspace to be backed by a paid (non‑PPU) capacity.
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
