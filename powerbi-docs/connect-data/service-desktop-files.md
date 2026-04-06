@@ -34,19 +34,17 @@ There are several locations where you might store Power BI Desktop files:
 
 - **SharePoint Team-Sites**. Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from the Power BI service. You can specify a URL or connect to the root folder. You can also [set up a Sync folder](https://support.microsoft.com/office/sync-sharepoint-and-teams-files-with-the-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88) that points to the SharePoint folder. Files in that folder sync up with the ones on SharePoint.
 
-## Streamlined upload to Power BI
+## Upload files to Power BI
 
-Beginning in November 2022, there's a new and streamlined experience for uploading files to the Power BI service. In the workspace into which you want to add files, you see an **Upload** dropdown menu option next to the **New** button. You can use the dropdown menu to connect to files stored in *OneDrive for work or school* or any *SharePoint* site to which you have access, or you can upload them from your computer through the *Browse* menu option. The following image shows the menu options.
+To upload files, open the workspace where you want to add them and select the **Upload** dropdown menu next to the **New** button. The dropdown menu has options to connect to files stored in *OneDrive for work or school* or any *SharePoint* site to which you have access, or to upload them from your computer through the *Browse* option. The following image shows the menu options.
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-01.png" alt-text="Screenshot of add file menu option.":::
 
-If you choose to upload a local file, a copy of the file is added to the workspace. If you use the *OneDrive for work or school* or *SharePoint* option, the Power BI service creates a connection to the file and as you make changes to the file in SharePoint, Power BI can automatically sync those changes approximately each hour.
+If you upload a local file, a copy of the file is added to the workspace. If you use the *OneDrive for work or school* or *SharePoint* option, the Power BI service creates a connection to the file and automatically syncs changes approximately each hour.
 
-A benefit of uploading files this way, in addition to being easy to use, is that the *OneDrive for work or school* and *SharePoint* options use the same file selection interface used in many other Microsoft products.
+The *OneDrive for work or school* and *SharePoint* options use the same file selection interface used in many other Microsoft products. Select one of your sites through the *Quick access* section or the *More places* links.
 
-Rather than having to paste a direct URL to a given SharePoint site, which was previously required, you can now simply select one of your sites through the *Quick access* section or the *More places* links.
-
-When you upload an Excel file this way, your workbook appears in the Power BI service just like it would in Excel Online, as shown in the following image.
+When you upload an Excel file, your workbook appears in the Power BI service just like it would in Excel Online, as shown in the following image.
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-02.png" alt-text="Screenshot of workbook appearing in Power BI.":::
 
@@ -55,7 +53,7 @@ If you don't have a subscription, *OneDrive for work or school* and *SharePoint*
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot of subscription services disabled.":::
 
 > [!NOTE]
-> You can't upload files from SharePoint Document set folder or from personal OneDrive accounts.
+> You can't upload files from a SharePoint Document set folder or from personal OneDrive accounts.
 
 ## Publish a file from Power BI Desktop to the Power BI service
 

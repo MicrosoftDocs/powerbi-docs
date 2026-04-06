@@ -11,23 +11,6 @@ ms.date: 07/19/2024
 LocalizationGroup: Data from files
 ---
 # Publish to Power BI from Microsoft Excel
-> [!IMPORTANT]
-> Publish to Power BI will be deprecated from Excel in Microsoft 365 starting August 19th, 2024, and Publish to Power BI will not be included in the Excel 2024 perpetual release. This doesn't impact prior versions of on-premises Office.
-> 
-> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
-> - Upload of local workbooks to Power BI workspaces will no longer be allowed.
-> - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
->
-> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
-> - Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
-> - Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
->
-> After October 31, 2023:
-> - You can download existing local workbooks from your Power BI workspace.
-> - You can publish your Excel data model as a Power BI semantic model and schedule refresh.
-> - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
->
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
 
 With Microsoft Excel 2016 and later, you can publish your Excel workbooks directly to your [Power BI](https://powerbi.microsoft.com) workspace. In Power BI, you can create highly interactive reports and dashboards based on your workbook data. You can then share your insights with others in your organization.
 
@@ -40,6 +23,11 @@ When you publish a workbook to Power BI, there are few things to consider:
 * You can't publish encrypted or password protected workbooks, or workbooks with Information Protection Management applied.
 * Publishing to Power BI requires modern authentication to be enabled, the default. Otherwise, the **Publish** option isn't available from the **File** menu.
 * Publishing to Power BI from Excel Desktop isn't supported for sovereign clouds.
+
+> [!IMPORTANT]
+> The **Publish to Power BI** feature is deprecated in Excel in Microsoft 365 and isn't included in Excel 2024 perpetual. This doesn't impact prior versions of on-premises Office.
+
+Uploading local Excel workbooks to Power BI workspaces and configuring refresh for them is no longer supported. You can download existing local workbooks from your Power BI workspace, publish your Excel data model as a Power BI semantic model and schedule refresh, or import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI. For more information, see [Migrate your Excel workbooks](service-excel-workbook-files.md#migrate-your-excel-workbooks).
 
 ## Publish your Excel workbook
 
