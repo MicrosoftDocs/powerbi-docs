@@ -125,7 +125,7 @@ The system applies sensitivity labels to subscription email attachments but not 
 > - Subscriptions in **trial capacity** workspaces can’t be sent to external email addresses.
 > - Subscriptions in **Premium Per User (PPU)** workspaces don’t support external recipients.
 >
-> These limitations apply regardless of tenant settings and are enforced at subscription creation and edit time.
+> These limitations apply regardless of tenant settings. When a subscription includes external recipients, Power BI suppresses email delivery if the workspace doesn’t meet these requirements.
 
 To create a subscription that includes others, in addition to the [requirements necessary to create your own subscriptions](#requirements), you also need:
 
