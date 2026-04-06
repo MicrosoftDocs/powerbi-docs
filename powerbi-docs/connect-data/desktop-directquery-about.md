@@ -106,6 +106,8 @@ DirectQuery was the primary solution for very large or fast-changing data you co
 
 Evaluate these options before adopting a fully DirectQuery model.
 
+For real-time, high-volume time-series workloads on Microsoft Fabric, a common pattern is DirectQuery to a Fabric KQL database (Real-Time Intelligence) paired with source-side aggregations and dynamic M parameters. See [Kusto-based source considerations](#source-specific-considerations-including-postgresql-and-mysql) for guidance on this workload.
+
 ## DirectQuery use cases
 
 DirectQuery is most beneficial when:
@@ -150,7 +152,7 @@ Behavior and performance differ by engine:
 - **MySQL:** Use consistent collations and SQL modes. Create composite indexes for common filter and join patterns. Large `TEXT` columns can reduce folding or force postprocessing.
 - **Snowflake, BigQuery, and Databricks:** Elastic scaling improves concurrency, but cold start latency can affect the first query. Send warmup pings or schedule periodic activity.
 - **Azure Synapse, SQL, and Fabric Warehouse:** Columnstore indexes and result set caching provide strong acceleration. Pair them with automatic aggregations.
-- **Azure Data Explorer:** Projection pruning matters. Select only the required columns and push filters early.
+- **Kusto-based sources (Azure Data Explorer and Fabric KQL databases):** Projection pruning matters. Select only the required columns and push filters early. For high-volume time-series telemetry, use source-side aggregation rather than client-side grouping: push `make-series`, `summarize`, and `series_decompose_anomalies` to the KQL engine and return aggregated results to visuals. Confirm that Power Query steps fold to native KQL so that summarized results — not raw events — are returned to Power BI.
 - **SAP BW and SAP HANA:** Measure resolution and hierarchy semantics drive query patterns. Avoid overlayering transformations that block folding.
 
 Confirm query folding (select **View Native Query** in Power Query Editor) so transformations push down.
