@@ -131,7 +131,7 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Pro or PPU license with Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 - To be part of the organization. [B2B guest users](/fabric/enterprise/powerbi/service-admin-entra-b2b) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
-- If the report or dashboard isn’t hosted in a paid Premium capacity, you can still subscribe internal users. Subscribing external recipients requires the workspace to be backed by a paid (non‑PPU) capacity.
+- If the report or dashboard isn’t hosted in a paid Premium capacity, you can still subscribe internal users. To subscribe external recipients, the workspace must be backed by a paid (non‑PPU) capacity.
 
     :::image type="content" source="media/end-user-subscribe/power-bi-premium.png" alt-text="Workspaces showing diamond icon for Premium and diamond with person icon for PPU.":::
 
@@ -303,9 +303,9 @@ For more information, see [Operations available in the audit and activity logs
 > - Subscriptions in **trial capacity** workspaces can’t be sent to external recipients.
 > - Subscriptions in **Premium Per User (PPU)** workspaces don’t support external recipients.
 >
-> These limitations are enforced by the product and can’t be overridden by tenant settings.
+> Power BI enforces these limitations, and tenant settings can’t override them.
 
-You can subscribe external B2B guests to a report or dashboard only if the workspace is backed by a paid (non‑PPU) capacity.
+You can subscribe external B2B guests to a report or dashboard only from a workspace backed by a paid (non‑PPU) capacity.
 
 > [!IMPORTANT]
 > *Internal* guest users can't use the subscription feature. An internal guest has an account in your Microsoft Entra directory but only guest-level access in your organization.
