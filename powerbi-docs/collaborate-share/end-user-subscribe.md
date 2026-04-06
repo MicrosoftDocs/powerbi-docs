@@ -50,7 +50,7 @@ Your Fabric admin (previously Power BI admin) must enable subscriptions in your 
 > - Subscriptions in **trial capacity workspaces** can’t be sent to external email addresses.
 > - Subscriptions in **Premium Per User (PPU) workspaces** don’t support external recipients.
 >
-> These limitations are enforced at subscription creation and edit time, and subscriptions don’t execute for external recipients if the workspace doesn’t meet these requirements.
+> Subscription emails aren’t delivered to external recipients if the workspace doesn’t meet these requirements.
 
 ## Subscribe to a report or dashboard
 
