@@ -371,7 +371,6 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
   
 - The **Save** or **Save and Close** button will be disabled if there are errors. You must fix all errors to save the subscription.
 - Custom messages are used differently in subscriptions for reports and dashboards. For reports, the message appears above the preview in the body of the email. For dashboards, the message appears below the preview.
-
 - Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI.
 - Users with subdomain email addresses are treated as external users. They can set up subscriptions or receive subscription emails only when the tenant setting [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing) is enabled in the admin portal.
 - Subscription emails aren’t delivered to external recipients for workspaces backed by a trial capacity or a Premium Per User (PPU) license.
