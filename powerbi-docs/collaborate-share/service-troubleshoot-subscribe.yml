@@ -78,6 +78,19 @@ sections:
 
           - If your admin enables the tenant setting for **Block Public Internet Access**, then email subscriptions with full report attachment (FRA) or report preview aren't delivered.  
 
+          ### Delivery is intentionally limited for some external recipients
+
+          In some cases, subscription emails are intentionally not delivered by design.
+
+          If a subscription includes **external recipients**, emails aren’t delivered when the workspace is backed by:
+
+          - A **trial capacity**
+          - A **Premium Per User (PPU)** license
+
+          In these scenarios, the subscription can still exist and appear to run, but delivery to external email addresses is suppressed. This behavior is expected and isn’t caused by an outage, misconfiguration, or email delivery failure.
+
+          For more information, see [Email subscriptions for reports and dashboards](end-user-subscribe.md#requirements).
+
       - question: |
           Why can't I create a report attachment or why is full report attachment greyed out?
         answer: |
