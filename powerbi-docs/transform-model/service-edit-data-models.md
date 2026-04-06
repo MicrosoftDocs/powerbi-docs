@@ -33,21 +33,27 @@ This will launch the modern Power Query 'Get data' experience where you can choo
 
 You can open an existing semantic model in the following ways:
 
-* From the workspace content list, select **More options (...)** for the semantic model and select **Open data model**.
+* From the workspace content list, select **More options (...)** for the semantic model and select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screenshot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
+![workspace view](media/service-edit-data-models/workspace-view.png)
 
-* From the data hub content list, select **More options (...)** for the semantic model and select **Open data model**.
+* From the OneLake catalog, select **More options (...)** for the semantic model and select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
+![User's image](media/service-edit-data-models/image.png)
+
+
 
 * From the semantic model details page, select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screenshot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
+![User's image](media/service-edit-data-models/image1.png)
 
-* From **edit mode** for a report connected to the semantic model, select **Open data model** to open the corresponding data model in another tab.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screenshot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
+
+* From **edit mode** for a report connected to the semantic model, select **Open semantic model** to open the corresponding model in another tab.
+
+![User's image](media/service-edit-data-models/image2.png)
+
+
 
 ## Viewing mode
 
