@@ -297,8 +297,15 @@ For more information, see [Operations available in the audit and activity logs
 ## Subscriptions for users outside your organization
 
 ### Subscribe external users
+> [!IMPORTANT]
+> Subscriptions to external email addresses are supported only for workspaces backed by a paid (non‑PPU) capacity.
+>
+> - Subscriptions in **trial capacity** workspaces can’t be sent to external recipients.
+> - Subscriptions in **Premium Per User (PPU)** workspaces don’t support external recipients.
+>
+> These limitations are enforced by the product and can’t be overridden by tenant settings.
 
-You can subscribe external B2B guests to a report or dashboard if your report or dashboard is hosted in Premium capacity. B2B guest users can subscribe themselves but can't add subscriptions for other external users.
+You can subscribe external B2B guests to a report or dashboard only if the workspace is backed by a paid (non‑PPU) capacity.
 
 > [!IMPORTANT]
 > *Internal* guest users can't use the subscription feature. An internal guest has an account in your Microsoft Entra directory but only guest-level access in your organization.
