@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: concept-article
 ms.date: 09/19/2024
+ai-usage: ai-assisted
 ---
 # Try a Real-Time Intelligence sample
 
@@ -57,7 +58,7 @@ The components of the Real-Time Intelligence sample experience are:
 
 * **Real-Time Dashboard**: A Real-Time dashboard provides an up-to-the-second snapshot of various goals and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about [Real-Time dashboards](/fabric/real-time-intelligence/dashboard-real-time-create).
 
-* **Power BI**: is used to create real-time reports that display data from event streams and KQL databases managed by Real-Time Intelligence.
+* **Power BI**: Creates real-time reports that display data from event streams and KQL databases managed by Real-Time Intelligence. Reports connect to the KQL database via DirectQuery using the Azure Data Explorer (Kusto) connector, which supports both Azure Data Explorer and Fabric KQL databases. Dynamic M query parameters push filters and time-grain parameters down to the KQL database, so visuals receive aggregated results rather than raw events.
 
 ## Create your own solution in Real-Time Intelligence
 
@@ -70,6 +71,12 @@ To set up our own real-time dashboard, follow the [Real-Time Intelligence tutori
 1. [Create a KQL queryset](/fabric/real-time-intelligence/tutorial-3-query-data) and query your data.
 1. [Create a real-time dashboard](/fabric/real-time-intelligence/tutorial-4-create-dashboard) and explore your data visually.
 1. [Build a Power BI report](/fabric/real-time-intelligence/tutorial-5-power-bi-report).
+   - Connect to the KQL database using DirectQuery via the Azure Data Explorer (Kusto) connector, which supports both Azure Data Explorer and Fabric KQL databases.
+   - Use dynamic M query parameters to pass time range and bin size into KQL queries, so Power BI receives aggregated series (for example, `make-series` or `summarize` output) rather than raw events.
+   - Perform anomaly detection in KQL using functions like `series_decompose_anomalies`, and return the computed results to Power BI visuals.
+
+> [!TIP]
+> For large volumes of time-series data, use query folding with parameterized M queries so filters and aggregations execute in KQL. Avoid importing raw high-volume event data — return only aggregated datasets to visuals for interactive performance.
 
 ## Related content
 
