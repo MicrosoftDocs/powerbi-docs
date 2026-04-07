@@ -97,7 +97,6 @@ The following list describes the current limitations on the values you can choos
 - Multi-Geo isn't supported.
 - In gauges and KPI tiles, Power BI uses the value, but not the target, or the min or max value in the gauge.
 - In a table with more than one column of measures, Power BI uses the first measure in the row.
-- Connected goal values don't update automatically when connected to data from a datamart using DQ/Live connection.
 
 ## Related content
 

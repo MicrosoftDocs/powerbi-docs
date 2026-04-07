@@ -386,6 +386,15 @@ A refresh initiated via the public [XMLA endpoint](../enterprise/service-premium
 > [!NOTE]
 > You can enhance monitoring with workspace monitoring. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview)
 
+## Refresh completed with warnings
+When you refresh data in the Power BI service, the process might complete with warnings. For example, a DAX measure might refer to an invalid table or function name, as in the screenshot below. Power BI captures these warnings and displays them in the refresh history with a status of **Completed**, and a callout in the message that the operation finished with warnings. It's a good idea to check the refresh history for warnings occasionally, because if left unaddressed, warnings can lead to unexpected results in your reports or cause future refreshes to fail.
+
+:::image type="content" source="media/refresh-data/refresh-completed-with-warnings-01.png" alt-text="Screenshot of refresh history with refresh warnings.":::
+
+Power BI logs a warning whenever the refresh operation succeeds but encounters a non-fatal issue during processing. Common examples include a DAX expression that references a column or table that no longer exists, a measure that calls an unrecognized function, or a data type mismatch between the source and the semantic model. In these cases, the data is updated, but the affected calculations might return errors or blank results in your reports. Outdated data gateway versions could be another reason for a warning to let you know that an outdated data gateway might soon stop working. Refresh exceeding memory limits can also trigger warnings.
+
+However, Power BI does not log a warning when the refresh is initiated via the public [XMLA endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) — even if non-fatal issues occur during processing. If you use a XMLA-based tool, refresh warnings appear directly in the XMLA response. If you use the [Power BI REST APIs](/rest/api/power-bi/) to perform refreshes, warnings are logged in the refresh history, but the [Datasets - Get Refresh History](/rest/api/power-bi/datasets/get-refresh-history-in-group) and [Get Refresh Execution Details](/rest/api/power-bi/datasets/get-refresh-execution-details) REST APIs do not include warnings in their responses.
+
 ## Visualize semantic model refresh details
 
 In the **Fabric Monitoring Hub** you can centrally monitor Microsoft Fabric activities. The hub displays refresh activities for all semantic models including the status of its most recent refresh. When selecting an activity name, you can access a dedicated **Semantic Model Refresh Detail** page that provides comprehensive information about the selected refresh activity.
@@ -455,9 +464,6 @@ The previous code generates a table with refresh IDs and their corresponding det
 Stopping a semantic model refresh is useful when you want to stop a refresh of a large semantic model during peak time. Use the refresh cancellation feature to stop refreshing semantic models that reside on [Premium](./../enterprise/service-premium-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
 
 To cancel a semantic model refresh, you need to be a contributor, member, or an admin of the semantic model's workspace. Semantic model refresh cancellation only works with semantic models that use [Import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [Composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
-
-> [!NOTE]
-> Semantic models created as part of datamarts aren't supported.
 
 To start a refresh, go to the semantic model you want to refresh, then select **Refresh now**.
 

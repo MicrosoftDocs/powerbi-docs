@@ -26,7 +26,6 @@ A few scenarios when you could benefit from Explore include:
 - You want to see the underlying data behind a visual in a report or a Copilot-generated visual.
 - You want to explore a new semantic model (dataset) to learn about it.
 - You want to create a new visual or matrix from scratch, but you don't want to create a report.
-- You want to explore a subset of data from a datamart query result.
 - You want to explore a semantic model that you don't have permission to edit, but you want to create a new visual or matrix from it.
 
 Follow the steps in this article to learn how to use Explore to build a matrix or visual, customize your Exploration, and then save it to a workspace or as a report to share with others.
@@ -61,11 +60,6 @@ You can start your experience with Explore from various entry points:
      1. Select **Explore this data**.
 
     :::image type="content" source="media/explore-data-service/explore-data-report-menu-bar.png" alt-text="Screenshot showing Explore this data option on the menu bar.":::
-
-  - **From a datamart**:
-     1. Select **Explore this data**.
-
-    :::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
 
 - **Workspace**:
    1. Select the **New** button at the top of a workspace.
@@ -238,7 +232,6 @@ Explore has some limitations. Here are some important things to keep in mind.
   - Power Apps
   - Power Automate
 - It doesn't currently support streaming datasets
-- There's a known issue when you attempt to save an Exploration from the Datamart SQL editor entry point
 
 ## Related content
 

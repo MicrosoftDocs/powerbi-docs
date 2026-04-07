@@ -61,11 +61,11 @@
     - name: Consume and view
       items:
       - name: Troubleshoot connecting Excel to Power BI data
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
+        href: ../collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
       - name: Troubleshoot report performance in Power BI
         href: ../guidance/report-performance-troubleshoot.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
       - name: Troubleshoot the Power BI add-in for PowerPoint
-        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
+        href: ../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-troubleshoot.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
       - name: Troubleshoot corporate SSL certificate error on Android
         href: ../troubleshoot/mobile-android-app-error-corporate-ssl-account-is-untrusted.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
     - name: Gateways and capacity

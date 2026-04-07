@@ -1,6 +1,6 @@
 ---
-title: Data types in Power BI Desktop
-description: Learn about the different kinds of data types supported by Power BI Desktop and DAX expressions.
+title: Data types in Power BI
+description: Learn about the different kinds of data types supported by Power BI and DAX expressions.
 author: kgremban
 ms.author: kgremban
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.topic: concept-article
 ms.date: 02/26/2025
 ms.custom: fabric-cat
 LocalizationGroup: Connect to data
-#customer intent: As a Power BI user, I want to understand the different data types available in Power BI Desktop so that I can properly format and analyze my data.
+#customer intent: As a Power BI user, I want to understand the different data types available in Power BI so that I can properly format and analyze my data.
 ---
-# Data types in Power BI Desktop
+# Data types in Power BI
 
-This article describes data types that Power BI Desktop and Data Analysis Expressions (DAX) support.
+This article describes data types that Power BI and Data Analysis Expressions (DAX) support.
 
-When Power BI loads data, it tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop converts the data column to a **Whole number** data type, which is better suited for storing integers.
+When Power BI loads data, it tries to convert the data types of source columns into data types that support more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI converts the data column to a **Whole number** data type, which is better suited for storing integers.
 
 This concept is important because some DAX functions have special data type requirements. In many cases DAX [implicitly converts data types](#implicit-and-explicit-data-type-conversion), but in some cases it doesn't. For instance, if a DAX function requires a **Date** data type, but the data type for your column is **Text**, the DAX function won't work correctly. So it's important and useful to use the correct data types for columns.
 
 ## Determine and specify a column's data type
 
-In Power BI Desktop, you can determine and specify a column's data type in the Power Query Editor, in Table view, or in Report view:
+In Power BI you can determine and specify a column's data type in the Power Query Editor, in Table view, or in Report view:
 
 - In Power Query Editor, select the column and then select **Data Type** in the **Transform** group of the ribbon.
 
@@ -40,7 +40,7 @@ The **Binary** data type isn't supported outside of the Power Query Editor. In t
 
 ## Number types
 
-Power BI Desktop supports three number types: **Decimal number**, **Fixed decimal number**, and **Whole number**.
+Power BI supports three number types: **Decimal number**, **Fixed decimal number**, and **Whole number**.
 
 You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI semantic models with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
 
@@ -65,7 +65,7 @@ This data type corresponds to SQL Server’s **Decimal (19,4)**, or the **Curren
 As with the **Fixed decimal** type, the **Whole number** type can be useful when you need to control rounding. TOM represents the **Whole number** data type as `DataType.Int64` Enum.
 
 > [!NOTE]
-> The Power BI Desktop data model supports 64-bit integer values, but due to JavaScript limitations, the largest number Power BI visuals can safely express is *9,007,199,254,740,991* (*2^53-1*). If your data model has larger numbers, you can reduce their size through calculations before you add them to visuals.
+> The Power BI data model supports 64-bit integer values, but due to JavaScript limitations, the largest number Power BI visuals can safely express is *9,007,199,254,740,991* (*2^53-1*). If your data model has larger numbers, you can reduce their size through calculations before you add them to visuals.
 
 ### Accuracy of number type calculations
 
@@ -83,7 +83,7 @@ If a required calculation sums most of the positive numbers before summing most 
 
 ## Date/time types
 
-Power BI Desktop supports five Date/Time data types in the Power Query Editor. Both **Date/Time/Timezone** and **Duration** are converted during load into the data model, as follows:
+Power BI supports five Date/Time data types in the Power Query Editor. Both **Date/Time/Timezone** and **Duration** are converted during load into the data model, as follows:
 
 **Date/Time** represents both a date and time value. The underlying *Date/Time* value is stored as a *Decimal number*, so you can actually convert between the two.  The time portion is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  The data type supports dates between years 1900 and 9999.
 
@@ -351,9 +351,9 @@ How operations such as addition or concatenation handle blanks depends on the in
 
 ## Related content
 
-You can do all sorts of things with Power BI Desktop and data. For more information on Power BI capabilities, see the following resources:
+You can do all sorts of things with Power BI and data. For more information on Power BI capabilities, see the following resources:
 
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data sources in Power BI Desktop](desktop-data-sources.md)
 - [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

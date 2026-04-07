@@ -17,7 +17,7 @@ ms.custom:
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This security planning article describes strategies for content creators who are responsible for creating semantic models, dataflows, datamarts, reports, or dashboards. It's primarily targeted at:
+This security planning article describes strategies for content creators who are responsible for creating semantic models, dataflows, reports, or dashboards. It's primarily targeted at:
 
 - **Power BI administrators**: The administrators who are responsible for overseeing Power BI in the organization.
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
@@ -41,14 +41,13 @@ For purposes of security and permissions, consider that there are two types of c
 
 ### Data creators
 
-A data creator is any Power BI user who creates semantic models, dataflows, or datamarts.
+A data creator is any Power BI user who creates semantic models or dataflows.
 
 Here are some common data creator scenarios.
 
 - **Create a new semantic model**: Create and test a new data model in Power BI Desktop. It's then published to the Power BI service so that it can be used as a shared semantic model for many reports. For more information about reusing shared semantic models, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
 - **Extend and customize a semantic model**: Create a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to an existing shared semantic model in Power BI Desktop. Convert the live connection to a local model, which allows extending the model design with new tables or columns. For more information about extending and customizing shared semantic models, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
 - **Create a new dataflow**: In the Power BI service, create a new [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) so that it can be used as a source by many semantic models. For more information about reusing data preparation activities, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
-- **Create a new datamart**. In the Power BI service, create a new [datamart](../transform-model/datamarts/datamarts-overview.md).
 
 Data creators are often found in enterprise BI teams and in the Center of Excellence (COE). They also have a key role to play in decentralized business units and departments that maintain and manage their own data.
 
@@ -80,33 +79,33 @@ This section isn't intended to be an all-inclusive list of every possible permis
 
 The following permissions are commonly required for creating new content.
 
-| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** | **Datamart creator** |
-|:--|:-:|:-:|:-:|:-:|
-| **Access to the underlying data source** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| **Semantic model Read and Build permissions** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
-| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
-| **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | | |
+| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** |
+|:--|:-:|:-:|:-:|
+| **Access to the underlying data source** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Semantic model Read and Build permissions** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
+| **Dataflow Read permission (when a dataflow is used as a source, via the workspace Viewer role)**  | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access where original Power BI Desktop file is stored** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
+| **Permission to use custom visuals** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
 
 #### Publishing content permissions
 
 The following permissions are commonly required for publishing content.
 
-| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** | **Datamart creator** |
-|:--|:-:|:-:|:-:|:-:|
-| **Workspace role: Contributor, Member, or Admin** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| **Semantic model Write permission (when the user doesn't belong to a workspace role)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | | |
-| **Deployment pipeline role to publish items (optional)** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** |
+|:--|:-:|:-:|:-:|
+| **Workspace role: Contributor, Member, or Admin** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Semantic model Write permission (when the user doesn't belong to a workspace role)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | |
+| **Deployment pipeline role to publish items (optional)** | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 #### Refreshing data
 
 The following permissions are commonly required for refreshing data.
 
-| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** | **Datamart creator** |
-|:--|:-:|:-:|:-:|:-:|
-| **Owner assigned (who has set up settings or taken over the item)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| **Access to the underlying data source (when a gateway isn't used)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
-| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Permission** | **Report creator** | **Semantic model creator** | **Dataflow creator** |
+|:--|:-:|:-:|:-:|
+| **Owner assigned (who has set up settings or taken over the item)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the underlying data source (when a gateway isn't used)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
+| **Access to the data source in a gateway (when the source is on-premises or in a virtual network)** | | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: | :::image type="icon" source="../includes/media/yes-icon.svg" border="false"::: |
 
 The remainder of this article describes considerations for content creator permissions.
 
@@ -118,25 +117,24 @@ The remainder of this article describes considerations for content creator permi
 **Checklist** - When planning your security strategy for content creators, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Determine who your data creators are**: Ensure that you're familiar with who's creating semantic models, dataflows, and datamarts. Verify that you understand what their needs are before starting your security planning activities.
+> - **Determine who your data creators are**: Ensure that you're familiar with who's creating semantic models and dataflows. Verify that you understand what their needs are before starting your security planning activities.
 > - **Determine who your report creators are**: Ensure that you're familiar with who's creating reports, dashboards, workbooks, and scorecards. Verify that you understand what their needs are before starting your security planning activities.
 
 ## Discover content for creators
 
-Users can rely on _[data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery)_ to find semantic models and datamarts. Data discovery is a Power BI feature that allows content creators to locate existing data assets—even when they don't have any permissions for that content.
+Users can rely on _[data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery)_ to find semantic models. Data discovery is a Power BI feature that allows content creators to locate existing data assets—even when they don't have any permissions for that content.
 
 Discovery of existing data is useful for:
 
 - Report creators who want to use an existing semantic model for a new report.
-- Report creators who want to query data from an existing datamart.
 - Semantic model creators who want to use an existing semantic model for a new composite model.
 
 > [!NOTE]
 > [Data discovery](../collaborate-share/service-discovery.md) in Power BI isn't a data security permission. It's a setting that allows report creators to read metadata, helping them to discover data and request access to it.
 
-You can set up a semantic model or datamart as discoverable when it's been [endorsed](../collaborate-share/service-endorsement-overview.md) (certified or promoted). When it's discoverable, content creators can find it in the [OneLake catalog](/fabric/governance/onelake-catalog).
+You can set up a semantic model as discoverable when it's been [endorsed](../collaborate-share/service-endorsement-overview.md) (certified or promoted). When it's discoverable, content creators can find it in the [OneLake catalog](/fabric/governance/onelake-catalog).
 
-A content creator can also request access to the semantic model or datamart. Essentially, an access request asks for [Build](#read-and-build-permissions-for-underlying-semantic-model) permission, which is required to create new content based on it. When responding to requests for access, consider using groups instead of individual users. For more information about how to use groups for this purpose, see [Request access workflow for consumers](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers).
+A content creator can also request access to the semantic model. Essentially, an access request asks for [Build](#read-and-build-permissions-for-underlying-semantic-model) permission, which is required to create new content based on it. When responding to requests for access, consider using groups instead of individual users. For more information about how to use groups for this purpose, see [Request access workflow for consumers](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers).
 
 Consider the following three examples.
 
@@ -164,11 +162,11 @@ There are three tenant settings related to discovery.
 **Checklist** - When planning data discovery for your content creators, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Clarify needs for data discovery**: Consider what your organization's position is on encouraging content creators to find existing semantic models and datamarts. When appropriate, create a governance policy about how data discovery should be used.
+> - **Clarify needs for data discovery**: Consider what your organization's position is on encouraging content creators to find existing semantic models. When appropriate, create a governance policy about how data discovery should be used.
 > - **Decide who can discover content**: Decide whether any Power BI user is allowed to discover content, or whether discovery should be limited to certain groups of users (for example, a group of approved content creators). Set the _Discover content_ tenant setting to align with this decision.
-> - **Decide who can set certified content to be discoverable**: Decide whether any Power BI user (who has permission to edit the semantic model or datamart, as well as permission to certify it) can set it as discoverable. Set the _Make certified content discoverable_ tenant setting to align with this decision.
-> - **Decide who can set promoted content to be discoverable**: Decide whether any Power BI user (who has permission to edit the semantic model or datamart) can set it as discoverable. Set the _Make promoted content discoverable_ tenant setting to align with this decision.
-> - **Include in documentation and training for semantic model creators**: Include guidance for your semantic model creators about when it's appropriate to use data discovery for the semantic models and datamarts they own and manage.
+> - **Decide who can set certified content to be discoverable**: Decide whether any Power BI user (who has permission to edit the semantic model, as well as permission to certify it) can set it as discoverable. Set the _Make certified content discoverable_ tenant setting to align with this decision.
+> - **Decide who can set promoted content to be discoverable**: Decide whether any Power BI user (who has permission to edit the semantic model) can set it as discoverable. Set the _Make promoted content discoverable_ tenant setting to align with this decision.
+> - **Include in documentation and training for semantic model creators**: Include guidance for your semantic model creators about when it's appropriate to use data discovery for the semantic models they own and manage.
 > - **Include in documentation and training for report creators**: Include guidance for your content creators about how data discovery works, and what they can expect.
 
 ## Request access workflow for creators
@@ -176,11 +174,11 @@ There are three tenant settings related to discovery.
 A user can request access to content in two ways.
 
 - **For content consumers**: A user receives a link to an existing report or app in the Power BI service. To view the item, the consumer can select the _Request access_ button. For more information, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#request-access-workflow-for-consumers) article.
-- **For content creators**: The user discovers a semantic model or datamart in the OneLake catalog. To create a new report or composite model based on the existing data, the content creator can select the _Request access_ button. This experience is the focus of this section.
+- **For content creators**: The user discovers a semantic model in the OneLake catalog. To create a new report or composite model based on the existing data, the content creator can select the _Request access_ button. This experience is the focus of this section.
 
-By default, a request for access to a semantic model or a datamart goes to the [owner](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission). The owner is the user who last scheduled data refresh or input credentials. Relying on one user to process access requests might be acceptable for team semantic models. However, that might not be practical or reliable.
+By default, a request for access to a semantic model goes to the [owner](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission). The owner is the user who last scheduled data refresh or input credentials. Relying on one user to process access requests might be acceptable for team semantic models. However, that might not be practical or reliable.
 
-Instead of relying on one owner, you can define [custom instructions](../connect-data/service-datasets-build-permissions.md#change-the-access-request-behavior) that are presented to users when they request access to a semantic model or datamart. Custom instructions are helpful when:
+Instead of relying on one owner, you can define [custom instructions](../connect-data/service-datasets-build-permissions.md#change-the-access-request-behavior) that are presented to users when they request access to a semantic model. Custom instructions are helpful when:
 
 - The semantic model is set as [discoverable](#discover-content-for-creators).
 - Approval of the access request will be done by someone other than the data owner.
@@ -208,8 +206,8 @@ We recommend that you create helpful information for:
 
 > [!div class="checklist"]
 > - **Clarify preferences for how to handle access requests**: Determine for which situations it's acceptable for owner approval, and when a different process should be used. When appropriate, create a governance policy about how access requests should be handled.
-> - **Include in documentation and training for semantic model and datamart creators**: Include guidance for your semantic model and datamart creators about how and when to set custom instructions for access requests.
-> - **Include in documentation and training for report creators**: Include guidance for your report creators about what they can expect when requesting Build permissions for semantic models and datamarts.
+> - **Include in documentation and training for semantic model creators**: Include guidance for your semantic model creators about how and when to set custom instructions for access requests.
+> - **Include in documentation and training for report creators**: Include guidance for your report creators about what they can expect when requesting Build permissions for semantic models.
 
 ## Create and publish content
 
@@ -338,7 +336,7 @@ When a data creator starts a new project, permissions required to access externa
 
 #### Access to data source
 
-When a data creator creates a semantic model, dataflow, or datamart, they must authenticate with data sources to retrieve data. Usually, authentication involves user credentials (account and password), which could be for a service account.
+When a data creator creates a semantic model or dataflow, they must authenticate with data sources to retrieve data. Usually, authentication involves user credentials (account and password), which could be for a service account.
 
 Sometimes it's useful to create specific service accounts for accessing data sources. Check with your IT department for guidance on how service accounts should be used in your organization. When they're permitted, the use of service accounts can:
 
@@ -366,7 +364,7 @@ The credentials (account and password) can be applied in one of two ways.
 
 Credentials are encrypted and stored separately from the data model in both Power BI Desktop and the Power BI service. This data separation has the following security advantages.
 
-- It facilitates the reuse of credentials for multiple semantic models, dataflows, and datamarts.
+- It facilitates the reuse of credentials for multiple semantic models and dataflows.
 - When someone parses the metadata of a semantic model, they can't extract the credentials.
 - In Power BI Desktop, another user can't connect to the original data source to refresh data without first applying the credentials.
 
@@ -466,7 +464,7 @@ The semantic model Read permission is primarily targeted at consumers. This perm
 In addition to semantic model Read permission, content creators also need the semantic model [Build permission](../connect-data/service-datasets-build-permissions.md). Specifically, the Build permission allows report creators to:
 
 - Create new Power BI reports based on the semantic model.
-- Connect to the semantic model by using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+- Connect to the semantic model by using [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md).
 - Query the semantic model by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Export Power BI report visual underlying data (instead of the summarized data retrieved by the visual).
 - Create a [DirectQuery connection to a Power BI semantic model](../connect-data/desktop-directquery-datasets-azure-analysis-services.md). In this case, the new semantic model connects to one or more existing Power BI semantic models (known as _chaining_). To query chained semantic models, the semantic model creator will need Build permission for all upstream semantic models. For more information, see [Chained semantic models](#chained-semantic-models) later in this article.
@@ -585,9 +583,9 @@ For more information, see the [Tenant-level security planning](powerbi-implement
 
 #### Featured tables
 
-In Power BI Desktop, semantic model creators can set a model table to become a [featured table](../collaborate-share/service-create-excel-featured-tables.md). When the semantic model is published to the Power BI service, report creators can use the Data Types Gallery in Excel to find the featured table, allowing them to add featured table data to augment their Excel worksheets.
+In Power BI Desktop, semantic model creators can set a model table to become a [featured table](../collaborate-share/office-integration/service-create-excel-featured-tables.md). When the semantic model is published to the Power BI service, report creators can use the Data Types Gallery in Excel to find the featured table, allowing them to add featured table data to augment their Excel worksheets.
 
-The _Allow connections to featured tables_ tenant setting allows Fabric administrators to set up which groups of users can access featured tables. It's targeted at Excel users who want to [access Power BI featured tables in Excel organization data types](../collaborate-share/service-excel-featured-tables.md). We recommend that you leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. That way, you can encourage the use of featured tables.
+The _Allow connections to featured tables_ tenant setting allows Fabric administrators to set up which groups of users can access featured tables. It's targeted at Excel users who want to [access Power BI featured tables in Excel organization data types](../collaborate-share/office-integration/service-excel-featured-tables.md). We recommend that you leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. That way, you can encourage the use of featured tables.
 
 #### Custom visual permissions
 
@@ -647,44 +645,6 @@ For more information about using dataflows, see the [self-service data preparati
 > - **Decide on the strategy for dataflow creator permissions**: Determine what preferences and requirements exist for managing security for dataflow creators. Consider who's allowed, or encouraged, to take responsibility for managing data preparation activities in centralized and decentralized business units.
 > - **Decide who can create dataflows**: Decide whether there should be any limitations for which Power BI data creators can create dataflows. Set the _Create and use dataflows_ tenant setting to align with this decision.
 > - **Review how workspace roles are handled for dataflow creators**: Determine what the impact is on your workspace design process. Create separate dataflow workspaces per subject area so that you can handle workspace roles and permissions separately for each the subject area, when appropriate.
-
-### Datamart creator permissions
-
-A [datamart](../transform-model/datamarts/datamarts-overview.md) is a self-service analytics solution that enables users to store and explore data that's loaded in a fully managed relational database. It also comprises an auto-generated semantic model.
-
-Datamarts provide a simple low-code experience to ingest data from different data sources, and to extract, transform, and load (ETL) the data by using Power Query Online. The data is loaded into an Azure SQL Database that's fully managed and requires no tuning or optimization. The auto-generated semantic model is always synchronized with the managed database because it's in DirectQuery mode.
-
-You can create a datamart when you're either a workspace administrator, member, or contributor. Workspace roles also get mapped to database-level roles in the Azure SQL Database (however, because the database is fully managed, user permissions can't be edited or managed in the relational database).
-
-The _Create datamarts_ tenant setting allows Power BI administrators to set up which groups of users can create datamarts.
-
-#### Datamart sharing
-
-For datamarts, the term _sharing_ takes on a meaning that's different to other Power BI content types. Usually, a sharing operation is targeted at a consumer because it provides read-only permission to one item, like a report.
-
-Sharing a datamart is targeted at content creators (rather than consumers). It grants the Read and Build permissions, which allows users to query either the semantic model or the relational database, whichever they prefer.
-
-Sharing a datamart allows content creators to:
-
-- **Build content by using the auto-generated semantic model**: The semantic model is the semantic layer on which Power BI reports can be built. Most report creators should use the semantic model.
-- **Connect to and query the Azure SQL Database**: The relational database is useful for content creators who want to create new semantic models or paginated reports. They can write structured query language (SQL) queries to retrieve data by using the SQL endpoint.
-
-#### Datamart row-level security
-
-You can define [RLS for datamarts](../transform-model/datamarts/datamarts-access-control.md#row-level-security) to restrict data access for specified users. RLS is set up in the datamart editor in the Power BI service, and it's automatically applied to the auto-generated semantic model and the Azure SQL Database (as security rules).
-
-Regardless of how a user chooses to connect to the datamart (to the semantic model or the database), identical RLS permissions are enforced.
-
-:::image type="icon" source="media/common/checklist.svg" border="false":::
-
-**Checklist** - When planning for datamart creator permissions, key decisions and actions include:
-
-> [!div class="checklist"]
-> - **Decide on the strategy for datamart creator permissions**: Determine what preferences and requirements exist for managing security for datamart creators. Consider who's allowed, or encouraged, to take responsibility for managing data in centralized and decentralized business units.
-> - **Decide who can create datamarts**: Decide whether there should be any limitations for which Power BI data creators can create a datamart. Set the _Create datamarts_ tenant setting to align with this decision. If you decide to limit who can create datamarts, consider using a group such as _Power BI approved datamart creators_.
-> - **Review how workspace roles are handled for datamart creators**: Determine what the impact is on your workspace design process. Create separate data workspaces per subject area so the workspace roles and semantic model security can be simplified for the subject area.
-> - **Provide guidance for datamart creators about managing permissions**: Include documentation for datamart creators about how to manage datamart permissions. Publish this information to your centralized portal and training materials.
-> - **Decide on the strategy for using RLS in datamarts**: Consider which use cases and purposes you intend to use RLS within a datamart.
 
 ### Scorecard creator permissions
 
@@ -800,10 +760,10 @@ The _Embed content in apps_ tenant setting allows Power BI administrators to con
 
 #### Embedding in PowerPoint
 
-The _Enable Power BI add-in for PowerPoint_ tenant setting allows Power BI administrators to control which users can [embed Power BI report pages in PowerPoint presentations](../collaborate-share/service-power-bi-powerpoint-add-in-about.md). When appropriate, enable this setting for specific groups, such as report creators.
+The _Enable Power BI add-in for PowerPoint_ tenant setting allows Power BI administrators to control which users can [embed Power BI report pages in PowerPoint presentations](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md). When appropriate, enable this setting for specific groups, such as report creators.
 
 > [!NOTE]
-> For this capability to work, users must install the Power BI add-in for PowerPoint. To use the add-in, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). For more information, see [Power BI add-in for PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md).
+> For this capability to work, users must install the Power BI add-in for PowerPoint. To use the add-in, users must either have access to the Office add-in store, or the add-in must be made available to them as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). For more information, see [Power BI add-in for PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md).
 
 Educate report creators to be cautious about where they save their PowerPoint presentations and who they share them with. That's because an image of the Power BI report visuals is shown to users when they open the presentation. That image is captured from the last time the PowerPoint file was connected. However, the image could inadvertently reveal data that the receiving user doesn't have permission to see.
 

@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
 
-With Power BI, you can share cloud connections for semantic models, paginated reports, datamarts, dataflows, and Power Query Online experiences in *Get data*. This capability enables you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source with different credentials or privacy settings, and share the connections with others so they don't need to manage their own separate cloud connections.  
+With Power BI, you can share cloud connections for semantic models, paginated reports, dataflows, and Power Query Online experiences in *Get data*. This capability enables you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source with different credentials or privacy settings, and share the connections with others so they don't need to manage their own separate cloud connections.  
 
 ## Types of data connections
 
@@ -37,7 +37,7 @@ Shareable connections have no such limitations and provide more streamlined, fle
 
 * **You can share these connections with other users** - by using shareable connections, you can assign other users *Owner* permissions, enabling them to manage all aspects of the connection configuration, including credentials. You can provide other users with *Resharing* permissions so they can use and reshare the connection with others. You can also provide *User* permissions, enabling them to use the connection to bind their artifacts to the data source. 
 
-* **Lower the overhead of maintaining data connections and credentials** - when combined with the data source and gateway management experience, you can centralize data source connection management for gateway and cloud connections. Such centralization and management is already common for enterprise and VNET data gateways, for which a gateway administrator creates, shares, and maintains the connections. By using shareable connections, you can now extend such centralized connection management to cloud data sources as well.
+* **Lower the overhead of maintaining data connections and credentials** - when combined with the data source and gateway management experience, you can centralize data source connection management for gateway and cloud connections. Such centralization and management are already common for enterprise and VNET data gateways, for which a gateway administrator creates, shares, and maintains the connections. By using shareable connections, you can now extend such centralized connection management to cloud data sources as well.
 
 ## Prerequisites
 
@@ -107,7 +107,7 @@ Keep the following considerations in mind when creating or using a **Workspace i
 
 ## Default connection settings
 
-When you connect to a Fabric data source specifically, you use your Entra ID Single Sign-On (SSO) credentials by default.
+When you connect to a Fabric data source specifically, you use your Microsoft Entra ID single sign-on (SSO) credentials by default.
 
 You can also use a shareable cloud connection instead of the default connection settings to connect a semantic model to a Fabric data source. By using this method, you apply the settings you configured for that shareable cloud connection, such as fixed credentials. You can bind the data source to the shareable cloud connection and override the default SSO connection for that data source.
 
@@ -184,7 +184,7 @@ For more information about creating shareable cloud connections, see:
 
 You can do all sorts of things with the Power BI service and Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
