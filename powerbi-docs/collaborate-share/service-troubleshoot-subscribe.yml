@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Troubleshoot email subscriptions for Power BI reports and dashboards
+  title: Troubleshoot Email Subscriptions for Power BI Reports and Dashboards
   description: Resolve issues with Power BI email subscriptions for reports and dashboards, including missing options, undelivered emails, and attachment errors.
   author: julcsc
   ms.author: juliacawthra
@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 02/12/2026
+  ms.date: 04/07/2026
   ai-usage: ai-assisted
   LocalizationGroup: Share your work
 
