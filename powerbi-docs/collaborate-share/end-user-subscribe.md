@@ -1,5 +1,5 @@
 ---
-title: Email subscriptions for reports and dashboards in the Power BI service
+title: Email Subscriptions for Reports and Dashboards in the Power BI Service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: julcsc
 ms.author: juliacawthra
@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/11/2025
+ms.date: 04/07/2026
 LocalizationGroup: Common tasks
 ms.custom:
   - retail analysis sample
