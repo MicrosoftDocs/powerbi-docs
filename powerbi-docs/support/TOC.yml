@@ -2,8 +2,9 @@
   href: index.yml
   items:
   - name: Overview
+    expanded: true
     items:
-    - name: Support requests overview
+    - name: Support overview
       href: service-support-options.md
 
   - name: Before you contact support
