@@ -1,0 +1,28 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'lineColor': '#4682B4', 'fontSize': '13px' }}}%%
+
+graph LR
+    subgraph clients [" Client Applications "]
+        direction TB
+        PY["Python\npyarrow → DataFrame"]
+        CS["C#\nApache.Arrow → RecordBatch"]
+        PS["PowerShell\nArrow IPC → Objects"]
+    end
+
+    clients -- "POST /executeQueries\nAccept: application/arrow" --> API
+    API -- "Arrow IPC stream" --> clients
+
+    subgraph cloud [" Power BI Service "]
+        API["Arrow\nEndpoint"]
+        SM[("Semantic\nModel")]
+    end
+
+    API --> SM
+    SM --> API
+
+    style clients fill:#E8F5E9,stroke:#509650,stroke-width:2px
+    style cloud fill:#E6F0FA,stroke:#4682B4,stroke-width:2px,stroke-dasharray: 5 5
+    style API fill:#FFDC64,stroke:#C8AA32,stroke-width:2px
+    style SM fill:#B4DCFF,stroke:#4682B4,stroke-width:2px
+    style PY fill:#C8E6C8,stroke:#509650,stroke-width:1px
+    style CS fill:#C8E6C8,stroke:#509650,stroke-width:1px
+    style PS fill:#C8E6C8,stroke:#509650,stroke-width:1px

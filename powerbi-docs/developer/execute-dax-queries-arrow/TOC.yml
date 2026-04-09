@@ -1,0 +1,11 @@
+- name: Execute DAX Queries REST API
+  expanded: true
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Get started
+    href: get-started.md
+  - name: "Tutorial: Build a mid-tier DAX query execution service"
+    href: tutorial.md
+  - name: Best practices
+    href: best-practices.md

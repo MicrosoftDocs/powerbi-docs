@@ -91,6 +91,9 @@ conceptualContent:
         - url: /rest/api/power-bi/
           itemType: overview
           text: Automation with Power BI REST APIs
+        - url: execute-dax-queries-arrow/overview.md
+          itemType: tutorial
+          text: Mastering the Execute DAX Queries REST API
         - url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
           itemType: reference
           text: Using TOM with semantic models
