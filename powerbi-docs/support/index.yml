@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Power BI support documentation
-summary: Learn how to get help with Power BI, create support tickets, and understand support options and best practices.
+title: Power BI support and troubleshooting documentation
+summary: Learn how to troubleshoot Power BI issues, get help, create support tickets, and understand support options and best practices.
 
 metadata:
-  title: Support documentation
-  description: Learn how to get help with Power BI, create support tickets, and understand support options and best practices.
+  title: Support and troubleshooting documentation
+  description: Learn how to troubleshoot Power BI issues, get help, create support tickets, and understand support options and best practices.
   services: powerbi
   ms.service: powerbi
   ms.subservice: pbi-fundamentals
@@ -32,18 +32,16 @@ landingContent:
           - text: Service interruption notifications
             url: service-interruption-notifications.md
           - text: Check for service-wide outages
-            url: https://support.powerbi.com
+            url: https://support.fabric.microsoft.com/support
 
-  - title: Before you contact Support
+  - title: Before you contact Microsoft Support
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Before you contact support checklist
+            url: before-you-contact-support.md
           - text: Track service health in Microsoft 365
             url:  service-admin-health.md
-          - text: See if this is a known issue
-            url: ../troubleshoot/known-issues/power-bi-known-issues.md
-          - text: Check troubleshooting guides
-            url: ../troubleshoot/index.yml
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com
 
