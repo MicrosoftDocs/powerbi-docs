@@ -19,8 +19,7 @@ As data volume continues to grow, so does the challenge of wrangling that data i
 
 :::image type="content" source="media/dataflows-introduction-self-service-flow.png" alt-text="Diagram of the flow of data in the Microsoft Common Data Model.":::
 
->[!TIP]
->You can also try Dataflow Gen2 in [Data Factory in Microsoft Fabric](/fabric/data-factory/), an all-in-one analytics solution for enterprises. [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) covers everything from data movement to data science, real-time analytics, business intelligence, and reporting. Learn how to [start a new trial](/fabric/fundamentals/fabric-trial) for free.
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 Dataflows are designed to support the following scenarios:
 

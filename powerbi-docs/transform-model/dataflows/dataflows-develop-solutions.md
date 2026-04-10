@@ -14,6 +14,8 @@ LocalizationGroup: Data from files
 
 # Develop solutions with dataflows
 
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
+
 Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios, links to articles, and other information to help you understand and use dataflows to their full potential.
 
 ## Get access to Premium features of dataflows

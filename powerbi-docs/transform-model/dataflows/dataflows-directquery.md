@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Use DirectQuery with dataflows
 
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
+
 Using DirectQuery with Power BI dataflows lets you connect directly to a dataflow without the need to import the data into a semantic model. There are many reasons why using DirectQuery with dataflows, rather than importing data, is useful and helpful. The following are a few examples:
 
 * Working with large dataflows

@@ -26,7 +26,7 @@ The following sections describe each of these features in detail.
 
 
 > [!IMPORTANT]
-> This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric (preview). For more information, see [Getting from dataflows Generation 1 to dataflows Generation 2](/fabric/data-factory/dataflows-gen2-overview).
+> This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric. For more information, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 ## The enhanced compute engine
 

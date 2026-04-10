@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
 
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
+
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
 
 ## General limitations
