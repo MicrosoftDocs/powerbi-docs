@@ -28,9 +28,9 @@ A few scenarios when you could benefit from Explore include:
 - You want to create a new visual or matrix from scratch, but you don't want to create a report.
 - You want to explore a semantic model that you don't have permission to edit, but you want to create a new visual or matrix from it.
 
-Follow the steps in this article to learn how to use Explore to build a matrix or visual, customize your Exploration, and then save it to a workspace or as a report to share with others.
+Continue reading to learn how to use Explore to build a matrix or visual, customize your Exploration, and then save it to a workspace or as a report to share with others.
 
-## Step 1. Navigate to the Explore experience
+## Navigate to the Explore experience
 
 > [!NOTE]
 > You can explore data from any supported Fabric artifact where you have **View** permission on the data, unless restricted by your tenant admin. If restricted, you can only use artifacts where you have **Build** permission. *Exception: ***Build*** permission is always required for Lake Houses.*
@@ -72,7 +72,7 @@ You can start your experience with Explore from various entry points:
 
    :::image type="content" source="media/explore-data-service/discover-business-insights.png" alt-text="Screenshot showing Explore this data to discover business insights.":::
 
-## Step 2. Build your matrix or visual with Explore (preview)
+## Build your matrix or visual with Explore
 
 Regardless of your starting point in Step 1, when you launch the Explore experience, you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual.
 
@@ -92,8 +92,10 @@ For example, you might have a visual with a date hierarchy and you want to drill
 
 :::image type="content" source="media/explore-data-service/drill-down-next-level.png" alt-text="Screenshot showing drilling down to the next level in the chart." lightbox="media/explore-data-service/drill-down-next-level.png":::
 
-> [!NOTE]
-> Some interactions between the matrix and visual aren't currently supported. For example, if you drill down on a visual, the matrix might not update to reflect the drill state. The matrix and visual are linked, but if you notice that your visual doesn't reflect the drill state you applied to your matrix, it means that the interaction isn't currently supported.
+> [!NOTES]
+> 1.) Some interactions between the matrix and visual aren't currently supported. For example, if you drill down on a visual, the matrix might not update to reflect the drill state. The matrix and visual are linked, but if you notice that your visual doesn't reflect the drill state you applied to your matrix, it means that the interaction isn't currently supported.
+> 2.) In explore, when a user adds or reorders a field in the field well, the matrix automatically adjusts which fields are expanded so the new field is visible. This behavior might be different from what you experience in your reports, depending on the settings the author has chosen.
+> 3.) When users launch an exploration from a formatted matrix in a report, the formatting applied to that matrix during authoring is now carried over. Formatting that's part of the theme won't be carried over. If you'd like to clear any of the formatting, navigate to the more menu (...) in the visual toolbar, and select "Clear formatting"
 
 #### Visual types
 
@@ -112,13 +114,27 @@ Use the **Rearrange data** section of the data pane to make adjustments. Drag an
 > [!NOTE]
 > Some users might see the data pane on the left as we experiment with placement to optimize the experience.
 
+### Apply filters to your Exploration
+
+As you build out your Exploration, you can also filter your data. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your semantic model in the **All data** section.  
+
+:::image type="content" source="media/explore-data-service/add-new-filter-trip-purpose-1.png" alt-text="Screenshot showing adding a new filter for trip purpose." lightbox="media/explore-data-service/add-new-filter-trip-purpose-1.png":::
+
+In this Exploration experience, the filters are added as pills at the top of view, so you can clearly see what the current filter state is and modify it.  
+
+:::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::## Add calculations to your Exploration
+
+
 ### Layout options
 
 Switch between a horizontal or vertical orientation by using the **Split view horizontally** and **Split view vertically** buttons along the top.  
 
 :::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
 
-## Step 3. Add calculations to your Exploration
+### Show or hide totals 
+Show or hide totals on matrix and table visuals from the tool bar.
+
+## Add calculations to your visual
 
 You can add [visual calculations](../transform-model/desktop-visual-calculations-overview.md) to your visuals. Select the **New visual calculation** button on any 
 visual to enter visual calculations edit mode.
@@ -143,17 +159,7 @@ Your calculation is shown on both visuals, unless it can't be displayed on the o
 
 :::image type="content" source="media/explore-data-service/add-visual-calculation-final.png" alt-text="Screenshot showing an Exploration with a visual calculation applied to both visuals." lightbox="media/explore-data-service/add-visual-calculation-final.png":::
 
-## Step 4. Apply filters to your Exploration
-
-As you build out your Exploration, you can also filter your data. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your semantic model in the **All data** section.  
-
-:::image type="content" source="media/explore-data-service/add-new-filter-trip-purpose-1.png" alt-text="Screenshot showing adding a new filter for trip purpose." lightbox="media/explore-data-service/add-new-filter-trip-purpose-1.png":::
-
-In this Exploration experience, the filters are added as pills at the top of view, so you can clearly see what the current filter state is and modify it.  
-
-:::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
-
-## Step 5. Save your Exploration
+## Save your Exploration
 
 Save your Exploration to a workspace or as a report.
 
@@ -170,7 +176,7 @@ Save your Exploration to a workspace or as a report.
    > [!NOTE]
    > You need **Build** permission on the underlying semantic model to save as a report.
 
-## Step 6. Share your Exploration with others
+## Share your Exploration with others
 
 If you want to share your Exploration with others, follow these steps:
 
@@ -184,6 +190,13 @@ If you want to share your Exploration with others, follow these steps:
 > You should be immediately prompted to share the underlying semantic model so the recipients can view the contents of your Exploration. If you're not prompted, you can manually [share the semantic model](../connect-data/service-datasets-share.md) with read permissions. For reports, sharing the underlying semantic model is done automatically.
 
 :::image type="content" source="media/explore-data-service/create-send-link.png" alt-text="Screenshot showing selecting People in your organization can view.":::
+
+## Perspectives
+For report authors: If your report is built using a large data model, report consumers that decide to use explore might have trouble finding the fields they are interested in in the data pane. To provide them a more focused list of tables and fields, you can create a perspective (follow [these instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-personalize-visuals?tabs=powerbi-desktop#use-perspectives-for-a-more-focused-view) and then set it as the Exploration perspective for your report.  
+
+### Setting an Explore perspective
+**In the Service**: With the report open in the service, navigate to **File > Settings > Report settings** and then set your Explore perspective
+**In desktop** A default perspective can be set in Desktop under: **File > Options and settings > Options > Current File > Report settings** and then set your Explore perspective
 
 ## Permissions, requirements, and limitations
 
