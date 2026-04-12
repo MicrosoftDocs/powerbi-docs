@@ -12,6 +12,9 @@ Follow these recommendations to get the most out of the Execute DAX Queries REST
 
 ## Choose the right endpoint
 
+> [!NOTE]
+> The Execute DAX Queries API is available only for semantic models that reside on a Power BI capacity (Premium, Fabric, or Embedded). Semantic models without a capacity assignment are not supported.
+
 The Execute DAX Queries API supports two response formats. Pick the one that matches your client's capabilities:
 
 - **Arrow (default)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark.
