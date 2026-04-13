@@ -151,7 +151,7 @@ The steps described here show how to change the layering order of visuals and sh
 
     Now that you have two layers, try selecting the pie chart and then the background.
 
-    - When you select the pie chart, Power BI makes that object active and displays its header menu. 
+    - When you select the pie chart, Power BI makes that object active and displays its header menu.
     - When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart.
 
     You can change this default behavior with the following steps.
@@ -189,7 +189,7 @@ To apply a theme to your report, select the **View** menu and open the **Themes*
 Here's a list of the customization options that are available for each visualization type:
 
 | Visualization | Title | Background | Legend | Data labels | Totals / Subtotals |
-|:--- |:--- |:--- |:--- |:--- |:--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Area | Yes | Yes | Yes | Yes | Conditional |
 | Bar | Yes | Yes | Yes | Yes | Conditional |
 | Column | Yes | Yes | Yes | Yes | Conditional |
