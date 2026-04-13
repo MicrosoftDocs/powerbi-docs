@@ -18,7 +18,7 @@ Follow these recommendations to get the most out of the Execute DAX Queries REST
 The Execute DAX Queries API supports two response formats. Pick the one that matches your client's capabilities:
 
 - **Arrow (default)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark.
-- **JSON** (`responseFormat: "json"`) — Use when your consumer is a low-code/no-code platform, Power Automate flow, or any tool that can't parse binary Arrow streams. Even in this case, prefer the Execute DAX Queries API over the older Execute Queries API, because it supports additional parameters like `timeout`, `skipCompression`, and `resultsetRowcountLimit`.
+- **JSON** (`responseFormat: "json"`) — Use when your consumer is a low-code/no-code platform, Power Automate flow, or any tool that can't parse binary Arrow streams. Even in this case, prefer the Execute DAX Queries API over the older Execute Queries API, because it supports additional parameters like `timeout`, and `resultsetRowcountLimit`.
 
 As a general rule, if your result set exceeds a few hundred rows or feeds into an analytics pipeline, Arrow is the better choice.
 
@@ -59,12 +59,13 @@ For transient errors, implement exponential backoff with jitter. Start at one se
 
 ## Control result set size
 
-Large result sets consume memory on both the server and client:
+Large result sets consume memory on both the capacity in the service and the calling client. Each request is bound by the capacity's memory limit.
+
+To keep result sets manageable:
 
 - **Set `resultsetRowcountLimit` in the request body.** This enforces a server-side row limit per result set. If you know your consumer only needs 10,000 rows, set the limit explicitly.
 - **Use `TOPN` in your DAX query.** `TOPN` limits rows at the engine level, which is more efficient than truncating client-side.
 - **Process record batches incrementally.** Arrow responses are split into record batches of up to 100,000 rows. In Python, iterate over batches with `reader.read_next_batch()` instead of calling `reader.read_all()` when working with large results, to keep memory usage constant.
-- **Disable compression for debugging only.** The `skipCompression` parameter disables LZ4 compression. Leave it at `false` (the default) in production to benefit from smaller payloads.
 
 ## Secure your mid-tier service
 
