@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Learn how to customize Power BI visualization titles, backgrounds, labels, and legends to create professional, branded reports. This tutorial walks you through formatting options in the Format pane, showing you how to customize titles, legends, backgrounds, labels, layers, and themes to enhance your visualizations.
+Learn how to customize Power BI visualization titles, backgrounds, labels, and legends. This tutorial explains formatting options in the Format pane.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
@@ -115,11 +115,11 @@ The steps described here show how to add total labels to a stacked chart and app
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-area-chart.png" alt-text="Screenshot of the 'Last Year Sales and This Year Sales by FiscalMonth' area chart.":::
 
-1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png" border="false"::: to convert this area chart to a stacked bar chart.
+1. From the **Visualization** pane, choose the **Build visual** tab, and select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png" border="false"::: to convert this area chart to a stacked bar chart.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png" alt-text="Screenshot of the new stacked bar chart.":::
 
-1. In the **Visualization** tab, select the Format visual icon to open the Format controls.
+1. In the **Visualization** pane, select the **Format visual** icon to open the Format controls on the **Visual** tab.
 1. Toggle **On** the **Data labels** switch.
 1. Toggle **On** the **Total labels** switch.
 
@@ -182,7 +182,7 @@ You can apply design changes to your entire report by using report themes. For e
 
 To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report shown here uses the **Solar** theme.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
 
 ## Visualization types that you can customize
 
