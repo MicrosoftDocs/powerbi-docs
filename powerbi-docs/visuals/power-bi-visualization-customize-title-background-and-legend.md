@@ -105,29 +105,27 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 
 ## Customize total labels for stacked visuals
 
-Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column. 
+Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column.
 
-Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
+Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode.
 
-In the following video, watch Rien add total labels to a stacked chart, and then follow the steps below to try it out yourself.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=107a4025-499e-4be5-9c89-f57715c07332]
+Follow the steps below to add total labels to a stacked chart and try it out yourself.
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
+
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-area-chart.png" alt-text="Screenshot of the 'Last Year Sales and This Year Sales by FiscalMonth' area chart.":::
+
 1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png" border="false"::: to convert this area chart to a stacked bar chart.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-chart.png" alt-text="Screenshot of the new stacked bar chart.":::
 
-1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
-1. Move the **Data labels** slider to **On**.
-1. Move the **Total labels** slider to **On**.
+1. In the **Visualization** tab, select the Format visual icon to open the Format controls.
+1. Toggle **On** the **Data labels** switch.
+1. Toggle **On** the **Total labels** switch.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total label slider set to On.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total labels switch and Data labels switch set to On.":::
 
-1. Optionally, format the total labels. In this example, we've changed color to black, increased font size, and opted to display the values as **Millions** with one decimal place.
+1. Optionally, format the Total labels. In this example, we've changed color to black, bolded the font and increased font size, and opted to display the values as **Millions** by adding one decimal place.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png" alt-text="Screenshot of the new stacked bar chart with total labels.":::
 
@@ -137,40 +135,38 @@ Change the layering order of visuals and shapes in your reports. Layer order det
 
 Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Service.
 
-In this video, watch Rien change layer order behavior, and then follow the steps below to try it out yourself.
+Follow the steps below to adjust how layers are ordered in your visual and see the effect immediately.
 
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+1. Add a new report page by selecting the **+** icon on the page tabs menu.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09ec9caf-e576-476f-8214-3275803f424f]
+:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-new-page.png" alt-text="Screenshot of the New page '+' icon highlighted.":::
 
-1. Add a new report page by selecting the yellow plus sign.
-1. Add a shape to the canvas. Here, we've added a green rectangle.
+1. From the Insert ibbon, select Shapes, and add a rectangle shape to the canvas. Here, we've added a blue rectangle.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a green rectangle.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a blue rectangle shape.":::
 
-1. Copy-paste a visual from another page in the report.
+1. Select and copy the "This Year Sales by Chain" visual from the **Overview** tab. Return to the new **Page 1** we created, select the blue rectangle, and from the **Home** ribbon, select **Paste** to place the copied visual in front of the blue rectangle.
 
-    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png" alt-text="Screenshot of the new report page with a green rectangle and a pie chart.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-layer.png" alt-text="Screenshot of the new report page with a blue rectangle and a pie chart in front of the rectangle.":::
 
     Now that you have two layers, try selecting the pie chart and then the background.
 
     - When you select the pie chart, Power BI makes that object active and displays its header menu. 
     - When you select the rectangle, Power BI makes that object active and brings it to the front where it obscures the pie chart.
 
-    You can change this default behavior.
+    You can change this default behavior with the following steps.
 
-1. Select the pie chart and open the Formatting pane. Select **General**, then **Properties** > **Advanced options** and switch **On** the **Maintain layer order** toggle.
+1. Select the pie chart and open the Visualizations pane. Select **Format visual** and then, from the **General** tab, select **Properties** > **Advanced options** and switch **On** the **Maintain layer order** toggle.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page showing the Maintain layer order toggle.":::
 
-1. Open the **View** menu and **Selection**. The **Layer order** tab in the Selection pane will let you view and set the layer order.
+1. From the **View** ribbon, open the **Selection** pane. The **Layer order** tab in the Selection pane will let you view and set the layer order.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-view-menu.png" alt-text="Screenshot showing the View menu with the Selection Pane option toggled to On.":::
 
-1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, select **Format** >  **Group** > **Group**. This groups both items together.
+1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, from the **Format** ribbon, open the **Group** control and select **Group**. This groups both items together.
 
-   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-group-layer.png" alt-text="Screenshot showing the visual and shape with the context menu open and the Group option selected.":::
+   :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-group-layer.png" alt-text="Screenshot showing the visual and shape selected, Group control selected from the Format ribbon and the Group option selected.":::
 
 1. Expand the **Selection** pane. The **Layer order** should look like this:
 
@@ -192,33 +188,33 @@ To apply a theme to your report, select the **View** menu and open the **Themes*
 
 Here is a list of the customization options that are available for each visualization type:
 
-| Visualization | Title | Background | Legend | Total labels
-|:--- |:--- |:--- |:--- |:--- |
-| Area | Yes | Yes |Yes | Yes  |
-| Bar | Yes | Yes |Yes | Yes |
-| Card | Yes | Yes |n/a | n/a |
-| Multi-row Card | Yes | Yes | n/a | n/a |
-| Column | Yes | Yes | Yes |  Yes |
-| Combo | Yes | Yes | Yes | Yes |
-| Donut | Yes | Yes | Yes | n/a |
-| Filled map | Yes | Yes | Yes |n/a |
-| Funnel | Yes | Yes | n/a |n/a |
-| Gauge | Yes | Yes | n/a |n/a |
-| Key Influencer | Yes | Yes | n/a |n/a |
-| KPI | Yes | Yes | n/a |n/a |
-| Line | Yes | Yes | Yes |n/a |
-| Map | Yes | Yes | Yes |n/a |
-| Map: Azure Map | Yes | Yes | Yes |n/a |
-| Matrix | Yes | Yes | n/a |Yes |
-| Pie | Yes | Yes | Yes |n/a |
-| Q&A | Yes | Yes | n/a |n/a |
-| Scatter | Yes | Yes | Yes |n/a |
-| Shape | Yes | Yes | Yes |n/a |
-| Slicer | Yes | Yes | n/a |n/a |
-| Table | Yes | Yes | n/a |Yes |
-| Textbox | No | Yes | n/a |n/a |
-| Treemap | Yes | Yes | Yes |n/a |
-| Waterfall | Yes | Yes | Yes |n/a |
+| Visualization | Title | Background | Legend | Data labels | Totals / Subtotals |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| Area | Yes | Yes | Yes | Yes | Conditional |
+| Bar | Yes | Yes | Yes | Yes | Conditional |
+| Column | Yes | Yes | Yes | Yes | Conditional |
+| Line | Yes | Yes | Yes | Yes | No |
+| Combo | Yes | Yes | Yes | Yes | Conditional |
+| Scatter | Yes | Yes | Yes | Yes | No |
+| Pie | Yes | Yes | Yes | Yes | No |
+| Donut | Yes | Yes | Yes | Yes | No |
+| Treemap | Yes | Yes | Yes | Yes | No |
+| Waterfall | Yes | Yes | Yes | Yes | Conditional |
+| Funnel | Yes | Yes | No | Yes | No |
+| Map | Yes | Yes | Yes | Conditional | No |
+| Map: Azure Maps | Yes | Yes | Yes | Conditional | No |
+| Filled map | Yes | Yes | Yes | Conditional | No |
+| Table | Yes | Yes | No | No | Yes |
+| Matrix | Yes | Yes | No | No | Yes |
+| Card | Yes | Yes | No | Value only | No |
+| Multi-row Card | Yes | Yes | No | Value only | No |
+| KPI | Yes | Yes | No | Value only | No |
+| Gauge | Yes | Yes | No | Value only | No |
+| Key Influencer | Yes | Yes | No | Automatic | No |
+| Q&A | Yes | Yes | No | Automatic | No |
+| Slicer | Yes | Yes | No | No | No |
+| Shape | No | Yes | No | No | No |
+| Textbox | No | Yes | No | No | No |
 
 ## Related content
 
