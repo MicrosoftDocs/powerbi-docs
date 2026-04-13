@@ -3,13 +3,13 @@ title: Customize Power BI Visualization Titles
 description: "Learn how to customize Power BI visualization titles, backgrounds, labels, and legends. Follow step-by-step instructions to format your reports. Start customizing today."
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguelmyers
+ms.reviewer: DataZoeMS
 featuredvideoid: removed
-ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
+ms.custom: pbibetadocbug, intro-get-started, sample-retailanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 04/12/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
@@ -75,7 +75,7 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 
 With the same clustered column chart selected, expand the **Effects** > **Background** options.
 
-1. Move the **Background** slider to **On**.
+1. Toggle the **Background** switch to **On**.
 1. Select the drop-down and choose a grey color.
 1. Change **Transparency** to **74%**.
 
