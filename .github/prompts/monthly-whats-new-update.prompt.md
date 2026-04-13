@@ -95,6 +95,8 @@ After all edits are complete, output a single consolidated **Action items** bloc
 
 **c) Unconfirmed information** — If the blog URL, YouTube demo URL, or previous month's version number was not provided, flag them here.
 
+**d) Reminders** — Include this note: "Remember to use content tools like Acrolinx and Content Mentor before publishing."
+
 Format the output as a checklist, for example:
 
 ```
@@ -112,6 +114,9 @@ Format the output as a checklist, for example:
 ### Unconfirmed information
 - [ ] YouTube demo URL not provided — update placeholder https://youtu.be/TBD before publishing
 - [ ] Previous month's version number not provided — update archive heading "## March 2026 update" to include version, e.g. "## March 2026 update (version 2.152.1234.0)"
+
+### Reminders
+- [ ] Remember to use content tools like Acrolinx and Content Mentor before publishing.
 ```
 
 ## Link Conversion Reference
