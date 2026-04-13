@@ -25,7 +25,7 @@ The existing [Execute Queries](/rest/api/power-bi/datasets/execute-queries) endp
 | **Best for** | Small queries, simple integrations | Large result sets, analytics pipelines |
 
 > [!TIP]
-> Use the Execute DAX Queries API for any client application that can consume binary Arrow IPC streams — this includes Python (`pyarrow`), C# (`Apache.Arrow`), Java, Rust, Go, and other languages with Arrow library support. For low-code/no-code platforms, Power Automate flows, or other solutions that can only consume JSON, continue to use the older [Execute Queries](/rest/api/power-bi/datasets/execute-queries) API. Although the Execute Queries API lacks the advanced parameters available in Execute DAX Queries (such as `timeout`, `skipCompression`, and `resultsetRowcountLimit`), it remains the appropriate choice when JSON output is required.
+> Use the Execute DAX Queries API for any client application that can consume binary Arrow IPC streams — this includes Python (`pyarrow`), C# (`Apache.Arrow`), Java, Rust, Go, and other languages with Arrow library support. For low-code/no-code platforms, Power Automate flows, or other solutions that can only consume JSON, continue to use the older [Execute Queries](/rest/api/power-bi/datasets/execute-queries) API. Although the Execute Queries API lacks the advanced parameters available in Execute DAX Queries (such as `timeout` and `resultsetRowcountLimit`), it remains the appropriate choice when JSON output is required.
 
 ## Apache Arrow IPC format
 
@@ -33,7 +33,7 @@ Apache Arrow defines a language-independent columnar memory format that has been
 
 - **Zero-copy reads** — clients can map the response directly into memory without parsing or copying data between buffers.
 - **Cross-language support** — native libraries exist for Python (`pyarrow`), C# (`Apache.Arrow`), Java, Rust, Go, JavaScript, and more, so you can consume results in virtually any language.
-- **Efficient compression** — optional LZ4 compression reduces payload size further. You can control compression with the `skipCompression` request parameter.
+- **Efficient compression** — optional LZ4 compression reduces payload size further.
 - **Schema-first design** — every Arrow stream starts with a schema message that declares column names, types, and metadata, so clients know the exact data layout before reading any rows.
 
 ## DAX to Arrow type mapping
@@ -74,7 +74,7 @@ Before adopting the Execute DAX Queries API, review the following differences an
 | **Tenant settings** | **Dataset Execute Queries REST API** (under **Developer settings**) | **Dataset Execute Queries REST API**, **Allow service principals to use Power BI APIs** (under **Developer settings**), and **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** (under **Integration settings**) |
 | **Query input** | `queries[]` array (one query per call) | Single `query` string (multiple `EVALUATE` statements allowed) |
 | **Response formats** | JSON only | Arrow IPC only |
-| **Additional parameters** | Limited | `timeout`, `skipCompression`, `resultsetRowcountLimit`, `schemaOnly`, `executionMetrics`, `memoryLimit` |
+| **Additional parameters** | Limited | `timeout`, `resultsetRowcountLimit`, `schemaOnly`, `executionMetrics`, `memoryLimit` |
 | **Streaming** | Not streamed | Streamed end-to-end (chunked transfer) |
 | **Result size limits** | Hard limit of 100,000 rows and 1,000,000 values per query | No fixed row or value limit (use `resultsetRowcountLimit` to cap if needed) |
 | **Pagination** | Not supported | Not supported — use `TOPN` or `resultsetRowcountLimit` for large results |
