@@ -202,7 +202,7 @@ If you want to share your Exploration with others, follow these steps:
 
 ## Perspectives
 
-For report authors: If your report is built using a large data model, report consumers that decide to use explore might have trouble finding the fields they are interested in in the data pane. To provide them a more focused list of tables and fields, you can create a perspective (follow [these instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-personalize-visuals?tabs=powerbi-desktop#use-perspectives-for-a-more-focused-view) and then set it as the Exploration perspective for your report.  
+For report authors: If your report is built using a large data model, report consumers that decide to use explore might have trouble finding the fields they are interested in in the data pane. To provide them a more focused list of tables and fields, you can create a perspective (follow [these instructions](../create-reports/power-bi-personalize-visuals.md#use-perspectives-for-a-more-focused-view) and then set it as the Exploration perspective for your report.  
 
 :::image type="content" source="media/explore-data-service/perspective-downloads-only.png" alt-text="Screenshot showing the choose data section of the data pane with the app downloads options expanded, with downloads only set as the explore perspective." lightbox="media/explore-data-service/perspective-downloads-only.png":::
    
