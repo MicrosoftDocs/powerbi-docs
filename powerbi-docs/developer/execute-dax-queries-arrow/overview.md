@@ -14,9 +14,9 @@ The Execute DAX Queries API lets you run DAX queries against Power BI semantic m
 
 ## Why Arrow?
 
-The existing [Execute Queries](/rest/api/power-bi/datasets/execute-queries) endpoint returns results as JSON. The newer [Execute DAX Queries](/rest/api/power-bi/datasets/execute-dax-queries) endpoint returns results in Arrow IPC format by default, with JSON as an alternative. While JSON is human-readable and widely supported, it has limitations for analytical workloads:
+The existing [Execute Queries](/rest/api/power-bi/datasets/execute-queries) endpoint returns results as JSON. The newer [Execute DAX Queries](/rest/api/power-bi/datasets/execute-dax-queries) endpoint returns results exclusively in Apache Arrow IPC format, a columnar binary format designed for high-performance analytics. The following table compares the two response formats:
 
-| | JSON | Arrow |
+| | JSON (Execute Queries API) | Arrow (Execute DAX Queries API) |
 |---|---|---|
 | **Format** | Row-oriented JSON | Columnar Arrow IPC |
 | **Payload size** | Larger (string encoding overhead) | Smaller (binary, compressed) |
@@ -25,7 +25,7 @@ The existing [Execute Queries](/rest/api/power-bi/datasets/execute-queries) endp
 | **Best for** | Small queries, simple integrations | Large result sets, analytics pipelines |
 
 > [!TIP]
-> Use the Arrow format (`responseFormat: "arrow"`) wherever your client application can consume binary Arrow streams — this is the recommended default for Python, C#, Java, and other languages with Arrow library support. For low-code/no-code platforms, Power Automate flows, or other solutions that can only consume JSON, set `responseFormat: "json"` on the Execute DAX Queries API instead. Even in the JSON case, prefer the newer Execute DAX Queries API over the older Execute Queries API, because Execute DAX Queries supports additional request parameters like `timeout`, `skipCompression`, and `resultsetRowcountLimit`.
+> Use the Execute DAX Queries API for any client application that can consume binary Arrow IPC streams — this includes Python (`pyarrow`), C# (`Apache.Arrow`), Java, Rust, Go, and other languages with Arrow library support. For low-code/no-code platforms, Power Automate flows, or other solutions that can only consume JSON, continue to use the older [Execute Queries](/rest/api/power-bi/datasets/execute-queries) API. Although the Execute Queries API lacks the advanced parameters available in Execute DAX Queries (such as `timeout`, `skipCompression`, and `resultsetRowcountLimit`), it remains the appropriate choice when JSON output is required.
 
 ## Apache Arrow IPC format
 
@@ -61,7 +61,7 @@ Use the Arrow endpoint when you:
 - Build a mid-tier service that proxies DAX queries for downstream consumers.
 - Need precise numeric or date types without manual type coercion.
 
-For simple, small queries or quick ad-hoc lookups, the JSON endpoint remains a straightforward choice.
+For simple, small queries or quick ad-hoc lookups where JSON is preferred, the older [Execute Queries](/rest/api/power-bi/datasets/execute-queries) API remains a straightforward choice.
 
 ## Considerations and limitations
 
@@ -73,12 +73,12 @@ Before adopting the Execute DAX Queries API, review the following differences an
 | **Capacity requirement** | Works on Pro, PPU, and Premium/Fabric | Premium or Fabric capacity only |
 | **Tenant settings** | **Dataset Execute Queries REST API** (under **Developer settings**) | **Dataset Execute Queries REST API**, **Allow service principals to use Power BI APIs** (under **Developer settings**), and **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** (under **Integration settings**) |
 | **Query input** | `queries[]` array (one query per call) | Single `query` string (multiple `EVALUATE` statements allowed) |
-| **Response formats** | JSON only | Arrow IPC (default) or JSON (`responseFormat: "json"`) |
+| **Response formats** | JSON only | Arrow IPC only |
 | **Additional parameters** | Limited | `timeout`, `skipCompression`, `resultsetRowcountLimit`, `schemaOnly`, `executionMetrics`, `memoryLimit` |
 | **Streaming** | Not streamed | Streamed end-to-end (chunked transfer) |
 | **Result size limits** | Hard limit of 100,000 rows and 1,000,000 values per query | No fixed row or value limit (use `resultsetRowcountLimit` to cap if needed) |
 | **Pagination** | Not supported | Not supported — use `TOPN` or `resultsetRowcountLimit` for large results |
-| **Arrow library required** | No (JSON only) | Yes, for Arrow format; JSON format works without Arrow libraries |
+| **Arrow library required** | No (JSON only) | Yes — an Arrow library (such as `pyarrow` or `Apache.Arrow`) is required to deserialize the response |
 
 ## Related content
 

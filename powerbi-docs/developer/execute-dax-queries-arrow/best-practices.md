@@ -15,12 +15,12 @@ Follow these recommendations to get the most out of the Execute DAX Queries REST
 > [!NOTE]
 > The Execute DAX Queries API is available only for semantic models that reside on a Power BI capacity (Premium, Fabric, or Embedded). Semantic models without a capacity assignment are not supported.
 
-The Execute DAX Queries API supports two response formats. Pick the one that matches your client's capabilities:
+Power BI offers two REST APIs for executing DAX queries. Choose the one that matches your client's capabilities:
 
-- **Arrow (default)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark.
-- **JSON** (`responseFormat: "json"`) — Use when your consumer is a low-code/no-code platform, Power Automate flow, or any tool that can't parse binary Arrow streams. Even in this case, prefer the Execute DAX Queries API over the older Execute Queries API, because it supports additional parameters like `timeout`, and `resultsetRowcountLimit`.
+- **[Execute DAX Queries](/rest/api/power-bi/datasets/execute-dax-queries) (Arrow)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark. This API also supports advanced parameters like `timeout`, `skipCompression`, and `resultsetRowcountLimit`. Requires Premium or Fabric capacity.
+- **[Execute Queries](/rest/api/power-bi/datasets/execute-queries) (JSON)** — Use when your consumer is a low-code/no-code platform, Power Automate flow, or any tool that can only parse JSON. This API works on Pro, PPU, and Premium/Fabric capacities but has a hard limit of 100,000 rows and 1,000,000 values per query.
 
-As a general rule, if your result set exceeds a few hundred rows or feeds into an analytics pipeline, Arrow is the better choice.
+As a general rule, if your result set exceeds a few hundred rows, feeds into an analytics pipeline, or requires precise type fidelity, use the Execute DAX Queries API with Arrow.
 
 ## Optimize DAX queries for the Arrow endpoint
 

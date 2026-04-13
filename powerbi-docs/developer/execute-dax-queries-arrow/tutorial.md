@@ -13,7 +13,7 @@ In this tutorial, you build a mid-tier service that:
 - Accepts DAX queries from client applications.
 - Authenticates to Power BI using a service principal.
 - Executes queries against semantic models via the Arrow endpoint.
-- Returns results to downstream consumers in Arrow or converted formats (JSON, CSV, Parquet).
+- Returns results to downstream consumers in Arrow or service-converted formats (JSON, CSV, Parquet).
 
 ## Prerequisites
 
@@ -413,7 +413,7 @@ public record QueryRequest(
 
 ## Step 5: Add response format negotiation
 
-Let clients request results in different formats: Arrow IPC (default), JSON, CSV, or Parquet.
+The Execute DAX Queries API always returns Arrow IPC. Your mid-tier service can convert the Arrow results to other formats before returning them to downstream consumers. Let clients request their preferred format—Arrow IPC (default), JSON, CSV, or Parquet—via the `Accept` header.
 
 ### [Python](#tab/python)
 
