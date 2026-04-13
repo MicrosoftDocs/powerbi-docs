@@ -5,7 +5,7 @@
     href: overview.md
   - name: Get started
     href: get-started.md
-  - name: "Tutorial: Build a mid-tier DAX query execution service"
+  - name: "Tutorial: Build a .NET mid-tier service"
     href: tutorial.md
   - name: Best practices
     href: best-practices.md
