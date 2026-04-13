@@ -57,15 +57,15 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
     b. Select the drop-down to close the color window.
 
 1. Increase the text size to **16 pt**.
-1. The last customization you'll make to the chart title is to align it in the center of the visualization.
+1. The final chart title customization is aligning the title to the center of the visualization.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-align.png" alt-text="Screenshot of the Alignment controls with the Center option selected.":::
 
-    At this point in the tutorial, your clustered column chart title will look something like this:
+   At this point in the tutorial, the clustered column chart title looks something like this:
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-table.png" alt-text="Screenshot of the newly configured clustered column chart.":::
 
-Save the changes you've made and move to the next section.
+Save the changes, and continue to the next section.
 
 If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Title** customization pane.
 
@@ -79,11 +79,11 @@ With the same clustered column chart selected, expand the **Effects** > **Backgr
 1. Select the drop-down and choose a grey color.
 1. Change **Transparency** to **74%**.
 
-At this point in the tutorial, your clustered column chart background will look something like this:
+At this point in the tutorial, the clustered column chart background looks something like this:
 
 :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-background.png" alt-text="Screenshot of the clustered column chart with background color updated.":::
 
-Save the changes you've made and move to the next section.
+Save the changes, and continue to the next section.
 
 If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Background** customization pane.
 
@@ -99,7 +99,7 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 1. Enter *Manager* in the **Title text** field.
 1. Change **Color** to black.
 
-Save the changes you've made and move to the next section.
+Save the changes, and continue to the next section.
 
 If you ever need to revert all of the changes, select **Reset to default**, at the bottom of the **Legend** customization pane.
 
@@ -107,9 +107,9 @@ If you ever need to revert all of the changes, select **Reset to default**, at t
 
 Stacked visuals can display data labels and total labels. On a stacked column chart, data labels identify the value for each portion of a column. Total labels display the total value for the entire aggregated column.
 
-Depending on the visual and its size, data labels may not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode.
+Data labels don't display on some visuals, depending on their size. If data labels don't display, make the visual larger or view it in full-screen mode.
 
-Follow the steps below to add total labels to a stacked chart and try it out yourself.
+The steps described here show how to add total labels to a stacked chart and apply the technique.
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
 
@@ -125,23 +125,23 @@ Follow the steps below to add total labels to a stacked chart and try it out you
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-totals.png" alt-text="Screenshot showing Total labels switch and Data labels switch set to On.":::
 
-1. Optionally, format the Total labels. In this example, we've changed color to black, bolded the font and increased font size, and opted to display the values as **Millions** by adding one decimal place.
+1. Optionally, we can format the Total labels. This example uses black text, a bold font style, a larger font size, and values displayed as millions with one decimal place.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-bar-totals.png" alt-text="Screenshot of the new stacked bar chart with total labels.":::
 
 ## Customize layer order
 
-Change the layering order of visuals and shapes in your reports. Layer order determines which objects will come to the front when selected. Whenever you select an object on the report canvas, it becomes active and moves to the top layer. For visuals, this makes it easier to interact with the selected visual. For shapes and backgrounds, however, you may want to secure them to the bottom layer, so that you can't accidentally select them and cover or obscure your report visuals.
+Change the layering order of visuals and shapes in your reports. Layer order determines which objects appear in front when selected. When you select an object on the report canvas, that object becomes active and moves to the top layer. This behavior makes visuals easier to interact with. Place shapes and backgrounds on the bottom layer to avoid selecting them by accident.
 
 Layering controls are available in the Power BI service, Power BI Desktop, mobile, and Report server. This article shows you how to change layer order behavior in the Power BI Service.
 
-Follow the steps below to adjust how layers are ordered in your visual and see the effect immediately.
+The steps described here show how to change the layering order of visuals and shapes in a report.
 
 1. Add a new report page by selecting the **+** icon on the page tabs menu.
 
 :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-new-page.png" alt-text="Screenshot of the New page '+' icon highlighted.":::
 
-1. From the Insert ibbon, select Shapes, and add a rectangle shape to the canvas. Here, we've added a blue rectangle.
+1. From the **Insert** ribbon, select **Shapes**, and add a rectangle shape to the canvas. In this example, the canvas displays a blue rectangle.
 
     :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-shape.png" alt-text="Screenshot of the new report page with a blue rectangle shape.":::
 
@@ -160,11 +160,11 @@ Follow the steps below to adjust how layers are ordered in your visual and see t
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-maintain-layer.png" alt-text="Screenshot of the new report page showing the Maintain layer order toggle.":::
 
-1. From the **View** ribbon, open the **Selection** pane. The **Layer order** tab in the Selection pane will let you view and set the layer order.
+1. From the **View** ribbon, open the **Selection** pane. The **Layer order** tab in the Selection pane lets you view and set the layer order.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-view-menu.png" alt-text="Screenshot showing the View menu with the Selection Pane option toggled to On.":::
 
-1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, from the **Format** ribbon, open the **Group** control and select **Group**. This groups both items together.
+1. Select the pie chart, hold down the CTRL key, and select the rectangle. Then, from the **Format** ribbon, open the **Group** control, and select **Group**. This action allows us to group both items together.
 
    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-group-layer.png" alt-text="Screenshot showing the visual and shape selected, Group control selected from the Format ribbon and the Group option selected.":::
 
@@ -180,13 +180,13 @@ Now that the visual and the shape are grouped, you can select the shape and it r
 
 You can apply design changes to your entire report by using report themes. For example, change the color scheme to use corporate colors, change icon sets, or apply new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme.
 
-To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report below uses the **Solar** theme.
+To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report shown here uses the **Solar** theme.
 
 :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
 
 ## Visualization types that you can customize
 
-Here is a list of the customization options that are available for each visualization type:
+Here's a list of the customization options that are available for each visualization type:
 
 | Visualization | Title | Background | Legend | Data labels | Totals / Subtotals |
 |:--- |:--- |:--- |:--- |:--- |:--- |
