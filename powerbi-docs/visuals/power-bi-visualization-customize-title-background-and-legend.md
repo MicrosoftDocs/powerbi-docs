@@ -113,7 +113,7 @@ The steps described here show how to add total labels to a stacked chart and app
 
 1. Open the **District Monthly Sales** report page and select the **Last Year Sales and This Year Sales by FiscalMonth** area chart.
 
-:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-area-chart.png" alt-text="Screenshot of the 'Last Year Sales and This Year Sales by FiscalMonth' area chart.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-area-chart.png" alt-text="Screenshot of the 'Last Year Sales and This Year Sales by FiscalMonth' area chart.":::
 
 1. In the **Visualization** tab, select :::image type="icon" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-stacked-bar.png" border="false"::: to convert this area chart to a stacked bar chart.
 
@@ -139,7 +139,7 @@ The steps described here show how to change the layering order of visuals and sh
 
 1. Add a new report page by selecting the **+** icon on the page tabs menu.
 
-:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-new-page.png" alt-text="Screenshot of the New page '+' icon highlighted.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-new-page.png" alt-text="Screenshot of the New page '+' icon highlighted.":::
 
 1. From the **Insert** ribbon, select **Shapes**, and add a rectangle shape to the canvas. In this example, the canvas displays a blue rectangle.
 
@@ -182,7 +182,7 @@ You can apply design changes to your entire report by using report themes. For e
 
 To apply a theme to your report, select the **View** menu and open the **Themes** dropdown. Choose a theme. The report shown here uses the **Solar** theme.
 
-:::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
+    :::image type="content" source="media/power-bi-visualization-customize-title-background-and-legend/power-bi-theme.png" alt-text="Screenshot of report using Solar theme of yellows, oranges, and reds.":::
 
 ## Visualization types that you can customize
 
