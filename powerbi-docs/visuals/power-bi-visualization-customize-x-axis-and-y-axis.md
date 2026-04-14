@@ -1,6 +1,6 @@
 ---
 title: Customize X-Axis and Y-Axis Properties
-description: Learn how to customize X-axis and Y-axis properties in Power BI visuals, including labels, titles, gridlines, colors, ranges, intervals, and dual-axis configurations for enhanced data visualization.
+description: Learn how to format chart axes in Power BI, including labels, titles, gridlines, ranges, and dual-axis options.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
@@ -29,7 +29,7 @@ Most chart types have two axes: one for values (numbers) and one for categories 
 | Scatter (with numeric X) | Values | Values |
 | Scatter (with categorical X) | Categories | Values |
 
-Some options, like **Range** settings, apply only to value axes. Use the table above to identify your chart's value axis.
+Some options, like **Range** settings, apply only to value axes. The preceding table shows which axis is the value axis for each chart type.
 
 ## Sample data
 
@@ -72,7 +72,7 @@ To follow along with the examples in this article, create a calculated table wit
 1. From the **Data** pane, drag **Month** to the **X-axis** field well.
 1. Drag **This Year** and **Last Year** to the **Y-axis** field well.
 
-:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/clustered-column-chart-axis-examples.png" alt-text="Screenshot of a clustered column chart showing Month on the X-axis and This Year and Last Year values on the Y-axis.":::
+:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/clustered-column-chart-axis-examples.png" alt-text="Screenshot of a clustered column chart comparing monthly sales.":::
 
 Now you can customize your axes. Power BI provides many options for formatting your visualization.
 
@@ -89,7 +89,7 @@ Axis labels show the values or categories along each axis.
    - **Text size**: Adjust the font size
    - **Display units**: For value axes, choose Thousands, Millions, or Auto
 
-To hide labels, toggle **Values** to **Off**. This frees up space for data when labels aren't needed.
+To hide labels, toggle **Values** to **Off**. Hiding labels frees up space for data.
 
 ## Multiple fields and hierarchies on an axis
 
@@ -97,25 +97,25 @@ Add multiple fields or a hierarchy to a category axis for more detailed grouping
 
 ### Add multiple fields
 
-Drag additional fields to the axis field well to create a hierarchy. For example, add **Year** and **Month** to the X-axis to show months grouped by year.
+Drag more fields to the axis field well to create a hierarchy. For example, add **Year** and **Month** to the X-axis to show months grouped by year.
 
 ### Auto date/time hierarchy
 
-When you add a date field to an axis, Power BI creates a date/time hierarchy with Year, Quarter, Month, and Day levels. This lets you drill down through dates.
+When you add a date field to an axis, Power BI creates a date/time hierarchy with Year, Quarter, Month, and Day levels. This hierarchy lets you drill down through dates.
 
 To use actual date values instead:
 
 1. Right-click the date field in the axis field well.
 1. Select the field name (for example, **Month**) instead of **Date Hierarchy**.
 
-This switches to a continuous or categorical date axis, depending on your axis type setting.
+This selection switches to a continuous or categorical date axis, depending on your axis type setting.
 
 ### Concatenate labels
 
 With multiple fields on an axis, you control how labels display:
 
 - **Off** (default): Labels appear in separate rows for each level. Users can drill down through the hierarchy.
-- **On**: Labels combine into a single line, such as "2026 January". This takes less space.
+- **On**: Labels combine into a single line, such as "2026 January". This option takes less space.
 
 To change this setting:
 
@@ -126,9 +126,9 @@ Use concatenation for a compact display. Turn it off to show hierarchy levels or
 
 ## Continuous vs. categorical axis
 
-Axes can be continuous or categorical. This affects how data displays and whether scrolling is available.
+Axes can be continuous or categorical. The axis type affects how data displays and whether scrolling is available.
 
-- **Continuous**: Shows data on a smooth scale without gaps. All data fits without scrolling. This is the default for numbers and dates.
+- **Continuous**: Shows data on a smooth scale without gaps. All data fits without scrolling. Continuous is the default for numbers and dates.
 - **Categorical**: Shows each value as a separate category. A scrollbar appears if content doesn't fit. Text fields always use this type.
 
 To change the axis type for numeric or date fields:
@@ -188,7 +188,7 @@ For clustered bar and column charts, customize spacing and overlap in the **Colu
 
 ### Overlap for direct comparison
 
-Enable **Overlap series** to stack bars or columns on top of each other instead of side by side. This is useful for comparing values directly, such as this year vs. last year.
+Enable **Overlap series** to stack bars or columns on top of each other instead of side by side. This layout is useful for comparing values directly, such as comparing this year to last year.
 
 When using overlap:
 
@@ -197,7 +197,7 @@ When using overlap:
 
 ## Dual Y-axes
 
-Combo charts support two Y-axes with different scales. This lets you compare measures with different value ranges.
+Combo charts support two Y-axes with different scales. Dual axes let you compare measures with different value ranges.
 
 When you add a line value to a combo chart, Power BI creates a secondary Y-axis. Format each axis separately under **Y-axis (Column)** and **Y-axis (Line)**.
 
@@ -224,7 +224,7 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 ## Round range
 
-By default, Power BI rounds axis values to the nearest multiple for cleaner labels. Turn this off to fit the axis range more tightly to your data.
+By default, Power BI rounds axis values to the nearest multiple for cleaner labels. Turn this setting off to fit the axis range more tightly to your data.
 
 1. In the **Format visual** pane, select **Visual**.
 1. Expand the value axis section (see [Value axis vs. category axis](#value-axis-vs-category-axis)).
@@ -241,7 +241,7 @@ To enable data labels:
 1. In the **Format visual** pane, select **Visual**.
 1. Expand **Data labels** and set to **On**.
 
-Adding data labels might shift the axis range to make space. This can affect your chart's proportions.
+Adding data labels might shift the axis range to make space. This shift can affect your chart's proportions.
 
 ## Considerations and limitations
 
