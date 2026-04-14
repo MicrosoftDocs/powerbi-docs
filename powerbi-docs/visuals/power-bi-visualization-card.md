@@ -95,6 +95,14 @@ You can add categories to your card visual by dragging a field into the **Catego
 
 The category headers are selectable and filter other visuals in the report when selected. This behavior lets users interact with your card visual to explore data across different segments.
 
+### Category selection
+
+When you select a category header, the other category cards dim to indicate the current selection. You can:
+
+- **Select multiple categories**: Hold **Ctrl** and select additional category headers to filter by multiple values.
+- **Deselect a category**: Select the category header again to remove it from the selection.
+- **Control which visuals are filtered**: Use **Edit interactions** in the **Format** menu to choose which visuals on the report page are affected by selections on the card visual.
+
 The layout of category sections is controlled by the **Multi-category layout** section in the format pane under the **Visual** tab. Within each category section, the arrangement of individual cards is still controlled by the **Multi-card layout** section. Elements within each card, such as the callout, image, and reference labels, are controlled by the **Cards** > **Layout** section.
 
 ## Card walkthrough
@@ -507,15 +515,6 @@ To access the legacy single card and multi-card visuals:
 The legacy visuals appear in the unpinned area of the Visualizations pane, where custom visuals typically appear. Users who need to maintain legacy behavior should continue using existing legacy card visuals in their reports.
 
 ## Considerations and limitations
-
-### Category header selection
-
-When you select a category header to filter other visuals, the following limitations apply:
-
-- The selected category header doesn't indicate it's selected.
-- Selection only works when the category header position is set to top or bottom. Left or right positions don't support selection.
-- To deselect a category header, you must select somewhere else on the card. Selecting the category header again doesn't deselect it.
-- You can't use **Edit interactions** to control which visuals the card filters.
 
 ### Frequently asked questions for cards used in reports during preview
 
