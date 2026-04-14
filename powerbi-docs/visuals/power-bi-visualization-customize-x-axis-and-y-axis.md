@@ -16,11 +16,11 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so let's take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.
+This article shows how to customize the X-axis and Y-axis of your visuals. Not all visuals have axes—pie charts, for example, don't have them. Customization options also vary by visual type. This article covers the most common options in the **Format visual** pane.
 
 ## Value axis vs. category axis
 
-Most chart types have two axes: one for values (numeric data) and one for categories (text labels or dates). The axis that displays values vs. categories depends on the chart type:
+Most chart types have two axes: one for values (numbers) and one for categories (text or dates). Which axis shows values or categories depends on the chart type:
 
 | Chart type | X-axis | Y-axis |
 |------------|--------|--------|
@@ -29,7 +29,7 @@ Most chart types have two axes: one for values (numeric data) and one for catego
 | Scatter (with numeric X) | Values | Values |
 | Scatter (with categorical X) | Categories | Values |
 
-Some formatting options, like **Range** settings, apply only to value axes. When this article refers to "the value axis," use the table above to identify whether that's the X-axis or Y-axis for your chart type.
+Some options, like **Range** settings, apply only to value axes. Use the table above to identify your chart's value axis.
 
 ## Sample data
 
@@ -78,145 +78,143 @@ Now you can customize your axes. Power BI provides many options for formatting y
 
 ## Customize axis labels
 
-Axis labels display the values or categories along each axis. You can customize their appearance in the **Format visual** pane.
+Axis labels show the values or categories along each axis.
 
 1. Select **Format** (the paint brush icon) in the **Visualizations** pane.
-1. Expand the axis section (**X-axis** or **Y-axis**).
-1. Adjust the label formatting:
+1. Expand **X-axis** or **Y-axis**.
+1. Adjust these settings:
 
    - **Font family**: Change the typeface
    - **Color**: Set the label color
    - **Text size**: Adjust the font size
-   - **Display units**: For value axes, choose units like Thousands, Millions, or Auto
+   - **Display units**: For value axes, choose Thousands, Millions, or Auto
 
-To hide axis labels entirely, toggle **Values** to **Off**. This is useful when the visualization is self-explanatory or when you need more space for data.
+To hide labels, toggle **Values** to **Off**. This frees up space for data when labels aren't needed.
 
 ## Multiple fields and hierarchies on an axis
 
-You can add multiple fields or a hierarchy to a category axis to create more detailed groupings in your chart.
+Add multiple fields or a hierarchy to a category axis for more detailed groupings.
 
 ### Add multiple fields
 
-Drag additional fields to the axis field well to create a hierarchy on that axis. For example, add both **Year** and **Month** to the X-axis to show months grouped within each year.
+Drag additional fields to the axis field well to create a hierarchy. For example, add **Year** and **Month** to the X-axis to show months grouped by year.
 
 ### Auto date/time hierarchy
 
-When you add a date field to an axis, Power BI automatically creates a date/time hierarchy with levels like Year, Quarter, Month, and Day. This enables drill-down through the date hierarchy.
+When you add a date field to an axis, Power BI creates a date/time hierarchy with Year, Quarter, Month, and Day levels. This lets you drill down through dates.
 
-To use the actual date values instead of the auto hierarchy:
+To use actual date values instead:
 
 1. Right-click the date field in the axis field well.
 1. Select the field name (for example, **Month**) instead of **Date Hierarchy**.
 
-This switches from the hierarchical view to a continuous or categorical date axis, depending on your axis type setting.
+This switches to a continuous or categorical date axis, depending on your axis type setting.
 
 ### Concatenate labels
 
-When you have multiple fields on an axis, you can control how labels display:
+With multiple fields on an axis, you control how labels display:
 
-- **Concatenate labels off** (default): Labels display in a hierarchical structure with separate rows for each level. This creates visual groupings and lets users drill down through the hierarchy.
-- **Concatenate labels on**: Labels combine into a single line, such as "2026 January" instead of showing Year and Month on separate rows. This creates a flatter display that takes less vertical space.
+- **Off** (default): Labels appear in separate rows for each level. Users can drill down through the hierarchy.
+- **On**: Labels combine into a single line, such as "2026 January". This takes less space.
 
-To change the concatenation setting:
+To change this setting:
 
 1. In the **Format visual** pane, expand the category axis section.
 1. Toggle **Concatenate labels** to **On** or **Off**.
 
-Concatenation is useful when you want a compact axis display. Keep it off when you want to emphasize the hierarchical relationship between fields or enable drill-down behavior.
+Use concatenation for a compact display. Turn it off to show hierarchy levels or enable drill-down.
 
 ## Continuous vs. categorical axis
 
-Axes can be either continuous or categorical, which affects how data is displayed and whether scrolling is enabled.
+Axes can be continuous or categorical. This affects how data displays and whether scrolling is available.
 
-- **Continuous axis**: Displays data on a smooth scale without gaps. All data points fit within the visible area without scrolling. This is the default for numeric and date fields.
-- **Categorical axis**: Displays each distinct value as a separate category. If the content doesn't fit within the plot area, a scrollbar appears. This is always used for text fields.
+- **Continuous**: Shows data on a smooth scale without gaps. All data fits without scrolling. This is the default for numbers and dates.
+- **Categorical**: Shows each value as a separate category. A scrollbar appears if content doesn't fit. Text fields always use this type.
 
 To change the axis type for numeric or date fields:
 
 1. In the **Format visual** pane, expand the axis section.
-1. Change the **Type** setting from **Continuous** to **Categorical**, or vice versa.
+1. Change **Type** to **Continuous** or **Categorical**.
 
-Text fields are always categorical and don't have the option to switch to continuous.
+Text fields are always categorical.
 
 ### Logarithmic scale
 
-For continuous axes, you can use a logarithmic scale instead of a linear scale. Logarithmic scales are useful when your data spans several orders of magnitude.
+Use a logarithmic scale when your data spans several orders of magnitude.
 
 1. In the **Format visual** pane, expand the axis section.
-1. Expand the **Range** section.
+1. Expand **Range**.
 1. Toggle **Logarithmic** to **On**.
 
 > [!NOTE]
-> Logarithmic scale requires all values to be either positive or negative—you cannot mix positive and negative values. Zero values are not supported on a logarithmic scale.
+> Logarithmic scales require all values to be either positive or negative. You can't mix positive and negative values, and zero values aren't supported.
 
 ## Customize axis range
 
-For value axes, you can control the minimum and maximum values to adjust the scale of your chart.
+For value axes, set the minimum and maximum values to adjust the chart scale.
 
 1. In the **Format visual** pane, expand the value axis section.
-1. Expand the **Range** section.
+1. Expand **Range**.
 1. Set custom values:
 
-   - **Minimum**: Define where the axis starts
-   - **Maximum**: Define where the axis ends
+   - **Minimum**: Where the axis starts
+   - **Maximum**: Where the axis ends
 
-Power BI automatically calculates optimal intervals based on the range you specify. To reset to automatic values, clear the fields or select **Revert to default**.
+Power BI calculates intervals based on your range. To reset, clear the fields or select **Revert to default**.
 
 > [!NOTE]
-> Power BI automatically determines the best interval spacing for axis labels based on your data range. You cannot directly set a specific interval value, but you can influence label density by adjusting the minimum and maximum range values.
+> Power BI determines interval spacing automatically. You can't set a specific interval, but you can influence label density by adjusting the minimum and maximum values.
 
 ## Customize gridlines
 
-Gridlines help readers trace values across the chart. You can customize their appearance or turn them off.
+Gridlines help readers trace values across the chart.
 
 1. In the **Format visual** pane, expand the axis section.
 1. Expand **Gridlines**.
-1. Adjust the settings:
+1. Adjust these settings:
 
    - **Color**: Change the gridline color
-   - **Width**: Adjust the line thickness
+   - **Width**: Adjust line thickness
    - Toggle gridlines **On** or **Off**
 
 ## Customize bar and column layout
 
-For clustered bar and clustered column charts, you can customize the spacing and overlap of bars or columns in the **Columns** or **Bars** section of the **Format visual** pane.
+For clustered bar and column charts, customize spacing and overlap in the **Columns** or **Bars** section of the **Format visual** pane.
 
 ### Spacing options
 
-- **Category spacing**: Adjust the space between each cluster (category). Increase spacing to separate clusters more distinctly, or decrease it to fit more data in the chart area.
-- **Series spacing**: Adjust the space between individual bars or columns within each cluster. This controls how close the series appear to each other.
+- **Category spacing**: Space between each cluster. Increase to separate clusters, or decrease to fit more data.
+- **Series spacing**: Space between bars or columns within each cluster.
 
 ### Overlap for direct comparison
 
-Enable **Overlap series** to position bars or columns on top of each other rather than side by side. This layout is useful when you want to compare values directly, such as showing this year's sales overlapping last year's sales.
+Enable **Overlap series** to stack bars or columns on top of each other instead of side by side. This is useful for comparing values directly, such as this year vs. last year.
 
 When using overlap:
 
-- **Transparency**: Adjust the transparency of bars or columns so overlapping values remain visible. A semi-transparent front series lets readers see the series behind it.
-- **Border**: Add borders to help distinguish between overlapping series. Borders create visual separation when colors are similar or transparency is high.
-
-These layout options help you create compact visualizations that emphasize comparison between series values.
+- **Transparency**: Make the front series semi-transparent so the series behind remains visible.
+- **Border**: Add borders to distinguish overlapping series when colors are similar.
 
 ## Dual Y-axes
 
-Some visualizations benefit from having two Y-axes with different scales. Combo charts (line and stacked column) support dual Y-axes, allowing you to compare measures with different value ranges.
+Combo charts support two Y-axes with different scales. This lets you compare measures with different value ranges.
 
-When you add a line value to a combo chart, Power BI creates a secondary Y-axis automatically. You can format each axis independently in the **Format visual** pane under **Y-axis (Column)** and **Y-axis (Line)**.
+When you add a line value to a combo chart, Power BI creates a secondary Y-axis. Format each axis separately under **Y-axis (Column)** and **Y-axis (Line)**.
 
 ## Axis titles
 
-Axis titles help readers understand what each axis represents. You can add titles to both X and Y axes.
+Axis titles help readers understand what each axis represents.
 
-1. In the **Format visual** pane, expand the axis section (**X-axis** or **Y-axis**).
+1. In the **Format visual** pane, expand **X-axis** or **Y-axis**.
 1. Expand **Title** and toggle it to **On**.
 1. Customize the title:
 
-   - **Title text**: Enter a custom title (the default uses the field name)
+   - **Title text**: Enter a custom title (defaults to the field name)
    - **Title color**: Set the text color
    - **Title size**: Adjust the font size
-   - **Style**: Choose to show the title only, units only, or both
+   - **Style**: Show the title only, units only, or both
 
-For simple charts, axis titles might be unnecessary if the data is self-explanatory. For complex visualizations like dual-axis combo charts, titles help clarify what each axis measures.
+For simple charts, you might not need axis titles. For complex charts like dual-axis combos, titles clarify what each axis measures.
 
 ## Invert the y-axis
 
@@ -226,30 +224,29 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 ## Round range
 
-By default, Power BI rounds axis values to the nearest multiple for cleaner axis labels. You can turn off this behavior to make the axis range fit more tightly to your actual data range.
-
-To change the round range setting:
+By default, Power BI rounds axis values to the nearest multiple for cleaner labels. Turn this off to fit the axis range more tightly to your data.
 
 1. In the **Format visual** pane, select **Visual**.
-1. Expand the value axis section (see [Value axis vs. category axis](#value-axis-vs-category-axis) to identify which axis).
-1. Expand the **Range** section and move the **Round range** slider to **Off**.
+1. Expand the value axis section (see [Value axis vs. category axis](#value-axis-vs-category-axis)).
+1. Expand **Range** and set **Round range** to **Off**.
 
-When **Round range** is on (the default), axis labels display at rounded intervals such as 0, 50, 100. When off, the axis minimum and maximum values align more closely with your data's actual minimum and maximum values.
+With **Round range** on (default), labels display at rounded intervals like 0, 50, 100. With it off, axis values align more closely with your actual data range.
 
 ## Data labels vs. value axis
 
-Data labels display values directly on or near each data point in your chart. You can use data labels instead of a value axis for a cleaner report design, or use them together for maximum clarity.
+Data labels display values directly on each data point. Use them instead of a value axis for a cleaner design, or use both for maximum clarity.
 
 To enable data labels:
 
 1. In the **Format visual** pane, select **Visual**.
-1. Expand **Data labels** and move the slider to **On**.
+1. Expand **Data labels** and set to **On**.
 
-When you add data labels to a chart, the axis range may shift to make space for the labels. This can affect the visual proportions of your chart.
+Adding data labels might shift the axis range to make space. This can affect your chart's proportions.
 
 ## Considerations and limitations
 
-- For continuous axes, Power BI automatically chooses the best tick interval based on your data range to ensure optimal readability. While you cannot set a specific interval value, you can influence the number of labels by adjusting the axis range (minimum and maximum values) in the Range section. Power BI creates a minimal format string for the tick interval to preserve space. Date values will be localized based on your system or browser locale.
+- Power BI chooses tick intervals automatically based on your data range. You can't set a specific interval, but adjusting the minimum and maximum values affects label density.
+- Date values are localized based on your system or browser locale.
 
 ## Related content
 
