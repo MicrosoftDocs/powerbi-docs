@@ -143,10 +143,21 @@ For existing reports, you can update to the latest base theme:
 1. Select **Update theme** to apply the latest base theme.
 1. Select **Apply**.
 
-You can also select the **Default** tile (the first theme in the Power BI section of the Themes dropdown) to remove any custom theme and apply the latest base theme to your report.
+You can also select the **Reset to default** tile (the first theme in the Power BI section of the Themes dropdown) to remove any custom theme and apply the latest base theme to your report.
 
 > [!TIP]
 > If your custom theme doesn't work with the new modern defaults, you can undo the update to revert to the previous base theme until you've had a chance to update your custom theme.
+
+## Choose a base theme
+
+You can switch to a different base theme at any time:
+
+1. Go to **View** > **Themes** > **Customize current theme**.
+1. Select the **Base theme** dropdown.
+1. Choose the base theme you want: **Fluent 2 (preview)**, **Classic 2026**, or **Classic 2018**.
+1. Select **Apply**.
+
+Your report visuals update to reflect the new base theme's default styles.
 
 ## Reset formatting
 
