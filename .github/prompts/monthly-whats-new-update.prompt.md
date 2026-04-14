@@ -36,6 +36,7 @@ If the writer provides all three, use them directly. If any are missing, insert 
    https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-03_x64.exe
    ```
 7. **Remove the oldest download link.** Only 6 months of hardcoded download links are maintained at any time. After adding the new entry, find the oldest `> **Download** the [...]` line in the archive and delete it entirely. Note: count only months that have a download link — some months have no Desktop release and no download line.
+8. **Rename the preview column header.** In the newly archived content, change all instances of `| Currently in preview |` to `| In preview as of this release |`. This applies to both the header row and the separator row of each table.
 
 ### Step 2: Populate New Month's Content
 
