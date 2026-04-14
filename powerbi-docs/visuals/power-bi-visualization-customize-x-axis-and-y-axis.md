@@ -72,7 +72,7 @@ To follow along with the examples in this article, create a calculated table wit
 1. From the **Data** pane, drag **Month** to the **X-axis** field well.
 1. Drag **This Year** and **Last Year** to the **Y-axis** field well.
 
-:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/clustered-column-chart-axis-examples.png" alt-text="Screenshot of a clustered column chart comparing monthly sales.":::
+:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/clustered-column-chart-axis-examples.png" alt-text="Screenshot of a column chart with sample data.":::
 
 Now you can customize your axes. Power BI provides many options for formatting your visualization.
 
