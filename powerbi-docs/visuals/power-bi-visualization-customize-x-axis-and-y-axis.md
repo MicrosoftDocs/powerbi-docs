@@ -222,16 +222,6 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 - In the **Format visual** pane, select **Visual**. Expand the **Y-axis** section, expand the **Range** section, and move the **Invert range** slider to **On**.
 
-## Round range
-
-By default, Power BI rounds axis values to the nearest multiple for cleaner labels. Turn this setting off to fit the axis range more tightly to your data.
-
-1. In the **Format visual** pane, select **Visual**.
-1. Expand the value axis section (see [Value axis vs. category axis](#value-axis-vs-category-axis)).
-1. Expand **Range** and set **Round range** to **Off**.
-
-With **Round range** on (default), labels display at rounded intervals like 0, 50, 100. With it off, axis values align more closely with your actual data range.
-
 ## Data labels vs. value axis
 
 Data labels display values directly on each data point. Use them instead of a value axis for a cleaner design, or use both for maximum clarity.
