@@ -40,6 +40,12 @@ For data sources and datasets, use naming conventions that document the source o
 - **Data sources.** If you don't want to name an actual server or database due to security reasons, use an alias that indicates the source of the data to the user.  
   
 - **Datasets.** Use a name that indicates which data source it's based on.  
+
+> [!NOTE]
+> **GB18030 character known limitations in dataset names and column names:**
+>
+> - **Dataset column names** Some GB18030 characters are not valid `NCName` characters per the XML specification. When used in dataset column names, they cause a validation error. This is a limitation of the XML standard itself.
+> - **Dataset names** Due to .NET Framework Unicode limitations, some GB18030 characters are classified as `OtherNotAssigned` and are rejected when used in dataset names.
   
 ##  <a name="Data"></a> Work with data  
   
