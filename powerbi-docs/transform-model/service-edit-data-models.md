@@ -268,6 +268,7 @@ Power BI administrators can audit operations pertaining to editing semantic mode
 |---------|---------|---------|
 |Applied a change to model in Power BI     |ApplyChangeToPowerBIModel         |A user makes a change to a semantic model. This occurs whenever any edit is made to the model (example: write a DAX measure, manage relationships, others)         |
 |Retrieved a model from Power BI     |GetPowerBIDataModel         |A user opens the **Open semantic model** experience or resyncs a semantic model.         |
+|Executed queries on a semantic model in Power BI|ApplyQueriesExecution|A user executes Power Query operations against a semantic model in the web. This includes actions such as **Refresh all** and **Transform data**, which re‑evaluate queries and may update data and/or schema in the model.|
 
 For more information on accessing your audit logs, see the [Access your audit logs](../admin/service-admin-auditing.md) article.
 
