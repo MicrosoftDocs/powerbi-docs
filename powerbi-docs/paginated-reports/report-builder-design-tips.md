@@ -4,7 +4,7 @@ description: Use the following tips to help design and control the appearance of
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: petebro
-ms.date: 14/17/2026
+ms.date: 04/17/2026
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
