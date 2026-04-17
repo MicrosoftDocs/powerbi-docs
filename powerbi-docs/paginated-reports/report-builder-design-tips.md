@@ -42,10 +42,9 @@ For data sources and datasets, use naming conventions that document the source o
 - **Datasets.** Use a name that indicates which data source it's based on.  
 
 > [!NOTE]
-> **GB18030 character known limitations in dataset names and column names:**
->
-> - **Dataset column names** Some GB18030 characters are not valid `NCName` characters per the XML specification. When used in dataset column names, they cause a validation error. This is a limitation of the XML standard itself.
-> - **Dataset names** Due to .NET Framework Unicode limitations, some GB18030 characters are classified as `OtherNotAssigned` and are rejected when used in dataset names.
+> **Known limitations in dataset names and column names:**
+> - **Dataset names** Characters outside the Unicode 8.0 supported range may not be recognized by the system. As a result, such characters are not supported in dataset names.
+> - **Dataset column names** Some characters not supported by XML 1.0 (Second Edition) may not be recognized as valid *NCName* values and therefore cannot be used in dataset column names.
   
 ##  <a name="Data"></a> Work with data  
   
