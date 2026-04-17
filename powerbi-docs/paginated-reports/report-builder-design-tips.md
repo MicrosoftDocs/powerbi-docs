@@ -3,8 +3,8 @@ title: Design Tips for Reports in Power BI Report Builder
 description: Use the following tips to help design and control the appearance of your paginated reports in Power BI Report Builder. 
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
-ms.date: 12/01/2025
+ms.reviewer: petebro
+ms.date: 04/17/2026
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: concept-article
@@ -37,9 +37,14 @@ For more information about things to consider as you design your report, see [Pl
   
 For data sources and datasets, use naming conventions that document the source of the data.  
   
-- **Data sources.** If you don't want to name an actual server or database due to security reasons, use an alias that indicates the source of the data to the user.  
-  
-- **Datasets.** Use a name that indicates which data source it's based on.  
+- **Data sources**: If you don't want to name an actual server or database due to security reasons, use an alias that indicates the source of the data to the user.  
+- **Datasets**: Use a name that indicates which data source it's based on.  
+
+> [!NOTE]
+> **Known limitations in dataset names and column names:**
+>
+> - **Dataset names**: Some characters outside the Unicode 8.0 supported range aren't recognized by the system and therefore can't be used in dataset names.
+> - **Dataset column names**: Some characters not supported by XML 1.0 (Second Edition) aren't recognized as valid *NCName* values and therefore can't be used in dataset column names.
   
 ##  <a name="Data"></a> Work with data  
   
