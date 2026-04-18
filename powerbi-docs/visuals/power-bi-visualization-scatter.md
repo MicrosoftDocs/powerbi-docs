@@ -178,10 +178,6 @@ There are many display options available on the **General** and **Visual** secti
 
    Change the marker shape to a diamond, triangle, or square.
 
-- To prevent markers from being cut off at the edges and corners of the chart, enable **Auto-fit markers**.
-
-   In the **Markers** > **Shape** section of the format pane, toggle **Auto-fit markers** to **On**. When enabled, Power BI automatically adjusts the chart plot area so markers display fully at the edges and corners instead of being clipped.
-
 ## Add analytics to your chart
 
 Scatter charts support several analytics features through the **Analytics** pane in the **Visualizations** pane. You can add:
