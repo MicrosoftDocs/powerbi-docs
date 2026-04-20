@@ -24,6 +24,10 @@ landingContent:
   # Card (optional)
   - title: Get started collaborating and sharing
     linkLists:
+      - linkListType: whats-new
+        links:
+          - text: What's new in Power BI collaboration and integration
+            url: office-integration/whats-new.md
       - linkListType: overview
         links:
           - text: Collaborate and share Power BI content
