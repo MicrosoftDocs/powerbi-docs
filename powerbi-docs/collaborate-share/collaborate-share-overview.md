@@ -84,5 +84,5 @@ Access and collaborate on Power BI content directly inside Microsoft Outlook and
 
 ## Related content
 
-- [What's new in Power BI collaboration and integration](office-integration/service-power-bi-powerpoint-add-in-whats-new.md)
+- [What's new in Power BI collaboration and integration](office-integration/whats-new.md)
 - [Ways to share your work in Power BI](service-share-dashboards.md)
