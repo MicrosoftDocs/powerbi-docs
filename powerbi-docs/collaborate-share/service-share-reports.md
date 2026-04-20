@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 11/01/2025
+ms.date: 04/20/2026
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ms.custom: sfi-image-nochange
@@ -120,11 +120,13 @@ After you've shared the filtered report, you can also manage the shared view.
 When you share this link, recipients with access to the report will see your filtered report.
 
 ## Considerations and limitations
+
 Things to keep in mind about sharing reports:
 
 * When you share a semantic model by managing permissions, by sharing reports or dashboards, or by publishing an app, you are granting access to the entire semantic model unless [row-level security (RLS)](/fabric/security/service-admin-row-level-security) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences do not restrict what data users can access in the semantic model. Use [row-level security (RLS)](/fabric/security/service-admin-row-level-security) in the semantic model so that each person's credentials determine which data they can access.
 * The shared report view will automatically expire after 180 days. Each time the link shared report view is accessed the expiration is reset to 180 days.
-* You cannot share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
+* If you receive an error that the number of shared views exceeded its limit, go to [manage the shared views](#manage-the-shared-view) and delete an older shared view.
+* You cannot share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app.
 * Share link to selection for visuals in reports creates a shared view with the visual in spotlight mode.
 
 ## Related content
