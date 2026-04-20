@@ -39,19 +39,19 @@ You can open an existing semantic model in the following ways:
 
 * From the OneLake catalog, select **More options (...)** for the semantic model and select **Open semantic model**.
 
-![User's image](media/service-edit-data-models/image.png)
+![User's image](media/service-edit-data-models/service-edit-data-models-00.png)
 
 
 
 * From the semantic model details page, select **Open semantic model**.
 
-![User's image](media/service-edit-data-models/image1.png)
+![User's image](media/service-edit-data-models/service-edit-data-models-01.png)
 
 
 
 * From **edit mode** for a report connected to the semantic model, select **Open semantic model** to open the corresponding model in another tab.
 
-![User's image](media/service-edit-data-models/image2.png)
+![User's image](media/service-edit-data-models/service-edit-data-models-02.png)
 
 
 
