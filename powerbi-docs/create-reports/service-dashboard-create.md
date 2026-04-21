@@ -4,11 +4,9 @@ description: Learn how to pin visualizations from existing reports to a dashboar
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.custom: video-removed
 ms.date: 04/09/2025
 #customer intent: As a Power BI user I want to learn how to create dashboards with visualizations.
 ---
@@ -47,7 +45,7 @@ You can use the following steps and the [Procurement Analysis sample](sample-pro
    - **Existing dashboard**: Select the name of the dashboard from the dropdown. Dashboards that are shared with you don't appear in the dropdown.
    - **New dashboard**: Enter the name of the new dashboard.
 
-1. In this case, we select the option for **New dashboard** and enter a name. For this example the default "Total Invoice by Country/Region" name is used.
+1. Select the option for **New dashboard** and enter a name. For this example, the default "Total Invoice by Country/Region" name is used.
 
     ![Screenshot of the Pin to dashboard window.](media/service-dashboard-create/power-bi-pin-title.png)
 
@@ -114,6 +112,4 @@ Congratulations on creating your first dashboard. Now that you have a dashboard,
 - [All about dashboard tiles](service-dashboard-tiles.md)
 - [Share your dashboard by creating an app](../collaborate-share/service-create-distribute-apps.md)
 - [Power BI - Basic Concepts](../fundamentals/service-basic-concepts.md)
- [Tips for designing a great dashboard](service-dashboards-design-tips.md)
-
-More questions? [Try the Power BI Community](https://community.powerbi.com/).
+- [Tips for designing a great dashboard](service-dashboards-design-tips.md)

@@ -88,6 +88,28 @@ Follow the [Microsoft Writing Style Guide](https://learn.microsoft.com/style-gui
 - For a **light pass**, flag these for SME follow-up rather than addressing them directly.
 - For a **full pass**, address them as part of the review.
 
+## Auto-fix vs. manual review
+
+During the review, **apply standard fixes directly to the file** when the correct change is unambiguous and doesn't require product knowledge or judgment. Examples of auto-fixes:
+
+- Changing sequential ordered list numbering (`2.`, `3.`) to all `1.`.
+- Replacing "may" with "might" for possibility.
+- Removing `/en-us/` from learn.microsoft.com links.
+- Fixing Oxford comma omissions.
+- Replacing "we"/"our" (referring to doc authors) with second-person or imperative phrasing.
+- Correcting sentence case in headings.
+- Adding missing **bold** to UI element names already identified in instructions.
+- Fixing minor spelling or grammar errors.
+
+Do **not** auto-fix anything that requires:
+
+- Product or SME verification (for example, confirming whether a feature is still in preview or has gone GA).
+- Judgment about content accuracy, scope, or completeness.
+- Replacing or updating screenshots.
+- Changing the meaning or intent of a sentence.
+
+Do **not** update `ms.date` — the writer does this after completing the review.
+
 ## Output format
 
 Start the report by stating:
@@ -95,25 +117,25 @@ Start the report by stating:
 - The article's **freshness cycle** (`ms.update-cycle` value if set, otherwise "default 365 days").
 - Whether the article is **within cycle** or **past due** based on `ms.date` and the applicable cycle.
 
-Then organize findings using these severity levels:
+Then organize the output into two sections:
 
-- **Fix (required):** Factual errors, broken links, outdated procedures, or metadata problems.
-- **Improve (recommended):** Style issues, unclear wording, or missing context that would benefit readers.
-- **Note (optional):** Minor observations or suggestions for future updates.
+### Changes applied
 
-For each finding, include:
-1. The severity level.
-1. The specific location in the article (heading, line, or quote).
+List the auto-fixes that were made directly to the file. For each, state:
+1. What was changed.
+1. Where in the article (heading or line reference).
+
+### Items requiring writer review
+
+List findings that need human judgment, SME verification, or manual action. For each, include:
+1. The severity level (**Fix**, **Improve**, or **Note**).
+1. The specific location in the article.
 1. What the issue is.
-1. A suggested fix or action.
+1. A suggested action.
 
-After the itemized findings, provide a brief overall summary and your assessment of the article's current state.
+After both sections, provide a brief overall summary and your assessment of the article's current state.
 
-## Important
-
-- Do **not** update `ms.date` — the writer does this after the review is complete.
-- Do **not** make changes to the file unless explicitly asked. This prompt is for **review only**.
-- If the article appears fully up to date with no issues, say so.
+If the article appears fully up to date with no issues, say so.
 
 ## After the review
 
@@ -121,6 +143,7 @@ After outputting the findings, always end with these reminders for the writer:
 
 > **Postreview checklist — manual steps:**
 >
+> 1. **Review the file diff** to verify all auto-fixes before committing. Revert anything that doesn't look right.
 > 1. Open each reviewed file in the Content Mentor extension and run the following checks:
 >    - **Content** (uses Learn Authoring assistant)
 >    - **SEO**

@@ -3,7 +3,7 @@ title: Set Up Row-Level Security in Power BI Paginated Reports
 description: Learn how to set up row-level security (RLS) for paginated reports in Power BI.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: cookiemccray
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
