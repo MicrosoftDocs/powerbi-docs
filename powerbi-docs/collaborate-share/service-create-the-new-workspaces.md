@@ -190,6 +190,17 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     :::image type="content" source="media/service-create-the-new-workspaces/unpin-workspace.png" alt-text="Screenshot of unpinning a workspace.":::
 
+## Delete a workspace
+
+To delete a workspace, you must have the Admin role for that workspace.
+
+1. Open the workspace, then select **Workspace settings** (the gear icon).
+1. In the **Settings** pane, scroll to the bottom and select **Remove this workspace**.
+1. Select **Delete** to confirm.
+
+> [!NOTE]
+> Deleting a workspace permanently removes all of its content, including dashboards, reports, semantic models, and dataflows. This action can't be undone.
+
 ## Related content
 
 - Read about [workspaces in Power BI](service-new-workspaces.md)
