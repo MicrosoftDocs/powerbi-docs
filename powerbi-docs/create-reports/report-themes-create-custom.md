@@ -1,7 +1,6 @@
 ---
 title: Create custom report themes in Power BI Desktop
 description: Learn how to create a custom report theme JSON file to fully customize the look and feel of your Power BI reports.
-author: datazoems
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
