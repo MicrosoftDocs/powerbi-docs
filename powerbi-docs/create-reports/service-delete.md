@@ -1,21 +1,21 @@
 ---
-title: Delete a dashboard, report, workbook, or semantic model in Power BI
-description: Learn how to delete dashboards, reports, workbooks, and semantic models from a workspace in the Power BI service.
+title: "Delete a Dashboard, Report, Workbook, or Semantic Model in Power BI"
+description: "Learn how to delete dashboards, reports, workbooks, and semantic models from a workspace in the Power BI service. Follow these steps to remove assets and free up space."
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/08/2025
+ms.date: 04/21/2026
 ---
 # Delete a dashboard, report, workbook, or semantic model in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You can delete dashboards, reports, workbooks, and semantic models from a workspace in the Power BI service. You can also remove apps from your apps list page.
+In the Power BI service, you can delete dashboards, reports, workbooks, and semantic models from a workspace. You can also remove apps from your apps list page.
 
-## Delete an asset from a workspace
+## Delete a dashboard, report, workbook, or semantic model from a workspace
 
 Dashboards, reports, workbooks, and semantic models all follow the same steps.
 
@@ -23,7 +23,7 @@ Dashboards, reports, workbooks, and semantic models all follow the same steps.
 1. Select **More options (...)** next to the asset, and choose **Delete**.
 1. Select **Delete** to confirm the deletion.
 
-## Remove an app from your app list page
+## Remove an app from your apps list page
 
 Removing an app from your apps list page doesn't delete the app for other members. Only an admin or a member of a workspace can permanently delete the app from that workspace.
 
