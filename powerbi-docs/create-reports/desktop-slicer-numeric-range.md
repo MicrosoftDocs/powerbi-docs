@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/28/2025
+ms.date: 04/21/2026
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to use a slicer for constraining to numeric or date ranges in Power BI Desktop.
 ---
 # Create a numeric or date range slicer in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
-With the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. There are three options for filtering your data:
+
+By using the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. You have three options for filtering your data:
 
 - Between numbers or dates.
 - Less than or equal to a number or date.
@@ -25,7 +26,7 @@ This simple technique is a powerful, visual way to filter your data.
 
 ## Add a numeric range slicer
 
-You can use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
+Use a numeric range slicer like you would use any other slicer. Create a **Slicer** visual for your report, and then select a numeric value for the **Field** value.
 
 Power BI automatically creates a numeric range slicer set to **Between** by default.
 
@@ -48,11 +49,11 @@ Besides the basic date range slicer, there are two other options, explained in t
 
 In the **Format** pane, under **Visual** > **Slicer settings** > **Options**, select one of these options:
 
-* **Between**
-* **Less than or equal to**
-* **Greater than or equal to**
+- **Between**
+- **Less than or equal to**
+- **Greater than or equal to**
 
-You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes landing exactly on that number difficult. You can use the slider, or select either box to type in the values you want. This option is convenient when you want to slice on specific numbers.
+Use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes landing exactly on that number difficult. You can use the slider, or select either box to type in the values you want. This option is convenient when you want to slice on specific numbers.
 
 In the following image, the report page filters for **Sales Amount** values that range between 2,100.00 and 25,000.00.
 
@@ -62,7 +63,7 @@ When you select **Less than or equal to**, the left (lower value) handle of the 
 
 :::image type="content" source="media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-less-than.png" alt-text="Screenshot of a visual, highlighting the Numeric range slicer set to Less than or equal to.":::
 
-If you select **Greater than or equal to**, then the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
+If you select **Greater than or equal to**, the right (higher value) slider bar handle disappears. You can then adjust the lower value, but not the upper value.
 
 ### Snap to whole numbers with the numeric range slicer
 
@@ -90,4 +91,4 @@ The following considerations and limitations apply to the numeric range slicer:
 ## Related content
 
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Try asking the Power BI Community](https://community.powerbi.com/)
