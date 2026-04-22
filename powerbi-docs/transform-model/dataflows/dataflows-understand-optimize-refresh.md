@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 # Understand and optimize dataflows refresh
 
 > [!TIP]
-> Power BI Dataflows Gen1 is now in a legacy state. Rather than building a custom monitoring dashboard, [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) provides built-in refresh tracking through the [Monitoring hub](/fabric/data-factory/dataflows-gen2-monitor) in Microsoft Fabric, with real-time status, duration, and error details. To learn about upgrading existing dataflows, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
+> Power BI Dataflow Gen1 is now in a legacy state and won't receive new feature investment. Rather than building a custom monitoring dashboard, [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) provides built-in refresh tracking through the [Monitoring hub](/fabric/data-factory/dataflows-gen2-monitor) in Microsoft Fabric, with real-time status, duration, and error details. To learn about upgrading existing dataflows, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the items themselves.
 
