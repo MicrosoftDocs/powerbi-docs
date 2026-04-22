@@ -21,15 +21,15 @@ This article explains what Power BI semantic models are, how they differ from re
 
 Power BI [semantic models](/fabric/data-warehouse/semantic-models) are the authoritative source of truth for ad-hoc analysis and reporting across countless organizations. Based on the most widely adopted BI semantic modeling technology in the market, Power BI semantic models offer a mature API surface, exceptional performance and scalability for interactive analysis over massive data, and a thriving ecosystem of developers, partners, and third-party tools.
 
-## Business metrics for reusability
+### Business metrics for reusability
 
 Highly curated semantic models surface corporate data using business-friendly naming conventions, abstracting complex business logic for sophisticated calculations, inferred relationships, user hierarchies, metadata translations, and much more. With blazing-fast query performance, users can slice and dice massive datasets at the speed of thought. Together, these capabilities foster trust and drive consistent decisions across the organization.
 
-## Power BI semantic models are accelerators for AI-enabled BI
+### Power BI semantic models are accelerators for AI-enabled BI
 
 Power BI semantic models are a key part of [Fabric IQ](/fabric/iq/overview). Natural language data questions are answered more consistently and easily when the AI can rely on business logic encapsulated by semantic models. LLMs are already familiar with well-defined API surface areas for metadata and queries enabling agentic modeling and consumption. Power BI semantic models are already deployed at scale across countless large organizations and primed to accelerate AI-driven consumption at enterprise scale.
 
-## Commitment to open standards and platform
+### Commitment to open standards and platform
 
 With [Direct Lake](/fabric/fundamentals/direct-lake-overview) storage mode, Power BI semantic models are a key part of Microsoft Fabric’s commitment to open standard formats using Delta Lake parquet, Iceberg, and OneLake. This commitment helps customers avoid lock-in to proprietary vendor storage formats. Power BI semantic models enable open-platform connectivity for a wide range of third-party data visualization tools through compatibility with the [XMLA Endpoint](/fabric/enterprise/powerbi/service-premium-connect-tools). End users can perform ad-hoc analysis from their tool of choice without needing to create local copies of data. Power BI semantic models are highly programmable using Fabric [REST endpoints](/rest/api/fabric/semanticmodel/items) for CRUD operations, [query](/rest/api/power-bi/datasets/execute-queries) execution, [refresh](./asynchronous-refresh.md) management, Python notebook support with [semantic link](/fabric/data-science/semantic-link-power-bi), .NET programmability using the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and open metadata definitions using the [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) for automation.
 
