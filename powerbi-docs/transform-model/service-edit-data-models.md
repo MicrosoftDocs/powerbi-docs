@@ -33,21 +33,27 @@ This will launch the modern Power Query 'Get data' experience where you can choo
 
 You can open an existing semantic model in the following ways:
 
-* From the workspace content list, select **More options (...)** for the semantic model and select **Open data model**.
+* From the workspace content list, select **More options (...)** for the semantic model and select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-03.png" alt-text="Screenshot of opening the data model from the more options menu." lightbox="media/service-edit-data-models/service-edit-data-models-03.png":::
+    ![Screenshot of opening the data model from the more options menu.](media/service-edit-data-models/open-model-from-workspace-view.png)
 
-* From the data hub content list, select **More options (...)** for the semantic model and select **Open data model**.
+* From the OneLake catalog, select **More options (...)** for the semantic model and select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-04.png" alt-text="Screenshot of opening the data model from the data hub content list." lightbox="media/service-edit-data-models/service-edit-data-models-04.png":::
+    ![Screenshot of opening the data model from the OneLake catalog.](media/service-edit-data-models/open-model-from-onelake-view.png)
+
+
 
 * From the semantic model details page, select **Open semantic model**.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-05.png" alt-text="Screenshot of opening the data model from the open data model button." lightbox="media/service-edit-data-models/service-edit-data-models-05.png":::
+    ![Screenshot of opening the data model from the details view.](media/service-edit-data-models/open-model-from-details-view.png)
 
-* From **edit mode** for a report connected to the semantic model, select **Open data model** to open the corresponding data model in another tab.
 
-:::image type="content" source="media/service-edit-data-models/service-edit-data-models-06.png" alt-text="Screenshot of opening the data model in edit mode." lightbox="media/service-edit-data-models/service-edit-data-models-06.png":::
+
+* From **edit mode** for a report connected to the semantic model, select **Open semantic model** to open the corresponding model in another tab.
+
+    ![Screenshot of opening the data model from the Report view.](media/service-edit-data-models/open-model-from-report-view.png)
+
+
 
 ## Viewing mode
 
@@ -61,7 +67,7 @@ When you open your semantic model you can see all the tables, columns, and relat
 
 ### Create measures
 
-To create a [measure](desktop-measures.md), (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
+To create a [measure](desktop-measures.md) (a measure is a collection of standardized metrics) select the table in the **Data Pane** and select the **New measure** button from the ribbon, as shown in the following image.
 
 :::image type="content" source="media/service-edit-data-models/service-edit-data-models-07.png" alt-text="Screenshot of creating a new measure" lightbox="media/service-edit-data-models/service-edit-data-models-07.png":::
 
@@ -262,6 +268,7 @@ Power BI administrators can audit operations pertaining to editing semantic mode
 |---------|---------|---------|
 |Applied a change to model in Power BI     |ApplyChangeToPowerBIModel         |A user makes a change to a semantic model. This occurs whenever any edit is made to the model (example: write a DAX measure, manage relationships, others)         |
 |Retrieved a model from Power BI     |GetPowerBIDataModel         |A user opens the **Open semantic model** experience or resyncs a semantic model.         |
+|Executed queries on a semantic model in Power BI|ApplyQueriesExecution|A user executes Power Query operations against a semantic model in the web. This includes actions such as **Refresh all** and **Transform data**, which re‑evaluate queries and may update data and/or schema in the model.|
 
 For more information on accessing your audit logs, see the [Access your audit logs](../admin/service-admin-auditing.md) article.
 
@@ -287,7 +294,7 @@ Keep in mind the following considerations when interacting with the Power Query 
 * Semantic models with [connected goals](../create-reports/service-goals-create-connected.md) do not support editing queries in the Power Query editor or refreshing via the ribbon button in the web model editing experience.
 * If you select **Cancel** or close the Power Query dialog, any changes made to queries will be discarded. In the web, changes made in the Power Query editor must be explicitly saved and applied to the model for them to persist beyond the editor.
 * You can use existing [personal cloud connections](../connect-data/service-connect-cloud-data-sources.md) in the Power Query editor for the semantic model, but you can't create new ones there. When connecting to a data source in the editor, only on-premises or shared cloud connections can be created. To use a personal cloud connection, link it through the semantic model settings page. Configuration and management of these personal cloud connections can be done in the Power BI **Manage Connections and Gateways** page.
-* When opening the Power Query editor for a model published from Desktop, connections may initially appear unlinked in the **Manage Connections** dialog. You'll be able to configure these connections by clickign the "+" sign.
+* When opening the Power Query editor for a model published from Desktop, connections may initially appear unlinked in the **Manage Connections** dialog. You'll be able to configure these connections by clicking the "+" sign.
 * A [data gateway](../connect-data/service-gateway-deployment-guidance.md) is needed to certain data sources. These gateways can be managed from the **semantic model settings page**. When publishing from Desktop, gateway connections aren't configured by default for sources that require them. You’ll need to manually set them up under **Gateway connections** in the semantic model settings.
 * Dynamic data sources aren't supported in the Power Query editor.
 * When adding a new import data source using Power Query on the web, the semantic model doesn't automatically inherit the sensitivity label from that data source.

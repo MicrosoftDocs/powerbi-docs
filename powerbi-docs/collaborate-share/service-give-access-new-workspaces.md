@@ -42,6 +42,14 @@ After you [create a workspace](service-create-the-new-workspaces.md) in Power BI
 
 1. Select **Add** > **Close**.
 
+## Remove or change access for a workspace member
+
+Only workspace admins can remove people from a workspace or change their role. If you're an admin, you can remove yourself or anyone else. However, if you're the only admin for a workspace, Power BI won't let you remove yourself.
+
+1. In the workspace, select **Manage access** in the upper-right corner.
+1. In the **Manage access** pane, select **More options (...)** next to the name of the person you want to update.
+1. Choose **Remove** to revoke access, or select a different role to change their permissions.
+
 ## Related content
 
 - Read about [the workspace experience in Power BI](service-new-workspaces.md).

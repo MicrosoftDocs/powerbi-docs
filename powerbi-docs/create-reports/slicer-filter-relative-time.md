@@ -7,14 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/10/2025
+ms.date: 04/21/2026
 LocalizationGroup: Create reports
 ---
 
-# Create a relative time slicer and filter in Power BI
+# Create a relative time slicer or filter in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 With emerging fast refresh scenarios, the ability to filter to a smaller window of time can be useful. By using the relative time slicer or relative time filter, you can apply time-based filters to any date or time column in your data model. For example, you can use the relative time slicer to show only video views within the last minute or hour.
+
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Animation showing an example graph that uses the relative time slicer.":::
 
 You don't have to use the relative time feature with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.
@@ -30,7 +32,7 @@ After you enable the feature, you can drag and drop the date or time field to th
 
 1. Drag a date or time field to the canvas.
 
-2. Select the **Slicer** visualization type.
+1. Select the **Slicer** visualization type.
 
    :::image type="content" source="media/slicer-filter-relative-time/power-bi-desktop-relative-time-create-slicer.png" alt-text="Screenshot showing how to create a time slicer.":::
 
@@ -83,9 +85,9 @@ When a filter is applied to the page or report level, all visuals on that page o
 The following considerations and limitations currently apply to the relative time slicer and filter.
 
 - **Time zone considerations**: Data models in Power BI don't include time zone info. The models can store times, but there's no indication of the time zone they're in. The slicer and filter are always based on the time in Coordinated Universal Time (UTC). If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data. Unless you or your colleague are in the same UTC time zone, you both must account for the time offset you experience. Use the Query Editor to convert data captured in a local time zone to UTC.
-- This new filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.
+- This filter type is supported in Power BI Desktop, the Power BI service, Power BI Embedded, and the Power BI mobile apps. However, it isn't supported for Publish to web.
 
-- **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run unless you refresh the page or the page automatically refreshes.
+- **Query caching**: Power BI uses the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run unless you refresh the page or the page automatically refreshes.
 
 ## Related content
 
