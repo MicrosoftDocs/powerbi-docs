@@ -247,6 +247,8 @@
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Manage semantic model settings in the settings pane"
+        href: service-semantic-model-settings-pane.md
       - name: "Refresh semantic models in Power BI mobile apps"
         href: mobile-apps-dataset-refresh.md
       - name: "Configure scheduled refresh"
