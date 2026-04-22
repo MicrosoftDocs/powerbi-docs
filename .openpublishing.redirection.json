@@ -7784,6 +7784,11 @@
       "source_path": "powerbi-docs/collaborate-share/service-power-bi-outlook-office.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/service-power-bi-outlook-office",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-whats-new.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/whats-new",
+      "redirect_document_id": true
     }
   ]
 }                           
