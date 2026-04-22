@@ -50,13 +50,16 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 ### File picker for saving and uploading Power BI files to OneDrive and SharePoint
 
-The file picker in Power BI Desktop provides an intuitive way to navigate between files and folders in OneDrive and SharePoint. You can smoothly navigate between folders in various OneDrive and SharePoint locations, and have easy access to reports in OneDrive and SharePoint.
+
+The file picker in Power BI desktop makes it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Screenshot of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
 
 You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Select or deselect the pin icon next to the file to pin or unpin the file.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Screenshot of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
+
+As of April 2026, the new file picker is enabled by default, and users can no longer access the old file picker experience. 
 
 ## Open Power BI files stored in OneDrive and SharePoint
 
