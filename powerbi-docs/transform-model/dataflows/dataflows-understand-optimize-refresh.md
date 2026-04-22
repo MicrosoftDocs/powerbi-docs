@@ -1,5 +1,5 @@
 ---
-title: Understand and optimize dataflows refresh
+title: Understand and optimize dataflows refresh (legacy)
 description: Learn how to use and optimize dataflow refreshes to get the best performance when you're working with your data in Power BI.
 author: eric-urban
 ms.author: eur
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Understand and optimize dataflows refresh
+# Understand and optimize dataflows refresh (legacy)
 
 Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the items themselves.
 

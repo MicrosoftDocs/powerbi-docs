@@ -1,5 +1,5 @@
 ---
-title: Creating a Dataflow
+title: Creating a Dataflow (legacy)
 description: Learn about the different options to create a dataflow or build on top of an existing dataflow in Power BI.
 author: eric-urban
 ms.author: eur
@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 #customer intent: As a Power BI user I want to learn different options to create a dataflow and build on existing dataflows in Power BI.
 ---
-# Creating a dataflow
+# Creating a dataflow (legacy)
 
 A **dataflow** is a collection of tables that you create and manage in workspaces in the Power BI service. A **table** is a set of columns that store data, much like a table within a database. You can add and edit tables in your dataflow and manage data refresh schedules directly from the workspace in which you created your dataflow.
 To create a dataflow, launch the Power BI service in a browser, then select a **workspace** (dataflows aren't available in *my-workspace* in the Power BI service) from the nav pane. You can also create a new workspace in which to create your new dataflow.

@@ -1,5 +1,5 @@
 ---
-title: Develop solutions with dataflows
+title: Develop solutions with dataflows (legacy)
 description: Learn how to use Power BI data flows in some common scenarios to enable an ecosystem of data for your organization.
 author: eric-urban
 ms.author: eur
@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to use data flows in Power BI.
 ---
 
-# Develop solutions with dataflows
+# Develop solutions with dataflows (legacy)
 
 Power BI *dataflows* are an enterprise-focused data prep solution that enables an ecosystem of data that's ready for consumption, reuse, and integration. This article presents some common scenarios, links to articles, and other information to help you understand and use dataflows to their full potential.
 

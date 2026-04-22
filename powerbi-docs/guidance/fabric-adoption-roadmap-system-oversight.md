@@ -111,7 +111,7 @@ A few data architecture considerations that affect adoption include:
 - What [data sources](../connect-data/desktop-data-sources.md) are the most important? What types of data will we be acquiring?
 - What [semantic model connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
 - To what extent is data reusability encouraged using [lakehouses](/fabric/data-engineering/lakehouse-overview), [warehouses](/fabric/data-warehouse/data-warehousing), and [shared semantic models](../connect-data/desktop-report-lifecycle-datasets.md)?
-- To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)?
+- To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows (legacy)](../transform-model/dataflows/dataflows-introduction-self-service.md)?
 
 It's important for administrators to become fully aware of Fabric's technical capabilities—as well as the needs and goals of their stakeholders—before they make architectural decisions.
 

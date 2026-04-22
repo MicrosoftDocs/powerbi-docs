@@ -37,7 +37,7 @@ In this article, you learn:
 - How to get started with Power BI step-by-step
 - Which Power BI component to use for your specific needs
 
-Power BI is a core component of Microsoft Fabric, providing analytics and visualization capabilities. In Fabric, Power BI shares features like data integration, dataflows, and security with other Fabric experiences. However, some features - such as Power BI reports, dashboards, and the Power BI service - are unique to Power BI.
+Power BI is a core component of Microsoft Fabric, providing analytics and visualization capabilities. In Fabric, Power BI shares features like data integration, dataflows (legacy), and security with other Fabric experiences. However, some features - such as Power BI reports, dashboards, and the Power BI service - are unique to Power BI.
 
 ## Power BI and Microsoft Fabric
 

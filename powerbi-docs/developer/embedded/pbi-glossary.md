@@ -109,7 +109,7 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 
 ### Connector
 
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows (legacy), Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
 
 ### Container
 
