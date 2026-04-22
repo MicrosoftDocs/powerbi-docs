@@ -1,5 +1,5 @@
 ---
-title: Using visual calculations in Power BI Desktop
+title: Using Visual Calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
 author: eric-urban
 ms.author: eur
@@ -28,11 +28,8 @@ A calculation can refer to any data in the visual including columns, measures, o
 Visual calculations differ from the other calculations options in DAX:
 
 * Visual calculations aren't stored in the model, and instead are stored on the visual. This means visual calculations can only refer to what's on the visual. Anything in the model must be added to the visual before the visual calculation can refer to it, freeing visual calculations from being concerned with the complexity of filter context and the model.
-
 * Visual calculations combine the simplicity of context from calculated columns with the on-demand calculation flexibility from measures.
-
 * Compared to measures, visual calculations operate on aggregated data instead of the detail level, often leading to performance benefits. When a calculation can be achieved either by a new measure or a visual calculation, the latter often leads to better performance.
-
 * Since visual calculations are part of the visual, they can refer to the visual structure, which leads to more flexibility.
 
 For a more in-depth comparison of ways of adding calculations in Power BI, see [Using calculations options in Power BI Desktop](desktop-calculations-options.md).
@@ -113,12 +110,12 @@ The following templates are available:
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
 ## Parameter pickers
+
 Parameter pickers make it easy to select values for parameters in visual calculations functions. For example, here we loaded the **Look up a value with totals** template:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
 
 You can also activate the parameter pickers using the **CTRL+SPACE** keyboard shortcut.
-
 
 ## :::no-loc text="Axis":::
 
@@ -137,13 +134,17 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 ## :::no-loc text="Reset":::
 
 Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. It does this by partitioning the target column. As calculations are performed within a partition, how the column is divided in partitions decides if a calculation resets.
+
 The :::no-loc text="Reset"::: parameter is set to **:::no-loc text="NONE":::** by default, which means the visual calculation is never restarted.
+
 The :::no-loc text="Reset"::: parameter accepts different types of values:
+
 * integers
 * column references
 * Special [synonyms](#synonyms): :::no-loc text="HIGHESTPARENT":::, :::no-loc text="LOWESTPARENT":::, :::no-loc text="NONE":::
 
 In every case it specifies a single level in the visual calculation hierarchy (let’s call it the target level). However, how this level is interpreted in the calculation can vary.
+
 The :::no-loc text="Reset"::: behavior operates in two different modes: [absolute](#absolute-mode) and [relative](#relative-mode).
 
 When using integer values for the parameter or their equivalents :::no-loc text="NONE":::, :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, you can choose between these two modes via the integer’s signal: positive values perform a reset in absolute mode, and negative values perform a reset in relative mode (and zero does no reset at all, the default behavior).
@@ -151,6 +152,7 @@ When using integer values for the parameter or their equivalents :::no-loc text=
 If you specify a column reference, you're also operating in absolute mode. These values determine how the target column is partitioned and therefore if it resets. These two modes are described in the following section:
 
 ### Absolute mode
+
 This mode indicates that the calculation should be partitioned by the target column and all those above it, and this applies at every level in the calculation. At levels above the target (where the target column isn’t present, and possibly others), the calculation is partitioned by the remaining columns available.
 The positive integer value identifies the target column starting from the top (the top column is 1, the next is 2, etc.). It goes up to N (the number of columns in the hierarchy), and any higher values are trimmed down. Alternatively, one can also specify the column directly.
 
@@ -165,6 +167,7 @@ For example, consider a visual calculation with these hierarchy levels: Year, Qu
 |Grand total level|None|None|None|None|
 
 ### Relative mode
+
 Given a negative integer value –X, at each level the calculation is partitioned by all columns X levels or more above it in the hierarchy (or not partitioned at all if no such level exists).
 Valid values for this mode are between -1 and -N+1 (where N is the number of columns in the hierarchy), and any lower values are trimmed up.
 Again, consider the visual calculation described earlier. The table below shows how the calculation will be partitioned at each level depending on the value of Reset:
@@ -178,12 +181,15 @@ Again, consider the visual calculation described earlier. The table below shows 
 |Grand total level|None|None|None|
 
 ### Synonyms
+
 :::no-loc text="Reset"::: also provides the following synonyms:
+
 * **:::no-loc text="NONE":::** is the default value. It doesn't reset the calculation and is equivalent to 0.
 * **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is Equivalent to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::
+
 For example, consider the visual calculation described earlier. The visual calculations are equivalent and return the sum of *Sales Amount* that restarts for every year, regardless of the level the calculation is evaluated on (see [absolute mode](#absolute-mode)):
 
 ```dax
@@ -252,6 +258,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
+
 ## Example 1: Using visual calculation to return a Hex color code for conditional formatting
 
 Step 1: Select the visual you would like to use the conditional formatting in:
