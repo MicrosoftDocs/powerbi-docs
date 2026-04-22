@@ -91,4 +91,5 @@ Track the health and performance of your API usage:
 
 - [Mastering the Execute DAX Queries API](overview.md)
 - [Get started with the Execute DAX Queries REST API](get-started.md)
-- [Tutorial: Build a mid-tier DAX query execution service](tutorial.md)
+- [Tutorial: Build a mid-tier DAX query execution service](dotnet-midtier-service.md)
+- [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)

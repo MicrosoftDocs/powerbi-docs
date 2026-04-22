@@ -246,5 +246,6 @@ If you created a Microsoft Entra app registration solely for testing, navigate t
 ## Related content
 
 - [Mastering the Execute DAX Queries API](overview.md)
-- [Tutorial: Build a mid-tier DAX query execution service](tutorial.md)
+- [Tutorial: Build a mid-tier DAX query execution service](dotnet-midtier-service.md)
+- [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)

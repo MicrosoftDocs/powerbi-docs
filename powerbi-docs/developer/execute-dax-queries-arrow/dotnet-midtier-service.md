@@ -271,5 +271,6 @@ When you're done testing:
 
 - [Mastering the Execute DAX Queries API](overview.md)
 - [Get started with the Execute DAX Queries REST API](get-started.md)
+- [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)
 - [Microsoft.Samples.XMLA.ExecuteQueries sample (GitHub)](https://github.com/dbrownems/Microsoft.Samples.XMLA.ExecuteQueries)
