@@ -132,5 +132,5 @@ Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/) to your fa
 
 Other articles of interest:
 
-- [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+- [Using visual calculations](desktop-visual-calculations-overview.md)
 - [Using calculations options in Power BI Desktop](desktop-calculations-options.md)

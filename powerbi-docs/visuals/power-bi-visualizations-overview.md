@@ -25,6 +25,8 @@ This article provides an overview of the visualization categories available in P
 
 Some Power BI visuals are available in preview, which means they're still being developed and might change before general availability. Preview visuals let you try new features early and provide feedback to help shape the final product.
 
+Preview visuals display **(Preview)** after their name in the Visualizations pane. They might also appear below a divider that separates generally available visuals from preview visuals.
+
 To use preview visuals in Power BI Desktop, you typically need to enable them in **File** > **Options and settings** > **Options** > **Preview features**. Preview visuals might have limited functionality or known issues that are resolved before general release.
 
 ## Charts for comparison and trends

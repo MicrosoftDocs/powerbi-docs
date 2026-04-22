@@ -246,5 +246,5 @@ Measures give you the power to get the insights you want from your data. You lea
 
 Other articles of interest:
 
-* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+* [Using visual calculations](desktop-visual-calculations-overview.md)
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
