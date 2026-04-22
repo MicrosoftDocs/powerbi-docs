@@ -7,18 +7,18 @@ ms.reviewer: lafaber
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/18/2024
+ms.date: 04/14/2025
 LocalizationGroup: Create reports
-#customer intent: As a Power BI user I want to learn how to open, save, and share Power BI files to OneDrive.
+#customer intent: As a Power BI user I want to learn how to open, save, and share Power BI files to OneDrive and SharePoint.
 ---
 
 # Power BI Desktop OneDrive and SharePoint integration
 
 In this article you'll learn how to work seamlessly in Power BI Desktop with the ability to open, save, and share files to OneDrive and SharePoint.
-These new capabilities help you with file versioning, collaborating with other authors, and ensuring a backup file is always available in the cloud.
+These capabilities help you with file versioning, collaborating with other authors, and ensuring a backup file is always available in the cloud.
 
 > [!NOTE]
-> This is public preview documentation and some capabilities may not be available in your tenant.
+> This is public preview documentation and some capabilities might not be available in your tenant.
 
 ## Enable sharing links to Power BI files in OneDrive and SharePoint
 
@@ -39,7 +39,7 @@ After saving your preference, restart Power BI Desktop. If the capability is tur
 
 **Sharing** files stored in OneDrive and SharePoint directly from Power BI Desktop only works when **both** of the following two statements are true:
 
-- Users haven't turned off the sharing preview feature in Power BI Desktop.
+- Users haven't turned off the sharing feature in Power BI Desktop.
 - The Admin tenant setting is enabled (the setting is **enabled by default** and requires that admins disable it for it to be turned off).
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png" alt-text="Screenshot of the Share button in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-button-plain.png":::
@@ -50,11 +50,12 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 ### File picker for saving and uploading Power BI files to OneDrive and SharePoint
 
+
 The file picker in Power BI desktop makes it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png" alt-text="Screenshot of selecting a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-select-file-update.png":::
 
-You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Simply select or deselect the pin icon next to the file to pin or unpin the file. 
+You can also easily pin and unpin recent files and folders in the file picker while opening files in OneDrive and SharePoint. Select or deselect the pin icon next to the file to pin or unpin the file.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png" alt-text="Screenshot of pinning a file with the new file picker experience." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-odsp-pin-file.png":::
 
@@ -70,7 +71,7 @@ Your files from OneDrive and SharePoint are available for you to open directly i
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png" alt-text="Screenshot of OneDrive files in file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-open-file.png":::
 
-Select the file to open it in Power BI Desktop.  
+Select the file to open it in Power BI Desktop.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
 
@@ -91,7 +92,8 @@ To save an existing file to OneDrive or SharePoint, select the **Save as** optio
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png" alt-text="Screenshot showing save as in the file menu." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-save-as.png":::
 
 The default save location is your parent OneDrive folder, unless you change it. The default save location is the first option that appears in your save list.
-Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog shows up the first time a new file is uploaded. 
+
+Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog shows up the first time a new file is uploaded.
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png" alt-text="Screenshot of save dialog box in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png":::
 
@@ -102,11 +104,11 @@ Upon saving, a dialog box appears while the file is being uploaded to the OneDri
 
 When new changes are saved to a file already uploaded to OneDrive, the top of the toolbar indicates that the new changes are uploading in the background to OneDrive.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of the background upload status in the Power BI Desktop toolbar." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
 
 To enable background upload, select **File > Options and Settings > Options > Preview Features,** and then select **Saving to OneDrive and SharePoint uploads the file in the background** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png" alt-text="Toggle for background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png" alt-text="Screenshot of the preview features settings with the background upload option in Power BI Desktop." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png":::
 
 ## Change the default save location
 
@@ -126,7 +128,7 @@ If the file hasn’t been saved, you're prompted to save. To share a link to the
 
 After the file is saved, the Microsoft 365 share dialog prompts you to add the email, name, or group you wish to share the file with. You can send the file to the desired recipients directly, or use **Copy link** to send a link to the file.
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="Screenshot showing the sharing Power BI report." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png" alt-text="Screenshot of the share dialog for a Power BI report." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-share-dialog.png":::
 
 You can also manage who has access to the file through the **Manage Access** option under the Share button.
 
@@ -194,7 +196,7 @@ The following use cases apply when sharing a link to a Power BI file saved in On
 | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of the link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. | Sees the existence of the link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. |
 | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of the link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview.  | Sees the existence of the link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. |
 | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Has** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of the link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. | Sees the existence of the link in OneDrive or SharePoint, can open the file in OneDrive or SharePoint viewing and preview. |
-| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of the link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. | Sees the existence of the link in OneDrive or SharePoint, must download the file to view in it Power BI Desktop.  |
+| **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | **Does not have** Power BI Pro, Power BI Premium Per User, or E5 license | Sees the existence of the link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. | Sees the existence of the link in OneDrive or SharePoint, must download the file to view it in Power BI Desktop. |
 
 ## Audit logs
 
@@ -218,15 +220,15 @@ If a Power BI file has encryption, you can only open the file if you have [full 
 
 ## Using different accounts between Power BI Desktop and local OneDrive
 
-If you're signed-in to an account in Power BI Desktop that is *different* than the account you're signed-in to on your local OneDrive, you can still browse and open local files. These files are open as non-OneDrive files. To save the files back to the same OneDrive or SharePoint location you opened them from, the account you're sign-in to in Power BI Desktop must match the account you're sign-in to on your local OneDrive.
+If you're signed-in to an account in Power BI Desktop that is *different* than the account you're signed-in to on your local OneDrive, you can still browse and open local files. These files are open as non-OneDrive files. To save the files back to the same OneDrive or SharePoint location you opened them from, the account you're signed in to in Power BI Desktop must match the account you're signed in to on your local OneDrive.
 
-If the account you're sign-in to in Power BI Desktop and your local OneDrive or SharePoint aren't the same, you're prompted to save the file to OneDrive or SharePoint before you can share it, even though you may open the file from a OneDrive or SharePoint location. To avoid being prompted to save your file in OneDrive or SharePoint every time you're sharing a link, sign-in to Power BI Desktop with the same account you're signed-in to on your local OneDrive or SharePoint.
+If the account you're signed in to in Power BI Desktop and your local OneDrive or SharePoint aren't the same, you're prompted to save the file to OneDrive or SharePoint before you can share it, even though you may open the file from a OneDrive or SharePoint location. To avoid being prompted to save your file in OneDrive or SharePoint every time you're sharing a link, sign-in to Power BI Desktop with the same account you're signed-in to on your local OneDrive or SharePoint.
 
 ## Syncing files to OneDrive and SharePoint through the file system
 
 When you drag a Power BI file to a OneDrive or SharePoint location in the file system, the file is uploaded to the new location in OneDrive or SharePoint. If you try to open the file before the file completes syncing to OneDrive or SharePoint, the file acts as a local file. Therefore, when you try to share a link to the file, you're prompted to save the file to OneDrive or SharePoint even though the file is syncing there. When you're prompted to save a file that is already saved, wait until the file finishes syncing and try again. Once the file finishes syncing to the new OneDrive or SharePoint location, you're able to share a link to the file without being prompted to save again.  
 
-## Troubleshooting and Known Issues
+## Troubleshooting and known issues
 
 ### Unable to open document
 
@@ -234,8 +236,8 @@ If you have signed-in to Power BI on multiple different accounts, you can see fi
 
 ### Unable to create a new folder inside SharePoint
 
-For some specific SharePoint document libraries, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, please work with an admin to ensure you have sufficient permissions or choose a different OneDrive/SharePoint location. 
+For some specific SharePoint document libraries, users may not have permissions to create folders. As a result, when the user selects the "New Folder" button, the new folder is not added. To resolve this error, work with an admin to ensure you have sufficient permissions or choose a different OneDrive/SharePoint location.
 
 ### Unable to find desired SharePoint library in updated file picker
 
-When viewing your list of SharePoint libararies in the file picker, there may be libraries you need that are missing. There is currently no support for directly adding a SharePoint site via URL in the new file picker. To resolve this error, you can add frequently visited SharePoint sites to your list by directly following the site on SharePoint. The site should then show up in the file picker after restarting Power BI. 
+When viewing your list of SharePoint libraries in the file picker, there might be libraries you need that are missing. There's currently no support for directly adding a SharePoint site via URL in the file picker. To resolve this error, you can add frequently visited SharePoint sites to your list by directly following the site on SharePoint. The site should then show up in the file picker after restarting Power BI.

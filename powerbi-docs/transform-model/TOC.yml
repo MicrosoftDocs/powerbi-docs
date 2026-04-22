@@ -139,7 +139,7 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
-      - name: "Use visual calculations (preview)"
+      - name: "Use visual calculations"
         href: desktop-visual-calculations-overview.md
       - name: "Using DAX user-defined functions (preview)"
         href: desktop-user-defined-functions-overview.md
