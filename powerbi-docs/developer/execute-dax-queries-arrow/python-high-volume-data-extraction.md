@@ -56,48 +56,21 @@ The notebook performs these steps:
 1. Incrementally merge results into a Delta table.
 1. Validate data availability for Direct Lake consumption.
 
-## Step 1: Configure identifiers and authentication
+## Step 1: Acquire an Entra Id token for the current user
 
 In the first code cell, define semantic model targets and acquire a token.
 
 ```python
-import io
-import requests
-import pyarrow as pa
-import pandas as pd
-from datetime import datetime, timezone
-from msal import ConfidentialClientApplication
+import notebookutils  # available in every Fabric notebook runtime
 
-tenant_id = "YOUR_TENANT_ID"
-client_id = "YOUR_APP_CLIENT_ID"
-client_secret = "YOUR_APP_CLIENT_SECRET"
-scope = ["https://analysis.windows.net/powerbi/api/.default"]
+# Power BI resource URI — must match this exact value
+PBI_RESOURCE = "https://analysis.windows.net/powerbi/api"
 
-models = [
-    {
-        "name": "sales_model",
-        "workspace_id": "YOUR_WORKSPACE_ID_1",
-        "dataset_id": "YOUR_DATASET_ID_1"
-    },
-    {
-        "name": "inventory_model",
-        "workspace_id": "YOUR_WORKSPACE_ID_2",
-        "dataset_id": "YOUR_DATASET_ID_2"
-    }
-]
-
-app = ConfidentialClientApplication(
-    client_id=client_id,
-    client_credential=client_secret,
-    authority=f"https://login.microsoftonline.com/{tenant_id}"
-)
-
-token_result = app.acquire_token_for_client(scopes=scope)
-if "access_token" not in token_result:
-    raise RuntimeError(f"Token acquisition failed: {token_result}")
-
-access_token = token_result["access_token"]
-print("Token acquired.")
+# Acquire an Entra Id token for the current user (or workspace identity)
+# using the notebook's built-in credential provider.
+access_token = notebookutils.credentials.getToken(PBI_RESOURCE)
+if access_token is None:
+    raise RuntimeError(f"Token acquisition failed")
 ```
 
 ## Step 2: Execute DAX queries across semantic models
@@ -105,6 +78,12 @@ print("Token acquired.")
 Define a helper that executes DAX and returns a pandas DataFrame from Arrow IPC.
 
 ```python
+import io
+import pandas as pd
+import pyarrow as pa
+
+from datetime import datetime, timezone
+
 def execute_dax_to_pandas(workspace_id: str, dataset_id: str, query: str) -> pd.DataFrame:
     url = (
         f"https://api.powerbi.com/v1.0/myorg/groups/{workspace_id}"
@@ -139,6 +118,19 @@ SUMMARIZECOLUMNS(
     "Units", [Units]
 )
 """
+
+models = [
+    {
+        "name": "YOUR_FIRST_SEMANTIC_MODEL",
+        "workspace_id": "YOUR_WORKSPACE_ID_1",
+        "dataset_id": "YOUR_DATASET_ID_1"
+    },
+    {
+        "name": "YOUR_SECOND_SEMANTIC_MODEL",
+        "workspace_id": "YOUR_WORKSPACE_ID_2",
+        "dataset_id": "YOUR_DATASET_ID_2"
+    }
+]
 
 frames = []
 for m in models:
