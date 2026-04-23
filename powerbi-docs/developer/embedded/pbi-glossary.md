@@ -555,6 +555,10 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 
 The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
 
+### Slicer
+
+A [slicer](/power-bi/visuals/power-bi-visualization-slicers) is a standalone visual that filters the other visuals on a report page. Slicers provide an interactive way to narrow the portion of the data that is displayed in related visualizations. Common slicer types include list, dropdown, between (range), and relative date slicers.
+
 ### Single sign-on, SSO
 
 An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
