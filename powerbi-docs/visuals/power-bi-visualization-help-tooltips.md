@@ -29,7 +29,7 @@ For an introduction to all tooltip types, see [Tooltips overview](power-bi-visua
    - **Report page help** for richer content with visuals, KPIs, or images. For steps to build the page, see [Create report page tooltips in Power BI](../create-reports/desktop-tooltips.md).
 
 > [!NOTE]
-> The **Help tooltip** icon appears only when **Header icons** are turned on and the visual header is visible. For more information, see [Format pane General tab overview](power-bi-visualization-format-pane-overview.md).
+> The **Help tooltip** icon appears only when **Header icons** are turned on and the visual header is visible.
 
 > [!TIP]
 > You can add an animated GIF as the background of a report page Help tooltip to demonstrate interactions like drilling.
@@ -47,4 +47,3 @@ For an introduction to all tooltip types, see [Tooltips overview](power-bi-visua
 - [Tooltips overview](power-bi-visualization-tooltips-overview.md)
 - [Visual tooltips in Power BI](power-bi-visualization-visual-tooltips.md)
 - [Create report page tooltips in Power BI](../create-reports/desktop-tooltips.md)
-- [Format pane General tab overview](power-bi-visualization-format-pane-overview.md)
