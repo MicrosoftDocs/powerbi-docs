@@ -76,9 +76,9 @@ Fixed size and Fit to space are mutually exclusive. When Fixed size is enabled, 
 
 The card visual in Power BI lets you create visually appealing cards that combine metrics with multiple image options, including:
 
-- **Image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card. Configure this in the **Image** section of the format pane.
-- **Callout image**: A smaller image within the callout that provides subtle enhancements, working well for branding elements or small visual cues without overwhelming the metric display. Configure this in **Callout** > **Image**.
-- **Category header background image**: A background image for category headers when you have categories added to the card visual. Configure this in the **Category header** section.
+- **Image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card. Configure this option in the **Image** section of the format pane.
+- **Callout image**: A smaller image within the callout that provides subtle enhancements, working well for branding elements or small visual cues without overwhelming the metric display. Configure this option in **Callout** > **Image**.
+- **Category header background image**: A background image for category headers when you have categories added to the card visual. Configure this option in the **Category header** section.
 
 To add images to your card visual: 
 
@@ -86,6 +86,9 @@ To add images to your card visual:
 - **Add a callout image**: From the **Visualizations** pane, select the **Format visual** icon. Under the **Visual** tab, expand the **Callout** card. Ensure your card is selected in the **Apply settings**, expand the **Image** controls, and then set the **Image** toggle to *on*. 
 
 For all image types, you can add by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
+
+> [!NOTE]
+> If you add a category to your card visual and all cards display the same image instead of different images, check the **Apply settings to** dropdown. When this setting is **All**, the visual applies the same image to every card. Select the specific callout value to assign different images per card, such as images from a data column.
 
 :::image type="content" source="media/power-bi-visualization-card-visual/add-image.png" alt-text="Screenshot of the Visual pane with the Image selections shown to upload an image and customize it." lightbox="media/power-bi-visualization-card-visual/add-image.png":::
 
@@ -99,7 +102,7 @@ The category headers are selectable and filter other visuals in the report when 
 
 When you select a category header, the other category cards dim to indicate the current selection. You can:
 
-- **Select multiple categories**: Hold **Ctrl** and select additional category headers to filter by multiple values.
+- **Select multiple categories**: Hold **Ctrl** and select other category headers to filter by multiple values.
 - **Deselect a category**: Select the category header again to remove it from the selection.
 - **Control which visuals are filtered**: Use **Edit interactions** in the **Format** menu to choose which visuals on the report page are affected by selections on the card visual.
 
@@ -194,7 +197,7 @@ You now have a multi-card visual displaying total units and total revenue.
 
 ### Add a callout image
 
-Add an image to the callout area to make your card more visually engaging. For this example, add two measures that generate SVG images based on the data.
+To make your card more visually engaging, add an image to the callout area. For this example, add two measures that generate SVG images based on the data.
 
 Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
 
@@ -267,7 +270,7 @@ The card visual now shows a separate section for each product line and channel c
 
 ### Add a category header background image
 
-Add a background image to your category headers to make each category stand out further. For this example, add a measure that generates an SVG gradient image.
+To make each category stand out, add a background image to your category headers. For this example, add a measure that generates an SVG gradient image.
 
 Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
 
@@ -368,7 +371,7 @@ Each category header now displays a subtle gradient background that helps visual
 
 ### Add reference labels
 
-Reference labels provide additional context for your main metric. You can also add detail values to reference labels for more granular information.
+Reference labels provide context for your main metric. You can also add detail values to reference labels for more granular information.
 
 1. In the **Visualizations** pane, select the **Format visual** icon.
 1. Under the **Visual** tab, expand the **Reference labels** section.
@@ -518,9 +521,9 @@ The legacy visuals appear in the unpinned area of the Visualizations pane, where
 
 ### Frequently asked questions for cards used in reports during preview
 
-#### Why is the column setting reset to 5 or row setting reset to 3 when I had it previously set to a different number?
+#### Why does the column setting reset to 10 or the row setting reset to 10 when I previously set it to a different number?
 
-During preview, you could set a column or row number for a grid, vertical, or horizontal arrangement of cards. After the November 2025 release, only the grid arrangement setting is kept. Vertical and horizontal arrangements reset to 5 columns and 3 rows on existing reports, including published reports. Scrollbars may appear in your existing card visuals to accommodate these settings. Only reports published or created with the card visual during preview are impacted. 
+During preview, you could set a column or row number for a grid, vertical, or horizontal arrangement of cards. After the November 2025 release, only the grid arrangement setting is kept. Vertical and horizontal arrangements reset to 10 columns and 10 rows on existing reports, including published reports. Scrollbars may appear in your existing card visuals to accommodate these settings. Only reports published or created with the card visual during preview are impacted. 
 
 To return your cards to the previous column and row number, update these settings in the November 2025 Power BI Desktop and publish the report or edit the report in the web.
 
@@ -604,8 +607,8 @@ Go to **Category header** settings and turn back on **add image**. Your image sh
 
 Differences between Desktop and the service can happen in two scenarios.
 
--	You are using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. Either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
--	You are using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
+-	You're using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. Either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
+-	You're using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
 
 
 ### Default behavior changes from public preview
