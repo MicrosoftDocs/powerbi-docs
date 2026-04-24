@@ -102,7 +102,7 @@ The **Opportunity Overview** page of the report has two card visualizations, a t
 
 You can select a field in any visualization to view that data for that selection in all the visualizations.
 
-Hover over any field to see the details of that field as a *tooltip*. A Power BI report provides a default value for tooltips. You can add any value to the tooltips for a visualization. For more information, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+Hover over any field to see the details of that field as a *tooltip*. A Power BI report provides a default value for tooltips. You can add any value to the tooltips for a visualization. For more information, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ## Create a Revenue Opportunities dashboard
 
