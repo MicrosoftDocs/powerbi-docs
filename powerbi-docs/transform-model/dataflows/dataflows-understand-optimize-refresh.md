@@ -162,7 +162,7 @@ The following sections provide guidance about using the compute engine, and its 
 
 #### Guidance on compute engine Statuses
 
-Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
+Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses a SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
 
 **NA** - This status means that the compute engine wasn't used, either because:
 
