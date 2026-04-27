@@ -2,6 +2,8 @@
 title: Dataflow Gen2 recommendation note
 description: Include file recommending Dataflow Gen2 for new solutions.
 ms.date: 04/10/2026
+author: whhender
+ms.author: whhender
 ms.topic: include
 ---
 
