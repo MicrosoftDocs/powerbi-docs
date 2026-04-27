@@ -81,7 +81,7 @@ At report design time, we recommend the following practices:
 For more information related to this article, check out the following resources:
 
 - [Create tooltips based on report pages in Power BI Desktop](../create-reports/desktop-tooltips.md)
-- [Customizing tooltips in Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md)
 - [Use visual elements to enhance Power BI reports](../create-reports/desktop-visual-elements-for-reports.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

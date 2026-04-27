@@ -185,7 +185,7 @@ Now hover over a region again to see the value that you added.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hover-revised-tooltip.png" alt-text="Screenshot shows the revised tooltip for the map visualization.":::
 
-For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+For more information about tooltips, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ### Use hidden pages as tooltips
 

@@ -4256,6 +4256,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "powerbi-docs/create-reports/desktop-visual-tooltips.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-visual-tooltips",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/create-reports/desktop-custom-tooltips.md",
+      "redirect_url": "/power-bi/visuals/power-bi-visualization-visual-tooltips",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "powerbi-docs/desktop-upload-desktop-files.md",
       "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
       "redirect_document_id": true
