@@ -152,7 +152,7 @@ Power BI report visualizations display details about elements when you hover ove
 
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in the sample.":::
 
-These values are the defaults, but you can add any field from the semantic model to appear in a tooltip, or multiple fields. For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+These values are the defaults, but you can add any field from the semantic model to appear in a tooltip, or multiple fields. For more information about tooltips, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 Power BI also supports a report page as a tooltip. To see an example, select the **Actives and Separations** page, and hover over **Seps by SeparationReason**. You can see a tooltip for the **Voluntary** field.
 
