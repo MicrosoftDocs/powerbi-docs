@@ -20,7 +20,7 @@ LocalizationGroup: Create reports
 > [!NOTE]
 > The location and availability of tooltip options might change between Power BI Desktop versions. If you don't see the options described in this article, make sure you're using the latest version and check the official documentation for UI changes.
 
-You can create visually rich **report tooltips** in Power BI that appear when you hover over visuals. These custom tooltips are based on report pages you create in **Power BI Desktop** and the **Power BI service**, allowing you to include visuals, images, and other elements that provide detailed insights to users. By creating a report page that serves as your tooltip, you enhance the interactivity and user experience of your reports. Just getting started modifying tooltips? Check out [Customize tooltips](desktop-custom-tooltips.md).
+You can create visually rich **report tooltips** in Power BI that appear when you hover over visuals. These custom tooltips are based on report pages you create in **Power BI Desktop** and the **Power BI service**, allowing you to include visuals, images, and other elements that provide detailed insights to users. By creating a report page that serves as your tooltip, you enhance the interactivity and user experience of your reports. For an introduction to all tooltip types, see [Tooltips overview](../visuals/power-bi-visualization-tooltips-overview.md).
 
 You can create multiple tooltip pages. Each tooltip page can be associated with one or more fields in your report. When you hover over a visual that includes the selected field, the tooltip appears and filters by the data point where your mouse is hovering.
 
@@ -119,8 +119,8 @@ Keep a few considerations and limitations in mind for **tooltips**.
 
 ## Related content
 
-- [Create visual tooltips](desktop-visual-tooltips.md)
-- [Customize tooltips in Power BI](desktop-custom-tooltips.md)
+- [Tooltips overview](../visuals/power-bi-visualization-tooltips-overview.md)
+- [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md)
+- [Add Help tooltips to visuals in Power BI](../visuals/power-bi-visualization-help-tooltips.md)
 - [Set up drillthrough in Power BI reports](desktop-drillthrough.md)
-- [Custom visuals (AppSource)](../developer/visuals/develop-power-bi-visuals.md)
-- [Decomposition trees](../visuals/power-bi-visualization-decomposition-tree.md)
+- [Extend visuals with report page tooltips (guidance)](../guidance/report-page-tooltips.md)
