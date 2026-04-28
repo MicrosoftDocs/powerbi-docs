@@ -285,5 +285,5 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Configure incremental refresh for semantic models](incremental-refresh-configure.md)  
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
 - [Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)  
-- [Incremental refresh for dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)
+- [Incremental refresh for dataflows (legacy)](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)
  

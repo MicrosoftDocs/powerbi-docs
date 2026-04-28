@@ -1,5 +1,5 @@
 ---
-title: Introduction to Dataflows and Self-service Data Prep
+title: Introduction to Dataflows and Self-service Data Prep (legacy)
 description: Learn what Power BI dataflows are and how you can use them to provide insights for your organization.
 author: eric-urban
 ms.author: eur
@@ -13,7 +13,7 @@ LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn about Power BI dataflows.
 ---
 
-# Introduction to dataflows and self-service data prep
+# Introduction to dataflows and self-service data prep (legacy)
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With self-service data prep for big data in Power BI, you can go from data to Power BI insights with just a few actions.
 

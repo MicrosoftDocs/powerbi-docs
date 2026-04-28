@@ -1,5 +1,5 @@
 ---
-title: Dataflows Considerations and Limitations
+title: Dataflows Considerations and Limitations (legacy)
 description: Learn about limitations, restrictions, and supported connectors and features of dataflows in Power BI
 author: eric-urban
 ms.author: eur
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 09/29/2025
 LocalizationGroup: Data from files
 ---
-# Dataflows considerations and limitations
+# Dataflows considerations and limitations (legacy)
 
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
 

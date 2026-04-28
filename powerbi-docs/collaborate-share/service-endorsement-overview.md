@@ -39,7 +39,7 @@ The image below illustrates how endorsed content (promoted and certified) is cle
 Power BI currently supports endorsement for:
 
 - Semantic models
-- Dataflows
+- Dataflows (legacy)
 - Reports
 - Apps
 
