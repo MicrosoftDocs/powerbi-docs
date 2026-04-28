@@ -44,7 +44,7 @@ This table shows the differences between the standard gateway and the personal m
 
 |   | On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-| **Supports cloud services** | Power BI, Power Apps, Power Automate, Azure Logic Apps, Azure Analysis Services, Power BI dataflows | Power BI only |
+| **Supports cloud services** | Power BI, Power Apps, Power Automate, Azure Logic Apps, Azure Analysis Services, Power BI dataflows (legacy) | Power BI only |
 | **Runs under credentials** | As configured by authorized gateway users | Your Windows credentials (interactive sign-in) or per data source credentials you set |
 | **Install only as a local admin** | Yes | No |
 | **Centralized gateway and data source management** | Yes | No |

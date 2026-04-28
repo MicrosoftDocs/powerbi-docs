@@ -1,5 +1,5 @@
 ---
-title: Introduction to Dataflows and Self-service Data Prep
+title: Introduction to Dataflows and Self-service Data Prep (legacy)
 description: Learn what Power BI dataflows are and how you can use them to provide insights for your organization.
 author: eric-urban
 ms.author: eur
@@ -13,14 +13,13 @@ LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn about Power BI dataflows.
 ---
 
-# Introduction to dataflows and self-service data prep
+# Introduction to dataflows and self-service data prep (legacy)
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With self-service data prep for big data in Power BI, you can go from data to Power BI insights with just a few actions.
 
 :::image type="content" source="media/dataflows-introduction-self-service-flow.png" alt-text="Diagram of the flow of data in the Microsoft Common Data Model.":::
 
->[!TIP]
->You can also try Dataflow Gen2 in [Data Factory in Microsoft Fabric](/fabric/data-factory/), an all-in-one analytics solution for enterprises. [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) covers everything from data movement to data science, real-time analytics, business intelligence, and reporting. Learn how to [start a new trial](/fabric/fundamentals/fabric-trial) for free.
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 Dataflows are designed to support the following scenarios:
 

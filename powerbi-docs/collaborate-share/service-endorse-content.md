@@ -24,7 +24,7 @@ Power BI provides two ways you can endorse your valuable, high-quality content t
 
 Currently it's possible to endorse:
 * Semantic models
-* Dataflows
+* Dataflows (legacy)
 * Reports
 * Apps
 

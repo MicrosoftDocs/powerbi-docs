@@ -1,5 +1,5 @@
 ---
-title: Understand and optimize dataflows refresh
+title: Understand and optimize dataflows refresh (legacy)
 description: Learn how to use and optimize dataflow refreshes to get the best performance when you're working with your data in Power BI.
 author: eric-urban
 ms.author: eur
@@ -10,7 +10,10 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Understand and optimize dataflows refresh
+# Understand and optimize dataflows refresh (legacy)
+
+> [!TIP]
+> Power BI Dataflow Gen1 is now in a legacy state and won't receive new feature investment. Rather than building a custom monitoring dashboard, [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) provides built-in refresh tracking through the [Monitoring hub](/fabric/data-factory/dataflows-gen2-monitor) in Microsoft Fabric, with real-time status, duration, and error details. To learn about upgrading existing dataflows, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the items themselves.
 
@@ -159,7 +162,7 @@ The following sections provide guidance about using the compute engine, and its 
 
 #### Guidance on compute engine Statuses
 
-Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
+Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses a SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
 
 **NA** - This status means that the compute engine wasn't used, either because:
 

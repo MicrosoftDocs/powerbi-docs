@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # Create a workspace in Power BI
 
-In them, you create collections of dashboards, reports, paginated reports, semantic models, and dataflows. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. You create and manage workspaces in the Power BI service (in a browser at app.powerbi.com), not in Power BI Desktop. Power BI Desktop lets you publish to an existing workspace you have access to but doesn't provide workspace creation settings. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
+In them, you create collections of dashboards, reports, paginated reports, semantic models, and dataflows (legacy). If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. You create and manage workspaces in the Power BI service (in a browser at app.powerbi.com), not in Power BI Desktop. Power BI Desktop lets you publish to an existing workspace you have access to but doesn't provide workspace creation settings. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
 
 :::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of a workspace in Power BI.":::
 

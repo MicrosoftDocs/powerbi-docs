@@ -1,5 +1,5 @@
 ---
-title: Configure Power BI Premium dataflow workloads
+title: Configure Power BI Premium dataflow workloads (legacy)
 description: Learn how to configure Power BI Premium for dataflow workloads, including enabling dataflows, refining settings, and optimizing performance.
 author: eric-urban
 ms.author: eur
@@ -12,7 +12,9 @@ ms.custom: references_regions
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to configure dataflow workloads in Power BI Premium.
 ---
-# Configure Power BI Premium dataflow workloads
+# Configure Power BI Premium dataflow workloads (legacy)
+
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 You can create dataflow workloads in your Power BI Premium subscription. Power BI uses the concept of *workloads* to describe Premium content. Workloads include datasets, paginated reports, dataflows, and AI. The *dataflows* workload lets you use dataflows self-service data preparation to ingest, transform, integrate, and enrich data. Power BI Premium dataflows are managed in the **Admin portal**.
 
@@ -44,7 +46,7 @@ Power BI Premium workloads use v-cores to serve fast queries across the various 
 
 #### Enhanced compute engine - an opportunity to improve performance
 
-The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations, and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is using the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
+The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations, and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL to speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is using the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
 
 > [!NOTE]
 > The enhanced compute engine is not yet available in all regions.
