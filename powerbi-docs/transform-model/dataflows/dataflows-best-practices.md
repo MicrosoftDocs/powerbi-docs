@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Dataflows best practices (legacy)
 
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
+
 Power BI dataflows are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration. This article provides a list of best practices, with links to articles and other information that will help you understand and use dataflows to their full potential.
 
 ## Dataflows across the Power Platform

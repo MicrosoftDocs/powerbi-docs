@@ -12,6 +12,8 @@ LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations (legacy)
 
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
+
 There are a few dataflow limitations across authoring, refreshes, and capacity management that users should keep in mind, as described in the following sections.
 
 ## General limitations
@@ -31,7 +33,7 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 - When you use *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 - In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
 - Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflow-failures-in-premium-workspaces) aren't supported for dataflows in Premium workspaces.
-- When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
+- When using DirectQuery with a dataflow, searches using the slicer visual are case-sensitive.
 - The following characters aren't allowed in Dataflow entities:  `\` `/`
 - When the ownership of a Dataflow Gen1 is transferred, its data sources connections become invalid, due to the new owner not being authenticated against the original connections. This is expected according to the design. To overcome the situation, after taking ownership of a Dataflow Gen1, make sure to open the dataflow in Power Query Online, if there is an existing gateway mapping, remove it, and then reassign it. If there is no gateway mapping, make sure to authenticate to the data sources, and save the changes.
 
