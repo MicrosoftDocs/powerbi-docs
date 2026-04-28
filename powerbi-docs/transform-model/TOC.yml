@@ -61,33 +61,33 @@
       href: value-filter-behavior.md
     - name: "Export query results (preview)"
       href: export-query-results.md
-  - name: Dataflows
+  - name: Dataflows (legacy)
     items: 
-    - name: "Introduction to dataflows"
+    - name: "Introduction to dataflows (legacy)"
       href: dataflows/dataflows-introduction-self-service.md
-    - name: "Create a dataflow"
+    - name: "Create a dataflow (legacy)"
       href: dataflows/dataflows-create.md
-    - name: "Configure and consume a dataflow"
+    - name: "Configure and consume a dataflow (legacy)"
       href: dataflows/dataflows-configure-consume.md   
-    - name: "Configure Power BI Premium dataflow workloads"
+    - name: "Configure Power BI Premium dataflow workloads (legacy)"
       href: dataflows/dataflows-premium-workload-configuration.md        
-    - name: "Dataflows and Azure Data Lake Gen2"
+    - name: "Dataflows and Azure Data Lake Gen2 (legacy)"
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
-    - name: "Premium features of dataflows"
+    - name: "Premium features of dataflows (legacy)"
       href: dataflows/dataflows-premium-features.md      
-    - name: "Dataflows best practices"
+    - name: "Dataflows best practices (legacy)"
       href: ./dataflows/dataflows-best-practices.md  
-    - name: "Understand and optimize dataflow refresh"
+    - name: "Understand and optimize dataflow refresh (legacy)"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
-    - name: "Use DirectQuery with dataflows"
+    - name: "Use DirectQuery with dataflows (legacy)"
       href: ./dataflows/dataflows-directquery.md       
-    - name: "Dataflows considerations and limitations"
+    - name: "Dataflows considerations and limitations (legacy)"
       href: dataflows/dataflows-features-limitations.md
-    - name: "Streaming dataflows (preview)"
+    - name: "Streaming dataflows (retired)"
       href: dataflows/dataflows-streaming.md
-    - name: "Develop dataflows solutions"
+    - name: "Develop dataflows solutions (legacy)"
       href: dataflows/dataflows-develop-solutions.md      
-    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop (legacy)"
       href: desktop-connect-dataflows.md      
   - name: Log analytics
     items: 
