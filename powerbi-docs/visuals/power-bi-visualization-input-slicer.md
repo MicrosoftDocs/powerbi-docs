@@ -3,6 +3,7 @@ title: Create and use an input slicer
 description: Learn how to create and customize an input slicer in Power BI for dynamic data filtering. Follow step-by-step instructions to enhance your reports with interactive text-based filters.
 author: julcsc
 ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to

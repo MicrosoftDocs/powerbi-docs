@@ -3,7 +3,7 @@ title: Add Text Boxes, Shapes, and Smart Narratives to Power BI Reports
 description: Learn how to add text boxes, shapes, and smart narratives to Power BI reports. Discover formatting options and AI-powered text summaries.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: zoedouglas
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
