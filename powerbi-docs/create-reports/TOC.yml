@@ -123,6 +123,8 @@
       href: desktop-gridlines-snap-to-grid.md
     - name: Apply page size and settings
       href: power-bi-report-display-settings.md
+    - name: Set the landing page
+      href: power-bi-set-landing-page.md
     - name: Group visuals in a report
       href: desktop-grouping-visuals.md
     - name: Add text boxes, shapes, and smart narratives
