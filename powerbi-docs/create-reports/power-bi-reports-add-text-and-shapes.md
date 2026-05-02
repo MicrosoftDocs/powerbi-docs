@@ -65,7 +65,7 @@ You can also paste bulleted and numbered lists directly from Microsoft Word into
 
 ## Add dynamic values to a text box
 
-You can display dynamic measure values in text boxes rather than just static text. This feature is particularly useful when you want to show key metrics with custom formatting alongside other report content. In the Format pane, you access this functionality through the **Values** section (also referred to as the value part of a text box).
+You can display dynamic measure values in text boxes alongside your typed text. This feature is particularly useful when you want to craft narratives that mix labels and key metrics with custom formatting. In the Format pane, you access this functionality through the **Values** section (also referred to as the value part of a text box).
 
 To add a dynamic measure value to a text box:
 
@@ -78,8 +78,7 @@ To add a dynamic measure value to a text box:
 
 For information about using measures with dynamic format strings in text boxes, see [Use the value part of a text box](desktop-dynamic-format-strings.md#use-the-value-part-of-a-text-box).
 
-> [!NOTE]
-> When you add a value to a text box, any typed text in the text box is removed. Text boxes can display either typed text or a measure value, but not both simultaneously. To display a label with a value, consider using multiple text boxes or a card visual.
+You can mix typed text and measure values in the same text box to craft narratives like *Total sales this month: $5.2M*. Add typed text and insert measure values where you want them to appear.
 
 ### Format dynamic values
 
