@@ -193,7 +193,7 @@ To copy the values for more than one cell:
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
-## Custom totals (preview)
+## Custom totals
 
 [!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
 

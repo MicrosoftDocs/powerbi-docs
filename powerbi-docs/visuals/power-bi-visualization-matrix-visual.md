@@ -113,11 +113,14 @@ To unfreeze row headers, and therefore hide them as you scroll horizontally, rig
 
 To refreeze the row headers, right-click on the row headers again and select **Freeze row headers**.
 
+> [!NOTE]
+> The freeze and unfreeze options in the right-click menu are transient and apply only to your current viewing session. If you change this setting in an editing scenario, such as Power BI Desktop or web editing, the change isn't saved for report consumers.
+
 ### Adjust column width
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
-### Custom totals (preview)
+### Custom totals
 
 [!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
 
