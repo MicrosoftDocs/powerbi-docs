@@ -8,7 +8,7 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2026
+ms.date: 05/01/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn how to add text and shapes to my reports so that I can enhance the visual presentation and clarity of my data.
@@ -54,6 +54,14 @@ This procedure uses the [Retail Analysis sample](sample-retail-analysis.md) avai
 1. In the Power BI service, you can also pin a text box to a dashboard. Select the pin icon, and then select the dashboard where you want to pin it.
 
    :::image type="content" source="media/power-bi-reports-add-text-and-shapes/power-bi-pin-text-box.png" alt-text="Screenshot of a dashboard with a pinned text box.":::
+
+### Use ordered and unordered lists
+
+Text boxes support ordered (numbered) and unordered (bulleted) lists, including nested lists with indentation. Use the list buttons in the text formatting toolbar to start a list, and use the indent controls to create sublevels.
+
+Lists preserve their formatting—indentation, numbering style, and inline formatting like **bold** and *italic*—so your content renders the way you expect on the report page.
+
+You can also paste bulleted and numbered lists directly from Microsoft Word into a text box and the list structure and formatting are preserved. This makes it easier to bring formatted text content from existing documents into your report pages.
 
 ## Add dynamic values to a text box
 
