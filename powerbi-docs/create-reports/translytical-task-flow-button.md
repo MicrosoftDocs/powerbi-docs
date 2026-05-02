@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/16/2025
+ms.date: 05/01/2026
 LocalizationGroup: Create reports
 #customer intent:
 ---
@@ -65,6 +65,15 @@ SelectedCustomerID = SELECTEDVALUE(Customer[CustomerID])
 ```
 
 For more information, see [Create measures for data analysis](../transform-model/desktop-measures.md)
+
+### Optional parameters with default values
+
+Parameters that have a default value defined in the user data function are optional in the Power BI report. For each optional parameter, you can:
+
+* Leave it unmapped to any element in the report. The default value from the function is used.
+* Map it to a report element without requiring the user to enter a value. If the user doesn't provide a value, the default value from the function is used.
+
+For input slicers mapped to an optional parameter, the default value from the function appears as the placeholder value in the slicer, so users can see the value that's used if they don't enter their own.
 
 ## Set up a data function button
 

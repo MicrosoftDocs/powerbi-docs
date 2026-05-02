@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.date: 02/15/2026
+ms.date: 05/01/2026
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the input slicer feature in Power BI, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
@@ -54,6 +54,21 @@ The following filter operators are available:
 Report creators set the initial filter operator using the dropdown on the visual. When the report is published, consumers can select a different filter operator from the dropdown at any time.
 
 Creators can also configure whether the slicer accepts single or multiple filter values in **Format > Slicer settings > Options**.
+
+## Filter numeric columns
+
+The input slicer supports numeric fields. Add a numeric column to the input slicer, then use operator syntax to filter values with expressions like:
+
+- A range, such as `1-2`
+- Greater than, such as `>2`
+- Less than, such as `<2`
+- A single value, such as `1`
+
+You can combine multiple expressions as separate pills (for example, `1`, `2`, `4-5`, and `>600`) to filter to several values or ranges at once.
+
+### Numeric input only
+
+When you use the input slicer without a data column for [translytical task flows](../create-reports/translytical-task-flow-button.md), you can limit the slicer to numeric entry. In the **Format** pane under **Visual** > **Slicer settings** > **Options**, turn on **Numeric input only**. Invalid input shows clear feedback so consumers know what's expected.
 
 ## Work with filter pills
 
@@ -116,7 +131,7 @@ To create an input slicer in Power BI:
 ## Considerations and limitations
 
 - Report creators control whether the slicer accepts single or multiple filter values in **Slicer settings > Options**.
-- The input slicer can only filter text data columns at this time.
+- The input slicer supports text and numeric data columns.
 - Paste from the context menu isn't available, but you can paste text using keyboard shortcuts (Ctrl+V) when the input box is active.
 
 ## Related content
