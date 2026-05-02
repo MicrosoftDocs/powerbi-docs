@@ -26,7 +26,7 @@ You can set the default format string locale in either Power BI Desktop or the P
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 1. Select **File** > **Options and settings** > **Options**.
-1. Under **Current file**, select **Report settings**.
+1. Under **Current file**, select **Regional settings**.
 1. Under **Default format string locale for dates and numbers**, select a locale from the dropdown.
 1. Optionally, select **Default display units to 'none'** to display numbers without abbreviations.
 
@@ -51,9 +51,9 @@ The format string locale setting only affects how values display in visuals.
 
 By default, most visuals have a **Display units** setting of **Auto**, which abbreviates large numbers (for example, *1.2M* instead of *1,200,000*). When you use [dynamic format strings for measures](desktop-dynamic-format-strings.md), or when you set a specific report locale, the abbreviation might not be what you want.
 
-The **Default display units to 'none'** toggle in **Report settings** turns off automatic abbreviation across the entire report, so you don't have to change the **Display units** setting on each visual value element one by one. It works even when the format string locale is set to **Auto**.
+The **Default display units to 'none'** toggle turns off automatic abbreviation across the entire report, so you don't have to change the **Display units** setting on each visual value element one by one. It works even when the format string locale is set to **Auto**.
 
-To turn it on, select **Default display units to 'none'** under **Default format string locale for dates and numbers** in **Report settings**.
+To turn it on, select **Default display units to 'none'** under **Default format string locale for dates and numbers** in the same location as the locale setting (**Current file** > **Regional settings** in Power BI Desktop, or **File** > **Settings** in the Power BI service).
 
 ## Considerations and limitations
 
