@@ -462,6 +462,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - PBIR in [Sovereign Clouds](/industry/sovereign-cloud/overview/microsoft-sovereign-cloud) will not be automatically upgraded in the service prior to General Availability. Until then, Sovereign Cloud customers can test their reports in PBIR format in Power BI Desktop by enabling the PBIR preview features.
 - Large reports with more than 500 files may experience authoring performance issues (report viewing isn't affected).
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
+- Mobile layouts aren't applied.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 - [Visual automatic filters](../../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
 - Not supported in [Template App workspaces](/power-bi/connect-data/service-template-apps-overview)
