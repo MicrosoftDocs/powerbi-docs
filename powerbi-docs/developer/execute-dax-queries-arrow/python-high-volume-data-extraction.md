@@ -2,7 +2,7 @@
 title: "Tutorial: High-volume Python extraction in Fabric notebooks"
 description: Build a Microsoft Fabric notebook that queries multiple semantic models with Execute DAX Queries, materializes Arrow results as pandas DataFrames, and incrementally merges them into a Delta table for Direct Lake analytics.
 ms.topic: tutorial
-ms.date: 04/22/2026
+ms.date: 05/04/2026
 ai-usage: ai-assisted
 #customer intent: As a data scientist or analytics engineer, I want to query multiple semantic models directly into pandas and incrementally persist the results to Delta so that I can reduce serialization overhead and keep Direct Lake scenarios performant.
 ---
@@ -56,7 +56,7 @@ The notebook performs these steps:
 1. Incrementally merge results into a Delta table.
 1. Validate data availability for Direct Lake consumption.
 
-## Step 1: Acquire an Entra Id token for the current user
+## 1 - Acquire an Entra Id token for the current user
 
 In the first code cell, define semantic model targets and acquire a token.
 
@@ -73,7 +73,7 @@ if access_token is None:
     raise RuntimeError(f"Token acquisition failed")
 ```
 
-## Step 2: Execute DAX queries across semantic models
+## 2 - Execute DAX queries across semantic models
 
 Define a helper that executes DAX and returns a pandas DataFrame from Arrow IPC.
 
@@ -142,7 +142,7 @@ for m in models:
 print(f"Extracted {len(frames)} DataFrames.")
 ```
 
-## Step 3: Compare and combine DataFrames
+## 3 - Compare and combine DataFrames
 
 Normalize key columns, then compare model outputs or combine them into a single analytical set.
 
@@ -174,7 +174,7 @@ if "sales_model" in comparison_df and "inventory_model" in comparison_df:
 display(comparison_df.head(20))
 ```
 
-## Step 4: Incrementally merge to a Delta table
+## 4 - Incrementally merge to a Delta table
 
 Use a Delta merge keyed on business-grain columns. This pattern updates changed rows and inserts new rows without rewriting the full table.
 
@@ -204,7 +204,7 @@ WHEN NOT MATCHED THEN INSERT *
 > [!TIP]
 > For very large extraction windows, partition the target Delta table by date and process in bounded slices. This approach improves merge efficiency and helps control CU usage.
 
-## Step 5: Validate Direct Lake readiness
+## 5 - Validate Direct Lake readiness
 
 Confirm that the Delta table is updated and queryable:
 
@@ -249,7 +249,7 @@ Use this cell layout to keep the workflow maintainable:
 
 ## Related content
 
-- [Mastering the Execute DAX Queries API](overview.md)
+- [Understand the Execute DAX Queries API](overview.md)
 - [Get started with the Execute DAX Queries REST API](get-started.md)
-- [Tutorial: Build a .NET mid-tier service with the Execute DAX Queries REST API](dotnet-midtier-service.md)
+- [Tutorial: Build a .NET mid-tier service with the Execute DAX Queries REST API](dotnet-mid-tier-service.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)

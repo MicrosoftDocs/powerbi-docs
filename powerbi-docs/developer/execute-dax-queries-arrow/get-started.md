@@ -2,11 +2,11 @@
 title: Get started with the Execute DAX Queries REST API
 description: Run your first DAX query against a Power BI semantic model and retrieve results in Apache Arrow format using Python, C#, or PowerShell.
 ms.topic: quickstart
-ms.date: 04/09/2026
+ms.date: 05/04/2026
 #customer intent: As a developer, I want to quickly run a DAX query and get Arrow-formatted results so that I can evaluate the API for my use case.
 ---
 
-# Get started with the Execute DAX Queries REST API
+# Quickstart: Run your first DAX query
 
 In this quickstart, you authenticate to Power BI, execute a DAX query against a semantic model, and deserialize the Arrow response into a local data structure.
 
@@ -46,7 +46,7 @@ In this quickstart, you authenticate to Power BI, execute a DAX query against a 
 
 ---
 
-## Step 1: Authenticate
+## 1 - Authenticate
 
 Acquire a bearer token with the `https://analysis.windows.net/powerbi/api/.default` scope.
 
@@ -97,7 +97,7 @@ $accessToken = $token.AccessToken
 
 ---
 
-## Step 2: Execute a DAX query
+## 2 - Execute a DAX query
 
 Send a POST request to the Execute Queries Arrow endpoint with a simple `EVALUATE` statement.
 
@@ -189,7 +189,7 @@ Write-Host "Arrow stream saved to $arrowFile ($($response.Content.Length) bytes)
 
 ---
 
-## Step 3: Inspect the results
+## 3 - Inspect the results
 
 ### [Python](#tab/python)
 
@@ -245,7 +245,7 @@ If you created a Microsoft Entra app registration solely for testing, navigate t
 
 ## Related content
 
-- [Mastering the Execute DAX Queries API](overview.md)
-- [Tutorial: Build a mid-tier DAX query execution service](dotnet-midtier-service.md)
+- [Understand the Execute DAX Queries API](overview.md)
+- [Tutorial: Build a mid-tier DAX query execution service](dotnet-mid-tier-service.md)
 - [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)

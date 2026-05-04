@@ -1,0 +1,53 @@
+### YamlMime:Landing
+
+title: Develop with the Execute DAX Queries REST API
+summary: Learn how to use the Execute DAX Queries REST API to run DAX queries against Power BI semantic models and retrieve results in Apache Arrow IPC format for high-performance analytics.
+
+metadata:
+  title: Execute DAX Queries REST API documentation
+  description: Learn how to use the Execute DAX Queries REST API to run DAX queries against Power BI semantic models and retrieve results in Apache Arrow format.
+  ms.topic: landing-page
+  ms.date: 05/03/2026
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Execute DAX Queries REST API overview
+            url: overview.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with the Execute DAX Queries REST API
+            url: get-started.md
+
+  # Card
+  - title: Tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Build a .NET mid-tier service"
+            url: dotnet-mid-tier-service.md
+          - text: "High-volume Python extraction for data science"
+            url: python-high-volume-data-extraction.md
+
+  # Card
+  - title: Best practices
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Best practices for the Execute DAX Queries REST API
+            url: best-practices.md
+
+  # Card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Execute DAX Queries REST API (Arrow)
+            url: /rest/api/power-bi/datasets/execute-dax-queries
+          - text: Execute Queries REST API (JSON)
+            url: /rest/api/power-bi/datasets/execute-queries

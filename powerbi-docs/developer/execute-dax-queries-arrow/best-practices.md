@@ -1,8 +1,8 @@
 ---
 title: Best practices for the Execute DAX Queries REST API
 description: Performance tips, error handling patterns, and production guidance for using the Execute DAX Queries API with Apache Arrow format.
-ms.topic: concept
-ms.date: 04/09/2026
+ms.topic: best-practice
+ms.date: 05/04/2026
 #customer intent: As a developer, I want to follow best practices when using the Arrow endpoint so that my queries are reliable, performant, and well-architected.
 ---
 
@@ -46,7 +46,7 @@ The Execute DAX Queries API can return errors in two ways:
 1. **HTTP-level errors** — Standard HTTP status codes with a JSON error body. Common codes:
 
    | Status code | Meaning | Action |
-   |---|---|---|
+   | --- | --- | --- |
    | `400` | Bad request (invalid DAX, missing parameters) | Fix the request — don't retry. |
    | `401` | Unauthorized (expired or invalid token) | Refresh the token and retry once. |
    | `403` | Forbidden (insufficient permissions) | Verify the caller has Build and Read permissions on the semantic model. |
@@ -89,7 +89,7 @@ Track the health and performance of your API usage:
 
 ## Related content
 
-- [Mastering the Execute DAX Queries API](overview.md)
+- [Understand the Execute DAX Queries API](overview.md)
 - [Get started with the Execute DAX Queries REST API](get-started.md)
-- [Tutorial: Build a mid-tier DAX query execution service](dotnet-midtier-service.md)
+- [Tutorial: Build a mid-tier DAX query execution service](dotnet-mid-tier-service.md)
 - [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
