@@ -6,6 +6,10 @@ summary: Learn how to use the Execute DAX Queries REST API to run DAX queries ag
 metadata:
   title: Execute DAX Queries REST API documentation
   description: Learn how to use the Execute DAX Queries REST API to run DAX queries against Power BI semantic models and retrieve results in Apache Arrow format.
+  author: kgremban
+  ms.author: kgremban
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
   ms.topic: landing-page
   ms.date: 05/03/2026
 
