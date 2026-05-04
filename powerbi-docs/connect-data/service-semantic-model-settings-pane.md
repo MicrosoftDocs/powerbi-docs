@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-The semantic model settings pane is a side pane in the Power BI service that lets you review and change settings for a semantic model without leaving your current page. The pane opens on the right side of the browser window, keeps the surrounding context visible, and provides the same settings that are on the full semantic model settings page.
+The semantic model settings pane is a side pane in the Power BI service that you use to review and change settings for a semantic model without leaving your current page. The pane opens on the right side of the browser window, keeps the surrounding context visible, and provides the same settings that are on the full semantic model settings page.
 
 > [!NOTE]
 > The semantic model settings pane is currently in preview. Features and behavior might change before general availability.
@@ -25,11 +25,11 @@ This article describes how to open the settings pane, what you can do in it, and
 
 ## Open the settings pane
 
-The settings pane isn't displayed by default. To display it, go to the semantic model's settings page in the Power BI service, such as by clicking settings in the semantic models context menu, and then select the **Open settings pane >>** link at the top of the settings page. The settings pane opens on the right side of the page.
+The settings pane isn't displayed by default. To display it, go to the semantic model's settings page in the Power BI service, such as by selecting **Settings** in the semantic models context menu. Then, select the **Open settings pane >>** link at the top of the settings page. The settings pane opens on the right side of the page.
 
 ## What you can do in the settings pane
 
-The settings pane provides the same settings that you find on the semantic model settings page. Settings are grouped into expandable sections in the main pane and into tabs at the top of the pane. Select a section or tab to view or change its settings. To quickly find a specific setting, use the search box at the top of the pane to search across all sections and tabs.
+The settings pane provides the same settings that you find on the semantic model settings page. The main pane groups settings into expandable sections, and the top of the pane organizes settings into tabs. Select a section or tab to view or change its settings. To quickly find a specific setting, use the search box at the top of the pane to search across all sections and tabs.
 
 :::image type="content" source="./media/service-semantic-model-settings-pane/settings-pane.png" alt-text="Screenshot of the semantic model settings pane open on the right side of a semantic model page in the Power BI service.":::
 
@@ -71,4 +71,3 @@ To change settings for a semantic model, you need to be the model owner or have 
 - [Configure scheduled refresh](refresh-scheduled-refresh.md)
 - [Data refresh in Power BI](refresh-data.md)
 - [Manage your data source - import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
-
