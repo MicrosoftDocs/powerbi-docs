@@ -2,7 +2,7 @@
 title: "Tutorial: Build a .NET mid-tier service with the Execute DAX Queries REST API"
 description: Modify an existing .NET mid-tier DAX query service to use the Execute DAX Queries REST API with Apache Arrow IPC format instead of XMLA/ADOMD.
 ms.topic: tutorial
-ms.date: 04/13/2026
+ms.date: 05/04/2026
 #customer intent: As a .NET developer, I want to convert an existing XMLA-based mid-tier service to use the Arrow endpoint so that I can take advantage of streaming Arrow IPC responses for high-performance DAX query execution.
 ---
 
@@ -27,7 +27,7 @@ For details on the sample service architecture, see the [sample README](https://
 The sample service uses the XMLA endpoint with ADOMD.NET. This tutorial converts it to use the Execute DAX Queries REST API, which returns results in Apache Arrow IPC format. Both approaches let you run DAX queries against Power BI semantic models, but they differ in important ways.
 
 | | XMLA / ADOMD.NET | Execute DAX Queries REST API |
-|---|---|---|
+| --- | --- | --- |
 | **Protocol** | XMLA over HTTPS (proprietary binary) | Standard REST (HTTP POST / response) |
 | **Client library** | `Microsoft.AnalysisServices.AdomdClient` — Windows-oriented (.NET Core package available but limited cross-platform support), manages sessions and connections | `HttpClient` + `Apache.Arrow` — lightweight, cross-platform, stateless |
 | **Authentication** | Connection string with access token; connection-level session | Bearer token per request; no session state |
@@ -37,7 +37,7 @@ The sample service uses the XMLA endpoint with ADOMD.NET. This tutorial converts
 
 Choose the **Execute DAX Queries REST API** when you're building a new service or your downstream consumers can benefit from Arrow IPC (for example, analytics pipelines, Python notebooks, or columnar databases). Keep **XMLA/ADOMD** if you need MDX support or rely on session-level features like calculated members scoped to a session.
 
-## Step 1: Clone and verify the sample
+## 1 - Clone and verify the sample
 
 Clone the repository and confirm it compiles:
 
@@ -49,7 +49,7 @@ dotnet build
 
 The solution contains two projects: the mid-tier service (`Microsoft.Samples.XMLA.ExecuteQueries`) and a load test client (`Tester`). You don't need to run the original service against a live workspace — just verify the build succeeds before making changes.
 
-## Step 2: Update NuGet dependencies
+## 2 - Update NuGet dependencies
 
 In the `Microsoft.Samples.XMLA.ExecuteQueries` project, remove the ADOMD.NET package and add packages for the Arrow API:
 
@@ -62,7 +62,7 @@ dotnet add package Microsoft.Identity.Client
 
 Keep the `Microsoft.PowerBI.Api` package if you want to reuse its request/response model types; otherwise remove it and define your own DTOs.
 
-## Step 3: Replace ADOMD connection pooling with MSAL token caching
+## 3 - Replace ADOMD connection pooling with MSAL token caching
 
 The sample uses `AdomdConnectionPool.cs` to pool XMLA connections. The Arrow API is a stateless REST endpoint, so you replace connection pooling with MSAL token caching.
 
@@ -100,7 +100,7 @@ MSAL caches tokens automatically — subsequent calls return the cached token un
 
 Delete `AdomdConnectionPool.cs` and `AdomdExtensions.cs`. They're no longer needed.
 
-## Step 4: Update the query handler to call the Arrow API
+## 4 - Update the query handler to call the Arrow API
 
 In `Handlers.cs`, replace the ADOMD query execution with an HTTP call to the Execute DAX Queries endpoint.
 
@@ -132,7 +132,7 @@ response.EnsureSuccessStatusCode();
 
 Use `HttpCompletionOption.ResponseHeadersRead` so the response body streams without buffering — this matters for large result sets.
 
-## Step 5: Handle the Arrow IPC response
+## 5 - Handle the Arrow IPC response
 
 The Execute DAX Queries API returns one or more Arrow IPC streams concatenated in the response body. Each stream includes schema metadata that indicates its purpose:
 
@@ -176,7 +176,7 @@ if (metadata.TryGetValue("IsError", out var isError)
 }
 ```
 
-## Step 6: Simplify workspace configuration
+## 6 - Simplify workspace configuration
 
 The sample's `appsettings.json` configures XMLA endpoints and dataset name lookups because ADOMD connects by catalog name. The Arrow REST API uses workspace and dataset GUIDs directly from the request URL, so the configuration is simpler.
 
@@ -194,7 +194,7 @@ Update `appsettings.json` with your service principal credentials and remove the
 
 The `Workspaces` section with `XmlaEndpoint` and `Datasets` arrays is no longer needed. You can delete `Workspace.cs` and `Dataset.cs`, or repurpose the `Datasets` list as an allowlist for governance (restricting which datasets the service can query).
 
-## Step 7: Register services and update routing
+## 7 - Register services and update routing
 
 In `Program.cs`, replace the ADOMD pool and workspace registrations with the new services:
 
@@ -214,7 +214,7 @@ app.MapPost(
 
 The existing rate limiter, health probe, and request counter from the sample remain useful as-is.
 
-## Step 8: Test the service
+## 8 - Test the service
 
 Run the service:
 
@@ -269,7 +269,7 @@ When you're done testing:
 
 ## Related content
 
-- [Mastering the Execute DAX Queries API](overview.md)
+- [Understand the Execute DAX Queries API](overview.md)
 - [Get started with the Execute DAX Queries REST API](get-started.md)
 - [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)
