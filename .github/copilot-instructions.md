@@ -54,4 +54,8 @@ Below are instructions specific to this repository. These may be updated by repo
 
 <!--- Add additional repository level instructions below. Do NOT update this line or above. --->
 
+### Protected Content
+
+Some sections in this repository are marked with `<!-- PG-APPROVED SECURITY CONTENT -->` HTML comments. These sections contain security-related content that was reviewed and approved by the Power BI product group (PG). Do not edit, remove, condense, or rewrite these sections. If changes appear necessary, flag them for human review rather than making the edit.
+
 

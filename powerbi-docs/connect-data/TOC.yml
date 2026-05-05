@@ -357,5 +357,7 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Third-party compatibility with semantic models"
+      href: semantic-models-third-party.md
     - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md

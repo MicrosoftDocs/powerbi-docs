@@ -1,5 +1,5 @@
 ---
-title: Using visual calculations in Power BI Desktop
+title: Using Visual Calculations in Power BI Desktop
 description: Learn how to create visual calculations using Data Analysis Expressions (DAX) formulas in Power BI Desktop.
 author: eric-urban
 ms.author: eur
@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 04/09/2026
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, LOOKUP, LOOKUPWITHTOTALS, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
-# Using visual calculations (preview)
-
-> [!NOTE]
-> Visual calculations are currently in  **preview**.
+# Using visual calculations
 
 A visual calculation is a DAX calculation defined and executed directly on a visual. Visual calculations make it easier to create calculations that were previously hard to create, leading to simpler DAX, easier maintenance, and better performance.
 
@@ -31,16 +28,13 @@ A calculation can refer to any data in the visual including columns, measures, o
 Visual calculations differ from the other calculations options in DAX:
 
 * Visual calculations aren't stored in the model, and instead are stored on the visual. This means visual calculations can only refer to what's on the visual. Anything in the model must be added to the visual before the visual calculation can refer to it, freeing visual calculations from being concerned with the complexity of filter context and the model.
-
 * Visual calculations combine the simplicity of context from calculated columns with the on-demand calculation flexibility from measures.
-
 * Compared to measures, visual calculations operate on aggregated data instead of the detail level, often leading to performance benefits. When a calculation can be achieved either by a new measure or a visual calculation, the latter often leads to better performance.
-
 * Since visual calculations are part of the visual, they can refer to the visual structure, which leads to more flexibility.
 
 For a more in-depth comparison of ways of adding calculations in Power BI, see [Using calculations options in Power BI Desktop](desktop-calculations-options.md).
 
-Once you enable visual calculations, you can:
+With visual calculations, you can:
 
 * Add visual calculations to your reports
 * Hide certain fields
@@ -48,12 +42,6 @@ Once you enable visual calculations, you can:
 * Make flexible visual calculations by referring to the visual's axes
 
 The following sections provide details about how each of the elements, described in the previous bullets, work with visual calculations.
-
-## Enable visual calculations
-
-Before September 2024, to use visual calculations, you must enable it in **Options and Settings** > **Options** > **Preview features**. Select **Visual calculations** and select **OK**. Visual calculations are enabled after Power BI Desktop is restarted.
-
-From September 2024 onwards, this step is no longer necessary as visual calculations are enabled by default. While they're still in preview, you can use the above settings to disable visual calculations if preferred.
 
 ## Adding a visual calculation
 
@@ -122,12 +110,12 @@ The following templates are available:
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
 ## Parameter pickers
+
 Parameter pickers make it easy to select values for parameters in visual calculations functions. For example, here we loaded the **Look up a value with totals** template:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png" alt-text="Screenshot showing the parameter picker." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-parameter-picker.png":::
 
 You can also activate the parameter pickers using the **CTRL+SPACE** keyboard shortcut.
-
 
 ## :::no-loc text="Axis":::
 
@@ -146,13 +134,17 @@ Many functions have an optional **:::no-loc text="Axis":::** parameter, which ca
 ## :::no-loc text="Reset":::
 
 Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. It does this by partitioning the target column. As calculations are performed within a partition, how the column is divided in partitions decides if a calculation resets.
+
 The :::no-loc text="Reset"::: parameter is set to **:::no-loc text="NONE":::** by default, which means the visual calculation is never restarted.
+
 The :::no-loc text="Reset"::: parameter accepts different types of values:
+
 * integers
 * column references
 * Special [synonyms](#synonyms): :::no-loc text="HIGHESTPARENT":::, :::no-loc text="LOWESTPARENT":::, :::no-loc text="NONE":::
 
 In every case it specifies a single level in the visual calculation hierarchy (let’s call it the target level). However, how this level is interpreted in the calculation can vary.
+
 The :::no-loc text="Reset"::: behavior operates in two different modes: [absolute](#absolute-mode) and [relative](#relative-mode).
 
 When using integer values for the parameter or their equivalents :::no-loc text="NONE":::, :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, you can choose between these two modes via the integer’s signal: positive values perform a reset in absolute mode, and negative values perform a reset in relative mode (and zero does no reset at all, the default behavior).
@@ -160,6 +152,7 @@ When using integer values for the parameter or their equivalents :::no-loc text=
 If you specify a column reference, you're also operating in absolute mode. These values determine how the target column is partitioned and therefore if it resets. These two modes are described in the following section:
 
 ### Absolute mode
+
 This mode indicates that the calculation should be partitioned by the target column and all those above it, and this applies at every level in the calculation. At levels above the target (where the target column isn’t present, and possibly others), the calculation is partitioned by the remaining columns available.
 The positive integer value identifies the target column starting from the top (the top column is 1, the next is 2, etc.). It goes up to N (the number of columns in the hierarchy), and any higher values are trimmed down. Alternatively, one can also specify the column directly.
 
@@ -174,6 +167,7 @@ For example, consider a visual calculation with these hierarchy levels: Year, Qu
 |Grand total level|None|None|None|None|
 
 ### Relative mode
+
 Given a negative integer value –X, at each level the calculation is partitioned by all columns X levels or more above it in the hierarchy (or not partitioned at all if no such level exists).
 Valid values for this mode are between -1 and -N+1 (where N is the number of columns in the hierarchy), and any lower values are trimmed up.
 Again, consider the visual calculation described earlier. The table below shows how the calculation will be partitioned at each level depending on the value of Reset:
@@ -187,12 +181,15 @@ Again, consider the visual calculation described earlier. The table below shows 
 |Grand total level|None|None|None|
 
 ### Synonyms
+
 :::no-loc text="Reset"::: also provides the following synonyms:
+
 * **:::no-loc text="NONE":::** is the default value. It doesn't reset the calculation and is equivalent to 0.
 * **:::no-loc text="HIGHESTPARENT":::** performs an absolute reset by the highest level and is Equivalent to 1.
 * **:::no-loc text="LOWESTPARENT":::** performs a relative reset by the immediate parent and is equivalent to -1.
 
 ### Examples of using :::no-loc text="Reset":::
+
 For example, consider the visual calculation described earlier. The visual calculations are equivalent and return the sum of *Sales Amount* that restarts for every year, regardless of the level the calculation is evaluated on (see [absolute mode](#absolute-mode)):
 
 ```dax
@@ -261,6 +258,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
+
 ## Example 1: Using visual calculation to return a Hex color code for conditional formatting
 
 Step 1: Select the visual you would like to use the conditional formatting in:
@@ -305,41 +303,39 @@ Step 9: Enjoy your conditional formatted visual!
 
 ## Considerations and limitations
 
-Visual calculations are currently in preview, and during preview, you should be aware of the following considerations and limitations:
+### Unsupported visual types
 
-* Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
-* The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Slicer
-  * R visual
-  * Python visual
-  * Key Influencers
-  * Decomposition Tree
-  * Q&A
-  * Smart Narrative
-  * Metrics
-  * Paginated Report
-  * Power Apps
-  * Power Automate
-  * Small multiples
-  * Play axis on Scatter chart
-* Performance of this feature isn't representative of the end product.
-* Reuse of visual calculations using copy/paste or other mechanisms isn't available.
-* You can't filter on visual calculations.
-* A visual calculation can't refer to itself on the same or different detail level.
-* [Personalization](../explore-reports/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
-* You can't pin a visual that uses visual calculations or hidden fields to [a dashboard](../create-reports/service-dashboards.md).
-* You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
-* When exporting data from visuals, visual calculation results aren't included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
-* You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
-* You can't set [data categories](desktop-data-categorization.md) on visual calculations.
-* You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
-* You can't change the sort order for visual calculations.
-* Live connections to SQL Server Analysis Services versions released before version 2025 aren't supported.
-* Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
-* [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
-* You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
-* You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
-* IntelliSense isn't available in Power BI embedded.
+Visual calculations and hidden fields don't work with the following visuals:
+
+* Slicer, R visual, Python visual
+* Key Influencers, Decomposition Tree, Q&A, Smart Narrative
+* Metrics, Paginated Report, Power Apps, Power Automate
+* Small multiples, Play axis on Scatter chart
+* Custom visuals
+
+### Unsupported features
+
+The following features aren't available with visual calculations:
+
+* Filtering, sorting, or [changing aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated)
+* Self-referencing (a calculation can't refer to itself)
+* Copy/paste or reuse across visuals
+* [Data categories](desktop-data-categorization.md), [data limits](../visuals/power-bi-data-points.md), or [show items with no data](../create-reports/desktop-show-items-no-data.md)
+* [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md) (can't set or use as format string)
+* [Personalization](../explore-reports/end-user-personalize-visuals.md) of visual calculations or hidden fields
+* *See records* drill-through
+* IntelliSense in Power BI embedded
+
+### Publishing and sharing limitations
+
+* Can't pin to [dashboards](../create-reports/service-dashboards.md)
+* Can't use [Publish to web](../collaborate-share/service-publish-to-web.md)
+* Data exports exclude visual calculation results; hidden fields only appear in [underlying data](../visuals/power-bi-visualization-export-data.md) exports
+
+### Other limitations
+
+* [Field parameters](../create-reports/power-bi-field-parameters.md) work with visual calculations but have some limitations.
+* Live connections to SQL Server Analysis Services require version 2025 or later.
 
 ## Related content
 

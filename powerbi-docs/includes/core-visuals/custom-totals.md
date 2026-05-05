@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 12/1/2025
+ms.date: 04/22/2026
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
@@ -72,7 +72,6 @@ Once a custom total is set, you can use the **Reset to default** option to get b
 
 #### Considerations and limitations
 
-- To use custom totals, make sure [visual calculation preview is turned on](../../transform-model/desktop-visual-calculations-overview.md#enable-visual-calculations).
 - Custom totals aren't available in [Explore](../../consumer/explore-data-service.md).
 - Custom totals are only available on the table and matrix visual.
 - Custom totals are only available for numerical columns.

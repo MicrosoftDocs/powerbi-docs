@@ -1,6 +1,6 @@
 ---
-title: "Power BI usage scenarios: Advanced data preparation"
-description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows."
+title: "Power BI usage scenarios: Advanced data preparation (legacy)"
+description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows (legacy)."
 author: dknappettmsft 
 ms.author: daknappe
 ms.reviewer: daengli
@@ -11,9 +11,12 @@ ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
-# Power BI usage scenarios: Advanced data preparation
+# Power BI usage scenarios: Advanced data preparation (legacy)
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
+
+> [!NOTE]
+> This article describes usage scenarios for Power BI Dataflow Gen1, which is now in a legacy state. For new data preparation projects, consider [Dataflow Gen2 in Data Factory for Microsoft Fabric](/fabric/data-factory/dataflows-gen2-overview), which offers improved performance, more destinations, and built-in AI. See [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1) for migration guidance.
 
 Data preparation (sometimes referred to as ETL, which is an acronym for _Extract, Transform, and Load_) activities often involve a large effort. The time, skill, and effort involved with collecting, cleaning, combining, and enriching data depends on the quality and structure of source data.
 

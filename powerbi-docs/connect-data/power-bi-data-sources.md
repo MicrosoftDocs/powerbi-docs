@@ -23,7 +23,7 @@ Each data source article in the Power Query documentation describes connector ca
 
 For a list of the connectors available in Power Query, see [Connectors in Power Query](/power-query/connectors/).
 
-For information about dataflows in Power BI, see [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md).
+For information about dataflows (legacy) in Power BI, see [Configure and consume a dataflow](../transform-model/dataflows/dataflows-configure-consume.md).
 
 ## Considerations and limitations
 

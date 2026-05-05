@@ -32,4 +32,4 @@ The Selection pane also has an appearance indication for each visual in the list
 * [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
 * [Optimize visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)
 * [Create an initial layout on the mobile layout canvas](power-bi-create-mobile-optimized-report-initial-layout.md)
-* [Publish a mobile-optimized report](power-bi-create-mobile-optimized-report-about.md#publish-a-mobile-optimized-report)
+* [Publish a mobile-optimized report](power-bi-create-mobile-optimized-report-about.md#publish-a-mobile-optimized-power-bi-report)

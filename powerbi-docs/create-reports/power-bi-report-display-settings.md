@@ -1,25 +1,28 @@
 ---
-title: Apply Page Display Settings in a Power BI Report
+title: Apply page size and settings in a Power BI report
 description: Learn how to configure page display and view settings in Power BI reports to control layout, aspect ratios, and object positioning for optimal viewing across different screens.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: zoedouglas
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2025
+ms.date: 04/13/2026
 ms.custom: video-removed
 ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
-# Apply page display settings in a Power BI report
+# Apply page size and settings in a Power BI report
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-We understand it's critical to keep your report layout precise. Sometimes, it can be challenging, because you and your colleagues may view those reports on screens with different aspect ratios and sizes.
+Power BI reports display on screens with different sizes and aspect ratios. You can configure your report's page size and display settings to control how content appears across devices.
 
-The default display view is **Fit to page**, and the default display size is **16:9**. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: ***Page view*** settings and ***Page size*** settings.
+Use **Page view** settings to control how the report fits in the browser window. Use **Canvas settings** to set the page dimensions and aspect ratio.
+
+> [!NOTE]
+> This article covers desktop layout view settings. For reports viewed on mobile devices, you can create a separate mobile-optimized layout. See [Create mobile-optimized Power BI reports](power-bi-create-mobile-optimized-report-about.md).
 
 ## Where to find page view settings
 
@@ -60,12 +63,39 @@ The second set of Page view settings controls the positioning of objects on the 
 
 :::image type="content" source="media/power-bi-report-display-settings/power-bi-canvas-settings.png" alt-text="Screenshot of canvas settings options.":::
 
-**Canvas** settings, formerly called *page size* settings, are in the **Visualizations** pane. They control the display ratio and actual size (in pixels) of the report canvas:
+When you don't have anything selected on the page canvas, the **Visualizations** pane shows **Format page** options. Expand **Canvas settings** to control the aspect ratio, dimensions, and vertical alignment of the report canvas.
 
-- 4:3 ratio
-- 16:9 ratio (default)
-- Letter
-- Custom (height and width in pixels)
+### Type
+
+The **Type** dropdown sets the aspect ratio:
+
+- **16:9** (default): Widescreen aspect ratio
+- **4:3**: Standard aspect ratio
+- **Letter**: Letter page dimensions
+- **Tooltip**: Sized for tooltip pages
+- **Custom**: Specify custom height and width in pixels
+
+### Size
+
+When you select a standard aspect ratio like 16:9, the **Size** dropdown offers common screen dimensions:
+
+| Size | Description |
+|------|-------------|
+| 1280 x 720 (HD) | Standard HD resolution |
+| 1920 x 1080 (Full HD) | Full HD, common for presentations |
+| 2560 x 1440 (QHD) | Quad HD resolution |
+| 3840 x 2160 (4K UHD) | Ultra HD resolution |
+
+### Vertical alignment
+
+The **Vertical alignment** dropdown controls how content aligns vertically on the canvas:
+
+- **Top**: Aligns content to the top of the canvas
+- **Middle**: Centers content vertically
+
+### Set default page size in a theme
+
+You can specify the default page size for new pages in a [custom report theme](desktop-report-themes.md) JSON file. This setting applies to new pages added to the report, not existing pages.
 
 ## Related content
 
