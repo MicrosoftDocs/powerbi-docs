@@ -50,6 +50,8 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 ### File picker for saving and uploading Power BI files to OneDrive and SharePoint
 
+> [!IMPORTANT]
+> Starting in October 2026, users still utilizing versions of Power BI Desktop from March 2026 or earlier will no longer be able to save and share in Power BI Desktop. Users should plan to use the most up-to-date version of Power BI Desktop to continue using the save/share experience in Power BI. 
 
 The file picker in Power BI desktop makes it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
 
@@ -156,6 +158,7 @@ Some considerations and limitations:
 - These features don’t work with personal OneDrive accounts.
 - When you share a link to a file with another person, the recipient has to sign-in before they can view the file.
 - Only **.PBIX files** can be saved to OneDrive and SharePoint.
+- Starting in October 2026, users still utilizing versions of Power BI Desktop from March 2026 or earlier will no longer be able to save and share in Power BI Desktop. Users should plan to use the most up-to-date version of Power BI Desktop to continue using the save/share experience in Power BI. 
 
 ## Collaborating on reports
 
