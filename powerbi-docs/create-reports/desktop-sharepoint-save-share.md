@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 # Power BI Desktop OneDrive and SharePoint integration
 
-In this article you'll learn how to work seamlessly in Power BI Desktop with the ability to open, save, and share files to OneDrive and SharePoint.
+In this article, you learn how to work seamlessly in Power BI Desktop with the ability to open, save, and share files to OneDrive and SharePoint.
 These capabilities help you with file versioning, collaborating with other authors, and ensuring a backup file is always available in the cloud.
 
 > [!NOTE]
@@ -50,6 +50,8 @@ If your Power BI admin turned off the capability for your organization, you rece
 
 ### File picker for saving and uploading Power BI files to OneDrive and SharePoint
 
+> [!IMPORTANT]
+> Starting in October 2026, Power BI Desktop versions from March 2026 or earlier will no longer support saving and sharing. To continue using the save and share experience, update to the latest version of Power BI Desktop before October 2026.
 
 The file picker in Power BI desktop makes it easier to save to and open files from OneDrive and SharePoint. Now, you can smoothly navigate between folders in various OneDrive and SharePoint folders, and have easy access to reports in OneDrive and SharePoint. 
 
@@ -156,6 +158,7 @@ Some considerations and limitations:
 - These features don’t work with personal OneDrive accounts.
 - When you share a link to a file with another person, the recipient has to sign-in before they can view the file.
 - Only **.PBIX files** can be saved to OneDrive and SharePoint.
+- Starting in October 2026, Power BI Desktop versions from March 2026 or earlier will no longer support saving and sharing. To continue using the save and share experience, update to the latest version of Power BI Desktop before October 2026.
 
 ## Collaborating on reports
 
