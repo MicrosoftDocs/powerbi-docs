@@ -128,8 +128,6 @@ In this Exploration experience, add filters as pills at the top of view, so you 
 
 :::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
 
-## Add calculations to your Exploration
-
 ### Layout options
 
 Switch between a horizontal or vertical orientation by using the **Split view horizontally** and **Split view vertically** buttons along the top.  
