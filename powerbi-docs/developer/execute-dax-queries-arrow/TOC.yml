@@ -1,21 +1,25 @@
+items:
 - name: Execute DAX Queries REST API
   href: index.yml
   expanded: true
+
+- name: Overview
+  expanded: true
   items:
   - name: Overview
-    expanded: true
-    items:
-    - name: Overview
-      href: overview.md
-  - name: Get started
-    items:
-    - name: Run your first Execute DAX Queries request
-      href: get-started.md
-  - name: Tutorials
-    items:
-    - name: "Build a .NET mid-tier service"
-      href: dotnet-mid-tier-service.md
-    - name: "High-volume Python extraction for data science"
-      href: python-high-volume-data-extraction.md
-  - name: Best practices
-    href: best-practices.md
+    href: overview.md
+
+- name: Get started
+  items:
+  - name: Run your first Execute DAX Queries request
+    href: get-started.md
+
+- name: Tutorials
+  items:
+  - name: "Build a .NET mid-tier service"
+    href: dotnet-mid-tier-service.md
+  - name: "High-volume Python extraction for data science"
+    href: python-high-volume-data-extraction.md
+
+- name: Best practices
+  href: best-practices.md
