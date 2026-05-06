@@ -17,7 +17,7 @@ Follow these recommendations to get the most out of the Execute DAX Queries REST
 
 Power BI offers two REST APIs for executing DAX queries. Choose the one that matches your client's capabilities:
 
-- **[Execute DAX Queries](/rest/api/power-bi/datasets/execute-dax-queries) (Arrow)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark. This API also supports advanced parameters like `timeout` and `resultsetRowcountLimit`. Requires Premium or Fabric capacity.
+- **[Execute DAX Queries](/rest/api/power-bi/datasets/execute-dax-queries) (Arrow)** — Use whenever your client application can consume binary Arrow IPC streams. Arrow delivers smaller payloads, lossless type fidelity, and zero-copy deserialization into columnar frameworks like pandas, Polars, and Apache Spark. This API also supports advanced parameters like `queryTimeout` and `resultsetRowcountLimit`. Requires Premium or Fabric capacity.
 - **[Execute Queries](/rest/api/power-bi/datasets/execute-queries) (JSON)** — Use when your consumer is a low-code/no-code platform, Power Automate flow, or any tool that can only parse JSON. This API works on Pro, PPU, and Premium/Fabric capacities but has a hard limit of 100,000 rows and 1,000,000 values per query.
 
 As a general rule, if your result set exceeds a few hundred rows, feeds into an analytics pipeline, or requires precise type fidelity, use the Execute DAX Queries API with Arrow.

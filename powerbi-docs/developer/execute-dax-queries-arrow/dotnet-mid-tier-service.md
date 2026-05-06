@@ -122,7 +122,7 @@ using var request = new HttpRequestMessage(HttpMethod.Post, url);
 request.Headers.Authorization =
     new AuthenticationHeaderValue("Bearer", token);
 request.Content = new StringContent(
-    JsonSerializer.Serialize(new { query, timeout = 120 }),
+    JsonSerializer.Serialize(new { query, queryTimeout = 120 }),
     Encoding.UTF8, "application/json");
 
 var response = await httpClient.SendAsync(
