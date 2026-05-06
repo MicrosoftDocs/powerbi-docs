@@ -63,6 +63,8 @@
       href: service-connect-cloud-data-sources.md      
     - name: "Create and share cloud data sources in the Power BI service"
       href: service-create-share-cloud-data-sources.md          
+    - name: "Manage semantic model settings"
+      href: service-semantic-model-settings-pane.md
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
