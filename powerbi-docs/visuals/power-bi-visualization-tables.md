@@ -1,10 +1,9 @@
 ---
 title: Create and Format Table Visualizations in Power BI
-description: Learn how to create, format, and optimize table visualizations in Power BI reports and dashboards, including resizing column widths. Discover best-use scenarios.  
+description: "Learn how to create and format table visualizations in Power BI reports and dashboards. Compare data with conditional formatting, custom totals, and more. Get started now."  
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -20,7 +19,7 @@ ai-usage: ai-assisted
 
 A table is a grid that contains related data in a logical series of rows and columns. A table can also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. In the following example, the table displays five different measures for the **Category** items, including average prices, year over year sales, and sales goals.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five measures for Category items." border="false":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table visualization in Power BI displaying five measures for Category items, including average prices and sales goals." border="false":::
 
 Power BI helps you create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, then cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -68,7 +67,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the **Visualizations** pane to select the table icon.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Image of the icon for a table visual." border="false":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Screenshot of the table visual icon in the Power BI Visualizations pane." border="false":::
 
     :::image type="content" source="media/power-bi-visualization-tables/table-category.png" alt-text="Screenshot of the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
