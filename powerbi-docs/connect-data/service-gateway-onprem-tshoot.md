@@ -304,6 +304,9 @@ On the details page for the semantic model, select **Refresh** in the ribbon, th
 
 You can also access the **Refresh history** from the semantic model settings. Select **File** in the ribbon, then select **Settings**.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
   ![Navigation to semantic model settings to access Refresh history](media/service-gateway-onprem-tshoot/refresh-history-2.png)
 
   ![Refresh history table listing scheduled and on-demand refresh operations](media/service-gateway-onprem-tshoot/refresh-history-3.png)

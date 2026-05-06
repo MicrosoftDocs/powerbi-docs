@@ -32,6 +32,9 @@ Q&A needs to be enabled for your model because Copilot uses the same underlying 
 
 For some sources, like DirectQuery or Direct Lake models, you might need to enable Q&A manually, either in your semantic model settings in the Service or in your Data Load settings in Power BI Desktop. To learn more about the types of data sources Q&A supports, see [Data sources for natural language Q&A](../natural-language/q-and-a-data-sources.md).
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 ## Use the feature
 
 This capability allows Copilot to generate queries and return visuals based on data in your semantic model. It's available in both view and edit modes in Power BI. Both report authors and viewers can access this feature by asking Copilot for data related to their dataset or report.

@@ -57,6 +57,9 @@ Most of the settings described in this article are found in the semantic model s
 
 You can also manage all your connections from anywhere in the Power BI service by selecting the **Settings** gear icon in the upper right corner, and then selecting **Manage connections and gateways**.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 ## Compare shareable cloud connection to other connections
 
 By default, when you create a Power BI Desktop report that connects to a cloud data source, then upload it into a workspace in the Power BI service, Power BI creates a personal cloud connection and binds it to your semantic model. You must provide credentials for this connection. If an existing personal cloud connection is available, you likely provided the credentials previously. 

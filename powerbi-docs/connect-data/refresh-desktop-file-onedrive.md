@@ -31,6 +31,9 @@ When you refresh the semantic model, Power BI doesn't connect to the file on One
 
 By default, Power BI updates model information from OneDrive and SharePoint on an hourly basis. If you want these updates to occur manually, you can disable automatic OneDrive refresh in the semantic model settings. Open the semantic model settings, expand the **OneDrive refresh** section, and set the toggle to **Off**.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-off.png" alt-text="Screenshot showing automatic OneDrive refresh off toggle.":::
  
 ## Semantic model owners versus users with write permission
