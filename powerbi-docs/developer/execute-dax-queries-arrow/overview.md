@@ -83,7 +83,7 @@ Before adopting the Execute DAX Queries API, review the following differences an
 ## Related content
 
 - [Get started with the Execute DAX Queries REST API](get-started.md)
-- [Tutorial: Build a mid-tier DAX query execution service](dotnet-midtier-service.md)
+- [Tutorial: Build a mid-tier DAX query execution service](dotnet-mid-tier-service.md)
 - [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)
 - [Execute DAX Queries REST API reference](/rest/api/power-bi/datasets/execute-dax-queries)
