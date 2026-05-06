@@ -54,7 +54,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Faster access to web modeling for semantic model authors | Users with edit permissions on semantic models are now taken directly to the web modeling experience instead of the model details page. Most actions from the model details page are now integrated into model view. |        |
+| Faster access to web modeling for semantic model authors | Users with edit permissions on semantic models are now taken directly to the web modeling experience instead of the model details page. Most actions from the model details page are now integrated into model view. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
 
 ## Data connectivity
 
