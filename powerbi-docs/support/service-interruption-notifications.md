@@ -63,5 +63,5 @@ A Fabric admin can enable notifications for service interruptions in the admin p
 
 ## Service health in Microsoft 365
 
-This article describes how to receive service notifications through Fabric. You can also monitor Fabric service health through Microsoft 365. Opt in to receive email notifications about service health from Microsoft 365. Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
+This article describes how to receive service notifications through Fabric. You can also monitor Fabric service health through Microsoft 365, where it appears under the Power BI service. Opt in to receive email notifications about service health from Microsoft 365. Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
