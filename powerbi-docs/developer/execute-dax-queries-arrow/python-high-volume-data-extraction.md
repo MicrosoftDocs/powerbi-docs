@@ -242,10 +242,12 @@ Use this cell layout to keep the workflow maintainable:
 ## Troubleshooting
 
 - **401 Unauthorized**: Validate tenant, client credentials, and scope.
-- **403 Forbidden**: Confirm semantic model Build and Read permissions.
 - **HTTP 429**: Add retry with exponential backoff and jitter.
 - **Schema drift between models**: Normalize column names and data types before merge.
 - **Large memory usage in pandas**: Process model outputs in batches or aggregate in DAX before extraction.
+
+> [!NOTE]
+> If the caller has insufficient permissions, the query fails but the HTTP response is still `200 OK`. Inspect the response body for error details.
 
 ## Related content
 
