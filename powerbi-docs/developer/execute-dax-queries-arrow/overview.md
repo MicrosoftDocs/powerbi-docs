@@ -33,7 +33,7 @@ Apache Arrow defines a language-independent columnar memory format that has been
 
 - **Zero-copy reads** — clients can map the response directly into memory without parsing or copying data between buffers.
 - **Cross-language support** — native libraries exist for Python (`pyarrow`), C# (`Apache.Arrow`), Java, Rust, Go, JavaScript, and more, so you can consume results in virtually any language.
-- **Efficient compression** — optional LZ4 compression reduces payload size further.
+- **Efficient compression** — LZ4 compression reduces payload size.
 - **Schema-first design** — every Arrow stream starts with a schema message that declares column names, types, and metadata, so clients know the exact data layout before reading any rows.
 
 ## DAX to Arrow type mapping
@@ -71,7 +71,7 @@ Before adopting the Execute DAX Queries API, review the following differences an
 |---|---|---|
 | **Endpoint** | `executeQueries` | `executeDaxQueries` |
 | **Capacity requirement** | Works on Pro, PPU, and Premium/Fabric | Premium or Fabric capacity only |
-| **Tenant settings** | **Dataset Execute Queries REST API** (under **Developer settings**) | **Dataset Execute Queries REST API**, **Allow service principals to use Power BI APIs** (under **Developer settings**), and **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** (under **Integration settings**) |
+| **Tenant settings** | **Dataset Execute Queries REST API** (under **Developer settings**) | **Dataset Execute Queries REST API** (under **Developer settings**) and **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** (under **Integration settings**) are required. **Allow service principals to use Power BI APIs** (under **Developer settings**) is required only when authenticating with a service principal. |
 | **Query input** | `queries[]` array (one query per call) | Single `query` string (multiple `EVALUATE` statements allowed) |
 | **Response formats** | JSON only | Arrow IPC only |
 | **Additional parameters** | Limited | `queryTimeout`, `resultsetRowcountLimit`, `schemaOnly`, `executionMetrics`, `memoryLimit` |
