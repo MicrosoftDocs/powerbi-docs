@@ -33,6 +33,8 @@ Track Fabric service health using either the Fabric Admin Portal or the Microsof
 
 #### Microsoft 365 admin center
 
+In the Microsoft 365 admin center, Fabric service health is listed under the Power BI service. 
+
 To access service health information, you must have the Fabric administrator role. For more information about roles, see [Administrator roles related to Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Sign in to the [Microsoft 365 admin center](https://portal.office.com/adminportal).
