@@ -148,7 +148,7 @@ Suggestions for managing Fabric capacity:
 - Define who is responsible for managing the capacity. Confirm the roles and responsibilities so that it's clear what action will be taken, why, when, and by whom.
 - Create a specific set of criteria for content that will be published to capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. Consider requiring a [best practices review](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) (such as reasonable semantic model size and efficient calculations) before publishing new content to a production capacity.
 - Regularly use the [Fabric capacity metrics app](/fabric/enterprise/metrics-app) to understand resource utilization and patterns for the capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
-- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
+- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-interruptions) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
 
 #### Autoscale
 
