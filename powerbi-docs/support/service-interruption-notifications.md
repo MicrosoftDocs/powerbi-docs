@@ -14,13 +14,13 @@ ai-usage: ai-assisted
 
 # Fabric service interruption notifications
 
-It's important to have insight into the availability of your mission-critical business applications. Fabric provides incident notification so you can optionally receive in-product messages and/or emails and Teams notification if there's a service disruption or degradation. While the Fabric 99.9% service-level agreement (SLA) makes these occurrences rare, it's still possible for disruptions to occur. The following screenshots shows the type of messages you'll receive if you enable notifications:
+It's important to have insight into the availability of your mission-critical business applications. Fabric provides incident notification so you can optionally receive in-product messages and/or emails and Teams notification if there's a service disruption or degradation. While these occurrences are rare, it's still possible for disruptions to occur, it's still possible for disruptions to occur. The following screenshots show the type of messages you'll receive if you enable notifications:
 
-1. In-product messages
+- In-product messages
 
-1. Teams notifications
+- Teams notifications
 
-1. Email messages
+- Email messages
 
 :::image type="content" source="media/service-interruption-notifications/power-bi-service-interruption-email-notification.png" alt-text="Screenshot of a Power BI service interruption notification email showing refresh issue details.":::
 
@@ -51,7 +51,7 @@ A Fabric admin can enable notifications for service interruptions in the admin p
       
 1. Enable notifications, enter a security group, and select **Apply**.
 
-   ![User's image](media/service-interruption-notifications/image.png)
+   ![Screenshot of the tenant setting for service interruption notifications.](media/service-interruption-notifications/image.png)
    
 > [!NOTE]
 > Fabric admin can delegate the option to receive in-product messages to capacity and workspace admins.
