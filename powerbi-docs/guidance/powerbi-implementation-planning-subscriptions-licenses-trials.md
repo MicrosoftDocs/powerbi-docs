@@ -583,7 +583,7 @@ If your capacity is regularly overloaded, it indicates that you might need to pu
 
 You should set up the following notifications to be kept informed.
 
-- Set the _[Enable notifications for service outages or incidents](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents)_ tenant setting so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
+- Set the _[Enable notifications for service interruptions](../support/service-interruption-notifications.md#enable-notifications-for-service-interruptions)_ tenant setting so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
 - Set up [Azure Monitor](/azure/azure-monitor/alerts/alerts-overview) alerts to be notified when certain capacity metrics exceed a threshold. This feature is available for F SKUs, A SKUs, and autoscale for P SKUs.
 
 #### Review and optimize capacity costs
