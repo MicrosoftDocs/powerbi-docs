@@ -29,7 +29,7 @@ You can use the export feature in several ways. Here are a couple of examples:
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and other settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information, see [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information, see [Export and email a Power BI report with Power Automate](../../collaborate-share/office-integration/service-automate-power-bi-report-export.md)
 
 ## Using the API
 
@@ -391,6 +391,6 @@ Review how to embed content for your customers and your organization:
 * [Export paginated report to file](export-paginated-report.md)
 * [Embed for your customers](embed-sample-for-customers.md)
 * [Embed for your organization](embed-sample-for-your-organization.md)
-* [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
+* [Export and email a Power BI report with Power Automate](../../collaborate-share/office-integration/service-automate-power-bi-report-export.md)
 
 More Questions? Try the [Power BI Community](https://community.powerbi.com/)

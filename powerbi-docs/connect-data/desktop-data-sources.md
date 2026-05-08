@@ -113,7 +113,6 @@ The **Microsoft Fabric** category provides the following data connections:
 
 * Power BI semantic models
 * Dataflows
-* Datamarts (preview)
 * Warehouses
 * Lakehouses
 * KQL Databases
@@ -551,7 +550,7 @@ The URL must point to the SharePoint site itself, not to a list within the site.
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

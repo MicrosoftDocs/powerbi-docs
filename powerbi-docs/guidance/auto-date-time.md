@@ -34,7 +34,7 @@ Keep these considerations and limitations in mind when using the _Auto date/time
 - **Single table date filtering**: Because each date column creates its own (hidden) auto date/time table, you can't apply a time filter to one table and have it propagate to multiple model tables. Filtering in this way is a common modeling requirement when reporting on multiple subjects ([fact tables](star-schema.md#fact-tables)) like sales and sales budget. When using auto date/time, the report author needs to apply filters to each different date column.
 - **Model size**: Each date column that generates a hidden auto date/time table increases the model size and also extends the data refresh time.
 - **Other reporting tools**: You can't work with auto date/time tables when:
-  - Using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+  - Using [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md).
   - Using Power BI paginated report Analysis Services query designers.
   - Connecting to the model by using non-Power BI report designers.
 

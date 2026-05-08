@@ -179,7 +179,7 @@ You can do all sorts of things with Power BI Desktop. For more information on it
 
 * [What's new in Power BI?](../fundamentals/whats-new.md)
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)

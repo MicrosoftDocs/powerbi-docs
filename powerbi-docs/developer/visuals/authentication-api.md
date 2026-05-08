@@ -138,7 +138,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The format of the AADAuthentication privilege parameter is invalid.
 
-* The visual isn't publicly approved or isn't a debug visual.
+* The visual isn't [publicly approved](./office-store.md) or isn't a debug visual.
 
 * The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consent, see [tenant administrator consent](entra-id-authentication.md#isv-consent).
 

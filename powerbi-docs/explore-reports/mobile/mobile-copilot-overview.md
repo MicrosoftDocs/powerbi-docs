@@ -7,11 +7,15 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
 ms.collection: ce-skilling-ai-copilot
-ms.date: 11/23/2025
+ms.date: 03/23/2026
 #customer intent: As a Power BI mobile user, I want to understand what Copilot features are available in the mobile apps so I can use AI to get insights from my data on the go.
 ---
 
 # Overview of Copilot in Power BI mobile apps (preview)
+
+> [!IMPORTANT]
+> Copilot in Power BI mobile apps is currently in PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
 |:---:|:---:|:---:|:---:|
@@ -41,14 +45,18 @@ The standalone Copilot provides a full-screen chat experience that you can acces
 
 ### In-report Copilot (preview)
 
-The in-report Copilot provides context-aware assistance for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header.
+The in-report Copilot provides a full conversational chat experience for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header of a report that [meets Copilot requirements](../../create-reports/copilot-ask-data-question.md#before-you-start).
 
 **Key capabilities:**
 
+- Ask custom questions about a report's data using natural language
 - Generate AI-powered summaries of report data
-- Get insights about the current report's content
+- Ask follow-up questions to explore insights further
+- Get answers with both textual summaries and interactive visuals
+- Use voice input to dictate questions (iPhone and iPad only)
+- Share Copilot responses with colleagues
 
-**Best for:** Quick insights and summaries when you're already viewing a specific report.
+**Best for:** Getting insights, exploring data, and asking questions when you're already viewing a specific report.
 
 [Learn more about in-report Copilot](mobile-apps-copilot.md).
 
@@ -60,7 +68,7 @@ The in-report Copilot provides context-aware assistance for the report you're cu
 | I want insights about the current report's data | In-report Copilot |
 | I have a question but don't know which report to open | Standalone Copilot |
 | I want to explore data across multiple reports or semantic models | Standalone Copilot |
-| I want to use voice to ask questions (iOS only) | Standalone Copilot |
+| I want to use voice to ask questions (iOS only) | Standalone Copilot or In-report Copilot |
 | I want to share AI-generated insights with colleagues | Standalone Copilot or In-report Copilot |
 
 ## Data preparation

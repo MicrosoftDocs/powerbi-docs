@@ -661,8 +661,8 @@ The visual should handle the localization and provide localized strings.
 
 ## GitHub resources
 
-* All on object formatting interfaces can be found in (link to be provided once the API is released) in on-object-formatting-api.d.ts
-* We recommend using the [on object utils], which include the [HTMLSubSelectionHelper](link to be provided once the API is released)
+* All on object formatting interfaces can be found in https://github.com/microsoft/powerbi-visuals-api in on-object-formatting-api.d.ts
+* We recommend using the [on object utils], which include the [HTMLSubSelectionHelper](https://github.com/microsoft/powerbi-visuals-utils-onobjectutils)
 * You can find an example of a custom visual [SampleBarChart](./create-bar-chart.md) that uses API version 5.8.0 and implements the support for the on object formatting using the on object utils at (link to be provided once the API is released)
 
 ## Related content

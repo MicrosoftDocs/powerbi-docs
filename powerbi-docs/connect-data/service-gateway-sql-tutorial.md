@@ -147,6 +147,9 @@ Once you've connected your Power BI semantic model to your SQL Server on-premise
 
 1. On the semantic model settings page, select **Refresh**, then **Schedule refresh** from the ribbon.
 
+   > [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 1. In the **Refresh** section, under **Configure a refresh schedule**, set the slider to **On**.
 
 1. Under **Refresh frequency**, select **Daily** for this example, then select **Add another time** under **Time**.

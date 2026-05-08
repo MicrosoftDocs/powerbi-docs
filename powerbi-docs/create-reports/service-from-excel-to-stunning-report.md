@@ -32,7 +32,7 @@ In this tutorial, we upload an Excel file, create a new report, and share it wit
 ## Prerequisites
 
 * [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
-* Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it to your computer or to OneDrive for Business.
+* Download the [Financial Sample workbook](https://go.microsoft.com/fwlink/?LinkID=521962) and save it to your computer or to OneDrive.
 
 ## Prepare data in Excel
 
@@ -187,20 +187,7 @@ The dashboard and report are ready.
 
 Now it's time to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but they can't save changes. If you allow it, they can reshare with others or build a new report based on the underlying semantic model.
 
-1. To share your report, at the top of the dashboard, select **Share**.
-
-   ![Screenshot of My workspace, highlighting the Share icon.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard.png)
-
-1. In the **Share dashboard** screen, enter the email addresses of the recipients in the **Enter a name or email addresses** field and add an optional message.
-
-1. Select the option to **Send an email notification**. Choose any other options you want:
-
-   * **Allow recipients to share this dashboard**
-   * **Allow recipients to build content with the data associated with this dashboard**
-
-   ![Screenshot of the Share dashboard pane, with all options selected.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
-
-1. Select **Grant access**.
+For step-by-step instructions on sharing options, permissions, and licensing requirements, see [Collaborate and share Power BI reports and dashboards](../collaborate-share/service-share-dashboards.md).
 
 ## Share to Microsoft Teams
 

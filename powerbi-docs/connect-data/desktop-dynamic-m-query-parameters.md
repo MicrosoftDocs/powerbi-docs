@@ -19,7 +19,7 @@ This article describes how to create and work with dynamic M query parameters in
 Model authors understand the intended semantics of their filters, and often know how to write efficient queries against their data source. With dynamic M query parameters, model authors can ensure that filter selections incorporate into source queries at the right point to achieve the intended results with optimum performance. Dynamic M query parameters can be especially useful for query performance optimization.
 
 [!NOTE]
-Examples in this article use both Kusto and T-SQL to demonstrate dynamic M query parameters. The concepts apply to any supported DirectQuery source.
+Examples in this article use both Kusto and T-SQL to demonstrate dynamic M query parameters. The concepts apply to any supported DirectQuery source. When connecting to Fabric KQL databases (Real-Time Intelligence), use the Azure Data Explorer (Kusto) connector — the same patterns apply.
 
 Watch Sujata explain and use dynamic M query parameters in the following video, and then try them out yourself.
 
@@ -254,6 +254,9 @@ Here are some examples of these mitigations:
 
 ## Considerations and limitations
 
+> [!NOTE]
+> For Fabric KQL databases and Azure Data Explorer, push aggregation logic (`make-series`, `summarize`, `series_decompose_anomalies`) to the source rather than returning raw events to Power BI. This is especially important for high-volume time-series data — having visuals consume pre-aggregated results maintains interactive query performance.
+
 There are some considerations and limitations to take into account when you use dynamic M query parameters:
 
 - A single parameter can't be bound to multiple fields nor vice versa.
@@ -304,7 +307,7 @@ There are some considerations and limitations to take into account when you use 
 For more information about Power BI Desktop capabilities, check out the following resources:
 
 - [DirectQuery in Power BI](desktop-directquery-about.md)
-- [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+- [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data types in Power BI Desktop](desktop-data-types.md)
 - [Tutorial: Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

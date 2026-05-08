@@ -20,7 +20,7 @@ Build permission applies to semantic models. When you give users Build permissio
 Users also need Build permission to do the following actions:
 
 - Export underlying Power BI data.
-- Build new content on the semantic model, such as with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+- Build new content on the semantic model, such as with [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md).
 - Access the data via the XML for Analysis (XMLA) endpoint.
 
 ## How users get Build permission
@@ -62,6 +62,9 @@ Certain actions, such as creating a report based on a semantic model, require Bu
 If you have an [Admin, Member, or Contributor role](../collaborate-share/service-roles-new-workspaces.md) in the workspace where the semantic model resides, you can change the default access request behavior for a semantic model by going to the semantic model's settings and configuring the **Request access** options as desired.
 
 ![Screenshot of the Request access configuration dialog in the semantic model settings.](media/service-datasets-build-permissions/build-permission-specific-instructions-dialog.png)
+
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
  
 - The default option, not selected in the preceding image, is for Build permission requests to come to you via email. You're responsible for acting on the requests and notifying the requestors.
 

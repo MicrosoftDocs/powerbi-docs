@@ -41,7 +41,7 @@ The use of the [Table.Buffer](/powerquery-m/table-buffer) function in **Query1**
 
 Generally, we recommend you reference queries to avoid the duplication of logic across your queries. However, as described in this article, this design approach can contribute to slow data refreshes and overburden data sources.
 
-We recommend you create a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) instead. Using a dataflow can improve data refresh time and reduce impact on your data sources.
+We recommend you create a [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) (or a [dataflow (legacy)](../transform-model/dataflows/dataflows-introduction-self-service.md) for Pro/PPU users without Fabric access) instead. Using a dataflow can improve data refresh time and reduce impact on your data sources.
 
 You can design the dataflow to encapsulate the source data and transformations. As the dataflow is a persisted store of data in the Power BI service, its data retrieval is fast. So, even when referencing queries result in multiple requests for the dataflow, data refresh times can be improved.
 

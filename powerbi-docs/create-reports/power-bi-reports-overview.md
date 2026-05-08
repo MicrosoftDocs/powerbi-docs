@@ -259,13 +259,13 @@ Tooltips provide additional context when users hover over data points.
 
 Visual tooltips show each data point value when hovering, aligning to your report theme. You can also include drill actions in tooltips to help users navigate to related data.
 
-For more information, see [Create modern visual tooltips](desktop-visual-tooltips.md).
+For more information, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ### Additional tooltip fields
 
 Add additional measures or dimensions to tooltips to give users more context without cluttering the visual. You can customize which fields appear in tooltips and how they're formatted.
 
-For more information, see [Customize tooltips in Power BI Desktop](desktop-custom-tooltips.md).
+For more information, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ### Report page tooltips
 

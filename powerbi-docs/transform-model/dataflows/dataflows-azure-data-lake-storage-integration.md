@@ -1,5 +1,5 @@
 ---
-title: Configuring dataflow storage to use Azure Data Lake Gen 2 
+title: Configuring dataflow storage to use Azure Data Lake Gen 2 (legacy)
 description: Learn how to configure a workspace or tenant  settings to store your dataflows in your organizations Azure Data Lake Gen 2 account.
 author: eric-urban
 ms.author: eur
@@ -10,7 +10,10 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Configure dataflow storage to use Azure Data Lake Gen 2
+# Configure dataflow storage to use Azure Data Lake Gen 2 (legacy)
+
+> [!TIP]
+> Power BI Dataflow Gen1 is now in a legacy state and won't receive new feature investment. Rather than choosing between internal storage and Azure Data Lake Storage, [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) supports a wider range of [data destinations](/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings) including Fabric Lakehouse, Warehouse, Azure SQL Database, and more — all configurable directly in the dataflow editor. To learn about upgrading existing dataflows, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 Data used with Power BI is stored in internal storage provided by Power BI by default. With the integration of dataflows and Azure Data Lake Storage Gen 2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. This feature essentially allows you to "bring your own storage" to Power BI dataflows, and establish a connection at the tenant or workspace level.
 

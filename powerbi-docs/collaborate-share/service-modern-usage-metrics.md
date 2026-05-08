@@ -199,7 +199,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 - **[Make a copy of the report](#create-a-copy-of-the-usage-report) in the Power BI service.**   Use **Save a copy** to create a separate instance of the usage metrics report, which you can customize to meet your specific needs.
 - **[Connect to the semantic model](#create-a-usage-report-in-power-bi-desktop) with a new report.**   For every workspace, the semantic model has the name "Usage Metrics Report," as explained earlier in the section [Usage metrics report semantic model](#usage-metrics-report-semantic-model). You can use Power BI Desktop to build custom usage metrics reports based on the underlying semantic model.
-- **[Use Analyze in Excel](#analyze-usage-data-in-excel).**   You can also analyze the Power BI usage data in PivotTables, charts, and slicer features in Microsoft Excel. Read more about the [Analyze in Excel](service-analyze-in-excel.md) feature.
+- **[Use Analyze in Excel](#analyze-usage-data-in-excel).**   You can also analyze the Power BI usage data in PivotTables, charts, and slicer features in Microsoft Excel. Read more about the [Analyze in Excel](office-integration/service-analyze-in-excel.md) feature.
 
 ### Create a copy of the usage report
 
@@ -339,7 +339,7 @@ In addition to the above differences between previous and improved usage metrics
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
 - When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports semantic model.
 - Customers might be unable to view or download the usage metrics semantic model from Power BI service.
-- To access the user metrics report's semantic model settings and refresh history, follow the steps in [Update usage metrics report credentials](#update-usage-metrics-report-credentials).
+- To access the user metrics report's semantic model settings and refresh history, follow the steps in [Update usage metrics report credentials](#update-usage-metrics-report-credentials). You can also use the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page (currently in preview).
 - The report views count is influenced by subscriptions running on the reports. When the subscription service captures a snapshot of the report for emails, it triggers a flow that logs a ViewReport event.
 
 ## Frequently asked questions

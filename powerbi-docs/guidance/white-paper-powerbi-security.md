@@ -366,12 +366,12 @@ When information protection is enabled in Power BI:
 * Excel workbooks automatically inherit sensitivity labels when they connect to Power BI, making it possible to maintain end-to-end classification and apply protection when Power BI semantic models are analyzed in Excel.
 * Sensitivity labels applied to Power BI reports and dashboards are visible in the Power BI iOS and Android mobile apps.
 * Sensitivity labels persist when a Power BI report is embedded in Teams, SharePoint, or a secure website. This helps organizations maintain classification and protection upon export when embedding Power BI content.
-* Label inheritance upon the creation of new content in the Power BI service ensures that labels applied to semantic models or datamarts in the Power BI service will be applied to new content created on top of those semantic models and datamarts.
+* Label inheritance upon the creation of new content in the Power BI service ensures that labels applied to semantic models in the Power BI service will be applied to new content created on top of those semantic models.
 * [Power BI admin scan APIs](/rest/api/power-bi/admin/workspaceinfo_getscanresult) can extract a Power BI item's sensitivity label, enabling Power BI and InfoSec admins to monitor labeling in the Power BI service and produce executive reports.
 * Power BI admin APIs enable central teams to programmatically apply sensitivity labels to content in the Power BI service.
 * Central teams can create mandatory label policies to enforce applying labels on new or edited content in Power BI.
 * Central teams can create default label policies to ensure that a sensitivity label is applied to all new or changed Power BI content.
-* Automatic downstream sensitivity labeling in the Power BI service ensures that when a label on a semantic model or datamart is applied or changed, the label will automatically be applied or changed on all downstream content connected to the semantic model or datamart.
+* Automatic downstream sensitivity labeling in the Power BI service ensures that when a label on a semantic model is applied or changed, the label will automatically be applied or changed on all downstream content connected to the semantic model.
 
 For more information, see [Sensitivity labels in Power BI](../enterprise/service-security-sensitivity-label-overview.md).
 

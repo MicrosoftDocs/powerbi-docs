@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # Create a workspace in Power BI
 
-In them, you create collections of dashboards, reports, paginated reports, semantic models, and dataflows. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. You create and manage workspaces in the Power BI service (in a browser at app.powerbi.com), not in Power BI Desktop. Power BI Desktop lets you publish to an existing workspace you have access to but doesn't provide workspace creation settings. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
+In them, you create collections of dashboards, reports, paginated reports, semantic models, and dataflows (legacy). If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. You create and manage workspaces in the Power BI service (in a browser at app.powerbi.com), not in Power BI Desktop. Power BI Desktop lets you publish to an existing workspace you have access to but doesn't provide workspace creation settings. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
 
 :::image type="content" source="media/service-create-the-new-workspaces/power-bi-new-workspaces.png" alt-text="Screenshot of a workspace in Power BI.":::
 
@@ -189,6 +189,17 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 1. To unpin a workspace, select the unpin button. The workspace is unpinned.
 
     :::image type="content" source="media/service-create-the-new-workspaces/unpin-workspace.png" alt-text="Screenshot of unpinning a workspace.":::
+
+## Delete a workspace
+
+To delete a workspace, you must have the Admin role for that workspace.
+
+1. Open the workspace, then select **Workspace settings** (the gear icon).
+1. In the **Settings** pane, scroll to the bottom and select **Remove this workspace**.
+1. Select **Delete** to confirm.
+
+> [!NOTE]
+> Deleting a workspace permanently removes all of its content, including dashboards, reports, semantic models, and dataflows. This action can't be undone.
 
 ## Related content
 

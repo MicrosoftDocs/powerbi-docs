@@ -86,7 +86,7 @@ Visual calculations can only refer to what's on the visual. Before a visual calc
 
 Visual calculations combine the simplicity of context from calculated columns with the on-demand calculation flexibility from measures. Unlike measures, which operate on detail-level data, visual calculations operate on aggregated data, which often leads to performance benefits. Because visual calculations are part of a visual, they can refer to the visual structure, which leads to more flexibility.
 
-For more information about visual calculations, see [Using visual calculations (preview)](desktop-visual-calculations-overview.md).
+For more information about visual calculations, see [Using visual calculations](desktop-visual-calculations-overview.md).
 
 ## Related content
 

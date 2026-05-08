@@ -65,6 +65,18 @@
                  "show_binary_rating"
               ]
           },
+          "author": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kgremban"
+          },
+          "ms.author": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kgremban"
+          },
+          "ms.reviewer": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kayu"
+          },
+          "ms.service": {
+              "developer/**/*.md": "powerbi"
+          },
           "ms.subservice": {
               "collaborate-share/**/*.md": "pbi-collaborate-share",
               "connect-data/**/*.md": "pbi-data-sources",
