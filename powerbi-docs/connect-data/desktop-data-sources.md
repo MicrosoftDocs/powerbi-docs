@@ -7,7 +7,7 @@ ms.reviewer: saralam, miescobar
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 05/08/2026
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI Desktop user, I want to understand the available data sources and how to connect to them, so that I can effectively analyze and visualize my data.
 ai-usage: ai-assisted
@@ -32,6 +32,9 @@ This article provides an overview of both experiences and the available data sou
 
 The Power Query get data experience replaces the classic get data dialog with a redesigned interface that provides a consistent Power Query experience across Power BI Desktop, web modeling, and other Fabric products.
 
+> [!NOTE]
+> The Power Query experience is in **preview**.
+
 ### Prerequisites
 
 Power BI Desktop with the **New Power Query experience** preview feature enabled.
@@ -42,7 +45,7 @@ To enable the Power Query experience:
 1. Go to **File** > **Options and settings** > **Options**.
 1. Select **Preview features**, and then select the **New Power Query experience** checkbox.
 
-   :::image type="content" source="media/desktop-data-sources/enable-new-power-query-experience.png" alt-text="Screenshot that shows how to enable the new Power Query experience from Preview features in Power BI Desktop.":::
+   :::image type="content" source="media/desktop-data-sources/enable-new-power-query-experience.png" alt-text="Screenshot that shows how to enable the new Power Query experience from Preview features in Power BI Desktop." lightbox="media/desktop-data-sources/enable-new-power-query-experience.png":::
 
 1. Select **OK**.
 1. Restart Power BI Desktop.
@@ -59,7 +62,7 @@ The **Get data (Power Query)** experience displays a left-hand navigation pane t
 * **Blank table**
 * **Blank query**
 
-:::image type="content" source="media/desktop-data-sources/new-get-data-experience.png" alt-text="Screenshot that shows the new Get Data experience in Power BI Desktop.":::
+:::image type="content" source="media/desktop-data-sources/new-get-data-experience.png" alt-text="Screenshot that shows the new Get Data experience in Power BI Desktop." lightbox="media/desktop-data-sources/new-get-data-experience.png":::
 
 #### Home
 
@@ -77,7 +80,7 @@ In the **Recent** section, you can find and reconnect to your most recently used
 
 In the **OneLake catalog** section, you can find, explore, and use the Fabric data items in your organization that you have access to. It provides information about the items and entry points for working with them. This module also lets you choose your preferred connectivity mode. For more information on the OneLake catalog, go to [OneLake catalog](/fabric/governance/onelake-catalog-overview).
 
-:::image type="content" source="media/desktop-data-sources/new-get-data-onelake-connectivity-mode.png" alt-text="Screenshot that shows how to choose a connectivity mode in the OneLake catalog.":::
+:::image type="content" source="media/desktop-data-sources/new-get-data-onelake-connectivity-mode.png" alt-text="Screenshot that shows how to choose a connectivity mode in the OneLake catalog." lightbox="media/desktop-data-sources/new-get-data-onelake-connectivity-mode.png":::
 
 #### Blank Table
 
