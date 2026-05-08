@@ -23,7 +23,7 @@ Track Fabric service health using either the Fabric Admin Portal or the Microsof
 > [!NOTE]
 > If your Fabric admin has [configured an internal Help-Desk](/fabric/admin/service-admin-portal-help-support), only users who are permitted to create support requests with Microsoft will be able to view service health updates in Fabric.
 
-1. Navigate to the **Fabric Admin Portal** > **Help + Support** > **[Service Health](powerbi.com/admin-portal/serviceHealth).**
+1. Navigate to the **Fabric Admin Portal** > **Help + Support** > **[Service Health](https://app.powerbi.com/admin-portal/serviceHealth).**
 
    ![User's image](media/service-admin-health/image.png)
    
@@ -52,7 +52,7 @@ To access service health information, you must have the Fabric administrator rol
 1. To return to current service health, select **Overview**.
 ### Known Issues
 
-You can review the Fabric Known Issues either in the [Fabric Admin Portal](powerbi.com/admin-portal/knownIssues) or in the [Fabric Support page](https://support.fabric.microsoft.com/known-issues/).
+You can review the Fabric Known Issues either in the [Fabric Admin Portal](https://app.powerbi.com/admin-portal/knownIssues) or in the [Fabric Support page](https://support.fabric.microsoft.com/known-issues/).
 
 To review more information on a specific known issue, select a known issue. 
 
