@@ -3,11 +3,11 @@ title: Matrix Visual Format Settings
 description: This document explains all available Format settings for matrix visuals in Power BI Desktop and Power BI Service.
 ms.author: juliacawthra
 author: JulCsc
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 05/01/2026
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for matrix visuals so that I can effectively and more easily format my matrix visuals in Power BI Desktop and Power BI Service.
 ai-usage: ai-assisted
@@ -175,10 +175,6 @@ This setting controls the header alignment, allowing you to choose between left,
 
 This setting controls the title alignment, allowing you to choose between left, center, or right.
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
-
-#### Options
-
-[!INCLUDE [column-headers-options-auto-size-width](../includes/core-visuals/column-headers-options-auto-size-width.md)]
 
 ### Row headers settings
 

@@ -8,7 +8,7 @@ ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 05/01/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about matrix visuals so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI Service.
@@ -97,6 +97,10 @@ Use expand and collapse icons provided to combine groups or to show more detail.
 
 :::image type="content" source="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png" alt-text="Screenshot showing the expand and collapse icons in the row headers of a matrix." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-expand-and-collapse-row-headers.png":::
 
+When report consumers open a matrix visual in [Explore](../consumer/explore-data-service.md), the columns and rows added to the visual are auto-expanded by default so consumers can see all the levels at once.
+
+In [embedded scenarios](../developer/embedded/embedded-analytics-power-bi.md), you can use the Authoring SDK to set the `autoExpand` property on the `rowHeaders` and `columnHeaders` objects so a matrix opens with its rows and columns auto-expanded by default.
+
 ### Freeze row headers
 
 By default row headers are frozen, which ensures they stay visible when you scroll horizontally.
@@ -109,11 +113,14 @@ To unfreeze row headers, and therefore hide them as you scroll horizontally, rig
 
 To refreeze the row headers, right-click on the row headers again and select **Freeze row headers**.
 
+> [!NOTE]
+> The freeze and unfreeze options in the right-click menu are transient and apply only to your current viewing session. If you change this setting in an editing scenario, such as Power BI Desktop or web editing, the change isn't saved for report consumers.
+
 ### Adjust column width
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
-### Custom totals (preview)
+### Custom totals
 
 [!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
 
