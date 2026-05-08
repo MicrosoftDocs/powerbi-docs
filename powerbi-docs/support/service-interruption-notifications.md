@@ -1,6 +1,6 @@
 ---
-title: Power BI Service Interruption Notifications
-description: Learn how to enable Power BI service interruption notifications for outages and incidents. Configure email alerts to stay informed about service health and disruptions.
+title: Fabric Service Interruption Notifications
+description: Learn how to enable Fabric service interruption notifications for outages and incidents. Configure email alerts to stay informed about service health and disruptions.
 author: eric-urban
 ms.author: eur
 ms.reviewer: royrubinstein
@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Fabric service interruption notifications
 
-It's important to have insight into the availability of your mission-critical business applications. Fabric provides incident notification so you can optionally receive in-product messages and/or emails and Teams notification if there's a service disruption or degradation. While these occurrences are rare, it's still possible for disruptions to occur, it's still possible for disruptions to occur. The following screenshots show the type of messages you'll receive if you enable notifications:
+It's important to have insight into the availability of your mission-critical business applications. Fabric provides incident notification so you can optionally receive in-product messages and/or emails and Teams notification if there's a service disruption or degradation. While these occurrences are rare, it's still possible for disruptions to occur. The following screenshots show the type of messages you'll receive if you enable notifications:
 
 - In-product messages
 
@@ -22,7 +22,7 @@ It's important to have insight into the availability of your mission-critical bu
 
 - Email messages
 
-:::image type="content" source="media/service-interruption-notifications/power-bi-service-interruption-email-notification.png" alt-text="Screenshot of a Power BI service interruption notification email showing refresh issue details.":::
+:::image type="content" source="media/service-interruption-notifications/power-bi-service-interruption-email-notification.png" alt-text="Screenshot of a Fabric service interruption notification email showing refresh issue details.":::
 
 At this time, emails are sent for the following *reliability scenarios*:
 
@@ -54,7 +54,7 @@ A Fabric admin can enable notifications for service interruptions in the admin p
    ![Screenshot of the tenant setting for service interruption notifications.](media/service-interruption-notifications/image.png)
    
 > [!NOTE]
-> Fabric admin can delegate the option to receive in-product messages to capacity and workspace admins.
+> A Fabric admin can delegate the option to receive in-product messages to capacity and workspace admins.
    
     
    
