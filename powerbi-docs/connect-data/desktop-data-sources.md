@@ -231,7 +231,7 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Cost Management
+* Microsoft Cost Management
 * Azure Resource Graph
 * Azure HDInsight on AKS Trino (Beta)
 * Azure Cosmos DB v2
