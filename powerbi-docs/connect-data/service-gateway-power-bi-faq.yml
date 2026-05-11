@@ -8,7 +8,8 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-gateways
   ms.topic: faq
-  ms.date: 01/27/2023
+  ms.date: 05/11/2026
+  ai-usage: ai-assisted
   LocalizationGroup: Gateways
 title: On-premises data gateway FAQ - Power BI
 summary: |
@@ -19,9 +20,12 @@ sections:
     questions:
 
       - question: |
-         Do I need to upgrade the on-premises data gateway (personal mode)?
+         Do I need to upgrade the on-premises data gateway?
         answer: |
-         No, you can keep using the on-premises data gateway (personal mode) for Power BI.
+         It depends on the gateway:
+
+         - **On-premises data gateway (personal mode)**: No, you can keep using it for Power BI.
+         - **On-premises data gateway (standard mode)**: Yes, keep it on a currently supported version. Each gateway version is supported for a limited time so that compatibility, reliability, and security improvements stay in effect. Older versions first trigger warnings. Eventually, the service blocks them, which interrupts scheduled refresh and query operations, including Analysis Services connections. To install the latest version, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
       - question: |
          Are any special permissions required to install the gateway and manage it in the Power BI service?
