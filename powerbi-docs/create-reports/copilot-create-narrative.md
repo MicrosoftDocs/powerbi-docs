@@ -91,7 +91,7 @@ When you're satisfied with the narrative, save the report just like any other re
 
 - Select **Edit** to see the **Copilot** button again.
 
-## Viewing
+## View the report
 
 When users view the report, they can slice and dice with filters as they normally would. The narrative visual doesn't automatically update, but there's a refresh button that allows the user to fetch an updated summary according to the applied slicers and filters.
 
