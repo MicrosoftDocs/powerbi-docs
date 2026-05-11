@@ -1,12 +1,13 @@
 ---
-title: "Add data to a tablix data region in a Power BI paginated report | Microsoft Docs"
+title: Add Data to a Tablix Data Region in a Power BI Paginated Report
 description: Learn how to display detailed or grouped data, from a report dataset in a table or matrix, to a tablix data region in a Power BI paginated report. 
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: how-to
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Add data to tablix data region in a paginated report (Power BI Report Builder)

@@ -1,0 +1,167 @@
+﻿name: Freshness Review (10 PRs max per run)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  TARGET_BRANCH: main
+  WORKING_BRANCH_PREFIX: chore/freshness
+  DOCSET_ROOT: powerbi-docs
+  REPORT_XLSX: data/engagement-latest.xlsx
+  FEEDBACK_XLSX: data/customer-feedback.xlsx
+  STALE_FILE_LIST: tools/stale-files.txt
+  BATCH_SIZE: "10"
+  MAX_BATCHES: "10"
+  FRESH_WINDOW_DAYS: "365"
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl python-dateutil pyyaml
+
+      - name: Generate stale batch with customer feedback
+        run: |
+          python tools/generate-stale-list.py \
+            --input "${{ env.REPORT_XLSX }}" \
+            --output "${{ env.STALE_FILE_LIST }}" \
+            --docroot "${{ env.DOCSET_ROOT }}" \
+            --batch-size "${{ env.BATCH_SIZE }}" \
+            --fresh-window-days "${{ env.FRESH_WINDOW_DAYS }}" \
+            --feedback "${{ env.FEEDBACK_XLSX }}" \
+            --max-batches "${{ env.MAX_BATCHES }}"
+
+      - name: Show processing summary
+        run: |
+          echo "📊 Processing Summary:"
+          echo "Files to process in this run:"
+          wc -l "${{ env.STALE_FILE_LIST }}" || true
+          echo ""
+          echo "Batches (limited to ${{ env.MAX_BATCHES }}):"
+          head -n 11 "${{ env.STALE_FILE_LIST }}.batches.csv" || true
+          echo ""
+          echo "Customer feedback integration:"
+          if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+            echo "Found actionable customer feedback items:"
+            wc -l "${{ env.STALE_FILE_LIST }}.feedback.csv" || true
+          else
+            echo "No actionable customer feedback found for these files"
+          fi
+
+      - name: Setup fork remote
+        env:
+          FORK_PR_TOKEN: ${{ secrets.FORK_PR_TOKEN }}
+        run: |
+          FORK_URL="https://x-access-token:${FORK_PR_TOKEN}@github.com/JulCsc/powerbi-docs-pr.git"
+          git config --global http.https://github.com/.extraheader ""
+          if git remote | grep -q "^fork$"; then
+            git remote set-url fork "${FORK_URL}"
+          else
+            git remote add fork "${FORK_URL}"
+          fi
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Process batches with comprehensive updates
+        run: |
+          if [ ! -s "${{ env.STALE_FILE_LIST }}" ]; then
+            echo "No files selected; exiting."
+            exit 0
+          fi
+          
+          if [ ! -f "${{ env.STALE_FILE_LIST }}.batches.csv" ]; then
+            echo "No batch file found; exiting."
+            exit 0
+          fi
+          
+          echo "Processing up to ${{ env.MAX_BATCHES }} batches with comprehensive freshness review..."
+          
+          tail -n +2 "${{ env.STALE_FILE_LIST }}.batches.csv" | while IFS=, read -r batch_num subfolder file_count files; do
+            echo "Processing batch $batch_num: $subfolder ($file_count files)"
+            
+            BRANCH="${{ env.WORKING_BRANCH_PREFIX }}/batch-$batch_num-$(echo $subfolder | sed 's|/|-|g')"
+            git checkout -b "$BRANCH" "origin/${{ env.TARGET_BRANCH }}"
+            
+            echo "$files" | tr ';' '\n' | while IFS= read -r filepath; do
+              [ -z "$filepath" ] && continue
+              
+              if [ -f "$filepath" ]; then
+                echo " Processing: $filepath"
+                current_date=$(date '+%m/%d/%Y')
+                
+                # 1. Update ms.date
+                sed -i "s|^ms\.date:.*|ms.date: $current_date|g" "$filepath"
+                
+                # 2. Apply formatting standards
+                sed -i 's|\*\*\([^*]*\)\*\*|*\1*|g' "$filepath"
+                sed -i 's|__\([^_]*\)__|*\1*|g' "$filepath"  
+                sed -i 's|_\([^_]*\)_|*\1*|g' "$filepath"
+                sed -i 's|^[ \t]*\*[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*+[ \t]|- |g' "$filepath"
+                sed -i 's|^[ \t]*[0-9]\+\.[ \t]|1. |g' "$filepath"
+                
+                # 3. Update legacy links
+                sed -i 's|http://technet\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                sed -i 's|http://msdn\.microsoft\.com|https://docs.microsoft.com|g' "$filepath"
+                
+                # 4. Remove outdated version references
+                sed -i 's|Power BI Desktop (.*monthly update)|Power BI Desktop|g' "$filepath"
+                sed -i 's|as of [0-9][0-9]*/[0-9][0-9]*/[0-9][0-9][0-9][0-9]||g' "$filepath"
+                
+                # 5. Check for customer feedback
+                if [ -f "${{ env.STALE_FILE_LIST }}.feedback.csv" ]; then
+                  feedback_count=$(grep -c "^$filepath," "${{ env.STALE_FILE_LIST }}.feedback.csv" 2>/dev/null || echo "0")
+                  if [ "$feedback_count" -gt 0 ]; then
+                    echo " Found $feedback_count customer feedback items for $filepath"
+                  fi
+                fi
+                
+                echo " Updated: $filepath"
+              fi
+            done
+            
+            if git status --porcelain | grep -q .; then
+              git config user.name "docs-automation"
+              git config user.email "docs-automation@users.noreply.github.com"
+              git add -A
+              git commit -m "Comprehensive freshness review batch $batch_num: $subfolder ($file_count files)"
+              git push --force-with-lease fork "$BRANCH:$BRANCH"
+              
+              HEAD="JulCsc:$BRANCH"
+              BASE="${{ env.TARGET_BRANCH }}"
+              TITLE="Freshness Review Batch $batch_num: $subfolder ($file_count files)"
+              BODY="Comprehensive freshness review of $file_count documents in $subfolder. Updates: ms.date, formatting standards, legacy links, customer feedback review. Manual verification recommended for links and screenshots."
+              
+              curl -sS -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/pulls" \
+                -d "{\"title\":\"$TITLE\",\"head\":\"$HEAD\",\"base\":\"$BASE\",\"body\":\"$BODY\"}"
+              
+              echo " Created PR for batch $batch_num"
+            else
+              echo "ℹ No changes needed for batch $batch_num"
+            fi
+            
+            git checkout "${{ env.TARGET_BRANCH }}"
+          done
+          
+          echo "🎯 Freshness review complete! Created PRs for up to ${{ env.MAX_BATCHES }} batches."
+          echo "💡 To process more files, merge these PRs and re-run the workflow."

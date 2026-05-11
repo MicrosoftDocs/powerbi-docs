@@ -1,9 +1,8 @@
 ---
 title: Create Q&A featured questions for Power BI dashboards
 description: Learn how to create and add featured questions for the Power BI Q&A by using the Retail Analysis sample.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
@@ -15,14 +14,17 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 If you have edit permission for a semantic model, you can add your own featured questions to that semantic model. Power BI Q&A will show those questions to colleagues who consume dashboards based on that semantic model. Featured questions give your colleagues ideas about the types of questions they can ask about the semantic model. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
 
 > [!NOTE]
-> Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
+> Q&A featured questions are available for use in the Microsoft Power BI app on iPads, iPhones, and iPod Touch devices and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
 
 ## Prerequisites
 
-- You just need a [Fabric free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../fundamentals/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
 - You need a Power BI Pro license to add featured questions in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
@@ -56,7 +58,7 @@ This article uses the Retail Analysis sample. Follow these step-by-step instruct
 
 ## Related content
 
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

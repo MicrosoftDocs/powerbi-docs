@@ -1,13 +1,13 @@
 ---
 title: Highlight data points in Power BI
 description: Learn how to highlight data points on Power BI visuals with categorical and matrix data view mapping.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to highlight data points on Power BI visuals with categorical and matrix data view mapping.
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: Refresh summaries for Power BI
 description: Learn how to use refresh summaries in Power BI. You can see History and Schedule views.
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom: sfi-image-nochange
 ---
 
 # Refresh summaries for Power BI

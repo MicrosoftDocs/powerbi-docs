@@ -1,12 +1,13 @@
 ---
 title: Best practices for creating mobile-optimized Power BI reports
 description: This article describes best practices to help you get the best results when you create mobile-optimized version of a Power BI report.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: best-practice #Don't change
-ms.date: 06/05/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 
 #customer intent: As a Power BI report creator, I want use best practices so as to get the best results when I create my mobile-optimized layout of a Power BI report..
 
@@ -101,7 +102,7 @@ The following table lists the standard visuals, classified by their minimum reco
   | **Line and clustered column chart** | L |
   | **Line and stacked column chart** | L |
   | **Line chart** | L |
-  | **Metrics** | L |
+  | **Scorecards** | L |
   | **Pie chart** | L |
   | **Python visual** | L |
   | **Q&A** | L |
@@ -132,5 +133,5 @@ The following table lists the standard visuals, classified by their minimum reco
 ## Related content
 
 * [Start creating a mobile optimized report in mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
-* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
+* [View Power BI reports optimized for your phone](../explore-reports/mobile/mobile-apps-view-phone-report.md).
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).

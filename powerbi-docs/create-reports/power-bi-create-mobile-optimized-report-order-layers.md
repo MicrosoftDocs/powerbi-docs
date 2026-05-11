@@ -1,14 +1,15 @@
 ---
 title: Rearrange visual layering
 description: Learn how to use the Selection pane to rearrange the layering order of the visuals on the mobile layout canvas.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/26/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
 
@@ -24,11 +25,11 @@ The Selection pane lists all the visuals that are on the canvas. The order of th
 
 The Selection pane also has an appearance indication for each visual in the list, but it isn't possible to change the appearance in the Mobile layout view&mdash;this must be done in the regular desktop layout view.
 
-![Screenshot showing Selection pane and how to open it.](media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png)
+:::image type="content" source="media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png" alt-text="Screenshot showing Selection pane and how to open it.":::
 
 ## Related content
 
 * [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
 * [Optimize visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)
 * [Create an initial layout on the mobile layout canvas](power-bi-create-mobile-optimized-report-initial-layout.md)
-* [Publish a mobile-optimized report](power-bi-create-mobile-optimized-report-about.md#publish-a-mobile-optimized-report)
+* [Publish a mobile-optimized report](power-bi-create-mobile-optimized-report-about.md#publish-a-mobile-optimized-power-bi-report)

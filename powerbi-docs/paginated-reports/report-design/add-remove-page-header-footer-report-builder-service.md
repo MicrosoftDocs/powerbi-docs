@@ -1,12 +1,13 @@
 ---
-title: "Add or remove a page header or footer in a paginated report"
+title: Add or Remove a Page Header or Footer in a Paginated Report
 description: Find out how you can add static text, images, lines, rectangles, and borders to paginated report page headers or footers in Power BI Report Builder.
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: how-to
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 

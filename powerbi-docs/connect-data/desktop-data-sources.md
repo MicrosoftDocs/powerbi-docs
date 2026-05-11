@@ -1,8 +1,8 @@
 ---
 title: Data sources in Power BI Desktop
 description: See the available data sources in Power BI Desktop, how to connect to them, and how to export or use data sources as PBIDS files.
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -113,11 +113,9 @@ The **Microsoft Fabric** category provides the following data connections:
 
 * Power BI semantic models
 * Dataflows
-* Datamarts (preview)
 * Warehouses
 * Lakehouses
 * KQL Databases
-* Metric Sets
 
 ### Power Platform data sources
 
@@ -552,7 +550,7 @@ The URL must point to the SharePoint site itself, not to a list within the site.
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

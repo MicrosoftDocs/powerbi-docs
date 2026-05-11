@@ -1,14 +1,14 @@
 ---
 title: Power BI visual system integration
 description: Learn about the Visual API, and how Power BI handles the interactions between you, the visual, and the host.
-author: mberdugo
+author: billmath
 ms.author: billmath
 manager:
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 01/04/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to integrate my visual with Power BI so that I can create a seamless experience for users.
 ---
 

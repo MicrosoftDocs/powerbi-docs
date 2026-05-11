@@ -1,14 +1,18 @@
 ---
 title: Troubleshoot Power BI embedded analytics application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: troubleshooting
-ms.date: 01/24/2024
+ms.date: 12/15/2025
+ms.custom:
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Troubleshoot your embedded application
@@ -102,7 +106,7 @@ When you register a Microsoft Entra app, there are two parameters called *object
 
 If you're using Power BI Embedded and Microsoft Entra direct authentication, you might receive a message like the previous message when you try to sign in, because direct authentication isn't enabled.
 
-You can turn direct authentication back on using an [Microsoft Entra policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+You can turn direct authentication back on using a [Microsoft Entra policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this policy only on a per-app basis.
 

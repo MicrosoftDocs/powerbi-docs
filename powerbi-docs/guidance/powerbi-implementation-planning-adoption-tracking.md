@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Adoption tracking"
 description: "This article helps you to plan for tracking adoption of Power BI and Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -130,7 +130,7 @@ The following diagram and table provide an overview of the content in the admin 
 
 | **Content** | **Description** | **Examples of questions that you can answer with this content** |
 |---|---|---|
-| **[Feature usage and adoption](/fabric/admin/feature-usage-adoption)** | Provides insight into user activities from the activity log, and an inventory of the items in your tenant. | &bull;&nbsp;How many items are there in a tenant or workspace, and which workspace has the most content? <br/>&bull;&nbsp;How many data versus reporting items are there in a tenant or workspace, or how many items of a specific type (like dataflows)? <br/>&bull;&nbsp;Which user is most frequently exporting reports to Excel? <br/>&bull;&nbsp;Which items (or users) are inactive (they have no activity in the last 30 days)? <br/>&bull;&nbsp;Which items are redundant across or within workspaces? <br/>&bull;&nbsp;To what extent are Fabric items and features being used throughout the organization? Who's using these items, and where do they reside? <br/>&bull;&nbsp;What items do external guest users have access to (from [B2B sharing](../enterprise/service-admin-azure-ad-b2b.md))? |
+| **[Feature usage and adoption](/fabric/admin/feature-usage-adoption)** | Provides insight into user activities from the activity log, and an inventory of the items in your tenant. | &bull;&nbsp;How many items are there in a tenant or workspace, and which workspace has the most content? <br/>&bull;&nbsp;How many data versus reporting items are there in a tenant or workspace, or how many items of a specific type (like dataflows)? <br/>&bull;&nbsp;Which user is most frequently exporting reports to Excel? <br/>&bull;&nbsp;Which items (or users) are inactive (they have no activity in the last 30 days)? <br/>&bull;&nbsp;Which items are redundant across or within workspaces? <br/>&bull;&nbsp;To what extent are Fabric items and features being used throughout the organization? Who's using these items, and where do they reside? <br/>&bull;&nbsp;What items do external guest users have access to (from [B2B sharing](/fabric/enterprise/powerbi/service-admin-entra-b2b))? |
 | **[Preview hub](/fabric/governance/use-microsoft-purview-hub?tabs=admin-view&preserve-view=true)** | Provides insight into content endorsement and sensitivity labels that have been applied. | &bull;&nbsp;How many items are endorsed as Promoted or Certified? <br/>&bull;&nbsp;Which workspaces contain endorsed or labeled content? <br/>&bull;&nbsp;Which sensitivity labels are used for content, and how frequently? |
 
 The following diagram depicts how you can use the admin monitoring workspace to perform adoption tracking.
@@ -211,7 +211,7 @@ Here are some examples of positive behaviors that you might want to encourage.
 - Separation of development and production workspaces (instead of publishing directly to the workspace from which content is shared with consumers).
 - Sharing reports and dashboards from apps instead of workspaces or items.
 - Active engagement among a community of practice.
-- Use of [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel) or live connected tables in Excel.
+- Use of [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md#analyze-in-excel) or live connected tables in Excel.
 
 Here are some examples of negative behaviors that you might want to discourage.
 

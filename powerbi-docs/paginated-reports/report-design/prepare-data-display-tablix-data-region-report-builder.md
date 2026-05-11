@@ -1,12 +1,13 @@
 ---
-title: "Prepare data for display in a tablix data region in a Power BI paginated report | Microsoft Docs"
+title: Prepare Data for Display in a Tablix Data Region in a Power BI Paginated Report
 description: Learn how to customize the paginated report display of data in Power BI Report Builder to show either all data retrieved or a subset of the data.
-ms.date: 10/03/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Prepare data for display in a tablix data region in a paginated report (Power BI Report Builder)

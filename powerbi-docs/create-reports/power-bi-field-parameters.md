@@ -1,19 +1,19 @@
 ---
-title: Use report readers to change visuals (preview)
+title: Use report readers to change visuals
 description: Learn how to let report readers dynamically change the visuals in a report by using field parameters.
-author: Sujata994
-ms.author: sunaraya
-ms.reviewer: ''
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
 ms.topic: how-to
-ms.date: 03/15/2025
+ms.date: 06/12/2025
 LocalizationGroup: Reports
 #customer intent: As a Power BI customer I want to learn hot to let report readers dynamically change visuals in a report.
 ---
 
-# Let report readers use field parameters to change visuals (preview)
+# Let report readers use field parameters to change visuals
 
 Field parameters allow users to dynamically change the measures or dimensions being analyzed within a report. This feature can help your report readers explore and customize the analysis of the report by selecting the different measures or dimensions they're interested in.
 
@@ -26,15 +26,6 @@ In the following video, Sujata demonstrates how you create field parameters and 
 In the following example, the report reader can dynamically update the bar chart and table by selecting a field in the horizontal slicers above the visuals. Currently, the bar chart and table are measuring COGS and analyzing by Product, based on the reader’s selection in the slicers.
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of example field parameters based on the report reader selection."lightbox="media/power-bi-field-parameters/sample-field-parameter.png":::
-
-## Enable the field parameter preview
-
-To get started, you first need to enable the **Field parameters** preview feature.
-
-1. In Power BI Desktop, go to **File** > **Options and settings** > **Options** > **Preview features**.
-1. Select the **Field parameters**.
-
-    :::image type="content" source="media/power-bi-field-parameters/preview-toggle.png" alt-text="Screenshot of the options dialog, highlighting the Field parameters option.":::
 
 ## Create a field parameter
 
@@ -81,6 +72,26 @@ Parameter = {
 
 :::image type="content" source="media/power-bi-field-parameters/editing-field-parameter-in-dax.png" alt-text="Screenshot of example DAX parameters entered on Power BI.":::
 
+> [!NOTE]
+> Notice how the DAX above defines four fields in the Parameter and for each field three columns are provided: a name, column reference and the order number. While it is possible to define extra columns in the DAX above, this is not supported and can lead to unexpected results. We recommend you define the three columns for each field and use unique values for all columns.
+
+## Persistence of hierarchy level
+
+By default, Power BI will retain the hierarchy level displayed in a matrix as field parameter selections change. This was introduced in July 2025. However, you can turn off this behavior using the **Persist hierarchy level** setting in the report settings to go back to the pre-July 2025 behavior. Here is where to find this option:
+
+- In Power BI Desktop, navigate to Options and settings > Options > Current File > Report settings > Field Parameters > Persist hierarchy level.
+- In Fabric, navigate to the report settings and find Persist hierarchy level under Field parameter options.
+
+To illustrate the difference, consider a matrix showing a field parameter called Product Group and a column called Year on the rows, displaying Total sales. The field parameter allows selection of Category, Class, Color, or any combination. In this example, Category is selected, and the Categories are expanded, so you can see values broken down by Year: 
+
+:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-start.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-start.png":::
+
+Now, when you change the field parameter from Category to Class, what happens depends on the Persist hierarchy level setting. If it's on, the matrix remains expanded, keeping the Year column visible; If it's off, the matrix collapses and displays only values for Class. Below is a comparison showing both behaviors based on whether the toggle is enabled or disabled. 
+
+|Persist hierarchy level setting **on**|Persist hierarchy level setting **off**|
+|---|---|
+|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are still expanded after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-on.png":::|:::image type="content" source="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png" alt-text="Screenshot of a matrix showing a Product Group field parameter and Year on rows. The hierarchy levels are collapsed after the field parameter selection was changed." lightbox="media/power-bi-field-parameters/hierarchy-persistence-example-setting-off.png":::|
+
 ## Limitations
 
 - AI visuals and Q&A aren't supported with the feature.
@@ -88,7 +99,6 @@ Parameter = {
 - You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI semantic models and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI semantic models and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-semantic-models-and-analysis-services).
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
 - You can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes **Customer** and **Product** fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.
-- When a Field Parameter is used to swap fields in a visual, the visual will reset the drill and expand state.
 
 ## Considerations
 
@@ -101,5 +111,5 @@ For more information take a look at the following articles:
 
 - [Optimize Power BI Desktop](desktop-optimize-ribbon.md)
 - [Create page and bookmark navigators](button-navigators.md)
-- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md)
+- [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)

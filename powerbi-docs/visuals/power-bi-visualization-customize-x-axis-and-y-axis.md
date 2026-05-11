@@ -1,16 +1,14 @@
 ---
-title: Customize X-axis and Y-axis properties
-description: 'Customize X-axis and Y-axis properties'
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: 'kfollis'
-ms.custom: 
-   - video-removed
-   - sample-retail-analysis-sample-PBIX
+title: Customize X-Axis and Y-Axis Properties
+description: Learn how to format chart axes in Power BI, including labels, titles, gridlines, ranges, and dual-axis options.
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: how-to 
-ms.date: 04/17/2023
+ms.topic: how-to
+ms.date: 04/13/2026
+ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 ---
 
@@ -18,224 +16,227 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In this tutorial, you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so we'll take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.  
+This article shows how to customize the X-axis and Y-axis of your visuals. Not all visuals have axes—pie charts, for example, don't have them. Customization options also vary by visual type. This article covers the most common options in the **Format visual** pane.
 
-## Prerequisites
+## Value axis vs. category axis
 
-- Power BI Desktop
+Most chart types have two axes: one for values (numbers) and one for categories (text or dates). Which axis shows values or categories depends on the chart type:
 
-- [Retail Analysis Sample ](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+| Chart type | X-axis | Y-axis |
+|------------|--------|--------|
+| Column, line, area, combo, ribbon, waterfall | Categories | Values |
+| Bar | Values | Categories |
+| Scatter (with numeric X) | Values | Values |
+| Scatter (with categorical X) | Categories | Values |
 
-## Add a new visualization
+Some options, like **Range** settings, apply only to value axes. The preceding table shows which axis is the value axis for each chart type.
 
-Before you can customize your visualization, you have to build it.
+## Sample data
 
-1. In Power BI Desktop, open the Retail Analysis sample.  
+To follow along with the examples in this article, create a calculated table with sample data in a blank Power BI Desktop report.
 
-1. At the bottom, select the yellow plus icon to add a new page.
+1. Open Power BI Desktop and create a new blank report.
+1. Select **Modeling** > **New table**.
+1. Paste the following DAX expression:
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png" alt-text="Screenshot showing the new page icon, a yellow plus sign.":::
+   ```dax
+   Monthly Sales =
+   VAR _Year = YEAR(TODAY())
+   VAR _Data =
+   {
+       (DATE(_Year, 1, 1), 52000, 48000),
+       (DATE(_Year, 2, 1), 47000, 51000),
+       (DATE(_Year, 3, 1), 63000, 58000),
+       (DATE(_Year, 4, 1), 55000, 52000),
+       (DATE(_Year, 5, 1), 71000, 65000),
+       (DATE(_Year, 6, 1), 68000, 62000),
+       (DATE(_Year, 7, 1), 74000, 70000),
+       (DATE(_Year, 8, 1), 69000, 73000),
+       (DATE(_Year, 9, 1), 61000, 59000),
+       (DATE(_Year, 10, 1), 78000, 72000)
+   }
+   RETURN
+   SELECTCOLUMNS(
+       _Data,
+       "Month", [Value1],
+       "This Year", [Value2],
+       "Last Year", [Value3]
+   )
+   ```
 
-1. From the **Visualizations** pane, select the stacked column chart icon. This adds an empty template to your report canvas.
+1. Press **Enter** to create the table.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-column-chart.png" alt-text="Screenshot of the Visualizations pane and an empty stacked column chart.":::
+## Create a visualization
 
-1. To set the X-axis values, from the **Fields** pane, select **Time** > **FiscalMonth**.
+1. From the **Visualizations** pane, select the stacked column chart icon.
+1. From the **Data** pane, drag **Month** to the **X-axis** field well.
+1. Drag **This Year** and **Last Year** to the **Y-axis** field well.
 
-1. To set the Y-axis values, from the **Fields** pane, select **Sales** > **Last Year Sales** and **Sales** > **This Year Sales** > **Value**.
+:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/clustered-column-chart-axis-examples.png" alt-text="Screenshot of a column chart with sample data.":::
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-build-visual.png" alt-text="Screenshot of the populated stacked column chart.":::
+Now you can customize your axes. Power BI provides many options for formatting your visualization.
 
-Now you can customize your X-axis. Power BI gives you almost limitless options for formatting your visualization. 
+## Customize axis labels
 
-## Customize the X-axis
+Axis labels show the values or categories along each axis.
 
-There are many features that are customizable for the X-axis. You can add and modify the data labels and X-axis title. For categories, you can modify the width, size, and padding of bars, columns, lines, and areas. And for values, you can modify the display units, decimal places, and grid lines. If the primary axis data type is scalar, you can choose between continuous axis (the default for scalar types like numeric and datetime) or categorical. Continuous axes can be linear or log scale, and show all the data without scrolling. Categorical axes show the category label for each data point, and will scroll if content doesn't fit within the plot area.
+1. Select **Format** (the paint brush icon) in the **Visualizations** pane.
+1. Expand **X-axis** or **Y-axis**.
+1. Adjust these settings:
 
-The following example shows customization for a column chart. Let's add a few customizations to get you familiar with the options and then you can explore the rest on your own.
+   - **Font family**: Change the typeface
+   - **Color**: Set the label color
+   - **Text size**: Adjust the font size
+   - **Display units**: For value axes, choose Thousands, Millions, or Auto
 
-### Customize the X-axis labels
+To hide labels, toggle **Values** to **Off**. Hiding labels frees up space for data.
 
-The X-axis labels display below the columns in the chart. Right now, they're light grey, small, and difficult to read. Let's change that.
+## Multiple fields and hierarchies on an axis
 
-1. In the **Visualizations** pane, select **Format** (the paint brush icon :::image type="icon" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png":::) to reveal the customization options.
+Add multiple fields or a hierarchy to a category axis for more detailed groupings.
 
-1. Expand the X-axis options.
+### Add multiple fields
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-x.png" alt-text="Screenshot of the X-axis options.":::
+Drag more fields to the axis field well to create a hierarchy. For example, add **Year** and **Month** to the X-axis to show months grouped by year.
 
-1. Move the **X-axis** slider to **On**.
+### Auto date/time hierarchy
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png" alt-text="Screenshot of the On slider for the X axis.":::
+When you add a date field to an axis, Power BI creates a date/time hierarchy with Year, Quarter, Month, and Day levels. This hierarchy lets you drill down through dates.
 
-   Some reasons you may want to set the X axis to **Off**, is if the visualization is self-explanatory without labels or if you have a crowded report page and need to make space to display more data.
+To use actual date values instead:
 
-1. Format the text color, size, and font:
+1. Right-click the date field in the axis field well.
+1. Select the field name (for example, **Month**) instead of **Date Hierarchy**.
 
-   - **Color**: Select black
+This selection switches to a continuous or categorical date axis, depending on your axis type setting.
 
-   - **Text size**: Enter *14*
+### Concatenate labels
 
-   - **Font family**: Select **Arial Black**
-   
-   - **Columns**: Open **Spacing**
+With multiple fields on an axis, you control how labels display:
 
-   - **Inner padding**: Enter *40%*
+- **Off** (default): Labels appear in separate rows for each level. Users can drill down through the hierarchy.
+- **On**: Labels combine into a single line, such as "2026 January". This option takes less space.
 
-     :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png" alt-text="Screenshot with labels on an angle.":::
+To change this setting:
 
-1. Maybe you don't like the way the X-axis text is displayed on a diagonal. You have several options. 
-    - Change the text size to something smaller than 14.
-    - Make the visualization larger. 
-    - Display fewer columns and add a scrollbar by increasing **Minimum category width**. 
+1. In the **Format visual** pane, expand the category axis section.
+1. Toggle **Concatenate labels** to **On** or **Off**.
 
-   Here, we've selected the second option and grabbed one of the resize bars to make the visualization wider. It now accommodates the 14-point text without needing to display the text on an angle or with a scrollbar.
+Use concatenation for a compact display. Turn it off to show hierarchy levels or enable drill-down.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png" alt-text="Chart and formatting pane with labels horizontal.":::
+## Continuous vs. categorical axis
 
-### Customize the X-axis title
+Axes can be continuous or categorical. The axis type affects how data displays and whether scrolling is available.
 
-When the X-axis title is **On**, the X-axis title displays below the X-axis labels.
+- **Continuous**: Shows data on a smooth scale without gaps. All data fits without scrolling. Continuous is the default for numbers and dates.
+- **Categorical**: Shows each value as a separate category. A scrollbar appears if content doesn't fit. Text fields always use this type.
 
-1. Start by turning the X-axis title to **On**.  
+To change the axis type for numeric or date fields:
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-title-on.png" alt-text="Screenshot showing the X-axis Title On/Off toggle.":::
+1. In the **Format visual** pane, expand the axis section.
+1. Change **Type** to **Continuous** or **Categorical**.
 
-   The first thing you'll notice is that your visualization now has a default X-axis title.  In this case, it's **FiscalMonth**.
+Text fields are always categorical.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png" alt-text="Chart with title displayed along bottom.":::
+### Logarithmic scale
 
-1. Format the title text color, size, and font:
+Use a logarithmic scale when your data spans several orders of magnitude.
 
-   - **Title color**: Select orange
+1. In the **Format visual** pane, expand the axis section.
+1. Expand **Range**.
+1. Toggle **Logarithmic** to **On**.
 
-   - **Axis title**: Type *Fiscal Month* (with a space)
+> [!NOTE]
+> Logarithmic scales require all values to be either positive or negative. You can't mix positive and negative values, and zero values aren't supported.
 
-   - **Title text size**: Enter *18*
+## Customize axis range
 
-   After you finish the customizations, your stacked column chart looks something like this:
+For value axes, set the minimum and maximum values to adjust the chart scale.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title-formatted.png" alt-text="Screenshot of the customized stacked column chart.":::
+1. In the **Format visual** pane, expand the value axis section.
+1. Expand **Range**.
+1. Set custom values:
 
-1. Save the changes you've made and move to the next section. If you ever need to revert all of the changes, select **Revert to default** at the bottom of the **X-Axis** customization pane. Next, you'll customize your Y-Axis.
+   - **Minimum**: Where the axis starts
+   - **Maximum**: Where the axis ends
 
-## Customize the Y-axis
+Power BI calculates intervals based on your range. To reset, clear the fields or select **Revert to default**.
 
-There are many features that can be customized for the Y-axis. You can add and modify the data labels, Y-axis title, and gridlines. For values, you can modify the display units, decimal places, starting point, and end point. And, for categories, you can modify the width, size, and padding of bars, columns, lines, and areas. 
+> [!NOTE]
+> Power BI determines interval spacing automatically. You can't set a specific interval, but you can influence label density by adjusting the minimum and maximum values.
 
-The following example continues our customization of a column chart. Let's make a few changes to get you familiar with the options, and then you can explore the rest on your own.
+## Customize gridlines
 
-### Customize the Y-axis labels
+Gridlines help readers trace values across the chart.
 
-The Y-axis labels are displayed to the left by default. Right now, they're light grey, small, and difficult to read. Let's change that.
+1. In the **Format visual** pane, expand the axis section.
+1. Expand **Gridlines**.
+1. Adjust these settings:
 
-1. Expand the Y-Axis options.
+   - **Color**: Change the gridline color
+   - **Width**: Adjust line thickness
+   - Toggle gridlines **On** or **Off**
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-y.png" alt-text="Screenshot of the Y-axis options.":::
+## Customize bar and column layout
 
-1. Move the **Y-Axis** slider to **On**.  
+For clustered bar and column charts, customize spacing and overlap in the **Columns** or **Bars** section of the **Format visual** pane.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png" alt-text="Screenshot of the On slider for the Y axis.":::
+### Spacing options
 
-   One reason you might want to turn off the Y-axis, is to save space for more data.
+- **Category spacing**: Space between each cluster. Increase to separate clusters, or decrease to fit more data.
+- **Series spacing**: Space between bars or columns within each cluster.
 
-1. Format the text color, size, and font:
+### Overlap for direct comparison
 
-   - **Color**: Select black
+Enable **Overlap series** to stack bars or columns on top of each other instead of side by side. This layout is useful for comparing values directly, such as comparing this year to last year.
 
-   - **Text size**: Enter *10*
+When using overlap:
 
-   - **Display units**: Select **Millions**
+- **Transparency**: Make the front series semi-transparent so the series behind remains visible.
+- **Border**: Add borders to distinguish overlapping series when colors are similar.
 
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png" alt-text="Chart after Y-axis formatting.":::
+## Dual Y-axes
 
-### Customize the Y-axis title
+Combo charts support two Y-axes with different scales. Dual axes let you compare measures with different value ranges.
 
-When the Y-axis title is **On**, the Y-axis title displays next to the Y-axis labels. For this visualization, having a Y-Axis title doesn't improve the visual, so leave **Title** turned **Off**. We'll add Y-axis titles to a dual-axis visual later in this tutorial. 
+When you add a line value to a combo chart, Power BI creates a secondary Y-axis. Format each axis separately under **Y-axis (Column)** and **Y-axis (Line)**.
 
-### Customize the gridlines
+## Axis titles
 
-Let's make the gridlines stand out by changing the color and increasing the stroke:
+Axis titles help readers understand what each axis represents.
 
-- **Expand The Gridlines Tab**: Select Horizontal
+1. In the **Format visual** pane, expand **X-axis** or **Y-axis**.
+1. Expand **Title** and toggle it to **On**.
+1. Customize the title:
 
-- **Color**: Select orange
+   - **Title text**: Enter a custom title (defaults to the field name)
+   - **Title color**: Set the text color
+   - **Title size**: Adjust the font size
+   - **Style**: Show the title only, units only, or both
 
-- **Width**: Enter *2*
-
-After all these customizations, your column chart should look something like this:
-
-:::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-gridline.png" alt-text="Screenshot of the chart with the customized Y-Axis.":::
-
-## Customizing visualizations with dual Y axes
-
-Some visualizations can benefit from having two Y axes. Combo charts are a good example. Before we can format dual Y axes, we'll create a combo chart that compares trends for sales and gross margin.  
-
-### Create a chart with two Y-Axes
-
-1. Select the column chart, and change it to a *Line and stacked column* chart. This type of visual supports a single line chart value and multiple stackable column values. 
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png" alt-text="Screenshot of the Visualizations pane with the line and stacked column chart icon called out.":::
-
-
-1. Drag **Sales** > **Gross Margin Last Year %** from your Fields pane into the **Line Values** bucket.
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-add-line.png" alt-text="Screenshot of the line and stacked column chart with all three values clearly represented.":::
-
-1. Reformat the visualization to remove the angled X-axis labels. 
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png" alt-text="Combo chart and Format pane with the font size reduced to 12.":::
-
-   Power BI creates two Y axes, allowing the values to be scaled differently. The left axis measures sales dollars and the right axis measures gross margin percentage.
-
-### Format the second Y-Axis
-
-Because we started with a visualization with one formatted Y-axis, Power BI created the second Y-axis using the same settings. But we can change that. 
-
-1. In the **Visualizations** pane, select the paint brush icon to display the format options.
-
-1. Expand the secondary Y-Axis options.
-
-1. Verify that it is **On**. Our secondary Y axis represents the line chart.
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png" alt-text="Screenshot of the Show secondary option.":::
-
-1. (Optional) Customize the font color, size, and display units for the two axes. If you switch **Position** for either the column axis or the line axis, then the two axes switch sides.
-
-### Add titles to both axes
-
-With a visualization that's complex, it helps to add axes titles.  Titles help your colleagues understand the story your visualization is telling.
-
-1. Toggle **Title** to **On** for **Y-Axis (Column)** and the **Y-Axis (Line)**.
-
-1. Set **Style** to **Show title only** for both.
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-title.png" alt-text="Screenshot of the Title and Style options.":::
-
-1. Your combo chart now shows dual axes, both with titles.
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-titles-on.png" alt-text="Screenshot of the customized dual Y-Axes chart.":::
-
-1. Format the titles. In this example, we've shorted one of the titles and reduced the font size for both.
-
-   - Font size: **9**
-   - Shortened the **Axis title** for the first Y axis (the column chart): Sales last year & this year.
-
-   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png" alt-text="Screenshot of the combo chart with full titles displaying.":::
-
-   For more information, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). 
+For simple charts, you might not need axis titles. For complex charts like dual-axis combos, titles clarify what each axis measures.
 
 ## Invert the y-axis
 
 For line, bar, column, area, and combo charts, you can invert the y-axis, putting positive values going down and negative values going up.
 
-- Select the visual. In the **Format** pane, expand the **Y axis** section, expand **Range** section. Slide **Invert range** to **On**.
+- In the **Format visual** pane, select **Visual**. Expand the **Y-axis** section, expand the **Range** section, and move the **Invert range** slider to **On**.
 
-  :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
+## Data labels vs. value axis
+
+Data labels display values directly on each data point. Use them instead of a value axis for a cleaner design, or use both for maximum clarity.
+
+To enable data labels:
+
+1. In the **Format visual** pane, select **Visual**.
+1. Expand **Data labels** and set to **On**.
+
+Adding data labels might shift the axis range to make space. This shift can affect your chart's proportions.
 
 ## Considerations and limitations
 
-- For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
+- Power BI chooses tick intervals automatically based on your data range. You can't set a specific interval, but adjusting the minimum and maximum values affects label density.
+- Date values are localized based on your system or browser locale.
 
 ## Related content
 

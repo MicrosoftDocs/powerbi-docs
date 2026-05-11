@@ -1,13 +1,13 @@
 ---
 title:  Power BI custom visual file download API
 description: This article describes the API used to allow a Power BI custom visual to export data to a text, PDF, excel, or other file.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/21/2024
+ms.date: 12/15/2025
 ---
 
 # File download API

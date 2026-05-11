@@ -1,14 +1,14 @@
 ---
 title: Introduction to SVG utils in Power BI visuals
 description: Learn about the SVG utils package and see examples of how you can use them to simplify SVG manipulations for Power BI visuals.
-author: mberdugo
+author: billmath
 ms.author: billmath
 manager: rkarlin
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 01/10/2024
+ms.date: 12/15/2025
 #customer intent: As a developer, I want to learn about the SVG utils package and see examples of how I can use them to simplify SVG manipulations for Power BI visuals.
 ---
 

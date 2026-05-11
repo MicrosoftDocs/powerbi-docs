@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot Power BI REST APIs
 description: Learn how to fix some common issues you might encounter when using Power BI REST APIs for Power BI Embedded features.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
-ms.date: 6/04/2024
+ms.date: 12/15/2025
 ---
 
 # Troubleshoot REST APIs

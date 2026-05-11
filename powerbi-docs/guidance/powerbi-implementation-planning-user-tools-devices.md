@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: User tools and devices"
 description: "Learn about user tools and managing devices to enable and support Power BI consumers and authors in the organization."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -60,9 +60,9 @@ The most common ways that a consumer can access Power BI content include:
 | Software | Target audience |
 | --- | --- |
 | Power BI service | Content consumers view content by using a web browser (such as Microsoft Edge). |
-| Teams | Content consumers who view content that's been published to the Power BI service by using the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md). This option is convenient when users spend a lot of time in Teams. For more information, see [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/). |
+| Teams | Content consumers who view content that's been published to the Power BI service by using the [Power BI app for Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md). This option is convenient when users spend a lot of time in Teams. For more information, see [Guide to enabling your organization to use Power BI in Microsoft Teams](https://powerbi.microsoft.com/blog/guide-to-enabling-your-organization-to-use-power-bi-in-microsoft-teams/). |
 | Power BI Mobile Application | Content consumers who interact with content that's been published to the Power BI service (or Power BI Report Server) using iOS, Android, or Windows 10 applications. |
-| OneDrive/SharePoint viewer | Content consumers who view [Power BI Desktop (.pbix) files that are stored in OneDrive or SharePoint](../collaborate-share/service-sharepoint-viewer.md) by using a web browser. This option is a useful alternative to sharing the original Power BI Desktop files. The OneDrive/SharePoint viewer is most suitable for informal teams who want to provide a friendly, web-based, report consumer experience without explicitly publishing .pbix files to the Power BI service. |
+| OneDrive/SharePoint viewer | Content consumers who view [Power BI Desktop (.pbix) files that are stored in OneDrive or SharePoint](../collaborate-share/office-integration/service-sharepoint-viewer.md) by using a web browser. This option is a useful alternative to sharing the original Power BI Desktop files. The OneDrive/SharePoint viewer is most suitable for informal teams who want to provide a friendly, web-based, report consumer experience without explicitly publishing .pbix files to the Power BI service. |
 | Custom application | Content consumers who view content from the Power BI service that's been embedded in a custom application [for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) or [for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md). |
 
 > [!NOTE]
@@ -135,7 +135,6 @@ The capabilities in the Power BI service for authoring and editing content are c
 There are some types of Power BI items that can be created in the web-based experience, such as:
 
 - Dataflows
-- Datamarts
 - Paginated reports
 - Power BI reports
 - Dashboards
@@ -194,9 +193,9 @@ Many business users are proficient with Microsoft Excel and want to use it for d
 
 Here are several ways to efficiently use Excel with Power BI.
 
-- **Connect Excel to a Power BI semantic model**: This capability is known as an _Excel live connection_ (when you [start from Excel](../collaborate-share/service-connect-excel-power-bi-datasets.md#discover-power-bi-semantic-models-in-excel)) or as _Analyze in Excel_ (when you [start from the Power BI service](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel)). Connecting Excel to a Power BI semantic model is best suited to report creators who prefer using Excel for creating visualizations that are connected to an existing shared semantic model. The advantage of this approach is that it's a connection—rather than an export of data—so the data in the Excel workbook is [refreshable](../collaborate-share/service-analyze-power-bi-datasets-excel.md).
-- **Connect Excel to featured tables in a Power BI semantic model**: If you prefer to connect Excel to a [subset of tables](../collaborate-share/service-excel-featured-tables.md) within a Power BI semantic model (rather than the entire shared semantic model), you can use [featured tables](../collaborate-share/service-create-excel-featured-tables.md). This option works well when you need to relate data that's in Excel to data that's stored in Power BI.
-- **Export to Excel with a live connection**: When viewing a visual, you can [export a table of refreshable data](../collaborate-share/service-analyze-in-excel.md#export-to-excel-with-live-connection) to Excel. This technique is useful when you want to further explore the data by using a PivotTable in Excel.
+- **Connect Excel to a Power BI semantic model**: This capability is known as an _Excel live connection_ (when you [start from Excel](../collaborate-share/office-integration/service-connect-excel-power-bi-datasets.md#discover-power-bi-semantic-models-in-excel)) or as _Analyze in Excel_ (when you [start from the Power BI service](../collaborate-share/office-integration/service-analyze-in-excel.md#analyze-in-excel)). Connecting Excel to a Power BI semantic model is best suited to report creators who prefer using Excel for creating visualizations that are connected to an existing shared semantic model. The advantage of this approach is that it's a connection—rather than an export of data—so the data in the Excel workbook is [refreshable](../collaborate-share/office-integration/service-analyze-power-bi-datasets-excel.md).
+- **Connect Excel to featured tables in a Power BI semantic model**: If you prefer to connect Excel to a [subset of tables](../collaborate-share/office-integration/service-excel-featured-tables.md) within a Power BI semantic model (rather than the entire shared semantic model), you can use [featured tables](../collaborate-share/office-integration/service-create-excel-featured-tables.md). This option works well when you need to relate data that's in Excel to data that's stored in Power BI.
+- **Export to Excel with a live connection**: When viewing a visual, you can [export a table of refreshable data](../collaborate-share/office-integration/service-analyze-in-excel.md#export-to-excel-with-live-connection) to Excel. This technique is useful when you want to further explore the data by using a PivotTable in Excel.
 - **Create an Excel data model**: The [Excel data model](https://support.microsoft.com/office/create-a-data-model-in-excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b) (formerly known as _Power Pivot_) is a native feature of Excel. It uses the same database engine as Power BI for storing imported semantic models, and the same Power Query functionality to get data. However, in Excel, the functionality is updated much less frequently than Power BI. It's useful for content creators who create [small models](../connect-data/reduce-the-size-of-an-excel-workbook.md) and have a strong preference for working in Excel. Optionally, you can import your workbook from SharePoint or OneDrive for work or business. That allows you to view the workbook in the Power BI service. Or you can create a new Power BI semantic model that's synchronized with the data in the workbook (when it's stored in OneDrive for work or school).
 
 There are other ways to work with Excel. These options are less optimal, and so you should use them only when necessary.
@@ -209,7 +208,7 @@ There are other ways to work with Excel. These options are less optimal, and so 
 
 Here are some important points to consider when determining whether Excel is an appropriate authoring tool.
 
-- [Certain prerequisites](../collaborate-share/service-connect-excel-power-bi-datasets.md#requirements) must be in place to allow users to connect to a Power BI semantic model from Excel.
+- [Certain prerequisites](../collaborate-share/office-integration/service-connect-excel-power-bi-datasets.md#requirements) must be in place to allow users to connect to a Power BI semantic model from Excel.
 - In some organizations, users have the 32-bit version of Excel installed rather than the 64-bit version. The 64-bit version of Excel can support larger data volumes, and generally performs better than the 32-bit version. All data providers must also align with this choice.
 - Some features in Power BI Desktop aren't available in the Excel data model, or they're released on a significantly slower cadence. Therefore, complex modeling requirements might not be (easily) possible in Excel.
 - Some connectors and data sources that are available in Power BI Desktop aren't available in Excel.
@@ -280,7 +279,7 @@ Here are several ways that organizations can manage [installations and updates o
 
 | Type of installation | Supports automatic updates | Description |
 | --- | --- | --- |
-| Microsoft Store | Yes | Power BI Desktop is distributed from the [Microsoft Store](https://www.microsoft.com/store). All updates, including bug fixes, are automatically installed. This option is an easy and seamless approach, provided that your organization doesn't block some (or all) apps from the Microsoft Store for some (or all) users. |
+| Microsoft Store | Yes | Power BI Desktop is distributed from the [Microsoft Store](https://apps.microsoft.com/). All updates, including bug fixes, are automatically installed. This option is an easy and seamless approach, provided that your organization doesn't block some (or all) apps from the Microsoft Store for some (or all) users. |
 | Manual installation | No | You can manually download and install an executable (.exe) file from the [Microsoft Download Center](https://aka.ms/pbiSingleInstaller). However, be aware that the user who installs the software must have local administrator rights—in most organizations, those rights are restricted. If you choose to use this approach (and it isn't managed by IT), there's a risk that users will end up with different versions of Power BI Desktop installed, possibly resulting in compatibility issues. Also, with this approach, every user will need to be notified to install quick fix engineering (QFE) releases, also known as _bug fixes_, when they come out. |
 | IT-managed systems | Depends upon the setup | You can use a variety of IT-managed organizational deployment methods, like Microsoft System Center or Microsoft Application Virtualization (App-V). This option is best suited for organizations that need to manage many installations at scale or in a customized way. |
 
@@ -315,7 +314,7 @@ Depending on your data sources, you might need to install drivers, connectors, o
 
 - **Drivers**: A _driver_ is a software component that connects to other systems. For example, to connect to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you might need the Oracle Data Access Client software. Or, to connect to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you might need an ODBC driver.
 - **Custom connectors**: A [custom data source connector](../connect-data/desktop-connector-extensibility.md) might be required when connecting to a legacy or proprietary system.
-- **Excel provider**: The [Analyze in Excel](../collaborate-share/service-connect-power-bi-datasets-excel.md) provider allows users to create visualizations in Excel while connected to an existing shared semantic model that's been published to the Power BI service.
+- **Excel provider**: The [Analyze in Excel](../collaborate-share/office-integration/service-connect-power-bi-datasets-excel.md) provider allows users to create visualizations in Excel while connected to an existing shared semantic model that's been published to the Power BI service.
 - **Analysis Services client libraries**: When connecting to an Analysis Services source, a [client library](/analysis-services/client-libraries) needs to be installed.
 - **Access Database OLE DB provider**: When connecting to an Access database, an [OLE DB provider](/power-query/connectors/access-database#prerequisites) needs to be installed.
 
@@ -338,7 +337,7 @@ For more information, see [Strategy for file locations](powerbi-implementation-p
 
 ### Custom visuals
 
-Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://powerbi.microsoft.com/developers/custom-visualization/), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
+Power BI custom visuals, which developers can create by using the [Power BI visuals SDK](https://www.microsoft.com/power-platform/products/power-bi/developers), allow Power BI report creators to work beyond the built-in core visuals. A custom visual can be created and released by Microsoft, software developers, vendors, or partners.
 
 To use a custom visual in Power BI Desktop, it must first be installed on the machine of the content creator. There are several ways to distribute visuals to users.
 
@@ -406,9 +405,9 @@ The Windows operating system stores machine information, settings, and options i
 Here are several common uses of registry settings related to Power BI Desktop.
 
 - Disable [notifications](../fundamentals/desktop-get-the-desktop.md#disable-notifications) that a software update is available. That's useful when you're certain that IT will obtain the Power BI Desktop update, perform validations, and then push updates to user devices through their normal process.
-- Set the global [privacy level](../enterprise/desktop-privacy-levels.md). It's wise to set this setting to _Organizational_ as the default because it can help to avoid data privacy violations when different data sources are merged.
+- Set the global [privacy level](/power-query/privacy-levels). It's wise to set this setting to _Organizational_ as the default because it can help to avoid data privacy violations when different data sources are merged.
 - Disable the Power BI Desktop [sign-in form](../enterprise/desktop-admin-sign-in-form.md). Disabling the form is useful when organizational machines are automatically signed in. In this case, the user doesn't ever need to be prompted.
-- Tune [Query Editor performance](../create-reports/desktop-evaluation-configuration.md). This setting is useful when you need to influence query execution behavior by changing defaults.
+- Tune [Query Editor performance](../transform-model/desktop-evaluation-configuration.md). This setting is useful when you need to influence query execution behavior by changing defaults.
 - Disable the [external tools](../transform-model/desktop-external-tools.md#disabling-the-external-tools-ribbon) ribbon tab. You might disable the ribbon tab when you know you can't approve or support the use of external tools.
 
 > [!TIP]
@@ -416,11 +415,11 @@ Here are several common uses of registry settings related to Power BI Desktop.
 
 ### Mobile device management
 
-Many users like to interact with Power BI content on a mobile device, such as a tablet or a phone, whether they're at home or traveling. The [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md) for iOS, Android, and Windows are primarily designed for smaller form factors and touch screens. They make it easier to interact with content that's been published to the Power BI service or Power BI Report Server.
+Many users like to interact with Power BI content on a mobile device, such as a tablet or a phone, whether they're at home or traveling. The [Power BI mobile apps](../explore-reports/mobile/mobile-apps-for-mobile-devices.md) for iOS, Android, and Windows are primarily designed for smaller form factors and touch screens. They make it easier to interact with content that's been published to the Power BI service or Power BI Report Server.
 
 You can specify app protection policies and device protection policies for managed and unmanaged devices by using [Microsoft Intune](../enterprise/service-admin-mobile-intune.md). Intune is a software service that provides mobile device and application management, and it supports mobile application management (MAM) policies. Policies can be set at various [levels of protection](/mem/intune/apps/app-protection-policy#app-protection-policy-data-protection-framework).
 
-Optionally, a mobile device management (MDM) solution from Microsoft 365, or a third party, might also be used to [customize](../consumer/mobile/mobile-app-configuration.md) the behavior of Power BI mobile apps. The Power BI app for Windows also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+Optionally, a mobile device management (MDM) solution from Microsoft 365, or a third party, might also be used to [customize](../explore-reports/mobile/mobile-app-configuration.md) the behavior of Power BI mobile apps. The Power BI app for Windows also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 Here are several ways that you might choose to use MAM and MDM policies.
 
@@ -433,7 +432,7 @@ Here are several ways that you might choose to use MAM and MDM policies.
 - Require biometric data, or an access PIN, to open the mobile app.
 - Specify the default behavior when a user selects or taps in a mobile app.
 
-For more information about securing devices and data, see the [Power BI security whitepaper](whitepaper-powerbi-security.md#power-bi-mobile).
+For more information about securing devices and data, see the [Power BI security whitepaper](white-paper-powerbi-security.md#power-bi-mobile).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

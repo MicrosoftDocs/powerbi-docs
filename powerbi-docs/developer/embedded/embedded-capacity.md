@@ -1,13 +1,13 @@
 ---
 title: Capacity and SKUs in Power BI embedded analytics
 description: Understand capacity and SKUs in Power BI embedded analytics.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 04/15/2025
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -46,7 +46,7 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 Power BI premium offers two SKUs, *P* and *EM*.
 
 * [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](/power-bi/enterprise)
+* [Buy a Premium SKU](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 
 ### Microsoft Fabric
 
@@ -73,10 +73,12 @@ In this table, a custom app refers to a web app created using embedded analytics
 |          | (F SKU) | (A SKU)         | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |✔        |
 |[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✔        |✖         |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/office-integration/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/office-integration/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/office-integration/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
 
 >[!NOTE]
+> Azure Embedded (F SKU) capacities aren't supported in the GCC environment. Only EM and P SKUs are available for use in GCC. Azure Embedded capacities are supported in GCC High and DoD environments.
+>
 > To read more about **F SKU**s see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
@@ -112,7 +114,7 @@ More information about SKU limits, is available here:
 
 ### Embedded memory enhancements
 
-The amount of memory available on each node size is described in the *Max memory (GB)* column in the [Semantic model SKU limitation](/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation) table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an F64 capacity, a single dataset size is limited to 25 GB.
+The amount of memory available on each node size is described in the *Max memory (GB)* column in the [Semantic model SKU limitation](/fabric/enterprise/powerbi/service-premium-what-is#semantic-model-sku-limitation) table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an F64 capacity, a single dataset size is limited to 25 GB.
 
 ## Considerations and limitations
 

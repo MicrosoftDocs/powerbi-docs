@@ -1,6 +1,7 @@
 ---
-author: denglishbi
-ms.author: daengli
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: include

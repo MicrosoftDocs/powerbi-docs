@@ -2,11 +2,12 @@
 title: Power BI capacity table
 description: See specifications for various Power BI Embedded capacity SKUs, including the v-core count, the max memory per semantic model and query, and other information.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
-ms.date: 11/13/2023
+ms.date: 09/30/2025
 ms.custom: include file
+ai-usage: ai-assisted
 ---
 
 | SKU<sup>1</sup>               | Capacity Units (CU) | Power BI SKU      | Power BI v-cores |
@@ -26,3 +27,5 @@ ms.custom: include file
 <sup>1</sup> In the Microsoft 365 or [Embed for your organization](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) (user owns data) scenario, SKUs that are smaller than F64 require a Pro or Premium Per User (PPU) license, or a Power BI individual trial to consume Power BI content.
 
 <sup>2</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
+
+<sup>3</sup> FT (trial) capacities inherit F64 limits (time-limited) unless explicitly documented otherwise.

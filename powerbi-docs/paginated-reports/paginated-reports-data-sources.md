@@ -1,13 +1,15 @@
 ---
-title: "Supported data sources for Power BI paginated reports"
+title: Supported Data Sources for Power BI Paginated Reports
 description: Learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 08/26/2024
+ms.topic: concept-article
+ms.date: 12/01/2025
+ai-usage: ai-assisted
+ms.custom: sfi-image-nochange
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -30,8 +32,9 @@ Paginated reports natively support the following list of data sources:
 | Azure SQL Managed Instance | Basic, SSO, OAuth2 | Through public or VNet-local endpoints (VNet-local endpoints need to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The Azure Analysis Services firewall must be disabled or configured to allow all IP ranges in the Azure Germany region. This applies only in the Azure Germany region. SSO from external tenant isn't supported. |
 | Power BI semantic model | SSO | Premium and non-Premium Power BI semantic models. Requires Read permission. Only Import mode and DirectQuery Power BI semantic models are supported. Report queries using a DirectQuery Power BI semantic model as a data source have a fixed 10-minute time-out. For report queries that take longer than 10 minutes, use the Power BI semantic model's [XMLA Read/Write endpoint](../enterprise/service-premium-connect-tools.md) as the report data source. |
+|Direct Lake models|SSO, OAuth2|Direct Lake on SQL endpoints supports both SSO and OAuth2 while Direct Lake on semantic models supports SSO. For more details on how to create reports using Direct Lake models and permissions required, see [this article](/fabric/fundamentals/building-reports).|
 | Premium Power BI semantic model (XMLA) | SSO | To ensure proper connectivity in Power BI Report Builder, ensure that the **Do not use credentials** option is selected when setting your data source.<br> Access through the XMLA honors security group membership set at the workspace or app level.<br> Users with at least a [Contributor role in a workspace](../collaborate-share/service-roles-new-workspaces.md) can render paginated reports with Premium Power BI semantic models. Other users need [Build permission on the underlying datasets](../connect-data/service-datasets-build-permissions.md).    |
-| Dataverse | SSO, OAuth2 | Can't use a gateway as multifactor authentication (MFA)  isn't supported.
+| Dataverse | SSO, OAuth2 | Can't use a gateway as multifactor authentication (MFA)  isn't supported.|
 | Enter data | N/A | Data is embedded in the report. |
 
 Except for Azure SQL Database, all data sources are ready to use after you upload the report to the Power BI service. The data sources default to using SSO, where applicable. For Azure Analysis Services, you can change the authentication type to OAuth2. However, once the authentication type for a given data source is changed to OAuth2, it can't revert back to use SSO.  In addition, this change applies to all the reports that use that data source across all workspaces for a given tenant.  Row-level security in paginated reports won't work unless users choose SSO for authentication type.
@@ -61,15 +64,15 @@ Also, for paginated reports, a report publisher with a Power BI enterprise gatew
 
 For Azure SQL Database data sources, you need to set an authentication type before you run the report. That applies only when you use a data source for the first time in a workspace. That first time, you see the following message:
 
-![Screenshot of dialog box to Publish to Power BI.](media/paginated-reports-data-sources/power-bi-paginated-publishing.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-publishing.png" alt-text="Screenshot of dialog box to Publish to Power BI." lightbox="media/paginated-reports-data-sources/power-bi-paginated-publishing.png":::
 
 If you don't supply any credentials, an error occurs when you run the report. Select **Continue**  to go to the **Data source credentials** page for the report you just uploaded:
 
-![Screenshot of settings for the Azure SQL Database.](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png" alt-text="Screenshot of settings for the Azure SQL Database." lightbox="media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png":::
 
 Select the **Edit credentials** link for a given data source to bring up the **Configure** dialog box:
 
-![Screenshot of dialog box to Configure the Azure SQL Database.](media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png)
+:::image type="content" source="media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png" alt-text="Screenshot of dialog box to Configure the Azure SQL Database." lightbox="media/paginated-reports-data-sources/power-bi-paginated-configure-azure-sql.png":::
 
 For Azure SQL Database data sources, here are the supported authentication types:
 
@@ -83,8 +86,8 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 - When connecting to Fabric Lakehouse using SQL analytics endpoint, note that you cannot set Query type in Power BI Report Builder's Dataset Properties dialog. As a workaround, select Text option and invoke the stored procedure.
 
-## Next steps
+## Related content
 - [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md).
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

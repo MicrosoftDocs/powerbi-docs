@@ -1,22 +1,23 @@
 ---
 title: Copilot in Power BI tutorial - Get started
 description: Learn how to configure Power BI Desktop settings that are required for this end-to-end tutorial.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: azure-data-cat
 ms.date: 05/06/2025
 ---
 
 # Copilot in Power BI tutorial: Get started
 
-> [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 Before you begin, you need to complete the following prerequisites and download the sample Power BI Desktop file required for this end-to-end tutorial.
 

@@ -8,7 +8,8 @@ ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 # Create or edit a dashboard tile
@@ -17,7 +18,7 @@ LocalizationGroup: Dashboards
 
 ## Dashboard *owners* versus dashboard *consumers*
 
-When you create or own a dashboard, you have many options for changing the look and default behavior of the tiles on that dashboard. Use the following settings and strategies to design the dashboard *consuming* experience for your colleagues. Will selecting a tile open the underlying report, a custom URL, or a different dashboard? Maybe you'll [add a tile that displays a video or streaming data](service-dashboard-add-widget.md)? You might even want to [create a tile that has interactive slicers](service-dashboard-pin-live-tile-from-report.md). As a *creator* you have many options.
+When you create or own a dashboard, you have many options for changing the look and default behavior of the tiles on that dashboard. Use the following settings and strategies to design the dashboard *consuming* experience for your colleagues. Does selecting a tile open the underlying report, a custom URL, or a different dashboard? Maybe you can [add a tile that displays a video or streaming data](service-dashboard-add-widget.md). You might even want to [create a tile that has interactive slicers](service-dashboard-pin-live-tile-from-report.md). As a *creator* you have many options.
 
 This article covers how to:
 
@@ -30,15 +31,15 @@ This article covers how to:
 * [Delete a tile](#delete)
 
   > [!TIP]
-  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](../consumer/end-user-tiles.md).
+  > To change the visualization shown on the tile itself, delete the tile and add a new [dashboard tile](../explore-reports/end-user-tiles.md).
 
 ## Prerequisites
 
-You just need a [Fabric free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
+You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
 
 ## Get the sample
 
-To follow along, open the Power BI service (app.powerbi.com). 
+To follow along, open the Power BI service (app.powerbi.com).
 
 1. Select **Learn** in the left nav.
 
@@ -66,7 +67,7 @@ To follow along, open the Power BI service (app.powerbi.com).
 
     :::image type="content" source="media/service-dashboard-edit-tile/power-bi-pin.png" alt-text="Screenshot of the tile, highlighting the pin icon.":::
 
-1. When the **Pinned to dashboard** message appears, select **Go to dashboard**. You'll be prompted to save your changes. Select **Save**.
+1. When the **Pinned to dashboard** message appears, select **Go to dashboard**. You're prompted to save your changes. Select **Save**.
 
 - - -
 <a name="move"></a>
@@ -143,9 +144,9 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 ## Related content
 
-* [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
+* [Dashboard tiles in Power BI](../explore-reports/end-user-tiles.md)
 
-* [Dashboards in Power BI](../consumer/end-user-dashboards.md)
+* [Dashboards in Power BI](../explore-reports/end-user-dashboards.md)
 
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 

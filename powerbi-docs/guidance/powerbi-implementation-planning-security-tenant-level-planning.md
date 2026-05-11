@@ -1,14 +1,16 @@
 ---
 title: "Power BI implementation planning: Tenant-level security planning"
 description: "Learn about tenant-level security planning for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.custom: fabric-cat
+ms.topic: concept-article
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-ga-nochange
 ---
 
 # Power BI implementation planning: Tenant-level security planning
@@ -22,7 +24,7 @@ This tenant-level security planning article is primarily targeted at:
 
 This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](white-paper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
 
 Because Power BI content can be used and secured in different ways, content creators make many tactical decisions. However, there are some strategic planning decisions to make at the tenant level, too. Those strategic planning decisions are the focus for this article.
 
@@ -73,7 +75,7 @@ You need to make some tenant-level decisions that relate to security and privacy
 Here are a few examples of high-level security strategies. You might choose to make decisions that affect the entire organization.
 
 - **Requirements for row-level security**: You can use row-level security (RLS) to restrict data access for specific users. That means different users see different data when accessing the same report. A Power BI semantic model or a data source (when using single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article.
-- **Data discoverability**: Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models or datamarts in the [OneLake catalog](/fabric/governance/onelake-catalog), and whether content authors are allowed to request access to those items by using the _Request access_ workflow. For more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
+- **Data discoverability**: Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models in the [OneLake catalog](/fabric/governance/onelake-catalog), and whether content authors are allowed to request access to those items by using the _Request access_ workflow. For more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
 - **Data that's permitted to be stored in Power BI**: Determine whether there are certain types of data that shouldn't be stored in Power BI. For example, you might specify that certain sensitive information types, like bank account numbers or social security numbers, can't be stored in a semantic model. For more information, see the [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article.
 - **Inbound private networking**: Determine whether there are requirements for network isolation by using private endpoints to access Power BI. When you use [Azure Private Link](/fabric/security/security-private-links-overview), data traffic is sent by using the Microsoft private network backbone instead of going across the internet.
 - **Outbound private networking**: Determine whether more security is required when connecting to data sources. The [Virtual Network (VNet) data gateway](/data-integration/vnet/use-data-gateways-sources-power-bi) enables secure outbound connectivity from Power BI to data sources within a VNet. You can use an Azure VNet data gateway when content is stored in a Premium workspace.
@@ -136,13 +138,13 @@ It might be difficult to find the right balance between unrestricted access and 
 Power BI supports [Microsoft Entra Business-to-Business (B2B)](/azure/active-directory/external-identities/what-is-b2b). External users, for instance from a customer or partner company, can be invited as guest users in Microsoft Entra ID for collaboration purposes. External users can work with Power BI and many other Azure and Microsoft 365 services.
 
 > [!IMPORTANT]
-> The [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md) is the best resource for learning about strategies for handling external users. This article is limited to describing the most important considerations that are relevant to planning.
+> The [Microsoft Entra B2B white paper](/fabric/enterprise/powerbi/service-admin-entra-b2b) is the best resource for learning about strategies for handling external users. This article is limited to describing the most important considerations that are relevant to planning.
 
 There are advantages when an external user is from another organization that also has Microsoft Entra ID set up.
 
 - **Home tenant manages the credentials**: The user's home tenant stays in control of their identity and management of credentials. You don't need to synchronize identities.
 - **Home tenant manages the user's status**: When a user leaves that organization and the account is removed or disabled, with immediate effect, the user will no longer have access to your Power BI content. It's a significant advantage because you might not know when someone has left their organization.
-- **Flexibility for user licensing**: There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
+- **Flexibility for user licensing**: There are cost-effective [licensing options](/fabric/enterprise/powerbi/service-admin-entra-b2b#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
@@ -150,7 +152,7 @@ There are advantages when an external user is from another organization that als
 
 There are two aspects to enabling and managing how external user access will work:
 
-- [Microsoft Entra settings](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b) that are managed by a Microsoft Entra administrator. These Microsoft Entra settings are a prerequisite.
+- [Microsoft Entra settings](/fabric/enterprise/powerbi/service-admin-entra-b2b) that are managed by a Microsoft Entra administrator. These Microsoft Entra settings are a prerequisite.
 - [Fabric tenant settings](/fabric/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
 
 ### Guest invitation process
@@ -158,7 +160,7 @@ There are two aspects to enabling and managing how external user access will wor
 There are two ways to invite guest users to your tenant.
 
 - **Planned invitations**: You can set up [external users](/azure/devops/organizations/accounts/add-external-user) ahead of time in Microsoft Entra ID. That way, the guest account is ready whenever a Power BI user needs to use it for assigning permissions (for example, app permissions). Although it requires some up-front planning, it's the most consistent process because all Power BI security capabilities are supported. An administrator can use [PowerShell](/azure/active-directory/external-identities/b2b-quickstart-invite-powershell) to efficiently add a large number of external users.
-- **Ad hoc invitations**: A guest account can be automatically generated in Microsoft Entra ID at the time that a Power BI user shares or distributes content to an external user (who wasn't previously set up). This approach is useful when you don't know ahead of time who the external users will be. However, this capability must first be [enabled in Microsoft Entra ID](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b). The ad hoc invitation approach works for [ad hoc per-item permissions](whitepaper-azure-b2b-power-bi.md#ad-hoc-per-item-sharing) and app permissions.
+- **Ad hoc invitations**: A guest account can be automatically generated in Microsoft Entra ID at the time that a Power BI user shares or distributes content to an external user (who wasn't previously set up). This approach is useful when you don't know ahead of time who the external users will be. However, this capability must first be [enabled in Microsoft Entra ID](/fabric/enterprise/powerbi/service-admin-entra-b2b). The ad hoc invitation approach works for [ad hoc per-item permissions](/fabric/enterprise/powerbi/service-admin-entra-b2b) and app permissions.
 
 > [!TIP]
 > Not every security option in the Power BI service supports triggering an ad hoc invitation. For this reason, there's an inconsistent user experience when assigning permissions (for example workspace security versus per-item permissions versus app permissions). Whenever possible, we recommend that you use the planned invitation approach because it results in a consistent user experience.
@@ -244,7 +246,7 @@ Here are some of the types of files that might be involved in a Power BI impleme
   - **Power BI Desktop files**: The .pbix files that have been downloaded from the Power BI service.
   - **PowerPoint and PDF files**: The PowerPoint presentations (.pptx) and PDF documents downloaded from the Power BI service.
   - **Excel and CSV files**: Data exported from reports in the Power BI service.
-  - **Paginated report files**: The files exported from paginated reports in the Power BI service. Excel, PDF, and PowerPoint are supported. Other [export file formats](../consumer/end-user-paginated-report.md#export-the-paginated-report) exist for paginated reports as well, including Word, XML, or web archive. When using the [export files to reports API](/rest/api/power-bi/reports/export-to-file-in-group), image formats are also supported.
+  - **Paginated report files**: The files exported from paginated reports in the Power BI service. Excel, PDF, and PowerPoint are supported. Other [export file formats](../explore-reports/end-user-paginated-report.md#export-the-paginated-report) exist for paginated reports as well, including Word, XML, or web archive. When using the [export files to reports API](/rest/api/power-bi/reports/export-to-file-in-group), image formats are also supported.
   - **Email files**: Email images and attachments from subscriptions.
 
 You'll need to make some decisions about where users can or can't store files. Typically, that process involves creating a governance policy that users can refer to. The locations for source files and exported files should be secured to ensure appropriate access by authorized users.

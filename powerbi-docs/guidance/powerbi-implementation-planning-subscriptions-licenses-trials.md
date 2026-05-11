@@ -1,15 +1,17 @@
 ---
 title: "Power BI implementation planning: Subscriptions, licenses, and trials"
 description: "This article helps you to plan for subscriptions, licenses, and trials for Power BI and Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.custom: fabric-cat
+ms.topic: concept-article
 ms.collection: ce-skilling-ai-copilot
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-ga-nochange
 ---
 
 # Power BI implementation planning: Subscriptions, licenses, and trials
@@ -30,7 +32,7 @@ One key aspect of managing Microsoft Fabric is to ensure that users have access 
 > [!NOTE]
 > Licensing is an important topic that can be complex, especially when your organization is implementing Fabric or Power BI for the first time. While this article describes key decisions and considerations about subscriptions, licenses, and trails, we recommend that you refer to the following supplementary articles and resources for more detailed and practical information.
 >
-> - **[Power BI pricing](https://powerbi.microsoft.com/pricing/)**: This webpage provides the latest information about the pricing of the different licenses available for Power BI and Fabric in your region, as well as a feature comparison.
+> - **[Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)**: This webpage provides the latest information about the pricing of the different licenses available for Power BI and Fabric in your region, as well as a feature comparison.
 > - **[Power BI service per-user and capacity-based licenses](../fundamentals/service-features-license-type.md)**: This article provides detailed information about the different licenses available to use Power BI.
 > - **[Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)**: This article (and related articles) provides practical information about how to purchase and assign licenses for Power BI.
 > - **[Microsoft Fabric concepts and licenses](/fabric/enterprise/licenses)**: This article provides detailed information about the different capacity licenses available to use Fabric, including information about the different [stock-keeping units (SKUs)](/fabric/enterprise/licenses#capacity-license) for each license. It also describes the difference between a [Premium capacity](../enterprise/service-premium-what-is.md) and a [Fabric capacity](/fabric/enterprise/licenses#capacity), both with respect to the SKUs and capabilities.
@@ -124,7 +126,7 @@ After you've reviewed user licenses, you should next make some key decisions abo
 
 #### Decide which per-user licenses you need
 
-You should determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses _Premium per user_ license mode, then they also need a Power BI Premium Per User (PPU) license.
+You should determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses _Premium per user_ workspace type, then they also need a Power BI Premium Per User (PPU) license.
 
 Here's each of the [user license types](/fabric/enterprise/licenses#per-user-licenses) and their uses.
 
@@ -136,7 +138,7 @@ Here's each of the [user license types](/fabric/enterprise/licenses#per-user-lic
 - **Power BI Premium Per User (PPU) license**: A [PPU license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license) provides all Pro license capabilities and includes certain Premium features, on a per-user basis. It's a good choice for smaller organizations and teams that want to use specific features but don't need the full set of Fabric capabilities. For more information, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 
 > [!TIP]
-> You can mix and match user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on specific [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU license mode (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
+> You can mix and match user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on specific [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU workspace type (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
 
 #### Decide prerequisites for obtaining a user license
 
@@ -250,11 +252,11 @@ Here are some considerations when you're planning how to handle licensing for gu
 - How will your process for assigning user licenses be different when an external user is involved?
 - Does the external user work for an organization that has Microsoft Entra ID set up? In that case, their credentials can be managed by their home tenant. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
 - Which external users are consumers only versus those who need to create and publish content?
-- In what situations will a license be provided by the external user (known as bring-your-own-license, or BYOL). In what circumstances will a license be provided by your organization? For more information, see the licensing topic in [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md#licensing).
+- In what situations will a license be provided by the external user (known as bring-your-own-license, or BYOL). In what circumstances will a license be provided by your organization? For more information, see the licensing topic in [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#licensing).
 - Which type of guest invitation process will you use? There are different capabilities for occasional versus planned guest user invitations. The user experience is different as well. For more information, see [Guest invitation process](powerbi-implementation-planning-security-tenant-level-planning.md#guest-invitation-process).
 
 > [!TIP]
-> For more information, see the [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md). It's a good resource to learn about strategies for handling external users.
+> For more information, see the [Microsoft Entra B2B white paper](/fabric/enterprise/powerbi/service-admin-entra-b2b). It's a good resource to learn about strategies for handling external users.
 
 ### Step 3: Update user licenses
 
@@ -581,7 +583,7 @@ If your capacity is regularly overloaded, it indicates that you might need to pu
 
 You should set up the following notifications to be kept informed.
 
-- Set the _[Enable notifications for service outages or incidents](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents)_ tenant setting so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
+- Set the _[Enable notifications for service interruptions](../support/service-interruption-notifications.md#enable-notifications-for-service-interruptions)_ tenant setting so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
 - Set up [Azure Monitor](/azure/azure-monitor/alerts/alerts-overview) alerts to be notified when certain capacity metrics exceed a threshold. This feature is available for F SKUs, A SKUs, and autoscale for P SKUs.
 
 #### Review and optimize capacity costs
@@ -614,7 +616,7 @@ Here are some actions to identify when to audit subscriptions, trials, and cost 
 - **A workspace was assigned to, or removed from, a capacity**: Look for the _MigrateWorkspaceIntoCapacity_ activity or the _RemoveWorkspacesFromCapacity_ activity in the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
 > [!TIP]
-> When you navigate the Azure Portal, don't be confused by the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
+> When you navigate the Azure portal, don't be confused by the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
 
 > [!IMPORTANT]
 > The information presented in this step isn't intended to be an all-inclusive list of ways to audit the data. Rather, it's intended to provide you with ideas to get you started with your auditing efforts. For other ideas, we recommend that you consult with your billing administrators.

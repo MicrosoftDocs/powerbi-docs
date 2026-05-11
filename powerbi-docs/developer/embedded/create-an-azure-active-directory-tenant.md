@@ -1,13 +1,14 @@
 ---
 title: Create a Microsoft Entra tenant for Power BI embedded 
 description: Learn how to create a new Microsoft Entra tenant for a custom embedded analytics application that calls Power BI REST APIs.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/19/2025
+ms.date: 12/15/2025
+ms.custom: sfi-image-nochange
 #customer intent: As a developer, I want to create a Microsoft Entra tenant so that I can create a custom app that calls Power BI REST APIs.
 ---
 

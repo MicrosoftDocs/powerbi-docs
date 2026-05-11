@@ -1,0 +1,13 @@
+### 
+### STOP! This file is a breadcrumb used for contextual TOCs and should only be modified by members of the Power BI Docs team. 
+###
+- name: Microsoft Fabric
+  topicHref: /fabric/
+  items:
+  - name: Power BI
+    tocHref: /power-bi/
+    topicHref: /power-bi/index
+    items:
+    - name: Consumers
+      tocHref: /power-bi/create-reports/
+      topicHref: /power-bi/explore-reports/index

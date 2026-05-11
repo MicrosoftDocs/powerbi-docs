@@ -1,22 +1,23 @@
 ---
 title: Copilot in Power BI tutorial introduction
 description: This article provides an overview of Copilot in Power BI and the integrations involved in an end-to-end scenario for the tutorial.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: azure-data-cat
 ms.date: 05/06/2025
 ---
 
 # Copilot in Power BI tutorial introduction
 
-> [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 This article introduces you to how Copilot in Power BI supports enterprise developers, self-service users, and business users and provides information on integration points and the different experiences designed for creating and consuming content using Copilot.
 

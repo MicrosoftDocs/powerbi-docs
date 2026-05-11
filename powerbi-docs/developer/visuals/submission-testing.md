@@ -1,13 +1,13 @@
 ---
 title: Testing submissions of Power BI custom visuals
 description: Learn how to perform test cases that your Power BI custom visual must pass before publishing it on AppSource.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/09/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to test my custom visual before submitting it for publication so that it meets the required test cases.
 ---
 
@@ -112,7 +112,7 @@ Optionally, test your visual in the following browsers.
 
 ## Desktop testing
 
-Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+Test your visual in the current version of [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop).
 
 | Test case | Expected results
 | --------- | ----------------

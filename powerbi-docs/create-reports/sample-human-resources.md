@@ -6,14 +6,12 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/21/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
-
-> [!NOTE]
-> For an updated version of this sample, see [Employee Hiring and History: Take a tour](sample-employee-hiring-history.md).
 
 The Human Resources built-in sample contains a dashboard, report, and semantic model for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. The main objectives are to understand:
 
@@ -35,7 +33,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the built-in sample in the Power BI service
 
@@ -71,13 +69,13 @@ If you want to view the data source for this sample, it's also available as an E
 
 If you want to get and use the Excel file in the Power BI service, follow these steps:
 
-1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *IT Spend Analysis Sample-no-PV.xlsx*.
+1. Download the sample from [Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/tree/main/powerbi-service-samples). The file is called *Human Resources Sample-no-PV.xlsx*.
 
 1. Open the file in Excel and then select **File** > **Publish** > **Publish to Power BI**.
 
 1. Select a workspace, such as **My workspace**, and choose **Export**.
 
-   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-semantic models.md#explore-excel-samples-in-excel).
+   There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md).
 
 1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 

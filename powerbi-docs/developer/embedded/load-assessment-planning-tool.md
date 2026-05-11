@@ -1,13 +1,13 @@
 ---
 title: Power BI embedded analytics assess load
 description: Learn how to assess your capacity load so yuo can plan your Premium capacity in Power BI embedded analytics.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 12/15/2025
 #customer intent: As an Admin, I want to learn how to assess my capacity so that I can plan better.
 ---
 

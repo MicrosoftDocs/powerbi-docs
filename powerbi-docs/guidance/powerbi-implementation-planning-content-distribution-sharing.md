@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Content distribution and sharing"
 description: "This article helps you to plan the distribution and sharing of content in Power BI and Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -53,7 +53,7 @@ The diagram depicts the following concepts and processes:
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | You can share content in workspaces by assigning users and groups to [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Workspace roles can grant permissions to all items within the workspace. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | You can share content from an app by adding people to [app audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences), or by creating an app that shares content with the entire organization. <br/><br/>&bull;&nbsp;An app audience member will receive read-only permission to view content only in the app (and can't view individual items in the underlying workspace). <br/>&bull;&nbsp;You can grant Build permissions to app audience members for the underlying semantic models of app reports and dashboards. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | You can grant access to individual items by providing [direct access](../collaborate-share/service-share-dashboards.md) and setting specific permissions. Some items (like dataflows) don't support sharing by direct access. For these items, you share them via workspace roles. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Reports have more options. For instance, you can provide direct access with a link that works for specific users and groups, or with a link for the entire organization. Links work for specific distribution methods, like embedding in [SharePoint Online](../collaborate-share/service-embed-report-spo.md) or [securely embedding in an internal webpage](../collaborate-share/service-embed-secure.md). This article provides an overview of all possible methods [later in this article](#plan-to-distribute-content-to-consumers). |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Reports have more options. For instance, you can provide direct access with a link that works for specific users and groups, or with a link for the entire organization. Links work for specific distribution methods, like embedding in [SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md) or [securely embedding in an internal webpage](../collaborate-share/service-embed-secure.md). This article provides an overview of all possible methods [later in this article](#plan-to-distribute-content-to-consumers). |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | It's possible to distribute Power BI reports without setting roles or managing permissions for users and groups. <br/><br/>&bull;&nbsp;You might choose to share Power BI reports by embedding them in a custom website or application. In this case, you manage custom authentication yourself. Embedding content in this way requires an [F, P, EM, or A SKU](../developer/embedded/embedded-capacity.md). <br/>&bull;&nbsp;You can also share reports publicly by using [Publish to web](../collaborate-share/service-publish-to-web.md), which is a Power BI feature that makes content available to anyone through the public internet. |
 
 ### Set roles for workspaces or apps
@@ -140,8 +140,8 @@ The diagram depicts the following concepts and processes:
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Selected reporting items in a workspace can be packaged into an app. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Creators can distribute content via apps by creating and adding internal or external guest users who are content consumers to one or more app audiences. Creators can choose to organize app content into audiences, with each audience having access to different subsets of content. |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Creators might store content files, like Power BI Desktop (.pbix) files, in SharePoint or OneDrive for Work or School. |
-| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Creators can [share a link to .pbix files from SharePoint or OneDrive for Work or School](../collaborate-share/service-sharepoint-viewer.md#share-a-link-to-the-report-with-others). When an internal user has a Power BI Pro license, they can preview the reports from these files without opening them (even when the files aren't published to a workspace). Recipients of the link who don't have access or a Power BI Pro license can't preview the files. |
-| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Creators can share reporting items via direct access by using non-Fabric experiences. They can: <br/><br/>&bull;&nbsp;Embed content in [Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md) (as a tab in a chat or team channel). <br/>&bull;&nbsp;Embed content in a [PowerPoint presentation](../collaborate-share/service-power-bi-powerpoint-add-in-about.md). <br/>&bull;&nbsp;Embed content in [SharePoint Online](../collaborate-share/service-embed-report-spo.md). <br/>&bull;&nbsp;Embed content in a [PowerApps canvas app](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual) (which requires [PowerApps licenses](/power-platform/admin/pricing-billing-skus), but not an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content in an [internal website](../collaborate-share/service-embed-secure.md) (also known as secure embed). <br/>&bull;&nbsp;Embed content in an [internal application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) (also known as _Embed for your organization_, which requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true) and [paginated report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true#subscribe-to-paginated-reports), which provide scheduled delivery of static reports via email. You can also use regular subscriptions and dynamic per recipient subscriptions for both [reports](../collaborate-share/power-bi-dynamic-report-subscriptions.md) and [paginated reports](../collaborate-share/dynamic-subscriptions.md). <br/>&bull;&nbsp;[Export to file API](/rest/api/power-bi/reports/export-to-file) (such as by using [Power Automate](../collaborate-share/service-automate-power-bi-report-export.md) to deliver exported reports via email). |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Creators can [share a link to .pbix files from SharePoint or OneDrive for Work or School](../collaborate-share/office-integration/service-sharepoint-viewer.md#share-a-link-to-the-report-with-others). When an internal user has a Power BI Pro license, they can preview the reports from these files without opening them (even when the files aren't published to a workspace). Recipients of the link who don't have access or a Power BI Pro license can't preview the files. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Creators can share reporting items via direct access by using non-Fabric experiences. They can: <br/><br/>&bull;&nbsp;Embed content in [Microsoft Teams](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md) (as a tab in a chat or team channel). <br/>&bull;&nbsp;Embed content in a [PowerPoint presentation](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md). <br/>&bull;&nbsp;Embed content in [SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md). <br/>&bull;&nbsp;Embed content in a [PowerApps canvas app](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual) (which requires [PowerApps licenses](/power-platform/admin/pricing-billing-skus), but not an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content in an [internal website](../collaborate-share/service-embed-secure.md) (also known as secure embed). <br/>&bull;&nbsp;Embed content in an [internal application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) (also known as _Embed for your organization_, which requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true) and [paginated report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true#subscribe-to-paginated-reports), which provide scheduled delivery of static reports via email. You can also use regular subscriptions and dynamic per recipient subscriptions for both [reports](../collaborate-share/power-bi-dynamic-report-subscriptions.md) and [paginated reports](../collaborate-share/dynamic-subscriptions.md). <br/>&bull;&nbsp;[Export to file API](/rest/api/power-bi/reports/export-to-file) (such as by using [Power Automate](../collaborate-share/office-integration/service-automate-power-bi-report-export.md) to deliver exported reports via email). |
 | ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Creators also have various options to share reporting items to external users outside Fabric. They can: <br/><br/>&bull;&nbsp;Embed content securely in an external website (requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content securely in an [external application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) (also known as _Embed for your customers_). <br/>&bull;&nbsp;[Publish to web](../collaborate-share/service-publish-to-web.md) for reports, which makes content available to anyone through the public internet. Publish to web is recommended only for content that's suitable for a public audience. Publish to web isn't suitable for sensitive or confidential reports. For more information, see [Publish to web from Power BI](../collaborate-share/service-publish-to-web.md). |
 
 There are many valid approaches to distributing content. You might even use multiple approaches to distribute the same content, depending on your needs and use cases. What's important is that you find an approach that's effective and sustainable.
@@ -267,7 +267,7 @@ When you plan to distribute content to workspace viewers, consider the following
 
 #### Option 3: View content in an app
 
-You can distribute content via [apps](../consumer/end-user-apps.md), which bundle related content in a straightforward user interface that streamlines the experience for content consumers. Unlike viewing content in workspaces, apps don't confuse or overwhelm consumers by showing nonreporting items (like semantic models).
+You can distribute content via [apps](../explore-reports/end-user-apps.md), which bundle related content in a straightforward user interface that streamlines the experience for content consumers. Unlike viewing content in workspaces, apps don't confuse or overwhelm consumers by showing nonreporting items (like semantic models).
 
 When you distribute content via apps, there's no risk of accidentally giving consumers Write permission. Apps require you to share content by adding consumers to an [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences). It's also possible to share an app with the [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
 
@@ -302,9 +302,9 @@ Consumers who view content from other services still require direct access to th
 
 Each approach has specific use cases that they can support:
 
-- [Embed in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md): This option can be beneficial when you use Power BI reports to help coordinate project or other collaborative work.
-- [Embed in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md): This option can be beneficial when you want to integrate Power BI reports in your presentations or display multiple reports continuously on a screen. Examples might be reports that show incidents or open orders in a manufacturing plant.
-- [Embed in SharePoint Online](../collaborate-share/service-embed-report-spo.md): This option can be beneficial when you want to centralize reports in a SharePoint site to enable collaborative work, or when SharePoint is the preferred way to distribute and manage access to different kinds of content in the organization.
+- [Embed in Microsoft Teams](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md): This option can be beneficial when you use Power BI reports to help coordinate project or other collaborative work.
+- [Embed in PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md): This option can be beneficial when you want to integrate Power BI reports in your presentations or display multiple reports continuously on a screen. Examples might be reports that show incidents or open orders in a manufacturing plant.
+- [Embed in SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md): This option can be beneficial when you want to centralize reports in a SharePoint site to enable collaborative work, or when SharePoint is the preferred way to distribute and manage access to different kinds of content in the organization.
 - [Embed in Power Apps canvas apps](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual): This option can be beneficial when you want Power BI content to inform user decisions and actions in an app built with [Power Apps](/power-apps/powerapps-overview). For example, you might have an app for registering seats in an open office, and a Power BI report that shows data about seat availability and office occupancy. However, Power Apps requires [licenses for both creators and consumers](/power-platform/admin/pricing-billing-skus).
 - [Embed in an internal website or external application](../collaborate-share/service-embed-secure.md): This option can be beneficial when you want to integrate Power BI reports with other custom developed content. However, this approach requires more development effort. When done for an internal website, you can use the [For your organization](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) embedding approach. When done for an external application, you can use the [For your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) embedding approach. This approach requires either Fabric capacity (F SKU) or Power BI Embedded (EM SKU).
 - [Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true): This option lets you subscribe consumers to reports and paginated reports, which can deliver static reports by email or to a SharePoint site on a schedule. For reports, subscriptions have the benefit of notifying consumers when the data in the underlying semantic model is refreshed. This approach is best combined with other methods, like sharing content from an app. That way, consumers know only to check the app when the content inside is updated.
@@ -329,33 +329,33 @@ In this approach, you create duplicate identities for external consumers that be
 
 This approach is beneficial when:
 
-- [Limitations of Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for consumers include:
+- [Limitations of Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for consumers include:
   - External guest users might not be able to open files exported from reports that have a sensitivity label with protection settings.
   - External guest users can't use Power BI Desktop to connect to semantic models or dataflows that are in the Power BI service.
-  - External guest users can't use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel).
+  - External guest users can't use [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md#analyze-in-excel).
 - You don't have the development skills or resources to embed content in a custom application.
 - There aren't many long-term, external consumers.
 
 #### Option 2: Create a Microsoft Entra B2B guest account for external consumers
 
-[Microsoft Entra B2B](/azure/active-directory/b2b/what-is-b2b) is a good option to [distribute content to external consumers](whitepaper-azure-b2b-power-bi.md#alternative-option-1-create-duplicate-identities-for-partner-users). With this approach, an Azure administrator adds the external consumer as an external guest user in Microsoft Entra ID. If the external user is required to access content, the Azure administrator or a Microsoft 365 administrator can provision a per-user license for the identity.
+[Microsoft Entra B2B](/azure/active-directory/b2b/what-is-b2b) is a good option to [distribute content to external consumers](/fabric/enterprise/powerbi/service-admin-entra-b2b). With this approach, an Azure administrator adds the external consumer as an external guest user in Microsoft Entra ID. If the external user is required to access content, the Azure administrator or a Microsoft 365 administrator can provision a per-user license for the identity.
 
 External users can also use bring-your-own-license (BYOL) to bring licenses from their organizations to access content that requires a per-user license. When the guest user has an appropriate license, creators can then share content with them.
 
-If you need to distribute content to consumers outside your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md).
+If you need to distribute content to consumers outside your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 External users are made external guest users by an Azure administrator. If the guest user requires a license, a Microsoft 365 administrator can then assign a license to the guest user. These guest users can then access Fabric, including workspaces, apps, and items. Access to Fabric by external guest users can be controlled in the tenant settings by a Fabric administrator.
 
-Consumers don't require a Power BI Pro license to view content in a Fabric capacity. However, creators do require a Power BI Pro license to create and share Power BI content. Consumers require a Power BI Pro license to view content in a workspace that uses Pro or Premium per user (PPU) license mode.
+Consumers don't require a Power BI Pro license to view content in a Fabric capacity. However, creators do require a Power BI Pro license to create and share Power BI content. Consumers require a Power BI Pro license to view content in a workspace that uses Pro or Premium per user (PPU) workspace type.
 
 Microsoft Entra B2B requires that you enable specific settings in the Fabric admin portal. For an overview of the relevant settings a Fabric administrator can use to control how creators share content, see [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing).
 
 Here are some scenarios where you can use Microsoft Entra B2B to deliver content to external consumers:
 
-- [Direct collaboration between organizations](whitepaper-azure-b2b-power-bi.md#case-1-direct-collaboration-between-organizations)
-- [Parent and subsidiaries or affiliates](whitepaper-azure-b2b-power-bi.md#case-2-parent-and-its-subsidiaries-or-affiliates)
-- [Shared tenant among partner organizations](whitepaper-azure-b2b-power-bi.md#case-3-shared-environment-across-partners)
-- [Distribution to many external partners](whitepaper-azure-b2b-power-bi.md#case-4-distribution-to-hundreds-or-thousands-of-external-partners)
+- [Direct collaboration between organizations](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Parent and subsidiaries or affiliates](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Shared tenant among partner organizations](/fabric/enterprise/powerbi/service-admin-entra-b2b)
+- [Distribution to many external partners](/fabric/enterprise/powerbi/service-admin-entra-b2b)
 
 This approach is beneficial when:
 
@@ -420,14 +420,14 @@ Content creators always require a Power BI Pro license to share Power BI content
 
 Content consumers require a Power BI Pro license to:
 
-- Consume content that's in a workspace that doesn't use Fabric capacity license mode.
+- Consume content that's in a workspace that doesn't use Fabric capacity workspace type.
 - Share Power BI content with other consumers.
 - Preview shared .pbix files that are stored in OneDrive for Work or School, or SharePoint.
 - Use a Microsoft Entra B2B guest account that can't use BYOL.
 
 #### Scenario 4: Consumers require Power BI Pro or PPU licenses
 
-If content is published to a workspace that uses PPU license mode, then both content creators and content consumers require a PPU license to share and view that content.
+If content is published to a workspace that uses PPU workspace type, then both content creators and content consumers require a PPU license to share and view that content.
 
 Granting a user a Power BI Pro or PPU license doesn't automatically grant them Build or Write permissions to Power BI items that are already deployed to a workspace. Licenses affect what a user can do but have no effect on item permissions or the various roles within Fabric.
 
@@ -456,7 +456,7 @@ Consider the following Power BI features that provide flexibility to consumers:
 
 - **Field parameters**: You can create [field parameters](../create-reports/power-bi-field-parameters.md) in semantic models that support the dynamic selection of dimensions and measures in reports. This option provides users with the ability to select a field from a slicer, and that field will be then used in visuals.
 - **Decomposition tree visual**: You can use the [decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md) visual in reports to let consumers explore data across multiple dimensions that they choose.
-- **Personalize visuals**: You can enable [personalization of visuals](../consumer/end-user-personalize-visuals.md) in a report, which lets consumers change visuals to suit themselves. They can modify any visual, including the visual type, format settings, and which fields the visual uses. They can also customize the report page to any field you preselect from the semantic model, enabling them to perform ad-hoc analysis.
+- **Personalize visuals**: You can enable [personalization of visuals](../explore-reports/end-user-personalize-visuals.md) in a report, which lets consumers change visuals to suit themselves. They can modify any visual, including the visual type, format settings, and which fields the visual uses. They can also customize the report page to any field you preselect from the semantic model, enabling them to perform ad-hoc analysis.
 
 If consumers don't require Build permission now, they might need it in the future. Business objectives and data needs can evolve quickly. Teaching users to create their own content and perform their own analysis is a good way to scale your implementation by [enabling users](fabric-adoption-roadmap-mentoring-and-user-enablement.md) and advance your [data culture maturity](fabric-adoption-roadmap-data-culture.md).
 
@@ -534,7 +534,7 @@ You're then ready to complete the following tasks:
 - **Create workspaces**: Create and share access to a workspace where creators should publish their content, if they don't have one already. Creators might need access to more than one workspace if they plan to use separate workspaces to develop, test, and share content with consumers. Alternatively, you might share access to an [existing workspace](#option-2-workspace-access) that contains other content that creators need access to (described later in this article).
 - **Allocate licenses**: Creators need different licenses depending on the content that they produce.
   - Power BI Pro licenses are always required to create and share Power BI content.
-  - PPU licenses are required to create and share content when the workspace uses PPU license mode.
+  - PPU licenses are required to create and share content when the workspace uses PPU workspace type.
   - No license is required to create and share Fabric items when the workspace is on Fabric capacity.
 
 #### Option 1: You provide access to creators
@@ -605,7 +605,7 @@ Consider using duplicate identities for external creators when:
 
 - External creators need to access other internal services, or they prefer to use a separate, internal account.
 - Organizational policies or administrator settings don't allow for business-to-business (B2B) sharing.
-- [Limitations of Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for creators include:
+- [Limitations of Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for creators include:
   - External guest users can't use Power BI Desktop to connect to semantic models or dataflows that are in the Power BI service and can't publish from Power BI Desktop.
   - External guest users can't set sensitivity labels.
   - External guest users can't install an on-premises data gateway.

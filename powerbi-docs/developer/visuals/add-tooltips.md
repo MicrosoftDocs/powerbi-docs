@@ -1,13 +1,13 @@
 ---
 title: Add tooltips to Power BI custom visuals
 description: Learn how to configure simple or modern tooltips in Power BI custom visuals that provide more details to users.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/29/2025
+ms.date: 12/15/2025
 # Customer intent: As a developer, I want to learn how to add tooltips to my custom visuals in Power BI so that I can provide more details to users.
 ---
 
@@ -222,7 +222,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+From API version 3.8.3 you can also create [*modern* visual tooltips](../../visuals/power-bi-visualization-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 :::image type="content" source="media/add-tooltips/modern-tooltip.png" alt-text="Screenshot that shows a modern tooltip.":::
 
@@ -242,10 +242,10 @@ For example:
 See an example of the modern tooltips feature being used in the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) code.
 
 > [!NOTE]
-> Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. Keep in mind that the user will still have to **[enable the modern tooltip feature](../../create-reports/desktop-visual-tooltips.md#turn-on-the-new-tooltips)** in the report settings.
+> Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. 
 
 ## Related content
 
 * [Tooltip utils](utils-tooltip.md)
-* [Customize tooltips in Power BI](../../create-reports/desktop-custom-tooltips.md)
+* [Visual tooltips in Power BI](../../visuals/power-bi-visualization-visual-tooltips.md)
 * [Create tooltips based on report pages in Power BI Desktop](../../create-reports/desktop-tooltips.md)

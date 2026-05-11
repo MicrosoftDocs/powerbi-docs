@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/20/2024
+ms.date: 06/30/2025
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -17,9 +17,9 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the narrative with suggested and custom prompts.
+In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the narrative with suggested and custom prompts, making it extremely versitile.
 
-If you don't have write permissions for a report, you can still [create a report summary in the Copilot pane](copilot-pane-summarize-content.md).
+As this is a visual, you need write permissions just as you would for other visual creation. If you don't have write permissions for a report, you can still [create a report summary in the Copilot pane](copilot-pane-summarize-content.md).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
@@ -27,13 +27,9 @@ If you don't have write permissions for a report, you can still [create a report
 
 You may need to do some clean-up work on your report. The narrative visual pulls information from what is on the report canvas, not the underlying semantic model, so clearly named visuals and axes are important for the visual to glean highlights, lowlights, and insights from the report. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model.
 
-## Get started
-
-To see the **Copilot** button in your report, you first need to select a semantic model.
-
 ### [Power BI service](#tab/powerbi-service)
 
-In the Power BI service, you need to be in an appropriate workspace to see the Narratives with Copilot visual button in the Visualizations pane. The Copilot visual button is the same as the old narratives visual button. For details on what makes an appropriate workspace, see [Considerations and limitations](#considerations-and-limitations) in this article.
+In the Power BI service, you need to be in an appropriate workspace to see the Narrative visual with Copilot button in the Visualizations pane. The Copilot visual button is the same as the old smart narrative visual button.  Click, and you will see an option to use the old or the new one, with Copilot. For details on what makes an appropriate workspace, see [Considerations and limitations](#considerations-and-limitations) in this article.
 
 1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake data hub**, select **More options** next to a semantic model.
 1. Select **Create report**.
@@ -73,7 +69,22 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
     :::image type="content" source="media/copilot-create-narrative/highlighted-referenced-visual.png" alt-text="Screenshot showing highlighted visual." lightbox="media/copilot-create-narrative/highlighted-referenced-visual.png":::
 
-    You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't yet edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
+    You can switch back and forth between the previous "smart narrative" visual and the new narrative visual with Copilot by selecting the icon next to the title. The summary content isn't lost when you switch back and forth. Switching may help, as you can't edit the body of the Copilot summary. For control over the generated summary, use custom prompts to specify tone or formatting, direct the summary to specific portions of the report, or clarify requests. You can copy and paste it into the smart narrative body for more involved editing.
+
+## Embed the narrative visual
+
+The narrative visual with Copilot is supported in "embed for your organization" scenarios where the user owns the data and in secure embed scenarios.
+
+There are a few embedded scenarios. Only two are supported at this time. This chart makes it clear which scenarios are supported with the Copilot narrative visual.
+
+|Scenario |Supported |
+|---------|---------|
+|[**Embed a report in a secure portal or website**](../collaborate-share/service-embed-secure.md) Power BI. | Yes |
+|**Embed in a Sharepoint Site** A user embeds a report containing the narrative visual as a Power BI web part in a SharePoint site. Users must authenticate. [Embed in a SharePoint site](../collaborate-share/office-integration/service-embed-report-spo.md?tabs=net-core). | Yes |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to sign in. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). *Note: This scenario does NOT include embedding in PowerPoint at this time* | Yes |
+|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
+
+Follow the instructions here to set up Power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
 
 ## Save the report
 
@@ -81,20 +92,20 @@ When you're satisfied with the narrative, you save the report just like any othe
 
 - Select **Edit** to see the **Copilot** button again.
 
+## Viewing
+
+When users are viewing the report, they can slice and dice with filters as they normally would.  The narrative visual will not automaticall update, but there will be a refresh button that allows the user to fetch an updated summary according to the applied slicers and filters.
+
 ## Considerations and limitations
 
 We're continuously working to improve the quality of the report pages, including visuals, summaries, and synonyms generated by Copilot. Here are the current limitations. 
 
 - Copilot will store the selected prompt with report metadata (e.g., summarize sales data) so that the summary can be generated each time a report is loaded.
 - Authors: To author a copilot narratives visual in the Power BI service, the workspace needs to have a paid dedicated Fabric capacity.
-- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized on the selected page.
-- The summary only takes into account the data that's visualized on the page.
-- The summary visual is not supported when exporting to Power Point or PDF formats. 
-- The accuracy of the public preview may be limited.
+- You can't edit the visual after Power BI generates it. However, you can change it by using prompts. The summary only takes into account the data that's visualized by the selected visuals.
+- The summary only takes into account the data that is allowed in the visual selection editor.
 - Users need to refresh the summary visual when they update or filter a page, report, or data, to see an updated summary.
-- Filtering and slicing affect the visual, but cross-highlighting (selecting visuals) doesn't impact the summary.
-- Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory.
-- The public preview narrative doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
+- The narrative visual doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
 ## Related content
 

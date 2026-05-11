@@ -1,12 +1,10 @@
-﻿- name: "Power BI guidance documentation"
+- name: "Power BI guidance documentation"
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
-    items: 
-    - name: "Overview"
-      href: overview.md     
+    items:   
     - name: "Optimization guide for Power BI"
       href: power-bi-optimization.md  
   - name: Transform and shape data
@@ -346,6 +344,6 @@
     - name: "White papers overview"
       href: whitepapers.md
     - name: "Power BI security white paper"
-      href: whitepaper-powerbi-security.md  
+      href: white-paper-powerbi-security.md  
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md

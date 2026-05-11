@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Plan and design content"
 description: "This article helps you to plan and design content as part of managing the content lifecycle."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 03/13/2025
 ---
@@ -112,15 +112,14 @@ You can re-use a shared semantic model by using the following downstream item ty
   - [Reports](../connect-data/desktop-report-lifecycle-datasets.md)
   - [Paginated reports](../paginated-reports/report-builder-shared-datasets.md)
   - [Scorecards](../create-reports/service-goals-create.md)
-  - [Excel (analyze in Excel pivot tables)](../collaborate-share/service-analyze-in-excel.md)
+  - [Excel (analyze in Excel pivot tables)](../collaborate-share/office-integration/service-analyze-in-excel.md)
   - [Semantic models (composite models)](../transform-model/desktop-composite-models.md)
 
 - Microsoft Fabric
   - [Activator (formerly Reflex)](/fabric/real-time-intelligence/data-activator/activator-introduction)
   - [AI skills](/fabric/data-science/concept-ai-skill)
   - [Copilot](../create-reports/copilot-ask-data-question.md)
-  - [Explorations](../consumer/explore-data-service.md)
-  - [Metric sets](../create-reports/create-metric-sets.md)
+  - [Explorations](../explore-reports/explore-data-service.md)
   - [Notebooks](/fabric/data-science/read-write-power-bi-python) (via the [Semantic Link](/fabric/data-science/semantic-link-power-bi?tabs=sql) and [semantic-link-labs](https://github.com/microsoft/semantic-link-labs) libraries)
 
 The following sections give an overview of important considerations when you use semantic models with some of these items.
@@ -133,7 +132,7 @@ The following sections give an overview of important considerations when you use
 There are several different ways in which users can engage with semantic models via reports:
 - **Viewing reports.** The standard scenario, in which a user views data in a report that you distribute or share with them.
 - **Connecting to the semantic model and creating a new report.** With [build permissions](../connect-data/service-datasets-build-permissions.md), users can create a new report in Power BI Desktop or in the Power BI service. This report has a live connection to the shared semantic model. Users can also convert the live connected report to a new composite semantic model that queries the original by using DirectQuery.
-- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../consumer/explore-data-service.md) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../consumer/explore-data-service.md#permissions-requirements-and-limitations).
+- **Creating an exploration from an existing report visual.** With build permissions, users can also select a [supported visual](../explore-reports/explore-data-service.md) to create an exploration of its data. This creates a new exploration item which allows the user to add fields or change formatting. Users can save and share the resulting exploration if they meet the [required criteria for licensing, workspace membership, and item permissions](../explore-reports/explore-data-service.md#permissions-requirements-and-limitations).
 - **Personalizing report visuals, in which users can change field and formatting.** [Personalize visuals](../create-reports/power-bi-personalize-visuals.md?tabs=powerbi-desktop) works similar to an exploration, but it only requires read permissions, and doesn't create a new item. Personalize visuals also use any perspectives that a user applies to a report page, which limits the available fields that a user can see and use.
 
 These various scenarios create a number of considerations that you must keep in mind for your semantic models, such as:
@@ -148,7 +147,7 @@ These various scenarios create a number of considerations that you must keep in 
 
 #### Excel (analyze in Excel pivot tables)
 
-If users have build permissions to a model, then they can also [connect to a semantic model from Excel](../collaborate-share/service-analyze-in-excel.md) and query it by using MDX from an Excel pivot table. This can be useful when users prefer to work in Excel to explore or analyze data, themselves.
+If users have build permissions to a model, then they can also [connect to a semantic model from Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) and query it by using MDX from an Excel pivot table. This can be useful when users prefer to work in Excel to explore or analyze data, themselves.
 
 When using analyze in Excel to query your semantic model, you need to consider the following: 
 
@@ -211,7 +210,6 @@ When you plan to create paginated reports on a semantic model, you might need to
 There are also other ways to consume semantic models. Some examples are below:
 
 - **Activator (formerly Reflex):** You can use a semantic model to automate data alerts and trigger downstream flows, such as those you create by using Power Automate.
-- **Metric sets:** You can create a metric set, which includes measures and recommended dimensions from multiple semantic models in one place. Metric sets can improve data discovery for users.
 - **Explorations:** Aside from creating explorations from reports and Copilot outputs, users can also create explorations from a semantic model. 
 
 ### Distribution and sharing of Reports
@@ -247,7 +245,7 @@ To collaborate and communicate in Microsoft Teams, you use supporting services t
 - **[Planner](https://techcommunity.microsoft.com/t5/planner-blog/the-new-microsoft-planner-a-unified-experience-bringing-together/ba-p/3977998)**: Content owners can use Planner to create plans, which they use to track tasks and scope content work. Tasks can describe issues, bugs, or features in the solution, and the corresponding stakeholders.
 - **[SharePoint](/sharepoint/teams-connected-sites)**: Content creators can store and manage files in a Microsoft Teams document library or connected site for each channel. Content files stored in SharePoint can use version control to help track and manage content changes. For more information about tracking and managing changes by using SharePoint, see [Stage 2: Develop content and manage changes](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#version-control-by-using-sharepoint-or-onedrive-for-work-and-school).
 - **[Approvals](/microsoftteams/approval-admin#overview-of-approvals)**: Content creators and owners can set up and use workflows to approve content changes or releases after review.
-- **[Fabric and Power BI](../collaborate-share/service-collaborate-microsoft-teams.md)**: Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
+- **[Fabric and Power BI](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md)**: Content creators and owners can access the Fabric portal from within Microsoft Teams. From there, they can manage or discuss content, and add helpful reports to tabs in Teams channels.
 - **Other integrations**: Content creators can make use of other Microsoft or third-party services that integrate with Microsoft Teams to best fit their preferred workflow and needs.
 
 We recommend that you define a structured process for how content creators should use Microsoft Teams to collaborate. Ensure that you determine:
@@ -353,7 +351,7 @@ When you store files in SharePoint, consider the following points.
 
 - **Organization**: Ensure that you maintain a consistent and logical structure so it's straightforward to find specific files. Use good naming conventions, organize files in folders, and archive files that are no longer relevant for ongoing projects.
 - **OneDrive refresh**: You can [link](../connect-data/refresh-desktop-file-onedrive.md) a published semantic model or report to a .pbix file that's stored in a SharePoint or OneDrive for work or school site. With this approach, you no longer have to publish the semantic model to bring changes into effect. Instead, your changes are visible after an automatic [OneDrive refresh](../connect-data/refresh-desktop-file-onedrive.md#automatic-versus-manual-updates-of-model-information)_,_ which occurs hourly. While convenient, be aware that this approach comes with some [caveats and challenges](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). When things go, it can't be easily reversed.
-- **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
+- **Preview reports**: In SharePoint, it's possible to [view Power BI reports](../collaborate-share/office-integration/service-sharepoint-viewer.md) without having to install Power BI Desktop or download the .pbix file locally. When you open reports in this way, they're displayed in the [browser](../collaborate-share/office-integration/service-sharepoint-viewer.md#open-a-power-bi-file-stored-in-a-onedrive-or-sharepoint-library). This capability can be a convenient alternative to viewing reports from the Fabric portal. It's [enabled by default](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview) in the [Fabric tenant settings](/fabric/admin/tenant-settings-index).
 
 > [!TIP]
 > When you collaborate by using Microsoft Teams, consider storing files in the channel document library. This approach helps centralize files and facilitates collaboration.

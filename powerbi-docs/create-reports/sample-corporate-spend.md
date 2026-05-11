@@ -6,8 +6,9 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/16/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Corporate Spend sample for Power BI: Take a tour
@@ -22,7 +23,7 @@ This tour explores the Corporate Spend built-in sample in the Power BI service. 
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -184,7 +185,7 @@ Now hover over a region again to see the value that you added.
 
 :::image type="content" source="media/sample-corporate-spend/power-bi-hover-revised-tooltip.png" alt-text="Screenshot shows the revised tooltip for the map visualization.":::
 
-For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+For more information about tooltips, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ### Use hidden pages as tooltips
 

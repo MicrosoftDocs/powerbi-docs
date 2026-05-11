@@ -1,8 +1,8 @@
 ---
 title: Learn DAX basics in Power BI Desktop
 description: Learn about how to effectively use DAX basics in Power BI Desktop to solve real business problems for your organization.
-author: davidi
-ms.author: davidi
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -215,6 +215,11 @@ As you can imagine, being able to define filter context within a formula has imm
 3. What is row context?
 
 Answers are provided at the end of this article.
+
+
+## Considerations
+
+Consider that while Power Query Editor is *case sensitive*, DAX and the Analysis Services engine that powers Power BI are *case insensitive* once data is loaded into the front end. Keep this distinction in mind when writing DAX queries.
 
 ## Summary
 

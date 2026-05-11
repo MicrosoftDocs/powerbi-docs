@@ -7,7 +7,8 @@ ms.reviewer: Ben.Zulauf
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 05/06/2025
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 
@@ -16,18 +17,19 @@ LocalizationGroup: Share your work
 With the Power BI **Publish to web** option, you can easily embed interactive Power BI content in blog posts, websites, emails, or social media. You can also easily edit, update, refresh, or stop sharing your published visuals.
 
 > [!WARNING]
-> When you use **Publish to web**, anyone on the Internet can view your published report or visual. Viewing requires no authentication. It includes viewing detail-level data that your reports aggregate. Before publishing a report, make sure it's okay for you to share the data and visualizations publicly. Don't publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+> When you use **Publish to web**, anyone on the Internet can view your published report or visual. Viewing requires no authentication. It includes viewing detail-level data that your reports aggregate. As a result, anyone can access the underlying data in your model even if your report does not display it. Before publishing a report, make sure it's okay for you to share the data and visualizations publicly. Don't publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 >[!Note]
->You can embed your content securely in an internal portal or website. Use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. These options ensure that all permissions and data security are enforced when your users view your internal data.
+>You can embed your content securely in an internal portal or website. Use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](office-integration/service-embed-report-spo.md) options. These options ensure that all permissions and data security are enforced when your users view your internal data.
 
 ## Prerequisites
 
 - You need a Microsoft Power BI license to publish to web from My Workspace. 
 - You need a Microsoft Power BI Pro or Premium Per User license to publish to web from workspaces. 
-- Publish to web is available for reports you can edit in your My Workspace and workspaces.  
+- Publish to web is available for reports you can edit in your My Workspace and workspaces (you must have **edit** permissions on the model and **reshare** permissions on the report).
 - It isn't available for reports shared with you, or ones relying on row-level security to secure data. 
 - Your report viewers don't need to be Power BI users.
+- **Your Power BI administrator must enable the Publish to web tenant setting.** If you're an administrator, see [Enable Publish to web as an administrator](#enable-publish-to-web-as-an-administrator).
 
 See the [**Considerations and limitations**](#considerations-and-limitations) section below for a complete list of cases where Publish to web isn't supported. 
 
@@ -39,13 +41,13 @@ Follow these steps to use Publish to web. Review the **Warning** earlier in this
 
    ![Screenshot of Publish to web on More options.](media/service-publish-to-web/power-bi-more-options-publish-web.png)
    
-2. If your Power BI admin hasn't allowed you to create embed codes, you may need to contact them.
+1. If your Power BI admin hasn't allowed you to create embed codes, you may need to contact them.
 
    ![Screenshot of Contact your Power BI admin.](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   For help with finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article.
+   For help with finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article. If you're the administrator, see [Enable Publish to web as an administrator](#enable-publish-to-web-as-an-administrator) for instructions.
 
-3. Review the dialog content and select **Create embed code**.
+1. Review the dialog content and select **Create embed code**.
 
    ![Screenshot of Review Embed in a public website.](media/service-publish-to-web/publish_to_web2_ga.png)
 
@@ -118,20 +120,6 @@ Once you create a Publish to web embed code, you can manage your codes from the 
 
    ![Screenshot of confirming deletion.](media/service-publish-to-web/publish_to_web11.png)
 
-## Transfer embed code ownership
-
-Embed codes are linked directly to the publisher who creates them. This means that if the publisher loses access to the workspace where a report is published, users can no longer view the embedded report. When a publisher leaves a workspace or an organization, Tenant admins can reassign ownership through the Admin portal, thereby restoring user access. 
-
-To change ownership from the Admin portal, follow these steps:
-
-1. On the **Embed codes** page, select **Change ownership**. 
-
-   :::image type="content" source="media/service-publish-to-web/admin-portal-embed-1.png" alt-text="Screenshot of the highlighted Change Ownership button and menu.":::  
-
-1. Choose the new embed code owner from the dropdown menu, then select **OK**.
-
-   :::image type="content" source="media/service-publish-to-web/admin-portal-embed-2.png" alt-text="Screenshot of the Change Ownership dialog.":::
-
 ## Updates to reports, and data refresh
 
 After you create your Publish to web embed code and share it, the report updates with any changes you make. The embed code link is immediately active. Anyone who opens the link can view it. The data is cached for one hour from the time it is retrieved. We don’t recommend using Publish to web for data that needs to refresh frequently. To learn more, see the [**How it works**](#howitworks) section later in this article. 
@@ -191,6 +179,31 @@ Established organizations usually already have a Power BI administrator. Users w
 
 You need to [find one of these people](/microsoft-365/business-video/admin-center-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web) in the admin portal.
 
+## Enable Publish to web as an administrator
+
+If you're a Power BI administrator and want to enable Publish to web for your organization, follow these steps:
+
+1. Sign in to the [Power BI admin portal](https://app.powerbi.com/admin-portal).
+
+1. In the admin portal, select **Tenant settings**.
+
+1. Under **Export and sharing settings**, locate **Publish to web**.
+
+1. Toggle the setting to **Enabled**.
+
+1. Choose who can create embed codes:
+   - Select **The entire organization** to allow all users to create publish to web embed codes.
+   - Select **Specific security groups** to limit this capability to designated groups, then add the appropriate security groups.
+
+1. Select **Apply**.
+
+After enabling this setting, users in your organization can create public embed codes for their reports. Keep in mind that published reports are accessible to anyone on the internet without authentication.
+
+> [!CAUTION]
+> As an administrator, carefully consider who should have the ability to create publish to web embed codes. This feature makes reports publicly accessible on the internet without any authentication, which could lead to unintentional data exposure if not properly managed.
+
+For more information about this setting, see [Publish to web tenant settings](/fabric/admin/service-admin-portal-export-sharing#publish-to-web).
+
 ## Considerations and limitations
 
 Publish to web is supported for the vast majority of data sources and reports in the Power BI service. However, the following kinds of reports are currently *not* supported or available with Publish to web:
@@ -220,7 +233,7 @@ Publish to web is supported for the vast majority of data sources and reports in
 
 ## Related content
 
-- [SharePoint Online report web part](service-embed-report-spo.md) 
+- [SharePoint Online report web part](office-integration/service-embed-report-spo.md) 
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

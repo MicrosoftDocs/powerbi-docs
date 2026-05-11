@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Content delivery scope"
 description: "Develop scopes for how data, analytics, and business intelligence (BI) content is owned and managed to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -114,7 +114,7 @@ Here are a few guidelines to help you become successful with departmental BI del
 
 - Ensure that the COE is prepared to support the efforts of self-service creators. Creators who publish content used throughout their department or business unit might emerge as candidates to become champions. Or, they might become candidates to join the COE as a [satellite member](fabric-adoption-roadmap-center-of-excellence.md#structuring-a-coe).
 - Make purposeful decisions about how [workspace management](../collaborate-share/service-create-the-new-workspaces.md) will be handled. The workspace is a place to organize related content, a permissions boundary, and the scope for an app. Several workspaces will likely be required to meet all the needs of a large department or business unit.
-- Plan how [Power BI apps](../consumer/end-user-apps.md) will distribute content to the enterprise. An app can provide a significantly better user experience for consuming content. In many cases, content consumers can be granted permissions to view content via the app only, reserving workspace permissions management for content creators and reviewers only. The use of app audience groups allows you to _mix and match_ content and target audience in a flexible way.
+- Plan how [Power BI apps](../explore-reports/end-user-apps.md) will distribute content to the enterprise. An app can provide a significantly better user experience for consuming content. In many cases, content consumers can be granted permissions to view content via the app only, reserving workspace permissions management for content creators and reviewers only. The use of app audience groups allows you to _mix and match_ content and target audience in a flexible way.
 - Be clear about what data quality validations have occurred. As the importance and criticality level grows, expectations for trustworthiness grow too.
 - Ensure that adequate training, mentoring, and documentation is available to support content creators. Best practices for data preparation, data modeling, and data presentation will result in better quality solutions.
 - Provide guidance on the best way to use the [promoted endorsement](../collaborate-share/service-endorse-content.md#promote-content), and when the [certified endorsement](../collaborate-share/service-endorse-content.md#certify-content) could be permitted for departmental solutions.
@@ -136,7 +136,7 @@ Here are the characteristics of enterprise content delivery.
 - A centralized team of experts manages the content end-to-end and publishes it for others to consume.
 - Formal delivery of data solutions like reports, lakehouses, and Power BI apps is a high priority to ensure consumers have the best experience.
 - The content is highly sensitive, subject to regulatory requirements, or is considered extremely critical.
-- Published enterprise-level semantic models and dataflows might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
+- Published enterprise-level semantic models and dataflows (legacy) might be used as a source for self-service creators, thus creating a chain of dependencies to the source data.
 - Stability and a consistent experience for consumers are highly important. Application lifecycle management, such as [deployment pipelines](../create-reports/deployment-pipelines-overview.md) and [DevOps techniques](https://powerbi.microsoft.com/blog/automate-deployments-with-deployment-pipelines-api-preview/), is commonly used. Change management processes to review and approve changes before they're deployed are commonly used for enterprise content, for example, by a change review board or similar group.
 - Processes exist to gather requirements, prioritize efforts, and plan for new projects or enhancements to existing content.
 - Integration with other enterprise-level data architecture and management services could exist, possibly with other Azure services and Power Platform products.

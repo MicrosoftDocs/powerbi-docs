@@ -1,12 +1,13 @@
 ---
 title: Use Copilot with Power BI reports and semantic models
 description: Learn how to use Copilot in Power BI to create, consume, and enhance reports with AI-driven insights.
-author: denglishbi
-ms.author: daengli
-ms.reviewer: juliacawthra
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: daengli
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/07/2025
+ms.collection: ce-skilling-ai-copilot
 ---
 # Use Copilot with Power BI reports and semantic models
 
@@ -66,14 +67,14 @@ See [Create report subscriptions with Copilot summaries](copilot-summaries-in-su
 
 Copilot can help you get started on a new report by suggesting topics based on your data. When you select this option directly in the chat, Copilot evaluates the data and provides a report outline with suggested pages that you can explore and choose to create for you.
 
-- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.
+- A [report outline of suggested pages for your report](copilot-create-reports.md): for example, what each page in the report is about, and how many pages it creates.
 - The visuals for the individual pages.
 
 :::image type="content" source="media/copilot-reports-overview/copilot-suggest-content.png" alt-text="Screenshot of Copilot suggesting content for a Power BI report based on data." lightbox="media/copilot-reports-overview/copilot-suggest-content.png":::
 
 ### Create a report page
 
-Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. Copilot can help you get started on your report page quickly and save you a lot of time and effort in the process.
+Copilot for Power BI can help you [create a report page](copilot-create-reports.md)  by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. Copilot can help you get started on your report page quickly and save you a lot of time and effort in the process.
 
 Here are some examples of high-level prompts to get you started:
 
@@ -81,7 +82,7 @@ Here are some examples of high-level prompts to get you started:
 - Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
 - Create a page to compare the cost and material of each product and their impact on production.
 
-See details of how to use this in the [Power BI service](copilot-create-report-service.md) or [Power BI Desktop](copilot-create-desktop-report.md). If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
 ### Summarize the underlying semantic model
 
@@ -104,18 +105,6 @@ Copilot can write a data analysis expression (DAX) query. For example, you can t
 Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation. [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
 :::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
-
-### Copilot pane preview features
-
-When using the Copilot pane in the **Power BI service**, you see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities.
-
-To access Copilot features in public preview, select the preview toggle to activate the public preview experience.
-
-:::image type="content" source="media/copilot-preview-toggle/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
-
-If you don't want users in your organization to have access to the preview toggle, you need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
-
-See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
 
 ### Send feedback
 

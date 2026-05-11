@@ -1,9 +1,8 @@
 ---
 title: Analysis Services multidimensional data in Power BI Desktop
 description: Learn how to access SQL Server Analysis Services multidimensional data in Power BI Desktop. You can publish models in live mode to the Power BI service.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to

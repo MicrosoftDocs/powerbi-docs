@@ -1,13 +1,14 @@
 ---
 title: Download Power BI Report Builder
 description: This page helps users download and install Power BI Report Builder.
-author: petebro-MSFT
-ms.author: petebro
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-ms.date: 01/08/2025
+ms.topic: concept-article
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 keywords:
   - "install pbirb, download pbirb, latest pbirb"
   - "Power BI Report Builder"
@@ -28,20 +29,19 @@ For details and more information about what's new in this release, see [Change l
 
 **[Download Power BI Report Builder](https://aka.ms/pbireportbuilderexe)**
 
-PBIRB March 2025 is the latest generally available (GA) version.
+PBIRB April 2026 is the current generally available (GA) version.
 
 - Release name: Power BI Report Builder
-- Build number: 15.7.1814.616
-- Release date: March 25, 2025
+- Build number: 15.7.1817.11
+- Release date: April 11, 2026
 
-## System Requirements
+## System requirements
 
 - Supported Operating Systems:
-  - Windows 10
   - Windows 11
-  - Windows Server 2016
   - Windows Server 2019
   - Windows Server 2022
+  - Windows Server 2025
 - .NET Framework 4.8 or later
 - 80 MB of available hard disk space
 - 512 MB of RAM

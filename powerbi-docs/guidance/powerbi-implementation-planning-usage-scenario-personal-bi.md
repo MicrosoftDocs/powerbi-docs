@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Personal BI"
 description: "Learn how Power BI personal BI is about private analytics for an individual."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -35,13 +35,13 @@ The scenario diagram depicts the following user actions, tools, and features:
 
 | Item | Description |
 | --- | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution using [Power BI Desktop](../fundamentals/power-bi-overview.md). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop. In a personal BI solution, the primary intention is typically data exploration and analysis. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) of Power BI project file (.pbip) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
-| ![Item 5](../media/legend-number/legend-number-05-fabric.svg) | Since the primary intention is personal usage, the content is published to the content creator's [personal workspace](../consumer/end-user-workspaces.md). Some advantages of using the Power BI service (instead of remaining solely in Power BI Desktop) include scheduled data refresh, dashboard alerts, and the ability to consume content using a mobile app. The content creator can also edit reports and models in their personal workspace with web authoring (if they enable the workspace setting). |
+| ![Item 5](../media/legend-number/legend-number-05-fabric.svg) | Since the primary intention is personal usage, the content is published to the content creator's [personal workspace](../collaborate-share/end-user-workspaces.md). Some advantages of using the Power BI service (instead of remaining solely in Power BI Desktop) include scheduled data refresh, dashboard alerts, and the ability to consume content using a mobile app. The content creator can also edit reports and models in their personal workspace with web authoring (if they enable the workspace setting). |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The content creator views and interacts with the content published. One option is to sign in to the Power BI service using a web browser. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The content creator can also use a [Power BI mobile app](../consumer/mobile/mobile-apps-for-mobile-devices.md) to view published content. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The content creator can also use a [Power BI mobile app](../explore-reports/mobile/mobile-apps-for-mobile-devices.md) to view published content. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Scheduled data refresh can be set up in the Power BI service to keep imported data up to date. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Some data sources may require an [On-premises data gateway](../connect-data/service-gateway-onprem.md) or VNet gateway for data refresh, like those that reside within a private organizational network. |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. Personal workspaces are usually governed to a much lesser extent than workspaces that are intended for collaboration and distribution. |
@@ -52,18 +52,18 @@ The following are some key points to emphasize about the personal BI scenario.
 
 ### Choice of authoring tools
 
-[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and Power BI reports. It's possible to use different tools to create Excel reports and Power BI paginated reports (not depicted in the scenario diagram).
+[Power BI Desktop](../fundamentals/power-bi-overview.md) is the authoring tool to develop queries, models, and Power BI reports. It's possible to use different tools to create Excel reports and Power BI paginated reports (not depicted in the scenario diagram).
 
 ### Reliance on personal workspace
 
-Use of the [personal workspace](../consumer/end-user-workspaces.md) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
+Use of the [personal workspace](../collaborate-share/end-user-workspaces.md) can be thought of like an *analytical sandbox*. For many organizations, personal content is subject to little governance or formal oversight. However, it's still wise to educate content creators on [guidelines to be successful with personal BI](fabric-adoption-roadmap-content-delivery-scope.md#personal). Use of the sharing feature available within a personal workspace isn't depicted in this usage scenario since the focus is individual analytics.
 
 > [!IMPORTANT]
 > Limit the use of personal workspaces and ensure no mission-critical content is stored in them. Although a Power BI administrator can access and govern a user's [personal workspace](/fabric/admin/portal-workspaces#govern-my-workspaces), storing critical content in personal workspaces does represent risk to the organization.
 
 ### Use of Fabric free license
 
-For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../consumer/end-user-features.md#feature-list) are available to a user with a Fabric free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
+For personal use, which by definition means there's no sharing or collaboration with others, [only certain capabilities of the Power BI service](../fundamentals/end-user-features.md#feature-list) are available to a user with a Fabric free license. When using a free license, most activities to create and publish content to the Power BI service are limited to their personal workspace.
 
 > [!TIP]
 > The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Fabric free license can view content when it's hosted in a Premium capacity.

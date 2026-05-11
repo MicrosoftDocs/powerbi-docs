@@ -1,13 +1,13 @@
 ---
 title: Introduction to the total and subtotal API in Power BI visual
 description: Learn how to use the Total and Subtotal API for Power BI visuals to request aggregated subtotal data from the Power BI host.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/22/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to use the Total and Subtotal API to request aggregated subtotal data from the Power BI host.
 ---
 

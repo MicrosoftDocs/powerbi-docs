@@ -1,13 +1,14 @@
 ---
 title: Create a QR code for a tile to use in Power BI mobile apps
 description: Learn how QR codes in Power BI tiles can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/24/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 #customer intent: As a Power BI user I want to learn how to use QR codes in Power BI titles.
 ---
@@ -17,7 +18,7 @@ LocalizationGroup: Dashboards
 
 QR codes in Power BI can connect anything in the real world directly to related BI information&mdash;no navigation or search needed.
 You can create a QR code in the Power BI service for tiles in any dashboard, even in dashboards you can't edit. You then place the QR code in a key location. For example, you could paste it in an email or print it out and place it in a specific location.
-Colleagues you've shared the dashboard with can [scan the QR code for access to the tile](../consumer/mobile/mobile-apps-qr-code.md) right from their mobile device. The tile will open for them in focus mode.
+Colleagues you've shared the dashboard with can [scan the QR code for access to the tile](../explore-reports/mobile/mobile-apps-qr-code.md) right from their mobile device. The tile will open for them in focus mode.
 
 ## Create a QR code for a tile
 
@@ -53,7 +54,7 @@ Power BI generates the QR code as a JPG file, ready to print.
 
 ## Related content
 
-* [Get data from the real world with the Power BI mobile apps](../consumer/mobile/mobile-apps-data-in-real-world-context.md)
-* [Scan a Power BI QR code from your mobile device](../consumer/mobile/mobile-apps-qr-code.md)
+* [Get data from the real world with the Power BI mobile apps](../explore-reports/mobile/mobile-apps-data-in-real-world-context.md)
+* [Scan a Power BI QR code from your mobile device](../explore-reports/mobile/mobile-apps-qr-code.md)
 * [Create a QR code for a report in Power BI to use in the mobile apps](service-create-qr-code-for-report.md)
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)

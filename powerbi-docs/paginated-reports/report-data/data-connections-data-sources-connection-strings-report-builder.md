@@ -1,12 +1,13 @@
 ---
-title: "Create data connection strings (Power BI Report Builder)"
+title: Create Data Connection Strings (Power BI Report Builder)
 description: Learn how to create data connection strings and learn important information related to data source credentials.
-ms.date: 09/25/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 # Create data connection strings (Power BI Report Builder)

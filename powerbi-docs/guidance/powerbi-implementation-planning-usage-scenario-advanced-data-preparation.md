@@ -1,19 +1,22 @@
 ---
-title: "Power BI usage scenarios: Advanced data preparation"
-description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+title: "Power BI usage scenarios: Advanced data preparation (legacy)"
+description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows (legacy)."
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
 
-# Power BI usage scenarios: Advanced data preparation
+# Power BI usage scenarios: Advanced data preparation (legacy)
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
+
+> [!NOTE]
+> This article describes usage scenarios for Power BI Dataflow Gen1, which is now in a legacy state. For new data preparation projects, consider [Dataflow Gen2 in Data Factory for Microsoft Fabric](/fabric/data-factory/dataflows-gen2-overview), which offers improved performance, more destinations, and built-in AI. See [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1) for migration guidance.
 
 Data preparation (sometimes referred to as ETL, which is an acronym for _Extract, Transform, and Load_) activities often involve a large effort. The time, skill, and effort involved with collecting, cleaning, combining, and enriching data depends on the quality and structure of source data.
 
@@ -63,7 +66,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The dataflow creator develops a collection of tables within a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). For a dataflow that's intended for reuse, it's common (but not required) that the creator belongs to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The dataflow connects to data from one or more data sources. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. These gateways are used both for authoring the dataflow in Power Query Online and refreshing the dataflow. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | All of the workspaces involved have their license mode set to **Fabric capacity**, **Premium capacity**, **Premium Per User**, or **Embedded**. These license modes allow for the use of linked tables and computed tables across workspaces, which are required in this scenario. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | All of the workspaces involved have their workspace type set to **Fabric capacity**, **Premium capacity**, **Premium Per User**, or **Embedded**. These workspace types allow for the use of linked tables and computed tables across workspaces, which are required in this scenario. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Dataflow creators develop dataflows by using Power Query Online, which is a [web-based version of Power Query](/power-query/power-query-what-is-power-query#where-can-you-use-power-query). |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | A _[staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows)_ is created in a workspace that's dedicated to the centralized management of dataflows. A staging dataflow copies the raw data as-is from the source. Few, if any, transformations are applied. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | A _[transformation dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#transformation-dataflows)_ (also known as a _cleansed dataflow_) is created in the same workspace. It sources data by using [linked table(s)](../transform-model/dataflows/dataflows-create.md#create-a-dataflow-by-using-linked-tables) to the staging dataflow. [Computed table(s)](../transform-model/dataflows/dataflows-create.md#create-a-dataflow-by-using-a-computed-table) include transformation steps that prepare, cleanse, and reshape the data. |
@@ -143,7 +146,7 @@ Three types of dataflow tables (also known as _entities_) are depicted in the sc
   - In the final dataflow for delivering output to semantic model creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
 
 > [!NOTE]
-> There are many design techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) that can take dataflows from self-service to enterprise-ready. Also, dataflows in a workspace that has its license mode set to **Premium per user** or **Premium capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md). Linked tables and computed tables (also known as _entities_) are two advanced features that are essential for increasing the reusability of dataflows.
+> There are many design techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) that can take dataflows from self-service to enterprise-ready. Also, dataflows in a workspace that has its workspace type set to **Premium per user** or **Premium capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md). Linked tables and computed tables (also known as _entities_) are two advanced features that are essential for increasing the reusability of dataflows.
 
 ### Enhanced compute engine
 

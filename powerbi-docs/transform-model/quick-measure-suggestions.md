@@ -1,9 +1,9 @@
 ---
 title: Quick measure suggestions
 description: Suggestions with Copilot to help the creation of DAX measures using natural language, making it easier and faster to generate DAX formulas.
-author: Sujata994
-ms.author: sunaraya
-ms.reviewer: ''
+author: eric-urban
+ms.author: eur
+ms.reviewer: sunaraya
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

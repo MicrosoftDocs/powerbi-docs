@@ -1,8 +1,8 @@
 ---
-title: Configure and consume a dataflow
+title: Configure and consume a dataflow (legacy)
 description: Learn how to set up a dataflow in the Power BI service and consume that dataflow in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -10,7 +10,9 @@ ms.topic: how-to
 ms.date: 02/02/2024
 LocalizationGroup: Data from files
 ---
-# Configure and consume a dataflow
+# Configure and consume a dataflow (legacy)
+
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a semantic model in Power BI Desktop, or referenced as a linked or computed table.
 
@@ -113,6 +115,6 @@ The following articles provide more information about dataflows and Power BI:
 * [Creating a dataflow](dataflows-create.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
+* [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

@@ -1,8 +1,8 @@
 ---
 title: Q&A tutorial for Power BI dashboards
 description: Learn how to explore a sample in the Power BI service and create a visual by using natural language in Q&A.
-author: kfollis
-ms.author: kfollis
+author: kgremban
+ms.author: kgremban
 ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -15,11 +15,14 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
 
 ## Prerequisites  
 
-- Read the Q&A intro article [Q&A for Power BI business users](../consumer/end-user-q-and-a.md).
+- Read the Q&A intro article [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md).
 - Sign up for a [free or trial license for the Power BI service](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 
 - Open the Power BI service in a browser.
@@ -70,7 +73,7 @@ Once you're familiar with the data, head back to the dashboard and place your cu
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot shows the Q&A screen with suggested questions.":::
 
-Don't see the Q&A box? See [Considerations and limitations](../consumer/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
+Don't see the Q&A box? See [Considerations and limitations](../explore-reports/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
 
 ## Use Q&A on a dashboard in the Power BI service
 
@@ -129,8 +132,8 @@ Let's try it out.
 
 ## Related content
 
-- [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
-- [Tips for asking questions in Power BI Q&A](../consumer/end-user-q-and-a-tips.md)
+- [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
+- [Tips for asking questions in Power BI Q&A](../explore-reports/end-user-q-and-a-tips.md)
 - [Make Excel data work well with Q&A in Power BI](../create-reports/service-prepare-data-for-q-and-a.md)
 - [Enable Q&A for live connections in Power BI](../create-reports/service-q-and-a-direct-query.md)
 - [Pin a tile to the dashboard from Q&A](../create-reports/service-dashboard-pin-tile-from-q-and-a.md)

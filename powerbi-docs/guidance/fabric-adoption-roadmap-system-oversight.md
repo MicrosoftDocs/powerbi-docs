@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: System oversight"
 description: "Apply system oversight consisting of administrative activities to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -111,7 +111,7 @@ A few data architecture considerations that affect adoption include:
 - What [data sources](../connect-data/desktop-data-sources.md) are the most important? What types of data will we be acquiring?
 - What [semantic model connectivity mode](../connect-data/service-dataset-modes-understand.md) and [storage mode](../transform-model/desktop-storage-mode.md) choices (for example, Direct Lake, import, live connection, DirectQuery, or composite model frameworks) are the best fit for the use cases?
 - To what extent is data reusability encouraged using [lakehouses](/fabric/data-engineering/lakehouse-overview), [warehouses](/fabric/data-warehouse/data-warehousing), and [shared semantic models](../connect-data/desktop-report-lifecycle-datasets.md)?
-- To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md)?
+- To what extent is the reusability of data preparation logic and advanced data preparation encouraged by using [data pipelines](/fabric/data-factory/data-factory-overview#data-pipelines), [notebooks](/fabric/data-engineering/how-to-use-notebook), and [dataflows (legacy)](../transform-model/dataflows/dataflows-introduction-self-service.md)?
 
 It's important for administrators to become fully aware of Fabric's technical capabilities—as well as the needs and goals of their stakeholders—before they make architectural decisions.
 
@@ -148,7 +148,7 @@ Suggestions for managing Fabric capacity:
 - Define who is responsible for managing the capacity. Confirm the roles and responsibilities so that it's clear what action will be taken, why, when, and by whom.
 - Create a specific set of criteria for content that will be published to capacity. It's especially relevant when a single capacity is used by multiple business units because the potential exists to disrupt other users if the capacity isn't well-managed. Consider requiring a [best practices review](fabric-adoption-roadmap-mentoring-and-user-enablement.md#best-practices-reviews) (such as reasonable semantic model size and efficient calculations) before publishing new content to a production capacity.
 - Regularly use the [Fabric capacity metrics app](/fabric/enterprise/metrics-app) to understand resource utilization and patterns for the capacity. Most importantly, look for consistent patterns of overutilization, which will contribute to user disruptions. An analysis of usage patterns should also make you aware if the capacity is underutilized, indicating more value could be gained from the investment.
-- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
+- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-interruptions) so Fabric notifies you if the [capacity becomes overloaded](https://powerbi.microsoft.com/blog/announcing-timely-premium-capacity-overload-alerts/), or if an outage or incident occurs.
 
 #### Autoscale
 
@@ -249,7 +249,7 @@ A user license is obtained via a subscription, which authorizes a certain number
 
 There are two approaches to procuring subscriptions.
 
-- **Centralized**: Microsoft 365 billing administrator purchases a subscription for [Pro or PPU](https://powerbi.microsoft.com/pricing/). It's the most common way to manage subscriptions and assign licenses.
+- **Centralized**: Microsoft 365 billing administrator purchases a subscription for [Pro or PPU](https://www.microsoft.com/power-platform/products/power-bi/pricing). It's the most common way to manage subscriptions and assign licenses.
 - **Decentralized**: Individual departments purchase a subscription via [self-service purchasing](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide&preserve-view=true).
 
 ### Self-service purchasing
@@ -299,7 +299,7 @@ Managing and optimizing the cost of cloud services, like Fabric, is an important
 
 Security, information protection, and data loss prevention (DLP) are joint responsibilities among all content creators, consumers, and administrators. That's no small task because there's sensitive information everywhere: personal data, customer data, or customer-authored data, protected health information, intellectual property, proprietary organizational information, just to name a few. Governmental, industry, and contractual regulations could have a significant impact on the [governance](fabric-adoption-roadmap-governance.md) guidelines and policies that you create related to security.
 
-The [Power BI security whitepaper](whitepaper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
+The [Power BI security whitepaper](white-paper-powerbi-security.md) is an excellent resource for understanding the breadth of considerations, including aspects that Microsoft manages. This section will introduce several topics that customers are responsible for managing.
 
 ### User responsibilities
 
@@ -319,7 +319,7 @@ Administrators can help by following best practices themselves. Administrators c
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/fabric/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/fabric/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b) whitepaper.
 
 ### Information protection and data loss prevention
 
@@ -331,7 +331,7 @@ Fabric supports capabilities for information protection and data loss prevention
 
 ### Data residency
 
-For organizations with requirements to store data within a geographic region, Fabric capacity can be [set for a specific region](whitepaper-powerbi-security.md#data-residency) that's different from the home region of the Fabric tenant.
+For organizations with requirements to store data within a geographic region, Fabric capacity can be [set for a specific region](white-paper-powerbi-security.md#data-residency) that's different from the home region of the Fabric tenant.
 
 ### Encryption keys
 
@@ -503,8 +503,8 @@ For more information about system oversight and Fabric administration, see the f
 - [Administer Power BI - Part 2](/training/paths/administer-power-bi-part-2/)
 - [Administrator in a Day Training – Day 1](https://aka.ms/AdmPBI1)
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
-- [Power BI security whitepaper](whitepaper-powerbi-security.md)
-- [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
+- [Power BI security whitepaper](white-paper-powerbi-security.md)
+- [External guest users whitepaper](/fabric/enterprise/powerbi/service-admin-entra-b2b)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 
 In the [next article](fabric-adoption-roadmap-change-management.md) in the Microsoft Fabric adoption roadmap series, learn about effective change management.

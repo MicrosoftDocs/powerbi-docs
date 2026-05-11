@@ -2,10 +2,10 @@
 title: Embedded analytics embed for your organization tutorial sample app
 description: Sign into the embedded analytics embed for your organization tutorial sample app.
 services: powerbi
-author: KesemSharabi
-ms.author: kesharab
+author: JulCsc
+ms.author: juliacawthra
 ms.topic: include
-ms.date: 13/09/2020
+ms.date: 12/01/2025
 ms.custom: include file
 ---
 

@@ -6,34 +6,708 @@ ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.topic: conceptual
-ms.date: 05/16/2025
+ms.topic: concept-article
+ms.date: 04/13/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
+# When updating this page, remember hardcode the download link for the latest month and remove the oldest download link - only 6 months are maintained per PG.
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
-This article describes previous updates to **Power BI Desktop** and the **Power BI service**. For the most current month's release, check out [**Power BI** latest updates](desktop-latest-update.md).
-
-The monthly blog and video updates for Power BI Desktop now also include "what's new" updates for Power BI mobile and the Power BI service. In each section, choose the tab for Power BI Desktop or for the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-The links beside each update mean the following:
-
-* **[video]** excerpts play in a new browser tab, when the feature is being discussed.
-* Some features have an **[article]** that provides more detail.
-* Most features are explained in the monthly update **[blog]** post.
-* Lastly, some features are self-explanatory and don't need an article or video.
-
-You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
+This article describes previous updates to **Power BI Desktop** and the **Power BI service**. For the most current month's release, check out [**Power BI** latest updates](whats-new.md). To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
+
+## March 2026 update (version 2.152.882.0)
+
+Power BI's March 2026 update delivers powerful enhancements across reporting, AI, modeling, and visuals. Translytical task flows move to general availability, enabling end users to take action directly from reports. Modern visual defaults (preview) bring a fresh Fluent 2 design to your reports. Direct Lake in OneLake reaches general availability, unlocking incredible performance directly against OneLake. Plus, custom totals, series label leader lines, updated Copilot experiences, and expanded DAX capabilities make this a feature-packed release.
+
+For a quick summary of the March features, read on. For a detailed look at these updates and more enhancements, see the [Power BI March 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-march-2026-feature-summary/). You can also [watch the March demos](https://youtu.be/INwbDNhRMG0).
+
+> **Download** the [March 2026 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-03_x64.exe).
+
+To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
+### General
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Upcoming deprecation of old file picker experience in Power BI Desktop | Deprecation is planned for the old file picker experience in Power BI Desktop in April. The updated file picker, announced last January, provides a more intuitive way of navigating between files and folders and becomes the default experience. No action is required from users. |        |
+
+### Copilot and AI
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Copilot pane user experience update | The Copilot pane in Reports and Apps has an updated user experience that matches the look and feel of the standalone Copilot experience. Button suggestions disappear after starting your conversation (accessible via prompt guide or clear chat). The input box remains enabled while processing requests, so you can type your next prompt. The copy action is moved to the bottom of responses next to feedback buttons. For more information, see [Summarize a report with Copilot](../explore-reports/copilot-pane-summarize-content.md). |          |
+| Copilot feedback update | Across all Power BI Copilot experiences, an updated feedback dialog now allows you to add diagnostics with your submission. Sharing diagnostics with thumbs up or down feedback provides conversational context and is helpful during support investigations. You can preview the diagnostics file before submission to ensure you aren't sending sensitive information. For more information, see [Summarize a report with Copilot](../explore-reports/copilot-pane-summarize-content.md#provide-feedback-with-diagnostics). |          |
+
+### Reporting
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Translytical task flows (Generally Available) | **Now generally available**. Translytical task flows let end users take action directly from Power BI reports—updating records, adding data, or triggering workflows in other systems—without leaving the report. Translytical task flows use Fabric user data functions to connect reports to underlying data sources. Common scenarios include editing data records in place, adding annotations, deleting outdated entries, and calling external APIs like Azure OpenAI. Data write-back supports Fabric SQL databases, Fabric warehouses, and Fabric lakehouses (for files). For more information, see [Understand translytical task flows](../create-reports/translytical-task-flow-overview.md) and [Tutorial: Create a translytical task flow](../create-reports/translytical-task-flow-tutorial.md). |        |
+| Modern visual defaults and customizing theme improvements (Preview) | Power BI Desktop visuals now start with a modern look. This preview introduces an updated base theme aligned with Fluent 2, featuring subtitles, uniform padding, style presets, and a gray canvas background at 1080x1920px by default. Charts display with smooth lines, slicers default to dropdown mode, and buttons have a refreshed appearance—all without manual formatting. Enable the preview in Options > Preview features by turning on **modern visual defaults** and **customizing theme improvements**. Published reports retain the new base theme for editing in the browser. The theme schema also supports setting page size and defining reusable named colors. For more information, see [Use report themes in Power BI Desktop](../create-reports/desktop-report-themes.md). | ✔️ |
+| Custom totals (Preview) | Table and matrix visuals now support custom totals, giving you more control over what the total row displays for a specific column. By default, the total row shows the result of evaluating the measure across the entire filter context. With custom totals, you can easily change the total row value to the sum, min, max, count (distinct), or count of the displayed rows. Right-click a numerical column or use the Build pane to choose **Customize total calculation**. Custom totals are based on visual calculations. For more information, see [Visual calculations overview](../transform-model/desktop-visual-calculations-overview.md) and [Tables in Power BI](../visuals/power-bi-visualization-tables.md). | ✔️ |
+| Series label leader lines for line charts | Leader lines for series labels are now available on line charts and related visuals, making it easier to understand which line belongs to which label—especially in dense or overlapping scenarios. When enabled, leader lines visually connect each series label to its corresponding data point. The feature includes smart layout logic to avoid label collisions, along with formatting options for line style, width, and transparency. Leader lines turn on automatically when series labels are enabled for new reports. Series labels are also selectable, which highlights a line and displays markers. You can select more than one by holding down the CTRL key. For more information, see [Line charts in Power BI](../visuals/power-bi-line-chart.md). |        |
+| Report theme updates | This month introduces two enhancements to custom report themes. You can now define a default page size directly in your theme file. When you add a page section to your theme JSON, any new pages added to your report automatically use those dimensions. You can also now reference structural theme colors such as background and foreground in your theme JSON. For more information, see [Create custom report themes in Power BI Desktop](../create-reports/report-themes-create-custom.md). |        |
+| Input slicer now supports conditional formatting | The input slicer now supports conditional formatting (Fx) across multiple visual elements in the formatting pane. You can apply dynamic formatting rules to text colors, icon colors, borders, and accent bars based on measures or field values in your data. Elements that support conditional formatting include Filters (text color, dismiss button color), Filter operator (text and icon color), Apply button (icon color), and Input box (placeholder text color and accent bar color), as well as background and border colors for each. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-input-slicer.md). |        |
+
+### Modeling
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Direct Lake in OneLake (Generally Available) | **Now generally available**. Power BI is standardizing on open-data formats by adopting Delta Lake and Parquet. Direct Lake storage mode accelerates time to data-driven decisions by unlocking incredible performance directly against OneLake, without the need to manage costly, time-consuming data refreshes for large volumes of data. Direct Lake in OneLake works from Power BI Desktop, providing compatibility with OneLake security, more modeling features, and faster query performance. When creating a new Direct Lake semantic model from the SQL analytics endpoint page, you can select either Direct Lake on OneLake or Direct Lake on SQL. For more information, see [OneLake security overview](/fabric/onelake/security/get-started-security), [OneLake security for SQL analytics endpoint](/fabric/onelake/security/sql-analytics-endpoint-onelake-security), and [Direct Lake overview](/fabric/fundamentals/direct-lake-overview). |        |
+| TMDL View in web modeling (Preview) | TMDL View on the Web introduces a code-first semantic modeling experience directly in the browser. Developers can script, modify, and apply changes to model objects directly in a code editor using Tabular Model Definition Language (TMDL) without switching to Desktop or downloading model files. This experience provides immediate code-level visibility into all semantic model metadata (tables, measures, relationships, and more), enabling bulk edits, automation of repetitive tasks, and reuse of definitions. For more information, see [Tabular Model Definition Language (TMDL) overview](/analysis-services/tmdl/tmdl-overview) and [Work with TMDL view in Power BI Desktop](../transform-model/desktop-tmdl-view.md). | ✔️ |
+| DAX user-defined functions (Preview) | This month's ongoing preview of DAX user-defined functions includes several updates: A new INFO.USERDEFINEDFUNCTIONS() function returns information about user-defined functions in your model. Power BI now keeps DAX code in sync when you rename tables, columns, or measures, with automatic dependency tracking for user-defined functions. New type hints (CalendarRef, ColumnRef, MeasureRef, TableRef) provide more expressive power beyond the existing AnyVal, Scalar, Table, and AnyRef. "Quick queries" for Functions in DAX Query View now supports "Define with references and evaluate." Formula bar is available for creating or modifying UDF expressions in Model Explorer. Syntax highlighting support for UDFs in TMDL View. Support for JSDoc block tags to author UDF description and parameters using the triple slash prefix (///). Support for up to 256 UDF parameters (increased from 12). For more information, see [INFO.USERDEFINEDFUNCTIONS function](/dax/info-userdefinedfunctions-function-dax) and [DAX user-defined functions best practices](/dax/best-practices/dax-user-defined-functions). | ✔️ |
+
+### Data connectivity
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| IBM Netezza ODBC Driver (Generally Available) | **Now generally available**. The IBM Netezza ODBC driver provides a more reliable, supported path forward as Microsoft transitions away from the embedded Simba driver. This update ensures continued connectivity, long-term support, and a more future-ready experience for organizations using the Netezza connector. Customers don't need to install a new connector; you can reuse your existing connector but need to install the new IBM Netezza ODBC driver. For more information, see [IBM Netezza database connector](/power-query/connectors/ibm-netezza-database). |        |
+| QuickBooks Online Connector Retirement | The QuickBooks Online connector is retiring and won't be supported after March 2026. After retirement, customers can't create new connections, and existing connections might stop working. |        |
+
+### Visualizations
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| AI Narrative auto refresh | Instead of clicking **Refresh** every time you select a slicer in a report with the AI Narrative visual, use the **Auto refresh** toggle in the visualizations pane. This toggle enables the summary to update automatically whenever a slicer selection changes, creating a smoother and more efficient reporting experience. For more information, see [Create smart narrative summaries](../visuals/power-bi-visualization-smart-narrative.md). |          |
+
+## February 2026 update (version 2.151.1052.0)
+
+Power BI's February 2026 update is here, bringing smarter Copilot and AI experiences, more flexible ways to interact with reports, polished visuals, and useful modeling enhancements—plus a few important updates to keep in mind. With FabCon right around the corner, it's the perfect time to explore what's new and get excited about what's next.
+
+For a quick summary of the February features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI February 2026 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2026-feature-summary/). You can also watch the [February demos](https://youtu.be/O21vXCpYdCc).
+
+> **Download** the [February 2026 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-02_x64.exe).
+
+To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
+### Events and announcements
+
+- **Data Viz World Championships finalists**: Meet the four finalists heading to the finals at FabCon, where they battle it out for the title of 2026 Power BI DataViz World Champion. [Learn more](https://developer.microsoft.com/reactor/events/26851/) about how to register for the session and view entries.
+- **FabCon Americas 2026**: Less than one month away! Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. [Register](https://aka.ms/fabcon) with code FABCOMM to save $200.
+
+### General
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Deprecation of Hierarchies in Power BI scorecards | Starting April 15, 2026, the Hierarchies feature in Power BI Scorecards will be removed. The Heatmap view, which was tied to hierarchies, will also be discontinued. Scorecards themselves continue to work as usual. For more information, see [Create scorecards and manual goals](../create-reports/service-goals-create.md). |        |
+| Deprecation of SSRS, PBIRS and SSAS Management Packs in SCOM | Microsoft has announced the deprecation of the System Center Operations Manager (SCOM) Management Packs for SQL Server Reporting Services (SSRS), Power BI Report Server (PBIRS), and SQL Server Analysis Services (SSAS). These management packs will no longer be supported after January 2027. |        |
+| Deprecation of legacy Import Excel & CSV experience in Power BI Service | Entry points to the legacy experience will be removed on May 31, 2026, and semantic models created using the legacy experience will stop refreshing on July 31, 2026. For guidance, see [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md). |        |
+| Deprecation of the Simba Vertica ODBC driver | The Simba Vertica ODBC Driver begins its deprecation process in February 2026. Customers should transition to the Vertica ODBC driver. For more details, see [Power Query Vertica database connector](/power-query/connectors/vertica-database#use-vertica-odbc-driver). |        |
+
+### Copilot and AI
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Expanded prompt input character limit | Based on customer feedback, the character limit for Copilot input increased from 500 characters to 10K in all Copilot surfaces, including Standalone, Report pane, Apps, Mobile, and Embed. For more information, see [Use Copilot with Power BI reports and semantic models](../create-reports/copilot-reports-overview.md). |          |
+
+### Reporting
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Filter or enter data in reports with Input slicer (Generally Available) | The Text Slicer is now renamed to Input Slicer and is **generally available**. This interactive visual lets you filter data using free-form text input with flexible options like exact match, contains, or starts with. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-text-slicer.md). |        |
+| Paste selections into any report slicer | The paste context menu feature on the slicer visual lets you apply multiple selections by pasting a list of values directly into your slicer. For more information, see [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md?tabs=powerbi-desktop#paste-values-in-slicers). |        |
+| Card visual updates | The new Card visual default increased from 5 to 10 callouts. Selecting a category name now filters other visuals on the page. For more information, see [Create a card visual in Power BI](../visuals/power-bi-visualization-card.md?tabs=powerbi-desktop). |        |
+| Fonts compatible with non-Windows devices for Power BI reports | Default fonts such as Segoe UI in Power BI reports when viewed on a non-Windows device now show as expected. For more information, see [Supported Browsers for Power BI and Fabric](power-bi-browsers.md). |        |
+| Preview visuals update | Preview visuals now display "(Preview)" after their name and will soon appear below the divider line with custom and other unpinned visuals. For more information, see [Report visualizations](../visuals/power-bi-report-visualizations.md). |        |
+| Conditional formatting dialog updates | Enhanced conditional formatting dialog with a wider dropdown menu and helpful tooltips that display field names for easier selection. For more information, see [Apply Conditional Table Formatting](../create-reports/desktop-conditional-table-formatting.md). |        |
+| Improved error dialogs in Power BI Desktop | Additional error details for visuals in Power BI reports are now available in Power BI Desktop. For more information, see [Troubleshoot Visualizations in Power BI](../visuals/power-bi-visualization-troubleshoot.md). |        |
+| Azure Maps visual updates | Enhanced performance for Azure Maps visual with pie charts and new endpoint regions for Korea and Brazil. For more information, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started). |        |
+| Fewer steps to insight in Power BI apps | A more conversational Copilot experience in Power BI apps—just ask your question and Copilot does the work by finding the right reports or data. Copilot can also summarize what reporting is available in an app. For more information, see [Copilot for Power BI apps](../create-reports/copilot-apps-overview.md). |        |
+| Org Apps now feature Persistent Report Filters and Reset Functionality | Org apps (Preview) have been updated to retain Power BI report filters, slicers, and other data view changes. The persistent filters setting is enabled by default for all reports. For more information, see [Org apps](../consumer/org-app-items/org-app-items.md). | ✔️ |
+
+### Modeling
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| TABLEOF and NAMEOF DAX functions | New TABLEOF function returns a reference to the table associated with a given column, measure, or calendar. NAMEOF returns the name of a table, column, measure, or calendar as a text string. These functions help write DAX that's safer and easier to maintain. For more information, see [TABLEOF](/dax/tableof-function-dax) and [NAMEOF](/dax/nameof-function-dax). |        |
+
+### Visualizations
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Drill Down Pie PRO (Filter) by ZoomCharts | Pie PRO (Filter) enhances pie and donut charts with advanced labeling, category level reference markers, one-click drill down, and images on slices. [Get it on AppSource](https://appsource.microsoft.com/product/WA200001678). |          |
+| Rich titles in Zebra BI Charts | Rich titles let you structure context across multiple lines for clearer hierarchy and faster comprehension. [Learn more](https://bit.ly/3LEKmLc). |          |
+| Rose Donut Pie Chart by Powerviz | Build four types of charts—rose, rose donut, donut, and pie—with 30+ color palettes, smart labels, conditional formatting, and more. [Get it on AppSource](https://appsource.microsoft.com/product/power-bi-visuals/truvizinc1674781244292.rose-donut-pie-chart-by-powerviz). |          |
+
+### Other
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Fabric Copilot capacity tenant setting default update | Beginning on or after February 8, 2026, the tenant setting **Capacities can be designated as Fabric Copilot capacities** will be enabled by default for all tenants. This only updates the tenant setting—it won't modify existing capacity configurations. For more information, see [Fabric Copilot capacity](/fabric/admin/service-admin-portal-copilot). |          |
+
+## January 2026 update
+
+The January 2026 Power BI feature update delivers powerful enhancements across the platform. Key highlights include improved Copilot capabilities with attaching reports and semantic models to chat, enhanced color picker and format pane improvements, modern visual tooltips now generally available, and markers in Azure Maps Visual. There are also important updates to semantic model editing, GB18030-2022 character set support, and the PBIR report format becoming the default.
+
+For a quick summary of the January features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI January 2026 Feature Summary blog post](https://aka.ms/powerbijan2026update). You can also watch the [January demos](https://youtu.be/xYNx4a3aRZQ).
+
+> **Download** the [January 2026 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-01_x64.exe).
+
+To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
+### Events and announcements
+
+- **Data Viz World Championships**: There's only one way to find out if you can be the world champion! By joining this global contest, you will have the opportunity to tackle three weekly challenges designed to stretch visualization skills and inspire innovation. Four finalists will be selected to compete for the title of world champion LIVE on stage at FabCon Atlanta.
+- **FabCon Americas 2026**: Join us for the ultimate Power BI, Microsoft Fabric, SQL, Real-Time Intelligence, AI, and Databases community-led event from March 16–20, 2026, in Atlanta, GA. The third annual FabCon Americas will feature sessions from your favorite Microsoft and community speakers, keynotes, more opportunities to Ask the Experts for 1:1 support, an engaging community lounge with opportunities to network and connect with your peers, a dedicated partner pre-day, a packed expo hall, attendee favorites Power Hour and the Data Viz World Championships live finals, and a can't-miss attendee party at the Georgia Aquarium. [Use code FABCOMM](https://aka.ms/fabcon) to get $200 off.
+
+### General
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Deprecation of Power BI Q&A | Q&A, our legacy natural language tool, will be deprecated in December 2026. Moving forward, use Power BI Copilot, which provides a more advanced and integrated solution for querying data with natural language. |        |
+| SQL Server Reporting Services (SSRS) Report Viewer Web Part Support Discontinuation | Support for SSRS SharePoint Webpart, a component that allows you to embed on-premises paginated reports directly into SharePoint Server pages, will end on April 13, 2026. While the download will continue to be available, technical support will no longer be provided. |        |
+| The Power BI application is accessible within Teams for Microsoft 365 Operated by 21Vianet | Users can acquire the Power BI app from the app store, or admins can centrally install it for them. Once added, users can view their Power BI content in Teams by using the app, and pin Power BI items to Teams channels and chats. Note that certain features aren't supported in the Power BI app for Teams operated by 21Vianet environments. For more information, refer to the service description of [Power BI operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud). |        |
+
+### Copilot and AI
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Attach reference to Copilot chat in the Power BI mobile app | Attach a report or semantic model to Copilot chat as a grounded reference. To add a reference, tap the + icon or type / to search and select your desired item. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
+| Updating Prepped for AI setting name to Approved for Copilot | The setting to mark a model as prepped for AI is renamed to better reflect its purpose and functionality. For more information, see [Mark your model as approved for Copilot](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot). |          |
+| Standalone Copilot Access on Power BI Home | New standalone Copilot entry point on the Power BI Home page for faster access to insights. You can switch back to Recommended content using the picker at the top of the Home page. For more information, see [Chat with Copilot in Power BI](../create-reports/copilot-chat-with-data-standalone.md). |          |
+
+### Reporting
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Field parameters persist hierarchy level setting | New report-level setting to restore pre-July 2025 behavior for field parameters' expansion and collapse of hierarchy levels. By default, hierarchy levels remain persistent, but you can turn off this feature. For more information, see [Let report readers use field parameters to change visuals](../create-reports/power-bi-field-parameters.md). |        |
+| Format Pane Improvements | Enhanced color picker with reset to default and back button to return from custom colors to theme colors. Makes color customization more intuitive and efficient. Reset individual formatting groups without impacting the rest of the section or the whole visual with granular reset options. Provides finer control for report formatting. For more information, see [Get started formatting report visualizations](../visuals/service-getting-started-with-color-formatting-and-axis-properties.md). |          |
+| Introducing Markers in Azure Maps Visual | New Markers capability for Azure Maps Visual allows customized icons, varying sizes, and advanced formatting features to improve narrative clarity in geospatial analysis. Available in the next few weeks. For more information, see [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context). |        |
+| Modern Visual Tooltips (Generally Available) | **Now generally available**. Enhanced tooltips with drill actions footer for drilling down, up, or through data points directly from the tooltip. Automatically match report theme colors with customization options. For more information, see [Create Visual Tooltips](../create-reports/desktop-tooltips.md). |        |
+| Column Sizing Update in Tables and Matrices | Columns are now sized by default based on content they contain, making tables and matrices more compact and easier to read. You can still use **Grow to Fit** to expand columns when needed. For more information, see [Create a table visualization](../visuals/power-bi-visualization-tables.md) and [Create matrix visualizations](../visuals/power-bi-visualization-matrix-visual.md). |        |
+
+### Modeling
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Updates on Editing Semantic Models in the Power BI Service | Models configured with incremental refresh can now be opened and edited in the Power BI Service. Note that you can't download these models as PBIX files, and Power Query editor isn't available for web editing. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
+| Chinese coded character set (GB18030-2022) support | Power BI can be configured to respect GB18030‑2022 encoding using the **UnicodeCharacterBehavior** setting via XMLA command. Ensures compliance with China's national character set requirements and affects DAX text functions like FIND, LEFT, LEN, MID, REPLACE, and RIGHT. |        |
+
+### Developers and APIs
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Power BI Enhanced Report Format (PBIR) as Default Format | PBIR is activated by default in the Power BI service as part of a phased rollout (full availability by the end of February). The March release sets PBIR as the default in Power BI Desktop. General Availability is planned for Q3 2026. For more information, see [Power BI Project (PBIP) and Azure DevOps](../developer/projects/projects-azdo.md). | ✔️ |
+
+### Visualizations
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Funnel Chart by Powerviz | Power BI-certified visual with four chart types in one visual for tracking progress through stages. Features include funnel settings, seven color schemes with more than 30 palettes, conversion rate analysis, fill patterns, conditional formatting, ranking, annotation, and grid view. Useful for sales funnel analysis, marketing campaigns, user onboarding, and website traffic. Available on AppSource. |          |
+
+## November 2025 update
+
+The November 2025 Power BI feature update brings several important announcements and enhancements across the platform. Key highlights include the deprecation of R and Python visuals in the "Embed for your customers" solution, significant updates to Copilot and AI capabilities—such as the standalone Copilot in Power BI mobile apps (preview) and improvements to Verified Answers—and new options for reporting, modeling, and data connectivity. There are also advancements in report visuals, with features like automatically expanding matrix columns and a generally available Card visual.
+
+For a quick summary of the November features, read on. For a detailed look at these updates and more enhancements, go to the [Power BI November 2025 Feature Summary blog post](https://aka.ms/powerbinov2025update). You can also watch the [November demos](https://youtu.be/pRFeQWzUhn0).
+
+> **Download** the [November 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-11_x64.exe).
+
+To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
+### Events and announcements
+
+- **Fabric Data Days**: Two months of learning, contests, live sessions, and community connection start November 4. See the [full schedule](https://aka.ms/fabricdatadays).
+- **FabCon**: March 16–20, 2026, Atlanta, GA. This community-led event includes keynotes, expert sessions, an expo hall, Power Hour, the Data Viz World Championship, and a party at the Georgia Aquarium. [Use code FABCOMM](https://aka.ms/fabcon) to get $200 off.
+
+### General
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Announcing deprecation of R and Python visuals in "Embed for your customers" solution | In May 2026, Power BI is ending support for embedding reports and dashboards containing R or Python visuals using "Embed for your customers" (app owns data) and Publish to web scenarios. After this date, R or Python charts will display as blank. This doesn't affect "Embed for your organization" or "Secure embeddings to SharePoint, Website, or Portal." |        |
+
+### Copilot and AI
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Ask anything, anywhere with Standalone Copilot in Power BI mobile apps | New standalone Copilot experience on mobile homepage with complete chat capabilities. Ask questions, get instant insights, and interact with generated visuals with citations. iOS apps support dictation for voice interaction. Requires activity linked to Fabric capacity. Semantic models must be [prepared for AI](../create-reports/copilot-prepare-data-ai.md); the mobile experience surfaces clear warnings when models aren't prepared. | ✔️ |
+| Updates to the standalone Copilot in Power BI | Copilot now automatically selects data sources when there's a strong match, eliminating the need to choose from a list. New entry points on the home page, suggested prompts for recently opened items, and improved experience for attaching items to questions. |          |
+| Improvements to the Report Copilot | Upgraded Report Copilot with better visual recommendations, expanded visual library, and improved context awareness. Creates entire report pages in seconds with more accurate and insightful results. Available in Power BI service and Desktop. |          |
+| Improvements to Verified Answers | Verified answers now inherit the entire visual state including slicers, cross-filters, and drill-through filters. Filter limit increased from 3 to 10 permutations. New card visual and Azure maps now supported. Improved filtering reliability. |          |
+| Remote Power BI Model Context Protocol Server for chat with your Data | Remote MCP server provides agents and MCP clients with tools to chat with data remotely, authenticated with Microsoft Entra ID. Includes tools for getting semantic model schema, generating DAX queries, and executing queries. | ✔️ |
+
+### Reporting
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Automatically expand matrix columns to fill available space | Matrix visual now supports the **Grow to fit** option, distributing extra space evenly across columns when total column width is smaller than the visual container. Horizontal scrollbar behavior corrected. |        |
+| Card visual | **Now generally available** with support for hero images, dynamic collage layout, customizable display order for callout area/reference label/hero image, and consistent formatting controls across visuals. Images can be uploaded, provided via URL, or selected from dataset. This release also includes improvements to callout image alignment, background image fit, and reference label padding, plus an Autogrid behavior that prevents empty columns in collage layouts. Includes updated default styling and a consistent modern formatting experience across visuals. The legacy Card visual remains available. |        |
+| Enhancing Image visuals with styling, states, and more | Image visual now supports state-based formatting (All, Default, Hover, Pressed) and rich styling controls including background, border, shape, and effects. Expanded image sources (URL, data column, upload) and fit options (Fit, Fill, Center, Stretch). |        |
+| OneLake Catalog now supports user data functions for Translytical task flows | Fabric user data function selection improved with OneLake catalog. Browse, search, view details, and filter by My Functions or Endorsed in your org. Available when selecting functions for Data function actions. | ✔️ |
+
+### Modeling
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Power BI Modeling MCP Server | Local MCP server enables AI agents to interact with Power BI models using natural language. Build and modify semantic models, perform bulk operations, apply best practices, and leverage agentic workflows. Available as Visual Studio Code extension. | ✔️ |
+| Semantic Model Version History | **Now generally available**. Automatically captures up to five versions when opening models in Editing mode, publishing/uploading .pbix files, or restoring versions. Versions can be restored from Office-like history pane. |        |
+| TMDL Visual Studio Code Extension | **Now generally available** with DAX semantic highlighting, Power Query support, breadcrumb navigation, code actions, code formatting, and localization. Essential for working with TMDL documents in Power BI Projects. |        |
+
+### Data connectivity
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Spark and Impala Connectors | Implementation 2.0 **now generally available**, powered by open-source Arrow Database Connectivity (ADBC) driver. Delivers faster, more secure connectivity with reduced overhead, memory safety, and seamless integration across Fabric and Power BI Desktop. |        |
+
+### Visualizations
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Activity Gauge by Powerviz | Advanced visual for measuring progress against targets for multiple categories. Features gauge customization, targets, data colors with 7 schemes and 30+ palettes, smart labels, center circle customization, interactive mouseover, fill patterns, conditional formatting, ranking, annotation, and grid view. |          |
+| Decomposition Tree – All Expanding | Now allows adding a legend field that creates more column charts beside each node showing breakdown from another dimension. Supports images in nodes. |          |
+| Dynamic chart legends in Zebra BI Charts | Chart legends automatically adapt to selected filter or scenario, eliminating confusion from static labels. Useful for financial planning and analysis when comparing forecast versions, year-over-year analysis, and regional reporting. |          |
+| Drill Down Bubble PRO by ZoomCharts | Create visually impressive bubble charts with intuitive UI interactions. Features drill down through multi-level hierarchy, data-driven formatting with custom marker colors/shapes/images, trendlines, thresholds, and area shading. Includes free Developer License for Power BI Desktop. |          |
+| Power BI Theme Generator | Rebuilt and expanded BIBB Report Theme Generator helps teams standardize look-and-feel and meet accessibility baselines. Features smarter color engine with contrast checks, gradients creation, AI-powered themes, preset brand colors, apply theme through Fabric, font selection, live preview, and advanced BI.ST mode. |          |
+| Power Gantt Chart by Nova Silva | Now supports task dependencies with Finish-to-Start (FS) dependencies visualized as arrows connecting tasks. Enables true project scheduling capability to understand task sequences, identify bottlenecks, and manage timelines. |          |
+| Synoptic Panel by OKVIZ | Transform any SVG image into an interactive visual. Perfect for floor plans, organizational charts, technical layouts, or geographical maps. Features flexible image loading, multi-level navigation, dynamic switching, Map Editor and Label Designer, advanced coloring, map search, and integrated security. |          |
+
+## October 2025 update (version 2.148.1226.0)
+
+The October update brings exciting opportunities for learning and community engagement, including the upcoming Fabric Data Days and the return of FabCon in Atlanta next spring. Notably, Power BI is making strides in mapping capabilities by transitioning from Bing Maps to Azure Maps, ensuring users have access to the latest features and support. Read on to get a concise overview of the October 2025 Power BI update—key reporting, Copilot, performance, connectivity, and visualization changes. For more information, visit the [Power BI October 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2025-feature-summary/).
+
+> **Download** the [October 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-10_x64.exe).
+
+### Events and announcements
+
+- **Fabric Data Days**: Two months of learning, contests, live sessions, and community connection start November 4.
+- **FabCon Americas**: March 16–20, 2026, Atlanta, GA. This community-led event includes keynotes, expert sessions, an expo hall, Power Hour, the Data Viz World Championship, and a party at the Georgia Aquarium. Use code FABCOMM to get $200 off.
+
+### General
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Bing Maps deprecation and Azure Maps migration | Migration of map visuals in paginated reports from Bing Maps to Azure Maps will occur in two phases. Bing Maps will continue to be used in the Power BI service for paginated reports until phase two is complete. |        |
+
+### Copilot and AI
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Copilot to write DAX queries in DAX query view | Generate Data Analysis Expression (DAX) queries in desktop and web modeling, grounded in the semantic model. |          |
+
+### Reporting
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Button slicer | It's now generally available and supports cross-highlighting, auto grid, and more. |        |
+| Visual calculations in embed | Define custom calculations directly in visuals for embedded scenarios. | ✔️ |
+| Auto expand table columns | The **Grow to fit** option distributes extra space across columns for cleaner visuals. |        |
+| Power BI controller in PowerPoint | Manage multiple Power BI add-ins in PowerPoint presentations and perform bulk operations. | ✔️ |
+| Performance analyzer in web | Analyze visual load times in web reports. Currently rolling out to tenants. |        |
+
+### Data connectivity
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| Export query results | Export cleaned data from Power Query directly to Dataflows Gen2, lakehouses, and other cloud stores. | ✔️ |
+
+### Other
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:------:|
+| ARM support for Power BI Desktop | Power BI Desktop now runs natively on Windows on ARM PCs with the 2025-09 update, delivering faster performance and improved battery life on modern devices.| |
+
+### Visualizations
+
+| Feature | Description | In preview as of this release |
+|---------|-------------|:--------:|
+| Sankey Chart by Powerviz | Dynamic flow diagram with multilevel support, smart labels, conditional formatting, and image labels. |          |
+| Your Timeline Slicer | Space saving timeline visual with dynamic filtering and customization. |          |
+| Drill Down Scatter PRO by ZoomCharts | Multilevel drill down, mobile and desktop support, subset specific customization. |          |
+| Multiple Sparklines | Design an income statement with a waterfall chart for profit and Loss, common-size analysis, five-year trends, year-over-year comparison, and competitor benchmarking. |          |
+| Performance Bar by JTA | Horizontal bars for tracking progress or status, custom markers, and labels. |          |
+| Financial Reporting Matrix v8.2 | Conditional formatting, comments, custom expansion icons, pinned columns, and more. |          |
+| BI Pixie by DataChant | Measures BI effectiveness in six dimensions, adds RLS auditing, exports metrics, and provides real time data leak detection. |          |
+
+## September 2025 update (version 2.147.909.0)
+
+The [Power BI September 2025 Feature Summary blog post](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/) introduces updates for users and coincides with FabCon Vienna. This release introduces several key enhancements, including, updates to Copilot and AI capabilities such as the standalone Copilot default-on experience and important changes to default visuals like the Bing Maps Visual icon. Dive into the details to discover how these innovations can elevate your Power BI experience.
+
+For a quick summary of the September features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/). You can also watch the September demos in the [monthly playlist](https://youtu.be/CQVQtXr9EbI).
+
+### Events and announcements
+
+- **Power BI Dataviz World Championships**: Four finalists are taking the stage at FabCon Vienna to compete for the title of world champion. Follow the [Power BI September 2025 Feature Summary blog](https://powerbi.microsoft.com/blog/power-bi-september-2025-feature-summary/) to find out who was crowned champion.
+- **Get certified in Microsoft Fabric**: Join the thousands of other Fabric users who’ve achieved over 50,000 certifications collectively for the Fabric Analytics Engineers and Fabric Data Engineers roles. To celebrate FabCon Vienna, we are offering the entire Fabric community a **50% discount** on exams *DP-600*, *DP-700*, *DP-900*, and *PL-300*.
+
+### General
+
+| Feature | Details and related documentation |
+|---|---|
+| **Bing Maps visual icon will be removed from the default visuals list of the visualization pane** | Beginning with the October release, the Bing Maps visual icon will be removed from the default visuals list in the Power BI visualization pane. |
+
+### Copilot and AI
+
+| Feature | Details and related documentation |
+|---|---|
+|**Standalone Copilot to default-on**|The standalone Copilot experience for Power BI, a full-screen, chat-based AI interface, will be enabled by default for all tenants with Copilot turned on starting September 5, 2025. Users can opt out via the admin portal. For more information, see [Standalone Copilot experience in Power BI](../create-reports/copilot-chat-with-data-standalone.md).|
+|**Autoselection of Copilot workspaces**|Copilot will automatically assign a workspace to users without Fabric Copilot Capacity, simplifying access while maintaining user control. For more information, see [Standalone Copilot experience in Power BI](../create-reports/copilot-chat-with-data-standalone.md).|
+|**Save explorations to pro workspaces**|Explorations can now be saved to Pro workspaces, making it easier to share insights. For more information, see [Use Explore in the Power BI service](../explore-reports/explore-data-service.md)|
+|**Find Power BI reports in Microsoft 365**|Search for Power BI reports in Microsoft 365 by title, description, or chart details, improving discovery in Microsoft 365 Copilot and Office search. For more information, see [Share data with your Microsoft 365 services](/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services#how-to-turn-sharing-with-microsoft-365-services-on-and-off).|
+|**Copilot search improvements**|Copilot search now boosts content marked as "Prepped for AI," provides descriptive captions for reports, and supports workspace and item type hints. For more information, see [Find content with Power BI Copilot search](../create-reports/copilot-search-new-content.md).|
+|**Prep data for AI for the Power BI service**|Prepare semantic models for AI directly in the Power BI service, including Direct Lake models. Features include schema selection, verified answers, and AI instructions. For more information, see [Mark your model as prepped for AI](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot).|
+
+### Reporting
+
+| Feature | Details and related documentation |
+|---|---|
+|**Enhanced DAX time intelligence (preview)**|Define custom calendars, such as fiscal or 4-5-4 retail calendars, for precise time-based calculations. Includes new functions like TOTALWTD and PREVIOUSWEEK. For more information, see [Implement time-based calculations in Power BI](../transform-model/desktop-time-intelligence.md).|
+|**Performance analyzer available when editing a report in the web**|Observe visual load times and copy DAX queries directly in the web report editing experience. For more information, see [Use Performance Analyzer to examine report element performance in Power BI Desktop](../create-reports/desktop-performance-analyzer.md).|
+|**Translytical task flows are now enabled by default in Power BI**|Automate tasks like updating records and triggering workflows directly from reports using Fabric User data functions. For more information, see [Understand translytical task flows](../create-reports/translytical-task-flow-overview.md).|
+
+### Modeling
+
+| Feature | Details and related documentation |
+|---|---|
+|**Editing semantic models in the Power BI service (generally available)**|Create and edit semantic models directly in the browser, including advanced modeling capabilities like relationships, DAX measures, and row-level security. For more information, see [Edit data models in the Power BI service (preview)](https://go.microsoft.com/fwlink/?linkid=2232209).|
+|**Live editing Direct Lake semantic models with Power BI Desktop (generally available)**|Edit Direct Lake semantic models directly in Power BI Desktop, with changes applied in Fabric. For more information, see [Direct Lake in Power BI Desktop (preview)](https://aka.ms/directlakeindesktop).|
+|**TMDL view (generally available)**|Edit semantic models using the Tabular Model Definition Language (TMDL) for batch updates and code-first transparency. For more information, see [Work with TMDL view in Power BI Desktop (preview)](../transform-model/desktop-tmdl-view.md).|
+|**Download PBIX of XMLA altered semantic models**|Download and edit PBIX files for semantic models modified through the XMLA endpoint. For more information, see [Limitations when downloading a report .pbix file](../create-reports/service-export-to-pbix.md#report-download-limitations).|
+|**Fabric Notebooks for Power BI: best practices analyzer and memory analyzer (generally available)**|Analyze semantic models with Fabric Notebooks for performance, memory, and storage optimization. For more information, see [Use notebooks with a semantic model](https://go.microsoft.com/fwlink/?linkid=2303903).|
+|**Direct Lake on OneLake + import in web modeling (preview)**|Combine Direct Lake and import table storage modes in web modeling for flexible data integration. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
+|**Direct Lake on OneLake + import in desktop**|Power BI Desktop can also live edit semantic models with both Direct Lake and import tables. For more information, see [Direct Lake overview](/fabric/fundamentals/direct-lake-overview).|
+|**DAX user-defined functions (preview)**|Define reusable DAX functions with parameters for cleaner, maintainable logic. For more information, see [DAX user-defined functions](../transform-model/desktop-user-defined-functions-overview.md).|
+|**Refresh data or schema options in Power BI Desktop**|Choose to refresh data only or sync schema only, providing more control over refresh operations. For more information, see [Data refresh in Power BI](../connect-data/refresh-data.md#power-bi-desktop-refresh-options).|
+|**Power BI content shared in Teams now opens in a separate window**|Power BI items shared in Teams now open in a separate window, preserving the chat view. For more information, see [Link preview cards in Microsoft Teams chats and channels](../collaborate-share/office-integration/service-teams-link-preview.md).|
+
+### Mobile
+
+| Feature | Details and related documentation |
+|---|---|
+|**NFC tag support in Power BI Mobile (generally available)**|Register and access Power BI items via NFC tags for quick data retrieval. For more information, see [Connect data to physical locations with NFC tags](../explore-reports/mobile/mobile-apps-nfc-tags.md).|
+
+### Other
+
+| Feature | Details and related documentation |
+|---|---|
+|**New tenant setting for set alert button visibility**|Admins can control visibility of the 'Set alert' button for creating Fabric Activator alerts. For more information, see [Create an alert in Power BI report](/fabric/real-time-intelligence/data-activator/activator-get-data-power-bi)|
+
+### Visualizations
+
+| Feature | Details and related documentation |
+|---|---|
+|**ADWISE advanced column v 2.0**|A versatile column chart visual with features like difference lines, Top N selection, and total columns.|
+|**Zebra BI tables: calculated reports in one click and brand images**|Streamline reporting with row calculations and brand images for intuitive data storytelling.|
+|**Word cloud by Powerviz**|Create high-quality word clouds with advanced styling, ranking, and conditional formatting.|
+|**Drill down combo bar PRO by ZoomCharts**|Visualize categorical data with up to nine drill-down levels and customizable chart types.|
+|**CAGR arrows now in Zebra BI charts**|Highlight multi-year growth trends with intuitive CAGR arrows in Zebra BI Charts.|
+
+## August 2025 update (version 2.146.705.0)
+
+The [August 2025 update for Power BI](https://powerbi.microsoft.com/blog/power-bi-august-2025-feature-summary/) delivers a powerful mix of AI enhancements, modeling upgrades, and reporting flexibility. Whether you're embedding reports in SharePoint or refining semantic models, this release is packed with tools to elevate your data experience.
+
+For a quick summary of the August features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-august-2025-feature-summary/). You can also watch the August demos in the [monthly playlist](https://youtu.be/AEXtSe2OA5E).
+
+### Events and announcements
+
+- **Power BI Dataviz World Championships**: Compete live at FabCon Vienna! Enter by **August 18** or join the community vote. [Details here](https://aka.ms/WorldChampsEU).
+- **FabCon Europe and US**: Join us in **Vienna (September 15–18, 2025)** or **Atlanta (March 16–20, 2026)**. Use codes **FABCOMM** or **MSCATL** for discounts. [Register now](https://aka.ms/fabcon).
+
+### Copilot and AI
+
+- **Copilot in SharePoint embedded reports**: Now available! Users can interact with Copilot directly inside embedded Power BI reports.
+- **Measure descriptions (general availability)**: Copilot can now autogenerate measure descriptions in Power BI Desktop and web modeling.
+- **Filtered summaries in standalone Copilot (preview)**: Ask targeted questions like "What were sales in 2024?" and get filtered, inline responses—no need to open the full report.
+
+### Reporting and modeling
+
+- **Org apps in Pro workspaces (preview)**: Create multiple tailored org apps per workspace—even with a Pro license.
+- **Edit data models in Power BI service (preview)**:
+  - Improved error handling in Power Query.
+  - Native query support.
+  - Workspace-level preview setting to be removed next month.
+- **TMDL view enhancements**:
+  - Script named expressions like Power Query parameters.
+  - Drag-and-drop scripting for measures, tables, and columns.
+- **Mirrored Azure Databricks catalogs**: Use Direct Lake tables from mirrored catalogs in Power BI Desktop.
+- **Semantic model refresh templates (preview)**: Orchestrate refreshes with Fabric Data Pipelines using low-code templates and guided setup.
+
+### Data connectivity
+
+- **Impala connector 2.0 (preview)**: Built on the Arrow Database Connectivity (ADBC) driver for better performance and maintainability.
+- **Microsoft Entra ID authentication for PostgreSQL**: Microsoft Entra ID support added for PostgreSQL Flexible Server connections.
+
+### Developers and APIs
+
+- **Simplified PBIP format for Live Connect reports**: Cleaner `definition.pbir` files with just the connection string and semantic model ID.
+
+### Visualizations
+
+- **Drill Down Line PRO by ZoomChart**: Interactive line charts with up to 25 series, conditional formatting, and key performance indicator thresholds. [Explore features](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/blog/new-visual-drill-down-line-pro-for-power-bi?utm_source=microsoftcom&utm_medium=ms_blog&utm_campaign=feature_summary_august_2025).
+- **Date Picker by Powerviz**: A modern, customizable calendar slicer with presets, themes, and DAX-driven logic. [Try it on AppSource](https://appsource.microsoft.com/product/power-bi-visuals/truvizinc1674781244292.date-picker-by-powerviz?tab=Overview).
+
+### Resources
+
+Want to learn about Power BI through videos and other engaging content? Check out these video sources and content:
+
+- [This month's Power BI playlist on YouTube](https://youtu.be/AEXtSe2OA5E): Watch videos and demos that highlight this month's Power BI updates.
+  - See [all Power BI playlists on YouTube](https://www.youtube.com/@MicrosoftPowerBI/playlists)
+- [Power BI YouTube channel](https://www.youtube.com/user/mspowerbi): Official Microsoft Power BI channel
+- Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
+- Go to the [Power BI forums in the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
+
+> [!NOTE]
+> Some resources use earlier versions of Power BI Desktop or the Power BI service.
+
+Download previous versions of Power BI Desktop if your organization requires it. We recommend using the most recent version of Power BI Desktop instead of a previous version. Previous versions have these limitations:
+
+- Previous releases of Power BI Desktop aren't serviced—always use the most recent release for the latest features and updates.
+- You can't open files created or saved in newer releases of Power BI Desktop with previous versions.
+- If you get a warning when loading a report saved in a newer release, then save that report in the previous version, you lose any information related to new features.
+- Only the English versions of Power BI Desktop are archived.
+
+> **Download** the [August 2025 version of Power BI Desktop](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-08_x64.exe).
+
+## July 2025 update (2.145.1105.0)
+
+The [July 2025 Power BI update](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/) introduces richer Microsoft 365 connections, smarter Copilot features, and integrated reporting with PBIRS and SQL Server 2025. This article covers all the new features, benefits, and improvements to help you get the most out of Power BI.
+
+For a quick summary of the July features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/). You can also watch the July demos in the [monthly playlist](https://youtu.be/RABiSIUiCH4)
+
+### Events and announcements
+
+- **Power BI is turning 10**: Power BI celebrates its 10th anniversary with a special live episode featuring behind-the-scenes stories, product evolution highlights, and a sneak peek at future developments. The celebration includes a live Q&A session, contests, and giveaways.
+- **The Microsoft Fabric Community Conference is back x2. Join us in Vienna and Atlanta**: The Microsoft Fabric Community Conference returns for its third year. Events are in Vienna from September 15-18, 2025, and in Atlanta, Georgia, from March 16-20, 2026. Attendees can register for discounts using specific codes.
+
+### General
+
+- **Expanded data sharing with Microsoft 365**: Power BI improves integration with Microsoft 365 by sharing more detailed metadata, like chart titles and descriptive text, so users find reports and make data-driven decisions.
+- **PBIRS will consolidate on-premises reporting services from SQL Server 2025**: Starting with SQL Server 2025, all on-premises reporting services unify under Power BI Report Server (PBIRS), which is the default solution for all paid SQL Server editions. Microsoft doesn't release new versions of SQL Server Reporting Services (SSRS).
+
+### Copilot and AI
+
+- **Improvements to standalone Copilot answers**: Standalone Copilot prioritizes report data over model data to generate answers, so responses are more relevant. Copilot also applies filters to report responses, so answers to user queries are more specific.
+- **Limit Copilot search to prepped content**: New admin settings let tenant and workspace admins limit Copilot search responses to items marked as "Prepped for use with AI." This feature helps reduce the risk of using outdated or irrelevant reports.
+- **Verified answers from Copilot search**: Power BI's standalone Copilot provides human-curated common questions and visualizations, so users get accurate and relevant answers.
+- **AI data schema—updates (preview)**: The AI data schema capability in the "Get your data AI ready" preview now shows indicators for hidden fields. These updates make it easier to prepare data for AI.
+- **Customized instructions for summaries through subscriptions**: Power BI report subscriptions support summaries by Copilot at the top of the email, which can include custom instructions and make report summaries more relevant.
+- **Narrative visual available in subscription snapshot and export**: The narrative visual is available in screenshot export services, so users can include these visuals in PDF or PPT exports and subscriptions.
+- **Textual responses for data inquiries**: Copilot offers textual summaries that complement generated visuals for data-related elements of the visual response, so the user experience is better.
+
+### Reporting
+
+- **New Power BI app navigation menu in Teams**: The new left navigation menu in the Power BI app for Teams streamlines navigation, so you find and use Power BI content in Teams more easily. The redesigned menu has a user-friendly layout.
+- **Influencing sort for visual calculations (preview)**: Power BI adds an ORDERBY parameter to most visual calculations, so you run advanced computations based on data sorting. This feature lets you use more flexible visual calculations.
+- **Field parameters (generally available)**: Field parameters are generally available, so you change the measures or dimensions you analyze in a report. This feature lets you customize reports more easily.
+- **Organizational themes (preview)**: Power BI supports organizational themes, so reports have consistent branding and styling. Tenant admins manage and share custom JSON themes centrally, so reports match your organization’s visual identity.
+- **Improvements to pie and donut charts**: The latest update improves pie and donut charts with more consistent styling options and better accessibility. You adjust slice colors, transparency, borders, and other features.
+
+### Modeling
+
+- **Direct Lake in Desktop from mirrored and SQL databases**: Create Direct Lake semantic models in Power BI Desktop from SQL and mirrored databases in Microsoft Fabric. This feature lets you create and validate semantic models more easily.
+- **DAX query view and web modeling view switcher**: Use the new view switcher to quickly switch between web modeling and DAX query view. This makes working with published semantic models easier.
+
+### Data connectivity
+
+- **Support for PQO gateway connections for paginated reports**: Create paginated reports using an on-premises data source by establishing a gateway connection. This feature expands connectivity options for paginated reports.
+- **Snowflake connector implementation 2.0 (generally available)**: Snowflake connector implementation 2.0 is generally available, offering improved performance and security features. This update includes enhancements like Boolean column support and improved tracing.
+- **New Google BigQuery (Microsoft Entra ID) connector implementation (preview)**: The new Google BigQuery (Microsoft Entra ID) connector implementation is available, offering improved performance and security features. Enable this feature in Power BI Desktop.
+- **New Databricks connector implementation (preview)**: The new Databricks connector implementation is available in preview, offering improved performance and security features. This update uses the Arrow Database Connectivity (ADBC) driver.
+- **Connect to Netezza database with the user-installed ODBC driver (preview)**: Access Netezza data using the user-installed ODBC driver, which provides more flexibility when connecting to Netezza databases.
+- **PostgreSQL connector adds support for Microsoft Entra ID authentication**: The PostgreSQL connector supports Microsoft Entra ID authentication, which provides an alternative to database (username/password) authentication.
+
+### Mobile
+
+- **Home in the Power BI mobile app has been reorganized**: The home screen in the Power BI mobile app is reorganized so you can get to your most important content faster. The update includes a combined carousel for recent and frequent items, and a new favorites carousel.
+
+### Developers and APIs
+
+- **Power BI enhanced report format (PBIR) update**: The PBIR file format update addresses limitations and is on the path to general availability. The update supports deploying PBIR reports using Fabric deployment pipelines, and it's compatible with different Power BI service features.
+
+### Visualizations
+
+- **Stacked bar chart with line by JTA - a data scientist's visualization tool**: This custom Power BI visual from JTA combines a traditional bar chart, a stacked bar, and a dynamic line chart, so you can compare multiple metrics in one display. The visual lets you customize many options.
+- **Linear gauge by Powerviz**: The linear gauge visual by Powerviz is an advanced tool for showing progress against set targets on a linear scale. It lets you customize gauge styles, orientation, and data colors.
+- **Drill down shape map PRO by ZoomCharts**: Shape Map PRO is a custom visual that lets you create interactive map charts for quick, actionable insights. The visual supports many customization options and works well with other visuals.
+- **Inforiver premium table—high-performance, formatted, and scalable table visual for Power BI**: Inforiver premium table is for business reporting, operational dashboards, and customer-level analytics. It supports rich formatting, inline edits, and custom calculations, so it's ideal for showing categorical data.
+- **Inforiver Analytics+ 4.7 is here with 100+ charts, Gantt, KPI cards, and tables**: Inforiver Analytics+ now has over 100 chart types, KPI cards, tables, and Gantt charts in one visual. This update fills key gaps in Power BI and adds many advanced chart types.
+
+### Resources
+
+Want to learn about Power BI through videos and other engaging content? Check out these video sources and content:
+
+- [This month's Power BI playlist on YouTube](https://youtu.be/RABiSIUiCH4): Watch videos and demos that highlight this month's Power BI updates.
+  - See [all Power BI playlists on YouTube](https://www.youtube.com/@MicrosoftPowerBI/playlists)
+- [Power BI YouTube channel](https://www.youtube.com/user/mspowerbi): Official Microsoft Power BI channel
+- Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
+- Go to the [Power BI forums in the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
+
+> [!NOTE]
+> Some resources use earlier versions of Power BI Desktop or the Power BI service.
+
+Download previous versions of Power BI Desktop if your organization requires it. We recommend using the most recent version of Power BI Desktop instead of a previous version. Previous versions have these limitations:
+
+- Previous releases of Power BI Desktop aren't serviced—always use the most recent release for the latest features and updates.
+- You can't open files created or saved in newer releases of Power BI Desktop with previous versions.
+- If you get a warning when loading a report saved in a newer release, then save that report in the previous version, you lose any information related to new features.
+- Only the English versions of Power BI Desktop are archived.
+
+## June 2025 update (2.144.679.0)
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The [June 2025 Power BI update](https://aka.ms/JunePowerBIBlog) highlights several exciting preview features and an important action-required item for Power BI users. In preview, you can find updates to visual calculations and enhancements to numeric range and field parameters, designed to offer greater flexibility and analytical power within your reports.
+
+There are also new tenant settings for the Azure Maps visual, which require administrators to take action to ensure seamless integration and continued support. For a quick summary of the June features, read on. For a comprehensive look at these updates and further enhancements, visit the [blog](https://aka.ms/JunePowerBIBlog). You can also view the June demos on the [monthly playlist](https://youtu.be/Mt6Fy3Dvy1A)
+
+### Events and announcements
+
+- [**Power BI is turning 10**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1710604336): Celebrate a decade of Power BI innovation. Over the past 10 years, Power BI has evolved from a concept into a global platform empowering millions to transform data into actionable insights. Mark this milestone with special activities and certification prep sessions.
+- [**Microsoft Fabric Community Conferences**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1709427552): Register for the upcoming *FabCon Vienna* (September 15-18, 2025) and the third annual *FabCon* in Atlanta, Georgia (March 16-20, 2026).
+
+### General
+
+- [**Secure collaboration on sensitive data in Power BI Desktop**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1499553200): This month's release introduces new features to help organizations securely collaborate on sensitive data within Power BI Desktop.
+
+### Reporting
+
+- [**Updates to visual calculations (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1609746315): The update enhances visual calculations, making it easier to perform advanced data analysis directly in visuals.
+- [**Sparklines (generally available)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc942391433): Sparklines are now fully available, allowing users to visualize trends in table and matrix visuals as part of this release.
+- [**Updates to numeric range and field parameters (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc855632761): This release improves numeric range and field parameter capabilities for more interactive and dynamic reports.
+- [**New tenant settings for Azure Maps visual (action required)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc679174857): New administrative controls for Azure Maps visuals are included, requiring tenant admins to review and update settings.
+- [**Support for mapping South Korean locations**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc945741092): The update expands mapping support to include accurate representation of South Korean geographic data.
+- [**Support for adding paginated reports to org apps (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc13687269): Users can now add paginated reports to organizational apps, broadening report sharing options in this release.
+- [**Use Copilot on reports in org apps (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1516941090): Copilot AI features are now available on reports in organizational apps, enhancing interactivity this month.
+
+### Modeling
+
+- [**Power Query editing in the web for import models (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1689391365): This release allows editing Power Query transformations for import models directly in the Power BI web interface.
+- [**Expanded support for write operations via external tools**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc269410729): The update increases compatibility for write operations when using external tools with Power BI datasets.
+
+### Data connectivity
+
+- [**Connect to Vertica database with the user-installed Open Database Connectivity (ODBC) driver (generally available)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc2011666247): Official support is now provided for connecting to Vertica databases using user-installed ODBC drivers.
+- [**QuickBooks Online (beta) connector under deprecation**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1369127214): The release announces the planned deprecation of the QuickBooks Online (beta) connector.
+- [**Connect to PostgreSQL database without manual driver installation**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc952981933): This update simplifies PostgreSQL database connections by removing the need for manual driver installation.
+
+### Mobile
+
+- [**Org apps are now available in Power BI mobile! (preview)**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc732927629): Organizational apps can now be accessed on Power BI mobile devices as part of this month's release.
+
+### Developers + APIs
+
+- [**Power BI Project (PBIP) public JSON schemas**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc1737429493): Public JSON schemas for PBIP files are now available, supporting better integration and tooling.
+
+### Visualizations
+
+- [**Drill Down Waterfall PRO by ZoomCharts**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc2131846868): A new custom visual for advanced waterfall chart analysis with drill-down capabilities is introduced in this release.
+- [**Network Graph by Powerviz**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc2057336555): The update adds a custom visual for creating and exploring network graphs in Power BI reports.
+- [**Decomposition Tree - all expanding**](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/#post-30307-_Toc474359802): The decomposition tree visual now supports expanding all branches, enabling deeper data exploration in this month's release.
+
+### Resources
+
+Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content:
+
+- [This month's Power BI playlist on YouTube](https://youtu.be/Mt6Fy3Dvy1A): Collection of videos and demos that highlight this month's Power BI updates.
+  - See [all Power BI playlists on YouTube](https://www.youtube.com/@MicrosoftPowerBI/playlists)
+- [Power BI YouTube channel](https://www.youtube.com/user/mspowerbi): The official Microsoft Power BI channel
+- Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
+- Visit the [Power BI forums within the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
+
+> [!NOTE]
+> These resources might use earlier versions of Power BI Desktop or the Power BI service.
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+- Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+- It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+- If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+- We only archive the English versions of Power BI Desktop.
+
+## May 2025 update (2.143.878.0)
+
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+The [May 2025 Power BI update](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/) introduces a range of exciting advancements to Power BI, including a standalone Copilot feature allowing users to "Ask anything!" (in preview), enhanced language understanding for data-related questions, and an important announcement regarding the deprecation of the 32-bit Power BI Desktop build. Packed with valuable updates and insights, this month's updates promise plenty of details to explore.
+
+Read on for highlights of the latest release. Select the feature links to jump to the blog for more information. Visit the [Microsoft Power BI Updates blog](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/) for an in-depth look at all the exciting additions and updates for the month of May. You can also view the May demos on the [monthly playlist](https://aka.ms/PowerBIMayPlaylist).
+
+### Events and announcements
+
+- [**New Fabric roadmap tool**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc166108527): See the centralized [Fabric roadmap experience](https://roadmap.fabric.microsoft.com), which offers real-time updates and integration with internal planning tools.  
+
+### General
+
+- [**Power BI Desktop 32-bit deprecation**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1227568745): The 32-bit build of Power BI Desktop is scheduled for deprecation in August 2025. Users should transition to the 64-bit version for continued updates and improved performance.  
+
+### Copilot and AI
+
+- [**Standalone Copilot in Power BI: Ask anything! (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc2056314170): Use the standalone Copilot feature to ask questions and receive insights directly within Power BI, enhancing user interaction and data exploration. Learn more about the [standalone Copilot experience in Power BI (preview)](../create-reports/copilot-chat-with-data-standalone.md).
+- [**Quality improvements to language understanding for data questions**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1284065238): Improve the accuracy of responses to data-related questions with enhanced language understanding capabilities.
+- [**Get your data AI ready (Preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc2046722002): Tools and guidance to prepare your data for AI-driven analysis and insights. Learn more about how to [prep your data for AI](../create-reports/copilot-prepare-data-ai.md).
+- [**AI data schema**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1571669572): Define schemas that optimize your data for AI processing and ensure compatibility with AI features. Learn more about [AI data schema](../create-reports/copilot-prepare-data-ai-data-schema.md).
+- [**Verified answers**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1830912824): Gain confidence in AI-generated answers by verifying their accuracy and relevance. Learn more about [verified answers](../create-reports/copilot-prepare-data-ai-verified-answers.md).
+- [**AI instructions**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc629465186): Customize AI behavior by providing specific instructions to tailor responses to your needs. Learn more about [AI instructions](../create-reports/copilot-prepare-data-ai-instructions.md).
+- [**Testing with the skill picker**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1206980951): Test and refine AI capabilities using the skill picker to select and evaluate specific AI skills. Learn more about [using the skill picker](../create-reports/copilot-prepare-data-ai.md#use-the-skill-picker).
+- [**Preparing a semantic model for AI**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc686463203): Learn how to optimize your semantic model for seamless integration with AI features. Learn more about how to [prep your semantic model for AI](../create-reports/copilot-prepare-data-ai.md).
+- [**Mark a semantic model as prepared for AI**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1974128081): Indicate that a semantic model is AI-ready, enabling advanced AI functionalities. Learn more about how to [mark your semantic model as prepped for AI](../create-reports/copilot-prepare-data-ai.md#mark-your-model-as-approved-for-copilot).
+
+### Reporting
+
+- [**Automate report actions and data writeback with translytical task flows (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc485152301): Enable automation of report actions and data writeback using translytical task flows for seamless workflows. Learn more about [translytical task flows (preview)](../create-reports/translytical-task-flow-overview.md).
+- [**Persisted sorting for field parameters (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc267234464): Maintain sorting preferences for field parameters across sessions for consistent report views. Learn more about [field parameters](../create-reports/power-bi-field-parameters.md).
+- [**Easily refer to values in your visual with visual calculations (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc842936922): Use visual calculations to reference values directly within visuals for enhanced data insights. Learn more about [visual calculations](../transform-model/desktop-visual-calculations-overview.md).
+- [**Updates to the new list slicer (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc397869587): See the improved functionality and customization options for the new list slicer.
+- [**Paste into list and button slicers (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc367700813): Simplify data entry by pasting values directly into list and button slicers.
+- [**Customize line segment colors in line charts**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1708328201): Adjust line segment colors in line charts for better visual distinction.
+- [**Additional base map customization options for Azure Maps visual**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc209823635): Expanded customization options for base maps in Azure Maps visuals.
+- [**Upcoming Azure Maps tenant settings and layer ordering updates**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc91668847): Learn about new tenant settings and layer ordering features for Azure Maps.
+- [**Upcoming changes to the Power BI app in Teams navigation menu**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1862359525): See updates to the navigation menu in the Power BI app for Teams to improve usability. Learn more about [Power BI in Teams](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md).
+- [**Visual updates for semantic models with discourage implicit measures enabled**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc896108075): Get enhanced visual representation for semantic models when implicit measures are discouraged. Learn more about [model view](../transform-model/desktop-modeling-view.md) and the [model explorer](../transform-model/model-explorer.md).
+
+### Modeling
+
+- [**Selection expressions for calculation groups**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc741903848): Define selection expressions for calculation groups to create dynamic calculations. Learn more about [selection expressions](/analysis-services/tabular-models/calculation-groups#selection-expressions).
+- [**TMDL view enhancements**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc342093751): See improvements to the tabular model definition language (TMDL) view for better modeling experiences.
+- [**Direct lake relationship improvements**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc867515150): Get enhanced relationship handling for direct lake storage mode. Learn more about [creating relationships between tables](/fabric/fundamentals/direct-lake-edit-tables#creating-relationships-between-tables).
+- [**Direct lake and import tables in the same semantic model**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc119482792): Get support for combining direct lake and import tables within a single semantic model.
+
+### Data connectivity
+
+- [**New Google BigQuery connector implementation (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc824422523): Find out about the revamped connector for Google BigQuery with improved performance and features. Learn more about the [Google BigQuery connector](/power-query/connectors/google-bigquery).
+- [**Connect to the Vertica database with the user-installed ODBC driver - updates (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc89786441): Read about updates to the Vertica database connector for better compatibility with user-installed ODBC drivers. Learn more about the [Vertica database connector](/power-query/connectors/vertica-database).
+- [**Connect to the Oracle database with the built-in driver - updates (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc721945319): See enhancements to the Oracle database connector using the built-in driver. Learn more about the [Oracle connector](/power-query/connectors/oracle-database).
+- [**Improvements in the Snowflake connector (preview)**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1970163670): Get updates to the Snowflake connector for improved data connectivity and performance. Learn more about the [Snowflake connector](/power-query/connectors/snowflake#new-snowflake-connector-implementation-preview).
+
+### Visualizations
+
+- [**Dandelion chart**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1499679379): Represent hierarchical data in a dandelion-like structure with this new visualization option.
+- [**Dynamic radial bar chart by JTA**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1698734417): Use a radial bar chart visualization with dynamic features for interactive data exploration.
+- [**Action dots are here an innovative way to visualize variances in Zebra BI tables**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1274053228): Use action dots to highlight variances in Zebra BI tables for better data interpretation.
+- [**KPI by Powerviz**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc456234950): Use this new visualization tool for tracking key performance indicators (KPIs) effectively.
+- [**Drill down timeline PRO by ZoomCharts**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1731426420): Drill down for detailed analysis with this advanced timeline visualization.
+- [**PowerGantt chart by Nova Silva**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc2026347894): Use a Gantt chart visualization for project management and scheduling.
+- [**Profitbase Gantt revamped**](https://powerbi.microsoft.com/blog/power-bi-may-2025-feature-summary/#post-29934-_Toc1762355889): Get an updated version of the Profitbase Gantt chart with enhanced features and usability.
+
+### Resources
+
+Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content.
+
+- [This month's Power BI playlist on YouTube](https://aka.ms/PowerBIMayPlaylist): Collection of videos and demos that highlight this month's Power BI updates.
+  - See [all Power BI playlists on YouTube](https://www.youtube.com/@MicrosoftPowerBI/playlists)
+- [Power BI YouTube channel](https://www.youtube.com/user/mspowerbi): The official Microsoft Power BI channel
+- Follow Power BI on X [@MSPowerBI](https://twitter.com/mspowerbi)
+- Visit the [Power BI forums within the Microsoft Fabric Community](https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi)
+
+  > [!NOTE]
+  > These resources might use earlier versions of Power BI Desktop or the Power BI service.
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+- Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+- It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+- If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+- We only archive the English versions of Power BI Desktop.
 
 ## April 2025 Update (2.142.928.0)
 
 In April we're showered with all sorts of updates to Power BI, enabling our customers to create a lush garden of visuals, insights, and business intelligence to data from around the world.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -54,6 +728,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 > [!IMPORTANT]
 > Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
+
+> [!IMPORTANT]
+> Starting with the March 2025 version of Power BI Desktop, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when running Power BI Desktop. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
 
 The following updates are new to Power BI Desktop this month:
 
@@ -104,11 +781,18 @@ The following updates are new to the Power BI service this month:
 
 For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-april-2025-feature-summary/).
 
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
 ## March 2025 Update (2.141.1228.0)
 
 In March we felt downright lucky to have all sorts of updates to Power BI, enabling us to celebrate a greenfield of opportunity for our business insights.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -130,6 +814,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 > [!IMPORTANT]
 > Power BI Desktop is no longer supported on Windows 7. Power BI Desktop is supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only.
 
+> [!IMPORTANT]
+> Starting with the March 2025 version of Power BI Desktop, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when running Power BI Desktop. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration.
+
 The following updates are new to Power BI Desktop this month:
 
 
@@ -146,7 +833,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Better storytelling with Data annotations in Power BI for PowerPoint (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819889)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-annotate.md)
+* Better storytelling with Data annotations in Power BI for PowerPoint (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819889)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-annotate.md)
 * Copy report object name  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819890)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  
 * Referenced column highlights for visual calculations (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819891)  [[video]](https://youtu.be/dgxeFAUSfE8&t=229s)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
 * Enhancements to Reference Lines  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819892)  [[video]](https://youtu.be/dgxeFAUSfE8) 
@@ -170,7 +857,7 @@ The following updates are new to Power BI Desktop this month:
 * Table view improvements  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819904) 
 * Distribution, discovery, and consumption  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819905) 
 * CI/CD for org apps (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819906)  [[video]](https://youtu.be/dgxeFAUSfE8&t=335s)  [[article]](/fabric/cicd/git-integration/intro-to-git-integration)
-* Introducing new customization options for org apps - combined navigation (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819907)  [[article]](../consumer/org-app-items/org-app-items.md#customizing-your-org-app)
+* Introducing new customization options for org apps - combined navigation (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2025-feature-summary/#post-29214-_Toc193819907)  [[article]](../explore-reports/org-app-items.md#customizing-your-org-app)
 
 
 ### Data connectivity
@@ -207,36 +894,11 @@ The following video playlist describes many of these updates. You can also watch
 > [!NOTE]
 > The videos might use earlier versions of Power BI Desktop or the Power BI service.
 
-
-
-
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [March 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-03.exe)
-* [March 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-03_x64.exe)
-
-
-
-
-
-
-
-
-
-
 ## February 2025 Update (2.140.1078.0)
 
 In February we just loved the fact that Power BI continued to woo us with new features, better business intelligence insights, and all the analytics you need to make the most of your cherished data.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -269,7 +931,7 @@ The following updates are new to Power BI Desktop this month:
 ### Copilot and AI
 * Copilot in the Power BI mobile apps: now available on iPads and Android tablets (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc905470624)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../create-reports/copilot-introduction.md#copilot-requirements)
 * Updated section - How Copilot arrived at this [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc573380942)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../create-reports/copilot-create-desktop-report.md)
-* Explore from Copilot visual answers [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc2033222197)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../consumer/explore-data-service.md)
+* Explore from Copilot visual answers [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2025-feature-summary/#post-29024-_Toc2033222197)  [[video]](https://youtu.be/2uQ2MTy9a1k)  [[article]](../explore-reports/explore-data-service.md)
 
 
 ### Reporting
@@ -327,22 +989,12 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [February 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-02.exe)
-* [February 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2025-02_x64.exe)
-
-
-
-
-
-
 
 ## January 2025 Update (2.139.1576.0)
 
 In January we celebrated a new year, a quarter century of data and insights, and shared fresh new features and capabilities that we resolved to use and make our business intelligence insights beautiful and useful.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -440,20 +1092,12 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [January 2025 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-12.exe)
-* [January 2025 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-12_x64.exe)
-
-
-
-
 
 ## November 2024 Update (2.138.782.0)
 
 In November we were thankful for the basket of new features and capabilities that we could harvest, cook into new insights, and share.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -480,7 +1124,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Copilot and AI
-* Copilot summaries in subscriptions (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1899056780)  [[video]](https://youtu.be/4MmIZEwVGbc?t=105)  [[article]](/power-bi/create-reports/copilot-summaries-in-subscriptions)
+* Copilot summaries in subscriptions (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/#post-28484-_Toc1899056780)  [[video]](https://youtu.be/4MmIZEwVGbc?t=105)  [[article]](../create-reports/copilot-summaries-in-subscriptions.md)
 
 
 ### Reporting
@@ -539,19 +1183,11 @@ You can also download previous versions of Power BI Desktop if your organization
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
 
-Select the following links to download this earlier version: 
-
-* [November 2024 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-11.exe)
-* [November 2024 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-11_x64.exe)
-
-
-
-
 ## October 2024 Update (2.137.751.0)
 
 October brought a spooky-good collection of updates and features, weaving a web of opportunity to create insights and intelligence from data both new and old.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -595,7 +1231,7 @@ The following updates are new to Power BI Desktop this month:
 ### Modeling
 * Dynamic format strings for measures (general availability) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458535)  [[video]](https://youtu.be/nRRfHoUr0IA?t=561)  [[article]](../create-reports/desktop-dynamic-format-strings.md)
 * Introducing INFO.VIEW Data Analysis Expressions (DAX) functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458536)  [[video]](https://youtu.be/nRRfHoUr0IA?t=582)  
-* Value filter behavior (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458537)  [[video]](https://youtu.be/nRRfHoUr0IA?t=661)  [[article]](/power-bi/transform-model/value-filter-behavior)
+* Value filter behavior (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458537)  [[video]](https://youtu.be/nRRfHoUr0IA?t=661)  [[article]](../transform-model/value-filter-behavior.md)
 
 ### Visuals
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458542)  [[video]](https://youtu.be/nRRfHoUr0IA?t=946)  
@@ -635,7 +1271,7 @@ The following video describes many of these updates. You can also watch this vid
 
 We fell into our September updates with a lot of anticipation, as days got shorter, and the dark mode of fall became part of our daily routine.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -671,7 +1307,7 @@ The following updates are new to Power BI Desktop this month:
 * Visual calculations update (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480329)  [[video]](https://youtu.be/N3gd4wfsmvo?t=381)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
 * Visual level format strings (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480330)  [[video]](https://youtu.be/N3gd4wfsmvo?t=561)  [[article]](../create-reports/desktop-custom-format-strings.md)
 * Power BI in Teams - now supporting multifactor authentication [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480331)  [[video]](https://youtu.be/N3gd4wfsmvo?t=631)
-* Multiple org apps per workspace, custom colors (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480332)  [[article]](../consumer/end-user-apps.md)
+* Multiple org apps per workspace, custom colors (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480332)  [[article]](../explore-reports/end-user-apps.md)
 * Subscribe to reports on the last day of the month [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480333)
 
 > [!NOTE]
@@ -687,7 +1323,7 @@ The following updates are new to Power BI Desktop this month:
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480342)
 
 ### Data connectivity
-* Connected tables in Excel now available in semi-annual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480339)  [[article]](../collaborate-share/service-connect-excel-power-bi-datasets.md#connect-to-your-power-bi-data-in-excel)
+* Connected tables in Excel now available in semi-annual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480339)  [[article]](../collaborate-share/office-integration/service-connect-excel-power-bi-datasets.md#connect-to-your-power-bi-data-in-excel)
 
 
 ### Other
@@ -725,7 +1361,7 @@ The following video describes many of these updates. You can also watch this vid
 
 Our August updates got us back into school mode with a collection of new features, a great video that showed how many of the compelling updates can sharpen your business intelligence pencils, and set you up for great grades in creating insights and actionable business intelligence.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -805,7 +1441,7 @@ The following video describes many of these updates. You can also watch this vid
 
 July let you declare independence from waiting on others to create compelling reports and visuals, enabling you to launch your own spectacular display of sizzling analytics and insights. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -860,7 +1496,7 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Storytelling in PowerPoint - new export to PowerPoint dialog [[video]](https://youtu.be/1wmrtV2f-JQ?t=752)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1315300017)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - new export to PowerPoint dialog [[video]](https://youtu.be/1wmrtV2f-JQ?t=752)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1315300017)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
 
 
 ---
@@ -885,7 +1521,7 @@ The following video describes many of these updates. You can also watch this vid
 
 June's updates were a sunny collection of capabilities that let you chart a course to the best business intelligence insights using Power BI Desktop. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -958,7 +1594,7 @@ The following video describes many of these updates. You can also watch this vid
 
 May brought a colorful bouquet of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -986,7 +1622,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Modern Tooltip now on by default  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109006)  [[video]](https://youtu.be/k5EEdq6y_jo?t=29)  [[article]](../create-reports/desktop-visual-tooltips.md)
+* Modern Tooltip now on by default  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109006)  [[video]](https://youtu.be/k5EEdq6y_jo?t=29)  [[article]](../visuals/power-bi-visualization-visual-tooltips.md)
 * Matrix layouts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109007)  [[video]](https://youtu.be/k5EEdq6y_jo?t=67) 
 * Line updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109008)  [[video]](https://youtu.be/k5EEdq6y_jo?t=97) 
 * On-object interactions updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109009)  [[video]](https://youtu.be/k5EEdq6y_jo?t=127)  [[article]](../create-reports/power-bi-on-object-interaction.md)
@@ -1023,8 +1659,8 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Storytelling in PowerPoint - Image mode in the Power BI add-in for PowerPoint [[video]](https://youtu.be/k5EEdq6y_jo?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109023)  [[video]](https://youtu.be/k5EEdq6y_jo?t=542)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Storytelling in PowerPoint - data updated notification  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109024)  [[video]](https://youtu.be/k5EEdq6y_jo?t=591)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - Image mode in the Power BI add-in for PowerPoint [[video]](https://youtu.be/k5EEdq6y_jo?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109023)  [[video]](https://youtu.be/k5EEdq6y_jo?t=542)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - data updated notification  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109024)  [[video]](https://youtu.be/k5EEdq6y_jo?t=591)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
 
 
 ---
@@ -1053,7 +1689,7 @@ The following video describes many of these updates. You can also watch this vid
 
 We were showering our users and customers with a refreshing collection of updates, capabilities, and features for the Power BI service and Power BI Desktop in April. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1101,9 +1737,9 @@ The following updates are new to Power BI Desktop this month:
 The following updates are new to the Power BI service this month:
 
 
-* Storytelling in PowerPoint - improved image mode in the Power BI add-in for PowerPoint [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1552908904)  [[video]](https://youtu.be/1wmrtV2f-JQ?t=138)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Storytelling in PowerPoint - continuous slide show auto refresh [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1130280103)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Storytelling in PowerPoint - automatically populating the slide title [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1393759183)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - improved image mode in the Power BI add-in for PowerPoint [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1552908904)  [[video]](https://youtu.be/1wmrtV2f-JQ?t=138)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - continuous slide show auto refresh [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1130280103)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - automatically populating the slide title [[video]](https://youtu.be/1wmrtV2f-JQ?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1393759183)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
 * Fabric metadata scanning sample app [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1960830454)  [[article]](/fabric/governance/metadata-scanning-overview)
 * Dynamic subscriptions for Power BI and paginated reports [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1743992305)  [[article]](../collaborate-share/power-bi-dynamic-report-subscriptions.md)
 
@@ -1129,7 +1765,7 @@ The following video describes many of these updates. You can also watch this vid
 
 We felt lucky as a four-leaf clover about March's month's collection of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1175,7 +1811,7 @@ The following updates are new to Power BI Desktop this month:
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc331372831)  [[video]](https://youtu.be/HmU8BNfyyuM?t=684)  
 
 ### Other
-* Connect to new data sources from Power BI Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc1413047860)  [[video]](https://youtu.be/HmU8BNfyyuM?t=692) [[article]](/power-bi/paginated-reports/report-builder/connect-snowflake-databricks-power-query-online)
+* Connect to new data sources from Power BI Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc1413047860)  [[video]](https://youtu.be/HmU8BNfyyuM?t=692) [[article]](../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md)
 * Localized parameter prompts in Power BI Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc1867649247)  [[video]](https://youtu.be/HmU8BNfyyuM?t=692)  [[article]](../paginated-reports/report-design/set-locale-for-report-text-box-reporting-services.md)
 
 
@@ -1183,9 +1819,9 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Edit your data model in the Power BI service - updates [[video]](https://youtu.be/HmU8BNfyyuM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc70927901)  [[video]](https://youtu.be/HmU8BNfyyuM?t=557)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Edit your data model in the Power BI service - updates [[video]](https://youtu.be/HmU8BNfyyuM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc70927901)  [[video]](https://youtu.be/HmU8BNfyyuM?t=557)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
 * Undo/redo, clear all, and new filter cards in Explore [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc966470633) 
-* Deliver report subscriptions to OneDrive SharePoint [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc267658846)  [[article]](/power-bi/paginated-reports/paginated-reports-onedrive-sharepoint)
+* Deliver report subscriptions to OneDrive SharePoint [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2024-feature-summary/#post-26258-_Toc267658846)  [[article]](../paginated-reports/paginated-reports-onedrive-sharepoint.md)
 
 ---
 
@@ -1209,7 +1845,7 @@ The following video describes many of these updates. You can also watch this vid
 
 Our hearts were full of love for this month's collection of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1259,9 +1895,9 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Storytelling in PowerPoint - replace report URLs with shareable links in Power BI add-in [[video]](https://youtu.be/D21bSYXAqTA?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305668)  [[video]](https://youtu.be/D21bSYXAqTA?t=907)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Storytelling in PowerPoint - replace report URLs with shareable links in Power BI add-in [[video]](https://youtu.be/D21bSYXAqTA?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305668)  [[video]](https://youtu.be/D21bSYXAqTA?t=907)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
 * Data overview in Explore [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305669)  [[video]](https://youtu.be/D21bSYXAqTA?t=950)  
-* DirectQuery connections update [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305670)  [[article]](../consumer/paginated-reports-view-power-bi-service.md)
+* DirectQuery connections update [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305670)  [[article]](../explore-reports/paginated-reports-view-power-bi-service.md)
 
 ---
 
@@ -1285,7 +1921,7 @@ The following video describes many of these updates. You can also watch this vid
 
 Like a collection of holiday gifts, this month's Power BI updates were full of analytics tools, toys, and capabilities for the Power BI service and Power BI Desktop. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1333,8 +1969,8 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Storytelling in PowerPoint - suggested content [[video]](https://youtu.be/PycL2_T0DxM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674249)  [[video]](https://youtu.be/PycL2_T0DxM?t=675)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Search and sort in paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674250)  [[article]](../consumer/paginated-reports-view-power-bi-service.md)
+* Storytelling in PowerPoint - suggested content [[video]](https://youtu.be/PycL2_T0DxM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674249)  [[video]](https://youtu.be/PycL2_T0DxM?t=675)  [[article]](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md)
+* Search and sort in paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674250)  [[article]](../explore-reports/paginated-reports-view-power-bi-service.md)
 
 ---
 
@@ -1357,7 +1993,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We were all thankful for the platefuls of updates to Power BI this November, with all sorts of update helpings for BI Desktop and the Power BI service. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1423,7 +2059,7 @@ The following updates are new to the Power BI service this month:
 * Stored credentials for Direct Lake semantic model  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157956) 
 * Sharable cloud connections for semantic models (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157957) 
 * Semantic model scale-out (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157958)  [[article]](../enterprise/service-premium-scale-out-configure.md)
-* Show visuals as tables (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157959)  [[article]](../create-reports/desktop-accessibility-consuming-tools.md)
+* Show visuals as tables (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157959)  [[article]](../explore-reports/desktop-accessibility-consuming-tools.md)
 * Advanced filtering for paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2023-feature-summary/#post-25061-_Toc150157960)  [[article]](../paginated-reports/web-authoring/filters-paginated-service.md)
 
 ---
@@ -1450,7 +2086,7 @@ The following video describes each of these updates. You can also watch this vid
 
 October was full of scary-good features and a pumpkin-patch of updates. Navigate through this section of this article for a corn-maze like expedition through October's offerings for Power BI Desktop and the Power BI service. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1527,7 +2163,7 @@ The following video describes each of these updates. You can also watch this vid
 
 September brought us a new classroom full of Power BI updates, its curriculum chock full of features and new insights for your data, your visuals, and the models you couldn't wait to share with new-found friends. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1598,7 +2234,7 @@ For detailed information about each new feature, see [Power BI feature summary b
 
 August was full of sunshine, dry grass, bored summer students and a fine collection of updates for Power BI Desktop and the Power BI service. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1673,7 +2309,7 @@ The following video describes each of these updates. You can also watch this vid
 
 July brought us celebrations that look like fireworks for the Power BI Desktop and the Power BI service, enabling you to create stunning visuals and revolutionary data models in your march toward business intelligence independence. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1747,7 +2383,7 @@ The following video describes each of these updates. You can also watch this vid
 
 This June we had a sunny collection of features and enhancement for Power BI Desktop and the Power BI service, designed to warm up your visuals and your data models. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1824,7 +2460,7 @@ The following video describes each of these updates. You can also watch this vid
 
 This May we had all sorts of new features growing, blooming, and blossoming to create a fabric of amazing visuals, insights, and intelligence for Power BI Desktop and the Power BI service. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -1932,7 +2568,7 @@ The following video describes each of these updates. You can also watch this vid
 
 This April we had new features and capabilities raining down on our Power BI offering, filling us with the hope of bright colors and new growth across our veritable garden of analytics. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2019,7 +2655,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We felt lucky as a four-leaf clover to have shared our March updates to Power BI with all of you. We hope they were like a pot of gold at the end of a data-driven rainbow, full of compelling visuals and business intelligence capabilities. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2093,7 +2729,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We loved February's updates. We were happy to share them with all of you, all wrapped up in a virtual heart-shaped box of sweet features. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2117,7 +2753,7 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-https://powerbi.microsoft.com/en-us/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169
+https://powerbi.microsoft.com/blog/power-bi-february-2023-feature-summary/#post-22137-_Toc126917169
 
 
 ### Reporting
@@ -2184,7 +2820,7 @@ The following video describes each of these updates. You can also watch this vid
 
 December's updates were a sleigh ride of fun, making us want to go door-to-door and sing about our new and updated features. May your data analytics always be cheery and bright. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2260,7 +2896,7 @@ The following video describes each of these updates. You can also watch this vid
 
 November's updates felt like a family reunion, and we were thankful and grateful for the heaping-tall servings of updates, features, and new capabilities. Please pass the data to this end of the table. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2344,7 +2980,7 @@ The following video describes each of these updates. You can also watch this vid
 
 October's updates were scary fun, full of screaming great new features and monstrous improvements.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2384,7 +3020,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Introducing tenant setting for Power BI datamarts (preview) [[video]](https://youtu.be/Vlo7dJgr4WM?t=877)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053189)  [[article]](../transform-model/datamarts/datamarts-overview.md)
 
 
 > [!NOTE]
@@ -2398,7 +3033,7 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](../enterprise/service-admin-azure-ad-b2b.md)
+* Guest users can now create their own email subscriptions  [[video]](https://youtu.be/Vlo7dJgr4WM?t=961)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053193) [[article]](/fabric/enterprise/powerbi/service-admin-entra-b2b)
 * Downloading a PBIX now available for more scenarios  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1028)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053194)  [[article]](../create-reports/service-export-to-pbix.md)
 * Administration and governance  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1068)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053195)
 * Deployment pipelines updates  [[video]](https://youtu.be/Vlo7dJgr4WM?t=1100)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2022-feature-summary/#post-21148-_Toc116053197) [[article]](/fabric/cicd/deployment-pipelines/deployment-history)
@@ -2429,7 +3064,7 @@ The following video describes each of these updates. You can also watch this vid
 
 September's updates were crisp and clean, like an autumn walk down a colorful treed pathway where new discoveries are just around each corner. We were all ready to meet friendly new features, joining Power BI classmates for an exciting next round of learning.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2510,7 +3145,7 @@ The following video describes each of these updates. You can also watch this vid
 
 August's updates were like a summertime trip, full of interesting sights and new things to discover that brought a sense of adventure and imaginings of exciting things to come.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2551,7 +3186,6 @@ The following updates are new to Power BI Desktop this month:
 ### Data connectivity
 * MariaDB (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
 * Google Sheets (connector update) [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518271)
-* Certified connectors availability in Power BI dataflows and datamarts [[video]](https://youtu.be/Wiznd0dn29k?t=805)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518273)   [[article]](/power-query/connectors/)  
 
 
 > [!NOTE]
@@ -2571,7 +3205,7 @@ The following updates are new to the Power BI service this month:
 
 ### Others
 * Visualizing views in Dynamics 365 with Power BI (general availability) [[video]](https://youtu.be/Wiznd0dn29k?t=982)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518284)
-* More ways to optimize Power BI performance [[video]](https://youtu.be/Wiznd0dn29k?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518285)   [[article]](../create-reports/desktop-evaluation-configuration.md)  
+* More ways to optimize Power BI performance [[video]](https://youtu.be/Wiznd0dn29k?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518285)   [[article]](../transform-model/desktop-evaluation-configuration.md)  
 * Release notes and ideas update  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2022-feature-summary/#post-20399-_Toc110518286)
 
 
@@ -2595,7 +3229,7 @@ The following video describes each of these updates. You can also watch this vid
 
 July's updates were a sunny collection of bright spots for Power BI, warming ourselves with all the good things they brought.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2624,7 +3258,7 @@ The following updates are new to Power BI Desktop this month:
 * Error bars (generally available)  [[video]](https://youtu.be/iVbxzo-L7TM?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099832) 
 * Filled Map for Azure Maps visual  [[video]](https://youtu.be/iVbxzo-L7TM?t=439)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099833)  
 * Composite models on Power BI semantic models and Analysis Services (preview) [[video]](https://youtu.be/iVbxzo-L7TM?t=686)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099834)  
-* Bold, italics and underline for text in the header tooltip [[video]](https://youtu.be/iVbxzo-L7TM?t=711)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099835)  [[article]](../create-reports/desktop-visual-tooltips.md) 
+* Bold, italics and underline for text in the header tooltip [[video]](https://youtu.be/iVbxzo-L7TM?t=711)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099835)  [[article]](../visuals/power-bi-visualization-visual-tooltips.md) 
 * Metric visuals updates [[video]](https://youtu.be/iVbxzo-L7TM?t=733)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099836)   
 
 
@@ -2637,7 +3271,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Connect to datamarts (preview) [[video]](https://youtu.be/iVbxzo-L7TM?t=991)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099842)
 * Display name support in the Dataverse connector [[video]](https://youtu.be/iVbxzo-L7TM?t=1127)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099843)
 * Many connector updates (update) [[video]](https://youtu.be/iVbxzo-L7TM?t=1233)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-july-2022-feature-summary/#post-19945-_Toc108099844)
 
@@ -2683,7 +3316,7 @@ The following video describes each of these updates. You can also watch this vid
 
 This month's updates were raining down features, sprinkling us with all sorts of capabilities and functionality that were sure to bring sunny reports sometime soon.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2709,7 +3342,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New format pane (generally available)  [[video]](https://youtu.be/gu_5Q3z-qpc?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516657)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* New format pane (generally available)  [[video]](https://youtu.be/gu_5Q3z-qpc?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516657)  [[article]](desktop-format-pane.md) 
 * Updates to error bars  [[video]](https://youtu.be/gu_5Q3z-qpc?t=93)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516658)  
 * Information protection updates  [[video]](https://youtu.be/gu_5Q3z-qpc?t=123)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516659)  
 * Table navigation improvements [[video]](https://youtu.be/gu_5Q3z-qpc?t=156)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516660)  
@@ -2721,7 +3354,6 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Data connectivity
-* Connect to datamarts (preview) [[video]](https://youtu.be/gu_5Q3z-qpc?t=288)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516665)
 * Many new data connectors [[video]](https://youtu.be/gu_5Q3z-qpc?t=555)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516668)
 * Many connector updates (update) [[video]](https://youtu.be/gu_5Q3z-qpc?t=497)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2022-feature-summary/#post-19703-_Toc105516666)
 
@@ -2769,7 +3401,7 @@ The following video describes each of these updates. You can also watch this vid
 
 This month had a spring in its step, with blossoming updates and sunshine-filled features that were sure to warm up your reports and models.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2794,9 +3426,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 ### Reporting
-* New Format pane updates (preview)  [[video]](https://youtu.be/LTdpe2ENW4M?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022210)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* New Format pane updates (preview)  [[video]](https://youtu.be/LTdpe2ENW4M?t=14)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022210)  [[article]](desktop-format-pane.md) 
 * Canvas zoom now generally available  [[video]](https://youtu.be/LTdpe2ENW4M?t=118)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022211)  
-* Field parameters  [[video]](https://youtu.be/LTdpe2ENW4M?t=177)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022212)  [[article]](/power-bi/create-reports/power-bi-field-parameters)
+* Field parameters  [[video]](https://youtu.be/LTdpe2ENW4M?t=177)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022212)  [[article]](../create-reports/power-bi-field-parameters.md)
 * Managing composite models on Power BI semantic models [[video]](https://youtu.be/LTdpe2ENW4M?t=674)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022213)  
 * Data point rectangle select now generally available [[video]](https://youtu.be/LTdpe2ENW4M?t=743)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022214)   
 * Error bars for column and line combination charts (preview) [[video]](https://youtu.be/LTdpe2ENW4M?t=847)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2022-feature-summary/#post-19361-_Toc103022215) 
@@ -2855,7 +3487,7 @@ The following video describes each of these updates. You can also watch this vid
 
 The Power BI team showered us with features, updates, and a collection of growing capabilities this month that customers and users were sure to enjoy.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2880,19 +3512,19 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
-https://powerbi.microsoft.com/en-us/blog/19024/preview/#post-19024-_Toc100064173
+https://powerbi.microsoft.com/blog/19024/preview/#post-19024-_Toc100064173
 
 ### Reporting
-* New Format pane updates (preview)  [[video]](https://youtu.be/RDy9B0MIbs4?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064173)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
-* Tooltips now support drill actions for matrix, line and area charts (preview) [[video]](https://youtu.be/RDy9B0MIbs4?t=224)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064174)  [[article]](/power-bi/create-reports/desktop-visual-tooltips?tabs=desktop-new)
-* Updates to required permissions when using composite models on Power BI semantic models  [[video]](https://youtu.be/RDy9B0MIbs4?t=261)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064175)  [[article]](/power-bi/transform-model/desktop-composite-models)
+* New Format pane updates (preview)  [[video]](https://youtu.be/RDy9B0MIbs4?t=18)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064173)  [[article]](desktop-format-pane.md) 
+* Tooltips now support drill actions for matrix, line and area charts (preview) [[video]](https://youtu.be/RDy9B0MIbs4?t=224)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064174)  [[article]](../visuals/power-bi-visualization-visual-tooltips.md)
+* Updates to required permissions when using composite models on Power BI semantic models  [[video]](https://youtu.be/RDy9B0MIbs4?t=261)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064175)  [[article]](../transform-model/desktop-composite-models.md)
 * Error bars for clustered column and bar charts (preview) [[video]](https://youtu.be/RDy9B0MIbs4?t=304)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064176)  
-* Bookmark navigator now shows last selected bookmark per group [[video]](https://youtu.be/RDy9B0MIbs4?t=357)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064177)   [[article]](/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop)
+* Bookmark navigator now shows last selected bookmark per group [[video]](https://youtu.be/RDy9B0MIbs4?t=357)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064177)   [[article]](../create-reports/desktop-bookmarks.md?tabs=powerbi-desktop)
 
 
 
 ### Data preparation
-* Dynamic M query parameters now generally available [[video]](https://youtu.be/RDy9B0MIbs4?t=576)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064179)  [[article]](/power-bi/connect-data/desktop-dynamic-m-query-parameters)
+* Dynamic M query parameters now generally available [[video]](https://youtu.be/RDy9B0MIbs4?t=576)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064179)  [[article]](../connect-data/desktop-dynamic-m-query-parameters.md)
 
 
 ### Data connectivity
@@ -2914,7 +3546,7 @@ https://powerbi.microsoft.com/en-us/blog/19024/preview/#post-19024-_Toc100064173
 
 The following updates are new to the Power BI service this month:
 
-* Power BI Goals updates   [[video]](https://youtu.be/RDy9B0MIbs4?t=682)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064185)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Power BI Goals updates   [[video]](https://youtu.be/RDy9B0MIbs4?t=682)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2022-feature-summary/#post-19024-_Toc100064185)  [[article]](../create-reports/service-goals-introduction.md)
 
 
 ---
@@ -2941,7 +3573,7 @@ The following video describes each of these updates. You can also watch this vid
 
 Lucky us, we had more compelling updates to Power BI in March than we could have wished for using a four-leaf clover.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -2967,11 +3599,11 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* New Format pane to be Generally Available in May (preview)  [[video]](https://youtu.be/6BpiFBCCS5A?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245361)  [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* New Format pane to be Generally Available in May (preview)  [[video]](https://youtu.be/6BpiFBCCS5A?t=19)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245361)  [[article]](desktop-format-pane.md) 
 * Error bars (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=64)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245362) 
 * Dynamic format strings now supported for all chart elements  [[video]](https://youtu.be/6BpiFBCCS5A?t=640)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245363)  
 * Updates to the Azure Maps visual (preview) [[video]](https://youtu.be/6BpiFBCCS5A?t=690)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245364)  [[Geocoding article]](/azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context) [[Pie chart article]](/azure/azure-maps/power-bi-visual-add-pie-chart-layer?context=/power-bi/create-reports/context/context/power-bi/fundamentals/desktop-format-pane)
-* Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/power-bi/enterprise/service-security-sensitivity-label-overview) 
+* Sensitivity labels update  [[video]](https://youtu.be/6BpiFBCCS5A?t=987)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245365)   [[article]](/fabric/enterprise/powerbi/service-security-sensitivity-label-overview) 
 * Multi-row card selection  [[video]](https://youtu.be/6BpiFBCCS5A?t=1003)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245366)
 
 ### Data connectivity and preparation
@@ -2997,10 +3629,10 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Semantic models hub improvements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1096)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245374)   [[article]](/power-bi/connect-data/service-datasets-hub)
-* Power BI Goals enhancements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245375)  [[article]](/power-bi/create-reports/service-goals-introduction)
-* Quickly create reports from SharePoint document libraries  [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245389)   [[article]](/power-bi/create-reports/service-quick-create-sharepoint-list)
-* Changing the default Power BI Home layout   [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245390)  [[article]](/power-bi/consumer/end-user-home)
+* Semantic models hub improvements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1096)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245374)   [[article]](../connect-data/service-datasets-hub.md)
+* Power BI Goals enhancements   [[video]](https://youtu.be/6BpiFBCCS5A?t=1142)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245375)  [[article]](../create-reports/service-goals-introduction.md)
+* Quickly create reports from SharePoint document libraries  [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245389) 
+* Changing the default Power BI Home layout   [[video]](https://youtu.be/6BpiFBCCS5A?t=1444)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-march-2022-feature-summary/#post-18792-_Toc98245390)  [[article]](../explore-reports/end-user-experience.md)
 
 
 ---
@@ -3027,7 +3659,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We loved the features we released in February. Some were flowery, some were chocolatey, others were downright sweet in their own unique way.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3058,11 +3690,11 @@ The following updates are new to Power BI Desktop this month:
 * Sensitivity labels downstream inheritance (generally available) [[video]](https://youtu.be/vNK4xygN8Xw?t=357)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418997)  [[article]](/fabric/governance/service-security-sensitivity-label-downstream-inheritance)
 * Default label policies in Power BI (generally available)  [[video]](https://youtu.be/vNK4xygN8Xw?t=386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418998)  [[article]](/fabric/governance/service-security-sensitivity-label-default-label-policy)
 * Mandatory label policy (generally available)  [[video]](https://youtu.be/vNK4xygN8Xw?t=423)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95418999)   [[article]](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy)
-* New Format Pane (preview) - on by default  [[video]](https://youtu.be/vNK4xygN8Xw?t=464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419000)   [[article]](/power-bi/fundamentals/desktop-format-pane) 
+* New Format Pane (preview) - on by default  [[video]](https://youtu.be/vNK4xygN8Xw?t=464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419000)   [[article]](desktop-format-pane.md) 
 * Multi-row card selection  [[video]](https://youtu.be/vNK4xygN8Xw?t=508)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419001)
 
 ### Data preparation
-* Dynamic M Query Parameters now supports SQL Server and more data sources (preview) [[video]](https://youtu.be/vNK4xygN8Xw?t=533)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419003)   [[article]](/power-bi/connect-data/desktop-dynamic-m-query-parameters)
+* Dynamic M Query Parameters now supports SQL Server and more data sources (preview) [[video]](https://youtu.be/vNK4xygN8Xw?t=533)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419003)   [[article]](../connect-data/desktop-dynamic-m-query-parameters.md)
 
 ### Data connectivity
 * Amazon OpenSearch Server (new connector) [[video]](https://youtu.be/vNK4xygN8Xw?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419005)
@@ -3094,7 +3726,7 @@ The following updates are new to Power BI Desktop this month:
 
 The following updates are new to the Power BI service this month:
 
-* Power BI Goals enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=924)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419013)   [[article]](/power-bi/create-reports/service-goals-introduction)
+* Power BI Goals enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=924)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419013)   [[article]](../create-reports/service-goals-introduction.md)
 * Deployment pipelines enhancements   [[video]](https://youtu.be/vNK4xygN8Xw?t=947)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419017)  [[article]](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 * Download .pbix improvements   [[video]](https://youtu.be/vNK4xygN8Xw?t=975)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2022-feature-summary/#post-18588-_Toc95419018)  
 
@@ -3132,7 +3764,7 @@ You can also download previous versions of Power BI Desktop if your organization
 
 This month's features were like a sleigh ride through your favorite snowy location, lighting up the season with all sorts of new things we had been wanting and asking for throughout the year.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3214,7 +3846,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We were all thankful for the great things that Power BI served for our extended business intelligence family in November this year. Even better, there were enough features to feast on the next day, so invite your friends and even folks you don't know, sit down around this article, and share what you like best about what's on the menu.
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3277,7 +3909,7 @@ The following updates are new to the Power BI service this month:
 
 
 * Admin and governance - semantic models hub improvements  [[video]](https://youtu.be/d_Un5tnKuIc?t=1414)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473954) 
-* Admin and governance - Power BI Goals  [[video]](https://youtu.be/d_Un5tnKuIc?t=1516)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473956)  [[article]](/power-bi/create-reports/service-goals-introduction)
+* Admin and governance - Power BI Goals  [[video]](https://youtu.be/d_Un5tnKuIc?t=1516)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-november-2021-feature-summary/#post-17912-_Toc87473956)  [[article]](../create-reports/service-goals-introduction.md)
 
 
 ---
@@ -3299,7 +3931,7 @@ The following video describes each of these updates. You can also watch this vid
 
 There was a scary-good collection of features in this month's release, sure to make you want to dress up as your favorite character and go door-to-door telling your neighbors all about it - it's quite a bag of goodies. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3385,7 +4017,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We were falling into this month's release, with crisp morning updates and new season of interesting and compelling features. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3434,7 +4066,7 @@ The following updates are new to Power BI Desktop this month:
 * New visuals from various providers [[video]](https://youtu.be/IagiPEZ_eIY?t=1089)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908331)
 
 ### Other
-* New version of Power BI Report Builder [[video]](https://youtu.be/IagiPEZ_eIY?t=1157)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908339)  [[article]](/power-bi/paginated-reports/report-builder-power-bi)
+* New version of Power BI Report Builder [[video]](https://youtu.be/IagiPEZ_eIY?t=1157)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2021-feature-summary/#post-17174-_Toc81908339)  [[article]](../paginated-reports/report-builder-power-bi.md)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -3472,7 +4104,7 @@ The following video describes each of these updates. You can also watch this vid
 
 August's release was like a warm summer day, with rays of new updates shining down on all of our Power BI enthusiasts and customers. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3507,7 +4139,7 @@ The following updates are new to Power BI Desktop this month:
 
 ### Modeling
 * New way of expressing Date and DateTime values   [[video]](https://youtu.be/thmvP1I6QVs?t=133)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419591)  
-* Evaluation configuration settings [[video]](https://youtu.be/thmvP1I6QVs?t=258) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419592)  [[article]](../create-reports/desktop-evaluation-configuration.md)
+* Evaluation configuration settings [[video]](https://youtu.be/thmvP1I6QVs?t=258) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2021-feature-summary/#post-16859-_Toc79419592)  [[article]](../transform-model/desktop-evaluation-configuration.md)
 
 
 ### Data connectivity
@@ -3553,7 +4185,7 @@ The following video describes each of these updates. You can also watch this vid
 
 We celebrated this month's release with fireworks, parades and a whole host of independent data connectors and visualizations. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3644,7 +4276,7 @@ The following video describes each of these updates. You can also watch this vid
 
 With June's release, warm and sunny updates were in the forecast for your reports. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3741,7 +4373,7 @@ The following video describes each of these updates. You can also watch this vid
 
 May brought an entire bouquet of blooming updates for Power BI. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3766,7 +4398,7 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 ### Reporting
-* Modern visual tooltips (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941229)  [[article]](../create-reports/desktop-visual-tooltips.md)
+* Modern visual tooltips (preview)  [[video]](https://youtu.be/WosoIBDuU-I?t=63)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941229)  [[article]](../visuals/power-bi-visualization-visual-tooltips.md)
 * Small multiples: now on by default, and updated roadmap (preview) [[video]](https://youtu.be/WosoIBDuU-I?t=17)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941226)  [[article]](../visuals/power-bi-visualization-small-multiples.md)  [[article 2]](../visuals/power-bi-visualization-anomaly-detection.md)
 * New field list now generally available  [[video]](https://youtu.be/WosoIBDuU-I?t=46)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941227)  [[article]](../transform-model/desktop-field-list.md)
 * Support for removing the sensitivity label in Power BI Desktop   [[video]](https://youtu.be/WosoIBDuU-I?t=243)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2021-feature-summary/#post-15345-_Toc70941230)  [[article]](../enterprise/service-security-apply-data-sensitivity-labels.md)
@@ -3844,7 +4476,7 @@ You can also download previous versions of Power BI Desktop if your organization
 
 Spring was in the air, and so was a great collection of updates for Power BI. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -3941,7 +4573,7 @@ You can also download previous versions of Power BI Desktop if your organization
 
 We felt lucky like a four-leaf clover to deliver these March Power BI updates to our community. 
 
-This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 The links beside each feature in the list are follows:
 
@@ -4170,7 +4802,7 @@ The following video describes each of these updates. You can also watch this vid
 
 Our November Power BI updates included an entire family gathering of new and improved features; they were a feast of goodness. 
 
-The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. In this section choose the tab for Power BI Desktop or the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. In this section choose the tab for Power BI Desktop or the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -4241,7 +4873,7 @@ The following video describes each of these updates. You can also watch this vid
 
 Our October Power BI updates are a bucket full of spooky-good treats that you can sort and enjoy for weeks to come. 
 
-The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop and the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+The monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop and the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering might differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -4322,7 +4954,7 @@ The following video describes each of these updates. You can also watch this vid
 
 Our September Power BI Desktop updates are cool and crisp, like the coming of fall and the turning of leaves. 
 
-Also new this month, the monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop and the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Also new this month, the monthly blog and video updates for Power BI Desktop now also includes what's new updates for Power BI mobile and the Power BI service. This article discusses the updates for Power BI Desktop and the Power BI service. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering might differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
@@ -4449,7 +5081,7 @@ The following updates are new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4517,7 +5149,7 @@ The following updates are new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4555,14 +5187,14 @@ The following updates are new to Power BI Desktop this month:
 ### Reporting
 * Enhancements to mobile layout authoring [[video]](https://youtu.be/WUo8TnHNHYM?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) 
 * Automatic page refresh now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=266)  [[article]](../create-reports/desktop-automatic-page-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_APR) 
-* Hierarchical slicer now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
+* Hierarchical slicer now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
 * Modern ribbon now generally available   [[video]](https://youtu.be/WUo8TnHNHYM?t=1057)  [[article]](../create-reports/desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_ribbon) 
-* RLS now supported for Featured Tables in Excel's Data Types gallery  [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[article]](../collaborate-share/service-excel-featured-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
+* RLS now supported for Featured Tables in Excel's Data Types gallery  [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[article]](../collaborate-share/office-integration/service-excel-featured-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
 
 
 
 ### Analytics
-* AI insights now generally available [[video]](https://youtu.be/WUo8TnHNHYM?t=1106)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
+* AI insights now generally available [[video]](https://youtu.be/WUo8TnHNHYM?t=1106) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
 
 
 ### Visuals
@@ -4589,7 +5221,7 @@ The following updates are new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4627,7 +5259,7 @@ The following updates are new to Power BI Desktop this month:
 * Curate featured tables for Excel (preview) [[video]](https://youtu.be/JtuHIslowxk?t=20)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Excel) 
 * Apply all filters (preview)   [[video]](https://youtu.be/JtuHIslowxk?t=193) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Apply_all) 
 * Enhancements to change detection (preview)  [[video]](https://youtu.be/JtuHIslowxk?t=475)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_CDM) 
-* Drillthrough button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
+* Drillthrough button action is now generally available  [[video]](https://youtu.be/JtuHIslowxk?t=626)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_Drill_through) 
 * Enhancements to page navigation action   [[video]](https://youtu.be/JtuHIslowxk?t=1143)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_page_nav) 
 * Buttons now support fill images  [[video]](https://youtu.be/JtuHIslowxk?t=1465)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_fill_images) 
 * Drop shadow support for visuals  [[video]](https://youtu.be/JtuHIslowxk?t=1561)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/#_shadow) 
@@ -4662,7 +5294,7 @@ The following updates are new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4703,7 +5335,7 @@ The following updates are new to Power BI Desktop this month:
 * Relative time filter (preview)  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=744)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Relative_time_filter) 
 * Rectangular lasso select across visuals  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1016)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Lasso_select) 
 * Conditional formatting for totals and subtotals in table and matrix   [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1075)  [[article]](../create-reports/desktop-conditional-table-formatting.md#color-by-rules)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Conditional_formatting) 
-* Customize theme dialog is now generally available  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250)  [[article]](../create-reports/desktop-report-themes.md#customize-report-themes)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
+* Customize theme dialog is now generally available  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1250)  [[article]](../create-reports/desktop-report-themes.md#customize-the-current-report-theme)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Customize_theme_GA) 
 * Improved discoverability for conditional formatting  [[video]](https://youtu.be/q2Hfn_Rhb3E?t=1479)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2020-feature-summary/#_Improved_discoverability) 
 
 ### Analytics
@@ -4816,7 +5448,7 @@ The following updates are new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4891,7 +5523,7 @@ The following updates were new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -4907,7 +5539,7 @@ The following video describes each of these updates. You can also watch this vid
 Here were the updates in the Power BI service.
 
 * Ability to promote dashboards, reports, and apps on Power BI Home.
-* New [Power BI tab](../collaborate-share/service-collaborate-microsoft-teams.md) to embed reports in Microsoft Teams.
+* New [Power BI tab](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md) to embed reports in Microsoft Teams.
 * General availability of [incremental refresh](../connect-data/incremental-refresh-overview.md) with support for Power BI Pro users.
 * Email subscriptions support for external email addresses.
 * General availability of [Bring Your Own Key (BYOK)](../enterprise/service-encryption-byok.md) for Power BI Premium.
@@ -4964,7 +5596,7 @@ The following updates were new to Power BI Desktop this month:
 
 
 ### Data preparation
-* Updates to AI Insights functions (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
+* Updates to AI Insights functions (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
 
 
 ### Template apps
@@ -4975,7 +5607,7 @@ The following updates were new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop December 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
@@ -5040,7 +5672,7 @@ The following updates were new to Power BI Desktop this month:
 
 
 ### Data transformation
-* AI functions in Power Query (preview) [[video]](https://youtu.be/kVli3Vm_kDo?t=1976)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
+* AI functions in Power Query (preview) [[video]](https://youtu.be/kVli3Vm_kDo?t=1976) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
 * Web by Example connector - support for extracting links [[video]](https://youtu.be/kVli3Vm_kDo?t=1861)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#webConnector) 
 
 
@@ -5050,7 +5682,7 @@ The following updates were new to Power BI Desktop this month:
 
 For detailed information about each of these new features, see [Power BI Desktop November 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/).
 
-Check out [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+Check out [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ### Power BI Desktop monthly update video
@@ -5116,7 +5748,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Data connectivity
 * Sagra Emigo connector generally available [[video]](https://youtu.be/A8A9baUQsXQ?t=778)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#sagraEmigo) 
-* Azure cost Management connector updated [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[article]](../connect-data/desktop-connect-azure-cost-management.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
+* Microsoft Cost Management connector updated [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[article]](../connect-data/desktop-connect-azure-cost-management.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
 * New Workplace Analytics connector [[video]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#workplaceAnalytics) 
 
 
@@ -5148,7 +5780,7 @@ Here were the updates in the Power BI service.
 
 * New Power Automate action to refresh Power BI semantic models.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](../transform-model/dataflows/dataflows-machine-learning-integration.md)
+* General availability of [Automated Machine Learning](../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * Public preview of Power BI data lineage view.
 
 ---
@@ -5546,7 +6178,7 @@ The following updates were new to **Power BI Desktop** this month:
 
 
 ### Analytics
-* Drill through across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[article]](../create-reports/desktop-cross-report-drill-through.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* Drill through across reports [[video]](https://youtu.be/vih35kSrEHU?t=567)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
 * Key Influencers visual now supports continuous analysis for numeric targets [[video]](https://youtu.be/vih35kSrEHU?t=753)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
 * Python support not generally available [[video]](https://youtu.be/vih35kSrEHU?t=889)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
 * Partial synonym matching for terms in Q&A [[video]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
@@ -5657,7 +6289,7 @@ The following updates were new to **Power BI Desktop** in March:
 
 * PDF connector now supports tables spanning multiple pages (preview) [[video]](https://youtu.be/rBPGH6eYlT0?t=990)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#PDFconnector) 
 * Intelligent Plant's Industrial App Store connector  [[video]](https://youtu.be/rBPGH6eYlT0?t=1035)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#IntelligentPlantsIndustrialAppStore) 
-* Azure Cost Management connector [[video]](https://youtu.be/rBPGH6eYlT0?t=1085)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
+* Microsoft Cost Management connector [[video]](https://youtu.be/rBPGH6eYlT0?t=1085)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
 
 
 
@@ -5767,7 +6399,7 @@ There was no Power BI Desktop release in January 2019 - we were all busy having 
 
 Here were the updates in the Power BI service.
 
-* [Embedding secure Power BI reports](../collaborate-share/service-embed-report-spo.md) in internal portals or websites.
+* [Embedding secure Power BI reports](../collaborate-share/office-integration/service-embed-report-spo.md) in internal portals or websites.
 * Updates to [dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
 * [Personal bookmarks](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
 * Time-based scheduling with e-mail subscriptions.
@@ -5795,7 +6427,7 @@ The following updates are new to **Power BI Desktop** this month:
 
 * Smart guides for aligning objects on a page  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
 * ArcGIS Maps for Power BI updates  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[article]](../visuals/power-bi-visualizations-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
-* Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
+* Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-visuals-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Set tab order for objects on a page [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
 * Tooltips for button visuals [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
 * Updated icons for *Visual interactions*  [[video]](https://youtu.be/AHNlkjRFdYI?t=974)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
@@ -5845,7 +6477,7 @@ The following video channel describes and shows each of these updates. You can a
 > [!VIDEO https://www.youtube.com/embed/AHNlkjRFdYI]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -5858,7 +6490,7 @@ The following updates are new to **Power BI Desktop** in November:
 ### Reporting
 
 * Expand and collapse matrix row headers  [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
-* Copy and paste between Desktop files [[video]](https://youtu.be/1xsXXoyTxfk?t=199)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-visuals-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Updated filtering experience (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)   [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
 * Report accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
 
@@ -5897,7 +6529,7 @@ The following video channel describes and shows each of these updates. You can a
 > [!VIDEO https://www.youtube.com/embed/1xsXXoyTxfk?controls=0]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## October 2018 Update (2.63.3272.40262)
@@ -5956,7 +6588,7 @@ The following video channel describes and shows each of these updates. You can a
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## September 2018 Update (2.62.5222.582)
@@ -6003,7 +6635,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/Rzw2WyI09kY]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6052,7 +6684,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/dgv5HhHxxe8]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6111,7 +6743,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## June 2018 Update (2.59.5135.101)
@@ -6159,7 +6791,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## May 2018 Update (2.58.5103.281)
 
@@ -6177,7 +6809,7 @@ The following updates were new to **Power BI Desktop** in May:
 
 ### Analytics
 
-* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
+* Measure drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[article]](../create-reports/desktop-drillthrough.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
 ### Power BI Premium
 
@@ -6213,7 +6845,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/-_GMCE1TLvQ]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## April 2018 Update (2.57.5068.501)
@@ -6259,7 +6891,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/W_Nb73Od_AI]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6305,7 +6937,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6369,7 +7001,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## January 2018 Update (2.54.4970.761)
@@ -6418,7 +7050,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/W8Pp5wuCXJw]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6474,7 +7106,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/ZPU8B-1BxjI]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## November 2017 Update (2.52.4921.202)
@@ -6530,7 +7162,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/sI3yRjdnJ7w]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6556,7 +7188,7 @@ The following updates are new to **Power BI Desktop** this month:
 -   Bookmarking (preview) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[article]](../create-reports/desktop-bookmarks.md)
 -   Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](../create-reports/desktop-bookmarks.md#visibility-using-the-selection-pane) 
 -   Bookmark links for shapes and images  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](../create-reports/desktop-bookmarks.md#assign-bookmarks-to-buttons)
--   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](../consumer/end-user-spotlight.md)
+-   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](../explore-reports/end-user-spotlight.md)
 -   Scatter and Bubble markers  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](../create-reports/desktop-accessibility-overview.md)
 -   Increase the number of data points displayed in Scatter visuals  [[video]](https://youtu.be/jksjtR8GnBE?t=19m51s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) 
 
@@ -6588,7 +7220,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/jksjtR8GnBE]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## September 2017 Update (2.50.4859.502)
@@ -6628,7 +7260,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/moTQJlnClJw]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## August 2017 Update (2.49.4831.222)
@@ -6673,7 +7305,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/ND8U0yXroaQ]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## July 2017 Update (2.48.4792.321)
@@ -6723,7 +7355,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/4X96ow7FnSY]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## June 2017 Update (2.47.4766.542)
@@ -6754,7 +7386,7 @@ The following updates were new to **Power BI Desktop** in June:
 
 ### Query Editing:
 
--   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](../create-reports/desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
+-   *Add Column from Examples* enhancements [[video]](https://youtu.be/YlNVE5dgcSI?t=28m38s) [[article]](../transform-model/desktop-add-column-from-example.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#addColumn)
 
 
 
@@ -6768,7 +7400,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/YlNVE5dgcSI]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6815,7 +7447,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/CKISVNHcHVA]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6844,7 +7476,7 @@ The following updates were new to Power BI Desktop in April 2017:
 
 ### Query Editing:
 
--   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](../create-reports/desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
+-   Add Column from Example [[video]](https://youtu.be/-ykbVW9wQfw) [[article]](../transform-model/desktop-add-column-from-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) [[another blog]](https://powerbi.microsoft.com/blog/a-sneak-preview-of-the-new-add-column-from-examples-data-transformation/)
 -   Split column (by delimiter/number of characters) into rows [[video]](https://youtu.be/AWMaIaI8G2Y?t=16m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#splitColumnIntoRows)
 -   Group by: basic mode [[video]](https://youtu.be/AWMaIaI8G2Y?t=17m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#basicGroupBy)
 -   Go to column [[video]](https://youtu.be/AWMaIaI8G2Y?t=18m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-feature-summary/#goToColumn)
@@ -6860,7 +7492,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/AWMaIaI8G2Y]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## March 2017 Update (2.44.4675.422)
@@ -6903,7 +7535,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/CaRTON3lJqw]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -6951,7 +7583,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/mn75-LOPxMA]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## January 2017 Update (2.42.4611.482)
@@ -6987,7 +7619,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/C1-f0T8vZ7M]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -7040,7 +7672,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/kERJ_WOLuLk]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## October 2016 Update (2.40.4554.361)
@@ -7093,7 +7725,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/UXEYSvgvMaQ]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## September 2016 Update (2.39.4526.362)
@@ -7151,7 +7783,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/pcUr6E8g_KI]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -7212,7 +7844,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/0VvG7Eqoke8]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## July 2016 Update (2.37.4464.321)
@@ -7255,7 +7887,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!VIDEO https://www.youtube.com/embed/g8ccfjffWmw]
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## June 2016 Update (2.36.4434.362)
 
@@ -7309,7 +7941,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -7321,7 +7953,7 @@ May brought another large collection of compelling updates for Power BI Desktop:
 
 ### Report View:
 
--   Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](../create-reports/desktop-custom-tooltips.md)
+-   Customizable tooltips [[video]](https://youtu.be/KnDs4amt9-c?t=172) [[article]](../visuals/power-bi-visualization-visual-tooltips.md)
 -   Conditional formatting in tables [[video]](https://youtu.be/KnDs4amt9-c?t=313) [[article]](../create-reports/desktop-conditional-table-formatting.md)
 -   Publish to Pyramid server [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 -   Scrolling loads more data in charts [[video]](https://youtu.be/KnDs4amt9-c?t=426) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
@@ -7365,7 +7997,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## April 2016 Update (2.34.4372.322)
 
@@ -7414,7 +8046,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## March 2016 Update (2.33.4337.281)
@@ -7466,7 +8098,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 
@@ -7524,7 +8156,7 @@ The following video describes and shows each of these updates. You can also see 
 
 
 > [!NOTE]
-> You might also be interested in learning [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+> You might also be interested in learning [what's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## January 2016 Update (2.31.4280.361)

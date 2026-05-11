@@ -1,15 +1,16 @@
 ---
-title: Get started formatting report visualizations
+title: Get Started Formatting Report Visualizations
 description: Getting started using the formatting options with report visualizations
-author: miguelmyersMS
-ms.author: miguelmyers
-ms.reviewer: 'miguelmyers'
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
-ms.date: 12/19/2023
+ms.date: 01/12/2026
 LocalizationGroup: Visualizations
+ai-usage: ai-assisted
 ---
 # Get started formatting report visualizations
 
@@ -31,24 +32,24 @@ When you select **Format**, the area below the icon displays the customizations 
 
 You can customize many elements of each visualization. The options available depend on the visual selected. Some of those options are:
 
-* Legend
-* X-axis
-* Y-axis
-* Data colors
-* Data labels
-* Total labels
-* Shapes
-* Plot area
-* Title
-* Background
-* Lock aspect
-* Border
-* Shadow
-* Tooltip
-* Visual header
-* Shapes
-* Position
-* Zoom
+- Legend
+- X-axis
+- Y-axis
+- Data colors
+- Data labels
+- Total labels
+- Shapes
+- Plot area
+- Title
+- Background
+- Lock aspect
+- Border
+- Shadow
+- Tooltip
+- Visual header
+- Shapes
+- Position
+- Zoom
 
 > [!NOTE] 
 > You don’t see all these elements with each visualization type. The visualization you select affects which customizations are available. For example, you don’t see an X-axis if you have a pie chart selected because pie charts don’t have an X-axis.
@@ -57,19 +58,18 @@ Also note that if you don’t have any visualization selected, **Filters** appea
 
 The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible number of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
-* [Change colors used in the visual](#change-colors-in-a-visual)
-* [Apply a style](#apply-a-style-to-a-table)
-* [Change axis properties](#change-axis-properties)
-* [Add data labels](#add-data-labels)
-* [Customize data labels](#customize-data-labels)
-* [Add total labels](#add-total-labels)
+- [Change colors used in the visual](#change-colors-in-a-visual)
+- [Apply a style](#apply-a-style-to-a-table)
+- [Change axis properties](#change-axis-properties)
+- [Add data labels](#add-data-labels)
+- [Customize data labels](#customize-data-labels)
+- [Add total labels](#add-total-labels)
 
 ## Change colors in a visual
 
 Let’s walk through the steps necessary to customize colors on a visualization.
 
 1. Select a visualization to make it active.
-
 1. Select the paint brush icon to open the Formatting tab. The Formatting tab displays all the formatting elements available for the selected visual.
 
     :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png" alt-text="Screenshot showing Chart with Formatting pane tab selected.":::
@@ -85,14 +85,26 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 Here are a few tips for working with colors. The numbers in the following list are also shown on the following image, indicating where you can access and change these useful elements.
 
 1. Don’t like the color? No problem, just select the down-arrow to open the color palette and select a new one.
-
 1. Don't like any of the color changes? Select **Reset to default** from the bottom of the **Data color** section, and your colors revert to the default settings.
-
 1. Want a color you don’t see in the palette? Just select **More colors...**, and choose from the spectrum.  
 
    :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png" alt-text="Screenshot showing Data color section with color palette open.":::
 
 Don't like the change you just made? Use **CTRL+Z** to undo, as you’re used to doing.
+
+## Reset to default options
+
+Format pane reset to default quickly lets report creators undo customizations made to a visual. You can reset default with finer control: 
+
+- Reset to default for the whole visual.
+- Reset to default for each section of the format pane.
+
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-settings-default.png" alt-text="Screenshot showing the bars options expanded with the reset settings to default option highlighted.":::
+
+- Reset the group's settings to default within each section.
+- Reset group settings without affecting the rest of the section.
+
+   :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/reset-default-group.png" alt-text="Screenshot showing the border options expanded with the reset settings to default option highlighted.":::
 
 ## Apply a style to a table
 
@@ -117,11 +129,11 @@ It’s often useful to modify the X-axis or the Y-axis. Similar to working with 
 
 The following example illustrates making the following formatting changes to the Y axis:
 
-* Move the labels to the right side of the visualization.
-* Change the starting value to zero.
-* Change the label font color to black.
-* Increase the label font size to 12.
-* Add a Y-axis title.
+- Move the labels to the right side of the visualization.
+- Change the starting value to zero.
+- Change the label font color to black.
+- Increase the label font size to 12.
+- Add a Y-axis title.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-axis-changes.png" alt-text="Screenshot showing Same column chart but with lots of formatting of Y-axis.":::
 
@@ -144,7 +156,6 @@ Here is the *after* picture.
 1. Select the visualization to make it active, and open the Formatting tab. 
 1. Select **Data labels** and turn them **On**. 
 1. Make these formatting changes: 
-
     1. Increase the font size to **12**.
     1. Change the font family to **Arial Black**.
     1. Turn **Show background** to **On** and **Background color** to white with a **Transparency** of 5%.
@@ -159,10 +170,10 @@ Data labels have some enhanced formatting capabilities, giving you extended cust
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png" alt-text="Screenshot showing customizing data labels." lightbox="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png":::
 
-* **Title**: The new Title card feature enables you to display legend fields on your data labels, so you can omit the legend for a cleaner look. You can also customize data label titles using different data fields, adjustable font style, color, and transparency.
-* **Value**: Spot the active field for your data label in the field well. Modifying it to another field is easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.
-* **Detail**: The new detail card feature lets you add a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options.
-* **Visual label layout**: Choose between a sleek single-line data label or a multi-line data label, as needed.
+- **Title**: The new Title card feature enables you to display legend fields on your data labels, so you can omit the legend for a cleaner look. You can also customize data label titles using different data fields, adjustable font style, color, and transparency.
+- **Value**: Spot the active field for your data label in the field well. Modifying it to another field is easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.
+- **Detail**: The new detail card feature lets you add a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options.
+- **Visual label layout**: Choose between a sleek single-line data label or a multi-line data label, as needed.
 
 ## Add total labels
 
@@ -188,7 +199,6 @@ These are just a few of the formatting tasks that are possible. Open a report in
 
 For more information, see the following articles:
 
-* [Sharing reports](../collaborate-share/service-share-reports.md)
-
-* [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
+- [Sharing reports](../collaborate-share/service-share-reports.md)
+- [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)
+- [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)

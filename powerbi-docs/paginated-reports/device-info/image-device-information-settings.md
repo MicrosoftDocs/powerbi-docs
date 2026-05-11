@@ -1,12 +1,13 @@
 ---
-title: "Image device information settings for Power BI paginated reports"
+title: Image Device Information Settings for Power BI Paginated Reports
 description: Learn about the various device information settings you can use to render in an image format in Power BI paginated reports.
-ms.date: 01/05/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ---
 # Image device information settings for Power BI paginated reports
 
@@ -36,7 +37,7 @@ ms.author: kfollis
   
 ## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)
 
   
   

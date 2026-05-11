@@ -1,14 +1,13 @@
 ---
 title: Add drill-down support in Power BI 
 description: This article describes how to add drill-down support to Power BI Visuals to make them interactive and reveal more details to users.
-author: mberdugo
+author: billmath
 ms.author: billmath
-manager: kfollis
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/12/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to add drill-down support to my custom visual so that users can reveal more details.
 ---
 
@@ -16,7 +15,7 @@ ms.date: 10/12/2024
 
 When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal more details.
 
-Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../consumer/end-user-drill.md).
+Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../create-reports/desktop-drillthrough.md).
 To allows the visual to enable or disable the drill feature dynamically, see [Dynamic drill-down control](./dynamic-drill-down.md).
 
 ## Enable drill-down support in the visual

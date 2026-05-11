@@ -1,12 +1,12 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -30,7 +30,7 @@ Because of its ease of setup, rapid deployment, and widespread adoption, Dataver
 
 Connecting Power BI to Dataverse involves creating a Power BI data model. You can choose from three methods to create a Power BI model.
 
-- **Import Dataverse data by using the Dataverse connector**: This method caches (stores) Dataverse data in a Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, importing data is the default mode when creating a model in [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
+- **Import Dataverse data by using the Dataverse connector**: This method caches (stores) Dataverse data in a Power BI model. It delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, allowing them to integrate data from other sources. Because of these strengths, importing data is the default mode when creating a model in [Power BI Desktop](../fundamentals/power-bi-overview.md).
 - **Import Dataverse data by using Azure Synapse Link**: This method is a variation on the import method, because it also caches data in the Power BI model, but does so by connecting to [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is). By using [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake), Dataverse tables are continuously replicated to Azure Synapse or Azure Data Lake Storage (ADLS) Gen2. This approach is used to report on hundreds of thousands or even millions of records in Dataverse environments.
 - **Create a DirectQuery connection by using the Dataverse connector**: This method is an alternative to importing data. A DirectQuery model consists only of metadata defining the model structure. When a user opens a report, Power BI sends native queries to Dataverse to retrieve data. Consider creating a DirectQuery model when reports must show near real-time Dataverse data, or when Dataverse must enforce role-based security so that users can only see the data they have privileges to access.
 

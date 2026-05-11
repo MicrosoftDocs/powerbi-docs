@@ -1,23 +1,29 @@
 ---
-title: "Maps in a Power BI paginated report | Microsoft Docs"
+title: Maps in a Power BI Paginated Report
 description: Get acquainted with how to add a map to your paginated report showing business data against a geographical background in your paginated report in Power BI Report Builder. 
-ms.date: 02/13/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: monaraya
 ---
 # Maps in a paginated report (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
   
- A map contains a title, a viewport that specifies the center point and scale, an optional Bing map tile background for the viewport, one or more layers that display spatial data, and a variety of legends that help users interpret the data visualizations. The following illustration shows the basic parts of a map.  
-  
- ![Screenshot showing how to add legend color scale and associated elements.](../media/paginated-reports-maps/map-elements.png "Screenshot showing how to add legend color scale and associated elements.")
+
+> [!IMPORTANT]
+> Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), we have migrated map visuals in paginated reports from Bing Maps to Azure Maps. With the September release of PBIRB, paginated report authors will, by default, create map visuals using Azure Maps. Additionally, all map visuals published to the service will use Azure Maps.
+
+To visualize business data against a geographical background, you can add a map to your Power BI paginated report. The type of map that you select depends on what information that you want to communicate in your report. You can add a map that displays locations only, or a bubble map that varies bubble size based on number of households for an area, or a marker map that varies marker style based on the most profitable product for each store, or a line map that displays routes between stores.  
+
+ A map contains a title, a viewport that specifies the center point and scale, an optional Azure map tile background for the viewport, one or more layers that display spatial data, and a variety of legends that help users interpret the data visualizations. The following illustration shows the basic parts of a map.  
+
+ :::image type="content" source="../media/paginated-reports-maps/map-elements.png" alt-text="Screenshot showing how to add legend color scale and associated elements." lightbox="../media/paginated-reports-maps/map-elements.png":::
   
  To start to use a map immediately, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder) or [Report Samples (Power BI Report Builder)](https://go.microsoft.com/fwlink/?LinkId=198283).  
   
@@ -53,8 +59,8 @@ ms.reviewer: monaraya
   
 - **Planar** Specifies geometric coordinates on a planar surface by using X and Y.  
   
- Each map layer displays one type of spatial data: polygons, lines, or points. To display multiple types of spatial data, add multiple layers to the map. You can also add a layer of Microsoft Bing map tiles. The tile layer does not depend on spatial data. The tile layer displays image tiles that correspond to the coordinates of the map viewport.  
-  
+ Each map layer displays one type of spatial data: polygons, lines, or points. To display multiple types of spatial data, add multiple layers to the map. You can also add a layer of Microsoft Azure map tiles. The tile layer does not depend on spatial data. The tile layer displays image tiles that correspond to the coordinates of the map viewport.  
+
 #### Sources of spatial data  
  The following sources of spatial data are supported:  
   
@@ -121,12 +127,13 @@ ms.reviewer: monaraya
 ##  <a name="Viewport"></a> Understanding the map viewport  
  After you specify map data for a report, you can limit the display area of the map by specifying a map *viewport*. By default, the viewport is the same area as the whole map. To crop the map, you can specify the center, zoom level, and maximum and minimum coordinates that define the area that you want to include in your report. To improve the display of the map in the report, you can move the legends, distance scale, and color scale outside the viewport. The following figure shows a viewport:  
   
- ![Screenshot showing the Map Viewport.](../media/paginated-reports-maps/map-view-port.png "Screenshot showing the Map Viewport.") 
+ :::image type="content" source="../media/paginated-reports-maps/map-view-port.png" alt-text="Screenshot showing the Map Viewport." lightbox="../media/paginated-reports-maps/map-view-port.png"::: 
 
   
-##  <a name="TileLayer"></a> Adding a Bing map tiles layer  
- You can add a layer for Bing map tiles that provides a geographic background for the current map view as defined by the viewport. To add a tile layer, you must specify the coordinate system **geographic** and the projection type **Mercator**. Tiles that match the viewport center and zoom level that you select are automatically retrieved from Bing Maps Web Services.  
-  
+## <a name="TileLayer"></a> Adding an Azure map tiles layer
+
+ You can add a layer for Azure map tiles that provides a geographic background for the current map view as defined by the viewport. To add a tile layer, you must specify the coordinate system **geographic** and the projection type **Mercator**. Tiles that match the viewport center and zoom level that you select are automatically retrieved from Azure Maps Web Services.  
+
  You can customize the layer by specifying the following options:  
   
 - Tile type. The following styles are supported:  
@@ -137,12 +144,12 @@ ms.reviewer: monaraya
   
 - The language for the display text on the tiles.  
   
-- Whether to use a secure connection to retrieve the tiles from the Bing Maps Web service.  
-  
+- Whether to use a secure connection to retrieve the tiles from the Azure Maps Web service.  
+
  For step-by-step instructions, see [Add, Change, or Delete a Map or Map Layer (Report Builder)](add-change-delete-map-map-layer-report-builder.md).  
   
- For more information about tiles, see [Bing Maps Tile System](/bingmaps/articles/bing-maps-tile-system). For more information about the use of Bing map tiles in your report, see [Additional Terms of Use](https://go.microsoft.com/fwlink/?LinkId=151371).  
-  
+ For more information about tiles, see [Azure Maps Tile Layer](/azure/azure-maps/map-add-tile-layer). For more information about the use of Azure Maps tiles in your report, see [Azure Maps Terms of Use](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MOSA#clause-2036-h3-1).
+
 ##  <a name="MapLayers"></a> Understanding map layers and map elements  
  A map can have multiple layers. There are three types of layers. Each layer displays one type of spatial data:  
   
@@ -156,11 +163,11 @@ ms.reviewer: monaraya
   
  For example, to display delivery routes from a central warehouse to your stores, you might add two layers: a point layer with pushpin markers to display store locations and a line layer to display delivery routes to each store from the warehouse. The point layer needs Point spatial data that specifies store locations and the line layer needs Line spatial data that specifies the delivery routes.  
   
- The fourth type of layer is a tile layer. A tile layer adds a background of Bing map tiles that corresponds to the map viewport center and zoom level.  
-  
+ The fourth type of layer is a tile layer. A tile layer adds a background of Azure map tiles that corresponds to the map viewport center and zoom level.  
+
  To work with layers, select a map on the report design surface to display the Map pane. The Map pane displays the list of layers that are defined for the map. Use this pane to select a layer to change the options, to change the drawing order of layers, to add a layer or run the Map Layer wizard, to hide or show a layer, and to change the view center and zoom level for the map viewport. The following figure shows a viewport:  
   
- ![Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.](../media/paginated-reports-maps/map-layer-zone.png "Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options.")  
+ :::image type="content" source="../media/paginated-reports-maps/map-layer-zone.png" alt-text="Screenshot of the Map Layers section showing the Layer Toolbar, Layer visibility, Layer name, Type of spacial data source, Layer type, Adjust Zoom Level, and Adjust View Center options." lightbox="../media/paginated-reports-maps/map-layer-zone.png":::  
   
  For more information about map layers, see [Add, Change, or Delete a Map or Map Layer &#40;Power BI Report Builder&#41;](add-change-delete-map-map-layer-report-builder.md).  
   
@@ -171,11 +178,11 @@ ms.reviewer: monaraya
   
 1.  **Layer properties.** Properties that apply to the whole layer. For example, use layer properties to set the source of analytical data or the visibility for the whole layer.  
   
-2.  **Polygon, Line, Point properties and Embedded Polygon, Line, Point properties.** Properties that apply to all map elements on a layer, whether the elements are from dynamic spatial data or embedded spatial data. For example, use polygon center point properties to set the fill color for bubbles to a gradient that fills bubble areas from dark blue to light blue and from top to bottom.  
+1.  **Polygon, Line, Point properties and Embedded Polygon, Line, Point properties.** Properties that apply to all map elements on a layer, whether the elements are from dynamic spatial data or embedded spatial data. For example, use polygon center point properties to set the fill color for bubbles to a gradient that fills bubble areas from dark blue to light blue and from top to bottom.  
   
-3.  **Color Rules, Size Rules, Width Rules, Marker Type Rules.** Rules apply properties to a layer when the layer has map elements that have a relationship to analytical data. The types of rules vary based on layer type. For example, use point size rules to vary bubble size based on population.  
+1.  **Color Rules, Size Rules, Width Rules, Marker Type Rules.** Rules apply properties to a layer when the layer has map elements that have a relationship to analytical data. The types of rules vary based on layer type. For example, use point size rules to vary bubble size based on population.  
   
-4.  **Override for Embedded Polygon, Line, or Point properties**. For embedded map elements, you can select the override option and change any property or data value. Any changes that you make to override rules for individual elements are irreversible. For example, you can highlight a specific store by using a pushpin marker.  
+1.  **Override for Embedded Polygon, Line, or Point properties**. For embedded map elements, you can select the override option and change any property or data value. Any changes that you make to override rules for individual elements are irreversible. For example, you can highlight a specific store by using a pushpin marker.  
   
  For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   

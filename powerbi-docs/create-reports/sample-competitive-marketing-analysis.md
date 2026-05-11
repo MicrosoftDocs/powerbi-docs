@@ -6,8 +6,9 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/28/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Competitive Marketing Analysis sample for Power BI: Take a tour
@@ -24,7 +25,7 @@ This tour explores the Competitive Marketing Analysis sample in the Power BI ser
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 

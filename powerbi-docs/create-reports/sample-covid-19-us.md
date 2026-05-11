@@ -3,12 +3,13 @@ title: COVID-19 tracking sample for US state and local governments
 description: Learn how to download and modify the sample report with US state and local data for the COVID-19 pandemic.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: kfollis
+ms.reviewer: juliacawthra
 ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 05/10/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
@@ -30,8 +31,8 @@ This article covers how to:
 
 Before you can get started using Power BI to tell your story, you need these prerequisites:
 
-- Download the free [Power BI Desktop](https://powerbi.microsoft.com/desktop/) app.
-- Sign up for the [Power BI service](https://powerbi.microsoft.com/get-started/).
+- Download the free [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) app.
+- Sign up for the [Power BI service](https://www.microsoft.com/power-platform/products/power-bi/getting-started-with-power-bi).
 
 COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University is provided under a Creative Commons License that requires attribution. Before publishing this data, review the [disclaimers](#disclaimers).
 
@@ -48,7 +49,7 @@ When you open a template (.pbit) file and save it, Power BI saves it as a report
 
 ## Update your report
 
-1. Download the latest version of the free app, [Power BI Desktop](https://powerbi.microsoft.com/desktop/), if you haven't already.
+1. Download the latest version of the free app, [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop), if you haven't already.
 
 1. Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058), if you haven't already, and open it in Power BI Desktop.
 

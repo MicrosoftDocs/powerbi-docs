@@ -1,13 +1,13 @@
 ---
 title: Power BI visual project structure
 description: Learn about the files and their contents that are created by the Power BI visuals tool when you create a new visual.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/09/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI developer, I want to learn about the files and their contents that are created by the Power BI visuals tool when I create a new visual.
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: Develop a Power BI circle card visual as an example
 description: This tutorial explains how you can develop a Power BI visual. It uses the circle card visual as an example to demonstrate the process of creating a visual.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 02/10/2025
+ms.date: 12/15/2025
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to develop a Power BI visual so that I can create custom visuals for my reports.
 ---

@@ -1,13 +1,18 @@
 ---
 title: Use row-level security with token based identities
 description: Learn about embedding single Power BI content within your application using token based, single sign-on (SSO) identities.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
+<<<<<<< HEAD
 ms.date: 05/11/2026
+=======
+ms.date: 12/15/2025
+ms.custom: sfi-image-nochange
+>>>>>>> 5aa310b999d9aaf859a33f511ae3c8a18dcc4a64
 # customer intent: As an ISV, I want to learn how to embed Power BI content with token-based, single sign-on (SSO) identities so I can provide secure access to my customers' data.
 ---
 
@@ -15,7 +20,7 @@ ms.date: 05/11/2026
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-The **token-based identity** allows an ISV to use an [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
+The **token-based identity** allows an ISV to use a [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
 
 ISV customers that keep and manage their data in **Azure SQL Database** can keep their data secure in their tenant when integrating with **Power BI Embedded** in the ISV app.
 

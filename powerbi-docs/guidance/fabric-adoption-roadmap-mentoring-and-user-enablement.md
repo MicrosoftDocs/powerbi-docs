@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Mentoring and user enablement"
 description: "Mentor users to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -83,11 +83,11 @@ During a review, an expert from the COE evaluates self-service Fabric content de
 
 Here are some examples of when a best practices review could be beneficial.
 
-- The sales team has a [Power BI app](../consumer/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
+- The sales team has a [Power BI app](../explore-reports/end-user-apps.md) that they intend to distribute to thousands of users throughout the organization. Since the app represents high priority content distributed to a large audience, they'd like to have it [certified](../collaborate-share/service-endorsement-overview.md). The standard process to certify content includes a best practices review.
 - The finance team would like to [assign a workspace to a capacity](../enterprise/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity). A review of the workspace content is required to ensure sound development practices are followed. This type of review is common when the capacity is shared among multiple business units. (A review might not be required when the capacity is assigned to only one business unit.)
 - The operations team is creating a new Fabric solution they expect to be widely used. They would like to request a best practices review before it goes into user acceptance testing (UAT), or before a request is submitted to the change management board.
 
-A best practices review is most often focused on the semantic model design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
+A best practices review is most often focused on the semantic model design, though the review can encompass all types of data items (such as a lakehouse, data warehouse, data pipeline, dataflow (legacy), or semantic model). The review can also encompass reporting items (such as reports, dashboards, or metrics).
 
 Before content is deployed, a best practices review can be used to verify other design decisions, like:
 

@@ -1,8 +1,8 @@
 ---
-title: Understand and optimize dataflows refresh
+title: Understand and optimize dataflows refresh (legacy)
 description: Learn how to use and optimize dataflow refreshes to get the best performance when you're working with your data in Power BI.
-author: davidiseminger
-ms.author: davidi
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -10,7 +10,10 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Understand and optimize dataflows refresh
+# Understand and optimize dataflows refresh (legacy)
+
+> [!TIP]
+> Power BI Dataflow Gen1 is now in a legacy state and won't receive new feature investment. Rather than building a custom monitoring dashboard, [Dataflow Gen2](/fabric/data-factory/dataflows-gen2-overview) provides built-in refresh tracking through the [Monitoring hub](/fabric/data-factory/dataflows-gen2-monitor) in Microsoft Fabric, with real-time status, duration, and error details. To learn about upgrading existing dataflows, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 Power BI dataflows enable you to connect to, transform, combine, and distribute data for downstream analytics. A key element in dataflows is the refresh process, which applies the transformation steps you authored in the dataflows and updates the data in the items themselves.
 
@@ -134,7 +137,7 @@ Finally, consider optimizing your environment. You can optimize the Power BI env
   * Also evaluate bringing the data first into a staging dataflow, and referencing it downstream by using linked and computed entities.
 
 * Network latency can affect refresh performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region. To determine where your tenant is located, see [Find the default region for your organization](../../admin/service-admin-where-is-my-tenant-located.md). When users from a tenant access the Power BI service, their requests always route to that region. As requests reach the Power BI service, the service might then send extra requests, for example, to the underlying data source, or a data gateway—which are also subject to network latency.
-  * Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
+  * Tools such as Azure Speed Test provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. Residing in the same region is preferable. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them inside cloud-hosted virtual machines.
 
 ### High processor time
 
@@ -159,7 +162,7 @@ The following sections provide guidance about using the compute engine, and its 
 
 #### Guidance on compute engine Statuses
 
-Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses an SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
+Turning on the enhanced compute engine and understanding the various statuses is helpful. Internally, the enhanced compute engine uses a SQL database to read and store data. It's best to have your transformations execute against the query engine here. The following paragraphs provide various situations, and guidance about what to do for each.
 
 **NA** - This status means that the compute engine wasn't used, either because:
 

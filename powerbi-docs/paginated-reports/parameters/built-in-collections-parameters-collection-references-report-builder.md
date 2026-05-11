@@ -1,12 +1,13 @@
 ---
-title: "Parameters collection references in a Power BI paginated report | Microsoft Docs"
+title: Parameters Collection References in a Power BI Paginated Report
 description: Discover how to use parameters in an expression to customize paginated report data and appearance based on user choices in Power BI Report Builder. 
-ms.date: 01/25/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ---
 # Built-in parameters collection references in a paginated report (Power BI Report Builder)
 

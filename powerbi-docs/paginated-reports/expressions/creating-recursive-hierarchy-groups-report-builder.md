@@ -1,14 +1,16 @@
 ---
-title: "Create recursive hierarchy groups in a paginated report"
+title: Create Recursive Hierarchy Groups in a Paginated Report
 description: Discover uses for recursive hierarchy groups in a paginated report in Report Builder. Display hierarchical data such as employees in an organizational chart.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Create recursive hierarchy groups in a paginated report (Power BI Report Builder)
 

@@ -1,14 +1,16 @@
 ---
-title: "ReportItems collection references in a paginated report"
+title: Reportitems Collection References in a Paginated Report
 description: Discover the ReportItems collection in a paginated report. These text boxes in Power BI Report Builder are in the current scope of a page header, page footer, or report body.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/21/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Built-in collections - ReportItems collection references in a paginated report (Power BI Report Builder)
 

@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Retire and archive content"
 description: "This article helps you to retire and archive content at the end of its lifecycle."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---

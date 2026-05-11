@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Departmental BI"
 description: "Learn how Power BI departmental BI is about business unit content distribution."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -45,7 +45,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | Some, or all, reports and dashboards are published as a Power BI app. The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Power BI app users are added to app audiences, which are assigned read-only permissions. App settings, app content, and app audiences are managed separately from the workspace. Some teams may install and use template apps. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | The Power BI mobile apps are also available for viewing apps and workspace content. |
-| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md). |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Users assigned to the administrator, member, or contributor [workspace roles](../collaborate-share/service-roles-new-workspaces.md) can publish and manage workspace content. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Scheduled data refresh is set up in the Power BI service to keep imported data—in semantic models or dataflows—up to date. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
@@ -58,7 +58,7 @@ The following are some key points to emphasize about the departmental BI scenari
 
 ### Source file storage
 
-[Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) is the authoring tool to develop queries, models, and interactive reports. For departmental BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for work or school or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
+[Power BI Desktop](../fundamentals/power-bi-overview.md) is the authoring tool to develop queries, models, and interactive reports. For departmental BI, it's important to store the source Power BI Desktop file in a secure, shared location. Locations such as OneDrive for work or school or SharePoint (not depicted in the scenario diagram) are useful. A shared library is securable, easily accessible by colleagues, and has built-in versioning capabilities.
 
 When the co-management of a BI solution involves multiple people with different skillsets, consider decoupling the model and reports into separate Power BI Desktop files (described in the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) scenario). This approach encourages reuse of the semantic model and is more efficient than continually alternating between the people who are editing the Power BI Desktop file. That's particularly helpful when, for instance, one person works on the semantic model while another person works on the reports.
 
@@ -70,7 +70,7 @@ The [managed self-service BI](powerbi-implementation-planning-usage-scenario-man
 
 ### Power BI app publication
 
-For departmental BI, a [Power BI app](../consumer/end-user-apps.md) works well for content distribution to consumers (rather than direct workspace access, which is described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). A Power BI app provides the best experience for consumers because it presents a set of related content with a user-friendly navigation experience. A Power BI app is particularly useful in situations where there's a larger and more diverse number of consumers, or when the content developer doesn't work closely with the app consumers.
+For departmental BI, a [Power BI app](../explore-reports/end-user-apps.md) works well for content distribution to consumers (rather than direct workspace access, which is described in the [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) scenario). A Power BI app provides the best experience for consumers because it presents a set of related content with a user-friendly navigation experience. A Power BI app is particularly useful in situations where there's a larger and more diverse number of consumers, or when the content developer doesn't work closely with the app consumers.
 
 ### Power BI app permissions
 
@@ -80,7 +80,7 @@ For departmental BI, it's a best practice to limit workspace access to those who
 
 ### Power BI user licenses
 
-All content creators and consumers of the workspace or the Power BI app must have a [Power BI Pro or Power BI Premium Per User (PPU) license](https://powerbi.microsoft.com/pricing/).
+All content creators and consumers of the workspace or the Power BI app must have a [Power BI Pro or Power BI Premium Per User (PPU) license](https://www.microsoft.com/power-platform/products/power-bi/pricing).
 
 > [!NOTE]
 > There's one exception to the requirement of a Power BI Pro or PPU license: When the workspace is assigned to Premium capacity or Fabric F64 or greater capacity, Fabric free license users (with proper permissions) can view the workspace (and/or app) content. This approach is described in the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario.
@@ -89,7 +89,7 @@ All content creators and consumers of the workspace or the Power BI app must hav
 
 ### Reuse existing semantic models
 
-The reuse of existing semantic models is important for team collaboration. It helps to promote a *single version of the truth*. It's particularly important when a small number of semantic model creators support many report creators. A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) can connect a report to an existing semantic model, avoiding the need to create another semantic model. Alternatively, when users prefer to create an Excel report, they can use the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) feature. Retaining connectivity to the semantic model is preferred to exporting data to Excel because it:
+The reuse of existing semantic models is important for team collaboration. It helps to promote a *single version of the truth*. It's particularly important when a small number of semantic model creators support many report creators. A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-datasets.md) can connect a report to an existing semantic model, avoiding the need to create another semantic model. Alternatively, when users prefer to create an Excel report, they can use the [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) feature. Retaining connectivity to the semantic model is preferred to exporting data to Excel because it:
 
 - Avoids creating duplicate semantic models.
 - Reduces the risk of inconsistent data and calculations.

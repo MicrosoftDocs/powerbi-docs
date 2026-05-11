@@ -1,14 +1,15 @@
 ---
 title: Work with third-party apps in Power BI
 description: Learn how to integrate a third-party app with Power BI and then revoke permissions to an application at any time.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.reviewer: ""
 ms.cunstom: ""
-ms.date: 06/02/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ms.custom: intro-get-started
 ---
@@ -31,7 +32,7 @@ This permission allows an application to view all reports you have access to. Th
 
 ### View all Semantic models
   
-This permission allows an application to list all semantic models that you have access to. This access includes semantic models that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your semantic models and their structure including table and column names. This permission gives rights to read the data in a semantic model. The permission doesn't give the application rights to add or make changes to a semantic model.
+This permission allows an application to list all semantic models that you have access to. This access includes semantic models that you own, have gotten from apps, and are in groups that you belong to. An application can see the names of all your semantic models and their structure including table and column names. This permission gives rights to read the data in a semantic model. The permission does not give the application rights to add or make changes to a semantic model.
 
 ### Read and Write all Semantic models
   
@@ -39,7 +40,7 @@ This permission allows an application to list all semantic models that you have 
 
 ### View user's Groups
   
-This permission allows an application to list all groups that you're a member of. It can use this permission along with some of the other permissions listed to view or update content for that particular group. The application can't make modifications to the group itself.
+This permission allows an application to list all groups that you are a member of. It can use this permission along with some of the other permissions listed to view or update content for that particular group. The application cannot make modifications to the group itself.
 
 ## Revoke third-party app permissions
 
@@ -53,4 +54,4 @@ On the **Microsoft My apps** site, here's how to revoke third-party permissions:
 
 1. Hover over the app tile, select the **(...)** button, and choose **Remove**.
 
-   ![Screenshot that shows the Remove option to revoke third-party permissions.](media/service-power-bi-get-started-third-party-apps/remove.png)
+   ![Screenshot showing the Remove option to revoke third-party permissions.](media/service-power-bi-get-started-third-party-apps/remove.png)

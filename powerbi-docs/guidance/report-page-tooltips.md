@@ -1,12 +1,12 @@
 ---
 title: "Extend visuals with report page tooltips"
 description: "Guidance for working with report page tooltips."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -81,7 +81,7 @@ At report design time, we recommend the following practices:
 For more information related to this article, check out the following resources:
 
 - [Create tooltips based on report pages in Power BI Desktop](../create-reports/desktop-tooltips.md)
-- [Customizing tooltips in Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md)
 - [Use visual elements to enhance Power BI reports](../create-reports/desktop-visual-elements-for-reports.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

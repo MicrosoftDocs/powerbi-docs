@@ -1,2 +1,2 @@
 > [!NOTE]
-> This article forms part of the *Power BI implementation planning* series of articles. This series focuses primarily on the Power BI experience within [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). For an introduction to the series, see [Power BI implementation planning](../powerbi-implementation-planning-introduction.md).
+> This article is part of the *Power BI implementation planning* series of articles. The series focuses on planning to implement a Power BI experience inside [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). See the [series introduction](../powerbi-implementation-planning-introduction.md).

@@ -1,12 +1,12 @@
 ---
 title: "Monitor report performance in Power BI"
 description: "Guidance on how to monitor report performance in Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -51,7 +51,7 @@ Use SQL Server Profiler when your data source is either:
 - Azure Analysis Services
 
 > [!CAUTION]
-> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported [only for specific operations](../transform-model/desktop-external-tools.md#supported-write-operations). Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
+> Power BI Desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to make connections to perform traces for diagnostic purposes. Making any changes to the Power Desktop data model is supported only for specific operations. Other changes to the data model with operations that aren't supported may lead to corruption and data loss.
 
 To create a SQL Server Profiler trace, follow these instructions:
 

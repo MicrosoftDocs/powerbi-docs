@@ -1,14 +1,19 @@
 ---
 title: Edit Q&A linguistic schema and add phrasings in Power BI Desktop
 description: Learn how to edit the linguistic schema, add phrasings, and import and export .yaml files to improve Q&A in Power BI Desktop.
-author: mohaali
-ms.author: mohaali
+author: kgremban
+ms.author: kgremban
+ms.reviewer: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/12/2023
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
+
 It's powerful to use common phrases and natural language to ask questions of your data. It's even more powerful when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. You can edit the linguistic schema to improve the Q&A answers for even better interactions.
 
 It all starts with your enterprise data. The better the data model, the easier it will be for users to get quality answers. One way to improve the model is to add a linguistic schema that defines and categorizes terminology and relationships between table and column names in your dataset. Power BI Desktop is where you manage your linguistic schemas. 

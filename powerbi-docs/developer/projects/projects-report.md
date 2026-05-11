@@ -1,13 +1,13 @@
 ---
 title: Power BI Desktop project report folder
 description: Learn about the Power BI Desktop project report folder.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 04/22/2025
+ms.topic: concept-article
+ms.date: 12/15/2025
 ---
 
 # Power BI Desktop project report folder
@@ -41,7 +41,7 @@ Not every project report folder includes all of the files and subfolders describ
 
 Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/localSettings).
 
 #### CustomVisuals\\
 
@@ -75,13 +75,13 @@ Contains the overall definition of a report and core settings. This file also ho
 Example definition.pbir:
 
 ```json
-{
-  "version": "1.0",
+{  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
   "datasetReference": {
     "byPath": {
       "path": "../Sales.Dataset"
-    },
-    "byConnection": null
+    }    
   }
 }
 
@@ -91,13 +91,51 @@ The definition includes the `datasetReference` property, which references the se
 
 `byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A forward slash (/) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
 
-`byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
+`byConnection` - Specifies the connection to a semantic model in a Fabric workspace by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode. 
+
+##### [Version 2](#tab/v2)
 
 Using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
-|connectionString    |   The connection string referring to the remote semantic model.      |
+|connectionString    |   The connection string referring to the semantic model in a Fabric workspace.      |
+
+Example using `byConnection`:
+
+```json
+{  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {      
+      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName]\";initial catalog=[SemanticModelName];access mode=readonly;integrated security=ClaimsToken;semanticmodelid=[SemanticModelId]"
+    }
+  }
+}
+```
+
+When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you only need to specify the `semanticmodelid` property. For example: 
+
+```json
+{  
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {      
+      "connectionString": "semanticmodelid=[SemanticModelId]"
+    }
+  }
+}
+```
+
+##### [Version 1](#tab/v1)
+
+Using a `byConnection` reference, the following properties must be specified:
+
+|Property |Description  |
+|---------|---------|
+|connectionString    |   The connection string referring to the semantic model in a Fabric workspace.      |
 |pbiModelDatabaseName     |   The remote semantic model ID.      |
 |connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
@@ -108,24 +146,29 @@ Example using `byConnection`:
 
 ```json
 {
-  "version": "1.0",
-  "datasetReference": {
-    "byPath": null,
-    "byConnection": {
-      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
-      "pbiServiceModelId": null,
-      "pbiModelVirtualServerName": "sobe_wowvirtualserver",
-      "pbiModelDatabaseName": "[Semantic Model Id]",
-      "connectionType": "pbiServiceXmlaStyleLive",
-      "name": "EntityDataSource"
-    }
+    "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/1.0.0/schema.json",
+    "version": "4.0",
+    "datasetReference": {  
+      "byConnection": {
+        "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/[WorkpaceName];Initial Catalog=[SemanticModelName];Integrated Security=ClaimsToken",
+        "pbiServiceModelId": null,
+        "pbiModelVirtualServerName": "sobe_wowvirtualserver",
+        "pbiModelDatabaseName": "[Semantic Model Id]",
+        "connectionType": "pbiServiceXmlaStyleLive",
+        "name": "EntityDataSource"
+      }
   }
 }
 ```
-> [!IMPORTANT]
-> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references.
 
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple definition*.pbir files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
+---
+
+> [!IMPORTANT]
+> When deploying a report through [Fabric REST API](/rest/api/fabric/report/items), you must use `byConnection` references. This should not be confused with the [storage mode](../../transform-model/desktop-storage-mode.md) of a semantic model such as DirectQuery. The `datasetReference` in the report only specifies which semantic model the report connects to, it does not define how that model stores or accesses its data.
+
+##### Multiple *.pbir files
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always exports definitions with a `byPath` reference to the semantic model. If you want to force the report to open in live connect (for example, to work with report-level measures), you can have multiple `*.pbir` files, such as one with a byPath connection and another with a byConnection connection. Fabric Git Integration processes only the *definition.pbir* file and ignores all other *.pbir files. However, these files can coexist in the same repository.
 
 ```md
   ├── definition\
@@ -134,14 +177,14 @@ When the semantic model and report share the same workspace, [Fabric Git Integra
   ├── definition-liveConnect.pbir
   └── definition.pbir
 ```
-This file also specifies the supported report definition formats through the 'version' property.
+The `definition.pbir` file also specifies the supported report definition formats through the 'version' property.
 
 | Version  | Supported formats    |
 |----------|----------------------------|
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
 | 4.0 or higher | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
 
-For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
+For more information, see the [definition.pbir schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definitionProperties).
 
 #### mobileState.json
 
@@ -183,11 +226,21 @@ Some of the possible scenarios now available with PBIR include:
 - Easy find and replace across multiple reports files.
 - Apply a batch edit across all visuals using a script (for example, hide visual level filters)
 
-### Enable PBIR format Preview feature
+### Enable the PBIR format preview feature
 
-Saving as a Power BI Project using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
+Saving as a Power BI reports using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
 
-Go to **File > Options and settings > Options > Preview features** and check the box next to **Store reports using enhanced metadata format (PBIR)**.
+For Power BI Project (PBIP) files:
+
+1. Go to **File > Options and settings > Options > Preview features**.
+1. Select the **Store reports using enhanced metadata format (PBIR)** checkbox.
+
+For PBIX files:
+
+1. Go to **File > Options and settings > Options > Preview features**.
+1. Select the **Store PBIR reports using enhanced metadata format (PBIR)** checkbox.
+
+Enabling PBIR for PBIX ensures that the PBIR format is saved within PBIX files as well, not only in Power BI Project (PBIP) files.
 
 ### Save as a project using PBIR
 
@@ -218,6 +271,30 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
+
+### PBIR in Service
+
+New reports created in the Service use the PBIR format by default. Existing reports that are edited will also be automatically converted to PBIR format.
+
+During the Public Preview, administrators can choose to opt out of PBIR by disabling the tenant setting: **Automatically convert and store reports in the Power BI enhanced metadata format (PBIR)**.
+
+:::image type="content" source="./media/projects-report/pbir-tenant-setting.png" alt-text="Screenshot of PBIR tenant setting.":::
+
+> [!IMPORTANT]
+> - When PBIR reaches General Availability (GA), it will become the only supported report format, and conversion will be mandatory. We recommend that customers begin preparing for this migration ahead of GA.
+> - The PBIR in the Power BI service may not yet be available in your tenant. The tenant setting primarily exists to let you opt out before the feature is fully enabled. For the latest updates, visit the [Power BI Blog](https://powerbi.microsoft.com/blog/).
+
+
+#### Restore to PBIR-Legacy
+
+When a report is converted to PBIR in the Service, a backup copy in the **PBIR-Legacy** format is automatically created and retained for 28 days. You can restore the report to its PBIR-Legacy version by opening the **Report settings** from the workspace and selecting **Restore as PBIR-Legacy**.
+
+:::image type="content" source="./media/projects-report/pbir-service-restore.png" alt-text="Screenshot of PBIR restore setting.":::
+
+A restored report will not be automatically converted back to PBIR. To re-enable automatic conversion, open the report settings and select **Enable PBIR**.
+
+> [!IMPORTANT]
+> The **PBIR-Legacy** service backup is only created for reports upgraded directly in the Power BI service. If you upgrade your report by publishing from Power BI Desktop or by uploading a PBIX file and need to restore the **PBIR-Legacy** version, use the backup created by Power BI Desktop.
 
 ### PBIR folder and files
 
@@ -380,31 +457,27 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 ### PBIR considerations and limitations
 
-PBIR is currently in **preview**. Keep the following limitations in mind:
+PBIR is currently in **preview**. Keep the following in mind:
 
-- Service limitations/bugs
-  - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.
-  - Can't use Power BI Report APIs: [Clone Report](/rest/api/power-bi/reports/clone-report-in-group), [Update Report Content](/rest/api/power-bi/reports/update-report-content-in-group)
-  - Can't use Power BI [usage metrics report](/power-bi/collaborate-share/service-usage-metrics).
-- Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
-  - Saving in Power BI Desktop
-  - Synchronization in Fabric Git Integration
+- PBIR in [Sovereign Clouds](/industry/sovereign-cloud/overview/microsoft-sovereign-cloud) will not be automatically upgraded in the service prior to General Availability. Until then, Sovereign Cloud customers can test their reports in PBIR format in Power BI Desktop by enabling the PBIR preview features.
+- Large reports with more than 500 files may experience authoring performance issues (report viewing isn't affected).
 - Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back. Although a backup is created at the moment of conversion.
 - Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
+- [Visual automatic filters](../../create-reports/power-bi-report-filter-types.md#automatic-filters) are persisted to the PBIR `visual.json` file only after the filter pane has been expanded at least once while editing the report.
+- Not supported in [Template App workspaces](/power-bi/connect-data/service-template-apps-overview)
 
 PBIR size limitations enforced by the service:
 
 - 1,000 max pages per report.
-- 300 max visuals per page.
-- 5 mb max for each bookmark file.
-- 1 mb max for each file.
+- 1000 max visuals per page.
 - 1,000 max resource package files per report.
 - 300-mb max size for all resource package files.
-- 20-mb max size of all report files.
+- 300-mb max size of all report files.
+
+> [!IMPORTANT]
+> If you reach the limits above, you should consider optimizing your report. See the [Power BI Optimization document](../../guidance/power-bi-optimization.md#power-bi-reports).
 
 [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) export reports using the format currently applied in the service. If a report is created or imported into Fabric using the PBIR format, it will be exported in PBIR. Likewise, if a report is PBIR-Legacy, it will be exported in the PBIR-Legacy format. 
-
 
 ## Related content
 

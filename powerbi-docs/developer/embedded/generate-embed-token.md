@@ -1,14 +1,18 @@
 ---
 title: Generate an embed token in Power BI embedded analytics
 description: Learn about the considerations, limitations, and required permissions for generating an embed token.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: Amos Hersch
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
 ms.custom: engagement-fy23
+<<<<<<< HEAD
 ms.date: 05/11/2026
+=======
+ms.date: 12/15/2025
+>>>>>>> 5aa310b999d9aaf859a33f511ae3c8a18dcc4a64
 # Customer intent: As a developer, I want to generate an embed token so that I can embed Power BI content in my application.
 ---
 
@@ -105,7 +109,7 @@ For these APIs:
 
 * Embedding items using Data Lake Storage (DLS) requires V2 of the [Generate token API](/rest/api/power-bi/embed-token/generate-token).
 
-* You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
+* You can't create an embed token for [**My workspace**](../../collaborate-share/end-user-workspaces.md#types-of-workspaces).
 
 * **SSO datasource limitations (App-owns-data):** When using SSO with App-owns-data embedding (service principal or master user), the only supported DirectQuery datasource is **Azure SQL Database**. Other DirectQuery datasource types don't support SSO in this scenario.
 

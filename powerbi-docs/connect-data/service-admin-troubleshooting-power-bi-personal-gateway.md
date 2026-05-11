@@ -1,14 +1,15 @@
 ---
 title: Troubleshoot Power BI gateway (personal mode)
 description: Use these techniques to troubleshoot common issues you might come across for Power BI gateway (personal mode).
-author: arthiriyer
-ms.author: arthii
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 05/28/2024
 LocalizationGroup: Troubleshooting
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot Power BI gateway (personal mode)

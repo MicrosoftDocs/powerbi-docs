@@ -1,13 +1,13 @@
 ---
 title: Keyboard navigation feature in Power BI
 description: Learn how to enable the accessibility feature that uses the keyboard to navigate through visuals in Power BI.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/20/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to enable keyboard navigation in my visual so that users can navigate through the visual using the keyboard.
 ---
 

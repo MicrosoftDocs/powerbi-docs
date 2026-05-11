@@ -1,9 +1,8 @@
 ---
 title: Use Q&A with live connections in Power BI
 description: Learn how to use Power BI Q&A natural language queries with live connections to Analysis Services data and the on-premises data gateway.
-author: julcsc
-ms.author: juliacawthra
-ms.reviewer: kfollis
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
@@ -13,6 +12,9 @@ LocalizationGroup: Ask questions of your data
 # Enable Q&A for live connections in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+> [!IMPORTANT]
+> Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](./copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 You can import semantic models into Power BI, or you can create a *live connection* to them. Live connection semantic models are often on premises, and are managed by using a [gateway](../connect-data/service-gateway-onprem.md). Data and inquiries are sent back and forth using live queries. To use Q&A with the semantic models you access through a gateway, you need to enable them first.
 
@@ -30,7 +32,7 @@ Power BI Q&A uses the text and schema values from your data source to determine 
 For more information, see:
 
 * [What is an on-premises data gateway?](../connect-data/service-gateway-onprem.md)
-* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 
 ## Enable Q&A
 
@@ -65,6 +67,6 @@ The feature has some limitations:
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-* [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
+* [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

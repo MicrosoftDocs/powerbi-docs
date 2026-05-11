@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Security"
 description: "An introduction to the Power BI security planning articles."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -21,7 +21,7 @@ This article introduces a series of articles about Power BI security. The series
 - **Center of Excellence, IT, and BI team**: The teams that are also responsible for overseeing Power BI. They also support self-service users throughout the organization.
 - **Content creators**: Self-service BI creators who set up permissions for the content they create and publish.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](white-paper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
 
 It's important to plan to address challenges related to security, which include:
 

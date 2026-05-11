@@ -1,13 +1,13 @@
 ---
 title: Copy and paste a visualization in Power BI.
 description: Learn how to copy and paste visualizations within Power BI reports and dashboards, and how to manage permissions for copying visuals.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/09/2025
+ms.date: 10/01/2025
 ms.custom: Sample - Sales and Marketing, Sample - Corporate Spend
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to copy and paste visualizations so that I can easily share and reuse them across different reports and applications.
@@ -22,7 +22,7 @@ In this article, we cover how to copy and paste a visual, a fundamental task tha
 ## Prerequisites
 
 - In **Power BI service** you need edit permissions for the report enabling you to copy a visual and then paste it into another page in your report.
-- In **Power BI service** open the report in [Editing View](../consumer/end-user-reading-view.md).
+- In **Power BI service** open the report in [Editing View](../explore-reports/end-user-reading-view.md).
 - In **Power BI service** and **Power BI mobile**, you can also copy an image of a visual and paste it into other applications, like Word or PowerPoint.
 
 ## Copy and paste visuals within the same report
@@ -176,6 +176,12 @@ As a Power BI user, the awareness of any considerations and limitations when cop
 
 **Q:** Can I copy a visual from a Power BI dashboard, and paste it into a Power BI report or another dashboard?<br>
 **A:** Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
+
+**Q:** Will all content from a long table visual be copied when I use the copy-paste feature in Power BI?<br>
+**A:** When copying visuals such as tables, any data that extends beyond the scrollable view might be cut off and not captured in the pasted output. If your visual is larger than the available rendering space, the copy may contain extra rows on the bottom of the visual. To ensure complete data capture, consider exporting the data instead.
+
+**Q:** Why is the right side of my table visual (without the horizontal scrollbar) getting cut off?<br>
+**A:** This happens when the combined width of all columns is wider than the available rendering space. The table doesn't automatically shrink its columns to fit, which causes the content on the far right to be cropped. To fix this, you can manually make the columns narrower until you get the complete visual or consider exporting the data instead.
 
 ## Related content
 
