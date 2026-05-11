@@ -6899,41 +6899,41 @@
       "source_path": "powerbi-docs/enterprise/troubleshoot-xmla-endpoint.md",
       "redirect_url": "/fabric/enterprise/powerbi/troubleshoot-xml-analysis-endpoint",
       "redirect_document_id": false
-    }, 
+    },
     {
-        "source_path": "powerbi-docs/connect-data/service-connect-to-office365mon.md",
-        "redirect_url": "/microsoft-365/enterprise/microsoft-365-monitoring",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/connect-data/service-connect-to-office365mon.md",
+      "redirect_url": "/microsoft-365/enterprise/microsoft-365-monitoring",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/collaborate-share/service-teams-analytics.md",
-        "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/collaborate-share/service-teams-analytics.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/consumer/business-user-teams-collaboration-data.md",
-        "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/consumer/business-user-teams-collaboration-data.md",
+      "redirect_url": "/power-bi/collaborate-share/office-integration/service-collaborate-microsoft-teams",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/transform-model/dataflows/dataflows-machine-learning-integration.md",
-        "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/transform-model/dataflows/dataflows-machine-learning-integration.md",
+      "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-integration-with-other-services",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/transform-model/desktop-ai-insights.md",
-        "redirect_url": "/power-bi/transform-model/",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/transform-model/desktop-ai-insights.md",
+      "redirect_url": "/power-bi/transform-model/",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/connect-data/service-tutorial-build-machine-learning-model.md",
-        "redirect_url": "/power-bi/connect-data/",
-        "redirect_document_id": false
-    }, 
+      "source_path": "powerbi-docs/connect-data/service-tutorial-build-machine-learning-model.md",
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
+    },
     {
-        "source_path": "powerbi-docs/connect-data/service-tutorial-use-cognitive-services.md",
-        "redirect_url": "/power-bi/connect-data/",
-        "redirect_document_id": false
+      "source_path": "powerbi-docs/connect-data/service-tutorial-use-cognitive-services.md",
+      "redirect_url": "/power-bi/connect-data/",
+      "redirect_document_id": false
     },
     {
       "source_path": "powerbi-docs/create-reports/desktop-cross-report-drill-through.md",
@@ -7799,7 +7799,11 @@
       "source_path": "powerbi-docs/collaborate-share/office-integration/service-power-bi-powerpoint-add-in-whats-new.md",
       "redirect_url": "/power-bi/collaborate-share/office-integration/whats-new",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/developer/embedded/load-assessment-planning-tool.md",
+      "redirect_url": "/power-bi/developer/embedded/embedded-capacity",
+      "redirect_document_id": false
     }
   ]
-}                           
-    
+}
