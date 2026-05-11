@@ -52,7 +52,7 @@ From the Copilot pane, you can start with suggested prompts or enter your own qu
 ## Controlled model updates
 
 Before responding to your first prompt, Copilot asks for your permission before reviewing your model or suggesting changes. This is a one-time permission prompt that appears at the start of each Copilot session to ensure no updates are made without your approval.
-
+git sts
 After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](https://learn.microsoft.com/power-bi/transform-model/service-semantic-model-version-history#:~:text=version%20was%20selected.-,Restore%20to%20a%20previous%20version,semantic%20model%20on%20the%20web). You can use this checkpoint at any time to revert the semantic model back to its original state before any Copilot changes are applied. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
 
 :::image type="content" source="media/copilot-web-modeling/consent-flow.png" alt-text="Screenshot of the Copilot web modeling consent flow asking for user permission before making model changes." lightbox="media/copilot-web-modeling/consent-flow.png":::
