@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 05/11/2026
+ms.update-cycle: 180-days
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -33,6 +34,10 @@ Copilot indexing enables Copilot to answer data questions faster and more accura
 > For Power BI Desktop, there's an additional Local Desktop Indexing setting. This allows Desktop to locally index external data sources (DirectQuery, Live connection) for Copilot. It can be edited per machine through the Prep Data for AI settings dialog.
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai-settings.png" alt-text="Screenshot of the Prepare Data for AI settings page in Power BI Copilot.":::
+
+## Copilot tooling format (preview)
+
+The Copilot tooling format is a new way to store Copilot metadata for **Prep data for AI**, now available in public preview. For information about its benefits, migration steps, and expected behavior by platform, see [Copilot tooling format](copilot-prepare-data-ai.md#copilot-tooling-format-preview) in the Prep data for AI article.
 
 ## Considerations and limitations
 
