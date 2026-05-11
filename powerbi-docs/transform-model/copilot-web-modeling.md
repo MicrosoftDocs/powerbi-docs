@@ -17,10 +17,11 @@ ms.collection:
 
 Copilot in web modeling is an AI-powered assistant integrated into the Power BI Service semantic model experience. It helps model authors analyze and improve their semantic models using natural language.
 
-Instead of manually editing semantic model objects or relationships, you can interact with Copilot in a conversational way to get recommendations or apply changes directly to your model.
-
+You can now use natural language with Copilot alongside manual editing to get recommendations or apply changes directly to your model, with the flexibility to seamlessly switch between manual and AI-assisted edits.  
 
 ## Key capabilities
+
+These capabilities represent just some of the key ways Copilot can help you enhance your semantic models. You can also explore additional actions beyond this list to further refine and optimize your model. 
 
 - **Model analysis and guided recommendations**
   - Identify opportunities such as unclear structure or inconsistent naming  
@@ -29,21 +30,19 @@ Instead of manually editing semantic model objects or relationships, you can int
 - **Schema updates**
   - Rename tables and columns  
   - Create or modify relationships  
-  - Generate DAX measures using natural language (e.g., totals, growth metrics, or aggregations)  
-  - Create core business measures to support common analytical scenarios  
+  - Generate core DAX business measures using natural language (ex. totals, growth metrics, or aggregations) 
 
 - **Improving AI readiness**
-  - Configure AI instructions to guide how Copilot interprets your model  
-  - Suggest synonyms and descriptions to improve natural language queries  
+  - Configure clear AI instructions and data schema to improve natural language experiences   
   - Recommend optimizations to improve how Copilot understands and uses your data     
 
 ## Where to access Copilot in web modeling
 
 You can use Copilot in web modeling in the Power BI service:
 
-1. Open a semantic model in Model view  
-2. Switch from Viewing mode to Editing mode using the dropdown  
-3. Select Copilot from the ribbon 
+1. Open a semantic model in **Model view**  
+2. Switch from Viewing mode to **Editing mode** using the dropdown  
+3. Select **Copilot** from the ribbon 
 
 From the Copilot pane, you can start with suggested prompts or enter your own questions to analyze or update your model.
 
@@ -51,9 +50,9 @@ From the Copilot pane, you can start with suggested prompts or enter your own qu
 
 ## Controlled model updates
 
-Before responding to your first prompt, Copilot asks for your permission before reviewing your model or suggesting changes. This is a one-time permission prompt that appears at the start of each Copilot session to ensure no updates are made without your approval.
+Before responding to your first prompt, Copilot asks for your permission before reviewing your model or suggesting changes. This is a one-time permission prompt that appears at the start of each Copilot session to ensure no updates are made without your approval. By providing approval, you are consenting to Copilot making changes to the specific semantic model you have opened during the full duration of the chat session for changes to be made. 
 
-After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](https://learn.microsoft.com/power-bi/transform-model/service-semantic-model-version-history#:~:text=version%20was%20selected.-,Restore%20to%20a%20previous%20version,semantic%20model%20on%20the%20web). You can use this checkpoint at any time to revert the semantic model back to its original state before any Copilot changes are applied. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
+After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](https://learn.microsoft.com/power-bi/transform-model/service-semantic-model-version-history#:~:text=version%20was%20selected.-,Restore%20to%20a%20previous%20version,semantic%20model%20on%20the%20web). You can use this checkpoint at any time to revert the semantic model back to its original state before any Copilot changes are applied in that specific chat session. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
 
 :::image type="content" source="media/copilot-web-modeling/consent-flow.png" alt-text="Screenshot of the Copilot web modeling consent flow asking for user permission before making model changes." lightbox="media/copilot-web-modeling/consent-flow.png":::
 
@@ -74,11 +73,9 @@ If you see this banner, it means additional Copilot features are available in th
 ## Limitations
 
 -	Using Copilot in web modeling to set verified answers is currently not supported 
--	Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported.
+-	Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported. This is subject to Power BI Copilot limitations [Copilot for Power BI overview - Power BI | Microsoft Learn](../create-reports/copilot-introduction.md#considerations-and-limitations) and licensing requirements [Enable Fabric Copilot for Poewr BI - Power BI | Microsoft Learn](../create-reports/copilot-enable-power-bi.md#licensing-requirements).
 
 ## Related content
 
-- [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
-- [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
-- [Update your data model to work well with Copilot](copilot-evaluate-data.md)
+- [Edit semantic models in the Power BI service](service-edit-data-models.md)
+
