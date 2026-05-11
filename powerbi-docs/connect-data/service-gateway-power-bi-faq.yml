@@ -22,14 +22,11 @@ sections:
       - question: |
          Do I need to upgrade the on-premises data gateway?
         answer: |
-         It depends on the gateway:
+         Yes, keep your on-premises data gateway on a currently supported version. The same support window applies to both personal mode and standard mode. Power BI Pro, Power BI Premium, and Azure Analysis Services support each gateway version for a limited time — generally up to 12 months from its release date — so that compatibility, reliability, and security improvements stay in effect. As a version approaches end of support, you receive warnings. After that, the service can block scheduled refresh, on-demand refresh, and query operations that route through that gateway.
 
-         - **On-premises data gateway (personal mode)**: No, you can keep using it for Power BI.
-         - **On-premises data gateway (standard mode)**: Yes, keep it on a currently supported version. Power BI Pro, Power BI Premium, and Azure Analysis Services support each gateway version for a limited time — generally up to 12 months from its release date — so that compatibility, reliability, and security improvements stay in effect. As a version approaches end of support, you receive warnings. After that, the service can block scheduled refresh, on-demand refresh, and query operations that route through that gateway.
+         Power BI Desktop, SQL Server Analysis Services, and scenarios that don't route through an on-premises data gateway aren't affected.
 
-           Power BI Desktop, SQL Server Analysis Services, and scenarios that don't route through an on-premises data gateway aren't affected.
-
-           To stay on a supported version, keep your gateway servers on a regular monthly update cadence and treat refresh warnings as upgrade signals. To install the latest version, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+         To stay on a supported version, keep your gateway servers on a regular monthly update cadence and treat refresh warnings as upgrade signals. To install the latest version, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
       - question: |
          Are any special permissions required to install the gateway and manage it in the Power BI service?
