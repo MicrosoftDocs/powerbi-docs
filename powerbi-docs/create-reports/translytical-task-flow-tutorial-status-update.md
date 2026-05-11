@@ -40,6 +40,9 @@ This tutorial creates a project tracking solution where users can update project
 1. Sends an Adaptive Card notification to Microsoft Teams.
 1. Refreshes the report to show the updated data.
 
+> [!NOTE]
+> Updates appear in the report after the data function completes and the report page refreshes—usually within a few seconds, depending on factors like function execution time, query response time, and network conditions. With Import storage mode, the semantic model must be refreshed separately before updated values appear.
+
 ### User flow
 
 The workflow creates a continuous feedback loop between report users:
@@ -50,7 +53,7 @@ The workflow creates a continuous feedback loop between report users:
 
 1. **Update status in report** — The project owner selects the project, chooses a new status, adds notes, and selects the update button.
 
-1. **See real-time update and send notification** — The report refreshes immediately to show the new status, and a notification posts to Teams confirming the change.
+1. **See the update and send notification** — The report shows the new status, and a notification posts to Teams confirming the change.
 
 ### Architecture
 
@@ -830,7 +833,7 @@ Add two buttons: one for updating status and one for requesting a status update.
    > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
 
 > [!NOTE]
-> The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed page shows updated data immediately. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
+> The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed visuals send queries to the source through the semantic model and return the latest data—usually within a few seconds, but the exact timing depends on factors like data function execution time, query response time, and network conditions. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" lightbox="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
 

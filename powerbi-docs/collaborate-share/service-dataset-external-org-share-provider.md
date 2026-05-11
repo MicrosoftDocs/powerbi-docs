@@ -33,6 +33,9 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 
      ![Screenshot of the semantic model settings with the external sharing settings set to apply.](media/service-dataset-external-org-share-provider/external-sharing-dataset.png)
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 > [!NOTE] 
 > If **Allow specific users to turn on external data sharing** is disabled by the Power BI admin for the specific user/user groups, they can't turn on this semantic model property.  
 

@@ -32,6 +32,9 @@ If you're coming to this article from an email notification, and you no longer w
 
 :::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of the section in the semantic model settings for changing Power BI email refresh notifications.":::
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 ## Refresh using Web connector doesn't work properly
 
 If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you've updated your semantic model or report after November 18, 2016, you must use a gateway for refresh to work properly.
