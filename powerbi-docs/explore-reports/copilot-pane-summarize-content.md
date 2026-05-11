@@ -1,4 +1,3 @@
-
 ---
 title: Summarize a Report With Copilot
 description: Learn how to summarize a Power BI report with Copilot, even without edit permissions. Generate insights and overviews in seconds. Try it today.
