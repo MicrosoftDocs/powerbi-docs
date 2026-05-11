@@ -1,5 +1,5 @@
 ---
-title: Summarize a report with Copilot
+title: Summarize a Report With Copilot
 description: Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you.
 author: julcsc
 ms.author: juliacawthra
@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 03/16/2026
+ms.date: 05/11/2026
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
@@ -61,6 +61,46 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
 :::image type="content" source="../create-reports/media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png" alt-text="Screenshot showing and updated view of the report summary response." lightbox="../create-reports/media/copilot-pane-summarize-content/copilot-updated-report-summary-response.png":::
 
 Copilot uses Azure OpenAI to look at the visual metadata on the report and create a natural language summary. By default, Copilot summarizes visuals across the entire report. You can adjust the scope of the summary by specifying the prompt.  The summaries will give a general overview of the data that's currently visualized. 
+
+## Additional entry points for Copilot summaries
+
+In addition to opening the Copilot pane and typing a prompt, Copilot provides quick entry points that let you generate summaries with a single click. These shortcuts reduce friction and make it easier to get insights without needing to manually craft a prompt.
+
+### Summarize shortcut on the ribbon
+
+The **Summarize** button, available on the report ribbon in the Power BI service, helps report consumers quickly get a high-level understanding of their data. When selected, Copilot opens the report pane and generates a concise, report-wide summary that surfaces key trends, performance highlights, and notable changes across pages and visuals. This experience is designed to help users orient themselves quickly before diving deeper into the report.
+
+:::image type="content" source="media/copilot-pane-summarize-content/summarize-ribbon-button.png" alt-text="Screenshot showing the new Summarize button highlighted in the report ribbon." lightbox="media/copilot-pane-summarize-content/summarize-ribbon-button.png":::
+
+To use the Summarize shortcut:
+
+1. Open a report in the Power BI service in view mode.
+1. In the report ribbon, select **Summarize**.
+1. The Copilot pane opens and automatically generates a report-wide executive summary, including key trends, performance highlights, and notable changes.
+
+The summary is generated using the executive summary prompt and doesn't require you to type anything. If a cached summary is available, you see a preview of the summary with a call to action to view the full response. Summaries use the same streaming, citations, and feedback capabilities (copy, thumbs up/down) as standard Copilot responses. New summaries are appended to any existing conversation in the Copilot pane, so you don't lose your chat history.
+
+> [!NOTE]
+> The Summarize ribbon shortcut is available only in the Power BI service in view mode (consumption scenarios). It isn't available in Power BI Desktop or edit mode.
+
+### Copilot summary shortcut on the visual header
+
+For deeper analysis of a specific chart, Copilot summary is also available directly from the visual header. With a single click, Copilot opens the report pane and produces a visual-level, insight-focused summary of the selected visual. The summary calls out what stands out in the chart, such as trend shifts over time, differences across categories or regions, and key drivers of change, without requiring users to manually interpret every data point.
+
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-visual-header-summary.png" alt-text="Screenshot showing the new Copilot summary option highlighted on the visual header." lightbox="media/copilot-pane-summarize-content/copilot-visual-header-summary.png":::
+
+To use the visual header summary shortcut:
+
+1. Hover over a visual in the report to reveal the visual header icons.
+1. Select the **Copilot summary** icon in the visual header.
+1. Copilot opens the report pane and automatically generates a detailed, insight-focused overview of the selected visual's data.
+
+The summary is scoped specifically to the selected visual and reflects the visual's current state, including any applied filters, slicers, or row-level security (RLS). The prompt is automatically submitted, so you don't need to press Enter. The Copilot response clearly indicates that the summary is scoped to the specific visual, and new summaries are appended to any existing chat history in the pane.
+
+> [!NOTE]
+> - The visual header summary shortcut is available in both edit and view mode in the Power BI service, and in Power BI Desktop.
+> - If the visual header is hidden by the report author, the Copilot summary icon isn't available for that visual.
+> - The shortcut is disabled for unsupported visual types, such as key influencers, textbox visuals, decomposition trees, and narrative visuals.
 
 ## Citations
 
