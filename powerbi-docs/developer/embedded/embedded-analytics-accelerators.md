@@ -7,12 +7,15 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
-ms.date: 12/15/2025
+ms.date: 05/11/2026
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
 
 Microsoft's partners offer accelerators to expedite the integration of embedded analytics solutions with your applications. These accelerators are cost-effective and efficient, helping reduce the time to market for Power BI embedded analytics solutions, especially for multitenant, customer-facing applications. They're particularly useful for quickly advancing proof-of-concept (PoC) or pilot projects. Accelerators simplify the implementation process and help with managing Power BI capacity and billing.
+
+>[!IMPORTANT]
+>The embedded analytics accelerator program is no longer accepting new partner submissions. The accelerators listed in this article represent the complete set of available partner solutions. Customers can continue to evaluate and work with these existing accelerators by engaging directly with the listed partners.
 
 Key advantages of using accelerators include:
 
