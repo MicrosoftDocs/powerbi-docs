@@ -37,7 +37,7 @@ Copilot indexing enables Copilot to answer data questions faster and more accura
 
 ## Copilot tooling format (preview)
 
-The Copilot tooling format is a new way to store Copilot metadata for **Prep data for AI**, now available in public preview. For information about its benefits, migration steps, and expected behavior by platform, see [Copilot tooling format](copilot-prepare-data-ai.md#copilot-tooling-format) in the Prep data for AI article.
+The Copilot tooling format is a new way to store Copilot metadata for **Prep data for AI**, now available in public preview. For information about its benefits, migration steps, and expected behavior by platform, see [Copilot tooling format](copilot-prepare-data-ai.md#copilot-tooling-file-format) in the Prep data for AI article.
 
 ## Considerations and limitations
 
