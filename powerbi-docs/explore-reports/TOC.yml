@@ -310,12 +310,18 @@
       href: mobile/mobile-apps-supported-languages.md
 
 # =============================================================================
+# GLOSSARY
+# =============================================================================
+- name: Glossary
+  items:
+  - name: Glossary and terminology
+    href: end-user-glossary.md
+
+# =============================================================================
 # RESOURCES (don't change this - standardized with Fabric)
 # =============================================================================
 - name: Resources
   items:
-  - name: Glossary and terminology
-    href: end-user-glossary.md
   - name: Contribute to Fabric docs
     href: /contribute/
   - name: Microsoft Q & A

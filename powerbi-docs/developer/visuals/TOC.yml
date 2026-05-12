@@ -276,8 +276,6 @@
       href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md
-    - name: Glossary and terminology
-      href: ../../explore-reports/end-user-glossary.md
     - name: Contribute to Fabric docs
       href: /contribute/
     - name: Microsoft Q & A
