@@ -216,6 +216,11 @@ As you can imagine, being able to define filter context within a formula has imm
 
 Answers are provided at the end of this article.
 
+
+## Considerations
+
+Consider that while Power Query Editor is *case sensitive*, DAX and the Analysis Services engine that powers Power BI are *case insensitive* once data is loaded into the front end. Keep this distinction in mind when writing DAX queries.
+
 ## Summary
 
 Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](/dax/).

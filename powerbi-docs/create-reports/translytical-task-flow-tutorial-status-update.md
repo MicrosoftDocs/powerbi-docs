@@ -1,27 +1,27 @@
 ---
 title: Tutorial - Create a status update workflow
-description: In this tutorial, learn how to create a translytical task flow that tracks project status and posts updates to Microsoft Teams.
+description: In this tutorial, learn how to create a translytical task flow that tracks project status, writes updates to a database with full history, and posts notifications to Microsoft Teams.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 03/22/2026
+ms.date: 04/03/2026
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to create a report that tracks project status and posts updates to Teams so that my team stays informed about important changes.
 ---
 
 # Tutorial: Create a status update workflow
 
-In this end-to-end tutorial, you create a translytical task flow that tracks project status and posts updates from a Power BI report to Microsoft Teams. This tutorial demonstrates how to combine data write-back with external API calls to create a complete communication workflow.
+In this end-to-end tutorial, you create a translytical task flow that tracks project status, writes updates back to a database, and posts notifications from a Power BI report to Microsoft Teams. The solution maintains a complete history of all status updates, so you can track how project status has changed over time. This tutorial demonstrates how to combine data write-back with external API calls to create a complete communication workflow.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Create a SQL database in Fabric with project and status tracking tables.
+> * Create a SQL database in Fabric with project and status tracking tables that maintain full history.
 > * Set up a variable library to store configuration separately.
-> * Configure user data functions that update status, request updates, and send Teams notifications.
+> * Configure user data functions that update status, request updates, and post notifications to Teams.
 > * Optionally set up Lakehouse shortcuts with materialized lake views for Direct Lake views.
 > * Integrate user data functions with a Power BI report using data function buttons.
 
@@ -36,9 +36,12 @@ If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fu
 
 This tutorial creates a project tracking solution where users can update project status directly from a Power BI report. When a user updates a status, the system:
 
-1. Writes the new status to the SQL database.
+1. Writes the new status to the SQL database, maintaining a complete history of all status updates.
 1. Sends an Adaptive Card notification to Microsoft Teams.
 1. Refreshes the report to show the updated data.
+
+> [!NOTE]
+> Updates appear in the report after the data function completes and the report page refreshes—usually within a few seconds, depending on factors like function execution time, query response time, and network conditions. With Import storage mode, the semantic model must be refreshed separately before updated values appear.
 
 ### User flow
 
@@ -50,7 +53,7 @@ The workflow creates a continuous feedback loop between report users:
 
 1. **Update status in report** — The project owner selects the project, chooses a new status, adds notes, and selects the update button.
 
-1. **See real-time update and send notification** — The report refreshes immediately to show the new status, and a notification posts to Teams confirming the change.
+1. **See the update and send notification** — The report shows the new status, and a notification posts to Teams confirming the change.
 
 ### Architecture
 
@@ -58,10 +61,10 @@ The solution connects these components within Microsoft Fabric:
 
 | Component | Purpose |
 |-----------|---------|
-| **Fabric SQL Database** | Stores project and status update records. Contains the `Project` table, `Status updates` table, and `Project status` view. |
+| **Fabric SQL Database** | Stores project and status update records with full history. Contains the `Project` table, `Status updates` table (which maintains a complete history of all changes), and `Project status` view. |
 | **Lakehouse** (optional) | Provides shortcuts to the SQL database tables for Direct Lake views. Use when you need materialized lake views for analytics. |
 | **Variable Library** | Stores configuration values like the Teams webhook URL and report URL. Update values without republishing functions. |
-| **User Data Functions** | Python functions that handle the write-back to SQL and send Teams notifications via Adaptive Cards. |
+| **User Data Functions** | Python functions that handle the write-back to SQL and post notifications to Microsoft Teams via Adaptive Cards. |
 | **Power BI Semantic Model** | Defines the data model, relationships, and measures. Built with the report in Power BI Desktop, but exists as a separate item in the Power BI service. |
 | **Power BI Report** | The user interface where users view projects, select new statuses, and trigger updates via data function buttons. |
 | **Microsoft Teams** | Receives Adaptive Card notifications with status changes and links back to the report. |
@@ -830,7 +833,7 @@ Add two buttons: one for updating status and one for requesting a status update.
    > Enable **Auto-clear** for slicer parameters so the button slicer and notes text reset after the user triggers the function.
 
 > [!NOTE]
-> The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed page shows updated data immediately. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
+> The **Refresh the report after successful outcome** toggle only refreshes the report page when the function runs successfully. For DirectQuery and Direct Lake storage modes, the refreshed visuals send queries to the source through the semantic model and return the latest data—usually within a few seconds, but the exact timing depends on factors like data function execution time, query response time, and network conditions. For Import mode, the semantic model must be refreshed separately before the updated values appear in the report.
 
 :::image type="content" source="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" lightbox="../media/translytical-task-flow-tutorial-status-update/power-bi-report-updating-project-status-button.png" alt-text="Screenshot showing the update project status button in the Power BI report.":::
 

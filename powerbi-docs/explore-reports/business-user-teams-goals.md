@@ -82,8 +82,8 @@ Each project and organization can have its own metrics. You can find all your me
 
 ## Related content
 
-- [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
+- [Add the Power BI app to Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md)
 - [Create scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
 - [Share a data-driven discussion in Microsoft Teams](business-user-teams-share-data.md)
-- [Create reports from data in Microsoft Teams](../collaborate-share/business-user-teams-create-reports.md)
+- [Create reports from data in Microsoft Teams](../collaborate-share/office-integration/business-user-teams-create-reports.md)

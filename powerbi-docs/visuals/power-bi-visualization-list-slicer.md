@@ -8,7 +8,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
-ms.date: 10/01/2025
+ms.date: 04/09/2026
 #customer intent: As a Power BI user, I want to learn about the List slicer (preview)  feature in Power BI Desktop, including how to create and customize it, so I can enhance my reports with interactive filtering options.
 ---
 
@@ -49,6 +49,29 @@ In this quick and easy three-step guide, you create a **List slicer** in Power *
    :::image type="content" source="media/list-slicer/list-slicer-district-highlighted.png" lightbox="media/list-slicer/list-slicer-district-highlighted.png" alt-text="Screenshot of the Data pane, District table, DM selected and highlighted, slicer on canvas displaying district manager names.":::
 
 1. To customize your slicer, select the **Format visual** icon in the **Visualizations** pane. This icon grants you access to all available format settings. You can tailor the slicer's appearance and functionality to your specific requirements.
+
+## Customize list item layout
+
+In the **Multi-button layout** section of the Format pane, you can control how list items are sized within the visual container.
+
+### Fixed size
+
+Toggle **Fixed size** on to specify the exact pixel dimensions for each list item. When the visual container isn't large enough to display all items at the specified size, scroll bars appear automatically. As you resize the visual, items maintain their specified dimensions rather than scaling proportionally.
+
+- For **Vertical** arrangement, set the **Height** value in pixels.
+- For **Horizontal** arrangement, set the **Width** value in pixels.
+- For **Grid** arrangement, set both **Height** and **Width** values in pixels.
+
+Fixed size provides a more natural experience when working with hierarchies. Expanding and collapsing hierarchy levels causes the number of visible items to change dramatically, and fixed-size items ensure consistent spacing as you navigate through the data.
+
+### Fit to space
+
+**Fit to space** (renamed from **Fixed number of buttons**) controls how items fill the visual container:
+
+- **On**: Items grow or shrink to fill the visual container based on the items present. No space is reserved for unoccupied slots.
+- **Off**: The visual reserves space for the specified number of items, even when fewer items exist.
+
+Fixed size and Fit to space are mutually exclusive. When Fixed size is enabled, Fit to space is disabled since dimensions are now controlled explicitly.
 
 ## Build a list slicer hierarchy
 

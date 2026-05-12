@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: concept-article
-ms.date: 05/16/2025
+ms.date: 04/03/2026
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user, I want to learn how to create reports that allow readers to edit the data source so that end users have interactive access to their data.
 ---
@@ -31,7 +31,7 @@ Ready to get started? Choose from two end-to-end tutorials:
 
 * **Data write-back tutorial**: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md) guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report to enable data annotation scenarios.
 
-* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to post status updates from a Power BI report to Microsoft Teams channels.
+* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to write back project status updates to a database with full history tracking and post notifications to Microsoft Teams.
 
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
 
@@ -68,7 +68,6 @@ For working samples of user data functions, see [Translytical task flow examples
 Currently, the following limitations apply to translytical task flows:
 
 * User data functions must return a `str` type to be added to a report.
-* PBIR (Power BI enhanced report) and PBIP (Power BI Project) formats aren't supported.
 * Power BI Embedded is supported only for secure embed scenarios.
 
 The following service limitations can also affect your translytical task flows:
@@ -80,6 +79,6 @@ The following service limitations can also affect your translytical task flows:
 
 * **Data write-back tutorial**: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md) guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report to enable data annotation scenarios.
 
-* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to post status updates from a Power BI report to Microsoft Teams channels.
+* **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to write back project status updates to a database with full history tracking and post notifications to Microsoft Teams.
 
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).

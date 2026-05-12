@@ -46,7 +46,7 @@ The **Related content** pane opens. For a dashboard, it shows all the reports th
 
 :::image type="content" source="./media/end-user-related/power-bi-view-related-dashboard-new.png" alt-text="Screenshot that shows the Related content pane for a dashboard.":::
 
-From here, you can take direct action on the related content, depending on your permissions. For example, select a report or dashboard name to open it. For a listed report, select an icon to [get insights](end-user-insights.md) and more. For a semantic model, review the last refresh date and time, [analyze in Excel](../collaborate-share/service-analyze-in-excel.md), [get insights](end-user-insights.md), refresh, and more.
+From here, you can take direct action on the related content, depending on your permissions. For example, select a report or dashboard name to open it. For a listed report, select an icon to [get insights](end-user-insights.md) and more. For a semantic model, review the last refresh date and time, [analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md), [get insights](end-user-insights.md), refresh, and more.
 
 ## Considerations and limitations
 

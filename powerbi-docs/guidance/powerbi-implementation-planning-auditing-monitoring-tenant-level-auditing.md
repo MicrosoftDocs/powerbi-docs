@@ -221,7 +221,7 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Which users and groups are assigned to each [Power BI app audience](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience)?
   - Which [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) are assigned, for which reports, and for which users?
   - Which [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) are assigned, for which semantic models, and for which users?
-  - Which semantic models and datamarts have [row-level security](powerbi-implementation-planning-security-report-consumer-planning.md#row-level-security) (RLS) defined?
+  - Which semantic models have [row-level security](powerbi-implementation-planning-security-report-consumer-planning.md#row-level-security) (RLS) defined?
   - Which items are [shared to people in the entire organization](../collaborate-share/service-share-dashboards.md)?
   - Which items are published [publicly on the internet](powerbi-implementation-planning-security-content-creator-planning.md#publish-to-web)?
 - **Understand other permissions**
@@ -1565,7 +1565,7 @@ Here are some useful dimension tables that you can include in the data model.
 - **Item types**: A list of Power BI item types (semantic models, reports, and others).
 - **Capacities**: A list of Premium capacities in the tenant.
 - **Gateways**: A list of data gateways in the tenant.
-- **Data sources**: A list of data sources that are used by any semantic model, dataflow, or datamart.
+- **Data sources**: A list of data sources that are used by any semantic model or dataflow.
 
 Here are some useful fact tables (subjects) that you can include in the data model.
 

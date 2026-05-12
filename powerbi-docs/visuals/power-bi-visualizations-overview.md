@@ -21,9 +21,13 @@ Visuals in a report interact with each other through cross-filtering and cross-h
 
 This article provides an overview of the visualization categories available in Power BI to help you choose the right visual for your needs.
 
+<iframe title="Power BI Visuals" width="600" height="373.5" src="https://msit.powerbi.com/view?r=eyJrIjoiYWUzNGY5ZDEtZThkYi00ZDhjLTk1ZjItYzUxMDVhMDljNTg3IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+
 ## Preview visuals
 
 Some Power BI visuals are available in preview, which means they're still being developed and might change before general availability. Preview visuals let you try new features early and provide feedback to help shape the final product.
+
+Preview visuals display **(Preview)** after their name in the Visualizations pane. They might also appear below a divider that separates generally available visuals from preview visuals.
 
 To use preview visuals in Power BI Desktop, you typically need to enable them in **File** > **Options and settings** > **Options** > **Preview features**. Preview visuals might have limited functionality or known issues that are resolved before general release.
 

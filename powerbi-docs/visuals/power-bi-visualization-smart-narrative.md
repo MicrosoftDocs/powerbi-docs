@@ -7,7 +7,7 @@ ms.reviewer: anphil
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 10/24/2025
+ms.date: 04/13/2026
 ms.custom: video-01UrT-z37sw, sample-2020SU09-Blog-Demo
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
@@ -20,7 +20,7 @@ The smart narrative visualization helps you provide a quick text summary of visu
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/1.png" alt-text="Screenshot showing a smart narrative summary on the right side of a report.":::
 
-Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. When you [add a live Power BI report page to PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-view-present.md), instead of pasting a screenshot of your report's key takeaways, you can add narratives that update with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
+Use smart narrative summaries in your reports to address key takeaways, to point out trends, and to edit the language and format for a specific audience. When you [add a live Power BI report page to PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-view-present.md), instead of pasting a screenshot of your report's key takeaways, you can add narratives that update with every refresh. Your audience can use the summaries to understand the data, get to key points faster, and explain the data to others.
 
 This article describes how to add:
 
@@ -117,9 +117,16 @@ When your report readers hover over that visual, they can see and select the **S
 
 :::image type="content" source="media/power-bi-visualization-smart-narratives/visual-smart-narrative-icon-selected.png" alt-text="Screenshot showing selecting the Smart narrative icon.":::
 
-## Considerations and limitations
+## Copilot mode and Custom mode
 
-The smart narrative feature doesn't support the following functionality:
+The Narrative visual offers two modes:
+
+- **Copilot mode** — Uses AI to generate summaries based on the report data. Requires a Copilot license. The character limit for prompts in Copilot mode is 10,000 characters.
+- **Custom mode** — Lets you write and format the narrative text manually, using dynamic values tied to fields and measures in your data.
+
+For users with a Copilot license, the visual opens in Copilot mode by default. You can switch between modes at any time using the mode selector in the visual's format options.
+
+## Considerations and limitations
 
 - Pinning to a dashboard
 - Using dynamic values and conditional formatting (for example, data bound title)

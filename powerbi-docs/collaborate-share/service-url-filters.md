@@ -262,7 +262,7 @@ URL filters are supported in some embedding scenarios and not in others.
 - [Embedding a report in a secure portal or website](service-embed-secure.md) is supported.
 - URL filters are supported in Power BI Embedded.
 - Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](end-user-pdf.md).
-- [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
+- [Embed with report web part in SharePoint Online](office-integration/service-embed-report-spo.md) doesn't support URL filters.
 - Teams doesn't allow specifying a URL.
 
 ## Related content

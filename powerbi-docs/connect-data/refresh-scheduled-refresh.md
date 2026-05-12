@@ -131,6 +131,9 @@ Sometimes refreshing data might not go as expected, typically due to an issue co
 1. **Update credentials**: If credentials have expired or changed, go to **Data source credentials** in the semantic model settings and re-enter them.
 
 > [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
+> [!NOTE]
 > Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 >
 > **To re-enable refresh after consecutive failures:**

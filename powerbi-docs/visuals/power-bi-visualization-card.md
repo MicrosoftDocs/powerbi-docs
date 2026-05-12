@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/22/2026
+ms.date: 04/09/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the card visual so that I can effectively and more easily build card visuals in Power BI Desktop.
@@ -27,7 +27,6 @@ Combining multiple measures and reference labels in one visual improves report p
 ## Create a card visual
 
 1. In the **Visualizations** pane, select the **Build visual** tab, then select the **Card** visual from the visual gallery.
-
 1. Add a measure or any data column to the **Values** field well.
 
    :::image type="content" source="media/power-bi-visualization-card-visual/build-card.png" alt-text="Screenshot of the Data pane with StoreCount and TotalSalesLY measures added to the Value field well in the Visualizations pane." lightbox="media/power-bi-visualization-card-visual/build-card.png":::
@@ -64,13 +63,22 @@ The **Multi-card layout** customizes how multiple cards fit within the visual co
 
 The **Multi-category layout** formats how each category section is laid out (such as Canada, Germany). Use this setting when you have categories added to your card visual. Within each category section, cards are arranged according to the multi-card layout settings.
 
+### Fixed size and Fit to space
+
+In the **Multicard layout** section, you can control how cards are sized within the visual container:
+
+- **Fixed size**: Toggle this option on to specify the exact pixel dimensions for each card. When the visual container isn't large enough to display all cards at the specified size, scroll bars appear automatically. As you resize the visual, cards maintain their specified dimensions rather than scaling proportionally.
+- **Fit to space**: When on, cards grow or shrink to fill the visual container based on the cards present. When off, the visual reserves space for the specified number of cards, even when fewer cards exist.
+
+Fixed size and Fit to space are mutually exclusive. When Fixed size is enabled, Fit to space is disabled since dimensions are now controlled explicitly.
+
 ## Add an image
 
 The card visual in Power BI lets you create visually appealing cards that combine metrics with multiple image options, including:
 
-- **Image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card. Configure this in the **Image** section of the format pane.
-- **Callout image**: A smaller image within the callout that provides subtle enhancements, working well for branding elements or small visual cues without overwhelming the metric display. Configure this in **Callout** > **Image**.
-- **Category header background image**: A background image for category headers when you have categories added to the card visual. Configure this in the **Category header** section.
+- **Image**: A large, prominent image that can showcase product photos, campaign graphics, or branded imagery directly within the card. Configure this option in the **Image** section of the format pane.
+- **Callout image**: A smaller image within the callout that provides subtle enhancements, working well for branding elements or small visual cues without overwhelming the metric display. Configure this option in **Callout** > **Image**.
+- **Category header background image**: A background image for category headers when you have categories added to the card visual. Configure this option in the **Category header** section.
 
 To add images to your card visual: 
 
@@ -79,6 +87,9 @@ To add images to your card visual:
 
 For all image types, you can add by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
 
+> [!NOTE]
+> If you add a category to your card visual and all cards display the same image instead of different images, check the **Apply settings to** dropdown. When this setting is **All**, the visual applies the same image to every card. Select the specific callout value to assign different images per card, such as images from a data column.
+
 :::image type="content" source="media/power-bi-visualization-card-visual/add-image.png" alt-text="Screenshot of the Visual pane with the Image selections shown to upload an image and customize it." lightbox="media/power-bi-visualization-card-visual/add-image.png":::
 
 ## Add categories
@@ -86,6 +97,14 @@ For all image types, you can add by uploading from your local device, pasting an
 You can add categories to your card visual by dragging a field into the **Categories** field well in the **Build visual** section of the **Visualizations** pane. When you add a category, the card visual expands to display a separate section for each category value, with each section showing data sliced to that category.
 
 The category headers are selectable and filter other visuals in the report when selected. This behavior lets users interact with your card visual to explore data across different segments.
+
+### Category selection
+
+When you select a category header, the other category cards dim to indicate the current selection. You can:
+
+- **Select multiple categories**: Hold **Ctrl** and select other category headers to filter by multiple values.
+- **Deselect a category**: Select the category header again to remove it from the selection.
+- **Control which visuals are filtered**: Use **Edit interactions** in the **Format** menu to choose which visuals on the report page are affected by selections on the card visual.
 
 The layout of category sections is controlled by the **Multi-category layout** section in the format pane under the **Visual** tab. Within each category section, the arrangement of individual cards is still controlled by the **Multi-card layout** section. Elements within each card, such as the callout, image, and reference labels, are controlled by the **Cards** > **Layout** section.
 
@@ -178,7 +197,7 @@ You now have a multi-card visual displaying total units and total revenue.
 
 ### Add a callout image
 
-Add an image to the callout area to make your card more visually engaging. For this example, add two measures that generate SVG images based on the data.
+To make your card more visually engaging, add an image to the callout area. For this example, add two measures that generate SVG images based on the data.
 
 Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
 
@@ -237,13 +256,9 @@ Each card now displays a data-driven image in the callout area alongside its met
 Add a category to display your data broken down by segment.
 
 1. In the **Data** pane, drag **Product Line** to the **Categories** field well.
-
 1. Drag **Channel** to the **Categories** field well to further break down the data by sales channel within each product line.
-
 1. In the **Visualizations** pane, select the **Format visual** icon.
-
 1. Under the **Visual** tab, expand **Multi-category layout**.
-
 1. Expand **Layout**, toggle **Autogrid** to **Off**, and set **Rows** to **6** to display all categories.
 
 > [!NOTE]
@@ -255,7 +270,7 @@ The card visual now shows a separate section for each product line and channel c
 
 ### Add a category header background image
 
-Add a background image to your category headers to make each category stand out further. For this example, add a measure that generates an SVG gradient image.
+To make each category stand out, add a background image to your category headers. For this example, add a measure that generates an SVG gradient image.
 
 Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
 
@@ -356,30 +371,19 @@ Each category header now displays a subtle gradient background that helps visual
 
 ### Add reference labels
 
-Reference labels provide additional context for your main metric. You can also add detail values to reference labels for more granular information.
+Reference labels provide context for your main metric. You can also add detail values to reference labels for more granular information.
 
 1. In the **Visualizations** pane, select the **Format visual** icon.
-
 1. Under the **Visual** tab, expand the **Reference labels** section.
-
 1. In the **Apply settings to** dropdown, select **Units**.
-
 1. Drag **Returns** to the **Add label** data field.
-
 1. In the **Add label** dropdown, select **Returns**.
-
 1. Expand the **Detail** section and toggle it to **On**.
-
 1. Drag **Return rate** to the **Details** data field.
-
 1. In the **Apply settings to** dropdown, select **Revenue**.
-
 1. Drag **Revenue variance** to the **Add label** data field.
-
 1. In the **Add label** dropdown, select **Revenue variance**.
-
 1. Expand the **Detail** section and toggle it to **On**.
-
 1. Drag **Revenue % to target** to the **Details** data field.
 
 Your cards now display reference labels with details: the Units card shows returns with return rate, and the Revenue card shows revenue variance with percentage to target. You can further format reference labels, including using conditional formatting to adjust colors based on values.
@@ -476,39 +480,24 @@ createOrReplace
 To add the top-level images:
 
 1. In the **Visualizations** pane, select the **Format visual** icon.
-
 1. Under the **Visual** tab, expand the **Image** section.
-
 1. In the **Apply settings to** dropdown, select **Cards** = **Units**.
-
 1. Toggle **Image** to **On**.
-
 1. Set **Image source** to **Select from data**.
-
 1. Select **Units image** from the field dropdown.
-
 1. Set **Image fit** to **Fill**.
-
 1. In the **Apply settings to** dropdown, select **Cards** = **Revenue**.
-
 1. Toggle **Image** to **On**.
-
 1. Set **Image source** to **Select from data**.
-
 1. Select **Revenue image** from the field dropdown.
-
 1. Set **Image fit** to **Fill**.
 
 With the bespoke SVG image approach, you can consolidate the reference label and detail information into the image itself. To streamline the card layout:
 
 1. Under **Callout**, turn off the **Image** toggle for each card to remove the callout images.
-
 1. Under **Reference labels**, remove any reference labels you added by deleting them from the **Add label** data fields.
-
 1. Under **Cards** > **Layout**, set **Arrangement** to **Horizontal**.
-
 1. Set the **Order** to **Image**, **Callout**, **Reference labels**.
-
 1. Set **Callout size** to **40%**.
 
 The image now appears in its own section of the card with a horizontal layout that emphasizes the custom SVG visualization alongside the callout value.
@@ -530,20 +519,11 @@ The legacy visuals appear in the unpinned area of the Visualizations pane, where
 
 ## Considerations and limitations
 
-### Category header selection
-
-When you select a category header to filter other visuals, the following limitations apply:
-
-- The selected category header doesn't indicate it's selected.
-- Selection only works when the category header position is set to top or bottom. Left or right positions don't support selection.
-- To deselect a category header, you must select somewhere else on the card. Selecting the category header again doesn't deselect it.
-- You can't use **Edit interactions** to control which visuals the card filters.
-
 ### Frequently asked questions for cards used in reports during preview
 
-#### Why is the column setting reset to 5 or row setting reset to 3 when I had it previously set to a different number?
+#### Why does the column setting reset to 10 or the row setting reset to 10 when I previously set it to a different number?
 
-During preview, you could set a column or row number for a grid, vertical, or horizontal arrangement of cards. After the November 2025 release, only the grid arrangement setting is kept. Vertical and horizontal arrangements reset to 5 columns and 3 rows on existing reports, including published reports. Scrollbars may appear in your existing card visuals to accommodate these settings. Only reports published or created with the card visual during preview are impacted. 
+During preview, you could set a column or row number for a grid, vertical, or horizontal arrangement of cards. After the November 2025 release, only the grid arrangement setting is kept. Vertical and horizontal arrangements reset to 10 columns and 10 rows on existing reports, including published reports. Scrollbars may appear in your existing card visuals to accommodate these settings. Only reports published or created with the card visual during preview are impacted. 
 
 To return your cards to the previous column and row number, update these settings in the November 2025 Power BI Desktop and publish the report or edit the report in the web.
 
@@ -627,9 +607,8 @@ Go to **Category header** settings and turn back on **add image**. Your image sh
 
 Differences between Desktop and the service can happen in two scenarios.
 
--	You are using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. Either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
-   
--	You are using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
+-	You're using a version of Desktop before November 2025, when the card was in preview. When published to the service it was upgraded to be the generally available version of the new card visual. Either update your Power BI Desktop or edit the report in the web after publishing to adjust the style.
+-	You're using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
 
 
 ### Default behavior changes from public preview
@@ -637,12 +616,9 @@ Differences between Desktop and the service can happen in two scenarios.
 During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availability, we made updates to enhance the layout consistency, visual alignment, and overall user experience. 
 
 - **Callout image alignment:** During preview, the callout image aligned was constrained to the callout label text, which may leave part of the callout container empty. Now the image aligns to the callout container. 
-
-- **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.  
-   
+- **Background image fit:** During preview, the background image could repeat to fill the container. Now the **image fit** options align with other visual image options of fit, stretch, fill, and center.   
 - **Reference label outer padding:** During preview, **reference labels** had an **outer padding** setting that unintentionally affected the callout area by pushing elements out of place around the divider. Now the **outer padding** setting is removed from **reference labels**.
-
-- **Autogrid columns:** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **autogrid**, it arranges cards to fill the visual container based the cards present. This setting can be toggled off to return to previous behavior.
+- **Fit to space (renamed from Autogrid):** During preview, the visuals would leave an empty column to match the specified number of columns. With the addition of **Fit to space**, it arranges cards to fill the visual container based on the cards present. This setting can be toggled off to return to previous behavior.
 
 ### Format settings
 

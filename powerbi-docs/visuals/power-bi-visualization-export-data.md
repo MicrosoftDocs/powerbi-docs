@@ -240,7 +240,7 @@ When contacting the report owner or administrator, refer them to these articles:
     |Export type|[Model level format](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) preserved|[Visual level format](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) preserved|
     |---|---|---|
     |[Export to Excel](?tabs=powerbi-service)|Yes|Yes|
-    |[Connected Tables](../collaborate-share/service-analyze-in-excel.md#excel-add-in)|No|No|
+    |[Connected Tables](../collaborate-share/office-integration/service-analyze-in-excel.md#excel-add-in)|No|No|
     |[Export to CSV](?tabs=powerbi-desktop)|Yes|Yes|  
 
 - All exports include [visual calculation](../transform-model/desktop-visual-calculations-overview.md) results, except when exporting underlying data. Fields that are hidden on the visual are never included, except when exporting underlying data.

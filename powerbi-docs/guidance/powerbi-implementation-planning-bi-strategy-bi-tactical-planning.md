@@ -190,7 +190,7 @@ Here are some general considerations to help you successfully measure and monito
 - **Track change**: Visualize the current indicator value, but also the trend over time. Progress is best demonstrated as a gradual improvement. If the indicator exhibits high volatility or variance, consider using a moving average to better illustrate the trend.
 - **Assign an owner**: Ensure that a team or individual is responsible for measuring the indicator and keeping its data current.
 - **Define an acceptable range**: Establish targets or an acceptable range of values to assign status (like _on track_ or _off track_) to the indicator. When values fall outside the target or range, it should prompt someone to investigate or take corrective action.
-- **Set up data-driven alerts**: Set up automated alerts that notify key teams or individuals, for example, [by using Power Automate](../collaborate-share/service-flow-integration.md). That way, timely action can be taken when the indicator is off track.
+- **Set up data-driven alerts**: Set up automated alerts that notify key teams or individuals, for example, [by using Power Automate](../collaborate-share/office-integration/service-flow-integration.md). That way, timely action can be taken when the indicator is off track.
 - **Define actions and interventions**: Clearly describe how you'll use this information to take action, either to address issues or to justify moving to the next step in your BI strategy.
 
 > [!IMPORTANT]

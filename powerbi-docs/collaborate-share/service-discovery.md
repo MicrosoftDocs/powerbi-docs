@@ -32,6 +32,9 @@ If you have an [Admin or Member role](service-roles-new-workspaces.md) in the wo
 
     :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot showing the Make discoverable checkbox under semantic model settings.":::
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 When a semantic model is marked as discoverable, users who don't yet have access to it can find it in the OneLake data hub and request access to it.
 
 ## How to set up semantic model discovery in an organization

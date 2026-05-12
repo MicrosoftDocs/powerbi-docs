@@ -48,7 +48,7 @@ SQL Server Analysis Services supports both multidimensional models, or cubes, an
 
 You can use Power BI Desktop, a client application for Power BI development, to develop a model. A Power BI Desktop model is effectively an Analysis Services tabular model.
 
-You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You develop models by importing data from dataflows and then integrating them with external data sources. The mode depends on whether data is imported into the model or whether it remains in the data source. For more information about the modes, see [Semantic model modes in the Power BI service](service-dataset-modes-understand.md).
+You can develop three different types, or *modes*, of models by using Power BI Desktop: Import, DirectQuery, and Composite. You develop models by importing data from dataflows (legacy) and then integrating them with external data sources. The mode depends on whether data is imported into the model or whether it remains in the data source. For more information about the modes, see [Semantic model modes in the Power BI service](service-dataset-modes-understand.md).
 
 ### Semantic model ownership
 

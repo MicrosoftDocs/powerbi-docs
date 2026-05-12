@@ -140,5 +140,5 @@ Have an idea for a quick measure that isn't already provided? Great! Go to the [
 
 Other articles of interest:
 
-- [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+- [Using visual calculations](desktop-visual-calculations-overview.md)
 - [Using calculations options in Power BI Desktop](desktop-calculations-options.md)

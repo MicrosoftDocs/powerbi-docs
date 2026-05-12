@@ -222,7 +222,7 @@ An example of sending the selectionId to tooltip display calls is shown in the f
 
 ## Add modern tooltips support to the report page
 
-From API version 3.8.3 you can also create [*modern* visual tooltips](../../create-reports/desktop-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
+From API version 3.8.3 you can also create [*modern* visual tooltips](../../visuals/power-bi-visualization-visual-tooltips.md). Modern visual tooltips add data point drill actions to your tooltips, and update the style to match your report theme. To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 :::image type="content" source="media/add-tooltips/modern-tooltip.png" alt-text="Screenshot that shows a modern tooltip.":::
 
@@ -247,5 +247,5 @@ See an example of the modern tooltips feature being used in the [SampleBarChart]
 ## Related content
 
 * [Tooltip utils](utils-tooltip.md)
-* [Customize tooltips in Power BI](../../create-reports/desktop-custom-tooltips.md)
+* [Visual tooltips in Power BI](../../visuals/power-bi-visualization-visual-tooltips.md)
 * [Create tooltips based on report pages in Power BI Desktop](../../create-reports/desktop-tooltips.md)

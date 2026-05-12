@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
-ms.date: 12/15/2025
+ms.date: 05/11/2026
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -72,8 +72,13 @@ In this table, a custom app refers to a web app created using embedded analytics
 |----------|---------|-----------------|-----------------|
 |          | (F SKU) | (A SKU)         | (P and EM SKUs) |
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |✔        |
+<<<<<<< HEAD
 |[Embed for your organization](embed-sample-for-your-organization.md)<sup>1</sup> <sup>2</sup></br>(user owns data)     |✔        |✔         |✔         |
 |Microsoft 365 apps<sup>1</sup> <sup>2</sup></br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✔        |✔        |✔         |
+=======
+|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✔        |✖         |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/office-integration/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/office-integration/service-embed-report-spo.md)</li><li>[Embed in PowerPoint](../../collaborate-share/office-integration/service-embed-report-spo.md)</li></ul>     |✔        |✖        |✔         |
+>>>>>>> fddaee3ab5952bc96a8e14428c0d2dbaa64ee2fd
 |[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✔        |✖        |✔         |
 
 <sup>1</sup> Except for F64+ and P capacities, users need a Power BI Pro, Premium Per User or Power BI Individual Trial.</br>

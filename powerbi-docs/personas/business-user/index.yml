@@ -95,7 +95,7 @@ landingContent:
           - text: Add comments to reports
             url: ../../explore-reports/end-user-comment.md?context=/power-bi/personas/business-user/context/context
           - text: Collaborate in Microsoft Teams
-            url: ../../collaborate-share/service-collaborate-microsoft-teams.md?context=/power-bi/personas/business-user/context/context
+            url: ../../collaborate-share/office-integration/service-collaborate-microsoft-teams.md?context=/power-bi/personas/business-user/context/context
           - text: Export to PDF or PowerPoint
             url: ../../collaborate-share/end-user-pdf.md?context=/power-bi/personas/business-user/context/context
           - text: View content shared with you

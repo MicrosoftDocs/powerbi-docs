@@ -1,5 +1,5 @@
 ---
-title: Using DirectQuery with dataflows
+title: Using DirectQuery with dataflows (legacy)
 description: Learn how to connect Power BI Desktop to the semantic models in your Power BI dataflows by using DirectQuery.
 author: eric-urban
 ms.author: eur
@@ -10,7 +10,9 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Use DirectQuery with dataflows
+# Use DirectQuery with dataflows (legacy)
+
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 Using DirectQuery with Power BI dataflows lets you connect directly to a dataflow without the need to import the data into a semantic model. There are many reasons why using DirectQuery with dataflows, rather than importing data, is useful and helpful. The following are a few examples:
 

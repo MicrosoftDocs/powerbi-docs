@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
 
-With Power BI, you can share cloud connections for semantic models, paginated reports, datamarts, dataflows, and Power Query Online experiences in *Get data*. This capability enables you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source with different credentials or privacy settings, and share the connections with others so they don't need to manage their own separate cloud connections.  
+With Power BI, you can share cloud connections for semantic models, paginated reports, dataflows, and Power Query Online experiences in *Get data*. This capability enables you to create multiple connection objects to the same cloud data source. For example, you can create separate connections to the same data source with different credentials or privacy settings, and share the connections with others so they don't need to manage their own separate cloud connections.  
 
 ## Types of data connections
 
@@ -56,6 +56,9 @@ Most of the settings described in this article are found in the semantic model s
 1. Expand the **Gateway and cloud connections** section.
 
 You can also manage all your connections from anywhere in the Power BI service by selecting the **Settings** gear icon in the upper right corner, and then selecting **Manage connections and gateways**.
+
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
 
 ## Compare shareable cloud connection to other connections
 

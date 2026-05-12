@@ -151,6 +151,9 @@ When you configure automatic page refresh for reports in the Power BI service, t
 > [!NOTE]
 > When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you must provide the credentials for the DirectQuery data source on the semantic model settings menu. You can set up the credentials so that report viewers access this data source with their own identities, respecting any security setup at the source. A change detection measure is evaluated by using the author's credentials.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 ### Page refresh intervals
 
 The report's workspace type affects the page refresh types and intervals that the Power BI service allows. This effect applies to these scenarios:

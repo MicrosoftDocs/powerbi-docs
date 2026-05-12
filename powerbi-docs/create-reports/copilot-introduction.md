@@ -136,7 +136,7 @@ The following requirements pertain to all Copilot experiences in Power BI.
 - Your organization needs a [paid Fabric capacity (F2 or higher)](https://azure.microsoft.com/pricing/details/microsoft-fabric/) or [Power BI Premium capacity (P1 or higher)](../enterprise/service-premium-what-is.md). A Power BI Pro or Premium Per User (PPU) license alone isn't sufficient—Copilot requires organizational capacity.
 - Copilot in Microsoft Fabric isn't supported on trial SKUs or trial capacities. Only paid SKUs are supported.
 - Your Fabric capacity needs to be in one of the regions listed in [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
-- If your tenant or capacity is outside the United States or France, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting called [**Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance**](/fabric/admin/service-admin-portal-copilot) in the Fabric admin portal.
+- If your tenant or capacity is outside the United States or EU data boundary, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting called [**Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance**](/fabric/admin/service-admin-portal-copilot) in the Fabric admin portal.
 - Due to GPU availability, Copilot doesn't yet support sovereign clouds.
 
 ### Requirements for the standalone Copilot

@@ -14,23 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Refresh a semantic model created from an Excel workbook on OneDrive or SharePoint Online
 
-> [!IMPORTANT]
-> The following capabilities are deprecated and will no longer be available starting September 29, 2023:
-> - Upload of local workbooks to Power BI workspaces will no longer be allowed.
-> - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
->
-> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
-> - Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
-> - Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
->
-> After October 31, 2023:
-> - You can download existing local workbooks from your Power BI workspace.
-> - You can publish your Excel data model as a Power BI semantic model and schedule refresh.
-> - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
->
-> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
-
-You can import Excel workbooks from your local machine, or from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
+You can import Excel workbooks from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
 ## What are the advantages?
 
@@ -44,7 +28,7 @@ You can refresh the semantic model in the Power BI service. When you manually re
 
 Power BI supports the **Refresh Now** and **Schedule Refresh** options for semantic models that meet the following conditions:  
 
-* The semantic models are created from Power BI Desktop files that are imported from a local drive.
+* The semantic models are created from Power BI Desktop files that are imported from OneDrive or SharePoint Online.
 * Get data or Power Query Editor in Power BI is used to connect to and load the data.
 * The data is from a source that's described in one of the following sections.
 

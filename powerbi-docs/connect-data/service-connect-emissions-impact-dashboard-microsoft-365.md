@@ -107,7 +107,10 @@ Follow the steps below to make sure your semantic model configurations are set c
 
 1. Open the **Scheduled Refresh** option in the semantic model settings. 
 
-    :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-scheduled-refresh.png" alt-text="Screenshot of scheduled refresh button."::: 
+   > [!NOTE]
+   > You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
+   :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-scheduled-refresh.png" alt-text="Screenshot of scheduled refresh button."::: 
 
 1. Open the **Parameters** section and configure the data source once again in the **Data Source** section with the credentials with which you have access to the **Tenant ID** with valid permissions, mentioned in the [prerequisites](#prerequisites) section above. 
 

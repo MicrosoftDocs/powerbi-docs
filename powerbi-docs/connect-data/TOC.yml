@@ -63,6 +63,8 @@
       href: service-connect-cloud-data-sources.md      
     - name: "Create and share cloud data sources in the Power BI service"
       href: service-create-share-cloud-data-sources.md          
+    - name: "Manage semantic model settings"
+      href: service-semantic-model-settings-pane.md
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
@@ -338,7 +340,7 @@
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot analyze in Excel"
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+        href: ../collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
       - name: "Troubleshoot importing Access and Excel .xls files"
@@ -357,5 +359,7 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Third-party compatibility with semantic models"
+      href: semantic-models-third-party.md
     - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md

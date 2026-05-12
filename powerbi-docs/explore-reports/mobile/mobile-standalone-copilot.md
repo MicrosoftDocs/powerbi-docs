@@ -16,7 +16,8 @@ ai-usage: ai-assisted
 # Standalone Copilot in Power BI mobile apps (preview)
 
 > [!IMPORTANT]
-> This feature is in preview.
+> Standalone Copilot in Power BI mobile apps is currently in PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 | :::image type="icon" source="media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: | :::image type="icon" source="media/mobile-apps-logo-images/android-logo-40-px.png" border="false"::: |
 |:---:|:---:|:---:|:---:|

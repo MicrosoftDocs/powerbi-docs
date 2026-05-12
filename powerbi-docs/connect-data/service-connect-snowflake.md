@@ -50,6 +50,9 @@ For information about how you can use the on-premises data gateway, see [What is
 
 If you aren't using the gateway, you're all set. When you have Snowflake credentials configured on your on-premises data gateway, but you're only using that data source in your model, switch the Semantic model settings to **Off** on the gateway for that data model.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 :::image type="content" source="media/service-connect-snowflake/snowflake-gateway-toggle-off.png" alt-text="Screenshot of the expanded gateway connection settings with the toggle set to off.":::
 
 To turn on SSO for a semantic model:

@@ -47,6 +47,9 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 Your semantic model is scheduled to refresh daily by default. You can change the refresh schedule or try refreshing it on demand using **Refresh now** from the semantic model settings.
 
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
+
 ## Customize the template app
 
 You can further customize this template app by downloading the source file from the [Project Web App GitHub repository](https://github.com/OfficeDev/Project-Power-BI-Content-Packs).

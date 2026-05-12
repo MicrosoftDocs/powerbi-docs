@@ -90,7 +90,7 @@ Another way to consider the different refresh types is what they impact and wher
 
 |<br> | Refresh of report visuals | Data refresh | Schema refresh|
 ---------|----------|---------|--------- |
-| What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables, the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables, the visual will only query data already imported to the semantic model on the last data refresh. | **Data is refreshed from the data source.** <br><br>Doesn't apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals. <br><br> For imported tables, the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to imported, DirectQuery, and Direct Lake tables.|
+| What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables, the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables, the visual will only query data already imported to the semantic model on the last data refresh. | **Data is refreshed from the data source.** <br><br>Doesn't apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals. <br><br> For imported tables, the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow (legacy) or SQL Database view. <br><br> Applies to imported, DirectQuery, and Direct Lake tables.|
  
  In **Power BI Desktop**, refresh of report visuals, data refresh, and schema refresh all happen together using:
 
@@ -143,6 +143,9 @@ As the above screenshot shows, Power BI identified this OneDrive refresh as a **
 The semantic model settings page only shows the **OneDrive refresh** section if the semantic model is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Semantic models that aren't connected to source files in OneDrive or SharePoint Online will not show this section. This section displays a link to the OneDrive or SharePoint Online folder where the underlying PBIX file is hosted and a toggle to enable or disable refresh.
 
 ![Screenshot of Semantic Model settings showing the OneDrive Refresh section open.](media/refresh-data/onedrive-refresh-section-semantic-model-settings.png)
+
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
 
 If you disable OneDrive refresh for a semantic model, you can still synchronize your semantic model on demand by selecting **Refresh now** in the semantic model menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the semantic model in Power BI and synchronizes the semantic model if it is. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
@@ -464,9 +467,6 @@ The previous code generates a table with refresh IDs and their corresponding det
 Stopping a semantic model refresh is useful when you want to stop a refresh of a large semantic model during peak time. Use the refresh cancellation feature to stop refreshing semantic models that reside on [Premium](./../enterprise/service-premium-what-is.md), [Premium Per User (PPU)](./../enterprise/service-premium-per-user-faq.yml) or [Power BI Embedded](./../developer/embedded/embedded-analytics-power-bi.md) capacities.
 
 To cancel a semantic model refresh, you need to be a contributor, member, or an admin of the semantic model's workspace. Semantic model refresh cancellation only works with semantic models that use [Import mode](./../connect-data/service-dataset-modes-understand.md#import-mode) or [Composite mode](./../connect-data/service-dataset-modes-understand.md#composite-mode).
-
-> [!NOTE]
-> Semantic models created as part of datamarts aren't supported.
 
 To start a refresh, go to the semantic model you want to refresh, then select **Refresh now**.
 

@@ -1,5 +1,5 @@
 ---
-title: Connect to Power Platform dataflows in Power BI Desktop
+title: Connect to Power Platform dataflows in Power BI Desktop (legacy)
 description: Learn how to easily connect to, use, and get the best performance while using dataflows in Power BI Desktop. 
 author: eric-urban
 ms.author: eur
@@ -11,7 +11,7 @@ ms.date: 09/30/2024
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user I want to learn how to connect to dataflows and get the best performance in Power BI Desktop.
 ---
-# Connect to data created by Power Platform dataflows in Power BI Desktop
+# Connect to data created by Power Platform dataflows in Power BI Desktop (legacy)
 
 In **Power BI Desktop**, you can connect to data created by Power Platform dataflows just like any other data source in Power BI Desktop. Select **Power Platform** > **Dataflows**.
 

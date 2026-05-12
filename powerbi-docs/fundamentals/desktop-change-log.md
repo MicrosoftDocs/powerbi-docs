@@ -814,7 +814,6 @@ Bug fixes/improvements:
 
 Bug fixes/improvements:
 
-- Datamarts data sources fix: primary keys are now supported.
 - Axis scale setting persistence fix through version updates for category axis for scatter, line, stacked area, area and combo charts: now the setting for categorical axis with a log axis will persist. 
 
 ## April 2022 QFE 1
