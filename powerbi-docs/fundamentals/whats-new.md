@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 The May 2026 Power BI update brings visual calculations and custom totals to general availability, adds Copilot summary shortcuts on the report ribbon and visual header, introduces a new Get Data experience in Power BI Desktop preview, and ships multiple reporting features including set as landing page, subscriptions support for reports in org apps, and column fixed width for table and matrix.
 
-For a quick summary of the May features, read on. For a detailed look at these updates and more enhancements, see the [Power BI May 2026 Feature Summary](TBD). You can also [watch the May demos](TBD).
+For a quick summary of the May features, read on. For a detailed look at these updates and more enhancements, see the [Power BI May 2026 Feature Summary](https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/bg-p/fbc_pbiupdatesblog).
 
 > **Download** the [May 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
