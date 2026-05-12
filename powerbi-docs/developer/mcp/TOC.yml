@@ -10,8 +10,6 @@
       href: mcp-servers-overview.md#power-bi-modeling-mcp-server-local
     - name: Get started
       href: https://github.com/microsoft/powerbi-modeling-mcp
-    - name: Tools reference
-      href: mcp-servers/pro-dev-local/tools-local-mcp-server.md
   - name: Power BI MCP Server (cloud)
     items:
     - name: Overview
