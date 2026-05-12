@@ -2,13 +2,22 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items: 
-    - name: "What are Power BI custom visuals"
+    - name: "What are Power BI custom visuals?"
       href: power-bi-custom-visuals.md
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
     - name: "Develop a BI custom visual"
       href: develop-power-bi-visuals.md
+# =============================================================================
+# TUTORIALS
+# =============================================================================  
   - name: Tutorials
     items:
     - name: "Tutorial: Develop a Power BI circle card visual"
@@ -23,6 +32,9 @@
       href: create-r-based-power-bi-desktop.md
     - name: "Build a funnel plot from R script to R visual"
       href: funnel-plot-from-r.md
+# =============================================================================
+# ABOUT POWER BI CUSTOM VISUALS
+# =============================================================================
   - name: About Power BI custom visuals
     items: 
     - name: "Import a Power BI visual"
@@ -33,6 +45,9 @@
       href: samples.md
     - name: "The About dialog"
       href: about-dialog.md
+# =============================================================================
+# DEVELOP YOUR OWN CUSTOM VISUAL
+# =============================================================================
   - name: Develop your own custom visual
     items:
     - name: "Set up your environment for developing a Power BI visual"
@@ -57,6 +72,9 @@
       href: visuals-how-to-debug.md
     - name: "Troubleshoot environment setup"
       href: power-bi-custom-visuals-troubleshoot.md
+# =============================================================================
+# ADD FEATURES TO YOUR CUSTOM VISUAL
+# =============================================================================
   - name: Add features to your custom visual
     expanded: false
     items:
@@ -149,6 +167,9 @@
       href: unit-tests-introduction.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
+# =============================================================================
+# PUBLISH YOUR POWER BI CUSTOM VISUAL
+# =============================================================================
   - name: Publish your Power BI custom visual
     items:
     - name: "Package a Power BI visual"
@@ -163,6 +184,9 @@
       href: guidelines-powerbi-visuals.md
     - name: "Visuals for an organization in Power BI"
       href: power-bi-custom-visuals-organization.md
+# =============================================================================
+# LICENSES
+# =============================================================================
   - name: Licenses
     items:
     - name: Licensing models for AppSource visuals
@@ -171,6 +195,9 @@
       href: licensing-api.md
     - name: Transactability and licensing FAQ
       href: licensing-faq.yml
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items: 
     - name: "Changelog"
@@ -238,6 +265,9 @@
         href: utils-test.md
       - name: "Tooltip utils"
         href: utils-tooltip.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
   - name: Resources
     items:
     - name: "Dev Center"
@@ -246,3 +276,21 @@
       href: https://github.com/MicrosoftDocs/powerbi-docs/blob/live/powerbi-docs/developer/visuals/samples.md
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/
