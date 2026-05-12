@@ -44,7 +44,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Power BI Modeling MCP server"
-            url: mcp-servers-overview.md#power-bi-modeling-mcp-server
+            url: mcp-servers-overview.md#power-bi-modeling-mcp-server-local
       - linkListType: reference
         links:
           - text: "Modeling MCP server GitHub repository"
@@ -53,6 +53,10 @@ landingContent:
   # Card
   - title: Power BI MCP Server (cloud)
     linkLists:
+      - linkListType: overview
+        links:
+          - text: "Remote Power BI MCP server"
+            url: mcp-servers-overview.md#remote-power-bi-mcp-server-cloud
       - linkListType: concept
         links:
           - text: "Remote Power BI MCP server tools"

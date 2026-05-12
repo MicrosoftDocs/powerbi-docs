@@ -7,7 +7,7 @@
   - name: Power BI MCP Server (local)
     items:
     - name: Overview
-      href: mcp-servers-overview.md#power-bi-modeling-mcp-server
+      href: mcp-servers-overview.md#power-bi-modeling-mcp-server-local
     - name: Get started
       href: https://github.com/microsoft/powerbi-modeling-mcp
     - name: Tools reference
@@ -15,7 +15,7 @@
   - name: Power BI MCP Server (cloud)
     items:
     - name: Overview
-      href: mcp-servers-overview.md#remote-power-bi-mcp-server
+      href: mcp-servers-overview.md#remote-power-bi-mcp-server-cloud
     - name: Get started
       href: remote-mcp-server-get-started.md
     - name: Tools reference
