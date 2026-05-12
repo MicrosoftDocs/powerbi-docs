@@ -2,6 +2,9 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items: 
@@ -11,11 +14,17 @@
       href: service-gateway-onprem.md
     - name: "Power BI for Azure users"
       href: powerbi-azure-landing.md
-  - name: Quickstarts
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
     expanded: true
     items: 
     - name: "Connect to data in Power BI Desktop"
       href: desktop-quickstart-connect-to-data.md
+# =============================================================================
+# TUTORIALS
+# =============================================================================
   - name: Tutorials
     expanded: true
     items: 
@@ -31,6 +40,9 @@
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
       href: template-apps-auto-install-tutorial.md                       
+# =============================================================================
+# CONCEPTS
+# =============================================================================
   - name: Concepts
     expanded: true
     items: 
@@ -52,6 +64,9 @@
       href: desktop-directquery-about.md
     - name: "Live connection and DirectQuery comparison"
       href: service-live-connect-dq-datasets.md       
+# =============================================================================
+# HOW-TO GUIDES
+# =============================================================================
   - name: How-to guides
     expanded: true
     items: 
@@ -327,6 +342,9 @@
         href: service-connect-to-smartsheet.md
       - name: "Zendesk"
         href: service-connect-to-zendesk.md
+# =============================================================================
+# TROUBLESHOOT
+# =============================================================================
     - name: Troubleshoot
       items: 
       - name: "Troubleshoot opening Power BI Desktop"
@@ -351,6 +369,9 @@
         href: service-troubleshooting-nested-values.md
       - name: "Troubleshoot sign in with OData feed connections"
         href: desktop-troubleshoot-odata.md     
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -363,3 +384,28 @@
       href: semantic-models-third-party.md
     - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Glossary and terminology
+      href: ../explore-reports/end-user-glossary.md
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

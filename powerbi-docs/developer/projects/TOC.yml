@@ -2,10 +2,20 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
+    expanded: true
     items:
     - name: "What is Power BI Desktop projects?"
       href: projects-overview.md
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+# =============================================================================
+# POWER BI DESKTOP PROJECTS
+# =============================================================================
   - name: Power BI Desktop projects
     expanded: true
     items: 
@@ -23,9 +33,37 @@
       href: projects-deploy-fabric-cicd.md
     - name: "Deploy using Fabric APIs"
       href: /rest/api/fabric/articles/get-started/deploy-project?toc=/power-bi/developer/projects/TOC.json
+# =============================================================================
+# EXTERNAL TOOLS
+# =============================================================================
   - name: External tools
     items:
     - name: External tools in Power BI Desktop
       href: ../../transform-model/desktop-external-tools.md?toc=/power-bi/developer/projects/TOC.yml
     - name: Register an external tool
       href: ../../transform-model/desktop-external-tools-register.md?toc=/power-bi/developer/projects/TOC.yml
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Glossary and terminology
+      href: ../../explore-reports/end-user-glossary.md
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

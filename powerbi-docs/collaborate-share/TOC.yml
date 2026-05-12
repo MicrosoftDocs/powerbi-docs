@@ -12,6 +12,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
   - name: "What's new in Power BI collaboration and integration"
     href: office-integration/whats-new.md

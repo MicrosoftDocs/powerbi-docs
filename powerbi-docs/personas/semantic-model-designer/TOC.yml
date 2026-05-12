@@ -1,18 +1,29 @@
 - name: Power BI semantic model designer documentation
   href: index.yml
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
     - name: Overview
+      expanded: true
       items:
         - name: What is Power BI for semantic model designers?
           href: ../../transform-model/desktop-modeling-view.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: What is a star schema?
           href: ../../guidance/star-schema.md?context=/power-bi/personas/semantic-model-designer/context/context
-    - name: Get started with data modeling
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+    - name: Get started
+      expanded: true
       items:
         - name: Understand model relationships
           href: ../../transform-model/desktop-relationships-understand.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Understand storage modes
           href: ../../transform-model/desktop-storage-mode.md?context=/power-bi/personas/semantic-model-designer/context/context
+# =============================================================================
+# TRANSFORM DATA
+# =============================================================================
     - name: Transform data
       items:
         - name: Query overview
@@ -25,6 +36,9 @@
           href: ../../transform-model/desktop-combine-binaries.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Query folding guidance
           href: ../../guidance/power-query-folding.md?context=/power-bi/personas/semantic-model-designer/context/context
+# =============================================================================
+# BUILD YOUR MODEL
+# =============================================================================
     - name: Build your model
       items:
         - name: Create and manage relationships
@@ -37,6 +51,9 @@
           href: ../../transform-model/desktop-calculated-tables.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Create calculation groups
           href: ../../transform-model/calculation-groups.md?context=/power-bi/personas/semantic-model-designer/context/context
+# =============================================================================
+# LEARN DAX
+# =============================================================================
     - name: Learn DAX
       items:
         - name: Learn DAX basics
@@ -49,6 +66,9 @@
           href: ../../transform-model/desktop-tutorial-create-measures.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: DAX function reference
           href: /dax/dax-function-reference
+# =============================================================================
+# OPTIMIZE PERFORMANCE
+# =============================================================================
     - name: Optimize performance
       items:
         - name: Reduce data model size
@@ -59,6 +79,9 @@
           href: ../../guidance/composite-model-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Optimization guide
           href: ../../guidance/power-bi-optimization.md?context=/power-bi/personas/semantic-model-designer/context/context
+# =============================================================================
+# ADVANCED MODELING
+# =============================================================================
     - name: Advanced modeling
       items:
         - name: Composite models
@@ -71,4 +94,29 @@
           href: ../../guidance/rls-guidance.md?context=/power-bi/personas/semantic-model-designer/context/context
         - name: Use external tools
           href: ../../transform-model/desktop-external-tools.md?context=/power-bi/personas/semantic-model-designer/context/context
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+    - name: Resources
+      items:
+        - name: Glossary and terminology
+          href: ../../explore-reports/end-user-glossary.md
+        - name: Contribute to Fabric docs
+          href: /contribute/
+        - name: Microsoft Q & A
+          href: /answers/
+        - name: Provide feedback
+          items:
+            - name: Fabric ideas
+              href: https://ideas.fabric.microsoft.com/
+            - name: Azure feedback
+              href: https://feedback.azure.com/
+        - name: Community
+          href: https://community.fabric.microsoft.com/
+        - name: Service updates
+          href: https://azure.microsoft.com/updates/
+        - name: Azure Status
+          href: https://azure.status.microsoft/
+        - name: Microsoft Learn training
+          href: /training/fabric/
 

@@ -2,6 +2,9 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items:
@@ -13,7 +16,10 @@
       href: projects-enhanced-report-format.md
     - name: "What is the Power BI Embedded analytics playground?"
       href: power-bi-playground.md
-  - name: Power BI Embedded setup
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
     expanded: true
     items: 
     - name: "Create a Microsoft Entra tenant"
@@ -32,6 +38,9 @@
       href: embedded-performance-best-practices.md
     - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md
+# =============================================================================
+# EMBED CONTENT
+# =============================================================================
   - name: "Embed content"
     items:
     - name: "Create deep links for Power BI mobile apps"
@@ -56,6 +65,9 @@
       href: qanda.md
     - name: Secure embed
       href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+# =============================================================================
+# TOKENS
+# =============================================================================
   - name: Tokens
     items:
     - name: "Embedded analytics access tokens"
@@ -64,12 +76,18 @@
       href: generate-embed-token.md
     - name: "Connect a report using dynamic binding"
       href: embed-dynamic-binding.md
+# =============================================================================
+# EXPORT TO FILE
+# =============================================================================
   - name: Export to file
     items:
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
       href: export-paginated-report.md
+# =============================================================================
+# CAPACITIES AND SKUS
+# =============================================================================
   - name: Capacities and SKUs
     items:
     - name: "Move an embedded app to production"
@@ -86,6 +104,9 @@
       href: azure-pbie-scale-capacity.md
     - name: Pause and start a capacity in Azure
       href: azure-pbie-pause-start.md
+# =============================================================================
+# WORKSPACE SEPARATION AND MULTITENANCY
+# =============================================================================
   - name: Workspace separation and multitenancy
     items:
     - name: "Service principal profiles for multitenancy apps"
@@ -94,6 +115,9 @@
       href: service-principal-profile-sdk.md
     - name: "Migrate to the service principal profiles model"
       href: migration-to-sp-profiles.md
+# =============================================================================
+# SECURITY
+# =============================================================================
   - name: Security
     items:
     - name: Power BI security
@@ -112,10 +136,16 @@
       href: rls-sso.md
     - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
+# =============================================================================
+# PARTNER SOLUTIONS
+# =============================================================================
   - name: Partner solutions
     items:
     - name: "Embedded analytics solution accelerators"
       href: embedded-analytics-accelerators.md
+# =============================================================================
+# POWER BI MOBILE APP ADMINISTRATION
+# =============================================================================
   - name: Power BI mobile app administration
     items:
     - name: "Configure mobile app settings (MDM)"
@@ -128,6 +158,9 @@
       href: ../../explore-reports/mobile/mobile-apps-launch-item.md
     - name: "Use NFC tags with Power BI"
       href: ../../explore-reports/mobile/mobile-apps-nfc-tags.md
+# =============================================================================
+# SUPPORT
+# =============================================================================
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"
@@ -136,6 +169,9 @@
       href: troubleshoot-rest-api.md
     - name: "Embedding FAQ"
       href: embedded-faq.yml
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items:
     - name: APIs
@@ -158,6 +194,9 @@
       href: /cli/azure/powerbi
     - name: Power BI glossary
       href: pbi-glossary.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
   - name: Resources
     items:
     - name: "Power BI Dev Camp"
@@ -170,7 +209,23 @@
       href: /javascript/api/overview/powerbi/
     - name: "Developer samples and scripts"
       href: https://go.microsoft.com/fwlink/?linkid=851293
-    - name: "Power BI community"
-      href: https://go.microsoft.com/fwlink/?linkid=848280
-    - name: "Stack Overflow"
-      href: https://go.microsoft.com/fwlink/?linkid=2153505
+    - name: Glossary and terminology
+      href: ../../explore-reports/end-user-glossary.md
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

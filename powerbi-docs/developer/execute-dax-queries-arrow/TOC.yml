@@ -10,6 +10,7 @@ items:
     href: overview.md
 
 - name: Get started
+  expanded: true
   items:
   - name: Run your first Execute DAX Queries request
     href: get-started.md
