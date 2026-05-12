@@ -2,6 +2,9 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     href: mcp-servers-overview.md
   - name: Power BI MCP Server (cloud)

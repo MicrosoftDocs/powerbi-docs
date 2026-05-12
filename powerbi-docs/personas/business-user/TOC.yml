@@ -8,6 +8,7 @@
 # OVERVIEW (REQUIRED)
 # =============================================================================
 - name: Overview
+  expanded: true
   items:
   - name: What is a Power BI business user?
     href: end-user-consumer.md
@@ -16,6 +17,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
   - name: Sign in for the first time
     href: ../../explore-reports/end-user-sign-in.md?context=/power-bi/personas/business-user/context/context
@@ -190,6 +192,7 @@
 - name: Use Power BI on mobile
   items:
   - name: Overview
+    expanded: true
     items:
     - name: What are the mobile apps?
       href: ../../explore-reports/mobile/mobile-apps-for-mobile-devices.md?context=/power-bi/personas/business-user/context/context
