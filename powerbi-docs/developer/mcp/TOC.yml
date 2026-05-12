@@ -5,7 +5,7 @@
   - name: Overview
     href: mcp-servers-overview.md
   - name: Power BI MCP Server (cloud)
-    items:
+    items:    
     - name: Get started
       href: remote-mcp-server-get-started.md
     - name: Tools reference
@@ -14,7 +14,6 @@
     items:
     - name: Get started
       href: https://github.com/microsoft/powerbi-modeling-mcp
-
   - name: Reference
     items:
     - name: "Model Context Protocol specification"
