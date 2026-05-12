@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 03/09/2026
+ms.date: 05/01/2026
 LocalizationGroup: Create reports
 ---
 # Visual defaults in Power BI reports
@@ -144,6 +144,8 @@ For existing reports, you can update to the latest base theme:
 1. Select **Apply**.
 
 You can also select the **Reset to default** tile (the first theme in the Power BI section of the Themes dropdown) to remove any custom theme and apply the latest base theme to your report.
+
+The **Reset to default** tile in the **View** ribbon's **Themes** dropdown removes any customizations to the current theme or custom theme that's applied to the report, leaving only the chosen base theme. It doesn't affect styling that you've set on individual visuals from the formatting pane. To revert an individual visual to the current theme's defaults, use **Reset to default** on the visual's formatting pane (see [Reset formatting](#reset-formatting)).
 
 > [!TIP]
 > If your custom theme doesn't work with the new modern defaults, you can undo the update to revert to the previous base theme until you're ready to update your custom theme.

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 05/06/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
@@ -111,7 +111,7 @@ Enter a name for your app.
 
 :::image type="content" source="media/org-app-items/org-app-name-new-item.png" alt-text="Screenshot of the Name a new org app modal.":::
 
-Select **Add content** and select org app-supported items from your workspace, and then select **Add to app**.
+Select **Add content**, select org app-supported items from your workspace, and then select **Add to app**.
 
 :::image type="content" source="media/org-app-items/org-app-add-content.png" alt-text="Screenshot of the Add content button.":::
 
@@ -119,9 +119,9 @@ Screenshot of workspace item picker:
 
 :::image type="content" source="media/org-app-items/org-app-item-picker-add-to-app.png" alt-text="Screenshot of the org app item picker for adding content.":::
 
-### Adding more elements to your org app and arranging the navigation
+### Add more elements to your org app and arrange the navigation
 
-You can add more elements to your org app, like links and an overview page that lists everything in your org app. You can also arrange the navigation as you like by creating sections and reordering elements.
+You can add more elements to your org app, such as links and an overview page that lists everything in your org app. You can also arrange the navigation as you like by creating sections and reordering elements.
 
 Add links to your org app navigation from **Add > Link**.
 
@@ -131,7 +131,7 @@ Add an overview page to your org app that lists everything added to your org app
 
 :::image type="content" source="media/org-app-items/org-app-add-overview.png" alt-text="Screenshot of the Add menu with overview hovered.":::
 
-Once you add the overview page, you can add a custom header by selecting **Add header**.
+After you add the overview page, you can add a custom header by selecting **Add header**.
 
 :::image type="content" source="media/org-app-items/org-app-overview-add-header.png" alt-text="Screenshot showing how to add header to overview.":::
 
@@ -173,7 +173,7 @@ Changes you make from this pane instantly apply to the org app.
 
 :::image type="content" source="media/org-app-items/org-app-edit-settings-about-tab-from-authoring.png" alt-text="Screenshot showing editing org app settings.":::
 
-To set the endorsement level on your org app item, view the **Endorsement** tab. If you have permissions, you can make changes to the endorsement level. The endorsement level set on the org app item is unique to the org app item, not the included items you add to the org app.
+To set the endorsement level on your org app item, view the **Endorsement** tab. If you have permissions, you can make changes to the endorsement level. The endorsement level you set on the org app item is unique to the org app item, not the included items you add to the org app.
 
 ### Customizing your org app
 
@@ -201,11 +201,11 @@ Before closing the pane, select **Apply**. Your changes aren't available or visi
 
 ### Preview your org app before saving changes
 
-To get a sense for what your org app looks like for consumers, select **Preview app**.
+To see what your org app looks like for consumers, select **Preview app**.
 
 :::image type="content" source="media/org-app-items/org-app-preview-app-button-with-tooltip-.png" alt-text="Screenshot of the org app preview button.":::
 
-A preview of your org app is shown. select **Close preview** to make more changes or save your changes.
+A preview of your org app is shown. Select **Close preview** to make more changes or save your changes.
 
 :::image type="content" source="media/org-app-items/org-app-preview.png" alt-text="Screenshot of the org app in preview.":::
 
@@ -270,8 +270,8 @@ Managing permissions on an org app item is similar to managing permissions for a
 
 First, view the access management screen:
 
-- From the org app, select **Share > Manage access**
-- From the workspace, select **... > Manage permissions**
+- From the org app, select **Share > Manage access**.
+- From the workspace, select **... > Manage permissions**.
 
 Screenshot of the "more" menu on an org app item:
 
@@ -302,9 +302,9 @@ Refer to the list for included items and underlying items org apps propagate and
 
 ### Insufficient permissions when managing an org app
 
-Org app items are built to automatically manage access for included items and underlying items. You don't have to independently manage access for items individually. Your org app works as expected for your consumers, without broken views in the org app.
+Org app items automatically manage access for included items and underlying items. You don't need to independently manage access for each item. Your org app works as expected for your consumers, without broken views in the org app.
 
-This means org apps check a user’s share permissions to add or remove items from an org app plus add, modify, or remove a user’s access to an org app. A user who attempts to manage and org app in these ways must have full share permissions on the org app item, included items, and underlying items. Otherwise their changes or attempt to manage access fails.
+This structure means org apps check a user’s share permissions to add or remove items from an org app, plus add, modify, or remove a user’s access to an org app. A user who attempts to manage an org app in these ways must have full share permissions on the org app item, included items, and underlying items. Otherwise, their changes or attempt to manage access fails.
 
 Screenshot of a save scenario where a user doesn't have permissions to manage access on included or underlying items.
 
@@ -320,7 +320,7 @@ If you encounter these messages, ask for share permissions on items associated w
 
 Workspace contributors can create and edit org app items in the workspace. Power BI apps setting that allows contributors to manage and share apps don't apply to org apps.
 
-For org apps, some, but not all, workspace contributors have permissions to manage access for included items. Those contributors might experience messages covered in the section, **Insufficient permissions when managing an org app**. When contributors add or remove items from an org app that have nonworkspace users, the app update fails if the contributor user doesn't have permissions to share the included items. Same with sharing an org app. If a user doesn't have permissions to reshare the included items or semantic models associated with the org app the share fails. When expecting contributors to edit org app items or manage access, consider a different workspace role for the user. Or grant them share permissions on necessary items.
+For org apps, some, but not all, workspace contributors have permissions to manage access for included items. Those contributors might experience messages covered in the section, **Insufficient permissions when managing an org app**. When contributors add or remove items from an org app that have nonworkspace users, the app update fails if the contributor user doesn't have permissions to share the included items. The same rule applies to sharing an org app. If a user doesn't have permissions to reshare the included items or semantic models associated with the org app, the share fails. When expecting contributors to edit org app items or manage access, consider a different workspace role for the user. Or grant them share permissions on necessary items.
 
 ## How to edit an org app
 
@@ -380,5 +380,6 @@ Org app consumers without permissions to edit the org app can view, favorite, an
 ## Considerations and limitations
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
-- Org apps don't support all report toolbar capabilities available in workspace apps, such as subscriptions, bookmarks, and comments.
+- Org apps don't support all report toolbar capabilities available in workspace apps, such as bookmarks and comments.
+- Email subscriptions for Power BI reports in org apps are available in preview. For more information, see [Email subscriptions for reports](../collaborate-share/end-user-subscribe.md).
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.

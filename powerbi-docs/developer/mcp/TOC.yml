@@ -2,23 +2,60 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
+    expanded: true
     items:
     - name: "What are the Power BI MCP servers?"
       href: mcp-servers-overview.md
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
   - name: Get started
+    expanded: true
     items:
     - name: "Get started with the remote Power BI MCP server"
       href: remote-mcp-server-get-started.md
     - name: "Get started with the Power BI Modeling MCP server"
       href: https://github.com/microsoft/powerbi-modeling-mcp
+# =============================================================================
+# DEVELOPER FEATURES
+# =============================================================================
   - name: Developer features
     items:
     - name: "Remote Power BI MCP server tools"
       href: remote-mcp-server-tools.md
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items:
     - name: "Model Context Protocol specification"
       href: https://modelcontextprotocol.io/specification/latest
     - name: "VS Code MCP Documentation"
       href: https://code.visualstudio.com/docs/copilot/customization/mcp-servers
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/
