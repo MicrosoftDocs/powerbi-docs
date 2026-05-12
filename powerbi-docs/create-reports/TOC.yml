@@ -12,6 +12,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
   - name: Tour the report editor
     href: service-the-report-editor-take-a-tour.md
@@ -725,8 +726,6 @@
 # =============================================================================
 - name: Resources
   items:
-  - name: Glossary and terminology
-    href: ../explore-reports/end-user-glossary.md
   - name: Contribute to Fabric docs
     href: /contribute/
   - name: Microsoft Q & A
