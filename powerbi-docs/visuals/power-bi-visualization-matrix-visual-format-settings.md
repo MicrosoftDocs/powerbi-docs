@@ -176,6 +176,10 @@ This setting controls the header alignment, allowing you to choose between left,
 This setting controls the title alignment, allowing you to choose between left, center, or right.
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
 
+#### Column width
+
+[!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
+
 ### Row headers settings
 
 #### Text
