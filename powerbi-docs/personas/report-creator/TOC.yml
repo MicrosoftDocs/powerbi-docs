@@ -1,18 +1,29 @@
 - name: Power BI report creator documentation
   href: index.yml
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
     - name: Overview
+      expanded: true
       items:
         - name: What is Power BI for report creators?
           href: ../../fundamentals/power-bi-overview.md?context=/power-bi/personas/report-creator/context/context
         - name: Get started with Power BI Desktop
           href: ../../fundamentals/desktop-getting-started.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
     - name: Get started
+      expanded: true
       items:
         - name: Get Power BI Desktop
           href: ../../fundamentals/desktop-get-the-desktop.md?context=/power-bi/personas/report-creator/context/context
         - name: Get started with the Power BI service
           href: ../../fundamentals/service-get-started.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# CONNECT TO DATA
+# =============================================================================
     - name: Connect to data
       items:
         - name: Connect to data sources
@@ -23,6 +34,9 @@
           href: ../../connect-data/desktop-shape-and-combine-data.md?context=/power-bi/personas/report-creator/context/context
         - name: Connect to data in the Power BI service
           href: ../../connect-data/service-get-data.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# DESIGN REPORTS
+# =============================================================================
     - name: Design reports
       items:
         - name: Report view in Power BI Desktop
@@ -41,6 +55,9 @@
           href: ../../create-reports/desktop-accessibility-creating-reports.md?context=/power-bi/personas/report-creator/context/context
         - name: Tips for report design
           href: ../../create-reports/desktop-tips-and-tricks-for-creating-reports.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# USE COPILOT
+# =============================================================================
     - name: Use Copilot
       items:
         - name: Copilot in Power BI overview
@@ -51,6 +68,9 @@
           href: ../../create-reports/copilot-create-narrative.md?context=/power-bi/personas/report-creator/context/context
         - name: Write DAX queries with Copilot
           href: ../../create-reports/copilot-ask-data-question.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# CREATE DASHBOARDS
+# =============================================================================
     - name: Create dashboards
       items:
         - name: Introduction to dashboards
@@ -63,6 +83,9 @@
           href: ../../create-reports/service-dashboard-pin-live-tile-from-report.md?context=/power-bi/personas/report-creator/context/context
         - name: Dashboard design tips
           href: ../../create-reports/service-dashboards-design-tips.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# SHARE YOUR WORK
+# =============================================================================
     - name: Share your work
       items:
         - name: Share reports
@@ -75,3 +98,26 @@
           href: ../../collaborate-share/service-create-distribute-apps.md?context=/power-bi/personas/report-creator/context/context
         - name: Work in workspaces
           href: ../../collaborate-share/service-new-workspaces.md?context=/power-bi/personas/report-creator/context/context
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+    - name: Resources
+      items:
+        - name: Contribute to Fabric docs
+          href: /contribute/
+        - name: Microsoft Q & A
+          href: /answers/
+        - name: Provide feedback
+          items:
+            - name: Fabric ideas
+              href: https://ideas.fabric.microsoft.com/
+            - name: Azure feedback
+              href: https://feedback.azure.com/
+        - name: Community
+          href: https://community.fabric.microsoft.com/
+        - name: Service updates
+          href: https://azure.microsoft.com/updates/
+        - name: Azure Status
+          href: https://azure.status.microsoft/
+        - name: Microsoft Learn training
+          href: /training/fabric/
