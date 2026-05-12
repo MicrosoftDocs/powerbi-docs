@@ -17,24 +17,10 @@ ms.date: 11/19/2025
 
 The Power BI MCP servers enable AI agents to interact with Power BI through natural language. Both the local MCP server and the cloud MCP server implement the [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), each exposing specialized tools for different scenarios:
 
-- **Power BI MCP server (local):** Build and modify semantic models programmatically
 - **Power BI MCP server (cloud):** Query data and generate insights from existing models
+- **Power BI MCP server (local):** Build and modify semantic models programmatically
 
 Choose the local server for development and model management workflows, or the cloud server for data analysis and insights scenarios. 
-
-## Power BI MCP server (local)
-
-The local Power BI MCP server runs locally and provides AI agents with comprehensive semantic modeling capabilities. It enables developers and AI applications to interact with Power BI models through natural language, from simple property updates to complex agentic development workflows.
-
-### Key capabilities
-
-- **Natural language model editing** - Create, update, and manage tables, columns, measures, and relationships across Power BI Desktop and Fabric semantic models using conversational commands
-- **Bulk operations at scale** - Execute batch operations on hundreds of objects simultaneously with transaction support and error handling
-- **Best practice application** - Evaluate and implement modeling best practices easily
-- **Agentic development workflows** - Work with TMDL and Power BI Project files, enabling AI agents to autonomously plan and execute complex modeling tasks
-- **DAX query validation** - Execute and validate DAX queries to test measures, troubleshoot calculations, and explore data
-
-**Get started:** [Power BI Modeling MCP server on GitHub](https://github.com/microsoft/powerbi-modeling-mcp)
 
 ## Power BI MCP server (cloud)
 
@@ -57,6 +43,31 @@ The cloud MCP server is ideal for enhancing personal AI assistants like GitHub C
 - Explore data relationships and patterns using natural language
 
 **Get started:** [Set up the cloud MCP server](remote-mcp-server-get-started.md)
+
+## Power BI MCP server (local)
+
+The local Power BI MCP server runs locally and provides AI agents with comprehensive semantic modeling capabilities. It enables developers and AI applications to interact with Power BI models through natural language, from simple property updates to complex agentic development workflows. The server runs on your machine and acts on the models in Power BI Desktop, Fabric workspaces or on Power BI Project files in so changes follow your existing source control and review workflows.
+
+### Key capabilities
+
+- **Natural language model editing** - Create, update, and manage tables, columns, measures, and relationships across Power BI Desktop and Fabric semantic models using conversational commands
+- **Bulk operations at scale** - Execute batch operations on hundreds of objects simultaneously with transaction support and error handling
+- **Best practice application** - Evaluate and implement modeling best practices easily
+- **Agentic development workflows** - Work with TMDL and Power BI Project files, enabling AI agents to autonomously plan and execute complex modeling tasks
+- **DAX query validation** - Execute and validate DAX queries to test measures, troubleshoot calculations, and explore data
+
+### Common scenarios
+
+The local MCP server is ideal for semantic model authors and developers who want to accelerate model development.
+
+**Example use cases:**
+
+- Create or update tables, columns, measures, and relationships through natural language prompts
+- Apply modeling best practices across an existing semantic model in bulk
+- Refactor TMDL or Power BI Project files as part of an agentic development workflow
+- Author and validate DAX measures interactively while building a model
+
+**Get started:** [Set up the local MCP server](https://github.com/microsoft/powerbi-modeling-mcp)
 
 ## About the Model Context Protocol
 

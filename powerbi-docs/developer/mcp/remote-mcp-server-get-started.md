@@ -1,5 +1,5 @@
 ---
-title: Get started with the remote Power BI MCP server
+title: Get started with the cloud Power BI MCP server
 description: Learn how to set up and configure the remote Power BI MCP server to enable AI agents to query Power BI semantic models.
 author: billmath
 ms.author: billmath
@@ -11,24 +11,15 @@ ms.date: 11/19/2025
 #customer intent: As a developer, I want to set up the remote Power BI MCP server so that I can enable AI agents to query my Power BI semantic models using natural language.
 ---
 
-# Get started with the remote Power BI MCP server (preview)
+# Get started with the cloud Power BI MCP server (preview)
 
-The remote Power BI MCP server enables AI agents to query Power BI semantic models using natural language. Through the Model Context Protocol (MCP), AI assistants can retrieve model schemas, generate DAX queries, and execute queries to deliver insights from your data.
+The cloud Power BI MCP server is a cloud-hosted endpoint that enables AI agents to chat with data in Power BI semantic models using natural language. Built on the Model Context Protocol (MCP), it translates your prompts into Power BI operations - generating DAX queries and executing them while respecting your permissions and security policies.
 
 This article shows you how to:
 
-- Connect to the remote Power BI MCP server in Visual Studio Code
+- Connect to the cloud Power BI MCP server in Visual Studio Code
 - Connect GitHub Copilot to your Power BI semantic models
 - Validate the connection with test queries
-
-> [!NOTE]
-> Not all MCP clients support remote endpoints. Verify that your MCP client supports HTTP-based MCP servers before proceeding.
-
-> [!TIP]
-> **Advanced scenario:** For custom agents using Service Principal authentication, see:
-> - [Microsoft Foundry MCP tools](/azure/ai-foundry/agents/how-to/tools/model-context-protocol)
-> - [Power BI service principal setup](/power-bi/developer/embedded/embed-service-principal?tabs=azure-portal#step-3---enable-the-power-bi-service-admin-settings)
-
 
 ## Prerequisites
 
@@ -41,9 +32,9 @@ Before you begin, ensure you have:
 - (Recommended) **Optimized models** - [Prepare your semantic models for AI](/power-bi/create-reports/copilot-prepare-data-ai) to improve query generation quality
  
 
-## Set up the remote Power BI MCP server in VS Code
+## Set up in VS Code
 
-The remote Power BI MCP server is available at:
+The cloud Power BI MCP server is available at:
 
 ```
 https://api.fabric.microsoft.com/v1/mcp/powerbi
@@ -54,7 +45,7 @@ https://api.fabric.microsoft.com/v1/mcp/powerbi
 The easiest way to configure the server is using the one-click installer:
 
 > [!div class="button"]
-> [Install Power BI MCP server](https://vscode.dev/redirect/mcp/install?name=powerbi-remote&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.fabric.microsoft.com%2Fv1%2Fmcp%2Fpowerbi%22%7D)
+> [Install Power BI MCP server (cloud)](https://vscode.dev/redirect/mcp/install?name=powerbi-remote&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.fabric.microsoft.com%2Fv1%2Fmcp%2Fpowerbi%22%7D)
 
 This automatically configures the MCP server in your VS Code settings.
 
@@ -113,12 +104,12 @@ Once configured, verify the setup is working:
 Now that your MCP server is configured, explore the available tools and capabilities:
 
 > [!div class="nextstepaction"]
-> [Remote Power BI MCP server tools](remote-mcp-server-tools.md)
+> [Power BI MCP server tools](remote-mcp-server-tools.md)
 
 ## Related content
 
 - [What are the Power BI MCP servers?](mcp-servers-overview.md)
-- [Remote Power BI MCP server tools](remote-mcp-server-tools.md)
+- [Power BI MCP server tools](remote-mcp-server-tools.md)
 - [Power BI Modeling MCP server on GitHub](https://github.com/microsoft/powerbi-modeling-mcp)
 - [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai)
 - [MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
