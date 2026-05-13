@@ -51,7 +51,7 @@ landingContent:
             url: https://github.com/microsoft/powerbi-modeling-mcp
 
   # Card
-  - title: Power BI MCP Server (cloud)
+  - title: Power BI MCP Server (remote)
     linkLists:
       - linkListType: overview
         links:
