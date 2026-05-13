@@ -7,7 +7,7 @@ ms.reviewer: sgodderidge
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 05/13/2026
 #customer intent: As a developer, I want to understand what the Power BI MCP servers are so that I can determine if they're suitable for my use cases.
 ---
 
@@ -24,7 +24,7 @@ Choose the local server for development and model management workflows, or the r
 
 **Remote vs. local MCP Server**
 
-| Feature | remote MCP Server | Local MCP Server |
+| Feature | Remote MCP Server | Local MCP Server |
 | --- | --- | --- |
 | **Installation** | No installation required | Requires Visual Studio Code or Node.js 20.0+ (npx) |
 | **Transport** | Streamable HTTP | `stdio` |
