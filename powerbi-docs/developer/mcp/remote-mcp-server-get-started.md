@@ -1,5 +1,5 @@
 ---
-title: Get started with the cloud Power BI MCP server
+title: Get started with the remote Power BI MCP server
 description: Learn how to set up and configure the remote Power BI MCP server to enable AI agents to query Power BI semantic models.
 author: billmath
 ms.author: billmath
@@ -11,13 +11,13 @@ ms.date: 11/19/2025
 #customer intent: As a developer, I want to set up the remote Power BI MCP server so that I can enable AI agents to query my Power BI semantic models using natural language.
 ---
 
-# Get started with the cloud Power BI MCP server (preview)
+# Get started with the remote Power BI MCP server (preview)
 
-The cloud Power BI MCP server is a cloud-hosted endpoint that enables AI agents to chat with data in Power BI semantic models using natural language. Built on the Model Context Protocol (MCP), it translates your prompts into Power BI operations - generating DAX queries and executing them while respecting your permissions and security policies.
+The remote Power BI MCP server is a remote-hosted endpoint that enables AI agents to chat with data in Power BI semantic models using natural language. Built on the Model Context Protocol (MCP), it translates your prompts into Power BI operations - generating DAX queries and executing them while respecting your permissions and security policies.
 
 This article shows you how to:
 
-- Connect to the cloud Power BI MCP server in Visual Studio Code
+- Connect to the remote Power BI MCP server in Visual Studio Code
 - Connect GitHub Copilot to your Power BI semantic models
 - Validate the connection with test queries
 
@@ -34,7 +34,7 @@ Before you begin, ensure you have:
 
 ## Set up in VS Code
 
-The cloud Power BI MCP server is available at:
+The remote Power BI MCP server is available at:
 
 ```
 https://api.fabric.microsoft.com/v1/mcp/powerbi
@@ -45,7 +45,7 @@ https://api.fabric.microsoft.com/v1/mcp/powerbi
 The easiest way to configure the server is using the one-click installer:
 
 > [!div class="button"]
-> [Install Power BI MCP server (cloud)](https://vscode.dev/redirect/mcp/install?name=powerbi-remote&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.fabric.microsoft.com%2Fv1%2Fmcp%2Fpowerbi%22%7D)
+> [Install Power BI MCP server (remote)](https://vscode.dev/redirect/mcp/install?name=powerbi-remote&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.fabric.microsoft.com%2Fv1%2Fmcp%2Fpowerbi%22%7D)
 
 This automatically configures the MCP server in your VS Code settings.
 

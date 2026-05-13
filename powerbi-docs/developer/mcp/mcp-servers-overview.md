@@ -15,16 +15,16 @@ ms.date: 11/19/2025
 > [!IMPORTANT]
 > This feature is in preview.
 
-The Power BI MCP servers enable AI agents to interact with Power BI through natural language. Both the local MCP server and the cloud MCP server implement the [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), each exposing specialized tools for different scenarios:
+The Power BI MCP servers enable AI agents to interact with Power BI through natural language. Both the local MCP server and the remote MCP server implement the [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), each exposing specialized tools for different scenarios:
 
-- **Power BI MCP server (cloud):** Query data and generate insights from existing models
+- **Power BI MCP server (remote):** Query data and generate insights from existing models
 - **Power BI MCP server (local):** Build and modify semantic models programmatically
 
-Choose the local server for development and model management workflows, or the cloud server for data analysis and insights scenarios. 
+Choose the local server for development and model management workflows, or the remote server for data analysis and insights scenarios. 
 
-## Power BI MCP server (cloud)
+## Power BI MCP server (remote)
 
-The cloud Power BI MCP server is a hosted endpoint that enables AI agents to query Power BI semantic models. It generates and executes DAX queries using Copilot's intelligence, enabling natural language conversations with your data.  
+The remote Power BI MCP server is a hosted endpoint that enables AI agents to query Power BI semantic models. It generates and executes DAX queries using Copilot's intelligence, enabling natural language conversations with your data.  
 
 ### Key capabilities
 
@@ -35,14 +35,14 @@ The cloud Power BI MCP server is a hosted endpoint that enables AI agents to que
 
 ### Common scenarios
 
-The cloud MCP server is ideal for enhancing personal AI assistants like GitHub Copilot in VS Code. The server uses the authenticated user's permissions to execute queries, ensuring proper security and data access controls.
+The remote MCP server is ideal for enhancing personal AI assistants like GitHub Copilot in VS Code. The server uses the authenticated user's permissions to execute queries, ensuring proper security and data access controls.
 
 **Example use cases:**
 - Ask GitHub Copilot about last quarter's sales trends from your semantic model
 - Generate ad-hoc analyses through conversational queries
 - Explore data relationships and patterns using natural language
 
-**Get started:** [Set up the cloud MCP server](remote-mcp-server-get-started.md)
+**Get started:** [Set up the remote MCP server](remote-mcp-server-get-started.md)
 
 ## Power BI MCP server (local)
 
@@ -93,7 +93,7 @@ You should follow Microsoft security guidance for MCP servers, including enablin
 Choose your path based on your scenario:
 
 > [!div class="nextstepaction"]
-> [Get started with the Power BI MCP server (cloud)](remote-mcp-server-get-started.md)
+> [Get started with the Power BI MCP server (remote)](remote-mcp-server-get-started.md)
 
 > [!div class="nextstepaction"]
 > [Get started with the Power BI MCP server (local)](https://github.com/microsoft/powerbi-modeling-mcp)
@@ -101,7 +101,7 @@ Choose your path based on your scenario:
 
 ## Related content
 
-- [Power BI MCP server (cloud) tools](remote-mcp-server-tools.md)
+- [Power BI MCP server (remote) tools](remote-mcp-server-tools.md)
 - [Power BI REST APIs](/rest/api/power-bi/)
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)
 - [Power BI Embedded analytics](/power-bi/developer/embedded/)
