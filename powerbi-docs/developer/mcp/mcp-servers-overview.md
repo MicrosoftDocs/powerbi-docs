@@ -22,6 +22,18 @@ The Power BI MCP servers enable AI agents to interact with Power BI through natu
 
 Choose the local server for development and model management workflows, or the remote server for data analysis and insights scenarios. 
 
+**Remote vs. local MCP Server**
+
+| Feature | remote MCP Server | Local MCP Server |
+| --- | --- | --- |
+| **Installation** | No installation required | Requires Visual Studio Code or Node.js 20.0+ (npx) |
+| **Transport** | Streamable HTTP | `stdio` |
+| **Authentication** | Microsoft Entra ID (OAuth) | Microsoft Entra ID, Service Principal |
+| **Hosting** | Fabric hosted service | Runs locally on your machine |
+| **Configuration** | Minimal `mcp.json` | Environment-specific setup |
+| **Tools** | Query tools | Tools for metadata read/write, query, database operations |
+| **Status** | Public preview | Public preview |
+
 ## Power BI MCP server (remote)
 
 The remote Power BI MCP server is a hosted endpoint that enables AI agents to query Power BI semantic models. It generates and executes DAX queries using Copilot's intelligence, enabling natural language conversations with your data.  
