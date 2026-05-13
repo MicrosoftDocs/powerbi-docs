@@ -7,7 +7,7 @@ ms.reviewer: sgodderidge
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 05/13/2026
 #customer intent: As a developer, I want to understand what the Power BI MCP servers are so that I can determine if they're suitable for my use cases.
 ---
 
@@ -15,28 +15,26 @@ ms.date: 11/19/2025
 > [!IMPORTANT]
 > This feature is in preview.
 
-The Power BI MCP servers enable AI agents to interact with Power BI through natural language. Both the Modeling MCP server and the Remote MCP server implement the [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), each exposing specialized tools for different scenarios:
+The Power BI MCP servers enable AI agents to interact with Power BI through natural language. Both the local MCP server and the remote MCP server implement the [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro), each exposing specialized tools for different scenarios:
 
-- **Modeling MCP server:** Build and modify semantic models programmatically
-- **Remote MCP server:** Query data and generate insights from existing models
+- **Power BI MCP server (remote):** Query data and generate insights from existing models
+- **Power BI MCP server (local):** Build and modify semantic models programmatically
 
-Choose the Modeling server for development and model management workflows, or the Remote server for data analysis and insights scenarios. 
+Choose the local server for development and model management workflows, or the remote server for data analysis and insights scenarios. 
 
-## Power BI Modeling MCP server
+**Remote vs. local MCP Server**
 
-The Modeling MCP server runs locally and provides AI agents with comprehensive semantic modeling capabilities. It enables developers and AI applications to interact with Power BI models through natural language, from simple property updates to complex agentic development workflows.
+| Feature | Remote MCP Server | Local MCP Server |
+| --- | --- | --- |
+| **Installation** | No installation required | Requires Visual Studio Code or Node.js 20.0+ (npx) |
+| **Transport** | Streamable HTTP | `stdio` |
+| **Authentication** | Microsoft Entra ID (OAuth) | Microsoft Entra ID, Service Principal |
+| **Hosting** | Fabric hosted service | Runs locally on your machine |
+| **Configuration** | Minimal `mcp.json` | Environment-specific setup |
+| **Tools** | Query tools | Tools for metadata read/write, query, database operations |
+| **Status** | Public preview | Public preview |
 
-### Key capabilities
-
-- **Natural language model editing** - Create, update, and manage tables, columns, measures, and relationships across Power BI Desktop and Fabric semantic models using conversational commands
-- **Bulk operations at scale** - Execute batch operations on hundreds of objects simultaneously with transaction support and error handling
-- **Best practice application** - Evaluate and implement modeling best practices easily
-- **Agentic development workflows** - Work with TMDL and Power BI Project files, enabling AI agents to autonomously plan and execute complex modeling tasks
-- **DAX query validation** - Execute and validate DAX queries to test measures, troubleshoot calculations, and explore data
-
-**Get started:** [Power BI Modeling MCP server on GitHub](https://github.com/microsoft/powerbi-modeling-mcp)
-
-## Remote Power BI MCP server
+## Power BI MCP server (remote)
 
 The remote Power BI MCP server is a hosted endpoint that enables AI agents to query Power BI semantic models. It generates and executes DAX queries using Copilot's intelligence, enabling natural language conversations with your data.  
 
@@ -49,14 +47,39 @@ The remote Power BI MCP server is a hosted endpoint that enables AI agents to qu
 
 ### Common scenarios
 
-The Remote MCP server is ideal for enhancing personal AI assistants like GitHub Copilot in VS Code. The server uses the authenticated user's permissions to execute queries, ensuring proper security and data access controls.
+The remote MCP server is ideal for enhancing personal AI assistants like GitHub Copilot in VS Code. The server uses the authenticated user's permissions to execute queries, ensuring proper security and data access controls.
 
 **Example use cases:**
 - Ask GitHub Copilot about last quarter's sales trends from your semantic model
 - Generate ad-hoc analyses through conversational queries
 - Explore data relationships and patterns using natural language
 
-**Get started:** [Set up the Remote MCP server](remote-mcp-server-get-started.md)
+**Get started:** [Set up the remote MCP server](remote-mcp-server-get-started.md)
+
+## Power BI MCP server (local)
+
+The local Power BI MCP server runs locally and provides AI agents with comprehensive semantic modeling capabilities. It enables developers and AI applications to interact with Power BI models through natural language, from simple property updates to complex agentic development workflows. The server runs on your machine and acts on the models in Power BI Desktop, Fabric workspaces or on Power BI Project files in so changes follow your existing source control and review workflows.
+
+### Key capabilities
+
+- **Natural language model editing** - Create, update, and manage tables, columns, measures, and relationships across Power BI Desktop and Fabric semantic models using conversational commands
+- **Bulk operations at scale** - Execute batch operations on hundreds of objects simultaneously with transaction support and error handling
+- **Best practice application** - Evaluate and implement modeling best practices easily
+- **Agentic development workflows** - Work with TMDL and Power BI Project files, enabling AI agents to autonomously plan and execute complex modeling tasks
+- **DAX query validation** - Execute and validate DAX queries to test measures, troubleshoot calculations, and explore data
+
+### Common scenarios
+
+The local MCP server is ideal for semantic model authors and developers who want to accelerate model development.
+
+**Example use cases:**
+
+- Create or update tables, columns, measures, and relationships through natural language prompts
+- Apply modeling best practices across an existing semantic model in bulk
+- Refactor TMDL or Power BI Project files as part of an agentic development workflow
+- Author and validate DAX measures interactively while building a model
+
+**Get started:** [Set up the local MCP server](https://github.com/microsoft/powerbi-modeling-mcp)
 
 ## About the Model Context Protocol
 
@@ -82,15 +105,15 @@ You should follow Microsoft security guidance for MCP servers, including enablin
 Choose your path based on your scenario:
 
 > [!div class="nextstepaction"]
-> [Get started with the Remote MCP server](remote-mcp-server-get-started.md)
+> [Get started with the Power BI MCP server (remote)](remote-mcp-server-get-started.md)
 
 > [!div class="nextstepaction"]
-> [Get started with the Modeling MCP server](https://github.com/microsoft/powerbi-modeling-mcp)
+> [Get started with the Power BI MCP server (local)](https://github.com/microsoft/powerbi-modeling-mcp)
 
 
 ## Related content
 
-- [Remote Power BI MCP server tools](remote-mcp-server-tools.md)
+- [Power BI MCP server (remote) tools](remote-mcp-server-tools.md)
 - [Power BI REST APIs](/rest/api/power-bi/)
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)
 - [Power BI Embedded analytics](/power-bi/developer/embedded/)
