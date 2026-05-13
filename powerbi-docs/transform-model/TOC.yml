@@ -1,13 +1,19 @@
-- name: Transform, shape, and model data in Power BI
+- name: Power BI data transformation, shaping, and modeling documentation
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items: 
-    - name: "Power Query Editor overview"
+    - name: "What is Power Query Editor?"
       href: desktop-query-overview.md
-  - name: Tutorials
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
     expanded: true
     items: 
     - name: "Create your own measures"
@@ -16,16 +22,21 @@
       href: desktop-tutorial-create-calculated-columns.md
     - name: "Create calculation groups"
       href: calculation-groups.md      
+# =============================================================================
+# CONCEPTS
+# =============================================================================
   - name: Concepts
     expanded: true
     items:
-    - name: "Use notebooks with your semantic model (preview)"
+    - name: "Use notebooks with your semantic model"
       href: service-notebooks.md  
-    - name: "Edit data models in the Power BI service (preview)"
+    - name: "Edit data models in the Power BI service"
       href: service-edit-data-models.md  
-    - name: "Use semantic model version history (preview)"
+    - name: "Implement time-based calculations in Power BI"
+      href: desktop-time-intelligence.md
+    - name: "Use semantic model version history"
       href: service-semantic-model-version-history.md  
-    - name: "Using calculations options in Power BI Desktop"
+    - name: "Use calculations options in Power BI Desktop"
       href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
@@ -57,64 +68,53 @@
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
     - name: "Work with value filter behavior (preview)"
       href: value-filter-behavior.md
-  - name: Datamarts (preview)
+    - name: "Export query results (preview)"
+      href: export-query-results.md
+# =============================================================================
+# DATAFLOWS
+# =============================================================================
+  - name: Dataflows (legacy)
     items: 
-    - name: "Introduction to datamarts (preview)"
-      href: datamarts/datamarts-overview.md
-    - name: "Understand datamarts (preview)"
-      href: datamarts/datamarts-understand.md
-    - name: "Get started with datamarts (preview)"
-      href: datamarts/datamarts-get-started.md   
-    - name: "Analyzing datamarts (preview)"
-      href: datamarts/datamarts-analyze.md         
-    - name: "Discover data with datamarts (preview)"
-      href: datamarts/datamarts-discovery.md          
-    - name: "Share datamarts and manage permissions (preview)"
-      href: datamarts/datamarts-sharing-manage-permissions.md         
-    - name: "Create reports with datamarts (preview)"
-      href: datamarts/datamarts-create-reports.md         
-    - name: "Access control in datamarts (preview)"
-      href: datamarts/datamarts-access-control.md     
-    - name: "Datamart administration (preview)"
-      href: datamarts/datamarts-administration.md           
-  - name: Dataflows
-    items: 
-    - name: "Introduction to dataflows"
+    - name: "Introduction to dataflows (legacy)"
       href: dataflows/dataflows-introduction-self-service.md
-    - name: "Create a dataflow"
+    - name: "Create a dataflow (legacy)"
       href: dataflows/dataflows-create.md
-    - name: "Configure and consume a dataflow"
+    - name: "Configure and consume a dataflow (legacy)"
       href: dataflows/dataflows-configure-consume.md   
-    - name: "Configure Power BI Premium dataflow workloads"
+    - name: "Configure Power BI Premium dataflow workloads (legacy)"
       href: dataflows/dataflows-premium-workload-configuration.md        
-    - name: "Dataflows and Azure Data Lake Gen2"
+    - name: "Dataflows and Azure Data Lake Gen2 (legacy)"
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
-    - name: "Premium features of dataflows"
+    - name: "Premium features of dataflows (legacy)"
       href: dataflows/dataflows-premium-features.md      
-    - name: "Use Machine Learning and Cognitive Services with dataflows"
-      href: dataflows/dataflows-machine-learning-integration.md  
-    - name: "Dataflows best practices"
+    - name: "Dataflows best practices (legacy)"
       href: ./dataflows/dataflows-best-practices.md  
-    - name: "Understanding and optimizing dataflow refresh"
+    - name: "Understand and optimize dataflow refresh (legacy)"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
-    - name: "Using DirectQuery with dataflows"
+    - name: "Use DirectQuery with dataflows (legacy)"
       href: ./dataflows/dataflows-directquery.md       
-    - name: "Dataflows considerations and limitations"
+    - name: "Dataflows considerations and limitations (legacy)"
       href: dataflows/dataflows-features-limitations.md
-    - name: "Streaming dataflows (preview)"
+    - name: "Streaming dataflows (retired)"
       href: dataflows/dataflows-streaming.md
-    - name: "Developing dataflows solutions"
+    - name: "Develop dataflows solutions (legacy)"
       href: dataflows/dataflows-develop-solutions.md      
-    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop"
+    - name: "Connect to data created by Power Platform dataflows in Power BI Desktop (legacy)"
       href: desktop-connect-dataflows.md      
+# =============================================================================
+# LOG ANALYTICS
+# =============================================================================
   - name: Log analytics
     items: 
-    - name: "Using Azure Log Analytics in Power BI"
+    - name: "Use Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-overview.md
     - name: "Configuring Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-configure.md
     - name: "Azure Log Analytics in Power BI - FAQ"
       href: log-analytics/desktop-log-analytics-faq.md
+# =============================================================================
+# HOW-TO GUIDES
+# =============================================================================
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -135,8 +135,10 @@
       items: 
       - name: "Combine files (binaries)"
         href: desktop-combine-binaries.md
-      - name: "Use AI Insights"
-        href: desktop-ai-insights.md        
+      - name: "Add a column from examples"
+        href: desktop-add-column-from-example.md
+      - name: "Add a custom column"
+        href: desktop-add-custom-column.md     
     - name: Model your data
       items: 
       - name: "Create quick measures for common calculations"
@@ -155,23 +157,58 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
-      - name: "Using visual calculations (preview)"
+      - name: "Use visual calculations"
         href: desktop-visual-calculations-overview.md
+      - name: "Using DAX user-defined functions (preview)"
+        href: desktop-user-defined-functions-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
       - name: "Import and display KPIs"
         href: desktop-import-and-display-kpis.md
+      - name: "Set and use date tables"
+        href: desktop-date-tables.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
+# =============================================================================
+# EXTERNAL TOOLS
+# =============================================================================
   - name: External tools
     items:
     - name: External tools in Power BI Desktop
       href: desktop-external-tools.md
     - name: Register an external tool
       href: desktop-external-tools-register.md
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items: 
     - name: "Use the Field list in Power BI Desktop"
       href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md
+    - name: "Evaluation configuration for DAX queries"
+      href: desktop-evaluation-configuration.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

@@ -6,8 +6,9 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/21/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Employee Hiring and History sample for Power BI: Take a tour
@@ -28,7 +29,7 @@ This tour explores the Employee Hiring and History built-in sample in the Power 
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -151,7 +152,7 @@ Power BI report visualizations display details about elements when you hover ove
 
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in the sample.":::
 
-These values are the defaults, but you can add any field from the semantic model to appear in a tooltip, or multiple fields. For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+These values are the defaults, but you can add any field from the semantic model to appear in a tooltip, or multiple fields. For more information about tooltips, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 Power BI also supports a report page as a tooltip. To see an example, select the **Actives and Separations** page, and hover over **Seps by SeparationReason**. You can see a tooltip for the **Voluntary** field.
 

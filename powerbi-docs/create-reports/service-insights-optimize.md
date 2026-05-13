@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
@@ -26,6 +27,6 @@ Want to improve Quick Insights results? If you're a semantic model owner, try th
 
 ## Related content
 
-* [Power BI quick insights](../consumer/end-user-insights.md)
+* [Power BI quick insights](../explore-reports/end-user-insights.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

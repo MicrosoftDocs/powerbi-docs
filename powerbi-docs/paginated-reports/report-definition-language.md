@@ -1,12 +1,13 @@
 ---
-title: "Report Definition Language"
+title: Report Definition Language
 description: Learn details about Report Definition Language (RDL). You'll learn that RDL is an XML representation of a paginated report definition.
-ms.date: 03/22/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ---
 
@@ -73,5 +74,5 @@ Report Definition Language (RDL) is an XML representation of a paginated report 
 ## Related content
 
 - [Power BI Report Builder](report-builder-power-bi.md)
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).

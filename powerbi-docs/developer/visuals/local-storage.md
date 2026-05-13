@@ -1,13 +1,13 @@
 ---
 title: Local Storage API in Power BI Visuals
 description: This article describes how to use the Power BI Visuals API to gain access to the browser's local storage.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: shafeeq, jennyf
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/30/2025
+ms.date: 12/15/2025
 ---
 
 # Local Storage API
@@ -184,9 +184,7 @@ export class Visual implements IVisual {
   * Desktop
   * SaaS Embed
   * Mobile
-  <!--- * Report Server --->
-   > [!NOTE]
-   > There is currently no support for Report Server.
+
 * Local storage isn't supported when Exporting to *PDF* or *pptx*.
 * The API is supported only when a user is signed in.
 * A visual’s data is cleared 29 days after the most recent modification time.

@@ -1,12 +1,13 @@
 ---
 title: Endorse your content
 description: Learn how to promote and certify Power BI content.
-author: paulinbar
-ms.author: painbar
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/23/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
 ---
 # Endorse your content
@@ -23,7 +24,7 @@ Power BI provides two ways you can endorse your valuable, high-quality content t
 
 Currently it's possible to endorse:
 * Semantic models
-* Dataflows
+* Dataflows (legacy)
 * Reports
 * Apps
 

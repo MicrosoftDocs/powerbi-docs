@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Report-level auditing"
 description: "Learn about report-level auditing planning for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -23,7 +23,7 @@ This report-level auditing article is targeted at multiple audiences:
 
 The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
-This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying semantic model and/or data source doesn't perform well. For information about auditing and monitoring of semantic models, dataflows, and datamarts, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
+This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying semantic model and/or data source doesn't perform well. For information about auditing and monitoring of semantic models and dataflows (legacy), see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
 This article is the first article in the auditing and monitoring series because it describes built-in tools that content creators are likely to discover first. Ideally, you create shared semantic models (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md) article.
 
@@ -66,7 +66,7 @@ Use the usage metrics reports to:
 - Determine which report pages users access most frequently.
 - Find reports that haven't been viewed recently.
 - View high-level report performance statistics. These statistics can help guide report design optimization efforts, and identify reports that could have intermittent or consistent performance issues.
-- Understand which consumption methods (for example, browser or [Power BI mobile app](../consumer/mobile/mobile-apps-for-mobile-devices.md)) report consumers use. This information can help report creators decide how much effort to put into [optimizing reports for mobile use](../create-reports/power-bi-create-mobile-optimized-report-about.md).
+- Understand which consumption methods (for example, browser or [Power BI mobile app](../explore-reports/mobile/mobile-apps-for-mobile-devices.md)) report consumers use. This information can help report creators decide how much effort to put into [optimizing reports for mobile use](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
 > [!TIP]
 > Power BI captures usage metrics for activity that occurs for content that's been published to the Power BI service (including when it's rendered by using [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)). Access to usage metrics is just one reason to encourage report creators to publish their reports to the Power BI service, rather than sharing Power BI Desktop files.

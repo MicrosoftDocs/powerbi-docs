@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Defender for Cloud Apps for Power BI"
 description: "Learn about using Defender for Cloud Apps with Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -278,7 +278,7 @@ Specific licenses must be in place to monitor a Power BI tenant. Administrators 
 - **Microsoft Defender for Cloud Apps**: Provides Defender for Cloud Apps capabilities for all supported applications (including the Power BI service).
 - **Office 365 Cloud App Security**: Provides Defender for Cloud Apps capabilities for Office 365 apps that are part of the Office 365 E5 suite (including the Power BI service).
 
-Also, if users need to use real-time access policies or session policies in Defender for Cloud Apps, they will need an [Microsoft Entra ID P1 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
+Also, if users need to use real-time access policies or session policies in Defender for Cloud Apps, they will need a [Microsoft Entra ID P1 license](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses).
 
 >[!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team.

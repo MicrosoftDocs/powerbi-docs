@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Data culture"
 description: "Encourage a data culture to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -84,7 +84,7 @@ Data discovery contributes to adoption efforts and the implementation of governa
 
 - Encouraging the use of trusted high-quality data sources.
 - Encouraging users to take advantage of existing investments in available data assets.
-- Promoting the use and enrichment of existing data items (such as a lakehouse, data warehouse, data pipeline, dataflow, or semantic model) or reporting items (such as reports, dashboards, or metrics).
+- Promoting the use and enrichment of existing data items (such as a lakehouse, data warehouse, data pipeline, dataflow (legacy), or semantic model) or reporting items (such as reports, dashboards, or metrics).
 - Helping people understand who owns and manages data assets.
 - Establishing connections between consumers, creators, and owners.
 

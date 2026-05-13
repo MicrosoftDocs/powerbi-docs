@@ -1,12 +1,12 @@
 ---
 title: "Plan deployment to migrate to Power BI"
 description: "Guidance on planning for deployment when migrating to Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -48,7 +48,7 @@ One of the first decisions is to choose the Power BI product. It's a decision be
 - Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing semantic models. When necessary, they can be managed separately from those users who publish reports.
 - What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
 - Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
-- Are there any security considerations related to external guest users? You might need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
+- Are there any security considerations related to external guest users? You might need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 > [!TIP]
 > Consider creating a workspace for a specific business activity or project. You might be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
@@ -57,9 +57,9 @@ One of the first decisions is to choose the Power BI product. It's a decision be
 
 It's helpful to understand how consumers of a solution prefer to view reports and dashboards. Questions to ask include:
 
-- Will a [Power BI app](../consumer/end-user-apps.md) (which comprises reports and dashboards from a single workspace) be the best way to deliver content to consumers, or will direct access to a workspace be sufficient for content viewers?
-- Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
-- Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
+- Will a [Power BI app](../explore-reports/end-user-apps.md) (which comprises reports and dashboards from a single workspace) be the best way to deliver content to consumers, or will direct access to a workspace be sufficient for content viewers?
+- Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
+- Will consumers access content using [mobile devices](../explore-reports/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
 ## Decide whether other content can be created
 

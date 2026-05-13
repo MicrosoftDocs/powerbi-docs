@@ -1,12 +1,13 @@
 ---
-title: "Format ranges on a gauge in Power BI paginated reports | Microsoft Docs"
+title: Format Ranges on a Gauge in Power BI Paginated Reports
 description: Visually indicate with a gauge range in a Power BI paginated report when the pointer value has gone into a certain span of values in Power BI Report Builder.
-ms.date: 03/28/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: how-to
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: saurkumar
 ---
 # Format ranges on a gauge in Power BI paginated reports (Power BI Report Builder)

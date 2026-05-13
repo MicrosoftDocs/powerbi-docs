@@ -1,14 +1,16 @@
 ---
-title: "Operators in expressions in a paginated report"
+title: Operators in Expressions in a Paginated Report
 description: Choose from categories of operators in a paginated report that are supported in an expression that represents actions applied to terms in an expression in Report Builder.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Operators in expressions in a paginated report (Power BI Report Builder)
 

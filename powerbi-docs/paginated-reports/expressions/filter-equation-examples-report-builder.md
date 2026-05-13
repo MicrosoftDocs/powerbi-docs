@@ -1,14 +1,16 @@
 ---
-title: "Filter equation examples in a paginated report"
+title: Filter Equation Examples in a Paginated Report
 description: Find out how to create a paginated report filter. Consider these examples of often-used filters to create your own.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
-ms.date: 06/16/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: updatefrequency5
+ms.update-cycle: 1825-days
 ---
 # Filter equation examples in a paginated report (Power BI Report Builder)
 

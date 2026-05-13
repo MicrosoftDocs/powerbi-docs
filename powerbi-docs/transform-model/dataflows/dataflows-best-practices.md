@@ -1,8 +1,8 @@
 ---
-title: Dataflows best practices
+title: Dataflows best practices (legacy)
 description: Learn about where you can find more information about Power BI best practices and get guidance for dataflows.
-author: davidiseminger
-ms.author: davidi
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -10,7 +10,9 @@ ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data from files
 ---
-# Dataflows best practices
+# Dataflows best practices (legacy)
+
+[!INCLUDE [dataflow-gen2-recommendation](includes/dataflow-gen2-recommendation.md)]
 
 Power BI dataflows are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration. This article provides a list of best practices, with links to articles and other information that will help you understand and use dataflows to their full potential.
 
@@ -27,6 +29,8 @@ If you enable the Azure storage connection on your Power BI workspace, a copy of
 You can use Power Automate or Azure Logic Apps to export your dataflow definition to a JSON file, then store it in SharePoint or Azure Data Lake Gen2. Using either of these methods enables you to back up your dataflow using alternative file storage options and automate the process.
 
 You can also manually export your dataflow to a JSON file and import it to another workspace or location. Manually exporting your dataflow is simple and quick, but is a manual process that must be done each time you want to back up your dataflow. 
+
+Dataflows Save As feature is not supported in the event of disaster recovery, as it creates a copy in the same workspace.
 
 
 ## Dataflows best practices table and links
@@ -60,5 +64,5 @@ The following articles provide more information about dataflows and Power BI:
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
+* [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)

@@ -1,14 +1,14 @@
 ---
 title: Power BI visuals About dialog
 description: Learn what each of the tabs in the Power BI visuals About dialog describes and what each permission setting does.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom:
 ms.topic: concept-article
-ms.date: 07/15/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI user, I want to know what permissions a visual requests so that I can make an informed decision about using it.
 ---
 

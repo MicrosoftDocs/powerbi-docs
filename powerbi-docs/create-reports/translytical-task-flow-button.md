@@ -1,29 +1,25 @@
 ---
 title: Create data function buttons
 description: Learn how to configure buttons in Power BI desktop with the data function action to enable translytical task flows.
-author: kgremban
-ms.author: kgremban
-ms.reviewer: miguelmyers
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/16/2025
+ms.date: 05/01/2026
 LocalizationGroup: Create reports
 #customer intent:
 ---
 
-# Create a data function button in Power BI (preview)
+# Create a data function button in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 You can create a *data function* button in Power BI Desktop and Power BI service. This button takes input from the user and calls a function to take action.
 
->[!NOTE]
->The translytical task flow feature is currently in public preview.
-
 ## Prerequisites
 
-* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI and Fabric.
 * Create a [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview). For examples, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
   >[!IMPORTANT]
@@ -46,15 +42,15 @@ When you write your own functions for translytical task flow scenarios, follow t
 
 ## Configure inputs for function parameters
 
-Each parameter that your user data function takes as input needs to map to an element in the Power BI report. This element can be a button, list, or text slicer; a data field; or measures.
+Each parameter that your user data function takes as input needs to map to an element in the Power BI report. This element can be a button, list, or input slicer; a data field; or measures.
 
 ### Slicers as input controls
 
-The three supported slicer types (button, list, and text) are all preview features, sometimes called *new slicers*. Make sure you enable them as described in the prerequisites.
+You can use button, list, or input slicers as input controls for your data function parameters.
 
 To use a button or list slicer as a parameter, it needs to be linked to a data field from the **Data** pane. If you want to use a button or list slicer only as an input control and not to filter data, remove all visual interactions through **Edit interactions**. For more information about editing interactions, see [Change how visuals interact in a Power BI report](./service-reports-visual-interactions.md).
 
-To use a text slicer as a parameter, linking it to a data field is optional. Link it to a data field only if you want to filter data in the report. Otherwise, create it without using a data field from the **Data** pane. 
+To use an input slicer as a parameter, linking it to a data field is optional. Link it to a data field only if you want to filter data in the report. Otherwise, create it without using a data field from the **Data** pane. 
 
 ### Data fields or measures as input controls
 
@@ -70,6 +66,15 @@ SelectedCustomerID = SELECTEDVALUE(Customer[CustomerID])
 
 For more information, see [Create measures for data analysis](../transform-model/desktop-measures.md)
 
+### Optional parameters with default values
+
+Parameters that have a default value defined in the user data function are optional in the Power BI report. For each optional parameter, you can:
+
+* Leave it unmapped to any element in the report. The default value from the function is used.
+* Map it to a report element without requiring the user to enter a value. If the user doesn't provide a value, the default value from the function is used.
+
+For input slicers mapped to an optional parameter, the default value from the function appears as the placeholder value in the slicer, so users can see the value that's used if they don't enter their own.
+
 ## Set up a data function button
 
 Create a data function button and configure it to connect report elements or user input to a user data function.
@@ -79,9 +84,6 @@ Create a data function button and configure it to connect report elements or use
 1. From the **Type** dropdown menu, select **Data function**.
 
    Once you select the data function option, the following parameters appear: **Workspace**, **Function set**, and **Data function**.
-
-   >[!TIP]
-   >If you don't see the **Data function** option, make sure that the **Translytical task flows** preview feature is enabled in Power BI desktop.
 
 1. Provide the following values for your button:
 
@@ -109,7 +111,7 @@ On a report page, you can create a section with slicers that don't interact with
 
 The following example shows an interactive section with three elements:
 
-* A *text slicer* to input a new order ID
+* An *input slicer* to input a new order ID
 * A *button slicer* to select the order status from one of three options
 * A *button* to submit the input from the slicers to a user data function 
 

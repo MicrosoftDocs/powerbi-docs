@@ -1,15 +1,16 @@
 ---
 title: Publish an app in Power BI
 description: Learn how to publish apps, which are collections of dashboards and reports with built-in navigation.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 03/12/2025
-
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 
 # Publish an app in Power BI
@@ -61,6 +62,26 @@ When the content in your workspace is ready, you can start the publishing proces
     :::image type="content" source="media/service-create-distribute-apps/setup-page.png" alt-text="Screenshot of Setup for your app.":::
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
+
+#### Manage app-scoped Copilot (preview) availability
+
+App-scoped Copilot lets users search across app reports, ask questions, and get summaries based on the curated content within the app (scoped to items they have access to). This full-page Copilot experience is accessible from app navigation and complements report-scoped Copilot: the app experience covers curated app content, while report-scoped Copilot applies within individual reports. See also [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric) to understand both entry points.
+
+These requirements pertain to using [Copilot in Power BI apps](../create-reports/copilot-apps-overview.md). Copilot in Power BI apps is scoped to reports and semantic models users have access to in the app. App-scoped Copilot can surface verified answers prepared by authors; for more information, see [Copilot in Power BI apps](../create-reports/copilot-apps-overview.md).
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-in-app-nav.png" alt-text="Screenshot of app-scoped Copilot in the app nav.":::
+
+- The setting for showing Copilot in the app navigation must be enabled.
+- This setting is unique per app and is managed while updating an app under *Advanced settings > Show Copilot in app navigation*.
+
+:::image type="content" source="media/service-create-distribute-apps/workspace-app-copilot-setting.png" alt-text="Screenshot of app-scoped Copilot setting.":::
+
+> [!NOTE]
+> **Copilot in apps is on by default** and can be managed per app.
+>
+> For more information on Copilot availability, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview).
+> For more information on turning Copilot on and off, generally for Power BI or specifically for Copilot on reports (also shown on reports in apps), see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+
 
 #### Allow saving a copy of a report
 
@@ -122,7 +143,7 @@ On the **Content** tab, you add the content from the workspace to the app.
 
 #### Add Power BI reports with paginated report visuals
 
-If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report will then work with the published version of the paginated report instead of the report stored in the workspace.
+If you include Power BI reports that have paginated report visuals, we recommend including the referred paginated reports in the app. The published Power BI report then works with the published version of the paginated report instead of the report stored in the workspace.
 
 During publishing, Power BI can detect reports with visuals that reference missing paginated reports:
 
@@ -175,6 +196,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     > [!NOTE]
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the semantic models and build content with the semantic models in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
     > - Build permissions only apply to semantic models _in the same workspace_ as the app. If semantic models are in other workspaces, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the other workspace.
+    > - Build permissions don't apply to Paginated Reports. For semantic models associated with Paginated Reports, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the workspace.
 
 ### Publish the app
 
@@ -336,7 +358,9 @@ Keep these things in mind when publishing apps and pushing them automatically to
 - Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## App user view
-App users in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Users who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, users see the All tab view, which is a consolidated view showing all content that they have access to. App users can browse different audience group tabs to see the content for each group. 
+App users in the Power BI service and in the Power BI mobile apps only see the content based on the access permissions for their respective audience groups. Users who have access to multiple audience groups see group tabs on the top bar to switch between different audience views easily. For example, if the user is part of both product team and sales team groups, they see three view tabs, as shown in the following image. By default, users see the All tab view, which is a consolidated view showing all content that they have access to. App users can browse different audience group tabs to see the content for each group.
+
+When the app setting 'Show Copilot in app navigation' is enabled, users see a Copilot entry in the app navigation that allows them to ask questions and get summaries scoped to the app's visible content for their audience. 
 
 **The consolidated *All* view**
 :::image type="content" source="media/service-create-distribute-apps/audience-all-view.png" alt-text="Screenshot showing All view for app consumers.":::
@@ -347,7 +371,7 @@ App users in the Power BI service and in the Power BI mobile apps only see the c
 **Audience group two, *Sales Team***
 :::image type="content" source="media/service-create-distribute-apps/audience-sales-team-view.png" alt-text="Screenshot showing Sales team view for app consumers.":::
 
-Read more about how [app users experience apps](../consumer/end-user-app-view.md).
+Read more about how [app users experience apps](../explore-reports/end-user-app-view.md).
 
 ## Unpublish an app
 Any Admin or Member of a workspace can unpublish the app.
@@ -366,7 +390,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
 - App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of items included in the app.
-- In some cases an app can be too large to update. In these cases a *Can't update the app* message is displayed and the app must be optimized before updating. To optimize a large app try one or more of the following: reduce the number of items in the app; convert reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md); recreate the app as an [org app](../consumer/org-app-items/org-app-items.md). After optimizing the app, try to update it again. If the *Can't update the app* message persists, continue to optimize the app until update is successful.
+- In some cases an app can be too large to update. In these cases a *Can't update the app* message is displayed and the app must be optimized before updating. To optimize a large app try one or more of the following: reduce the number of items in the app; convert reports in the app to a different format like [Power BI enhanced report format](../developer/projects/projects-overview.md); recreate the app as an [org app](../explore-reports/org-app-items.md). After optimizing the app, try to update it again. If the *Can't update the app* message persists, continue to optimize the app until update is successful.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
@@ -375,8 +399,11 @@ To maintain app reliability and performance here are some app, audience group, a
 - Each workspace user or user group is counted per audience group. For example, if you have four workspace users and five app audience groups those four workspace users will be counted per audience group (4x5), accounting for 20 users against the 10,000 users or user groups limit per app. Additionally, each workspace user or user group is counted against the 1,000 users or user groups per audience group.
 - Consider how many workspace users or user groups have access to the app and how many users and user groups you have added to audience groups when creating additional audience groups. It is possible to hit the maximum number of 10,000 users or user groups per app before hitting the limit of 25 audience groups per app. For example, if you create 10 audience groups and have 1,000 users per audience group (accounting for workspace users too) you would hit the 10,000 app user or user groups limit and any additional audience groups with additional users or user groups will block the app from publishing or updating.
 - If you include a report that uses chained semantic models in an app, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), when you add a user to an audience group, make sure to give permissions to all the semantic models in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). The same consideration should be made for semantic models in a different workspace other than the app, make sure to give permissions to semantic models in a different workspace.
+- If you include content that uses a Direct Lake semantic model, consider the [Direct Lake scenarios and permission requirements](/fabric/fundamentals/direct-lake-overview#permission-requirements).
 - If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
 - Guest users require the [Directory Readers](/entra/identity/role-based-access-control/permissions-reference#directory-readers) role in order to update.
+- Custom access requests and automated custom messages aren't supported in reports; however, they're supported in [Power BI apps](../collaborate-share/service-create-distribute-apps.md#customize-the-access-request-behavior).
+- Note that items published in an app have a unique ID generated. The ID for the item in the app and the original item ID in the workspace are two different, unique IDs. When tracking usage or checking logs, please consider these ID differences between original item and app item.
 
 
 Additional things to keep in mind about publishing apps:
@@ -394,7 +421,7 @@ Additional things to keep in mind about publishing apps:
 ## Related content
 
 - [Create apps in *workspaces*](service-create-the-new-workspaces.md)
-- [Install and use apps in Power BI](../consumer/end-user-apps.md)
+- [Install and use apps in Power BI](../explore-reports/end-user-apps.md)
 - [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 - [Power BI Admin Portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

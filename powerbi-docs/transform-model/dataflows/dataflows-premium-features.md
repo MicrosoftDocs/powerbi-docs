@@ -1,8 +1,8 @@
 ---
-title: Premium features of dataflows
+title: Premium features of dataflows (legacy)
 description: Learn how to use the premium features available with Power BI dataflows, like the Enhanced compute engine, DirectQuery, Computed entities, Linked Entities, and Incremental refresh.
-author: davidiseminger
-ms.author: davidi
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
-# Premium features of dataflows
+# Premium features of dataflows (legacy)
 
 Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Some features are only available with a Power BI Premium subscription (which is either a Premium capacity or PPU license). This article describes and details the PPU and Premium-only features and their uses.
 
@@ -26,7 +26,7 @@ The following sections describe each of these features in detail.
 
 
 > [!IMPORTANT]
-> This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric (preview). For more information, see [Getting from dataflows Generation 1 to dataflows Generation 2](/fabric/data-factory/dataflows-gen2-overview).
+> This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric. For more information, see [Upgrade from Dataflow Gen1 to Dataflow Gen2](/fabric/data-factory/dataflow-gen2-migrate-from-dataflow-gen1).
 
 ## The enhanced compute engine
 
@@ -204,7 +204,7 @@ The following articles provide more information about dataflows and Power BI:
 > [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 
 > [!div class="nextstepaction"]
-> [AI with dataflows](dataflows-machine-learning-integration.md)
+> [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 
 > [!div class="nextstepaction"]
 > [Dataflows considerations and limitations](dataflows-features-limitations.md)

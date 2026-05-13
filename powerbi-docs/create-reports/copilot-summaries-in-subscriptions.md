@@ -1,16 +1,18 @@
 ---
-title: Add Copilot summaries to email subscriptions
+title: Add Copilot Summaries to Email Subscriptions
 description: You can add Copilot summaries to Power BI report subscriptions.
-author: nirusrin
-ms.author: nisrinivasan
-ms.reviewer: maggieMSFT
+author: JulCsc
+ms.author: juliacawthra
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/12/2024
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Create report subscriptions with Copilot summaries
 no-loc: [copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: sfi-image-nochange
 #customer intent: As a report subscription creator, I want Copilot report summaries to be delivered in my subscription email.
 ---
 
@@ -87,5 +89,5 @@ The Copilot summary is present in the email even when reports are delivered to O
 - Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scorecards, and dashboards.
 - The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported.
-- Your email may not contain a Copilot summary if Copilot takes too long to respond. This usually happens with large reports.
+- Your email might not contain a Copilot summary if Copilot takes too long to respond. This usually happens with large reports.
 - If you choose filters and "Include my changes" when you save your subscription, the Copilot summary is generated for the report with the filters when the subscription was saved. 

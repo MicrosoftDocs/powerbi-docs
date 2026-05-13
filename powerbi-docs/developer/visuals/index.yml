@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Power BI visuals documentation
+title: Power BI developer visuals documentation
 summary: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need.
 
 metadata:
-  title: Power BI visuals documentation
+  title: Developer visuals documentation
   description: Develop your own Power BI visuals, to be used by you, your organization, or the entire Power BI community. Our documentation provides the information you need.
   services: powerbi
   ms.service: powerbi

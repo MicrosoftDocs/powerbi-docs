@@ -1,12 +1,12 @@
 ---
 title: "Design guidance for date tables in Power BI Desktop"
 description: "Techniques and guidance for creating date tables in Power BI Desktop."
-author: denglishbi
-ms.author: daengli
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -25,7 +25,7 @@ What's more, in order to work with Data Analysis Expressions (DAX) [time intelli
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
 > - The date column must span full years. A year isn't necessarily a calendar year (January-December).
-> - The date table must be [marked as a date table](../transform-model/desktop-date-tables.md#set-your-own-date-table).
+> - If using [Classic time intelligence](../transform-model/desktop-time-intelligence.md#classic-time-intelligence), the date table must be [marked as a date table](../transform-model/desktop-date-tables.md#how-to-set-your-own-date-table). This is not necessary if you use the recommended [Calendar-based time intelligence](../transform-model/desktop-time-intelligence.md#calendar-based-time-intelligence-preview), except in [specific circumstances](../transform-model/desktop-date-tables.md#when-you-must-mark-your-date-table).
 
 You can use any of several techniques to add a date table to your model:
 
@@ -90,6 +90,7 @@ For more information related to this article, check out the following resources:
 
 - [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Auto date/time guidance in Power BI Desktop](auto-date-time.md)
+- [Implement time-based calculations in Power BI](../transform-model/desktop-time-intelligence.md)
 - [Set and use date tables in Power BI Desktop](../transform-model/desktop-date-tables.md)
 - [Self-service data prep in Power BI](../transform-model/dataflows/dataflows-introduction-self-service.md)
 - [CALENDAR function (DAX)](/dax/calendar-function-dax)

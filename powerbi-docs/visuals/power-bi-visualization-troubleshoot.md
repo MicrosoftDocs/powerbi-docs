@@ -1,16 +1,17 @@
 ---
-title: Troubleshoot visualizations in Power BI
+title: Troubleshoot Visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common problems and workarounds to overcome known obstacles or potential problems.
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
-ms.reviewer: juliacawthra
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic: conceptual
-ms.date: 10/10/2024
+ms.topic: concept-article
+ms.date: 12/01/2025
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to be aware of the various considerations, limitations, and workarounds to overcome known obstacles or potential problems with Power BI visualizations, so that I can effectively and easily identify solutions in both Power BI Desktop and the Power BI service.
+ai-usage: ai-assisted
 ---
 # Troubleshoot visualizations in Power BI
 
@@ -112,7 +113,7 @@ This section addresses potential problems that users might encounter with report
 
 ### Series color assignment
 
-In Power BI, the assignment of [theme colors](../create-reports/desktop-report-themes.md#dynamic-series) to series can vary, depending on whether the series is static or dynamic. This variability can lead to inconsistencies in color representation across report views.
+In Power BI, the assignment of [theme colors](../create-reports/desktop-report-themes.md#colors-used-by-dynamic-and-static-series-in-visuals) to series can vary, depending on whether the series is static or dynamic. This variability can lead to inconsistencies in color representation across report views.
 
 For static series, Power BI assigns theme colors based on the index order of the series. However, for dynamic series, colors are allocated on a first-come, first-served basis. As a result, the colors that you choose for a series could change, depending on one of these factors:
 
@@ -129,7 +130,7 @@ This section addresses potential problems that users might encounter when workin
 
 When you're setting visual-specific format options in Power BI, this action can override any of the predefined properties in a custom theme. Explicit formatting at the visual level takes precedence over theme-level settings. As a result, any custom theme settings don't apply if existing format options are set for a particular visual.
 
-For example, to allow [custom theme colors](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) to take effect, you need to reset the visual colors to default formatting. You can reset the colors by selecting **Reset to default** within the color formatting options of the visual. After you clear the specific formatting, the custom theme colors should apply as intended, if an explicit color isn't set for that visual.
+For example, to allow [custom theme colors](../create-reports/desktop-report-themes.md#understand-how-the-report-uses-themes) to take effect, you need to reset the visual colors to default formatting. You can reset the colors by selecting **Reset to default** within the color formatting options of the visual. After you clear the specific formatting, the custom theme colors should apply as intended, if an explicit color isn't set for that visual.
 
 As another example, when you specify **Legend Position = Left** in a custom theme file, but specify something else at the visual level, you should always use **Reset to default** to allow the custom theme to apply.
 
@@ -190,7 +191,6 @@ Likewise, Power BI mobile apps display only if the image URL is anonymously acce
 
 ## Related content
 
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-- [Add visuals to a Power BI report (part 1)](power-bi-report-add-visualizations-i.md)
-- [Add visuals to a Power BI report (part 2)](power-bi-report-add-visualizations-ii.md)
+- [Visualizations overview in Power BI](power-bi-visualizations-overview.md)
+- [Add visuals to a Power BI report](power-bi-report-add-visualizations.md)
 - [Get started formatting report visualizations](service-getting-started-with-color-formatting-and-axis-properties.md)

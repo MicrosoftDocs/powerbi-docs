@@ -1,12 +1,13 @@
 ---
-title: "Excel device information settings for Power BI paginated reports"
+title: Excel Device Information Settings for Power BI Paginated Reports
 description: Learn details about the various device information settings for rendering Power BI paginated reports in Microsoft Excel format.
-ms.date: 1/5/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
-author: kfollis
-ms.author: kfollis
+ms.topic: concept-article
+author: JulCsc
+ms.author: juliacawthra
 ---
 
 # Excel device information settings for Power BI paginated reports
@@ -26,4 +27,4 @@ ms.author: kfollis
 
 ## Related content
 
-- [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
+- [URL parameters in paginated reports](../report-builder-url-parameters.md)

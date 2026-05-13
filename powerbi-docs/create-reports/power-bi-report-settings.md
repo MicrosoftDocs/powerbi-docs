@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/25/2024
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports
@@ -21,14 +22,14 @@ With the report settings in Power BI Desktop and the Power BI service, you can c
 It might be helpful to first read:
 
 - [Create a report from an Excel file in the Power BI service](service-report-create-new.md), to understand the report creation experience.
-- [Reports in Power BI](../consumer/end-user-reports.md), to understand your report readers' experience.
+- [Reports in Power BI](../explore-reports/end-user-reports.md), to understand your report readers' experience.
 
 ## Prerequisites
 
 - For creating reports using Power BI Desktop, see [Work with Report view in Power BI Desktop](desktop-report-view.md).
 - You must [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
 - You need to have edit permission for the report in the Power BI service. See [Roles in workspaces in Power BI](../collaborate-share/service-roles-new-workspaces.md) for details on permission.
-- If you don't already have a report in the Power BI service, you can [install a sample](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and semantic model.
+- If you don't already have a report in the Power BI service, you can [install a sample](sample-datasets.md) containing a dashboard, report, and semantic model.
 
 ## Open the Settings pane
 
@@ -43,7 +44,8 @@ It might be helpful to first read:
     :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Screenshot of the Power BI service, highlighting the File menu on the ribbon and Settings options.":::
 
 ---
-2. Under **Current file**, select **Report settings**. In the **Settings** pane, you see many toggles you can set for this report.
+
+1. Under **Current file**, select **Report settings**. In the **Settings** pane, you see many toggles you can set for this report.
 
     :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Screenshot of report Settings pane in Power BI Desktop." lightbox="media/power-bi-report-settings/desktop-report-settings-pane.png":::
 

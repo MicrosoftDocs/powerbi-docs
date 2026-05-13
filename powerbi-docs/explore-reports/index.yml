@@ -1,0 +1,145 @@
+### YamlMime:Landing
+
+title: Power BI report exploration documentation
+summary: When you're viewing a Power BI report, there are many ways to explore the data beyond just scrolling and reading visuals. This section shows you how to interact with reports—filter, drill, analyze, and customize views—so you can focus on the questions you're trying to answer. 
+metadata:
+  title: Report exploration documentation
+  description: Learn how to view, filter, and interact with Power BI reports and dashboards in the Power BI service, mobile apps, and Microsoft Teams.
+  ms.service: powerbi
+  ms.subservice: pbi-explore
+  ms.topic: landing-page
+  ms.update-cycle: 1095-days
+  author: julcsc
+  ms.author: juliacawthra
+  ms.date: 02/24/2026
+  ai-usage: ai-assisted
+
+landingContent:
+
+  - title: Find what matters
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Search and sort content
+            url: end-user-search-sort.md
+          - text: Find content shared with you
+            url: end-user-shared-with-me.md
+          - text: Chat with your data using Copilot
+            url: copilot-chat-with-data-standalone.md
+
+  - title: Interact with visuals
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Work with visuals in a report
+            url: end-user-visualizations.md
+          - text: Interact with dashboard tiles
+            url: end-user-tiles.md
+          - text: Use ArcGIS maps
+            url: end-user-arcgis.md
+          - text: Interact with small multiples
+            url: ../visuals/power-bi-visualization-small-multiples-interact.md
+
+  - title: Analyze and uncover insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View automatic insights
+            url: end-user-insights.md
+          - text: Analyze fluctuations in visuals
+            url: end-user-analyze-visuals.md
+          - text: Understand anomaly detection
+            url: ../visuals/power-bi-visualization-anomaly-detection.md
+          - text: Use key influencers
+            url: ../visuals/power-bi-visualization-influencers.md
+
+  - title: Compare data and trends
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Compare with small multiples
+            url: ../visuals/power-bi-visualization-small-multiples.md
+          - text: Use the Analytics pane
+            url: ../transform-model/desktop-analytics-pane.md
+          - text: Use scatter charts
+            url: ../visuals/power-bi-visualization-scatter.md
+          - text: Use line charts
+            url: ../visuals/power-bi-line-chart.md
+
+  - title: Customize your view
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Personalize visuals
+            url: end-user-personalize-visuals.md
+          - text: Change report display settings
+            url: end-user-report-view.md
+          - text: Spotlight visuals
+            url: end-user-spotlight.md
+
+  - title: Save and reuse views
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and use bookmarks
+            url: end-user-bookmarks.md
+          - text: Favorite content
+            url: end-user-favorite.md
+          - text: Download reports to Desktop
+            url: ../create-reports/service-export-to-pbix.md
+
+  - title: Export and work with data
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Export to PDF
+            url: ../collaborate-share/end-user-pdf.md
+          - text: Export to PowerPoint
+            url: ../collaborate-share/end-user-powerpoint.md
+          - text: Export data from a visual
+            url: ../visuals/power-bi-visualization-export-data.md
+          - text: View the data behind a visual
+            url: ../visuals/service-reports-show-data.md
+
+  - title: Share and discuss insights
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Add comments to reports
+            url: end-user-comment.md
+          - text: Subscribe to reports and dashboards
+            url: ../collaborate-share/end-user-subscribe.md
+          - text: Set alerts on dashboards
+            url: end-user-alerts.md
+          - text: Use Power BI in Teams
+            url: business-user-teams-share-data.md
+
+  - title: Use accessibility tools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Accessibility overview
+            url: ../create-reports/desktop-accessibility-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use accessibility features
+            url: desktop-accessibility-consuming-tools.md
+          - text: Keyboard shortcuts
+            url: ../create-reports/desktop-accessibility-keyboard-shortcuts.md
+
+  - title: Explore reports on mobile
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are the mobile apps?
+            url: mobile/mobile-apps-for-mobile-devices.md
+      - linkListType: get-started
+        links:
+          - text: Explore dashboards and reports
+            url: mobile/mobile-apps-quickstart-view-dashboard-report.md
+          - text: View reports on mobile
+            url: mobile/mobile-reports-in-the-mobile-apps.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use Copilot in mobile apps
+            url: mobile/mobile-copilot-overview.md

@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Dashboards
 ---
 # Create a copy of a dashboard in the Power BI service
@@ -38,15 +39,15 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
 
 1. Open the new dashboard and edit as needed. Here are some things you might want to do next:
 
-    - [Move, rename, resize or delete tiles](service-dashboard-edit-tile.md).
-    - Edit tile details and hyperlinks by selecting the tile **More options** (...) and choosing **Edit details**.
-    - [Add new tiles from the dashboard menubar](service-dashboard-add-widget.md) (**Add a tile**)
-    - Pin new tiles [from Q&A](service-dashboard-pin-tile-from-q-and-a.md) or [from reports](service-dashboard-create.md).
-    - Rename the dashboard, turn Q&A on or off, and set the tile flow from the dashboard Settings pane. (Select **File** > **Settings**)
-    - Share your dashboard directly with colleagues or as part of a Power BI app.
+- [Move, rename, resize or delete tiles](service-dashboard-edit-tile.md).
+- Edit tile details and hyperlinks by selecting the tile **More options** (...) and choosing **Edit details**.
+- [Add new tiles from the dashboard menubar](service-dashboard-add-widget.md) (**Add a tile**)
+- Pin new tiles [from Q&A](service-dashboard-pin-tile-from-q-and-a.md) or [from reports](service-dashboard-create.md).
+- Rename the dashboard, turn Q&A on or off, and set the tile flow from the dashboard Settings pane. (Select **File** > **Settings**)
+- Share your dashboard directly with colleagues or as part of a Power BI app.
 
 ## Related content
 
-* [Tips for designing a great dashboard](service-dashboards-design-tips.md)
+- [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

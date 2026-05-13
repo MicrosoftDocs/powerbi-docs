@@ -1,13 +1,13 @@
 ---
 title: About format pane and formatting model in Power BI custom visuals
 description: This article describes what the Formatting model in Power BI custom visuals is
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/12/2025
+ms.date: 12/15/2025
 #customer intent: As a custom Power BI visual developer, I want to learn how to customize the Format pane in Power BI custom visuals using the formatting model so that I can create visuals that are easier for report creators to use.
 ---
 

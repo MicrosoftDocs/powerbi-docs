@@ -1,14 +1,14 @@
 ---
 title: Move your Power BI embedded analytics app to production
 description: Find out how to move your Power BI embedded app to production by assigning a capacity to your workspace. See specifications for various capacities and SKUs.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: 
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/20/2024
+ms.date: 12/15/2025
 #Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 
@@ -68,7 +68,7 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
 1. Select the **Premium** tab, and do the following:
 
-   1. Under **License mode**, select the type of capacity you created: **Premium per capacity** or **Embedded**.
+   1. Under **Workspace type**, select the type of capacity you created: **Premium per capacity** or **Embedded**.
 
    1. Select the capacity you created.
 

@@ -1,7 +1,7 @@
 ---
 title: Scale your Power BI Embedded capacity
 description: This article walks through how to scale a Power BI Embedded capacity in Microsoft Azure.
-author: mberdugo
+author: billmath
 ms.author: billmath
 services: power-bi-embedded
 editor: ''
@@ -9,7 +9,8 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 12/15/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal

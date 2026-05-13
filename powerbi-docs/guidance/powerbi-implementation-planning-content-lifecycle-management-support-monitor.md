@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Support and monitor content"
 description: "This article helps you to support and monitor content as part of managing the content lifecycle."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 03/13/2025
 ---
@@ -97,9 +97,9 @@ Consider the following points when supporting both [data creators](powerbi-imple
   - [Workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles)
   - [Power BI app permissions](powerbi-implementation-planning-security-report-consumer-planning.md#power-bi-app-permissions) and [Per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions)
   - [OneLake security](/fabric/onelake/onelake-security)
-  - [Files in OneDrive and SharePoint](../create-reports/desktop-sharepoint-save-share.md) and [Power BI files that consumers view from OneDrive and SharePoint](../collaborate-share/service-sharepoint-viewer.md)
+  - [Files in OneDrive and SharePoint](../create-reports/desktop-sharepoint-save-share.md) and [Power BI files that consumers view from OneDrive and SharePoint](../collaborate-share/office-integration/service-sharepoint-viewer.md)
 - **How to get access to new functionality**: What should an author do when they need to use functionality that they don't currently have access to? A few common situations include:
-  - [Workspace license mode](/fabric/enterprise/licenses#workspace)
+  - [Workspace type](/fabric/enterprise/licenses#workspace)
   - [Capacity](/fabric/enterprise/licenses#capacity-license) management and (SKU) size.
 - **How to update data connectivity**: If an author needs access to a gateway or a connection, what's the procedure they should follow to request updates (if they don't have [permissions](/data-integration/gateway/manage-security-roles))? Common situations include:
   - [Adding a new data source connection](../connect-data/service-gateway-data-sources.md)

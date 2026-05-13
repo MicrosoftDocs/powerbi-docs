@@ -3,7 +3,7 @@ title: Tutorial - Create translytical task flow
 description: In this tutorial, learn how to enable and create translytical task flows with Fabric user data functions.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: miguelmyers
+ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 #customer intent:
 ---
 
-# Tutorial: Create a translytical task flow (preview)
+# Tutorial: Create a translytical task flow
 
 In this end-to-end tutorial, you create an example translytical task flow that writes back to a SQL Database in Fabric. To help illustrate the end-to-end step-up experience, we focus on a translytical task flow for a data annotation scenario.
 
@@ -25,13 +25,8 @@ In this tutorial, you learn how to:
 
 If you don't have an existing Fabric capacity, [start a Fabric trial](/fabric/fundamentals/fabric-trial).
 
->[!NOTE]
->The translytical task flow feature is currently in public preview.
-
 ## Prerequisites
 
-* Enable [required preview features](./translytical-task-flow-overview.md) in Power BI and Fabric.
-* [Enable SQL database in Fabric using admin portal tenant settings](/fabric/database/sql/enable).
 * Power BI Desktop. If you don't have Power BI Desktop installed on your device, follow the instructions in [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 
 ## Overview
@@ -48,7 +43,7 @@ Creating a translytical task flow requires three tasks to enable your automated 
 
 * **Visualize data**
 
-  Create a Power BI report that displays the source data and interactive elements that call the data function. In this tutorial, we use a text slicer to collect the product description from the user and send it to the user data function. Then, the report refreshes to show the updated table.
+  Create a Power BI report that displays the source data and interactive elements that call the data function. In this tutorial, we use an input slicer to collect the product description from the user and send it to the user data function. Then, the report refreshes to show the updated table.
 
 ## Create a SQL database
 
@@ -66,7 +61,7 @@ Create a user data function in a workspace.
 
 1. Navigate to the workspace of your choice in Power BI or Fabric.
 1. Select **New item**.
-1. Select **User data functions (preview)** from the **Develop data** group.
+1. Select **User data functions** from the **Develop data** group.
 
    :::image type="content" source="./media/translytical-task-flow-tutorial/new-item-user-data-functions.png" alt-text="A screenshot that shows the user data functions tile on the new item menu.":::
 
@@ -230,18 +225,15 @@ In this section, build visuals with the data that you loaded into your Power BI 
 
    :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-table.png" alt-text="Screenshot that shows the Power BI report with one table added to it.":::
 
-1. In the **Visualizations** menu, select the **Text slicer** icon.
+1. In the **Visualizations** menu, select the **Input slicer** icon.
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/text-slicer.png" alt-text="Screenshot that shows selecting the 'text slicer' visualization to add to the report.":::
+   :::image type="content" source="./media/translytical-task-flow-tutorial/text-slicer.png" alt-text="Screenshot that shows selecting the input slicer visualization to add to the report.":::
 
-   >[!TIP]
-   >If you don't see the text slicer icon, make sure that the **Text slicer** preview feature is enabled in Power BI Desktop. For more information, see [Required preview features](./translytical-task-flow-overview.md#required-preview-features).
+   An input slicer visual appears in your report window.
 
-   A text slicer visual appears in your report window.
+   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-slicer.png" alt-text="Screenshot that shows the Power BI report with an input slicer added to it.":::
 
-   :::image type="content" source="./media/translytical-task-flow-tutorial/report-with-slicer.png" alt-text="Screenshot that shows the Power BI report with a text slicer added to it.":::
-
-1. Select the text slicer and use the **Format visual** > **General** > **Title** options to give the text slicer the following title: `Write a new product description`.
+1. Select the input slicer and use the **Format visual** > **General** > **Title** options to give the input slicer the following title: `Write a new product description`.
 
 1. On the taskbar, select the **Insert** menu and add a **Blank** button to the report. Drag the button under the text slicer.
 
@@ -259,9 +251,7 @@ In this section, build visuals with the data that you loaded into your Power BI 
    | **Data function** | Select your data function. For example, **write_one_to_sql_db**. |
 
    >[!TIP]
-   >If you don't see the **Data function** option, make sure that the **Translytical task flows** preview feature is enabled in Power BI desktop.
-   >
-   >If you do see the **Data function** option but don't see your user data function, make sure that your data function returns a string.
+   >If you don't see your user data function, make sure that your data function returns a string.
 
 1. Once you select your data function, more parameters appear to represent the parameters that the function takes. Provide the following values:
 

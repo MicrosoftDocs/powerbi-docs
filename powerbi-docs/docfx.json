@@ -65,10 +65,22 @@
                  "show_binary_rating"
               ]
           },
+          "author": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kgremban"
+          },
+          "ms.author": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kgremban"
+          },
+          "ms.reviewer": {
+              "developer/execute-dax-queries-arrow/**/*.md": "kayu"
+          },
+          "ms.service": {
+              "developer/**/*.md": "powerbi"
+          },
           "ms.subservice": {
               "collaborate-share/**/*.md": "pbi-collaborate-share",
               "connect-data/**/*.md": "pbi-data-sources",
-              "consumer/**/*.md": "pbi-explore",
+              "explore-reports/**/*.md": "pbi-explore",
               "create-reports/**/*.md": "pbi-reports-dashboards",
               "developer/**/*.md": "powerbi-developer",
               "enterprise/**/*.md": "powerbi-admin",
@@ -83,6 +95,10 @@
               "transform-model/**/*.md": "pbi-transform-model",
               "troubleshoot/**/*.md": "*",
               "visuals/**/*.md": "pbi-visuals"
+          },
+          "ms.update-cycle": {
+              "paginated-reports/**/*.md": "1095-days",
+              "report-server/**/*.md": "1095-days"
           }
     },
     "template": [],

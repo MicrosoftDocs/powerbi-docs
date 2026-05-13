@@ -1,14 +1,15 @@
 ---
-title: External tools in Power BI Desktop
-description: Learn how to extend the use of Power BI Desktop with external tools developed by community contributors.
-author: davidiseminger
-ms.author: davidi
+title: External Tools in Power BI Desktop
+description: Learn how to use external tools in Power BI Desktop, including DAX Studio, Tabular Editor, ALM Toolkit, and Metadata Translator to extend data modeling, analysis, and lifecycle management capabilities.
+author: eric-urban
+ms.author: eur
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 09/04/2024
+ms.date: 10/01/2025
 ms.custom: FY25Q1-Linter
+ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn about external tools in Power BI Desktop.
 ---
@@ -25,18 +26,14 @@ The **External Tools** ribbon provides easy access to external tools that are in
 
 External tools generally fall into one of the following categories:
 
-**Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as Data Analysis Expressions (DAX) query and expression optimization, application lifecycle management (ALM), and metadata translation.
-
-**Data analysis** - Tools for connecting to a model in read-only to query data and perform other analysis tasks. For example, a tool might launch Python, Excel, and Power BI Report Builder. The tool connects the client application to the model in Power BI Desktop for testing and analysis without having to first publish the Power BI Desktop (*pbix*) file to the Power BI service. Tools to document a Power BI semantic model also fall into this category.
-
-**Miscellaneous** - Some external tools don’t connect to a model at all, but instead extend Power BI Desktop to make helpful tips and make helpful content more readily accessible. For example, PBI.tips tutorials, DAX Guide from sqlbi.com, and the PowerBI.tips Product Business Ops community tool, make installation of a large selection of external tools easier. These tools also assist registration with Power BI Desktop, including DAX Studio, ALM Toolkit, Tabular Editor, and many others easy.
-
-**Custom** - Integrate your own scripts and tools by adding a *.pbitool.json document to the Power BI Desktop\External Tools folder.
+- **Semantic modeling** - Open-source tools such as DAX Studio, ALM Toolkit, Tabular Editor, and Metadata Translator extend Power BI Desktop functionality for specific data modeling scenarios such as Data Analysis Expressions (DAX) query and expression optimization, application lifecycle management (ALM), and metadata translation.
+- **Data analysis** - Tools for connecting to a model in read-only to query data and perform other analysis tasks. For example, a tool might launch Python, Excel, and Power BI Report Builder. The tool connects the client application to the model in Power BI Desktop for testing and analysis without having to first publish the Power BI Desktop (*pbix*) file to the Power BI service. Tools to document a Power BI semantic model also fall into this category.
+- **Miscellaneous** - Some external tools don’t connect to a model at all, but instead extend Power BI Desktop to make helpful tips and make helpful content more readily accessible. For example, PBI.tips tutorials, DAX Guide from sqlbi.com, and the PowerBI.tips Product Business Ops community tool, make installation of a large selection of external tools easier. These tools also assist registration with Power BI Desktop, including DAX Studio, ALM Toolkit, Tabular Editor, and many others easy.
+- **Custom** - Integrate your own scripts and tools by adding a *.pbitool.json document to the Power BI Desktop\External Tools folder.
 
 Before installing external tools, keep the following notes in mind:
 
 - External tools aren't supported in Power BI Desktop for Power BI Report Server.
-
 - External tools are provided by external, third-party contributors. Except for the underlying public Microsoft APIs, Microsoft doesn't provide support or documentation for external tools. Microsoft does provide support if the issue can be reproduced with Microsoft tools. These tools include SQL Server Management Studio (SSMS), or sample code that uses the public Microsoft APIs.
 
 ## Featured open-source tools
@@ -45,7 +42,7 @@ There are many external tools out there. Here are some of the most popular and b
 
 |Tool  |Description  |
 |---------|---------|
-|PowerBI.tips - Business Ops      |   An easy to use deployment tool for adding external tools extensions to Power BI Desktop. The Business Ops goal is to provide a one stop shop for installing all the latest versions of external tools. To learn more, go to [PowerBI.tips - Business Ops](https://powerbi.tips/product/business-ops/).      |
+|PowerBI.tips - Business Ops      |   An easy to use deployment tool for adding external tools extensions to Power BI Desktop. The Business Ops goal is to provide a one stop shop for installing all the latest versions of external tools. To learn more, go to [the GitHub location for Business Ops](https://github.com/MikeCarlo/BusinessOps).      |
 |Tabular Editor     |   Model creators can easily build, maintain, and manage tabular models by using an intuitive and lightweight editor. A hierarchical view shows all objects in your tabular model organized by display folders, with support for multi-select property editing and DAX syntax highlighting. To learn more, go to [tabulareditor.com](https://tabulareditor.com/).       |
 |DAX Studio      | A feature-rich tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To get the latest, go to [DAX Studio](https://github.com/DaxStudio/DaxStudio) on GitHub.         |
 |ALM Toolkit     |   A schema compare tool for Power BI models and semantic models, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between semantic models. To get the latest, go to [ALM Toolkit on GitHub](https://github.com/microsoft/analysis-services).      |
@@ -65,40 +62,14 @@ With the Analysis Services Server name, port number, and model name, the tool us
 
 External tools, which connect to Power BI Desktop's Analysis Services instance, can make changes (write operations) to the data model. Power BI Desktop then synchronizes those changes with the report canvas so they're shown in report visuals. For example, external data modeling tools can override the original format string expression of a measure, and edit any of the measure properties including KPIs and detail rows. External tools can also create new roles for object and row-level security, and add translations.
 
-### Supported write operations
+All Tabular Object Model (TOM) metadata is accessible in read-only mode. Write operations are fully supported, however, be aware that modifying the metadata outside of Power BI Desktop may result in unexpected behavior or, in rare cases, lead to inconsistencies within the model. Use caution when making changes through external tools.
 
-Objects that support write operations:
+Power BI Desktop project files offer a broader scope of external tool usage. To learn more, see [Power BI Desktop projects - Model authoring](/power-bi/developer/projects/projects-overview#model-authoring).
 
-| Object                        | Connect to AS instance    |
-|-------------------------------|---------------------------|
-| Tables                        | No                        |
-| Columns                       | Yes [1]                   |
-| Calculated tables             | Yes                       |
-| Calculated columns            | Yes                       |
-| Relationships                 | Yes                       |
-| Measures                      | Yes                       |
-| Model KPIs                    | Yes                       |
-| Calculation groups            | Yes                       |
-| Perspectives                  | Yes                       |
-| Translations                  | Yes                       |
-| Row Level Security (RLS)      | Yes                       |
-| Object Level Security (OLS)   | Yes                       |
-| Annotations                   | Yes                       |
-| M expressions                 | No                        |
+Keep in mind:
 
-[1] When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns isn't supported.
-
-Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
-
-### Data modeling limitations
-
-All Tabular Object Model (TOM) metadata can be accessed for read-only. Write operations are limited because Power BI Desktop must remain in-sync with the external modifications, therefore the following operations aren't supported:
-
-- Any TOM object types not covered in Supported write operations, such as tables and columns.
-- Editing a Power BI Desktop template (PBIT) file.
-- Report-level or data-level translations.
-- Renaming tables and columns isn't yet supported
-- Sending processing commands to a semantic model loaded in Power BI Desktop
+- Editing a Power BI Desktop template (PBIT) file is not supported.
+- Sending processing commands to a semantic model loaded in Power BI Desktop is not supported.
 
 ## Registering external tools
 

@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: asaxton
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat, video-RWUWA9
 ms.date: 12/30/2024
 ---

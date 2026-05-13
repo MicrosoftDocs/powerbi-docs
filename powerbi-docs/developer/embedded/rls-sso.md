@@ -1,13 +1,13 @@
 ---
 title: Use row-level security with token based identities
 description: Learn about embedding single Power BI content within your application using token based, single sign-on (SSO) identities.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/09/2024
+ms.date: 05/11/2026
 # customer intent: As an ISV, I want to learn how to embed Power BI content with token-based, single sign-on (SSO) identities so I can provide secure access to my customers' data.
 ---
 
@@ -15,7 +15,7 @@ ms.date: 11/09/2024
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-The **token-based identity** allows an ISV to use an [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
+The **token-based identity** allows an ISV to use a [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
 
 ISV customers that keep and manage their data in **Azure SQL Database** can keep their data secure in their tenant when integrating with **Power BI Embedded** in the ISV app.
 
@@ -23,9 +23,20 @@ When generating the embed token, specify the identity of the user in Azure SQL b
 
 :::image type="content" source="media/rls-sso/pass-identity-using-token.png" alt-text="Schematic drawing showing ISV passing the effective identity to the SQL tenant and the customer passing an embed token back.":::
 
+> [!IMPORTANT]
+> **App-owns-data SSO limitations:**
+> - In App-owns-data scenarios (service principal or master user authentication), SSO for DirectQuery datasources is **only supported with Azure SQL Database**.
+> - When generating an embed token with SSO, you must provide an `IdentityBlob` for **every** datasource that has SSO enabled. Omitting the IdentityBlob causes token generation or query execution to fail.
+
 ## Set up token-based identity
 
 The token-based identity only works for DirectQuery models on a capacity connected to an Azure SQL Database that's configured to allow Microsoft Entra authentication. The semantic model's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity. [Learn more about Microsoft Entra authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins).
+
+Before configuring token-based identity, verify:
+
+- Your DirectQuery data source is **Azure SQL Database** (the only supported SSO datasource for App-owns-data scenarios).
+- The Azure SQL Database is configured for [Microsoft Entra authentication](/azure/sql-database/sql-database-manage-logins).
+- You have the user's Microsoft Entra access token for the Azure SQL server to pass as the `IdentityBlob`.
 
 ### [Set up in portal](#tab/portal)
 
@@ -72,6 +83,9 @@ See the following MSAL code samples for help:
 
 To Embed a report with token-based identity, generate an embed token that contains the token base identity of the desired ISV user.
 See the following examples for generating embed tokens for different scenarios.
+
+> [!NOTE]
+> You **must** include a `datasourceIdentities` entry with a valid `identityBlob` for **each** Azure SQL datasource that has SSO enabled. If any SSO-enabled datasource is missing its `identityBlob`, the embed token generation call will fail or query execution will return an error.
 
 #### [Power BI report with SSO](#tab/Power-BI-report-with-SSO)
 

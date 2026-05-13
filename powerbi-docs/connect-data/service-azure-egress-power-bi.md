@@ -1,8 +1,8 @@
 ---
 title: Power BI and Azure egress
 description: Understand Azure egress charges when using Power BI based on tenant location and Power BI Premium.
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -31,7 +31,7 @@ For more information about Power BI Premium or Multi-Geo, take a look at the fol
 
 * [Azure bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth/)
 * [What is Microsoft Power BI Premium?](../enterprise/service-premium-what-is.md)
-* [How to purchase Power BI Premium](/power-bi/enterprise)
+* [How to purchase Power BI Premium](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 * [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
 * [Power BI Premium FAQ](../enterprise/service-premium-faq.yml)

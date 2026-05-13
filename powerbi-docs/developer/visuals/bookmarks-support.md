@@ -1,13 +1,13 @@
 ---
 title: Add bookmark support for Power BI custom visuals
 description: Learn how to add bookmark support to your custom visuals in Power BI so that you can switch between different bookmarked states.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 04/03/2025
+ms.date: 12/15/2025
 #customer intent: As a custom visuals developer, I want to learn how to add bookmark support to my visuals in Power BI so that I can switch between different bookmarked states.
 ---
 
@@ -33,7 +33,7 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 Let's say you want to create several bookmarks on a report page with each bookmark having different data points selected.
 
-First, select one or more data points in your visual. The visual passes your selections to the host. Then select **Add** in the [**Bookmark pane**](../../consumer/end-user-bookmarks.md). Power BI saves the current selections for the new bookmark.
+First, select one or more data points in your visual. The visual passes your selections to the host. Then select **Add** in the [**Bookmark pane**](../../explore-reports/end-user-bookmarks.md). Power BI saves the current selections for the new bookmark.
 
 Do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
@@ -193,5 +193,5 @@ To save a property value as a filter state, set the object property as `"filterS
 
 ## Related content
 
-- [What are bookmarks](../../consumer/end-user-bookmarks.md)
+- [What are bookmarks](../../explore-reports/end-user-bookmarks.md)
 - [Create bookmarks in desktop reports](../../create-reports/desktop-bookmarks.md#create-report-bookmarks)

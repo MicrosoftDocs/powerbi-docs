@@ -1,13 +1,14 @@
 ---
-title: "Commonly used filters in a Power BI paginated report | Microsoft Docs"
+title: Commonly Used Filters in a Power BI Paginated Report
 description: Consider these examples of filters in a Power BI paginated report along with the filter equations you specify to create the filter in Power BI Report Builder.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 # Commonly used filters in a paginated report (Power BI Report Builder)
 

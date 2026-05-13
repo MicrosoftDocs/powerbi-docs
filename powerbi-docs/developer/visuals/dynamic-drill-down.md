@@ -1,13 +1,13 @@
 ---
 title: The dynamic drill-down API in Power BI visuals
 description: This article explains how to create a Power BI custom visual that allows the user to enable or disable drill-down support.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to create a Power BI custom visual that allows the user to enable or disable drill-down support so that I can provide a more interactive experience.
 ---
 

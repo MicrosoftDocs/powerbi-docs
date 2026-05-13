@@ -1,14 +1,16 @@
 ---
 title: "Understand star schema and the importance for Power BI"
 description: "Understand star schema design and its relevance to developing Power BI semantic models optimized for performance and usability."
-author: denglishbi
-ms.author: daengli
+author: dknappettmsft 
+ms.author: daknappe
 ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
-ms.custom: fabric-cat
+ms.topic: concept-article
 ms.date: 12/30/2024
+ms.custom:
+  - fabric-cat
+  - sfi-image-nochange
 ---
 
 # Understand star schema and the importance for Power BI
@@ -88,7 +90,7 @@ There are many concepts related to star schema design that can be applied to a P
 In star schema design, a _measure_ is a fact table column that stores values to be summarized. In a Power BI semantic model, a measure has a different—but similar—definition. A model supports both explicit and implicit measures.
 
 - **Explicit measures** are expressly created and they're based on a formula written in [Data Analysis Expressions (DAX)](/dax/data-analysis-expressions-dax-reference) that achieves summarization. Measure expressions often use DAX aggregation functions like `SUM`, `MIN`, `MAX`, `AVERAGE`, and others to produce a scalar value result at query time (values are never stored in the model). Measure expression can range from simple column aggregations to more sophisticated formulas that override filter context and/or relationship propagation. For more information, read about [DAX Basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md).
-- **Implicit measures** are columns that can be summarized by a report visual or [Q&A](../consumer/end-user-q-and-a.md). They offer a convenience for you as a model developer, as in many instances you don't need to create (explicit) measures. For example, the Adventure Works reseller sales `Sales Amount` column can be summarized in numerous ways (sum, count, average, median, min, max, and others), without the need to create a measure for each possible aggregation type.
+- **Implicit measures** are columns that can be summarized by a report visual or [Q&A](../explore-reports/end-user-q-and-a.md). They offer a convenience for you as a model developer, as in many instances you don't need to create (explicit) measures. For example, the Adventure Works reseller sales `Sales Amount` column can be summarized in numerous ways (sum, count, average, median, min, max, and others), without the need to create a measure for each possible aggregation type.
 
 In the **Data** pane, explicit measures are represented by the calculator icon while implicit measures are represented by the sigma symbol (∑).
 
@@ -96,7 +98,7 @@ In the **Data** pane, explicit measures are represented by the calculator icon w
 
 However, there are three compelling reasons why you might create measures, even for simple column-level summarizations:
 
-- When you know your report authors will query the semantic model by using [Multidimensional Expressions (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), the model must include explicit measures. That's because MDX can't achieve summarization of column values. Notably, MDX is used when performing [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) because PivotTables issue MDX queries.
+- When you know your report authors will query the semantic model by using [Multidimensional Expressions (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), the model must include explicit measures. That's because MDX can't achieve summarization of column values. Notably, MDX is used when performing [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) because PivotTables issue MDX queries.
 - When you know your report authors will create Power BI paginated reports by using the MDX query designer, the semantic model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
 - When you want to control how your report authors summarize columns in specific ways. For example, the reseller sales `Unit Price` column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, or average. In this instance, the modeler can hide the `Unit Price` column, and create measures for all appropriate aggregation functions.
 

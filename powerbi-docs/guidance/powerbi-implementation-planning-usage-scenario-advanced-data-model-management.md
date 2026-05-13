@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Advanced data model management"
 description: "Learn how Power BI advanced data model management is about empowering creators with advanced data modeling and publishing capabilities."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -57,7 +57,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Data model development is done in Tabular Editor. Editing of Power Query (M) scripts is supported. Model creators may use C# scripts to accelerate development. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | When ready, semantic model creators publish the data model from Tabular Editor to the Power BI service by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) of the target workspace. |
-| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The data model is published to a workspace dedicated to storing and securing shared semantic models. Access to the workspace by using the XMLA endpoint is only possible when the workspace [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Fabric capacity**, **Premium capacity**, **Premium per user**, or **Embedded**. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The data model is published to a workspace dedicated to storing and securing shared semantic models. Access to the workspace by using the XMLA endpoint is only possible when the [workspace type](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Fabric capacity**, **Premium capacity**, **Premium per user**, or **Embedded**. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Report creators create reports by using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to the shared semantic model. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Report creators develop reports in Power BI Desktop. Other than purposefully [separating reports from semantic models](report-separate-from-model.md), content creators follow the typical report creation process. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | When ready, report creators publish their Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the Power BI service. |
@@ -79,7 +79,7 @@ Enterprise BI teams commonly use client tools, such as Tabular Editor (depicted 
 There are several ways to use third-party applications:
 
 - **Connect to a remote data model by using the XMLA endpoint**: Some third-party tools can connect directly to a remote data model in the Power BI service (or Analysis Services). Once connected to the XMLA endpoint, all [Tabular Object Model (TOM)](/analysis-services/tom/tom-pbi-datasets) operations are supported. This approach is the primary focus of this usage scenario.
-- **Connect to a local data model in Power BI Desktop**: Some third-party tools can connect to a [local data model](../transform-model/desktop-external-tools.md) that's open in Power BI Desktop (not depicted in the scenario diagram). However, there are some [limitations](../transform-model/desktop-external-tools.md#data-modeling-limitations), and not all external tool functionality is officially supported.
+- **Connect to a local data model in Power BI Desktop**: Some third-party tools can connect to a [local data model](../transform-model/desktop-external-tools.md) that's open in Power BI Desktop (not depicted in the scenario diagram). However, there are some limitations, and not all external tool functionality is officially supported.
 - **Connect to a template file in Power BI Desktop**: Some third-party tools distribute their functionality in a lightweight way by using a Power BI Desktop template file (.pbit) (not depicted in the scenario diagram).
 
 ### Tabular Editor
@@ -96,7 +96,7 @@ There are several ways to use third-party applications:
 
 The XMLA endpoint uses the XMLA protocol to expose all features of a tabular data model, including some [data modeling operations](../transform-model/desktop-external-tools.md#data-modeling-operations) that aren't supported by Power BI Desktop. You can use the [TOM API](/analysis-services/tom/tom-pbi-datasets) to make programmatic changes to a data model.
 
-The XMLA endpoint also provides connectivity. You can only connect to a semantic model when the workspace that has its license mode set to **Premium per user**, **Premium per capacity**, or **Embedded**. Once a connection is made, an XMLA-compliant tool can operate on the data model in two ways:
+The XMLA endpoint also provides connectivity. You can only connect to a semantic model when the workspace that has its workspace type set to **Premium per user**, **Premium per capacity**, or **Embedded**. Once a connection is made, an XMLA-compliant tool can operate on the data model in two ways:
 
 - **Write data and metadata**: Read/write use of the XMLA endpoint allows for:
   - Data modeling capabilities that aren't supported by Power BI Desktop, like object-level security (OLS), calculation groups, perspectives, translations, and partition management.

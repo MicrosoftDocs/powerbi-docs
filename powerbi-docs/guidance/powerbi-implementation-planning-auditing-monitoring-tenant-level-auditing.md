@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning: Tenant-level auditing"
 description: "Learn about tenant-level auditing planning for Power BI."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat, no-azure-ad-ps-ref
-ms.date: 12/30/2024
+ms.date: 02/04/2026
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -221,7 +221,7 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Which users and groups are assigned to each [Power BI app audience](powerbi-implementation-planning-security-report-consumer-planning.md#app-audience)?
   - Which [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) are assigned, for which reports, and for which users?
   - Which [per-item permissions](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) are assigned, for which semantic models, and for which users?
-  - Which semantic models and datamarts have [row-level security](powerbi-implementation-planning-security-report-consumer-planning.md#row-level-security) (RLS) defined?
+  - Which semantic models have [row-level security](powerbi-implementation-planning-security-report-consumer-planning.md#row-level-security) (RLS) defined?
   - Which items are [shared to people in the entire organization](../collaborate-share/service-share-dashboards.md)?
   - Which items are published [publicly on the internet](powerbi-implementation-planning-security-content-creator-planning.md#publish-to-web)?
 - **Understand other permissions**
@@ -440,7 +440,6 @@ You can create and run [PowerShell](/powershell/scripting/overview) scripts in m
 Here are several common options.
 
 - **[Visual Studio Code](https://code.visualstudio.com/docs)**: A modern, lightweight source code editor. It's a freely available open-source tool that's supported on multiple platforms, including Windows, macOS, and Linux. You can use Visual Studio Code with many languages, including [PowerShell](https://code.visualstudio.com/docs/languages/powershell) (by using the PowerShell extension).
-- **[Azure Data Studio](/sql/azure-data-studio/)**: A tool for creating scripts and notebooks. It's built on top of Visual Studio Code. Azure Data Studio is available independently, or with SQL Server Management Studio (SSMS). There are many extensions, including an extension for [PowerShell](/sql/azure-data-studio/extensions/powershell-extension).
 - **[Azure Cloud Shell](/azure/cloud-shell/overview)**: An alternative to working with PowerShell locally. You can access [Azure Cloud Shell](/azure/cloud-shell/overview) from a browser.
 - **[Azure Functions](/azure/azure-functions/functions-reference-powershell)**: An alternative to working with PowerShell locally. Azure Functions is an Azure service that lets you write and run code in a serverless environment. PowerShell is one of several languages that it supports.
 
@@ -1566,7 +1565,7 @@ Here are some useful dimension tables that you can include in the data model.
 - **Item types**: A list of Power BI item types (semantic models, reports, and others).
 - **Capacities**: A list of Premium capacities in the tenant.
 - **Gateways**: A list of data gateways in the tenant.
-- **Data sources**: A list of data sources that are used by any semantic model, dataflow, or datamart.
+- **Data sources**: A list of data sources that are used by any semantic model or dataflow.
 
 Here are some useful fact tables (subjects) that you can include in the data model.
 

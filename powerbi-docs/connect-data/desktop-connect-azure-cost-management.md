@@ -1,8 +1,8 @@
 ---
 title: Connect to Microsoft Cost Management data in Power BI Desktop.
 description: Learn how to connect to Azure with Power BI Desktop to visualize and gain insights about your cost and usage
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi
@@ -21,7 +21,7 @@ The Microsoft Cost Management connector currently supports customers with:
 
 * A direct [Microsoft Customer Agreement (MCA)](https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement)
 * An Enterprise Agreement (EA)
-* A [Microsoft Partner Agreement](https://www.microsoft.com/licensing/news/introducing-microsoft-partner-agreement)
+
 
 If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage Cost Management exports](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
@@ -136,6 +136,7 @@ When you select **Load**, the data is loaded into Power BI Desktop. Once the dat
 
 The following considerations and limitations apply to the Microsoft Cost Management data connector:
 
+* The Microsoft Cost Management connector doesn’t support pay-as-you-go Microsoft Customer Agreements or indirect Microsoft Customer Agreements. Microsoft Partner Agreements also aren't supported. If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Microsoft Cost Management](/power-query/connectors/azure-cost-management).
 * Power BI doesn't support data row requests exceeding one million rows. Instead, you can try using the export feature described in [Create and manage Cost Management exports](/azure/cost-management-billing/costs/tutorial-export-acm-data).
 * The Microsoft Cost Management data connector doesn't work with Office 365 GCC customer accounts.
 * **Data refresh:** Cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day.
@@ -220,7 +221,7 @@ For guest accounts, use the following settings or options as you're prompted wit
 
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)  

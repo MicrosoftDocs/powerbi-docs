@@ -1,12 +1,12 @@
 ---
 title: Export Power BI embedded analytics reports API
 description: Learn how to export an embedded Power BI report.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/27/2025
+ms.date: 12/15/2025
 ---
 
 # Export Power BI report to file
@@ -29,7 +29,7 @@ You can use the export feature in several ways. Here are a couple of examples:
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and other settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information, see [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives. For more information, see [Export and email a Power BI report with Power Automate](../../collaborate-share/office-integration/service-automate-power-bi-report-export.md)
 
 ## Using the API
 
@@ -92,18 +92,18 @@ Depending on the type of export, you need to pass different attributes to the [E
 
 ### Bookmarks
 
-[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
+[Bookmarks](../../explore-reports/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
 
 * **Export an existing bookmark**
 
-    To export an existing [report bookmark](../../consumer/end-user-bookmarks.md#report-bookmarks), use the `name` property, a unique (case sensitive) identifier, which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+    To export an existing [report bookmark](../../explore-reports/end-user-bookmarks.md#report-bookmarks), use the `name` property, a unique (case sensitive) identifier, which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
 * **Export the report's state**
 
     To export the current state of the report, use the `state` property. For example, you can use the bookmark's `bookmarksManager.capture` method to capture the changes a specific user made to a report, and then export it in its current state using `capturedBookmark.state`.
 
 >[!NOTE]
->[Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+>[Personal bookmarks](../../explore-reports/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
 ### Filters
 
@@ -370,7 +370,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
+* [Personal bookmarks](../../explore-reports/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
 * The `exportToFile` API exports the report with default value if used without bookmarks or reportLevelFilters.
 * Exporting a Power BI report that's connected to one or more composite semantic model, which has at least one external data source with single sign-on (SSO) enabled, is not supported. When exporting, visuals  might not render correctly.
 * When exporting a report with [dynamic binding](embed-dynamic-binding.md) using the `exportToFile` REST API, the dynamically bound semantic model can't be a [composite model](../../transform-model/desktop-composite-models.md) with a direct query to SQL Server Analysis Services (SSAS).
@@ -391,6 +391,6 @@ Review how to embed content for your customers and your organization:
 * [Export paginated report to file](export-paginated-report.md)
 * [Embed for your customers](embed-sample-for-customers.md)
 * [Embed for your organization](embed-sample-for-your-organization.md)
-* [Export and email a Power BI report with Power Automate](../../collaborate-share/service-automate-power-bi-report-export.md)
+* [Export and email a Power BI report with Power Automate](../../collaborate-share/office-integration/service-automate-power-bi-report-export.md)
 
 More Questions? Try the [Power BI Community](https://community.powerbi.com/)

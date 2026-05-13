@@ -1,19 +1,19 @@
 ---
 title: Conditional formatting of Power BI custom visuals
 description: Learn how to customize your Power BI visual by applying conditional formatting functionality based on data values.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: Jenny, Aleksei
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 08/19/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to learn how to apply conditional formatting to my custom visual so I can customize the visual appearance based on the data values.
 ---
 
 # Add conditional formatting
 
-[Conditional formatting](../../visuals/service-tips-and-tricks-for-color-formatting.md#add-conditional-formatting-for-visuals) lets a report creator specify how colors are displayed in a report, according to a numerical value.
+[Conditional formatting](../../visuals/service-tips-and-tricks-for-color-formatting.md) lets a report creator specify how colors are displayed in a report, according to a numerical value.
 
 This article describes how to add the conditional formatting functionality to your Power BI visual.
 
@@ -203,7 +203,7 @@ Conditional formatting isn't supported for the following visuals:
 
 * Matrix based visuals
 
-We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
+We recommend that you don’t use conditional formatting with series. Instead, allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series share this approach.
 
 ## Related content
 

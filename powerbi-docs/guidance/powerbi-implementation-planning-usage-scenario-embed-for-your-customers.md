@@ -1,12 +1,12 @@
 ---
 title: "Power BI usage scenarios: Embed for your customers"
 description: "Learn how a developer can programmatically embed Power BI content in a custom application for your customers."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -33,7 +33,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 | Item | Description |
 | --- | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](../fundamentals/power-bi-overview.md). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an [On-premises data gateway](../connect-data/service-gateway-onprem.md) or VNet gateway for data refresh, like those that reside within a private organizational network. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | A Power BI workspace contains Power BI items ready for embedding. An embedding identity, either a service principal or master user account, must belong to either the [workspace Admin or Member role](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles). In a multi-tenancy solution, the separation of tenants is achieved by creating one workspace for each tenant. This design pattern is known as _workspace separation_. |
@@ -45,7 +45,7 @@ The above diagram depicts the following user actions, tools, and features:
 
 ## Key points
 
-The following are some key points to emphasize about programmatically embed Power BI content in a custom application for your customers.
+The following are some key points to emphasize about programmatically embedding Power BI content in a custom application for your customers.
 
 ### Use case
 
@@ -92,15 +92,15 @@ For more information about embedding identities, see [Set up permissions to embe
 
 ### Licensing
 
-When embedding Power BI content for your customers, you need to ensure that content resides in a workspace that has one of the following license modes:
+When embedding Power BI content for your customers, you need to ensure that content resides in a workspace that has one of the following workspace types:
 
-- **Premium capacity**: This license mode is available with [Power BI Premium](../enterprise/service-premium-what-is.md).
-- **Embedded**: This license mode is available with [Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/).
-- **Fabric capacity**: This license mode is available with [Microsoft Fabric](/fabric/enterprise/licenses#capacity-license).
+- **Premium capacity**: This workspace type is available with [Power BI Premium](../enterprise/service-premium-what-is.md).
+- **Embedded**: This workspace type is available with [Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/).
+- **Fabric capacity**: This workspace type is available with [Microsoft Fabric](/fabric/enterprise/licenses#capacity-license).
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
-Each license mode option requires the purchase of a billable product that is a capacity-based license. A capacity-based license allows you to create _reserved capacities_.
+Each workspace type option requires the purchase of a billable product that is a capacity-based license. A capacity-based license allows you to create _reserved capacities_.
 
 Capacities represent the computational resources that are required to process workloads, such as report rendering and data refresh. Reserved capacities are isolated from other customers' workloads, so they offer scale that can deliver dependable and consistent performance.
 

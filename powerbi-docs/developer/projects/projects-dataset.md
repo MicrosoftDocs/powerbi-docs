@@ -1,13 +1,13 @@
 ---
 title: Power BI Desktop project semantic model folder
 description: Learn about the Power BI Desktop project semantic model folder.
-author: mberdugo
+author: billmath
 ms.author: billmath
-ms.reviewer: ruiromano
+ms.reviewer: harleenkaur
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
-ms.date: 08/13/2024
+ms.topic: concept-article
+ms.date: 05/01/2026
 ---
 
 # Power BI Desktop project semantic model folder
@@ -22,11 +22,14 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
-- [model.bim](#modelbim)<sup>[2](#required2)</sup>
+- [Copilot\ folder](#copilot-folder)
+- [DAXQueries\ folder](#daxqueries-folder)
+- [TMDLScripts\ folder](#tmdlscripts-folder)
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
+- [model.bim](#modelbim)<sup>[2](#required2)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [.platform](#platform)
+- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
 
 <a name="required1">1</a> - This file is required.  
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
@@ -40,19 +43,19 @@ Not every project semantic model folder includes all of the files and subfolders
 
 Contains semantic model settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/localSettings).
 
 #### .pbi\editorSettings.json
 
 Contains semantic model editor settings saved as part of the semantic model definition for use across users and environments.
 
-For more information, see the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
+For more information, see the [editorSettings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/editorSettings).
 
 #### .pbi\cache.abf
 
 An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
+Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the semantic model metadata in the project.
 
 #### .pbi\unappliedChanges.json
 
@@ -64,11 +67,11 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in semantic model metadata with the queries from unappliedChanges.json. If you edited queries outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
 
 The unappliedChanges.json file is automatically incorporated into the semantic model definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
-For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
+For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/unappliedChanges).
 
 #### definition.pbism
 
@@ -81,7 +84,7 @@ This file also specifies the supported semantic model definition formats through
 | 1.0      | Semantic model definition must be stored as TMSL in the model.bim file. |
 | 4.0 or above | Semantic model definition can be stored as TMSL (model.bim file) or TMDL (\definition folder). |
 
-For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+For more information, see the [definition.pbism schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/definitionProperties).
 
 
 #### model.bim
@@ -103,6 +106,71 @@ Contains diagram metadata that defines the structure of the semantic model assoc
 Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
+
+### Copilot\ folder
+
+Contains all the [Copilot tooling](/power-bi/create-reports/copilot-prepare-data-ai) metadata and settings configured for the semantic model. 
+
+#### Instructions\instructions.md
+
+Contains the [AI instructions](/power-bi/create-reports/copilot-prepare-data-ai-instructions) configured for the semantic model, stored as a markdown file.
+
+#### schema.json
+
+Contains the [Schema selection](/power-bi/create-reports/copilot-prepare-data-ai-data-schema) and field synonyms configured for the semantic model. 
+
+For more information, see the [schema.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/schema).
+
+#### VerifiedAnswers\ folder
+
+Contains the configured [Verified answers](/power-bi/create-reports/copilot-prepare-data-ai-verified-answers) for the semantic model, using [PBIR format](/power-bi/developer/projects/projects-report?tabs=v2%2Cdesktop#pbir-format)
+
+Each verified answer is stored in its own folder within the `definitions\` directory:
+
+```text
+Copilot/
+├── VerifiedAnswers/
+│   ├── definitions/
+│   │   ├── [verified answer ID]/
+│   │   │   ├── definition.json
+│   │   │   ├── filters.json
+│   │   │   ├── visualSource.json
+│   ├── version.json
+```
+
+#### settings.json
+
+Contains top level Copilot tooling settings. 
+
+For more information, see the [settings.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/settings).
+
+#### examplePrompts.json
+
+Contains example prompts set up for the semantic model used by Copilot **Zero Prompt** experiences.
+
+For more information, see the [examplePrompts.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/semanticModel/copilot/examplePrompts).
+
+#### version.json
+
+This file tracks the version of the feature’s file structure. The version is updated whenever the file representation changes, such as when a new file is added.
+
+For more information, see the [version.json schema document](https://github.com/microsoft/json-schemas/tree/main/fabric/item/version).
+
+### DAXQueries\ folder
+
+Contains a file for each **DAX query view** query tab saved as a `[Tab name].dax` DAX file.
+
+#### .pbi\daxQueries.json
+
+Contains **DAX query view** editor settings such as defaultTab or tab order.
+
+### TMDLScripts\ folder
+
+Contains a file for each **TMDL view** script tab saved as a `[Tab name].tmdl` TMDL file.
+
+#### .pbi\tmdlscripts.json
+
+Contains **TMDL view** editor settings such as defaultTab or tab order.
 
 ## TMDL format
 

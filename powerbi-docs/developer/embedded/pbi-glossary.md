@@ -1,13 +1,13 @@
 ---
 title: Glossary for Power BI developers
 description: Power BI documentation introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
-author: mberdugo
+author: billmath
 ms.author: billmath
 services: power-bi
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 01/09/2024
+ms.date: 12/15/2025
 #Developers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the developer understands the actions they are reading about or performing without getting confused or frustrated.
 ---
 
@@ -93,7 +93,7 @@ A capacity is a dedicated set of resources reserved for exclusive use. It offers
 
 ### Card (visual type)
 
-A Power BI [visual type](../../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+A Power BI [visual type](../../visuals/power-bi-visualizations-overview.md).
 
 ### Card (Power BI Home)
 
@@ -109,7 +109,7 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 
 ### Connector
 
-Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows, Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
+Power BI Desktop includes an ever-growing collection of data connectors that are built to connect to a specific data source. Examples include: GitHub, MailChimp, Power BI dataflows (legacy), Google Analytics, Python, SQL Server, Zendesk, and more than 100 other data sources.
 
 ### Container
 
@@ -138,11 +138,11 @@ A correlation tells us how the behaviors of things are related.  If their patter
 ### Cross-filter
 
 Applies to visual interactions.
-Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
+Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the donut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
 
 ### Cross-highlight
 
-Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that doesn't apply to your selection. For example, selecting **Moderation** in the donut chart cross-highlights the column chart. The column chart dims all the data that doesn't apply to the Moderation segment, and highlights all the data that does apply to the Moderation segment.
 
 ### Custom visual
 
@@ -152,7 +152,7 @@ Visuals that are created by the community and Microsoft. They can be downloaded 
 
 ### Dashboard
 
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [dashboards for the Power BI service](../../consumer/end-user-dashboards.md).
+In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can only be created and viewed in the Power BI service, not in Power BI Desktop. For more information, see [dashboards for the Power BI service](../../explore-reports/end-user-dashboards.md).
 
 ### Data connector
 
@@ -555,6 +555,10 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 
 The container in the nav pane that holds all the individual [items](#item) that were directly shared by another Power BI user.
 
+### Slicer
+
+A [slicer](/power-bi/visuals/power-bi-visualization-slicers) is a standalone visual that filters the other visuals on a report page. Slicers provide an interactive way to narrow the portion of the data that is displayed in related visualizations. Common slicer types include list, dropdown, between (range), and relative date slicers.
+
 ### Single sign-on, SSO
 
 An authentication process that permits a user to log on to a system once with a single set of credentials to access multiple applications or services.
@@ -611,7 +615,7 @@ Numerical data to be visualized.
 
 ### Visual, visualization
 
-A chart. Some visuals are: bar chart, treemap, doughnut chart, map.
+A chart. Some visuals are: bar chart, treemap, donut chart, map.
 
 ### Visual interaction
 

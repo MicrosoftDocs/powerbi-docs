@@ -1,13 +1,13 @@
 ---
 title: Text wrap
 description: Setting - Text wrap (Global use)
-ms.reviewer: juliacawthra
+ms.author: juliacawthra
 author: JulCsc
-ms.author: miguelmyers
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 06/25/2024
+ms.date: 12/01/2025
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---

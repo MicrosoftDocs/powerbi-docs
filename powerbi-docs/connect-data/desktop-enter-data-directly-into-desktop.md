@@ -1,8 +1,8 @@
 ---
 title: Enter data directly into Power BI Desktop
 description: Find out how to easily add data directly into Power BI Desktop to use that data in your reports and visualizations.
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -41,7 +41,7 @@ You're now ready to use the data in Power BI Desktop. You can create visuals, re
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
+* [What is Power BI?](../fundamentals/power-bi-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)

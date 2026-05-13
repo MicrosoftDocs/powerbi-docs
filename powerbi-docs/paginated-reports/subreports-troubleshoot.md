@@ -1,13 +1,14 @@
 ---
-title: "Troubleshoot subreports in Power BI paginated reports"
+title: Troubleshoot Subreports in Power BI Paginated Reports
 description: Learn about solutions for common issues when using subreports, which are report items inside a Power BI paginated report.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 02/08/2023
+ms.date: 12/01/2025
+ai-usage: ai-assisted
 ---
 
 # Troubleshoot subreports in Power BI paginated reports
@@ -51,9 +52,11 @@ Possible issues:
 **If the report is shared:**
 
 1. Verify that the report with the name in the error message is shared with you.
-2. If the report exists, verify that the owner name is the same for the main report and the subreport. Then contact the owner of the main report with that information.
+1. If the report exists, verify that the owner name is the same for the main report and the subreport. Then contact the owner of the main report with that information.
 
 ## Subreport renders with unexpected content
+
+**Description:** The subreport renders but displays content you didn't expect.
 
 ### Possible reason
 
@@ -62,8 +65,8 @@ Power BI allows users to have multiple reports with the same name in the same wo
 ### Troubleshooting
 
 1. Open the main report in Power BI Report Builder and identify the name of the subreport.
-2. Look for reports with the same name in the workspace.
-3. Locate the expected report and rename the rest.
+1. Look for reports with the same name in the workspace.
+1. Locate the expected report and rename the rest.
 
 **For non-authors:** Contact the author.
 
@@ -89,8 +92,8 @@ Same as the general troubleshooting steps for reports with data access issues. S
 ### Troubleshooting
 
 1. Open the main report in Power BI Report Builder.
-2. Open the subreport in Power BI Report Builder.
-3. Verify that the set of parameters passed inside the subreport report item in the main report matches the set of parameters in the subreport.
+1. Open the subreport in Power BI Report Builder.
+1. Verify that the set of parameters passed inside the subreport report item in the main report matches the set of parameters in the subreport.
 
 **For non-authors:** Contact the author.
 
@@ -125,9 +128,9 @@ Same as the general troubleshooting steps for reports with data access issues. S
 ### Troubleshooting
 
 1. Verify that the subreport can render directly.
-2. If the subreport can render, check the parameters for both the subreport and main report.
-3. Make sure the main report doesn't have more than 50 unique subreports, and the subreport isn't nested deeper than 20 levels.
-4. If you can't resolve the issue, contact Power BI support.
+1. If the subreport can render, check the parameters for both the subreport and main report.
+1. Make sure the main report doesn't have more than 50 unique subreports, and the subreport isn't nested deeper than 20 levels.
+1. If you can't resolve the issue, contact Power BI support.
 
 **For non-authors:** Contact the author.
 
@@ -135,6 +138,6 @@ Same as the general troubleshooting steps for reports with data access issues. S
 
 - [Subreports in Power BI paginated reports](subreports.md).
 
-- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
+- [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md).
 
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).

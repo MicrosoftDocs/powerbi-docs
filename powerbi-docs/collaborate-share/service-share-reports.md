@@ -1,14 +1,16 @@
 ---
 title: Share a filtered Power BI report
 description: Learn how to filter a Power BI report and share it with coworkers in your organization.
-author: kfollis
-ms.author: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 04/20/2026
+ai-usage: ai-assisted
 LocalizationGroup: Share your work
+ms.custom: sfi-image-nochange
 ---
 # Share a filtered Power BI report
 
@@ -22,7 +24,7 @@ You can share the filtered report in several different ways:
 * [Chat in Teams](#share-a-report-in-teams)
 * [Share an individual visual](#share-a-visual)
 * [Direct access sharing](#share-directly)
-* [PowerPoint, via the Power BI add-in for PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
+* [PowerPoint, via the Power BI add-in for PowerPoint](./office-integration/service-power-bi-powerpoint-add-in-install.md)
 
 In every case, the report is filtered when recipients first open it. They can clear the filter selections in the report. In this example, we're filtering the report page to show only values where **Business Area** equals **Distribution**, **Infrastructure**, or **Manufacturing**.
 
@@ -30,18 +32,18 @@ In every case, the report is filtered when recipients first open it. They can cl
 
 Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). Again, the report is filtered when recipients first open it. They can clear the filter selections in the report.
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). To learn more about interacting with reports that have been shared with you, see [Working with content shared with you](end-user-shared-with-me.md).
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). To learn more about interacting with reports that have been shared with you, see [Working with content shared with you](../explore-reports/end-user-shared-with-me.md).
 
 ## Share via link
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Select **Share** and make sure **Include my changes** is selected: 
 
     :::image type="content" source="media/service-share-reports/include-my-changes-setting.png" alt-text="Screenshot of sharing Share via link.":::
 
 ## Share a report in Teams
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. You can access **Chat in Teams** from the action bar: 
 
     ![Screenshot showing Chat in Teams in action bar.](media/service-share-reports/power-bi-chat-teams-action-bar.png)
@@ -54,7 +56,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
 You can also share individual visuals.
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Right-click a visual, then select **Share > Link to this visual**.
 
     :::image type="content" source="./media/service-share-reports/power-bi-share-visual-menu-link-to-selection.png" alt-text="Screenshot showing Visual right-click menu with Share submenu expanded.":::
@@ -69,13 +71,13 @@ You can also share individual visuals.
 
 ## Share a report or visual in PowerPoint
 
-You can share live, filtered report pages or visuals by adding them to a PowerPoint presentation and then sharing it with colleagues. For more information, see [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md).
+You can share live, filtered report pages or visuals by adding them to a PowerPoint presentation and then sharing it with colleagues. For more information, see [Add live Power BI data to PowerPoint](./office-integration/service-power-bi-powerpoint-add-in-install.md).
 
 ## Share directly
 
 If you prefer to share directly to users, you can also share your filtered report through direct access sharing. 
 
-1. Open a report in [Reading view](../consumer/end-user-reading-view.md) and apply a filter.
+1. Open a report in [Reading view](../explore-reports/end-user-reading-view.md) and apply a filter.
 1. Select **Share** > **More options (...)** > **Manage permissions**: 
 
     ![Screenshot showing Manage permissions filter.](media/service-share-reports/manage-permissions-filter.png)
@@ -118,17 +120,19 @@ After you've shared the filtered report, you can also manage the shared view.
 When you share this link, recipients with access to the report will see your filtered report.
 
 ## Considerations and limitations
+
 Things to keep in mind about sharing reports:
 
-* When you share a semantic model by managing permissions, by sharing reports or dashboards, or by publishing an app, you're granting access to the entire semantic model unless [row-level security (RLS)](/fabric/security/service-admin-row-level-security) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences don't restrict what data users can access in the semantic model. Use [row-level security (RLS)](/fabric/security/service-admin-row-level-security) in the semantic model so that each person's credentials determine which data they can access.
+* When you share a semantic model by managing permissions, by sharing reports or dashboards, or by publishing an app, you are granting access to the entire semantic model unless [row-level security (RLS)](/fabric/security/service-admin-row-level-security) limits access. Report authors may use capabilities that customize user experiences when viewing or interacting with reports, for example hiding columns, limiting the actions on visuals, and others. These customized user experiences do not restrict what data users can access in the semantic model. Use [row-level security (RLS)](/fabric/security/service-admin-row-level-security) in the semantic model so that each person's credentials determine which data they can access.
 * The shared report view will automatically expire after 180 days. Each time the link shared report view is accessed the expiration is reset to 180 days.
-* You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
+* If you receive an error that the number of shared views exceeded its limit, go to [manage the shared views](#manage-the-shared-view) and delete an older shared view.
+* You cannot share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app.
 * Share link to selection for visuals in reports creates a shared view with the visual in spotlight mode.
 
 ## Related content
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a report or dashboard](service-share-dashboards.md)
-* [Interact with content that has been shared with you](end-user-shared-with-me.md)
+* [Interact with content that has been shared with you](../explore-reports/end-user-shared-with-me.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.

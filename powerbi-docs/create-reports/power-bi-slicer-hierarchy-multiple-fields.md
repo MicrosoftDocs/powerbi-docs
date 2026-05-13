@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 ms.custom: pbibetadocbug
 LocalizationGroup: Create reports
 ---

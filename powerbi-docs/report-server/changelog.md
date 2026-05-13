@@ -1,34 +1,99 @@
 ---
 title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-author: jtarquino
-ms.author: jaimeta
-ms.reviewer: kfollis
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: jaimeta
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 01/15/2025
+ms.topic: concept-article
+ms.date: 07/01/2025
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
-See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 See [Download Power BI Report Server](download-powerbi-report-server.md) for more information about downloading and installing Power BI Report Server.
+
+You must use Microsoft Report Builder to create paginated reports in Power BI Report Server. For information about Microsoft Report Builder, see [Install Microsoft Report Builder - Power BI Report Server](install-report-builder.md).
+
+## January 2026
+
+### Power BI Report Server
+
+- *Version: 1.25.9558.32914 (build 15.0.1120.122), Released: March 5, 2026*
+    - Fixed issue where Power BI reports with RLS get stuck spinning.
+
+- *Version: 1.25.9557.12652 (build 15.0.1120.121), Released: March 3, 2026*
+    - Versioned release.
+
+- *Version: 1.25.9552.1669 (build 15.0.1120.119), Released: February 25, 2026*
+    - Fixed issue where certain types of Power BI Reports lead to excessive crash dumps being created.
+
+> [!NOTE] 
+> There is a known issue with build 15.0.1120.113 of January 2026 PBIRS where excessive crash dumps are created. All users are advised to move to a later release to avoid this issue.
+
+- *Version: 1.25.9508.3237 (build 15.0.1120.113), Released: January 21, 2026*
+    - Added support for SQL Server 2025 Enterprise Core Product ID (key).
+    - Add new advanced server property 'DisableMSRBConnect' with default value 'True'. This to restricts "Connected mode" requests from Microsoft Report Builder.
+    - Fixed issue with verbose logging causing log file to grow too fast.
+    - Removed support for Office Online Server (OOS) which allowed web viewing of XLSX workbooks which has been deprecated. [Learn More](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402)
+    - Accessibility fixes.
+
+### Power BI Desktop (optimized for Power BI Report Server)
+
+- *Version: 2.150.1926.0  (January 2026), Released: January 21, 2026*
+     - Support for January 2026 Power BI Report Server.
+
+## September 2025
+
+### Power BI Report Server
+
+- *Version: 1.24.9466.3830 (build 15.0.1119.121), Released: December 1, 2025*
+    - Added support for SQL Server 2025 Product IDs (keys).
+    - Added telemetry and changed error code when Power BI Desktop for RS uploads a file that's too large.
+    - Added telemetry and changed error code when Power BI Desktop for RS uploads a file that's for a newer Desktop release.
+
+- *Version: 1.24.9392.34333 (build 15.0.1119.107), Released: September 22, 2025*
+	- Fixed issue where custom authentication didn't re-authenticate upon cookie expiration 
+	- Fixed issue with exporting Power BI visual to excel caused an error
+	- Resolved several accessibility issues
+	- Custom Visual API shipped with release - version v5.10.0
+	- Security updates
+
+### Power BI Desktop (optimized for Power BI Report Server)
+
+Note: This is the first release of Power BI Desktop for RS that will not include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.147.5030.0  (September 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
+
+- *Version: 2.147.1088.0  (September 2025), Released: September 22, 2025*
+     - Support for September 2025 Power BI Report Server.
+
 
 ## May 2025
 
 ### Power BI Report Server
-- *Version: Version1.23.9273.4705 (build 15.0.1118.125), Released: May 22, 2025*
+
+- *Version: 1.23.9316.13987 (build 15.0.1118.134), Released: July 9, 2025*
+  - Bug fixes
+    - Fixed issue with document map not expanding when viewing paginated reports.
+
+- *Version: 1.23.9274.14406 (build 15.0.1118.126), Released: May 27, 2025*
+  - Bug fixes
+    - Fixed issue with showing schedule refresh on reports to users that don't have ’Manage individual subscriptions‘ and ’Manage all subscriptions‘ permissions.
+
+- *Version: 1.23.9273.4705 (build 15.0.1118.125), Released: May 22, 2025*
   - Features
     - Add new advanced server property EnableCommentsOnReports and set default value to false to control comments on reports. This will disable comments on upgrade and must be enabled if you wish to have the ability to comment on reports in the future. This feature is now considered deprecated and will be removed in 2026.
     - Custom Visual API shipped with release - version v5.10.0
-    - Updated underlying version of jQeury to 3.7.1
+    - Updated underlying version of jQuery to 3.7.1 used for PBIRS Portal and RDL rendering (PBIX still uses 3.5.1 and is aligned with Power BI service version).
     - Support for x-forwarded-for header logging IP address in RSPortal log.
     - Added support for migrating report server catalog from SSRS 2022 to Power BI Report Server.
-
 
   - Bug fixes
     - Fixed issue with models loading in scale out environment.
@@ -39,8 +104,17 @@ See [Download Power BI Report Server](download-powerbi-report-server.md) for mor
     - Additional screen reader support for the tree view.
 
 ### Power BI Desktop (optimized for Power BI Report Server)
+> [!IMPORTANT]
+> Starting with the May 2025 version of Power BI Desktop for RS, your CPU must support Advanced Vector Extensions (AVX) instructions. If your CPU doesn't support AVX instructions, you might encounter unexpected errors when rendering visuals in Power BI Desktop or Power BI Report Server. Even if your CPU supports AVX, the host machine's BIOS or virtualization settings could have AVX instructions disabled. Ensure that AVX instructions are enabled in your system configuration. 
 
-Note: This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+> [!NOTE]
+> This is the last release of Power BI Desktop for RS that will include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.143.4379.0  (May 2025), Released: March 2, 2026*
+     - Fix issue for recent Local Network Access restrictions.
+
+- *Version: 2.143.4379.0  (May 2025), Released: October 6, 2025*
+     - Security updates
 
 - *Version: 2.143.954.0  (May 2025), Released: May 22, 2025*
      - Support for May 2025 Power BI Report Server.
@@ -69,6 +143,9 @@ Note: This is the last release of Power BI Desktop for RS that will include a 32
     - Fixed issue related to accessibility and screen readers.
       
 ### Power BI Desktop (optimized for Power BI Report Server)
+- *Version: 2.138.6828.0 (January 2025), Released: July 9, 2025*
+     - Fix issue with intermittent crashes when using Oracle data in reports.
+
 - *Version: 2.138.2255.0 (January 2025), Released: January 13, 2025*
      - Support for January 2025 Power BI Report Server.
 

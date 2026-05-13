@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Governance"
 description: "Effectively enforce governance to drive strong and successful adoption of Microsoft Fabric."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -304,7 +304,7 @@ The following list includes items that you might choose to prioritize when intro
 
 - Recommendations and requirements for [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md)
 - Recommendations and requirements for [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md)
-- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](../enterprise/service-admin-azure-ad-b2b.md), such as customers, partners, or vendors
+- Recommendations and requirements for content [distribution and sharing](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md) with colleagues, as well as for [external users](/fabric/enterprise/powerbi/service-admin-entra-b2b), such as customers, partners, or vendors
 - How users are permitted to work with regulated data and highly sensitive data
 - Allowed use of unverified data sources that are unknown to IT
 - When manually maintained data sources, such as Excel or flat files, are permitted

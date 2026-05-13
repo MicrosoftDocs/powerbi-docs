@@ -4,7 +4,7 @@ title: Power BI embedded analytics documentation
 summary: Learn to use the two Power BI embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
 
 metadata:
-  title: Power BI embedded analytics documentation
+  title: Embedded analytics documentation
   description: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
   services: powerbi
   ms.service: powerbi
@@ -99,7 +99,7 @@ landingContent:
           - text: "Power BI REST APIs"
             url: /rest/api/power-bi/
           - text: Developer center
-            url: https://powerbi.microsoft.com/developers/
+            url: https://www.microsoft.com/power-platform/products/power-bi/developers
           - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
           - text: "Power BI embedded analytics Client APIs"

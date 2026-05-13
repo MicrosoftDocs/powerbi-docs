@@ -1,9 +1,9 @@
 ---
 title: Use Python in Power BI Power Query Editor
 description: Learn how to use Python in Power BI Desktop Power Query Editor for advanced analytics. This example fills in missing values by using a predictive model.
-author: otarb
-ms.author: otarb
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
+ms.reviewer: otarb
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
@@ -65,7 +65,7 @@ To show how to use Python in **Power Query Editor**, take this example from a st
 
    ![Screenshot of the Power Query Editor pane, showing the warning about data privacy.](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
 
-1. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](../enterprise/desktop-privacy-levels.md).
+1. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](/power-query/privacy-levels).
 
    ![Screenshot of the Privacy levels dialog, showing that Public is set.](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
 

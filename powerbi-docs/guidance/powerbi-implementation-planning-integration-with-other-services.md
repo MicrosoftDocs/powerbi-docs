@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Integration with Other Services"
 description: "This article helps you to plan how and when to integrate Power BI and Microsoft Fabric with other services."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: asaxton
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ms.collection: ce-skilling-ai-copilot
@@ -29,11 +29,11 @@ Here are some common scenarios involving the integration of Power BI with other 
 
 - You have specific requirements that mandate the use of another service. For example, you must integrate with [Azure Private Link](/azure/private-link/private-link-overview) to connect to services over a [private endpoint](/azure/private-link/private-endpoint-overview) in your virtual network.
 - You encounter specific challenges that can't be overcome with Power BI alone. For example, you use [Azure Log Analytics](../transform-model/log-analytics/desktop-log-analytics-overview.md) integration to obtain detailed query diagnostics of your semantic models for troubleshooting and auditing.
-- You want to use services that you already use, or extend the capabilities of Power BI. For example, you can allow Excel users to connect to semantic models by using the [Excel add-in](../collaborate-share/service-analyze-in-excel.md) to insert connected PivotTables.
+- You want to use services that you already use, or extend the capabilities of Power BI. For example, you can allow Excel users to connect to semantic models by using the [Excel add-in](../collaborate-share/office-integration/service-analyze-in-excel.md) to insert connected PivotTables.
 
 You can integrate Power BI with other services at the level of your tenant, your workspace, or individual solutions (like semantic models and reports):
 
-- **Tenant-level integration**: Affects the entire tenant and is set up by Fabric administrators, usually in collaboration with other administrators. For example, [Teams integration](../collaborate-share/service-collaborate-microsoft-teams.md) is set up at the tenant level. Another example that affects networking is [Azure ExpressRoute](/power-platform/guidance/expressroute/overview).
+- **Tenant-level integration**: Affects the entire tenant and is set up by Fabric administrators, usually in collaboration with other administrators. For example, [Teams integration](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md) is set up at the tenant level. Another example that affects networking is [Azure ExpressRoute](/power-platform/guidance/expressroute/overview).
 - **Workspace-level integration**: Affects all content in the workspace and is set up by workspace administrators. For example, [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) is set up at the workspace level to achieve source control with [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true), which is a service of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&preserve-view=true).
 - **Solution-level integration**: Affects a single content item and is set up by the content creator. For example, [Python](../connect-data/desktop-python-visuals.md) or [R](../connect-data/service-r-packages-support.md) is set up at the solution level to enable the creation of custom, interactive visuals.
 
@@ -42,7 +42,7 @@ For all three of these levels, there are considerations you should keep in mind 
 - **Security considerations**: Integrating other services inevitably results in more risks that you must mitigate to use them successfully. For example, integration with AI services has the potential to expose internal data to external services that train their models. To mitigate this risk, ensure that you proactively evaluate any security risks and considerations of integrating a service. Also, identify concrete actions to ensure compliance with data security and privacy policies in your region and organization.
 - **Licensing considerations**: Integrating other services might require a specific subscription or license. For example, integrating Power BI reports with [PowerApps](/power-apps/powerapps-overview) is only possible when you have the appropriate PowerApps licenses. For each service, ensure that you evaluate whether you need a specific license or subscription to integrate it, and what the estimated cost is per user or capacity. Do this evaluation not only for the services, but also for Fabric and Power BI per-user and per-capacity licenses.
 - **Governance considerations**: Integrating other services results in more diverse activities and operations that people undertake in your tenant, some of which might lead to inappropriate practices. For example, integration of Power BI reports with OneDrive or SharePoint might lead to people sharing Power BI Desktop (.pbix) files directly with report viewers. This approach diverts from the better practices of publishing the report to a workspace and sharing it via direct access, workspace viewer roles, or a Power BI app. Therefore, you should proactively identify any potential governance risks before you integrate a service, and identify the effort needed to monitor and support the service in your tenant.
-- **Mentoring and user enablement considerations**: Integrating other services might require time and effort to train users to use any new capabilities effectively. For example, if you allow users to integrate Excel with Power BI, you should train users about how to effectively use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel). Training should guide them on when to use it, and inform them of its considerations and limitations. Ensure that you proactively plan how to train and support people that will use this integration.
+- **Mentoring and user enablement considerations**: Integrating other services might require time and effort to train users to use any new capabilities effectively. For example, if you allow users to integrate Excel with Power BI, you should train users about how to effectively use [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md#analyze-in-excel). Training should guide them on when to use it, and inform them of its considerations and limitations. Ensure that you proactively plan how to train and support people that will use this integration.
 
 The remainder of this article describes the possibilities to integrate Power BI with other services at the level of your tenant, workspaces, and individual solutions (like reports or semantic models).
 
@@ -80,31 +80,22 @@ While not necessarily Azure services, you can also use the following tools avail
 
 Apart from [Copilot in Fabric](/fabric/get-started/copilot-fabric-overview), there are various AI services that you can integrate with Fabric and Power BI. These services can help you perform advanced analytics to apply specific models to your data, depending on your needs and use cases.
 
-Integrating with AI Azure services requires that you have an active Azure subscription for them. Additionally, some of these services also require that you have Fabric or Premium capacity, and they will use your capacity resources. To ensure that these workloads don't have a negative impact on your capacity utilization, ensure that you set a memory limit for AI workloads within your capacity. That way, you can avoid unexpected usage of your capacity units (CUs). For more information, see [Manage impact on a Premium capacity](../transform-model/desktop-ai-insights.md#manage-impact-on-a-premium-capacity).
+Integrating with AI Azure services requires that you have an active Azure subscription for them. Additionally, some of these services also require that you have Fabric or Premium capacity, and they will use your capacity resources. To ensure that these workloads don't have a negative impact on your capacity utilization, ensure that you set a memory limit for AI workloads within your capacity. That way, you can avoid unexpected usage of your capacity units (CUs).
 
 For guidance on how to integrate with the different AI services in Azure, see:
 
 - [Azure OpenAI Services](/fabric/data-science/ai-services/how-to-use-openai-via-rest-api)
-- [Azure AI Services (Text Analytics and Vision)](../transform-model/desktop-ai-insights.md#use-text-analytics-and-vision)
-- [Azure AI Translator](/fabric/data-science/ai-services/how-to-use-text-translator?tabs=rest)
-- [Azure Machine Learning](../transform-model/desktop-ai-insights.md#use-azure-machine-learning)
+- [Azure Translator in Foundry Tools](/fabric/data-science/ai-services/how-to-use-text-translator?tabs=rest)
 
-#### Integrate Azure AI Services in Power Query
+#### Integrate Foundry Tools in Power Query
 
-You can invoke specific AI functions in Power Query by using Azure AI Services. These functions run by using Fabric capacity or Premium capacity for a selected workspace. They can derive useful information from less-structured text or image data.
-
-Use cases for Azure AI Services integration with a semantic model or dataflow include:
-
-- [Language detection](../transform-model/desktop-ai-insights.md#detect-language) from text in a field.
-- [Key phrase extraction](../transform-model/desktop-ai-insights.md#extract-key-phrases) from text in a field.
-- [Sentiment analysis](../transform-model/desktop-ai-insights.md#score-sentiment) of text from input fields.
-- [Image classification](../transform-model/desktop-ai-insights.md#tag-images) of images of recognizable objects, entities, scenes, or actions.
+You can invoke specific AI functions in Power Query by using Foundry Tools. These functions run by using Fabric capacity or Premium capacity for a selected workspace. They can derive useful information from less-structured text or image data.
 
 #### Integrate Azure Machine Learning in Power Query
 
-Similarly to how you can use Azure AI Services, you can apply machine learning models to your data by [invoking dynamic Power Query functions](../transform-model/desktop-ai-insights.md#invoke-an-azure-machine-learning-model-in-power-query). These machine learning models must have schema files generated in Python by the model creator.
+Similarly to how you can use Foundry Tools, you can apply machine learning models to your data by invoking dynamic Power Query functions. These machine learning models must have schema files generated in Python by the model creator.
 
-Dataflow Gen1 creators can also use [AutoML](../transform-model/dataflows/dataflows-machine-learning-integration.md#work-with-automl) to create their own machine learning models by using Power BI during data preparation. Creators can choose a specific type of model, either [binary prediction](../transform-model/dataflows/dataflows-machine-learning-integration.md#binary-prediction-models), [general classification](../transform-model/dataflows/dataflows-machine-learning-integration.md#classification-models), or [regression](../transform-model/dataflows/dataflows-machine-learning-integration.md#regression-models). Next, they train these models with input data, and evaluate the results before they [apply the model](../transform-model/dataflows/dataflows-machine-learning-integration.md#apply-the-automl-model) to new or updated data after dataflow refresh.
+Dataflow Gen1 creators can also use AutoML to create their own machine learning models by using Power BI during data preparation. Creators can choose from different types of models including binary prediction, general classification, or regression models. Next, they train these models with input data, and evaluate the results before applying the model to new or updated data after dataflow refresh.
 
 Use cases for Azure Machine Learning integration with a semantic model or dataflow Gen1 include:
 
@@ -130,13 +121,13 @@ You can integrate your tenant with Microsoft Teams to allow users to access Fabr
 
 For more information about how to integrate teams with Power BI, see:
 
-- [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md): Integrate the Power BI experience into Microsoft Teams.
-- [Embed interactive reports in Teams channels and chats with a Power BI tab](../collaborate-share/service-embed-report-microsoft-teams.md): Help colleagues find and discuss your team's data.
-- [Use interactive reports in Teams meetings](../consumer/business-user-teams-meetings.md): Discuss a report during a meeting, or use the report to support the meeting objectives.
-- [Create a link preview in the Teams message box](../collaborate-share/service-teams-link-preview.md): Paste links to reports, dashboards, or Power BI apps.
-- [Chat in Microsoft Teams directly from within the Power BI service](../collaborate-share/service-share-report-teams.md): Share a filtered view of reports and dashboards, and start conversations.
-- [View all the Power BI tabs you have in Microsoft Teams](../collaborate-share/service-teams-pivot.md): Select the _In Teams_ tab on the Power BI app home page.
-- [Get notified in the Teams activity feed](../collaborate-share/service-teams-notifications.md): Quickly learn when important events happen in Power BI.
+- [Add the Power BI app to Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md): Integrate the Power BI experience into Microsoft Teams.
+- [Embed interactive reports in Teams channels and chats with a Power BI tab](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md): Help colleagues find and discuss your team's data.
+- [Use interactive reports in Teams meetings](../explore-reports/business-user-teams-meetings.md): Discuss a report during a meeting, or use the report to support the meeting objectives.
+- [Create a link preview in the Teams message box](../collaborate-share/office-integration/service-teams-link-preview.md): Paste links to reports, dashboards, or Power BI apps.
+- [Chat in Microsoft Teams directly from within the Power BI service](../collaborate-share/office-integration/service-share-report-teams.md): Share a filtered view of reports and dashboards, and start conversations.
+- [View all the Power BI tabs you have in Microsoft Teams](../collaborate-share/office-integration/service-teams-pivot.md): Select the _In Teams_ tab on the Power BI app home page.
+- [Get notified in the Teams activity feed](../collaborate-share/office-integration/service-teams-notifications.md): Quickly learn when important events happen in Power BI.
 
 Use cases for Teams integration with Power BI include:
 
@@ -165,7 +156,7 @@ You can integrate certain services at the level of individual workspaces. These 
 
 ### Git integration
 
-If your workspace uses Fabric capacity, Premium capacity, or PPU license modes, you can use [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) to connect a workspace to a remote Git repository to support more advanced lifecycle management scenarios. A remote Git repository facilitates [source control](../guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#source-control-by-using-a-remote-git-repository) of files, which allows content creators to [track and manage changes](../guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-how-youll-use-version-control). Git integration also promotes [collaboration](../guidance/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md#collaboration-flow-diagram) among developers, particularly when using [branches](/fabric/cicd/git-integration/manage-branches) to isolate development of specific features before integrating those changes into a main branch with a merge before deployment.
+If your workspace uses Fabric capacity, Premium capacity, or PPU workspace types, you can use [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) to connect a workspace to a remote Git repository to support more advanced lifecycle management scenarios. A remote Git repository facilitates [source control](../guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#source-control-by-using-a-remote-git-repository) of files, which allows content creators to [track and manage changes](../guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-how-youll-use-version-control). Git integration also promotes [collaboration](../guidance/powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md#collaboration-flow-diagram) among developers, particularly when using [branches](/fabric/cicd/git-integration/manage-branches) to isolate development of specific features before integrating those changes into a main branch with a merge before deployment.
 
 In brief, content creators can develop content either locally or in the Power BI service, then commit and push those changes to a remote Git repository, like [Azure Repos](/azure/devops/repos/get-started/what-is-repos) or [GitHub Enterprise](/visualstudio/subscriptions/access-github). For information about how to set up and use Git integration for Power BI and Fabric, see [Get started with Git integration](/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git) or [Tutorial: end-to-end lifecycle management](/fabric/cicd/cicd-tutorial).
 
@@ -283,13 +274,13 @@ Use cases for Activator integration with Power BI include:
 
 ### Integration with Microsoft Office 365
 
-There are many ways to integrate Power BI with Microsoft 365 products, like [Excel](../collaborate-share/service-connect-power-bi-datasets-excel.md), [PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md), and [Outlook](/power-platform-release-plan/2022wave1/power-bi/power-bi-integration-outlook-office-hub).
+There are many ways to integrate Power BI with Microsoft 365 products, like [Excel](../collaborate-share/office-integration/service-connect-power-bi-datasets-excel.md), [PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md), and [Outlook](/power-platform-release-plan/2022wave1/power-bi/power-bi-integration-outlook-office-hub).
 
 #### Use Power BI data in Excel
 
 Users who prefer working in Excel can use either Analyze in Excel or live connected tables to use Power BI data.
 
-Content consumers who have Build permission for a semantic model can connect to the model from Excel to use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md). This approach allows users to explore models so they can perform their own ad hoc analysis with PivotTables.
+Content consumers who have Build permission for a semantic model can connect to the model from Excel to use [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md). This approach allows users to explore models so they can perform their own ad hoc analysis with PivotTables.
 
 Use cases for Analyze in Excel include:
 
@@ -302,9 +293,9 @@ Use cases for Analyze in Excel include:
 
 Analyze in Excel uses Multidimensional Expressions (MDX) for queries instead of Data Analysis Expressions (DAX) used by Power BI reports. MDX queries can experience poorer performance compared to equivalent DAX queries. Ensure that users understand that they should use Analyze in Excel for high-level aggregate analysis, and perform more detailed analysis by using Power BI or other Fabric experiences.
 
-Also, some features in a semantic model, like [field parameters](../create-reports/power-bi-field-parameters.md) and [dynamic measure format strings](../create-reports/desktop-dynamic-format-strings.md), don't work in Analyze in Excel. For other considerations and limitations, see [this article](../collaborate-share/service-analyze-in-excel.md#considerations-and-limitations).
+Also, some features in a semantic model, like [field parameters](../create-reports/power-bi-field-parameters.md) and [dynamic measure format strings](../create-reports/desktop-dynamic-format-strings.md), don't work in Analyze in Excel. For other considerations and limitations, see [this article](../collaborate-share/office-integration/service-analyze-in-excel.md#considerations-and-limitations).
 
-You can also get Power BI data in Excel by using [live-connected tables](../collaborate-share/service-analyze-in-excel.md#export-to-excel-with-live-connection). With this approach, users who export data from a Power BI report visual receive an Excel workbook that contains a table populated with data. The table query automatically retrieves the latest data when the workbook is opened, or when the table is manually refreshed.
+You can also get Power BI data in Excel by using [live-connected tables](../collaborate-share/office-integration/service-analyze-in-excel.md#export-to-excel-with-live-connection). With this approach, users who export data from a Power BI report visual receive an Excel workbook that contains a table populated with data. The table query automatically retrieves the latest data when the workbook is opened, or when the table is manually refreshed.
 
 Use cases for live-connected tables include:
 
@@ -318,7 +309,7 @@ Managing data exports is an important [change management](../guidance/fabric-ado
 
 #### Integrate Power BI reports in PowerPoint
 
-You can use the [Power BI add-in for PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md) to add live, interactive Power BI reports or specific visuals to PowerPoint slides. This feature is a good alternative to inserting static screenshots because the visuals can be filtered and interacted with during a presentation.
+You can use the [Power BI add-in for PowerPoint](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md) to add live, interactive Power BI reports or specific visuals to PowerPoint slides. This feature is a good alternative to inserting static screenshots because the visuals can be filtered and interacted with during a presentation.
 
 PowerPoint is a useful tool to complement existing Power BI reports, but it doesn't scale as a primary distribution method. Instead, use report distribution methods, like Power BI apps, and look for opportunities for PowerPoint integration to complement or extend them.
 
@@ -326,11 +317,11 @@ Managing distribution of reports as flat files and PowerPoint presentations is a
 
 Use cases of Power BI integration in PowerPoint include:
 
-- [Continuously play a presentation in slide show mode](../collaborate-share/service-power-bi-powerpoint-add-in-view-present.md#automatically-refresh-data-during-slide-shows) with up-to-date Power BI reports, for example on a large screen in a factory.
+- [Continuously play a presentation in slide show mode](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-view-present.md#automatically-refresh-data-during-slide-shows) with up-to-date Power BI reports, for example on a large screen in a factory.
 - Freeze snapshots of a specific view so that report data doesn't update automatically, for example when you want to review point-in-time reports from a past date.
 - Share a presentation with live Power BI reports so people can see the latest data, for example when you want an audience to review the presentation and reports before you present it.
 
-Fabric administrators can control its use with the _[Enable Power BI add-in for PowerPoint](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint)_ tenant setting. For other considerations and limitations, see [this article](../collaborate-share/service-power-bi-powerpoint-add-in-about.md#considerations-and-limitations).
+Fabric administrators can control its use with the _[Enable Power BI add-in for PowerPoint](/fabric/admin/service-admin-portal-export-sharing#enable-power-bi-add-in-for-powerpoint)_ tenant setting. For other considerations and limitations, see [this article](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-about.md#considerations-and-limitations).
 
 ### Integration with Power Platform
 
@@ -417,18 +408,18 @@ In addition to integrating OneDrive for an individual .pbix file for semantic mo
 
 #### Preview Power BI Desktop files in OneDrive and SharePoint
 
-When you share a Power BI Desktop file with people via OneDrive or SharePoint, they can [preview the report](../collaborate-share/service-sharepoint-viewer.md) from OneDrive or SharePoint without opening it in Power BI Desktop. This capability works only for reports that are connected to a shared semantic model, or Power BI Desktop files that contain a report and an import semantic model. Additionally, you can't preview Power BI Desktop files that are 1 GB or larger. For more information, see [Considerations and limitations](../collaborate-share/service-sharepoint-viewer.md#considerations-and-limitations).
+When you share a Power BI Desktop file with people via OneDrive or SharePoint, they can [preview the report](../collaborate-share/office-integration/service-sharepoint-viewer.md) from OneDrive or SharePoint without opening it in Power BI Desktop. This capability works only for reports that are connected to a shared semantic model, or Power BI Desktop files that contain a report and an import semantic model. Additionally, you can't preview Power BI Desktop files that are 1 GB or larger. For more information, see [Considerations and limitations](../collaborate-share/office-integration/service-sharepoint-viewer.md#considerations-and-limitations).
 
-There are some licensing considerations to keep in mind with this approach. Users require a Power BI Pro license to preview Power BI Desktop files in OneDrive or SharePoint. For more information, see [Prerequisites to viewing reports in OneDrive and SharePoint](../collaborate-share/service-sharepoint-viewer.md#prerequisites-to-viewing-report-in-onedrive-and-sharepoint).
+There are some licensing considerations to keep in mind with this approach. Users require a Power BI Pro license to preview Power BI Desktop files in OneDrive or SharePoint. For more information, see [Prerequisites to viewing reports in OneDrive and SharePoint](../collaborate-share/office-integration/service-sharepoint-viewer.md#prerequisites-to-viewing-report-in-onedrive-and-sharepoint).
 
 Use cases for using OneDrive to preview files include:
 
 - Content creators use OneDrive or SharePoint to facilitate collaboration.
-- Content creators who use OneDrive integrations, like [OneDrive refresh](../connect-data/refresh-data.md#onedrive-refresh), or use it to [track and manage changes](../collaborate-share/service-sharepoint-viewer.md#version-history) to .pbix files, want the convenience to preview the files before they open them.
+- Content creators who use OneDrive integrations, like [OneDrive refresh](../connect-data/refresh-data.md#onedrive-refresh), or use it to [track and manage changes](../collaborate-share/office-integration/service-sharepoint-viewer.md#version-history) to .pbix files, want the convenience to preview the files before they open them.
 
 #### Embed Power BI reports in SharePoint Online
 
-You can integrate Power BI with SharePoint by [embedding Power BI reports in SharePoint Online](../collaborate-share/service-embed-report-spo.md) (also known as _secure embed_). The report experience is the same as when users view them in a Fabric workspace by using a link shared with direct access. [Row-level security](/fabric/security/service-admin-row-level-security) is enforced, together with item permissions. Users must have direct access to reports in order to view them in a SharePoint site.
+You can integrate Power BI with SharePoint by [embedding Power BI reports in SharePoint Online](../collaborate-share/office-integration/service-embed-report-spo.md) (also known as _secure embed_). The report experience is the same as when users view them in a Fabric workspace by using a link shared with direct access. [Row-level security](/fabric/security/service-admin-row-level-security) is enforced, together with item permissions. Users must have direct access to reports in order to view them in a SharePoint site.
 
 Use cases for embedding Power BI reports in SharePoint Online include:
 
@@ -476,7 +467,7 @@ To refresh a published semantic model that uses Python or R integrated in Power 
 
 You can integrate Python or R with Power BI reports in order to create custom visuals with Python libraries, like Seaborn or R packages like ggplot2. These visuals are fully customizable and support interactive features in Power BI like rendering a filtered result, cross-filtering, custom tooltips, drilldown, and drillthrough.
 
-Ensure that all your Python or R visuals use [Python libraries](../connect-data/service-python-packages-support.md#python-packages-that-are-supported-in-the-power-bi-service-premium-fabric-backed-workspaces-and-proppu) and [R packages](../connect-data/service-r-packages-support.md#r-packages-that-are-supported-in-power-bi-premiumfabric-backed-workspaces-and-proppu) that are supported in Fabric. If you use an unsupported library or package, the visual won't render in the Power BI service, even when the visual renders in your report in Power BI Desktop.
+Ensure that all your Python or R visuals use [Python libraries](/power-bi/connect-data/service-python-packages-support) and [R packages](/power-bi/connect-data/service-r-packages-support) that are supported in Fabric. If you use an unsupported library or package, the visual won't render in the Power BI service, even when the visual renders in your report in Power BI Desktop.
 
 While you can transform data and make calculations as part of a Python or R custom visual, it isn't recommended. Placing this logic in the Python or R visual can result in slower render durations, and greater difficulty to maintain the visual and achieve harmonization across visuals and reports in calculation logic.
 
@@ -506,7 +497,7 @@ Here are some examples of tools that can integrate with semantic models via the 
 - [DAX Studio](https://daxstudio.org/), a third-party tool to author and optimize DAX queries.
 - [ALM toolkit](http://alm-toolkit.com/), a third-party tool to compare and deploy semantic models.
 
-For more information about XMLA endpoints and client applications and tools that use them, see [Semantic model connectivity and management with the XMLA endpoint in Power BI](../enterprise/service-premium-connect-tools.md#client-applications-and-tools). The XMLA endpoint is only supported for workspaces that have their license mode set to Fabric capacity, Premium capacity, or Premium Per User.
+For more information about XMLA endpoints and client applications and tools that use them, see [Semantic model connectivity and management with the XMLA endpoint in Power BI](../enterprise/service-premium-connect-tools.md#client-applications-and-tools). The XMLA endpoint is only supported for workspaces that have their workspace type set to Fabric capacity, Premium capacity, or Premium Per User.
 
 You can [enable the XMLA endpoint](../enterprise/troubleshoot-xmla-endpoint.md#enabling-the-xmla-endpoint) and set it to read, or read/write from the Power BI workload options in the [admin portal](../enterprise/service-admin-premium-workloads.md#outbound-connectivity). There are also [several tenant settings](../enterprise/service-premium-connect-tools.md#security) that you can use to control which users and groups can use the XMLA endpoint.
 

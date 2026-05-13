@@ -1,7 +1,10 @@
-- name: Connect to data in Power BI
+- name: Power BI data connection documentation
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items: 
@@ -9,19 +12,19 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "OneLake data hub"
-      href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
-    - name: "Semantic model details page"
-      href: service-dataset-details-page.md
-    - name: "Datamart details page"
-      href: service-datamart-details-page.md
     - name: "Power BI for Azure users"
       href: powerbi-azure-landing.md
-  - name: Quickstarts
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
     expanded: true
     items: 
     - name: "Connect to data in Power BI Desktop"
       href: desktop-quickstart-connect-to-data.md
+# =============================================================================
+# TUTORIALS
+# =============================================================================
   - name: Tutorials
     expanded: true
     items: 
@@ -33,16 +36,13 @@
       href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "Connect to a GitHub sample"
-      href: service-tutorial-connect-to-github.md
-    - name: "Use Cognitive Services"
-      href: service-tutorial-use-cognitive-services.md
-    - name: "Build a machine learning model"
-      href: service-tutorial-build-machine-learning-model.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
       href: template-apps-auto-install-tutorial.md                       
+# =============================================================================
+# CONCEPTS
+# =============================================================================
   - name: Concepts
     expanded: true
     items: 
@@ -64,15 +64,22 @@
       href: desktop-directquery-about.md
     - name: "Live connection and DirectQuery comparison"
       href: service-live-connect-dq-datasets.md       
+# =============================================================================
+# HOW-TO GUIDES
+# =============================================================================
   - name: How-to guides
     expanded: true
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to the Power BI Release Plan report"  
+      href: service-connect-to-power-bi-release-plan.md
     - name: "Connect to cloud data sources in the Power BI service"
       href: service-connect-cloud-data-sources.md      
     - name: "Create and share cloud data sources in the Power BI service"
       href: service-create-share-cloud-data-sources.md          
+    - name: "Manage semantic model settings"
+      href: service-semantic-model-settings-pane.md
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
@@ -257,6 +264,8 @@
       items: 
       - name: "Data refresh in Power BI"
         href: refresh-data.md
+      - name: "Refresh semantic models in Power BI mobile apps"
+        href: mobile-apps-dataset-refresh.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
       - name: "Refresh summaries"
@@ -287,6 +296,8 @@
         href: refresh-excel-file-onedrive.md
       - name: "Refresh a semantic model from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Refresh a Semantic Model using Data Pipelines (Preview)"
+        href: data-pipeline-templates.md
       - name: "Frequent refreshes using Real-Time Intelligence"
         href: real-time-intelligence-sample.md
     - name: Template apps
@@ -309,12 +320,14 @@
         href: service-connect-to-services.md
       - name: "Crisis Communication Presence Report"
         href: service-connect-to-crisis-communication-presence-report.md
-      - name: "Emissions Impact Dashboard for Azure"
-        href: service-connect-to-emissions-impact-dashboard.md
-      - name: "Emissions Impact Dashboard for Microsoft 365"
-        href: service-connect-emissions-impact-dashboard-microsoft-365.md
-      - name: "GitHub"
-        href: service-connect-to-github.md
+      - name: Connect to Emissions Impact Dashboard
+        items:
+        - name: "Emissions Impact Dashboard for Azure"
+          href: service-connect-to-emissions-impact-dashboard.md
+        - name: "Emissions Impact Dashboard for Microsoft 365"
+          href: service-connect-emissions-impact-dashboard-microsoft-365.md
+        - name: "Azure emissions calculation methodology"
+          href: azure-emissions-calculation-methodology.md  
       - name: "Hospital Emergency Response Decision Support Dashboard"
         href: service-connect-to-health-emergency-response.md
       - name: "Office365Mon"
@@ -329,6 +342,9 @@
         href: service-connect-to-smartsheet.md
       - name: "Zendesk"
         href: service-connect-to-zendesk.md
+# =============================================================================
+# TROUBLESHOOT
+# =============================================================================
     - name: Troubleshoot
       items: 
       - name: "Troubleshoot opening Power BI Desktop"
@@ -342,7 +358,7 @@
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot analyze in Excel"
-        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+        href: ../collaborate-share/office-integration/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
       - name: "Troubleshoot importing Access and Excel .xls files"
@@ -353,6 +369,9 @@
         href: service-troubleshooting-nested-values.md
       - name: "Troubleshoot sign in with OData feed connections"
         href: desktop-troubleshoot-odata.md     
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -361,5 +380,30 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
+    - name: "Third-party compatibility with semantic models"
+      href: semantic-models-third-party.md
     - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

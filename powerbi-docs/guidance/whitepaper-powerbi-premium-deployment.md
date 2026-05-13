@@ -1,12 +1,11 @@
 ---
 title: "Deploying and Managing Power BI Premium Capacities"
 description: "Understand the potential of Power BI Premium, and learn how to design, deploy, monitor and troubleshoot scalable solutions."
-author: JulCsc
-ms.author: juliacawthra
-ms.reviewer: ''
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: powerbi-premium
-ms.topic: conceptual
+ms.topic: concept-article
 LocalizationGroup: Premium
 ms.custom: intro-deployment
 ms.date: 12/30/2024

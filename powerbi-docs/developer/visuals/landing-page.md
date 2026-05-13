@@ -1,13 +1,13 @@
 ---
 title: Add a landing page to your Power BI visuals
 description: This tutorial describes how to add a landing page to Power BI visuals by setting capabilities in a visual's capabilities.json file.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 12/15/2025
 #customer intent: As a Power BI visual developer, I want to add a landing page to my visual so that I can display information in the visual card before the card gets data.
 ---
 

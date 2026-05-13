@@ -1,13 +1,14 @@
 ---
 title: Using standard cloud based row-level security with embedded content in Power BI embedded analytics
 description: Learn how to implement row level security within your Power BI cloud application.
-author: mberdugo
+author: billmath
 ms.author: billmath
 services: power-bi-embedded
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/05/2024
+ms.date: 12/15/2025
+ms.custom: sfi-image-nochange
 #Customer intent: As an ISV, I want embed reports for my customers using RLS to protect sensitive data and adhere to compliance rules for data security.
 ---
 

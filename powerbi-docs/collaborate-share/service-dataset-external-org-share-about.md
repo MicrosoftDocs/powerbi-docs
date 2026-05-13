@@ -1,14 +1,14 @@
 ---
 title: Power BI in-place semantic model sharing with guest users in external organizations (preview)
 description: Learn about Power BI in-place semantic model sharing which allows you to share semantic models with external guest users in their own tenants.
-author: paulinbar
-ms.author: painbar
-manager: kfollis
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 12/12/2022
+ms.date: 11/01/2025
+ai-usage: ai-assisted
 LocalizationGroup: Administration
 ---
 
@@ -20,7 +20,7 @@ With existing B2B capabilities, data providers have previously shared data with 
 
 With in-place sharing, data is never copied to the consumer tenant, however data consumers can search the shared semantic models directly in the source data systems. When consumers access these semantic models in their own tenant, they can build their own composite models and reports on top of the shared data. Since consumers can build their own models and reports, they won't need to manually transfer data between organizations. This capability becomes useful when you want to share data with external partners, subsidiaries, consulting organizations, and other business partners. 
 
-This article provides a basic introduction to in-place semantic model sharing in Power BI. For more information on existing Microsoft Entra B2B in Power BI, see [Distribute Power BI content to external guest users with Microsoft Entra B2](../enterprise/service-admin-azure-ad-b2b.md).
+This article provides a basic introduction to in-place semantic model sharing in Power BI. For more information on existing Microsoft Entra B2B in Power BI, see [Distribute Power BI content to external guest users with Microsoft Entra B2](/fabric/enterprise/powerbi/service-admin-entra-b2b).
 
 ## Considerations and Limitations 
 
@@ -28,17 +28,17 @@ This article provides a basic introduction to in-place semantic model sharing in
 
 - Existing limitations for Microsoft Entra B2B in Power BI and B2B collaboration in Microsoft Entra ID still apply to in-place semantic model sharing.  
 
-- Live connect mode isn't currently supported for in-place semantic model sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#semantic-models-in-directquery-mode).
+- Live connect mode is not currently supported for in-place semantic model sharing. Power BI will need to change queries in the DirectQuery mode, which consumes resources on shared capacity or a Premium capacity. For more information on DirectQuery versus LiveConnect, see [Data refresh in Power BI](../connect-data/refresh-data.md#semantic-models-in-directquery-mode).
 
-- If **Private Links** and **Block Public Internet Access** are enabled for a Provider’s Power BI tenant, consumers won't see semantic models shared by this provider in their own tenant. 
+- If **Private Links** and **Block Public Internet Access** are enabled for a Provider's Power BI tenant, consumers cannot see semantic models shared by this provider in their own tenant.
 
 - Semantic models hosted in My Workspace, V1 Workspace (classic), or Admin Monitoring workspaces aren't supported. Only V2 (new) workspaces are supported for in-place sharing.
 
-- For Azure Analysis services (AAS), customers are expected to connect directly to the AAS instance. Live connection to AAS data sources isn't supported.
+- For Azure Analysis services (AAS), customers are expected to connect directly to the AAS instance. Live connection to AAS data sources is not supported.
 
-- This capability isn't supported for composite models, meaning, consumers can't build content for external semantic models that are composite models.
+- This capability is not supported for composite models, meaning, consumers cannot build content for external semantic models that are composite models.
 
-- Only pro and premium users can share semantic models externally. However, pro trial users won't be able to use this capability. In-place semantic model sharing isn't available for free users.  
+- Only pro and premium users can share semantic models externally. However, pro trial users cannot use this capability. In-place semantic model sharing is not available for free users.  
 
 - All composite model limitations apply. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md#considerations-and-limitations). 
 
@@ -46,13 +46,13 @@ This article provides a basic introduction to in-place semantic model sharing in
 
 - All DirectQuery limitations apply. For more information, see [Use DirectQuery in Power BI Desktop](../connect-data/desktop-use-directquery.md#considerations-and-limitations).
 
-- In-place semantic model sharing is not supported for cross-sovereign cloud scenarios. This means that users in a government cloud cannot share or receive shared semantic models from a commercial cloud tenants. Read more on cross-cloud B2B limitations in [Cross-cloud B2B](../enterprise/service-admin-azure-ad-b2b.md#cross-cloud-b2b).
+- In-place semantic model sharing is not supported for cross-sovereign cloud scenarios. This means that users in a government cloud cannot share or receive shared semantic models from a commercial cloud tenants. Read more on cross-cloud B2B limitations in [Cross-cloud B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#cross-cloud-b2b).
 
 - A report that was created by a user in the host tenant, using a semantic model in the same host tenant will result in failure if opened in Power BI Desktop by a guest user. Only reports created using the 'external data' tab in Power BI Desktop can be re-opened in Power BI Desktop by the guest user.
 
 ## Requirements
 
-- You'll need to enable access for external guest users with Microsoft Entra B2B. For more information, see the enable access section of [Distribute content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#enable-invite-external-users-to-your-organization-setting).
+- You'll need to enable access for external guest users with Microsoft Entra B2B. For more information, see the enable access section of [Distribute content to external guest users with Microsoft Entra B2B](/fabric/enterprise/powerbi/service-admin-entra-b2b#enable-invite-external-users-to-your-organization-setting).
 
 - If the provider tenant is MFA enabled, the consumer tenant needs to also be MFA enabled to access the **External Data** tab in their Power BI desktop. Additionally, the provider tenant needs to turn on the **Trust multi-factor authentication from Microsoft Entra tenants** option. Read [To change inbound trust settings for MFA and device claims](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration#to-change-inbound-trust-settings-for-mfa-and-device-claims) for more information.
 

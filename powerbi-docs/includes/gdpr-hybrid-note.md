@@ -2,12 +2,12 @@
 title: include file
 description: include file
 services: powerbi
-author: eross-msft
-
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: lizross
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/01/2018
-ms.author: lizross
+ms.date: 12/01/2025
 ms.custom: include file
 ---
 

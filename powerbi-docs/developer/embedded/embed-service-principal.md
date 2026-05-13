@@ -1,21 +1,23 @@
 ---
 title: Embed Power BI content in an embedded analytics application with service principal and an application secret
 description: Learn how to authenticate for embedded analytics by using a Microsoft Entra application service principal and an application secret.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.custom: ""
-ms.date: 11/14/2024
+ms.date: 05/12/2025
+ms.custom:
+  - ""
+  - sfi-image-nochange
 ---
 
 # Embed Power BI content with service principal and an application secret
 
-Service principal is an authentication method that can be used to let a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
+Service principal is an authentication method that can be used to let a [Microsoft Entra](/entra/fundamentals/whatis) application access Power BI service content and APIs.
 
-When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
+When you create a Microsoft Entra app, a [service principal object](/entra/identity-platform/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
 
 To authenticate, the service principal uses the Microsoft Entra app's *application ID* and one of the following:
 
@@ -34,13 +36,13 @@ This article describes service principal authentication using an *application ID
 
 To use service principal and an application ID for embedded analytics, you take the following steps. Subsequent sections describe these steps in detail.
 
-1. Create a [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
+1. Create a [Microsoft Entra app](/entra/identity/enterprise-apps/what-is-application-management).
 
     1. Create a secret for your Microsoft Entra app.
     1. Get the app's *application ID* and *application secret*.
 
     >[!NOTE]
-    >These steps are described in **step 1**. For more information about creating a Microsoft Entra app, see [create a Microsoft Entra app](/azure/active-directory/develop/howto-create-service-principal-portal).
+    >These steps are described in **step 1**. For more information about creating a Microsoft Entra app, see [create a Microsoft Entra app](/entra/identity-platform/howto-create-service-principal-portal).
 
 1. Create a Microsoft Entra security group.
 
@@ -87,7 +89,7 @@ After the script runs, make a note of the following information in the script ou
 # Sign in as a user who's allowed to create an app.
 Connect-MgGraph -Scopes "Application.ReadWrite.All" 
 
-# Create a new Azure AD web application.
+# Create a new Microsoft Entra web application.
 $web = @{
     RedirectUris = "https://localhost:44322"
     HomePageUrl = "https://localhost:44322"
@@ -145,7 +147,7 @@ Connect-MgGraph -Scopes "Application.ReadWrite.All"
 # Get the service principal that you created earlier.
 $servicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '<app-client-ID>'"
 
-# Create an Azure AD security group.
+# Create a Microsoft Entra security group.
 $group = New-MgGroup -DisplayName "securitygroup1" -SecurityEnabled -MailEnabled:$False -MailNickName "notSet"
 Write-Host "Object ID of new security group: " $($group.Id)
 
@@ -166,7 +168,7 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
   :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot of the Developer settings in the Tenant settings section of the Admin portal. The option for embedding content in apps is turned on.":::
 
-* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Microsoft Entra ID.
+* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Microsoft Entra ID. For more information see [Service principals can call Fabric public APIs](/fabric/admin/service-admin-portal-developer#service-principals-can-call-fabric-public-apis).
 
   :::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot of the Developer settings section. The option for allowing service principals to use Power BI APIs is turned on for one security group.":::
 
@@ -271,4 +273,4 @@ After your content is embedded, you're ready to [move to production](move-to-pro
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
-* [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals)

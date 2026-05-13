@@ -12,7 +12,7 @@ metadata:
 title: Frequently asked questions about Power BI Embedded
 summary: |
   * If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
-  * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+  * Still have an issue? Visit the [Power BI support page](https://support.fabric.microsoft.com/support/).
   
 sections:
   - name: General
@@ -348,12 +348,12 @@ sections:
       - question: |
           Can I get started for free?
         answer: |
-          Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Power BI Embedded.
+          Yes, you can use your [Azure credits](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) for Power BI Embedded.
           
       - question: |
           Can I get a trial experience for Power BI Embedded in Azure?
         answer: |
-          Since Power BI Embedded is a part of Azure, you can use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
+          Since Power BI Embedded is a part of Azure, you can use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
           
       - question: |
           Is Power BI Embedded available for national/regional clouds (US Government, Germany, China)?

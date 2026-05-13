@@ -1,12 +1,14 @@
 ---
 title: 'Artificial Intelligence sample for Power BI: Take a tour'
 description: The Artificial Intelligence sample a report for a fictitious company to show features of reports in the Power BI service and Power BI Desktop.
-author: itsnotaboutthecell
-ms.author: alpowers
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 05/30/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 # Artificial Intelligence sample for Power BI: Take a tour
@@ -19,7 +21,7 @@ This tutorial explores the Artificial Intelligence Sample in the Power BI servic
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 

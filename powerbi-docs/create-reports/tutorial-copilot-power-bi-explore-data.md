@@ -1,22 +1,23 @@
 ---
 title: Copilot in Power BI tutorial - Explore data and get more insights
 description: This article provides an overview of understanding data using Copilot in Power BI in the cloud service.
-ms.reviewer: juliacawthra
-ms.author: alpowers
-author: itsnotaboutthecell
+author: julcsc
+ms.author: juliacawthra
+ms.reviewer: alpowers
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ms.custom: azure-data-cat
 ms.date: 05/06/2025
 ---
 
 # Copilot in Power BI tutorial: Explore data and get more insights
 
-> [!IMPORTANT]
-> The features mentioned in this tutorial are now available in Power BI Desktop and are coming soon for the Power BI service. See the [Fabric Roadmap](https://aka.ms/fabricrm) for timeline details.
+> [!NOTE]
+> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
 
 In this tutorial, you explore your data using an AI assistant. You learn to:
 

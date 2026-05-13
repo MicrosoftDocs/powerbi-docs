@@ -1,13 +1,13 @@
 ---
 title: The authentication API in Power BI custom visuals
 description: This article describes the Authentication API needed to obtain Microsoft Entra ID access tokens for single sign-on (SSO) users.
-author: mberdugo
+author: billmath
 ms.author: billmath
 ms.reviewer: tebercov , david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/26/2024
+ms.date: 12/15/2025
 #customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
@@ -138,7 +138,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The format of the AADAuthentication privilege parameter is invalid.
 
-* The visual isn't publicly approved or isn't a debug visual.
+* The visual isn't [publicly approved](./office-store.md) or isn't a debug visual.
 
 * The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consent, see [tenant administrator consent](entra-id-authentication.md#isv-consent).
 

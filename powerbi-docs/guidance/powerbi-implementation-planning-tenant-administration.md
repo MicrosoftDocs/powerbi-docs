@@ -1,12 +1,12 @@
 ---
 title: "Power BI implementation planning: Tenant administration"
 description: "This article introduces key considerations for administering a Fabric tenant."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -94,7 +94,7 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 - **Microsoft Entra administrators**: There are [various reasons](powerbi-implementation-planning-tenant-setup.md#microsoft-entra-administrators) why you need to work with Microsoft Entra administrators. Often, reasons include the need to set up or manage users, groups, and service principals. For more information, see [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md).
 - **Source data access**: You might have to work with a system administrator or database administrator in order to get access to data on behalf of [content creators](powerbi-implementation-planning-security-content-creator-planning.md#creating-new-content). Sometimes, it might also be necessary to request access on behalf of content consumers when semantic models [enforce data security based on the identity](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) of content consumers.
 - **Data loss prevention and data classification**: You might need to collaborate with your [Microsoft Purview](/training/modules/manage-power-bi-artifacts-use-microsoft-purview/) administrator for governance and information protection.
-- **Teams integration**: When integrating Power BI with [Microsoft Teams](../collaborate-share/service-collaborate-microsoft-teams.md), you might need to collaborate with a Teams administrator.
+- **Teams integration**: When integrating Power BI with [Microsoft Teams](../collaborate-share/office-integration/service-collaborate-microsoft-teams.md), you might need to collaborate with a Teams administrator.
 - **OneDrive and SharePoint integration**: When integrating Power BI with [OneDrive or SharePoint](../create-reports/desktop-sharepoint-save-share.md), you might need to collaborate with other administrators.
 - **Workspace administration**: You might need to collaborate with a [Fabric workspace administrator](../collaborate-share/service-roles-new-workspaces.md#workspace-roles) to plan, organize, or secure content within specific workspaces.
 - **Lifecycle management**: When deploying and managing changes to content, you might need to collaborate with a [deployment pipeline administrator](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) or an [Azure DevOps administrator](/fabric/cicd/git-integration/git-integration-process#permissions).
@@ -371,7 +371,7 @@ Here are several reasons why a Fabric administrator might get involved with mana
 - **Get access to a standard workspace**: A Fabric administrator might need to assist with a situation (such as a data refresh failure) when the primary owner of the content is, for example, away on vacation. In that case, they'll need to assign themselves to a workspace role.
 - **Get temporary access to a personal workspace**: It's possible for a Fabric administrator to get access to the [personal workspace](/fabric/admin/portal-workspaces#govern-my-workspaces) of another user, but only for 24 hours. Temporary access to a personal workspace is helpful when the workspace owner has left the organization or is away on vacation.
 - **Manage workspace roles**: A Fabric administrator has permission to manage workspace roles for all workspaces in the tenant. That's helpful when a centralized team manages workspace access. It's also helpful when the workspace is in an orphaned state (indicating there's no workspace administrator) which can happen as a result of employment terminations or transfers.
-- **Reassign a workspace**: To unlock other features, sometimes the workspace [license mode](/fabric/enterprise/licenses#workspace) for a workspace needs to be updated. For example, a Fabric administrator can change a workspace from **Pro** or **Premium per user (PPU)** to a capacity.
+- **Reassign a workspace**: To unlock other features, sometimes the [workspace type](/fabric/enterprise/licenses#workspace) for a workspace needs to be updated. For example, a Fabric administrator can change a workspace from **Pro** or **Premium per user (PPU)** to a capacity.
 - **Determine the type of workspace**: A Fabric administrator can review the [SKU tier](/fabric/admin/capacity-settings?tabs=power-bi-premium) that a workspace is assigned to. For example, the administrator can quickly determine that there are four workspaces in the tenant currently assigned to PPU.
 - **Locate and/or recover deleted workspaces**: The [workspace state](/fabric/admin/portal-workspaces#workspace-states) can indicate that a workspace has been deleted. For a brief period, a Fabric administrator can restore a workspace if it was deleted in error. Or, they can [restore a deleted personal workspace](/fabric/admin/portal-workspaces#restore-a-deleted-my-workspace-as-an-app-workspace) as a standard workspace. For more information, see [Workspace retention](/fabric/admin/portal-workspaces#workspace-retention).
 - **Update workspace name**: A Fabric administrator can rename a workspace, perhaps because its name doesn't conform to the established [naming convention](powerbi-implementation-planning-workspaces-tenant-level-planning.md#workspace-naming-conventions).
@@ -689,9 +689,9 @@ Here are some questions to consider during the decision-making process.
 - **What data storage is centralized versus decentralized?** Understand the needs of your decentralized teams, and whether individuals or departments currently maintain their own Azure Storage accounts. Determine whether workspace administrators will be permitted to connect their own ADLS Gen2 account, or whether you prefer to use one ADLS Gen2 account for all workspaces (tenant-level storage).
 - **How will OneLake be used versus Azure connections?** With the introduction of [OneLake](/fabric/onelake/onelake-overview), consider whether you might choose to gradually move to using OneLake for data storage (BYOL).
 
-For more information, see [Workspace integration with ADLS Gen2](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-adls-gen2).
+For more information, see [Workspace integration with Azure Data Lake Storage Gen2](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-data-lake-storage-gen2).
 
-For more information, see [Workspace integration with Azure Log Analytics](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-azure-log-analytics).
+For more information, see [Workspace integration with Log Analytics](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-integration-with-log-analytics).
 
 #### Step 3: Update Azure connections
 

@@ -1,12 +1,12 @@
 ---
 title: "BI solution architecture in the Center of Excellence"
 description: "Learn what to consider when designing and developing a robust BI platform."
-author: denglishbi
-ms.author: daengli
-ms.reviewer: maroche
+author: dknappettmsft 
+ms.author: daknappe
+ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 12/30/2024
 ---
@@ -166,4 +166,4 @@ For more information about this article, check out the following resources:
 
 Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To find a Power BI partner, visit the [Microsoft Power BI partners portal](https://www.microsoft.com/power-platform/products/power-bi/partners).
 
-You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.
+You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment), [evaluate](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept), or [implement](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&page=1) Power BI.

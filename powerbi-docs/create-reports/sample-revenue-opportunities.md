@@ -6,8 +6,9 @@ ms.author: juliacawthra
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 06/22/2023
+ms.topic: concept-article
+ms.update-cycle: 1095-days
+ms.date: 09/11/2025
 LocalizationGroup: Samples
 ---
 
@@ -23,7 +24,7 @@ This tour explores the Revenue Opportunities built-in sample in the Power BI ser
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../fundamentals/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -101,7 +102,7 @@ The **Opportunity Overview** page of the report has two card visualizations, a t
 
 You can select a field in any visualization to view that data for that selection in all the visualizations.
 
-Hover over any field to see the details of that field as a *tooltip*. A Power BI report provides a default value for tooltips. You can add any value to the tooltips for a visualization. For more information, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+Hover over any field to see the details of that field as a *tooltip*. A Power BI report provides a default value for tooltips. You can add any value to the tooltips for a visualization. For more information, see [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md).
 
 ## Create a Revenue Opportunities dashboard
 
@@ -147,7 +148,7 @@ A dashboard offers the ability to ask questions about data in natural language t
 
    :::image type="content" source="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png" alt-text="Screenshot shows a pie chart that the dashboard created based on the question." lightbox="media/sample-revenue-opportunities/power-bi-ask-revenue-state-map.png":::
 
-   Try some other visualizations. There are different bar charts, scatter charts, and line charts. You can select a table to display the data as numbers. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+   Try some other visualizations. There are different bar charts, scatter charts, and line charts. You can select a table to display the data as numbers. Find a visualization that presents your data in the best way for your purposes. For more information about visualizations, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md).
 
 1. To save your visualization to a dashboard, select **Pin visual**.
 

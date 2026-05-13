@@ -1,15 +1,17 @@
 ---
 title: Refresh a Power BI Desktop File (pbix file) from OneDrive or SharePoint Online
 description: Refresh a Power BI Desktop File (pbix file) created from OneDrive, or SharePoint Online.
-author: davidiseminger
-ms.author: davidi
+author: kgremban
+ms.author: kgremban
 ms.reviewer: kayu
-ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/26/2025
 LocalizationGroup: Data refresh
+ms.custom:
+  - ''
+  - sfi-image-nochange
 ---
 # Refresh a Power BI Desktop File (pbix file) stored on OneDrive or SharePoint Online
 Importing files from OneDrive or SharePoint Online into the Power BI service is a great way to make sure your work in Power BI Desktop stays in sync with the Power BI service.
@@ -28,6 +30,9 @@ When you refresh the semantic model, Power BI doesn't connect to the file on One
 ## Automatic versus manual updates of model information
 
 By default, Power BI updates model information from OneDrive and SharePoint on an hourly basis. If you want these updates to occur manually, you can disable automatic OneDrive refresh in the semantic model settings. Open the semantic model settings, expand the **OneDrive refresh** section, and set the toggle to **Off**.
+
+> [!NOTE]
+> You can also configure these settings in the [semantic model settings pane](service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
 
 :::image type="content" source="./media/refresh-desktop-file-onedrive/powerbi-service-onedrive-refresh-off.png" alt-text="Screenshot showing automatic OneDrive refresh off toggle.":::
  
@@ -122,5 +127,7 @@ Sometimes refreshing data may not go as expected. You'll typically run into data
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+
+If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You will need to open the pbix file in Power BI Desktop and reconnect to the dataset again before updating the file in OneDrive and SharePoint. 
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

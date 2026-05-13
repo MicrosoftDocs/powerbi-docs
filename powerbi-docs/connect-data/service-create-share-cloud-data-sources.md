@@ -1,85 +1,117 @@
 ---
 title: Create and share cloud data sources in the Power BI service
-description: Learn how to create and share cloud data source connections in the Power BI service.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: ''
+description: Learn how to create a shareable cloud connection in the Power BI service, share it with others, and assign it to a semantic model.
+author: kgremban
+ms.author: kgremban
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/03/2024
+ms.date: 03/31/2026
 LocalizationGroup: Connect to data
+ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
+# customer intent: As a Power BI user, I want to find out how to use shareable cloud connections in the Power BI service so that I can set up multiple connections to the same data source, share my connections with others, and centralize data source connection management.
 ---
+
 # Create and share cloud data sources in the Power BI service
 
-With Power BI, you can create, share, and manage cloud connections for semantic models and paginated reports, datamarts, and dataflows, as well as Power Query Online experiences in *Get data*, all within the Power BI service user experience.
+In the Power BI service, you can create, share, and manage cloud connections for various artifacts and experiences:
 
-This article shows you how to create a shareable cloud connection, and then shows you how to share that connection with others. Creating and sharing shareable cloud connections have many advantages, as described in [advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
+- Semantic models
+- Paginated reports
+- Dataflows
+- Power Query Online experiences that you access by selecting **Get data**
 
+This article shows you how to create a shareable cloud connection, share it with others, and assign it to a semantic model. For more information about the benefits, see [Advantages of shareable cloud connections](service-connect-cloud-data-sources.md#advantages-of-shareable-cloud-connections).
+
+> [!NOTE]
+> When you publish a `.pbix` file with a cloud data source from Power BI Desktop, a cloud connection is created automatically.
 
 ## Create a shareable cloud connection
 
-To create a shareable cloud connection, go to the Power BI service, select the **Settings** gear icon, and from the pane that appears select **Manage connections and gateways**.
+To create a shareable cloud connection, take the following steps:
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-01.png" alt-text="Screenshot of selecting create shared connection from settings pane." lightbox="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-01.png":::
+1. Go to the Power BI service, select **Settings** :::image type="icon" source="media/service-create-share-cloud-data-sources/settings-icon.png":::, and then select **Manage connections and gateways**.
 
-In the window that appears, select **New connection** and from the pane that appears, select **Cloud**.
+   :::image type="content" source="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png" alt-text="Screenshot of the home page of the Power BI service. In the expanded Settings menu, Manage connections and gateways is highlighted." lightbox="media/service-create-share-cloud-data-sources/service-settings-manage-connections.png":::
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-02.png" alt-text="Screenshot of creating a new shared connection.":::
+1. On the **Manage Connections and Gateways** page, go to the **Connections** tab, and then select **New**.
 
-Enter a name for the new connection, select the appropriate **connection type** from the drop-down list, and provide the connection details for your data source. Once you've filled in the information, select **Create**.
+1. In the **New connection** dialog, take the following steps:
+   1. Select **Cloud**.
+   1. Under **Connection name**, enter a name for the new connection.
+   1. Under **Connection type**, select the type of connection that you want to create.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-03.png" alt-text="Screenshot of filling out new connection form." lightbox="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-03.png":::
+   :::image type="content" source="media/service-create-share-cloud-data-sources/new-connection-dialog-select-cloud.png" alt-text="Screenshot of the New connection dialog in the Power BI service. Three types of connections are listed. Among them, Cloud is highlighted.":::
 
-With your connection created, you're ready to share it with others.
+   The dialog expands to include fields for configuring the selected connection type.
 
-> [!NOTE]
->  When a .PBIX file with a cloud data source is published from Power BI Desktop, a cloud connection is created automatically.
+1. In the expanded **New connection** dialog, enter connection information for your data source, and then select **Create**.
 
+   :::image type="content" source="media/service-create-share-cloud-data-sources/new-connection-dialog-enter-information.png" alt-text="Screenshot of the New connection dialog. Fields like the name, type, and server are filled out. An authentication method of Basic is selected." lightbox="media/service-create-share-cloud-data-sources/new-connection-dialog-enter-information.png":::
+
+1. Scroll to the top of the dialog and check for notifications about the connection status.
+
+After Power BI creates your connection, you can share it with others.
 
 ## Share a shareable cloud connection
 
-To share a shareable cloud connection that you've already created, go to your **Connections** settings in the Power BI service, select the **More** menu (the ellipses) for the connection you want to share, and select **Manage users**.
+To share a shareable cloud connection, take the following steps:
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-04.png" alt-text="Screenshot of adding users to a shareable connection.":::
+1. In the Power BI service, select **Settings** :::image type="icon" source="media/service-create-share-cloud-data-sources/settings-icon.png":::, and then select **Manage connections and gateways**.
 
-The **Manage users** window appears, where you can search users by name or by their email address, and then grant them the permission level you want them to have. You must at least grant *User* permission to allow users to connect their artifacts to the connection's data source.
+1. Locate the connection that you want to share. Next to it, select **More actions** :::image type="icon" source="media/service-create-share-cloud-data-sources/ellipsis-icon.png":::, and then select **Manage users**.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-05.png" alt-text="Screenshot of applying user permission to a shareable cloud connection.":::
+   :::image type="content" source="media/service-create-share-cloud-data-sources/manage-connections-gateways-manage-users.png" alt-text="Screenshot of the Manage Connections and Gateways page. In the connection list, Manage users is highlighted in the shortcut menu for MyDemoConnection.":::
 
-Once you've found the user and assigned permission, select **Share** at the bottom of the **Manage users** window to apply your selections.
+1. In the **Manage users** dialog, search for the people you want to share the connection with. You can search by name or email address. Grant the permission level that each person needs. To let users connect their artifacts to the data source, grant at least *User* permission.
 
+   :::image type="content" source="media/service-create-share-cloud-data-sources/manage-users-share-connection-dialog.png" alt-text="Screenshot of the Manage users dialog that shows a search box and a Shared with list. Available permissions are User, User with resharing, and Owner.":::
 
-## Assign a shared cloud connection to a semantic model
+1. Select **Share**.
 
-Once you've created a shareable cloud connection, you can assign it to a semantic model.
+## Assign a shareable cloud connection to a semantic model
 
-Open the settings for the semantic model to which you want the shareable connection to apply, and expand the **Gateway and cloud connections** section. You'll notice that the connection is mapped to a *Personal Cloud Connection* by default.
+After you create a shareable cloud connection, you can assign it to a semantic model.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-06.png" alt-text="Screenshot of cloud connection defaulting to personal cloud connection.":::
+1. Go to the workspace that contains the semantic model that you want to connect.
 
-From the **Maps to** drop down, select the name of the shareable connection you created and want to use, then select **Apply**.
+1. Locate the semantic model in the list. Next to the model name, select **More options** :::image type="icon" source="media/service-create-share-cloud-data-sources/more-options-icon.png":::, and then select **Settings**.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-07.png" alt-text="Screenshot of selecting a shareable cloud connection for a semantic model.":::
+1. On the settings page, expand the **Gateway and cloud connections** section. By default, the data source maps to a personal cloud connection.
 
-That's it, you've now assigned your shareable cloud connection to the semantic model.
+   :::image type="content" source="media/service-create-share-cloud-data-sources/semantic-model-cloud-connection-default-settings.png" alt-text="Screenshot of the gateway and cloud connection settings for a semantic model. The data source is mapped to a personal cloud connection.":::
 
-If you haven't created a shareable cloud connection yet when you're using this screen, you can select the **Create a connection** option from the drop-down to be taken to the **Manage connections and gateways** experience, and all the connection details from the data source for which you selected the **Create a connection** drop-down are prepopulated in the **Create new cloud connection** form. 
+1. In the **Maps to** list, select the shareable connection that you want to use, and then select **Apply**.
+
+   :::image type="content" source="media/service-create-share-cloud-data-sources/semantic-model-cloud-connection-select-new-connection.png" alt-text="Screenshot of the gateway and cloud connection settings for a semantic model. In the data source mapping list, myDemoConnection is selected.":::
+
+   Power BI assigns the shareable cloud connection to the semantic model.
+
+If you open the **Gateway and cloud connections** settings for a semantic model before you create a shareable connection, you can select **Maps to** > **Create a connection** to open the **New connection** dialog. The fields are prepopulated with information about the semantic model's data source.
 
 ## Granular access control
 
-Power BI enforces granular access control for shareable cloud connections. Access control for all data types can be enabled at the tenant, workspace, and semantic model level. The following image shows how access control can be enforced at the tenant, the workspace, or the semantic model. Each setting provides granular access control, with different priority.
+Power BI always enforces granular access control for shareable cloud connections. For other data access scenarios, you can turn on granular access control at the tenant, workspace, and semantic model levels.
 
-:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png" alt-text="Screenshot of granular access control.":::
+You can find the setting at the following levels:
 
-If a tenant admin enables granular access control for all connection types, then granular access control is enforced for the entire organization. Workspace admins and artifact owners can't overrule granular access control enabled at the tenant level. 
+- **Tenant level**: In the Power BI service, go to **Settings** > **Admin portal** > **Tenant settings**. Search for the granular access control setting under **Integration settings**.
+- **Workspace level**: Open the workspace, select **Settings**, and look for the granular access control option.
+- **Semantic model level**: Go to the semantic model's **Settings** page, and then expand **Data access**.
 
-If granular access control isn't enforced at the tenant level, workspace admins can enforce granular access control for their workspaces. And if workspace admins don’t enforce granular access control, then artifact owners can decide whether to enforce granular access control for each of their artifacts independently. 
+The following image shows the settings at those three levels:
 
-By default, granular access control is disabled at all three levels, enabling individual artifact owners to enforce granular access control for each data connection type selectively. However, it's likely more efficient to enable granular access control on a workspace-by-workspace basis.
+:::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png" alt-text="Screenshots of tenant, workspace, and dataset granular access control settings, combined into one image. Each screenshot shows a toggle or checkbox." lightbox="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-08.png":::
+
+Power BI applies these settings in the following order:
+
+- If a tenant admin turns on granular access control for all connection types, Power BI enforces it across the organization. Workspace admins and artifact owners can't override a tenant-level setting.
+- If granular access control isn't enforced at the tenant level, workspace admins can enforce it for their workspaces.
+- If workspace admins don't enforce it, artifact owners can decide whether to enforce it for each artifact.
+
+By default, granular access control is turned off at all three levels. When it isn't enforced at the tenant or workspace level, artifact owners can turn it on for individual artifacts. However, enabling it at the workspace level is often easier to manage.
 
 ## Related content
 
-For important information about shareable cloud connections, including limitations and considerations, read the following article:
-
-- [Connect to cloud data sources in the Power BI service](service-connect-cloud-data-sources.md)
+For important information about shareable cloud connections, including limitations and considerations, see [Connect to cloud data sources in the Power BI service](service-connect-cloud-data-sources.md).
