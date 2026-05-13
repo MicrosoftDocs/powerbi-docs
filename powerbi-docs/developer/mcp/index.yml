@@ -56,7 +56,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Remote Power BI MCP server"
-            url: mcp-servers-overview.md#power-bi-mcp-server-cloud
+            url: mcp-servers-overview.md#power-bi-mcp-server-remote
       - linkListType: concept
         links:
           - text: "Remote Power BI MCP server tools"
