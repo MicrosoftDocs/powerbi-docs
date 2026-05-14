@@ -1,15 +1,13 @@
 ---
-title: Power BI Tenant Migration Patterns and Strategies
+title: Power BI tenant migration patterns and strategies
 description: Learn migration patterns for Power BI tenant scenarios including cross-tenant migrations, tenant splits, and regional relocations. Includes planning frameworks and implementation guidance.
 author: eric-urban
 ms.author: eur
-ms.reviewer: hfeng
+ms.reviewer: winnieli
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: concept-article
-ms.date: 05/10/2026
-ms.custom:
-  - subject-moving-resources
+ms.date: 05/14/2026
 ai-usage: ai-assisted
 ---
 
@@ -18,7 +16,7 @@ ai-usage: ai-assisted
 Organizations face various tenant migration scenarios in Power BI, driven by mergers and acquisitions, company divestments, data residency requirements, or regional compliance needs. Tenant migrations are complex undertakings that require careful planning, comprehensive backup strategies, and systematic execution. This article provides guidance for enterprise-scale Power BI tenant migrations, including decision frameworks to help determine whether migration is necessary, and detailed implementation methodologies for different migration patterns.
 
 > [!IMPORTANT]
-> Tenant migrations carry significant risk and require extensive manual effort. Microsoft doesn't provide direct support for migrating content between tenants or within the same tenant during regional relocations. Before proceeding with any migration, carefully evaluate alternatives such as Multi-Geo capacities that can address many scenarios without the complexity and risk of full tenant migration.
+> Tenant migrations carry significant risk and require extensive manual effort. Microsoft doesn't provide direct support for migrating content between tenants or within the same tenant during regional relocations. Before proceeding with any migration, carefully evaluate alternatives such as multi-geographic capacities that can address many scenarios without the complexity and risk of full tenant migration.
 
 ## Tenant migration scenarios
 
@@ -253,7 +251,7 @@ Move users to the target tenant and update downstream applications.
 
 ## Related content
 
-- [Move Power BI between geographic regions](service-admin-region-move)
+- [Move Power BI between geographic regions](service-admin-region-move.md)
 - [Multi-geo support for Power BI Premium](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)
 - [Power BI tenant setup](/power-bi/guidance/powerbi-implementation-planning-tenant-setup)
 - [Power BI semantic model backup and restore](/power-bi/enterprise/service-premium-backup-restore-dataset)
