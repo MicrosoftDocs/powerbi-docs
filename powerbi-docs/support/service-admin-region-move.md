@@ -23,32 +23,9 @@ Moving a Power BI tenant between regions requires Microsoft Support assistance a
 
 Full cross‑region tenant migration isn't supported for Power BI or Fabric capacities at this time. As alternatives, consider using [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) or the tenant remapping process described previously.
 
+
 > [!CAUTION]
-> This article describes how to request a tenant remapping to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remapping process leads to data loss and requires reconfiguration of your tenant. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
-
-## Understanding tenant migration scenarios
-
-Before proceeding with a tenant remapping, it's important to understand the different types of Power BI tenant migrations and choose the right approach for your situation:
-
-- **Tenant remapping (regional relocation)**: Moving your Power BI tenant's home region to a different geographic location while maintaining the same Microsoft 365 tenant. This process, described in this article, involves deleting and recreating your Power BI tenant in the new region with Microsoft Support assistance. This is appropriate when data residency requirements mandate that both data and tenant metadata reside in a specific region.
-
-- **Cross-tenant migration**: Moving Power BI content from one Microsoft 365 tenant to another, typically during company acquisitions or mergers. This isn't a Microsoft-supported process and requires manual migration of artifacts between two separate tenants that operate side-by-side.
-
-- **Tenant split**: Separating a single Power BI tenant into two independent tenants, typically during company divestments or spin-offs. This also isn't a Microsoft-supported process.
-
-> [!NOTE]
-> For comprehensive guidance on cross-tenant migrations, tenant splits, and advanced migration strategies, see [Power BI tenant migration patterns and strategies](tenant-migration-patterns.md). That article provides detailed planning frameworks, migration methodologies, and automation approaches for complex enterprise scenarios.
-
-## Before you migrate: Consider Multi-Geo
-
-Before committing to a tenant remapping, carefully evaluate whether [Multi-Geo capacities](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) can meet your requirements. Multi-Geo allows you to deploy Power BI or Fabric capacities in different regions while keeping your tenant's home region unchanged. This approach:
-
-- Stores data within capacities close to end users in different geographic locations
-- Avoids the complexity, risk, and downtime associated with tenant remapping
-- Allows workspace migration by simply reassigning workspaces to capacities in different regions
-- Maintains user access, permissions, and tenant configuration
-
-Only proceed with tenant remapping if data residency laws require that tenant metadata (workspace definitions, semantic model metadata, visual metadata, settings, and policies) and Microsoft 365 user information must also reside within specific geographic boundaries. Multi-Geo is sufficient for most data residency scenarios because actual data and compute operations are tied to the capacity region, not the tenant's home region.
+> This article describes how to request a tenant remapping to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remapping process leads to data loss and requires reconfiguration of your tenant. Evaluate alternatives outlined in [Power BI tenant migration patterns and strategies](tenant-migration-patterns.md) first. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Considerations and limitations
 
@@ -77,37 +54,20 @@ Because the region move process deletes all tenant data and metadata, you must b
 
 #### Document your tenant configuration
 
-- **Collect tenant metadata**: Run the [scanner API](/power-bi/enterprise/service-admin-metadata-scanning) to perform a complete tenant inventory. The Scanner API provides comprehensive information about:
-  - All workspaces (type, capacity assignment, region)
-  - Reports, semantic models, and dataflows
+- **Collect tenant metadata**: Run the [scanner API](/power-bi/enterprise/service-admin-metadata-scanning) to gather information about your tenant, including:
   - Data lineage relationships
   - Workspace and item permissions
   - Scheduled refresh configurations
-  - Row-level security (RLS) roles
   - Subscription settings
-  - Sharing links and external access
-  
-  Consider creating a master inventory spreadsheet to track all artifacts and classify their migration complexity (Low/Medium/High).
-
-- **Capture dashboard layouts**: Take detailed screenshots of all dashboards to help with rebuilding. Dashboards can't be exported and must be manually recreated after remapping.
-- **Record custom configurations**: Document tenant-level settings (workspace creation controls, sharing policies, custom visuals governance, sensitivity labels) and any custom configurations that can't be exported. Take screenshots of the Admin Portal settings.
+- **Capture dashboard layouts**: Take detailed screenshots of all dashboards to help with rebuilding.
+- **Record custom configurations**: Document any custom configurations or settings that can't be exported.
 
 #### Back up Power BI content
 
-- **Reports**: Download .pbix files from the Power BI service to Power BI Desktop. Some reports might have limitations on downloading. You can use Power BI Admin APIs to script bulk downloads if you have many reports.
-
-- **Semantic models**: 
-  - For **Premium capacity semantic models**: Follow the guidance in [Back up and restore Power BI Premium semantic models](/power-bi/enterprise/service-premium-backup-restore-dataset) to back up to Azure Data Lake Storage (ADLS).
-  - For **large storage format semantic models**: Assess the actual semantic model size first. For models under 10 GB, consider converting them back to standard format before migration. For models over 10 GB, use the backup and restore option or plan to recreate the semantic model in the new tenant.
-  - For **standard semantic models**: Download definition files and plan to refresh data after restoration.
-
-- **Dataflows**: Export each dataflow as JSON by selecting the dataflow and choosing **Export.json**. You can also use [Power Query templates (preview)](/power-query/power-query-template) for backup. Admin APIs can be used to script bulk dataflow exports.
-
-- **Fabric artifacts**: 
-  - Use **Git integration** where available to back up Fabric item definitions. Note that Git integration backs up metadata and definitions but not the actual data within items.
-  - For **Lakehouses**: Git integration preserves only metadata; delta tables and schemas aren't migrated. You must plan to reload data after restoration.
-  - For **Fabric items without Git support**: Document these items thoroughly with screenshots and detailed notes, as they must be manually recreated.
-  - Copy any data that needs to be retained to an external location like Azure Data Lake Storage (ADLS) before the remapping.
+- **Reports**: Download .pbix files from the Power BI service to Power BI Desktop. Some reports might have limitations on downloading.
+- **Semantic models**: If using Premium capacity, follow the guidance in [Back up and restore Power BI Premium semantic models](/power-bi/enterprise/service-premium-backup-restore-dataset).
+- **Dataflows**: Export each dataflow as JSON by selecting the dataflow and choosing **Export.json**. You can also use [Power Query templates (preview)](/power-query/power-query-template) for backup.
+- **Fabric artifacts**: Back up artifact definitions to Git and copy any data that needs to be retained to an external location like Azure Data Lake Storage (ADLS).
 
 #### Inventory and document gateways
 

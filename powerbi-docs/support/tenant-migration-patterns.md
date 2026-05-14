@@ -20,374 +20,242 @@ Organizations face various tenant migration scenarios in Power BI, driven by mer
 > [!IMPORTANT]
 > Tenant migrations carry significant risk and require extensive manual effort. Microsoft doesn't provide direct support for migrating content between tenants or within the same tenant during regional relocations. Before proceeding with any migration, carefully evaluate alternatives such as Multi-Geo capacities that can address many scenarios without the complexity and risk of full tenant migration.
 
-## Migration scenario overview
+## Tenant migration scenarios
 
-Tenant migrations typically arise for two primary reasons: organizational acquisitions requiring the consolidation of separate tenants, and relocations driven by data residency requirements necessitating proximity to a new geographical region.
+Power BI tenant migration covers three scenarios. Identify which one applies to your situation before you plan your migration.
 
-### Cross-tenant migration
+| Scenario | Description | Typical trigger |
+|---|---|---|
+| **Side-by-side (cross-tenant) migration** | Two separate Microsoft 365 tenants operate in parallel. Artifacts are moved from the source tenant to the target tenant individually. | Mergers and acquisitions that consolidate two organizations into a single tenant. |
+| **Tenant split** | A single Power BI tenant is separated into two independent tenants. Artifacts, workspaces, and users belonging to the departing business entity are selectively carved out. | Divestments and spin-offs. |
+| **Tenant remap (tenant relocation)** | The Power BI tenant is deleted and recreated in a new home region within the same Microsoft 365 tenant. The Microsoft 365 tenant ID, domain, and user identities are preserved. For more information, see [Move Power BI between geographic regions](/power-bi/support/service-admin-region-move). | Data residency requirements that force the tenant home region to a specific country/region. |
 
-In acquisition scenarios, a side-by-side **cross-tenant migration** is implemented, involving parallel operation of both tenants and gradual transfer from one to the other. Two separate Microsoft 365 tenants operate simultaneously, requiring artifacts, users, and permissions to be migrated individually from the source tenant to the target tenant.
+Side-by-side migrations and tenant splits are *cross-tenant* operations. Tenant remap is a *region relocation* within the same Microsoft 365 tenant.
 
-This scenario commonly occurs during migrations resulting from acquisitions. Two separate tenants operate simultaneously, requiring you to move artifacts individually. Although this process can be lengthy and demanding, it carries a low risk of data or artifact loss and minimal downtime for end users, since you can decide when users transition to the new tenant. During a side-by-side migration, licensing and capacity must be maintained in both tenants for the duration of the migration, which can temporarily increase cost while both environments run in parallel. User and group migration must also be considered in this scenario.
-
-### Tenant relocation (regional move)
-
-When compliance requirements mandate regional relocation, the process involves [deleting the existing tenant and recreating it in the desired region](service-admin-region-move.md) within the same Microsoft 365 environment. This is distinct from cross-tenant migration because it maintains the same tenant identity but changes the Power BI tenant [home region](/power-bi/guidance/powerbi-implementation-planning-tenant-setup#home-region).
-
-To relocate the home tenant region while maintaining the same Microsoft 365 tenant (and retaining your @company.com domain), you must request a tenant remap through Microsoft Support. The process entails complete deletion of the existing Power BI tenant, followed by creation of a new, empty tenant in the desired home region, which is then linked to the original Microsoft 365 tenant. This ensures that your Power BI or Fabric tenant ID and user access remain unchanged.
-
-Microsoft Support assistance is limited to deleting the previous tenant and remapping a new tenant to the specified region; migration assistance isn't provided. You must have a rehydration plan for both data and metadata, whether through scripted backup and restore, manual actions, or a recreation and reloading process. This procedure carries considerable risk, including potential data or artifact loss if backups are incomplete or artifacts are omitted. Downtime during tenant remapping can range from three to 24 hours, with additional downtime required for restoration of artifacts.
 
 > [!NOTE]
-> For step-by-step guidance on tenant remapping (regional relocation) with Microsoft Support, see [Move your Power BI tenant to a different region](service-admin-region-move.md).
+> For considerations and limitations on tenant remapping (regional relocation) with Microsoft Support, see [Move your Power BI tenant to a different region](service-admin-region-move.md). Microsoft Support assistance is limited to deleting the previous tenant and remapping a new tenant to the specified region; migration assistance isn't provided. You must have a rehydration plan for both data and metadata, whether through scripted backup and restore, manual actions, or a recreation and reloading process. This procedure carries considerable risk, including potential data or artifact loss if backups are incomplete or artifacts are omitted. Downtime during tenant remapping can range from three to 24 hours, with more downtime required for restoration of artifacts.
 
-### Tenant split
-
-A tenant split typically occurs during company divestments or spin-offs, where a single Power BI tenant needs to be separated into two independent tenants. This scenario requires selectively carving out artifacts, data, workspaces, and users that belong to the departing business entity while leaving the rest untouched. This adds an extra layer of complexity, as dependencies, shared semantic models, gateways, and capacity assignments must be carefully untangled. User and group migrations to the new tenant must also be considered.
-
-### Scenario comparison
-
-The following table compares the three migration scenarios to help you identify which pattern applies to your situation:
-
-| Aspect | Cross-tenant migration | Tenant relocation (regional move) | Tenant split |
-|--------|------------------------|-----------------------------------|---------------|
-| **Use case** | Mergers and acquisitions | Data residency and regional compliance | Company divestments and spin-offs |
-| **Tenant identity** | Two separate tenants operate in parallel | Same tenant ID, new home region | One tenant becomes two independent tenants |
-| **User accounts** | Different user object IDs between tenants | Same user object IDs maintained | Users split between two tenants with different object IDs |
-| **Downtime** | Minimal—users cutover when ready | 3-24 hours during remap plus restoration time | Minimal for remaining tenant, variable for new tenant |
-| **Risk level** | Low—source tenant remains available | High—tenant deletion with no rollback | Medium to high—dependencies must be untangled |
-| **Cost impact** | Higher—dual licensing and capacity during migration | Lower—single tenant, temporary capacity deletion | Variable—depends on split complexity |
-| **Complexity** | High—manual migration of artifacts, users, and permissions | High—complete backup and restore required | Very high—selective carving with dependency management |
-| **Microsoft Support** | No direct migration support | Limited to tenant deletion and remap only | No direct migration support |
 
 ## Evaluate alternatives before migrating
 
 Tenant migration involves considerable risk and effort. Explore alternative options before proceeding. The following strategies might help you avoid a tenant migration or relocation.
 
-### Multi-Geo deployment
+### Multi-geo deployment
 
-Consider a [multi-geo deployment](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) first. A multi-geo deployment allows you to deploy your Power BI or Fabric capacity in the desired region, so that the data within those capacities remains close to your end users. Your Power BI or Fabric home tenant region remains in the original location where the Power BI tenant was first created. The home tenant region continues to store tenant-related metadata and user information. You can have multiple Power BI or Fabric capacities in different regions under the same tenant.
+A [multi-geo deployment](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) lets you deploy Power BI and Fabric capacity in a region of your choice while keeping your tenant home region unchanged. The data within those capacities stays close to your end users, and you can have multiple capacities in different regions under the same tenant.
 
-Migrating your artifacts to a capacity in a different region is much easier than migrating your entire tenant to a different region. In this scenario, you simply reassign your workspace from one capacity to another and migration happens seamlessly, with the exception of Fabric items, which must be deleted before the workspace reassignment and recreated after.
+Migrating artifacts to a capacity in a different region is simpler than migrating the tenant itself. To move a workspace to a different region, reassign the workspace from one capacity to another. The reassignment is seamless for Power BI items.
 
-### Data latency considerations
+> [!IMPORTANT]
+> Fabric items don't survive workspace reassignment across capacities in different regions. Delete Fabric items before the workspace reassignment and recreate them afterward, or use Git integration to back up and restore Fabric items.
 
-If you're trying to resolve data latency by placing your data closer to your end users, consider a [multi-geo deployment](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium). As part of migrating your capacity to a new region, you also need to move your data gateway to the new desired location, which might cause issues during gateway setup. See the Gateway provisioning considerations section in this article for remediation steps.
+Consider multi-geo deployment for the following requirements:
 
-### Data residency requirements
+- **Data latency.** Place data and compute closer to end users by deploying capacity in their region.
+- **Data residency.** Your data and compute are tied to your *capacity* region, not your tenant region. A multi-geo deployment keeps data within data residency boundaries for most workloads.
 
-If your move is motivated by data residency laws, consider a [multi-geo deployment](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium) first to move data within data residency boundaries. Your actual data and compute are tied to your capacity region, not the tenant region, with the exception of Dataflow Gen1. In Dataflow Gen1, output is written to an Azure Data Lake Storage (ADLS) Gen2 account that by default is in the Power BI tenant's home region. In this scenario, you can [bring your own ADLS Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) to specify another storage account you created in the desired region.
+Only consider a tenant remap when data residency requirements are strict enough that even tenant metadata (workspace definitions, semantic model metadata, visual metadata, settings, policies) and Microsoft 365 user information must remain within data residency boundaries.
 
-Only consider a tenant migration if data residency laws require that tenant metadata (workspace definitions, semantic model metadata, visual metadata, settings, and policies) and Microsoft 365 user information (users, groups, and permissions) also reside within data residency boundaries.
+### Bring your own storage account for Dataflow Gen1
 
-### Gateway provisioning considerations
+[Dataflow Gen1](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) writes its output to an Azure Data Lake Storage (ADLS) Gen2 account that, by default, sits in the Power BI tenant's home region. If Dataflow Gen1 storage location is your only residency concern, configure a bring-your-own ADLS Gen2 account in the desired region instead of relocating the tenant.
 
-If you deployed your capacity in a different region from your home tenant region, you might encounter data gateway setup issues due to the region mismatch. This can be resolved by setting up a [custom Azure relay](/data-integration/gateway/service-gateway-azure-relay). A custom Azure relay endpoint allows your data to remain in your desired region instead of traveling back to your home tenant region (where the default endpoint is set up). Gateway issues shouldn't prompt a tenant migration because they can be mitigated.
+### Custom Azure relay for gateway region mismatch
 
-### Business considerations
+If your capacity is deployed in a different region from your tenant home region, the default on-premises data gateway endpoint routes traffic back to the home region. To keep gateway traffic in your capacity region, configure a [custom Azure relay](/data-integration/gateway/service-gateway-azure-relay). A gateway region mismatch alone shouldn't trigger a tenant migration.
 
-If a business need triggered a tenant migration (for example, migrating your Power BI tenant to a different tenant for billing consolidation), weigh the efforts against the outcomes. If your Power BI tenant is small and straightforward to migrate, you can proceed with the migration. However, if your Power BI tenant is large and migration is complex and high risk, consider reviewing the business need to determine if there's any possibility to avoid a tenant migration. Tenant migration should be the last resort due to the considerable risk and business disruption involved.
+### Review the business case
 
-## Migration complexity and limitations
+If a tenant migration is driven by a business need (for example, billing consolidation), weigh the effort and risk against the outcome. A small tenant might be straightforward to migrate; a large tenant with significant Fabric content might warrant revisiting the business need before proceeding.
 
-Migrating a Power BI tenant is a complex process with no direct support from Microsoft. The process relies on scripting and automation where possible, combined with manual actions. In situations where downloads aren't feasible with Admin APIs—such as with Lakehouse artifacts—manual recreation of the artifact is required. Items that require manual recreation include Power BI Apps, Power BI dashboards, and all Fabric items.
+
+## What's supported for migration
+
+Most Power BI items support definition export through the [Power BI Admin API](/rest/api/power-bi/admin) or [Workspace Scanner API](/power-bi/enterprise/service-admin-metadata-scanning) and can be scripted. Most Fabric items don't support definition export and must be manually recreated.
+
+The following table summarizes the migration path for each artifact type.
+
+| Order | Artifact | Migration path |
+|---|---|---|
+| 1 | Gateways | No migration path. Must be reconfigured in the target tenant by a Power BI admin. |
+| 2 | Workspaces | No migration path. Must be recreated in the target tenant. Bulk creation is possible using the Power BI Admin API. |
+| 3 | Fabric items | Items that support [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) can be backed up by committing to Git, unlinking from the source workspace, and relinking to a new workspace in the target tenant. Only the definition is backed up; data isn't included. Items that don't support Git integration must be recreated manually. For Lakehouse, only metadata is preserved; delta tables and schemas don't transfer. |
+| 4 | Dataflows | Download the definition JSON and reimport into the target tenant. Scripting is possible using the Admin API. |
+| 5 | Semantic models / datasets | Use [backup and restore](/power-bi/enterprise/service-premium-backup-restore-dataset) to an ADLS Gen2 storage account, or download the definition and reimport. Scripting is possible using the Admin API. |
+| 6 | Reports | Owners or admins [download the .pbix](/power-bi/create-reports/service-export-to-pbix) and republish to the target tenant. Alternatively, export the JSON definition. Scripting is possible using the Admin API. |
+| 7 | Dashboards | No migration path. Must be manually recreated. |
+| 8 | Power BI apps | No migration path. Must be manually recreated. |
+| 9 | Paginated reports | Owners or admins download the RDL file and [publish](/power-bi/guidance/publish-reporting-services-power-bi-service) to the target tenant. |
+
+> [!IMPORTANT]
+> Always recreate artifacts in this order. Downstream artifacts depend on upstream artifacts, and skipping the order can lead to broken references during execution. Performing a Git sync wipes all items in the workspace that don't exist in the repo. 
 
 ## Migration methodology
 
-If you confirmed that a tenant migration is unavoidable, follow the recommended steps for executing a tenant migration. Most steps apply to all scenarios, but some are specific to tenant remap or side-by-side migrations.
+Consider the following reference activities. Most steps apply to all three scenarios. Steps that are specific to a scenario are called out in their headings.
 
 ### Step 1: Discovery and inventory assessment
 
-In every migration project, start with a full audit of your tenant to understand what you're working with. The Power BI Scanner API, Power BI Admin API, and Fabric Admin API perform a full tenant discovery. Most Power BI items support definition export and can be backed up and migrated straightforwardly, whereas most Fabric items don't support this and require manual recreation.
+Build a complete inventory of artifacts and dependencies, and identify what you can, can't, or shouldn't migrate.
 
-#### Objectives
+**Activities**
 
-This step aims to:
+- Run tenant-wide discovery by using a combination of:
+  - Power BI Admin APIs
+  - Fabric Admin APIs
+  - Activity logs (workspaces, reports, datasets, refreshes)
+  - Manual documentation for items not exposed by APIs
+- Capture:
+  - Workspaces (type, capacity, region)
+  - Reports, semantic models (especially large storage format), dataflows
+  - Fabric items (Lakehouse, Warehouse, Eventhouse, notebooks)
+  - Gateways, data sources, credentials
+  - Row-level security (RLS) roles, workspace permissions, sharing links
+- Classify each workspace by migration complexity (low, medium, high) based on the artifacts it contains and dependencies.
 
-- Establish a complete inventory of artifacts and dependencies.
-- Identify what can, can't, or shouldn't be migrated.
+**Outputs**
 
-#### Activities
+- A primary inventory spreadsheet.
+- A migration complexity classification for every workspace.
 
-Run tenant-wide discovery using a combination of:
-
-- Power BI Admin APIs
-- Fabric Admin APIs
-- Activity logs (workspaces, reports, semantic models, refreshes)
-- Manual documentation
-
-Capture the following information:
-
-- Workspaces (type, capacity, region)
-- Reports, semantic models (especially large storage format semantic models), dataflows
-- Fabric items (Lakehouse, Warehouse, Eventhouse, notebooks)
-- Gateways, data sources, credentials
-- Row-level security (RLS) roles, workspace permissions, sharing links
-
-Assess:
-
-- What can be migrated easily (artifacts that support definition export)
-- What can't be migrated easily (Fabric items, large storage format semantic models)
-- What shouldn't be migrated (old artifacts that haven't been used for months)
-
-#### Outputs
-
-- Master inventory spreadsheet.
-- Migration complexity classification for each workspace (Low/Medium/High).
-
-> [!TIP]
-> Use the Power BI Scanner API to automate tenant discovery and create a comprehensive inventory. This API provides detailed information about workspaces, reports, semantic models, dataflows, and dependencies, which can be exported to a spreadsheet for analysis and migration planning.
-
-#### Remediation approaches
-
-For Fabric items, Git integration can be used to back up and restore Fabric items by backing up a workspace, unlinking the workspace from the Git repository, and re-linking the Git repository with a new workspace to restore the items. This works better for some Fabric items than others. For Fabric Lakehouses, only metadata is preserved; delta tables and schemas don't migrate. For large storage format semantic models, assess the actual semantic model size. For models under 10 GB, convert them back to a standard semantic model and migrate as usual. For models over 10 GB, use a backup and restore option or recreate the semantic model in the new tenant.
 
 ### Step 2: User and security discovery
 
-Consider user permissions when migrating workspaces in the new tenant. For a tenant remap, your user object IDs remain the same. For a side-by-side tenant migration, your users have different object IDs and their object ID from the source tenant must be mapped to their object ID in the target tenant. User licensing (free, Pro, PPU) must also be reassigned in the target tenant to allow a seamless side-by-side tenant migration.
+Capture user identity, licensing, and permissions, and map them between tenants when required.
 
-Workspace and artifact permissions can be extracted using Power BI Admin APIs and the Workspace Scanner API. However, Power BI licenses aren't exposed through Power BI APIs and must be sourced from Microsoft Graph, where license assignments are managed at the Microsoft 365 level.
+In a tenant remap, user object IDs are preserved. For a side-by-side migration or tenant split, users have different object IDs in the target tenant. Map each source-tenant identity to its target-tenant identity. Reassign Power BI license assignments (Free, Pro, PPU). Mirror security groups in the new Microsoft 365 tenant.
 
-#### Objectives
+**Activities**
 
-This step aims to:
+Identify and record:
 
-- Understand who uses what and how users map to the new tenant (if performing a side-by-side tenant migration).
-- Capture current tenant settings and governance strategies.
-
-#### Activities
-
-Identify and record the following items:
-
-- Licensing assigned to Power BI users
-- User object ID in old tenant
-- User object ID in new tenant
-- User permissions (access level for workspaces)
-- Current tenant-level settings (manual screen capture)
+- Power BI license assignments (sourced from [Microsoft Graph](/graph/api/resources/licensedetails))
+- User object IDs in the source tenant
+- User object IDs in the target tenant (side-by-side or split only)
+- User permissions and workspace access levels
+- Current tenant-level settings (capture manually through the admin portal)
 - Current governance configurations (sensitivity labels, endorsement policies)
 
-#### Outputs
-
-- User and group mapping document (for side-by-side migrations).
-- Licensing inventory by user.
-- Workspace permission matrix.
-- Tenant settings documentation.
+You can extract workspace and artifact permissions by using the Power BI Admin APIs and the [Workspace Scanner API](/power-bi/enterprise/service-admin-metadata-scanning).
 
 ### Step 3: Stakeholder communication and change management
 
-Stakeholders (report creators, end users) should receive communication on the migration and what to expect to ensure there are no surprises.
+Communicate the migration plan early to reduce resistance and support load.
 
-#### Objectives
-
-This step aims to:
-
-- Set expectations early.
-- Reduce resistance and support load.
-
-#### Key stakeholder groups
+**Key stakeholder groups**
 
 - Executive sponsors
 - Workspace owners and report authors
 - End users
 - IT, security, and identity teams
 
-#### Activities
+**Activities**
 
-Devise a communication plan containing:
+- Develop a communication plan covering:
+  - Migration overview and rationale.
+  - What is and isn't migrated (for example, personal workspaces, idle workspaces).
+  - What changes (URLs, access, refresh timing). Downstream Power Apps and SharePoint links that reference Power BI URLs are also affected.
+  - What doesn't change (data semantics, visuals, business logic).
+- Communicate key dates:
+  - Freeze windows (typically about one week of no changes in the source tenant during final backup).
+  - Expected downtime (for tenant remap scenarios).
+  - Validation periods for stakeholders to verify their own reports in the target tenant.
+  - Cutover milestones and decommissioning dates for the source tenant (side-by-side scenarios).
 
-- Migration overview and rationale
-- What changes (URLs, access, refresh timing) - this impacts linkage to other Power Apps or SharePoint if applicable
-- What doesn't change (data, visuals, semantics)
+**Outputs**
 
-Inform on key dates:
+- A stakeholder briefing deck.
+- An end-user FAQ.
 
-- Freeze windows (about one week of no changes in the source tenant during final backup)
-- Expected downtime for tenant remap scenarios
-- Validation periods (stakeholders validate reports they own in the target tenant)
-- Cutover milestones (begin decommissioning of source tenant for side-by-side tenant scenarios)
+### Step 4: Submit a tenant remap request (tenant remap only)
 
-#### Outputs
+When the migration date is locked, submit a [support ticket](/power-bi/support/service-admin-region-move#request-the-region-move) and specifically select the tenant remap option. A Microsoft support engineer takes the request.
 
-- Stakeholder briefing deck
-- End-user FAQ
+**Activities**
 
-### Step 4: Submit a tenant remap request (tenant remap scenario only)
+- Submit the support ticket.
+- Complete the readiness checklist provided by Microsoft.
+- Agree on a migration date and time slot, including a backup time slot.
+- Delete existing capacity before the tenant remap takes place.
 
-When you're ready to confirm a date for your tenant migration, submit a [support ticket](service-admin-region-move.md#request-the-region-move) to Microsoft Support, and select the tenant remap option. A member from Microsoft Support contacts you.
+**Expected outcomes**
 
-#### Objectives
-
-This step aims to:
-
-- Submit a formal request for Microsoft to delete and recreate your existing tenant.
-
-#### Activities
-
-- Submit a support ticket to Microsoft Support
-- Complete the readiness checklist provided by Microsoft
-- Agree on migration date and time slot (including a backup time slot)
-- Delete existing capacity before tenant remap takes place
-
-> [!WARNING]
-> The tenant remap process involves permanent deletion of your existing Power BI tenant. Ensure all artifacts are backed up completely before proceeding. There is no rollback option once the deletion begins. Verify your backup integrity by testing restore procedures during your pilot phase.
-
-#### Outputs
-
-A typical remap takes three hours to complete. However, expect delays up to 24 hours if there are complications. After remap completes, your new tenant should have the same tenant ID and be in the desired region.
+- A typical remap takes about three hours, but delays of up to 24 hours are possible if complications occur.
+- After remap completes, the new tenant has the same tenant ID and is located in the requested region.
 
 ### Step 5: Target tenant readiness
 
-Once your new tenant is set up, it might not be immediately ready for content to land.
+A newly created or newly remapped tenant isn't immediately ready to receive content. Configure it first.
 
-#### Objectives
+**Activities**
 
-This step aims to:
-
-- Ensure the new tenant is ready before content arrives.
-
-#### Activities
-
-Configure Power BI tenant settings:
-
-- Workspace creation controls
-- Sharing and external access policies
-- Custom visuals governance
-- Sensitivity labels and information protection
-- Audit log and monitoring enablement
-
-Additional activities:
-
-- Purchase Fabric capacities (of equal or higher SKU)
-- Configure and validate gateways, gateway clusters, and data connectivity
-- For side-by-side tenant migration or tenant split scenarios, create a user in your target tenant for every user in the source tenant and record the user mapping
-- For side-by-side tenant migration or tenant split scenarios, recreate all your user groups that are in use in the source tenant in the new target tenant
-- Configure user licensing in target tenant
-- Align governance (sensitivity labels and Purview integration, endorsement policies)
-
-#### Outputs
-
-- Fully configured target tenant ready to receive content.
-- Documented tenant settings baseline.
-- Provisioned capacities and gateways.
+- Configure Power BI tenant settings:
+  - Workspace creation controls
+  - Sharing and external access policies
+  - Custom visuals governance
+  - Sensitivity labels and information protection
+  - Audit log and monitoring enablement
+- Purchase Fabric capacities of equal or higher SKU than the source.
+- Configure and validate gateways, gateway clusters, and data connectivity.
+- For side-by-side or tenant split scenarios:
+  - Create a user in the target tenant for every user in the source tenant, and record the user mapping.
+  - Recreate user groups from the source tenant.
+  - Assign Power BI licenses in the target tenant.
+- Align governance: sensitivity labels, Microsoft Purview integration, and endorsement policies.
 
 ### Step 6: Migration pilot
 
-Perform a test migration of some workspaces before performing the actual tenant migration. For a side-by-side tenant migration, there's more room for error because the source tenant always exists for a retry. However, for a tenant remap, if artifacts weren't backed up properly, those artifacts are permanently lost after a tenant remap. Test the migration first and become fully familiar with backing up the items and reimporting them.
+Run a test migration on a representative sample workspace before the production migration.
 
-#### Objectives
+For side-by-side migrations, the source tenant remains available as a fallback for retries. For tenant remap, content that wasn't backed up correctly before the remap is unrecoverable. A successful pilot is the principal way to de-risk the remap path.
 
-This step aims to:
+**Pilot workspace selection criteria**
 
-- Validate the end-to-end migration approach in a low-risk, controlled manner.
-- Confirm target tenant readiness across security, data connectivity, capacity, and performance for a side-by-side migration scenario.
-- De-risk the full migration by identifying issues early and refining the runbook.
-
-#### Activities
-
-Select a representative sample workspace from the source tenant for migration testing. Perform a test run of the migration with this workspace.
-
-#### Selection criteria
-
-- Contains a mix of artifacts including reports, semantic models, dataflows, or Fabric items
-- Uses realistic data sources and refresh schedules
-- Preferably includes workspace-level permissions or RLS
-- Actively used, but non-mission-critical
-
-> [!WARNING]
-> For tenant remap scenarios, the pilot phase is critical. If you discover backup gaps or restoration issues during the pilot, those same issues will occur during the production migration—but with no source tenant to fall back on. Treat the pilot as your final validation before the irreversible remap process.
-
-#### Outputs
-
-- Validated migration runbook with timings.
-- Identified issues and remediation steps.
-- Confirmation of target tenant readiness.
+- Contains a mix of artifacts: reports, semantic models, dataflows, and Fabric items.
+- Uses realistic data sources and refresh schedules.
+- Has workspace-level permissions and ideally RLS.
+- Is actively used but not mission-critical.
 
 ### Step 7: Migration execution
 
-The migration order of settings and artifacts is important because artifacts have dependencies on one another. If you have a large number of workspaces and items, you can write scripts to help bulk export and bulk recreate artifacts using the Power BI Admin API.
+Execute the migration. Supported items are scripted first; unsupported items are recreated manually.
 
-#### Objectives
+For large tenants, write scripts that wrap the Power BI Admin API to bulk-export and bulk-recreate artifacts.
 
-This step aims to:
-
-- Migrate all your artifacts into the new tenant as soon as possible to minimize downtime.
-
-#### Activities
-
-Migration is executed for all supported items first, then unsupported items are migrated manually.
-
-> [!TIP]
-> For large-scale migrations with hundreds of workspaces, consider developing PowerShell scripts using the Power BI Admin API to automate artifact export and import. This significantly reduces manual effort and ensures consistency across the migration.
-
-Artifacts must be recreated in the following order:
-
-| Order | Object | Migration Path |
-|-------|--------|----------------|
-| 1 | Gateways | No migration path—must be reconfigured in the new tenant by a Power BI Admin |
-| 2 | Workspaces | No migration path—must be recreated in the new tenant by a Power BI Admin (scripted creation possible using Admin API) |
-| 3 | Fabric Items | Fabric items that support Git integration can be backed up and restored using Git (only definition is backed up, not the data itself), but this wipes all other items in the workspace, so this must be performed first before any artifacts land. There's no migration path for Fabric items that aren't Git integrated and they must be recreated manually in the new tenant. In the second case, perform Fabric item recreation as the last step. |
-| 4 | Dataflows | Download definition JSON and reimport into new tenant (scripting possible using Admin API) |
-| 5 | Semantic Model/Dataset | Use [Backup and Restore](/power-bi/enterprise/service-premium-backup-restore-dataset) to ADLS Gen2 Storage account, or download definition JSON and reimport into new tenant (scripting possible using Admin API) |
-| 6 | Report—Configuration | Report Owners/admin [download the PBIX](/power-bi/create-reports/service-export-to-pbix) and then republish to the new tenant (scripting possible using Admin API) |
-| 7 | Report—Data—Import Mode | No migration path—must be refreshed in the new tenant after semantic model definition is imported |
-| 8 | Dashboards | No migration path—must be manually recreated in the new tenant |
-| 9 | Power BI Apps | No migration path—must be manually recreated in the new tenant |
-| 10 | Paginated Reports | Report Owners download the RDL file and then [publish](/power-bi/guidance/publish-reporting-services-power-bi-service?context=%2Fpower-bi%2Fcreate-reports%2Fcontext%2Fcontext&tabs=reporting-services) to the new tenant |
-
-#### Outputs
-
-- All artifacts migrated to target tenant.
-- Migration log documenting successes and issues.
-- List of items requiring manual recreation.
+Recreate artifacts in the order defined in [What's supported for migration](#whats-supported-for-migration). Skipping the order breaks dependencies.
 
 ### Step 8: Validation and testing
 
-Always validate the migration. Exported semantic model definitions aren't migrated with the actual data after import, so they all need to be refreshed manually to retrieve data from the source again. Consider switching to a higher capacity during this period to avoid bottlenecking when many background refreshes are happening simultaneously.
+Validate that the content is migrated successfully and behaves correctly.
 
-#### Objectives
+Exported semantic model definitions don't include the underlying data. Every imported semantic model needs at least one manual refresh in the target tenant.
 
-This step aims to:
+> [!TIP]
+> Consider temporarily scaling to a higher capacity SKU during validation. A large number of concurrent refreshes can otherwise saturate the target capacity.
 
-- Validate that contents were migrated successfully and operate as expected.
+**Activities**
 
-#### Activities
-
-- Ensure data validation (row counts, aggregates, refresh success)
-- Test security (RLS, workspace access)
-- Performance testing (load times, query responsiveness)
-
-#### Outputs
-
-- Validation report confirming successful migration.
-- List of any discrepancies requiring remediation.
-- Performance baseline for target tenant.
+- Validate data: row counts, key aggregates, refresh success.
+- Validate security: RLS rules, workspace access, sharing scopes.
+- Validate performance: report load times, query responsiveness, capacity headroom.
 
 ### Step 9: User cutover and adoption
 
-In this step, migrate the users onto the new tenant and give them the correct access level. If other applications (SharePoint, Power Automate) are connected to previous reports, they need to point to a new URL.
+Move users to the target tenant and update downstream applications.
 
-#### Objectives
+**Activities**
 
-This step aims to:
-
-- Move users confidently to the new tenant.
-- Minimize dual-tenant usage duration (for side-by-side migrations).
-
-#### Activities
-
-- Grant users access to workspaces and artifacts in target tenant
-- Update embedded URLs, SharePoint links, Power BI apps
-- Disable editing in old tenant (read-only phase)
-- Provide brief enablement sessions on "What changed" and "Where to go now"
-
-#### Outputs
-
-- Users actively working in target tenant.
-- Updated documentation and links pointing to new tenant.
-- Decommission plan for source tenant (side-by-side scenarios).
+- Grant users access to workspaces and artifacts in the target tenant.
+- Update embedded report URLs, SharePoint links, Power Apps connections, and Power Automate flows that reference Power BI content.
+- Disable editing in the source tenant (read-only phase) before final decommissioning.
+- Run short enablement sessions covering what changed and where to find content.
 
 ## Related content
 
-- [Move your Power BI tenant to a different region](service-admin-region-move.md)
-- [Multi-Geo support for Power BI Premium](/fabric/admin/service-admin-premium-multi-geo)
+- [Move Power BI between geographic regions](service-admin-region-move)
+- [Multi-geo support for Power BI Premium](/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)
 - [Power BI tenant setup](/power-bi/guidance/powerbi-implementation-planning-tenant-setup)
+- [Power BI semantic model backup and restore](/power-bi/enterprise/service-premium-backup-restore-dataset)
+- [Configure a custom Azure relay for an on-premises data gateway](/data-integration/gateway/service-gateway-azure-relay)
+- [Dataflows: Connect to your own ADLS Gen2 storage](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration)
