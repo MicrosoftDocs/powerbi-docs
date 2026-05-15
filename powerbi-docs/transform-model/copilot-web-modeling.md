@@ -41,12 +41,13 @@ These capabilities represent just some of the key ways Copilot can help you enha
 You can use Copilot in web modeling in the Power BI service:
 
 1. Open a semantic model in **Model view**  
-2. Switch from Viewing mode to **Editing mode** using the dropdown  
-3. Select **Copilot** from the ribbon 
+1. Switch from Viewing mode to **Editing mode** using the dropdown  
+1. Select **Copilot** from the ribbon 
 
-From the Copilot pane, you can start with suggested prompts or enter your own questions to analyze or update your model.
+   :::image type="content" source="media/copilot-web-modeling/entry-point.png" alt-text="Screenshot of the Copilot web modeling entry point from the ribbon in Power BI Service web modeling." lightbox="media/copilot-web-modeling/entry-point.png":::
 
-:::image type="content" source="media/copilot-web-modeling/entry-point.png" alt-text="Screenshot of the Copilot web modeling entry point from the ribbon in Power BI Service web modeling." lightbox="media/copilot-web-modeling/entry-point.png":::
+   From the Copilot pane, you can start with suggested prompts or enter your own questions to analyze or update your model.
+
 
 ## Controlled model updates
 
