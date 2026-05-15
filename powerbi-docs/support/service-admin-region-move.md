@@ -25,7 +25,7 @@ Full cross‑region tenant migration isn't supported for Power BI or Fabric capa
 
 
 > [!CAUTION]
-> This article describes how to request a tenant remapping to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remapping process leads to data loss and requires reconfiguration of your tenant. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
+> This article describes how to request a tenant remapping to a different region. Be sure you're aware of the steps you have to do before and after the remapping. The tenant remapping process leads to data loss and requires reconfiguration of your tenant. Evaluate alternatives outlined in [Power BI tenant migration patterns and strategies](tenant-migration-patterns.md) first. To determine your current data region, follow the steps in [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md).
 
 ## Considerations and limitations
 
