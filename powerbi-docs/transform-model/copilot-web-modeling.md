@@ -17,7 +17,7 @@ ms.collection:
 
 Copilot in web modeling is an AI-powered assistant integrated into the Power BI service semantic model experience. It helps model authors analyze and improve their semantic models using natural language.
 
-You can now use natural language with Copilot alongside manual editing to get recommendations or apply changes directly to your model, with the flexibility to seamlessly switch between manual and AI-assisted edits.  
+You can use natural language with Copilot alongside manual editing to get recommendations or apply changes directly to your model, with the flexibility to seamlessly switch between manual and AI-assisted edits.  
 
 ## Key capabilities
 
