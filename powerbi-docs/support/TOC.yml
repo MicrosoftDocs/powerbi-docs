@@ -28,6 +28,8 @@
       href: power-bi-cannot-sign-in.md
     - name: Prepare for a region move
       href: service-admin-region-move.md
+    - name: Tenant migration patterns and strategies
+      href: tenant-migration-patterns.md
 
 # =============================================================================
 # ABOUT SUPPORT REQUESTS
