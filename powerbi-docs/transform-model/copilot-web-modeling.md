@@ -51,15 +51,15 @@ You can use Copilot in web modeling in the Power BI service:
 
 ## Controlled model updates
 
-Before responding to your first prompt, Copilot asks for your permission before reviewing your model or suggesting changes. This is a one-time permission prompt that appears at the start of each Copilot session to ensure no updates are made without your approval. By providing approval, you are consenting to Copilot making changes to the specific semantic model you have opened during the full duration of the chat session for changes to be made. 
+Before responding to your first prompt, Copilot asks for your permission before reviewing your model or suggesting changes. This is a one-time permission prompt that appears at the start of each Copilot session to ensure no updates are made without your approval. By providing approval, you are consenting to Copilot making changes to the specific semantic model you have opened during the full duration of the chat session for changes to be made. Copilot may also run DAX queries to access data from your semantic model in order to generate responses.
 
-After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](./service-semantic-model-version-history.md). You can use this checkpoint at any time to revert the semantic model back to its original state before any Copilot changes were applied in that specific chat session. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
+After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](./service-semantic-model-version-history.md). You can use this checkpoint to revert the semantic model back to its original state before Copilot changes were applied in that specific chat session. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
 
 :::image type="content" source="media/copilot-web-modeling/consent-flow.png" alt-text="Screenshot of the Copilot web modeling consent flow asking for user permission before making model changes." lightbox="media/copilot-web-modeling/consent-flow.png":::
 
 ## Permissions and model access
 
-Copilot in web modeling respects your existing Power BI permissions. You can use Copilot to make changes only if you have permission to edit the semantic model.
+Copilot in web modeling respects your existing Power BI permissions. You can use Copilot to make changes only if you have permission the **Write** permission to edit the semantic model.
 
 Copilot’s editing access is limited to the model open in the current Copilot pane. It can also retrieve schema information of the other models you have access to, but those models are always read-only and cannot be modified.
 
@@ -67,7 +67,7 @@ Copilot’s editing access is limited to the model open in the current Copilot p
 
 As with any AI-assisted experience, review all suggested changes to ensure they meet your requirements. Copilot uses the current model context to interpret requests, so unclear or incomplete prompts may result in less accurate suggestions.
 
-If you see this banner, it means additional Copilot features are available in the new Copilot experience, which uses an updated format for Copilot settings and configuration. To learn more, visit [Prepare your data for AI: Settings](../create-reports/copilot-prepare-data-ai-settings.md).
+If your semantic model still uses the Q&A tooling format to store Copilot metatdata, you will see this banner appear at the top of the Copilot pane. To use Prep data for AI features such as AI instructions and schema selection, your model must be in the new Copilot Tooling format. If it isn’t yet, you’ll need to migrate it. To learn more, visit [Prepare your data for AI: Settings](../create-reports/copilot-prepare-data-ai-settings.md).
 
 :::image type="content" source="media/copilot-web-modeling/copilot-file-format.png" alt-text="Screenshot of the switch banner informing users to switch to the new Copilot file format." lightbox="media/copilot-web-modeling/copilot-file-format.png":::
 
