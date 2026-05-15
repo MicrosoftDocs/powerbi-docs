@@ -74,7 +74,8 @@ If you see this banner, it means additional Copilot features are available in th
 ## Limitations
 
 -	Using Copilot in web modeling to set verified answers is currently not supported 
--	Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported. This is subject to Power BI Copilot limitations [Copilot for Power BI overview - Power BI | Microsoft Learn](../create-reports/copilot-introduction.md#considerations-and-limitations) and licensing requirements [Enable Fabric Copilot for Poewr BI - Power BI | Microsoft Learn](../create-reports/copilot-enable-power-bi.md#licensing-requirements).
+- Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported.
+- Copilot in web modeling is subject to Copilot for Power BI [limitations](../create-reports/copilot-introduction.md#considerations-and-limitations) and [licensing requirements](../create-reports/copilot-enable-power-bi.md#licensing-requirements).
 
 ## Related content
 
