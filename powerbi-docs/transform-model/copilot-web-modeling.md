@@ -67,7 +67,7 @@ Copilot’s editing access is limited to the model open in the current Copilot p
 
 As with any AI-assisted experience, review all suggested changes to ensure they meet your requirements. Copilot uses the current model context to interpret requests, so unclear or incomplete prompts may result in less accurate suggestions.
 
-If you see this banner, it means additional Copilot features are available in the new Copilot experience, which uses an updated format for Copilot settings and configuration. To learn more, visit [Prepare Your Data for AI - Settings - Power BI | Microsoft Learn](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai-settings#copilot-indexing).
+If you see this banner, it means additional Copilot features are available in the new Copilot experience, which uses an updated format for Copilot settings and configuration. To learn more, visit [Prepare your data for AI: Settings](../create-reports/copilot-prepare-data-ai-settings.md).
 
 :::image type="content" source="media/copilot-web-modeling/copilot-file-format.png" alt-text="Screenshot of the switch banner informing users to switch to the new Copilot file format." lightbox="media/copilot-web-modeling/copilot-file-format.png":::
 
