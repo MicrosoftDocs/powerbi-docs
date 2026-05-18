@@ -51,9 +51,9 @@ Select **Power BI Report Server key** to display a dialog contain your product k
 
 ## Purchased Software Assurance agreement
 
-### Microsoft Admin Center
+### Microsoft admin center
 
-If you have a SQL Server Enterprise SA agreement for SQL Server 2022 and earlier versions, you can get your product key from the [Microsoft Admin Center](https://admin.microsoft.com/#/subscriptions). You can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section.
+If you have a SQL Server Enterprise SA agreement for SQL Server 2022 and earlier versions, your volume licensing administrator can get your product key from the [Microsoft admin center](https://admin.microsoft.com/#/subscriptions). You can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section.
 
 Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloads and Keys** > **Find SQL Server** > **View Downloads** > **View additional instructions**:
 
@@ -69,6 +69,9 @@ Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloa
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
 
+> [!NOTE]
+> Starting with SQL Server 2025, there is no separate installation key for [PBIRS](https://www.microsoft.com/en-us/power-platform/products/power-bi/report-server). As the only reporting services offering, both Enterprise and Standard Edition customers can use the SQL Server product key to install Power BI Reports Server.
+   
 ### Visual Studio Subscriptions
 
 If you have SQL Server Enterprise subscription the product key can be found under [Visual Studio Subscriptions](https://my.visualstudio.com/downloads). You can find your product key by choosing a SQL Server version and then clicking the **info** link.
