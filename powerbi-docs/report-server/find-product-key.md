@@ -67,7 +67,10 @@ Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloa
 
 1. Find the Power BI Report Server Software Assurance information displayed with your license key.
 
-    :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::_Note: Starting with SQL Server 2025, there is no separate installation key for [Power BI Report Server](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fpower-platform%2Fproducts%2Fpower-bi%2Freport-server&data=05%7C02%7CRory.Hogan%40microsoft.com%7C0ca7ebb55e3e4717a54308de2165c017%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638984918099587968%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=la3kvQ3wtNb%2F8hYHv161e3pT7DxeC59pKUJlehW2cGU%3D&reserved=0) (PBIRS). As the only reporting services offering, both Enterprise and Standard Edition customers can use the SQL Server product key to install Power BI Reports Server_
+    :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
+
+> [!NOTE]
+> Starting with SQL Server 2025, there is no separate installation key for [PBIRS](https://www.microsoft.com/en-us/power-platform/products/power-bi/report-server). As the only reporting services offering, both Enterprise and Standard Edition customers can use the SQL Server product key to install Power BI Reports Server.
    
 ### Visual Studio Subscriptions
 
