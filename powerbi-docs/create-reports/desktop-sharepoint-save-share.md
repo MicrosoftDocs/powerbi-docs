@@ -186,9 +186,13 @@ When you select the title bar of a report in Power BI Desktop, you can only move
 
 ## Version history
 
-You can view the version history of your Power BI file online through your OneDrive or SharePoint document library. Select the three dots to the right of your file and select **Version history**. Version history can’t be viewed directly from Power BI Desktop.
+You can view the version history of your Power BI file online through your OneDrive or SharePoint document library, or directly in Power BI Desktop. 
 
+To access version history online, select the three dots to the right of your file and select **Version history**.
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png" alt-text="Screenshot of version history in OneDrive and SharePoint." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-version-history.png":::
+
+To access version history in Power BI Desktop, navigate to the top left flyout in Power BI desktop, and select ‘Version History’ button at the bottom of the flyout. Upon selecting the button, a dialog will open listing out all the versions and its relevant details.
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-version-history-desktop.png" alt-text="Screenshot of version history in OneDrive and SharePoint in Power BI Desktop." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-version-history-desktop.png":::
 
 ## Power BI OneDrive and SharePoint sharing link behavior by license type
 
