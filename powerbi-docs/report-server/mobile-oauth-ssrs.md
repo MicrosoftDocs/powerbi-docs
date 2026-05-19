@@ -12,7 +12,7 @@ ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
 ---
 
-# Connect to Power BI Report Server and SSRS from Power BI mobile applications
+# Connect to Power BI Report Server and SSRS from Power BI mobile applications with OAuth authentication
 
 This article discusses how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to Power BI Report Server and SQL Server Reporting Services 2016 or later.
 
