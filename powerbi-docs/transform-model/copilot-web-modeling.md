@@ -30,11 +30,7 @@ These capabilities represent just some of the key ways Copilot can help you enha
 - **Schema updates**
   - Rename tables and columns  
   - Create or modify relationships  
-  - Generate core DAX business measures using natural language (ex. totals, growth metrics, or aggregations) 
-
-- **Improving AI readiness**
-  - Configure clear AI instructions and data schema to improve natural language experiences   
-  - Recommend optimizations to improve how Copilot understands and uses your data     
+  - Generate core DAX business measures using natural language (ex. totals, growth metrics, or aggregations)   
 
 ## Where to access Copilot in web modeling
 
@@ -67,13 +63,9 @@ Copilot’s editing access is limited to the model open in the current Copilot p
 
 As with any AI-assisted experience, review all suggested changes to ensure they meet your requirements. Copilot uses the current model context to interpret requests, so unclear or incomplete prompts may result in less accurate suggestions.
 
-If your semantic model still uses the Q&A tooling format to store Copilot metatdata, you will see this banner appear at the top of the Copilot pane. To use Prep data for AI features such as AI instructions and schema selection, your model must be in the new Copilot Tooling format. If it isn’t yet, you’ll need to migrate it. To learn more, visit [Prepare your data for AI: Settings](../create-reports/copilot-prepare-data-ai-settings.md).
-
-:::image type="content" source="media/copilot-web-modeling/copilot-file-format.png" alt-text="Screenshot of the switch banner informing users to switch to the new Copilot file format." lightbox="media/copilot-web-modeling/copilot-file-format.png":::
-
 ## Limitations
 
--	Using Copilot in web modeling to set verified answers is currently not supported 
+-	Using Copilot in web modeling to set Prep data for AI is currently not supported 
 - Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported.
 - Copilot in web modeling is subject to Copilot for Power BI [limitations](../create-reports/copilot-introduction.md#considerations-and-limitations) and [licensing requirements](../create-reports/copilot-enable-power-bi.md#licensing-requirements).
 
