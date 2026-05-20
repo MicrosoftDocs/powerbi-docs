@@ -7,9 +7,7 @@ ms.reviewer: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: best-practice
-ms.collection: ce-skilling-ai-copilot
 ms.date: 05/20/2026
-ms.update-cycle: 180-days
 ms.custom:
   - fabric-cat
   - sfi-ga-nochange
