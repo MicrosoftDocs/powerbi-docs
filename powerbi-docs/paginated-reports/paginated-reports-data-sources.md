@@ -86,6 +86,9 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 - When connecting to Fabric Lakehouse using SQL analytics endpoint, note that you cannot set Query type in Power BI Report Builder's Dataset Properties dialog. As a workaround, select Text option and invoke the stored procedure.
 
+> [!IMPORTANT]
+> Data source rules are not supported for semantic models that use a Direct Lake connection. If your paginated report connects to a Direct Lake semantic model, you cannot apply data source rules to override or redirect the connection. For more information about Direct Lake mode considerations, see [Direct Lake overview](/fabric/get-started/direct-lake-overview#considerations-and-limitations).
+
 ## Related content
 - [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
 - [View a paginated report in the Power BI service](../explore-reports/paginated-reports-view-power-bi-service.md).
