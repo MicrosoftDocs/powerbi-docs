@@ -11,7 +11,7 @@ ms.date: 12/15/2025
 
 # Tutorial: Embed a Power BI report in an application for your customers
 
-In this tutorial, you learn how to embed a Power BI report in a .NET 5.0 application, as part of the *embed-for-your-customers* (also known as an *app-owns-data*) solution. In an embed-for-your-customers solution, your app users don't need to sign in to Power BI or have a Power BI license.
+In this tutorial, you learn how to embed a Power BI report in a .NET 8.0 application, as part of the *embed-for-your-customers* (also known as an *app-owns-data*) solution. In an embed-for-your-customers solution, your app users don't need to sign in to Power BI or have a Power BI license.
 
 In this tutorial, you learn how to embed:
 
@@ -20,11 +20,11 @@ In this tutorial, you learn how to embed:
 >* A Power BI report.
 >* In an embed-for-your-customers app.
 >* By using a *service principal*.
->* By using .NET 5.0.
+>* By using .NET 8.0.
 >* With the `Microsoft.Identity.Web` library (this library is also supported in .NET Core).
 
 >[!NOTE]
->The full solution used in this tutorial is available from the [DOTNET5-AppOwnsData-Tutorial](https://github.com/PowerBiDevCamp/DOTNET5-AppOwnsData-Tutorial) GitHub repository.
+>The full solution used in this tutorial is available from the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) GitHub repository.
 
 ## Prerequisites
 
@@ -36,9 +36,9 @@ In this tutorial, you learn how to embed:
 
 * A [Microsoft Entra app](register-app.md)
 
-* A .NET Core 5 model view controller (MVC) app
+* A .NET 8 model view controller (MVC) app
 
-* [.NET Core 5 SDK](https://dotnet.microsoft.com/download/dotnet-core) or later
+* [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 
 * An integrated development environment (IDE). We recommend one of the following IDEs:
 
