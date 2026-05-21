@@ -1,8 +1,8 @@
 ---
 title: Dataflows best practices (legacy)
 description: Learn about where you can find more information about Power BI best practices and get guidance for dataflows.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

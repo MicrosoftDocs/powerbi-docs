@@ -1,8 +1,8 @@
 ---
 title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop
 description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

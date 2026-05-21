@@ -1,8 +1,8 @@
 ---
 title: Export Query Results in Power BI Desktop
 description: Export query results to an online destination using Power BI Desktop
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: mihirwagle
 ms.service: powerbi
 ms.subservice: pbi-transform-model
