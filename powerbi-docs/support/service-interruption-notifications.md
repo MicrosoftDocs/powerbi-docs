@@ -1,8 +1,8 @@
 ---
 title: Fabric Service Interruption Notifications
 description: Learn how to enable Fabric service interruption notifications for outages and incidents. Configure email alerts to stay informed about service health and disruptions.
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin

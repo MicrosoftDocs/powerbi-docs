@@ -1,8 +1,8 @@
 ---
 title: "Using DAX user-defined functions (preview)"
 description: Learn how to create Data Analysis Expressions (DAX) user-defined functions (UDFs).
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: jterh
 ms.service: powerbi
 ms.topic: how-to
