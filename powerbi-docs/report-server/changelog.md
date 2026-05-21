@@ -25,13 +25,16 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Report Server
 
 - *Version: 1.26.9637.31070 (build 15.0.1121.109), Released: May 21, 2026*
+    - Add support for card visual
+    - Fix issue for Power BI Reports containing report slicers
+    - Fix issue with time displayed for schedule start and end times
     - Fix for duplicate schedule being added to report server catalog
+    - Accessibility bug fixes
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
 - *Version: 2.154.956.0 (May 2026), Released: May 21, 2026*
      - Support for May 2026 Power BI Report Server.
-
 
 ## January 2026
 
