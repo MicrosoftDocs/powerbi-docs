@@ -1,8 +1,8 @@
 ---
 title: Streaming dataflows (preview)
 description: Learn how to use streaming dataflows to connect to, ingest, mash up, model, and build reports in the Power BI service.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

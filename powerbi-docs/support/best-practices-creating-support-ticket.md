@@ -1,8 +1,8 @@
 ---
 title: Power BI support ticket best practices
 description: "Learn best practices for Power BI support tickets: key information to include, troubleshooting tips, and data to expedite resolution. Create effective tickets."
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin
