@@ -3,11 +3,11 @@ title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: jaimeta
+ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 07/01/2025
+ms.date: 05/22/2026
 ---
 
 # Change log for Power BI Report Server
@@ -25,16 +25,16 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Report Server
 
 - *Version: 1.26.9637.31070 (build 15.0.1121.109), Released: May 21, 2026*
-    - Add support for card visual
-    - Fix issue for Power BI Reports containing report slicers
-    - Fix issue with time displayed for schedule start and end times
-    - Fix for duplicate schedule being added to report server catalog
-    - Accessibility bug fixes
+    - Added support for card visual
+    - Fixed issue for Power BI Reports containing report slicers
+    - Fixed issue with time displayed for schedule start and end times
+    - Fixed for duplicate schedule being added to Report Server catalog
+    - Fixed accessibility bugs
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
 - *Version: 2.154.956.0 (May 2026), Released: May 21, 2026*
-     - Support for May 2026 Power BI Report Server.
+     - Added support for May 2026 Power BI Report Server
 
 ## January 2026
 
@@ -54,7 +54,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 - *Version: 1.25.9508.3237 (build 15.0.1120.113), Released: January 21, 2026*
     - Added support for SQL Server 2025 Enterprise Core Product ID (key).
-    - Add new advanced server property 'DisableMSRBConnect' with default value 'True'. This to restricts "Connected mode" requests from Microsoft Report Builder.
+    - Added new advanced server property 'DisableMSRBConnect' with default value 'True'. This to restricts "Connected mode" requests from Microsoft Report Builder.
     - Fixed issue with verbose logging causing log file to grow too fast.
     - Removed support for Office Online Server (OOS) which allowed web viewing of XLSX workbooks which has been deprecated. [Learn More](https://techcommunity.microsoft.com/blog/officeeos/announcing-the-retirement-for-office-online-server/4462402)
     - Accessibility fixes.
