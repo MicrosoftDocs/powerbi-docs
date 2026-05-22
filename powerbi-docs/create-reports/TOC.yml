@@ -584,6 +584,8 @@
     href: copilot-reports-overview.md
   - name: Copilot for Power BI apps
     href: copilot-apps-overview.md
+  - name: Power BI data in Fabric Apps (preview)
+    href: fabric-apps-analytics.md
   - name: Create reports in Power BI with Copilot
     href: copilot-create-reports.md
   - name: Ask Copilot a data question
