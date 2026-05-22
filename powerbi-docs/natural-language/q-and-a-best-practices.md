@@ -5,9 +5,9 @@ author: kgremban
 ms.author: kgremban
 ms.reviewer: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-ai
-ms.topic: how-to
-ms.date: 01/06/2023
+ms.topic: best-practice
+ms.date: 05/22/2026
+ai-usage: ai-assisted
 ---
 # Best practices to optimize Q&A in Power BI
 
@@ -73,7 +73,7 @@ Power BI aggregates numeric columns by default, so questions like “total sales
 
 ## Choose a Data Category for each date and geography column
 
-The **Data Category** provides knowledge about the content of a column beyond its data type. For example, you can mark an integer column as a Zip code or a string column as a City, Country/Region. Q&A uses this information in two important ways, for visualization selection and for language biases.
+The **Data Category** provides knowledge about the content of a column beyond its data type. For example, you can mark an integer column as a Zip code or a string column as a City, Country/Region. Q&A uses this information in two important ways: for visualization selection and for language biases.
 
 First, Q&A uses the **Data Category** information to help make choices about what kind of visual display to use. For example, it recognizes that columns with date or time **Data Categories** are a good choice for the horizontal axis of a line chart or the play axis of a bubble chart. It assumes that results containing columns with geographical **Data Categories** might look good on a map.
 
@@ -91,7 +91,7 @@ The **Sort By Column** property allows sorting in one column to automatically so
 
 You don't need to reshape your entire model. However, certain structures are so difficult that Q&A doesn't handle them well. If you perform some basic normalization of the structure of your model, the usability of Power BI reports increases significantly, along with the accuracy of Q&A results.
 
-Follow this general rule: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. If your users talk about sales, there should be one *sales* object. There are rich data shaping capabilities available in **Query Editor** if you need them. The more straightforward transformations can be adjusted by using calculations in the Power BI model.
+Follow this general rule: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. If your users talk about sales, there should be one *sales* object. There are rich data shaping capabilities available in **Power Query Editor** if you need them. The more straightforward transformations can be adjusted by using calculations in the Power BI model.
 
 The following sections contain some common transformations you might need to perform. See [Normalization vs. denormalization](../guidance/star-schema.md#normalization-vs-denormalization) in the article _Understand star schema and the importance for Power BI_ for more information about normalizing a model.
 
@@ -152,7 +152,7 @@ Similarly, if you have any full name columns for a person, add **First Name** an
 
 ### Create new tables for multi-value columns
 
-Also a similar situation, if the source from which you're importing your data contains multi-value columns, Power BI reports (and Q&A) can't reach inside the column to parse out the contents. So, if you have, for example, a Composer column that contains the names of multiple composers for a song, split it into multiple rows in a separate *Composers* table.
+Similarly, if the source from which you're importing your data contains multi-value columns, Power BI reports (and Q&A) can't reach inside the column to parse out the contents. So, if you have, for example, a Composer column that contains the names of multiple composers for a song, split it into multiple rows in a separate *Composers* table.
 
 **Needs work**
 
@@ -176,13 +176,13 @@ The one exception to the “normalization is better” rule occurs when there's 
 
 ### Add synonyms to tables and columns
 
-This step applies specifically to Q&A (and not to Power BI reports in general). Users often have many terms they use to refer to the same thing, such as total sales, net sales, and  total net sales. You can add these synonyms to tables and columns in the Power BI model. 
+This step applies specifically to Q&A (and not to Power BI reports in general). Users often have many terms they use to refer to the same thing, such as total sales, net sales, and total net sales. You can add these synonyms to tables and columns in the Power BI model. 
 
 This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them. They're not choosing from a predefined list of columns. The more sensible synonyms you add, the better your user's experience is with your report. To add synonyms, in Power BI Desktop go to the Model view by selecting the Model tab and then select a field or table. The Properties pane shows the **Synonyms** box, where you can add synonyms.
 
 :::image type="content" source="media/q-and-a-best-practices/qna-modelling-pane-synonyms.png" alt-text="Screenshot showing the Q&A Properties pane with the Synonyms field highlighted.":::
 
- Be aware that adding the same synonym to more than one column or table introduces ambiguity. Q&A uses context where possible to choose between ambiguous synonyms, but not all questions have sufficient context. For example, when a user asks “count the customers”, if you have three things with the synonym “customer” in your model, the user might not get the answer they're looking for. In these cases, make the primary synonym unique because that synonym is what's used in the restatement. It can alert the user to the ambiguity (for example, a restatement of “show the number of archived customer records”), which hints that they might want to ask it differently.
+Be aware that adding the same synonym to more than one column or table introduces ambiguity. Q&A uses context where possible to choose between ambiguous synonyms, but not all questions have sufficient context. For example, when a user asks “count the customers”, if you have three things with the synonym “customer” in your model, the user might not get the answer they're looking for. In these cases, make the primary synonym unique because that synonym is what's used in the restatement. It can alert the user to the ambiguity (for example, a restatement of “show the number of archived customer records”), which hints that they might want to ask it differently.
 
 ## Related content
 

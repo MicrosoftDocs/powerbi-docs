@@ -5,10 +5,12 @@ author: kgremban
 ms.author: kgremban
 ms.reviewer: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: concept-article
-ms.date: 12/10/2024
+ms.date: 05/22/2026
 ms.custom: kr2b-contr-experiment
+ai-usage: ai-assisted
+
+#customer intent: As a Power BI report creator, I want to understand which data sources work with Q&A so that I can configure my reports to support natural language queries.
 ---
 
 # Data sources for natural language Q&A
@@ -18,13 +20,15 @@ ms.custom: kr2b-contr-experiment
 
 The Q&A feature in Power BI lets you quickly get answers about your data by using natural language to ask questions about the data. This article describes supported configurations for Q&A, and how indexing and caching improve performance for each configuration.
 
-## Supported data sources
+## Supported data sources in Power BI Desktop
 
-Power BI Q&A supports the following configurations of data sources in the Power BI Desktop:
+Power BI Q&A supports the following configurations of data sources in Power BI Desktop:
 
 - Import mode.
-- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI datasets. However, DirectLake and Lakehouse Power BI datasets are not supported.
-- DirectQuery with Azure Synapse Analytics, Azure SQL, or SQL Server 2019. Other sources might work in direct query mode, but aren't officially supported.
+- Live connect mode with on-premises SQL Server Analysis Services, Azure Analysis Services, or Power BI semantic models. However, DirectLake and Lakehouse Power BI semantic models aren't supported.
+- DirectQuery with Azure Synapse Analytics, Azure SQL, or SQL Server 2019. Other sources might work in DirectQuery mode, but aren't officially supported.
+
+For information about supported data sources in the Power BI service, including DirectQuery, composite model, and security support details, see [Limitations of Power BI Q&A](q-and-a-limitations.md#supported-data-sources-in-the-power-bi-service).
 
 Using a Q&A visual in a report enables natural language Q&A by default. If you're using DirectQuery or live connect, a prompt appears.
 
@@ -43,7 +47,7 @@ For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 Enabling Q&A builds an index, to quickly provide real-time feedback to the user and help interpret their questions. The index can take some time to build. The index has the following characteristics:
 
 - All column names and tables are inserted into the index unless they're explicitly turned off from within the Q&A tooling.
-- All text values of fewer than 100 characters are indexed. Text values of 100 characters and more aren't indexed.
+- Only text values of fewer than 100 characters are indexed.
 - The Q&A index stores a maximum of 5 million unique values. If you exceed this number, the index doesn't hold all the potential values, which might decrease Q&A accuracy.
 - The Q&A index is built based on the first 1,000 model entities (tables and fields). If your data model exceeds this number, the index doesn't hold all the potential model entities, which might decrease Q&A accuracy.
 - If an error occurs during indexing, the index remains in a partial state, and recreates on the next refresh.
@@ -54,7 +58,7 @@ Power BI Desktop creates the index when you use Q&A. A small icon appears when t
 
 If your model changes or the index becomes outdated, the index must update. Because the index can take time to rebuild, the index updates only if you use Q&A in the same session as when the changes happen.
 
-In the Power BI service, the index recreates on publish, republish, and refresh. Q&A index creation isn't always automatic, and can happen on demand to optimize the dataset refreshes. For DirectQuery, Q&A data indexes at most once per day, to reduce the impact on the DirectQuery source.
+In the Power BI service, the index recreates on publish, republish, and refresh. Q&A index creation isn't always automatic, and can happen on demand to optimize semantic model refreshes. For DirectQuery, Q&A data indexes at most once per day, to reduce the impact on the DirectQuery source.
 
 ## Related content
 
