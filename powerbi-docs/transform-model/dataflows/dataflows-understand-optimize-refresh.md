@@ -207,7 +207,8 @@ Take the following steps when investigating scenarios where the compute engine i
 
 ## Considerations and limitations
 
-A Power BI Pro license has a dataflows refresh limit of 8 refreshes per day.
+* A Power BI Pro license has a dataflows refresh limit of 8 refreshes per day.
+* If at least one query of a dataflow is configured to use a gateway, then all queries of this dataflow will use that gateway for data movement. 
 
 ## Related content
 
