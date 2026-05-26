@@ -139,9 +139,7 @@ For detailed setup instructions, screenshots, and troubleshooting tips, see [Use
 
 ## Fabric Copilot capacity
 
-Instead of using a specific workspace capacity, you can use a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity). By using Fabric Copilot capacity, users can charge Copilot usage from Power BI Desktop, Pro, and Premium per-user workspaces to a single capacity. Learn more about setting up a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity).
-
-When you assign a user to a Fabric Copilot capacity, they don't need to take any other steps to use any of the Copilot experiences.
+A Fabric Copilot capacity is billed only for Copilot AI consumption, which includes prompt processing and response generation. Any downstream operations, such as querying against a semantic model, are charged to the semantic model's capacity, not to your Fabric Copilot capacity.
 
 ## Licensing requirements
 
