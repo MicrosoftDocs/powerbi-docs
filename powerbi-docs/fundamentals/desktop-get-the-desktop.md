@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 05/26/2026
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -174,7 +174,9 @@ Upgrading an install from an *.exe* to an .msi* that you've extracted from an *.
 
 Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
 
-Running Power BI Desktop as a virtualized application (for example, as a Citrix application) isn't supported.
+Running Power BI Desktop as a virtualized application (for example, as a published Citrix application) isn't supported.
+
+Citrix VDI and other virtual desktop environments, excluding Azure Virtual Desktop and Windows 365, aren't supported.
 
 ### Issues with previous releases of Power BI Desktop
 
