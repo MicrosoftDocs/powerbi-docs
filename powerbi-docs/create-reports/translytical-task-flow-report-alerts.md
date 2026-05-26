@@ -42,7 +42,7 @@ This solution uses a few core Fabric components to create a lightweight, self-se
 1. **Replicate** – A Lakehouse shortcut mirrors the notification table, so the data is immediately available to the Direct Lake semantic model without a separate extract, transform, load (ETL) step.
 1. **Show** – Every report that references the semantic model can display relevant notifications, filtered by report name, so users see only the alerts that apply to them.
 
-Because the notification table is exposed through a shortcut from SQL database in Fabric to a Lakehouse on a Direct Lake model, the data flows through naturally.
+Because the notification table is exposed through a shortcut from SQL database to a Lakehouse on a Direct Lake model, the data flows through naturally.
 
 :::image type="content" source="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png" alt-text="Screenshot of an architecture diagram showing the translytical task flow pipeline from writeback report through User Data Functions, SQL database in Fabric, Lakehouse shortcut, and Direct Lake Semantic Model to downstream Power BI reports." lightbox="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png":::
 
