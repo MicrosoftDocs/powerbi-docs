@@ -7,7 +7,7 @@ ms.reviewer: vipinhei
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 05/22/2026
+ms.date: 06/02/2026
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
