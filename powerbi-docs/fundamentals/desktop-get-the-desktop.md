@@ -24,7 +24,7 @@ Both approaches install the latest version of Power BI Desktop on your computer.
 > [!IMPORTANT]
 > Microsoft updates and releases Power BI Desktop monthly, incorporating customer feedback and new features. Only the latest version of Power BI Desktop is supported. If you contact Support for Power BI Desktop, you're asked to upgrade the application to the latest version. You can get the latest version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download and install on your computer](https://www.microsoft.com/download/details.aspx?id=58494).
 
-## Install Power BI Desktop from the Microsoft Store
+## Install as an app from the Microsoft Store
 
 You can access the most recent version of Power BI Desktop from the Microsoft Store in a few ways.
 
@@ -58,7 +58,7 @@ The following considerations and limitations apply when you install Power BI Des
 > [!NOTE]
 > The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](../report-server/quickstart-create-powerbi-report.md).
 
-## Download Power BI Desktop from the Microsoft Download Center
+## Download Power BI Desktop directly
 
 Use the [Microsoft Download Center for Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) to go directly to the download page.
 
