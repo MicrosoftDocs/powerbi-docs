@@ -7,14 +7,14 @@ ms.reviewer: haydnr
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: concept-article
-ms.date: 11/14/2025
+ms.date: 05/26/2026
 ms.custom: licensing support
 ai-usage: ai-assisted
 LocalizationGroup: consumers
 #customer intent: As a Fabric user I want to understand feature availability for the Power BI service.
 ---
 
-# Interact with the Power BI service as a *Free user*
+# Interact with the Power BI service as a free user
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -89,7 +89,7 @@ The second column represents a free user working with content in a workspace tha
 
 ### Feature list
 
-|Features   | Scenario 1: Free user who has no access to content hosted in capacity (Fabric F64+ or Premium).    | Scenario 2: Free user with **Viewer** permissions to content stored in capacity (Fabric F64+ or Premium).  |
+|Features   | Scenario 1: Free user accessing Power BI content not completely hosted on Fabric F64+ or Premium capacity. For example, both the report and the semantic model need to be hosted on Fabric F64+ or Premium capacity.    | Scenario 2: Free user with **Viewer** permissions on the workspace accessing Power BI content completely hosted on Fabric F64+ or Premium capacity. For example, both the report and the semantic model need to be hosted on Fabric F64+ or Premium capacity.  |
 |---|---|---|
 |**Apps** |
 |Installs automatically | ![orange x](../explore-reports/media/end-user-features/orange-x.png) | ![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)*|
