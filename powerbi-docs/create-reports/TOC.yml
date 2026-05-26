@@ -182,6 +182,8 @@
       href: translytical-task-flow-tutorial-status-update.md
     - name: Create data function buttons
       href: translytical-task-flow-button.md
+    - name: Deliver in-report alerts
+      href: translytical-task-flow-report-alerts.md
   - name: Display data in tables
     items:
     - name: Add hyperlinks to a table
