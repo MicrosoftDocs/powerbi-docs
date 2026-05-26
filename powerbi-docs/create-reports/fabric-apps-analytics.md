@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 ---
 # Power BI data in Fabric Apps (preview)
 
-This article is for Power BI users who want to understand how Fabric Apps complement existing Power BI reports. For full how-to guidance on creating and deploying Fabric Apps, see the [Fabric Apps documentation](/fabric/apps/overview).
+This article is for Power BI users who want to understand how to use Fabric Apps to analyze and visualize data. For full how-to guidance on creating and deploying Fabric Apps, see the [Fabric Apps documentation](/fabric/apps/overview).
 
 ## Fabric Apps for Power BI users
 
@@ -22,9 +22,9 @@ This article is for Power BI users who want to understand how Fabric Apps comple
 
 ## Benefits of the data app template
 
-People who want to analyze and visualize data in Fabric Apps should use the data app template. This template contains a set of reusable primitives and agent capabilities that simplify data connectivity, AI-assisted analytics, and visualization generation. By default, apps created with the template include Fabric authentication and connectivity to semantic models, with additional Fabric data sources coming soon. The agent can generate reliable DAX and bind it to structured visual components designed specifically for analytical applications.
+People who want to analyze and visualize data in Fabric Apps should use the data app template. This template contains a set of reusable primitives and agent capabilities that simplify data connectivity, AI-assisted analytics, and visualization generation. By default, apps created with the template include Fabric authentication and connectivity to semantic models, with support for connectivity to additional Fabric data sources coming soon. The agent skills in the template can generate reliable DAX and bind it to structured visual components designed specifically for analytical applications.
 
-These built-in capabilities matter because, without them, an AI agent would need to handle authentication, DAX generation, and visualization design independently in every session. That approach leads to more failures, broken or empty visuals, inconsistent chart behavior, and unnecessary DAX queries during both development and runtime. Encoding those patterns directly into the template improves reliability, produces more cohesive visuals aligned with reporting best practices, and reduces query overhead. Learn more about the [capabilities of Fabric Apps](/fabric/apps/overview#key-features).
+These built-in capabilities matter because, without them, an AI agent would need to handle authentication, DAX generation, and the generation of visuals independently in every session. That approach leads to more failures, broken or empty visuals, inconsistent chart behavior, and unnecessary DAX queries during both development and runtime. Encoding those patterns directly into the template improves reliability, produces more cohesive visuals aligned with reporting best practices, and reduces query overhead. Learn more about the [capabilities of Fabric Apps](/fabric/apps/overview#key-features).
 
 ## Create a Fabric App connected to a semantic model
 
