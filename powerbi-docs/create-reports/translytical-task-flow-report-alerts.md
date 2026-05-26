@@ -38,13 +38,13 @@ The result is a gap between the people who know about an issue and the people wh
 This solution uses a few core Fabric components to create a lightweight, self-service notification pipeline. User Data Functions handle most of the work. The notification lifecycle follows four steps:
 
 1. **Create** – A user opens a dedicated "Data Alert Writeback" report, selects the target report from a predefined list, types a notification message, and selects **Log Data Alert**.
-1. **Store** – The button fires a connected User Data Function, which runs a SQL stored procedure to insert a new record into a notification table in Fabric SQL.
+1. **Store** – The button fires a connected User Data Function, which runs a SQL stored procedure to insert a new record into a notification table in SQL database in Fabric.
 1. **Replicate** – A Lakehouse shortcut mirrors the notification table, so the data is immediately available to the Direct Lake semantic model without a separate extract, transform, load (ETL) step.
 1. **Show** – Every report that references the semantic model can display relevant notifications, filtered by report name, so users see only the alerts that apply to them.
 
-Because the notification table is exposed through a Fabric SQL to Lakehouse shortcut on a Direct Lake model, the data flows through naturally.
+Because the notification table is exposed through a shortcut from SQL database in Fabric to a Lakehouse on a Direct Lake model, the data flows through naturally.
 
-:::image type="content" source="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png" alt-text="Screenshot of an architecture diagram showing the translytical task flow pipeline from writeback report through User Data Functions, Fabric SQL, Lakehouse shortcut, and Direct Lake Semantic Model to downstream Power BI reports." lightbox="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png":::
+:::image type="content" source="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png" alt-text="Screenshot of an architecture diagram showing the translytical task flow pipeline from writeback report through User Data Functions, SQL database in Fabric, Lakehouse shortcut, and Direct Lake Semantic Model to downstream Power BI reports." lightbox="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png":::
 
 ## Define the notification data model
 
