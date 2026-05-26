@@ -1,7 +1,7 @@
 ---
-title: "Deliver in-report Power BI alerts with translytical task flows"
-description: "Use translytical task flows in Microsoft Fabric to deliver in-report Power BI alerts without email. Build a targeted notification system today."
-#customer intent: As a Power BI report owner, I want to deliver in-report notifications using translytical task flows, so that I can keep report consumers informed without sending mass emails.
+title: "Set up alerts directly in Power BI reports using translytical task flows"
+description: "Use translytical task flows to set up alerts that appear directly in Power BI reports. Create a targeted notification system today."
+#customer intent: As a Power BI report owner, I want to set up in-report notifications using translytical task flows, so that I can keep report consumers informed without sending mass emails.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
@@ -12,13 +12,13 @@ ms.subservice: powerbi-service
 ai-usage: ai-assisted
 ---
 
-# Deliver in-report Power BI alerts with translytical task flows
+# Set up alerts directly in Power BI reports using translytical task flows
 
-Translytical task flows in Microsoft Fabric help analytics teams deliver in-report Power BI alerts, so report consumers stay informed about data changes and incidents without mass emails. Email-based alerts tend to suffer from two problems: they either become background noise that users learn to ignore, or they fail to reach the right audience at the right time.
+Translytical task flows help analytics teams set up alerts directly in Power BI reports, so report consumers stay informed about data changes and incidents without mass emails. Email-based alerts tend to suffer from two problems: they either become background noise that users learn to ignore, or they fail to reach the right audience at the right time.
 
-If your team faces the challenge of reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes in real time, translytical task flows in Microsoft Fabric offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
+If your team faces the challenge of reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes in real time, translytical task flows offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
 
-This article shows you how to build an in-report notification system that surfaces real-time alerts to the right audience, with a single source of truth and no email distribution lists.
+This article shows you how to set up an in-report notification system that shows real-time alerts to the right audience, with a single source of truth and no email distribution lists.
 
 You can use this pattern for common scenarios such as data quality incidents, planned maintenance windows, and report-specific messaging.
 
@@ -35,12 +35,12 @@ The result is a gap between the people who know about an issue and the people wh
 
 ## Review the end-to-end flow
 
-This solution uses a few core components of the Microsoft Fabric ecosystem to create a lightweight, self-service notification pipeline. User Data Functions handle most of the work. The notification lifecycle follows four steps:
+This solution uses a few core Fabric components to create a lightweight, self-service notification pipeline. User Data Functions handle most of the work. The notification lifecycle follows four steps:
 
 1. **Create** – A user opens a dedicated "Data Alert Writeback" report, selects the target report from a predefined list, types a notification message, and selects **Log Data Alert**.
 1. **Store** – The button fires a connected User Data Function, which runs a SQL stored procedure to insert a new record into a notification table in Fabric SQL.
 1. **Replicate** – A Lakehouse shortcut mirrors the notification table, so the data is immediately available to the Direct Lake semantic model without a separate extract, transform, load (ETL) step.
-1. **Surface** – Every report that references the semantic model can display relevant notifications, filtered by report name, so users see only the alerts that apply to them.
+1. **Show** – Every report that references the semantic model can display relevant notifications, filtered by report name, so users see only the alerts that apply to them.
 
 Because the notification table is exposed through a Fabric SQL to Lakehouse shortcut on a Direct Lake model, the data flows through naturally.
 
@@ -65,7 +65,7 @@ Keep this table authoritative for all active alerts so every downstream report r
 
 To create a notification, use a purpose-built Power BI report that uses translytical task flows. This report provides a guided experience:
 
-1. Select the target production report from a dropdown list. For this scenario, build a list of valid reports by scraping the production workspace with [SemPy](/fabric/data-science/semantic-link-overview).
+1. Select the target production report from a dropdown list. For this scenario, compile a list of valid reports by scraping the production workspace with [SemPy](/fabric/data-science/semantic-link-overview).
 1. Enter a clear, concise message describing the issue or update. For example:
 
    > *"Report A is experiencing data quality issues. Next update expected at 2:00 PM PST."*
@@ -102,7 +102,7 @@ This pattern works best when report consumers need timely, targeted updates in c
 - **Planned maintenance windows**: Communicate upcoming refresh changes, migrations, or expected downtime.
 - **Report-specific messaging**: Share caveats, release notes, or temporary guidance for a specific report or report group.
 
-## Surface alerts inside the report
+## Show alerts inside the report
 
 Users interact with notifications through a utility bar at the top of each report:
 
@@ -138,7 +138,7 @@ The rest of the flow remains identical. Users still create notifications through
 
 ## Summary
 
-By using translytical task flows in Fabric, you can deliver targeted, in-context notifications without a single email. The benefits include:
+By using translytical task flows in Fabric, you can show targeted, in-context notifications without a single email. The benefits include:
 
 - Users see alerts where they work - inside the report.
 - Alert targeting is precise, controlled at the report level.
@@ -147,7 +147,7 @@ By using translytical task flows in Fabric, you can deliver targeted, in-context
 
 Whether you're running Direct Lake or import-mode semantic models, this pattern is adaptable and puts the right information in front of the right people at the right time.
 
-Ready to build? [Start with the translytical task flow overview](translytical-task-flow-overview.md) or [explore User Data Functions](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to set up your first notification pipeline.
+Ready to get started? [Start with the translytical task flow overview](translytical-task-flow-overview.md) or [explore User Data Functions](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to set up your first notification pipeline.
 
 ## Related content
 
