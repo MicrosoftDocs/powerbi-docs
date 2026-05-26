@@ -34,6 +34,8 @@ Use the feature table below to quickly find out whether a specific task is avail
 
 :::image type="content" source="../explore-reports/media/end-user-features/power-bi-shared.png" alt-text="Screenshot of the Power BI service navigation pane showing shared content available to free users.":::
 
+## Licenses
+
 In [Licenses for consumers](../fundamentals/end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your licenses, your [roles](../collaborate-share/service-roles-new-workspaces.md) and [permissions](../connect-data/service-datasets-permissions.md), and where content is stored.
 
 This article lists which features in the Power BI service are available to users with free licenses.
