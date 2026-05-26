@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-removed
-ms.date: 05/18/2026
+ms.date: 05/26/2026
 ai-usage: ai-assisted
 ---
 # How to find your Power BI Report Server product key
@@ -48,7 +48,7 @@ Only users with Fabric admin or Power BI Premium capacity admin privileges can a
 How you get your product key depends on your SQL Server version. SQL Server 2025 customers use their SQL Server product key directly - no separate key is issued. For SQL Server 2022 and earlier, the Microsoft 365 admin center or Visual Studio Subscriptions provides a separate Power BI Report Server key, depending on your license type.
 
 > [!NOTE]
-> If you purchased your SQL Server Enterprise license through a partner, contact the partner to get access to the Power BI Report Server key.
+> If you purchased your SQL Server Enterprise license from a Cloud Solution Partner (CSP), contact the partner to get access to the Power BI Report Server key.
 
 For full licensing terms that govern use of Power BI Report Server, see the "Use of Power BI Report Server" section in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
 
