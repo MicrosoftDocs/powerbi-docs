@@ -1,6 +1,6 @@
 ---
 title: Enable Fabric Copilot for Power BI
-description: Learn how to enable Fabric Copilot for Power BI in your tenant. Follow step-by-step instructions to configure admin settings and start using Copilot in Power BI service and Desktop.
+description: Enable Fabric Copilot for Power BI in your tenant. Configure admin settings and start using Copilot in Power BI service and Desktop. Get started today.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: shlindsay
@@ -123,7 +123,7 @@ Check your license type in the **Workspace settings**.
 
 When you use the standalone Copilot experience and don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), select a workspace that has the required capacity for Copilot.
 
-:::image type="content" source="media/copilot-enable-power-bi/enable-copilot-select-workspace.png" alt-text="Screenshot showing the option to select a workspace for enabling Copilot in Power BI." lightbox="media/copilot-enable-power-bi/enable-copilot-select-workspace.png":::
+:::image type="content" source="media/copilot-enable-power-bi/enable-copilot-select-workspace.png" alt-text="Screenshot of the option to select a workspace for enabling Copilot in Power BI." lightbox="media/copilot-enable-power-bi/enable-copilot-select-workspace.png":::
 
 Selecting the **Select a workspace** button lists workspaces you have access to that can use Copilot. After you select a workspace, Power BI checks if Copilot is enabled. If it is, Power BI uses that workspace for monitoring usage.
 
