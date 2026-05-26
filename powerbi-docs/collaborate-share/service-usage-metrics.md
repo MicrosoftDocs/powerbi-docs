@@ -183,8 +183,10 @@ The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST API
 If your organization is using [private links](/fabric/security/security-private-links-overview), report usage metrics won't contain any data. There's currently a limitation when transferring client information over private links.
 
 ### Other considerations
-
-You need to view the content in your report, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the usage metrics report. To unblock the processing of data for this report, just view the content from your workspace at least once.
+ 
+- Navigation limitation: Attempting to navigate directly to the semantic model page is currently not supported and will return an empty/blank page.
+- You need to view the content in your report, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the usage metrics report. To unblock the processing of data for this report, just view the content from your workspace at least once.
+ 
 
 ## Frequently asked questions
 
