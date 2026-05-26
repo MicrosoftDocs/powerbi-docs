@@ -16,9 +16,9 @@ ai-usage: ai-assisted
 
 Translytical task flows help analytics teams set up alerts directly in Power BI reports, so report consumers stay informed about data changes and incidents without mass emails. Email-based alerts tend to suffer from two problems: they either become background noise that users learn to ignore, or they fail to reach the right audience at the right time.
 
-If your team faces the challenge of reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes in real time, translytical task flows offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
+If your team faces the challenge of reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes, translytical task flows offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
 
-This article shows you how to set up an in-report notification system that shows real-time alerts to the right audience, with a single source of truth and no email distribution lists.
+This article shows you how to set up an in-report notification system that shows alerts to the right audience, with a single source of truth and no email distribution lists.
 
 You can use this pattern for common scenarios such as data quality incidents, planned maintenance windows, and report-specific messaging.
 
@@ -145,7 +145,7 @@ By using translytical task flows in Fabric, you can show targeted, in-context no
 - There's a single source of truth for all notification data.
 - The framework is lightweight and built entirely on Fabric.
 
-Whether you're running Direct Lake or import-mode semantic models, this pattern is adaptable and puts the right information in front of the right people at the right time.
+Whether your semantic model uses Direct Lake or import tables, this pattern is adaptable and puts the right information in front of the right people at the right time.
 
 Ready to get started? [Start with the translytical task flow overview](translytical-task-flow-overview.md) or [explore User Data Functions](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to set up your first notification pipeline.
 
