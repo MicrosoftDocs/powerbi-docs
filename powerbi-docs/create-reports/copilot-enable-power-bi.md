@@ -26,16 +26,16 @@ For more information on other Fabric workloads, see the [Copilot in Fabric overv
 
 ## Enable Fabric Copilot for Power BI in your tenant
 
-Copilot for Microsoft Fabric is now enabled by default in the Fabric Admin portal. Admins can disable Copilot if their organization isn't ready to use it.
+The Fabric admin portal now enables Copilot for Microsoft Fabric by default. Admins can disable Copilot if their organization isn't ready to use it.
 
-There are four main settings related to Copilot that admins need to be aware of:
+Admins need to be aware of four main settings related to Copilot:
 
 - [Enable Copilot setting](#enable-copilot-setting)
 - [Enable sharing data across geographic boundaries](#enable-sharing-data-across-geographic-boundaries)
 - [Enable the standalone Power BI Copilot experience (preview)](#enable-the-standalone-power-bi-copilot-experience-preview)
 - [Enable Copilot at the capacity level](#enable-copilot-at-the-capacity-level)
 
-If the admins disabled Copilot, see the following instructions to turn Copilot on.
+To turn on Copilot, see the following instructions.
 
 ## Enable Copilot setting
 
@@ -95,7 +95,7 @@ When you enable this setting, users can access the standalone, cross-item Power 
 
 ## Only show approved items in the standalone Copilot in Power BI experience (preview)
 
-When you enable this setting, it limits the standalone Power BI Copilot experience to only [searching](/power-bi/create-reports/copilot-search-new-content) for content that you mark as **Approved for Copilot**.
+When you turn on this setting, the standalone Power BI Copilot experience [searches](/power-bi/create-reports/copilot-search-new-content) only for content that you mark as **Approved for Copilot**.
 
 :::image type="content" source="media/copilot-enable-power-bi/admin-setting-only-show-approved-items.png" alt-text="Screenshot of the tenant setting to limit the standalone Power BI Copilot to items approved for Copilot.":::
 
@@ -131,7 +131,7 @@ Selecting the **Select a workspace** button lists workspaces you have access to 
 
 ## Use Copilot in Power BI Desktop
 
-To use Copilot in Power BI Desktop, if you don't have access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need admin, member, or contributor access to at least one workspace that is assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+To use Copilot in Power BI Desktop without access to a [Fabric Copilot capacity](/fabric/enterprise/fabric-copilot-capacity), you need admin, member, or contributor access to at least one workspace assigned to a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 When you use Copilot in Power BI Desktop for the first time, you're asked to pick a Copilot-compatible workspace. You can change the associated workspace at any time through the **Settings** gear in Power BI Desktop.
 
