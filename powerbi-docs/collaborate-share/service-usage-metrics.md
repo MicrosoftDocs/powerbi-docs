@@ -184,7 +184,7 @@ If your organization is using [private links](/fabric/security/security-private-
 
 ### Other considerations
 
-- Navigation limitation: Attempting to navigate directly to the semantic model page is currently not supported and will return a blank page.
+- Attempting to navigate directly to the semantic model page from the old Usage Metrics report is currently not supported and will return a blank page. Switch first to the new usage report to view its semantic model.
 - You need to view the content in your report, from within that workspace, at least once. If there are no views of the content from the workspace itself at least once, data isn't correlated from the application views in the usage metrics report. To unblock the processing of data for this report, just view the content from your workspace at least once.
 
 
