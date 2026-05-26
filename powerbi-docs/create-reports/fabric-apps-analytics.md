@@ -7,7 +7,7 @@ ms.reviewer: vipinhei
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 05/22/2026
+ms.date: 06/02/2026
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -24,14 +24,15 @@ This article is for Power BI users who want to understand how to use Fabric Apps
 
 People who want to analyze and visualize data in Fabric Apps should use the data app template. This template contains a set of reusable primitives and agent capabilities that simplify data connectivity, AI-assisted analytics, and visualization generation. By default, apps created with the template include Fabric authentication and connectivity to semantic models, with support for connectivity to additional Fabric data sources coming soon. The agent skills in the template can generate reliable DAX and bind it to structured visual components designed specifically for analytical applications.
 
-These built-in capabilities matter because, without them, an AI agent would need to handle authentication, DAX generation, and the generation of visuals independently in every session. That approach leads to more failures, broken or empty visuals, inconsistent chart behavior, and unnecessary DAX queries during both development and runtime. Encoding those patterns directly into the template improves reliability, produces more cohesive visuals aligned with reporting best practices, and reduces query overhead. Learn more about the capabilities of Fabric Apps.
+These built-in capabilities matter because, without them, an AI agent would need to handle authentication, DAX generation, and the generation of visuals independently in every session. That approach leads to more failures, broken or empty visuals, inconsistent chart behavior, and unnecessary DAX queries during both development and runtime. Encoding those patterns directly into the template improves reliability, produces more cohesive visuals aligned with reporting best practices, and reduces query overhead. Learn more about the [capabilities of Fabric Apps](/fabric/apps/overview#key-features).
 
 ## Create a Fabric App connected to a semantic model
 
-Before you start, review the [prerequisites for creating a Fabric App](/fabric/apps/create-app) in the Fabric documentation.
+Before you start, review the [prerequisites for creating a Fabric App](/fabric/apps/create-app#prerequisites).
 
-For step-by-step instructions, see [Create your first Fabric App](/fabric/apps/create-app) in the Fabric documentation. The guide walks you through using the data app template, connecting to your semantic model, and telling Copilot what you want it to create.
+To create a Fabric App, follow the instructions in [Create your first Fabric App](/fabric/apps/data-apps-template). The guide walks you through using the data app template, connecting to your semantic model, and telling Copilot what you want it to create.
 
 ## Related content
 
-- [Copilot for Power BI apps](copilot-apps-overview.md)
+- [What are Fabric Apps?](/fabric/apps/overview)
+- [Power BI reports overview](power-bi-reports-overview.md)
