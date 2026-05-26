@@ -130,7 +130,7 @@ The second column represents a free user working with content in a workspace tha
 |**Datasets**
 |  Add, delete, edit  |  ![green myw](../explore-reports/media/end-user-features/green-mwo.png)  |  ![orange x](../explore-reports/media/end-user-features/orange-x.png) |   
 | Create a report in another workspace based on a dataset in this workspace | ![orange x](../explore-reports/media/end-user-features/orange-x.png)  |![orange x](../explore-reports/media/end-user-features/orange-x.png) | 
-| Create a report in "My Workspace" using a dataset located in a Fabric Capacity Workspace |![orange x](../explore-reports/media/end-user-features/orange-x.png) | ![orange x](../explore-reports/media/end-user-features/orange-x.png)|
+| Create a report in "My Workspace" using a dataset located in a different Workspace |![orange x](../explore-reports/media/end-user-features/orange-x.png) | ![orange x](../explore-reports/media/end-user-features/orange-x.png)|
 |  Insights on datasets  | ![green myw](../explore-reports/media/end-user-features/green-mwo.png)  |![orange x](../explore-reports/media/end-user-features/orange-x.png)| 
 |Schedule refresh |![green myw](../explore-reports/media/end-user-features/green-mwo.png)  |![orange x](../explore-reports/media/end-user-features/orange-x.png)|
 |Analyze in Excel† |![green myw](../explore-reports/media/end-user-features/green-mwo.png)  |![green dot](../fundamentals/media/end-user-license/power-bi-green-dot.png)|
