@@ -6,7 +6,7 @@ author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
 ms.date: 05/26/2026
-ms.topic: how-to
+ms.topic: concept-article
 ms.service: powerbi
 ms.subservice: powerbi-service
 ai-usage: ai-assisted
@@ -14,11 +14,13 @@ ai-usage: ai-assisted
 
 # Deliver in-report Power BI alerts with translytical task flows
 
-Translytical task flows in Microsoft Fabric help analytics teams deliver in-report Power BI alerts, keeping report consumers informed about data changes and incidents without mass emails. Email-based alerts tend to suffer from two problems: they either become background noise that users learn to ignore, or they fail to reach the right audience at the right time.
+Translytical task flows in Microsoft Fabric help analytics teams deliver in-report Power BI alerts, so report consumers stay informed about data changes and incidents without mass emails. Email-based alerts tend to suffer from two problems: they either become background noise that users learn to ignore, or they fail to reach the right audience at the right time.
 
-If your team faces the same challenge—reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes in real time—Translytical task flows in Microsoft Fabric offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
+If your team faces the challenge of reports serving a broad set of stakeholders with no reliable way to keep them informed about data problems, refreshes, or changes in real time, translytical task flows in Microsoft Fabric offer a lightweight, no-email solution that brings notifications directly into Power BI reports themselves.
 
 This article shows you how to build an in-report notification system that surfaces real-time alerts to the right audience, with a single source of truth and no email distribution lists.
+
+You can use this pattern for common scenarios such as data quality incidents, planned maintenance windows, and report-specific messaging.
 
 ## Understand the problem this pattern solves
 
@@ -44,9 +46,24 @@ Because the notification table is exposed through a Fabric SQL to Lakehouse shor
 
 :::image type="content" source="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png" alt-text="Screenshot of an architecture diagram showing the translytical task flow pipeline from writeback report through User Data Functions, Fabric SQL, Lakehouse shortcut, and Direct Lake Semantic Model to downstream Power BI reports." lightbox="media/translytical-task-flow-report-alerts/translytical-notification-creation-pipeline.png":::
 
+## Define the notification data model
+
+Treat notifications as data and design a table that supports both targeting and lifecycle management. At minimum, include:
+
+- Notification ID
+- Created by
+- Created date/time
+- Target report
+- Notification message
+- Active status
+
+Depending on your requirements, you might also include severity, effective start and end times, and an optional link for remediation guidance.
+
+Keep this table authoritative for all active alerts so every downstream report reads from the same source of truth.
+
 ## Create a notification
 
-The entry point for creating a notification is a purpose-built Power BI report that uses translytical task flows. This report provides a guided experience:
+To create a notification, use a purpose-built Power BI report that uses translytical task flows. This report provides a guided experience:
 
 1. Select the target production report from a dropdown list. For this scenario, build a list of valid reports by scraping the production workspace with [SemPy](/fabric/data-science/semantic-link-overview).
 1. Enter a clear, concise message describing the issue or update. For example:
@@ -77,6 +94,14 @@ Not every notification belongs on every report. The framework uses Power BI's bu
 - **Report = "All"** – for service-wide announcements visible everywhere.
 - **Report = "Report A"** – for alerts specific to a single report.
 
+## When to use this pattern
+
+This pattern works best when report consumers need timely, targeted updates in context:
+
+- **Data quality incidents**: Inform users when data is delayed, incomplete, or under investigation.
+- **Planned maintenance windows**: Communicate upcoming refresh changes, migrations, or expected downtime.
+- **Report-specific messaging**: Share caveats, release notes, or temporary guidance for a specific report or report group.
+
 ## Surface alerts inside the report
 
 Users interact with notifications through a utility bar at the top of each report:
@@ -98,6 +123,15 @@ If your semantic model doesn't use Direct Lake mode, the notification data won't
 - **Trigger:** Data Activator monitors the notification table for new records.
 - **Refresh pipeline:** A Fabric pipeline uses a refresh semantic model activity to select and hydrate a single table (the notification table) when the Activator fires.
 
+For this variant, keep the refresh scope as narrow as possible (notification table only) so you reduce latency and avoid unnecessary model processing.
+
+The implementation sequence is:
+
+1. Configure Data Activator to detect new or changed active notifications.
+1. Trigger a Fabric pipeline run when that event occurs.
+1. Refresh only the notification table in the semantic model.
+1. Validate that report filters still scope notifications by report name.
+
 The rest of the flow remains identical. Users still create notifications through the same writeback report, and downstream reports still consume them through the semantic model.
 
 :::image type="content" source="media/translytical-task-flow-report-alerts/translytical-task-flow-non-direct-lake.png" alt-text="Screenshot of an architecture diagram showing the non-Direct Lake translytical task flow variant with Data Activator and a Fabric Pipeline semantic model refresh step." lightbox="media/translytical-task-flow-report-alerts/translytical-task-flow-non-direct-lake.png":::
@@ -106,18 +140,19 @@ The rest of the flow remains identical. Users still create notifications through
 
 By using translytical task flows in Fabric, you can deliver targeted, in-context notifications without a single email. The benefits include:
 
-- Users see alerts where they work—inside the report.
+- Users see alerts where they work - inside the report.
 - Alert targeting is precise, controlled at the report level.
 - There's a single source of truth for all notification data.
 - The framework is lightweight and built entirely on Fabric.
 
 Whether you're running Direct Lake or import-mode semantic models, this pattern is adaptable and puts the right information in front of the right people at the right time.
 
-Ready to build? [Start with the translytical task flow overview](/power-bi/create-reports/translytical-task-flow-overview) or [explore User Data Functions](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to set up your first notification pipeline.
+Ready to build? [Start with the translytical task flow overview](translytical-task-flow-overview.md) or [explore User Data Functions](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to set up your first notification pipeline.
 
 ## Related content
 
-- [Understand translytical task flows](/power-bi/create-reports/translytical-task-flow-overview) – Learn the core concepts behind translytical task flows in Microsoft Fabric.
+- [Understand translytical task flows](translytical-task-flow-overview.md) – Learn the core concepts behind translytical task flows in Microsoft Fabric.
 - [User Data Functions Overview](/fabric/data-engineering/user-data-functions/user-data-functions-overview) – Explore how User Data Functions run stored procedures to power the notification pipeline.
+- [Use SQL database as the source data engine for translytical applications](/fabric/database/sql/use-case-translytical-applications) – Use this architecture as a template for SQL-backed translytical patterns in Fabric.
 - [Get started with Data Activator](/fabric/data-activator/data-activator-get-started) – Set up triggers to monitor your notification table for non–Direct Lake models.
 - [Lakehouse shortcuts in Microsoft Fabric](/fabric/onelake/onelake-shortcuts) – Understand how shortcuts mirror your notification table into the Lakehouse.
