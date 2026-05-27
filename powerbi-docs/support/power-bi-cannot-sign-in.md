@@ -1,8 +1,8 @@
 ---
 title: Resolve sign-in issues or reset your password for Power BI and Fabric
 description: Help to unblock users who are unable to sign in to Power BI or Fabric and need to reset a password or contact support.
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin

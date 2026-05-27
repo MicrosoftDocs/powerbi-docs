@@ -1,8 +1,8 @@
 ---
 title: Before you contact Power BI and Fabric support
 description: Follow this checklist to troubleshoot your issue and gather information before you create a Microsoft support request for Power BI or Fabric.
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting

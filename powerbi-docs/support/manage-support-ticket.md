@@ -1,8 +1,8 @@
 ---
 title: Manage support case
 description: How to manage Fabric and Power BI support tickets
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.topic: troubleshooting

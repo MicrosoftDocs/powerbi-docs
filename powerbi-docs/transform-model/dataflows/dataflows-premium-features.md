@@ -1,8 +1,8 @@
 ---
 title: Premium features of dataflows (legacy)
 description: Learn how to use the premium features available with Power BI dataflows, like the Enhanced compute engine, DirectQuery, Computed entities, Linked Entities, and Incremental refresh.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

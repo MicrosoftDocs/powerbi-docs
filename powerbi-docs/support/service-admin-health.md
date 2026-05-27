@@ -1,8 +1,8 @@
 ---
 title: Track Fabric Service Health and Known Issues
 description: "Learn how to track Fabric service health and known issues using the Fabric Admin Portal or Microsoft 365 admin center. Configure notifications to stay informed about service disruptions."
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin
