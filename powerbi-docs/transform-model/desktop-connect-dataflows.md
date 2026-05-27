@@ -1,8 +1,8 @@
 ---
 title: Connect to Power Platform dataflows in Power BI Desktop (legacy)
 description: Learn how to easily connect to, use, and get the best performance while using dataflows in Power BI Desktop. 
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

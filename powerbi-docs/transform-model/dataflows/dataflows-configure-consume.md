@@ -1,8 +1,8 @@
 ---
 title: Configure and consume a dataflow (legacy)
 description: Learn how to set up a dataflow in the Power BI service and consume that dataflow in Power BI Desktop.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows

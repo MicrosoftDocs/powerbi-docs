@@ -38,6 +38,8 @@ The following lists describe the requirements and limitations for editing SAP va
 
 - **Workspace restrictions.** Editing SAP variables doesn't work for reports in the **Shared with me** tab of **My Workspace**, or in apps created from V1 workspaces.
 
+- **Dashboard pins.** When you pin a visual to a dashboard, SAP variables aren't applied. The pinned visual shows the default data without any variable selections.
+
 ## Enable editing SAP variables
 
 To enable report users to edit SAP variables:

@@ -1,8 +1,8 @@
 ---
 title: Power BI tenant migration patterns and strategies
 description: Learn migration patterns for Power BI tenant scenarios including cross-tenant migrations, tenant splits, and regional relocations. Includes planning frameworks and implementation guidance.
-author: eric-urban
-ms.author: eur
+author: JulCsc
+ms.author: juliacawthra
 ms.reviewer: winnieli
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
