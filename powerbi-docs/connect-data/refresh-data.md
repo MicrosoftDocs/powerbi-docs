@@ -47,6 +47,9 @@ The following diagram illustrates the different data flows, based on storage mod
 
 Power BI imports the data from the original data sources into the semantic model. Power BI report and dashboard queries submitted to the semantic model return results from the imported tables and columns. You might consider such a semantic model a point-in-time copy. Because Power BI copies the data, you must refresh the semantic model to fetch changes from the underlying data sources.
 
+> [!IMPORTANT]
+> Semantic models created using the legacy Excel or CSV import experience in the Power BI service stop refreshing after July 31, 2026, and stop loading after August 31, 2026. If your semantic model can't be edited in the browser, can't be downloaded, and has no scheduled refresh option, it was likely created with the legacy experience. For guidance on identifying and migrating affected semantic models, see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience).
+
 When a semantic model is refreshed, it's either fully refreshed or partially refreshed. Partial refresh takes place in semantic models that have tables with an [incremental refresh](incremental-refresh-overview.md) policy. In these semantic models, only a subset of the table partitions are refreshed. In addition, advanced users can use the [XMLA endpoint](./../enterprise/service-premium-connect-tools.md) to refresh specific partitions in any semantic model.
 
 The amount of memory required to refresh a semantic model depends on whether you're performing a full or partial refresh. During the refresh, a copy of the semantic model is kept to handle queries to the semantic model. This means that if you're performing a full refresh, you'll need twice the amount of memory the semantic model requires.

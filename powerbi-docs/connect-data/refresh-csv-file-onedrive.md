@@ -17,6 +17,9 @@ ms.custom:
 
 When you connect to a comma separated value (*.csv*) file on OneDrive or SharePoint, a semantic model is created in Power BI. Data from the *.csv* file is imported into the semantic model in Power BI. Power BI then automatically connects to the file and refreshes any changes with the semantic model in Power BI. If you edit the *.csv* file in OneDrive, or SharePoint, after you save, those changes will appear in Power BI, usually within about an hour. Any visualizations in Power BI based on the semantic model are automatically updated.
 
+> [!IMPORTANT]
+> Semantic models created using the legacy CSV import experience in the Power BI service stop refreshing after July 31, 2026, and stop loading after August 31, 2026. If you created your semantic model using the current CSV connector (via **New item** > **Semantic model** > **CSV**), you're not affected. To check whether your semantic models are affected, see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience).
+
 > [!NOTE]
 > By default, using the **Get Data** experience for specific file type connectors in Power BI Desktop uses a local reference to the file stored on OneDrive, which won't automatically update unless you have a gateway configured. To have your CSV automatically update without having to configure a gateway, rather than using the **Text/CSV** connector, use the **Web** connector and reference the online version of your CSV. 
 

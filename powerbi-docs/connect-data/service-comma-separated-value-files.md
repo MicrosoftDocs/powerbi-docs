@@ -12,6 +12,9 @@ LocalizationGroup: Data from files
 ---
 # Get data from comma separated value (CSV) files
 
+> [!IMPORTANT]
+> The legacy CSV import experience in Power BI service has been retired. As of May 31, 2026, you can no longer create new semantic models using the old import experience. If you have existing semantic models that were created with the legacy experience, they stop refreshing after July 31, 2026, and stop loading after August 31, 2026. Use the steps in this article to create new semantic models, and see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience) for guidance on identifying and migrating affected semantic models.
+
 Comma separated value files, often known as CSV files, are simple text files with rows of data where each value is separated by a comma. These types of files can contain large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a [sample CSV file](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 If you have a CSV file, it's time to get it into your Power BI site as a semantic model where you can begin exploring your data, create some dashboards, and share your insights with others.
