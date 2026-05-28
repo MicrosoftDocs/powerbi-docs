@@ -26,7 +26,7 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 - Live connect to Azure Analysis Services
 - Live connect to on-premises SQL Server Analysis Services tabular models
 
-In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premises SQL Server Analysis Services models.
+In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service.
 
 ### DirectQuery support for Q&A
 
@@ -45,15 +45,15 @@ If the model contains a mix of data sources, Q&A only indexes columns from impor
 
 Q&A doesn't support the following configurations:
 
-- Object-level security with any type of data source.
+- Object-level security for models hosted in Azure Analysis Services or on-premises SQL Server Analysis Services models.
 - Reporting Services.
 
-## Q&A setup limitations 
+## Q&A setup limitations
 
-The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources: 
+The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources:
 
 - Import mode  
-- DirectQuery   
+- DirectQuery
 
 ## Review question limitations
 
