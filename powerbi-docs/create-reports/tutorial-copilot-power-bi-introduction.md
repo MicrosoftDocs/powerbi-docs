@@ -1,6 +1,6 @@
 ---
-title: Copilot in Power BI tutorial introduction
-description: This article provides an overview of Copilot in Power BI and the integrations involved in an end-to-end scenario for the tutorial.
+title: "Copilot in Power BI Tutorial: End-to-End Overview"
+description: Learn how Copilot in Power BI works across an end-to-end scenario, from model prep to insights, and get started with the tutorial.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: alpowers
@@ -11,17 +11,19 @@ LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ms.custom: azure-data-cat
-ms.date: 05/06/2025
+ms.date: 05/26/2026
+ms.update-cycle: 180-days
+ai-usage: ai-assisted
 ---
 
-# Copilot in Power BI tutorial introduction
+# Copilot in Power BI tutorial: End-to-end overview
 
 > [!NOTE]
-> *Authoring* of **AI instructions** and **AI data schema** is available only in Power BI Desktop, and for **Verified answers** it's available in both Power BI Desktop and the Power BI service. *Consumption* of these features is available everywhere Copilot exists.
+> You can author **Prep data for AI** features in both Power BI Desktop and the Power BI service. Users can consume these features anywhere Copilot in Power BI is available.
 
-This article introduces you to how Copilot in Power BI supports enterprise developers, self-service users, and business users and provides information on integration points and the different experiences designed for creating and consuming content using Copilot.
+This article introduces how Copilot in Power BI supports enterprise developers, self-service users, and business users. It provides information on integration points and the different experiences designed for creating and consuming content by using Copilot.
 
-This tutorial provides practical hands-on experience, guiding users through a scenario from semantic model development to obtaining insights using Copilot for Power BI. It aims to build a foundational understanding of Copilot, including various methods to prepare semantic models for AI, ways to make data discoverable, and how to examine Copilot results to obtain new insights.
+This tutorial provides practical hands-on experience, guiding users through a scenario from semantic model development to obtaining insights by using Copilot for Power BI. It aims to build a foundational understanding of Copilot, including various methods to prepare semantic models for AI, ways to make data discoverable, and how to examine Copilot results to obtain new insights.
 
 > [!IMPORTANT]
 > This tutorial includes [preview](/fabric/fundamentals/preview) features.
