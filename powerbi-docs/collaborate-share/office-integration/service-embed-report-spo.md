@@ -47,6 +47,9 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
     ![Screenshot of the Embed link dialog with the report link highlighted.](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
+> [!NOTE]
+> [URL filters](../service-url-filters.md) are supported with the SharePoint Online web part. Users must manually append the filters to the URL, as auto-append is not fully supported yet.
+
 ### Add the Power BI report to a SharePoint Online page
 
 1. Open the target page in SharePoint Online and select **Edit**.
@@ -187,11 +190,11 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
 
 * The classic SharePoint Server isn't supported with this web part.
 
-* [URL filters](../service-url-filters.md) aren't supported with the SharePoint Online web part.
-
 * You can't view or access Power BI Apps embedded in a SharePoint site page using a Power BI web part. To access the embedded Power BI report, access the app first in Power BI service before accessing it in the SharePoint site page.
   
 * Image URLs from a local network are not supported due to a recent browser security update that restricts requests to the user’s local network.
+
+* While [URL filters](../service-url-filters.md) are supported, auto-append is not fully supported yet. Users must manually append filters to the URL. 
 
 ## Related content
 
