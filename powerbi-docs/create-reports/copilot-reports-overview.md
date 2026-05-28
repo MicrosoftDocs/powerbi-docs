@@ -1,17 +1,19 @@
 ---
-title: Use Copilot with Power BI reports and semantic models
-description: Learn how to use Copilot in Power BI to create, consume, and enhance reports with AI-driven insights.
+title: Use Copilot With Power BI Reports and Semantic Models
+description: Use Copilot with Power BI reports and semantic models to ask data questions, build report pages, and generate summaries—explore these features now.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: daengli
 ms.service: powerbi
 ms.topic: concept-article
-ms.date: 05/07/2025
+ms.date: 05/26/2026
+ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ---
 # Use Copilot with Power BI reports and semantic models
 
-Copilot within Power BI reports and semantic models can be used for various tasks for both business users and report creators, from asking questions about the data in a report they have open to kick-starting the creation of new reports and enhancing their models.
+You can use Copilot within Power BI reports and semantic models for various tasks. Both business users and report creators can benefit from Copilot, whether they're asking questions about the data in an open report, kick-starting the creation of new reports, or enhancing their models.
 
 ## Capabilities for business users
 
@@ -19,7 +21,7 @@ Copilot within Power BI reports and semantic models can be used for various task
 
 You can summarize report pages by using Copilot in smart narrative visuals on the page, in the Copilot pane, or in report subscriptions. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "provide a summary of sales on this page."
 
-You can also ask specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
+You can also ask specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, which helps you understand the specific data sources contributing to each part of the answer or summary within the report.
 
 Consumers might use report page summaries in the following scenarios:
 
@@ -33,7 +35,7 @@ Learn more about [Copilot creating a summary response to prompts about your repo
 
 ### Ask questions about your data
 
-Consumers can ask questions about reports and get answers in the Copilot pane. Copilot can find specific data points for the user and return them as an output, referencing the source visual that it was retrieved from.
+Consumers can ask questions about reports and get answers in the Copilot pane. Copilot can find specific data points for the user and return them as an output, referencing the source visual that it retrieved from.
 
 Copilot can also use measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and models, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you using the model.
 
@@ -90,27 +92,27 @@ Summarize a Power BI semantic model by asking Copilot to "summarize the model" i
 
 ### Create a summary visual on the report itself
 
-You can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. See [Create a narrative with Copilot for Power BI](copilot-create-narrative.md) for details.
+Use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. For more information, see [Create a narrative with Copilot for Power BI](copilot-create-narrative.md).
 
 :::image type="content" source="media/copilot-reports-overview/copilot-summary-visual.png" alt-text="Screenshot of Copilot-generated summary visual for a Power BI report page." lightbox="media/copilot-reports-overview/copilot-summary-visual.png":::
 
 ### Write DAX queries
 
-Copilot can write a data analysis expression (DAX) query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select **Send** or press **Enter**. To run what is returned, select **Keep it** to add it to the query tab. Then select **Run** or press **F5** to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
+Copilot can write a data analysis expression (DAX) query. For example, you can type in a prompt to describe what DAX query you want it to generate, and select **Send** or press **Enter**. To run the returned query, select **Keep it** to add it to the query tab. Then select **Run** or press **F5** to see the results of the DAX query. For more information, see [Write DAX queries](/dax/dax-copilot).
 
-:::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot showing Copilot suggested DAX query." lightbox="media/copilot-introduction/copilot-dax-query.png":::
+:::image type="content" source="media/copilot-introduction/copilot-dax-query.png" alt-text="Screenshot of Copilot suggesting a DAX query in Power BI." lightbox="media/copilot-introduction/copilot-dax-query.png":::
 
 ### Add descriptions for semantic model measures
 
 Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation. [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
-:::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot showing Copilot suggested measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
+:::image type="content" source="media/copilot-introduction/copilot-measure-description-model-view.png" alt-text="Screenshot of Copilot suggesting a semantic model measure description." lightbox="media/copilot-introduction/copilot-measure-description-model-view.png":::
 
 ### Send feedback
 
-We always welcome your feedback about our products to help us improve Copilot. Give us your feedback directly in the Copilot pane by selecting the feedback button.
+To help us improve Copilot, provide your feedback about our products. Give us your feedback directly in the Copilot pane by selecting the feedback button.
 
-:::image type="content" source="media/copilot-introduction/copilot-feedback.png" alt-text="Screenshot showing the feedback mechanism thumbs up and thumbs down.":::
+:::image type="content" source="media/copilot-introduction/copilot-feedback.png" alt-text="Screenshot of the Copilot feedback mechanism with thumbs up and thumbs down.":::
 
 ## Copilot requirements
 
