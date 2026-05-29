@@ -110,7 +110,7 @@ Be clear about anything that you want Copilot to emphasize or avoid. The more de
 
 ### Group related instructions
 
-To help Copilot better understand your intent, organize instructions by theme or purpose (such as date logic, key metrics, and industry terms). Include structural elements, such as sections, hierarchies, and headers. For an example of how to group related instructions in the full set of instructions, see the [example scenario](#example-scenario).
+To help Copilot better understand your intent, organize instructions by theme or purpose (such as date logic, key metrics, and industry terms). Include structural elements, such as sections, hierarchies, and headers. For an example of how to group related instructions in the full set of instructions, see the [example scenario](#example-scenario-product-sales-semantic-model).
 
 ### Instruction order
 
