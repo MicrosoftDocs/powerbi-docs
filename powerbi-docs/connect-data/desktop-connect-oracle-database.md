@@ -88,12 +88,11 @@ To connect to an on-premises Oracle database from the Power BI service, use the 
 > [!NOTE]
 > If you're connecting to an on-premises Oracle database, ensure your machine has network access to the database server. This might require a VPN connection or firewall configuration. Contact your IT administrator for assistance.
 
-### Upgrading personal Oracle connections
+### Upgrade personal Oracle connections
 
-If your semantic model uses a personal data gateway, upgrade to an enterprise on-premises data gateway or a direct cloud connection. In the semantic model settings, expand the **Gateway and Connections** section, and then create a connection on an enterprise on-premises data gateway for on-premises Oracle databases, or use a direct cloud connection for Oracle cloud databases. This upgrade is irreversible. After you upgrade, you can't switch the semantic model back to a personal data gateway.
+If your semantic model uses a personal data gateway, you can upgrade to an enterprise on-premises data gateway or a direct cloud connection. In the semantic model settings, expand the **Gateway and Connections** section, and then create a connection on an enterprise on-premises data gateway for on-premises Oracle databases, or use a direct cloud connection for Oracle cloud databases.
 
-> [!NOTE]
-> Semantic models with existing Oracle connections continue to work through personal data gateways for backward compatibility. Plan your upgrade carefully.
+This upgrade is irreversible. After you upgrade, you can't switch the semantic model back to a personal data gateway.
 
 ### Power Query connector reference
 
