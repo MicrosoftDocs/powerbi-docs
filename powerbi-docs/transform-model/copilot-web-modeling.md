@@ -40,7 +40,7 @@ You can use Copilot in web modeling in the Power BI service:
 1. Switch from Viewing mode to **Editing mode** using the dropdown  
 1. Select **Copilot** from the ribbon 
 
-   :::image type="content" source="media/copilot-web-modeling/entry-point.png" alt-text="Screenshot of the Copilot web modeling entry point from the ribbon in Power BI Service web modeling." lightbox="media/copilot-web-modeling/entry-point.png":::
+   :::image type="content" source="media/copilot-web-modeling/copilot-entry-point.png" alt-text="Screenshot of the Copilot web modeling entry point from the ribbon in Power BI Service web modeling." lightbox="media/copilot-web-modeling/copilot-entry-point.png":::
 
    From the Copilot pane, you can start with suggested prompts or enter your own questions to analyze or update your model.
 
