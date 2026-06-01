@@ -1,16 +1,15 @@
 ---
 title: Copilot in Power BI web modeling (preview)
 description: "Learn how to use Copilot in Power BI web modeling to edit and improve semantic models."
-author: julcsc
-ms.author: juliacawthra
+author: kgremban
+ms.author: kgremban
 ms.reviewer: jacindaeng
 ms.service: powerbi
-ms.subservice: 
 ms.topic: how-to
 ms.date: 05/08/2026
-LocalizationGroup: 
 no-loc: [Copilot]
-ms.collection: 
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 ---
 
 # Copilot in Power BI web modeling (preview)
