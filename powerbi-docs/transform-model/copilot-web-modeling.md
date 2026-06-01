@@ -64,7 +64,7 @@ As with any AI-assisted experience, review all suggested changes to ensure they 
 
 ## Limitations
 
--	Using Copilot in web modeling to set Prep data for AI is currently not supported 
+- Using Copilot in web modeling to set prep data for AI currently isn't supported.
 - Copilot is designed to help with semantic modeling tasks, and requests outside this scope may not be supported.
 - Copilot in web modeling is subject to Copilot for Power BI [limitations](../create-reports/copilot-introduction.md#considerations-and-limitations) and [licensing requirements](../create-reports/copilot-enable-power-bi.md#licensing-requirements).
 
