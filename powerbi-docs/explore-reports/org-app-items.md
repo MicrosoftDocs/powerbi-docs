@@ -397,6 +397,6 @@ For more information about subscriptions, including scheduling and configuration
 ## Considerations and limitations for org apps
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
-- Org apps support email subscriptions for Power BI reports (preview). However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See **Subscriptions for reports in org apps (preview)**.
 - Org apps don't support all report toolbar capabilities available in workspace apps, such as bookmarks and comments.
+- Org apps support email subscriptions for Power BI reports (preview). However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps (preview)](#subscriptions-for-reports-in-org-apps-preview).
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
