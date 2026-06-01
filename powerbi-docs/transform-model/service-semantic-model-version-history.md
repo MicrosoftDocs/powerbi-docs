@@ -144,6 +144,8 @@ The semantic model must have [large semantic model storage format enabled](../en
 
 A semantic model may fail to convert to the large semantic model storage format if it exceeds [memory limitations](../enterprise/service-premium-large-models.md). To resolve these memory limitations, you can either host the model on a Premium capacity SKU that supports the necessary memory size for the model, or reduce the size of the model.
 
+**Limitation:** Web modeling requires large semantic model storage format, which isn’t available in all regions. It’s supported only in Azure regions with Azure Premium Files Storage. See the region [availability table](/fabric/enterprise/powerbi/service-premium-large-models) for the full list.
+
 ## Related content
 
 This article provided information about semantic model version history. For more information on semantic modeling in Power BI, see the following resources:
