@@ -50,7 +50,7 @@ Before responding to your first prompt, Copilot asks for your permission before 
 
 After you grant permission, Copilot creates a restore checkpoint at the start of the session using [semantic model version history](./service-semantic-model-version-history.md). You can use this checkpoint to revert the semantic model back to its original state before Copilot changes were applied in that specific chat session. This allows you to safely experiment with suggested updates, review changes, and restore your model if needed.
 
-:::image type="content" source="media/copilot-web-modeling/consent-flow.png" alt-text="Screenshot of the Copilot web modeling consent flow asking for user permission before making model changes." lightbox="media/copilot-web-modeling/consent-flow.png":::
+:::image type="content" source="media/copilot-web-modeling/consent-flow.png" alt-text="Screenshot of the Copilot web modeling consent flow asking for user permission before making model changes.":::
 
 ## Permissions and model access
 
