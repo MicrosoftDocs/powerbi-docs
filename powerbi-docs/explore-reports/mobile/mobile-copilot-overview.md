@@ -45,7 +45,7 @@ The standalone Copilot provides a full-screen chat experience that you can acces
 
 ### In-report Copilot (preview)
 
-The in-report Copilot provides a full conversational chat experience for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header of a report that [meets Copilot requirements](../../create-reports/copilot-ask-data-question.md#before-you-start).
+The in-report Copilot provides a full conversational chat experience for the report you're currently viewing. Access it by tapping the Copilot icon in any open report header of a report that [meets Copilot requirements](../../create-reports/copilot-ask-data-question.md#prerequisites).
 
 **Key capabilities:**
 

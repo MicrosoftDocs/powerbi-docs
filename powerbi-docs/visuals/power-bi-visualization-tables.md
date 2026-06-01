@@ -1,14 +1,13 @@
 ---
 title: Create and Format Table Visualizations in Power BI
-description: Learn how to create, format, and optimize table visualizations in Power BI reports and dashboards, including resizing column widths. Discover best-use scenarios.  
+description: "Learn how to create and format table visualizations in Power BI reports and dashboards. Compare data with conditional formatting, custom totals, and more. Get started now."  
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
-featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 05/06/2026
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
@@ -20,7 +19,7 @@ ai-usage: ai-assisted
 
 A table is a grid that contains related data in a logical series of rows and columns. A table can also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. In the following example, the table displays five different measures for the **Category** items, including average prices, year over year sales, and sales goals.
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table that displays five measures for Category items." border="false":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format.png" alt-text="Screenshot of a table visualization in Power BI displaying five measures for Category items, including average prices and sales goals." border="false":::
 
 Power BI helps you create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells, then cross-highlight the values. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -44,7 +43,7 @@ This tutorial uses the Retail Analysis Sample PBIX file.
 
 1. Download the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 1. In Power BI Desktop, select **File** > **Open report**.
-1. Browse to and select the **Retail Analysis Sample PBIX** file, then select **Open**.
+1. Browse to and select the **Retail Analysis Sample PBIX** file, and then select **Open**.
 
    The **Retail Analysis Sample PBIX** file opens in report view. 
 
@@ -68,7 +67,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the **Visualizations** pane to select the table icon.
 
-    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Image of the icon for a table visual." border="false":::
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Screenshot of the table visual icon in the Power BI Visualizations pane." border="false":::
 
     :::image type="content" source="media/power-bi-visualization-tables/table-category.png" alt-text="Screenshot of the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
@@ -90,7 +89,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 ## Format the table
 
-There are many ways to format a table. We cover only a few scenarios in this article.
+You can format a table in many ways. This article covers only a few scenarios.
 
 The following steps show how to configure settings and options to adjust the presentation of the table data.
 
@@ -119,7 +118,7 @@ The following steps show how to configure settings and options to adjust the pre
    1. Expand the **Specific column** section.
    1. For the **Apply settings to** options, select the specific column to format by using the **Series** drop-down list.
 
-      Let's begin by selecting the column **This Year Sales**.
+      Select the column **This Year Sales**.
 
       The data values in the selected column determine the available formatting options.
 
@@ -129,7 +128,7 @@ The following steps show how to configure settings and options to adjust the pre
 
    1. Finally, configure the other **Apply settings to** options to specify how to use the updated settings for the column data.
 
-      Let's apply the changes to all **values** in the column and to the row that shows the **total** of value.
+      Apply the changes to all **values** in the column and to the row that shows the **total** of value.
 
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot of how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
@@ -143,7 +142,7 @@ Here's an example of an updated table:
 
 :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-new-format.png" alt-text="Screenshot of the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
 
-Format tables in other ways to complement your configuration options and settings. In the next section, we explore how to apply conditional formatting.
+Format tables in other ways to complement your configuration options and settings. In the next section, you explore how to apply conditional formatting.
 
 ## Use conditional formatting
 
@@ -172,7 +171,7 @@ To copy the value of a single cell:
 1. Select **Copy** > **Copy value** to copy the cell value to your clipboard.
 
    > [!NOTE]
-   > Power BI copies only the data value in the cell. Any formatting applied to the cell value isn't copied.
+   > Power BI copies only the data value in the cell. It doesn't copy any formatting applied to the cell value.
 
    :::image type="content" source="media/power-bi-visualization-tables/power-bi-copy-value.png" alt-text="Screenshot of how to copy a cell value to use in other applications." border="false":::
 
@@ -193,10 +192,9 @@ To copy the values for more than one cell:
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
-## Custom totals (preview)
+## Custom totals
 
 [!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
-
 
 ## Considerations and troubleshooting
 

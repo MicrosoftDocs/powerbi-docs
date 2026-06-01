@@ -1,8 +1,8 @@
 ---
 title: External Tools in Power BI Desktop
 description: Learn how to use external tools in Power BI Desktop, including DAX Studio, Tabular Editor, ALM Toolkit, and Metadata Translator to extend data modeling, analysis, and lifecycle management capabilities.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -44,8 +44,8 @@ There are many external tools out there. Here are some of the most popular and b
 |---------|---------|
 |PowerBI.tips - Business Ops      |   An easy to use deployment tool for adding external tools extensions to Power BI Desktop. The Business Ops goal is to provide a one stop shop for installing all the latest versions of external tools. To learn more, go to [the GitHub location for Business Ops](https://github.com/MikeCarlo/BusinessOps).      |
 |Tabular Editor     |   Model creators can easily build, maintain, and manage tabular models by using an intuitive and lightweight editor. A hierarchical view shows all objects in your tabular model organized by display folders, with support for multi-select property editing and DAX syntax highlighting. To learn more, go to [tabulareditor.com](https://tabulareditor.com/).       |
-|DAX Studio      | A feature-rich tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To get the latest, go to [DAX Studio](https://daxstudio.org).         |
-|ALM Toolkit     |   A schema compare tool for Power BI models and semantic models, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between semantic models. To get the latest, go to [alm-toolkit.com](http://alm-toolkit.com/).      |
+|DAX Studio      | A feature-rich tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To get the latest, go to [DAX Studio](https://github.com/DaxStudio/DaxStudio) on GitHub.         |
+|ALM Toolkit     |   A schema compare tool for Power BI models and semantic models, used for application lifecycle management (ALM) scenarios. You can perform straightforward deployment across environments and retain incremental refresh historical data. You can diff and merge metadata files, branches, and repos. You can also reuse common definitions between semantic models. To get the latest, go to [ALM Toolkit on GitHub](https://github.com/microsoft/analysis-services).      |
 |Metadata Translator      |    Streamlines localization of Power BI models and semantic models. The tool can automatically translate captions, descriptions, and display folder names of tables, columns, measures, and hierarchies. The tool translates by using the machine translation technology of Azure Cognitive Services. You can also export and import translations via Comma Separated Values (.csv) files for convenient bulk editing in Excel or a localization tool. To get the latest, go to [Metadata Translator](https://github.com/microsoft/Analysis-Services/tree/master/MetadataTranslator) on GitHub.    |
 
 ## External tools integration architecture

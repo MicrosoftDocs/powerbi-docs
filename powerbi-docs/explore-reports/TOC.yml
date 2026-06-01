@@ -8,6 +8,7 @@
 # OVERVIEW (REQUIRED)
 # =============================================================================
 - name: Overview
+  expanded: true
   items:
   - name: Explore reports in Power BI
     href: explore-reports-overview.md
@@ -16,6 +17,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
   - name: Sign in for the first time
     href: end-user-sign-in.md
@@ -216,6 +218,7 @@
 - name: Explore reports on mobile
   items:
   - name: Overview
+    expanded: true
     items:
     - name: What are the mobile apps?
       href: mobile/mobile-apps-for-mobile-devices.md
@@ -307,12 +310,18 @@
       href: mobile/mobile-apps-supported-languages.md
 
 # =============================================================================
+# GLOSSARY
+# =============================================================================
+- name: Glossary
+  items:
+  - name: Glossary and terminology
+    href: end-user-glossary.md
+
+# =============================================================================
 # RESOURCES (don't change this - standardized with Fabric)
 # =============================================================================
 - name: Resources
   items:
-  - name: Glossary and terminology
-    href: end-user-glossary.md
   - name: Contribute to Fabric docs
     href: /contribute/
   - name: Microsoft Q & A

@@ -119,6 +119,15 @@ Power BI reports and KPIs are displayed in the same folders they're in on the Re
   
   :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/pbi_ipad_ssmrp_tile.png" alt-text="Screenshot of a KPI in focus mode in the Power BI mobile app.":::
 
+### Report loading issues on iPhone or iPad (iOS 26.4 and later)
+
+If your Power BI Report Server reports show a blank screen or fail to load on an iPhone or iPad running iOS 26.4 or later, enable PBIRS alternative rendering in the app (version 37.4 or later required):
+
+1. Tap your profile picture, then select **Settings**.
+1. Turn on the **PBIRS alternative rendering** toggle.
+
+Then try to open the report again. This toggle only appears if you have a Power BI Report Server (on-premises) account connected in the app. This issue doesn't affect Android devices or cloud Power BI reports.
+
 ## View your favorite KPIs and reports
 
 You can mark KPIs and reports as favorites on the web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards.

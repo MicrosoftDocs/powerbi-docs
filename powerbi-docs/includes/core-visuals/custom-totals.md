@@ -7,20 +7,18 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 04/22/2026
+ms.date: 05/01/2026
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
 
 With custom totals in Power BI tables and matrices, you can easily determine what the total row shows for a specific column if needed.
 
-By default the total row shows the result of evaluating the field across the entire filter context of the report page. This behavior is correct in most cases. However, in some specific scenarios you might want to change what the total row displays. You can use DAX to influence what the total row displays, but custom totals provide an easy way of changing the total row value to the sum, min, max, count (distinct) or count of the displayed rows.
+By default the total row shows the result of evaluating the field across the entire filter context of the report page. This behavior is correct in most cases. However, in some specific scenarios you might want to change what the total row displays. You can use DAX to influence what the total row displays, but custom totals provide an easy way of changing the total row value to the sum, average, min, max, count (distinct), or count of the displayed rows. You can also choose **None** to hide the total row value for the column.
 
 #### Working with custom totals
 
-Custom totals are based on [visual calculations](../../transform-model/desktop-visual-calculations-overview.md), so make sure that preview is enabled.
-
-After that, you can right-click on a numerical column in the visual or use the Build pane and choose **Customize total calculation**:
+Custom totals are based on [visual calculations](../../transform-model/desktop-visual-calculations-overview.md). To create a custom total, right-click a numerical column in the visual or use the Build pane and choose **Customize total calculation**:
 
 :::image type="content" source="media/custom-totals/custom-total-context-menu.png" alt-text="Screenshot of context menu for custom total calculations." lightbox="media/custom-totals/custom-total-context-menu.png":::
 
@@ -29,10 +27,12 @@ Then, choose the total calculation to apply. These options are available:
 | Custom total option | The total row shows |
 |---|---|
 |Sum|The sum of the displayed row values|
+|Average|The average of the displayed row values|
 |Min|The minimum value in the displayed rows|
 |Max|The maximum value in the displayed rows|
 |Count (Distinct)|The number of unique values in the displayed rows|
 |Count|The number of values in the displayed rows|
+|None|Hides the total row value for the column|
 |Reset to default|Default value (option only enabled if a custom total is set)|
 
 #### How custom totals work

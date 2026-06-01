@@ -15,13 +15,13 @@ ms.custom: sfi-image-nochange, office-integration
 
 # Access Power BI featured tables in Excel organization data types
 
+> [!IMPORTANT]
+> This functionality has been removed. For details about this change, see [Use Organization data types to view and insert data](https://support.microsoft.com/office/use-organization-data-types-to-view-and-insert-data-c7686113-f906-40c8-b9eb-d97c41702469). As a recommended alternative, refer to [Connect to your Power BI data in Excel](../office-integration/service-connect-excel-power-bi-datasets.md)
+> 
+
 *Featured tables* are a way to link your data in Microsoft Excel to data from Power BI. They make it easier to add enterprise data to your Excel sheets. In the Data Types Gallery in Excel, you find data from featured tables in Power BI semantic models. This article explains how.
 
 To learn how to create featured tables in Power BI, see [Set featured tables in Power BI Desktop](service-create-excel-featured-tables.md).
-
-> [!NOTE]
-> In Excel, you can also [analyze data from any Power BI semantic model](service-connect-excel-power-bi-datasets.md) that you can access in Power BI.
-> 
 
 ## The Excel Data Types gallery
 

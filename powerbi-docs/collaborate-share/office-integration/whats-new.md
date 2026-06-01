@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 03/18/2026
+ms.date: 05/28/2026
 ---
 
 # What's new in Power BI collaboration and integration
@@ -18,6 +18,30 @@ ms.date: 03/18/2026
 This article summarizes new or updated Power BI features that are designed to help you collaborate and integrate Power BI into other products.
 
 **To learn about all of the latest Power BI updates, see [What's new in Power BI](../../fundamentals/whats-new.md).**
+
+## June 2026
+
+### Power BI in Teams: Org apps now supported
+
+Org apps are now supported in the Power BI app for Teams, bringing curated content fully into your Teams workflow. You can:
+
+- Open org apps directly inside the Power BI personal app, instead of being redirected to the browser.
+- Pin reports from org apps as tabs in chats and channels.
+- Share links to reports in org apps that generate preview cards in Teams conversations.
+
+These updates make it easier to stay in context, quickly share trusted insights, and collaborate on organizational data without leaving Teams. To learn more about org apps, see [Get started with org apps](../../explore-reports/org-app-items.md). For more information about using Power BI in Teams, see [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md).
+
+### Power BI in PowerPoint: Org app reports now supported
+
+Links to reports in org apps are now supported in the Power BI add-in for PowerPoint, making it easier to bring data from curated organizational content into your presentations.
+
+You can embed live data from a report in an org app directly in your slides by adding the Power BI add-in and pasting the report URL. For more information, see [Add a report from an org app](service-power-bi-powerpoint-add-in-install.md#add-a-report-from-an-org-app).
+
+Support for embedding a single visual from a report in an org app isn't currently available.
+
+### Power BI in Teams: Tabs now supported in private and shared channels
+
+You can add a Power BI tab to view and interact with reports directly alongside conversations in private and shared channels, unlocking richer collaboration across scoped and cross-team discussions. To learn more, see [Embed Power BI reports in Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## March 2026
 

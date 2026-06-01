@@ -1,8 +1,8 @@
 ---
 title: Add a custom column in Power BI Desktop
 description: Learn how to quickly create and customize a new column in Power BI Desktop using Power Query Editor, including step-by-step instructions and examples.
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

@@ -4,6 +4,7 @@
 # OVERVIEW (REQUIRED)
 # =============================================================================
 - name: Overview
+  expanded: true
   items:
     - name: What is Power BI?
       href: power-bi-overview.md
@@ -13,6 +14,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
     - name: Sign in to Power BI
       href: ../explore-reports/end-user-sign-in.md
@@ -79,8 +81,6 @@
 # =============================================================================
 - name: Resources
   items:
-  - name: Glossary and terminology
-    href: ../explore-reports/end-user-glossary.md
   - name: Contribute to Fabric docs
     href: /contribute/
   - name: Microsoft Q & A

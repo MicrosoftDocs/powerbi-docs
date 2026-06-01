@@ -12,6 +12,7 @@
 # GET STARTED (REQUIRED)
 # =============================================================================
 - name: Get started
+  expanded: true
   items:
   - name: Tour the report editor
     href: service-the-report-editor-take-a-tour.md
@@ -123,6 +124,8 @@
       href: desktop-gridlines-snap-to-grid.md
     - name: Apply page size and settings
       href: power-bi-report-display-settings.md
+    - name: Set the landing page
+      href: power-bi-set-landing-page.md
     - name: Group visuals in a report
       href: desktop-grouping-visuals.md
     - name: Add text boxes, shapes, and smart narratives
@@ -179,6 +182,8 @@
       href: translytical-task-flow-tutorial-status-update.md
     - name: Create data function buttons
       href: translytical-task-flow-button.md
+    - name: Set up in-report alerts
+      href: translytical-task-flow-report-alerts.md
   - name: Display data in tables
     items:
     - name: Add hyperlinks to a table
@@ -542,6 +547,8 @@
       href: desktop-dynamic-format-strings.md
     - name: Display custom format strings
       href: desktop-custom-format-strings.md
+    - name: Set default format string locale
+      href: power-bi-default-format-string-locale.md
     - name: Use inline hierarchy labels
       href: desktop-inline-hierarchy-labels.md
   # Visual features
@@ -721,8 +728,6 @@
 # =============================================================================
 - name: Resources
   items:
-  - name: Glossary and terminology
-    href: ../explore-reports/end-user-glossary.md
   - name: Contribute to Fabric docs
     href: /contribute/
   - name: Microsoft Q & A

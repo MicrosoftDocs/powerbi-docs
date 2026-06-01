@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: concept-article
 LocalizationGroup: Share your work
-ms.date: 09/09/2025
+ms.date: 05/28/2026
 ---
 
 # Embed Power BI content in Microsoft Teams
 
-You can easily embed interactive Power BI reports in Microsoft Teams channels and chats. 
+You can easily embed interactive Power BI reports in Microsoft Teams channels and chats, including private and shared channels.
 
 ## Requirements
 
@@ -119,7 +119,6 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 ## Known issues and limitations
 
 - In Microsoft Teams, when you export data from a visual in a Power BI report, the data is automatically saved to your *Downloads* folder. It's an Excel file called **data (*n*).xlsx**, where *n* is the number of times you've exported data to the same folder.
-- You can't embed Power BI dashboards in the **Power BI** tab for Microsoft Teams.
 - [URL filters](../service-url-filters.md) aren't supported with the **Power BI** tab for Microsoft Teams.
 - In national/regional clouds, the **Power BI** tab isn't available.
 - After you save the tab, you don't change the tab name through the tab settings. Use the **Rename** option to change it.
@@ -129,7 +128,6 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - Links don't support [query string parameters](../service-url-filters.md). 
 - Links don't support personal bookmarks, since those can't be shared with other users. 
 - Cross-tenant links aren't supported.
-- The option to pin reports to tabs isn't supported for shared channels.
 - For other issues, see "Known issues and limitations" in [Collaborate in Microsoft Teams](service-collaborate-microsoft-teams.md#known-issues-and-limitations).
 
 ## Related content

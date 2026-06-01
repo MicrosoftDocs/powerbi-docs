@@ -2,12 +2,18 @@
   href: index.yml
   expanded: true
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items: 
     - name: "What is Power Query Editor?"
       href: desktop-query-overview.md
-  - name: Tutorials
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
     expanded: true
     items: 
     - name: "Create your own measures"
@@ -16,6 +22,9 @@
       href: desktop-tutorial-create-calculated-columns.md
     - name: "Create calculation groups"
       href: calculation-groups.md      
+# =============================================================================
+# CONCEPTS
+# =============================================================================
   - name: Concepts
     expanded: true
     items:
@@ -63,6 +72,9 @@
       href: value-filter-behavior.md
     - name: "Export query results (preview)"
       href: export-query-results.md
+# =============================================================================
+# DATAFLOWS
+# =============================================================================
   - name: Dataflows (legacy)
     items: 
     - name: "Introduction to dataflows (legacy)"
@@ -91,6 +103,9 @@
       href: dataflows/dataflows-develop-solutions.md      
     - name: "Connect to data created by Power Platform dataflows in Power BI Desktop (legacy)"
       href: desktop-connect-dataflows.md      
+# =============================================================================
+# LOG ANALYTICS
+# =============================================================================
   - name: Log analytics
     items: 
     - name: "Use Azure Log Analytics in Power BI"
@@ -99,6 +114,9 @@
       href: log-analytics/desktop-log-analytics-configure.md
     - name: "Azure Log Analytics in Power BI - FAQ"
       href: log-analytics/desktop-log-analytics-faq.md
+# =============================================================================
+# HOW-TO GUIDES
+# =============================================================================
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -153,12 +171,18 @@
         href: desktop-date-tables.md
       - name: "Apply auto date/time"
         href: desktop-auto-date-time.md   
+# =============================================================================
+# EXTERNAL TOOLS
+# =============================================================================
   - name: External tools
     items:
     - name: External tools in Power BI Desktop
       href: desktop-external-tools.md
     - name: Register an external tool
       href: desktop-external-tools-register.md
+# =============================================================================
+# REFERENCE
+# =============================================================================
   - name: Reference
     items: 
     - name: "Use the Field list in Power BI Desktop"
@@ -167,3 +191,26 @@
       href: desktop-formula-editor.md
     - name: "Evaluation configuration for DAX queries"
       href: desktop-evaluation-configuration.md
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/

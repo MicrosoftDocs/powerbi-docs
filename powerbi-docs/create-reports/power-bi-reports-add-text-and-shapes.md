@@ -3,12 +3,12 @@ title: Add Text Boxes, Shapes, and Smart Narratives to Power BI Reports
 description: Learn how to add text boxes, shapes, and smart narratives to Power BI reports. Discover formatting options and AI-powered text summaries.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: zoedouglas
 ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2026
+ms.date: 05/01/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn how to add text and shapes to my reports so that I can enhance the visual presentation and clarity of my data.
@@ -55,9 +55,17 @@ This procedure uses the [Retail Analysis sample](sample-retail-analysis.md) avai
 
    :::image type="content" source="media/power-bi-reports-add-text-and-shapes/power-bi-pin-text-box.png" alt-text="Screenshot of a dashboard with a pinned text box.":::
 
+### Use ordered and unordered lists
+
+Text boxes support ordered (numbered) and unordered (bulleted) lists, including nested lists with indentation. Use the list buttons in the text formatting toolbar to start a list, and use the indent controls to create sublevels.
+
+Lists preserve their formatting—indentation, numbering style, and inline formatting like **bold** and *italic*—so your content renders the way you expect on the report page.
+
+You can also paste bulleted and numbered lists directly from Microsoft Word into a text box and the list structure and formatting are preserved. This makes it easier to bring formatted text content from existing documents into your report pages.
+
 ## Add dynamic values to a text box
 
-You can display dynamic measure values in text boxes rather than just static text. This feature is particularly useful when you want to show key metrics with custom formatting alongside other report content. In the Format pane, you access this functionality through the **Values** section (also referred to as the value part of a text box).
+You can display dynamic measure values in text boxes alongside your typed text. This feature is particularly useful when you want to craft narratives that mix labels and key metrics with custom formatting. In the Format pane, you access this functionality through the **Values** section (also referred to as the value part of a text box).
 
 To add a dynamic measure value to a text box:
 
@@ -70,8 +78,7 @@ To add a dynamic measure value to a text box:
 
 For information about using measures with dynamic format strings in text boxes, see [Use the value part of a text box](desktop-dynamic-format-strings.md#use-the-value-part-of-a-text-box).
 
-> [!NOTE]
-> When you add a value to a text box, any typed text in the text box is removed. Text boxes can display either typed text or a measure value, but not both simultaneously. To display a label with a value, consider using multiple text boxes or a card visual.
+You can mix typed text and measure values in the same text box to craft narratives like *Total sales this month: $5.2M*. Add typed text and insert measure values where you want them to appear.
 
 ### Format dynamic values
 

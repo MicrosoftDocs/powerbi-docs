@@ -1,8 +1,8 @@
 ---
 title: Implement time-based calculations in Power BI
 description: Learn how to use time intelligence to implement time-based calculations
-author: eric-urban
-ms.author: eur
+author: kgremban
+ms.author: kgremban
 ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-transform-model

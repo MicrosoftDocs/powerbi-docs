@@ -1,26 +1,26 @@
 ---
-title: Prepare Your Data for AI (preview)
+title: Prepare Your Data for AI to Improve Copilot Results (Preview)
 description: Learn how to prepare your data for AI in Power BI using AI data schemas, verified answers, and AI instructions to optimize Copilot performance and improve insights.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: emlisa
+ms.reviewer: emlisa, kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 05/26/2026
+ms.update-cycle: 180-days
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to understand how to prepare my data for AI to optimize the performance of Copilot, improve AI-driven insights, and enhance user interactions by leveraging new features like AI data schemas, verified answers, and AI instructions.
 ---
 
-# Prepare your data for AI (preview)
+# Prepare your data for AI to improve Copilot results (preview)
 
-Microsoft Power BI has new capabilities to help you get your data ready for natural language experiences with Copilot.
+Use **Prep data for AI** in Power BI to improve Copilot response quality before sharing reports. This article explains how to prepare a semantic model by using **AI data schemas**, **verified answers**, and **AI instructions** to reduce ambiguity and produce more relevant, grounded responses.
 
-To get the best results from Copilot in Power BI, use a semantic model that follows best practices. However, you often need to provide more assistance to fully prepare your model for optimal interactions with AI.
-
-Use these tooling features to help you prepare your data for AI. These features allow you to provide more context about your model, help guide Copilot to the right data in the model, and help increase the quality of Copilot output.
+This article also covers how to test changes in Power BI Desktop and the Power BI service, mark a model as **Approved for Copilot**, and understand upgrade considerations from legacy Q&A tooling.
 
 > [!NOTE]
 > You can now *author* **Prep data for AI** features in both the Power BI service and Power BI Desktop. Users can *consume* these features everywhere that Copilot exists.
@@ -48,7 +48,7 @@ To access the features in Power BI Desktop, follow these steps:
 
 1. Select the **Prep data for AI** button on the home ribbon in Power BI Desktop. When you select this button, a unified experience opens with three features to help you prepare your data for Copilot.
 1. To set a verified answer, select a visual.
-1. Select the **...** menu, then select **Set verified answer**.
+1. Select the **...** menu, and then select **Set verified answer**.
 
 Now you can set trigger phrases that use the selected visual to return an answer.
 
@@ -122,22 +122,22 @@ After you test and confirm your **Prep data for AI** enhancements, you can publi
 
 ## Mark your model as approved for Copilot
 
-After you prepare your semantic model for AI and it's ready for consumption, you can mark your model **Approved for Copilot** by following these steps:
+After you prepare your semantic model for AI and it's ready for consumption, mark your model **Approved for Copilot** by following these steps:
 
 > [!NOTE]
-> This setting was previously called **prepped for AI** but has been renamed to **approved for Copilot** for more clarity.
+> This setting was previously called **prepped for AI** but is now renamed to **approved for Copilot** for more clarity.
 
 1. Go to the Power BI service and find your semantic model.
 1. Select the **Settings** icon in the upper-left corner.
 1. Expand the **Approved for Copilot** section.
 1. Select the **Approved for Copilot** box, and then select the **Apply** button.
 
-:::image type="content" source="media/copilot-prep-data/copilot-approved-for-copilot.png" alt-text="Screenshot of the approved for Copilot settings in Power BI service that showcases the option to mark a model Prepped for AI." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
+:::image type="content" source="media/copilot-prep-data/copilot-approved-for-copilot.png" alt-text="Screenshot of the Approved for Copilot settings in the Power BI service that shows the option to mark a model as Approved for Copilot." lightbox="media/copilot-prep-data/copilot-ai-preparation.png":::
 
-When you mark your semantic model as **approved for Copilot**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai-and-mark-as-approved-for-Copilot) to answers from that model. Also, reports that use that semantic model will be considered **approved for Copilot**.
+When you mark your semantic model as **approved for Copilot**, the standalone Copilot agent doesn't apply any [friction treatment](/power-bi/create-reports/copilot-chat-with-data-standalone#prep-data-for-ai-and-mark-as-approved-for-Copilot) to answers from that model. Also, reports that use that semantic model are considered **approved for Copilot**.
 
 > [!NOTE]
-> When you mark a semantic model as **approved for Copilot**, the friction treatment in standalone Copilot for associated reports should be removed.
+> When you mark a semantic model as **approved for Copilot**, the friction treatment in standalone Copilot for associated reports is removed.
 >
 > In most cases, changes are fully reflected within an hour, but it can take up to 24 hours if the model has a lot of reports attached. To force an update to a specific report, you can speed up the process by manually saving a small change to a report.
 >
@@ -167,7 +167,7 @@ When you restart Desktop, you no longer see the **Prep data for AI** button.
 - When you close the dialog, the model saves all **Prep data for AI** features.
 - You can test all **Prep data for AI** features on the report Copilot pane before publishing to the service.
 - You can troubleshoot **Prep data for AI** features. Use the HCAAT functionality and use the **Download diagnostics** feature from the **...** menu on the Copilot pane in Power BI Desktop. This action ensures that **Prep data for AI** features are applied. Include the diagnostic file when you create support requests.
-- We encourage the use of HCAAT, which is included in answers that come from a semantic model. When you use HCAAT, you can see what Copilot used to arrive at an answer.
+- Use HCAAT, which is included in answers that come from a semantic model. When you use HCAAT, you can see what Copilot used to arrive at an answer.
 - After you save changes in the **Prep data for AI** dialog, refresh the Copilot pane by closing and reopening it so that changes take effect.
 - AI instructions and AI data schemas save to the LSDL and you can edit them as needed.
 - In rare circumstances, Copilot capabilities might time out, which results in an error because it can't fetch the LSDL.

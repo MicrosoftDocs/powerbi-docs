@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/22/2025
+ms.date: 05/11/2026
+ms.update-cycle: 180-days
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot

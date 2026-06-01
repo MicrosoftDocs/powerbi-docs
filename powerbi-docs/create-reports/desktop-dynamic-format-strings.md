@@ -1,13 +1,13 @@
 ---
-title: Create Dynamic Format Strings for Measures in Power BI Desktop
-description: Learn how to create dynamic format strings for measures in Power BI Desktop measures.
+title: Create dynamic format strings for measures
+description: Learn how to create dynamic format strings for measures in Power BI.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 05/16/2026
 LocalizationGroup: Create reports
 ai-usage: ai-assisted
 ms.custom: references_regions
@@ -15,12 +15,9 @@ ms.custom: references_regions
 
 # Create dynamic format strings for measures
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 By using *dynamic format strings for measures*, you can control how measures appear in visuals. Conditionally apply a format string by using a separate Data Analysis Expression (DAX) formula.
-
-> [!NOTE]
-> Dynamic format strings for measures is available in Power BI Desktop and Power BI Report Server (January 2025 and later). If you're using Power BI Report Server, make sure you have the latest version installed. For more information, see [What's new in Power BI Report Server](../report-server/whats-new.md).
 
 Dynamic format strings solve a problem with the FORMAT function. FORMAT returns all results as strings, even numeric data types. This behavior can cause problems with visuals like charts that need numeric values.
 
@@ -33,17 +30,6 @@ You can also use dynamic format strings with calculation groups. The same DAX pa
 1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
 1. In the **Measure tools** ribbon, under the **Formatting** section, select **Dynamic** in the **Format** listbox. A new drop-down with **Format** already selected appears to the left of the DAX formula bar. This drop-down is how you can switch between the static measure DAX expression and the dynamic format string DAX expression. The static format string that you used before switching to Dynamic is prepopulated as a string in the DAX formula bar.
 
-### Use the value part of a text box
-
-When you work with text boxes in your reports, you can display measure values with dynamic formatting. To use the value part of a text box:
-
-1. Select the text box in your report.
-1. In the **Format** pane, under **Values**, select the field button (fx icon).
-1. Choose the measure that has a dynamic format string applied.
-1. The text box displays the measure value using the dynamic format string.
-
-   For more information about text boxes and dynamic content, see [Add text boxes and shapes to Power BI reports](power-bi-reports-add-text-and-shapes.md).
-
    :::image type="content" source="media/desktop-dynamic-format-strings/format-dropdown.png" alt-text="Screenshot of Format dropdown." lightbox="media/desktop-dynamic-format-strings/format-dropdown.png":::
 
 1. Overwrite the string with a DAX expression that outputs the correct format string for your measure. For example, the following expression looks up the currency format string you want from a *Country/Region Currency Format Strings* table:
@@ -55,6 +41,17 @@ When you work with text boxes in your reports, you can display measure values wi
    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** drop-down, select a different format option. Because there's no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must reenter the DAX expression.
 
    :::image type="content" source="media/desktop-dynamic-format-strings/format-change-warning.png" alt-text="Screenshot of Format change warning." lightbox="media/desktop-dynamic-format-strings/format-change-warning.png":::
+
+### Use the value part of a text box
+
+When you work with text boxes in your reports, you can display measure values with dynamic formatting. To use the value part of a text box:
+
+1. Select the text box in your report.
+1. In the **Format** pane, under **Values**, select the field button (fx icon).
+1. Choose the measure that has a dynamic format string applied.
+1. The text box displays the measure value using the dynamic format string.
+
+For more information about text boxes and dynamic content, see [Add text boxes and shapes to Power BI reports](power-bi-reports-add-text-and-shapes.md).
 
 ## Example
 
@@ -308,7 +305,7 @@ When you select different **Country/Region** names in the slicer, the visuals sh
 
    :::image type="content" source="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png" alt-text="Screenshot of Country/Region Currency Format Strings dynamic formula." lightbox="media/desktop-dynamic-format-strings/country-currency-format-strings-dynamic-formula.png":::
 
-1. Select a different Country/Region in the slicer. The table and line chart visuals now show the converted currency amount, in the correct format, for that Country/Region or region. Try selecting a different country/region in the slicer to see how the visuals change.
+1. Select a different Country/Region in the slicer. The table and line chart visuals now show the converted currency amount, in the correct format, for that country/region. Try selecting a different country/region in the slicer to see how the visuals change.
 
    :::image type="content" source="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png" alt-text="Screenshot of Converted sales amount visual." lightbox="media/desktop-dynamic-format-strings/converted-sales-amount-visual.png":::
 
@@ -436,6 +433,7 @@ The `SELECTEDMEASURE()` function retrieves the actual measure value, converts it
    }
    ```
 
+- The **Show as table** view for combo charts doesn't use the dynamic format string.
 - You can reference the measure itself in its dynamic format string directly by using its name, such as [Measure A], or indirectly by using `SELECTEDMEASURE()`.
 - Dynamic format strings for measures apply only to model measures. You can't add dynamic format strings for *report measures* in a live connect report.
 - By using DirectQuery for Analysis Services, when you select **Make changes to this model** on a live connect report, you shift the connection to the DirectQuery over Analysis Services. In general, you can make changes to the format strings of the remote model measures. By using dynamic format strings for measures:

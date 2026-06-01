@@ -1,13 +1,20 @@
 - name: Power BI support and troubleshooting
   href: index.yml
   items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
   - name: Overview
     expanded: true
     items:
     - name: Support overview
       href: service-support-options.md
 
-  - name: Before you contact support
+# =============================================================================
+# GET STARTED (REQUIRED)
+# =============================================================================
+  - name: Get started
+    expanded: true
     items:
     - name: Before you contact support checklist
       href: before-you-contact-support.md
@@ -21,7 +28,12 @@
       href: power-bi-cannot-sign-in.md
     - name: Prepare for a region move
       href: service-admin-region-move.md
+    - name: Tenant migration patterns and strategies
+      href: tenant-migration-patterns.md
 
+# =============================================================================
+# ABOUT SUPPORT REQUESTS
+# =============================================================================
   - name: About support requests
     items:
     - name: Create a support ticket
@@ -38,6 +50,9 @@
     - name: Policies and communications for Power BI
       href: /power-platform/admin/policies-communications
 
+# =============================================================================
+# CONFIGURE SUPPORT NOTIFICATIONS
+# =============================================================================
   - name: Configure support notifications
     items:
     - name: Enable help and support notifications
@@ -47,6 +62,9 @@
     - name: Learn about notifications
       href: /power-platform/admin/notifications-explained
 
+# =============================================================================
+# TROUBLESHOOTING GUIDES
+# =============================================================================
   - name: Troubleshooting guides
     items:
     - name: Embed and extend
@@ -131,3 +149,26 @@
       items:
       - name: Troubleshoot subreports in Power BI paginated reports
         href: ../paginated-reports/subreports-troubleshoot.md?toc=/power-bi/support/TOC.json&bc=/power-bi/support/breadcrumb/toc.json
+# =============================================================================
+# RESOURCES (don't change this - standardized with Fabric)
+# =============================================================================
+  - name: Resources
+    items:
+    - name: Contribute to Fabric docs
+      href: /contribute/
+    - name: Microsoft Q & A
+      href: /answers/
+    - name: Provide feedback
+      items:
+      - name: Fabric ideas
+        href: https://ideas.fabric.microsoft.com/
+      - name: Azure feedback
+        href: https://feedback.azure.com/
+    - name: Community
+      href: https://community.fabric.microsoft.com/
+    - name: Service updates
+      href: https://azure.microsoft.com/updates/
+    - name: Azure Status
+      href: https://azure.status.microsoft/
+    - name: Microsoft Learn training
+      href: /training/fabric/
