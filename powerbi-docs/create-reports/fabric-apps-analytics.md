@@ -30,7 +30,7 @@ These built-in capabilities matter because, without them, an AI agent would need
 
 Before you start, review the [prerequisites for creating a Fabric App](/fabric/apps/create-app#prerequisites).
 
-To create a Fabric App, follow the instructions in [Create your first Fabric App](/fabric/apps/data-apps-template). The guide walks you through using the data app template, connecting to your semantic model, and telling Copilot what you want it to create.
+To create a Fabric App, follow the instructions in [Create your first Fabric App](/fabric/apps/data-apps-template). The guide covers the current supported creation experience, including using the data app template, connecting to your semantic model, and telling Copilot what you want it to create.
 
 ## Related content
 
