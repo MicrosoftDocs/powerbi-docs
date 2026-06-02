@@ -8,6 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: get-started
 ms.date: 11/19/2025
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 #customer intent: As a developer, I want to set up the remote Power BI MCP server so that I can enable AI agents to query my Power BI semantic models using natural language.
 ---
 
@@ -113,4 +115,3 @@ Now that your MCP server is configured, explore the available tools and capabili
 - [Power BI Modeling MCP server on GitHub](https://github.com/microsoft/powerbi-modeling-mcp)
 - [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai)
 - [MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
-
