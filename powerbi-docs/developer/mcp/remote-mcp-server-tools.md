@@ -8,6 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: concept-article
 ms.date: 11/19/2025
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 180-days
 #customer intent: As a developer, I want to understand the available MCP server tools so that I can build AI agents that effectively query Power BI semantic models.
 ---
 
