@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/25/2025
+ms.date: 05/11/2026
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to learn how to connect to an Oracle database with Power BI Desktop and the Power BI service so that I can access and analyze data from Oracle databases in my Power BI reports and dashboards.
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -22,6 +23,9 @@ Power BI supports the following methods for connecting to Oracle databases:
 - **Oracle Client for Microsoft Tools (OCMT)** — A graphical installer from Oracle that configures Oracle Data Provider for .NET (ODP.NET). Use OCMT if you prefer the unmanaged provider or haven't enabled the preview switches.
 - **Direct cloud connections (Preview)** — Connect from the Power BI service directly to Oracle cloud databases, such as Oracle Autonomous Database, without requiring a data gateway.
 - **On-premises data gateway** — Connect to on-premises Oracle databases through the enterprise on-premises data gateway.
+
+> [!NOTE]
+> Personal data gateways don't support updated Oracle connections. Semantic models with existing Oracle connections continue to work. However, new semantic models with updated Oracle connections must use an enterprise on-premises data gateway for on-premises Oracle databases, or direct cloud connections for Oracle cloud databases.
 
 ## Supported Oracle database versions
 
@@ -82,18 +86,21 @@ After you create the connection, you can use it in semantic models that connect 
 To connect to an on-premises Oracle database from the Power BI service, use the [on-premises data gateway](/data-integration/gateway/). Install 64-bit OCMT on the computer running the gateway since the gateway is a 64-bit app. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md).
 
 > [!NOTE]
-> Personal data gateways aren't supported for Oracle connections. Use the enterprise on-premises data gateway for on-premises Oracle databases, or use direct cloud connections for Oracle cloud databases.
-
-> [!NOTE]
 > If you're connecting to an on-premises Oracle database, ensure your machine has network access to the database server. This might require a VPN connection or firewall configuration. Contact your IT administrator for assistance.
+
+### Upgrade personal Oracle connections
+
+If your semantic model uses a personal data gateway, you can upgrade to an enterprise on-premises data gateway or a direct cloud connection. In the semantic model settings, expand the **Gateway and Connections** section, and then create a connection on an enterprise on-premises data gateway for on-premises Oracle databases, or use a direct cloud connection for Oracle cloud databases.
+
+This upgrade is irreversible. After you upgrade, you can't switch the semantic model back to a personal data gateway.
 
 ### Power Query connector reference
 
 For detailed information about connecting to an Oracle database or an Oracle Autonomous Database from either Power BI Desktop or the Power BI service, go to the [Power Query article on Oracle databases](/power-query/connectors/oracle-database).
 
-## Use Microsoft Entra ID SSO with Oracle
+## Use Microsoft Entra ID with Oracle
 
-Power BI supports Microsoft Entra ID Single Sign-On (SSO) for Oracle databases. This feature allows users to authenticate using Entra ID tokens instead of Oracle usernames and passwords, improving security and simplifying access management.
+Power BI supports Microsoft Entra ID authentication for Oracle databases. You authenticate with Entra ID tokens instead of Oracle usernames and passwords, which improves security and simplifies access management.
 
 Requirements are as follows:
 
@@ -105,7 +112,7 @@ Requirements are as follows:
 - On-premises data gateway (for scheduled refresh or shared datasets)
 
 > [!NOTE]
-> Entra ID SSO for Oracle is currently supported only for DirectQuery and Import modes. Ensure your Oracle environment is configured to accept Entra ID tokens.
+> Entra ID SSO for Oracle is currently supported only for DirectQuery and Import modes through an on-premises data gateway. Ensure your Oracle environment is configured to accept Entra ID tokens. Direct cloud connections don't support SSO.
 
 ## Related content
 

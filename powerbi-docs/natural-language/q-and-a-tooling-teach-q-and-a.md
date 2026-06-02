@@ -4,10 +4,11 @@ description: Learn how to manage terms and define nouns or adjectives to teach Q
 author: kgremban
 ms.author: kgremban
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 07/11/2024
-LocalizationGroup: Ask questions of your datadefintion
+ms.date: 05/22/2026
+ai-usage: ai-assisted
+LocalizationGroup: Ask questions of your data
+#customer intent: As a Power BI report author, I want to teach Q&A to understand custom terms and questions so that report consumers get accurate answers from natural-language queries.
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
 
@@ -19,7 +20,7 @@ LocalizationGroup: Ask questions of your datadefintion
 In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms that it doesn't recognize. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you save them.
 
 > [!NOTE]
-> The Teach Q&A functionality only supports import mode. It also doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This limitation should be removed in subsequent releases of Power BI.
+> The Teach Q&A functionality only supports import mode. It doesn't support connecting to an on-premises or Azure Analysis Services data source.
 
 ## Start to teach Q&A
 
@@ -101,7 +102,7 @@ After you provide definitions, you can go back to see all the fixes you made and
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
 
-1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help with adding more synonyms. For more information, see [Enhance Q&A with Copilot for Power B](q-and-a-copilot-enhancements.md).
+1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help with adding more synonyms. For more information, see [Enhance Q&A with Copilot for Power BI](q-and-a-copilot-enhancements.md).
    
 1. In **Q&A setup**, go to the **Relationships** section to manage adjectives and other relationship types.
 

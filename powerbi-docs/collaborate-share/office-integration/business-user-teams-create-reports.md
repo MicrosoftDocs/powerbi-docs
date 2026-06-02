@@ -118,6 +118,9 @@ For example, ask a question about your data by adding a *Q&A visual*, where you 
 
 1. In the Visualizations pane, select the **Q&A** icon.
 
+    > [!NOTE]
+    > The Q&A visual icon is hidden by default in the **Visualizations** pane. To restore it, select **More options (...)** at the bottom of the pane and then select **Restore default visuals**.
+
     :::image type="content" source="../../explore-reports/media/business-user-teams-create-reports/power-bi-teams-qna-visual-icon.png" alt-text="Screenshot of Visualization pane with Q&A visual icon selected.":::
 
     Power BI generates a list of suggested questions you can choose from or type your own.

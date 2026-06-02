@@ -5,10 +5,12 @@ author: kgremban
 ms.author: kgremban
 ms.reviewer: mohammad.ali
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: tutorial
-ms.date: 01/12/2025
+ms.date: 05/22/2026
+ai-usage: ai-assisted
 LocalizationGroup: Ask questions of your data
+
+#customer intent: As a Power BI business user, I want to learn how to use Q&A on a dashboard so that I can explore my data and create visuals using natural language.
 ---
 
 # Tutorial: Use Power BI Q&A to explore your data and create visuals on a dashboard
@@ -18,9 +20,16 @@ LocalizationGroup: Ask questions of your data
 > [!IMPORTANT]
 > Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](../create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
-Q&A is available throughout Power BI, and this article focuses on using Q&A on a dashboard. We import a sample and use Q&A to explore our data and pin interesting findings to our dashboard.
+Q&A is available throughout Power BI, and this tutorial focuses on using Q&A on a dashboard. You import a sample and use Q&A to explore your data and pin interesting findings to your dashboard.
 
-## Prerequisites  
+In this tutorial, you:
+
+> [!div class="checklist"]
+> * Import the Retail Analysis sample in the Power BI service
+> * Explore your data by asking natural language questions with Q&A
+> * Create and pin a visualization to a dashboard from Q&A
+
+## Prerequisites
 
 - Read the Q&A intro article [Q&A for Power BI business users](../explore-reports/end-user-q-and-a.md).
 - Sign up for a [free or trial license for the Power BI service](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
@@ -57,7 +66,7 @@ When you type a question, Power BI looks for the best answer using any semantic 
 > Be careful. If you only have one tile from *semantic modelA* and you remove it from your dashboard, Q&A will no longer have access to *semantic modelA*.
 
 
-In our example, most of the tiles on this dashboard are from the Retail analysis sample. To help form your questions, get familiar with the Retail analysis sample content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. Optionally, read the article that describes the sample, [Retail Analysis sample for Power BI: Take a tour](../create-reports/sample-retail-analysis.md).
+In this example, most of the tiles on this dashboard are from the Retail analysis sample. To help form your questions, get familiar with the Retail analysis sample content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. Optionally, read the article that describes the sample, [Retail Analysis sample for Power BI: Take a tour](../create-reports/sample-retail-analysis.md).
 
 > [!NOTE]
 > If you already feel comfortable with the data, just place your cursor in the question box to open the Q&A screen.
@@ -73,13 +82,13 @@ Once you're familiar with the data, head back to the dashboard and place your cu
 
 :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-suggestion.png" alt-text="Screenshot shows the Q&A screen with suggested questions.":::
 
-Don't see the Q&A box? See [Considerations and limitations](../explore-reports/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for for Power BI business users** article. 
+Don't see the Q&A box? See [Considerations and limitations](../explore-reports/end-user-q-and-a.md#considerations-and-limitations) in the **Q&A for Power BI business users** article. 
 
 ## Use Q&A on a dashboard in the Power BI service
 
 The Q&A field is where you type your question using natural language. The Q&A field is in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which semantic model, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
 
-Let's try it out. 
+Try it out. 
 
 ### Create a visual using the Q&A field on a dashboard
 
@@ -124,11 +133,15 @@ Let's try it out.
 
 
 
+## Clean up resources
+
+If you no longer need the Retail Analysis sample, navigate to **My workspace**, right-click the dashboard, report, or semantic model, and select **Delete**.
+
 ## Considerations and limitations
 
 - If you connected to a semantic model using a live connection or gateway, Q&A needs to be [enabled for that semantic model](../create-reports/service-q-and-a-direct-query.md).
 
-- At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
+- Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 
 ## Related content
 
