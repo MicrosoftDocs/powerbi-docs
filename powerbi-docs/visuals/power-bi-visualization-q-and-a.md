@@ -83,6 +83,9 @@ In this exercise, you select a suggested question from Power BI to create a cust
 
 1. Start on a blank report page and select the **Q&A visual** icon in the **Visualizations** > **Build visual** pane.
 
+   > [!NOTE]
+   > The Q&A visual icon is hidden by default in the **Visualizations** pane. To restore it, select **More options (...)** at the bottom of the pane and then select **Restore default visuals**.
+
    :::image type="content" source="media/power-bi-visualization-q-and-a/power-bi-icon.png" alt-text="Screenshot that shows how to select the Q&A visual on the Visualizations > Build visual pane in Power BI.":::
 
    Power BI creates a new Q&A visual and supplies several Q&A suggestions to get you started, such as **top geo states by total OTHER units**.

@@ -182,6 +182,8 @@
       href: translytical-task-flow-tutorial-status-update.md
     - name: Create data function buttons
       href: translytical-task-flow-button.md
+    - name: Set up in-report alerts
+      href: translytical-task-flow-report-alerts.md
   - name: Display data in tables
     items:
     - name: Add hyperlinks to a table
@@ -286,38 +288,40 @@
         href: ../consumer/end-user-insights.md
   - name: Use Q&A and natural language
     items:
-    - name: Q&A introduction
-      href: ../consumer/end-user-q-and-a.md?toc=/power-bi/create-reports/toc.json
-    - name: Get started with Q&A
+    - name: Q&A overview
       href: ../natural-language/q-and-a-intro.md
-    - name: Use Power BI Q&A on a dashboard
-      href: ../natural-language/end-user-q-and-a-tutorial.md
-    - name: Use Power BI Q&A in a report
-      href: ../natural-language/power-bi-tutorial-q-and-a.md
-    - name: Add a Q&A visual to a report
-      href: ../visuals/power-bi-visualization-q-and-a.md
-    - name: Create a Q&A visual in a dashboard
-      href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: Q&A data sources
+    - name: Use Q&A
+      items:
+      - name: Use Q&A on a dashboard
+        href: ../natural-language/end-user-q-and-a-tutorial.md
+      - name: Use Q&A in a report
+        href: ../natural-language/power-bi-tutorial-q-and-a.md
+      - name: Add a Q&A visual to a report
+        href: ../visuals/power-bi-visualization-q-and-a.md
+      - name: Create a Q&A visual in a dashboard
+        href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: Use Q&A with live connections
+        href: service-q-and-a-direct-query.md
+    - name: Improve Q&A results
+      items:
+      - name: Set up Q&A tooling
+        href: ../natural-language/q-and-a-tooling-intro.md
+      - name: Teach Q&A to understand questions
+        href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
+      - name: Edit the linguistic schema
+        href: ../natural-language/q-and-a-tooling-advanced.md
+      - name: Enhance Q&A with Copilot
+        href: ../natural-language/q-and-a-copilot-enhancements.md
+      - name: Optimize data for Q&A
+        href: ../natural-language/q-and-a-best-practices.md
+      - name: Prepare Excel data for Q&A
+        href: service-prepare-data-for-q-and-a.md
+      - name: Create featured questions
+        href: service-q-and-a-create-featured-questions.md
+    - name: Supported data sources
       href: ../natural-language/q-and-a-data-sources.md
-    - name: Enhance Q&A with Copilot
-      href: ../natural-language/q-and-a-copilot-enhancements.md
-    - name: Q&A tooling introduction
-      href: ../natural-language/q-and-a-tooling-intro.md
-    - name: Q&A tooling advanced
-      href: ../natural-language/q-and-a-tooling-advanced.md
-    - name: Teach Q&A to understand
-      href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
-    - name: Q&A best practices
-      href: ../natural-language/q-and-a-best-practices.md
     - name: Q&A limitations
       href: ../natural-language/q-and-a-limitations.md
-    - name: Make Excel data work well with Q&A
-      href: service-prepare-data-for-q-and-a.md
-    - name: Create featured questions for Q&A
-      href: service-q-and-a-create-featured-questions.md
-    - name: Use Q&A with live connections
-      href: service-q-and-a-direct-query.md
   - name: Use accessibility features
     items:
     - name: About accessibility
