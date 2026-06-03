@@ -7804,6 +7804,11 @@
       "source_path": "powerbi-docs/developer/embedded/load-assessment-planning-tool.md",
       "redirect_url": "/power-bi/developer/embedded/embedded-capacity",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "powerbi-docs/natural-language/q-and-a-copilot-enhancements.md",
+      "redirect_url": "/power-bi/natural-language/q-and-a-tooling-intro",
+      "redirect_document_id": false
     }
   ]
 }

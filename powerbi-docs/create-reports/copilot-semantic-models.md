@@ -116,7 +116,7 @@ Aside from user prompts, the *Ask data questions* experience can also produce in
 
 - **Poor model organization:** If you don't organize your model, you're likely to experience more issues with Copilot. Model organization is a large topic that encompasses many tasks, including field descriptions, hiding columns and measures, and avoiding fields with the same names across different tables.
 
-- **Linguistic modeling:** If your semantic model doesn't have linguistic modeling set up, including synonyms for fields or verbs for relationships, Copilot might be more likely to return unexpected results. Power BI relies on the same linguistic modeling as the Q&A feature. Setting up a linguistic model for your semantic model costs additional time and effort on top of your semantic model development tasks. However, you can offset this slightly by [using Copilot to generate synonyms](#linguistic-schema), explained later in this article.
+- **Linguistic modeling:** If your semantic model doesn't have linguistic modeling set up, including synonyms for fields or verbs for relationships, Copilot might be more likely to return unexpected results. Power BI relies on the same linguistic modeling as the Q&A feature. Setting up a linguistic model for your semantic model costs additional time and effort on top of your semantic model development tasks. For more information, see [Intro to Q&A tooling to train Power BI Q&A](../natural-language/q-and-a-tooling-intro.md).
 
 - **Model complexity:** The more complex your model is, including having more fields, dependencies, and business logic, the more likely you are to experience difficulties when using Copilot. For instance, complex patterns like currency conversion or disconnected tables (like [field parameters](power-bi-field-parameters.md)) might cause unexpected or incorrect results when users reference these fields or tables in their prompts. With more complex models, you might need to consider specific model design decisions to obtain the best results with Copilot. In general, you should test your model with Copilot to determine whether you get consistently correct and reliable results. If not, you might want to consider advising users not to use Copilot to consume your semantic model.
 
@@ -128,8 +128,6 @@ The following image shows an example of an incorrect output from Copilot due to 
 :::image type="content" source="media/copilot-semantic-models/copilot-chat-pane-02.svg" alt-text="Screenshot of a user asking a data question that Copilot answers incorrectly due to ambiguous field names in the semantic model.":::
 
 The image depicts the following prompt: *How many units were sold in Australia in 2023?* In the response, Copilot returns the number of units where the *Country* column in the *Customer* table is filtered to "Australia", instead of filtering the *Country* column in the *Sales region* table. In this case, the user could have improved the prompt to specify sales region country. However, the semantic model developer could also hide or rename the *Country* column in the *Customer* table if it isn't intended to be used by Copilot. Alternatively, they could disable the field from the [field synonyms](../natural-language/q-and-a-tooling-intro.md#field-synonyms) of the linguistic model by using the Q&A setup.
-
-The importance of the linguistic schema and Q&A setup is discussed in the section [Linguistic schema](#linguistic-schema).
 
 > [!TIP]
 > You can identify which fields and filters Copilot uses to generate a visual or answer a data question by clicking the *Add to page* button. This action adds the visual to the report canvas, where you can select the visual and view any filters Copilot applies or the fields Copilot uses.
@@ -247,49 +245,6 @@ Some tips specific to the DAX query experience are as follows:
 - **Beware newer functions and DAX syntax:** Copilot and other generative AI tools are limited in their training data volume and scope. As such, they're more likely to make mistakes with newer DAX functions or syntax. For these scenarios, you might want to try authoring the query yourself first, then revising it by using Copilot.
 
 - **When generating measures, always ask for a query:** The Copilot experience in the DAX query view is designed to generate DAX queries. You get the best results when you instruct Copilot to perform this task, rather than asking it to generate a measure or another DAX expression.
-
-### Linguistic schema
-
-Use Copilot to suggest synonyms for fields and linguistic relationships for your model. Create synonyms or relationships when you create the linguistic schema for your semantic model. This *linguistic modeling* step is important to ensure that both Q&A and Copilot can return useful results when users pose questions to a semantic model. They're used to interpret user prompts and identify the right fields, such as the synonym *Turnover* being used to identify a measure named *Sales amount*.
-
-To add synonyms and relationships to your semantic model, enable the Power BI Desktop setting [*Turn on Q&A to ask natural language questions about your data*](../natural-language/q-and-a-data-sources.md) in the Data Load settings of the current file. Then, open the Q&A setup window via *Q&A Setup* in the *Modeling* ribbon of Power BI Desktop.
-
-The following image depicts the Q&A setup window in Power BI Desktop, where you can add synonyms and relationships for use by both Q&A and Copilot in Power BI.
-
-:::image type="content" source="media/copilot-semantic-models/desktop-q-and-a-setup-01.svg" alt-text="Screenshot of the Q&A setup window in Power BI Desktop for adding synonyms and linguistic relationships.":::
-
-From here, you can add synonyms or relationships manually, or add suggested synonyms from your organization, a thesaurus, or by using Copilot suggestions. Copilot can suggest both synonyms and new relationship types to add to your semantic model. Copilot can also interpret unrecognized terms. For synonyms, you can adjust this from the *Suggestion settings* menu, as shown in the following image.
-
-:::image type="content" source="media/copilot-semantic-models/desktop-q-and-a-setup-02.svg" alt-text="Screenshot of the synonyms view and suggestion settings in Q&A setup of Power BI Desktop.":::
-
-For more information about using the Q&A setup menu, see [Intro to Q&A tooling to train Power BI Q&A](/power-bi/natural-language/q-and-a-tooling-intro).
-
-Instead of using the Q&A setup window, you can also add synonyms and relationships by using linguistic schema YAML files.
-
-Use Copilot to generate synonyms as the first step when performing linguistic modeling for your semantic model. Then, curate the suggested synonyms, removing the ones that don't make sense, and adding additional synonyms where necessary. Ensure that you [share useful synonyms with your organization](../natural-language/q-and-a-tooling-intro.md#synonym-sharing) to reuse them.
-
-If you want to exclude a table, column, or measure from use by Q&A or Copilot, disable *Include in Q&A* in the *Synonyms* window of Q&A setup. This action is recommended when you have technical or redundant fields that you don't want to reference by using the various Copilot experiences.
-
-> [!NOTE]
-> If you don't plan to use Copilot or Q&A for your semantic model, you don't need to set up a linguistic schema. Linguistic modeling only benefits these specific features.
-
-#### Benefits
-
-Using Copilot to suggest synonyms can save developers time and help come up with new synonyms that they wouldn't otherwise consider. This approach can make linguistic modeling more efficient and effective, if you need to use it.
-
-#### Tips to improve Copilot outputs
-
-This Copilot experience uses the following grounding data for context:
-
-- The semantic model schema, which includes unhidden tables, rows, columns, measures, and other objects (like relationships, calculation groups, and so forth).
-- The full model linguistic schema.
-- Certain semantic model properties, including descriptions, data types, format strings, and data category.
-
-Given this grounding data, you can ensure that suggested synonyms are useful by:
-
-- Using consistent and accurate naming conventions.
-- Avoiding the use of punctuation, acronyms, and abbreviations, where possible.
-- Naming tables, columns, and measures in English.
 
 ### Generate measure descriptions with Copilot
 
