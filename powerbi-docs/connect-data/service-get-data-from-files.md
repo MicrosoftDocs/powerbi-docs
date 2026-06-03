@@ -3,7 +3,7 @@ title: Get data from files for Power BI
 description: Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: gracegong
+ms.reviewer: saralam
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources

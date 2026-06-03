@@ -16,9 +16,6 @@ ms.custom: sfi-image-nochange
 
 You can import Excel workbooks from cloud storage such as OneDrive for work or school or SharePoint Online. This article explores the advantages of using cloud storage for your Excel files. For more information about how to import Excel files into Power BI, see [Get data from Excel workbook files](service-excel-workbook-files.md).
 
-> [!IMPORTANT]
-> Semantic models created using the legacy Excel import experience in the Power BI service stop refreshing after July 31, 2026, and stop loading after August 31, 2026. If you created your semantic model using the current Excel connector (via **New item** > **Semantic model** > **Excel**), you're not affected. To check whether your semantic models are affected, see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience).
-
 ## What are the advantages?
 
 When you import files from OneDrive, or SharePoint Online, it ensures the work you’re doing in Excel stays in sync with the Power BI service. Any data that you’ve loaded into your file’s model then updates in the semantic model. Any reports you’ve created in the file load into Reports in Power BI. If you make and save changes to your file on OneDrive or SharePoint Online, Power BI shows the updates to those changes. For example, if you add new measures, change column names, or edit visualizations, Power BI reflects the changes. Your changes typically update within an hour after you've saved them.

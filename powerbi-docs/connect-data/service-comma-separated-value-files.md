@@ -3,7 +3,7 @@ title: Get data from comma separated value (CSV) files
 description: Learn about CSV files and find out how you can add a CSV semantic model to a workspace in the Power BI service.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
+ms.reviewer: saralam
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
@@ -12,17 +12,17 @@ LocalizationGroup: Data from files
 ---
 # Get data from comma separated value (CSV) files
 
-> [!IMPORTANT]
-> The legacy CSV import experience in Power BI service has been retired. As of May 31, 2026, you can no longer create new semantic models using the old import experience. If you have existing semantic models that were created with the legacy experience, they stop refreshing after July 31, 2026, and stop loading after August 31, 2026. Use the steps in this article to create new semantic models, and see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience) for guidance on identifying and migrating affected semantic models.
-
 Comma separated value files, often known as CSV files, are simple text files with rows of data where each value is separated by a comma. These types of files can contain large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a [sample CSV file](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 If you have a CSV file, it's time to get it into your Power BI site as a semantic model where you can begin exploring your data, create some dashboards, and share your insights with others.
 
->[!TIP]
->Many organizations output a CSV file with updated data each day. To make sure your semantic model in Power BI stays in sync with your updated file, save the file to OneDrive with the same name.
+> [!IMPORTANT]
+> Semantic models created using the legacy Excel import experience in the Power BI service stop refreshing after July 31, 2026, and stop loading after August 31, 2026. To check whether your semantic models are affected and learn how to migrate them, see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience).
 
 ## Where you save your file makes a difference
+
+>[!TIP]
+>Many organizations output a CSV file with updated data each day. To make sure your semantic model in Power BI stays in sync with your updated file, save the file to OneDrive with the same name.
 
 **Local** - If you save your CSV file to a local drive on your computer or another location in your organization, you can *import* your file into Power BI. Your file actually remains on your local drive, so the whole file isn't imported into Power BI. What really happens is that Power BI creates a new semantic model and loads data from the CSV file into the semantic model.
 
