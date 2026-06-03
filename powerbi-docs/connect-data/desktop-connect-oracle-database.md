@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/25/2025
+ms.date: 06/03/2026
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to learn how to connect to an Oracle database with Power BI Desktop and the Power BI service so that I can access and analyze data from Oracle databases in my Power BI reports and dashboards.
 ---
 # Connect to an Oracle database with Power BI Desktop
@@ -79,7 +80,7 @@ After you create the connection, you can use it in semantic models that connect 
 
 ### On-premises data gateway
 
-To connect to an on-premises Oracle database from the Power BI service, use the [on-premises data gateway](/data-integration/gateway/). Install 64-bit OCMT on the computer running the gateway since the gateway is a 64-bit app. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md).
+To connect to an on-premises Oracle database from the Power BI service, use the [on-premises data gateway](/data-integration/gateway/). Install 64-bit OCMT on the computer running the gateway since the gateway is a 64-bit app. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md). If you encounter DirectQuery or refresh failures through the gateway against an Oracle source, see [Oracle provider configuration for the gateway](./service-gateway-onprem-manage-oracle.md#oracle-provider-configuration-for-the-gateway).
 
 > [!NOTE]
 > Personal data gateways aren't supported for Oracle connections. Use the enterprise on-premises data gateway for on-premises Oracle databases, or use direct cloud connections for Oracle cloud databases.
