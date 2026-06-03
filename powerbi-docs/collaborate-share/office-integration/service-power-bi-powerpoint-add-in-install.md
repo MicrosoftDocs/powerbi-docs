@@ -3,14 +3,14 @@ title: Add a Live Power BI Report Page to PowerPoint
 description: Learn how to install the Power BI PowerPoint add-in in a PowerPoint slide.
 author: dknappettmsft
 ms.author: daknappe
-ms.reviewer: mayabendov
+ms.reviewer: emininberg
 ms.custom: office-integration
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 11/10/2025
+ms.date: 05/28/2026
 ---
 
 # Add live Power BI data to PowerPoint
@@ -103,7 +103,7 @@ Use the Power BI add-in to insert live report pages or individual visuals into a
 If you want to add a live report page to your presentation with a URL, there are three ways to get the report page URL. You can get the URL from the **Share** option, **Export** option, or directly from the browser's address bar.
 
 > [!NOTE]
-> Use the **Share** option if you want to be sure that all users who open the presentation can view the report. With other methods, users can or can't view the report based on their permissions.  
+> Use the **Share** option if you want to be sure that all users who open the presentation can view the report. With other methods, users can or can't view the report based on their permissions.
 
 Use the following procedure to add live data to a presentation with a URL:
 
@@ -131,6 +131,16 @@ Use the following procedure to add live data to a presentation with a URL:
 1. Select the **Insert** button, and the visual will load into the slide.
 
     :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-link-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power BI report page into the add-in.":::
+
+#### Add a report from an org app
+
+If the report you want to add is published as part of an [org app (preview)](../../explore-reports/org-app-items.md), you can only add it by pasting the report URL into the add-in. **Open in PowerPoint**, **Export to PowerPoint**, the general **Share** report link, and visual-level **Share** links aren't supported.
+
+To get the URL, use one of the following methods:
+
+1. Open the report in the org app and copy the URL from the browser's address bar.
+1. Select **Share** > **Link to this app page** and copy the link.
+1. Paste the URL into the Power BI add-in and select **Insert**.
 
 ### Change a direct link to a shareable link
 

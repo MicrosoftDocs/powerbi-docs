@@ -35,10 +35,6 @@ Copilot indexing enables Copilot to answer data questions faster and more accura
 
 :::image type="content" source="media/copilot-prep-data/copilot-prep-data-ai-settings.png" alt-text="Screenshot of the Prepare Data for AI settings page in Power BI Copilot.":::
 
-## Copilot tooling format (preview)
-
-The Copilot tooling format is a new way to store Copilot metadata for **Prep data for AI**, now available in public preview. For information about its benefits, migration steps, and expected behavior by platform, see [Copilot tooling format](copilot-prepare-data-ai.md#copilot-tooling-file-format) in the Prep data for AI article.
-
 ## Considerations and limitations
 
 - The Local Desktop Indexing setting applies only to DirectQuery and Live connection.

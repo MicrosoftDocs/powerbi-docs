@@ -4,11 +4,10 @@ description: Learn how to use tooling to add and share synonyms, define and mana
 author: kgremban
 ms.author: kgremban
 ms.service: powerbi
-ms.subservice: powerbi-ai
-ms.topic: concept-article
-ms.date: 11/02/2023
+ms.topic: how-to
+ms.date: 05/22/2026
 no-loc: [Copilot]
-ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
 
@@ -27,7 +26,7 @@ In addition to these dedicated tooling capabilities, the **Modeling** tab in Pow
 - Linguistic relationships (Phrasings)
 - Row labels
 - Hide from Q&A
-- Configuring of the linguistic schema (advanced)
+- Configuration of the linguistic schema (advanced)
 
 ## Opening the Q&A setup menu
 
@@ -72,11 +71,11 @@ One of the most basic and effective ways to improve the Q&A visual experience is
 
    **Include in Q&A** This option allows a column or table to be omitted from Q&A, meaning it won't be shown and a result can't be displayed with this column. You might decide not to include a column when dealing with dates. If there are numerous date fields or foreign keys, you might decide to remove all but one of the date fields, so the correct date column is picked when a user asks a date related question.
 
-   **Suggestion settings** Using the suggestion settings menu, you can enable or disable the different sources for suggested synonyms. Enabling a source prompts Q&A to get suggested synonyms from that source after you select apply; conversely, disabling a source removes suggested synonyms of that source from Q&A after you select apply. Synonyms which began as suggestions, but were promoted to approved synonyms, aren't affected. From this menu, you can also enable or disable sharing synonyms with your organization. 
+   **Suggestion settings** Using the suggestion settings menu, you can enable or disable the different sources for suggested synonyms. Enabling a source prompts Q&A to get suggested synonyms from that source after you select **Apply**; conversely, disabling a source removes suggested synonyms of that source from Q&A after you select **Apply**. Synonyms that began as suggestions, but were promoted to approved synonyms, aren't affected. From this menu, you can also enable or disable sharing synonyms with your organization. 
 
 ### Synonym sharing
 
-If synonym sharing is enabled within your organization, you can use your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. When first creating a Q&A visual or opening the Q&A setup menu, if synonym sharing is available for you, a banner may prompt you to get org synonyms. You can also connect to shared synonyms by enabling the option in the suggestion settings menu and selecting Apply, or by selecting the refresh button next to the suggestion settings menu if org synonyms have already been enabled as a source. 
+If synonym sharing is enabled within your organization, you can use your coworker's synonyms and minimize duplicate effort when adding synonyms to your models. When first creating a Q&A visual or opening the Q&A setup menu, if synonym sharing is available for you, a banner might prompt you to get org synonyms. You can also connect to shared synonyms by enabling the option in the suggestion settings menu and selecting Apply, or by selecting the refresh button next to the suggestion settings menu if org synonyms have already been enabled as a source. 
 
 [![Screenshot of the Field synonyms page with the Get more synonyms button highlighted.](media/q-and-a-tooling-intro/qna-setup-menu-suggestion-sources.png)](media/q-and-a-tooling-intro/qna-setup-menu-suggestion-sources.png#lightbox)
 
@@ -95,23 +94,21 @@ As new synonyms get shared within your organization, you can select the refresh 
 
 Some terms and phrases can't be defined with simple mappings to terms in your data model. These terms, which qualify other terms or relate them together, must be understood as a part of a phrase. For example, “show me popular titles” requires Q&A to understand what a title is, and what makes a title popular. 
 
-These linguistic relationships (or [*phrasings*](q-and-a-tooling-advanced.md#phrasings-in-the-linguistic-schema)) come in a wide variety of types. You can teach Q&A to recognize words as they relate to terms in your data using the Q&A setup menu. 
-
-Select **Review questions** to see a list of semantic models being used in the Power BI service for your tenant. The **Review questions** page also displays the semantic model owner, workspace, and last refreshed date. From here, you can select a semantic model and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
+These linguistic relationships (or [*phrasings*](q-and-a-tooling-advanced.md#phrasings-in-the-linguistic-schema)) come in a wide variety of types. You can teach Q&A to recognize words as they relate to terms in your data using the Q&A setup menu.
 
 [![Screenshot of the Relationships page](media/q-and-a-tooling-intro/qna-setup-menu-relationships-tab.png)](media/q-and-a-tooling-intro/qna-setup-menu-relationships-tab.png#lightbox)
 
-1. When you open the menu, you will see some relationships populated by Q&A by default. These are based on the relationships already present in the tables and model. You can create a new relationship by clicking the "new relationship" button. 
+1. When you open the menu, you see some relationships populated by Q&A by default. These are based on the relationships already present in the tables and model. You can create a new relationship by selecting the **New relationship** button. 
 
-1. You can select the type of relationship you would like to define using the "relationship type" dropdown. 
+1. Select the type of relationship you want to define by using the **Relationship type** dropdown. 
 
     [![Screenshot of the dropdown listing the different types of linguistic relationships.](media/q-and-a-tooling-intro/qna-setup-menu-relationship-types.png)](media/q-and-a-tooling-intro/qna-setup-menu-relationship-types.png#lightbox)
 
-1. After you've defined a relationship type, click apply to save it into your linguistic schema. 
+1. After you've defined a relationship type, select **Apply** to save it into your linguistic schema. 
 
     [![Screenshot of an example linguistic relationship: "stores sell products."](media/q-and-a-tooling-intro/qna-setup-menu-relationship-example.png)](media/q-and-a-tooling-intro/qna-setup-menu-relationship-example.png#lightbox)
 
-1. Now, when you use words or phrases as you've defined, Q&A will understand the fields you are referring to. 
+1. Now, when you use words or phrases as you've defined, Q&A understands the fields you're referring to. 
 
    [![Screenshot of a visual which reflects an understanding that stores sell products.](media/q-and-a-tooling-intro/qna-setup-menu-relationship-example-visual.png)](media/q-and-a-tooling-intro/qna-setup-menu-relationship-example-visual.png#lightbox)
 
@@ -123,7 +120,7 @@ The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, 
 
 ## Review questions
 
-Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here, you can select a dataset and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
+Select **Review questions** to see a list of semantic models being used in the Power BI service for your tenant. The **Review questions** page also displays the semantic model owner, workspace, and last refreshed date. From here, you can select a semantic model and see what questions users have been asking. The data also shows words that weren't recognized. All data shown here is for the last 28 days.
 
 :::image type="content" source="media/q-and-a-tooling-intro/qna-tooling-review-questions.png" alt-text="Screenshot of the Q and A Review questions page." lightbox="media/q-and-a-tooling-intro/qna-tooling-review-questions.png":::
 
@@ -138,7 +135,7 @@ Without doing any setup, the Q&A visual suggests several questions to get starte
 
    :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Screenshot of the Suggest questions page with the search box highlighted." lightbox="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png":::
  
-1. Select the **Add** button to add this question to **Your suggested questions**. Each question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
+1. Select the **Add** button to add this question to **Your suggested questions**. Each question is added to the end of this list. The questions show up in the Q&A visual in the same order as they do in this list. 
 
    :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Screenshot of the Suggest questions page with the section called Reorder your suggested questions highlighted." lightbox="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png":::
  
