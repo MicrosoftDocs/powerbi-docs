@@ -7,9 +7,10 @@ ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 09/01/2023
+ms.date: 06/03/2026
 LocalizationGroup: Gateways
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Manage your data source - Oracle
@@ -90,6 +91,38 @@ Visit the [Oracle Database Error Help Portal](https://docs.oracle.com/en/error-h
 To diagnose connectivity issues between the data source server and the gateway machine, install a client like Power BI Desktop on the gateway machine. You can use the client to check connectivity to the data source server.
 
 For more gateway troubleshooting information, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
+
+## Oracle provider configuration for the gateway
+
+If you encounter semantic model DirectQuery errors with an Oracle data source, first check the gateway version. In the May 2026 release of the on-premises data gateway, DirectQuery isn't enabled by default when you use the bundled Oracle provider. The configuration change in this section provides a workaround. The June 2026 release includes built-in support, enabled by default. Don't make this configuration change if the Oracle Managed ODP.NET provider is already installed on the gateway machine.
+
+### Update the gateway configuration to use the bundled Oracle provider for DirectQuery models
+
+Make the following configuration changes on the computer that runs the data gateway:
+
+1. Stop the on-premises data gateway service (`PBIEgwService`). To stop the service, open the on-premises data gateway app and use **Service Settings**.
+
+1. Open `C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config` in a text editor that runs as administrator.
+
+1. Add the following entry to the `<runtime>` > `<assemblyBinding>` section:
+
+    ```xml
+    <probing privatePath="m\ADO.NET Providers\ODAC" />
+    ```
+
+1. Add the following entry to the `DbProviderFactories` block:
+
+    ```xml
+    <add name="ODP.NET, Managed Driver" invariant="Oracle.ManagedDataAccess.Client" description="Oracle Data Provider for .NET, Managed Driver" type="Oracle.ManagedDataAccess.Client.OracleClientFactory, Oracle.ManagedDataAccess"/>
+    ```
+
+1. Save the file.
+
+1. Restart the gateway service. In the on-premises data gateway app, select **Service Settings** > **Restart now**. After the gateway restarts, retry your DirectQuery connection.
+
+The following screenshot highlights the configuration changes.
+
+:::image type="content" source="./media/service-gateway-onprem-manage-oracle/oracle-provider-config-changes.jpg" alt-text="Screenshot of the EnterpriseGateway.exe.config file highlighting the probing privatePath entry and the ODP.NET Managed Driver entry in the DbProviderFactories block.":::
 
 ## Related content
 
