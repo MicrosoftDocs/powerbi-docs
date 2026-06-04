@@ -31,7 +31,7 @@ You might need to clean up your report. The narrative visual pulls information f
 
 In the Power BI service, you need to be in an appropriate workspace to see the **Narrative visual with Copilot** button in the Visualizations pane. The Copilot visual button is the same as the old smart narrative visual button.  Select it, and you see an option to use the old or the new one, with Copilot. For details on what makes an appropriate workspace, see [Considerations and limitations](#considerations-and-limitations) in this article.
 
-1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake data hub**, select **More options** next to a semantic model.
+1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake catalog**, select **More options** next to a semantic model.
 1. Select **Create report**.
 
 ### [Power BI Desktop](#tab/powerbi-desktop)

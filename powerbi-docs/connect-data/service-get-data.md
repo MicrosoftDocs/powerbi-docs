@@ -24,7 +24,7 @@ You can use the OneLake catalog to discover existing data and reports.
 
 On your Power BI site, select **OneLake** in the navigation pane:
 
-:::image type="content" source="media/service-get-data/onelake-data-hub-open.png" alt-text="Screenshot that shows the OneLake data hub in the navigation pane.":::
+:::image type="content" source="media/service-get-data/onelake-data-hub-open.png" alt-text="Screenshot that shows the OneLake catalog in the navigation pane.":::
 
 A list of data that you have access to appears when the OneLake catalog opens. You can filter to show all items, your own items, or items endorsed by someone in your organization:
 

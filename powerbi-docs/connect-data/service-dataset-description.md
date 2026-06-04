@@ -26,5 +26,5 @@ On the settings page, find the **Semantic model description** section and enter 
 
 ## Related content
 
-- [OneLake data hub](service-data-hub.md)
+- [OneLake catalog](service-data-hub.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

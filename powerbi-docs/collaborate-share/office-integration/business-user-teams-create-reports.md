@@ -86,13 +86,13 @@ To build a report from a semantic model shared with you, follow these steps.
 
 ## Explore semantic models and reports shared with you
 
-It's easy to find all the semantic models your organization has shared with you. They’re in the OneLake data hub in the Power BI app for Microsoft Teams. Again, semantic models marked *certified* or *promoted* are likely to be higher quality and better maintained.
+It's easy to find all the semantic models your organization has shared with you. They’re in the OneLake catalog in the Power BI app for Microsoft Teams. Again, semantic models marked *certified* or *promoted* are likely to be higher quality and better maintained.
 
 1. Open the Power BI app for Microsoft Teams.
 
     Need to install the Power BI app? [Install the app, then pin it](service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
-1. Go to the **OneLake data hub** tab.
+1. Go to the **OneLake catalog** tab.
 1. Select a semantic model from the list or from the recommended semantic models.
 
     :::image type="content" source="../../explore-reports/media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data Hub tab selected with the recommended semantic models and a list of semantic models." lightbox="../../explore-reports/media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png":::
