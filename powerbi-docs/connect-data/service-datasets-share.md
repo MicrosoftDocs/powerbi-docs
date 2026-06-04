@@ -19,9 +19,9 @@ To make it possible for other users to take advantage of a semantic model, you c
 
 To share a semantic model
 
-1. From either the semantic model's options menu on the [OneLake data hub](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) or from the [data details page](./service-dataset-details-page.md#supported-actions), choose **Share** as follows:
+1. From either the semantic model's options menu on the [OneLake catalog](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) or from the [data details page](./service-dataset-details-page.md#supported-actions), choose **Share** as follows:
 
-    * **OneLake data hub**: In the data items list, open the [options menu](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) and select **Share**. On a recommended data item tile, choose **Share** on the **More options (…)** menu.
+    * **OneLake catalog**: In the data items list, open the [options menu](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) and select **Share**. On a recommended data item tile, choose **Share** on the **More options (…)** menu.
 
         ![Screenshot of data item share option on the data hub.](media/service-datasets-share/power-bi-dataset-share-dataset.png)
 

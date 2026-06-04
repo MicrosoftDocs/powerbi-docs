@@ -35,7 +35,7 @@ If you have an [Admin or Member role](service-roles-new-workspaces.md) in the wo
 > [!NOTE]
 > You can also configure these settings in the [semantic model settings pane](../connect-data/service-semantic-model-settings-pane.md), a side pane that opens on the right side of the page. The settings pane is currently in preview.
 
-When a semantic model is marked as discoverable, users who don't yet have access to it can find it in the OneLake data hub and request access to it.
+When a semantic model is marked as discoverable, users who don't yet have access to it can find it in the OneLake catalog and request access to it.
 
 ## How to set up semantic model discovery in an organization
 
