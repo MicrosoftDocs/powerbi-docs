@@ -310,8 +310,6 @@
         href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
       - name: Edit the linguistic schema
         href: ../natural-language/q-and-a-tooling-advanced.md
-      - name: Enhance Q&A with Copilot
-        href: ../natural-language/q-and-a-copilot-enhancements.md
       - name: Optimize data for Q&A
         href: ../natural-language/q-and-a-best-practices.md
       - name: Prepare Excel data for Q&A
