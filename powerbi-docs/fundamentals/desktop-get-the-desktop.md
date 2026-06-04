@@ -1,32 +1,32 @@
 ---
-title: Get Power BI Desktop
-description: Learn about the different ways you can download and the options available to install Power BI Desktop.
+title: Download Power BI Desktop
+description: "Download Power BI Desktop for free from Microsoft Store or directly. Learn installation methods, system requirements, and deployment options."
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 05/26/2026
 LocalizationGroup: Get started
 ---
-# Get Power BI Desktop
+# Download Power BI Desktop
 
-With Power BI Desktop, you can build advanced queries, models, and reports that visualize data. You can also build data models, create reports, and share your work by publishing to the Power BI service. Power BI Desktop is a free download.
+Download Power BI Desktop for free to build advanced queries, models, and reports that visualize data. You can create data models, design reports, and share your work by publishing to the Power BI service. Learn the different ways to download and install Power BI Desktop on your computer.
 
-To get Power BI Desktop, you can use one of two approaches.
+To get Power BI Desktop, use one of the following approaches:
 
 - [Install as an app from the Microsoft Store](#install-as-an-app-from-the-microsoft-store).
 - [Download directly as an executable and install on your computer](#download-power-bi-desktop-directly).
 
-Either of the two approaches gets the latest version of Power BI Desktop onto your computer. However, there are some differences worth noting, as described in the following sections.
+Both approaches install the latest version of Power BI Desktop on your computer. However, some differences exist between the two approaches. The following sections describe those differences.
 
 > [!IMPORTANT]
-> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the latest version of Power BI Desktop is supported. You'll be asked to upgrade the application to the latest version if you contact Support for Power BI Desktop. You can get the latest version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download and install on your computer](https://www.microsoft.com/download/details.aspx?id=58494).
+> Microsoft updates and releases Power BI Desktop monthly, incorporating customer feedback and new features. Only the latest version of Power BI Desktop is supported. If you contact Support for Power BI Desktop, you're asked to upgrade the application to the latest version. You can get the latest version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download and install on your computer](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Install as an app from the Microsoft Store
 
-There are a few ways to access the most recent version of Power BI Desktop from the Microsoft Store.
+You can access the most recent version of Power BI Desktop from the Microsoft Store in a few ways.
 
 1. Use one of the following options to open the **Power BI Desktop** page of the Microsoft Store:
 
@@ -38,14 +38,14 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
    - Go to the [Power BI Desktop product page](https://www.microsoft.com/power-platform/products/power-bi/desktop), and then select **Download Free**.
   
-1. After you've landed on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
+1. After you land on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
 
      :::image type="content" source="media/desktop-get-the-desktop/getpbid_04.png" alt-text="Screenshot of Microsoft Store showing the Power BI Desktop install option.":::
 
-There are a few advantages to getting Power BI Desktop from the Microsoft Store:
+Getting Power BI Desktop from the Microsoft Store has several advantages:
 
-- **Automatic updates**: Windows downloads the latest version automatically in the background as soon as it's available, so your version is always up to date.
-- **Smaller downloads**: Microsoft Store ensures only components that changed in each update are downloaded to your computer, resulting in smaller downloads for each update.
+- **Automatic updates**: Windows automatically downloads the latest version in the background as soon as it's available, so your version is always up to date.
+- **Smaller downloads**: Microsoft Store ensures that only components that changed in each update are downloaded to your computer, which results in smaller downloads for each update.
 - **Admin privilege isn't required**: When you download the package directly and install it, you must be an administrator for the installation to complete successfully. If you get Power BI Desktop from the Microsoft Store, admin privilege isn't required.
 - **IT roll-out enabled**: Through the Microsoft Store for Business, you can more easily deploy, or *roll out*, Power BI Desktop to everyone in your organization.
 - **Language detection**: The Microsoft Store version includes all supported languages, and checks the language used on your computer each time it's launched. This language support also affects the localization of models created in Power BI Desktop. For example, built-in date hierarchies match the language that Power BI Desktop uses when the *.pbix* file is created.
@@ -60,22 +60,20 @@ The following considerations and limitations apply when you install Power BI Des
 
 ## Download Power BI Desktop directly
 
-To download Power BI Desktop directly:
+Use the [Microsoft Download Center for Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) to go directly to the download page.
+
+To download Power BI Desktop:
 
 1. Go to the [Microsoft Download Center for Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 1. Select **Download**.
-1. Choose the 64-bit version (recommended) and select **Next** to begin the download.
-
-> [!TIP]
-> For the fastest path, use this direct link to the Download Center: [https://www.microsoft.com/download/details.aspx?id=58494](https://www.microsoft.com/download/details.aspx?id=58494)
+1. Choose the 64-bit version (recommended), and then select **Next** to begin the download.
 
   :::image type="content" source="media/desktop-get-the-desktop/download-desktop-exe.png" alt-text="Screenshot of Download Center showing the 64-bit Power BI Desktop download selected.":::
 
 > [!IMPORTANT]
 > The 32-bit version of Power BI Desktop is no longer supported. Upgrade to the 64-bit version of Power BI Desktop to continue receiving updates and support.
 
-
-## Install Power BI Desktop after download
+## Run the Power BI Desktop installation
 
 You're prompted to run the installation file after you finish downloading it.
 
@@ -88,7 +86,7 @@ After you launch the installation package, Power BI Desktop installs as an appli
 > [!NOTE]
 > Installing the deprecated *msi* version and the Microsoft Store version of Power BI Desktop on the same computer, sometimes referred to as a *side-by-side* installation, isn't supported. Manually uninstall Power BI Desktop before you download it from the Microsoft Store.
 
-## Use Power BI Desktop
+## Launch and start using Power BI Desktop
 
 When you launch Power BI Desktop, a welcome screen appears.
 
@@ -102,7 +100,7 @@ The following list provides the minimum requirements to run Power BI Desktop:
 
 - Windows 10 or Windows Server 2016 or later. For Windows on ARM, the 2025-09 Cumulative Update is required [(KB5065789)](https://support.microsoft.com/topic/september-29-2025-kb5065789-os-builds-26200-6725-and-26100-6725-preview-fa03ce47-cec5-4d1c-87d0-cac4195b4b4e).
 - .NET 4.7.2 or later.
-- Microsoft Edge browser (Internet Explorer is no longer supported)
+- Microsoft Edge browser (Internet Explorer is no longer supported).
 - Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 - Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported because some controls (such as closing the startup screens) display beyond those resolutions.
 - Windows display settings: If you set your display to change the size of text, apps, and other items to more than 100%, you won't see some dialogs that you must interact with to continue using Power BI Desktop. If you encounter this issue, check your display settings in Windows by going to **Settings** > **System** > **Display**, and use the slider to return display settings to 100%.
@@ -110,17 +108,17 @@ The following list provides the minimum requirements to run Power BI Desktop:
 - WebView2: If WebView2 wasn't automatically installed with Power BI Desktop or if it was uninstalled, [download and run the installer for WebView2](https://go.microsoft.com/fwlink/p/?LinkId=2124703).
 
 > [!NOTE]
-> We recommend using a client version of Windows, such as Windows 10, instead of Windows Server. Power BI Desktop doesn't support Internet Explorer Enhanced Security Configuration because it will stop Power BI Desktop from signing in to the Power BI service.
+> Use a client version of Windows, such as Windows 10, instead of Windows Server. Power BI Desktop doesn't support Internet Explorer Enhanced Security Configuration because it stops Power BI Desktop from signing in to the Power BI service.
 
-## Considerations and limitations
+## Known issues, considerations, and limitations
 
-Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop using a system account may cause this error: "Microsoft Edge can't read and write to its data directory."
+Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop by using a system account might cause this error: "Microsoft Edge can't read and write to its data directory."
 
-We want your experience with Power BI Desktop to be great. If you run into any issues with Power BI Desktop, this section contains solutions, or suggestions to address these issues.
+To provide the best experience, this section contains solutions or suggestions to address any issues you encounter with Power BI Desktop.
 
 ### Use command-line options during installation
 
-When you install Power BI Desktop, you can set properties and options with command-line switches. These settings are especially useful for administrators who manage or facilitate the installation of Power BI Desktop across organizations.
+When you install Power BI Desktop, set properties and options by using command-line switches. These settings are especially useful for administrators who manage or facilitate the installation of Power BI Desktop across organizations.
 
 |Command-line option  |Behavior  |
 |---------------------|----------|
@@ -134,7 +132,7 @@ When you install Power BI Desktop, you can set properties and options with comma
 |`-repair` | Repair the installation or install Power BI Desktop if it's not currently installed.|
 |`-package`, `-update` | Install Power BI Desktop (default, as long as `-uninstall` or `-repair` aren't specified). |
 
-You can also use the following syntax parameters, which you specify with a `property = value` syntax:
+Use the following syntax parameters, which you specify with a `property = value` syntax:
 
 |Parameter  |Meaning  |
 |-----------|---------|
@@ -145,7 +143,7 @@ You can also use the following syntax parameters, which you specify with a `prop
 |`LANGUAGE`   | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog. |
 |`DISABLE_UPDATE_NOTIFICATION`| A value of `1` disables update notifications. |
 
-For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, use the German language:
+To install Power BI Desktop without any user interface and use the German language, run Power BI Desktop with the following options and parameters:
 
 ```PBIDesktopSetup_x64.exe -quiet LANGUAGE=de-DE ACCEPT_EULA=1```
 
@@ -174,7 +172,9 @@ Upgrading an install from an *.exe* to an .msi* that you've extracted from an *.
 
 Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
 
-Running Power BI Desktop as a virtualized application (for example, as a Citrix application) isn't supported.
+Running Power BI Desktop as a virtualized application (for example, as a published Citrix application) isn't supported.
+
+Citrix VDI and other virtual desktop environments, excluding Azure Virtual Desktop and Windows 365, aren't supported.
 
 ### Issues with previous releases of Power BI Desktop
 

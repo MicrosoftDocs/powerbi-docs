@@ -5,9 +5,11 @@ author: kgremban
 ms.author: kgremban
 ms.reviewer: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-ai
 ms.topic: concept-article
-ms.date: 01/12/2023
+ms.date: 05/22/2026
+ai-usage: ai-assisted
+
+#customer intent: As a data modeler, I want to understand the Q&A linguistic schema so that I can customize phrasings and improve Q&A results for my users.
 ---
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 
@@ -81,7 +83,7 @@ When you import your linguistic schema file back into Power BI Desktop, anything
 1. In Power BI Desktop, open the dataset in Model view. 
 1. On the **Modeling** tab, select **Linguistic Schema** > **Export linguistic schema**.
 1. Save it. The file name ends with .lsdl.yaml.
-1. Open it in Visual Code or another editor.
+1. Open it in Visual Studio Code or another editor.
 1. In Model view in Power BI Desktop, on the **Modeling** tab, select **Linguistic schema** > **Import**. 
 1. Go to the location where you saved the edited .yaml file and select it. A Success message lets you know that the linguistic schema .yaml file was successfully imported.
 
@@ -342,4 +344,9 @@ If you make a change to a .lsdl.yaml file that doesn't conform to the linguistic
 
 ![Screenshot of a sample .yaml file showing errors.](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-More questions? [Ask the Power BI Community](https://community.powerbi.com/)
+## Related content
+
+- [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md)
+- [Intro to Q&A tooling to train Power BI Q&A](q-and-a-tooling-intro.md)
+- [Teach Q&A to understand questions and terms](q-and-a-tooling-teach-q-and-a.md)
+- [Copilot for Power BI](../create-reports/copilot-introduction.md)

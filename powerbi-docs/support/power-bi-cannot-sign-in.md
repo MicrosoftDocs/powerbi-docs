@@ -1,32 +1,45 @@
 ---
 title: Resolve sign-in issues or reset your password for Power BI and Fabric
-description: Help to unblock users who are unable to sign in to Power BI or Fabric and need to reset a password or contact support.
+description: Resolve sign-in issues for Power BI or Fabric, reset your password, or contact support.
 author: JulCsc
 ms.author: juliacawthra
 ms.reviewer: royrubinstein
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: troubleshooting
-ms.custom: ''
-ms.date: 11/11/2024
+ms.topic: troubleshooting-general
+ms.date: 05/28/2026
+ai-usage: ai-assisted
+
+#customer intent: As a Power BI or Fabric user, I want to resolve sign-in issues or reset my password so that I can access the service.
+
 ---
 
-# Resolve sign-in issues for Power BI and Fabric
+# Resolve sign-in problems or reset your password for Power BI and Fabric
 
-This article describes how to resolve sign-in issues for Power BI and Fabric. If you're a Power BI or Fabric user having sign-in issues, first work with your organization's internal support team for assistance. If your organization enabled Self-Service Password Reset, you can reset your own password with the [Self-Service Password Reset wizard](https://passwordreset.microsoftonline.com/). If this process fails, a link to contact Support displays.
+This article describes how to resolve sign-in problems for Power BI and Fabric, including how to reset your password and how to contact support.
 
-If you're an **admin** for your organization, we recommend that you [Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr). If you forgot your own password, follow the steps in [Forgot sign-in password to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/forgot-sign-in-password) to recover your password. To troubleshoot other sign-in issues, review the solutions listed in [You can't sign in to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/sign-in-to-office-365-azure-intune).
+## Reset your password by using self-service password reset
 
-Customers who purchase [Microsoft Premier support](https://support.microsoft.com/premier) can contact Premier support over the phone:
+If your organization enables self-service password reset (SSPR), you can reset your own password by using the [Self-Service Password Reset wizard](https://passwordreset.microsoftonline.com/). If this process fails, a link to contact support appears.
 
-* For customers in the United States (US) and the rest of the Americas: +1-800-936-3100
-* For customers in Europe, the Middle East, and Asia (EMEA): +44-844-800-8338
-* For customers in India: +1-800-425-5666
+If you can't reset your password, work with your organization's internal support team for assistance.
 
-> [!Note]
-> It's helpful to provide [additional diagnostic information](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) at the time you engage support.
+## Reset passwords as an admin
 
-## Power BI community
+If you're an admin for your organization, [enable users to unlock their account or reset passwords by using Microsoft Entra self-service password reset](/entra/identity/authentication/tutorial-enable-sspr). If you forget your own admin password, follow the steps in [Forgot password to sign in to Microsoft 365, Intune, or Azure](/troubleshoot/microsoft-365/admin/sign-in/forgot-sign-in-password).
+
+## Contact Microsoft Premier support
+
+If you purchase [Microsoft Premier support](https://support.microsoft.com/premier), contact Premier support over the phone:
+
+* United States (US) and the rest of the Americas: +1-800-936-3100
+* Europe, the Middle East, and Asia (EMEA): +44-844-800-8338
+* India: +1-800-425-5666
+
+> [!NOTE]
+> When you contact support, provide [additional diagnostic information](service-admin-capturing-additional-diagnostic-information-for-power-bi.md).
+
+## Sign in to the Power BI community forum
 
 If you can't create a post in the Power BI community forum, it's because the forum also requires you to sign in. For more information, see [Community Support](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 

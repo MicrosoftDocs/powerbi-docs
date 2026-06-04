@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.date: 04/10/2024
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
+ROBOTS: NOINDEX
 ---
 # Enhance Q&A with Copilot for Power BI
 

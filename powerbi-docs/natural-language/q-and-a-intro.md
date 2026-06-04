@@ -1,14 +1,15 @@
 ---
 title: Learn how to use natural language to explore data with Power BI Q&A
-description: Overview of using Power BI Q&A to explore your data and create visualizations by using Power BI Q&A with natural language queries.
+description: Learn about Q&A in Power BI, which lets you explore your data and create visualizations by using natural language queries. Q&A is deprecated in December 2026.
 author: kgremban
 ms.author: kgremban
 ms.reviewer: mohaali
 ms.service: powerbi
-ms.subservice: powerbi-ai
-ms.custom: 
 ms.topic: concept-article
-ms.date: 09/12/2023
+ms.date: 05/22/2026
+ai-usage: ai-assisted
+
+#customer intent: As a Power BI user, I want to understand how Q&A works so that I can explore my data using natural language.
 ---
 # Introduction: Use natural language to explore data with Power BI Q&A
 
@@ -19,10 +20,9 @@ Sometimes the fastest way to get an answer from your data is to perform a search
 
 Power BI Q&A is free and available to all users. Use these links to find the article that you need. 
 
-- [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
-- [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
-- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
-- [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 
+- [Use Q&A on a dashboard](end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
+- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator added a Q&A visual to a report, use and reuse that visual to explore your data. Report designers can also use Q&A to explore data and create visualizations.
+- [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others.
 - If you have edit permission, you can save your Q&A visualization results [on a dashboard](end-user-q-and-a-tutorial.md) or [in a report](../create-reports/power-bi-visualization-introduction-to-q-and-a.md).
 
 ## How to use Q&A
@@ -85,12 +85,7 @@ As you enter your question, Q&A tries to instantly interpret and visualize the a
 
 ## Related content
 
-You can integrate natural language in your reports in various ways. For more information, see:
-
-- [Use Q&A to explore a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
-
-- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
-
-- [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
-
-- [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 
+- [Copilot for Power BI](../create-reports/copilot-introduction.md)
+- [Use Q&A to explore a dashboard](end-user-q-and-a-tutorial.md)
+- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md)
+- [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md)

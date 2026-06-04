@@ -20,6 +20,7 @@ With translytical task flows, you can automate end-user actions like updating re
 * **Edit data**: Edit an existing record of data in a table in your database and see it reflected in your report. For example, updating a status field or an annotation.
 * **Delete data**: Delete an existing record of data from a table in your database and see it removed from your report. For example, removing a customer record that's no longer needed.
 * **Call an external API**: Make an API request that's accessible through a network request. For example, making a request to the REST endpoint of a public API that either updates the underlying data or end user's input, or takes action in a different system.
+* **Surface in-report notifications**: Store notifications as data, then display targeted alerts inside Power BI reports based on report context and filter scope.
 
 Translytical task flows work by using [user data functions in Fabric](/fabric/data-engineering/user-data-functions/user-data-functions-overview) to invoke functions on the underlying Fabric data sources.
 
@@ -33,11 +34,15 @@ Ready to get started? Choose from two end-to-end tutorials:
 
 * **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to write back project status updates to a database with full history tracking and post notifications to Microsoft Teams.
 
+* **In-report alerts pattern**: [Set up in-report Power BI alerts with translytical task flows](./translytical-task-flow-report-alerts.md) shows how to treat notifications as data and show targeted alerts inside reports.
+
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
 
 ## Data write-back
 
 Translytical task flows can enable data write-back so that end users can update, add, or delete data in Fabric databases from within Power BI reports. Using Fabric's user data functions, you can programmatically update, add, or delete records of data based on the filter context passed from the report. 
+
+The same pattern can also power in-report notification scenarios. Instead of changing an existing value, you can store alert records as data and show them in the report based on the current report context. For a full example, see [Set up in-report Power BI alerts with translytical task flows](./translytical-task-flow-report-alerts.md).
 
 For example, the following Power BI report lets you modify the discount value seen in the table without ever leaving the report. When you enter the new value in the input slicer and select **Submit discount**, a Fabric User data function automatically updates the data source records that match the applied filters. 
 
@@ -50,6 +55,8 @@ For data write-back scenarios, user data functions have native connection manage
 * Fabric lakehouses (for files)
 
 For most write-back scenarios, we recommend using SQL database as your underlying data source. SQL databases perform well with the heavy read/write operations required in reporting scenarios.
+
+For a detailed architecture example that uses SQL database as the source data engine for a translytical application, see [Use SQL database as the source data engine for translytical applications](/fabric/database/sql/use-case-translytical-applications).
 
 For working samples of user data functions, see [Translytical task flow examples](https://gist.github.com/Sujata994/c354ec8d0821e875e45c86f2bd1d5cc8).
 
@@ -80,5 +87,7 @@ The following service limitations can also affect your translytical task flows:
 * **Data write-back tutorial**: [Tutorial: Create a translytical task flow](./translytical-task-flow-tutorial.md) guides you through creating a SQL database, writing a user data function, and connecting the function to a Power BI report to enable data annotation scenarios.
 
 * **Status update tutorial**: [Tutorial: Create a status update workflow](./translytical-task-flow-tutorial-status-update.md) shows you how to write back project status updates to a database with full history tracking and post notifications to Microsoft Teams.
+
+* **In-report alerts pattern**: [Set up in-report Power BI alerts with translytical task flows](./translytical-task-flow-report-alerts.md) shows a notification-as-data pattern for targeted alerts inside reports.
 
 * If you already have a user data function that you want to connect to a Power BI report, see [Create a data function button in Power BI](./translytical-task-flow-button.md).
