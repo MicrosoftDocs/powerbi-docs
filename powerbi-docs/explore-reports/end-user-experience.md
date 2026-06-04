@@ -37,7 +37,7 @@ Use the navigation pane on the left to move around the Power BI service. Here's 
 | Browse | Lists of recent, favorite, and shared content. |
 | OneLake | Discover semantic models and reusable data. |
 | OneLake catalog | Search governed data assets across your organization. |
-| Create | Start a new report, semantic model, or other content. Use the Excel or CSV connectors via **Get data** to create refreshable semantic models. The legacy Excel/CSV import experience is being retired; see [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md) for details. |
+| Create | Build a new report based on existing data or add data to create a semantic model. For more information, see [Get data from files for Power BI](../connect-data/service-get-data-from-files.md). |
 | Apps | Access packaged report and dashboard collections. Learn more about [Apps](end-user-apps.md). |
 | Workspaces | Team content containers. Learn more about [Workspaces](../collaborate-share/end-user-workspaces.md). |
 | Metrics | Track organizational goals and KPIs. |
