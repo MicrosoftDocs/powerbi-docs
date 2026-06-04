@@ -253,7 +253,7 @@ In **Report view**, go to the **Optimize** ribbon, then select **Performance Ana
 
 ## DAX query view and live connect in Power BI Desktop
 
-Power BI Desktop lets you live connect to a published Power BI semantic model by selecting **Connect** when you select a semantic model in the OneLake data hub. The lower right-hand corner of Report view shows **Live connected to the Power BI semantic model**. Use DAX query view to write DAX queries when live connected.
+Power BI Desktop lets you live connect to a published Power BI semantic model by selecting **Connect** when you select a semantic model in the OneLake catalog. The lower right-hand corner of Report view shows **Live connected to the Power BI semantic model**. Use DAX query view to write DAX queries when live connected.
 
 ### Model measures
 

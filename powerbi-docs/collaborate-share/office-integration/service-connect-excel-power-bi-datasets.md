@@ -83,7 +83,7 @@ Review the following considerations and limitations:
 - After you select **From Power BI** in the Excel ribbon, the artifacts loaded in the pane aren't all the semantic models you have access to. They're a selection of your most used semantic models. Use the search bar in the pane to get more semantic models.
 - The **Insert Table** option is only available in Excel Desktop.
 - The order of Power BI semantic models in the pane might be different from their order in the Data hub in the Power BI service.
-- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it might take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLake data hub (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
+- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it might take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLake catalog (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
 - Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
 - The Power BI Semantic models Excel add-in is currently unavailable in Excel for the web in all Sovereign clouds.
 

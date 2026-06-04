@@ -29,9 +29,9 @@ This article explains how to use the manage permissions page to control access t
 
 To open the semantic model manage permissions page:
 
-- From the [OneLake data hub](service-data-hub.md#find-the-data-you-need) or from the workspace for the semantic model: Select **Manage permissions** from the **More options (…)** menu available next to the semantic model name in the list.
+- From the [OneLake catalog](service-data-hub.md#find-the-data-you-need) or from the workspace for the semantic model: Select **Manage permissions** from the **More options (…)** menu available next to the semantic model name in the list.
 
-    :::image type="content" source="media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png" alt-text="Screenshot of menu command to open the semantic model manage permissions page from the list of items in a workspace or the OneLake data hub.":::
+    :::image type="content" source="media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png" alt-text="Screenshot of menu command to open the semantic model manage permissions page from the list of items in a workspace or the OneLake catalog.":::
 
 - From the [semantic model details page](service-dataset-details-page.md#supported-actions): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
 
