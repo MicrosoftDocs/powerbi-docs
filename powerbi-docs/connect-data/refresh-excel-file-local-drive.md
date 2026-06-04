@@ -24,6 +24,9 @@ Uploading local Excel workbooks to Power BI workspaces and configuring refresh f
 
 If you publish your Excel data model as a Power BI semantic model, Refresh Now and Schedule Refresh is supported where Power Query or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model.
 
+> [!IMPORTANT]
+> Semantic models created using the legacy Excel import experience in the Power BI service stop refreshing after July 31, 2026, and stop loading after August 31, 2026. To check whether your semantic models are affected and learn how to migrate them, see [Migrate from the legacy Excel and CSV import experience](service-excel-workbook-files.md#migrate-from-the-legacy-excel-and-csv-import-experience).
+
 ### Power BI Gateway - Personal
 
 * All online data sources shown in Power Query.

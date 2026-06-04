@@ -3,7 +3,7 @@ title: Get data from files for Power BI
 description: Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
+ms.reviewer: saralam
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -44,10 +44,10 @@ Where you save your file makes a difference.
   > [!NOTE]
   > You can't upload files from personal OneDrive accounts, but you can upload files from your computer.
 
-- **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is much like saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+  > [!NOTE]
+  > You can't update semantic models imported from OneDrive for work or school from local files. For Power BI to update the semantic model, you must replace the file in OneDrive for work or school. Alternatively, you can delete the semantic model and its related items and then import again from a local file.
 
-> [!NOTE]
-> You can't update semantic models imported from OneDrive for work or school from local files. For Power BI to update the semantic model, you must replace the file in OneDrive for work or school. Alternatively, you can delete the semantic model and its related items and then import again from a local file.
+- **SharePoint team site**. Saving your Power BI Desktop files to a SharePoint team site is much like saving to OneDrive for work or school. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
 ## Related content
 
