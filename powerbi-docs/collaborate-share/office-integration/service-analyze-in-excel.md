@@ -107,9 +107,9 @@ While viewing a Power BI visual, you can further explore the visual data in Exce
     > [!NOTE]
     > The **ExportHeaders** worksheet in the Excel workbook contains details about the filters applied to the Power BI visual that the data was exported from.
 
-In addition, you can use the OneLake Data Hub's Table Preview to export an Excel workbook with a live connection.
+In addition, you can use the OneLake catalog's Table Preview to export an Excel workbook with a live connection.
 
-:::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake Data hub." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
+:::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake catalog." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
 
 ## Excel add-in
 
@@ -141,7 +141,7 @@ The Power BI add-in **Semantic models pane** opens in Excel and provides the fol
 
 - List of Power BI semantic models that you have at build or edit permission on.
 - Search for semantic models
-- Open OneLake Data Hub in Power BI service in a new browser window
+- Open OneLake catalog in Power BI service in a new browser window
 - Open semantic model in Power BI service in a new browser window
 - See metadata for semantic models like the workspace, owner, and the last refreshed date.
 - See the tables in the semantic model

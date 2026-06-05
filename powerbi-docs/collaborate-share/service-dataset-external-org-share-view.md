@@ -37,7 +37,7 @@ Once enabled on provider side, consumers can see the semantic models in the OneL
 > [!IMPORTANT]
 > If external sharing is ever disabled by the provider, reports built on top of the external semantic model will lose functionality within a few minutes and display an error message.
 
-1. In your tenant, go to the OneLake data hub in Power BI Desktop.
+1. In your tenant, go to the OneLake catalog in Power BI Desktop.
 1. Select **External data** to see a list of external semantic models that have been shared with you.
 1. Select the semantic model you wish to access or build a report with. Once you select the semantic model, it becomes a [*composite model*](../transform-model/desktop-composite-models.md). 
 1. Once you've accessed the semantic model, you can perform one of the following actions: 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/11/2026
+ms.date: 06/03/2026
 LocalizationGroup: Connect to data
 ms.custom: sfi-image-nochange
 ai-usage: ai-assisted
@@ -83,7 +83,7 @@ After you create the connection, you can use it in semantic models that connect 
 
 ### On-premises data gateway
 
-To connect to an on-premises Oracle database from the Power BI service, use the [on-premises data gateway](/data-integration/gateway/). Install 64-bit OCMT on the computer running the gateway since the gateway is a 64-bit app. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md).
+To connect to an on-premises Oracle database from the Power BI service, use the [on-premises data gateway](/data-integration/gateway/). Install 64-bit OCMT on the computer running the gateway since the gateway is a 64-bit app. For more information, go to [Manage your data source - Oracle](./service-gateway-onprem-manage-oracle.md). If you encounter DirectQuery or refresh failures through the gateway against an Oracle source, see [Oracle provider configuration for the gateway](./service-gateway-onprem-manage-oracle.md#oracle-provider-configuration-for-the-gateway).
 
 > [!NOTE]
 > If you're connecting to an on-premises Oracle database, ensure your machine has network access to the database server. This might require a VPN connection or firewall configuration. Contact your IT administrator for assistance.
