@@ -394,6 +394,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 - For [Power BI apps](../explore-reports/end-user-apps.md) you install, you can only create subscriptions for others if you're the owner of the app.
 - Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace. The workspace admin will have to install the app to view the subscriptions.
+- Email subscriptions for reports in org apps are available in preview. Subscriptions created from org apps have some differences compared to subscriptions created directly on reports. For details, see [Subscriptions for reports in org apps](../explore-reports/org-app-items.md#subscriptions-for-reports-in-org-apps-preview).
 
 ### Unsupported features
 
