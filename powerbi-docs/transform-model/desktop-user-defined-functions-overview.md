@@ -1,5 +1,5 @@
 ---
-title: "Using DAX user-defined functions (preview)"
+title: "Using DAX user-defined functions"
 description: Learn how to create Data Analysis Expressions (DAX) user-defined functions (UDFs).
 author: kgremban
 ms.author: kgremban
@@ -11,10 +11,7 @@ ms.date: 09/15/2025
 
 # DAX user-defined functions (preview)
 
-> [!NOTE]
-> DAX user-defined functions are currently in **preview**.
-
-Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions).
+Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported. DAX UDFs are generally available in Power BI Desktop and Power BI Service as of the June 2026 release. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions). 
 
 ## Why use user-defined functions?
 
