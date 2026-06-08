@@ -75,7 +75,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You can choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
 
     > [!TIP]
-    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the week day checkboxes. If you select **Monthly**, enter the days of the month you want to receive the subscription email.
+    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the weekday checkboxes. If you select **Monthly**, enter the days of the month you want to receive the subscription email.
 
    - If you choose **Hourly**, **Daily**, **Weekly**, or **Monthly**, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.
    - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific days of the month or select the **Last day of month** option. If you choose **Last day of month**, the report is delivered on that day.
