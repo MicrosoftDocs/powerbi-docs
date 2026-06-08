@@ -136,7 +136,7 @@ EVALUATE
 
 DAX UDFs support zero or more parameters. To make your functions safer and more predictable you can optionally specify parameter type hints:
 
-- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, or `AnyRef`).
+- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, `AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef`, or `TableRef`).
 - **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
 - **ParameterMode**: when the argument is evaluated (`val` for eager or `expr` for lazy).
 
