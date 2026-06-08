@@ -37,7 +37,10 @@ The general syntax for a UDF is:
 
 ```dax
 /// Optional description above the function
-FUNCTION <FunctionName> = ( <ParameterName>: <ParameterType>, ... ) => <FunctionBody>
+/// @param {ParameterType} ParameterName - ParameterDescription
+/// ...
+/// @returns Return description
+FUNCTION <FunctionName> = ( [<ParameterName> [: [<ParameterType>] [<ParameterSubtype>] [<ParameterPassingMode>]] [= <DefaultExpression>], ...] ) => <FunctionBody>
 ```
 
 ### Example: Simple tax function
