@@ -9,9 +9,11 @@ ms.topic: how-to
 ms.date: 09/15/2025
 ---
 
-# DAX user-defined functions (preview)
+# DAX user-defined functions
 
-Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported. DAX UDFs are generally available in Power BI Desktop and Power BI Service as of the June 2026 release. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions). 
+Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported.
+
+DAX UDFs are generally available in Power BI Desktop and the Power BI Service starting with the June 2026 release. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions). 
 
 ## Why use user-defined functions?
 
@@ -19,13 +21,6 @@ Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package re
 - **Maintainability**: Update logic in one place to fix or evolve rules.
 - **Safer authoring**: Optional type hints and type check helpers support predictable, error-resistant code.
 - **First-class model objects**: UDFs live in the model and can be viewed in Model Explorer.
-
-## Get started
-
-To try UDFs in Desktop:
-1. Go to **File > Options and settings > Options**.
-2. Select **Preview features** and check **DAX user-defined functions**.
-3. Select **OK** and **restart** Power BI Desktop.
 
 ## Define a function
 
