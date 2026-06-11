@@ -57,7 +57,7 @@ EVALUATE
 
 After a UDF is defined, you can update the model or use the code lens to add the function to your model.
 
-:::image type="complex" source="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function." lightbox="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png":::
+:::image type="content" source="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png" alt-text="Screenshot of DAX query view in Power BI Desktop, highlighting two locations where you can save a user-defined function. The first is the Update model with changes button at the top of the view. The second is a status line in the code editor labeled Update model: Add new function." lightbox="media/desktop-user-defined-functions-overview/dax-query-view-save-to-model.png":::
 
 The same example can be created in **TMDL view**.
 
