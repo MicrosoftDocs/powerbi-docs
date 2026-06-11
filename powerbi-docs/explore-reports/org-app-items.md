@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 05/06/2026
+ms.date: 06/01/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
@@ -377,9 +377,26 @@ In list views, org app items are labeled as "org app" while Power BI apps are la
 
 Org app consumers without permissions to edit the org app can view, favorite, and share the org app. If a consumer doesn't have share permissions, they can only share links with users who already have access.
 
-## Considerations and limitations
+## Subscriptions for reports in org apps (preview)
+
+Consumers can create email subscriptions for Power BI reports directly from within org apps. Subscriptions allow users to receive scheduled email updates with a snapshot and link to the report, similar to subscriptions created elsewhere in the Power BI service.
+
+However, subscriptions created from reports in org apps have some differences compared to subscriptions created directly on reports.
+
+### Considerations for subscriptions in org apps
+
+- Subscriptions created from reports in org apps are tied to the underlying report, not the org app itself.  
+- When managing or editing an existing subscription, users are taken to the report outside of the org app experience.  
+- Subscription emails link to the report directly, not to the report within the org app.  
+- Creating a subscription from an org app doesn't fully support capturing a personalized report state, such as applied filters or "Include my changes."  
+- Some subscription management actions aren't available directly within the org app experience and must be completed from the report or subscription management page.  
+- Subscriptions are currently supported only for Power BI reports. Other item types in org apps, such as paginated reports, aren't supported.  
+
+For more information about subscriptions, including scheduling and configuration options, see [Email subscriptions for reports](../collaborate-share/end-user-subscribe.md).
+
+## Considerations and limitations for org apps
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
 - Org apps don't support all report toolbar capabilities available in workspace apps, such as bookmarks and comments.
-- Email subscriptions for Power BI reports in org apps are available in preview. For more information, see [Email subscriptions for reports](../collaborate-share/end-user-subscribe.md).
+- Org apps support email subscriptions for Power BI reports (preview). However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps (preview)](#subscriptions-for-reports-in-org-apps-preview).
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
