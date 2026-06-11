@@ -39,7 +39,7 @@ Then, choose the total calculation to apply. These options are available:
 
 Custom totals are based on [visual calculations](../../transform-model/desktop-visual-calculations-overview.md). As soon as you select any of the above options, the following happens:
 
-- The original column's name gets a *_Base* suffix. So if your column is named *Number of Customers*, the column is now named *Number of Customers_Base*.
+- The original column's name gets a *_Base* suffix. So if your column is named *Sum of Units Sold*, the column is now named *Sum of Units Sold_Base*.
 - The original column is hidden.
 - A new visual calculation with the original column name is added. The visual calculation is equal to:
 
@@ -47,10 +47,10 @@ Custom totals are based on [visual calculations](../../transform-model/desktop-v
 EXPANDALL ( <aggregation> ( [Original column_Base] ), ROWS COLUMNS )
 ```
 
-For example, if you add a sum custom total for the Number of Customers column, the new visual calculation is:
+For example, if you add an average custom total for the Sum of Units Sold column, the new visual calculation is:
 
 ```dax
-Number of Customers = EXPANDALL ( SUM ( [Number of Customers_Base] ), ROWS COLUMNS )
+Sum of Units Sold = EXPANDALL ( AVERAGE ( [Sum of Units Sold_Base] ), ROWS COLUMNS )
 ```
 
 - An Excel-like indicator appears in the total cell for the column on which the custom total was set.

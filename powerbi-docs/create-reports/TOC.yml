@@ -437,8 +437,8 @@
     items:
     - name: Map visualizations overview
       href: ../visuals/power-bi-map-visualizations-overview.md
-    - name: Shape map visuals (preview)
-      href: ../visuals/desktop-shape-map.md
+    - name: Shape map visuals
+      href: ../visuals/power-bi-shape-map.md
     - name: Filled maps (choropleth maps)
       href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
     - name: ArcGIS maps
@@ -489,6 +489,8 @@
     items:
     - name: Slicers overview
       href: ../visuals/power-bi-visualization-slicers.md
+    - name: Slicer visual
+      href: ../visuals/power-bi-visualization-slicer-visual.md
     - name: Button slicer
       href: ../visuals/power-bi-visualization-button-slicer.md
     - name: List slicer (preview)

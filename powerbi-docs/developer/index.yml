@@ -132,13 +132,28 @@ conceptualContent:
         - url: mcp/remote-mcp-server-get-started.md
           itemType: get-started
           text: Get started with the remote MCP server
-        - url: mcp/remote-mcp-server-tools.md
-          itemType: concept
-          text: Remote Power BI MCP server tools
       # footerLink (optional)
       footerLink:
         url: mcp/index.yml
         text: See more
+    # Card
+    - title: Power BI agentic capabilities
+      links:
+        - url: agentic/power-bi-agentic-overview.md
+          itemType: overview
+          text: Overview of Power BI agentic capabilities
+        - url: agentic/semantic-model-authoring-skill-overview.md
+          itemType: overview
+          text: Semantic model authoring skill
+        - url: agentic/power-bi-report-authoring-skill-overview.md
+          itemType: overview
+          text: Power BI report authoring skill
+      # footerLink (optional)
+      footerLink:
+        url: agentic/index.yml
+        text: See more
+   # Card
+
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:

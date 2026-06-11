@@ -1,50 +1,58 @@
 ---
-title: Lead data-driven discussions in Microsoft Teams
-description: Learn how to easily share data with your team with the Power BI app in Teams channels, chats, and meetings.
+title: Share Power BI Reports in Microsoft Teams
+description: Learn how to share Power BI reports, scorecards, and dashboards in Microsoft Teams channels, chats, and meetings. Add Power BI tabs or paste rich link cards to collaborate with your team.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: pbi-explore
-ms.topic: overview
-ms.date: 06/30/2025
+ms.topic: how-to
+ms.date: 06/09/2026
 LocalizationGroup: Get started
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
+
+#customer intent: As a Power BI business user, I want to share Power BI data in Microsoft Teams channels, chats, and meetings so that my team can make data-driven decisions together.
 
 ---
 
-# Lead data-driven discussions in Microsoft Teams
+# Share Power BI data in Microsoft Teams channels, chats, and meetings
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE [consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Data helps everyone get on the same page before important decisions. Sharing data with your team is important and easy with Power BI in Microsoft Teams. You can share data in Teams in channels, in chats, and in meetings.
+You can share Power BI reports, scorecards, and dashboards in Microsoft Teams by adding a Power BI tab to a channel, chat, or meeting, or by pasting links that become rich preview cards.
 
-## Share in channels, chats, and meetings
+## Prerequisites
+
+- Access to Microsoft Teams
+- A Power BI report, scorecard, or dashboard to share
+- The [Power BI app for Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md) installed
+
+## Add a Power BI tab to a Teams channel, chat, or meeting
+
+Pin a Power BI report, scorecard, or dashboard as a tab so your team can access it directly from a channel, chat, or meeting.
 
 1. Open the channel, chat, or meeting where you’d like to share.
 1. Select the **+ Add a tab** button and add the Power BI tab.
-1. Pick the Power BI item you’d like to share.
+1. Pick the Power BI report, scorecard, or dashboard you'd like to share.
 1. Select **Save**.
 
-You can share in channels, meetings, and even in chats.
-
-## Give team members permission
+## Give team members permission to view Power BI content
 
 Make sure your team has permission to the report or scorecard by sharing it with them.
 
 1. Open the item in Power BI in Teams, or in the Power BI service, and select **File** > **Manage Permissions**.
 
-    If you don't see this option, you might not have permission to share the item. If you do not, don’t worry. The attendees can request access themselves when they try to view the report.
+    If you don't see this option, you might not have permission to share the item. Team members can request access when they try to view the report.
 
 1. Select **Direct access**.
 1. Select **Add user**.
-1. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
+1. Add the names of your colleagues. Choose the permissions to grant, decide whether to send an email notification, and select **Grant access**.
 
-## Chat about data with rich links and cards
+## Share Power BI content as rich links and cards in Teams
 
-When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making. For information on sharing and chatting about Power BI content in Teams, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/office-integration/service-share-report-teams.md#chat-about-power-bi-content-in-microsoft-teams).
+Share links to Power BI reports in a Teams conversation. Teams converts the link into a rich preview card that colleagues can select to open the report. For more information, see [Chat in Microsoft Teams directly from the Power BI service](../collaborate-share/office-integration/service-share-report-teams.md#chat-about-power-bi-content-in-microsoft-teams).
 
-### Send your colleagues links to reports
+### Send links to Power BI reports in a Teams conversation
 
 1. In the Teams channel or chat, start a new conversation.
 1. In the command bar for the editor, select **Messaging extensions (...)**.
@@ -53,19 +61,17 @@ When discussing data, it’s important that your colleagues can open the underly
 1. Pick a Power BI item.
 1. Select **Send**.
 
-    A rich card is added to the conversation, making it easy for anyone to open the item.
+    A rich card is added to the conversation so anyone can open the Power BI item.
 
-    It’s a great way to help without leaving the conversation, and saves everyone time.
+## Paste a Power BI link in Teams chat to create a rich card
 
-## Create rich cards to paste in chat
-
-If you use Power BI in a web browser, it’s easy to send a link to a colleague.
+Copy a report URL from the Power BI service and paste it into a Teams conversation to generate a rich preview card automatically.
 
 1. Open a report in the Power BI service in the browser, and copy the link.
 1. Start a conversation and paste the link.
    Teams automatically creates a rich card.
 1. Select **Send**.
-1. Your colleague sees a rich card with a link to open the report.
+1. The recipient sees a rich card with a link to open the report.
 
 ## Related content
 

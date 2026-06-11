@@ -491,7 +491,7 @@ See the Power BI Report Server blog post for January 2023 for details about thes
   - Pushing [Top N filter to DirectQuery sources](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395757)
 
 - [Unshared and unsynchronized axes](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395758) for small multiples charts
-- Slicer type [formatting moved to Format Pane](../visuals/power-bi-visualization-slicers.md#format-slicers).
+- Slicer type [formatting moved to Format Pane](../visuals/power-bi-visualization-slicer-visual.md#format-slicers).
 
 #### Modeling
 
@@ -1457,7 +1457,7 @@ You can access shared datasets from Power BI Desktop with an OData feed.
 
 ### Scale-out
 
-This release supports scale-out. Use a load-balancer and set server affinity for the best experience. The scenario is not yet optimized for scale-out, so you see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
+This release supports scale-out. Use a load-balancer and set server affinity for the best experience. The scenario is not yet optimized for scale-out, so you see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you not only see an overuse of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
 
 ### Administrator settings
 

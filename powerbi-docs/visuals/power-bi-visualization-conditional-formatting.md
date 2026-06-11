@@ -26,8 +26,8 @@ Conditional formatting is available for many Power BI visuals, though the specif
 
 | Visual type | Supported formatting options |
 |-------------|------------------------------|
-| **Tables** | Background color, font color, data bars, icons, web URLs |
-| **Matrices** | Background color, font color, data bars, icons, web URLs |
+| **Tables** | Background color, font color, data bars, icons, web URLs, column width |
+| **Matrices** | Background color, font color, data bars, icons, web URLs, column width |
 | **Column charts** | Column colors (gradient, rules, field value) |
 | **Bar charts** | Bar colors (gradient, rules, field value) |
 | **Stacked charts** | Bar/column colors |

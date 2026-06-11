@@ -26,51 +26,41 @@ landingContent:
 # Start card title with a verb
 
   # Card
-  - title: Get started
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "What are the Power BI MCP servers?"
-            url: mcp-servers-overview.md
-      - linkListType: get-started
-        links:
-          - text: "Get started with the remote Power BI MCP server"
-            url: remote-mcp-server-get-started.md
-          - text: "Get started with the Power BI Modeling MCP server"
-            url: https://github.com/microsoft/powerbi-modeling-mcp
-
-
-
-  # Card
   - title: Power BI MCP Server (local)
     linkLists:
       - linkListType: overview
         links:
-          - text: "Power BI Modeling MCP server"
+          - text: "Power BI MCP Server (local)"
             url: mcp-servers-overview.md#power-bi-mcp-server-local
-      - linkListType: reference
+      - linkListType: concept
         links:
-          - text: "Modeling MCP server GitHub repository"
-            url: https://github.com/microsoft/powerbi-modeling-mcp
+          - text: "Tool reference"
+            url: https://github.com/microsoft/powerbi-modeling-mcp#%EF%B8%8F-available-tools
+          - text: "Limitations and considerations"
+            url: https://github.com/microsoft/powerbi-modeling-mcp#considerations-and-limitations
+      - linkListType: how-to-guide
+        links:
+          - text: "Get started"
+            url: https://github.com/microsoft/powerbi-modeling-mcp#-get-started
 
   # Card
   - title: Power BI MCP Server (remote)
     linkLists:
       - linkListType: overview
         links:
-          - text: "Remote Power BI MCP server"
+          - text: "Power BI MCP Server (remote)"
             url: mcp-servers-overview.md#power-bi-mcp-server-remote
       - linkListType: concept
         links:
-          - text: "Remote Power BI MCP server tools"
-            url: remote-mcp-server-tools.md
-          - text: "Available tools and endpoints"
-            url: remote-mcp-server-tools.md#available-tools
+          - text: "Tool reference"
+            url: remote-mcp-server-get-started.md#available-tools
           - text: "Limitations and considerations"
-            url: remote-mcp-server-tools.md#limitations-and-considerations
+            url: remote-mcp-server-get-started.md#limitations-and-considerations
+          - text: "Register with External Clients"
+            url: remote-mcp-server-external-clients.md
       - linkListType: how-to-guide
         links:
-          - text: "Set up in Visual Studio Code"
+          - text: "Get started"
             url: remote-mcp-server-get-started.md#set-up-in-vs-code
 
   # Card

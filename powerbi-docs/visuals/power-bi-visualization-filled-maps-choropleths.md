@@ -243,5 +243,5 @@ For more information about map visualizations in Power BI, see [Tips and tricks 
 
 ## Related content
 
-- Create a [shape map visualization in Power BI](desktop-shape-map.md).
+- Create a [shape map visualization in Power BI](power-bi-shape-map.md).
 - Review the [visualizations overview in Power BI](power-bi-visualizations-overview.md).

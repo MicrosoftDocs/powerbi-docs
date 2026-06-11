@@ -59,7 +59,7 @@ To keep your metrics top of mind for your team, add your scorecards as tabs to y
 
     :::image type="content" source="media/business-user-teams-goals/teams-power-bi-scorecard-tab.png" alt-text="Screenshot of a Power BI scorecard as a tab in a Teams channel.":::
 
-1. You might need to share it with colleagues. See [Give team members permission](business-user-teams-share-data.md#give-team-members-permission) in the "Lead data-driven discussions in Microsoft Teams" article for how to share with your colleagues.
+1. You might need to share it with colleagues. See [Give team members permission to view Power BI content](business-user-teams-share-data.md#give-team-members-permission-to-view-power-bi-content) for how to share with your colleagues.
 
 ## Make tracking metrics part of your team rhythm
 

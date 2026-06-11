@@ -64,9 +64,9 @@ Select the **Format** ribbon button or use SHIFT+ALT+F to format the current que
 
 :::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format button." lightbox="media/dax-query-view/dax-query-view-format-query.png" :::
 
-#### Comment and Uncomment
+#### Comment and uncomment
 
-Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This action comments out the lines. When the DAX query is run, those lines are ignored.
+Select the **Comment** ribbon button to add a double forward slash (**//**) to the beginning of the line where the cursor is or all the selected lines. This action comments out the lines. When the DAX query is run, those lines are ignored.
 
 Select the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
 
@@ -74,7 +74,7 @@ You can also use CTRL+/ to toggle between comment and uncomment.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-comment.png" alt-text="Screenshot of the Comment and Uncomment buttons in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-comment.png":::
 
-#### Find and Replace
+#### Find and replace
 
 Select the **Find** ribbon button or use CTRL+F to search for text in the DAX query editor. Find includes options to match case, match whole word, use a regular expression, and cycle through all matches for the current query. You can also select the chevron to the left of the **Find** box to enter Replace.
 
@@ -114,13 +114,13 @@ DAX query view includes a query editor where you can write and edit queries. It'
 
 DAX query editor has the following elements:
 
-#### Suggestions and Intellisense
+#### Suggestions and IntelliSense
 
-Type in your query and get help with suggestions and Intellisense while editing.
+Type in your query and get help with suggestions and IntelliSense while editing.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="Screenshot of the DAX query editor intellisense." lightbox="media/dax-query-view/dax-query-view-intellisense.png":::
 
-Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Selecting ESC closes any of the overlays.
+Use ENTER or TAB to add the highlighted IntelliSense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the IntelliSense option. Selecting ESC closes any of the overlays.
 
 #### Hover to see measure formulas
 
@@ -162,6 +162,14 @@ When a query is run, the results are shown in the **Results** grid.
 :::image type="content" source="media/dax-query-view/dax-query-view-results-grid.png" alt-text="Screenshot of the results grid." lightbox="media/dax-query-view/dax-query-view-results-grid.png":::
 
 If there's more than one EVALUATE statement in the query editor, then multiple results can be returned. You can use the **Result** dropdown to switch between them. The **Copy** button copies the entire grid as a tab delimited table with headers. Resize the grid by dragging the upper right hand corner arrows or the border between the result grid and the query editor.
+
+#### Sort and filter results
+
+The **Results** grid includes options to sort and filter the returned results. Use the column headers to sort the results, and apply filters to narrow down the rows shown. These options are helpful for validating that the results returned match what you expect from the DAX query, without writing and running additional queries.
+
+Sorting and filtering apply only to the results that were already returned, which might be truncated. If the results are truncated, sorting or filtering in the grid doesn't reflect the full result set. To validate a truncated result, add the equivalent ORDER BY and filter logic to the DAX query itself, and then rerun the query.
+
+#### Errors in the results grid
 
 If the query results in an error, the results grid shows it.
 
