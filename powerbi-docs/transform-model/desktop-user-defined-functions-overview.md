@@ -177,8 +177,11 @@ EVALUATE
 Validate parameter types inside your function using built-in DAX type-checking functions such as:
 - [ISNUMERIC](/dax/isnumeric-function-dax)
 - [ISDOUBLE](/dax/isdouble-function-dax)
+- [ISINT64](/dax/isint64-function-dax)
+- [ISDECIMAL](/dax/isdecimal-function-dax)
 - [ISSTRING](/dax/isstring-function-dax)
 - [ISBOOLEAN](/dax/isboolean-function-dax)
+- [ISDATETIME](/dax/isdatetime-function-dax)
 
 For a complete list of available type-checking functions, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions).
 
