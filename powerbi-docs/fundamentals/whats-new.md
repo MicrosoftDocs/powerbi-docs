@@ -1,6 +1,6 @@
 ---
-title: See What's New in the May 2026 Power BI Update
-description: "Discover the May 2026 Power BI update: Copilot summary shortcuts, visual calculations and custom totals GA, new Get Data experience in Power BI Desktop preview, and more. Learn what's new and get started today."
+title: See What's New in the June 2026 Power BI Update (version 2.155.756.0)
+description: "Discover the June 2026 Power BI update. See the latest feature highlights across Power BI and links to detailed documentation."
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: ''
@@ -8,58 +8,82 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: intro-whats-new
 ms.topic: concept-article
-ms.date: 5/20/2026
+ms.date: 6/9/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ai-usage: ai-assisted
 ---
-# What's new in Power BI? May 2026 update
+# What's new in Power BI? June 2026 update
 
-The May 2026 Power BI update brings visual calculations and custom totals to general availability, adds Copilot summary shortcuts on the report ribbon and visual header, introduces a new Get Data experience in Power BI Desktop preview, and ships multiple reporting features including set as landing page, subscriptions support for reports in org apps, and column fixed width for table and matrix.
+The June 2026 Power BI update is planned for publication on June 9, 2026.
 
-For a quick summary of the May features, read on. For a detailed look at these updates and more enhancements, see the [Power BI May 2026 Feature Summary](https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/bg-p/fbc_pbiupdatesblog).
+For a quick summary of June features, read on. For a detailed look at these updates and more enhancements, see the [Power BI June 2026 Feature Summary](https://aka.ms/powerbijune2026update). You can also [watch the June demos](https://youtu.be/pGmUMRa6xL4).
 
-> **Download** the [May 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [June 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 To stay up to date on **bug fixes and improvements** as they're announced, visit the [change log for Power BI Desktop](desktop-change-log.md).
+
+## General
+
+| Feature | Description | Currently in preview |
+|---------|-------------|:------:|
+| Power BI Dataviz World Championships announcement | The Dataviz World Championships return with kickoff events in June and a live finale at FabCon / SQLCon Barcelona. |        |
+| FabCon Europe registration update | FabCon Europe takes place in Barcelona from September 28 to October 1, with community and Microsoft sessions across Fabric, Power BI, and related workloads. |        |
 
 ## Copilot and AI
 
 | Feature | Description | Currently in preview |
-|---------|-------------|:--------:|
-| Explore improvements | Explore now supports perspectives for large data models—[create a perspective](../create-reports/power-bi-personalize-visuals.md#use-perspectives-for-a-more-focused-view) and set it in **File** > **Settings** > **Report settings** (service) or **File** > **Options and settings** > **Options** > **Current File** > **Report settings** (Desktop) to give consumers a focused list of fields. Matrix auto-expand now adjusts which fields are expanded when you add or reorder fields, so new fields are visible. Users can show or hide totals on table and matrix visuals from the Explore toolbar. Formatting applied to a matrix during report authoring now carries over when users launch an exploration from it. |          |
-| Copilot summary shortcuts | A **Summarize** button on the report ribbon generates a report-wide summary in the Copilot pane, surfacing key trends, highlights, and changes across pages and visuals. A Copilot summary option on the visual header produces a visual-level summary, calling out trend shifts, category differences, and key drivers. For more information, see [Summarize a report with Copilot](../explore-reports/copilot-pane-summarize-content.md). |          |
-| Copilot narrative visual: embedding in customer applications (Preview) | The Copilot narrative visual now supports the app-owns-data embed scenario. Embed the narrative visual in customer applications where report consumers don't need to sign in. For more information, see [Create a narrative visual with Copilot for Power BI](../create-reports/copilot-create-narrative.md). | ✔️ |
+|---------|-------------|:------:|
+| Fabric Apps for Semantic Models (Preview) | Fabric Apps add an AI-first app development path on top of semantic models so teams can build operational data apps while reusing model governance and business logic. For more information, see [Power BI data in Fabric Apps (preview)](../create-reports/fabric-apps-analytics.md). | ✔️ |
+| Copilot in web modeling (Preview) | Copilot in model view helps analyze model structure and apply schema changes such as renames, relationships, and DAX measure creation by using natural language prompts. For more information, see [Copilot in web modeling (preview)](../transform-model/copilot-web-modeling.md). | ✔️ |
+| AI-powered report authoring agent skills (Preview) | Power BI report authoring skills in Skills for Fabric support plan, design, author, validate, and publish workflows through natural language prompts. | ✔️ |
+| Data answering in Fabric Skills, Cowork, and M365 Chat (Frontier) | Fabric IQ expands conversational data answering for Power BI reports and semantic models across Fabric and Microsoft 365 Copilot surfaces. For more information, see [Fabric IQ in Microsoft 365 Copilot Cowork (Frontier)](/fabric/iq/connectors/cowork-overview). |        |
+| Data answering in Microsoft 365 Copilot Chat (Frontier) | Fabric IQ in Microsoft 365 Copilot Chat enables Frontier users to ask business questions grounded in governed Power BI data. For more information, see [Fabric IQ in Microsoft 365 Copilot Chat (Frontier)](/fabric/iq/connectors/m365-copilot-overview). |        |
 
 ## Reporting
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Visual calculations and custom totals (Generally Available) | Visual calculations let you add running sums, moving averages, percent of parent, and other calculations directly to a visual without adding DAX measures to your semantic model. Calculations operate on aggregated data within the visual and are aware of row position. Select a visual and choose **New visual calculation** from the ribbon or context menu. For more information, see [Using visual calculations](../transform-model/desktop-visual-calculations-overview.md). |        |
-| Custom totals: None and Average (Generally Available) | Custom totals now include **None** and **Average** options in addition to Sum, Min, Max, Count, and Count Distinct. Right-click a numerical column in a table or matrix and select **Customize total calculation** to choose the aggregation for the total row. For more information, see [Custom totals](../visuals/power-bi-visualization-tables.md#custom-totals). |        |
-| Set as landing page (Generally Available) | Designate any page as the landing page so report viewers always start on the right page. Right-click a page tab and select **Set as landing page**, or use the page formatting pane. For more information, see [Set a landing page](../create-reports/power-bi-set-landing-page.md). |        |
-| Default format string locale for dates and numbers (Generally Available) | Set a format string locale in report settings so all locale-aware format strings use your specified locale instead of the viewer's browser language. Note: this affects how values display in visuals only—`USERCULTURE()` and metadata translations still use the viewer's browser locale. For more information, see [Default format string locale](../create-reports/power-bi-default-format-string-locale.md). |        |
-| Translytical task flows: optional parameters and default values (Generally Available) | Reports pre-populate input fields with default values from user data functions, and users can submit task flows without specifying every parameter value. For more information, see [Understand translytical task flows](../create-reports/translytical-task-flow-overview.md). |        |
-| Input slicer numeric column support (Generally Available) | The input slicer now supports numeric fields and a numeric input mask. Use operator syntax to filter values with expressions like ranges (`1-2`), greater than (`>2`), less than (`<2`), not equal (`<>2`), or wildcards (`2*`). Without a data column, limit the slicer to numeric entry for translytical task flows. Invalid input now shows clear feedback. For more information, see [Create and use an input slicer](../visuals/power-bi-visualization-input-slicer.md). |        |
-| Matrix auto-expand for embedded visuals and Explore (Generally Available) | Set a property so fields added to a matrix visual automatically expand in embedded scenarios, displaying expanded hierarchies without requiring user interaction. Explore also auto-expands as fields are added to the matrix. For more information, see [Power BI embedded analytics playground](../developer/embedded/power-bi-playground.md). |        |
-| Text box list formatting improvements (Generally Available) | Lists in text boxes now preserve formatting correctly, indentation renders as expected, and you can paste bulleted lists directly from Word. For more information, see [Add text boxes, shapes, and smart narratives to Power BI reports](../create-reports/power-bi-reports-add-text-and-shapes.md). |        |
-| Azure Maps formatting pane (Generally Available) | The Azure Maps visual has an updated formatting pane aligned with the modern formatting experience in Power BI, with map settings, layer options, and style controls in a consistent layout. For more information, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started). |        |
-| Modern visual defaults improvements (Preview) | The theme dropdown has an updated look. The **Remove custom theme** tile is renamed **Reset to default** for clarity. Fixes include: the slicer now defaults to dropdown mode without issues, and the first page correctly uses the new canvas size. For more information, see [Visual defaults in Power BI reports](../create-reports/power-bi-reports-visual-defaults.md). | ✔️ |
-| Column fixed and default width for table and matrix (Generally Available) | Specify exact pixel widths for columns in table and matrix visuals in the formatting pane, or set a default width for all columns. **Auto-size** behavior now includes a **Fixed width** option in addition to fit to content and grow to fit. Widths can be set differently for desktop and mobile views. For more information, see [Table and matrix visual overview](../visuals/power-bi-visualizations-overview.md#tables-and-matrices). |        |
-| Subscriptions support for Power BI reports in org apps (Preview) | Create and manage email subscriptions for Power BI reports directly within org apps. Consumers viewing reports in an org app can stay informed with scheduled email snapshots and links back to the report, just as they would when accessing reports elsewhere in the Power BI service. For more information, see [Email subscriptions for reports in org apps](../explore-reports/org-app-items.md). | ✔️ |
+| Shape map (Generally Available) | Shape map now supports built-in maps, custom TopoJSON/GeoJSON uploads, URL-based map references, and downloading uploaded custom maps for reuse. For more information, see [Create shape map visuals in Power BI](../visuals/desktop-shape-map.md). |        |
+| Date picker for slicers (Preview) | A new Date picker slicer option supports relative defaults that roll forward with refresh and lets report viewers switch between relative and manual date selections. For more information, see [Visualizations overview in Power BI](../visuals/power-bi-visualizations-overview.md). | ✔️ |
+| Matrix row and column header auto-expand (Generally Available) | Matrix visuals now let you set auto-expand behavior for row and column headers so newly added hierarchy levels open expanded by default. For more information, see [Format settings for the matrix visual in Power BI](../visuals/power-bi-visualization-matrix-visual-format-settings.md). |        |
+| Scatter charts: Auto-fit markers | Scatter charts add Auto-fit markers to keep bubbles and markers fully visible near plot boundaries without manual axis range tuning. For more information, see [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md). |        |
+| Axis improvements for bar and column charts (Generally Available) | Bar and column charts add Rounded range control and keep axis ranges stable when data labels are enabled. For more information, see [Create and use column charts in Power BI](../visuals/power-bi-visualization-column-charts.md). |        |
+| Card visual image hover state options (Generally Available) | Card visuals now support hover-state image formatting, including alternate image source, transparency, effects, and background styling. For more information, see [Create a card visual in Power BI](../visuals/power-bi-visualization-card.md). |        |
+| Slicer selection icon color formatting (Generally Available) | Slicers now let you set selection icon colors to improve contrast and readability, especially for dark themes and custom branding. For more information, see [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md). |        |
+| Matrix and table fixed-width conditional formatting (Generally Available) | Matrix and table visuals support rule-based fixed width formatting so column widths can be controlled more consistently by scenario. For more information, see [Tables in Power BI](../visuals/power-bi-visualization-tables.md). |        |
+| Azure Maps selections on by default (Generally Available) | Azure Maps now shows selection controls by default so users can start multi-point selection with circles, rectangles, polygons, distance, and drive-time tools. For more information, see [Azure and Power BI map visualizations](../visuals/power-bi-map-visualizations-overview.md). |        |
+| Tooltip sentence options for visuals (Generally Available) | Tooltip options now include sentence-style text so authors can explain values with context without creating full tooltip pages. For more information, see [Tooltips in Power BI](../visuals/power-bi-visualization-tooltips-overview.md). |        |
 
 ## Modeling
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| Faster access to web modeling for semantic model authors | Users with edit permissions on semantic models are now taken directly to the web modeling experience instead of the model details page. Most actions from the model details page are now integrated into model view. For more information, see [Edit semantic models in the Power BI service](../transform-model/service-edit-data-models.md). |        |
+| DAX user-defined functions (Generally Available) | DAX UDFs are now generally available with reusable typed function signatures and broader authoring workflows across Desktop and web modeling. For more information, see [DAX user-defined functions best practices](/dax/best-practices/dax-user-defined-functions). |        |
+| DAX UDF optional parameters | UDFs now support default expressions for parameters so callers can omit selected arguments while preserving type-aware execution. For more information, see [DAX user-defined functions best practices](/dax/best-practices/dax-user-defined-functions). |        |
+| DAX query view result grid sorting and filtering (Generally Available) | DAX query view result grids now include sort and filter controls to inspect query output without rewriting query text. For more information, see [DAX query view in Power BI](../transform-model/dax-query-view.md). |        |
+
+## Visualizations
+
+| Feature | Description | Currently in preview |
+|---------|-------------|:------:|
+| Network Graph by Powerviz | Network Graph updates include directional links, clustering, duplicate-node merge options, and expanded formatting controls for relationship analysis scenarios. |        |
+| accoMASTERDATA v1.1.16.2 | accoMASTERDATA updates add richer writeback, governance, and data-entry options including transaction keys, multiline text, and enhanced dropdown behavior. |        |
 
 ## Data connectivity
 
 | Feature | Description | Currently in preview |
 |---------|-------------|:------:|
-| New Get Data experience in Power BI Desktop (Preview) | A redesigned Power Query Get Data experience provides a unified place to discover and connect to data sources. Key highlights include improved data source discovery, a streamlined connection flow, and built-in accessibility features such as keyboard navigation and dark mode. Brings greater consistency to Power Query across Microsoft Fabric, Power BI Desktop, and Microsoft Excel. For more information, see [New Get Data experience](https://aka.ms/NewGetDataMsLearn). | ✔️ |
+| No dedicated data connectivity announcement in this release summary | The June draft doesn't call out a dedicated Data connectivity feature area. |        |
+
+## Other
+
+| Feature | Description | Currently in preview |
+|---------|-------------|:------:|
+| Power BI Enhanced Report Format (PBIR) default-on rollout update | The PBIR default-on rollout resumes in the service, with Desktop default-on timing planned after rollout stability checks. For more information, see [PBIR format](../developer/projects/projects-report.md?tabs=v2%2Cdesktop#pbir-format). |        |
+| Power BI Desktop Bridge (Preview) | Desktop Bridge enables agent and tool integration with a running Power BI Desktop session for iterative authoring and validation workflows. For more information, see [Power BI Desktop Bridge overview](../developer/agentic/power-bi-desktop-bridge-overview.md). | ✔️ |
+| Power BI tabs in Teams private and shared channels | Power BI tabs in Teams now support private and shared channels so reports can be embedded in scoped collaboration spaces. For more information, see [Collaborate in Microsoft Teams with Power BI](../collaborate-share/office-integration/service-embed-report-microsoft-teams.md). |        |
 
 ## Resources
 
@@ -80,7 +104,7 @@ If your organization needs an earlier version, download it. Use the most recent 
 - If you load a report from a newer release, get a warning, and then save it in a previous version, you lose information related to new features.
 - Only English versions of Power BI Desktop are archived.
 
-> **Download** the [May 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
+> **Download** the [June 2026 version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ## Past updates
 

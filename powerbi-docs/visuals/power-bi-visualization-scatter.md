@@ -141,6 +141,16 @@ When you have a value in the **Size** field well, you can adjust how bubble size
    - **Magnitude**: Converts negative values to positive with the same magnitude. Bubbles scale from zero to the maximum magnitude.
    - **Data Range**: Bubble sizes vary based on the actual data range. The smallest value shows the smallest bubble, the largest value shows the largest bubble.
 
+### Auto-fit markers
+
+Scatter charts include an **Auto-fit markers** option that automatically adjusts the plot area so markers and bubbles near the edges and corners remain fully visible. When enabled, you no longer need to manually adjust axis min/max ranges to prevent clipping.
+
+To enable auto-fit markers:
+
+1. Select the paintbrush icon to open the **Format** pane.
+1. Select **Visual** > **Markers** > **Shape**.
+1. Turn on the **Auto-fit markers** toggle.
+
 ### Change the number of data points
 
 1. In the **Format** pane, select **General**.

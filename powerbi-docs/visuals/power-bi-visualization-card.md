@@ -87,6 +87,18 @@ To add images to your card visual:
 
 For all image types, you can add by uploading from your local device, pasting an image URL, or selecting an image from a data column. You can also customize the fit of the image and choose different image effects to enhance its appearance.
 
+### Image states
+
+The **Image** section includes a **States** dropdown that lets you define separate image settings for the default and hover states. Use the hover state to change how an image appears when a user points to a card—for example, by swapping the image source, adjusting the image fit, or changing the background color.
+
+1. With the card visual selected, select the **Format visual** icon in the **Visualizations** pane.
+1. Under the **Visual** tab, expand the **Image** section.
+1. In the **Apply settings to** area, select the card you want to format in the **Cards** dropdown.
+1. Set **States** to **Hover**.
+1. Configure the image source, image fit, transparency, effects, and background color to apply when a user points to the card.
+
+Settings you configure for the **Hover** state apply only when a user points to the card. The **Default** state controls the image's normal appearance.
+
 > [!NOTE]
 > If you add a category to your card visual and all cards display the same image instead of different images, check the **Apply settings to** dropdown. When this setting is **All**, the visual applies the same image to every card. Select the specific callout value to assign different images per card, such as images from a data column.
 

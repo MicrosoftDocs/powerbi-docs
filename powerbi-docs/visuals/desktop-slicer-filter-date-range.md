@@ -16,9 +16,30 @@ ai-usage: ai-assisted
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the **relative date slicer** or **relative date filter**, you can apply time-based selections to the slicer or filter using a date column from your data model. For example, you can use the **relative date slicer** to show only sales data from within the last 30 days or last calendar month. When you view the report, the relative date period is applied and the specified range filters the other visuals on the page.
+With the **relative date slicer**, **relative date filter**, or **date picker** slicer setting, you can apply time-based selections using a date column. For example, you can show only sales data from within the last 30 days or last calendar month. When you view the report, the relative date period is applied and the specified range filters the other visuals on the page. The **Date picker** slicer setting (preview) extends this capability by adding a calendar and slider for manual date selection and offering anchor options based on today, the first date, or the last date in your data.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png" alt-text="Screenshot showing a sales report and a relative date slicer with the date slicer called out." lightbox="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png":::
+
+## Use the Date picker slicer setting (preview)
+
+The **Date picker** slicer setting provides relative date selections similar to the **Relative date** setting, plus a calendar and slider for selecting specific dates or date ranges. Use **Date picker** when you want both relative options and the ability for report viewers to pick a manual date or date range.
+
+Date picker offers three anchor options for the relative selection:
+
+- **Today**: The relative range is calculated from the current date when the report is viewed. This anchor uses the same behavior as the **Relative date** setting.
+- **Last date**: The relative range is calculated from the most recent date in the date column. Useful when your data isn't current or you want the slicer to follow the latest data.
+- **First date**: The relative range is calculated from the earliest date in the date column.
+
+When you set a relative selection like "last full month," the slicer keeps the date range up to date as the anchor date changes. Report viewers can change the relative options when interacting with the report, or select any manual date range or single date using the calendar or slider.
+
+:::image type="content" source="media/power-bi-visualization-slicer-visual/date-picker.png" alt-text="Screenshot of a Date picker slicer showing relative date options and a calendar for manual date selection.":::
+
+To change the slicer setting to **Date picker**, select the slicer, then in the **Format** pane, expand **Visual** > **Slicer settings** > **Options** and select **Date picker** from the **Style** dropdown.
+
+> [!NOTE]
+> Date picker is a preview feature. To enable it, go to **File** > **Options and settings** > **Options** > **Preview features** and select **Date picker slicer**.
+>
+> During preview, you can only create date picker slicers in Power BI Desktop. After you publish a report with a date picker slicer, you can use and edit it in the Power BI service.
 
 ## Create the relative date range slicer
 
@@ -46,7 +67,7 @@ In the screenshot, **Last** is selected.
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png" alt-text="Screenshot of the Relative config options with the first setting called out.":::
 
 
-In the second (middle) setting in the relative date slicer, you enter a number to define the relative date range. This is only available for **Last** or **Next**, and disabled for **This** from the first setting. 
+In the second (middle) setting in the relative date slicer, you enter a number to define the relative date range. This option is only available for **Last** or **Next**, and disabled for **This** from the first setting. 
 
 In the screenshot, **2** is selected. 
 
@@ -93,6 +114,31 @@ After you select **Relative date**, you see three sections to change under **Sho
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png" alt-text="Screenshot showing the Filters on this page section of the Filters pane, with the 'Show items when the value' options called out.":::
 
+## Use DAX measures to surface the latest value and its date
+
+If you want to display the most recent value in your data along with the date it corresponds to, you can use DAX measures instead of or alongside a slicer. This approach is useful for card visuals or summary tiles that always show the latest data point.
+
+Use the [LASTNONBLANKVALUE](/dax/lastnonblankvalue-function-dax) function to return the value for the last date that has data, and the [LASTNONBLANK](/dax/lastnonblank-function-dax) function to return that date.
+
+Create two measures:
+
+- **Latest value** returns the value for the most recent date that isn't blank:
+
+    ```dax
+    Latest Value = LASTNONBLANKVALUE('Sales'[Date], SUM('Sales'[Amount]))
+    ```
+
+- **Latest date** returns the date that corresponds to that value:
+
+    ```dax
+    Latest Date = LASTNONBLANK('Sales'[Date], SUM('Sales'[Amount]))
+    ```
+
+Replace `'Sales'`, `[Date]`, and `[Amount]` with the table and column names from your model. To give report viewers immediate context about the most recent data point, add the measures to a card visual or display them next to a slicer.
+
+> [!NOTE]
+> These measures respect filter context. When you add them to a visual with a date axis, each row reflects that specific date's value. When you group by a higher level such as month or year, the measures return the latest non-blank value within that grouping. 
+
 ## Considerations and limitations
 
 The following considerations and limitations apply before showing the relative options in the slicer or filter pane.
@@ -104,6 +150,7 @@ The following considerations and limitations apply before showing the relative o
 
 ## Related content
 
-- [Create a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
+- [Slicer visual in Power BI](power-bi-visualization-slicer-visual.md)
 - [Slicers in Power BI](power-bi-visualization-slicers.md)
+- [Create a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Auto date/time in Power BI](../transform-model/desktop-auto-date-time.md)

@@ -44,7 +44,7 @@ When **Auto-size behavior** is set to **Fixed width**, set a **Default width** i
 Turn on **Custom widths** to see and customize the width of any column directly from the **Format** pane:
 
 - If the visual has fewer than 15 columns, each column appears with its own width input.
-- If the visual has 15 or more columns, an **Apply settings to** dropdown appears. Select a column from the dropdown to set its width. Columns that already have a custom width are marked with an asterisk (*).
+- If the visual has 15 or more columns, an **Apply settings to** dropdown appears. To set a column's width, select it from the dropdown. Columns that already have a custom width are marked with an asterisk (*).
 
 Width inputs that show *(auto)* indicate the column is using the auto-size behavior rather than a custom width.
 
@@ -55,8 +55,18 @@ To clear customizations:
 
 ### Matrix hierarchies (More granular)
 
-For a matrix with hierarchies on columns, **Custom widths** by default sets a uniform width for the lowest level of the hierarchy. To set widths for each combination individually, turn on **More granular**. Each leaf-level combination then appears in the **Apply settings to** dropdown so you can size them independently.
+For a matrix with hierarchies on columns, **Custom widths** by default sets a uniform width for the lowest level of the hierarchy. To set widths for each combination individually, turn on **More granular**. Each leaf-level combination then appears with its own width input so you can size them independently. When there are too many combinations to show individually, they appear in the **Apply settings to** dropdown instead. Combinations that have a custom width are marked with an asterisk (*) in the dropdown, so you can quickly see which ones have a custom width applied and which don't.
+
+### Conditional formatting for column widths
+
+You can apply conditional formatting to both the **Default width** and **Custom widths** values to size columns based on a measure or field value. Select the *fx* button next to a width input to open the conditional formatting dialog, then base the width on a rule, field value, or measure.
+
+> [!NOTE]
+> A measure can drive column width in a matrix that breaks down values by a category, such as segment or month. In this case, conditional formatting on a less granular column uses only the measure's total for the whole matrix, not each column's value. If you apply conditional formatting to a more granular width—one category explicitly—it uses that category's total instead of the grand total.
 
 ### Mobile view
 
-The **Column width** settings in the **Format** pane can be modified independently for the mobile-optimized layout of a report page. This lets you tune column widths so tables and matrices fit well on small screens without changing the desktop layout. For more information, see [Optimize Power BI reports for the mobile app](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md).
+The **Column width** settings in the **Format** pane can be modified independently for the mobile-optimized layout of a report page. This independent setting lets you tune column widths so tables and matrices fit well on small screens without changing the desktop layout. For more information, see [Optimize Power BI reports for the mobile app](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md).
+
+> [!NOTE]
+> To remove a column entirely from the mobile layout, set its width to 0 in the mobile view. This change doesn't affect the column in the desktop layout.

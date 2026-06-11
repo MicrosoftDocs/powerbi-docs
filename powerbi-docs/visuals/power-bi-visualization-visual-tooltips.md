@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 06/07/2026
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 ---
@@ -51,17 +51,86 @@ Apply aggregation functions to the fields in the **Tooltip** field well to show 
 
 You can also use [quick measures](../transform-model/desktop-quick-measures.md) to create common calculations to add to your tooltip.
 
+## Show only the fields you add
+
+By default, a tooltip shows every field used in the visual plus any fields you add to the **Tooltip** field well. To show only the fields you explicitly add to the **Tooltip** field well, turn on **Tooltip fields only**.
+
+1. Select the visual, and then select the **Format visual** icon in the **Visualizations** pane.
+1. Select the **General** tab and expand **Tooltips**.
+1. Expand **Options** and turn on **Tooltip fields only**.
+
+With **Tooltip fields only** off (the default), the tooltip shows the visual's fields and the tooltip fields together. With it on, the tooltip shows only the fields in the **Tooltip** field well.
+
+## Use sentence format
+
+Sentence format lets you structure tooltip values as a sentence about the data point, instead of a list of field names and values. You write a template that combines plain text with field references, and Power BI replaces each reference with the value for the hovered data point.
+
+To set up sentence format:
+
+1. Select the visual, and then select the **Format visual** icon in the **Visualizations** pane.
+1. Select the **General** tab and expand **Tooltips**.
+1. Expand **Options** and turn on **Sentence format only**.
+1. In the **Sentence template** box, enter the text and field references for your sentence.
+1. Optionally, turn on **Bold values** to emphasize the field values in the rendered sentence.
+
+### Reference fields in a template
+
+Reference any field that's available to the tooltip by wrapping its visual name in curly braces, such as `{Sales}`. Power BI replaces the reference with the value for the data point the consumer hovers over. If you reference a name that isn't available, Power BI renders the text exactly as typed, without substitution.
+
+For example, this template:
+
+```
+{Segment} sales changed by {Sales YoY} ({Sales YoY %}) from same period last year with a total of {Sales} across all years.
+```
+
+renders as a sentence like:
+
+```
+Small Business sales changed by $3,701,592 (44%) from same period last year with a total of $42,427,919 across all years.
+```
+
+### Reference field parameters
+
+When you use [field parameters](../create-reports/power-bi-field-parameters.md), you can reference both the selected field's value and its name:
+
+- Use the field parameter's name in curly braces to show the name of the selected field, such as `{Field parameter}`.
+- Add `Fields` to the name to show the value of the selected field instead of its name, such as `{Field parameter Fields}`. This reference matches the Fields column name in the field parameter.
+
+For example, this template:
+
+```
+We sold {Field parameter Fields} {Field parameter} in {Country}.
+```
+
+renders as a sentence like:
+
+```
+We sold 1,200 Units in Canada.
+```
+
 ## Configure tooltip settings
 
 Tooltip formatting lives in the **Format visual** pane under **General** > **Tooltips**. Select a visual on the report canvas, and then select the **Format visual** icon in the **Visualizations** pane.
 
-Available settings include:
-
 - **Tooltip visibility**: Toggle the **Tooltips** card on or off to show or hide tooltips for the visual.
-- **Tooltip type**: Choose **Default** to use the standard tooltip, or **Report page** to use a [report page tooltip](../create-reports/desktop-tooltips.md).
 - **Text**: Set the **Font**, **Label color**, **Value color**, and **Drill text and icon color**.
 - **Background**: Set the **Color** and **Transparency**.
 - **Actions**: Turn on or off the actions footer, which exposes drill behavior in supported visuals.
+
+### Options
+
+The **Options** section of the **Tooltips** card controls the tooltip type and content:
+
+- **Type**: Choose **Default** to use the standard tooltip, or **Report page** to use a [report page tooltip](../create-reports/desktop-tooltips.md).
+
+  > [!NOTE]
+  > If you select **Report page** but no report page tooltip is available, the visual uses the default tooltip.
+
+- **Tooltip fields only**: Turn on to show only the fields you add to the **Tooltip** field well. When off, the tooltip shows the visual's fields and the tooltip fields together.
+- **Chart-specific tooltips**: Turn on to show tooltip content that's specific to the chart type, such as the percentage of the first and previous values in a funnel chart.
+- **Sentence format only**: Turn on to render the tooltip as a sentence from a template instead of a list of fields.
+- **Sentence template**: Enter the text and field references for the sentence. Reference any available field by wrapping its visual name in curly braces, such as `{Sales}`.
+- **Bold values**: Turn on to emphasize the field values in the rendered sentence.
 
 ## Use drill actions in the tooltip
 

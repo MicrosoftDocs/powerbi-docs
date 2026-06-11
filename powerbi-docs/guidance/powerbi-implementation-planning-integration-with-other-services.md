@@ -146,7 +146,7 @@ For more information about how to integrate Power BI with various geospatial ser
 
 - [ArcGIS visualizations in Power BI reports](../visuals/power-bi-visualizations-arcgis.md), which use Esri services.
 - [Azure Maps visualizations for Power BI reports](https://go.microsoft.com/fwlink/?linkid=2132636), which use Azure services.
-- [Map](../visuals/desktop-shape-map.md) and [filled map visuals](../visuals/power-bi-visualization-filled-maps-choropleths.md), which use Bing services.
+- [Shape map](../visuals/power-bi-shape-map.md) and [filled map visuals](../visuals/power-bi-visualization-filled-maps-choropleths.md), which use Bing services.
 
 > [!WARNING]
 > Geospatial services might use other services that are outside of the geographic region of your Power BI tenant, compliance boundary, or national cloud instance. Furthermore, these services might store and process your data where they maintain facilities. Use of these services might be subject to separate terms and privacy policies beyond Power BI.
