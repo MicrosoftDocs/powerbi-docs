@@ -3,7 +3,7 @@ title: Email Subscriptions for Reports and Dashboards in the Power BI Service
 description: Learn how to subscribe yourself and others to an emailed snapshot of a Power BI report or dashboard.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: mibruhje
+ms.reviewer: duaskins
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -75,7 +75,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You can choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
 
     > [!TIP]
-    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the week day checkboxes. If you select **Monthly**, enter the days of the month you want to receive the subscription email.
+    > To receive a subscription email only on certain days, select **Hourly** or **Weekly** and then select the weekday checkboxes. If you select **Monthly**, enter the days of the month you want to receive the subscription email.
 
    - If you choose **Hourly**, **Daily**, **Weekly**, or **Monthly**, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.
    - If you choose a **Monthly** cadence for report subscriptions, you can either specify specific days of the month or select the **Last day of month** option. If you choose **Last day of month**, the report is delivered on that day.
@@ -392,8 +392,13 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 ### Apps
 
+**Workspace apps**
+
 - For [Power BI apps](../explore-reports/end-user-apps.md) you install, you can only create subscriptions for others if you're the owner of the app.
-- Subscriptions created within apps can be viewed and managed from the associated workspace by users with the admin role in that workspace. The workspace admin will have to install the app to view the subscriptions.
+- Subscriptions created within workspace apps can be viewed and managed from the associated workspace by users with the admin role in that workspace. The workspace admin has to install the app to view the subscriptions.
+
+**Org apps**
+
 - Email subscriptions for reports in org apps are available in preview. Subscriptions created from org apps have some differences compared to subscriptions created directly on reports. For details, see [Subscriptions for reports in org apps](../explore-reports/org-app-items.md#subscriptions-for-reports-in-org-apps-preview).
 
 ### Unsupported features

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 06/01/2026
+ms.date: 06/05/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
@@ -19,7 +19,7 @@ ai-usage: ai-assisted
 Welcome to the preview for org apps as items - Power BI workspace apps rebuilt for Fabric as a new item type. By using org apps as items, you can create multiple org apps per workspace. You can manage org apps the same way you manage any other item type. You can create a new org app, manage access, and share the org app. All the things you find familiar and easy about managing other items, such as reports, are all familiar with org apps as items.
 
 > [!NOTE]
-> **What are org apps?** Org apps are a Microsoft Fabric item type that content creators use to bundle Power BI reports, paginated reports, Fabric notebooks, maps, and real-time dashboards into customized, shareable packages for consumers within an organization.
+> **What are org apps?** Org apps are a Microsoft Fabric item type that content creators use to bundle Power BI reports, paginated reports, Fabric notebooks, maps, and real-time dashboards into customized, shareable packages for consumers within an organization. The previous version of apps, [Power BI apps](end-user-apps.md), are often referred to as *workspace apps* to differentiate them from org apps.
 
 :::image type="content" source="media/org-app-items/org-app-item-management-collage.png" alt-text="Collage image of managing an org app item.":::
 
@@ -51,9 +51,9 @@ When Microsoft tenant administrators turn on Fabric trials, users who create an 
 
 ### Workspace roles for creating an org app item
 
-Users in the workspace with an **admin, member, or contributor (with share permissions)*** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. For more information, see [org app access management](#insufficient-permissions-when-managing-an-org-app). Workspace viewers can't create org app items.
+Users in the workspace with an **admin, member, or contributor (with share permissions)** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. For more information, see [org app access management](#insufficient-permissions-when-managing-an-org-app). Workspace viewers can't create org app items.
 
- See also [Contributors and access management and sharing](#contributors-and-access-management--sharing).
+See also [Contributors and access management and sharing](#contributors-and-access-management--sharing).
 
 ## How org app items work, and how they're different from workspace apps
 
@@ -397,6 +397,6 @@ For more information about subscriptions, including scheduling and configuration
 ## Considerations and limitations for org apps
 
 Some report capabilities available in workspace apps aren't supported in org apps. For example:
-- Org apps don't support all report toolbar capabilities available in workspace apps, such as bookmarks and comments.
-- Org apps support email subscriptions for Power BI reports (preview). However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps (preview)](#subscriptions-for-reports-in-org-apps-preview).
+- Org apps don't support all report toolbar capabilities available in workspace apps, such as comments.
+- Org apps support email subscriptions for Power BI reports (preview). However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps (preview)](#subscriptions-for-reports-in-org-apps-preview). Subscriptions aren't supported for paginated reports in org apps. Dashboards and scorecards aren't eligible items for inclusion in org apps, so subscriptions don't apply to them.
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
