@@ -1,0 +1,30 @@
+- name: Power BI agentic capabilities documentation
+  href: index.yml
+  expanded: true
+  items:
+# =============================================================================
+# OVERVIEW (REQUIRED)
+# =============================================================================
+  - name: Overview
+    href: power-bi-agentic-overview.md
+  - name: Agent skills
+    expanded: true
+    items:
+      - name: Semantic model authoring skill
+        href: semantic-model-authoring-skill-overview.md
+      - name: Power BI Report skills
+        expanded: true
+        items:
+        - name: Power BI report authoring skill
+          href: power-bi-report-authoring-skill-overview.md
+        - name: Power BI Report design skill
+          href: power-bi-report-design-skill-overview.md
+        - name: Power BI Report planner and report management skills
+          href: power-bi-planner-fabric-skill-overview.md
+  - name: Tools
+    expanded: true
+    items:
+      - name: Power BI Desktop bridge (preview)
+        href: power-bi-desktop-bridge-overview.md
+      - name: Power BI MCP servers
+        href: ../mcp/mcp-servers-overview.md

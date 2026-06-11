@@ -113,7 +113,6 @@ Choose your path based on your scenario:
 
 ## Related content
 
-- [Power BI MCP server (remote) tools](remote-mcp-server-tools.md)
 - [Power BI REST APIs](/rest/api/power-bi/)
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)
 - [Power BI Embedded analytics](/power-bi/developer/embedded/)
