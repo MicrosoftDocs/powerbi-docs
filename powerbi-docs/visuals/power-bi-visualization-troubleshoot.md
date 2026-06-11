@@ -51,7 +51,7 @@ To disable **Persistent filters** in the Power BI service:
 
 ### Selection
 
-The term [Select all](power-bi-visualization-slicers.md#selection-controls) can be misleading. **Select all** doesn't actually select every item. Instead, it operates on an *inverted selection* principle: any item that you clear becomes part of the query. This approach is more efficient because it avoids sending thousands of values in the query. By sending only the cleared values in a negated filter, you streamline the process and reduce the query load.
+The term [Select all](power-bi-visualization-slicer-visual.md#selection-controls) can be misleading. **Select all** doesn't actually select every item. Instead, it operates on an *inverted selection* principle: any item that you clear becomes part of the query. This approach is more efficient because it avoids sending thousands of values in the query. By sending only the cleared values in a negated filter, you streamline the process and reduce the query load.
 
 When you're using the slicer to filter reports, the values in **Selected Values** might persist as selected even when they're no longer applicable. This behavior can potentially lead to confusion and a misleading restatement of selected items.
 

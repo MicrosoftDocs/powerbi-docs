@@ -48,7 +48,7 @@ Follow these steps to add a Power BI report or scorecard to a meeting.
 
 1. On the new Power BI tab that you created, select **Browse workspaces** to navigate to the report or scorecard that you want to add, or enter the link in the **Paste a Power BI link** field.
 1. Select **Add**. The name displayed on the tab in Teams changes to the name of the report or scorecard that you selected.
-1. See [Give team members permission](business-user-teams-share-data.md#give-team-members-permission) for how to share with your colleagues.
+1. See [Give team members permission to view Power BI content](business-user-teams-share-data.md#give-team-members-permission-to-view-power-bi-content) for how to share with your colleagues.
 1. Add an agenda item to the meeting to review and discuss the data.
 
 ### Review the data

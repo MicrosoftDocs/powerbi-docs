@@ -44,7 +44,7 @@ To format and customize your matrix visual in the **Power BI service**, select t
 
 #### Style
 
-Use the Style setting to choose from a set of predefined styles with unique combinations of colors and formatting. Apply these styles with a single click to change the overall look of your matrix visual. These styles include:
+Use the Style setting to choose from a set of predefined styles with unique combinations of colors and formatting. To change the overall look of your matrix visual, apply one of these styles with a single click. These styles include:
 
 - **Default**
 - **None**
@@ -67,7 +67,7 @@ The Layout menu offers three options for customizing the presentation of your da
 
 #### Repeat row headers
 
-This toggle controls whether the row headers repeat on each page of a paginated report. When enabled, the row headers appear at the top of each page. This feature is particularly useful when you have a matrix that spans multiple pages, ensuring that the context of the data isn't lost when moving between pages.
+This toggle controls whether the row headers repeat on each page of a paginated report. When enabled, the row headers appear at the top of each page. This setting helps maintain context when a matrix spans multiple pages.
 
 ### Grid settings
 
@@ -192,6 +192,12 @@ This setting controls the title alignment. Choose left, center, or right.
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
+#### Column headers options
+
+##### Auto expand
+
+Turn on this toggle to automatically expand all column header levels when the visual loads. When disabled, column headers start collapsed and users can expand them manually. For more information, see [Expand and collapse row headers](power-bi-visualization-matrix-visual.md#expand-and-collapse-row-headers).
+
 ### Row headers settings
 
 #### Row headers text
@@ -205,6 +211,12 @@ This setting controls the title alignment. Choose left, center, or right.
 When you turn on this toggle, it extends the color settings from the Values section, and applies the same color format settings to the row headers in your matrix.
 [!INCLUDE [global-alignment-text-values](../includes/core-visuals/global-alignment-text-values.md)]
 [!INCLUDE [global-text-wrap](../includes/core-visuals/global-text-wrap.md)]
+
+#### Row headers options
+
+##### Auto expand
+
+Turn on this toggle to automatically expand all row header levels when the visual loads. When disabled, row headers start collapsed and users can expand them manually. For more information, see [Expand and collapse row headers](power-bi-visualization-matrix-visual.md#expand-and-collapse-row-headers).
 
 #### +/- icons
 

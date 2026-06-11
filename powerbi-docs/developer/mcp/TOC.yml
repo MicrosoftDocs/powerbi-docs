@@ -8,15 +8,14 @@
   - name: Overview
     href: mcp-servers-overview.md
   - name: Power BI MCP Server (remote)
-    items:    
-    - name: Get started
-      href: remote-mcp-server-get-started.md
-    - name: Tools reference
-      href: remote-mcp-server-tools.md
-  - name: Power BI MCP Server (local)
+    href: remote-mcp-server-get-started.md   
     items:
-    - name: Get started
-      href: https://github.com/microsoft/powerbi-modeling-mcp
+    - name: "Get started"
+      href: remote-mcp-server-get-started.md   
+    - name: "Register with External Clients"
+      href: remote-mcp-server-external-clients.md
+  - name: Power BI MCP Server (local)
+    href: https://github.com/microsoft/powerbi-modeling-mcp        
   - name: Reference
     items:
     - name: "Model Context Protocol specification"

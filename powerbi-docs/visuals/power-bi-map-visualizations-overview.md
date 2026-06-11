@@ -33,12 +33,9 @@ For detailed guidance, see [Azure Maps visual for Power BI](/azure/azure-maps/po
 
 ## Shape maps (preview)
 
-**Shape map** visuals compare regions using color-coding rather than showing precise locations. They support both standard geographic maps and custom TopoJSON maps for non-traditional visualizations like floor plans, seating arrangements, or custom territories.
+**Shape map** visuals compare regions using color-coding rather than showing precise locations. They support both standard geographic maps and custom TopoJSON or GeoJSON maps for non-traditional visualizations like floor plans, seating arrangements, or custom territories. You can use built-in maps, upload your own map files, or reference maps from a URL.
 
-> [!NOTE]
-> Shape maps are currently in preview. You can add them only when editing a report in Power BI Desktop. You must enable them in **Preview Features** before use.
-
-For detailed instructions, see [Create Shape Map visualizations in Power BI Desktop (preview)](desktop-shape-map.md).
+For detailed instructions, see [Create Shape Map visualizations in Power BI](power-bi-shape-map.md).
 
 ## Basic maps (Bing maps)
 
@@ -94,7 +91,7 @@ For step-by-step tutorials on creating specific map types, see the individual ar
 ## Related content
 
 - [Azure Maps visual for Power BI](/azure/azure-maps/power-bi-visual-getting-started?context=/power-bi/create-reports/context/context)
-- [Create Shape Map visualizations in Power BI Desktop (preview)](desktop-shape-map.md)
+- [Create Shape Map visualizations in Power BI](power-bi-shape-map.md)
 - [Tips and tricks for Power BI map visualizations](power-bi-map-tips-and-tricks.md)
 - [Create and use filled maps (choropleth maps) in Power BI](power-bi-visualization-filled-maps-choropleths.md)
 - [Create ArcGIS maps in Power BI](power-bi-visualizations-arcgis.md)

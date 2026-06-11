@@ -128,7 +128,7 @@ The difference in the result is subtle. When Power BI evaluates the `RegionalSal
 
 Consider a scenario when a cross source group relationship has high-cardinality relationship columns.
 
-In this scenario, the `Date` table is related to the `Sales` table on the `DateKey` columns. The data type of the `DateKey` columns is integer, storing whole numbers that use the _yyyymmdd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the `Date` table is January 1, 1900 and the latest date is December 31, 2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
+In this scenario, the `Date` table is related to the `Sales` table on the `DateKey` columns. The data type of the `DateKey` columns is integer, storing whole numbers that use the _yyyy-mm-dd_ format. The tables belong to different source groups. Further, it's a high-cardinality relationship because the earliest date in the `Date` table is January 1, 1900 and the latest date is December 31, 2100—so there's a total of 73,414 rows in the table (one row for each date in the 1900-2100 time span).
 
 :::image type="content" source="media/composite-model-guidance/cross-source-group-relationship-scenario-2.png" alt-text="Diagram showing the scenario 2 model design as described in the previous paragraph." border="false":::
 
@@ -217,7 +217,7 @@ Whenever possible, create visuals that use fields from a single source group. Th
 
 ### Use sync slicers
 
-In some situations, you can set up [sync slicers](../visuals/power-bi-visualization-slicers.md?tabs=powerbi-desktop#sync-and-use-slicers-on-other-pages) to avoid creating a cross source group relationship in your model. It can allow you to combine source groups _visually_ that can perform better.
+In some situations, you can set up [sync slicers](../visuals/power-bi-visualization-slicers.md#sync-and-use-slicers-on-other-pages) to avoid creating a cross source group relationship in your model. It can allow you to combine source groups _visually_ that can perform better.
 
 Consider a scenario when your model has two source groups. Each source group has a product dimension table used to filter reseller and internet sales.
 
@@ -230,7 +230,7 @@ In the report, you add a slicer that filters the page by using the `Color` colum
 > [!NOTE]
 > While using sync slicers can avoid the need to create a cross source group relationship, it increases the complexity of the model design. Be sure to educate other users on why you designed the model with duplicate dimension tables. Avoid confusion by hiding dimension tables that you don't want other users to use. You can also add description text to the hidden tables to document their purpose.
 
-For more information, see [Sync separate slicers](../visuals/power-bi-visualization-slicers.md?tabs=powerbi-desktop#sync-separate-slicers).
+For more information, see [Sync separate slicers](../visuals/power-bi-visualization-slicers.md#sync-separate-slicers).
 
 ## Other guidance
 

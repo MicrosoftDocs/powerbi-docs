@@ -4,11 +4,10 @@ description: Learn how to create and customize matrix visuals in Power BI Deskto
 ms.author: juliacawthra
 author: JulCsc
 ms.reviewer: zoedouglas
-ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/01/2026
+ms.date: 06/01/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about matrix visuals so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI Service.
@@ -21,77 +20,70 @@ The matrix visual in Power BI is a powerful tool used to display and analyze dat
 
 The matrix visual's ability to aggregate data and support hierarchical structures makes it an essential tool for in-depth data analysis and reporting. Matrix visuals are frequently employed in business and finance to analyze performance metrics, such as sales by region or product category. Additionally, they're valuable in marketing for examining customer behavior, campaign effectiveness, and market segmentation.
 
-## Prerequisites
+## Sample data
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+To follow along with the examples in this article, create a calculated table with sample data in a blank Power BI Desktop report.
 
-- Always make sure you have the latest version of [**Power BI Desktop**](https://www.microsoft.com/download/details.aspx?id=58494) installed before proceeding.
-- For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.
-In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, let's get started:
+1. Open Power BI Desktop and create a new blank report.
+1. Select **Modeling** > **New table**.
+1. Paste the following DAX expression:
 
-1. Launch **Power BI Desktop**.
-1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.
-1. Locate and select your copy of the **Retail Analysis Sample PBIX** file. The file will open in report view, ready for you to begin.
-1. Select the + icon at the bottom of the window to add a new page to the report.
+   ```dax
+   Units sold =
+   DATATABLE(
+       "Year", STRING,
+       "Quarter", STRING,
+       "Subcategory", STRING,
+       "Product", STRING,
+       "Units Sold", INTEGER,
+       {
+           {"Year 1", "Q1", "Widgets", "Product A", 120},
+           {"Year 1", "Q1", "Widgets", "Product B", 95},
+           {"Year 1", "Q1", "Gadgets", "Product C", 80},
+           {"Year 1", "Q1", "Gadgets", "Product D", 110},
+           {"Year 1", "Q2", "Widgets", "Product A", 135},
+           {"Year 1", "Q2", "Widgets", "Product B", 88},
+           {"Year 1", "Q2", "Gadgets", "Product C", 92},
+           {"Year 1", "Q2", "Gadgets", "Product D", 105},
+           {"Year 1", "Q3", "Widgets", "Product A", 148},
+           {"Year 1", "Q3", "Widgets", "Product B", 102},
+           {"Year 1", "Q3", "Gadgets", "Product C", 75},
+           {"Year 1", "Q3", "Gadgets", "Product D", 98},
+           {"Year 1", "Q4", "Widgets", "Product A", 160},
+           {"Year 1", "Q4", "Widgets", "Product B", 115},
+           {"Year 1", "Q4", "Gadgets", "Product C", 88},
+           {"Year 1", "Q4", "Gadgets", "Product D", 125},
+           {"Year 2", "Q1", "Widgets", "Product A", 142},
+           {"Year 2", "Q1", "Widgets", "Product B", 108},
+           {"Year 2", "Q1", "Gadgets", "Product C", 95},
+           {"Year 2", "Q1", "Gadgets", "Product D", 130},
+           {"Year 2", "Q2", "Widgets", "Product A", 155},
+           {"Year 2", "Q2", "Widgets", "Product B", 120},
+           {"Year 2", "Q2", "Gadgets", "Product C", 100},
+           {"Year 2", "Q2", "Gadgets", "Product D", 140}
+       }
+   )
+   ```
 
-# [Power BI service](#tab/powerbi-service)
-
-In the following guide we’re using the Retail Analysis Sample PBIX in the Power BI service. Let’s get started:
-
-1. Sign in to the [**Power BI service**](https://app.powerbi.com).
-1. Select **Learn** in the left navigation.
-1. On the **Learning center** page, under **Sample reports**, scroll to the right to locate and select the **Retail Analysis Sample**. The file will open in report view.
-1. At the top of the window, select **Edit** to open the report editor.
-1. Select the **+** icon at the bottom of the window to add a new page to the report.
-
----
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Let's create a matrix visual
+## Create a matrix visual
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+1. From the **Visualizations** pane, select the **Matrix** visual icon. A visual placeholder is added to the report canvas.
 
-Before we begin, review the **[Prerequisites](#prerequisites)** section at the beginning of this article, and follow the steps under the tab for **Power BI Desktop**.
+1. From the **Data** pane, expand the **Units sold** table and add fields to the following field wells:
+   - **Rows**: **Year**, then **Quarter**
+   - **Columns**: **Subcategory**, then **Product**
+   - **Values**: **Units Sold**
 
-In this quick and easy three-step guide, let's create a matrix visual starting from the **Visualizations** pane in **Power BI Desktop**.
+1. To see all levels of the hierarchy, expand the row and column headers by selecting the **+** icons on the headers, or use the expand icons in the header toolbar. You can also turn on the **Auto expand** setting under **Column headers** > **Options** and **Row headers** > **Options** before adding fields, so the matrix automatically shows all levels when the visual loads.
 
-1. From the **Visualizations** pane, first select the **Build visual** icon. Then select the **Matrix** visual icon, and a visual *placeholder* is immediately added to the report canvas.
+1. To customize the matrix visual, select the **Format visual** icon in the **Visualizations** pane to access all available settings.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png" alt-text="Screenshot of Power BI desktop with Visualizations pane highlighted, showing selected Build visual and Matrix icons, and a visual placeholder on the canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png":::
+:::image type="content" source="media/power-bi-visualization-matrix-visual/power-bi-matrix-create.png" alt-text="Screenshot showing a matrix visual with Year and Quarter on rows, Subcategory and Product on columns, and Units Sold as values." lightbox="media/power-bi-visualization-matrix-visual/power-bi-matrix-create.png":::
 
-2. To add data to the visual in this example, let's use the **Data** pane. Adding data can be done by selecting fields and measures, or dragging fields and measures to the field wells on the **Visualizations** pane, or dragging fields and measures directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **TotalSales** and then **TotalSalesLY** to the **Values** field well. Expand the **Item** subgroup, to add **Category** to the **Columns** field well. And finally, expand the **Store** subgroup to add **Territory** and then **City** to the **Rows** field well.
-
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png" alt-text="Screenshot of Power BI Desktop with Data pane highlighted. TotalSales, TotalSalesLY in Values, Category in Columns, and Territory, City in Rows are highlighted." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png":::
-
-3. To customize your matrix visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings, allowing you to tailor the matrix visual's appearance and functionality to your specific requirements.
-
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png" alt-text="Screenshot of Power BI Desktop with Visualizations pane highlighted. Format visual icon, Visual tab, and General tab are selected and highlighted, showing Matrix visual format settings." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png":::
-
-# [Power BI service](#tab/powerbi-service)
-
-Before we begin, review the **[Prerequisites](#prerequisites)** section at the beginning of this article, and follow the steps under the tab for the **Power BI service**.
-
-In this quick and easy three-step guide, let's create a matrix visual starting from the **Visualizations** pane in the **Power BI service**.
-
-1. From the **Visualizations** pane, first select the **Build visual** icon. Then select the **Matrix** visual icon, and a visual *placeholder* is immediately added to the report canvas.
-
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png" alt-text="Screenshot of Power BI service with Visualizations pane highlighted, showing selected Build visual and Matrix icons, and a visual placeholder on the canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png":::
-
-2. To add data to the visual in this example, let's use the **Data** pane. Adding data can be done by selecting fields and measures, or dragging fields and measures to the field wells on the **Visualizations** pane, or dragging fields and measures directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **TotalSales** and then **TotalSalesLY** to the **Values** field well. Expand the **Item** subgroup, to add **Category** to the **Columns** field well. And finally, expand the **Store** subgroup to add **Territory** and then **City** to the **Rows** field well.
-
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png" alt-text="Screenshot of Power BI service with Data pane highlighted. TotalSales, TotalSalesLY in Values, Category in Columns, and Territory, City in Rows are highlighted." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png":::
-
-3. To customize your matrix visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings, allowing you to tailor the matrix visual's appearance and functionality to your specific requirements.
-
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png" alt-text="Screenshot of Power BI service with Visualizations pane highlighted. Format visual icon, Visual tab, and General tab are selected and highlighted, showing Matrix visual format settings." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png":::
-
----
-Great job! Congratulations on successfully creating a matrix visual with Power BI. Next, take time to familiarize yourself with the comprehensive list of **[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)** and other related articles in the **[Related content](#related-content)** section.
-
-## Work with the matrix
-
-### Expand and collapse row headers
+## Expand and collapse row headers
 
 Use expand and collapse icons provided to combine groups or to show more detail.
 
@@ -99,9 +91,11 @@ Use expand and collapse icons provided to combine groups or to show more detail.
 
 When report consumers open a matrix visual in [Explore](../consumer/explore-data-service.md), the columns and rows added to the visual are auto-expanded by default so consumers can see all the levels at once.
 
+Report authors also control auto-expand behavior directly in the format pane. Under **Column headers** > **Options** and **Row headers** > **Options**, toggle the **Auto expand** setting on or off. This setting is useful when the columns or rows on the matrix change dynamically, for example when you use [personalize visuals](../create-reports/power-bi-personalize-visuals.md?tabs=powerbi-desktop) or [field parameters](../create-reports/power-bi-field-parameters.md).
+
 In [embedded scenarios](../developer/embedded/embedded-analytics-power-bi.md), you can use the Authoring SDK to set the `autoExpand` property on the `rowHeaders` and `columnHeaders` objects so a matrix opens with its rows and columns auto-expanded by default.
 
-### Freeze row headers
+## Freeze row headers
 
 By default row headers are frozen, which ensures they stay visible when you scroll horizontally.
 
@@ -116,11 +110,11 @@ To refreeze the row headers, right-click on the row headers again and select **F
 > [!NOTE]
 > The freeze and unfreeze options in the right-click menu are transient and apply only to your current viewing session. If you change this setting in an editing scenario, such as Power BI Desktop or web editing, the change isn't saved for report consumers.
 
-### Adjust column width
+## Adjust column width
 
 [!INCLUDE [tablix-columns-resize](../includes/core-visuals/tablix-columns-resize.md)]
 
-### Custom totals
+## Custom totals
 
 [!INCLUDE [tablix-custom-totals](../includes/core-visuals/custom-totals.md)]
 
