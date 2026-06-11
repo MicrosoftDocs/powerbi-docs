@@ -1,5 +1,5 @@
 ---
-title: "Using DAX user-defined functions (preview)"
+title: "Using DAX user-defined functions"
 description: Learn how to create Data Analysis Expressions (DAX) user-defined functions (UDFs).
 author: kgremban
 ms.author: kgremban
@@ -9,12 +9,11 @@ ms.topic: how-to
 ms.date: 09/15/2025
 ---
 
-# DAX user-defined functions (preview)
+# DAX user-defined functions
 
-> [!NOTE]
-> DAX user-defined functions are currently in **preview**.
+Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported.
 
-Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package reusable, parameterized DAX logic into your models making your DAX code easier to write, maintain, and share. Instead of repeating formulas across measures, calculated columns, and visuals, UDFs bring programming-style flexibility to your semantic models, letting you define functions once and use them everywhere DAX is supported. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions).
+DAX UDFs are generally available in Power BI Desktop and the Power BI Service starting with the June 2026 release. To learn more, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions). 
 
 ## Why use user-defined functions?
 
@@ -22,13 +21,6 @@ Data Analysis Expressions (DAX) user-defined functions (UDFs) let you package re
 - **Maintainability**: Update logic in one place to fix or evolve rules.
 - **Safer authoring**: Optional type hints and type check helpers support predictable, error-resistant code.
 - **First-class model objects**: UDFs live in the model and can be viewed in Model Explorer.
-
-## Get started
-
-To try UDFs in Desktop:
-1. Go to **File > Options and settings > Options**.
-2. Select **Preview features** and check **DAX user-defined functions**.
-3. Select **OK** and **restart** Power BI Desktop.
 
 ## Define a function
 
@@ -40,7 +32,10 @@ The general syntax for a UDF is:
 
 ```dax
 /// Optional description above the function
-FUNCTION <FunctionName> = ( <ParameterName>: <ParameterType>, ... ) => <FunctionBody>
+/// @param {ParameterType} ParameterName - ParameterDescription
+/// ...
+/// @returns Return description
+FUNCTION <FunctionName> = ( [<ParameterName> [: [<ParameterType>] [<ParameterSubtype>] [<ParameterPassingMode>]] [= <DefaultExpression>], ...] ) => <FunctionBody>
 ```
 
 ### Example: Simple tax function
@@ -141,7 +136,7 @@ EVALUATE
 
 DAX UDFs support zero or more parameters. To make your functions safer and more predictable you can optionally specify parameter type hints:
 
-- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, or `AnyRef`).
+- **Type**: what type of value the parameter accepts (`AnyVal`, `Scalar`, `Table`, `AnyRef`, `CalendarRef`, `ColumnRef`, `MeasureRef`, or `TableRef`).
 - **Subtype** (only for scalar type): the specific scalar data type (`Variant`, `Int64`, `Decimal`, `Double`, `String`, `DateTime`, `Boolean`, or `Numeric`). 
 - **ParameterMode**: when the argument is evaluated (`val` for eager or `expr` for lazy).
 
@@ -182,8 +177,11 @@ EVALUATE
 Validate parameter types inside your function using built-in DAX type-checking functions such as:
 - [ISNUMERIC](/dax/isnumeric-function-dax)
 - [ISDOUBLE](/dax/isdouble-function-dax)
+- [ISINT64](/dax/isint64-function-dax)
+- [ISDECIMAL](/dax/isdecimal-function-dax)
 - [ISSTRING](/dax/isstring-function-dax)
 - [ISBOOLEAN](/dax/isboolean-function-dax)
+- [ISDATETIME](/dax/isdatetime-function-dax)
 
 For a complete list of available type-checking functions, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions).
 
