@@ -7,10 +7,9 @@
 # =============================================================================
   - name: Overview
     href: mcp-servers-overview.md
-  - name: Power BI MCP Server (remote)
-    href: remote-mcp-server-get-started.md   
+  - name: Power BI MCP Server (remote)  
     items:
-    - name: "Get started"
+    - name: "Overview"
       href: remote-mcp-server-get-started.md   
     - name: "Register with External Clients"
       href: remote-mcp-server-external-clients.md
