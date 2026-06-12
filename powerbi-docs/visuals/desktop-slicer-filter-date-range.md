@@ -37,7 +37,7 @@ When you set a relative selection like "last full month," the slicer keeps the d
 To change the slicer setting to **Date picker**, select the slicer, then in the **Format** pane, expand **Visual** > **Slicer settings** > **Options** and select **Date picker** from the **Style** dropdown.
 
 > [!NOTE]
-> Date picker is a preview feature. To enable it, go to **File** > **Options and settings** > **Options** > **Preview features** and select **Date picker slicer**.
+> Date picker is a [preview feature](power-bi-visualizations-overview.md#preview-visuals). To enable it, go to **File** > **Options and settings** > **Options** > **Preview features** and select **Date picker slicer**.
 >
 > During preview, you can only create date picker slicers in Power BI Desktop. After you publish a report with a date picker slicer, you can use and edit it in the Power BI service.
 
@@ -46,7 +46,7 @@ To change the slicer setting to **Date picker**, select the slicer, then in the 
 You can use the relative date slicer just like any other slicer or visual when editing a report in Power BI. Select a **Slicer** visual to add it to your report page and then select a date column for the **Field** value. In the following image, we selected the *Date* column.
 
 >[!Note]
->If your report has a hierarchy with your data column from the [auto date/time feature](../transform-model/desktop-auto-date-time.md), the date column itself must be used instead of the hierarchy to use the slicer in relative date mode.
+>If your report has a hierarchy with your data column from the [auto date/time feature](../transform-model/desktop-auto-date-time.md), the date column itself must be used instead of the hierarchy to use the slicer in relative date mode. To change it to the date column, select the down chevron on the field in the **Build** well and choose the name of the column instead of the **Date hierarchy** option.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png" alt-text="Screenshot of the Visualizations pane with the slicer visual icon and the Field well called out.":::
 
@@ -147,6 +147,7 @@ The following considerations and limitations apply before showing the relative o
 - The date hierarchy for auto date/time in Power BI can't be used. Use the date column directly.
 - Date columns in **Power BI** don't include time zone info.
 - When the report is published, slicer and filter relative options are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you both see the same data.
+- The relative week options assume weeks start on Sunday. There's no option to change the start to a different day.
 
 ## Related content
 
@@ -154,3 +155,5 @@ The following considerations and limitations apply before showing the relative o
 - [Slicers in Power BI](power-bi-visualization-slicers.md)
 - [Create a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Auto date/time in Power BI](../transform-model/desktop-auto-date-time.md)
+- [Visualizations in Power BI reports](power-bi-visualizations-overview.md)
+- [Filter types in Power BI reports](../create-reports/power-bi-report-filter-types.md)
