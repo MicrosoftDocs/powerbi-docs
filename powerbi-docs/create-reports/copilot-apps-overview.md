@@ -147,8 +147,8 @@ User feedback is important for continued Copilot improvements. Feedback buttons 
   * Clicking a citation link opens the item in a new browser tab outside the app.
   * Conversations are cleared when you navigate away from or close Copilot in apps.
   * App-scoped Copilot and report-scoped Copilot in apps are separate functionality. Prompts and responses in each Copilot might differ and aren't shared between each Copilot.
-  * App-scoped Copilot is available for workspace apps only, not org apps (preview).
-  * Report-scoped Copilot in apps is available in both workspace apps and org apps (preview).
+  * App-scoped Copilot is available for workspace apps only, not org apps.
+  * Report-scoped Copilot in apps is available in both workspace apps and org apps.
 * **For app authors**:
   * Items in apps are versioned upon app update. Copilot uses the version of the item in the app. Update the app to ensure Copilot is reasoning over the latest changes to items in the app.
   * [Verified answers](copilot-prepare-data-ai-verified-answers.md) are supported in Copilot for apps. To ensure verified answers are available to app users, update the app after verified answers are configured.

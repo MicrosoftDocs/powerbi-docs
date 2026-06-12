@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/07/2026
+ms.date: 06/10/2026
 LocalizationGroup: Common tasks
 ms.custom:
   - retail analysis sample
@@ -86,7 +86,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
 1. Optionally, add a subject and message for recipients. For reports, this message appears above the preview in the body of the email. For dashboards, the message appears after the preview image at the bottom of the email body.
 
-1. Select the **Report page** you want to appear in the preview image. If you toggled' **Attach full report** to **On**, you see all the report pages listed in the dropdown. Otherwise, you only have the active report page listed in the dropdown. To subscribe to more than one page in a report, either select the **Attach full report** slider, or select **New subscription** and choose a different page from the dropdown.  
+1. Select the **Report page** you want to appear in the preview image. If you toggled **Attach full report** to **On**, you see all the report pages listed in the dropdown. Otherwise, you only have the active report page listed in the dropdown. To subscribe to more than one page in a report, either select the **Attach full report** slider, or select **New subscription** and choose a different page from the dropdown.  
 
     > [!TIP]
     > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page.
@@ -399,7 +399,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **Org apps**
 
-- Email subscriptions for reports in org apps are available in preview. Subscriptions created from org apps have some differences compared to subscriptions created directly on reports. For details, see [Subscriptions for reports in org apps](../explore-reports/org-app-items.md#subscriptions-for-reports-in-org-apps-preview).
+- Email subscriptions for reports in org apps are available. Subscriptions created from org apps have some differences compared to subscriptions created directly on reports. For details, see [Subscriptions for reports in org apps](../explore-reports/org-app-items.md#subscriptions-for-reports-in-org-apps).
 
 ### Unsupported features
 

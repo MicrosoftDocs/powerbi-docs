@@ -134,7 +134,7 @@ Use the following procedure to add live data to a presentation with a URL:
 
 #### Add a report from an org app
 
-If the report you want to add is published as part of an [org app (preview)](../../explore-reports/org-app-items.md), you can only add it by pasting the report URL into the add-in. **Open in PowerPoint**, **Export to PowerPoint**, the general **Share** report link, and visual-level **Share** links aren't supported.
+If the report you want to add is published as part of an [org app](../../explore-reports/org-app-items.md), you can only add it by pasting the report URL into the add-in. **Open in PowerPoint**, **Export to PowerPoint**, the general **Share** report link, and visual-level **Share** links aren't supported.
 
 To get the URL, use one of the following methods:
 

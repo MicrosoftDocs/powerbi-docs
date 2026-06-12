@@ -11,7 +11,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
-ms.date: 12/10/2025
+ms.date: 06/08/2026
 ---
 
 # Collaborate with Power BI in Teams
@@ -74,6 +74,7 @@ You can integrate a Power BI report in Teams and share it with external users. F
 - Link previews don't work in meeting chat or private channels.
 - The messaging extension might process request and response data in a region that's different from your Power BI tenant home region.
 - Fabric items appear in catalogs in the Power BI app but can't be opened in the app. They open in the browser. Fabric items can't be embedded in the Power BI tab.
+- Org apps aren't currently supported in the Power BI personal app for Microsoft Teams. If a user selects an org app in Teams or opens an org app link from Teams, the org app opens in a browser.
 
 ## Microsoft Power Platform in Teams
 

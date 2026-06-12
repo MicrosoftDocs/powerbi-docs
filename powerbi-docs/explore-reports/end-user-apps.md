@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with apps
 ms.topic: how-to
-ms.date: 12/01/2025
+ms.date: 06/10/2026
 ms.custom:
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 # Apps in Power BI
 
 > [!NOTE]
-> Power BI apps are also referred to as *workspace apps* to differentiate them from the newer [org apps](org-app-items.md), a Fabric item type currently in preview.
+> Power BI apps are also referred to as *workspace apps* to differentiate them from [org apps](org-app-items.md), a Fabric item type.
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
