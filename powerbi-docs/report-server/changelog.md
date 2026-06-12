@@ -61,6 +61,9 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
+- *Version: 2.150.5353.0  (January 2026), Released: June 11, 2026*
+     - Updated authentication library with the latest security patches.
+
 - *Version: 2.150.1926.0  (January 2026), Released: January 21, 2026*
      - Support for January 2026 Power BI Report Server.
 
@@ -83,6 +86,9 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Desktop (optimized for Power BI Report Server)
 
 Note: This is the first release of Power BI Desktop for RS that will not include a 32 bit version. All releases from September 2025 onwards will only include 64 bit versions.
+
+- *Version: 2.147.7627.0  (September 2025), Released: June 11, 2026*
+     - Updated authentication library with the latest security patches.
 
 - *Version: 2.147.5030.0  (September 2025), Released: March 2, 2026*
      - Fix issue for recent Local Network Access restrictions.
