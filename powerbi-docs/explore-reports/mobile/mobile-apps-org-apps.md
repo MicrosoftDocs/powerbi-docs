@@ -7,11 +7,11 @@ ms.reviewer: mayabendov
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 05/27/2025
+ms.date: 06/08/2026
 ms.custom: mode-portal
 
 ---
-# Using org apps (preview)
+# Using org apps
 <!-- approved for use -->
 Applies to:
 
@@ -21,7 +21,7 @@ Applies to:
 
 Org apps are the next generation of Power BI apps, designed to simplify access to Power BI and Fabric items. In the Power BI mobile apps, users can view org apps and interact with supported content. 
 
-To read more about org apps, see [Get started with org apps (preview)](../org-app-items.md)
+To read more about org apps, see [Get started with org apps](../org-app-items.md)
 
 ## Discover and access org apps 
 Org apps appear in the apps section alongside workspace apps, and in workspace content lists. You can filter a workspace by apps to view all available ones.  
@@ -57,5 +57,7 @@ Supported items are item types you can view directly in the Power BI mobile apps
 ## Limitations
 
 * While org apps can contain real-time dashboards and notebooks, only Power BI items are supported by the Power BI mobile apps. Therefore, other Fabric items will be listed in the app's overview page and content list, but will open in the browser. 
+
+* Audience tabs are currently not supported in the Power BI mobile apps.
 
 * Sharing org apps or items within org apps from Power BI mobile is currently not supported. 

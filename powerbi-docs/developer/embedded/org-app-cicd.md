@@ -1,5 +1,5 @@
 ---
-title: CI/CD for org apps in Fabric (Preview)
+title: CI/CD for org apps in Fabric
 description: This article describes how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric.
 author: JulCsc
 ms.author: billmath
@@ -7,11 +7,11 @@ ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/15/2025
+ms.date: 06/10/2026
 #customer intent: As a Power BI user, I want to learn how to set up continuous integration and delivery (CI/CD) for org apps in Microsoft Fabric so that I can automate the deployment process.
 ---
 
-# CI/CD for org apps in Fabric (Preview)
+# CI/CD for org apps in Fabric
 
 This article explains how [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) and [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) work for [org apps](../../explore-reports/org-app-items.md) in Microsoft Fabric. Learn how to set up a connection to your repository, manage your org app through Git, and deploy it across different environments.
 
@@ -35,7 +35,7 @@ The definition file is divided into two sections:
 
 - Static settings: describe the app's external appearance, such as the theme, logo, and experience settings.
 - Elements: describe the app's internal structure.
-  - Section elements: Container elements that have their own collection of Org apps
+  - Section elements: Container elements that have their own collection of elements.
   - Item elements: Power BI items.
 
 The following diagram shows the structure of the org app.
@@ -65,7 +65,7 @@ The definition file contains:
   - ElementId
   - ItemType (only for ElementType: *item*)
   - ItemLogicalId (only for ElementType: *item*)
-  - isHidden (not when for ElementType: *overview*)
+  - isHidden (not for ElementType: *overview*)
   - DisplayName
   - Header (only for ElementType: *overview*)
     - Title
@@ -119,7 +119,7 @@ To learn how to use deployment pipelines, see [Introduction to deployment pipeli
 For complex multi-workspace deployments or Git-based CI/CD workflows with environment-specific configurations, you can also use the [fabric-cicd tool](../projects/projects-deploy-fabric-cicd.md), which can consume org app definitions from Git and apply transformations across Dev/Test/Prod stages.
 
 > [!NOTE]
-> Limitation: Org apps (preview) cannot be deployed across stages using service principals.
+> Limitation: Org apps can't be deployed across stages using service principals.
 
 
 ## Related content
