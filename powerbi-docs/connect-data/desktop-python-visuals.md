@@ -184,7 +184,6 @@ For more information about Power BI Pro licenses and how they differ from free l
 This tutorial barely scratches the surface of the options and capabilities for creating visual reports by using Python, pandas, and the Matplotlib library. For more information, see the following resources:
 
 - Documentation on the [Matplotlib](https://matplotlib.org/) website.
-- [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python)
 - [Matplotlib Tutorial – Python Matplotlib Library with Examples](https://www.edureka.co/blog/python-matplotlib-tutorial)
 - [Pandas API reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
 - [Python visualizations in Power BI service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service)
