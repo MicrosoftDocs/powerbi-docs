@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 460" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <!-- Opaque background for dark-theme legibility per PR review -->
+  <rect x="0" y="0" width="980" height="460" fill="#ffffff"/>
+  <title>Multiple EVALUATE statements in a single Execute DAX Queries request and the corresponding multi-result-set Arrow IPC response</title>
+  <desc>One HTTP POST request contains a query string with three EVALUATE statements. The Arrow IPC response stream contains three result sets returned in the same order as the EVALUATE statements.</desc>
+
+  <!-- Color legend per EVALUATE / result set -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <!-- ============== REQUEST (left) ============== -->
+  <g>
+    <rect x="20" y="30" width="380" height="400" rx="10" ry="10" fill="#f5f9ff" stroke="#2a6db5" stroke-width="1.5"/>
+    <text x="40" y="58" font-size="15" font-weight="600" fill="#1a3a66">HTTP POST request</text>
+    <text x="40" y="78" font-size="12" fill="#444">POST /executeDaxQueries</text>
+    <text x="40" y="94" font-size="12" fill="#444">Content-Type: application/json</text>
+
+    <!-- JSON body envelope -->
+    <rect x="40" y="110" width="340" height="300" rx="6" ry="6" fill="#ffffff" stroke="#9ab7d8" stroke-width="1"/>
+    <text x="56" y="132" font-family="Consolas, monospace" font-size="12" fill="#333">{</text>
+    <text x="72" y="150" font-family="Consolas, monospace" font-size="12" fill="#333">"query":</text>
+
+    <!-- EVALUATE 1 -->
+    <rect x="72" y="162" width="290" height="68" rx="4" ry="4" fill="#e8f3ff" stroke="#2a6db5" stroke-width="1.5"/>
+    <text x="84" y="180" font-family="Consolas, monospace" font-size="12" fill="#1a3a66" font-weight="600">EVALUATE 1</text>
+    <text x="84" y="198" font-family="Consolas, monospace" font-size="11" fill="#333">ROW("RowCount",</text>
+    <text x="84" y="214" font-family="Consolas, monospace" font-size="11" fill="#333">  COUNTROWS(Sales))</text>
+
+    <!-- EVALUATE 2 -->
+    <rect x="72" y="238" width="290" height="68" rx="4" ry="4" fill="#eaf6ec" stroke="#2d8a4a" stroke-width="1.5"/>
+    <text x="84" y="256" font-family="Consolas, monospace" font-size="12" fill="#1e5b32" font-weight="600">EVALUATE 2</text>
+    <text x="84" y="274" font-family="Consolas, monospace" font-size="11" fill="#333">TOPN(10, Sales,</text>
+    <text x="84" y="290" font-family="Consolas, monospace" font-size="11" fill="#333">  Sales[Amount], DESC)</text>
+
+    <!-- EVALUATE 3 -->
+    <rect x="72" y="314" width="290" height="68" rx="4" ry="4" fill="#fdf2e3" stroke="#b8761e" stroke-width="1.5"/>
+    <text x="84" y="332" font-family="Consolas, monospace" font-size="12" fill="#7a4d10" font-weight="600">EVALUATE 3</text>
+    <text x="84" y="350" font-family="Consolas, monospace" font-size="11" fill="#333">SUMMARIZECOLUMNS(</text>
+    <text x="84" y="366" font-family="Consolas, monospace" font-size="11" fill="#333">  Date[Year], "Total", ...)</text>
+
+    <text x="56" y="402" font-family="Consolas, monospace" font-size="12" fill="#333">}</text>
+  </g>
+
+  <!-- ============== ARROW ============== -->
+  <g>
+    <line x1="410" y1="230" x2="570" y2="230" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="490" y="220" text-anchor="middle" font-size="12" fill="#222" font-weight="600">Arrow IPC stream</text>
+    <text x="490" y="248" text-anchor="middle" font-size="11" fill="#555">application/vnd.apache.arrow.stream</text>
+  </g>
+
+  <!-- ============== RESPONSE (right) ============== -->
+  <g>
+    <rect x="580" y="30" width="380" height="400" rx="10" ry="10" fill="#fafafa" stroke="#555" stroke-width="1.5"/>
+    <text x="600" y="58" font-size="15" font-weight="600" fill="#222">HTTP response body</text>
+    <text x="600" y="78" font-size="12" fill="#444">Concatenated Arrow IPC streams,</text>
+    <text x="600" y="94" font-size="12" fill="#444">one per result set, in EVALUATE order.</text>
+
+    <!-- Result set 1 -->
+    <rect x="600" y="110" width="340" height="92" rx="6" ry="6" fill="#e8f3ff" stroke="#2a6db5" stroke-width="1.5"/>
+    <text x="616" y="132" font-size="13" font-weight="600" fill="#1a3a66">Result set 1</text>
+    <text x="616" y="152" font-size="12" fill="#333">Schema: RowCount (int64)</text>
+    <text x="616" y="170" font-size="12" fill="#333">Record batches: 1 row</text>
+    <text x="616" y="190" font-family="Consolas, monospace" font-size="11" fill="#666">[ schema ][ batch ][ end ]</text>
+
+    <!-- Result set 2 -->
+    <rect x="600" y="212" width="340" height="92" rx="6" ry="6" fill="#eaf6ec" stroke="#2d8a4a" stroke-width="1.5"/>
+    <text x="616" y="234" font-size="13" font-weight="600" fill="#1e5b32">Result set 2</text>
+    <text x="616" y="254" font-size="12" fill="#333">Schema: OrderId, Amount, ...</text>
+    <text x="616" y="272" font-size="12" fill="#333">Record batches: up to 10 rows</text>
+    <text x="616" y="292" font-family="Consolas, monospace" font-size="11" fill="#666">[ schema ][ batch ][ end ]</text>
+
+    <!-- Result set 3 -->
+    <rect x="600" y="314" width="340" height="92" rx="6" ry="6" fill="#fdf2e3" stroke="#b8761e" stroke-width="1.5"/>
+    <text x="616" y="336" font-size="13" font-weight="600" fill="#7a4d10">Result set 3</text>
+    <text x="616" y="356" font-size="12" fill="#333">Schema: Year, Total</text>
+    <text x="616" y="374" font-size="12" fill="#333">Record batches: one row per year</text>
+    <text x="616" y="394" font-family="Consolas, monospace" font-size="11" fill="#666">[ schema ][ batch ][ end ]</text>
+  </g>
+</svg>
