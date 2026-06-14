@@ -72,7 +72,7 @@ Before adopting the Execute DAX Queries API, review the following differences an
 | **Endpoint** | `executeQueries` | `executeDaxQueries` |
 | **Capacity requirement** | Works on Pro, PPU, and Premium/Fabric | Premium or Fabric capacity only |
 | **Tenant settings** | **Dataset Execute Queries REST API** (under **Developer settings**) | **Dataset Execute Queries REST API** (under **Developer settings**) and **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** (under **Integration settings**) are required. **Allow service principals to use Power BI APIs** (under **Developer settings**) is required only when authenticating with a service principal. |
-| **Query input** | `queries[]` array (one query per call) | Single `query` string (multiple `EVALUATE` statements allowed) |
+| **Query input** | `queries[]` array (one query per call) | Single `query` string (multiple `EVALUATE` statements allowed - see [Tutorial: Run multiple EVALUATE statements with PowerShell](powershell-multiple-evaluate-statements.md)) |
 | **Response formats** | JSON only | Arrow IPC only |
 | **Additional parameters** | Limited | `queryTimeout`, `resultsetRowcountLimit`, `schemaOnly`, `executionMetrics`, `memoryLimit` |
 | **Streaming** | Not streamed | Streamed end-to-end (chunked transfer) |
@@ -84,6 +84,7 @@ Before adopting the Execute DAX Queries API, review the following differences an
 
 - [Get started with the Execute DAX Queries REST API](get-started.md)
 - [Tutorial: Build a mid-tier DAX query execution service](dotnet-mid-tier-service.md)
+- [Tutorial: Run multiple EVALUATE statements with PowerShell](powershell-multiple-evaluate-statements.md)
 - [Tutorial: High-volume Python extraction for data science](python-high-volume-data-extraction.md)
 - [Best practices for the Execute DAX Queries REST API](best-practices.md)
 - [Execute DAX Queries REST API reference](/rest/api/power-bi/datasets/execute-dax-queries)
