@@ -19,6 +19,13 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Get Power BI Report Builder](./download-powerbi-report-builder.md).
 
+## June 2026
+
+Version 15.7.1819.28, released June 11, 2026
+
+- Added Power Query discovery UI in data source settings
+- Various bug fixes
+
 ## April 2026
 
 Version 15.7.1817.11, released April 11, 2026
