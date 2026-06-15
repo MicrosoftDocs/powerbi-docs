@@ -563,6 +563,20 @@ Org app consumers without permissions to edit the org app can view, favorite, an
 
 Only users with workspace access can see audience child items in workspace experiences. Users who only have org app access see the org app item in consumer experiences such as Home, OneLake Catalog, and Apps. Audience membership and author-configured audience visibility shape their in-app view.
 
+## Use org apps in Microsoft Teams
+
+Org apps are supported in the Power BI personal app for Microsoft Teams. Users with access to an org app can open it directly in Teams and continue working with org app content without leaving Teams.
+
+To install and set up Power BI in Teams, see [Add the Power BI app to Microsoft Teams](../collaborate-share/office-integration/service-microsoft-teams-app.md).
+
+## Add org app reports to PowerPoint presentations
+
+Reports in org apps are supported in the Power BI add-in for PowerPoint. You can embed live data from an org app report in a presentation by adding the Power BI add-in and then pasting the report URL.
+
+For steps, see [Add a report from an org app](../collaborate-share/office-integration/service-power-bi-powerpoint-add-in-install.md#add-a-report-from-an-org-app).
+
+Embedding a single visual from a report in an org app isn't currently supported.
+
 ## Subscriptions for reports in org apps
 
 Consumers can create email subscriptions for Power BI reports directly from within org apps. Subscriptions allow users to receive scheduled email updates with a snapshot and link to the report, similar to subscriptions created elsewhere in the Power BI service.
@@ -586,5 +600,4 @@ Some report capabilities available in workspace apps aren't supported in org app
 - Org apps don't support all report toolbar capabilities available in workspace apps, such as comments.
 - Org apps support email subscriptions for Power BI reports. However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps](#subscriptions-for-reports-in-org-apps). Subscriptions aren't supported for paginated reports in org apps. Dashboards and scorecards aren't eligible items for inclusion in org apps, so subscriptions don't apply to them.
 - Audience tabs aren't currently supported in Power BI mobile apps.
-- Loading org apps in the Power BI personal app for Microsoft Teams isn't currently supported. If a user selects an org app from a list in the Teams personal app, or selects an org app link in Teams, the org app opens in a browser.
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
