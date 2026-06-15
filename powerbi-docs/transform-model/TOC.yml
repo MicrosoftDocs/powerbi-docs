@@ -161,7 +161,7 @@
         href: desktop-calculated-tables.md
       - name: "Use visual calculations"
         href: desktop-visual-calculations-overview.md
-      - name: "Using DAX user-defined functions (preview)"
+      - name: "Using DAX user-defined functions"
         href: desktop-user-defined-functions-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
