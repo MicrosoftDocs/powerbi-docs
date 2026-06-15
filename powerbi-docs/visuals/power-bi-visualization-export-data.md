@@ -195,6 +195,7 @@ When contacting the report owner or administrator, refer them to these articles:
 [Admin tenant settings](../admin/service-admin-portal-about-tenant-settings.md), [Row level security](/fabric/security/service-admin-row-level-security), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - When you export data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
+- When you export data to Excel, the USERCULTURE() function isn't supported for visuals with RLS applied.
 - The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 - The export to a *.csv* file doesn't contain any subtotal or total rows.
 - The maximum number of rows that the applications can export to an *.xlsx* file is 150,000. The actual number might be lower than 150,000 depending on query limits and visual types.
