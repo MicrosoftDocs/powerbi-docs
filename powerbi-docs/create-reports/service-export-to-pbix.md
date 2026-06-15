@@ -22,7 +22,7 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 There are two ways to download a .pbix file, each with different results and considerations:
 
 - Download a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a semantic model.
-- Download a [.pbix file from a semantic model](#download-a-pbix-file-from-a-semantic-model).
+- Download an [empty report as a .pbix file from a semantic model](#download-a-pbix-file-from-a-semantic-model).
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ To download a report as a .pbix file, follow these steps:
 
     If this option isn't shown or is disabled, you're likely trying to download a .pbix in a scenario listed under [Limitations](#limitations) later in this article.
 
-1. In the dialog box, choose what type of download you want. You can choose between downloading the report including the data or the report with a live connection to the data. See [Download modes](#download-modes) in this article for more information. Pick a mode and select **Download** to start the download process.
+1. In the dialog box, choose what type of download you want. See [Download modes](#download-modes) in this article for more information. Pick a mode and select **Download** to start the download process.
 
     :::image type="content" source="media/service-export-to-pbix/power-bi-export-to-pbix-download-options.png" alt-text="A screenshot of the dialog that provides the choice to download the report including the data or the report with a live connection to the data.":::
 
@@ -46,12 +46,13 @@ To download a report as a .pbix file, follow these steps:
 
 ### Download modes
 
-To download a report .pbix file, two **modes** are available:
+To download a report .pbix file, three **modes** are available:
 
 - **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you're downloading and the data on which the report is based.
 - **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the semantic model in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a semantic model that is configured for [incremental refresh](../connect-data/incremental-refresh-configure.md).
+- **An empty report with dataset only**. Choosing this mode allows you to just download dataset associated with the report, but not the report built on top. This can be useful if a user just wants to download a semantic model separate from a report. 
 
-Both modes aren't available in all scenarios. If a mode isn't available, a tooltip explains why. For example, here's the message that you see if you download a report that's based on a semantic model that's configured for incremental refresh:
+All modes aren't available in all scenarios. If a mode isn't available, a tooltip explains why. For example, here's the message that you see if you download a report that's based on a semantic model that's configured for incremental refresh:
 
 "This option isn't available because the data model has incremental refresh enabled."
 
@@ -79,6 +80,9 @@ To download a semantic model as a .pbix file, follow these steps:
 
 1. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
 1. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
+
+> [!NOTE]
+> Downloading a .pbix file from a semantic model will give you an empty report with the dataset only. To download the report with the dataset, navigate to that specific report and download the .pbix file from there.  
 
 ## Parity between Power BI Desktop and the service
 
