@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 06/08/2026
+ms.date: 06/15/2026
 #customer intent: As a Power BI user I want to learn how to add the Power BI app to Microsoft Teams.
 ---
 

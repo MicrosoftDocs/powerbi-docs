@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 06/10/2026
+ms.date: 06/15/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
