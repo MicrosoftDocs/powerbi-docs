@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/01/2025
+ms.date: 06/15/2026
 ai-usage: ai-assisted
 LocalizationGroup: Common tasks
 ms.custom:
@@ -28,7 +28,7 @@ The dynamic subscription filters are stored in a separate Power BI semantic mode
 
 ## Prerequisites
 
-- A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
+- A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md) or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
 - Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and filter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 - The user can't be a [guest user](/fabric/enterprise/powerbi/service-admin-entra-b2b). Guest users [can't subscribe others](/power-bi/collaborate-share/end-user-subscribe?tabs=creator) and dynamic subscriptions can always bring in "others" through datasets. Therefore, guest users can't create dynamic subscriptions.
