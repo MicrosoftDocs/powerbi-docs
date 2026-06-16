@@ -24,6 +24,10 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 ### Power BI Report Server
 
+- *Version: 1.26.9663.10539 (build 15.0.1121.115), Released: June 12, 2026*
+    - Fixed issue with scale out environments showing old data after refresh.
+    - Fixed issue where Power BI advanced button slicer visual was not working as expected.
+
 - *Version: 1.26.9637.31070 (build 15.0.1121.109), Released: May 21, 2026*
     - Added support for card visual
     - Fixed issue for Power BI Reports containing report slicers
