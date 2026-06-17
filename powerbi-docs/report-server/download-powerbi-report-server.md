@@ -31,9 +31,9 @@ For details and more information about what's new in this release, see [Change l
 
 PBIRS January 2026 is the latest generally available (GA) version.
 - Release name: Power BI Report Server (May 2026)
-- Build number: 15.0.1121.109
-- Version: 1.26.9637.31070
-- Release date: May 21, 2026
+- Build number: 15.0.1121.115
+- Version: 1.26.9663.10539
+- Release date: June 16, 2026
 
 ## System Requirements
 
