@@ -46,7 +46,7 @@ A page tooltip is revealed. It presents a different data visual (line and cluste
 
 ### Add detail
 
-A page tooltip can display additional details and add context.
+A page tooltip can display more details and add context.
 
 The following example shows what happens when the report user hovers their cursor over the **Average of Violation Points** value, for zip code 98022.
 
