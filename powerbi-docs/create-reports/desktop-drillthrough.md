@@ -22,6 +22,8 @@ Drillthrough in Power BI lets users navigate from a summary view to a detailed r
 
 Drillthrough is a navigation feature that lets report viewers move from one page to another filtered to a specific value. It's commonly used to show detailed information about a selected entity, like a customer, product, or region. Drillthrough can be triggered by right-clicking a visual or selecting a button, making it easy for users to explore detailed insights.
 
+Drillthrough is different from *drill mode*, which moves through hierarchy levels within a single visual. For drill mode, see [Use drill mode to explore visuals in the Power BI service](../explore-reports/end-user-drill.md).
+
 ## Concepts
 
 Understanding drillthrough components helps you design effective report navigation. This section introduces the key elements for setting up and using drillthrough.
@@ -152,3 +154,4 @@ If drillthrough pages show outdated or missing data, follow these suggestions:
 - [Filters and highlighting](power-bi-reports-filters-and-highlighting.md)
 - [Create buttons](desktop-buttons.md)
 - [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
+- [Use drill mode to explore visuals in the Power BI service](../explore-reports/end-user-drill.md)

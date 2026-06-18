@@ -117,6 +117,8 @@
       href: end-user-change-sort.md
   - name: Drill into details
     items:
+    - name: Use drill mode to explore visuals
+      href: end-user-drill.md
     - name: Use buttons and actions
       href: end-user-buttons.md
     - name: Use Explore (preview)
