@@ -48,6 +48,8 @@ When you enable this option, you see your custom connectors as available data so
 
 - You can only use one custom connector data source when working in DirectQuery mode. Multiple custom connector data sources don't work with DirectQuery.
 
+- Kerberos protocol using Windows Authentication isn't supported for custom connectors via the on-premises data gateway.
+
 ## Related content
 
 * [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
@@ -56,6 +58,5 @@ When you enable this option, you see your custom connectors as available data so
 * [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
-* [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)  
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
