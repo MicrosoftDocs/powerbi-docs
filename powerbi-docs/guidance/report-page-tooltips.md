@@ -84,4 +84,4 @@ For more information related to this article, check out the following resources:
 - [Visual tooltips in Power BI](../visuals/power-bi-visualization-visual-tooltips.md)
 - [Use visual elements to enhance Power BI reports](../create-reports/desktop-visual-elements-for-reports.md)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
-- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
+- Suggestions? [Help improve Fabric by contributing ideas](https://ideas.fabric.microsoft.com/)
