@@ -109,7 +109,7 @@ Keep a few considerations and limitations in mind for **tooltips**.
 > [!NOTE]
 > The Power BI mobile app for iPad supports tooltip pages, but some features or formatting might differ from Power BI Desktop.
 
-- Report tooltips aren't interactive. Users can't select slicers, tab through content, or scroll within the tooltip while it's displayed. Design your tooltip pages so all content is visible without scrolling, and avoid adding interactive elements like slicers or buttons. If you need users to interact with filtered data, use a [drillthrough page](desktop-drillthrough.md) instead.
+- Report tooltips aren't interactive. Users can't select slicers, tab through content, or scroll within the tooltip. Design your tooltip pages so all content is visible without scrolling, and avoid adding interactive elements like slicers or buttons. If you need users to interact with filtered data, use a [drillthrough page](desktop-drillthrough.md) instead.
 - Button visuals also support tooltips.
 - Dashboards don't support report page tooltips.
 - Python and R visuals don't currently appear in report tooltips.

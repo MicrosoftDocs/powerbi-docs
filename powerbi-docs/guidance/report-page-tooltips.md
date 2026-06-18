@@ -26,7 +26,7 @@ Report page tooltips can enhance the experience for your report users. Page tool
 > A report visual can only reveal a page tooltip when tooltip page filters are compatible with the visual's design. For example, a visual that groups by _product_ is compatible with a tooltip page that filters by _product_.
 
 > [!IMPORTANT]
-> Page tooltips are not interactive. Users can't select slicers, tab through content, or scroll within the tooltip while it's displayed. Keep this limitation in mind when designing your tooltip pages—ensure all content is visible without scrolling and avoid adding interactive elements like slicers or buttons that users might expect to use. If you need users to interact with filtered data, create a [drillthrough page](../create-reports/desktop-drillthrough.md) instead.
+> Page tooltips are not interactive. Users can't select slicers, tab through content, or scroll within the tooltip. Keep this limitation in mind when designing your tooltip pages—ensure all content is visible without scrolling and avoid adding interactive elements like slicers or buttons that users might expect to use. If you need users to interact with filtered data, create a [drillthrough page](../create-reports/desktop-drillthrough.md) instead.
 
 Here are some suggested design scenarios:
 
