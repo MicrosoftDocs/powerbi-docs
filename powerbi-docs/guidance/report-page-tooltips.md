@@ -40,7 +40,7 @@ A page tooltip can visualize the same data as the source visual. It's done by us
 
 The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value. The filter context for the value is Yammer in November 2018.
 
-:::image type="content" source="media/report-page-tooltips/suggestion-different-perspective.png" alt-text="Screenshot of a matrix visual that displays a grid of values. A page tooltip has appeared." border="false":::
+:::image type="content" source="media/report-page-tooltips/suggestion-different-perspective.png" alt-text="Screenshot of a matrix visual that displays a grid of values. A page tooltip appears." border="false":::
 
 A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies a contrasting time filter. Notice that the filter context for the data point is November 2018. Yet the page tooltip displays trend over _a full year of months_.
 
@@ -50,7 +50,7 @@ A page tooltip can display additional details and add context.
 
 The following example shows what happens when the report user hovers their cursor over the **Average of Violation Points** value, for zip code 98022.
 
-:::image type="content" source="media/report-page-tooltips/suggestion-add-details.png" alt-text="Screenshot shows a table visual that displays a grid of values, and the table contains three columns. A page tooltip has appeared." border="false":::
+:::image type="content" source="media/report-page-tooltips/suggestion-add-details.png" alt-text="Screenshot shows a table visual that displays a grid of values, and the table contains three columns. A page tooltip appears." border="false":::
 
 A page tooltip is revealed. It presents specific attributes and statistics for zip code 98022.
 
@@ -62,7 +62,7 @@ Interestingly, buttons, images, text boxes, and shapes can also reveal a visual 
 
 The following example shows what happens when the report user hovers their cursor over the [visual header icon](../create-reports/desktop-visual-elements-for-reports.md).
 
-:::image type="content" source="media/report-page-tooltips/suggestion-add-help.png" alt-text="Screenshot shows a report user has hovered their cursor over the visual header icon (question mark icon). A richly formatted tooltip has appeared." border="false":::
+:::image type="content" source="media/report-page-tooltips/suggestion-add-help.png" alt-text="Screenshot shows a report user hovering their cursor over the visual header icon (question mark icon). A richly formatted tooltip appears." border="false":::
 
 A page tooltip is revealed. It presents rich formatted text in four text boxes, and a shape (line). The page tooltip conveys help by describing each acronym displayed in the visual.
 
