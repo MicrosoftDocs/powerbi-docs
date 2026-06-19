@@ -96,9 +96,20 @@ For example, when you use GitHub Copilot in VS Code with a Power BI MCP server, 
 **Learn more:** [Model Context Protocol specification](https://modelcontextprotocol.io/specification/latest)  
 
 ## Considerations
+
+### Security
+
 MCP as a phenomenon is very novel and cutting-edge. As with all new technology standards, consider doing a security review to ensure any systems that integrate with MCP servers follow all regulations and standards your system is expected to adhere to. This includes not only the Power BI MCP servers, but any MCP client/agent that you choose to implement down to the model provider.
 
 You should follow Microsoft security guidance for MCP servers, including enabling Entra ID authentication, secure token management, and network isolation. Refer to [Microsoft Security Documentation](/azure/api-management/secure-mcp-servers) for details.
+
+### Permissions and Risk
+
+MCP clients can invoke operations based on the user's [Fabric Role-Based Access Control (RBAC) permissions](/fabric/fundamentals/roles-workspaces). Autonomous or misconfigured clients may perform destructive actions. You should review and apply least-privilege RBAC roles and implement safeguards before deployment. Certain safeguards, such as flags to prevent destructive operations, are not standardized in the MCP specification and may not be supported by all clients. 
+
+### Compliance Responsibility
+
+This MCP server may interact with clients and services that process data outside of Fabric’s compliance boundaries, and are processed in accordance with your chosen client or service(s) applicable terms and data handling policies.  You are responsible for ensuring that any integration complies with applicable organizational, regulatory, and contractual requirements.
 
 ## Next steps
 
