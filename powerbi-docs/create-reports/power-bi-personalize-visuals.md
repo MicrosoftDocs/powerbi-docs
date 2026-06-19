@@ -28,7 +28,7 @@ This feature is ideal for report creators: You can enable basic exploration scen
 - Swap out a measure or dimension.
 - Add or remove a legend.
 - Compare two or more measures.
-- Change aggregations, and more.
+- Change aggregations.
 
 Not only does this feature allow for new exploration capabilities, it also includes ways for users to capture and share their changes:
 
@@ -88,8 +88,6 @@ Slide **Personalize visual** > **On** or **Off**.
 
 For Personalize visuals, use **Perspectives** to choose a subset of a model that provides a more focused view. Choosing a subset can be helpful when working with a large data model, allowing you to focus on a manageable subset of fields. Choosing a subset can also help to not overwhelm report readers with the full collection of fields in that large model.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-1.png" alt-text="Screenshot of the Personalize visuals options.":::
-
 Keep the following considerations in mind when working with perspectives:
 
 - Perspectives aren't meant to be used as a security mechanism. They're a tool for providing a better end-user experience. All security for a perspective is inherited from the underlying model.
@@ -100,31 +98,72 @@ Keep the following considerations in mind when working with perspectives:
 
 To use Perspectives, you must enable Personalize visuals for the report. You also must create at least one Perspective that includes the dimensions and measures you want end-users to interact with for the Personalize visuals experience.
 
-To create the perspective, use Tabular Editor, which you can download from the following location: [Tabular Editor download](https://tabulareditor.com/).
+To create the perspective, use [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) view in Power BI Desktop:
 
-After you install **Tabular Editor**, open your report in **Power BI Desktop** and launch **Tabular Editor** from the **External Tools** tab of the ribbon.
+1. In Power BI Desktop, select **View** > **TMDL view**.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-2.png" alt-text="Screenshot of the Tabular Editor in the External Tools ribbon.":::
+1. Type in the TMDL script to define your perspective.
 
-In Tabular Editor, right-click on **Perspectives** > **Create** > **Perspective**.
+1. Apply the script.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-3.png" alt-text="Screenshot of the Tabular Editor with Create and Perspective highlighted.":::
+Here is an example of a TMDL script to create perspectives with options you can use.
 
-You can double-click the text to rename the perspective.
+```tmdl
+createOrReplace
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-4.png" alt-text="Screenshot of the perspective name highlighted for renaming.":::
+    perspective Sales
+        perspectiveTable 'Product'
+            perspectiveColumn 'Product'
+            perspectiveColumn 'Model Name'
+            perspectiveColumn 'Product Line'
+            perspectiveColumn 'Description'
+        perspectiveTable 'Product Category'
+            perspectiveColumn 'Product Category'
+        perspectiveTable 'Product Subcategory'
+            perspectiveColumn 'Product Subcategory'
+        perspectiveTable 'Customer'
+        perspectiveTable 'Date'
+            perspectiveHierarchy 'Date Hierarchy'
+        perspectiveTable 'All orders'
+            perspectiveMeasure 'Orders'
+            perspectiveMeasure 'Quantity sold'
+            perspectiveMeasure 'Sales amount USD'
+        perspectiveTable 'Time Intelligence'
+            includeAll: True
 
-Next, add fields to the perspective by opening the **Tables** folder in Tabular Editor. Then right-click on the fields you want to show in the perspective.
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-5.png" alt-text="Screenshot of the Tabular Editor right-click menu with Shown in perspectives highlighted.":::
+    perspective ProductInfo
+        perspectiveTable 'Product'
+            includeAll: True
+```
 
-Repeat that process for each field you want to add to the perspective. You can't add duplicate fields in a perspective, so you can't add a field that you already added.
+### View items in a perspective
 
-After you add all the fields you want, save your settings in both Tabular Editor and Power BI Desktop.
+To see all the items included in your perspectives, run the following query in [DAX query view](../transform-model/dax-query-view.md):
 
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-6.png" alt-text="Screenshot of the Save perspectives settings in the Tabular Editor.":::
+```dax
+EVALUATE 
+VAR perspectiveNames = SELECTCOLUMNS(INFO.PERSPECTIVES(), "PerspectiveID", [ID], "Perspective", [Name])
+VAR perspectiveTables = SELECTCOLUMNS(NATURALINNERJOIN(INFO.PERSPECTIVETABLES(), perspectiveNames), "PerspectiveTableID", [ID], "TableID", [TableID], [PerspectiveID], [Perspective], [IncludeAll])
+VAR tablesInfo = NATURALINNERJOIN(SELECTCOLUMNS(INFO.VIEW.TABLES(), "TableID", [ID], "Table", [Name], [IsHidden]), perspectiveTables)
+VAR columnsinfo = NATURALINNERJOIN(SELECTCOLUMNS(FILTER(INFO.VIEW.COLUMNS(),[Type] <> "RowNumber"), "ColumnID", [ID], "Column", [Name], "Table", [Table]), tablesInfo)
+VAR measuresinfo = SELECTCOLUMNS(INFO.VIEW.MEASURES(), "MeasureID", [ID], "Field", [Name], [Table], [IsHidden])
+VAR perspectiveCols = SELECTCOLUMNS(NATURALINNERJOIN(INFO.PERSPECTIVECOLUMNS(), columnsinfo), "Field", [Column], [Table], [IsHidden], [Perspective], "Type", "Column")
+VAR perspectiveColsAll = SELECTCOLUMNS(NATURALINNERJOIN(filter(tablesInfo, [IncludeAll] = True()), columnsinfo), "Field", [Column], [Table], [IsHidden], [Perspective], "Type", "Column")
+VAR perspectiveColsHierarchy = SELECTCOLUMNS(NATURALINNERJOIN(SELECTCOLUMNS(NATURALINNERJOIN(NATURALINNERJOIN(INFO.PERSPECTIVEHIERARCHIES(), tablesInfo), SELECTCOLUMNS(INFO.LEVELS(), [HierarchyID], [ColumnID])), [ColumnID], [Table], [Perspective], "Type", "Hierarchy column"),columnsinfo), "Field", [Column], [Table], [IsHidden], [Perspective], [Type])
+VAR perspectiveMeasures = SELECTCOLUMNS(NATURALINNERJOIN(NATURALINNERJOIN(INFO.PERSPECTIVEMEASURES(), measuresinfo), perspectiveTables), [Field], [Table], [IsHidden], [Perspective], "Type", "Measure")
+VAR combined = 
+UNION(
+    perspectiveCols,
+    perspectiveColsAll,
+    perspectiveColsHierarchy,
+    perspectiveMeasures
+)
+RETURN
+combined
+```
 
-After you save the new perspective to the model and save the Power BI Desktop report, go to the **Format** pane for the page. You see a new section for **Personalize visual**.
+After you save the new perspective to the model, go to the **Format** pane for the page. You see a new section for **Personalize visual**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-perspective-7.png" alt-text="Screenshot of the Personalize visual section in the Format pane.":::
 
@@ -143,6 +182,7 @@ Be aware of the following limitations.
 - The feature isn't supported for publish to web.
 - Export to PowerPoint and PDF don't capture personalized visuals.
 - User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../explore-reports/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
+- When users share a personalized visual, changes they made to the filter pane aren't included.
 - The Power BI mobile apps for iOS and Android tablets support this feature. The Power BI mobile apps for phones don't support this feature. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Related content
