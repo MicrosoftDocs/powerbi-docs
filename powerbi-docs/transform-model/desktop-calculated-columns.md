@@ -76,7 +76,7 @@ The following table shows the combinations of [table storage mode](desktop-stora
 | Storage mode | Standard (default) | User Context |
 |---|---|---|
 | Import | Materialized | Unmaterialized |
-| Direct Lake on OneLake | Unmaterialized | Unmaterialized |
+| Direct Lake on OneLake | N/A | Unmaterialized |
 | Direct Lake on SQL | N/A | N/A |
 | DirectQuery | Unmaterialized | Unmaterialized |
 | Dual | Materialized (Import), unmaterialized (DirectQuery) | Unmaterialized |

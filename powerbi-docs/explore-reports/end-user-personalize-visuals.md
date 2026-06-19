@@ -30,7 +30,7 @@ This feature helps you gain further insights through ad-hoc exploration of visua
 - Swap out a measure or dimension.
 - Add or remove a legend.
 - Compare two or more measures.
-- Change aggregations, and more.
+- Change aggregations.
 
 Not only does this feature allow for new exploration capabilities, it also includes ways for you to capture and share your changes:
 
@@ -129,10 +129,12 @@ Currently the feature has a few limitations to be aware of.
 
 - **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have permissions to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
+- When you share a personalized visual, changes you made to the filter pane aren't included.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 - This feature isn't available in Report Server. 
 
 ## Related content
 
+- [Let users personalize visuals in a report](../create-reports/power-bi-personalize-visuals.md)
 - [Copy and paste a report visualization](../visuals/power-bi-visualization-copy-paste.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
