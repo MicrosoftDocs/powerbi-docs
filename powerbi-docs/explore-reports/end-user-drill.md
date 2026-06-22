@@ -33,9 +33,7 @@ The icons might appear at the top of the visual or at the bottom, depending on t
 
 ## Drill icons on a Power BI visual
 
-When a visual supports drill, you see up to four icons together. The following screenshot shows the drill icons on a column chart.
-
-:::image type="content" source="../visuals/media/power-bi-visualization-column-charts/column-drill.png" alt-text="Screenshot of a Power BI column chart showing the four drill icons in the visual header." lightbox="../visuals/media/power-bi-visualization-column-charts/column-drill.png":::
+When a visual supports drill, you see up to four icons together.
 
 Each icon does something different:
 
