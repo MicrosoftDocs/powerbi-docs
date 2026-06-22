@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 # Set featured tables in Power BI Desktop to appear in Excel
 
 > [!IMPORTANT]
-> This functionality will be removed after the Power BI Desktop June 2026 release. For details, see [Use Organization data types to view and insert data](https://support.microsoft.com/office/use-organization-data-types-to-view-and-insert-data-c7686113-f906-40c8-b9eb-d97c41702469).
+> This functionality has been removed as of the Power BI Desktop June 2026 release. For details, see [Use Organization data types to view and insert data](https://support.microsoft.com/office/use-organization-data-types-to-view-and-insert-data-c7686113-f906-40c8-b9eb-d97c41702469).
 > 
 
 In the Data Types Gallery in Excel, users can find data from *featured tables* in your Power BI semantic models. In this article, you learn how to set tables as *featured* in your semantic models. These tags make it easier for users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
