@@ -167,6 +167,8 @@
       href: unit-tests-introduction.md
     - name: "Advanced edit mode"
       href: advanced-edit-mode.md
+    - name: "Custom visual resize optimization"
+      href: custom-visuals-resize-optimization-guidelines.md
 # =============================================================================
 # PUBLISH YOUR POWER BI CUSTOM VISUAL
 # =============================================================================
