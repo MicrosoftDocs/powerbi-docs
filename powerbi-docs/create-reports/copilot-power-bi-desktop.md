@@ -58,6 +58,7 @@ When you use Copilot in Power BI Desktop for the first time, you're asked to pic
 
 - Copilot doesn't support workspaces backed by [Power BI Premium Per User (PPU)](/fabric/enterprise/powerbi/service-premium-per-user-faq).
 - Power BI Desktop versions dated January 2025 and earlier don't support the report view Copilot pane. Update to the latest version to access this feature.
+- Copilot isn't supported in sovereign cloud environments. Users in these environments might see a 403 Forbidden error when attempting to use Copilot in Power BI Desktop. Refer to [Copilot for Power BI Overview](copilot-introduction.md) for more details. 
 
 ## Send feedback
 
