@@ -23,16 +23,16 @@ You can use natural language with Copilot alongside manual editing to get recomm
 These capabilities represent just some of the key ways Copilot can help you enhance your semantic models. You can also explore additional actions beyond this list to further refine and optimize your model. 
 
 - **Model analysis and guided recommendations**
-  - Identify issues like unclear structures and inconsistent naming
+  - Identify problems like unclear structures and inconsistent naming
   - Get best-practice recommendations to improve your model's design and quality
 
 - **Model editing**
-  - Create, update, and manage tables, columns, measures, and relationships using natural language
-  - Generate or refine DAX business measures using natural language (ex. totals, growth metrics, or aggregations)
+  - Create, update, and manage tables, columns, measures, and relationships by using natural language
+  - Generate or refine DAX business measures by using natural language (for example, totals, growth metrics, or aggregations)
   - Create RLS roles to ensure secure data access
  
 - **Model discoverability**
-  - Suggest and implement clearer descriptions for tables, columns and measures
+  - Suggest and implement clearer descriptions for tables, columns, and measures
   - Propose display folder structures to organize fields logically
   - Recommend which technical or intermediate fields to hide from report authors
     
@@ -61,7 +61,7 @@ After you grant permission, Copilot creates a restore checkpoint at the start of
 
 Copilot in web modeling respects your existing Power BI permissions. You can use Copilot to make changes only if you have permission the **Write** permission to edit the semantic model.
 
-Copilot’s editing access is limited to the model open in the current Copilot pane. It can also retrieve schema information of the other models you have access to in the same workspace, but those models are always read-only and cannot be modified.
+Copilot’s editing access is limited to the model open in the current Copilot pane. It can also retrieve schema information of the other models you have access to in the same workspace, but those models are always read-only and can't be modified.
 
 ## Considerations
 
