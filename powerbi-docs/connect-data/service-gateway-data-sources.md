@@ -7,7 +7,7 @@ ms.reviewer: mideboer
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 06/25/2026
 ai-usage: ai-assisted
 LocalizationGroup: Gateways
 ms.custom:
@@ -64,6 +64,10 @@ If you don't have a gateway, [install an on-premises data gateway](/data-integra
    - SQL Server
    - Azure Data Explorer
    - Snowflake
+   - Denodo (Preview)
+
+   > [!NOTE]
+   > For supported connectors such as Denodo, the Microsoft Entra ID SSO flow uses token forwarding through the semantic model and gateway to the data source for validation with Microsoft Entra ID. This flow doesn't require Kerberos Constrained Delegation (KCD), domain-joined gateways, or highly privileged gateway service accounts.
 
    For more information about **Use SSO via Microsoft Entra ID for DirectQuery queries**, see [Microsoft Entra single sign-on (SSO) for data gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway).
 

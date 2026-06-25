@@ -7,14 +7,17 @@ ms.reviewer: mideboer
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 06/27/2024
+ms.date: 06/25/2026
 LocalizationGroup: Gateways
 ms.custom: sfi-image-nochange
 ---
 
 # Microsoft Entra SSO
 
-You can use Microsoft Entra single sign-on (SSO) to authenticate to the data gateway and access cloud data sources that rely on Microsoft Entra ID based authentication. When you configure Microsoft Entra SSO on the on-premises data gateway for an applicable data source, queries run under the Microsoft Entra identity of the user that interacts with the Power BI report.
+You can use Microsoft Entra single sign-on (SSO) to authenticate to the data gateway and access cloud data sources that rely on Microsoft Entra ID based authentication. When you configure Microsoft Entra SSO on the on-premises data gateway for an applicable data source, such as Denodo, queries run under the Microsoft Entra identity of the user that interacts with the Power BI report.
+
+> [!NOTE]
+> User identity and token forwarding to the data source applies to DirectQuery scenarios. Import mode queries don't forward the user identity because they're served from imported data.
 
 Azure Virtual Networks (VNets) offer network isolation and security for your resources on the Microsoft cloud. On-premises data gateways help you achieve a secure way to connect to these data sources. Microsoft Entra SSO allows users to see only data that they have access to.
 
@@ -61,6 +64,9 @@ Because the Microsoft Entra token of the user is passed via the gateway, it's po
 * As a Fabric administrator, you can also control who can install gateways in your tenant. For more information, see [Manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers).
 
 The Microsoft Entra SSO feature is disabled by default for on-premises data gateways. As a Fabric administrator, you have to enable the **Microsoft Entra Single Sign-On (SSO) for Gateway** tenant setting in the Admin portal before data sources can use Microsoft Entra SSO on an on-premises data gateway.
+
+> [!NOTE]
+> The Microsoft Entra SSO flow is token-based and doesn't require Kerberos Constrained Delegation (KCD), domain-joined gateway machines, or elevated gateway service accounts when used with supported connectors such as Denodo. This makes Microsoft Entra SSO an alternative to Kerberos-based SSO configurations for applicable data sources.
 
 :::image type="content" source="media/service-gateway-azure-active-directory-sso/powerbi-admin-portal-entra-sso-for-gateway-setting.png" alt-text="Screenshot of the Microsoft Entra SSO for gateway feature in the Power BI Admin portal.":::
 

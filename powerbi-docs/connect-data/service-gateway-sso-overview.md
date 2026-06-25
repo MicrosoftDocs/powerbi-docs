@@ -7,7 +7,7 @@ ms.reviewer: arthii
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 08/25/2023
+ms.date: 06/25/2026
 LocalizationGroup: Gateways
 ---
 
@@ -37,7 +37,7 @@ Power BI supports the following data sources:
 * Azure Data Explorer (Microsoft Entra ID)
 * Azure SQL (Microsoft Entra ID)
 * Azure Synapse Analytics (Microsoft Entra ID)
-* Denodo (Kerberos)
+* Denodo (Kerberos, Microsoft Entra ID)
 * Dremio Cloud (Microsoft Entra ID)
 * Hive LLAP (Kerberos)
 * Impala (Kerberos)
