@@ -85,7 +85,7 @@ A basic theme that defines these colors might appear as follows:
 
 ### Named theme colors
 
-You can reference theme colors by name in DAX measures for conditional formatting. The following table lists all available named theme colors. Most use the same name as defined in the theme JSON, but the divergent colors have different DAX reference names.
+In DAX measures for conditional formatting, reference theme colors by name. The following table lists all available named theme colors. Most use the same name as defined in the theme JSON, but the divergent colors have different DAX reference names.
 
 | Group | Theme color name | DAX reference name |
 |-------|------------------|----------------------|
