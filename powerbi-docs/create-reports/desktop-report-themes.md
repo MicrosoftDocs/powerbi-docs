@@ -69,6 +69,8 @@ The colors in the color palette are relative to the current theme. For example, 
 
 If you prefer a visual to not automatically update, don't use a theme color by going to **more colors** in the color palette. To return any visual to the theme colors, choose **reset to default** in the visual's formatting pane.
 
+You can also reference theme colors by name in DAX measures for conditional formatting. When you use **Field value** format style, return the theme color name (like `good`, `bad`, or `neutral`) from your measure, and the visual uses the corresponding color from the current theme. For more information, see [Named theme colors](report-themes-create-custom.md#named-theme-colors).
+
 ### Colors used by dynamic and static series in visuals
 
 When a visual has a series, Power BI applies colors in the order they appear in the theme's data colors. A visual has a series when you add a legend or use more than one measure in the values section.

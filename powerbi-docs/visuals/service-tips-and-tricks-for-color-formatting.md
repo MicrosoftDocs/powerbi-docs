@@ -112,6 +112,38 @@ You can also format the color of the visual using a measure or column that isn't
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png" alt-text="Screenshot of Column chart with multiple shades of blue.":::
 
+### Use theme colors with field value formatting
+
+When you use **Field value** conditional formatting, you can return the name of a theme color from a DAX measure or data column instead of a hex code. This approach keeps your report colors consistent with the applied theme, so colors automatically update when the theme changes.
+
+You can use this technique with:
+
+- Measures in your semantic model
+- Report measures when your report is live connected to a published semantic model
+- [Visual calculations](../transform-model/desktop-visual-calculations-overview.md)
+
+To reference a theme color, return its name as text from your measure or column. Most theme colors use the same name as defined in the theme JSON file. However, the divergent colors (minimum, center, maximum, null) have different DAX reference names.
+
+For the complete list of theme colors and their DAX reference names, see [Named theme colors](../create-reports/report-themes-create-custom.md#named-theme-colors).
+
+For example, this DAX measure returns different theme colors based on profit margin:
+
+```dax
+Profit Color = 
+VAR ProfitMargin = [Profit Margin %]
+RETURN
+    SWITCH(
+        TRUE(),
+        ProfitMargin >= 0.2, "good",
+        ProfitMargin >= 0, "neutral",
+        "bad"
+    )
+```
+
+To use this measure, select **Field value** as the format style and choose the measure from your data model.
+
+For more information about theme colors, see [Create a custom report theme](../create-reports/report-themes-create-custom.md).
+
 ## Undo in Power BI
 
 Like many other Microsoft services and software, Power BI provides an easy way to undo your last change. For example, let's say you change the color of a data point, or a series of data points, and you don't like the color when it appears in the visualization. You don't recall exactly which color it was before, but you know you want that color back.
