@@ -116,7 +116,7 @@ In DAX measures for conditional formatting, reference theme colors by name. The 
 
 ### Reference theme colors in conditional formatting
 
-When using **Field value** conditional formatting, you can return theme color names from a DAX measure or data column instead of hex codes. This technique keeps colors consistent with the applied theme, automatically updating when you change themes.
+When you use **Field value** conditional formatting, you can return theme color names from a DAX measure or data column instead of hex codes. This technique keeps colors consistent with the applied theme and automatically updates when you change themes.
 
 You can use this technique with:
 
