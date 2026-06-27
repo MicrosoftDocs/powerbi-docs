@@ -129,7 +129,10 @@ Currently the feature has a few limitations to be aware of.
 
 - **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have permissions to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
-- When you share a personalized visual, changes you made to the filter pane aren't included.
+- Filter changes made during personalization have specific persistence behavior:
+  - When you add a column to a visual, a filter pane card is automatically created for that column. Selections made on this auto-generated filter aren't persisted when the column is removed from the visual, so they won't be saved in bookmarks or when sharing with personalized changes.
+  - Filters that the report author explicitly added to the filter pane persist regardless of whether the column is in the visual.
+  - Filter changes for columns that remain in the visual persist in bookmarks and when sharing.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 - This feature isn't available in Report Server. 
 

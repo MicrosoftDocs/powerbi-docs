@@ -182,7 +182,10 @@ Be aware of the following limitations.
 - The feature isn't supported for publish to web.
 - Export to PowerPoint and PDF don't capture personalized visuals.
 - User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../explore-reports/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
-- When users share a personalized visual, changes they made to the filter pane aren't included.
+- Filter changes made during personalization have specific persistence behavior:
+  - When users add a column to a visual, a filter pane card is automatically created for that column. Selections made on this auto-generated filter aren't persisted when the column is removed from the visual, so they won't be saved in bookmarks or when sharing with personalized changes.
+  - Filters that authors explicitly add to the filter pane persist regardless of whether the column is in the visual.
+  - Filter changes for columns that remain in the visual persist in bookmarks and when sharing.
 - The Power BI mobile apps for iOS and Android tablets support this feature. The Power BI mobile apps for phones don't support this feature. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Related content
