@@ -167,7 +167,7 @@ In this release of **personal bookmarks**, there are a few considerations and li
 - Filter changes from personalized visuals have specific persistence behavior in bookmarks:
   - When you add a column to a visual during personalization, a filter pane card is automatically created for that column. Selections made on this auto-generated filter aren't captured in bookmarks if the column is later removed from the visual.
   - Bookmarks capture filters that the report author explicitly added to the filter pane regardless of whether the column is in the visual.
-  - Filter changes for columns that remain in the visual are captured in bookmarks.
+  - Bookmarks capture filter changes for columns that remain in the visual.
 - You can create up to 20 bookmarks for a single report.
 
 ## Related content
