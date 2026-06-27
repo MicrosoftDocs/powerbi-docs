@@ -138,7 +138,7 @@ RETURN
     )
 ```
 
-Apply this measure using **Field value** format style in the conditional formatting dialog. For more information about conditional formatting, see [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md#use-theme-colors-with-field-value-formatting).
+Apply this measure by using **Field value** format style in the conditional formatting dialog. For more information about conditional formatting, see [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md#use-theme-colors-with-field-value-formatting).
 
 ## Set structural colors
 
