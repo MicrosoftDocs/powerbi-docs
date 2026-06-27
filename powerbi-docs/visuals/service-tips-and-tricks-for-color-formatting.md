@@ -116,7 +116,7 @@ You can also format the color of the visual using a measure or column that isn't
 
 When you use **Field value** conditional formatting, you can return the name of a theme color from a DAX measure or data column instead of a hex code. This approach keeps your report colors consistent with the applied theme, so colors automatically update when the theme changes.
 
-You can use this technique with:
+Use this technique with:
 
 - Measures in your semantic model
 - Report measures when your report is live connected to a published semantic model
