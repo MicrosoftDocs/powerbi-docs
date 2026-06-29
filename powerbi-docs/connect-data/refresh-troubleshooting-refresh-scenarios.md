@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/14/2025
+ms.date: 06/25/2026
 LocalizationGroup: Data refresh
 ai-usage: ai-assisted
 ---
@@ -110,11 +110,16 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. Consider the following best practices to reduce the likelihood of refresh throttling:
 
-* Refresh during nonpeak times. Performing refresh operations during non-business hours or other non-peak times helps ensure that the overall usage in the capacity remains relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
-* Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica performs the semantic model during refresh while interactive queries are executed on the read-only replica.
-* Reduce model complexity. Simplifying the model, especially if it involves computationally expensive calculated tables and columns, can help to lower the refresh burden and avoid memory bottlenecks during refresh. If possible, move calculated tables and columns to the data source or ETL processes.
-* Use [incremental refresh](../connect-data/incremental-refresh-overview.md) for large semantic models. By automatically partitioning large tables, incremental refresh can help to reduce the amount of data that needs to be refreshed. By refreshing only the most recent import partitions, you can significantly reduce the refresh duration, thus making room for more refreshes in a given timespan.
-* Add Automatic retry for custom refreshes. If you're using XMLA or the Power BI REST API to refresh a semantic model, make sure to add retry logic as explained in [datasets - refresh dataset](refresh-data.md). Retries with backoff pattern can help to ensure that your semantic models are refreshed successfully. Alternatively, consider using the built-in scheduling facility in Power BI because the Power BI performs retries when scheduled and on-demand refreshes are throttled.
+* Refresh during nonpeak times. Performing refresh operations during nonbusiness hours or other nonpeak times helps keep overall capacity usage relatively low. Use the [schedule view](refresh-summaries.md#refresh-schedule) to determine whether the scheduled refresh events are properly placed.
+* Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md). Semantic model scale-out can help by adding a read-only replica for refresh isolation. The read/write replica processes the refresh while the read-only replica handles interactive queries.
+* Reduce model complexity. Simplifying the model, especially if it involves computationally expensive calculated tables and columns, can help lower the refresh burden and avoid memory bottlenecks during refresh. If possible, move calculated tables and columns to the data source or ETL processes. Other techniques that reduce peak refresh memory include removing unnecessary columns and rows, reducing high-cardinality columns and wide fact tables, optimizing data types and transformations, and validating query folding.
+* Use [incremental refresh](incremental-refresh-overview.md) for large semantic models. By automatically partitioning large tables, incremental refresh can help reduce the amount of data that needs to be refreshed. By refreshing only the most recent import partitions, you can significantly reduce the refresh duration, making room for more refreshes in a given timespan.
+* Prefer table-level or partition-level refresh over full refresh when possible. Granular refresh can reduce peak memory usage compared with full refresh, because the existing model copy and the new copy don't both need to be fully resident in memory at the same time.
+* Reduce refresh parallelism when you process multiple partitions concurrently for the same semantic model.
+* Move the workspace to a higher F-capacity SKU with a larger per-semantic-model memory limit if the current capacity can't support the model's peak refresh memory needs. If you recently scaled the capacity, allow time for it to stabilize, because memory limits might take time to fully adjust.
+* Increase the `CommandTimeout` value in your M code if long-running source queries are contributing to refresh failures.
+* Verify gateway configuration and data source credentials if the failure shows connectivity symptoms, such as connection timeouts or authentication errors, alongside memory pressure.
+* Add automatic retry for custom refreshes. If you use XMLA or the Power BI REST API to refresh a semantic model, add retry logic as explained in [datasets - refresh dataset](refresh-data.md). A retry-with-backoff pattern can help ensure that your semantic models are refreshed successfully. Alternatively, consider using the built-in scheduling facility in Power BI, because Power BI performs retries when scheduled and on-demand refreshes are throttled.
 
 If a refresh operation is canceled due to throttling, the following error messages are logged into the refresh history:
 
@@ -132,11 +137,53 @@ This error indicates you have too many semantic models running refresh at the sa
  
 This error indicates a system error in Power BI Premium based on semantic models residing on a given physical node. You can retry the refresh operation, or reschedule the refresh time to address this error.
 
-## Low memory situations
+<a name="low-memory-situations"></a>
 
-Load balancing across semantic models is managed automatically by the system. In some cases, the capacity might temporarily run low on memory during high-demand periods. When this occurs, you might encounter memory-related errors. The system typically recovers quickly as resources become available. If you receive a memory error, wait a moment and retry your operation.
+## Semantic model refresh fails with out-of-memory errors
 
-If memory errors occur frequently or persist, be sure to try [all of the suggested solutions](#refresh-operation-throttled-by-power-bi-premium). If these solutions don't work, file a [support ticket](https://powerbi.microsoft.com/support).
+A semantic model refresh can fail with resource-governance errors when the refresh workload exceeds the per-model or per-query memory limit that the hosting Power BI Premium or Fabric capacity enforces. Refresh needs memory not only for the existing model, but also for the new copy that's being processed and for temporary processing structures. If peak memory reaches the enforced limit, resource governance cancels the operation.
+
+This issue is more likely to affect:
+
+* Large semantic models, or models with high-cardinality columns or wide fact tables.
+* Models that use calculated columns, calculated tables, or complex measures.
+* Refresh operations that process multiple partitions in parallel.
+
+### Symptoms
+
+Memory-governed refresh failures can appear in any of the following forms:
+
+* Refresh fails intermittently or consistently during full or incremental refresh.
+* The error message includes `Query memory limit exceeded`.
+* The error message includes `This operation was canceled because there wasn't enough memory to finish running it.`
+* Power BI returns error code `0xC13E0003`. This code indicates the operation was canceled because of memory pressure.
+* Refreshes triggered through the [XMLA endpoint](/fabric/enterprise/powerbi/service-premium-connect-tools) fail with the same memory-governed behavior.
+
+If the capacity temporarily runs low on memory during a high-demand period, the system typically recovers quickly as resources become available. If you receive a transient memory error, wait a moment and retry your operation.
+
+### Refresh fails after moving a workspace to a different capacity
+
+You might see memory-governed refresh failures after moving a workspace to a different capacity, because the new capacity might enforce a lower per-semantic-model memory limit for refresh. In these cases, refreshes can fail even when overall capacity usage doesn't appear saturated. Compare the old and new capacity behavior, and verify whether the new capacity enforces a lower per-model memory limit.
+
+### Refresh fails late in the day for large semantic models that use on-demand paging
+
+For large semantic models that use on-demand paging, more pages might remain resident in memory later in the day, which increases the in-memory footprint before refresh begins. Test whether running the refresh earlier in the day reduces the in-memory footprint at refresh start.
+
+### Resolve memory-governed refresh failures
+
+To reduce peak refresh memory and avoid resource-governance cancellations, try the following mitigations:
+
+* Refresh only the partitions or tables that need to be updated. Use [incremental refresh](../connect-data/incremental-refresh-overview.md), or prefer table-level or partition-level refresh over full refresh.
+* Reduce refresh parallelism when you process multiple partitions concurrently for the same semantic model.
+* Reduce model complexity. Remove unnecessary columns and rows, reduce high-cardinality columns and wide fact tables, optimize data types and transformations, and move calculated tables and columns to the data source or ETL processes when possible.
+* Enable [semantic model scale-out](../enterprise/service-premium-scale-out-configure.md) so refresh runs on the read/write replica while interactive queries hit the read-only replica.
+* Move the workspace to a higher F-capacity SKU with a larger per-semantic-model memory limit. If you recently scaled the capacity, allow time for it to stabilize, because memory limits might take time to fully adjust.
+
+For the full list of mitigations and best practices, see [Refresh operation throttled by Power BI Premium](#refresh-operation-throttled-by-power-bi-premium).
+
+For a deeper explanation of how per-SKU memory limits and the `DbpropMsmdRequestMemoryLimit` XMLA property govern command-level memory (including per-SKU limits for P1, P2, and P3), see [Resource governing command memory limit in Premium](/fabric/enterprise/powerbi/troubleshoot-xml-analysis-endpoint#resource-governing-command-memory-limit-in-premium).
+
+If memory errors persist after you apply these mitigations, file a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Dataflow failures in Premium workspaces
 
