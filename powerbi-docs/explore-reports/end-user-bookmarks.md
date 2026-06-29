@@ -164,7 +164,10 @@ In this release of **personal bookmarks**, there are a few considerations and li
 - Generally, your personal bookmarks aren't affected if the report designer updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a personal bookmark, you'll receive an error message the next time you attempt to open that bookmark.
 - Report bookmarks and personal bookmarks created in Power BI Desktop or in the Power BI service are recognized in the Power BI mobile apps for iOS and Android tablets and phones. However, you can't create bookmarks in these apps. For information about using bookmarks in the Power BI mobile apps, see [Explore reports in the Power BI mobile apps - bookmarks](./mobile/mobile-reports-in-the-mobile-apps.md#bookmarks).
 - Because personal bookmarks capture the exploration state of the current page, personal bookmarks don't capture changes to other pages. For example, if you have sync-slicers in your report and you personalize the sync-slicer to use a different field and capture a personal bookmark, then the personal bookmark only captures the slicer change on the current page.
-
+- Filter changes from personalized visuals have specific persistence behavior in bookmarks:
+  - When you add a column to a visual during personalization, a filter pane card is automatically created for that column. Selections made on this auto-generated filter aren't captured in bookmarks if the column is later removed from the visual.
+  - Bookmarks capture filters that the report author explicitly added to the filter pane regardless of whether the column is in the visual.
+  - Bookmarks capture filter changes for columns that remain in the visual.
 - You can create up to 20 bookmarks for a single report.
 
 ## Related content
