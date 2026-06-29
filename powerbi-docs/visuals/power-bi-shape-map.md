@@ -253,6 +253,90 @@ You can also customize **Blank area** color for regions that don't match your da
 > [!TIP]
 > Using **Location** with the **Default color** conditional formatting (**Fx**) can achieve the same gradient effect as using **Color saturation**. The difference is that **Color saturation** automatically shows the measure value in the tooltip with its name. Using **Location** alone with **Default color** conditional formatting gives you additional options to set color via rules or field value, in addition to gradient options.
 
+### Example: Gradient colors by region
+
+When you use only the **Location** field (without Legend or Color saturation), you can use conditional formatting with a DAX measure to create a gradient effect within each region. The following measure calculates a hex color based on Total Sales, with each region using its own color palette. States with higher sales appear more saturated, while states with lower sales appear lighter.
+
+```dax
+Region Gradient Color = 
+VAR ScaleWithinRegion = TRUE
+VAR CurrentSales = [Total Sales]
+
+VAR ScopeMin =
+    IF (
+        ScaleWithinRegion,
+        CALCULATE (
+            MINX ( VALUES ( StateRegion[StateName] ), [Total Sales] ),
+            ALLEXCEPT ( StateRegion, StateRegion[Region] )
+        ),
+        CALCULATE (
+            MINX ( VALUES ( StateRegion[StateName] ), [Total Sales] ),
+            ALL ( StateRegion )
+        )
+    )
+
+VAR ScopeMax =
+    IF (
+        ScaleWithinRegion,
+        CALCULATE (
+            MAXX ( VALUES ( StateRegion[StateName] ), [Total Sales] ),
+            ALLEXCEPT ( StateRegion, StateRegion[Region] )
+        ),
+        CALCULATE (
+            MAXX ( VALUES ( StateRegion[StateName] ), [Total Sales] ),
+            ALL ( StateRegion )
+        )
+    )
+
+VAR Ratio =
+    DIVIDE ( CurrentSales - ScopeMin, ScopeMax - ScopeMin )
+
+VAR Region = SELECTEDVALUE ( StateRegion[Region] )
+
+VAR EndR = SWITCH ( Region,
+    "Northwest", 17,  "Northeast", 216, "Southeast", 116,
+    "Southwest", 224, "Alaska", 17,     "Hawaii", 17,    128 )
+VAR EndG = SWITCH ( Region,
+    "Northwest", 141, "Northeast", 106, "Southeast", 78,
+    "Southwest", 68,  "Alaska", 141,    "Hawaii", 141,   128 )
+VAR EndB = SWITCH ( Region,
+    "Northwest", 255, "Northeast", 44,  "Southeast", 194,
+    "Southwest", 68,  "Alaska", 255,    "Hawaii", 255,   128 )
+
+VAR TintStrength = 0.15
+VAR StartR = 255 - ( 255 - EndR ) * TintStrength
+VAR StartG = 255 - ( 255 - EndG ) * TintStrength
+VAR StartB = 255 - ( 255 - EndB ) * TintStrength
+
+VAR R01 = MIN ( 1, MAX ( 0, Ratio ) )
+
+VAR R = INT ( StartR + ( EndR - StartR ) * R01 )
+VAR G = INT ( StartG + ( EndG - StartG ) * R01 )
+VAR B = INT ( StartB + ( EndB - StartB ) * R01 )
+
+VAR HexChars = "0123456789ABCDEF"
+VAR Hex =
+    "#" &
+    MID ( HexChars, QUOTIENT ( R, 16 ) + 1, 1 ) & MID ( HexChars, MOD ( R, 16 ) + 1, 1 ) &
+    MID ( HexChars, QUOTIENT ( G, 16 ) + 1, 1 ) & MID ( HexChars, MOD ( G, 16 ) + 1, 1 ) &
+    MID ( HexChars, QUOTIENT ( B, 16 ) + 1, 1 ) & MID ( HexChars, MOD ( B, 16 ) + 1, 1 )
+
+RETURN
+    IF ( ISBLANK ( CurrentSales ), "#FFFFFF", Hex )
+```
+
+To use this measure:
+
+1. Add the measure to your semantic model.
+1. In the Shape map visual, add your location field to the **Location** well.
+1. In the Format pane, expand **Colors** > **Location**.
+1. Select the **Fx** button next to **Default**.
+1. Set **Format style** to **Field value** and select the `Region Gradient Color` measure.
+
+Each state displays a color intensity based on its sales relative to other states in the same region.
+
+:::image type="content" source="media/power-bi-shape-map/shape-map-region-gradient.png" alt-text="Screenshot of a Shape map showing US states colored by region with gradient saturation based on Total Sales.":::
+
 ## Get map data
 
 To quickly get data into a model to test **Shape map**, copy one of the tables at the end of this article, and then select **Enter data** from the **Home** ribbon.
