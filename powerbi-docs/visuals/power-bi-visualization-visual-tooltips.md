@@ -108,6 +108,31 @@ renders as a sentence like:
 We sold 1,200 Units in Canada.
 ```
 
+### Reference dimensions in a drillable hierarchy
+
+When a visual has more than one dimension on its axis - for example, Segment and Product in a hierarchy - the sentence template should read correctly at every drill level. Create a measure that uses [ISINSCOPE](/dax/isinscope-function-dax) to detect which dimension the consumer is currently viewing, add the measure to the **Tooltip** field well, and reference it in the template.
+
+For example, this measure returns the appropriate label depending on whether the visual shows Segment, Product, or both:
+
+```dax
+Segment or Product Drill =
+SWITCH ( TRUE(),
+    ISINSCOPE(Financials[Segment]) && ISINSCOPE(Financials[Product]),
+        SELECTEDVALUE(Financials[Segment]) & " (Segment) " & SELECTEDVALUE(Financials[Product]) & " (Product)",
+    ISINSCOPE(Financials[Segment]), SELECTEDVALUE(Financials[Segment]),
+    ISINSCOPE(Financials[Product]), SELECTEDVALUE(Financials[Product]),
+    BLANK()
+)
+```
+
+Use the measure in a template such as:
+
+```
+{Segment or Product Drill} has {Sales} in sales, a change of {Sales YoY} ({Sales YoY %}) since last year.
+```
+
+The tooltip now reads correctly whether the chart shows the top level (Segment), the drilled level (Product), or both levels together.
+
 ## Configure tooltip settings
 
 Tooltip formatting lives in the **Format visual** pane under **General** > **Tooltips**. Select a visual on the report canvas, and then select the **Format visual** icon in the **Visualizations** pane.
