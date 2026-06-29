@@ -84,10 +84,6 @@ To add a map to a report, follow these steps:
 
 You've created your first ArcGIS for Power BI visualization. Next, learn how to refine and format it using basemaps, location types, symbol types, and more.
 
-## Embed a map enabled ArcGIS for Power BI report
-
-Embed a map enabled ArcGIS for Power BI report that contains private, secure, or proprietary ArcGIS data in a secure website or app. Report viewers must sign in to an ArcGIS account. For general information about embedding ArcGIS content, see [Content sharing](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/embed-a-map-enabled-report.htm).
-
 ## Format an ArcGIS for Power BI visualization
 
 To access **ArcGIS for Power BI** formatting features, in the Visualizations pane, select the **Format** tab to view the formatting options.
@@ -96,10 +92,10 @@ To access **ArcGIS for Power BI** formatting features, in the Visualizations pan
 
 ArcGIS map formatting options include:
 
-- **Map tools:** Specify which buttons are visible in the expanded map tools, including the [**Layers**](#show-map-layers) button :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png":::, the [**Basemaps**](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/basemap.png":::, the [**Selection tool**](#select-locations) button :::image type="icon" source="media/power-bi-visualizations-arcgis/select.png":::, the **Search** button :::image type="icon" source="media/power-bi-visualizations-arcgis/search.png":::, the [**Analysis**](#analyze-your-data) button :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png":::, the [**Embed**](#embed-a-map-enabled-arcgis-for-power-bi-report) button, and the **Settings** button :::image type="icon" source="media/power-bi-visualizations-arcgis/settings.png":::.
+- **Map tools:** Specify which buttons are visible in the expanded map tools, including the [**Layers**](#show-map-layers) button :::image type="icon" source="media/power-bi-visualizations-arcgis/layers.png":::, the [**Basemaps**](#change-the-basemap) button :::image type="icon" source="media/power-bi-visualizations-arcgis/basemap.png":::, the [**Selection tool**](#select-locations) button :::image type="icon" source="media/power-bi-visualizations-arcgis/select.png":::, the [**Search**](#search-for-a-location) button :::image type="icon" source="media/power-bi-visualizations-arcgis/search.png":::, the [**Analysis**](#analyze-your-data) button :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png":::, the [**Embed**](#embed-a-map-enabled-arcgis-for-power-bi-report) button, and the **Settings** button :::image type="icon" source="media/power-bi-visualizations-arcgis/settings.png":::.
 - **Map controls:** Specify if the **Zoom** tools (navigation buttons) are visible on the map, lock the map extent in its current position, and include a **Home** button :::image type="icon" source="media/power-bi-visualizations-arcgis/home.png":::. **Zoom** tools and the **Home** button aren't visible by default.
 - **Feature Information:** Specify if the **Feature Information** pane is visible, and indicate the **Position** where it is docked.
-- **Theme:** Apply [theme colors](#change-the-map-theme) to your ArcGIS for Power BI visualization.
+- **Theme:** Apply theme colors to your ArcGIS for Power BI visualization.
 
 > [!NOTE]
 > **Reset to default** :::image type="icon" source="media/power-bi-visualizations-arcgis/reset.png"::: returns all formatting options to their original configuration.
@@ -245,6 +241,20 @@ To change the symbol style, follow these steps:
 
 ### Adjust the layer properties
 
+Adjust the **Layer properties** to customize the settings for your ArcGIS for Power BI map layer.
+
+These settings include:
+
+- **Feature information:** Adjust the **Title** and **Field** values to display in the **Feature information** pane.
+- **Layer visible range:** Set the maximum and minimum zoom levels for layer visibility. When zoom in or out beyond these zoom levels, the layer will disappear from the visualization.
+- **Layer effects:** Highlight features and create visual depth on your map using the **Bloom** and **Drop shadow** effects.
+- **Labels:** Configure labels for your layer by switching the **Show labels** toggle button on or off, selecting a **Label field**, limit the range of values that are labeled using the **Filter labels** option, adjust the labels' **Font styling**, specify label **Placement** for non-boundary-type location data, adjust **Offset** values to move the position of labels, **Enable halo** to add a contrast color around your text, and set the **Label visible range**.
+- **Layer transparency:** Move the transparency slider to adjust the transparency for the whole layer, with smaller numbers being more opaque and larger numbers being more transparent.
+- **Layer refresh:** Provide a time interval between 6 seconds to 24 hours to refresh the connection to the layer.
+
+> [!NOTE]
+> Some of these options are only available for some layer types or when signed in to your ArcGIS account.
+
 ### Specify the location type
 
 ArcGIS for Power BI uses geo enabling technology to accurately position location data on the map and automatically render items as *points* or *boundaries* by default, based on the type of data they represent. For example, a latitude, longitude coordinate is rendered as a point on the map, whereas a city is rendered as a boundary (polygon).
@@ -348,6 +358,31 @@ Analysis features include:
 
 ### Measure the distance between features
 
+Use the **Measure** tool to measure a linear distance or an area and its perimeter.
+
+To find the distance between locations on your map, follow these steps:
+
+1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary, and select **Analysis** :::image type="icon" source="media/power-bi-visualizations-arcgis/analysis.png"::: to expand the toolset.
+
+1. Select **Measure** :::image type="icon" source="media/power-bi-visualizations-arcgis/measure.png":::.
+
+   The **Measure** pane appears.
+
+1. Ensure that the **Distance** is selected from the **Measure** dropdown menu, and that **Imperial** is selected from the **Unit** dropdown menu.
+
+1. Click once over the **Pittsburgh International Airport**, which you found using the [**Search**](#search-for-a-location) tool.
+
+1. Zoom out to find the City feature over **Uniontown, PA** from your retail analysis data. Double click in the center of that feature. This completes the line.
+
+1. Zoom out to view the full distance measurement.
+
+   The distance is just over 49 miles.
+
+   :::image type="content" source="media/power-bi-visualizations-arcgis/measure-distance.png" alt-text="Screenshot of the Measure pane with a distance measurement of 49.21 miles between the Pittsburgh International Airport and Uniontown, PA.":::
+
+   > [!TIP]
+   > You must create at least three vertices when measuring an area.
+
 ### Find nearby locations
 
 You can use locations on your map as a starting point to find and select nearby locations on your map. For example, if you select a particular feature of interest, you can add a polygon to your map that shows places within a specified drive time or distance (ring buffer) of that place.
@@ -420,7 +455,25 @@ To add an information card to a map, follow these steps:
 
 For more details about adding information cards, visit the [ArcGIS for Power BI online help](https://doc.arcgis.com/en/power-bi/latest/workflows/add-and-manage-a-feature-information-pane.htm).
 
-## Get help
+## Embed a map enabled ArcGIS for Power BI report
+
+Embed a map enabled ArcGIS for Power BI report that contains private, secure, or proprietary ArcGIS data in a secure website or app. Report viewers must sign in to an ArcGIS account. For general information about embedding ArcGIS content, see [Content sharing](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/embed-a-map-enabled-report.htm).
+
+## Adjust the visualization settings
+
+You can view and manage your profile and account settings in ArcGIS for Power BI by completing the following steps:
+
+1. Select to expand the Map tools :::image type="icon" source="media/power-bi-visualizations-arcgis/map-tools-button.png":::, if necessary.
+1. Select **Settings** :::image type="icon" source="media/power-bi-visualizations-arcgis/settings.png":::. The **Settings** pane appears.
+
+Settings options include:
+
+- Sign in to ArcGIS from the **Login|Settings** pane.
+- Join the Esri community and submit **Feedback** to improve ArcGIS for Power BI.
+- Find resources to get help on the **Help center** pane.
+- View the current version of ArcGIS for Power BI and participate in the Esri User Experience Program from the **Settings** pane.
+
+### Get help
 
 Esri provides online help for ArcGIS for Power BI.
 
