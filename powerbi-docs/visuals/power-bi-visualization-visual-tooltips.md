@@ -110,7 +110,7 @@ We sold 1,200 Units in Canada.
 
 ### Reference dimensions in a drillable hierarchy
 
-When a visual has more than one dimension on its axis — for example, Segment and Product in a hierarchy — the sentence template should read correctly at every drill level. Create a measure that uses [ISINSCOPE](/dax/isinscope-function-dax) to detect which dimension the consumer is currently viewing, add the measure to the **Tooltip** field well, and reference it in the template.
+When a visual has more than one dimension on its axis - for example, Segment and Product in a hierarchy - the sentence template should read correctly at every drill level. Create a measure that uses [ISINSCOPE](/dax/isinscope-function-dax) to detect which dimension the consumer is currently viewing, add the measure to the **Tooltip** field well, and reference it in the template.
 
 For example, this measure returns the appropriate label depending on whether the visual shows Segment, Product, or both:
 
