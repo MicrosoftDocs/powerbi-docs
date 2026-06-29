@@ -83,6 +83,63 @@ A basic theme that defines these colors might appear as follows:
 }
 ```
 
+### Named theme colors
+
+In DAX measures for conditional formatting, reference theme colors by name. The following table lists all available named theme colors. Most use the same name as defined in the theme JSON, but the divergent colors have different DAX reference names.
+
+| Group | Theme color name | DAX reference name |
+|-------|------------------|----------------------|
+| Background | background | background |
+| Background | backgroundDark | backgroundDark |
+| Background | backgroundLight | backgroundLight |
+| Background | backgroundNeutral | backgroundNeutral |
+| Divergent | center | midColor |
+| Divergent | maximum | maxColor |
+| Divergent | minimum | minColor |
+| Divergent | null | nullColor |
+| Foreground | disabledText | disabledText |
+| Foreground | foreground | foreground |
+| Foreground | foregroundNeutralLight | foregroundNeutralLight |
+| Foreground | foregroundNeutralSecondary | foregroundNeutralSecondary |
+| Foreground | foregroundNeutralSecondaryAlt | foregroundNeutralSecondaryAlt |
+| Foreground | foregroundNeutralSecondaryAlt2 | foregroundNeutralSecondaryAlt2 |
+| Foreground | foregroundNeutralTertiary | foregroundNeutralTertiary |
+| Foreground | foregroundNeutralTertiaryAlt | foregroundNeutralTertiaryAlt |
+| Other | hyperlink | hyperlink |
+| Other | mapPushpin | mapPushpin |
+| Other | shapeStroke | shapeStroke |
+| Other | tableAccent | tableAccent |
+| Other | visitedHyperlink | visitedHyperlink |
+| Sentiment | bad | bad |
+| Sentiment | good | good |
+| Sentiment | neutral | neutral |
+
+### Reference theme colors in conditional formatting
+
+When you use **Field value** conditional formatting, you can return theme color names from a DAX measure or data column instead of hex codes. This technique keeps colors consistent with the applied theme and automatically updates when you change themes.
+
+Use this technique with:
+
+- Measures in your semantic model
+- Report measures when your report is live connected to a published semantic model
+- [Visual calculations](../transform-model/desktop-visual-calculations-overview.md)
+
+This DAX measure example returns theme colors based on a calculated status:
+
+```dax
+Status Color = 
+VAR CurrentStatus = [Status Score]
+RETURN
+    SWITCH(
+        TRUE(),
+        CurrentStatus >= 80, "good",
+        CurrentStatus >= 50, "neutral",
+        "bad"
+    )
+```
+
+Apply this measure by using **Field value** format style in the conditional formatting dialog. For more information about conditional formatting, see [Tips and tricks for formatting in reports](../visuals/service-tips-and-tricks-for-color-formatting.md#use-theme-colors-with-field-value-formatting).
+
 ## Set structural colors
 
 Next, add various color classes, such as `background` and `firstLevelElements`. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
