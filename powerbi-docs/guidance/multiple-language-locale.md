@@ -59,6 +59,10 @@ When you open a Power BI report in the Power BI service, you can override the `A
 > [!NOTE]
 > Adding the `language` parameter to report URLs provides a convenient way to test metadata translations in the Power BI service. This technique doesn't require you to reconfigure any settings on your local machine or in your browser.
 
+### Locale isn't supported in the Power BI mobile apps
+
+The `language` parameter override isn't supported in the Power BI mobile apps. When you open a report in a mobile app, the app uses the current locale of the device. You can't add a `language` query parameter to a [mobile deep link](../developer/embedded/mobile-apps-deep-link-specific-location.md) and expect the app to load the report in that locale. To change the locale used in a mobile app, change the regional settings on the device.
+
 ## Support multiple locales for a single language
 
 You might need to support multiple locales for a single spoken language. Consider a scenario with users who speak French but live in different countries, such as France, Belgium, and Canada. You publish a semantic model with a default language of `en-US` and metadata translations for three more culture names including `es-ES`, `fr-FR`, and `de-DE`.
