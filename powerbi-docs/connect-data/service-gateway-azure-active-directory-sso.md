@@ -62,7 +62,7 @@ Because the Microsoft Entra token of the user is passed via the gateway, it's po
 
 The Microsoft Entra SSO feature is disabled by default for on-premises data gateways. As a Fabric administrator, you have to enable the **Microsoft Entra Single Sign-On (SSO) for Gateway** tenant setting in the Admin portal before data sources can use Microsoft Entra SSO on an on-premises data gateway.
 
-The Microsoft Entra SSO flow is token-based and doesn't require Kerberos Constrained Delegation (KCD), domain-joined gateway machines, or elevated gateway service accounts when used with supported connectors. This makes Microsoft Entra SSO an alternative to Kerberos-based SSO configurations for applicable data sources.
+The Microsoft Entra SSO flow is token-based and doesn't require Kerberos Constrained Delegation (KCD), domain-joined gateway machines, or elevated gateway service accounts when used with supported connectors. This feature makes Microsoft Entra SSO an alternative to Kerberos-based SSO configurations for applicable data sources.
 
 :::image type="content" source="media/service-gateway-azure-active-directory-sso/powerbi-admin-portal-entra-sso-for-gateway-setting.png" alt-text="Screenshot of the Microsoft Entra SSO for gateway feature in the Power BI Admin portal.":::
 
