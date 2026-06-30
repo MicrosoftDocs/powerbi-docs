@@ -96,6 +96,7 @@ Now, when you change the field parameter from Category to Class, what happens de
 
 ## Known limitations of field parameters
 
+- If you use a date column in a field parameter with [auto date/time](../transform-model/desktop-auto-date-time.md), the Date Hierarchy is no longer associated with the date column in the field parameter. The behavior is the same as placing the date column directly on a visual axis without the hierarchy. To get Date Hierarchy behavior, create a field parameter using the hierarchy levels (Year, Quarter, Month, Day) explicitly.
 - AI visuals and Q&A aren't supported with field parameters.
 - There's no way for your report users to select the "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
 - You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI semantic models and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI semantic models and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-semantic-models-and-analysis-services).
