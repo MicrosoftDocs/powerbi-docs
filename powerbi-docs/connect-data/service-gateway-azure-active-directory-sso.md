@@ -21,7 +21,7 @@ Azure Virtual Networks (VNets) offer network isolation and security for your res
 >[!NOTE]
 > VNet data gateways, which are available in public preview for Power BI Premium Semantic models, eliminate the need to install an on-premises data gateway for connecting to your VNet data sources. To learn more about VNet gateways and their current limitations, see [What is a virtual network (VNet) data gateway](/data-integration/vnet/overview).
 
-The data sources listed here aren't supported with Microsoft Entra SSO using an on-premises data gateway behind an Azure VNet:
+The data sources listed here are supported with Microsoft Entra SSO using an on-premises data gateway behind an Azure VNet:
 
 * Analysis Services
 * ADLS Gen1
