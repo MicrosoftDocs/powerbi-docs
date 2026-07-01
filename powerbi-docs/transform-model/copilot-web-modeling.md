@@ -59,7 +59,7 @@ After you grant permission, Copilot creates a restore checkpoint at the start of
 
 ## Permissions and model access
 
-Copilot in web modeling respects your existing Power BI permissions. You can use Copilot to make changes only if you have the **Write** permission to edit the semantic model. In practice, workspace Admins, Members, and Contributors all have Write access and can use Copilot to edit the active model.
+Copilot in web modeling respects your existing Power BI permissions. You can use Copilot to make changes only if you have the **Write** permission to edit the semantic model. Workspace Admins, Members, and Contributors all have Write access and can use Copilot to edit the active model.
 
 Copilot’s editing access is limited to the model open in the current Copilot pane. It can also retrieve schema information of the other models you have access to in the same workspace, but those models are always read-only and can't be modified.
 
