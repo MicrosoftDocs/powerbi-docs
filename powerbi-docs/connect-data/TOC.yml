@@ -86,6 +86,8 @@
         href: desktop-data-sources.md
       - name: "Use dynamic M query parameters"
         href: desktop-dynamic-m-query-parameters.md
+      - name: "Allow data privacy firewall partitions"
+        href: desktop-data-privacy-firewall-partitions.md
       - name: "Create a semantic model from Log Analytics"
         href: create-dataset-log-analytics.md
       - name: "Create a semantic model from a SharePoint list"
