@@ -25,7 +25,7 @@ DAX UDFs are generally available in Power BI Desktop and the Power BI Service st
 
 ## Define a function
 
-You can define a user-defined function in Power BI Desktop using [DAX query view](dax-query-view.md) (DQV), [TMDL view](desktop-tmdl-view.md), or Model view. UDFs can also be viewed and edited in the browser through Power BI Service web modeling.
+You can define a user-defined function in Power BI Desktop by using [DAX query view](dax-query-view.md) (DQV), [TMDL view](desktop-tmdl-view.md), or Model view. You can also view and edit UDFs in the browser through Power BI Service web modeling.
 
 ### General syntax
 
@@ -92,7 +92,7 @@ If using a [Power BI Project](../developer/projects/projects-overview.md), funct
 
 ### Rename synchronization
 
-UDFs saved in the model stay synchronized with renames of tables, columns, and measures through automatic dependency tracking. When you rename a referenced table, column, or measure, DAX UDF definitions update automatically to reflect the new name. You can safely refactor your semantic model without manually updating UDF code.
+The model keeps UDFs synchronized with renames of tables, columns, and measures through automatic dependency tracking. When you rename a referenced table, column, or measure, DAX UDF definitions update automatically to reflect the new name. You can safely refactor your semantic model without manually updating UDF code.
 
 ## Use user-defined functions
 
@@ -200,7 +200,7 @@ EVALUATE INFO.USERDEFINEDFUNCTIONS()
 
 ## Authoring experiences
 
-Beyond Power BI Desktop and Power BI Service, you can manage DAX UDFs using SQL Server Management Studio (SSMS) starting in version 22.5. SSMS supports scripting, creating, and updating UDFs. Note that UDF syntax highlighting isn't available in SSMS.
+Beyond Power BI Desktop and Power BI Service, you can manage DAX UDFs by using SQL Server Management Studio (SSMS) starting in version 22.5. SSMS supports scripting, creating, and updating UDFs. Note that UDF syntax highlighting isn't available in SSMS.
 
 ## Related content
 
