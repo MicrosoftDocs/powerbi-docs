@@ -22,6 +22,9 @@ We recommend that you evaluate your data before you start using Copilot with you
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
+> [!NOTE]
+> In the Power BI service [web modeling experience](../transform-model/copilot-web-modeling.md), Copilot can do more than evaluate your model. It can also propose and apply changes directly, such as renaming tables and columns, creating relationships, and generating DAX measures. The optimization guidance in this article directly supports better results from that analysis: a well-structured, clearly named model helps Copilot produce more accurate and useful suggestions.
+
 ## Considerations for semantic models for Copilot use
 
 You can create accurate reports with Copilot by using the criteria in the following table. These recommendations can help you to generate accurate Power BI reports.  
