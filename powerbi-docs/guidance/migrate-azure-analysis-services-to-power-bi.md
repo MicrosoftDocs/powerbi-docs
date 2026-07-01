@@ -143,7 +143,7 @@ Also, assuming you already use Power BI in your organization, calculate costs ba
 > CPU consumption across AAS and Power BI in Fabric may vary significantly due to numerous factors. Factors can include the use of other workloads on the same capacities, refresh patterns, and query patterns. We recommend that you perform in-depth analysis to quantify comparative CPU consumption across AAS and Power BI in Fabric for migrated models.
 
 > [!TIP]
-> To help determine the right type and number of licenses for your business requirements and circumstances, see [this related article](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md).
+> To help determine the right type and number of licenses for your business requirements and circumstances, see [this related article](migrate-azure-analysis-services-to-power-bi-migration-scenarios.md).
 
 ### Consolidation opportunity
 
@@ -333,7 +333,7 @@ The Microsoft Azure Analysis Services to Microsoft Power BI migration feature in
 
 For more information about this article, check out the following resources:
 
-- [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md)
+- [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-power-bi-migration-scenarios.md)
 - [Migrate Azure Analysis Services to Power BI](/fabric/enterprise/powerbi/aas-pbi-migration-overview)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)

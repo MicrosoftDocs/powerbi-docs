@@ -146,15 +146,15 @@ Three types of dataflow tables (also known as _entities_) are depicted in the sc
   - In the final dataflow for delivering output to semantic model creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
 
 > [!NOTE]
-> There are many design techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) that can take dataflows from self-service to enterprise-ready. Also, dataflows in a workspace that has its workspace type set to **Premium per user** or **Premium capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md). Linked tables and computed tables (also known as _entities_) are two advanced features that are essential for increasing the reusability of dataflows.
+> Many design techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) can take dataflows from self-service to enterprise-ready. Also, dataflows in a workspace that has its workspace type set to **Premium per user** or **Premium capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-fabric-capacity-features.md). Linked tables and computed tables (also known as _entities_) are two advanced features that are essential for increasing the reusability of dataflows.
 
 ### Enhanced compute engine
 
-The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium.
+The [enhanced compute engine](../transform-model/dataflows/dataflows-fabric-capacity-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
-The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
+The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-fabric-capacity-features.md) from the enhanced compute engine:
 
 - Split out the staging and transformation dataflows.
 - Use the same workspace to store the staging and transformation dataflows.
@@ -164,7 +164,7 @@ The enhanced compute engine improves performance of linked tables (within the sa
 
 ### Dataflow and semantic model refresh
 
-A dataflow is a source of data for semantic models. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each semantic model. Alternatively, it's possible to use [DirectQuery from the semantic model to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
+A dataflow is a source of data for semantic models. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each semantic model. Alternatively, you can use [DirectQuery from the semantic model to the dataflow](../transform-model/dataflows/dataflows-fabric-capacity-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
 
 ### Azure Data Lake Storage Gen2
 

@@ -98,18 +98,18 @@ When a semantic model creator [connects to a dataflow](../transform-model/deskto
 
 ### Dataflow advanced features
 
-There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its workspace type set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+Design techniques, patterns, and best practices can help you take dataflows from self-service to enterprise-ready. Dataflows in a workspace that has its workspace type set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-fabric-capacity-features.md).
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!NOTE]
-> One of the [advanced features](../transform-model/dataflows/dataflows-premium-features.md) is incremental refresh for dataflows. Although incremental refresh for *semantic models* is a Power BI Pro feature, incremental refresh for dataflows is a Premium feature.
+> One of the [advanced features](../transform-model/dataflows/dataflows-fabric-capacity-features.md) is incremental refresh for dataflows. Although incremental refresh for *semantic models* is a Power BI Pro feature, incremental refresh for dataflows is a Premium feature.
 >
 > To learn more about dataflow advanced features, see the [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenario.
 
 ### Dataflow and semantic model refresh
 
-As previously mentioned, a dataflow is a source of data for semantic models. In most cases, multiple data refresh schedules are involved: one for the dataflow and one for each semantic model. Alternatively, it's possible to use [DirectQuery from the semantic model to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which is a Premium feature (not depicted in the scenario diagram).
+As previously mentioned, a dataflow is a source of data for semantic models. In most cases, multiple data refresh schedules are involved: one for the dataflow and one for each semantic model. Alternatively, you can use [DirectQuery from the semantic model to the dataflow](../transform-model/dataflows/dataflows-fabric-capacity-features.md#use-directquery-with-dataflows-in-power-bi), which is a Premium feature (not depicted in the scenario diagram).
 
 ### Azure Data Lake Storage Gen2
 

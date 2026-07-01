@@ -159,7 +159,7 @@ The following articles provide more information about dataflows and Power BI:
 - [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 - [Creating a dataflow](dataflows-create.md)
 - [Configure and consume a dataflow](dataflows-configure-consume.md)
-- [Premium features of dataflows](dataflows-premium-features.md)
+- [Premium features of dataflows](dataflows-fabric-capacity-features.md)
 - [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 - [Dataflows considerations and limitations](dataflows-features-limitations.md)
 - [Dataflows best practices](dataflows-best-practices.md)

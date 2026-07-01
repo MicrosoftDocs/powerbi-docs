@@ -14,7 +14,7 @@ LocalizationGroup:
 
 # Configure incremental refresh and real-time data
 
-This article describes how to configure incremental refresh and real-time data for **semantic models**. To learn about configuring incremental refresh for dataflows, see [Premium features of dataflows - Incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
+This article describes how to configure incremental refresh and real-time data for **semantic models**. To learn about configuring incremental refresh for dataflows, see [Premium features of dataflows - Incremental refresh](../transform-model/dataflows/dataflows-fabric-capacity-features.md#incremental-refresh).
 
 Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the Power BI service, you'll perform an initial refresh operation on the model. The initial refresh operation and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure you fully understand the functionality described in [Incremental refresh and real-time data for semantic models](incremental-refresh-overview.md).
 

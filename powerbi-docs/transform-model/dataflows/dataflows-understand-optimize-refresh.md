@@ -149,7 +149,7 @@ There are two options for optimizing high processor time.
 
 First, use query folding within the data source itself, which should reduce the load on the dataflow compute engine directly. Query folding within the data source allows the source system to do most of the work. The dataflow can then pass through queries in the native language of the source, rather than having to perform all the computations in memory after the initial query.
 
-Not all data sources can perform query folding, and even when query folding is possible there might be dataflows that perform certain transformations that can't fold to the source. In such cases, the [enhanced compute engine](./dataflows-premium-workload-configuration.md#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
+Not all data sources can perform query folding, and even when query folding is possible, some dataflows perform certain transformations that can't fold to the source. In such cases, the [enhanced compute engine](./dataflows-fabric-capacity-workload-configuration.md#guidance-for-common-scenarios) is a capability introduced by Power BI to potentially improve performance by up to 25 times, for transformations specifically.
 
 ### Use the compute engine to maximize performance
 
@@ -171,7 +171,7 @@ Turning on the enhanced compute engine and understanding the various statuses is
 * You're using query folding on the data source.
 * You're performing complex transformations that can't make use of the SQL engine used to speed up queries.
 
-If you're experiencing long durations and still get a status of **NA**, make sure that it's [turned on](dataflows-premium-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows) to initially get your data into the Power BI service, then build dataflows on top of this data, after it is in a staging dataflow. That pattern can reduce load on source systems and, together with the compute engine, provide a speed boost for transformations and improve performance.
+If you're experiencing long durations and still get a status of **NA**, make sure that it's [turned on](dataflows-fabric-capacity-workload-configuration.md) and not accidentally turned off. One recommended pattern is to use [staging dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows) to initially get your data into the Power BI service, then build dataflows on top of this data, after it is in a staging dataflow. That pattern can reduce load on source systems and, together with the compute engine, provide a speed boost for transformations and improve performance.
 
 **Cached** - If you see the **cached** status, the dataflow data was stored in the compute engine and available to be referenced as part of another query. This situation is ideal if you're using it as a linked entity, because the compute engine caches that data for use downstream. The cached data doesn't need to be refreshed multiple times in the same dataflow. This situation is also potentially ideal if you want to use it for DirectQuery.
 
@@ -215,6 +215,6 @@ Take the following steps when investigating scenarios where the compute engine i
 * [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)
 * [Incremental refresh and real-time data for semantic models](../../connect-data/incremental-refresh-overview.md)
 * [Dataflows best practices](dataflows-best-practices.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
+* [Premium features of dataflows](dataflows-fabric-capacity-features.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md)

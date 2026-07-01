@@ -47,7 +47,7 @@ The following articles provide more information about dataflows and Power BI:
 * [Creating a dataflow](dataflows-create.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
+* [Premium features of dataflows](dataflows-fabric-capacity-features.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)
 * [Power BI usage scenarios: Self-service data preparation](../../guidance/powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md)

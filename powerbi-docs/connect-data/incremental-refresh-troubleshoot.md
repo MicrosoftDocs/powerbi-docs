@@ -150,4 +150,4 @@ To keep fetching the latest data changes from the source, configure automatic pa
 
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)
-- [Incremental refresh for dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)
+- [Incremental refresh for dataflows](../transform-model/dataflows/dataflows-fabric-capacity-features.md#incremental-refresh)

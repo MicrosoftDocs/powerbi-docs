@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "powerbi-docs/guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md",
+      "redirect_url": "/power-bi/guidance/migrate-azure-analysis-services-to-power-bi-migration-scenarios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/guidance/migrate-azure-analysis-services-to-powerbi-premium.md",
+      "redirect_url": "/power-bi/guidance/migrate-azure-analysis-services-to-power-bi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/guidance/whitepaper-powerbi-premium-deployment.md",
+      "redirect_url": "/power-bi/guidance/whitepaper-fabric-capacity-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/dataflows/dataflows-premium-features.md",
+      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-fabric-capacity-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "powerbi-docs/transform-model/dataflows/dataflows-premium-workload-configuration.md",
+      "redirect_url": "/power-bi/transform-model/dataflows/dataflows-fabric-capacity-workload-configuration",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "powerbi-docs/visuals/desktop-shape-map.md",
       "redirect_url": "/power-bi/visuals/power-bi-shape-map",
       "redirect_document_id": true
