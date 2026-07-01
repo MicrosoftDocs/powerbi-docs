@@ -44,8 +44,8 @@ The following table provides a collection of links to articles that describe bes
 |Developing complex dataflows     |Patterns for developing large-scale, performant dataflows         |[Best practices for designing and developing complex dataflows](/power-query/dataflows/best-practices-developing-complex-dataflows)         |
 |Reusing dataflows     |Patterns, guidance, and use cases         |[Best practices for reusing dataflows across environments and workspaces](/power-query/dataflows/best-practices-reusing-dataflows)         |
 |Large-scale implementations     |Large-scale use and guidance to complement enterprise architecture         |[Best practices for creating a dimensional model using dataflows](/power-query/dataflows/best-practices-for-data-warehouse-using-dataflows)         |
-|Using enhanced compute     |Potentially improve dataflow performance up to 25x         |[Using the compute engine to improve performance](dataflows-premium-workload-configuration.md#using-the-compute-engine-to-improve-performance)         |
-|Optimizing your workload settings     |Get the most out of your dataflows infrastructure by understanding the levers you can pull to maximize performance         |[Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)         |
+|Using enhanced compute     |Potentially improve dataflow performance up to 25x         |[Using the compute engine to improve performance](dataflows-fabric-capacity-workload-configuration.md#using-the-compute-engine-to-improve-performance)         |
+|Optimizing your workload settings     |Get the most out of your dataflows infrastructure by understanding the levers you can pull to maximize performance         |[Configure Power BI Premium dataflow workloads](dataflows-fabric-capacity-workload-configuration.md)         |
 |Joining and expanding tables     |Creating performant joins         |[Optimize Power Query when expanding table columns](/power-query/optimize-expanding-table-columns)         |
 |Query folding guidance     |Speeding up transformations using the source system         |[Power Query query folding](/power-query/power-query-folding)         |
 |Using data profiling     |Understand column quality, distribution, and profile         |[Using the data profiling tools](/power-query/data-profiling-tools)         |
@@ -62,7 +62,7 @@ The following articles provide more information about dataflows and Power BI:
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
+* [Premium features of dataflows](dataflows-fabric-capacity-features.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Power BI implementation planning - Integration with other services](../../guidance/powerbi-implementation-planning-integration-with-other-services.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)

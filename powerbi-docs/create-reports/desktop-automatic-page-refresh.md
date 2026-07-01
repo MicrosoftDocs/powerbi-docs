@@ -323,7 +323,7 @@ For more information, see these articles:
 - [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 - [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 - [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
-- [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
+- [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-fabric-capacity-deployment.md)
 - [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 - [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 - [Connect to Excel workbooks in Power BI Desktop](/power-query/connectors/excel)

@@ -42,11 +42,11 @@ Before you create your first streaming dataflow, make sure that you meet all the
   > [!IMPORTANT]
   > If you're using a PPU license and you want other users to consume reports created with streaming dataflows that are updated in real time, they'll also need a PPU license. They can then consume the reports with the same refresh frequency that you set up, if that refresh is faster than every 30 minutes.
 
-* Enable dataflows for your tenant. For more information, see [Enabling dataflows in Power BI Premium](dataflows-premium-workload-configuration.md#enabling-dataflows-in-power-bi-premium).
+* Enable dataflows for your tenant. For more information, see [Enabling dataflows in Power BI Premium](dataflows-fabric-capacity-workload-configuration.md#enabling-dataflows-in-power-bi-premium).
 
-* To make sure streaming dataflows work in your Premium capacity, the [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) needs to be turned on. The engine is turned on by default, but Power BI capacity admins can turn it off. If so, contact your admin to turn it on.
+* To make sure streaming dataflows work in your Premium capacity, the [enhanced compute engine](dataflows-fabric-capacity-features.md#the-enhanced-compute-engine) needs to be turned on. The engine is turned on by default, but Power BI capacity admins can turn it off. If so, contact your admin to turn it on.
 
-  The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is available only in Premium P or Embedded A3 and larger capacities. To use streaming dataflows, you need either PPU, a Premium P capacity of any size, or an Embedded A3 or larger capacity. For more information about Premium SKUs and their specifications, see [Capacity and SKUs in Power BI embedded analytics](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
+  The [enhanced compute engine](dataflows-fabric-capacity-features.md#the-enhanced-compute-engine) is available only in Premium P or Embedded A3 and larger capacities. To use streaming dataflows, you need either PPU, a Premium P capacity of any size, or an Embedded A3 or larger capacity. For more information about Premium SKUs and their specifications, see [Capacity and SKUs in Power BI embedded analytics](../../developer/embedded/embedded-capacity.md#capacity-and-skus).
 
 * To create reports that are updated in real time, make sure that your admin (capacity or Power BI for PPU) has enabled automatic page refresh. Also make sure that the admin has allowed a minimum refresh interval that matches your needs. For more information, see [Automatic page refresh in Power BI](../../create-reports/desktop-automatic-page-refresh.md).
 

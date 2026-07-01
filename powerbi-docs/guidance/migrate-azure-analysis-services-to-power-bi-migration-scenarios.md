@@ -23,7 +23,7 @@ This article compares six hypothetical scenarios when migrating from Azure Analy
 > - [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 > - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 
-When comparing Power BI Premium to AAS costs, be sure to consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and with [many features](migrate-azure-analysis-services-to-powerbi-premium.md#feature-comparison) that are only available to Power BI data models.
+When you compare Power BI Premium to AAS costs, consider factors beyond price per core. Power BI provides reduced cost of ownership and business value, and it offers [many features](migrate-azure-analysis-services-to-power-bi.md#feature-comparison) that are only available to Power BI data models.
 
 Also, assuming you already use Power BI in your organization, calculate costs based on the existing profile that *combines* AAS and Power BI. Compare the existing profile with the target profile on Power BI Premium. To determine the target profile, be sure to consider the following points:
 
@@ -252,13 +252,13 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 - Customers can consolidate to a single platform that reduces cost duplication of paying for both AAS and Power BI Premium.
 - By using Premium for their entire BI stack, customers can unlock increased performance and features. They only need Pro licenses for developers and admins, but not for end users.
 - Customers can use Power BI Premium scalability to reduce their capacity requirements, since memory is limited per semantic model and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation).
-- For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md). Furthermore, they can work with models that above 1 GB in size.
+- For development and test environments, you can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and [Premium dataflow features](../transform-model/dataflows/dataflows-fabric-capacity-features.md). Furthermore, they can work with models that are above 1 GB in size.
 
 ## Related content
 
 For more information about this article, check out the following resources:
 
-- [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-powerbi-premium.md)
+- [Migrate from Azure Analysis Services to Power BI Premium](migrate-azure-analysis-services-to-power-bi.md)
 - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Power BI pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 - [Azure Analysis Services pricing](https://azure.microsoft.com/pricing/details/analysis-services/)

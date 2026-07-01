@@ -54,7 +54,7 @@ Use the [**service principal object ID**](embedded-troubleshoot.md#whats-the-dif
 
 ## Analysis Service migration
 
-You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md) even if you have an embedded AAS report. Your embedded report doesn't break during the migration, as long as the principal that's calling the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API, is a member or admin of the workspace.
+You can [migrate from AAS to Power BI Premium](../../guidance/migrate-azure-analysis-services-to-power-bi-migration-scenarios.md) even if you have an embedded AAS report. Your embedded report doesn't break during the migration, as long as the principal that's calling the [Embed Token - Generate Token](/rest/api/power-bi/embed-token/generate-token) API is a member or admin of the workspace.
 
 >[!NOTE]
 > If the service principal isn't an admin, and you don't want to make it an admin of the workspace when you migrate, migrate that model into a separate workspace where you can give it admin permissions.

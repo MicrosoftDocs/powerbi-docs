@@ -84,11 +84,11 @@
     - name: "Configure and consume a dataflow (legacy)"
       href: dataflows/dataflows-configure-consume.md   
     - name: "Configure Power BI Premium dataflow workloads (legacy)"
-      href: dataflows/dataflows-premium-workload-configuration.md        
+      href: dataflows/dataflows-fabric-capacity-workload-configuration.md        
     - name: "Dataflows and Azure Data Lake Gen2 (legacy)"
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
     - name: "Premium features of dataflows (legacy)"
-      href: dataflows/dataflows-premium-features.md      
+      href: dataflows/dataflows-fabric-capacity-features.md      
     - name: "Dataflows best practices (legacy)"
       href: ./dataflows/dataflows-best-practices.md  
     - name: "Understand and optimize dataflow refresh (legacy)"

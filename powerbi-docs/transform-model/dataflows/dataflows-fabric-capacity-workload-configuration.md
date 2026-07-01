@@ -24,7 +24,7 @@ The following sections describe how to enable dataflows in your organization, ho
 
 The first requirement for using dataflows in your Power BI premium subscription is to enable the creation and use of dataflows for your organization. In the **Admin portal**, select **Tenant Settings** and switch the slider under **Dataflow settings** to **Enabled**, as shown in the following image.
 
-![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
+![Admin portal for dataflows in Power BI premium](media/dataflows-fabric-capacity-workload-configuration/dataflows-premium-workloads-01.png)
 
 After enabling the dataflows workload, it's configured with default settings. You might want to tweak these settings as you see fit. Next, we describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
 
@@ -34,11 +34,11 @@ Once dataflows are enabled, you can use the **Admin portal** to change, or refin
 
 1. In the **Admin portal**, select **Tenant settings** to list all capacities created. Select a capacity to manage its settings.
 
-    ![Select a capacity to manage settings](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-02.png)
+    ![Select a capacity to manage settings](media/dataflows-fabric-capacity-workload-configuration/dataflows-premium-workloads-02.png)
 
 2. Your Power BI Premium capacity reflects the resources available for your dataflows. You can change your capacity's size by selecting the **Change size** button, as shown in the following image.
 
-    ![Change the size of a capacity](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-03.png)
+    ![Change the size of a capacity](media/dataflows-fabric-capacity-workload-configuration/dataflows-premium-workloads-03.png)
 
 ### Premium capacity SKUs - scale up the hardware
 
@@ -46,7 +46,7 @@ Power BI Premium workloads use v-cores to serve fast queries across the various 
 
 #### Enhanced compute engine - an opportunity to improve performance
 
-The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations, and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL to speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is using the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
+The [enhanced compute engine](dataflows-fabric-capacity-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations, and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL to speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is using the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
 
 > [!NOTE]
 > The enhanced compute engine is not yet available in all regions.

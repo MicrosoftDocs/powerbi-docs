@@ -64,6 +64,7 @@ If you don't have a gateway, [install an on-premises data gateway](/data-integra
    - SQL Server
    - Azure Data Explorer
    - Snowflake
+   - Denodo (Preview)
 
    For more information about **Use SSO via Microsoft Entra ID for DirectQuery queries**, see [Microsoft Entra single sign-on (SSO) for data gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway).
 

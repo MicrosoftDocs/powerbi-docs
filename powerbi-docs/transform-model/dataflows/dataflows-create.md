@@ -138,6 +138,6 @@ By putting your data into a dataflow, you can use Power BI Desktop and the Power
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)
 * [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
+* [Premium features of dataflows](dataflows-fabric-capacity-features.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)
 * [Dataflows best practices](dataflows-best-practices.md)

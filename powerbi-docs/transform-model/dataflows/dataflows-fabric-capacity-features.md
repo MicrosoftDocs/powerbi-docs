@@ -59,15 +59,15 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
 2. From the dataflow's **More options** menu, select **Settings**.
 
-    :::image type="content" source="media\dataflows-premium-features\more-options-menu.png" alt-text="Screenshot of a dataflows more options menu with the settings setting highlighted.":::
+    :::image type="content" source="media\dataflows-fabric-capacity-features\more-options-menu.png" alt-text="Screenshot of a dataflows more options menu with the settings setting highlighted.":::
 
 3. Expand the **Enhanced compute engine settings**.
 
-    :::image type="content" source="media\dataflows-premium-features\enhanced-compute-engine-settings.png" alt-text="Screenshot of a dataflow settings page with the enhanced compute engine settings setting highlighted.":::
+    :::image type="content" source="media\dataflows-fabric-capacity-features\enhanced-compute-engine-settings.png" alt-text="Screenshot of a dataflow settings page with the enhanced compute engine settings setting highlighted.":::
 
 4. In the **Enhanced compute engine settings**, select **On** and then choose **Apply**.
 
-    :::image type="content" source="media\dataflows-premium-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
+    :::image type="content" source="media\dataflows-fabric-capacity-features\apply-enhanced-compute-engine-settings.png" alt-text="Screenshot of the enhanced compute engine settings with the on selection turned on and the apply button highlighted.":::
 
 ### Use the enhanced compute engine
 
@@ -130,7 +130,7 @@ To learn more about DirectQuery with dataflows, see [Using DirectQuery with data
 
 To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **On**.
 
-:::image type="content" source="media/dataflows-premium-features/compute-engine-granular-control.png" alt-text="Screenshot of the enhanced compute engine settings with the on option selected.":::
+:::image type="content" source="media/dataflows-fabric-capacity-features/compute-engine-granular-control.png" alt-text="Screenshot of the enhanced compute engine settings with the on option selected.":::
 
 After you've applied that setting, refresh the dataflow for the optimization to take effect.
 
@@ -151,7 +151,7 @@ There are a few known limitations with DirectQuery and dataflows:
 
 You can perform **in-storage computations** when using **dataflows** with a Power BI Premium subscription. This feature lets you perform calculations on your existing dataflows, and return results that enable you to focus on report creation and analytics.
 
-:::image type="content" source="media/dataflows-premium-features/computed-entity.png" alt-text="Screenshot of a Power Query Editor, highlighting a table that is being edited.":::
+:::image type="content" source="media/dataflows-fabric-capacity-features/computed-entity.png" alt-text="Screenshot of a Power Query Editor, highlighting a table that is being edited.":::
 
 To perform in-storage computations, you first must create the dataflow and bring data into that Power BI dataflow storage. After you have a dataflow that contains data, you can create computed entities, which are entities that perform in-storage computations.
 
@@ -171,7 +171,7 @@ You can reference existing dataflows in the same workspace by using linked entit
 
 Dataflows can be set to refresh incrementally to avoid having to pull all the data on every refresh. To do so, select the **dataflow** then choose the **Incremental Refresh icon**.
 
-:::image type="content" source="media/dataflows-premium-features/incremental-refresh.png" alt-text="Screenshot of the table in a Power BI dataflow with the Incremental Refresh icon highlighted.":::
+:::image type="content" source="media/dataflows-fabric-capacity-features/incremental-refresh.png" alt-text="Screenshot of the table in a Power BI dataflow with the Incremental Refresh icon highlighted.":::
 
 Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see[Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh).
 
@@ -189,7 +189,7 @@ The following articles provide more information about dataflows and Power BI:
 > [Dataflows best practices](dataflows-best-practices.md)
 
 > [!div class="nextstepaction"]
-> [Configure Power BI Premium dataflow workloads](dataflows-premium-workload-configuration.md)
+> [Configure Power BI Premium dataflow workloads](dataflows-fabric-capacity-workload-configuration.md)
 
 > [!div class="nextstepaction"]
 > [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)

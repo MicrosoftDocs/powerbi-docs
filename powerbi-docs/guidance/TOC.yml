@@ -58,9 +58,9 @@
     - name: "Power Platform modeling guidance"
       href: powerbi-modeling-guidance-for-power-platform.md
     - name: "Migrate AAS models to Power BI Premium"
-      href: migrate-azure-analysis-services-to-powerbi-premium.md
+      href: migrate-azure-analysis-services-to-power-bi.md
     - name: "Migrate AAS models to Power BI Premium scenarios"
-      href: migrate-azure-analysis-services-to-powerbi-premium-migration-scenarios.md
+      href: migrate-azure-analysis-services-to-power-bi-migration-scenarios.md
 # =============================================================================
 # DAX
 # =============================================================================
@@ -391,7 +391,7 @@
     - name: "Power BI security white paper"
       href: white-paper-powerbi-security.md  
     - name: "Power BI Premium deployment"
-      href: whitepaper-powerbi-premium-deployment.md
+      href: whitepaper-fabric-capacity-deployment.md
 # =============================================================================
 # RESOURCES (don't change this - standardized with Fabric)
 # =============================================================================
