@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 06/15/2026
+ms.date: 07/02/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
@@ -38,10 +38,6 @@ Power BI workspace apps are a great way for content creators, like report author
 :::image type="content" source="media/org-app-items/org-app-consumer-experience-view.png" alt-text="Screenshot of an org app consumer view with audience tabs, left navigation, and a report page open in the main content area.":::
 
 ## Prerequisites for creating org app items
-
-To configure org app creation at the tenant level, you must be a Microsoft Fabric administrator. In **Settings > Admin portal > Tenant settings**, use the **Users can discover and create org apps** setting. Administrators can use security group inclusion and exclusion settings to control who can or can't create org apps.
-
-:::image type="content" source="media/org-app-items/org-app-tenant-setting-users-can-discover-and-create.png" alt-text="Screenshot of the tenant setting Users can discover and create org apps enabled, with apply-to options for the entire organization or specific security groups.":::
 
 ### Workspace type set to Pro, Fabric trial, or capacity
 
