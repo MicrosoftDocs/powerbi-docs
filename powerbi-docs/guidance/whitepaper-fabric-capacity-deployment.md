@@ -11,7 +11,9 @@ ms.custom: intro-deployment
 ms.date: 12/30/2024
 ---
 
-# Deploying and Managing Power BI Premium Capacities
+# Deploying and managing Power BI Premium capacities
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 We have retired the Power BI Premium whitepaper in favor of providing up-to-date information in separate articles. Use the following table to find content from the whitepaper.
 
