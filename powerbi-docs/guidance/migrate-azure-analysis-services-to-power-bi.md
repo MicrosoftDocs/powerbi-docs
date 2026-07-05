@@ -14,6 +14,8 @@ ai-usage: ai-assisted
 
 # Migrate from Azure Analysis Services to Power BI
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides guidance and rationale to help migrate AAS databases to a Fabric capacity subscription (F SKUs), Premium Per User (PPU), or Power BI Embedded (A-SKUs). Fabric includes Power BI as one of its workloads and supports all the enterprise features that were previously available in Power BI Premium (P-SKUs). Premium Per User (PPU) includes Power BI Premium features but doesn't create or include a Fabric capacity. Power BI Embedded remains a separate offering for Independent Software Vendors (ISVs).
 
 ## Background
@@ -333,7 +335,7 @@ The Microsoft Azure Analysis Services to Microsoft Power BI migration feature in
 
 For more information about this article, check out the following resources:
 
-- [Migrate from Azure Analysis Services to Power BI Premium: Migration scenarios](migrate-azure-analysis-services-to-power-bi-migration-scenarios.md)
+- [Migrate from Azure Analysis Services to Power BI: Migration scenarios](migrate-azure-analysis-services-to-power-bi-migration-scenarios.md)
 - [Migrate Azure Analysis Services to Power BI](/fabric/enterprise/powerbi/aas-pbi-migration-overview)
 - Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
 - Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
