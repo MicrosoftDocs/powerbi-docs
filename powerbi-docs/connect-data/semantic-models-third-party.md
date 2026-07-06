@@ -29,6 +29,14 @@ Highly curated semantic models surface corporate data using business-friendly na
 
 Power BI semantic models are a key part of [Fabric IQ](/fabric/iq/overview). Natural language data questions are answered more consistently and easily when the AI can rely on business logic encapsulated by semantic models. LLMs are already familiar with well-defined API surface areas for metadata and queries enabling agentic modeling and consumption. Power BI semantic models are already deployed at scale across countless large organizations and primed to accelerate AI-driven consumption at enterprise scale.
 
+Semantic models can also ground Microsoft 365 Copilot experiences, including [Microsoft 365 Copilot Chat](/fabric/iq/connectors/m365-copilot-overview) and [Microsoft 365 Copilot Cowork](/fabric/iq/connectors/cowork-overview), so users can ask business questions and receive contextual answers based on governed business definitions directly within Microsoft 365 Copilot.
+
+Recent capabilities extend the semantic model ecosystem for agentic and developer scenarios:
+
+- [Agent skills for Power BI](../developer/agentic/power-bi-agentic-overview.md) let AI agents create, edit, and manage semantic models through natural language.
+- [TMDL view](../transform-model/desktop-tmdl-view.md) provides a code-based experience for editing semantic model metadata in Power BI Desktop.
+- [Fabric Apps (preview)](/fabric/apps/overview) enables developers to build custom applications on semantic models.
+
 ### Commitment to open standards and platform
 
 With [Direct Lake](/fabric/fundamentals/direct-lake-overview) storage mode, Power BI semantic models are a key part of Microsoft Fabric’s commitment to open standard formats using Delta Lake parquet, Iceberg, and OneLake. This commitment helps customers avoid lock-in to proprietary vendor storage formats. Power BI semantic models enable open-platform connectivity for a wide range of third-party data visualization tools through compatibility with the [XMLA Endpoint](/fabric/enterprise/powerbi/service-premium-connect-tools). End users can perform ad-hoc analysis from their tool of choice without needing to create local copies of data. Power BI semantic models are highly programmable using Fabric [REST endpoints](/rest/api/fabric/semanticmodel/items) for CRUD operations, [query](/rest/api/power-bi/datasets/execute-queries) execution, [refresh](./asynchronous-refresh.md) management, Python notebook support with [semantic link](/fabric/data-science/semantic-link-power-bi), .NET programmability using the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo), and open metadata definitions using the [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) for automation.
