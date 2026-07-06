@@ -39,6 +39,8 @@ Power BI workspace apps are a great way for content creators, like report author
 
 ## Prerequisites for creating org app items
 
+To create an org app item, the workspace must use a supported license mode, and you must have the required workspace role and permissions.
+
 ### Workspace type set to Pro, Fabric trial, or capacity
 
 To create an org app item, a workspace must be in a specific workspace type: Pro, Fabric trial, Premium capacity, or Fabric capacity. To configure a workspace type:
