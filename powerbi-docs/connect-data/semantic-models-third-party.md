@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 04/22/2026
+ms.date: 07/06/2026
 ai-usage: ai-assisted
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand what semantic models are and how Power BI supports them so I can choose the right modeling approach for my organization.
@@ -28,6 +28,14 @@ Highly curated semantic models surface corporate data using business-friendly na
 ### Power BI semantic models are accelerators for AI-enabled BI
 
 Power BI semantic models are a key part of [Fabric IQ](/fabric/iq/overview). Natural language data questions are answered more consistently and easily when the AI can rely on business logic encapsulated by semantic models. LLMs are already familiar with well-defined API surface areas for metadata and queries enabling agentic modeling and consumption. Power BI semantic models are already deployed at scale across countless large organizations and primed to accelerate AI-driven consumption at enterprise scale.
+
+Semantic models can also ground Microsoft 365 Copilot experiences, including [Microsoft 365 Copilot Chat](/fabric/iq/connectors/m365-copilot-overview) and [Microsoft 365 Copilot Cowork](/fabric/iq/connectors/cowork-overview). Users can ask business questions grounded in governed semantic model data and receive contextual answers based on defined business metrics directly within Microsoft 365 Copilot.
+
+Recent capabilities extend the semantic model ecosystem for agentic and developer scenarios:
+
+- [Agent skills for Power BI](../developer/agentic/power-bi-agentic-overview.md) let AI agents create, edit, and manage semantic models through natural language.
+- [TMDL view](../transform-model/desktop-tmdl-view.md) provides a code-based experience for editing semantic model metadata in Power BI Desktop.
+- Rayfin enables developers to build custom applications on semantic models (documentation coming soon).
 
 ### Commitment to open standards and platform
 
