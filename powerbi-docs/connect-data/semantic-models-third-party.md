@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 07/06/2026
+ms.date: 04/22/2026
 ai-usage: ai-assisted
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand what semantic models are and how Power BI supports them so I can choose the right modeling approach for my organization.
@@ -35,7 +35,7 @@ Recent capabilities extend the semantic model ecosystem for agentic and develope
 
 - [Agent skills for Power BI](../developer/agentic/power-bi-agentic-overview.md) let AI agents create, edit, and manage semantic models through natural language.
 - [TMDL view](../transform-model/desktop-tmdl-view.md) provides a code-based experience for editing semantic model metadata in Power BI Desktop.
-- Rayfin enables developers to build custom applications on semantic models.
+- [Fabric Apps (preview)](/fabric/apps/overview) enables developers to build custom applications on semantic models.
 
 ### Commitment to open standards and platform
 
