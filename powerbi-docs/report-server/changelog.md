@@ -25,7 +25,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 ### Power BI Report Server
 
 - *Version: 1.26.9682.1442 (build 15.0.1121.120), Released: July 8, 2026*
-    - Fixed issue with excessive refreshes being triggered in scale out environments.
+    - Fixed issue with excessive refreshes in scale-out environments.
 
 - *Version: 1.26.9664.33586 (build 15.0.1121.116), Released: June 17, 2026*
     - Fixed issue with repeated jobs being created in scale out environments.
