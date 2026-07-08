@@ -28,7 +28,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
     - Fixed issue with excessive refreshes in scale-out environments.
 
 - *Version: 1.26.9664.33586 (build 15.0.1121.116), Released: June 17, 2026*
-    - Fixed issue with repeated jobs being created in scale out environments.
+    - Fixed issue with repeated jobs in scale-out environments.
 
 - *Version: 1.26.9663.10539 (build 15.0.1121.115), Released: June 12, 2026*
     - Fixed issue with scale out environments showing old data after refresh.
