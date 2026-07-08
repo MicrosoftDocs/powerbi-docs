@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 03/27/2026
+ms.date: 07/08/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## July 2026
+
+### Org app audiences now supported in the Power BI mobile apps
+
+Org app audiences now extend a tailored org app experience to the Power BI mobile apps. When you open an org app on your phone or tablet, you see and navigate content based on your assigned audience, so you can quickly find the reports, dashboards, and Power BI content most relevant to your role. If you belong to more than one audience, you can switch between them to view the content curated for each group. For more information, see [Audiences](./mobile-apps-org-apps.md#audiences).
 
 ## March 2026
 
@@ -819,7 +825,7 @@ We added a new button that lets you control when to focus on your data by removi
 
 #### Supporting external guest users in Power BI apps (iOS, Android)
 
-You can access Power BI content shared with you from other organization directly from the app (also known as B2B). Read more on Power BI mobile apps B2B [here](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+You can access Power BI content shared with you from other organizations directly from the app (also known as B2B). Read more on Power BI mobile apps B2B [here](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
 
 #### Enhancing Windows presentation mode with slideshow (Windows)
 
@@ -988,7 +994,7 @@ In the latest move to bring data where you are, we've created the Power BI for M
 
 #### Share reports and dashboards externally
 
-Share dashboards and reports with users outside of your organization, directly from the app. External sharing in enabled for both organizational and social accounts. 
+Share dashboards and reports with users outside of your organization, directly from the app. External sharing is enabled for both organizational and social accounts. 
 
 #### Persistent filters
 
@@ -1092,7 +1098,7 @@ Read more about [how your Power BI content is organized](mobile-apps-quickstart-
 
 #### iOS and Android devices
 **Power BI Report Server preview**
-Create and publish Power BI reports on premises. Then [view and interact with them in your iOS or Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) mobile device. 
+Create and publish Power BI reports on-premises. Then [view and interact with them in your iOS or Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) mobile device. 
 
 ### April 2017
 Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/)
