@@ -605,5 +605,5 @@ Some report capabilities available in workspace apps aren't supported in org app
 Although org apps are generally available, some Apps page display experiences might still show preview labeling or the default org app icon at this time.
 
 - In list view, the **App type** column may still show **Org app (preview)** for org apps.
-- In the Apps page filter control, org apps may still appear as **Org app (preview)** under **Type**.
+- In the Apps page filter control, org apps might still appear as **Org app (preview)** under **Type**.
 - In gallery view, org apps don't currently use the custom icon configured for the org app. The default org app icon is used instead.
