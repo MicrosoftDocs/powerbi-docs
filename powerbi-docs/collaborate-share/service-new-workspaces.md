@@ -58,13 +58,10 @@ Power BI doesn't create a Microsoft 365 group behind the scenes when you create 
 
 Roles help you manage access in workspaces so teams can collaborate. Grant access by assigning groups or individuals to a role: Admin, Member, Contributor, or Viewer.
 
-- **Licensing enforcement**: Publishing reports to a workspace enforces existing licensing rules. Users collaborating in workspaces or sharing content to others in the Power BI service need a Power BI Pro or Premium Per User (PPU) license. Users without a Pro or PPU license see the error "Only users with Power BI Pro licenses can publish to this workspace."
-- **Read-only workspaces**: The Viewer role in workspaces gives users read-only access to the content in a workspace.
-- **Users without a Pro or Premium Per User (PPU) license**: They can access a workspace if the workspace is in a Power BI Premium capacity, but only if they have the Viewer role.
-- **Allow users to export data**: Even users with the Viewer role in the workspace can export data if they have Build permission on the semantic models in that workspace. Learn more about [Build permission for semantic models](../connect-data/service-datasets-build-permissions.md).
-- **Assign user groups to workspace roles**: You can add Active Directory security groups, distribution lists, or Microsoft 365 groups to these roles, for easier user management.
+- Use the Viewer role for read-only access to workspace content.
+- For the full role matrix, licensing behavior, Build permission guidance, and row-level security guidance, see [Roles in workspaces](service-roles-new-workspaces.md).
 
-Learn more in [Roles in workspaces](service-roles-new-workspaces.md).
+You can assign Active Directory security groups, distribution lists, or Microsoft 365 groups to workspace roles to simplify access management.
 
 ## Administer and audit workspaces
 
@@ -92,7 +89,6 @@ Limitations:
 - A workspace can have up to 1,000 semantic models and reports.
 - Power BI Publisher for Excel isn't supported.
 - Some special characters in workspace names aren't supported over an XMLA endpoint. Encode them in the URL (for example, encode **/** as **%2F**).
-- A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
 - The semantic model can show minor differences in the owner's display name because it assumes a single owner for operations like setting credentials.
 
 ## Related content
