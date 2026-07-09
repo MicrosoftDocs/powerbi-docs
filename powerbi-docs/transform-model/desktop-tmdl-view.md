@@ -1,33 +1,40 @@
 ---
-title: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop
-description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop.
+title: Use Tabular Model Definition Language (TMDL) view in Power BI
+description: Learn how to use TMDL view to see and work with semantic model metadata in a visual format in Power BI Desktop and Power BI service.
 author: kgremban
 ms.author: kgremban
-ms.reviewer: ''
+ms.reviewer: saralam
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
-ms.date: 11/18/2025
+ms.date: 07/07/2026
 LocalizationGroup: Transform and shape data
 ---
 
-# Work with TMDL view in Power BI Desktop
+# Work with TMDL view
 
-**TMDL view** lets you script, modify, and apply changes to semantic model objects with a modern code editor using [Tabular Model Definition Language (TMDL)](../developer/projects/projects-dataset.md) in Power BI Desktop, improving development efficiency and providing complete visibility and control over semantic model metadata. 
+**TMDL view** in Power BI Desktop and Power BI service lets you script, modify, and apply changes to semantic model objects by using a modern code editor and [Tabular Model Definition Language (TMDL)](../developer/projects/projects-dataset.md). It improves development efficiency and provides complete visibility and control over semantic model metadata. 
 
-**TMDL view** offers an alternative experience to semantic modeling using code, instead of a graphical user interface such as [Model view](desktop-relationship-view.md). 
+TMDL view offers an alternative experience to semantic modeling by using code instead of a graphical user interface such as [Model view](desktop-relationship-view.md). 
 
 TMDL view offers the following advantages:
 
 * **Enhanced development efficiency** with a rich code editor that includes search-and-replace, keyboard shortcuts, multi-line edits and more. 
 * **Increase reusability** by easily scripting, sharing, and reusing TMDL scripts among semantic model developers. For example, use a centralized SharePoint site to easily share reusable semantic model objects such as calendar tables, or time intelligence calculation groups. 
-* **Gain more control and transparency**, showing all semantic model objects and properties, and allowing changes to items not available in the Power BI Desktop user interface, such as *[IsAvailableInMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx)* or *[DetailRowsDefinition](/dotnet/api/microsoft.analysisservices.tabular.measure.detailrowsdefinition)*.  
+* **More control and transparency** by showing all semantic model objects and properties, and allowing changes to items not available in the Power BI user interface, such as *[IsAvailableInMDX](/dotnet/api/microsoft.analysisservices.tabular.column.isavailableinmdx)* or *[DetailRowsDefinition](/dotnet/api/microsoft.analysisservices.tabular.measure.detailrowsdefinition)*.
+
+> [!NOTE]
+>**TMDL View in Power BI Desktop** is **Generally Available**, while **TMDL View on the web** is available in **Preview**.
 
 ## Script to TMDL
 
 In Power BI Desktop, select the **TMDL view** icon located along the left side of the window, as shown in the following image. 
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-01.png" alt-text="Screenshot of Tabular Model Definition Language T-M-D-L view.":::
+
+In the Power BI service or Fabric portal workspace, select **TMDL View (Preview)**.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/service-tmdl-view.png" alt-text="Screenshot showing the TMDL View button in Power BI service.":::
 
 When TMDL view opens the code editor is initially empty. You can script any semantic model object such as a table, measure, or column by selecting the objects from the **Data pane** and dragging them onto the code editor:
 
@@ -152,13 +159,6 @@ In TMDL view you can have multiple script tabs at once, any of which can be rena
 
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-12.png" alt-text="Screenshot of multiple tabs in the T-M-D-L view.":::
 
-The contents of the **TMDL view** tabs are saved in the report file when you save the Power BI Desktop report, so you can continue where you left off the next time you open the Power BI Desktop report file. When saving to a [Power BI Project (PBIP)](/power-bi/developer/projects/projects-dataset), each script tab is saved as a .tmdl file in the *\TMDLScripts* folder, as shown in the following image.
-
-:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-13.png" alt-text="Screenshot of the file structure for saving tabs in a Power BI Desktop file.":::
-
-> [!TIP]
-> You can open and edit TMDL scripts in Visual Studio Code, and they will properly reload after restarting Power BI Desktop.
-
 The *Problems* and *Output* panes display errors and messages specific to the script tab that's currently selected and displayed. Switching to a different TMDL script tab refreshes both of those panes with information specific to the selected and currently shown tab.
 
 You can select the *Clear* button to empty the *Output* pane messages. 
@@ -166,6 +166,15 @@ You can select the *Clear* button to empty the *Output* pane messages.
 :::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-14.png" alt-text="Screenshot of the clear button used to empty output pane messages.":::
 
 Messages are kept only for each Power BI Desktop session, so restarting Power BI Desktop clears all output messages for all script tabs.
+
+In TMDL view in Power BI Desktop, the report file saves the contents of the TMDL view tabs, so you can continue where you left off the next time you open the Power BI Desktop report file. When saving to a [Power BI Project (PBIP)](/power-bi/developer/projects/projects-dataset), each script tab is saved as a .tmdl file in the *\TMDLScripts* folder, as shown in the following image.
+
+:::image type="content" source="media/desktop-tabular-model-definition-language-view/tmdl-view-13.png" alt-text="Screenshot of the file structure for saving tabs in a Power BI Desktop file.":::
+
+> [!TIP]
+> You can open and edit TMDL scripts in Visual Studio Code, and they properly reload after restarting Power BI Desktop.
+
+In TMDL view on the web, script tabs and script contents aren't persisted. They're discarded when the semantic model or browser session is closed.
 
 ## Compatibility level upgrade prompt
 
@@ -214,6 +223,17 @@ You can seamlessly integrate both experiences. For instance, you can update the 
 
 > [!TIP]
 > For an enhanced TMDL authoring experience when editing TMDL files externally in Visual Studio Code, use the [TMDL Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=CPIM.TMDL-language-support). This extension provides DAX and Power Query semantic highlighting, autocomplete, diagnostics, code actions, code formatting, breadcrumb navigation, and localization support for TMDL documents.
+
+## TMDL view in Power BI service (preview)
+
+Use TMDL view on the web to script, modify, and apply changes to your published semantic models. TMDL view on the web offers the same experience as Power BI Desktop with a few exceptions. 
+
+| Key Difference | TMDL View in Power BI Desktop | TMDL View on the Web (Preview)|
+|--------------|------------------------------|----------------------|
+| **View mode and Edit mode** | No distinct modes - you can make and apply changes to the model at any time. | Introduces two modes: **View mode** (to script and preview changes) and **Edit mode** (to apply them to the model). This feature enables safer experimentation before committing changes. |
+| **Script persistence** | TMDL scripts are saved as part of the semantic model. A model might contain previously saved scripts. | Scripts aren't persisted. The system discards them when the semantic model or browser is closed. Previously saved scripts aren't displayed. |
+| **[Version history support](service-semantic-model-version-history.md)** | Not available. | Leverages workspace version history to restore previous versions of the semantic model if needed. |
+| **Write permissions** | Not applicable. Desktop authoring doesn't rely on workspace permission levels. | Requires [write permissions on the semantic model](../connect-data/service-datasets-permissions.md)** to open and use the experience. |
 
 ## Common use cases for TMDL view
 
