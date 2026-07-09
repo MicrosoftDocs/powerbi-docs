@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 06/10/2026
+ms.date: 07/09/2026
 LocalizationGroup: Common tasks
 ms.custom:
   - retail analysis sample
@@ -71,7 +71,7 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 
    :::image type="content" source="./media/end-user-subscribe/power-bi-attach.png" alt-text="Screenshot showing the Attach full report dropdown.":::
 
-1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
+1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. Subscriptions expire at 12:00 AM UTC on the selected end date, so to continue receiving deliveries through a specific day, choose the following day as the end date. When a subscription expires, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You can choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
 
     > [!TIP]
