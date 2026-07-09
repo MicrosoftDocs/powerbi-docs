@@ -1,14 +1,14 @@
 ---
 title: Apps in Power BI
 description: Learn how to install a new app. Power BI apps bundle related dashboards and reports together for business users to view and explore.
-author: julcsc
+author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: miguem
+ms.reviewer: duaskins
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with apps
 ms.topic: how-to
-ms.date: 06/10/2026
+ms.date: 07/09/2026
 ms.custom:
 ai-usage: ai-assisted
 LocalizationGroup: Share your work
@@ -39,7 +39,14 @@ Viewing and opening an app requires certain permissions. The recipient must have
 
 Apps are an easy way for designers to share many types of content at one time. App designers create dashboards and reports and then bundle them together into an app. The designers share or publish the app to a location where you, the business user, can access it. It's easier to find and install content in the [Power BI service](https://powerbi.com) or on your mobile device when it's organized together as an app. After you install an app, you don't have to remember the names of several dashboards or reports because they're all together in one app. You can easily access the app in your browser or on your mobile device.
 
-When the app author releases updates, you get a notification or you automatically see the changes. The author controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date.
+When you get new access to an app, Power BI sends you a notification email. This behavior applies when you first get access to the app and when you later get access to another audience in the same app.
+
+When the app author republishes or updates the app, you automatically see the latest version without a notification. For example, changes to the app name, theme, navigation, reports, dashboards, or new content added to an audience you already have don't send a notification.
+
+> [!TIP]
+> If you use the Power BI personal app in Microsoft Teams, you might also receive corresponding Power BI notifications in the Teams activity feed. For details, see [Get Power BI notifications in Microsoft Teams](../collaborate-share/office-integration/service-teams-notifications.md).
+
+Data in app items such as reports and dashboards stays up to date when their underlying semantic models refresh on schedule. As an app user, you don't need to manage these refresh settings.
 
 <!-- add conceptual art -->
 ## Get a new app
