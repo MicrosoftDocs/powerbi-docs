@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 07/02/2026
+ms.date: 07/09/2026
 LocalizationGroup: Share your work
 ms.custom:
   - sfi-image-nochange
@@ -599,3 +599,11 @@ Some report capabilities available in workspace apps aren't supported in org app
 - Org apps support email subscriptions for Power BI reports. However, subscriptions in org apps have some differences compared to subscriptions created directly on reports. See [Subscriptions for reports in org apps](#subscriptions-for-reports-in-org-apps). Subscriptions aren't supported for paginated reports in org apps. Dashboards and scorecards aren't eligible items for inclusion in org apps, so subscriptions don't apply to them.
 - Audience tabs aren't currently supported in Power BI mobile apps.
 - In org apps, the Fabric or Power BI navigation sidebar remains visible by default, unlike in workspace apps. To create a focused, distraction‑free experience, select Focus mode in the global header. [Focus mode](/fabric/fundamentals/fabric-home#maximize-editing-space-with-focus-mode) collapses both the navigation sidebar and the object explorer to maximize the available viewing area.
+
+### Apps page limitations
+
+Although org apps are generally available, some Apps page display experiences may still show preview labeling or the default org app icon at this time.
+
+- In list view, the **App type** column may still show **Org app (preview)** for org apps.
+- In the Apps page filter control, org apps may still appear as **Org app (preview)** under **Type**.
+- In gallery view, org apps don't currently use the custom icon configured for the org app. The default org app icon is used instead.
