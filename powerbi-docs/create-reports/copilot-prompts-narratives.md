@@ -3,11 +3,11 @@ title: Write Copilot prompts to create narrative visuals in Power BI
 description: Read about samples of prompts that help Copilot produce useful narrative visuals in Power BI.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: cnews
+ms.reviewer: sairoshann
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/01/2025
+ms.date: 07/06/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 no-loc: [Copilot]
@@ -18,13 +18,13 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-If you have edit permission for a report, Copilot can create a narrative visual for you on the report page. If you don't have edit permission, you can still use Copilot to get insights about the report by asking questions in the Copilot pane. See the article [Summarize your report content in the Copilot pane](copilot-pane-summarize-content.md) for details. 
+If you have edit permission for a report, Copilot can create a narrative visual for you on the report page. If you don't have edit permission, you can still use Copilot to get insights about the report by asking questions in the Copilot pane. For more information, see [Summarize your report content in the Copilot pane](copilot-pane-summarize-content.md). 
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Sample prompts for narrative visuals
 
-Here are examples of prompts that work well for creating narrative visuals with Copilot for Power BI. Each sample prompt is paired with the narrative that Copilot generated. Your prompts help Copilot understand what you're looking for, but they might not produce exactly what you want on the first try. You can refine narratives by using follow-up prompts to adjust the tone, formatting, or content.
+The following examples show prompts that work well for creating narrative visuals with Copilot in Power BI. Each sample prompt includes the narrative that Copilot generated. Your prompts help Copilot understand what you're looking for, but they might not produce exactly what you want on the first try. Refine narratives with follow-up prompts to adjust the tone, formatting, or content.
 
 > [!NOTE]
 > See the [Considerations and limitations section](copilot-create-narrative.md#considerations-and-limitations) in "Create a narrative with Copilot for Power BI" for features that currently don't work.
@@ -39,7 +39,7 @@ Start by creating a narrative focused on one aspect of your data.
 
 ### Refine an existing narrative
 
-Once you have a narrative, you can modify it with additional prompts. The following examples show how to iteratively improve a narrative using the suggested prompt as a starting point:
+After you create a narrative, modify it by using additional prompts. The following examples show how to iteratively improve a narrative by using the suggested prompt as a starting point:
 
 :::image type="content" source="media/copilot-prompts/suggested-prompt-1.png" alt-text="Screenshot showing original narrative from the suggested prompt." lightbox="media/copilot-prompts/suggested-prompt-1.png":::
 
@@ -65,7 +65,7 @@ Create narratives that investigate specific aspects of your report.
 
 ## Send feedback
 
-We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
+Your feedback about the product is always welcome. During public preview, your feedback helps improve the product even faster.
 
 ## Next steps
 

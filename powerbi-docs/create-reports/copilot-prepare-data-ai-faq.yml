@@ -4,12 +4,13 @@ metadata:
   description: Browse a list of frequently asked questions and answers about preparing data for AI in Power BI.
   author: julcsc
   ms.author: juliacawthra
-  ms.reviewer: ''
+  ms.reviewer: emlisa
   ms.service: powerbi
   ms.subservice: pbi-reports-dashboards
   ms.topic: faq
-  ms.date: 10/01/2025
+  ms.date: 07/06/2026
   ms.collection: ce-skilling-ai-copilot
+  ai-usage: ai-assisted
 title: Frequently asked questions about preparing data for AI
 summary: |
 
@@ -22,17 +23,17 @@ sections:
       - question: |
           What features does Power BI currently have to help me prepare my data for Copilot?
         answer: |
-          Today, Power BI offers four main tooling features to configure your model to be ready for natural language processing:
+          Today, Power BI offers four main tooling features to configure your model for natural language processing:
 
-          - [**AI data schemas**](copilot-prepare-data-ai-data-schema.md): Allows you to select a subset of a schema for Copilot consumption. 
-          - [**Verified answers**](copilot-prepare-data-ai-verified-answers.md): A configured response that a model author sets that's validated for accuracy and reliability. Authors can set specific visuals for Copilot to use in a verified answer when a user asks a question that falls into the assigned category. 
-          - [**AI instructions**](copilot-prepare-data-ai-verified-answers.md): Instructions you can set on your model to provide more context on the data in the model. They help guide Copilot to understand when to focus on what data, and help Copilot understand certain mappings that language users might use when they interact with Copilot. 
-          - **Descriptions**: Descriptions set on tables and columns to provide more detail on context on the data. Descriptions are only used in Data Analysis Expressions (DAX) queries and Copilot search capabilities. 
+          - [**AI data schemas**](copilot-prepare-data-ai-data-schema.md): Lets you select a subset of a schema for Copilot to use. 
+          - [**Verified answers**](copilot-prepare-data-ai-verified-answers.md): A response that a model author configures and validates for accuracy and reliability. Authors can set specific visuals for Copilot to use in a verified answer when a user asks a question that falls into the assigned category. 
+          - [**AI instructions**](copilot-prepare-data-ai-instructions.md): Instructions you can set on your model to provide more context on the data in the model. They help Copilot understand when to focus on what data, and help Copilot understand certain mappings that language users might use when they interact with Copilot. 
+          - **Descriptions**: Descriptions set on tables and columns to provide more context about the data. Copilot uses descriptions only in Data Analysis Expressions (DAX) queries and search capabilities. 
 
       - question: |
           In what order should I implement Copilot in Power BI tooling features?
         answer: |
-          To get the most value from Copilot in Power BI, we suggest implementing its tooling features in the following sequence:
+          To get the most value from Copilot in Power BI, implement its tooling features in the following sequence:
 
           1. [Define the AI data schema](copilot-prepare-data-ai-data-schema.md).
 
@@ -42,9 +43,9 @@ sections:
               
               Here's an example of how AI data schemas can help Copilot focus on the right data:
               
-              When you use the entire schema, Copilot doesn't always know what the user means when they say *sales*. In this case, Copilot returned gross profit margin (GPM), which is a legitimate interpretation of sales, but not the metric that this team typically uses to analyze sales. 
+              When you use the entire schema, Copilot doesn't always know what the user means when they say *sales*. In this case, Copilot returns gross profit margin (GPM), which is a legitimate interpretation of sales, but not the metric that this team typically uses to analyze sales. 
               
-              The model author uses the **Prep data for AI** feature and removes the Total GPM measure from the schema that's passed to Copilot. 
+              The model author uses the **Prep data for AI** feature and removes the Total GPM measure from the schema that Copilot receives. 
               
               Now, when the user asks the same question, Copilot has more clarity on where to get the answer from and correctly interprets sales by the team's definition and measurement.
 
@@ -66,13 +67,13 @@ sections:
 
           1. [Add AI instructions](copilot-prepare-data-ai-instructions.md).
 
-              After you define the schema and verified answers, you can use AI instructions to guide the behavior of Copilot at the model level.
+              After you define the schema and verified answers, you can use AI instructions to guide Copilot's behavior at the model level.
 
               Instructions help clarify business logic, map user terminology to model fields, and tell Copilot how to interpret or analyze specific types of data. They're helpful because they provide context that Copilot wouldn't infer on its own.
 
-              The following example shows how you can use AI instructions to provide more context to Copilot. The user asks about *sales during busy season of 2012*. Busy season is a well-defined, commonly used phrase within this organization. However, the semantic model has no indication of this term anywhere. The model author sets an instruction that defines busy season as June to August. 
+              The following example shows how to use AI instructions to provide more context to Copilot. The user asks about *sales during busy season of 2012*. Busy season is a well-defined, commonly used phrase within this organization. However, the semantic model has no indication of this term anywhere. The model author sets an instruction that defines busy season as June to August. 
 
-              Now, when the user asks the question about *sales during busy season*, Copilot understands this defined term and can provide the response. 
+              Now, when the user asks the question about *sales during busy season*, Copilot understands this defined term and provides the response. 
 
               :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-step-3.png" alt-text="Screenshot that shows an example of how AI instructions provide additional context to Copilot for interpreting user queries." lightbox="media/copilot-prep-data/copilot-prep-data-faq-step-3.png":::
             
@@ -85,7 +86,7 @@ sections:
       - question: |
           Can I create tooling on a report instead of on the model?
         answer: |
-          Today, tooling and configuration features are only available on the model. Configuring different reports built off the same model isn't yet supported. The schema, verified answers, instructions, and descriptions are set on the semantic model, but not on the report.   
+          Today, tooling and configuration features are only available on the model. You can't yet configure different reports built from the same model. You set the schema, verified answers, instructions, and descriptions on the semantic model, not on the report.   
 
       - question: |
           When I prepare my data for Copilot, which capabilities are affected?
@@ -108,23 +109,23 @@ sections:
         answer: |
           1. Define your AI data schema. 
 
-             Remove any tables, columns, or fields that are irrelevant to your users' needs. This action helps Copilot focus on the most relevant parts of your model, and helps to ensure that it selects the right fields when it responds to queries.
+             Remove any tables, columns, or fields that are irrelevant to your users' needs. This action helps Copilot focus on the most relevant parts of your model, and helps ensure that it selects the right fields when it responds to queries.
 
           1. Use verified answers for visuals in reports.
             
-             If Copilot can use a visual in your report to derive an answer to a question, create a verified answer. This practice helps to ensure that Copilot consistently returns the correct visual when users ask questions with specific trigger phrases.
+             If Copilot can use a visual in your report to derive an answer to a question, create a verified answer. This practice helps ensure that Copilot consistently returns the correct visual when users ask questions with specific trigger phrases.
 
           1. Customize instructions for specific fields.
             
-             After you set the schema and verified answers, you can use AI instructions to guide Copilot when selecting particular fields. We recommend that you use instructions for fine tuning and for advanced scenarios, after other **Prep data for AI** features are set. 
-             By using this sequence of steps, you can help ensure that Copilot returns the most accurate and contextually relevant results to users, guided by your model's structure and your defined instructions.
+             After you set the schema and verified answers, you can use AI instructions to guide Copilot when selecting particular fields. Use instructions for fine tuning and for advanced scenarios, after you set other **Prep data for AI** features. 
+             This sequence of steps helps ensure that Copilot returns the most accurate and contextually relevant results to users, guided by your model's structure and your defined instructions.
        
       - question: |
            I'm trying to get Copilot to understand the term I'm using. Which feature should I use?
         answer: |
-          If Copilot is struggling to understand a term that always has the same single correct item to reference in your model, you can provide an alternative name through AI instructions. 
+          If Copilot struggles to understand a term that always has the same single correct item to reference in your model, you can provide an alternative name through AI instructions. 
           
-          For example, if your team calls the people who sell your products *closers*, then you should provide a reference in your AI instructions. Set *sellers* to also be known as *closers*.
+          For example, if your team calls the people who sell your products *closers*, provide a reference in your AI instructions. Set *sellers* to also be known as *closers*.
 
       - question: |
            I'm trying to get Copilot to understand terms with conditions or groupings. Which feature should I use?
@@ -139,7 +140,7 @@ sections:
           
           In another example, an organization might classify seasons. Your team might call January to May *slow season*. June to September might be *busy season*. October to December might be *standard season*.  
 
-          Within AI instructions, you could set the following definitions:
+          Within AI instructions, you can set the following definitions:
 
           - *Slow season* means January to May.
           - *Busy season* means June to September.
@@ -150,9 +151,9 @@ sections:
       - question: |
            I'm trying to get Copilot to return the correct answer to the most commonly asked questions. Which feature should I use?
         answer: |
-          Consumers of your report and data likely ask some questions more frequently. You can address this occurrence by applying verified answers to your model. Apply a verified answer by selecting a visual and setting trigger phrases. When a user asks about the topic, Copilot returns information by using the visual assigned. 
+          Consumers of your report and data likely ask some questions more frequently. You can address this occurrence by applying verified answers to your model. Apply a verified answer by selecting a visual and setting trigger phrases. When a user asks about the topic, Copilot returns information by using the assigned visual. 
           
-          For example, consumers of the report and model might often ask, "What product had the highest sales last week?" You can set a verified answer to help Copilot to understand where it can find the right information. This method helps authors and consumers trust that the answer is correct. 
+          For example, consumers of the report and model might often ask, "What product had the highest sales last week?" You can set a verified answer to help Copilot understand where it can find the right information. This method helps authors and consumers trust that the answer is correct. 
 
       - question: |
            I'm trying to get Copilot to return different answers based on the domains or user groups. Which feature should I use?
@@ -162,61 +163,61 @@ sections:
       - question: |
            Why does Copilot say it can't see a field in my semantic model even though it's part of the AI schema?
         answer: |
-          In scenarios where your semantic model schema is too large for Copilot to render a response, the schema of the model will be reduced for Copilot to be able to understand the schema and generate a response. You can tell when this is happening by downloading the Copilot Diagnostics and checking for "AgentSchemaReduced" in the warnings.
+          In scenarios where your semantic model schema is too large for Copilot to render a response, Copilot reduces the model schema so it can understand the schema and generate a response. You can tell when this reduction happens by downloading the Copilot Diagnostics and checking for "AgentSchemaReduced" in the warnings.
  
   - name: Prep data for AI
     questions:
       - question: |
            I get an error that says, "Copilot is currently syncing with the data model." What does this mean? 
         answer: |    
-          For Copilot to be able to perform at its best, it's critical that it understands the underlying data in the semantic model. One way that Copilot in Power BI tries to understand the underlying data is by indexing the semantic model to accurately search for relevant values to match on. This process allows Copilot to effectively answer questions based on the user's prompt. 
+          For Copilot to perform at its best, it must understand the underlying data in the semantic model. To understand the underlying data, Copilot in Power BI indexes the semantic model so it can accurately search for relevant values to match. This process helps Copilot effectively answer questions based on your prompt. 
 
           Consider a dataset related to Hawaii tourism. To answer questions like, "How did weather affect tourist visits on Maui?" Copilot needs to understand that Maui is an instance value in the semantic model in the **Island name** column of the **Island** table.
 
-          For Copilot to effectively search these instance values, the semantic model is indexed when Power BI Q&A is enabled. It's reindexed when Power BI detects changes to the model.  
+          For Copilot to effectively search these instance values, Power BI indexes the semantic model when you enable Power BI Q&A. Power BI reindexes the model when it detects changes.  
 
           #### Model indexing frequency 
 
-          Indexing is done for all models that have the Q&A setting enabled. 
+          Power BI indexes all models that have the Q&A setting enabled. 
           
           > [!NOTE]
-          > The Q&A setting is on by default for *import and Direct Lake* models. You can find more details about this setting in Q&A settings documentation. 
+          > The Q&A setting is on by default for *import and Direct Lake* models. For more details about this setting, see the Q&A settings documentation. 
 
           Reindexing occurs when one of the following actions takes place: 
 
           - For *import* models: 
-            - The model was published or republished to the service. 
-            - The model was refreshed via manual or scheduled refresh and Copilot and Q&A was used within the last 14 days. 
+            - You publish or republish the model to the service. 
+            - A manual or scheduled refresh runs on the model, and you use Copilot and Q&A within the last 14 days. 
           - For *DirectQuery* and *Direct Lake* models: 
-            - The model was published or republished to the service.
-            - The index is older than 24 hours and Copilot and Q&A was used within the last 14 days.
+            - You publish or republish the model to the service.
+            - The index is older than 24 hours, and you use Copilot and Q&A within the last 14 days.
 
-          The following message in Copilot indicates that the model is currently in the process of indexing. The message should automatically resolve after indexing finishes.  
+          The following message in Copilot indicates that the model is currently indexing. The message automatically resolves after indexing finishes.  
 
           :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-indexing.png" alt-text="Screenshot that shows a Copilot message that indicates that the model is currently indexing." lightbox="media/copilot-prep-data/copilot-prep-data-faq-indexing.png":::
 
           
           > [!NOTE]
-          > This error doesn't mean that Copilot isn't available to users. This message indicates that any new instance values added or changed in the model might not reflect in Copilot responses until the indexing activity finishes. 
+          > This error doesn't mean that Copilot isn't available. This message indicates that any new instance values you add or change in the model might not appear in Copilot responses until the indexing activity finishes. 
 
           #### Indexing methodology 
 
-          Text columns in the semantic model are the only columns that are indexed. Columns that are hidden in the AI schema through the **Prep your data for AI** feature aren't indexed.  
+          Power BI only indexes text columns in the semantic model. Power BI doesn't index columns that you hide in the AI schema through the **Prep your data for AI** feature.  
 
-          Up to five million instance values are indexed with columns. The smallest cardinality is indexed first. `DISTINCTCOUNT` determines the column's cardinality for import models and `COLUMNSTATISTICS` determines the column's cardinality for DirectQuery models. For DirectQuery sources, the `COLUMNSTATISTICS` function uses the `APPROXIMATEDISTINCTCOUNT` function for underlying data sources that support it to efficiently determine approximate column cardinalities. 
+          Power BI indexes up to five million instance values with columns and indexes the smallest cardinality first. `DISTINCTCOUNT` determines the column's cardinality for import models, and `COLUMNSTATISTICS` determines the column's cardinality for DirectQuery models. For DirectQuery sources, the `COLUMNSTATISTICS` function uses the `APPROXIMATEDISTINCTCOUNT` function to efficiently determine approximate column cardinalities for underlying data sources that support it. 
           
-          To further prevent overloading the underlying system for DirectQuery models with an influx of queries due to indexing, the results of `COLUMNSTATISTICS` are cached. The statistics are recomputed every seven days. During the indexing process, if the five million instance value upper bound would be crossed with the indexing of the next column, then the indexing of the column is skipped entirely. 
+          To further prevent overloading the underlying system for DirectQuery models with an influx of queries due to indexing, Power BI caches the results of `COLUMNSTATISTICS` and recomputes the statistics every seven days. During the indexing process, if indexing the next column would cross the five million instance value upper bound, Power BI skips that column entirely. 
 
-          If the indexing limit is reached, Copilot still answers based on the index it built, which doesn't include all instance values. Users see the following warning when the semantic model in question hits the indexing limit. 
+          If indexing reaches the limit, Copilot still answers based on the index it built, which doesn't include all instance values. You see the following warning when the semantic model hits the indexing limit. 
 
           :::image type="content" source="media/copilot-prep-data/copilot-prep-data-faq-index-methodology.png" alt-text="Screenshot that shows the Copilot message that indicates that the model is currently indexing." lightbox="media/copilot-prep-data/copilot-prep-data-faq-index-methodology.png":::
 
           #### Known limitations 
 
           - Indexing has an upper bound limit of five million instance values or 1,000 model entities (tables/columns) for large semantic models. 
-          - Text values of 100+ characters aren't indexed.
+          - Power BI doesn't index text values of 100+ characters.
           - DirectQuery models only index columns for data sources that support `APPROXIMATEDISTINCTCOUNT`.
-          - Indexing for DirectQuery and Direct Lake models occurs once during a 24-hour time period unless the model is republished.
+          - Indexing for DirectQuery and Direct Lake models occurs once during a 24-hour time period unless you republish the model.
           - If the underlying semantic model refresh fails, the data index might be stale until the next successful semantic model refresh.
-          - The first data index generation for the semantic model might be delayed by 15 minutes to allow for backend activities to generate the index.
+          - The first data index generation for the semantic model might take an extra 15 minutes to allow for backend activities to generate the index.
         

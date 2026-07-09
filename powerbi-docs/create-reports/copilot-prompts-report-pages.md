@@ -3,11 +3,11 @@ title: Write Copilot prompts for creating report pages in Power BI
 description: Read about samples of prompts that help Copilot produce useful visuals in Power BI.
 author: julcsc
 ms.author: juliacawthra
-ms.reviewer: cnews
+ms.reviewer: harleenkaur
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
-ms.date: 11/01/2025
+ms.date: 07/06/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 no-loc: [Copilot]
@@ -18,15 +18,15 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
+Before your business can use Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Sample prompts for report pages
 
-Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples.
+The following prompts work well with Copilot in Power BI.
 
-Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they might not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
+Each sample prompt shows a report page that Copilot generated from the prompt. Your prompts help Copilot understand what you're looking for, but they might not produce a page that's exactly what you want. It's a starting point for creating your report page. Modify the report page that Copilot created.
 
 ## Sales performance by product
 
@@ -52,9 +52,9 @@ Each sample prompt is paired with a report page that Copilot generated based on 
 
 :::image type="content" source="media/copilot-prompts/copilot-prompt-inventory-optimization.png" alt-text="Screenshot showing Copilot sample prompt for Inventory and supply chain management." lightbox="media/copilot-prompts/copilot-prompt-inventory-optimization.png":::
 
-### Create a table of contents
+## Create a table of contents
 
-Now generate a table of contents across your report pages. 
+Generate a table of contents across your report pages. 
 
 "Make a table of contents for this report that contains a brief description of what each page is about." 
 
@@ -62,7 +62,7 @@ Now generate a table of contents across your report pages.
 
 ## Send feedback
 
-We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
+Share your feedback about the product anytime. During public preview, your feedback especially helps improve the product faster.
 
 ## Next steps
 

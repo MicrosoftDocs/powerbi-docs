@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 After you [create a workspace](service-create-the-new-workspaces.md) in Power BI, or if you have an admin role in a workspace, you can give others access to it by adding them to the different roles. Workspace creators are automatically admins. For an explanation of the different roles, see [Roles in workspaces](service-roles-new-workspaces.md).
 
 > [!IMPORTANT]
-> You must have the **Admin** role in a workspace to manage access and add users. If you don't see the **Manage access** button, verify that you have the Admin role for the workspace. Only workspace admins can add or remove users and manage permissions.
+> You must have the **Admin** role in a workspace to use the **Manage access** pane. If you don't see the **Manage access** button, verify that you have the Admin role for the workspace. Members can add users with lower permissions, but only workspace admins can remove users or change existing roles. For role details, see [Roles in workspaces](service-roles-new-workspaces.md).
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users who browse content in a workspace, assign them the Viewer Role.

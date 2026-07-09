@@ -7,7 +7,7 @@ ms.reviewer: petebro
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 07/06/2026
 keywords:
   - "install pbirs, download pbirs, latest pbirs"
   - "Power BI Report Server"
@@ -21,21 +21,20 @@ keywords:
 
 # Download Power BI Report Server (PBIRS)
 
-Power BI Report Server (PBIRS) is an on-premises report server with a web portal in which you display and manage reports and KPIs. Along with it come the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
+Power BI Report Server (PBIRS) is an on-premises report server with a web portal where you display and manage reports and KPIs. Use PBIRS when you need to keep report content behind your firewall, instead of using the cloud-based Power BI service. PBIRS includes tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access these reports in different ways: viewing them in a web browser or mobile device, or as an email in their inbox.
 
-For details and more information about what's new in this release, see [Change log for Power BI Report Server](changelog.md).
+For more information about what's new in this release, see [Change log for Power BI Report Server](changelog.md).
 
 ## Download PBIRS
 
-**[Download Power BI Report Server](https://aka.ms/pbireportserverexe)**
+**[Download Power BI Report Server](https://aka.ms/pbireportserverexe)**.
 
-PBIRS January 2026 is the latest generally available (GA) version.
 - Release name: Power BI Report Server (May 2026)
 - Build number: 15.0.1121.120
 - Version: 1.26.9682.1442
 - Release date: July 8, 2026
 
-## System Requirements
+## System requirements
 
 - Supported Operating Systems:
   - Windows 11
