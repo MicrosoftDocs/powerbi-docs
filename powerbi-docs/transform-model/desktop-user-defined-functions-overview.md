@@ -25,7 +25,7 @@ DAX UDFs are generally available in Power BI Desktop and the Power BI Service st
 
 ## Define a function
 
-You can define a user-defined function in Power BI Desktop by using [DAX query view](dax-query-view.md) (DQV), [TMDL view](desktop-tmdl-view.md), or Model view. You can also view and edit UDFs in the browser through Power BI Service web modeling.
+You can define a user-defined function in Power BI Desktop by using [DAX query view](dax-query-view.md) (DQV), [TMDL view](desktop-tmdl-view.md), or [Model view](desktop-modeling-view.md). You can also view and edit UDFs in the browser through Power BI Service web modeling.
 
 ### General syntax
 
@@ -89,10 +89,6 @@ In [TMDL view](desktop-tmdl-view.md), you can **drag and drop** functions into t
 If using a [Power BI Project](../developer/projects/projects-overview.md), functions are also stored in `functions.tmdl` within the *definition* folder.
 
 :::image type="content" source="media/desktop-user-defined-functions-overview/project-script.png" alt-text="Visual Studio Code screenshot of a Power BI project. Explorer is open to the semantic model folder. 'functions.tmdl' is open in the code editor. Three functions are displayed: CustomerLifetimeValue, AverageOrderValue, and AddTax." lightbox="media/desktop-user-defined-functions-overview/project-script.png":::
-
-### Rename synchronization
-
-The model keeps UDFs synchronized with renames of tables, columns, and measures through automatic dependency tracking. When you rename a referenced table, column, or measure, DAX UDF definitions update automatically to reflect the new name. You can safely refactor your semantic model without manually updating UDF code.
 
 ## Use user-defined functions
 
@@ -189,18 +185,6 @@ Validate parameter types inside your function using built-in DAX type-checking f
 - [ISDATETIME](/dax/isdatetime-function-dax)
 
 For a complete list of available type-checking functions, see [DAX user-defined functions](/dax/best-practices/dax-user-defined-functions).
-
-## Discover user-defined functions
-
-The `INFO.USERDEFINEDFUNCTIONS` DMV (Dynamic Management View) returns a table with details about all UDFs in a semantic model. Use it to audit, document, or automate tasks such as listing all functions and their definitions. You can run this DMV in DAX query view or in any tool that supports DAX queries against a semantic model.
-
-```dax
-EVALUATE INFO.USERDEFINEDFUNCTIONS()
-```
-
-## Authoring experiences
-
-Beyond Power BI Desktop and Power BI Service, you can manage DAX UDFs by using SQL Server Management Studio (SSMS) starting in version 22.5. SSMS supports scripting, creating, and updating UDFs. Note that UDF syntax highlighting isn't available in SSMS.
 
 ## Related content
 
