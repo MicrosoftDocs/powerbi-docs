@@ -6,7 +6,8 @@ ms.author: kgremban
 ms.reviewer: jterh
 ms.service: powerbi
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 07/01/2026
+ai-usage: ai-assisted
 ---
 
 # DAX user-defined functions
@@ -24,7 +25,7 @@ DAX UDFs are generally available in Power BI Desktop and the Power BI Service st
 
 ## Define a function
 
-You can define a user-defined function in Power BI Desktop using [DAX query view](dax-query-view.md) (DQV) or [TMDL view](desktop-tmdl-view.md).
+You can define a user-defined function in Power BI Desktop by using [DAX query view](dax-query-view.md) (DQV), [TMDL view](desktop-tmdl-view.md), or [Model view](desktop-modeling-view.md). You can also view and edit UDFs in the browser through Power BI Service web modeling.
 
 ### General syntax
 
