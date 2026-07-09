@@ -75,7 +75,7 @@ This process is straightforward, but you should know the following:
 
 The ability to publish reports and semantic models from Power BI Desktop into a folder in a workspace is now in preview. To use this feature, follow the established pattern for publishing a semantic model and report. The workspace navigator provides the option for you to select a folder within a workspace to which it publishes. Folders are organizational units inside a workspace that enable users to efficiently organize and manage artifacts in the workspace.
 
-To turn the capability on, select the **Publish dialogs support folder selection** setting using the **Options and settings > Options > Preview features** menu in Power BI Desktop.
+To turn the capability on, select the **Publish dialogs support folder selection** setting by using the **Options and settings > Options > Preview features** menu in Power BI Desktop.
 
 To learn more about creating folders in Microsoft Fabric workspaces, read the [create folders in Microsoft Fabric workspaces](/fabric/get-started/workspaces-folders) article.
 
