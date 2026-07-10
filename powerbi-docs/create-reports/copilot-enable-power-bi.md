@@ -51,7 +51,7 @@ To open the Fabric Admin portal:
 To enable Copilot in Fabric, follow these steps:
 
 1. From the Admin portal for Fabric, select **Tenant settings**.
-1. Within the **Users can use Copilot and other features powered by Azure OpenAI** setting, toggle the **Enabled** switch on. This setting is off by default.
+1. Within the **Users can use Copilot and other features powered by Azure OpenAI** setting, review the current configuration. This setting is enabled by default, but you can disable it or specify who can access Copilot if your organization isn't ready to use it.
 1. Specify who can access Copilot in Fabric in the **Applies to** section.
 1. Select **Apply** to save your changes.
 
