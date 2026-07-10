@@ -40,7 +40,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
     It starts automatically and you're ready to go.
 
 > [!IMPORTANT]
-> Power BI Desktop is not supported in virtualized environments (e.g., Citrix).
+> Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). However, Citrix VDI and other virtual desktop environments, excluding Azure Virtual Desktop and Windows 365, aren't supported.
 
 ## Verify you're using the correct version
 
