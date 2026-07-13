@@ -53,7 +53,7 @@ The **Callout** > **Layout** controls the vertical alignment and size of the cal
 
 ### Reference labels layout
 
-The **Reference labels layout** controls how reference labels are organized within the reference labels section of each card. You can customize the look and feel including gaps, padding, backgrounds, and more.
+The **Reference labels layout** setting controls how reference labels are organized within the reference labels section of each card. You can adjust the vertical and horizontal alignment of the reference labels, and customize the look and feel including gaps, padding, backgrounds, and more.
 
 ### Multi-card layout
 
@@ -129,71 +129,409 @@ Follow this walkthrough to build a comprehensive card visual step by step.
 
 ### Sample data
 
-To follow along with the examples in this walkthrough, create a calculated table with sample data in a blank Power BI Desktop report.
+To follow along with the examples in this walkthrough, set up a sample table, measures, and a reusable trend function in a blank Power BI Desktop report.
 
 1. Open Power BI Desktop and create a new blank report.
-1. Select **Modeling** > **New table**.
-1. Paste the following DAX expression:
+1. Select **TMDL** on the left side to open the TMDL view.
+1. Paste the following TMDL script and select **Apply**:
 
-   ```dax
-   Product Line Sales =
-   DATATABLE(
-       "Product Line", STRING,
-       "Channel", STRING,
-       "_Units", INTEGER,
-       "_Revenue", INTEGER,
-       "_Revenue Target", INTEGER,
-       "_Returns", INTEGER,
-       {
-           {"A", "Online", 1200, 84000, 80000, 45},
-           {"A", "Retail", 800, 48600, 60000, 154},
-           {"B", "Online", 2400, 168000, 150000, 89},
-           {"B", "Retail", 1600, 112000, 120000, 640},
-           {"C", "Online", 600, 72000, 70000, 18},
-           {"C", "Retail", 950, 114000, 100000, 31}
-       }
-   )
-   ```
+   ````tmdl
+   createOrReplace
 
-1. Press **Enter** to create the table.
+   	model Model
+   		culture: en-US
+   		defaultPowerBIDataSourceVersion: powerBI_V3
+   		sourceQueryCulture: en-US
+   		valueFilterBehavior: independent
+   		dataAccessOptions
+   			legacyRedirects
+   			returnErrorValuesAsNull
 
-Add measures to aggregate the sample data. Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+   		table 'Product Line Sales'
 
-```tmdl
-createOrReplace
+   			/// Total number of products sold across all channels and product lines.
+   			measure Units = SUM('Product Line Sales'[_Units])
+   				formatString: #,##0
 
-	ref table 'Product Line Sales'
+   			/// Total sales revenue generated from all transactions.
+   			measure Revenue = SUM('Product Line Sales'[_Revenue])
+   				formatString: $#,##0
 
-		/// Total number of products sold across all channels and product lines.
-		measure Units = SUM('Product Line Sales'[_Units])
-			formatString: #,##0
+   			/// The planned revenue goal used to measure sales performance.
+   			measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
+   				formatString: $#,##0
 
-		/// Total sales revenue generated from all transactions.
-		measure Revenue = SUM('Product Line Sales'[_Revenue])
-			formatString: $#,##0
+   			/// Total number of products returned by customers.
+   			measure Returns = SUM('Product Line Sales'[_Returns])
+   				formatString: #,##0
 
-		/// The planned revenue goal used to measure sales performance.
-		measure 'Revenue target' = SUM('Product Line Sales'[_Revenue Target])
-			formatString: $#,##0
+   			/// Shows how close actual revenue is to the target (100% = on target, >100% = exceeding).
+   			measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
+   				formatString: 0.0%
 
-		/// Total number of products returned by customers.
-		measure Returns = SUM('Product Line Sales'[_Returns])
-			formatString: #,##0
+   			/// Percentage of sold units that were returned (lower is better).
+   			measure 'Return rate' = DIVIDE([Returns], [Units])
+   				formatString: 0.0%
 
-		/// Shows how close actual revenue is to the target (100% = on target, >100% = exceeding).
-		measure 'Revenue % to target' = DIVIDE([Revenue], [Revenue target])
-			formatString: 0.0%
+   			/// Dollar amount above or below the revenue target (positive = exceeding, negative = behind).
+   			measure 'Revenue variance' = [Revenue] - [Revenue target]
+   				formatString: $#,##0
 
-		/// Percentage of sold units that were returned (lower is better).
-		measure 'Return rate' = DIVIDE([Returns], [Units])
-			formatString: 0.0%
+   			measure 'Units 6mo trend' = TrendSVG([Units], 'Product Line Sales'[Month],6,3,"mmm",FALSE)
+   				displayFolder: Card images for trendlines
+   				dataCategory: ImageUrl
 
-		/// Dollar amount above or below the revenue target (positive = exceeding, negative = behind).
-		measure 'Revenue variance' = [Revenue] - [Revenue target]
-			formatString: $#,##0
-```
+   			measure 'Units 6mo trend - hover' = TrendSVG([Units], 'Product Line Sales'[Month],6,3,"mmm",TRUE)
+   				displayFolder: Card images for trendlines
+   				dataCategory: ImageUrl
 
-Alternatively, create the measures by selecting **Modeling** > **New measure** and entering each expression.
+   			/// Icon showing a # symbol inside a circle to represent units.
+   			measure 'Units callout image' = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%230078D4' stroke-width='1.5'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Segoe UI' font-size='14' font-weight='600' fill='%230078D4'%3E%23%3C/text%3E%3C/svg%3E"
+   				displayFolder: Card images for callout
+   				dataCategory: ImageUrl
+
+   			/// Icon showing a $ symbol inside a circle to represent revenue.
+   			measure 'Revenue callout image' = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23107C10' stroke-width='1.5'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Segoe UI' font-size='14' font-weight='600' fill='%23107C10'%3E%24%3C/text%3E%3C/svg%3E"
+   				displayFolder: Card images for callout
+   				dataCategory: ImageUrl
+
+   			measure 'Revenue 6mo trend' = TrendSVG([Revenue], 'Product Line Sales'[Month],6,3,"mmm",FALSE)
+   				displayFolder: Card images for trendlines
+   				dataCategory: ImageUrl
+
+   			measure 'Revenue 6mo trend - hover' = TrendSVG([Revenue], 'Product Line Sales'[Month],6,3,"mmm",TRUE)
+   				displayFolder: Card images for trendlines
+   				dataCategory: ImageUrl
+
+   			column Month
+   				formatString: mmm. yyyy
+   				summarizeBy: none
+   				isNameInferred
+   				sourceColumn: [Month]
+
+   				annotation SummarizationSetBy = Automatic
+
+   				annotation PBI_FormatHint = {"isCustom":true}
+
+   			column 'Product Line'
+   				summarizeBy: none
+   				isNameInferred
+   				sourceColumn: [Product Line]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			column Channel
+   				summarizeBy: none
+   				isNameInferred
+   				sourceColumn: [Channel]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			column _Units
+   				isHidden
+   				formatString: 0
+   				summarizeBy: sum
+   				isNameInferred
+   				sourceColumn: [_Units]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			column _Revenue
+   				isHidden
+   				formatString: 0
+   				summarizeBy: sum
+   				isNameInferred
+   				sourceColumn: [_Revenue]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			column '_Revenue Target'
+   				isHidden
+   				formatString: 0
+   				summarizeBy: sum
+   				isNameInferred
+   				sourceColumn: [_Revenue Target]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			column _Returns
+   				isHidden
+   				formatString: 0
+   				summarizeBy: sum
+   				isNameInferred
+   				sourceColumn: [_Returns]
+
+   				annotation SummarizationSetBy = Automatic
+
+   			partition 'Product Line Sales' = calculated
+   				mode: import
+   				source = ```
+   						   VAR Anchor = DATE(YEAR(TODAY()), MONTH(TODAY()), 1)
+   						   VAR M1 = EDATE(Anchor, -5)
+   						   VAR M2 = EDATE(Anchor, -4)
+   						   VAR M3 = EDATE(Anchor, -3)
+   						   VAR M4 = EDATE(Anchor, -2)
+   						   VAR M5 = EDATE(Anchor, -1)
+   						   VAR M6 = Anchor
+   						   RETURN
+   						   SELECTCOLUMNS(
+   						       {
+   						           // Product Line A, Online
+   						           ( M1, "A", "Online", 130, 9100, 10000, 5 ),
+   						           ( M2, "A", "Online", 200, 14000, 11500, 6 ),
+   						           ( M3, "A", "Online", 170, 11900, 13000, 7 ),
+   						           ( M4, "A", "Online", 210, 14700, 14000, 8 ),
+   						           ( M5, "A", "Online", 230, 16100, 15500, 9 ),
+   						           ( M6, "A", "Online", 260, 18200, 16000, 10 ),
+   						           // Product Line A, Retail
+   						           ( M1, "A", "Retail", 80, 4800, 12000, 35 ),
+   						           ( M2, "A", "Retail", 140, 8500, 11000, 30 ),
+   						           ( M3, "A", "Retail", 100, 6000, 10500, 27 ),
+   						           ( M4, "A", "Retail", 150, 9100, 9500, 24 ),
+   						           ( M5, "A", "Retail", 160, 9700, 8500, 21 ),
+   						           ( M6, "A", "Retail", 170, 10500, 8500, 17 ),
+   						           // Product Line B, Online
+   						           ( M1, "B", "Online", 280, 19600, 21000, 10 ),
+   						           ( M2, "B", "Online", 380, 26600, 23000, 12 ),
+   						           ( M3, "B", "Online", 340, 23800, 24500, 14 ),
+   						           ( M4, "B", "Online", 410, 28700, 25500, 16 ),
+   						           ( M5, "B", "Online", 470, 32900, 27000, 17 ),
+   						           ( M6, "B", "Online", 520, 36400, 29000, 20 ),
+   						           // Product Line B, Retail
+   						           ( M1, "B", "Retail", 180, 12600, 25000, 140 ),
+   						           ( M2, "B", "Retail", 270, 18900, 22000, 125 ),
+   						           ( M3, "B", "Retail", 240, 16800, 21000, 110 ),
+   						           ( M4, "B", "Retail", 280, 19600, 19000, 100 ),
+   						           ( M5, "B", "Retail", 310, 21700, 17000, 90 ),
+   						           ( M6, "B", "Retail", 320, 22400, 16000, 75 ),
+   						           // Product Line C, Online
+   						           ( M1, "C", "Online", 65, 7800, 8000, 2 ),
+   						           ( M2, "C", "Online", 100, 12000, 9500, 2 ),
+   						           ( M3, "C", "Online", 85, 10200, 11000, 3 ),
+   						           ( M4, "C", "Online", 110, 13200, 12500, 3 ),
+   						           ( M5, "C", "Online", 115, 13800, 13500, 4 ),
+   						           ( M6, "C", "Online", 125, 15000, 15500, 4 ),
+   						           // Product Line C, Retail
+   						           ( M1, "C", "Retail", 100, 12000, 14000, 4 ),
+   						           ( M2, "C", "Retail", 170, 20400, 15500, 4 ),
+   						           ( M3, "C", "Retail", 140, 16800, 17000, 5 ),
+   						           ( M4, "C", "Retail", 175, 21000, 17500, 5 ),
+   						           ( M5, "C", "Retail", 180, 21600, 18000, 6 ),
+   						           ( M6, "C", "Retail", 185, 22200, 18000, 7 )
+   						       },
+   						       "Month", [Value1],
+   						       "Product Line", [Value2],
+   						       "Channel", [Value3],
+   						       "_Units", [Value4],
+   						       "_Revenue", [Value5],
+   						       "_Revenue Target", [Value6],
+   						       "_Returns", [Value7])
+   					```
+
+   			annotation PBI_Id = c8632d7dc9194275b03f266beb0eec91
+
+   		cultureInfo en-US
+
+   		function TrendSVG = ```
+   				    (
+   				      valueExpr:  ANYREF EXPR,
+   				      periodCol:  ANYREF EXPR,
+   				      periods:    INT64,
+   				      labelChars: INT64,
+   				      dateFormat: STRING,
+   				      hover:      BOOLEAN
+   				    ) =>
+   				      VAR _LastPeriod = MAX ( periodCol )
+   				      // Take the N most-recent distinct values of periodCol at or before the
+   				      // current filter context's max — grain-agnostic (day / month / year / etc.)
+   				      VAR _BasePeriods =
+   				        TOPN (
+   				          periods,
+   				          FILTER ( ALL ( periodCol ), periodCol <= _LastPeriod ),
+   				          periodCol,
+   				          DESC
+   				        )
+   				      VAR _Data =
+   				        ADDCOLUMNS (
+   				          _BasePeriods,
+   				          "Value",
+   				            VAR _v = CALCULATE ( valueExpr )
+   				            RETURN IF ( ISBLANK ( _v ), 0, _v )
+   				        )
+   				      VAR _DataIndexed =
+   				        ADDCOLUMNS (
+   				          _Data,
+   				          "Idx",
+   				            RANKX ( _Data, periodCol, periodCol, ASC, DENSE ),
+   				          "PeriodLabel",
+   				            UPPER ( LEFT ( FORMAT ( periodCol, dateFormat ), labelChars ) )
+   				        )
+   				      VAR _Count  = COUNTROWS ( _DataIndexed )
+   				      VAR _MaxVal = MAXX ( _DataIndexed, [Value] )
+
+   				      // Layout — width scales with period count so labels never crowd
+   				      VAR _PerPointX   = 32                        // horizontal space reserved per data point
+   				      VAR _PadX        = 18
+   				      VAR _Width       = 2 * _PadX + MAX ( 1, _Count - 1 ) * _PerPointX
+   				      VAR _Height      = 86
+   				      VAR _PadTop      = 10
+   				      VAR _LabelBandH  = 26
+   				      VAR _ChartBottom = _Height - _LabelBandH
+   				      VAR _GoodColor   = "#107C10"
+   				      VAR _BadColor    = "#A80000"
+   				      VAR _LineColor   = "#0078D4"
+   				      VAR _XStep =
+   				        IF ( _Count > 1, DIVIDE ( _Width - 2 * _PadX, _Count - 1 ), 0 )
+
+   				      VAR _HasData =
+   				        _Count >= 2 && NOT ISBLANK ( _MaxVal )
+
+   				      // Polyline point list ("x,y x,y ...")
+   				      VAR _Points =
+   				        CONCATENATEX (
+   				          _DataIndexed,
+   				          VAR _Idx  = [Idx]
+   				          VAR _Val  = [Value]
+   				          VAR _Norm = IF ( _MaxVal = 0, 0, DIVIDE ( _Val, _MaxVal ) )
+   				          VAR _X    = _PadX + ( _Idx - 1 ) * _XStep
+   				          VAR _Y    = _ChartBottom - _Norm * ( _ChartBottom - _PadTop )
+   				          RETURN FORMAT ( _X, "0.0" ) & "," & FORMAT ( _Y, "0.0" ),
+   				          " ",
+   				          [Idx], ASC
+   				        )
+
+   				      // Dot marker on every point
+   				      VAR _Markers =
+   				        CONCATENATEX (
+   				          _DataIndexed,
+   				          VAR _mIdx  = [Idx]
+   				          VAR _mVal  = [Value]
+   				          VAR _mNorm = IF ( _MaxVal = 0, 0, DIVIDE ( _mVal, _MaxVal ) )
+   				          VAR _mX    = _PadX + ( _mIdx - 1 ) * _XStep
+   				          VAR _mY    = _ChartBottom - _mNorm * ( _ChartBottom - _PadTop )
+   				          RETURN
+   				            "<circle cx='" & FORMAT ( _mX, "0.0" )
+   				            & "' cy='" & FORMAT ( _mY, "0.0" )
+   				            & "' r='2.2' fill='" & _LineColor & "' />",
+   				          "",
+   				          [Idx], ASC
+   				        )
+
+   				      // Light vertical guide from each marker down to the label band
+   				      VAR _GuideBottom = _ChartBottom
+   				      VAR _Guides =
+   				        CONCATENATEX (
+   				          _DataIndexed,
+   				          VAR _gIdx  = [Idx]
+   				          VAR _gVal  = [Value]
+   				          VAR _gNorm = IF ( _MaxVal = 0, 0, DIVIDE ( _gVal, _MaxVal ) )
+   				          VAR _gX    = _PadX + ( _gIdx - 1 ) * _XStep
+   				          VAR _gY    = _ChartBottom - _gNorm * ( _ChartBottom - _PadTop )
+   				          RETURN
+   				            "<line x1='" & FORMAT ( _gX, "0.0" )
+   				            & "' y1='" & FORMAT ( _gY, "0.0" )
+   				            & "' x2='" & FORMAT ( _gX, "0.0" )
+   				            & "' y2='" & FORMAT ( _GuideBottom, "0.0" )
+   				            & "' stroke='#CCCCCC' stroke-width='0.75' />",
+   				          "",
+   				          [Idx], ASC
+   				        )
+
+   				      // Period label (e.g. "JAN") — bottom band, upper row
+   				      VAR _LabelY = _Height - 16
+   				      VAR _Labels =
+   				        CONCATENATEX (
+   				          _DataIndexed,
+   				          VAR _lIdx = [Idx]
+   				          VAR _lX   = _PadX + ( _lIdx - 1 ) * _XStep
+   				          RETURN
+   				            "<text x='" & FORMAT ( _lX, "0.0" )
+   				            & "' y='" & FORMAT ( _LabelY, "0.0" )
+   				            & "' text-anchor='middle' font-family='DIN, &quot;DIN Alternate&quot;, &quot;DIN Next&quot;, &quot;Segoe UI&quot;, Tahoma, Arial, sans-serif' font-size='8' fill='#666'>"
+   				            & [PeriodLabel]
+   				            & "</text>",
+   				          "",
+   				          [Idx], ASC
+   				        )
+
+   				      // ---- Hover-only content ----
+   				      // Shaded area under each segment (green if rising, red if falling)
+   				      VAR _Shades =
+   				        CONCATENATEX (
+   				          FILTER ( _DataIndexed, [Idx] < _Count ),
+   				          VAR _sIdx  = [Idx]
+   				          VAR _sVal  = [Value]
+   				          VAR _sNext = MAXX ( FILTER ( _DataIndexed, [Idx] = _sIdx + 1 ), [Value] )
+   				          VAR _sNorm1 = IF ( _MaxVal = 0, 0, DIVIDE ( _sVal,  _MaxVal ) )
+   				          VAR _sNorm2 = IF ( _MaxVal = 0, 0, DIVIDE ( _sNext, _MaxVal ) )
+   				          VAR _sX1 = _PadX + ( _sIdx - 1 ) * _XStep
+   				          VAR _sX2 = _PadX + _sIdx * _XStep
+   				          VAR _sY1 = _ChartBottom - _sNorm1 * ( _ChartBottom - _PadTop )
+   				          VAR _sY2 = _ChartBottom - _sNorm2 * ( _ChartBottom - _PadTop )
+   				          VAR _sColor = IF ( _sNext >= _sVal, _GoodColor, _BadColor )
+   				          RETURN
+   				            "<polygon points='"
+   				            & FORMAT ( _sX1, "0.0" ) & "," & FORMAT ( _sY1, "0.0" ) & " "
+   				            & FORMAT ( _sX2, "0.0" ) & "," & FORMAT ( _sY2, "0.0" ) & " "
+   				            & FORMAT ( _sX2, "0.0" ) & "," & FORMAT ( _ChartBottom, "0.0" ) & " "
+   				            & FORMAT ( _sX1, "0.0" ) & "," & FORMAT ( _ChartBottom, "0.0" )
+   				            & "' fill='" & _sColor & "' fill-opacity='0.05' stroke='none' />",
+   				          "",
+   				          [Idx], ASC
+   				        )
+
+   				      // Bold value label — bottom band, lower row
+   				      VAR _ValueLabelY = _Height - 6
+   				      VAR _DataLabels =
+   				        CONCATENATEX (
+   				          _DataIndexed,
+   				          VAR _dIdx = [Idx]
+   				          VAR _dVal = [Value]
+   				          VAR _dX   = _PadX + ( _dIdx - 1 ) * _XStep
+   				          RETURN
+   				            "<text x='" & FORMAT ( _dX, "0.0" )
+   				            & "' y='" & FORMAT ( _ValueLabelY, "0.0" )
+   				            & "' text-anchor='middle' font-family='DIN, &quot;DIN Alternate&quot;, &quot;DIN Next&quot;, &quot;Segoe UI&quot;, Tahoma, Arial, sans-serif' font-size='7' font-weight='bold' fill='#333'>"
+   				            & FORMAT ( _dVal, "#,0" )
+   				            & "</text>",
+   				          "",
+   				          [Idx], ASC
+   				        )
+
+   				      // Assemble
+   				      VAR _HoverExtras = IF ( hover, _Shades, "" )
+   				      VAR _HoverLabels = IF ( hover, _DataLabels, "" )
+   				      VAR _SVGContent =
+   				        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 "
+   				          & FORMAT ( _Width, "0" ) & " " & FORMAT ( _Height, "0" )
+   				          & "' preserveAspectRatio='xMidYMid meet'>"
+   				          & _HoverExtras
+   				          & _Guides
+   				          & "<polyline fill='none' stroke='" & _LineColor
+   				          & "' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' points='"
+   				          & _Points
+   				          & "' />"
+   				          & _Markers
+   				          & _Labels
+   				          & _HoverLabels
+   				          & "</svg>"
+
+   				      RETURN
+   				        IF (
+   				          _HasData,
+   				          "data:image/svg+xml;utf8," & _SVGContent,
+   				          BLANK ()
+   				        )
+   				```
+
+   		annotation __PBI_TimeIntelligenceEnabled = 0
+
+   		annotation PBI_QueryOrder = []
+
+   		annotation PBI_ProTooling = ["TMDLView_Desktop"]
+   ````
+
+   The script creates the **Product Line Sales** table with six months of sample data, the base measures used throughout the walkthrough, callout icon measures (`Units callout image`, `Revenue callout image`), trend measures (`Units 6mo trend`, `Units 6mo trend - hover`, `Revenue 6mo trend`, `Revenue 6mo trend - hover`), and a reusable `TrendSVG` DAX user-defined function that renders an SVG line chart with an optional hover variant.
 
 ### Create a basic card
 
@@ -209,39 +547,7 @@ You now have a multi-card visual displaying total units and total revenue.
 
 ### Add a callout image
 
-To make your card more visually engaging, add an image to the callout area. For this example, add two measures that generate SVG images based on the data.
-
-Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
-
-```tmdl
-createOrReplace
-
-	ref table 'Product Line Sales'
-
-		/// Visual indicator showing the percentage of products not returned, displayed as a progress bar.
-		measure 'Units callout image' =
-				VAR _ReturnRate = [Return rate]
-				VAR _UnreturnedPct = (1 - _ReturnRate) * 100
-				VAR _FillWidth = MIN(38, MAX(0, _UnreturnedPct * 0.38))
-				RETURN
-				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16'%3E%3Crect x='1' y='3' width='38' height='10' fill='none' stroke='%23808080' stroke-width='2' rx='2'/%3E%3Crect x='1' y='3' width='" & FORMAT(_FillWidth, "0") & "' height='10' fill='%23404040' rx='2'/%3E%3Ctext x='45' y='12' font-size='10' fill='%23404040'%3E%25%3C/text%3E%3C/svg%3E"
-			displayFolder: Images
-			dataCategory: ImageUrl
-
-		/// Visual indicator showing revenue performance vs target, with green bar for above target and red for below.
-		measure 'Revenue callout image' =
-				VAR _PctToTarget = [Revenue % to target]
-				VAR _VariancePct = (_PctToTarget - 1) * 100
-				VAR _IsPositive = _VariancePct >= 0
-				VAR _BarLength = MIN(20, ABS(_VariancePct) * 0.4)
-				RETURN IF(_IsPositive,
-				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='20' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23107C10'/%3E%3C/svg%3E",
-				    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='16'%3E%3Cline x1='20' y1='3' x2='20' y2='13' stroke='%23404040' stroke-width='1'/%3E%3Crect x='" & FORMAT(20 - _BarLength, "0") & "' y='5' width='" & FORMAT(_BarLength, "0") & "' height='6' fill='%23D13438'/%3E%3C/svg%3E")
-			displayFolder: Images
-			dataCategory: ImageUrl
-```
-
-To add the callout images:
+To make your card more visually engaging, add an image to the callout area. The initial TMDL script already created two measures that return simple SVG icons: `Units callout image` (a `#` symbol inside a circle) and `Revenue callout image` (a `$` symbol inside a circle). To assign them to the cards:
 
 1. Select your card visual.
 1. In the **Visualizations** pane, select the **Format visual** icon.
@@ -251,7 +557,7 @@ To add the callout images:
 1. Set **Image type** to **Select from data**.
 1. Select **Units callout image** from the field dropdown.
 1. Set **Image fit** to **Center**.
-1. Set **Size** to **20 px** to make the bar more visible.
+1. Set **Size** to **40 px**.
 1. In the **Apply settings to** dropdown, select **Revenue**.
 1. Expand **Image** and toggle it to **On**.
 1. Set **Image type** to **Select from data**.
@@ -259,127 +565,26 @@ To add the callout images:
 1. Set **Image fit** to **Center**.
 1. Set **Size** to **40 px**.
 
-Each card now displays a data-driven image in the callout area alongside its metric value.
+Each card now displays a symbol icon in the callout area alongside its metric value.
 
-:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-callout-image.png" alt-text="Screenshot of a card visual with callout images showing data-driven SVG visualizations next to the metric values.":::
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-callout-image.png" alt-text="Screenshot of a card visual with callout icons showing a # symbol next to units and a $ symbol next to revenue.":::
 
 ### Show by category
 
 Add a category to display your data broken down by segment.
 
-1. In the **Data** pane, drag **Product Line** to the **Categories** field well.
-1. Drag **Channel** to the **Categories** field well to further break down the data by sales channel within each product line.
+1. In the **Data** pane, drag **Channel** to the **Categories** field well.
+1. Drag **Product Line** to the **Categories** field well to further break down the data by product line within each channel.
 1. In the **Visualizations** pane, select the **Format visual** icon.
 1. Under the **Visual** tab, expand **Multi-category layout**.
-1. Expand **Layout**, toggle **Autogrid** to **Off**, and set **Rows** to **6** to display all categories.
+1. Expand **Layout**, toggle **Fit to space** to **Off**, and set **Rows** to **6** to display all categories.
 
 > [!NOTE]
-> When **Autogrid** is on, the maximum number of rows is 4. To display more rows, turn off **Autogrid**.
+> When **Fit to space** is on, the maximum number of rows is 4. To display more rows, turn off **Fit to space**.
 
-The card visual now shows a separate section for each product line and channel combination, with each section displaying units and revenue along with their callout images.
+The card visual now shows a separate section for each channel and product line combination, with each section displaying units and revenue along with their callout images.
 
-:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-show-by-category.png" alt-text="Screenshot of a card visual broken down by product line and channel categories.":::
-
-### Add a category header background image
-
-To make each category stand out, add a background image to your category headers. For this example, add a measure that generates an SVG gradient image.
-
-Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
-
-```tmdl
-createOrReplace
-
-	ref table 'Product Line Sales'
-
-		/// Background image for category headers with colors by product line
-		/// (A=blue, B=green, C=purple) and patterns by channel
-		/// (Online=waves, Retail=dots).
-		measure 'Category image' =
-
-				-- Get the current filter context values
-				VAR _ProductLine = SELECTEDVALUE('Product Line Sales'[Product Line])
-				VAR _Channel = SELECTEDVALUE('Product Line Sales'[Channel])
-
-				-- Define fill colors by Product Line (URL-encoded hex)
-				-- A = Blue (#0078D4), B = Green (#107C10), C = Purple (#8764B8)
-				VAR _FillColor =
-					SWITCH(
-						_ProductLine,
-						"A", "%230078D4",
-						"B", "%23107C10",
-						"C", "%238764B8",
-						"%23808080"  -- Default gray
-					)
-
-				-- Define stroke/pattern colors (lighter variants)
-				VAR _StrokeColor =
-					SWITCH(
-						_ProductLine,
-						"A", "%2350A0E0",
-						"B", "%2350B050",
-						"C", "%23A090D0",
-						"%23A0A0A0"  -- Default gray
-					)
-
-				-- Waves pattern for Online channel (4 horizontal wave lines)
-				VAR _WavesPattern =
-					"<path d='M0,8 Q8,0 16,8 T32,8 T48,8 T64,8 " &
-					"M0,24 Q8,16 16,24 T32,24 T48,24 T64,24 " &
-					"M0,40 Q8,32 16,40 T32,40 T48,40 T64,40 " &
-					"M0,56 Q8,48 16,56 T32,56 T48,56 T64,56' " &
-					"stroke='" & _StrokeColor & "' stroke-width='3' fill='none'/>"
-
-				-- Dots pattern for Retail channel (offset grid of circles)
-				VAR _DotsPattern =
-					-- Row 1: 4 dots at y=8
-					"<circle cx='8' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='24' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='40' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='56' cy='8' r='4' fill='" & _StrokeColor & "'/>" &
-					-- Row 2: 3 dots at y=24 (offset)
-					"<circle cx='16' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='32' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='48' cy='24' r='4' fill='" & _StrokeColor & "'/>" &
-					-- Row 3: 4 dots at y=40
-					"<circle cx='8' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='24' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='40' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='56' cy='40' r='4' fill='" & _StrokeColor & "'/>" &
-					-- Row 4: 3 dots at y=56 (offset)
-					"<circle cx='16' cy='56' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='32' cy='56' r='4' fill='" & _StrokeColor & "'/>" &
-					"<circle cx='48' cy='56' r='4' fill='" & _StrokeColor & "'/>"
-
-				-- Select pattern based on Channel
-				VAR _Pattern =
-					IF(_Channel = "Online", _WavesPattern, _DotsPattern)
-
-				-- Assemble final SVG with data URI prefix
-				RETURN
-					"data:image/svg+xml;utf8," &
-					"<svg xmlns='http://www.w3.org/2000/svg' " &
-						"width='64' height='64' viewBox='0 0 64 64'>" &
-						"<rect width='64' height='64' fill='" & _FillColor & "'/>" &
-						_Pattern &
-					"</svg>"
-			displayFolder: Images
-			dataCategory: ImageUrl
-```
-
-To add the category header background image:
-
-1. Select your card visual.
-1. In the **Visualizations** pane, select the **Format visual** icon.
-1. Under the **Visual** tab, expand **Category header**.
-1. In the **Apply settings to** dropdown, select **All**.
-1. Expand the **Background** section and toggle it to **On**.
-1. Toggle **Add image** to **On**.
-1. Set **Image source** to **Select from data**.
-1. Select **Category image** from the field dropdown.
-1. Set **Image fit** to **Fill**.
-1. Set **Transparency** to **50%**.
-
-Each category header now displays a subtle gradient background that helps visually separate the different category sections. You can also add individual images to each category by selecting a specific category in the **Apply settings to** dropdown.
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-show-by-category.png" alt-text="Screenshot of a card visual broken down by channel and product line categories.":::
 
 ### Add reference labels
 
@@ -404,117 +609,63 @@ Your cards now display reference labels with details: the Units card shows retur
 
 ### Add a top-level image
 
-Add a prominent image to the card that displays outside the callout area. You can use this feature to show product images, store images, or manager photos. In this example, we create bespoke SVG images that combine callout imagery and reference label details into a single custom visualization.
+The card visual can display an image alongside the callout value instead of inside it. This layout is helpful for larger images and for SVGs that show more detail than a small callout icon, such as a trend line.
 
-Select **TMDL** on the left side to open the TMDL view, paste the following script, and select **Apply**:
+For this example, first simplify the card by removing the earlier extras so the trend chart can take the spotlight:
 
-```tmdl
-createOrReplace
+1. Select your card visual.
+1. From the **Categories** field well, remove **Channel** and **Product Line**.
+1. In the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **Visual** tab, expand **Reference labels**. In the **Apply settings to** dropdown, select **All**, and then select **Reset to default** at the bottom of the section.
 
-	ref table 'Product Line Sales'
+Now use the trend measures created in the initial TMDL script to display a compact line chart, and switch to a richer variant when a user points to the card.
 
-		/// Status card showing return performance with ON TRACK/NEEDS ATTENTION indicator and return details.
-		measure 'Units image' =
-				VAR _Units = [Units]
-				VAR _Returns = [Returns]
-				VAR _ReturnRate = [Return rate]
-				VAR _IsOnTrack = _ReturnRate <= 0.05  // 5% threshold
+The `Units 6mo trend`, `Units 6mo trend - hover`, `Revenue 6mo trend`, and `Revenue 6mo trend - hover` measures all call the reusable `TrendSVG` [DAX user-defined function](../transform-model/desktop-user-defined-functions-overview.md) to render an SVG line chart over the last six months. The hover variants add shaded segments (green when rising, red when falling) and bold value labels for each period.
 
-				// Formatting
-				VAR _ReturnsFormatted = FORMAT(_Returns, "#,##0")
-				VAR _RateFormatted = FORMAT(_ReturnRate * 100, "0.0") & "%25"
+To display the trend chart as the top-level image on each card, and switch to the hover variant when a user points to the card:
 
-				// Filled rect - shows unreturned % (higher fill = better)
-				VAR _UnreturnedPct = (1 - _ReturnRate) * 100
-				VAR _FillWidth = MIN(80, MAX(0, _UnreturnedPct * 0.8))
-
-				// Colors - light red background when needs attention
-				VAR _BgFill = IF(_IsOnTrack, "none", "%23FDE7E9")
-				VAR _StatusTextColor = IF(_IsOnTrack, "%23605E5C", "%23A80000")
-				VAR _StatusText = IF(_IsOnTrack, "ON TRACK", "NEEDS ATTENTION")
-				VAR _PillFill = IF(_IsOnTrack, "%23F3F2F1", "%23FFFFFF")
-				VAR _PillStroke = IF(_IsOnTrack, "%23605E5C", "%23D83B01")
-				VAR _PillText = IF(_IsOnTrack, "%23323130", "%23A80000")
-				VAR _BarFill = IF(_IsOnTrack, "%23404040", "%23D83B01")
-				VAR _BarStroke = IF(_IsOnTrack, "%23808080", "%23D83B01")
-
-				RETURN
-				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='80' viewBox='0 0 200 80'%3E" &
-				"%3Crect x='0' y='0' width='200' height='80' rx='4' fill='" & _BgFill & "'/%3E" &
-				"%3Ctext x='100' y='18' text-anchor='middle' font-family='Segoe UI' font-size='12' font-weight='600' fill='" & _StatusTextColor & "'%3E" & _StatusText & "%3C/text%3E" &
-				"%3Crect x='60' y='28' width='80' height='12' fill='none' stroke='" & _BarStroke & "' stroke-width='1.5' rx='2'/%3E" &
-				"%3Crect x='60' y='28' width='" & FORMAT(_FillWidth, "0") & "' height='12' fill='" & _BarFill & "' rx='2'/%3E" &
-				"%3Crect x='30' y='48' width='140' height='22' rx='11' fill='" & _PillFill & "' stroke='" & _PillStroke & "' stroke-width='1.5'/%3E" &
-				"%3Ctext x='100' y='63' text-anchor='middle' font-family='Segoe UI' font-size='11' font-weight='600' fill='" & _PillText & "'%3E" & _ReturnsFormatted & " returns (" & _RateFormatted & ")%3C/text%3E" &
-				"%3C/svg%3E"
-			displayFolder: Images
-			dataCategory: ImageUrl
-
-		/// Status card showing revenue performance with ON TRACK/NEEDS ATTENTION indicator and variance details.
-		measure 'Revenue image' =
-				VAR _Revenue = [Revenue]
-				VAR _Target = [Revenue target]
-				VAR _Variance = [Revenue variance]
-				VAR _PctToTarget = [Revenue % to target]
-				VAR _IsOnTrack = _PctToTarget >= 1
-
-				// Formatting
-				VAR _VarianceAbs = ABS(_Variance)
-				VAR _VarianceFormatted = IF(_Variance >= 0, "%2B", "-") & FORMAT(_VarianceAbs / 1000, "#,##0") & "K"
-				VAR _PctFormatted = IF(_PctToTarget >= 1, "%2B", "") & FORMAT((_PctToTarget - 1) * 100, "0.0") & "%25"
-
-				// Colors - light red background when needs attention
-				VAR _BgFill = IF(_IsOnTrack, "none", "%23FDE7E9")
-				VAR _StatusTextColor = IF(_IsOnTrack, "%23605E5C", "%23A80000")
-				VAR _StatusText = IF(_IsOnTrack, "ON TRACK", "NEEDS ATTENTION")
-				VAR _PillFill = IF(_IsOnTrack, "%23F3F2F1", "%23FFFFFF")
-				VAR _PillStroke = IF(_IsOnTrack, "%23605E5C", "%23D83B01")
-				VAR _PillText = IF(_IsOnTrack, "%23323130", "%23A80000")
-
-				// IBCS variance bar
-				VAR _BarX = IF(_Variance >= 0, 100, 100 - MIN(40, ABS((_PctToTarget - 1) * 100) * 0.8))
-				VAR _BarW = MIN(40, ABS((_PctToTarget - 1) * 100) * 0.8)
-				VAR _BarColor = IF(_Variance >= 0, "%23605E5C", "%23D83B01")
-
-				RETURN
-				"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='80' viewBox='0 0 200 80'%3E" &
-				"%3Crect x='0' y='0' width='200' height='80' rx='4' fill='" & _BgFill & "'/%3E" &
-				"%3Ctext x='100' y='18' text-anchor='middle' font-family='Segoe UI' font-size='12' font-weight='600' fill='" & _StatusTextColor & "'%3E" & _StatusText & "%3C/text%3E" &
-				"%3Cline x1='100' y1='24' x2='100' y2='44' stroke='%23808080' stroke-width='1'/%3E" &
-				"%3Crect x='" & FORMAT(_BarX, "0") & "' y='28' width='" & FORMAT(_BarW, "0") & "' height='12' fill='" & _BarColor & "'/%3E" &
-				"%3Crect x='30' y='50' width='140' height='22' rx='11' fill='" & _PillFill & "' stroke='" & _PillStroke & "' stroke-width='1.5'/%3E" &
-				"%3Ctext x='100' y='65' text-anchor='middle' font-family='Segoe UI' font-size='11' font-weight='600' fill='" & _PillText & "'%3E" & _VarianceFormatted & " (" & _PctFormatted & ")%3C/text%3E" &
-				"%3C/svg%3E"
-			displayFolder: Images
-			dataCategory: ImageUrl
-```
-
-To add the top-level images:
-
+1. Select your card visual.
 1. In the **Visualizations** pane, select the **Format visual** icon.
 1. Under the **Visual** tab, expand the **Image** section.
 1. In the **Apply settings to** dropdown, select **Cards** = **Units**.
+1. Set **States** to **Default**.
 1. Toggle **Image** to **On**.
 1. Set **Image source** to **Select from data**.
-1. Select **Units image** from the field dropdown.
-1. Set **Image fit** to **Fill**.
+1. Select **Units 6mo trend** from the field dropdown.
+1. Set **Image fit** to **Fit**.
+1. Set **States** to **Hover**.
+1. Toggle **Image** to **On**.
+1. Set **Image source** to **Select from data**.
+1. Select **Units 6mo trend - hover** from the field dropdown.
+1. Set **Image fit** to **Fit**.
 1. In the **Apply settings to** dropdown, select **Cards** = **Revenue**.
+1. Set **States** to **Default**.
 1. Toggle **Image** to **On**.
 1. Set **Image source** to **Select from data**.
-1. Select **Revenue image** from the field dropdown.
-1. Set **Image fit** to **Fill**.
+1. Select **Revenue 6mo trend** from the field dropdown.
+1. Set **Image fit** to **Fit**.
+1. Set **States** to **Hover**.
+1. Toggle **Image** to **On**.
+1. Set **Image source** to **Select from data**.
+1. Select **Revenue 6mo trend - hover** from the field dropdown.
+1. Set **Image fit** to **Fit**.
 
-With the bespoke SVG image approach, you can consolidate the reference label and detail information into the image itself. To streamline the card layout:
+Each card now shows a line chart of the trailing six months of its metric alongside the callout value. When a user points to a card, the chart swaps to the hover variant with shaded rise and fall segments and value labels.
 
-1. Under **Callout**, turn off the **Image** toggle for each card to remove the callout images.
-1. Under **Reference labels**, remove any reference labels you added by deleting them from the **Add label** data fields.
+To emphasize the trend charts alongside the callout values, adjust the card layout:
+
+1. Under **Callout**, turn off the **Image** toggle for each card to remove the callout icons.
 1. Under **Cards** > **Layout**, set **Arrangement** to **Horizontal**.
-1. Set the **Order** to **Image**, **Callout**, **Reference labels**.
+1. Set the **Order** to **Callout**, **Image**, **Reference labels**.
 1. Set **Callout size** to **40%**.
 
-The image now appears in its own section of the card with a horizontal layout that emphasizes the custom SVG visualization alongside the callout value.
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-top-level-image.png" alt-text="Screenshot of a card visual with top-level SVG line charts showing the last six months of units and revenue, plus a hover state that adds shaded segments and value labels.":::
 
-:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-add-top-level-image.png" alt-text="Screenshot of a card visual with a horizontal layout showing custom SVG images alongside callout values.":::
+### Apply conditional formatting
+
+You can conditionally format many elements in the card visual, such as font color, background color, and border color. Use conditional formatting to draw attention to specific cards based on the underlying data. For example, highlight a card where revenue falls short of its target. For details on the available rule types and how to configure them, see [Conditional formatting overview](power-bi-visualization-conditional-formatting.md).
+
+:::image type="content" source="media/power-bi-visualization-card-visual/walkthrough-conditional-formatting.png" alt-text="Screenshot of a card visual with conditional formatting applied so that the Revenue card is highlighted when revenue is below the target.":::
 
 ## Legacy single card and multi-card visuals
 
@@ -623,7 +774,7 @@ Differences between Desktop and the service can happen in two scenarios.
 -	You're using November 2025 version of Power BI Desktop, and the update for the generally available card isn't in your service region. Once the service region is updated, the card looks the same. This behavior should only happen in a few regions in late November 2025.
 
 
-### Default behavior changes from public preview
+### Default behavior changes from preview
 
 During preview, the card visual's default behavior was different to how it now behaves in general availability. At general availability, we made updates to enhance the layout consistency, visual alignment, and overall user experience. 
 
@@ -634,11 +785,11 @@ During preview, the card visual's default behavior was different to how it now b
 
 ### Format settings
 
-- The **(new) card visual** is generally available as the **card visual** with the November 2025 Power BI release. If you used the card visual during the public preview phase, you might notice behavior or formatting changes that reflect the improvements in the general availability release.
-- The new Card visual includes updated default styling. Newly created cards may look different from legacy cards and from cards created during Public Preview, while existing visuals remain unchanged.
+- The **(new) card visual** is generally available as the **card visual** with the November 2025 Power BI release. If you used the card visual during the preview phase, you might notice behavior or formatting changes that reflect the improvements in the general availability release.
+- The new Card visual includes updated default styling. Newly created cards might look different from legacy cards and from cards created during preview, while existing visuals remain unchanged.
 - When formatting the card visual, you might notice that some of the format settings are in a different or new location, or the name of the setting is changed.
 - In earlier versions of the card visual, the **Callout** image was available as part of the **Image card**. This image is now in the **Callout** section of the **Format** pane.
-- Certain **Layout** arrangements might affect existing reports that used the card visual during its public preview phase. This effect is due to updates made to all card components as part of the general availability release, including enhancements to layout, styling, and image handling.
+- Certain **Layout** arrangements might affect existing reports that used the card visual during its preview phase. This effect is due to updates made to all card components as part of the general availability release, including enhancements to layout, styling, and image handling.
 - If you previously relied on the Image card layout, update your visuals accordingly by using the Format pane to access and configure the Callout image settings.
 
 ## Related content
