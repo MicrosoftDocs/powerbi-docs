@@ -6591,7 +6591,7 @@ The following updates are new to **Power BI Desktop** in November:
 * Expand and collapse matrix row headers  [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
 * Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-visuals-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Updated filtering experience (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)   [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
-* Report accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+* Report accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/)
 
 ### Analytics
 
@@ -7782,36 +7782,36 @@ The following updates were new to Power BI Desktop in October:
 ### Report View:
 
 -   Improved date axis range formatting [[video]](https://youtu.be/UXEYSvgvMaQ?t=26s)
--   Date slicer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateSlicer) [[video]](https://youtu.be/UXEYSvgvMaQ?t=2m9s)
--   Report gridlines and snap to grid (Preview) [[article]](../transform-model/desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#snapToGrid) [[video]](https://youtu.be/UXEYSvgvMaQ?t=4m3s)
--   Data label improvements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateLabels) [[video]](https://youtu.be/UXEYSvgvMaQ?t=5m30s)
--   Map formatting options [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mapFormatting) [[video]](https://youtu.be/UXEYSvgvMaQ?t=7m22s)
--   Improved date axis range formatting [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateAxisRange)
+-   Date slicer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=2m9s)
+-   Report gridlines and snap to grid (Preview) [[article]](../transform-model/desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=4m3s)
+-   Data label improvements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=5m30s)
+-   Map formatting options [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=7m22s)
+-   Improved date axis range formatting [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 
 ### Analytics
 
--   Grouping [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#grouping) [[video]](https://youtu.be/UXEYSvgvMaQ?t=9m42s)
--   Binning [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#binning) [[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
--   Top-N filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#topN) [[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
--   Include/exclude data points [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#includeExclude) [[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
--   R-powered Power BI visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
+-   Grouping [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=9m42s)
+-   Binning [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
+-   Top-N filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
+-   Include/exclude data points [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
+-   R-powered Power BI visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 
 ### Data Connectors:
 
 -   New data connectors [[video]](https://youtu.be/UXEYSvgvMaQ?t=17m30s):
-    -   Microsoft Dynamics 365 for Financials (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dynamics365Financials)
-    -   OLE DB [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#oledb)
-    -   Mixpanel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mixpanel)
+    -   Microsoft Dynamics 365 for Financials (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
+    -   OLE DB [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
+    -   Mixpanel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 ### Query Editing improvements
 
--   Support for *table parameters* in the **Invoke Function** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#invokeFunction) [[video]](https://youtu.be/UXEYSvgvMaQ?t=18m12s)
+-   Support for *table parameters* in the **Invoke Function** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=18m12s)
 
 ### Other improvements
 
--   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#diagnostics) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
+-   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
 
 
 > [!NOTE]
