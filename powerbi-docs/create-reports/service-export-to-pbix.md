@@ -143,7 +143,8 @@ This section lists the limitations of downloading a .pbix file. This section is 
 #### Other
 
 - If you download a live connection report (connected to [SSAS](../connect-data/desktop-analysis-services-tabular-data.md) or [AAS](/azure/analysis-services/analysis-services-connect-pbi)) after you change its data source by using REST APIs [Update Datasources](/rest/api/power-bi/datasets/update-datasources) or [Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group), the downloaded .pbix still contains the old data source.  
-- If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You need to open the .pbix file in Power BI Desktop and reconnect to the semantic model again before updating the file in OneDrive and SharePoint.  
+- If you download a live connection report, the connection string format is incompatible with publish/republish with OneDrive and SharePoint. You need to open the .pbix file in Power BI Desktop and reconnect to the semantic model again before updating the file in OneDrive and SharePoint.
+- Any post-authoring change to the model (e.g. rename or rebind) can leave a downloaded live connection PBIX pointing to a stale model reference. To re-establish the connection, users must re-create/re-download a fresh liveconnection report against the model's current name. 
 - Attempting to concurrently download a report based on a semantic model enabled for large semantic model storage format might result in errors.  
 - Reports that are based on a semantic model enabled for large semantic model storage format can't be downloaded using REST APIs. Use the Power BI service to download these reports.
 - Usage metrics report can't be downloaded. However in some cases this option might be available and if so, you can only download in [live connected report mode](#download-modes).
