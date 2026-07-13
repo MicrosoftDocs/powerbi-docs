@@ -2,19 +2,19 @@
 metadata:
   title: Troubleshoot Email Subscriptions for Power BI Reports and Dashboards
   description: Resolve issues with Power BI email subscriptions for reports and dashboards, including missing options, undelivered emails, and attachment errors.
-  author: julcsc
+  author: JulCsc
   ms.author: juliacawthra
-  ms.reviewer: michael.brujhell
+  ms.reviewer: duaskins
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 04/07/2026
+  ms.date: 07/09/2026
   ai-usage: ai-assisted
   LocalizationGroup: Share your work
 
 title: Troubleshoot email subscriptions for Power BI reports and dashboards
 summary: |
-  Find solutions to common issues with email subscriptions for Power BI dashboards and reports. This troubleshooting guide covers problems like missing subscription options, undelivered emails, delayed delivery, attachment errors, and verifying email legitimacy. Also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations-and-limitations).
+  Find solutions to common issues with email subscriptions for Power BI dashboards and reports. This troubleshooting guide covers problems like missing subscription options, undelivered emails, delayed delivery, automatic disablement from authentication issues, attachment errors, and verifying email legitimacy. Also refer to the Considerations and Limitations section in [Subscribe to reports and dashboards](end-user-subscribe.md#considerations-and-limitations).
   
   > [!NOTE]
   > Looking for help with Power BI licensing or purchasing? See [Fabric and Power BI licenses and subscriptions](../fundamentals/end-user-license.md).
@@ -71,6 +71,11 @@ sections:
           - The Power BI Pro or Premium Per User (PPU) license expires.
           - The report or dashboard is deleted by the owner.
           - The user account that created the subscription is deleted.
+          - The subscription is automatically disabled because of authentication-related issues. More detail below.
+
+          A subscription can also be automatically disabled when authentication-related issues prevent Power BI from using the saved credentials for the subscription. Examples include Microsoft Entra token invalidation, password resets, MFA-related authentication failures, or similar credential changes.
+
+          If Power BI can't deliver the disablement notification email because of the same authentication issue, you might not receive a separate email that the subscription was disabled.
           
           ### Email issues
 
