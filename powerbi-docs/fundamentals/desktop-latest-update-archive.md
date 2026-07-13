@@ -6588,33 +6588,33 @@ The following updates are new to **Power BI Desktop** in November:
 
 ### Reporting
 
-* Expand and collapse matrix row headers  [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Expand and collapse matrix row headers  [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
 * Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](../create-reports/desktop-report-view.md#copy-and-paste-visuals-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
-* Updated filtering experience (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)   [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
-* Report accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+* Updated filtering experience (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)   [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/)
+* Report accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/)
 
 ### Analytics
 
-* Color saturation on visuals upgraded to use conditional formatting [[video]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
-* Follow up questions in the Q&A explorer [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+* Color saturation on visuals upgraded to use conditional formatting [[video]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* Follow up questions in the Q&A explorer [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
 
 
 ### Modeling
 
-* New modeling view (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[article]](../transform-model/desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
-* Composite models now generally available [[video]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[article]](../transform-model/desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
-* Modeling accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
-* New DAX functions [[video]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
+* New modeling view (preview) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[article]](../transform-model/desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* Composite models now generally available [[video]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[article]](../transform-model/desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* Modeling accessibility improvements [[video]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* New DAX functions [[video]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
 
 ### Power BI visuals
 
-* Five new Power BI visuals  [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+* Five new Power BI visuals  [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
 
 ### Data connectivity
 
-* Azure Developer Operations Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
-* PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
-* Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](../connect-data/desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+* Azure Developer Operations Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](../connect-data/desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
+* Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](../connect-data/desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/) 
 
 
 > [!NOTE]
@@ -6639,40 +6639,40 @@ The following updates were new to **Power BI Desktop** in October:
 
 ### Reporting
 
-* Search in filter cards  [[video]](https://youtu.be/cT3L2VzgBRU?t=56)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
-* Accessibility improvements for authoring experiences [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
-* Performance improvements for ArcGIS Map [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
+* Search in filter cards  [[video]](https://youtu.be/cT3L2VzgBRU?t=56)  [[article]](../create-reports/power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Accessibility improvements for authoring experiences [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[article]](../create-reports/desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/)
+* Performance improvements for ArcGIS Map [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/)
 
 
 ### Modeling
 
-* DAX editor improvements [[video]](https://youtu.be/GO1dhDJhSDY)  [[article]](../transform-model/desktop-formula-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
+* DAX editor improvements [[video]](https://youtu.be/GO1dhDJhSDY)  [[article]](../transform-model/desktop-formula-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 ### Analytics
 
-* Composite models and aggregation support in the Power BI service (preview) [[video]](https://youtu.be/8E6UokaDtc0)  [[article - aggregations]](../enterprise/aggregations-auto.md) [[article - composite models]](../transform-model/desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
-* Explain the increase for non-additive measures [[video]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
+* Composite models and aggregation support in the Power BI service (preview) [[video]](https://youtu.be/8E6UokaDtc0)  [[article - aggregations]](../enterprise/aggregations-auto.md) [[article - composite models]](../transform-model/desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Explain the increase for non-additive measures [[video]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 ### Power BI visuals
 
-* Five new Power BI visuals  [[video]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
+* Five new Power BI visuals  [[video]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 ### Data connectivity
 
-* Web by Example connector now generally available [[video]](https://youtu.be/MhrhIXNtelw)  [[article]](../connect-data/desktop-connect-to-web-by-example.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
-* SAP BW connector implementation v2 now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[article]](../connect-data/desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
-* SAP BW Message Server Connector now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
-* Vertica connector now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Dynamics NAV and Dynamics 365 business Central connectors now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
-* New Dynamics 365 business Central On-premises connector   [[video]](https://youtu.be/MhrhIXNtelw?t=219)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
+* Web by Example connector now generally available [[video]](https://youtu.be/MhrhIXNtelw)  [[article]](../connect-data/desktop-connect-to-web-by-example.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* SAP BW connector implementation v2 now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=133)   [[article]](../connect-data/desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* SAP BW Message Server Connector now generally available  [[video]](https://youtu.be/MhrhIXNtelw?t=159)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Vertica connector now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=175)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Dynamics NAV and Dynamics 365 business Central connectors now generally available   [[video]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* New Dynamics 365 business Central On-premises connector   [[video]](https://youtu.be/MhrhIXNtelw?t=219)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 ### Data preparation
-* Data Profiling in Power Query Editor (preview) [[video]](https://youtu.be/XNNvXCvlDlc)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dataProfiling) 
-* Fuzzy Matching options for Merge Queries (preview) [[video]](https://youtu.be/XNNvXCvlDlc?t=261)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23fuzzyMatching) 
+* Data Profiling in Power Query Editor (preview) [[video]](https://youtu.be/XNNvXCvlDlc)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Fuzzy Matching options for Merge Queries (preview) [[video]](https://youtu.be/XNNvXCvlDlc?t=261)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 ### Other areas
-* Control export data options for reports [[video]](https://youtu.be/agjKCFQ1NBQ?t=16)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23exportControl) 
-* Transport layer security settings  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[article]](../enterprise/service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
+* Control export data options for reports [[video]](https://youtu.be/agjKCFQ1NBQ?t=16)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
+* Transport layer security settings  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[article]](../enterprise/service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/) 
 
 
 > [!NOTE]
@@ -7782,36 +7782,36 @@ The following updates were new to Power BI Desktop in October:
 ### Report View:
 
 -   Improved date axis range formatting [[video]](https://youtu.be/UXEYSvgvMaQ?t=26s)
--   Date slicer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateSlicer) [[video]](https://youtu.be/UXEYSvgvMaQ?t=2m9s)
--   Report gridlines and snap to grid (Preview) [[article]](../transform-model/desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#snapToGrid) [[video]](https://youtu.be/UXEYSvgvMaQ?t=4m3s)
--   Data label improvements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateLabels) [[video]](https://youtu.be/UXEYSvgvMaQ?t=5m30s)
--   Map formatting options [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mapFormatting) [[video]](https://youtu.be/UXEYSvgvMaQ?t=7m22s)
--   Improved date axis range formatting [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dateAxisRange)
+-   Date slicer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=2m9s)
+-   Report gridlines and snap to grid (Preview) [[article]](../transform-model/desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=4m3s)
+-   Data label improvements [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=5m30s)
+-   Map formatting options [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=7m22s)
+-   Improved date axis range formatting [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 
 ### Analytics
 
--   Grouping [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#grouping) [[video]](https://youtu.be/UXEYSvgvMaQ?t=9m42s)
--   Binning [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#binning) [[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
--   Top-N filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#topN) [[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
--   Include/exclude data points [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#includeExclude) [[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
--   R-powered Power BI visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#rCustomVisuals)
+-   Grouping [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=9m42s)
+-   Binning [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=12m17s)
+-   Top-N filter [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=13m55s)
+-   Include/exclude data points [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=15m36s)
+-   R-powered Power BI visuals[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 
 ### Data Connectors:
 
 -   New data connectors [[video]](https://youtu.be/UXEYSvgvMaQ?t=17m30s):
-    -   Microsoft Dynamics 365 for Financials (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#dynamics365Financials)
-    -   OLE DB [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#oledb)
-    -   Mixpanel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#mixpanel)
+    -   Microsoft Dynamics 365 for Financials (Beta) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
+    -   OLE DB [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
+    -   Mixpanel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/)
 
 ### Query Editing improvements
 
--   Support for *table parameters* in the **Invoke Function** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#invokeFunction) [[video]](https://youtu.be/UXEYSvgvMaQ?t=18m12s)
+-   Support for *table parameters* in the **Invoke Function** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=18m12s)
 
 ### Other improvements
 
--   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/preview/#diagnostics) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
+-   Diagnostics information in the **About** dialog [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-feature-summary/) [[video]](https://youtu.be/UXEYSvgvMaQ?t=19m16s)
 
 
 > [!NOTE]
