@@ -182,7 +182,7 @@ You can activate Copilot for embedded reports by selecting the "Enable Copilot" 
   
 * Azure B2B guest user accounts — whether individual or group members — aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
-* When viewing Power BI reports embedded in SharePoint Online, there's no option for users to switch between Power BI environments.
+* When viewing, updating, or adding Power BI reports embedded in SharePoint Online, there's no option for users to switch between Power BI environments.
 
 * Power BI doesn't support the same localized languages that SharePoint Online does. As a result, you might not see proper localization within the embedded report.
 
