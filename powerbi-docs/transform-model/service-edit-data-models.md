@@ -330,7 +330,7 @@ There are still some functional gaps between the model view in Power BI desktop 
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * When modifying your semantic model within the Service, changing the name of data fields won't automatically update in existing visuals in downstream artifacts that depend on that semantic model.
-* Data Load settings defined in the Options dialog in Power BI Desktop aren’t available for viewing or modification in the web experience. However, any changes made to these settings in Desktop persist and are respected when the semantic model is edited in the web experience.
+* Some model options, such as type detection, relationship auto-detection, auto date/time, parallel loading, regional settings, and DirectQuery restrictions, can be viewed and edited in the **Model Options** dialog. For more information, see [Model options in the Power BI service](service-model-options.md).
 
 
 
@@ -350,6 +350,7 @@ Utilizing [external tools](../transform-model/desktop-external-tools.md) to modi
 
 This article provided information about editing semantic models in the Power BI service. For more information on semantic modeling in Power BI, see the following resources:
 
+* [Model options in the Power BI service](service-model-options.md)
 * [Work with Modeling view](desktop-modeling-view.md)
 * [Understand model relationships](desktop-relationships-understand.md)
 * [Learn DAX basics](desktop-quickstart-learn-dax-basics.md)
