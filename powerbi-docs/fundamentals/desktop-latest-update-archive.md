@@ -10,8 +10,6 @@ ms.topic: concept-article
 ms.date: 06/09/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
-ms.collection: ce-skilling-ai-copilot
-ai-usage: ai-assisted
 # When updating this page, remember hardcode the download link for the latest month and remove the oldest download link - only 6 months are maintained per PG.
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
