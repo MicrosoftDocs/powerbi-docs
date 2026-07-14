@@ -40,6 +40,8 @@
       href: service-semantic-model-version-history.md  
     - name: "Use calculations options in Power BI Desktop"
       href: desktop-calculations-options.md  
+    - name: "Visual calculations"
+      href: desktop-visual-calculations-overview.md
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
     - name: "Work with TMDL view"
@@ -161,8 +163,8 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
-      - name: "Use visual calculations"
-        href: desktop-visual-calculations-overview.md
+      - name: "Create visual calculations"
+        href: desktop-visual-calculations-create.md
       - name: "Using DAX user-defined functions"
         href: desktop-user-defined-functions-overview.md
       - name: "Create measures for data analysis"
