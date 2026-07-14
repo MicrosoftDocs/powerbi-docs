@@ -11,6 +11,9 @@ ms.date: 06/09/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
 # When updating this page, remember hardcode the download link for the latest month and remove the oldest download link - only 6 months are maintained per PG.
+# AI EDITING RESTRICTION: This file contains historical release notes that are SNAPSHOTS of information accurate at the time of original publication.
+# Do NOT update historical content for current accuracy (e.g., changing Windows 8 to Windows 10 in 2020 release notes) unless the information was factually incorrect at the time it was originally published (e.g., typos, incorrect version numbers for that release).
+# Only the most recent month's content should be updated for accuracy. Historical months preserve what was true when that version shipped.
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
@@ -261,7 +264,7 @@ To stay up to date on **bug fixes and improvements** as they're announced, visit
 | Feature | Description | In preview as of this release |
 |---------|-------------|:------:|
 | Deprecation of Power BI Q&A | Q&A, our legacy natural language tool, will be deprecated in December 2026. Moving forward, use Power BI Copilot, which provides a more advanced and integrated solution for querying data with natural language. |        |
-| SQL Server Reporting Services (SSRS) Report Viewer Web Part Support Discontinuation | Support for SSRS SharePoint Webpart, a component that allows you to embed on-premises paginated reports directly into SharePoint Server pages, will end on April 13, 2026. While the download will continue to be available, technical support will no longer be provided. |        |
+| SQL Server Reporting Services (SSRS) Report Viewer Web Part Support Discontinuation | Support for SSRS SharePoint Web Part, a component that you use to embed on-premises paginated reports directly into SharePoint Server pages, ends on April 13, 2026. While the download remains available, technical support is no longer provided. |        |
 | The Power BI application is accessible within Teams for Microsoft 365 Operated by 21Vianet | Users can acquire the Power BI app from the app store, or admins can centrally install it for them. Once added, users can view their Power BI content in Teams by using the app, and pin Power BI items to Teams channels and chats. Note that certain features aren't supported in the Power BI app for Teams operated by 21Vianet environments. For more information, refer to the service description of [Power BI operated by 21Vianet](/fabric/enterprise/powerbi/regions-power-bi-china-cloud). |        |
 
 ### Copilot and AI
@@ -563,7 +566,7 @@ Download previous versions of Power BI Desktop if your organization requires it.
 
 The [July 2025 Power BI update](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/) introduces richer Microsoft 365 connections, smarter Copilot features, and integrated reporting with PBIRS and SQL Server 2025. This article covers all the new features, benefits, and improvements to help you get the most out of Power BI.
 
-For a quick summary of the July features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/). You can also watch the July demos in the [monthly playlist](https://youtu.be/RABiSIUiCH4)
+For a quick summary of the July features, read on. For a detailed look at these updates and more enhancements, go to the [blog](https://powerbi.microsoft.com/blog/power-bi-july-2025-feature-summary/). You can also watch the July demos in the [monthly playlist](https://youtu.be/RABiSIUiCH4).
 
 ### Events and announcements
 
@@ -649,7 +652,7 @@ This article describes updates to **Power BI Desktop** and the **Power BI servic
 
 The [June 2025 Power BI update](https://aka.ms/JunePowerBIBlog) highlights several exciting preview features and an important action-required item for Power BI users. In preview, you can find updates to visual calculations and enhancements to numeric range and field parameters, designed to offer greater flexibility and analytical power within your reports.
 
-There are also new tenant settings for the Azure Maps visual, which require administrators to take action to ensure seamless integration and continued support. For a quick summary of the June features, read on. For a comprehensive look at these updates and further enhancements, visit the [blog](https://aka.ms/JunePowerBIBlog). You can also view the June demos on the [monthly playlist](https://youtu.be/Mt6Fy3Dvy1A)
+There are also new tenant settings for the Azure Maps visual, which require administrators to take action to ensure seamless integration and continued support. For a quick summary of the June features, read on. For a comprehensive look at these updates and further enhancements, visit the [blog](https://aka.ms/JunePowerBIBlog). You can also view the June demos on the [monthly playlist](https://youtu.be/Mt6Fy3Dvy1A).
 
 ### Events and announcements
 
@@ -806,7 +809,7 @@ In April we're showered with all sorts of updates to Power BI, enabling our cust
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -891,7 +894,7 @@ In March we felt downright lucky to have all sorts of updates to Power BI, enabl
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -997,7 +1000,7 @@ In February we just loved the fact that Power BI continued to woo us with new fe
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1093,7 +1096,7 @@ In January we celebrated a new year, a quarter century of data and insights, and
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1196,7 +1199,7 @@ In November we were thankful for the basket of new features and capabilities tha
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1286,7 +1289,7 @@ October brought a spooky-good collection of updates and features, weaving a web 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1370,7 +1373,7 @@ We fell into our September updates with a lot of anticipation, as days got short
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1460,7 +1463,7 @@ Our August updates got us back into school mode with a collection of new feature
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1540,7 +1543,7 @@ July let you declare independence from waiting on others to create compelling re
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
@@ -1620,7 +1623,7 @@ June's updates were a sunny collection of capabilities that let you chart a cour
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../explore-reports/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
-The links beside each feature in the list are follows:
+The links beside each feature in the list are as follows:
 
 * \[blog\]: Most features are explained in a section in the monthly update blog post.
 * \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
