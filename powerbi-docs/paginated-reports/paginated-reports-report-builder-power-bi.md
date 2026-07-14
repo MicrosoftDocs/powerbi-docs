@@ -93,7 +93,7 @@ When you design a paginated report, you're creating a *report definition*. It do
 
 ## View your paginated report
 
-View your paginated report in the Power BI service in a browser and in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
+View your paginated report in the Power BI service in a browser and in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as Excel, Word, PowerPoint, accessible PDF, PDF, .CSV, XML, and MHTML. You can also share it with others.  
 
 ## Create a subscription to your report
 
@@ -132,7 +132,7 @@ Paginated reports have memory limits that vary by license type. These limits aff
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server prior to the September 2022 release or SQL Server Reporting Services 2022 release report server. See [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information on this discontinued feature.
 - Document maps. They don't render in the Power BI service, but they do when you export a report.
 - Shared data sources and shared datasets.
-- Data-driven subscriptions for paginated reports in the Power BI service.
+- SSRS-style data-driven subscriptions. However, you can create [dynamic per-recipient subscriptions](../collaborate-share/dynamic-subscriptions.md) for paginated reports in the Power BI service, which provide similar capabilities.
 
 ## Related content
 
