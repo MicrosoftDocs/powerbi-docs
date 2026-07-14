@@ -10,8 +10,6 @@ ms.topic: concept-article
 ms.date: 06/09/2026
 LocalizationGroup: Get started
 no-loc: [Copilot]
-ms.collection: ce-skilling-ai-copilot
-ai-usage: ai-assisted
 # When updating this page, remember hardcode the download link for the latest month and remove the oldest download link - only 6 months are maintained per PG.
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
@@ -2702,7 +2700,7 @@ The following updates are new to Power BI Desktop this month:
 * Update to Quick measures suggestions  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc431520696)   [[article]](../transform-model/quick-measure-suggestions.md)
 
 ### Modeling
-* Composite models on Power BI semantic models and Analysis Services (generally available) [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc982443258)  [[release announcement]](https://powerbi.microsoft.com/blog/Announcing-general-availability-for-composite-models-on-Power-BI-Datasets-and-Analysis-Services-models) [[article]](../transform-model/desktop-composite-models.md)
+* Composite models on Power BI semantic models and Analysis Services (generally available) [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc982443258)  [[release announcement]](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models) [[article]](../transform-model/desktop-composite-models.md)
 * Updates to ORDERBY function [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc439693147)  [[article]](/dax/orderby-function-dax)
 * New DAX functions: RANK and ROWNUMBER [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2023-feature-summary/#post-23001-_Toc826225249)  [[article]](/dax/rank-function-dax) [[article]](/dax/rownumber-function-dax)
 
