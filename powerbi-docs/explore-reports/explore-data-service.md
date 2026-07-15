@@ -146,7 +146,7 @@ You can add [visual calculations](../transform-model/desktop-visual-calculations
 
 :::image type="content" source="media/explore-data-service/new-visual-calculation.png" alt-text="Screenshot showing the New visual calculation button." lightbox="media/explore-data-service/new-visual-calculation.png":::
 
-Enter the calculation or use the provided [templates](../transform-model/desktop-visual-calculations-overview.md#using-templates).
+Enter the calculation or use the provided [templates](../transform-model/desktop-visual-calculations-overview.md#visual-calculation-templates).
 
 :::image type="content" source="media/explore-data-service/add-visual-calculation-templates.png" alt-text="Screenshot showing the visual calculations edit mode. The templates menu is opened." lightbox="media/explore-data-service/add-visual-calculation-templates.png":::
 
@@ -155,7 +155,7 @@ For example, to calculate a running sum of visits, use the **Running sum** templ
 :::image type="content" source="media/explore-data-service/add-visual-calculation-running-sum.png" alt-text="Screenshot showing the visual calculations edit mode with a running sum calculation. " lightbox="media/explore-data-service/add-visual-calculation-running-sum.png":::
 
 > [!NOTE]
-> In this view, you can also [hide fields](../transform-model/desktop-visual-calculations-overview.md#hiding-fields-from-the-visual) by using the **Rearrange data** menu.
+> In this view, you can also [hide fields](../transform-model/desktop-visual-calculations-overview.md#hide-fields-on-the-visual) by using the **Rearrange data** menu.
 
 After you add your calculations, select **Back** to return to your Exploration.
 

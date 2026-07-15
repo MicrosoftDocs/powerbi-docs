@@ -60,7 +60,8 @@ The result shown in visual calculations edit mode is:
 :::image type="content" source="media/custom-totals/custom-total-result-vcem.png" alt-text="Screenshot of visual calculations edit mode with a custom total." lightbox="media/custom-totals/custom-total-result-vcem.png":::
 
 > [!NOTE]
-> You can edit a custom total just [like another visual calculation](../../transform-model/desktop-visual-calculations-overview.md#adding-a-visual-calculation) by right-clicking on the custom total in the build pane and choosing 'Edit calculation':
+> You can edit a custom total just [like another visual calculation](../../transform-model/desktop-visual-calculations-create.md#edit-an-existing-visual-calculation) by right-clicking on the custom total in the build pane and choosing **Edit calculation**.
+
 
 #### Reset to default
 
@@ -75,5 +76,5 @@ Once a custom total is set, you can use the **Reset to default** option to get b
 - Custom totals aren't available in [Explore](../../consumer/explore-data-service.md).
 - Custom totals are only available on the table and matrix visual.
 - Custom totals are only available for numerical columns.
-- Field formatting doesn't transfer to a custom total. You need to format a custom total like you [format a visual calculation](../../transform-model/desktop-visual-calculations-overview.md#formatting-visual-calculations).
+- Field formatting doesn't transfer to a custom total. You need to format a custom total like you [format a visual calculation](../../transform-model/desktop-visual-calculations-overview.md#format-a-visual-calculation).
 - The same [considerations and limitations of visual calculations](../../transform-model/desktop-visual-calculations-overview.md#considerations-and-limitations) apply to custom totals.
