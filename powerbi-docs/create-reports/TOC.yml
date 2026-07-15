@@ -24,6 +24,8 @@
     href: ../paginated-reports/index.yml
   - name: Learn with tutorials
     items:
+    - name: "End-to-end: From raw data to a shared Power BI app"
+      href: tutorial-end-to-end-power-bi.md
     - name: "Power BI Desktop: From Excel to report"
       href: desktop-excel-stunning-report.md
     - name: "Power BI Desktop: From dimensional model to report"

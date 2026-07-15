@@ -28,6 +28,8 @@
       href: service-basic-concepts.md
     - name: End-to-end scenarios
       href: power-bi-learning-path-directory.md
+    - name: "End-to-end: From raw data to a shared Power BI app"
+      href: ../create-reports/tutorial-end-to-end-power-bi.md
     - name: Get Power BI Desktop
       href: desktop-get-the-desktop.md
     - name: Get started with Power BI Desktop
