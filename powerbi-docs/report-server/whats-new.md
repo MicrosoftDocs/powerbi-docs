@@ -20,6 +20,16 @@ Download [Power BI Report Server and Power BI Desktop for Power BI Report Server
 
 Reminder: [How you can find your report server product key](find-product-key.md)
 
+## May 2026
+
+### Reporting
+
+This release enables several Power BI reporting features in Power BI Report Server and adds reliability, accessibility, and scheduling improvements.
+
+- **Button slicer** — the Button slicer visual now renders in Power BI Report Server, including its styling options: background images, table and list layouts, and selection icons.
+- **Card visual — small multiples** — the Card visual now supports small multiples.
+- **Paste selections into any report slicer** — copy selections and paste them directly into any slicer in a report.
+
 ## January 2026
 
 Read the Power BI blog post, [Power BI Report Server January 2026 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2026-feature-summary/) for details.
