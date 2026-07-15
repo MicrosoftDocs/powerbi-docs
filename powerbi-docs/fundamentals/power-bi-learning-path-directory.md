@@ -20,6 +20,9 @@ This article provides curated, sequential lists of documentation for common Powe
 > [!NOTE]
 > Although all of these paths begin with Power BI documentation, some paths might also include links to other areas in Microsoft Learn for complete end-to-end coverage.
 
+> [!TIP]
+> **Want one article that walks through the whole journey?** [Tutorial: End-to-end Power BI scenario](../create-reports/tutorial-end-to-end-power-bi.md) takes you from raw data through publishing and distributing an app in a single sitting.
+
 ## Scenario selection guide
 
 **Not sure which path to follow?** Use this guide:

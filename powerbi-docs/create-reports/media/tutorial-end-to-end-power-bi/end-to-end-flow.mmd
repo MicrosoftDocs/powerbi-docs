@@ -1,0 +1,8 @@
+flowchart LR
+    A[Raw data<br/>in storage] --> B[Power BI Desktop<br/>load, transform, model, design]
+    B --> C[(Semantic model<br/>reusable layer)]
+    C --> D[Power BI report]
+    D --> E[Power BI service<br/>workspace]
+    E --> F[App]
+    F --> G[Business consumers]
+    C -.reused by.-> H[Other reports, Excel,<br/>Copilot, MCP]
