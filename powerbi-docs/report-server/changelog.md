@@ -26,7 +26,7 @@ You must use Microsoft Report Builder to create paginated reports in Power BI Re
 
 - *Version: 1.26.9682.1442 (build 15.0.1121.120), Released: July 8, 2026*
     - Fixed issue with excessive refreshes in scale-out environments.
-    - Fixed issue with [CVE-2026-58647](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58647): Microsoft PowerBI Report Server Spoofing Vulnerability
+    - Fixed issue with [CVE-2026-58647](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58647): Microsoft Power BI Report Server Spoofing Vulnerability.
 
 - *Version: 1.26.9664.33586 (build 15.0.1121.116), Released: June 17, 2026*
     - Fixed issue with repeated jobs in scale-out environments.
