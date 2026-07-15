@@ -1,6 +1,6 @@
 ---
 title: "End-to-end: From raw data to a shared Power BI app"
-description: Follow a full end-to-end scenario in Power BI - from raw source data through transforming, modeling, building a report, and sharing it as an app.
+description: Follow a full end-to-end Power BI scenario from raw data through transforming, modeling, and building a report to sharing it as an app. Start now.
 author: julcsc
 ms.author: juliacawthra
 ms.reviewer: zoedouglas
@@ -26,7 +26,7 @@ You play the role of a sales analyst at Adventure Works Cycles. Your sales leade
 
 By the end of this scenario, you have a working Power BI solution with the following flow:
 
-:::image type="complex" source="media/tutorial-end-to-end-power-bi/end-to-end-flow.svg" lightbox="media/tutorial-end-to-end-power-bi/end-to-end-flow.svg" alt-text="End-to-end Power BI flow from raw data to a shared app.":::
+:::image type="complex" source="media/tutorial-end-to-end-power-bi/end-to-end-flow.png" lightbox="media/tutorial-end-to-end-power-bi/end-to-end-flow.png" alt-text="End-to-end Power BI flow from raw data to a shared app.":::
    The diagram shows a linear flow: Raw data in storage feeds Power BI Desktop, which loads, transforms, models, and designs the data into a semantic model. The semantic model is the reusable layer that a Power BI report is built on. The report is published to a Power BI service workspace, packaged as an app, and opened by business consumers. The same semantic model is also reused by other reports, paginated reports, Excel analyses, and AI experiences such as Copilot in Power BI and the Power BI MCP servers - so each one builds on the same model without reimplementing the data logic.
 :::image-end:::
 
@@ -105,6 +105,8 @@ Power BI Desktop materializes the semantic model - identical to what you'd get f
 
 > [!TIP]
 > TMDL is especially useful when working with the [Power BI Modeling MCP Server](../developer/mcp/mcp-servers-overview.md), which lets AI agents read and modify semantic models using TMDL. For more on TMDL and Power BI project formats, see [Power BI Project (PBIP) and Power BI Report (PBIR) file formats](/power-bi/developer/projects/projects-report).
+
+### TMDL script for the semantic model
 
 ```tmdl
 createOrReplace
@@ -923,6 +925,9 @@ The Power BI semantic model is the reusable foundation that reports, paginated r
 Aim for a [star schema](../guidance/star-schema.md): one or more fact tables in the middle, surrounded by dimension tables.
 
 1. In Power BI Desktop, select **Model view** on the left.
+
+### Confirm relationships and cardinality
+
 1. Confirm the relationships. Power BI Desktop usually auto-detects relationships when key columns share names and compatible types, so most relationships might already be in place. If any are missing, drag matching key columns between tables to create them. The **Sales** fact table connects to dimension tables on `Customer Key`, `Product Key`, `Reseller Key`, and `Sales Territory Key`. The **Date** dimension connects to **Sales** by dragging `Date[Date]` onto `Sales[Order Date]`.
 
    > [!TIP]
@@ -930,15 +935,24 @@ Aim for a [star schema](../guidance/star-schema.md): one or more fact tables in 
 
 1. Check relationship cardinality. When you drag `Date[Date]` to `Sales[Order Date]`, Power BI might create a **1:1** relationship if the sample data happens to have only one sale per date. Change this to **Many-to-1** with the **Many** side on the **Sales** table. Select the relationship line (or click it in Model Explorer), then in the properties pane set **Cardinality** to **Many to one (\*:1)** with the many side pointing to Sales.
 1. Open **Manage relationships** on the **Modeling** ribbon to verify all the expected relationships exist. Add any that are missing.
+
+### Mark the date table and hide fields
+
 1. Mark your **Date** table as a date table so time intelligence functions such as `TOTALYTD` work correctly. In **Model view**, right-click the **Date** table, select **Mark as date table**, toggle the setting to **On**, and choose `Date` as the date column. For details, see [Set and use date tables in Power BI Desktop](../transform-model/desktop-date-tables.md).
 1. Hide foreign key columns from the report view so report creators see business-friendly fields instead of join keys. The easiest way: in the **Data** pane, search for "Key" to show all key columns, hold Ctrl to multiselect them, then in the properties pane toggle **Is hidden** to On. Hidden columns still participate in relationships - they just don't show up in the report field list.
 1. Hide all base columns in the **Sales** table (not the measures). This step promotes the use of measures and declutters report view. Select all non-measure columns in the Sales table (Order Date, Customer Key, Product Key, Reseller Key, Sales Territory Key, Sales Amount, Total Product Cost) and toggle **Is hidden** to On in the properties pane. When done correctly, **Sales** becomes a measure table with a new icon and moves to the top of the table list in the Data pane.
+
+### Configure columns and formats
+
 1. Set the **Country** column data category. In the **Customer** table, select the **Country** column, then in the properties pane under **Advanced** set **Data category** to **Country/Region**. This setting helps map visuals recognize the column as a geographic field.
 1. Sort the **Month** column by month number so months display in calendar order (January, February, March…) instead of alphabetically. Select the `Month` column in the Date table, then in the properties pane under **Advanced** set **Sort by column** to **MonthNumber**.
 1. Hide the **MonthNumber** column since it's not useful for reporting (it's only there to sort the Month column). Select `MonthNumber` and toggle **Is hidden** to On.
 1. Set date and time formats for clarity:
    - Select the **Monthly** column in the Date table. In the properties pane, set **Date time format** to **Custom**, then enter `mmm yyyy` in the **Custom format** field.
    - Select the **Date** column in the Date table. Set **Date time format** to a format without a time component (for example, `yyyy-MM-dd` for international audiences).
+
+### Create the date hierarchy and measures
+
 1. Create a date hierarchy. Right-click the **Year** column in the Date table and select **Create hierarchy**. Name it **Date Hierarchy**. Drag **Quarter**, **Month**, and **Date** into the hierarchy levels below Year.
 1. Create the measures your report needs. You have two options:
    - **DAX query view (recommended)**: Select **DAX query view** from the bottom of the screen (or the **Home** tab). Paste the query below into the query pane and select **Run** to preview the results. Then select each measure in the query and choose **Update model: Add new measure** on the ribbon (or right-click the measure and select the equivalent option) to add all four measures to the Sales table at once.
@@ -1013,7 +1027,10 @@ For deeper modeling guidance - hierarchies, calculation groups, and DAX patterns
 
 Your leadership team has three questions. Each one maps to a visual on the report page.
 
-1. Select **Report view** on the left.
+Select **Report view** on the left.
+
+### Add the executive summary card
+
 1. Add a **Card** visual at the top to serve as an executive summary:
    1. In the **Visualizations** pane, select the **Card** icon.
    1. Drag all four measures (`Total Sales`, `Total Cost`, `Profit`, `Profit Margin`) into the **Fields** well for the card.
@@ -1022,30 +1039,39 @@ Your leadership team has three questions. Each one maps to a visual on the repor
    > [!TIP]
    > Use the new **modern visual defaults** (GA in August 2026) to match the polished look of this report. On the **View** tab, select **Modern visual defaults**.
 
-1. Add three visuals that answer the leadership questions. The table shows the visual type and field assignments for each:
+### Match visuals to the leadership questions
 
-   | Leadership question | Visual to use | Fields | Visual enhancements |
-   | --- | --- | --- | --- |
-   | Which month had the most sales? | **Clustered column chart** | X-axis: `Date Hierarchy` (collapse to Year and Month levels), Y-axis: `[Total Sales]` | Add conditional formatting (Column > Color > Conditional formatting > Gradient), add a max line (Analytics pane), add the question as the title (General > Title), use the **With data labels** style preset to show labels instead of an axis |
-   | Which country/region performs best? | **Azure map** | Location: `SalesTerritory[Country]`, Legend: `SalesTerritory[Group]`, Bubble size: `[Total Sales]` | Add the question as the title |
-   | Which product and reseller type should we keep investing in? | **Matrix** | Rows: `Product[Category]`, Columns: `Reseller[Business Type]`, Values: `[Profit Margin]` | Add the question as the title, add conditional formatting (Cell elements > Background color > toggle on), make column widths uniform (Layout > Auto-size behavior > Fixed width > toggle off custom widths > set default width to 100px) |
+Add three visuals that answer the leadership questions. The table shows the visual type and field assignments for each. Each visual has its own subsection below.
 
-   **For the clustered column chart**:
-   1. Add the visual and drag the **Date Hierarchy** (not just Month) to the X-axis. Collapse the hierarchy up one level so it shows Year and Month (not individual dates), which prevents misleading aggregation across multiple years' worth of the same month.
-   1. To highlight which month had the highest sales, select the visual, go to the **Format** pane, expand **Columns**, expand **Colors**, select **Conditional formatting (fx)**, choose **Gradient**, and select **OK**. You can adjust the colors or min/max values if needed.
-   1. Add a max line by selecting the visual, opening the **Analytics** pane (magnifying glass icon), and adding a **Max line**.
-   1. Add the question as the subtitle: in the **Format** pane, expand **General** > **Title** and add the question text in the **Subtitle** field.
-   1. Apply the **With data labels** style preset to show values on bars instead of an axis: in the **Format** pane, expand **Visual** > **Style presets** and select **With data labels**.
+| Leadership question | Visual to use | Fields | Visual enhancements |
+| --- | --- | --- | --- |
+| Which month had the most sales? | **Clustered column chart** | X-axis: `Date Hierarchy` (collapse to Year and Month levels), Y-axis: `[Total Sales]` | Add conditional formatting (Column > Color > Conditional formatting > Gradient), add a max line (Analytics pane), add the question as the title (General > Title), use the **With data labels** style preset to show labels instead of an axis |
+| Which country/region performs best? | **Azure map** | Location: `SalesTerritory[Country]`, Legend: `SalesTerritory[Group]`, Bubble size: `[Total Sales]` | Add the question as the title |
+| Which product and reseller type should we keep investing in? | **Matrix** | Rows: `Product[Category]`, Columns: `Reseller[Business Type]`, Values: `[Profit Margin]` | Add the question as the title, add conditional formatting (Cell elements > Background color > toggle on), make column widths uniform (Layout > Auto-size behavior > Fixed width > toggle off custom widths > set default width to 100px) |
 
-   **For the Azure map** (Bing map is being removed):
-   1. Add the Azure map visual and drag `SalesTerritory[Country]` to **Location**, `SalesTerritory[Group]` to **Legend**, and `[Total Sales]` to **Bubble size**.
-   1. Add the question as the title in the **Format** pane under **General** > **Title**.
+### Build the clustered column chart
 
-   **For the matrix**:
-   1. Add the matrix visual and drag `Product[Category]` to **Rows**, `Reseller[Business Type]` to **Columns**, and `[Profit Margin]` to **Values**.
-   1. Add the question as the title.
-   1. Add conditional formatting to highlight the cells you want to pay attention to: in the **Format** pane, expand **Cell elements**, expand **Background color**, and toggle it on. A gradient is applied automatically. You can click **fx** to modify it to include totals if you want, or adjust the min or max to white to highlight only low or only high values.
-   1. Make the column widths uniform: in the **Format** pane, expand **Layout** > **Auto-size behavior**, select **Fixed width**, toggle off **Custom widths**, and set **Default width** to **100px**.
+1. Add the visual and drag the **Date Hierarchy** (not just Month) to the X-axis. Collapse the hierarchy up one level so it shows Year and Month (not individual dates), which prevents misleading aggregation across multiple years' worth of the same month.
+1. To highlight which month had the highest sales, select the visual, go to the **Format** pane, expand **Columns**, expand **Colors**, select **Conditional formatting (fx)**, choose **Gradient**, and select **OK**. You can adjust the colors or min/max values if needed.
+1. Add a max line by selecting the visual, opening the **Analytics** pane (magnifying glass icon), and adding a **Max line**.
+1. Add the question as the subtitle: in the **Format** pane, expand **General** > **Title** and add the question text in the **Subtitle** field.
+1. Apply the **With data labels** style preset to show values on bars instead of an axis: in the **Format** pane, expand **Visual** > **Style presets** and select **With data labels**.
+
+### Build the Azure map
+
+The Azure map visual replaces the earlier Bing map, which is being removed.
+
+1. Add the Azure map visual and drag `SalesTerritory[Country]` to **Location**, `SalesTerritory[Group]` to **Legend**, and `[Total Sales]` to **Bubble size**.
+1. Add the question as the title in the **Format** pane under **General** > **Title**.
+
+### Build the matrix
+
+1. Add the matrix visual and drag `Product[Category]` to **Rows**, `Reseller[Business Type]` to **Columns**, and `[Profit Margin]` to **Values**.
+1. Add the question as the title.
+1. Add conditional formatting to highlight the cells you want to pay attention to: in the **Format** pane, expand **Cell elements**, expand **Background color**, and toggle it on. A gradient is applied automatically. You can click **fx** to modify it to include totals if you want, or adjust the min or max to white to highlight only low or only high values.
+1. Make the column widths uniform: in the **Format** pane, expand **Layout** > **Auto-size behavior**, select **Fixed width**, toggle off **Custom widths**, and set **Default width** to **100px**.
+
+### Add slicers, apply a theme, and save the report
 
 1. Add a **Button slicer** to filter by reseller and also display profit:
    1. In the **Visualizations** pane, select the **Button slicer** icon.
@@ -1075,7 +1101,7 @@ When you publish, you move both the semantic model and the report into a workspa
 
 **Alternative publishing options**: Use **Git integration** to publish with source control by enabling Git integration on the workspace to track changes and collaborate with version control (see [Get started with Git integration](/fabric/cicd/git-integration/intro-to-git-integration)). Use **deployment pipelines** to publish to a development workspace first, then push to production for a formal dev-test-prod pipeline (see [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines)). Or use **import in the workspace** if you already have a `.pbix` file saved on your computer - in the workspace, select **Upload** > **Browse** and choose the file.
 
-1. In the workspace items list, locate the **semantic model** that you created alongside the report. (Depending on your tenant, it appears under a **Semantic models** filter or in the combined items list, with a semantic-model icon.) In a production solution, this is where you configure **scheduled refresh** so the data stays current as your source updates. The semantic model in this tutorial uses inline data that doesn't change, but the same setup applies to models that read from databases, lakehouses, or files. For details, see [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+1. In the workspace items list, locate the **semantic model** that you created alongside the report. (Depending on your tenant, it appears under a **Semantic models** filter or in the combined items list, with a semantic-model icon.) In a production solution, the semantic model's settings page is where you configure **scheduled refresh** so the data stays current as your source updates. The semantic model in this tutorial uses inline data that doesn't change, but the same setup applies to models that read from databases, lakehouses, or files. For details, see [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 1. *Optional but recommended*: Promote the semantic model so other report creators can find and trust it. (Certification requires permission from your Power BI admin.) See [Endorse your content](../collaborate-share/service-endorse-content.md).
 
 **Verify**: In the workspace items list, you should see both the Power BI report and the semantic model. Open the semantic model's settings and find the **Scheduled refresh** section - this is where you'd set a refresh schedule for models that read from real sources. Open the report and confirm the visuals from Phase 4 (card, column chart with conditional formatting, Azure map, matrix with conditional formatting, button slicer, year slicer) render with the published data.
@@ -1087,6 +1113,8 @@ When you publish, you move both the semantic model and the report into a workspa
 **Tool**: Power BI service.
 
 A Power BI **app** is the supported way to hand polished content to a business audience. Workspace access is for the people who *build* the Power BI solution; app access is for the people who *consume* it. Power BI apps give you per-audience visibility, a branded landing page, and a stable URL to share.
+
+Publishing an app requires a Power BI Pro license and the Member role in the workspace. App consumers need a Pro or Premium Per User (PPU) license unless the workspace is on a Fabric capacity of F64 or larger, in which case a Free license with the Viewer role is sufficient.
 
 1. In your workspace, select **Create app** in the upper-right.
 1. On the **Setup** tab, give the app a clear name (*Adventure Works Cycles Sales*), a one-line description, and a logo or color.
@@ -1136,10 +1164,10 @@ The same Power BI semantic model is also what AI-assisted experiences (Copilot a
 
 ## Optional path: Add Copilot and MCP servers for AI-assisted authoring in Power BI
 
-The Power BI semantic model you built in Phase 3 powers AI-assisted authoring and consumption. You can add these features at any point after the model exists; they don't replace the journey described earlier.
+The Power BI semantic model you built in Phase 3 powers AI-assisted authoring and consumption. Copilot in Power BI and the Power BI MCP servers require your workspace to be assigned to a **Fabric** capacity (a Fabric trial capacity is sufficient for evaluation). You can add these features at any point after the model exists; they don't replace the journey described earlier.
 
 > [!NOTE]
-> Several Power BI AI features in this optional path are in preview. **Copilot in Power BI**, the **remote Power BI MCP server**, the **Power BI Modeling MCP Server (local)**, and **Prep data for AI** all have preview-status features that are subject to change. Check each linked article for current status, capacity requirements, and regional availability. Copilot in Power BI and the Power BI MCP servers also require your workspace to be assigned to a **Fabric** capacity (a Fabric trial capacity is sufficient for evaluation).
+> Several Power BI AI features in this optional path are in preview. **Copilot in Power BI**, the **remote Power BI MCP server**, the **Power BI Modeling MCP Server (local)**, and **Prep data for AI** all have preview-status features that are subject to change. Check each linked article for current status, capacity requirements, and regional availability.
 
 | If you want to… | Use this | Start with |
 | --- | --- | --- |
