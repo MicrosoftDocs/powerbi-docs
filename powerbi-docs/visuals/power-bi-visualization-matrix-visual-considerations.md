@@ -28,6 +28,10 @@ Power BI doesn't support conditional formatting for column header text. Column h
 
 You can't format each hierarchical level of column headers individually. Formatting applies to the lowest hierarchy level under the specific column's **Apply to header** setting, and upper levels inherit settings from the general **Column headers** formatting options. Format the lowest level to the style you want, and the upper levels match it.
 
+### Visible column limit
+
+A matrix visual can display only 100 columns at any time. Any additional columns, including totals and subtotals, aren't shown.
+
 ## Related content
 
 - [Create a matrix visual in Power BI](power-bi-visualization-matrix-visual.md)
