@@ -24,13 +24,15 @@ This article lists known considerations and limitations for matrix visuals in Po
 
 Power BI doesn't support conditional formatting for column header text. Column header text can't be dynamically adjusted based on measures. To dynamically control which columns appear in any visual, use [field parameters](../create-reports/power-bi-field-parameters.md).
 
-### Hierarchy-level formatting
-
-You can't format each hierarchical level of column headers individually. Formatting applies to the lowest hierarchy level under the specific column's **Apply to header** setting, and upper levels inherit settings from the general **Column headers** formatting options. Format the lowest level to the style you want, and the upper levels match it.
-
 ### Visible column limit
 
 A matrix visual can display only 100 columns at any time. Any additional columns, including totals and subtotals, aren't shown.
+
+## Row and column headers
+
+### Hierarchy-level formatting
+
+You can't format each hierarchical level of row or column headers individually. Formatting applies to the lowest hierarchy level under the specific column's **Apply to header** setting, and upper levels inherit settings from the general **Row headers** or **Column headers** formatting options. Format the lowest level to the style you want, and the upper levels match it.
 
 ## Related content
 
