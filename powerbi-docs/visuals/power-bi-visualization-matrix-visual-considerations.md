@@ -24,7 +24,7 @@ A matrix visual can display only 100 columns at any time. The visual doesn't sho
 
 ## Dynamic header text
 
-Power BI doesn't support conditional formatting for row or column header text. Header text can't be dynamically adjusted based on measures. To dynamically control which rows or columns appear in any visual, use [field parameters](../create-reports/power-bi-field-parameters.md).
+Power BI doesn't support conditional formatting for row or column header text. You can't dynamically adjust header text based on measures. To dynamically control which rows or columns appear in any visual, use [field parameters](../create-reports/power-bi-field-parameters.md).
 
 ## Hierarchy-level formatting
 
