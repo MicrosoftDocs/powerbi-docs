@@ -20,7 +20,7 @@ This article lists known considerations and limitations for matrix visuals in Po
 
 ## Visible column limit
 
-A matrix visual can display only 100 columns at any time. Any additional columns, including totals and subtotals, aren't shown.
+A matrix visual can display only 100 columns at any time. The visual doesn't show any additional columns, including totals and subtotals.
 
 ## Dynamic header text
 
