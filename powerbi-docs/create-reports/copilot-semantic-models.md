@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.topic: concept-article
 ms.date: 04/20/2026
 ms.collection: ce-skilling-ai-copilot
+ai-usage: ai-assisted
 ---
 
 # Use Copilot with semantic models
@@ -273,6 +274,16 @@ Given this grounding data, you can ensure that suggested synonyms are useful by:
 - Limiting the use of punctuation, acronyms, and abbreviations.
 - Naming measures in English.
 
+### Copilot in web modeling (Power BI service)
+
+[Copilot in web modeling](../transform-model/copilot-web-modeling.md) is an AI-powered assistant that's integrated directly into the Power BI service model authoring experience. Unlike the other experiences described in this section, which are primarily available in Power BI Desktop, Copilot in web modeling lets you analyze and improve your semantic models by using natural language without leaving the browser.
+
+When you open a semantic model in the service's **Model view** and switch to Editing mode, Copilot can:
+
+- **Analyze the model for problems**, such as inconsistent naming conventions and unclear structure, and suggest best-practice improvements.
+- **Apply schema updates directly**, including renaming tables and columns, creating relationships, and generating DAX measures.
+
+Changes that Copilot proposes or applies in this experience affect the active semantic model just like any other manual edit. Review all suggested updates carefully before accepting them, as you would for any model change. The optimization guidance described in [Optimize your semantic model for Copilot in Power BI](copilot-evaluate-data.md) also applies here: a well-structured, clearly named model produces better Copilot analysis and more accurate suggestions.
 ## Consume a semantic model by using Copilot
 
 You can use Copilot to pose data questions to your semantic models during consumption. This experience is available whenever you use a report, including in [Power BI Desktop](#power-bi-desktop), a [published report](#published-report) in a workspace, app, or OrgApp item, or in the [Power BI mobile app](#power-bi-mobile-app).
