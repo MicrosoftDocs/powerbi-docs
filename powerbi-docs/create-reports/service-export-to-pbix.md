@@ -22,7 +22,7 @@ In Power BI Desktop, you can publish a report from your local computer to the Po
 There are two ways to download a .pbix file, each with different results and considerations:
 
 - Download a [report as a .pbix file](#download-a-report-as-a-pbix-file). Depending on the configuration, this file might include a semantic model.
-- Download an [empty report as a .pbix file from a semantic model](#download-a-pbix-file-from-a-semantic-model).
+- Download an [report as a .pbix file from a semantic model](#download-a-pbix-file-from-a-semantic-model).
 
 ## Prerequisites
 
@@ -80,9 +80,6 @@ To download a semantic model as a .pbix file, follow these steps:
 
 1. While the report is downloading, a status banner displays the progress. The default name of the file matches the title of the report.
 1. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), and open the .pbix file in Power BI Desktop.
-
-> [!NOTE]
-> Downloading a .pbix file from a semantic model will give you an empty report with the dataset only. To download the report with the dataset, navigate to that specific report and download the .pbix file from there.  
 
 ## Parity between Power BI Desktop and the service
 
