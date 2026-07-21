@@ -25,10 +25,6 @@ In the following example, the report reader can dynamically update the bar chart
 
 :::image type="content" source="media/power-bi-field-parameters/sample-field-parameter.png" alt-text="Screenshot of a Power BI report with field parameter slicers showing cost of goods sold by product in a bar chart and table." lightbox="media/power-bi-field-parameters/sample-field-parameter.png":::
 
-## Prerequisites
-
-- Power BI Desktop
-
 ## Create a field parameter
 
 1. To create a new field parameter, go to the **Modeling** tab and select **New parameter** > **Fields**.
@@ -43,19 +39,42 @@ In the following example, the report reader can dynamically update the bar chart
 
     You can also mix and match measures and dimensions within the same parameter. For example, create a dynamic table where the columns can be either measures or dimensions.
 
-## Use a field parameter to control visual properties
+## Use a field parameter in visuals
 
-After you create a field parameter, use the parameter to control the measures or dimensions used in a visual.
+After you create a field parameter, use the parameter to control the values and axis used in a visual.
 
 :::image type="content" source="media/power-bi-field-parameters/using-a-parameter-in-a-visual.png" alt-text="Screenshot of the sample visual, showing the parameter options.":::
 
-Use the parameter in the field drop zones for a visual. Certain visual properties have restrictions on the number and type of fields that you can use.
+Use a column-based field parameter in the axis field wells of a visual, and use a measure-based field parameter in the values field wells. If the visual supports multiple measures, selecting multiple measures in the field parameter shows them side by side in the visual.
 
-From the context menu, you can also choose whether the field parameter shows the values or the display names of the selected fields.
+## Use a field parameter in a slicer
 
-- In the **Values** box, select the down arrow next to the parameter name and select **Show selected field**.
+When you use a field parameter in a slicer, you can display it in one of two ways: as a list of the fields in the parameter or as the values within each field.
 
-    :::image type="content" source="media/power-bi-field-parameters/show-selected-field-setting.png" alt-text="Screenshot showing how to customize if the visual displays the values or the display names of the selected fields.":::
+By default, when you first add a field parameter to a slicer, the slicer shows the field names. Report viewers select a field name to control the fields used in other visuals bound to the parameter.
+
+To show the values within each field instead:
+
+1. In the **Build** pane, right-click the field parameter.
+1. Select **Show values of the selected field**.
+
+:::image type="content" source="media/power-bi-field-parameters/slicer-show-values-of-selected-field.png" alt-text="Screenshot of the right-click context menu on a field parameter in the Build pane with the Show values of the selected field option highlighted.":::
+
+The slicer becomes a [hierarchy slicer](power-bi-slicer-hierarchy-multiple-fields.md) that displays the values of each field as a level in the hierarchy. This behavior applies to the slicer and list slicer visuals. The button slicer doesn't support hierarchies, so it shows only the values of the first field in the parameter.
+
+To return to the list of field names, right-click the field parameter in the **Build** pane and select **Show selected field**.
+
+:::image type="content" source="media/power-bi-field-parameters/slicer-show-selected-field.png" alt-text="Screenshot of a slicer displaying a field parameter as a list of selectable field names.":::
+
+Showing values is useful in two scenarios:
+
+- **Force a selection before other slicers show values.** With single select turned on for the slicer, report viewers must pick a value from the field parameter before another slicer bound to the parameter can show its values.
+- **Present a natural hierarchy in a single slicer.** When the fields form a natural hierarchy, such as **Year**, **Month**, and **Day of the week**, report viewers can filter through the hierarchy or on a single level of the hierarchy without you needing to offer multiple slicers. For example, viewers can filter to Sunday across all years and months, or to Sunday within a specific year and month.
+
+:::image type="content" source="media/power-bi-field-parameters/slicer-showing-values-of-selected-field-in-other-slicer.png" alt-text="Screenshot of a hierarchy slicer showing the values of each field in a field parameter as expandable levels.":::
+
+> [!NOTE]
+> This option is available only for field parameters that contain columns. It isn't available for field parameters that contain measures.
 
 ## Edit a field parameter
 
