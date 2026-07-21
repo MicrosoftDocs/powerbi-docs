@@ -485,16 +485,22 @@ To stop a refresh, follow these steps:
 
     :::image type="content" source="media/refresh-data/cancel-refresh-window.png" alt-text="Screenshot of the cancel refresh pop-up window with the yes button highlighted.":::
 
-## Power BI Desktop refresh options
+## Power BI refresh options
 
 :::image type="content" source="media/refresh-data/desktop-refresh-options.png" alt-text="Screenshot of Power BI Desktop Refresh options.":::
 
-When you select **Refresh** in Power BI Desktop, it always performs a schema sync first, followed by a data refresh. While this behavior is convenient in most cases, there are scenarios where you may want to refresh the data without updating the model schema, even if the data source has changed its schema. For example, in Direct Lake semantic models, the underlying Lakehouse table might have changed (such as a new column being added). You may want the latest data but prefer not to bring new columns into the model. 
+When you select **Refresh** in Power BI Desktop and Service, the process always starts with a schema sync, followed by a data refresh. While this behavior is convenient in most cases, some scenarios call for refreshing the data without updating the model schema, even if the data source changed its schema. For example, in Direct Lake semantic models, the underlying Lakehouse table might change (such as a new column being added). You might want the latest data but prefer not to bring new columns into the model. 
 
 You can expand the **Refresh** button in both the **Home** ribbon and the **Data** pane and choose from the following options:
 
+- **Refresh Schema and data** - performs a schema sync first, followed by a data refresh.
+
 - **Sync schema only** – Updates the semantic model to reflect the data source structure (for example, column type changes or new columns).
 - **Refresh data only** – Loads fresh data while preserving the current schema in your semantic model.
+
+You can also control the refresh granularity at the table level. In some scenarios, you might only need to refresh a specific table and want to avoid refreshing the entire semantic model. By selecting an individual table, you can also choose whether to refresh its schema, data, or both.
+
+:::image type="content" source="media/refresh-data/refresh-menu.png" alt-text="Screenshot of Power BI that shows the refresh data options.":::
 
 This added flexibility helps you manage your model refresh operations more intentionally, based on your specific needs. 
 
