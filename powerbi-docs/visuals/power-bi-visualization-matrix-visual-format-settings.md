@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/01/2026
+ms.date: 07/22/2026
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for matrix visuals so that I can effectively and more easily format my matrix visuals in Power BI Desktop and Power BI Service.
 ai-usage: ai-assisted
@@ -228,7 +228,7 @@ Use this setting to customize the size, offering a range of 8 to 60 pixels.
 
 ### Column subtotals settings
 
-The **Column subtotals** toggle controls whether subtotals appear for columns in your matrix. When you turn it on, Power BI calculates and displays subtotals for each column based on the underlying data. Turn off this toggle if you want to hide column subtotals.
+The **Column subtotals** toggle controls whether subtotals appear for columns in your matrix. When you turn it on, Power BI calculates and displays subtotals for each column based on the underlying data. Turn off this toggle if you want to hide column subtotals. To find this setting, select the **Format visual** icon in the **Visualizations** pane, then expand **Column subtotals**.
 
 #### Column subtotals: Apply settings to
 
@@ -254,7 +254,7 @@ Use this menu to set subtotal options for the entire column.
 
 ### Row subtotals settings
 
-The **Row subtotals** toggle controls whether subtotals appear for rows in your matrix. When you turn it on, Power BI calculates and displays subtotals for each row based on the underlying data. Turn off this toggle if you want to hide row subtotals.
+The **Row subtotals** toggle controls whether subtotals appear for rows in your matrix. When you turn it on, Power BI calculates and displays subtotals for each row based on the underlying data. Turn off this toggle if you want to hide row subtotals. To find this setting, select the **Format visual** icon in the **Visualizations** pane, then expand **Row subtotals**. Row and column subtotals apply to the matrix visual, which groups data into nested rows and columns. The table visual displays a single grand total row rather than subtotals.
 
 #### Row subtotals: Apply settings to
 
