@@ -7,7 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 05/26/2026
+ms.date: 07/22/2026
+ai-usage: ai-assisted
 LocalizationGroup: Get started
 ---
 # Download Power BI Desktop
@@ -93,6 +94,16 @@ When you launch Power BI Desktop, a welcome screen appears.
 :::image type="content" source="media/desktop-get-the-desktop/desktop-splash-screen.png" alt-text="Screenshot of Power BI Desktop installation showing the welcome screen.":::
 
 Now you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
+
+## Match a specific Power BI Desktop version
+
+Some scenarios require a specific version of Power BI Desktop rather than the latest release. Use the following guidance to match the version you need:
+
+- **Power BI Report Server**: To create and publish reports for Power BI Report Server, install the Report Server–optimized version of Power BI Desktop. This version aligns with your report server's release cadence, is a separate installation from the standard version, and can be installed side by side with it. For more information, see [Install Power BI Desktop for Power BI Report Server](../report-server/install-powerbi-desktop.md).
+- **A previous or historical build**: If your organization requires an earlier release, you can download a previous version of Power BI Desktop. Newer releases can't be opened by previous versions, so match the version your team uses. For available downloads, see the [Power BI Desktop monthly update archive](desktop-latest-update-archive.md).
+- **Power BI service parity**: The Microsoft Store and executable versions both install the latest version, which stays current with the Power BI service. For the closest match to service features, use the latest version.
+
+To check which version you currently have installed, on the **Help** ribbon in Power BI Desktop, select **About**, then check the **Version** line.
 
 ## Minimum requirements
 

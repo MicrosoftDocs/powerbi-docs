@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 04/09/2026
+ms.date: 07/22/2026
 ai-usage: ai-assisted
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the card visual so that I can effectively and more easily build card visuals in Power BI Desktop.
@@ -119,6 +119,17 @@ When you select a category header, the other category cards dim to indicate the 
 - **Control which visuals are filtered**: Use **Edit interactions** in the **Format** menu to choose which visuals on the report page are affected by selections on the card visual.
 
 The layout of category sections is controlled by the **Multi-category layout** section in the format pane under the **Visual** tab. Within each category section, the arrangement of individual cards is still controlled by the **Multi-card layout** section. Elements within each card, such as the callout, image, and reference labels, are controlled by the **Cards** > **Layout** section.
+
+## Show full numbers or change display units
+
+By default, the card visual's callout value uses **Display units** set to **Auto**, which abbreviates large numbers with a **K** (thousands), **M** (millions), or **B** (billions) suffix. For example, `11,732` appears as `12K`. To show the full number and remove the K, M, or B suffix, change the display units to **None**:
+
+1. Select the card visual.
+1. In the **Visualizations** pane, select the **Format visual** icon.
+1. Under the **Visual** tab, expand **Callout values** > **Values**.
+1. Set **Display units** to **None**.
+
+If you apply a custom format string but the value still shows a K, M, or B suffix, the **Display units** setting is the cause rather than the format string. For more information, see [Troubleshooting unwanted automatic scaling](../create-reports/desktop-custom-format-strings.md#troubleshooting-unwanted-automatic-scaling-k-m-b-suffixes).
 
 ## Card walkthrough
 

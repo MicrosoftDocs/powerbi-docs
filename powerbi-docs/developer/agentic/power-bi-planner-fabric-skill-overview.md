@@ -161,6 +161,6 @@ Each skill can also be used independently:
 ## Related content
 
 - [Power BI MCP servers overview](../mcp/mcp-servers-overview.md)
-- [powerbi-report-authoring skill](https://github.com/azure-data-intelligence-platform/powerbi-report-authoring-skill)
+- [powerbi-report-authoring skill](https://github.com/microsoft/skills-for-fabric/blob/main/skills/powerbi-report-authoring/SKILL.md)
 - [Fabric REST API — Reports](/rest/api/fabric/report/items)
 - [Power BI REST APIs](/rest/api/power-bi)
