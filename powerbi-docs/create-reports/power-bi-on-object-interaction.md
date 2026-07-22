@@ -20,7 +20,7 @@ On-object interaction is the new way to build and format a visual, directly on t
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-build-visual.png" alt-text="Screenshot showing building a visual with on-object formatting.":::
 
-If your Power BI Desktop looks different from the screenshots in other articles—for example, the **Visualizations** pane is missing or the build and format controls moved onto the visual itself—your report is using the new on-object interaction layout instead of the previous layout. This UI change is why an updated interface might not match older screenshots. Because on-object interaction is a preview feature, you can turn it off to return to the previous layout or turn it on to use the new one. The following sections describe how.
+If your Power BI Desktop looks different from the screenshots in other articles - for example, the **Visualizations** pane is missing or the build and format controls moved onto the visual itself - your report is using the new on-object interaction layout instead of the previous layout. This UI change is why an updated interface might not match older screenshots. Because on-object interaction is a preview feature, you can turn it off to return to the previous layout or turn it on to use the new one. The following sections describe how.
 
 ## Turn on preview features
 
