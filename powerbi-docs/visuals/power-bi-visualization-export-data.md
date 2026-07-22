@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/21/2026
+ms.date: 07/22/2026
 ai-usage: ai-assisted
 ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
@@ -224,7 +224,7 @@ When contacting the report owner or administrator, refer them to these articles:
 - If the visualization uses data from more than one data table, and no active relationship exists for those tables in the data model, Power BI only exports data for the first table.
 - The granularity of data exported to Excel using the **Data with current layout** and **Summarized data** options are identical and the only difference between the options is the shape of the data in Excel. For example, in a matrix visual, the **Data with current layout** preserves the shape of the visual as shown in Power BI when data is exported to Excel while the **Summarized data** option exports the same data but as a flat table of rows and columns.
 - When you export datetime data from Power BI, the format of the datetime changes to match the datetime format of your local machine. For example, let's say that the report designer formatted the datetime as DDMMYYYY, which is the default regional format for their locale. When you open that report on your machine and export the data to Excel, the datetime shows as MMDDYY, which is your default regional datetime format.
-- Power BI supports both custom visuals and R visuals in Desktop and the Power BI service. Custom visuals (including certified visuals) are subject to tenant admin policy, and R visuals run with a local R install in Desktop and a managed R environment in the service; some features and packages might be limited.
+- Power BI supports both custom visuals and R visuals in Desktop and the Power BI service, but data export behavior varies. Not every custom visual implements data export, and custom visuals (including certified visuals) are subject to tenant admin policy. R visuals run with a local R install in Desktop and a managed R environment in the service, and some features and packages might be limited. For programmatic export using the [Power BI JavaScript API](/javascript/api/overview/powerbi/export-data), custom and R visuals aren't supported.
 - In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.
 - If there are Unicode characters in the *.csv* file, the text in Excel might not display properly. Examples of Unicode characters are currency symbols and foreign words. You can open the file in Notepad and the Unicode displays correctly. If you want to open the file in Excel, the workaround is to import the *.csv*. To import the file into Excel:
   1. Open Excel.
