@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 12/01/2025
+ms.date: 07/22/2026
 ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 #customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
@@ -41,7 +41,7 @@ In this tutorial, you complete the following tasks:
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account and plan on creating content, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a license. Open the Power BI service (app.powerbi.com), and select the **Account manager** icon. Choose **Free trial**.
+You can create reports in your My workspace with a free Power BI (Fabric) license, but you need a Power BI Pro or Premium Per User (PPU) license to share reports with others or to publish to shared workspaces. If you don't have a Power BI account and plan on creating content that you can share, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a license. Open the Power BI service (app.powerbi.com), and select the **Account manager** icon. Choose **Free trial**.
 
 Although a paid or trial license is recommended, it isn't required for this tutorial. Even if you can't try the steps yourself, the description and screenshots still provide you with an introduction to working with data in the Power BI service.  
 
