@@ -145,7 +145,7 @@ For existing reports, you can update to the latest base theme:
 
 You can also select the **Reset to default** tile (the first theme in the Power BI section of the Themes dropdown) to remove any custom theme and apply the latest base theme to your report.
 
-The **Reset to default** tile in the **View** ribbon's **Themes** dropdown removes any customizations to the current theme or custom theme that's applied to the report, leaving only the chosen base theme. It doesn't affect styling that you've set on individual visuals from the formatting pane. To revert an individual visual to the current theme's defaults, use **Reset to default** on the visual's formatting pane (see [Reset formatting](#reset-formatting)).
+The **Reset to default** tile in the **View** ribbon's **Themes** dropdown removes any customizations to the current theme or custom theme applied to the report, leaving only the chosen base theme. It doesn't affect styling you set on individual visuals from the formatting pane. To revert an individual visual to the current theme's defaults, use **Reset to default** on the visual's formatting pane (see [Reset formatting](#reset-formatting)).
 
 > [!TIP]
 > If your custom theme doesn't work with the new modern defaults, you can undo the update to revert to the previous base theme until you're ready to update your custom theme.
@@ -175,6 +175,63 @@ To reset all formatting on a visual, select **Reset to default** in the visual's
 
 > [!NOTE]
 > **Reset to default** also removes actions on buttons and images, conditional formatting rules, images from URLs or data-bound fields, and other data-bound items like reference labels.
+
+## Customize current theme from the Format pane
+
+When the preview is enabled, you can customize your report's theme defaults directly from the Format pane. Select away from any visual so nothing is selected on the page. The Format pane displays **Customize current theme** options.
+
+Your report updates immediately with each change. Switch between pages to see the impact as you adjust the theme.
+
+The Format pane displays the following options:
+
+- **Theme settings**: Open the full theme customization dialog.
+- **Colors**: Select a color palette and customize data, structural, sentiment, and divergent colors.
+- **Text**: Customize default text styles for your report.
+- **Visual properties**: Turn visual elements on or off and customize their appearance.
+- **Page**: Configure canvas settings, background, and wallpaper.
+- **Filter pane**: Customize the filter pane appearance.
+- **Filter cards**: Adjust filter card formatting for the current page and all new pages.
+
+These changes create a custom theme layered on top of your base theme. Styling applied directly to individual visuals or pages takes precedence over custom theme defaults.
+
+### Colors
+
+Expand **Colors** to customize the color scheme for your report:
+
+- **Color palette**: Select a built-in palette such as Sunset, Accessible Default, or Electric. The palette updates your report's colors while preserving other customizations.
+- **Data**: Customize colors used for data series in visuals.
+- **Structural**: Customize colors for visual structure elements.
+- **Sentiment**: Customize colors for positive, neutral, and negative sentiment.
+- **Divergent colors**: Customize colors for divergent scales.
+
+### Visual properties
+
+Expand **Visual properties** to configure defaults that apply to all visuals across your report:
+
+- **Background**: Turn visual backgrounds on or off and customize the color.
+- **Border**: Turn borders on or off and customize color, thickness, and corner radius.
+- **Header icons**: Turn header icons on or off and customize their appearance.
+- **Tooltip**: Turn tooltips on or off and customize their appearance.
+- **Shadow**: Turn shadows on or off and customize color, size, and position.
+- **Padding**: Adjust the default padding for all visuals.
+
+These settings update existing visuals that use default styling, while preserving any customizations you made to individual visuals. New visuals you add inherit the theme defaults.
+
+### Page
+
+Expand **Page** to update page settings across all pages at once:
+
+- **Canvas settings**: Set the default page size for new pages.
+- **Canvas background**: Change the background color across all pages.
+- **Wallpaper**: Change the wallpaper color across all pages.
+
+### Export your custom theme
+
+Export your custom theme for reuse:
+
+1. In the Format pane, expand **Theme settings**.
+1. Select **Export theme** to save your theme as a JSON file.
+1. Use the exported theme in other reports or add it to your [organizational themes](desktop-organizational-themes.md).
 
 ## Considerations and limitations
 
