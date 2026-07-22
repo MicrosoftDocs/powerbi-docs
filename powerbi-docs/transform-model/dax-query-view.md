@@ -142,6 +142,19 @@ Alternatively, you can add or overwrite multiple measures at once by clicking th
 
 :::image type="content" source="media/dax-query-view/update-model-with-changes-button.png" alt-text="Screenshot of the Update model with changes button available in DAX query view." lightbox="media/dax-query-view/update-model-with-changes-button.png":::
 
+#### Add measure descriptions
+
+You can add measure descriptions directly in DAX query view using the triple-slash (`///`) comment syntax that TMDL supports for both measure and function descriptions. Add one or more `///` comment lines directly above your `MEASURE` definition, select **Update model with changes**, and the description is saved to the model along with the measure definition.
+
+```dax
+DEFINE
+    /// Year-over-year sales growth, as a percentage.
+    /// Returns BLANK when there is no prior-year value.
+    MEASURE Sales[YoY Growth %] = ...
+```
+
+Once saved, the description travels with the measure. Hover over the measure in DAX query view, in Model Explorer, or in the **Data** pane to see the description in the tooltip next to the measure name. The description also carries through to the quick queries that DAX query view generates. When you right-click a measure and choose **Quick queries** > **Define and evaluate** (or any other **Define** option), Power BI generates a `DEFINE MEASURE` statement in DAX query view that includes the description as `///` comments above the measure definition.
+
 #### Measure update workflow
 
 The light bulb quick actions and CodeLens can be used together in a complete workflow:

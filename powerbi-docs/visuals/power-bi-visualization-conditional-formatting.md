@@ -6,7 +6,7 @@ ms.author: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: concept-article
-ms.date: 01/29/2026
+ms.date: 07/01/2026
 LocalizationGroup: Visualizations
 ai-usage: ai-assisted
 #customer intent: As a Power BI user, I want to understand conditional formatting options across different visuals so that I can create more impactful and data-driven reports.
@@ -28,9 +28,12 @@ Conditional formatting is available for many Power BI visuals, though the specif
 |-------------|------------------------------|
 | **Tables** | Background color, font color, data bars, icons, web URLs, column width |
 | **Matrices** | Background color, font color, data bars, icons, web URLs, column width |
-| **Column charts** | Column colors (gradient, rules, field value) |
-| **Bar charts** | Bar colors (gradient, rules, field value) |
-| **Stacked charts** | Bar/column colors |
+| **Column charts** | Column colors (gradient, rules, field value), legend colors |
+| **Bar charts** | Bar colors (gradient, rules, field value), legend colors |
+| **Stacked charts** | Bar and column colors, legend colors |
+| **Line charts** | Line colors (gradient, rules, field value), legend colors |
+| **Pie and donut charts** | Slice colors (gradient, rules, field value), legend colors |
+| **Treemaps** | Rectangle colors (gradient, rules, field value), legend colors |
 | **Button slicers** | Button backgrounds, borders, callout values, callout labels, button effects |
 | **Cards** | Callout values, labels, and other card elements |
 | **Gauges** | Target colors, callout values |
@@ -38,7 +41,7 @@ Conditional formatting is available for many Power BI visuals, though the specif
 | **Most visuals** | Titles, subtitles (expression-based) |
 
 > [!NOTE]
-> Line charts don't natively support conditional formatting for lines, shaded areas, or markers. Some visuals offer fewer conditional formatting options than others.
+> Some visuals offer fewer conditional formatting options than others.
 
 ## Customize visual titles and subtitles
 
@@ -150,19 +153,64 @@ Field errors typically occur when:
 
 To resolve a field error, open the conditional formatting dialog and select a different, valid field. You can also remove the conditional formatting entirely and reapply it with a new field.
 
+## Format visuals with legends
+
+You can apply conditional formatting to visuals that use legends, including bar charts, column charts, line charts, pie charts, donut charts, and treemaps. When a visual has a legend, you can conditionally format colors for each category in the legend.
+
+This capability is useful for ensuring consistent category colors across your entire report. For example, if multiple visuals use Segment as their legend, you can color each segment using a single DAX measure. Every visual displays the same color for the same category. When you need to change a segment's color, update the measure once and all visuals reflect the new color.
+
+The following DAX measure returns a hex color code based on the selected segment. This example uses the Financial sample data available in Power BI Desktop:
+
+```dax
+Segment Color = 
+SWITCH (
+    SELECTEDVALUE ( financials[Segment] ),
+    "Channel Partners", "#1F77B4",
+    "Enterprise",       "#2CA02C",
+    "Government",       "#9467BD",
+    "Midmarket",        "#FF7F0E",
+    "Small Business",   "#D62728",
+    "#7F7F7F"
+)
+```
+
+When you apply background colors to tables and matrices, you might also need to adjust font colors to maintain readability. Most visual data labels automatically adjust their font color based on the background, but tables and matrices require you to specify both background and font colors with conditional formatting. The following DAX user-defined function returns black or white based on the background color's luminance. Run this query in DAX query view in Power BI Desktop to create the function, then use it in a measure for font color conditional formatting:
+
+```dax
+DEFINE
+    /// Returns black or white font color based on hex background luminance
+    /// @param {STRING} hexColor - Hex color code (e.g., "#117865")
+    /// @returns "#000000" for light backgrounds, "#FFFFFF" for dark backgrounds
+    FUNCTION GetFontColor = ( hexColor : STRING ) =>
+        VAR CleanHex = UPPER(SUBSTITUTE(hexColor, "#", ""))
+        VAR R = (FIND(MID(CleanHex,1,1), "0123456789ABCDEF") - 1) * 16 
+              + (FIND(MID(CleanHex,2,1), "0123456789ABCDEF") - 1)
+        VAR G = (FIND(MID(CleanHex,3,1), "0123456789ABCDEF") - 1) * 16 
+              + (FIND(MID(CleanHex,4,1), "0123456789ABCDEF") - 1)
+        VAR B = (FIND(MID(CleanHex,5,1), "0123456789ABCDEF") - 1) * 16 
+              + (FIND(MID(CleanHex,6,1), "0123456789ABCDEF") - 1)
+        VAR Luminance = (0.299 * R + 0.587 * G + 0.114 * B) / 255
+        RETURN IF(LEN(CleanHex) = 6, IF(Luminance > 0.5, "#000000", "#FFFFFF"), "#000000")
+
+EVALUATE
+    {
+        GetFontColor([Segment Color])
+    }
+```
+
+For line charts, you can also format line colors using a gradient based on the total value of each line, or by the category it represents. For example, when overlaying multiple years by month, apply a gradient that displays the most recent year in blue while older years fade to lighter shades of grey. Markers and series labels automatically inherit the conditional formatting until you choose to color them differently.
+
+:::image type="content" source="media/power-bi-visualization-conditional-formatting/conditional-formatting-legends.png" alt-text="Screenshot showing a Power BI report with multiple visuals using conditional formatting. A table displays segment names with hex color codes. A donut chart, clustered column chart, and line chart all show units by segment using the same colors from the table. A separate line chart shows units shipped by year with 2026 in blue fading to grey for older years. The Format pane shows the fx button for line color conditional formatting.":::
+
 ## Considerations and limitations
 
 Keep these considerations in mind when working with conditional formatting:
-
-- **Legend limitations**: When a visual uses a legend (such as a column chart with multiple series), conditional formatting for colors might not be available. The legend controls the color assignment for each series, which overrides conditional formatting options.
 
 - **Numeric data required for gradients**: Gradient formatting requires numeric values. You can't apply gradient formatting directly to text fields without first creating a measure that maps text to numbers or colors. Rules-based formatting, however, supports both numeric and text values.
 
 - **NaN values**: You can't apply gradient formatting with automatic maximum/minimum values, or rule-based formatting with percentage rules, if your data contains NaN (not a number) values. Use the [DIVIDE() DAX function](/dax/divide-function-dax) to avoid divide-by-zero errors that cause NaN values.
 
 - **Aggregation required**: Conditional formatting needs an aggregation or measure to be applied to the value. If you're working with an Analysis Service multidimensional cube, you can't use an attribute for conditional formatting unless the cube owner builds a measure that provides the value.
-
-- **Visual-specific limitations**: Not all visual elements support conditional formatting. For example, line charts don't support conditional formatting for lines or markers.
 
 - **Printing**: When printing a report that includes data bars and background colors, enable **Background graphics** in the browser's print settings for the formatting to print properly.
 

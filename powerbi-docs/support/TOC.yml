@@ -32,6 +32,25 @@
       href: tenant-migration-patterns.md
 
 # =============================================================================
+# MIGRATE FROM POWER BI PREMIUM TO MICROSOFT FABRIC
+# =============================================================================
+  - name: Migrate from Power BI Premium to Microsoft Fabric
+    expanded: true
+    items:
+    - name: Migration overview
+      href: premium-migration-overview.md
+      displayName: P SKU, F SKU, premium retirement, fabric capacity migration
+    - name: Migration decision guide
+      href: premium-migration-decision-guide.md
+      displayName: P SKU, F SKU, SKU mapping, right-size, cross-region
+    - name: Migrate workspaces from Power BI Premium to Microsoft Fabric
+      href: premium-migration-how-to.md
+      displayName: reassign workspace, capacity migration notebook, validate migration, large semantic model, Fabric items cross-region
+    - name: Migration FAQ
+      href: premium-migration-faq.md
+      displayName: P to F migration questions, grace period, F64 viewer, embedded, Report Server
+
+# =============================================================================
 # ABOUT SUPPORT REQUESTS
 # =============================================================================
   - name: About support requests
