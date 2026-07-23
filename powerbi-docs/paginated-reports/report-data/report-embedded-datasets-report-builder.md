@@ -16,7 +16,7 @@ ms.reviewer: rpatkar
 
   A dataset specifies the data that you want to use from a data connection. A dataset is based on a data connection that has been saved in the report as an embedded data source. The dataset includes a query that specifies a set of fields. As you drag these fields to the design surface, you create expressions that evaluate to the actual data when the report runs.  
   
- Paginated reports on Power BI service support embedded dataset.
+ Paginated reports on Power BI service support embedded datasets.
   
 - **Embedded dataset.** An embedded dataset is defined in and used by only the report it is embedded in. Use an embedded dataset when you want to get data from an external data source to be used only in one report. Changes made to an embedded dataset affect only that report.
   

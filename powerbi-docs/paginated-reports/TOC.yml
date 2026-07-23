@@ -55,7 +55,7 @@
     href: report-builder-planning-report.md
   - name: Design tips
     href: ./report-builder-design-tips.md
-  - name: Link multiple data regions to the same semantic model
+  - name: Link multiple data regions to the same dataset
     href: ./report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md
   - name: Format paginated report items
     items:
@@ -193,7 +193,7 @@
       href: ./report-design/sort-data-data-region-report-builder.md
     - name: Add a filter to a paginated report
       href: ./report-design/add-filter-report-builder.md
-    - name: Add filters to semantic models, data regions, and groups
+    - name: Add filters to datasets, data regions, and groups
       href: ./report-design/add-dataset-filters-data-region-filters-and-group-filters.md
     - name: Commonly used filters
       href: ./report-design/commonly-used-filters-report-builder-and-service.md
@@ -393,9 +393,9 @@
       href: ./paginated-reports-odbc-support.md
     - name: Create an embedded data source
       href: ./paginated-reports-embedded-data-source.md
-    - name: Report embedded semantic models
+    - name: Report embedded datasets
       href: ./report-data/report-embedded-datasets-report-builder.md
-    - name: Create an embedded semantic model
+    - name: Create an embedded dataset
       href: ./paginated-reports-create-embedded-dataset.md
     - name: Set a No Data message for a data region
       href: ./report-data/set-no-data-message-data-region-report-builder.md
@@ -403,15 +403,15 @@
       href: ./report-data/report-data-pane.md
     - name: Create data connection strings
       href: ./report-data/data-connections-data-sources-connection-strings-report-builder.md
-    - name: semantic model fields collection
+    - name: Dataset fields collection
       href: ./report-data/dataset-fields-collection-report-builder.md
-    - name: semantic model properties options
+    - name: Dataset properties options
       href: ./report-data/dataset-properties-dialog-box-options-report-builder.md
-    - name: Set time-out values for paginated report semantic model processing
+    - name: Set time-out values for paginated report Dataset processing
       href: ./report-design/setting-time-out-values-for-report-dataset-processing.md
     - name: Use a text-based query designer
       href: ./report-data/text-based-query-designer-user-interface-report-builder.md
-    - name: Add a filter to a semantic model
+    - name: Add a filter to a Dataset
       href: ./report-data/add-filter-to-dataset.md
 - name: Connect external sources
   items:
@@ -451,9 +451,9 @@
         href: ./expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md
       - name: "Built-in collections: Report and group variables references"
         href: ./expressions/built-in-collections-report-group-variables-references-report-builder.md
-      - name: "Built-in collections: semantic model Fields collection references in a paginated report"
+      - name: "Built-in collections: Dataset Fields collection references in a paginated report"
         href: ./expressions/built-in-collections-dataset-fields-collection-references-report-builder.md
-      - name: "Built-in collections: DataSources and semantic models references in a paginated report"
+      - name: "Built-in collections: DataSources and dataset references in a paginated report"
         href: ./expressions/built-in-collections-datasources-and-datasets-references-report-builder.md
       - name: "Built-in collections in expressions in a paginated report"
         href: ./expressions/built-in-collections-in-expressions-report-builder.md
@@ -655,7 +655,7 @@
   items:
   - name: Edit a paginated report from the Power BI service
     href: ./paginated-reports-edit-service.md
-  - name: Create a report with a Power BI shared semantic model
+  - name: Create a report with a Power BI shared dataset
     href: ./report-builder-shared-datasets.md
   - name: Create a paginated report from a Power BI report
     href: ./paginated-reports-download-rdl.md
