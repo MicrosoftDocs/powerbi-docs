@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Apply conditional formatting in tables and matrices
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article explains how to apply conditional formatting specifically to table and matrix visuals in Power BI. For an overview of conditional formatting across all visual types, see [Conditional formatting in Power BI visuals](../visuals/power-bi-visualization-conditional-formatting.md).
 

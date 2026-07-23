@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Images, text boxes, rectangles, and lines in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   In addition to data regions like tables, matrices, and charts, Power BI paginated reports use other report items like images, text boxes, and rectangles to add visual interest, highlight key information, or provide related information. You can change the formatting of a report item. For example, you can add a border or padding, change the initial visibility or direction, or specify an exact size and location for the item.  
   

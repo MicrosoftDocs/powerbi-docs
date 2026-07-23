@@ -16,11 +16,8 @@ ms.custom: mode-portal, intro-quickstart
 
 This article introduces the Power BI mobile app home page, highlighting its main features and navigation aids to help you find content quickly.
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png"::: | :::image type="icon" source="./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png"::: | :::image type="icon" source="./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png"::: |
-|:--- |:--- |:--- |
-| iPhone | iPad | Android |
 
 When you open Power BI Mobile app, you land on the home page, where you have **quick access** to your most Frequent, Recent, and Recommended reports, dashboards, apps, and scorecards. In addition, there is the **metrics hub** that enables you to keep on top of your metrics, and an **activity feed** that keeps you up-to-date about what's happening with your Power BI content. Finally, there are also convenient navigation aids to get you quickly to the content you need.
 

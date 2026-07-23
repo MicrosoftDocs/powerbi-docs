@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Polar charts in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   A polar chart in a Power BI paginated report displays a series as a set of points that are grouped by category on a 360-degree circle. Values are represented by the length of the point as measured from the center of the circle. The farther the point is from the center, the greater its value. Category labels are displayed on the perimeter of the chart. For more information on how to add data to a polar chart, see [Charts (Power BI Report Builder)](charts-report-builder.md).  
   

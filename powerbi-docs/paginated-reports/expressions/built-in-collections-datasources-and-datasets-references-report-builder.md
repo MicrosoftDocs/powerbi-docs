@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Built-in collections - DataSources and DataSets references in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   The **DataSources** collection represents all the data sources used in a paginated report. Similarly, the **DataSets** collection represents all the datasets for all the data sources in a report. Use the **Report Data** pane for a hierarchical view of report datasets organized under the data source they reference.  
   

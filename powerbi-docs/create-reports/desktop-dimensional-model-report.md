@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Tutorial: From dimensional model to stunning report in Power BI Desktop 
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 In this tutorial, you start with a dimensional model and build a beautiful report from start to finish in 45 minutes.
 

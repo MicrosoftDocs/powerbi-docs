@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Tablix data region in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   In Power BI Report Builder, the tablix data region is a generalized layout report item that displays paginated report data in cells that are organized into rows and columns. Report data can be detail data as it is retrieved from the data source, or aggregated detail data organized into groups that you specify. Each tablix cell can contain any report item, such as a text box or an image, or another data region, such as a tablix region, chart, or gauge. To add multiple report items to a cell, first add a rectangle to act as a container. Then, add the report items to the rectangle. 
   

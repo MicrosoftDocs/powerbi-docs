@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Summarize a report with Copilot
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Copilot helps you create insightful summaries about your reports. It takes the visuals that report authors curate and build, and generates summaries, overviews, insights, and answers that are grounded in the report data. You can access these summaries in the Copilot report pane or in the standalone Copilot agent in Power BI. 
 

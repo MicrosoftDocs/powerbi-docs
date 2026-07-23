@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 
 # Dashboard tiles in Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Dashboard tiles are snapshots of your data that designers pin to dashboards in the Power BI service. This article helps business users understand how to open, interact with, and troubleshoot different types of tiles, including those from SQL Server Reporting Services (SSRS).
 

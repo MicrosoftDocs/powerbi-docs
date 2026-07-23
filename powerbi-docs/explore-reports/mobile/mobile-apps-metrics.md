@@ -14,11 +14,8 @@ ms.custom: mode-portal
 ---
 # Metrics
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-metrics/ios-logo-40-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-metrics/ios-logo-40-px.png" border="false":::| :::image type="icon" source="././media/mobile-apps-metrics/android-logo-40-px.png" border="false":::| :::image type="icon" source="././media/mobile-apps-metrics/android-logo-40-px.png" border="false":::|
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
 
 The Power BI mobile apps make it easy for you to keep on top of your metrics while on the go. While scorecards and metrics are [created in the Power BI service](../../create-reports/service-goals-create.md), in the app you can monitor progress on your metrics, make check-ins to update progress, add notes, and, when a metric is connected to a report, easily open the associated report to dig deeper into the data.
 

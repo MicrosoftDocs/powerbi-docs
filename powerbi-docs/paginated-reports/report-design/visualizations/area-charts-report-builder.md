@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Area charts in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   An area chart in Power BI paginated report displays a series as a set of points connected by a line, with all the area filled in below the line. For more information on how to add data to an area chart, see [Charts (Power BI Report Builder)](charts-report-builder.md).  
   

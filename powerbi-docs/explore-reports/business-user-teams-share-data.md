@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 
 # Share Power BI data in Microsoft Teams channels, chats, and meetings
 
-[!INCLUDE [consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 You can share Power BI reports, scorecards, and dashboards in Microsoft Teams by adding a Power BI tab to a channel, chat, or meeting, or by pasting links that become rich preview cards.
 

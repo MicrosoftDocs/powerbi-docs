@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Create a matrix visual in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The matrix visual in Power BI is a powerful tool used to display and analyze data across multiple dimensions. Similar to a pivot table in Excel, the matrix visual allows you to organize data into rows and columns, making it easier to understand complex datasets. Each cell in the matrix represents a specific data point, with the ability to drill down into more detailed levels of information. This design facilitates a comprehensive view of data, enabling users to identify patterns and trends across various dimensions.
 

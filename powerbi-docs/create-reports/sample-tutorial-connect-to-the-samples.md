@@ -14,7 +14,7 @@ LocalizationGroup: Samples
 ---
 # Tutorial: Explore a Power BI sample
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI has several built-in samples with a report and semantic model. You can either import them into the [Power BI service (https://app.powerbi.com)](https://app.powerbi.com) or download and open sample files in Power BI Desktop.
 

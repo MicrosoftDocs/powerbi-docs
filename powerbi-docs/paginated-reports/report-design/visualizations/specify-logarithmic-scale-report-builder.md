@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Specify logarithmic scale in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   If you have data that is logarithmically proportional, you might want to consider using a logarithmic scale on a chart in a paginated report. This scale helps improve the appearance of the chart by making your data more manageable. Most logarithmic scales use a base of 10.  
   

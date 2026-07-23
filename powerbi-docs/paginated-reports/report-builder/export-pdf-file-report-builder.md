@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Export Power BI paginated report to a PDF File (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 The PDF rendering extension renders paginated reports to files that can be opened in Adobe Acrobat and other third-party PDF viewers that support PDF 1.3. Although PDF 1.3 is compatible with Adobe Acrobat 4.0 and later versions, Reporting Services supports Adobe Acrobat 11.0 or later. The rendering extension does not require Adobe software to render the report. However, PDF viewers such as Adobe Acrobat are required to view or print a report in PDF format.  
   

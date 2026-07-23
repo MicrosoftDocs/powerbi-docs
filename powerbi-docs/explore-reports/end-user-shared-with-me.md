@@ -15,7 +15,7 @@ LocalizationGroup: Consumer
 
 # View shared dashboards and reports in Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Your colleagues create apps, reports, dashboards, scorecards, workspaces, and semantic models. When it's time to share these items with you or ask for your collaboration, they can use several methods. This article explains how to view and open content that others shared with you.
 

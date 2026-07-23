@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Add a border frame to a chart in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   To give a chart in a Power BI paginated report more visual impact, consider using a border frame around the outside of the chart. You can select a border frame by using the **Chart Properties** dialog box or by using the Properties pane. The chart border frames cannot be applied to any other data region.  
   

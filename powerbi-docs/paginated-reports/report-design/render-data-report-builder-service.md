@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Render data in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 When you use Power BI paginated report layout renderers, such as HTML, MHTML, Word, Excel, PDF or Image, the data and its organization remains unchanged. When you export using a data renderer format, such as Comma-Separated Value (CSV) or XML, no visual layout elements are rendered. CSV and XML apply certain rules to the report body and its contents when rendering the paginated report. These rules determine how the data is rendered in these formats.  
 

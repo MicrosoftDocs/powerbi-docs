@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # Arrange columns, goals, and scorecards
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 In some scenarios, you want to rename, hide, or put the columns in a different order. You can also reorder the goals in a scorecard, make one goal a subgoal of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make the following changes to optimize the scorecard for your audience:
 

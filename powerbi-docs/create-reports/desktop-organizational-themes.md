@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Use organizational themes (preview)
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Organizational themes (preview) allow Power BI administrators to centrally manage and distribute custom report themes across the organization. Maintaining a consistent visual identity across Power BI reports is now simpler and more scalable, thanks to organizational themes. Whether reports are built manually or generated with Copilot, this feature ensures that styling and branding stay aligned with your organization's identity and design standards.
 

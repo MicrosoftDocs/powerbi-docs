@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Rendering behaviors in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Depending on the renderer you select, certain rules are applied to the Power BI paginated report body and its contents when rendering a report. How report items fit together on a page is determined by the combination of these factors:  
   

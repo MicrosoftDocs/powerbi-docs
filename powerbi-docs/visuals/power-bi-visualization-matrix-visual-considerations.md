@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Matrix visual considerations and limitations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article lists known considerations and limitations for matrix visuals in Power BI Desktop and the Power BI service.
 

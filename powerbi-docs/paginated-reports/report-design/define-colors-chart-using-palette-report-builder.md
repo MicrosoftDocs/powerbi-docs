@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Define colors on a paginated report chart using a palette (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   You can change the color palette for a Power BI paginated report chart by selecting a pre-defined palette or defining a custom palette. Custom palettes are chart-specific.  
   

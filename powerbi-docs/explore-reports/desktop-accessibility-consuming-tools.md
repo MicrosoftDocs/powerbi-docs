@@ -15,7 +15,7 @@ LocalizationGroup: Consumer
 
 # Consume Power BI reports by using accessibility features
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI has many built-in features to help people with disabilities more easily consume and interact with Power BI reports. These tools help users get the same information from a report as users who don’t use assistive technology.
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tool-01.png" alt-text="Screenshot showing the high contrast windows settings.":::

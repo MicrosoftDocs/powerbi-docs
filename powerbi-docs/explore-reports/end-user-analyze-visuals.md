@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Use the analyze feature to explain fluctuations in report visuals
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 When there are large increases and sharp drops in values on report visuals, you might wonder about the cause of such fluctuations. With **Analyze** in **the Power BI service**, you can easily find the reason.
 

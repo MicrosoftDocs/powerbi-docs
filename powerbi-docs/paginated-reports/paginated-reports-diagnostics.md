@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # View diagnostics for Power BI paginated reports
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 In this article, you learn how to view, read, and use the diagnostics feature of a paginated report rendered in the Power BI service. Diagnostics data provides report viewers with the ability to read displayed data on performance metrics and rendering. 
 

@@ -12,7 +12,7 @@ ms.reviewer: cookiemccray
 ---
 # Accessibility features in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 You can create paginated reports with accessibility. Power BI Report Builder has accessibility features that help you create a paginated report that's inclusive and usable by all. As a report creator, it's important to know these features and their functionalities to use them in making your paginated reports accessible to people who are blind, have low vision, or have physical disabilities. Designing your report for accessibility doesn't just benefit users with disabilities. It benefits everyone because it improves the usability of your report.
 

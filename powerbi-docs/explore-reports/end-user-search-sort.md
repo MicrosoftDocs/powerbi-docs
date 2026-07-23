@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # Search and find content in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 The Power BI service includes search and filter tools to help you quickly find dashboards, reports, apps, and other content. When you're new to Power BI, you have only a few pieces of content. But as colleagues share content with you and you download apps, you can end up with long lists. Global search and sorting help you navigate your content efficiently.
 

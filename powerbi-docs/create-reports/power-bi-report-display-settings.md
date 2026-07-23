@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 ---
 # Apply page size and settings in a Power BI report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI reports display on screens with different sizes and aspect ratios. You can configure your report's page size and display settings to control how content appears across devices.
 

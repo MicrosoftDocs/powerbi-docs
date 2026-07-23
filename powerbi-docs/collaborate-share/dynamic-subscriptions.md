@@ -18,7 +18,7 @@ ms.custom:
 
 # Dynamic per recipient subscriptions for paginated reports 
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Dynamic per-recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters to apply to their version of the report.
 

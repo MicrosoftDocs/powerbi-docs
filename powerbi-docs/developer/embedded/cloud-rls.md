@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Embed a report with RLS
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 This article explains how to embed Power BI content that uses RLS into a standard Power BI app owns data application.
 

@@ -12,7 +12,7 @@ ms.reviewer: cookiemccray
 ---
 # Use accessibility tools to interact with paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 People with physical disabilities, low-vision, or temporary disabilities can consume and interact with paginated reports and get the same information and value from a report as people without disabilities. This article describes the accessibility tools available for consuming paginated reports.
 

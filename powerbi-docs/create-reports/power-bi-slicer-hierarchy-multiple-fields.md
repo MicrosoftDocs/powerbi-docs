@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Add multiple fields to a hierarchy slicer
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 If you want to filter multiple related fields in a single slicer, you do so by building what's called a *hierarchy* slicer. You can create these slicers in either Power BI Desktop or in the Power BI service.
 

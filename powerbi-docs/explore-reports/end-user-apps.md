@@ -19,7 +19,7 @@ LocalizationGroup: Share your work
 > [!NOTE]
 > Power BI apps are also referred to as *workspace apps* to differentiate them from [org apps](org-app-items.md), a Fabric item type.
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 ## What is a Power BI app?
 

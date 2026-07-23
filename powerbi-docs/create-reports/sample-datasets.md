@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 ---
 # What are Power BI samples
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Ready to explore Power BI hands-on? This page brings together ready-made samples, reports, and datasets you can open, inspect, and reuse to learn Power BI fast. Get access to built-in samples and apps, downloadable .pbix and .pbit files, Excel workbooks, and SQL sample databases — all with direct download links and links to articles that explain the data model, visuals, and techniques used. 
 

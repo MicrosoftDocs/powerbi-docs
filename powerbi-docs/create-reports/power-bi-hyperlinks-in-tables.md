@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Add hyperlinks (URLs) to a table or matrix
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article explains how to add hyperlinks (URLs) to a table or matrix visual. The process starts in Power BI Desktop where designers add hyperlinks (URLs) to a semantic model. Once the semantic model contains the hyperlinks, you can add them to tables and matrixes in Desktop or the Power BI service. Display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
 

@@ -13,11 +13,8 @@ ms.custom: sfi-image-nochange
 ---
 # Explore reports in the Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png" border="false"::: | :::image type="icon" source="././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png" border="false"::: |
-|:---: |:---: |:---: |:---: |
-| iPhones |iPads |Android phones |Android tablets |
 
 > [!NOTE]
 > The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.

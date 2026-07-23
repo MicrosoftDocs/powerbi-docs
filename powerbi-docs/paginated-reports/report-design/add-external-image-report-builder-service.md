@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Add an external image to a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 When you include external images in your Power BI paginated report, you must verify that the image exists and that it can be accessed over the internet without requiring authentication. 
  

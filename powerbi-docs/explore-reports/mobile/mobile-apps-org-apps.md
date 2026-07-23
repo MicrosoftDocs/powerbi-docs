@@ -13,11 +13,8 @@ ms.custom: mode-portal
 
 # View and navigate org apps in the Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| ![iPhone](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-metrics/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-metrics/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-metrics/android-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
 
 Org apps are the next generation of Power BI apps, designed to simplify access to Power BI and Fabric items. In the Power BI mobile apps, users can view org apps and interact with supported content. 
 

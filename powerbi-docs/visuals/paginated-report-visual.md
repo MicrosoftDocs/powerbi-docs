@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Create and use the paginated report visual
 
-[!INCLUDE [applies-yes-paginated-yes-service-yes-desktop](../includes/applies-yes-paginated-yes-service-yes-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service-report-builder](../includes/applies-to-version/desktop-service-report-builder.md)]
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you've uploaded to the service in a Power BI report.
 

@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 # How visuals cross-filter each other in a Power BI report
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain the same data change based on your selection.
 

@@ -12,7 +12,7 @@ ms.reviewer: joshger
 ---
 # Set time-out values for paginated report dataset processing (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service-report-builder](../../includes/applies-to-version/service-report-builder.md)]
 
 Most time-out errors occur during query processing. If you are encountering time-out errors, try increasing the dataset query time-out value. 
   

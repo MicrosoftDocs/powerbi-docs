@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Edit a paginated report from the Power BI service using Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article explains how to quickly edit a paginated report in Power BI Report Builder directly from a workspace in the Power BI service. 
 

@@ -14,7 +14,7 @@ ms.custom: sample-salesandmarketing
 
 # Create connected goals in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Scorecards in Power BI let you curate your goals and track them against key business objectives. When you choose values for your goals, you can:
 

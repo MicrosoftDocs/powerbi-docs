@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Interact with visuals in reports, dashboards, and apps
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 At its most basic, a visualization (or visual) is a chart built by Power BI designers using the data in reports and semantic models.
 

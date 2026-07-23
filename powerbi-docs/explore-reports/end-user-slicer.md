@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Use slicers in the Power BI service
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 :::image type="content" source="media/end-user-slicer/power-bi-slider.png" alt-text="Screenshot of comparing 2 different selections on horizontal slicer.":::
 

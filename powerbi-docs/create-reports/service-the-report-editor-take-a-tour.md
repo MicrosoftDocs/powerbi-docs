@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Tour the report editor in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI Desktop and in the Power BI service, you use the *report editor* to design the reports your consumers see, with charts, tables, maps, and other visuals. It's similar in the two environments. Typically, you start creating a report in Power BI Desktop. Then you publish it to the Power BI service, where you can continue modifying it. You create the dashboards in the Power BI service based on your reports.
 

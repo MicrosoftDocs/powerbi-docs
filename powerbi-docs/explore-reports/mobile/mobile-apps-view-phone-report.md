@@ -12,11 +12,8 @@ ai-usage: ai-assisted
 ---
 # View Power BI reports optimized for your phone
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-view-phone-report/ios-logo-40-px.png" border="false"::: | :::image type="icon" source="./media/mobile-apps-view-phone-report/android-logo-40-px.png" border="false"::: |
-|:--- |:--- |
-| iPhones |Android phones |
 
 When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the report in the optimized view.
 

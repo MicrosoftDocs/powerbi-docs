@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add or remove margins from a Power BI paginated report chart (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 For the Column and Scatter types of chart in Power BI paginated reports, the chart automatically adds side margins at the ends of the x-axis in the chart. In Bar chart types, the chart automatically adds side margins at the ends of the y-axis in the chart. In all other chart types, the chart does not add side margins. Also, you cannot change the size of the side margin.  
 This topic does not applies to pie, donut, funnel, or pyramid chart types.  

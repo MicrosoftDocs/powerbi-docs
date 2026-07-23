@@ -12,7 +12,7 @@ ms.reviewer: rvpatkar
 ---
 # Improve accessibility in paginated reports with StructureTypeOverwrite (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)] 
 
 The StructureTypeOverwrite property has been added to the .rdl model. You can use it to improve accessibility in paginated reports in Microsoft Report Builder and Power BI Report Builder. Report Viewer also respects the property in Power BI Report Server.
 

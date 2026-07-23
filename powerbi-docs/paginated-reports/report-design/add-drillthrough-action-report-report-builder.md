@@ -11,7 +11,7 @@ ms.topic: how-to
 ---
 # Add a drillthrough action on a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 The Power BI paginated report that opens when you select the link in the main paginated report is known as a *drillthrough report*. This drillthrough link enables a drillthrough action.  
   

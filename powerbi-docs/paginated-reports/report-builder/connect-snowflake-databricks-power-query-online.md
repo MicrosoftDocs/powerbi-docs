@@ -12,7 +12,7 @@ ms.reviewer: nirusrin
 ---
 # Connect paginated reports to data sources using Power Query in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 In Power BI Report Builder, you can create paginated reports that are optimized for printing and sharing. You can connect to various data sources, such as SQL Server, Azure SQL Database, Dataverse, and more. But what if you want to connect to data sources that aren't natively supported by Power BI Report Builder, such as Snowflake, Databricks, AWS Redshift, and others? 
 

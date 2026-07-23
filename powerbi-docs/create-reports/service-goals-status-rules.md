@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Create automated status rules for goals in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Goals in Power BI let you curate your goals and track them against key business objectives in a single pane. You can automate status updates based on rules that govern a goal. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible.
 

@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 ---
 # Troubleshoot visualizations in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The article describes considerations and limitations for Power BI visualizations, and how to troubleshoot common problems with content distribution. It addresses both potential and known problems, while offering solutions to help ensure consistency and optimal performance in report design and user experience.  
 

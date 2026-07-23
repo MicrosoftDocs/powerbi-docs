@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Create a paginated report based on a Power BI shared dataset
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You create a Power BI report in Power BI Desktop. You spend a lot of time designing the data model, then create a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that shows all the rows in that matrix.
 

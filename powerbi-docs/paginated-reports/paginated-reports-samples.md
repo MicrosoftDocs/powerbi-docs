@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Sample Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 This article provides information and links to several sample Power BI paginated reports to download and explore. They demonstrate typical ways you can use paginated reports.
 

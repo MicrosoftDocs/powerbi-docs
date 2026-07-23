@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Multiselect data elements, data points, and visuals in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 You can select multiple data points in a visual or multiple visuals in a report in Power BI Desktop or the Power BI service. The following sections describe each in turn. Depending on how many data points you select in a visual, you're changing the [cross-filtering and cross-highlighting](power-bi-reports-filters-and-highlighting.md#cross-filter-and-cross-highlight-visuals) the other visuals on the page.
 

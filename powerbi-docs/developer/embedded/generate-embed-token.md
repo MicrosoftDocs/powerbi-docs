@@ -14,7 +14,7 @@ ms.date: 05/11/2026
 
 # Generate an embed token
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 [Generate token](/rest/api/power-bi/embed-token/generate-token) is a REST API that lets you generate a token for embedding a Power BI report or semantic model in a web app or a portal. It can generate a token for a single item or for multiple reports or semantic models. The token is used to authorize your request against the Power BI service.
 

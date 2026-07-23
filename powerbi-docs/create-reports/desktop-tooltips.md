@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 # Create report tooltips in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 > [!NOTE]
 > The location and availability of tooltip options might change between Power BI Desktop versions. If you don't see the options described in this article, make sure you're using the latest version and check the official documentation for UI changes.

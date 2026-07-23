@@ -15,7 +15,7 @@ ms.custom: references_regions
 
 # Create dynamic format strings for measures
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 By using *dynamic format strings for measures*, you can control how measures appear in visuals. Conditionally apply a format string by using a separate Data Analysis Expression (DAX) formula.
 

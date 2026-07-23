@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 ---
 # Visual defaults in Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Every Power BI report has a *base theme* that defines the default colors, fonts, and styles for all visuals. The base theme provides the foundation for your report's appearance. When you apply a [custom theme](desktop-report-themes.md), it layers on top of the base theme, overriding specific styles while inheriting the rest.
 

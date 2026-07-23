@@ -14,7 +14,7 @@ ms.date: 04/09/2026
 
 # Create and use a List slicer (preview)
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 The List slicer (preview)  in Power BI is an interactive visual that filters data directly within reports and dashboards. It offers a dynamic way to explore large datasets by selecting values from a vertically arranged list.
 

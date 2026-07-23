@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # End-to-end: From raw data to a shared Power BI app
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In this tutorial, you walk through the complete report creation journey in Power BI - from raw data sitting in storage, through a reusable semantic model, to a polished report that you publish, package as an app, and hand off to a business audience. Each phase calls out which tool you use and why, so you understand how Power BI Desktop and the Power BI service fit together.
 

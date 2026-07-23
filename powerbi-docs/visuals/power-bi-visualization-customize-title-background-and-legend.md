@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Customize Power BI visualization titles
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 All Power BI visuals have title and subtitle elements you can configure, along with other formatting options like backgrounds, borders, and shadows. You can find these settings in the **General** tab of the Format pane. For a complete overview of all options in the **General** tab, see [Format pane General tab overview](power-bi-visualization-format-pane-overview.md).
 

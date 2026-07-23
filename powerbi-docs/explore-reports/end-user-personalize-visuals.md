@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Personalize visuals in a report
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 It's hard to make one visual that satisfies everyone's requirements. So, when a colleague shares a report with you, you might want to make changes to the visuals&mdash;without having to ask your colleague to make the changes for you.
 

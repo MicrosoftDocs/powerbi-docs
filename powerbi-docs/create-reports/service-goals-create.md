@@ -13,7 +13,7 @@ ms.custom: sample-sales&returnssamplev201912
 ---
 # Create scorecards and manual goals in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Goals in Power BI let you curate your goals and track them against key business objectives in a single pane. In this article, you complete the following steps: 
 

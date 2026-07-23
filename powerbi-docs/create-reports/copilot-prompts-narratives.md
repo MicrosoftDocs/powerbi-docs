@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Write Copilot prompts to create narrative visuals in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 If you have edit permission for a report, Copilot can create a narrative visual for you on the report page. If you don't have edit permission, you can still use Copilot to get insights about the report by asking questions in the Copilot pane. For more information, see [Summarize your report content in the Copilot pane](copilot-pane-summarize-content.md). 
 

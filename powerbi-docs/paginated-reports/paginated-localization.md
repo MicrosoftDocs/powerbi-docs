@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # View localized paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 You can view paginated reports in your local or preferred language on the Power BI service. This guidance applies only to paginated reports with *Power BI semantic models* as a data source. There are prerequisites that you should follow to leverage this capability. 
 

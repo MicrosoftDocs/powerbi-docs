@@ -13,7 +13,7 @@ ms.reviewer: rpatkar
 
 # Page layout and rendering in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 This article explains Power BI Report Builder rendering extensions for paginated reports, so you're sure your report looks the way you want, including page layout, page breaks, and paper size. 
 

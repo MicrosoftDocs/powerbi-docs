@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Interactive sort in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   You can add interactive sort buttons in a paginated report to enable a user to toggle between ascending and descending order for rows in a table or for rows and columns in a matrix. The most common use of interactive sort is to add a sort button to every column header. The user can then choose which column to sort by.  
   

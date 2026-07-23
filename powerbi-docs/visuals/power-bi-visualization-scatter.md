@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Scatter charts, bubble charts, and dot plot charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article describes how to create scatter chart visualizations in Power BI, which includes support for bubble charts and dot plot charts.
 

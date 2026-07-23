@@ -13,7 +13,7 @@ LocalizationGroup: Common tasks
 ---
 # Rename items in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article shows you how to rename a dashboard, report, report page, workbook, semantic model, app, and workspace in Power BI service.
 

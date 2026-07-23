@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Manage semantic model settings in the settings pane (Preview)
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 The semantic model settings pane is a side pane in the Power BI service that you use to review and change settings for a semantic model without leaving your current page. The pane opens on the right side of the browser window, keeps the surrounding context visible, and provides the same settings that are on the full semantic model settings page.
 

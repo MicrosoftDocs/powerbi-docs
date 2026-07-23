@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Open a report in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 A Power BI report is one or more pages of organized visuals. All Power BI users can create and edit their own reports. However, opening reports created by others requires a paid license (Power BI Pro or Premium Per User) or special access to a [Premium capacity](../fundamentals/end-user-license.md#find-out-if-you-have-access-to-premium-capacity).
 

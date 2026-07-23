@@ -12,11 +12,8 @@ ai-usage: ai-assisted
 ---
 # Set data alerts in the Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="content" source="./media/mobile-set-data-alerts-in-the-mobile-apps/iphone-logo-50-px.png" alt-text="Screenshot of icon representing an iPhone device category for Power BI mobile app support."::: | :::image type="content" source="./media/mobile-set-data-alerts-in-the-mobile-apps/ipad-logo-50-px.png" alt-text="Screenshot of icon representing an iPad device category for Power BI mobile app support."::: | :::image type="content" source="./media/mobile-set-data-alerts-in-the-mobile-apps/android-phone-logo-50-px.png" alt-text="Screenshot of icon representing an Android phone device category for Power BI mobile app support."::: | :::image type="content" source="./media/mobile-set-data-alerts-in-the-mobile-apps/android-tablet-logo-50-px.png" alt-text="Screenshot of icon representing an Android tablet device category for Power BI mobile app support."::: |
-|:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |
 
 Set data alerts on dashboards in the Power BI mobile apps and in the Power BI service to stay informed when key values cross thresholds you define. These alerts notify you when data in a tile changes beyond limits you set and work for single-value tiles like cards and gauges (not streaming data). Create data alerts on your mobile device and see them in the Power BI service, and vice versa. Only you see the data alerts you set, even if you share a dashboard or a snapshot of a tile.  
 

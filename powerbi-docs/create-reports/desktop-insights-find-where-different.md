@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI to discover where distributions vary
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Often in visuals, you see a data point and wonder whether distribution would be the same for different categories. With **insights** in **Power BI** you can find out with just a few clicks.
 

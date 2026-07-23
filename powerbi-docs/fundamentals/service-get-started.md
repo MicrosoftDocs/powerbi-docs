@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 
 # Tutorial: Get started creating in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. The exercises show you how to work with data on a dashboard and design semantic model visualizations. Here's an example dashboard:
 

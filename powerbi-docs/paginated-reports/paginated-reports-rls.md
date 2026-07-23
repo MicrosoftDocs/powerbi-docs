@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Set up row-level security in Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI semantic model, the article [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security) provides a solid background for setting up RLS to use in your paginated report.
 

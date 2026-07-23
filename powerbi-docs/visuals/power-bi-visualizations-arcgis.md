@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 # Create ArcGIS maps in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 ArcGIS for Power BI is a mapping visualization that helps you enrich your data, reports, and dashboards. It offers mapping capabilities, demographic data, location analytics, and spatial analysis tools. Use these tools to show patterns and add insight to your data. Create and view ArcGIS map visualizations in the Power BI service or Power BI Desktop. For details, see [Considerations and limitations](#considerations-and-limitations). This tutorial uses Power BI Desktop.
 

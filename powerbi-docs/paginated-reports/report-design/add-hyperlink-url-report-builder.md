@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add a hyperlink to a URL in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Learn how to add hyperlink actions to text boxes, images, charts, and gauges in Power BI paginated reports. Links can go to other reports, to bookmarks in a report, or to  static or dynamic URLs.
 

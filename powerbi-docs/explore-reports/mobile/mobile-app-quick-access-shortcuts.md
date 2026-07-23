@@ -12,11 +12,8 @@ ms.date: 10/01/2025
 
 # Use shortcuts in the Power BI Android app
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-app-quick-access-shortcuts/android-logo-40-px.png"::: | :::image type="icon" source="./media/mobile-app-quick-access-shortcuts/android-logo-40-px.png"::: |
-|:--- |:--- |
-| Android phones |Android tablets |
 
 The Power BI Android app provides two types of Android app shortcuts so you can quickly open reports or dashboards without navigating: device home screen shortcuts and app launcher shortcuts.
 

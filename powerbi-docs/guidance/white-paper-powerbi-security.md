@@ -22,7 +22,7 @@ LocalizationGroup: Conceptual
 
 <!-- cspell:enable -->
 
-**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded Analytics, Power BI Mobile.
+**Applies to:** ✅ [!INCLUDE [powerbi-service](../includes/applies-to-version/powerbi-service.md)], [!INCLUDE [powerbi-desktop](../includes/applies-to-version/powerbi-desktop.md)], [!INCLUDE [powerbi-premium](../includes/applies-to-version/powerbi-premium.md)], [!INCLUDE [powerbi-embedded](../includes/applies-to-version/powerbi-embedded.md)], and [!INCLUDE [powerbi-mobile](../includes/applies-to-version/powerbi-mobile.md)]
 
 > [!NOTE]
 > You can save or print this white paper by selecting **Print** from your browser, then selecting **Save as PDF**.

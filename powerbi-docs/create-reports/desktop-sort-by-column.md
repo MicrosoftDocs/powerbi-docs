@@ -16,7 +16,7 @@ LocalizationGroup: Create reports
 
 # Sort one column by another column in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you edit a report in Power BI, you can choose a column to define the sort order of another column.
 Here's a common example. You have a Month Name column, and when you add it to a visual, the months are sorted alphabetically: April, August, December, February. However, you want them sorted chronologically. This article shows how to set the sort order of one column by a different column, in Power BI Desktop or in the Power BI service. It also provides troubleshooting guidance for common sort by column errors.

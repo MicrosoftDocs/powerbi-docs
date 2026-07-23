@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Create a Microsoft Entra tenant to use with Power BI
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers-organization](../../includes/applies-to-version/embedded-customers-organization.md)]
 
 This article shows you how to create a Microsoft Entra tenant to use when creating a custom app that calls [Power BI REST APIs](/rest/api/power-bi/).
 

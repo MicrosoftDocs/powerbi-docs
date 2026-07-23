@@ -13,7 +13,7 @@ ms.reviewer: rodolfoc
 ---
 # Built-in collections - report and group variables references in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   When you have a complex calculation that is used more than once in expressions in a paginated report, you might want to create a variable. You can create a report variable or a group variable. Variable names must be unique in a report.  
   

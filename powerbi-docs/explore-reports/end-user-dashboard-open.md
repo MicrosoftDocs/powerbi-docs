@@ -14,7 +14,7 @@ ms.custom:
 ---
 # View and interact with Power BI dashboards
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Power BI *business users* spend a lot of time viewing dashboards. Designers create dashboards to highlight specific information from the underlying reports and semantic models. Power BI business users rely on that information for tracking, monitoring, answering questions, testing, and more. They use it to make data-driven business decisions.
 

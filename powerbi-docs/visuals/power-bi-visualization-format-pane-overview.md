@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Format pane General tab overview
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you select a visual in a Power BI report and open the **Format visual** pane, you see two tabs: **Visual** and **General**. The **Visual** tab contains options that apply to the specific visual type, such as data colors and axis labels. The **General** tab contains options that apply to almost every visual, such as size, title, background, and header icons.
 

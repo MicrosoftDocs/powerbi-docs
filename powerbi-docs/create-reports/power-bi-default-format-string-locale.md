@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Set the default format string locale for a Power BI report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 You can set a default format string locale for a Power BI report so dates and numbers display in a specific locale, regardless of the viewer's browser settings. This setting is useful when you need consistent formatting across your organization or when your report targets a specific region.
 

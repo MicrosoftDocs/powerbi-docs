@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Supported data sources for Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article describes supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by using data gateways or using [Get Data experience in Power BI Report Builder](./report-builder/connect-snowflake-databricks-power-query-online.md).
 

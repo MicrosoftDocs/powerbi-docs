@@ -11,7 +11,7 @@ ms.author: juliacawthra
 ---
 # Image device information settings for Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   The following table lists the device information settings for rendering in an image format in Power BI paginated reports.  
 

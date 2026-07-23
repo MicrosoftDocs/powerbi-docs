@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Explore reports in Power BI
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This documentation covers how to view, filter, and interact with Power BI reports and dashboards in the Power BI service.
 

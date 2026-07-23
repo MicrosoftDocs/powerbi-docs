@@ -15,7 +15,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Create a narrative visual with Copilot for Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI Desktop and the Power BI service, use Copilot for Power BI to quickly create a narrative about a report with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the narrative with suggested and custom prompts, making it extremely versatile.
 

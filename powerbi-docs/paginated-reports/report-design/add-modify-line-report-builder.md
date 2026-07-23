@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add and modify a line in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   You can add a line to a paginated report when you want a graphical element to separate sections of the report. You can customize the appearance of the line by editing line properties such as color or style. For example, you might want to incorporate company colors into the report.    
       

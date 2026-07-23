@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Optimize your semantic model for Copilot in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Evaluate your data before you use Copilot with your semantic model. You might need to clean up your semantic model so that Copilot can derive insights from it.
 

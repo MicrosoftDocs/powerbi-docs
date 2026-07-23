@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Create ribbon charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 You can create ribbon charts to visualize data and quickly discover which data category has the highest rank (largest value). A ribbon illustrates how the value of a data category changes over a visualized time period. The ribbon connects the category values across the time continuum so you can easily see when there's an increase or decrease. When the ribbon is large, it means the category value is larger at that time than at other periods within the continuum.
 

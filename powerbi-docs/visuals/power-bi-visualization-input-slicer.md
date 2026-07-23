@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Create and use an input slicer
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The input slicer visual in Power BI filters data shown in other visuals on the report using free-form text input. Unlike other slicer visuals that display predefined categories, the input slicer is ideal for typing in or pasting values to filter the report. You can also use the input slicer without a data column to collect input from consumers when used with [translytical task flows](../create-reports/translytical-task-flow-overview.md).
 

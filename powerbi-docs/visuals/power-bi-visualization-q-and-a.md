@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Create a Q&A visual in a report in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 > [!IMPORTANT]
 > Q&A experiences are going away in December 2026. We recommend using [Copilot for Power BI](https://github.com/MicrosoftDocs/powerbi-docs/blob/main/powerbi-docs/create-reports/copilot-introduction.md), which offers a more advanced and integrated way to query your data using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).

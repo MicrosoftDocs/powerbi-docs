@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Set report views for paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 When you render a paginated report in the Power BI service, the default view is HTML based and interactive. Another report view, for fixed page formats like PDF, is the new *Print Layout* option.
 
