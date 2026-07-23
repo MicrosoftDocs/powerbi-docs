@@ -109,6 +109,13 @@ The data sources here are specific to Power BI reports used within Power BI Repo
 > [!IMPORTANT]
 > Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle, and Teradata) and live connections assuming Kerberos is configured properly in your environment.
 
+## Access and Excel data sources
+
+Access and Excel data sources rely on the **Microsoft Access Database Engine (ACE)** OLE DB provider (`Microsoft.ACE.OLEDB.*`) to read Access databases (`.accdb`, `.mdb`) and Excel workbooks (`.xls`, `.xlsx`) on the report server, including during scheduled refresh.
+
+> [!IMPORTANT]
+> Starting with **Power BI Report Server September 2026**, PBIRS setup no longer installs the Access Database Engine. In earlier releases it was installed automatically as part of the report server bundle. To use Access or Excel data sources after September 2026 release an administrator must install the Access Database Engine **separately** on the computer running Power BI Report Server. This change also applies to paginated (.rdl) reports that use Access or Excel through OLE DB
+
 ## List of supported authentication methods for model refresh
 
 Power BI Report Server doesn't support OAuth-based authentication for model refresh. Some data sources such as Excel or Access databases make use of a separate step like File or Web to connect to data.
