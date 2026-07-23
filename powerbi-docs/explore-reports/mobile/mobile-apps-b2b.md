@@ -13,10 +13,9 @@ ai-usage: ai-assisted
 
 # View Power BI content shared with you from an external organization
 
-Power BI integrates with Microsoft Entra business-to-business (Microsoft Entra B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Microsoft Entra B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
-
 **Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
+Power BI integrates with Microsoft Entra business-to-business (Microsoft Entra B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Microsoft Entra B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
 
 ## Access shared external content
 

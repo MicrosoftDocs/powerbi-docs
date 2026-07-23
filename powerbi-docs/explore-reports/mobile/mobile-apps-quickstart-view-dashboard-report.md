@@ -14,10 +14,9 @@ ai-usage: ai-assisted
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
 
-In this quickstart, you explore Power BI mobile dashboards and reports through a quick tour of the Power BI Mobile app. Learn how to view, interact with, and share the Retail Analysis Sample dashboard and report. While the Power BI app for iOS is shown, you can easily follow along on Android or iPad devices.
-
 **Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
+In this quickstart, you explore Power BI mobile dashboards and reports through a quick tour of the Power BI Mobile app. Learn how to view, interact with, and share the Retail Analysis Sample dashboard and report. While the Power BI app for iOS is shown, you can easily follow along on Android or iPad devices.
 
 > [!NOTE]
 > Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)

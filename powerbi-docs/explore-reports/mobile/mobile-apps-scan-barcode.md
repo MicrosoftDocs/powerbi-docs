@@ -13,10 +13,9 @@ ai-usage: ai-assisted
 
 # Scan barcodes from the mobile app to get filtered data
 
-Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
-
 **Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
+Scan barcodes in the real world to go directly to filtered BI information in the Power BI mobile app.
 
 Say your organization has reports containing data that was [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 

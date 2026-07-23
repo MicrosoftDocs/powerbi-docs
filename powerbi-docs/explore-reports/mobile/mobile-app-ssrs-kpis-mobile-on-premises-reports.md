@@ -13,10 +13,9 @@ ai-usage: ai-assisted
 
 # View on-premises report server reports and KPIs in the Power BI mobile apps
 
-The Power BI mobile apps deliver live, touch-enabled mobile access to your on-premises business information in Power BI Report Server and SQL Server 2016 Reporting Services (SSRS).
-
 **Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
+The Power BI mobile apps deliver live, touch-enabled mobile access to your on-premises business information in Power BI Report Server and SQL Server 2016 Reporting Services (SSRS).
 
 :::image type="content" source="./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png" alt-text="Screenshot of the Report Server home in the mobile apps.":::
 
