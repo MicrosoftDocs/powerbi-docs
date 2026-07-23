@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 02/18/2026
+ms.date: 07/23/2026
 ai-usage: ai-assisted
 LocalizationGroup: Data from files
 #customer intent: As a business analyst, I want to create a visually appealing and informative report from Excel data in Power BI Desktop so that I can effectively communicate key insights and performance metrics to my manager and colleagues.
@@ -265,7 +265,7 @@ If you want to further customize the report, try these formatting steps.
 
 With the appropriate visual selected, make the following changes on the **Visualizations** pane.
 
-1. Select Visual 2, the column chart showing profit over time. Under **Format visual** > **General**, expand the **Title** section. Change the text in the **Text** field to "Profit by Month and Year" and change the **Font** size to **16**. Expand **Effects** and toggle **Shadow** to **On**.
+1. Select Visual 2, the line chart showing profit over time. Under **Format visual** > **General**, expand the **Title** section. Change the text in the **Text** field to "Profit by Month and Year" and change the **Font** size to **16**. Expand **Effects** and toggle **Shadow** to **On**.
 1. Select Visual 3, the map. Under **Format visual** > **Visual**, expand **Map settings** and **Style**, then choose **Grayscale**. Under **Format visual** > **General**, expand the **Title** section and change the **Font** size to **16**. Expand **Effects** and toggle **Shadow** to **On**.
 1. Select Visual 4, the clustered column chart showing sales by product and segment. Under **Format visual** > **General**, expand the **Title** section. Change the **Font** size to **16**. Expand **Effects** and toggle **Shadow** to **On**.
 1. Select Visual 5, the year slicer. Under **Format visual** > **Visual**, expand **Slicer settings**. In the **Slicer header** section, increase the **Font** size to **16**.

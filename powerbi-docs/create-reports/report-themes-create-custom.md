@@ -7,7 +7,7 @@ ms.reviewer: zoedouglas
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/22/2026
+ms.date: 07/23/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn how to create custom report themes to standardize my organization's reports.
@@ -241,7 +241,7 @@ Set four of the 12 classes, called *primary classes*, to change all of the text 
 
 *Secondary classes* automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color or a percentage larger or smaller text size compared to the primary class.
 
-Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), with a 12-point font. This class formats the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting but are made bold with the **bold label** class so that they stand out. However, you don't need to specify that class in the theme JSON. Power BI does so automatically. If you decide to specify labels that have a 14-point font in your theme, you don't need to also update the **bold label** class because it inherits text formatting from the **label** class.
+Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), with a 10-point font. This class formats the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting but are made bold with the **bold label** class so that they stand out. However, you don't need to specify that class in the theme JSON. Power BI does so automatically. If you decide to specify labels that have a 14-point font in your theme, you don't need to also update the **bold label** class because it inherits text formatting from the **label** class.
 
 The following table shows:
 
