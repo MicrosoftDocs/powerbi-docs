@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 ---
 # Create a QR code for a report in Power BI to use in the mobile apps
 
-[!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
+**Applies to:** [!INCLUDE [applies-to-service-mobile](../includes/applies-to-version/service-mobile.md)]
 
 QR codes in Power BI can connect anything in the real world directly to related BI information&mdash;no navigation or search needed.
 

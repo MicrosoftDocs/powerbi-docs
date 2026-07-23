@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 # Use grouping and binning in Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 When Power BI Desktop creates visuals it aggregates your data into chunks, or groups, based on values it finds in the underlying data. Often that's fine, but there might be times when you want to refine how those chunks are presented.
 

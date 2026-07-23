@@ -14,7 +14,7 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 
 # Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 Power BI Report Builder enables you to create *paginated reports*—print-friendly, multipage, pixel-precise reports that display all rows in a table. You design a *report definition* that specifies what data to use, where to get it, and how to lay it out. You can preview the report locally, then publish it to the Power BI service. For more information, see [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 

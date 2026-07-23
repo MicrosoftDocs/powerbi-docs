@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Add an expression to a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Expressions are used throughout paginated reports for defining report item properties, filters, groups, sort order, connection strings, and parameter values. Expressions begin with an equal sign (=) and are written in Microsoft Visual Basic. They are evaluated at run time by the report processor, which combines the evaluation result with report layout elements.  
   

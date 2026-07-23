@@ -12,7 +12,7 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 ---
 # Preview reports in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 While you're creating a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
 

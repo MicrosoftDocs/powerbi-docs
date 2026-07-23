@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Set the locale for a Power BI paginated report or text box (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   The **Language** property on a Power BI paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, the Power BI service uses the language setting of the browser for published reports. By default, the Power BI language is the browser language, but you can overwrite that in the Power BI settings and use a fixed language.
   

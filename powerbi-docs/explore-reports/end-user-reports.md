@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 
 # Reports in Power BI
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 A Power BI report is a multiperspective view into a semantic model, with visuals that represent findings and insights from that semantic model. A report can have a single visual or many pages of visuals. Depending on your job role, you might be someone who designs reports, or a business user who consumes reports. This article is for business users.
 

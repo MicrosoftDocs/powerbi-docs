@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 ---
 # Create a Power Automate visual for Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you create a Power Automate visual in a Power BI report, your end-users can run an automated flow by clicking a button in your report. Furthermore, the flow can be data contextual, meaning that the flow inputs can be dynamic, based on the filters the end-users set.
 

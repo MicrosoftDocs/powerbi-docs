@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Publish semantic models and reports from Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you publish a Power BI Desktop file to the Power BI service, you publish the data in the model to your Power BI workspace. The same is true for any reports you created in **Report** view. You’ll see a new semantic model with the same name and any reports in your Workspace navigator.
 

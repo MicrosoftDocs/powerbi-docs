@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Create a relative date slicer and filter in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 With the **relative date slicer**, **relative date filter**, or **date picker** slicer setting, you can apply time-based selections using a date column. For example, you can show only sales data from within the last 30 days or last calendar month. When you view the report, the relative date period is applied and the specified range filters the other visuals on the page. The **Date picker** slicer setting (preview) extends this capability by adding a calendar and slider for manual date selection and offering anchor options based on today, the first date, or the last date in your data.
 

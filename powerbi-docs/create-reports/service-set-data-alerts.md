@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 
 # Data alerts in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Set alerts to notify you when data in your dashboards changes beyond the limits you set.
 

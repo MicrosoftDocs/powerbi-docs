@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 ---
 # Install and use Power BI apps
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Now that you have a [basic understanding of apps](end-user-apps.md), you can learn how to open and interact with them.
 

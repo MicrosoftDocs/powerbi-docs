@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Apply insights in Power BI to explain fluctuations in visuals
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Often in visuals, you see a large increase and then a sharp drop in values, and wonder about the cause of such fluctuations. By using **insights** in **Power BI**, you can discover the cause with just a few clicks.
 

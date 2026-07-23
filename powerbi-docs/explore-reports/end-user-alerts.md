@@ -17,7 +17,7 @@ LocalizationGroup: Dashboards
 ---
 # Set data alerts on Power BI dashboards
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Use this tutorial to set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. When you set an alert, the only person who sees those alerts is you.
 

@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 # Create report subscriptions with Copilot summaries in the Power BI service (preview)
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 To get insights, include a Copilot-generated summary for your Power BI report page or full report attachment in your email subscription. All email subscription recipients receive the Copilot summary in the email. Only Standard Subscriptions support this feature.  
 

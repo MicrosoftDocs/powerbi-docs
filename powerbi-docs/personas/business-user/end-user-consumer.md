@@ -16,7 +16,7 @@ ms.custom: intro-overview
 
 # The Power BI service for business users
 
-[!INCLUDE[consumer-appliesto-ynnn](../../includes/consumer-appliesto-ynnn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../../includes/applies-to-version/service.md)]
 
 You live in a data culture where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don't let you down. They send you all types of reports, spreadsheets, emails with charts, and even printed handouts.
 

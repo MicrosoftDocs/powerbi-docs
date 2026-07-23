@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 ---
 # Export a Power BI paginated report to Microsoft Excel (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 The Excel rendering extension renders a Power BI paginated report to the Microsoft Excel format (.xlsx). With the Excel rendering extension, the width of columns in Excel more accurately reflects the width of columns in reports.  
   

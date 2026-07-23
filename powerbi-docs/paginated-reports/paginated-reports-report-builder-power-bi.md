@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # What are paginated reports in Power BI?
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 > [!NOTE]
 > Some screenshots in this article might show an earlier version of the Power BI user interface. The Power BI service and Report Builder UI are updated regularly. While the core concepts and procedures remain accurate, some visual elements might appear differently in the current version.

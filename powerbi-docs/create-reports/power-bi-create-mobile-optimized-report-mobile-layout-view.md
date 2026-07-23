@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Mobile layout view in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Use Power BI's mobile layout view to create views of report pages that are optimized for viewing on mobile devices. You can access mobile layout view in both Power BI Desktop and the Power BI service. This article explains how to open the mobile layout view and describes the features it provides.
 

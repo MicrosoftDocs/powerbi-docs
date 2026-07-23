@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 
 # Slicers overview in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Slicers are interactive filtering controls that appear directly on the report canvas. They narrow the portion of the semantic model shown in other visuals, allowing report readers to quickly filter data without opening the Filters pane. Slicers make commonly used filters visible and accessible, showing the current filter state at a glance.
 

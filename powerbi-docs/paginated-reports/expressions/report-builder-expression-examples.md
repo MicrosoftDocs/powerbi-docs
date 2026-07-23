@@ -12,7 +12,7 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 ---
 # Expression examples in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)] 
 
 Expressions are used frequently in Power BI Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).
 

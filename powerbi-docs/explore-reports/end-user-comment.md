@@ -13,7 +13,7 @@ LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Add comments to Power BI dashboards, reports, and individual visuals to collaborate with colleagues. You can @mention colleagues to notify them, and they receive an email or push notification with a link to the comment.
 

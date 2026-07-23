@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 ---
 # Create quick reports in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 There are several ways to create reports quickly in the Power BI service. Instead of downloading the Power BI Desktop app and importing the data, you can paste data straight into Power BI on the web, and Power BI automatically generates visuals for you.
 

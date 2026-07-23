@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Display page numbers or other paginated report properties (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   It's easy to add page numbers, a report title, file name, and other report properties to the page headers or footers of your Power BI paginated report. These properties are stored as fields in the Built-in Fields folder in the Report Data pane:  
   

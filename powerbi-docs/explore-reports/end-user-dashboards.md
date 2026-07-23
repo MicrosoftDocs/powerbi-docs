@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 ---
 # Dashboards for business users of the Power BI service
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 A Power BI *dashboard* is a single page, often called a canvas, that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story.
 

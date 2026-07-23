@@ -14,7 +14,7 @@ LocalizationGroup: Consumer
 ---
 # Add spotlights to Power BI reports
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Use spotlights to draw attention to a specific visual on a report page.  
 

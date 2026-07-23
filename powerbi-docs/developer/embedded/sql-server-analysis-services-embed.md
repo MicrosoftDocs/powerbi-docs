@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 This article explains how to embed Power BI content with an [on-premises](pbi-glossary.md#on-premises) *Analysis Services Tabular Model* live connection into a standard Power BI app owns data application. This article applies to **all** live connection SSAS models whether or not they implement RLS.
 

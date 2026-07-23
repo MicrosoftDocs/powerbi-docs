@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Highlight chart data by adding strip lines in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   Strip lines, or strips, are horizontal or vertical ranges that shade the background of the Power BI paginated report chart in regular or custom intervals. You can use strip lines to:  
   

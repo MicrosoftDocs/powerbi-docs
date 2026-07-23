@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 ---
 # View data insights on dashboard tiles with Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Each visual tile on your dashboard is a doorway into data exploration. For more information, see [Dashboard tiles in Power BI](end-user-tiles.md). When you select a tile, it opens a report or Q&A [(Q&A for Power BI Business users)](end-user-q-and-a.md), where you can filter and dig into the semantic model behind the report. And when you run insights, Power BI does the data exploration for you.
 

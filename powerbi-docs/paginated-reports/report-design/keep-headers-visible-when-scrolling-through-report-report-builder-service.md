@@ -13,7 +13,7 @@ ms.reviewer: rpatkar
 
 # Keep headers visible when scrolling through a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 To prevent row and column labels from scrolling out of view after rendering a paginated report, you can freeze the row or column headings.  
   

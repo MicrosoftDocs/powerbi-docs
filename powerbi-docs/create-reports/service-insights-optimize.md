@@ -13,7 +13,7 @@ LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Want to improve Quick Insights results? If you're a semantic model owner, try these suggestions:
 

@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 With the report settings in Power BI Desktop and the Power BI service, you can control how report readers interact with your report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
 

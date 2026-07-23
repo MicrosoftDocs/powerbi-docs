@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # Interact with reports and dashboards
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article explains how to interact with the Power BI service to discover data‑driven business insights. It focuses on the everyday tasks and tools available to Power BI **business users** (sometimes called consumers or readers).
 

@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Format axis labels as dates or currencies in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 When you show properly formatted DateTime values on an axis in a Power BI paginated report, a chart automatically displays these values as days. To specify a date/time interval for the x-axis, such as an interval of months or an interval of hours, you must format the axis labels and set the type of axis interval to a valid date or time interval.  
   

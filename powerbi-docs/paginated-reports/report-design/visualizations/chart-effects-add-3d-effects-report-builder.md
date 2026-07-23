@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Chart effects: Add 3D effects to a Power BI paginated report chart (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   Three-dimensional (3D) effects can be used to provide depth and add visual impact to charts in your paginated reports. For example, if you want to emphasize a particular slice of an exploded pie chart, you can rotate and change the perspective of the chart so that people notice that slice first. When 3D effects are applied to your chart, all gradient colors and hatching styles are disabled.  
   

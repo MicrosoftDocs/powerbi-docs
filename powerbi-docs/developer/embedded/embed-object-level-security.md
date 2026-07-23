@@ -12,7 +12,7 @@ ms.date: 12/15/2025
 
 # Object-level security
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 This article explains how to embed Power BI content that uses OLS in a Power BI *App owns data* (embed for your customers) scenario.
 

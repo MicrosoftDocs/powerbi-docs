@@ -12,11 +12,8 @@ ms.date: 07/03/2025
 
 # Scan a Power BI QR code from your mobile device
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-qr-code/ios-logo-40-px.png"::: | :::image type="icon" source="./media/mobile-apps-qr-code/ios-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: |
-|:--- |:--- |:--- |:--- |
-|iPhones |iPads |Android phones |Android tablets |
 
 QR codes can be used to connect items in the real world directly to relevant Power BI content. When you scan a QR code that was created for a Power BI report or dashboard tile, that report or tile opens directly - you don't have to navigate to it or search for it.
 

@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Export data from a Power BI visualization
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 You can export data from Power BI visualizations to Excel to analyze or share the underlying information. This article shows you how to export data to Excel from both dashboard tiles and report visuals, including options for summarized and underlying data exports.
 

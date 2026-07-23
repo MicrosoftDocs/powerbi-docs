@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 
 # Create and use a button slicer
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI, the button slicer is an interactive visual element that allows users to filter data in reports and dashboards, providing an easy and dynamic way to browse and analyze large datasets.
 

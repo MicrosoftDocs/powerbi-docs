@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Send large report subscriptions to OneDrive SharePoint
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint.
 

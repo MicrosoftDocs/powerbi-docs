@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 # How to determine that content is up to date
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article shows you how to determine when your content was last updated or refreshed and also suggests ways to stay in sync with your most important data.
 

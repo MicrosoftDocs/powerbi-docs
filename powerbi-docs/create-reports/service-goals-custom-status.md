@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Customize statuses on your Power BI scorecard
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Statuses are an integral part of goal tracking. In some scenarios, the default statuses on a scorecard don't fit your organization's needs. You might want to customize the statuses to match your organization's terminology.
 

@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 ---
 # View dashboards in the Power BI mobile apps
 
-**Applies to:** iPhone | iPad | Android phone | Android tablet
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
 Dashboards provide a single place to monitor the current state of your business. Use the Power BI mobile apps to view and interact with your dashboards on any device.
 

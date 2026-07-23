@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 ---
 # Create and configure buttons in Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 With *buttons* in Power BI, you can create reports that behave similarly to apps, and create an environment that gives users opportunities to further interact with Power BI content. When you share your reports in the Power BI service, buttons provide an app-like experience. The article [Identify and use buttons in the Power BI service](../explore-reports/end-user-buttons.md) describes how readers experience buttons in your reports.
 

@@ -16,7 +16,7 @@ ms.update-cycle: 180-days
 
 # Copilot for Power BI overview
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI, Copilot helps you use the transformational power of generative AI to get the most from your data. It provides chat-based experiences where Copilot can help you with tasks from on-the-fly analysis for business users to data analysis expression (DAX) generation for advanced creators. The product also includes various AI-infused Copilot features.  
 

@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # PDF Rendering Extension conformance to ISO 14289-1 - paginated reports
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-report-server](../includes/yes-report-server.md)] [!INCLUDE [yes-reporting-services](../includes/yes-reporting-services.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder-report-server-ssrs-paginated](../includes/applies-to-version/report-builder-report-server-ssrs-paginated.md)]
 
 This document describes paginated report PDF Rendering Extension conformance to [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) specifications for paginated reports in the Power BI service, Power BI Report Server, and SQL Server Reporting Services.
 

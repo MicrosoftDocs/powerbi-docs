@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Add Visualizations to a Power BI Report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article explains how to create and modify visualizations in a Power BI report. You learn how to add visuals by selecting fields, change visualization types, and use drag-and-drop to customize your reports.
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Create a paginated report from a Power BI report or dataset
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)]
 
 This article explains how to create a paginated report from a Power BI report or a shared dataset in the Power BI service.
 

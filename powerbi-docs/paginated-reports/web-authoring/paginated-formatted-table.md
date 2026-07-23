@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Author paginated reports in the Power BI service (Preview)
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../../includes/applies-to-version/service.md)]
 
 This article shows you how to use the paginated report editor to create formatted tables with all the data from your Power BI semantic model. You can apply styling, add images and text, configure headers and footers, and export to multiple formats with full formatting fidelity.
 

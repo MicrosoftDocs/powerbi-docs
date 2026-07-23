@@ -15,7 +15,7 @@ LocalizationGroup: Transform and shape data
 
 # Create shape map visualizations in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Use a **Shape map** visual to display data on any shape you can define—countries, regions, floor plans, seating charts, or custom boundaries. Color each area based on your data to quickly spot patterns, compare values across regions, and highlight areas that need attention. Choose from built-in maps for common regions, upload your own TopoJSON or GeoJSON files, or reference maps directly via URL.
 

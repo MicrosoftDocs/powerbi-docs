@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 
 # Display a series with multiple data ranges on Power BI paginated report chart (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 Charts use the minimum and maximum values of a series to calculate the axis scale in a Power BI paginated report. When a series on your chart contains more than one range of data, the data points can become obscured, and only a few data points to be seen easily on the chart. For example, suppose a report displays daily sales totals over a period of 30 days.  
   

@@ -13,7 +13,7 @@ LocalizationGroup: Dashboards
 
 # Tips for designing a great Power BI dashboard
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 When you create a dashboard and add some tiles, think about how to make your dashboard both visually interesting and functional. In general, you want the most important information to stand out and be clean and uncluttered.
 

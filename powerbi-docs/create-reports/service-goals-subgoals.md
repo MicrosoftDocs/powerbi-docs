@@ -13,7 +13,7 @@ ms.date: 12/09/2025
 
 # Create subgoals in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Goals in Power BI let you curate your goals and track them against key business objectives in a single pane. *Subgoals* make scorecards more readable by collecting related goals together under a single parent goal. You can expand and collapse the parent goal. Subgoals can either be standalone values, unrelated to the parent value, or they can roll up to the parent value. For more information, see [rollups](#create-subgoals-that-roll-up-to-the-goal) later in this article.
 

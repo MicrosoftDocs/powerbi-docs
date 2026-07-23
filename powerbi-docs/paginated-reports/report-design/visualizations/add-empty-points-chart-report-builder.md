@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add empty points to a chart in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 Null values are shown on the chart as empty spaces or gaps between data points in a series. In Power BI paginated reports, empty points are data points that can be inserted in the empty space created by null values.  
   

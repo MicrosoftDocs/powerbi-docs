@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 # Add favorites for dashboards, reports, and apps in Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 When you mark content as a *favorite*, you access it quickly from the **Favorites** list. Favorites are content you visit most often and show a filled star.
 

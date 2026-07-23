@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Change the text of a legend item in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 When you place a field in the Values area of the Power BI paginated report chart, a legend item is automatically generated that contains the name of this field. Every legend item is connected to an individual series on the chart, with the exception of shape charts. In shape charts, the legend is connected to individual data points instead of individual series.  
   

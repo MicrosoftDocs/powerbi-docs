@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 ---
 # Anomaly detection tutorial for Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Anomaly detection in Power BI helps you enhance your line charts by automatically detecting anomalies in your time series data. This feature provides explanations for the anomalies to help with root cause analysis. With just a couple of clicks, you can easily find insights without slicing and dicing the data. You can create and view anomalies in both Power BI Desktop and the Power BI service. The steps and illustrations in this article show you how to configure anomaly detection for a line chart in Power BI Desktop.
 

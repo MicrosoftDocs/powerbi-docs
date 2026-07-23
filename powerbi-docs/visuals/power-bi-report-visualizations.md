@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Customize the Visualizations pane in Power BI Desktop and the Power BI service
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Visualizations, also called visuals for short, display insights that are discovered in the data. A Power BI report might have a single page with one visual, or it might have pages full of visuals. In the Power BI service, you can pin visuals [from reports to dashboards](../create-reports/service-dashboard-create.md).
 

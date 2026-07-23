@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Built-in collections - Globals and User references in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   The built-in fields collection, which includes both the **Globals** and the **User** collections, represent global values provided by Reporting Services when a paginated report is processed. The **Globals** collection provides values such as the name of the report, the time when report processing began, and current page numbers for the report header or footer. The **User** collection provides the user identifier and language settings. These values can be used in expressions to filter results in a report.
 

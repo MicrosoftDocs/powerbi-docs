@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 ---
 # Create or edit a dashboard tile
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 ## Dashboard *owners* versus dashboard *consumers*
 

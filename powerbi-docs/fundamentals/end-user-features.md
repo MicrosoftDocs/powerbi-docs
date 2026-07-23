@@ -16,7 +16,7 @@ LocalizationGroup: consumers
 
 # Power BI free user features in the service
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 If you have a free Power BI license, you can view and interact with reports, dashboards, [apps](../explore-reports/end-user-apps.md), and other content that colleagues share with you—as long as that content is hosted on a qualifying capacity (Fabric F64+ or Premium). What you can do depends on three factors:
 

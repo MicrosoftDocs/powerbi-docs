@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 
 # Bookmarks in the Power BI service
 
-[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 A bookmark captures the state of a report page. It includes the changes you made to filters, slicers, and visuals on that page. After the report page is set the way you want, give it a friendly name. Now you can easily return to that state of the report page. Select a bookmark, and Power BI takes you back to that view.
 

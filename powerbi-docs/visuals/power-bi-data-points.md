@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Apply data point limits and strategies by visual type
 
-[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Visualization rendering in Power BI must be quick and accurate, which requires configuration of underlying algorithms for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of semantic models. Some semantic models have only a handful of data points, while other semantic models have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 

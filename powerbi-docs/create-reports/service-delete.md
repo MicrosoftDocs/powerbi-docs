@@ -11,7 +11,7 @@ ms.date: 04/21/2026
 ---
 # Delete a dashboard, report, workbook, or semantic model in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 In the Power BI service, you can delete dashboards, reports, workbooks, and semantic models from a workspace. You can also remove apps from your apps list page.
 

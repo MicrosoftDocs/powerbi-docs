@@ -12,6 +12,8 @@ LocalizationGroup: Conceptual
 
 # Power BI security white paper
 
+**Applies to:** ✅ [!INCLUDE [powerbi-service](../includes/applies-to-version/powerbi-service.md)], [!INCLUDE [powerbi-desktop](../includes/applies-to-version/powerbi-desktop.md)], [!INCLUDE [powerbi-premium](../includes/applies-to-version/powerbi-premium.md)], [!INCLUDE [powerbi-embedded](../includes/applies-to-version/powerbi-embedded.md)], and [!INCLUDE [powerbi-mobile](../includes/applies-to-version/powerbi-mobile.md)]
+
 **Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service business intelligence dashboards, reports, semantic models, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 <!-- cspell:disable -->
@@ -21,8 +23,6 @@ LocalizationGroup: Conceptual
 **Technical Reviewers:** Cristian Petculescu, Amir Netz, Sergei Gundorov
 
 <!-- cspell:enable -->
-
-**Applies to:** Power BI SaaS, Power BI Desktop, Power BI Premium, Power BI Embedded Analytics, Power BI Mobile.
 
 > [!NOTE]
 > You can save or print this white paper by selecting **Print** from your browser, then selecting **Save as PDF**.

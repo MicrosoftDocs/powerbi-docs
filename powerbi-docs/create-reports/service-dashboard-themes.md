@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Use dashboard themes in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 By using *dashboard themes*, you can apply a color theme to your entire dashboard, such as corporate colors, seasonal coloring, or any other color theme you want to apply. When you apply a dashboard theme, all visuals on your dashboard use the colors from your selected theme. A few exceptions apply, described in this article's [Considerations and limitations](#considerations-and-limitations) section.
 

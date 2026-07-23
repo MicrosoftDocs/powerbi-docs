@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 ---
 # Set contact information for reports and dashboards in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article shows how to set contact information for a dashboard or report in the Power BI service. You can set contact information for items in a shared workspace but not for items in your My Workspace. The contact information is in the card you see when you select the name of a report or dashboard in the black header bar.
 

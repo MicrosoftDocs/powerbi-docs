@@ -12,7 +12,7 @@ ms.date: 12/30/2024
 
 # Find and retire unused .rdl reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+**Applies to:** [!INCLUDE [applies-to-report-builder-2022-report-server-ssrs-2022](../includes/applies-to-version/report-builder-2022-report-server-ssrs-2022.md)]
 
 Your company may deal with hundreds of paginated reports (.rdl files) in Power BI Report Server and SQL Server Reporting Services (SSRS). Some of those reports may become obsolete and need to be retired. As a report author or administrator, you don't want to migrate unused reports to the [Power BI service](https://app.powerbi.com). As you plan for a migration to the cloud, we suggest doing some housekeeping to get rid of unused .rdl reports. This best practice supports retention governance and allows your organization to make use of a retention schedule and data policy.  
 

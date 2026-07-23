@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Line charts in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   A line chart displays a series as a set of points connected by a single line in a Power BI paginated report. Line charts are used to representing large amounts of data that occur over a continuous period of time. For more information about how to add data to a line chart, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
   

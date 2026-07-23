@@ -12,7 +12,7 @@ LocalizationGroup: Visualizations
 ---
 # Slicer visual in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The **Slicer** visual is a versatile filtering control that supports multiple settings including vertical list, tile, dropdown, and date picker. It's the foundational slicer in Power BI and works with text, numeric, and date data types.
 

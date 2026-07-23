@@ -15,7 +15,7 @@ LocalizationGroup: Model your data
 
 # Create visual calculations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 A visual calculation is a DAX calculation that you author directly on a report visual, rather than in the underlying semantic model. Visual calculations let you perform business calculations, such as running sums or moving averages, for a single visual without adding measures or calculated columns that affect other reports.
 

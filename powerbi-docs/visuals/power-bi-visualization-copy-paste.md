@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Copy and paste a report visualization
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In this article, we cover how to copy and paste a visual, a fundamental task that allows you to duplicate visuals within your reports. Reusing your visual elements and can help to ensure consistency across different parts of your report while avoiding the time and effort often needed to recreate visuals from scratch. This article provides step-by-step instructions, tips, and best practices to help you efficiently copy and paste visuals in Power BI.
 

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Hide chart legend items in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 By default, any series added to a non-Shape chart in Power BI paginated report will be added as an item in the legend. For pie, donut, funnel, and pyramid charts, any series added to the chart will add individual data points in the legend.  
   

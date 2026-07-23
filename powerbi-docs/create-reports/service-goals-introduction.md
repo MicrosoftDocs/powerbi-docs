@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 ---
 # Get started with goals in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 By using scorecards in Power BI, you can curate your goals and track them against key business objectives, all in a single view. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations.
 

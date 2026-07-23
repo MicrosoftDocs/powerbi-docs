@@ -13,7 +13,7 @@ ms.custom: intro-overview
 
 # Set up Power BI Embedded
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers-organization](../../includes/applies-to-version/embedded-customers-organization.md)]
 
 This article shows you how to start using Power BI Embedded to share your reports with others. To use Power BI embedded analytics, you need to register a Microsoft Entra application in Azure. The Microsoft Entra app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 

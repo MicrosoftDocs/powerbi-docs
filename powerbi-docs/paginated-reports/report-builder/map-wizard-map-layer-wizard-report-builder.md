@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Map Wizard and Map Layer Wizard (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 > [!IMPORTANT]
 > Following the [announcement that Bing Maps will be deprecated by June 2028](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps), we have migrated map visuals in paginated reports from Bing Maps to Azure Maps. With the September release of PBIRB, paginated report authors will, by default, create map visuals using Azure Maps. Additionally, all map visuals published to the service will use Azure Maps.

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Tablix data region areas in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
  In a paginated report, a tablix data region has four areas that contain tablix cells:   
 - The [corner](#tablix-corner-area)  

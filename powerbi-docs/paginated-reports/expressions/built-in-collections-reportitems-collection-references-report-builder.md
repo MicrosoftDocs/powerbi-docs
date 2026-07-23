@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Built-in collections - ReportItems collection references in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   The **ReportItems** built-in collection is the set of text boxes from report items such as rows of a data region or text boxes on the paginated report design surface. The **ReportItems** collection includes text boxes that are in the current scope of a page header, page footer, or report body. This collection is determined at run time by the report processor and the report renderer. The current scope changes as the report processor successively combines report data and the report item layout elements as the user views pages of a report. You can use the **ReportItems** built-in collection to produce dictionary-style page headers that show the first and last items on each page.  
   

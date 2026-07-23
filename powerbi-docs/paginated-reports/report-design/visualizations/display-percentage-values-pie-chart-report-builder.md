@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Display percentage values on pie charts in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 In Power BI paginated reports, by default the legend shows categories. You can also percentages in the legend or the pie slices themselves.
 

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Include indicators and gauges in a gauge panel in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   The gauge panel is the top-level container that holds one or more gauges and indicators in a paginated report. Indicators can be embedded in gauges or placed next to them in the gauge panel.  
   

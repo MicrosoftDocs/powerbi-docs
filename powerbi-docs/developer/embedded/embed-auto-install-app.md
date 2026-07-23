@@ -13,7 +13,7 @@ ms.date: 12/15/2025
 
 # Automatically install Power BI apps when embedding content for your organization
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-organization](../../includes/applies-to-version/embedded-organization.md)]
 
 To embed content from an app, the user needs [access to the app](../../collaborate-share/service-create-distribute-apps.md) that contains the content to embed. If the app isn't installed, the embedding will fail. To make embedding content from an app easier, you can set up [automatic app installation](https://powerbi.microsoft.com/blog/automatically-install-apps/) in PowerBI.com for your organization. Defining automatic app installation is a tenant level action and applies to all apps.
 

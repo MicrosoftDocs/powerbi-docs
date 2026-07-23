@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Create and use funnel charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 A funnel chart helps you visualize a linear process that has sequential, connected stages. A common use for a funnel chart is to track sales customers through stages, such as Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 

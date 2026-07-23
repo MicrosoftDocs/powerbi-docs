@@ -18,7 +18,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Ask Copilot questions about your data
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 [Copilot for Power BI](copilot-introduction.md) answers natural-language questions about your data by querying your semantic model and returning the results as a visual. Instead of building visuals manually or searching through report pages for the right chart, describe what you're looking for and Copilot creates a visualization for you.
 

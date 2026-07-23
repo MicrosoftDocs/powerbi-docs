@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Create sparklines in a table or matrix in a Power BI report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 A good way to add meaning to a table or matrix is to add *sparklines*. Sparklines are tiny charts shown within cells of a table or matrix that make it easy to see and compare trends quickly. Sparklines are currently in preview. You can use them to show trends in a series of values, such as seasonal increases or decreases, economic cycles, or to highlight max and min values.
 

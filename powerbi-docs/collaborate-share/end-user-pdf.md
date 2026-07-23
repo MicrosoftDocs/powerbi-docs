@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Export Power BI reports to PDF
 
-[!INCLUDE [consumer-appliesto-yyn](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI lets you export reports to PDF format from both the Power BI service and Power BI Desktop. Exporting to PDF gives you a portable copy of your report that you can share, print, or archive outside of Power BI.
 

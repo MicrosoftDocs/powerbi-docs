@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 
 # Create a document map or table of contents in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 Create a document map to provide a set of links, like a table of contents, in your paginated report. When you view a paginated report that includes a document map, a separate side pane appears next to the report. You can select links in the document map to jump to the report page that displays that item. Report sections and groups are arranged in a hierarchy of links. Selecting items in the document map refreshes the report and displays the area of the report that corresponds to the item in the document map.  
   

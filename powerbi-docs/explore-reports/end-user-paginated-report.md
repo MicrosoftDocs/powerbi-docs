@@ -14,7 +14,7 @@ LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 There are two types of reports available on Power BI, [Power BI reports](end-user-reports.md) and *paginated reports*. 
 

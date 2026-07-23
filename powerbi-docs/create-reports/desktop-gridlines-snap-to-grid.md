@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Use gridlines and snap-to-grid in Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The report canvas in Power BI Desktop and the Power BI service provides gridlines that you can use to neatly align visuals on a report page. Use snap-to-grid and *smart guides* so the visuals in your report look clean, aligned, and evenly spaced.
 

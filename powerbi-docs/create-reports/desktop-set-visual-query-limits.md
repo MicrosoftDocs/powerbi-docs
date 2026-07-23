@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 # Set visual query limits in Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 When you load a report page or make changes to the fields in a visual, that visual sends a query to your report's data source. Processing these queries requires both time and computer memory. To prevent any single query from consuming too many resources, queries in published reports are subject to limits on the time a query can run (timeouts) and the amount of memory that query can use (memory limits). These limits may change based on where your data is hosted.
 

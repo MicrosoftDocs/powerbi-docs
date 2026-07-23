@@ -13,7 +13,7 @@ ms.reviewer: monaraya
 
 # Chart types in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 It is important to choose an appropriate chart type for the type of data that you are presenting in a Power BI paginated report. This determines how well the data can be interpreted when put in chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it might be better presented using an area, line, or scatter chart. For discussion on how to prepare your data depending on the chart type selected, see [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md).  
 

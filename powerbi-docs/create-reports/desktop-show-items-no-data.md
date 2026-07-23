@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Use the Power BI **Show items with no data** feature to display data rows and columns that don't contain measure data.
 

@@ -12,7 +12,7 @@ ms.author: juliacawthra
 ---
 # Report parameter concepts in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   You can add parameters to a paginated report to link related reports, to control the report appearance, to filter report data, or to narrow the scope of a report to specific users or locations.
   

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Git integration with paginated reports
 
-[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article walks you through publishing a paginated report and keeping it in sync with your git workspace. Developers can apply their development processes, tools, and best practices.  
 

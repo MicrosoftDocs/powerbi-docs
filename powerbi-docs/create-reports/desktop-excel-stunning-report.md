@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 
 # Tutorial: Create a report from an Excel workbook in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In this tutorial, you create a report from start to finish.
 

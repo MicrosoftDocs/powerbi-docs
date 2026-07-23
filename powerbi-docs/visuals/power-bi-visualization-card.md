@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Create a card visual in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The **card visual** in Power BI displays key metrics in a flexible, visually appealing format. Each card shows a measure value with optional callout images, reference labels, and supporting details. You can display multiple cards in a single visual, break them down by categories, and customize layouts to match your report design.
 

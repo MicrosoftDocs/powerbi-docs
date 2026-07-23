@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Set a minimum or maximum on a gauge in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   Unlike charts in a Power BI paginated report, where multiple groups are defined, gauges show only one value. Because Power BI Report Builder and Report Designer determine the context or relative significance of the one value that you are trying to show on the gauge, you must define the minimum and maximum of the scale.
 

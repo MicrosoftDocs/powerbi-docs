@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Power BI Report Builder change log
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. This article is updated with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/whats-new.md).
 

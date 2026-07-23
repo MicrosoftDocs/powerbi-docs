@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 # Access the paginated report editor in the Power BI service
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../../includes/applies-to-version/service.md)]
 
 This article describes the different ways you can access and launch the paginated report editor in the Power BI service. Use this feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
 

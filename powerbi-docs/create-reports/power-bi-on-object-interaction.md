@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 On-object interaction is the new way to build and format a visual, directly on the visual in Power BI Desktop. It puts common actions for creating and formatting visuals on the visuals themselves, actions such as adding fields, changing visualization types, and formatting text.
 

@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Tips and tricks for Power BI map visualizations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)] 
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)] 
 
 [!INCLUDE [note-azure-maps](../includes/note-azure-maps.md)]
 

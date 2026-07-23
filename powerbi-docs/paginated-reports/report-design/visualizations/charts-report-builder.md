@@ -12,7 +12,7 @@ ms.reviewer: monaraya
 ---
 # Charts in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 Read about using chart data regions to help readers of your paginated reports understand large volumes of aggregated data at a glance.  
 

@@ -14,7 +14,7 @@ LocalizationGroup: Dashboards
 ---
 # Create a QR code for a tile in Power BI to use in the mobile apps
 
-[!INCLUDE [applies-no-desktop-yes-service-yes-mobile](../includes/applies-no-desktop-yes-service-yes-mobile.md)]
+**Applies to:** [!INCLUDE [applies-to-service-mobile](../includes/applies-to-version/service-mobile.md)]
 
 QR codes in Power BI can connect anything in the real world directly to related BI information&mdash;no navigation or search needed.
 You can create a QR code in the Power BI service for tiles in any dashboard, even in dashboards you can't edit. You then place the QR code in a key location. For example, you could paste it in an email or print it out and place it in a specific location.

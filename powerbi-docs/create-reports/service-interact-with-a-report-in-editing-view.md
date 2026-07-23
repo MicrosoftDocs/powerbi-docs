@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 ---
 # Interact with a report in Editing view in the Power BI service
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 You can create and edit reports in both the Power BI service and Power BI Desktop. In the Power BI service, you create and edit reports in **Editing view**. In Power BI Desktop, you create and edit reports in [Report view](desktop-report-view.md). This article covers Editing view in the Power BI service.
 

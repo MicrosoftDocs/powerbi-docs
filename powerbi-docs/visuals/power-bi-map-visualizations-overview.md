@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Map visualizations in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Map visualizations help you display geographic and spatial data in Power BI reports. They enable you to visualize patterns, trends, and relationships across locations, making it easier to gain insights from location-based data. Power BI offers several types of map visualizations, each designed for different scenarios and use cases.
 

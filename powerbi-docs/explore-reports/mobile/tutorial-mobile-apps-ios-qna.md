@@ -13,16 +13,12 @@ ai-usage: ai-assisted
 ---
 # Tutorial: Ask questions by using the Q&A virtual analyst in the Power BI iOS apps
 
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
+
 > [!IMPORTANT]
 > Q&A experiences retire in December 2026. Use [Copilot for Power BI](../../create-reports/copilot-introduction.md), which provides a more advanced and integrated way to query your data by using natural language. For more details and recommended alternatives, see [Deprecating Power BI Q&A](https://powerbi.microsoft.com/blog/deprecating-power-bi-qa).
 
 The easiest way to learn about your data is to ask questions in your own words. In this tutorial, you use the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad or iPhone to ask questions and view featured insights about sample data.
-
-Applies to:
-
-| :::image type="icon" source="./media/tutorial-mobile-apps-ios-qna/iphone-logo-50-px.png"::: | :::image type="icon" source="./media/tutorial-mobile-apps-ios-qna/ipad-logo-50-px.png"::: |
-|:--- |:--- |
-| iPhones |iPads |
 
 The Q&A virtual analyst is a conversational BI experience that accesses Q&A data in the [Power BI service](https://powerbi.com). It suggests insights, and you can type or speak questions.
 

@@ -11,7 +11,7 @@ ms.author: juliacawthra
 ---
 # Add a multi-value parameter to a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   In a Power BI paginated report, you can add a parameter that allows the user to select more than one value for the parameter.  
   

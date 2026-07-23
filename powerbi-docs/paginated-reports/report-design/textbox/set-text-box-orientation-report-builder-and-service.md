@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Set text box orientation in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
 In a Power BI paginated report, you can rotate a text box in different directions:   
 - Horizontally   

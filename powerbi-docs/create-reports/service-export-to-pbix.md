@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI Desktop, you can publish a report from your local computer to the Power BI service. Power BI reports can go the other direction as well. This article explains how to download a report or a semantic model from the Power BI service to Power BI Desktop. The extension for a Power BI file, in either case, is *.pbix*.
 

@@ -13,7 +13,7 @@ ms.date: 03/02/2026
 
 # Create email subscriptions for your scorecards in Power BI
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Set up subscriptions to receive email notifications and stay up to date on the scorecards that matter most to you and your team.
 

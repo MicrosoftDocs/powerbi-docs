@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Conditional formatting in Power BI visuals
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Conditional formatting in Power BI lets you dynamically change the appearance of your visuals based on data values. Instead of using static colors and styles, you can set colors to change based on field values, rules you define, or color scales that map values to a gradient. This capability helps you highlight important data points, show status indicators, or create heat map effects within your visuals. You can also create dynamic, expression-based titles and subtitles, and apply rich formatting options to tables and matrices.
 

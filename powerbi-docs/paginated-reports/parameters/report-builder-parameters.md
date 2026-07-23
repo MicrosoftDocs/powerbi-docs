@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Report parameters in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)] 
 
 This article describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters let you control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports that you create in Report Builder.
 

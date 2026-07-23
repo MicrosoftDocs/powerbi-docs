@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 # Create page and bookmark navigators
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 By using built-in navigators in Power BI, you can build page and bookmark navigation experiences in a few steps. These navigators save you hours of effort building and managing your page or bookmark navigation experiences.
 

@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 # Licenses and subscriptions for business users
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 As a [business user](../personas/business-user/end-user-consumer.md), you use the Power BI service to explore reports and dashboards so you can make data-backed business decisions. If you've used Power BI for a while, you probably notice that some features only work if you have a certain type of license, subscription, or permissions.
 
