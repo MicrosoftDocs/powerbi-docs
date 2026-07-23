@@ -41,6 +41,13 @@ Except for Azure SQL Database, all data sources are ready to use after you uploa
 
 For Azure SQL Database data sources, you need to supply more information, as described in the [Azure SQL Database Authentication](#azure-sql-database-authentication) section.
 
+## Access and Excel data sources
+
+Access and Excel data sources rely on the **Microsoft Access Database Engine (ACE)** OLE DB provider (`Microsoft.ACE.OLEDB.*`) to read Access databases (`.accdb`, `.mdb`) and Excel workbooks (`.xls`, `.xlsx`) through OLE DB.
+
+> [!IMPORTANT]
+> Starting with **Power BI Report Server September 2026**, PBIRS setup no longer installs the Access Database Engine. In earlier releases it was installed automatically as part of the report server bundle. To use Access or Excel data sources after September 2026 release an administrator must install the Access Database Engine **separately** on the computer running Power BI Report Server.
+
 ## Other data sources
 
 In addition to the natively supported data sources, the following data sources can be accessed via a [Power BI enterprise gateway](../connect-data/service-gateway-onprem.md) or a [VNet gateway](/data-integration/vnet/overview):
