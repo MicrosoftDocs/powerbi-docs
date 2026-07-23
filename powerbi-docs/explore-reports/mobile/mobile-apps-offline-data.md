@@ -13,11 +13,8 @@ ai-usage: ai-assisted
 
 # View your data offline in the Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-offline-data/iphone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-offline-data/ipad-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-offline-data/android-phone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-offline-data/android-tablet-logo-50-px.png" border="false":::|
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |
 
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network.
 

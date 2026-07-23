@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Create and use basic area charts
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Basic area charts in Power BI help you visualize data trends and emphasize volume changes over time. The basic area chart (also known as layered area chart) is based on the line chart, with the area between axis and line filled with colors to indicate volume.
 

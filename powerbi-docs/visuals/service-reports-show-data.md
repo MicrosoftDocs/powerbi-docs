@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Show data used to create Power BI visuals
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 ## Show data as a table
 

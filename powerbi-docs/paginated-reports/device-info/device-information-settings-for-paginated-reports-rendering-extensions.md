@@ -11,7 +11,7 @@ ms.author: juliacawthra
 ---
 # Device information settings for Power BI paginated report rendering extensions
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 In Power BI paginated reports, device information settings are used to pass rendering parameters to a rendering extension. Each rendering extension accepts a specific set of settings.  
   

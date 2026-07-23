@@ -16,7 +16,7 @@ LocalizationGroup: Transform and shape data
 
 # Configure semantic model options in the Power BI service
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 The model **Options** dialog in the Power BI service lets you view and edit modeling settings for the current semantic model. You get greater control over model-level behavior without needing to switch back to Power BI Desktop.
 

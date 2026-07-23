@@ -13,7 +13,7 @@ ms.date: 05/11/2026
 
 # Embed a report with token-based identity (SSO)
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 The **token-based identity** allows an ISV to use a [Microsoft Entra access token](/azure/databricks/dev-tools/api/latest/aad/app-aad-token) to pass the identity of a customer to an **Azure SQL database** managed in the customer's tenant.
 

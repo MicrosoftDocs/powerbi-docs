@@ -18,7 +18,7 @@ ms.update-cycle: 180-days
 
 # Enable Fabric Copilot for Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Learn how to enable Fabric Copilot for Power BI in your organizational tenant. This article explains how to enable Copilot in your tenant, start using Copilot in the Power BI service, and start using Copilot in Power BI Desktop—helping your organization take advantage of AI-powered features.
 

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Align the data in a paginated report chart in a table or matrix (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Sparklines and data bars are small, simple charts that convey a lot of information with little extraneous detail in a paginated report. In a paginated report, when you check this option the values in your sparklines and data bars will align across the different cells in the table or matrix, even if there are missing values in the data they are based on.  
   

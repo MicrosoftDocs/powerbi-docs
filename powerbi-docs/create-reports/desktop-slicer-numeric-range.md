@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Create a numeric or date range slicer in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 By using the numeric range slicer and the date range slicer, you can create filters for any numeric or date column in your data model. You have three options for filtering your data:
 

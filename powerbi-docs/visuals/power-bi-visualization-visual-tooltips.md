@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Visual tooltips in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Visual tooltips display contextual information when consumers hover over data points in a visual. They help consumers understand the data without leaving the report. This article describes how to add fields to a tooltip, format the tooltip in Power BI Desktop and the Power BI service, and use drill actions from the tooltip.
 

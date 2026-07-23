@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Interact with small multiples in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Small multiples, or trellising, split a visual into multiple versions of itself in Power BI. Learn how to interact with small multiples by selecting data points, scrolling through categories, cross-highlighting visuals, and sorting to analyze your data more effectively.
 

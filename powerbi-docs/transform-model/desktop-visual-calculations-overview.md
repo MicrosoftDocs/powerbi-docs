@@ -16,7 +16,7 @@ no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PR
 
 # Visual calculations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 A visual calculation is a DAX calculation that you define and run directly on a visual, instead of adding it to the semantic model. Because a visual calculation works with the data already shown in the visual, you can express common business calculations - like running totals, moving averages, and period-over-period comparisons - without navigating filter context or model relationships. The result is usually shorter DAX that's easier to maintain and often performs better than an equivalent measure.
 

@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Supported data sources for Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article describes supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources. Some data sources are supported natively. You can connect to others by using data gateways or using [Get Data experience in Power BI Report Builder](./report-builder/connect-snowflake-databricks-power-query-online.md).
 
@@ -40,6 +40,13 @@ Paginated reports natively support the following list of data sources:
 Except for Azure SQL Database, all data sources are ready to use after you upload the report to the Power BI service. The data sources default to using SSO, where applicable. For Azure Analysis Services, you can change the authentication type to OAuth2. However, once the authentication type for a given data source is changed to OAuth2, it can't revert back to use SSO.  In addition, this change applies to all the reports that use that data source across all workspaces for a given tenant.  Row-level security in paginated reports won't work unless users choose SSO for authentication type.
 
 For Azure SQL Database data sources, you need to supply more information, as described in the [Azure SQL Database Authentication](#azure-sql-database-authentication) section.
+
+## Access and Excel data sources
+
+Access and Excel data sources rely on the **Microsoft Access Database Engine (ACE)** OLE DB provider (`Microsoft.ACE.OLEDB.*`) to read Access databases (`.accdb`, `.mdb`) and Excel workbooks (`.xls`, `.xlsx`) through OLE DB.
+
+> [!IMPORTANT]
+> Starting with **Power BI Report Server September 2026**, PBIRS setup no longer installs the Access Database Engine. In earlier releases it was installed automatically as part of the report server bundle. To use Access or Excel data sources after September 2026 release an administrator must install the Access Database Engine **separately** on the computer running Power BI Report Server.
 
 ## Other data sources
 

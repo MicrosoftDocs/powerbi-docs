@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 You can enhance your Power BI reports by adding images to them. Static images on the page are suitable for some purposes. However, sometimes you want dynamic images that relate to the data that's currently displayed in your report.
 

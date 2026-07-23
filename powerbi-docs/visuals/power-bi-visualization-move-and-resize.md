@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Move and resize a visualization in a report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com), you'll need to open the report in [Editing view](../create-reports/service-interact-with-a-report-in-editing-view.md).
 

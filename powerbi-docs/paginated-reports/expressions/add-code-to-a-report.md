@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Add code to a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 In any expression, you can call your own custom code in a paginated report.
 

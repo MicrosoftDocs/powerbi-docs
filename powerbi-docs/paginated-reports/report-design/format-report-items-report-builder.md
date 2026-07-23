@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Format Power BI paginated report items (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Formatting the items in your paginated reports makes them look more attractive and enhances readability. You can format the text boxes and individual items within text boxes, the images, the expressions, and the data while in report design mode.  
   

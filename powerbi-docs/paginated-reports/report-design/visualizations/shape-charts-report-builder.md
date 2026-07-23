@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Shape charts in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   A shape chart displays value data as percentages of a whole in a Power BI paginated report. Shape charts are typically used to show proportional comparisons between different values in a set. Individual segments of the shape represent the categories. The value determines the size of the segment. Shape charts are similar in use to pie charts, except that they order categories from largest to smallest.  
   

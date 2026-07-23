@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 # Filter data in Power BI reports
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Use the **Filters** pane in the Power BI service to control what data appears in your reports. You can modify existing filters to focus on specific data, reset filters to their defaults, or clear filters to view all available data.
 

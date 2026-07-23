@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Specify the size of an indicator in Power BI paginated reports using an expression (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   In addition to color, direction, and shape, you can use size to maximize the visual impact of indicators in a paginated report.  
   

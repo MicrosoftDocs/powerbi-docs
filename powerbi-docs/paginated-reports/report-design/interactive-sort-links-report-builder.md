@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Interactive sort and links in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   In Web-based environments, you can add a number of features that let your users interact with paginated reports. Your users can change the sort order of values in your report, show or hide items in the report, or click links that go to other reports or Web pages. You can also add a table of contents. Your report users can select items in the table of contents to jump to areas within a report.  
   

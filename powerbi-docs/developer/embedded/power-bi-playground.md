@@ -14,7 +14,7 @@ ms.custom: intro-overview
 
 # What is the Power BI embedded analytics playground?
 
-[!INCLUDE[Customers no Org yes](../../includes/applies-embedded-app-no-user-yes.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-organization](../../includes/applies-to-version/embedded-organization.md)]
 
 The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It’s also where you can keep up with all the new features and updates of Power BI embedded.
 

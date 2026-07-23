@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Matrix visual format settings
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This guide covers all matrix visual format settings in Power BI Desktop and the Power BI service. Use it to customize layouts, grid settings, column and row headers, subtotals, and more to present your data in the most effective way possible.
 

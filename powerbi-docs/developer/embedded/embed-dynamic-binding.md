@@ -11,7 +11,7 @@ ms.date: 12/15/2025
 
 # Connect a report to a semantic model using dynamic binding
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers-organization](../../includes/applies-to-version/embedded-customers-organization.md)]
 
 When a report is connected to a semantic model, you can use dynamic binding. The connection between the report and the semantic model, is known as *binding*. When the binding is determined at the point of embedding, as opposed to being predetermined earlier, the binding is known as dynamic binding.
 

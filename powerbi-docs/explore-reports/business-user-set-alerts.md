@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 # Set alerts on Power BI reports (public preview)
 
-**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium or Fabric license
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 With Fabric Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Activator?](/fabric/real-time-intelligence/data-activator/activator-introduction)
 

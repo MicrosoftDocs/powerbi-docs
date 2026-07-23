@@ -12,7 +12,7 @@ ms.date: 12/15/2025
 
 # Configure credentials programmatically for Power BI
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers-organization](../../includes/applies-to-version/embedded-customers-organization.md)]
 
 To configure credentials programmatically for Power BI, follow the steps in this article. Configuring credentials programmatically also allows you to encrypt credentials.
 

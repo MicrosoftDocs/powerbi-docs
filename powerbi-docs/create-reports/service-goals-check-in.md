@@ -15,7 +15,7 @@ ms.date: 03/02/2026
 
 # Stay on top of your goals
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Scorecards in Power BI let you curate your goals and track them against key business objectives, all in a single pane. In addition to seeing all your goals in one view, scorecards make it easy for you to dig deeper into the data, update your goals, and make notes on important events.
 

@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Tips and tricks for formatting color in reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI provides many different ways to customize the formatting and colors used in your report visuals. This article provides some tips to make your Power BI visualizations more compelling, interesting, and customized to your needs.
 

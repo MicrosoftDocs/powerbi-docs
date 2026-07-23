@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Set a No Data message for a data region (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   When you want to specify text to show in the rendered report in place of a data region that has no data, set one of these properties:
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Add Help tooltips to visuals in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Help tooltips add quick guidance to a visual through a small **Help tooltip** icon in the visual header. Consumers select the icon to view either short text or a report page that explains the visual or describes how to interact with it.
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Set the landing page for a Power BI report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 As a report author, you can choose any page in your report to be the landing page. The landing page is the page report consumers see first when they open the report, regardless of which page was active when you last saved or published it.
 

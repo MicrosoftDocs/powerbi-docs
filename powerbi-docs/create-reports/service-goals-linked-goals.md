@@ -12,7 +12,7 @@ ms.date: 12/19/2025
 
 # Create linked goals in the Power BI service (preview)
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 By using linked goals, you can show the same goal on multiple scorecards, across multiple workspaces. All check-ins, edits, and updates appear in all the goal locations, so you don't need to create duplicate goals to track the same thing. For example, in many organizations, the leadership team has a scorecard, and each department has its own scorecard with goals from the leadership team, along with other goals that are relevant to their department. By using this feature, you can link such goals to any number of scorecards and keep them in sync automatically.
 

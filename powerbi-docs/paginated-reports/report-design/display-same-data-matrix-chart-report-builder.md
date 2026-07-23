@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Display the same data on a matrix and a chart in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   When you want to show the same data in a matrix and a chart in a paginated report, you must set properties on both data regions to specify the same dataset, and also the same expressions for filters, groups, sorts, and data.  
   

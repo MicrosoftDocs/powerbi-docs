@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Format pointers on a gauge in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
  In a Power BI paginated report, the gauge pointer indicates the current value of the gauge.
 

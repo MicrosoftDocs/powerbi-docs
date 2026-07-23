@@ -13,7 +13,7 @@ ms.date: 12/30/2024
 
 # Plan to migrate .rdl reports to Power BI
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+**Applies to:** [!INCLUDE [applies-to-report-builder-2022-report-server-ssrs-2022](../includes/applies-to-version/report-builder-2022-report-server-ssrs-2022.md)]
 
 This article targets Power BI Report Server and SQL Server Reporting Services (SSRS) report authors and Fabric administrators. It provides you with guidance to help you migrate your [Report Definition Language (.rdl)](/sql/reporting-services/reports/report-definition-language-ssrs) reports to Power BI.
 

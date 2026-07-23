@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Create custom report themes in Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 This article describes how to create a custom report theme JSON file to fully customize the look and feel of your Power BI reports. For information about applying and using themes, see [Use report themes in Power BI Desktop](desktop-report-themes.md).
 

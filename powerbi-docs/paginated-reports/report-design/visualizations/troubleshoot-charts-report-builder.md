@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Troubleshoot charts in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   These issues can be helpful when working with charts in a Power BI paginated report.  
   

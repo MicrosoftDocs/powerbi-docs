@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 #  Dark mode in Power BI Desktop
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 When you create reports in Power BI Desktop, you can choose different modes, depending on what you're more comfortable looking at. For example, *Dark mode* replaces all the chrome around the design surface with white-on-black text instead of black-on-white.
 

@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # Export a report to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyn](../includes/consumer-appliesto-yyn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 There are several different ways that Power BI and PowerPoint work together. In this article, you learn how to export a Power BI report and create a PowerPoint slide deck with one slide for each report page. The report is static; the slides retain the state of the report at the time of export.
 

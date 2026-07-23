@@ -13,7 +13,7 @@ LocalizationGroup: Dashboards
 ---
 # Get Power BI insights
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Power BI insights help you discover important patterns in your data automatically. Instead of manually exploring every chart and number, you can ask Power BI to analyze your data and highlight interesting findings. Think of insights as your data assistant, pointing out trends, unusual values, and patterns you might have missed.
 

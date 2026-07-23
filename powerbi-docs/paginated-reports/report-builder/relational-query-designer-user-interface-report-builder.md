@@ -12,7 +12,7 @@ ms.author: juliacawthra
 ---
 # Relational query designer user interface (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Power BI Report Builder provides both a graphical query designer and a text-based query designer to help you create a query that specifies the data to retrieve from Microsoft SQL Server and Microsoft SQL Database relational databases and Microsoft SQL Server 2016 Analytics Platform System (PDW) for a report dataset. Use the graphical query designer to explore the metadata, interactively build a query, and view the results for your query. Use the text-based query designer to view the query that was built by the graphical query designer or to modify a query. You can also import an existing query from a file or report.  
   

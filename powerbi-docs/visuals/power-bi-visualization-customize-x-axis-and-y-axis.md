@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Customize x-axis and y-axis properties
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 This article shows how to customize the X-axis and Y-axis of your visuals. Not all visuals have axes—pie charts, for example, don't have them. Customization options also vary by visual type. This article covers the most common options in the **Format visual** pane.
 

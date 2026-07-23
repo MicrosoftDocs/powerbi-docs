@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Automatic page refresh in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you monitor critical events, you want data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, you need to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 

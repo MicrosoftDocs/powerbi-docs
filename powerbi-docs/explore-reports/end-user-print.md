@@ -14,7 +14,7 @@ LocalizationGroup: Common tasks
 ---
 # Print from the Power BI service
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you need to print each page separately. You can't print from Power BI Desktop.
 

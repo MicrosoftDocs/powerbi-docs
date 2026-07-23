@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 
 # Power BI reports overview
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Power BI reports are interactive, multi-page documents that present insights from your data through visualizations, text, and images. Reports connect to [semantic models](../connect-data/service-datasets-understand.md) that contain your data, and provide a canvas where you can arrange visuals, add interactivity, and tell a compelling data story.
 

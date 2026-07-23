@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # View related content in Power BI dashboards and reports
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 The **Related content** pane shows how your Power BI service content - dashboards, reports, and semantic models - are interconnected. The **Related content** pane is also a launching pad for taking action. From here, you can open dashboards and reports, generate insights, analyze the data in Excel, and more.  
 

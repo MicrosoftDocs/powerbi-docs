@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Protect your scorecards with goal-level permissions
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 In many organizations, different roles should have access to view and update different goals. For example, maybe only managers should see goals related to human resources and finances, while all employees can view goals related to operations.  
 

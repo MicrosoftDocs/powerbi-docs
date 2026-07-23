@@ -14,7 +14,7 @@ LocalizationGroup: Samples
 ---
 # Tutorial: Create a decomposition tree with a Power BI sample
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In this tutorial, you start with a built-in Power BI sample semantic model and create a report with a *decomposition tree*. A decomposition tree is an interactive visual for exploration and conducting root cause analysis.
 

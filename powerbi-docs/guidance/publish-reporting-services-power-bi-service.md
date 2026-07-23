@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Publish .rdl files to Power BI from Power BI Report Server and Reporting Services
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
+**Applies to:** [!INCLUDE [applies-to-report-builder-2022-report-server-ssrs-2022](../includes/applies-to-version/report-builder-2022-report-server-ssrs-2022.md)]
 
 Do you have Report Definition Language (.rdl) paginated reports in Power BI Report Server or SQL Server 2022 Reporting Services (SSRS) that you want to migrate to the Power BI service? This article provides step-by-step instructions for migrating .rdl files *and Power BI reports (.pbix files)* from Power BI Report Server and SQL Server 2022 Reporting Services to the Power BI service.
 

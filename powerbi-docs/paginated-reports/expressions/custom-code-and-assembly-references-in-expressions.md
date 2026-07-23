@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Custom code in expressions in a paginated report in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   You can add custom code embedded in a report. Use embedded code for custom constants, complex functions or functions that are used multiple times in a single report. Custom code can include new custom constants, variables, functions, or subroutines. You can include read-only references to built-in collections such as the Parameters collection. However, you cannot pass sets of report data values to custom functions; specifically, custom aggregates are not supported.
 

@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Create and use R visuals in Power BI
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R](../create-reports/desktop-r-visuals.md).
 

@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Images in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 An image is a Power BI paginated report item that contains a reference to an image that is embedded in the report, stored in a database, or stored elsewhere on the Web. An image can be a picture that's repeated with rows of data. You can also use an image as a background for certain report items.  
   

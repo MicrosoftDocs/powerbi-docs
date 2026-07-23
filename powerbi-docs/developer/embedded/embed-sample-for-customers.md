@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 **Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards, and tiles, into your application.
 

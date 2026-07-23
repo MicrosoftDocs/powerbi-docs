@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add interactive sort to a table or matrix in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Add interactive sort buttons to enable users to change the sort order of rows and columns in tables and matrices in paginated reports. This feature is supported only in rendering formats that support user interaction, such as HTML.  
   

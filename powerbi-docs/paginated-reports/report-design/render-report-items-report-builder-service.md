@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Render report items in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 The number, size, and location of Power BI paginated report items affect how the renderers paginate the report body. The following sections describe how various report items are rendered.  
 

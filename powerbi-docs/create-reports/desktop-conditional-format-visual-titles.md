@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Create expression-based titles and subtitles
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 You can create dynamic, customized titles and subtitles for your Power BI visuals. By creating Data Analysis Expressions (DAX) based on fields, variables, or other programmatic elements, your visuals' titles and subtitles can automatically adjust as needed. These changes happen based on filters, selections, or other user interactions and configurations.
 

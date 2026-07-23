@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Pie charts in Power BI paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   Pie charts and donut charts display data as a proportion of the whole in a paginated report. Pie charts are most commonly used to make comparisons between groups. Pie and donut charts, along with pyramid and funnel charts, comprise a group of charts known as shape charts. Shape charts have no axes. When a numeric field is dropped on a shape chart, the chart calculates the percentage of each value to the total. For more information on shape charts, see [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md).  
   

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Specify consistent colors in multiple shape charts in Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../../includes/applies-to-version/report-builder.md)]
 
   On non-shape charts in a Power BI paginated report, Power BI Report Builder selects a new color from the palette based on the index of series in the chart. For example, the first series on your chart will be mapped to the first color in the palette. However, this behavior differs for shape charts. On shape charts, each color in the palette is mapped to a data point in the dataset. For example, data point 1 is mapped to the first color in the palette, data point 2 is mapped to the second color palette and so on.  
   

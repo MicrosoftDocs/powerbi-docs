@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Treemaps in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle called a _branch_ node. Each branch contains smaller rectangles called _leaf_ nodes. Power BI uses the measure value to determine the rectangle size for branches and leaves.
 

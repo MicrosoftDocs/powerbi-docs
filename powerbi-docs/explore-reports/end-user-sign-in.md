@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Sign in and out of the Power BI service
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 This article is for Power BI business users who are signing in to the Power BI service for the first time. A *business user* is someone who uses the data and visualizations in reports that their colleagues create. A business user relies on this data to make data-driven business intelligence decisions.
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Tooltips overview
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Tooltips display contextual information when consumers hover over data points or icons in a visual. They help users explore details without leaving the report. Power BI supports three types of tooltips, and you can use them together on the same visual.
 

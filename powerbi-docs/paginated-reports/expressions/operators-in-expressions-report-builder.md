@@ -14,7 +14,7 @@ ms.update-cycle: 1825-days
 ---
 # Operators in expressions in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   An operator is a symbol that represents actions applied to one or more terms in an expression in a paginated report. The following categories of operators are supported in an expression: arithmetic, comparison, concatenation, logical or bitwise, and bit shift.
 

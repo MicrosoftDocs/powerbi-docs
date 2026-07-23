@@ -11,7 +11,8 @@ ai-usage: ai-assisted
 ---
 
 # Create parameters for paginated reports that you create in the Power BI service
-[!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
+
+**Applies to:** [!INCLUDE [applies-to-service](../../includes/applies-to-version/service.md)]
 
 This article introduces you to defining parameters for paginated reports that you author in the Power BI service. You can use filters and parameters in the report that you author. However, a field **cannot be both** a filter and a parameter. This functionality doesn't apply to reports that you author in Power BI Report Builder.  
 

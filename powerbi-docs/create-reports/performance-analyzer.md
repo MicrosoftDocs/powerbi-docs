@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Use Performance Analyzer to examine report performance
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 In Power BI reports, you can find out how each of your report visuals is performing. By using the **performance analyzer**, you can see how long each visual takes to load. Each load time is further broken down category, such as time the DAX query took to run. The DAX query for each visual can be copied, and ran in **DAX query view** in Power BI Desktop. The **performance analyzer** is a pane available in **Report view** of Power BI Desktop or when editing a report in the web.
 

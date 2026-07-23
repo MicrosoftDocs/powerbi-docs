@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Design tips for reports in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 Use the following tips to help design your paginated reports in Power BI Report Builder.  
   

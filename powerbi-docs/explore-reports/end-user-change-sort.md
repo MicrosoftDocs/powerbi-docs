@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 # Change how a chart is sorted in a Power BI report
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 > [!IMPORTANT]
 > **This article is for Power BI service users who don't have edit permissions for a report or semantic model and are viewing reports in a web browser (app.powerbi.com) or mobile app. If you're using Power BI Desktop or you're a report designer, administrator, or owner, see [Sort one column by another column in Power BI](../create-reports/desktop-sort-by-column.md) for information that is more relevant to you**.

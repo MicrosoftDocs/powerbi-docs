@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Create Apply all and Clear all slicers buttons in Power BI reports
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 If you have a report page with a number of slicers, consider adding *Apply all slicers* and *Clear all slicers* buttons to the page. These buttons apply all the slicers or clear all the slicers on a page, with one click, reducing the number of unnecessary visual queries the slicers send.
 

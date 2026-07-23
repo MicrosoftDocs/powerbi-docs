@@ -13,7 +13,7 @@ ms.date: 12/15/2025
 
 # Embedded analytics access tokens
 
-**APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
+**Applies to:** [!INCLUDE [applies-to-embedded-customers-organization](../../includes/applies-to-version/embedded-customers-organization.md)]
 
 Consuming Power BI content (such as reports, dashboards and tiles) requires an access token. Depending on your solution, this token can be either a [Microsoft Entra token](#azure-ad-token), an [embed token](#embed-token), or both.
 

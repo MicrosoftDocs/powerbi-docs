@@ -13,7 +13,7 @@ ms.custom: sfi-image-nochange
 ---
 # Use accessibility tools to create accessible paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Power BI Report Builder has an inclusive design, which makes it accessible to people with disabilities as well as people without disabilities. Individuals who have physical disabilities, low-vision or temporal disabilities can also use Power BI Report Builder to create paginated reports.
 

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Create a stepped paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 A stepped report is a type of Power BI paginated report that shows detail rows or child groups indented under a parent group in the same column, as shown in the following example:  
   

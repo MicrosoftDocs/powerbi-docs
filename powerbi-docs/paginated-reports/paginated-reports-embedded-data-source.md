@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Create an embedded data source for paginated reports in the Power BI service
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article explains how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Paginated reports published to the Power BI service don't support SSRS-style shared datasets and data sources (.rds/.rsd files), but can use Power BI semantic models as data sources. Here are some of the data sources you can connect to:
 

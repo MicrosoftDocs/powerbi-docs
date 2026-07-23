@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 
 # Visualizations overview in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Visualizations, also called visuals, are the building blocks of Power BI reports. They transform the curated data and DAX calculations from your [Power BI semantic model](../connect-data/service-datasets-understand.md) into meaningful insights that help you understand patterns, trends, and relationships in your data. Power BI offers a wide variety of built-in visuals, each designed for specific scenarios and data types.
 

@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Tables in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
  In Power BI Report Builder, you can use a table to display detail data or grouped data, or a combination of both in a paginated report.   
    

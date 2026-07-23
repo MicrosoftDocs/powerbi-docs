@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 ---
 # Create and use pie and donut charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Pie and donut charts in Power BI are powerful visualization tools for representing parts of a whole in an intuitive, visually appealing way. This article provides a step-by-step walkthrough for creating pie and donut chart visuals in both Power BI Desktop and Power BI Service platforms.
 

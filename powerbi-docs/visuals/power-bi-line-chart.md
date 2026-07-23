@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Line charts in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 Line charts display continuous data as points connected by lines, making them ideal for visualizing trends over time. Use line charts to track metrics like monthly revenue, website traffic, or performance across periods. They excel at revealing patterns, seasonal effects, and long-term changes in your data.
 

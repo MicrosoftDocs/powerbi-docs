@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add a border to a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 You can add a border to a Power BI paginated report by adding borders to the headers, footers, and report body themselves, without adding lines or rectangles.
     

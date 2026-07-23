@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 # Get started with hierarchies in Power BI scorecards
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 > [!WARNING]
 > Hierarchies in scorecards are going away by April 15th 2026. If you use hierarchies or the heatmap view, these features will no longer be available after that date. Scorecards themselves will continue to work as usual.

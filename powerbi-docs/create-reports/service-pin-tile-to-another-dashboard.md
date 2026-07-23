@@ -13,7 +13,7 @@ LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 One way to add a new [dashboard tile](../explore-reports/end-user-tiles.md) to a dashboard is to copy it from another dashboard. When you select either of these tiles, it links back to where it was created, either in Q&A or a report.
 

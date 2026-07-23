@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 
 # Export Power BI paginated reports
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-service-report-builder](../../includes/applies-to-version/service-report-builder.md)]
 
 You can export a Power BI paginated report to another file format, such as PowerPoint, Image, PDF, [Accessible PDF](/power-bi/report-server/rendering-extension-support) or Microsoft Word. You can export your report from Power BI  Report Builder (Accessible PDF is supported only on Power BI service).  
   

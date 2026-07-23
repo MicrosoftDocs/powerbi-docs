@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Design Power BI reports for accessibility
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, create your reports to be usable by as many people as possible, without the need for the report to be adapted for a special design.
 

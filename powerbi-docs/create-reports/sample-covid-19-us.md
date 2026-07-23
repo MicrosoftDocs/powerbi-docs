@@ -14,7 +14,7 @@ LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. The Power BI file contains the data model and interactive graphics in a Power BI template (.pbit) file format you can edit in Power BI Desktop. When you open it in Power BI Desktop, you can analyze and visualize COVID-19 data to keep your community informed at the city, county, state, and national/regional levels. A typical customization is to filter the report to a specific state, and then to create your own publish-to-web embed code to share the report publicly and inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 

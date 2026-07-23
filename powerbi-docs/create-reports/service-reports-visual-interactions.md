@@ -13,7 +13,7 @@ LocalizationGroup: Reports
 ---
 # Change how visuals interact in a Power BI report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 If you have edit permissions for a report, use **visual interactions** to change how visualizations on a report page impact each other.
 

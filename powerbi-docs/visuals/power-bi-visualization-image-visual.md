@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 # Create an image visual in Power BI
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 The **Image visual** in Power BI is a dedicated visual that displays images directly in reports with greater flexibility and control than previous methods. Whether you're adding a company logo, product photo, or illustrative graphic, this visual enhances data storytelling by integrating rich media elements seamlessly into the report canvas.
 

@@ -12,11 +12,8 @@ ai-usage: ai-assisted
 
 # Filter a report by geographic location in the Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png" border="false":::| :::image type="icon" source="./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png" border="false":::|
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |
 
 If the report you're viewing has geographic data, and you're in a location to which a geographic filter applies, you can filter the report based on your location.
 

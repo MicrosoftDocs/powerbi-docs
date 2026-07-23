@@ -13,7 +13,7 @@ ms.date: 12/15/2025
 
 # Implementing row-level security in embedded paginated reports
 
-[!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
+**Applies to:** [!INCLUDE [applies-to-embedded-customers](../../includes/applies-to-version/embedded-customers.md)]
 
 This article explains how to embed a paginated report that uses [**RLS** (row-level security)](embedded-row-level-security.md) into your *app owns data* application.
 

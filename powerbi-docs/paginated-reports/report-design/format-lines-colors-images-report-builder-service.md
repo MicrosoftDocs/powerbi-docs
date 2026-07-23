@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Format lines, colors, and images in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Power BI Report Builder gives you the ability to format lines, colors, data regions, images, and other report items in a  Power BI paginated report.  
 

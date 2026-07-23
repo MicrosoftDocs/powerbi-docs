@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 
 # Use drill mode to explore visuals in the Power BI service
 
-[!INCLUDE [consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 *Drill mode* lets you explore a visual at different levels of detail. For example, you can move from yearly totals down to quarters or months without leaving the report. Drill works on visuals built from a *hierarchy* - data organized into nested levels, such as Year > Quarter > Month or Category > Subcategory > Product.
 

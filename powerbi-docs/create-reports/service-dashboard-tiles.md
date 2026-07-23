@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Introduction to dashboard tiles for Power BI designers
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
 A tile is a snapshot of your data that you pin to the dashboard. You can create tiles from a report, dashboard, the Q&A box, Excel, SQL Server Reporting Services (SSRS) reports, and more. This screenshot shows many different tiles pinned to a dashboard.
 

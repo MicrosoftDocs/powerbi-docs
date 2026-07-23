@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 ---
 # Get started formatting report visualizations
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 If you have edit permissions for a report, there are numerous formatting options available. In Power BI reports, you can change the color of data series, data points, and even the background of visualizations. You can change how the x-axis and y-axis are presented. You can customize the data labels. You can even format the font properties of visualizations, shapes, and titles. Power BI provides you with full control over how your reports appear.
 

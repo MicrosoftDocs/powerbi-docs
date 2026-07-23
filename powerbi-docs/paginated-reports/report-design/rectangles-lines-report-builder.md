@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Rectangles and lines in a Power BI paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Rectangles and lines can help create visual effects within a Power BI paginated report. You can set display properties on the report items from the border section of the Home tab, and then set other properties in the Properties pane. You can also add features like a background color or image, a tooltip, or a bookmark to a rectangle.  
   

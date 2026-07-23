@@ -12,7 +12,7 @@ ms.reviewer: rpatkar
 ---
 # Create data connection strings (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   To include data in paginated reports, you must first create a *connection string* to your *data source*. This article explains how to create data connection strings and important information related to data source credentials. A data source includes the data source type, connection information, and the type of credentials to use. For more background, see [Intro to Report Data in Power BI Report Builder](report-data.md).
   

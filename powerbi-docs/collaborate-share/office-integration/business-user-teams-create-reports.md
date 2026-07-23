@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # Create reports from data in Microsoft Teams
 
-[!INCLUDE[consumer-appliesto-ynny](../../includes/consumer-appliesto-ynny.md)]
+**Applies to:** [!INCLUDE [applies-to-service](../../includes/applies-to-version/service.md)]
 
 It’s easy to create Power BI reports in Microsoft Teams. This article has a few examples of reports you can create. When you’re ready, you can also use tools like Power BI Desktop for more advanced report authoring.
 

@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 ---
 # Tables, matrixes, and lists in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 In Report Builder, tables, matrixes, and lists are *data regions* that display paginated report data in cells that are organized into rows and columns. The cells typically contain data such as text, dates, and numbers but they can also contain gauges, charts, or report items such as images. Collectively, tables, matrixes, and lists are frequently referred to as *tablix* data regions.  
   

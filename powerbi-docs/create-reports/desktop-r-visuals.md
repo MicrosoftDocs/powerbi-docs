@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 ---
 # Create Power BI visuals using R
 
-[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop](../includes/applies-to-version/desktop.md)]
 
 With Power BI Desktop, you can use *R* to visualize your data. R is a language and environment for statistical computing and graphics.
 

@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 
 # Let users personalize visuals in a report
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you share a report with a broad audience, some of your users might want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's difficult to make one visual that satisfies everyone's requirements. By using this new capability, you can empower your business users to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want and save it as a bookmark to come back to. They don't need to have edit permission for the report or go back to the report author for a change.
 

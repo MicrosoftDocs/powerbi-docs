@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Power BI gateway and Report Builder support for ODBC data sources
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 This article explains how to configure Open Database Connectivity (ODBC) data sources in the Power BI gateway, and how to use ODBC data sources in Power BI Report Builder.
 

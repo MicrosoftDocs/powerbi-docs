@@ -14,11 +14,8 @@ ms.custom: sfi-image-nochange
 
 # Share a dashboard or report from Power BI mobile apps
 
-Applies to:
+**Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
-| :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png" border="false"::: | :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png" border="false"::: | :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png" border="false"::: | :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png" border="false"::: |
-|:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** ended in March 2021. 

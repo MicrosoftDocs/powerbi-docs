@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 
 # Use default system credentials for web proxy in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+**Applies to:** [!INCLUDE [applies-to-report-builder](../includes/applies-to-version/report-builder.md)] 
 
 Web requests issued by Power BI Report Builder don't use web proxy credentials. In networks that use a proxy server, Report Builder might not be able to successfully make web requests. You might see the error: "The remote server returned an error: (407) Proxy Authentication Required."
 

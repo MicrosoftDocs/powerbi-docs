@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Control the tablix data region display on a paginated report page (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 Read about properties you can set in a paginated report for a table, matrix, or list data region, to change how it appears when you view the report.  
    

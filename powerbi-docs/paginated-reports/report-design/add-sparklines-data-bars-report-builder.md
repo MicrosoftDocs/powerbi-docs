@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add sparklines and data bars in a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
   Sparklines and data bars are small, spare charts that convey a lot of information with little extraneous detail in a paginated report. For more information about them, see [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md).  
   

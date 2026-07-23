@@ -12,7 +12,7 @@ ms.reviewer: saurkumar
 ---
 # Add a details group to a paginated report (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+**Applies to:** [!INCLUDE [applies-to-report-builder](../../includes/applies-to-version/report-builder.md)]
 
 In a paginated report, the detail data from a report dataset is specified as a group with no group expression. Add a detail group to an existing tablix data region when you want to display the detail data for a matrix, add back detail data that you have deleted from a table or list, or add additional detail groups. For more information about groups, see [Understanding Groups (Power BI Report Builder)](../../paginated-reports/report-design/understand-groups-report-builder.md).  
   

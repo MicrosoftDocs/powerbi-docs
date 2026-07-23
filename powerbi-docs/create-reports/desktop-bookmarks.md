@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 ---
 # Create report bookmarks in Power BI to share insights and build stories
 
-[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+**Applies to:** [!INCLUDE [applies-to-desktop-service](../includes/applies-to-version/desktop-service.md)]
 
 When you edit a report in Power BI Desktop and the Power BI service, you can add *bookmarks* to capture the current state of a report page. Bookmarks save the current filters and slicers, cross-highlighted visuals, sort order, and so on. There are two types of bookmarks: *personal* and *report*. This article covers creating and using **report** bookmarks. When you add report bookmarks to a report and others view your report, they can get back to that exact state by selecting your saved report bookmark.
 ![Screenshot showing Bookmarks in Power BI.](media/desktop-bookmarks/bookmarks-pane.png)
