@@ -11,7 +11,7 @@ LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot sign-in for Power BI Desktop
 
-There may be times when you attempt to sign in to **Power BI Desktop** but run into errors. There are three primary reasons for sign-in trouble: proxy authentication errors, non-HTTPS URL redirect errors, and sign-in issues when using the default web browser in older versions.
+You might encounter errors when you try to sign in to **Power BI Desktop**. Three primary reasons cause sign-in trouble: proxy authentication errors, non-HTTPS URL redirect errors, and sign-in problems when using the default web browser in older versions.
 
 To determine which problem is causing your sign-in issue, the first step is to contact your administrator and provide diagnostic information so that they can determine the cause of the issue. By tracing issues associated with your sign-in problem, administrators can determine which of the following errors or scenarios apply to you.
 
