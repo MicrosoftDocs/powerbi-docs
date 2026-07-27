@@ -13,7 +13,7 @@ LocalizationGroup: Troubleshooting
 
 You might encounter errors when you try to sign in to **Power BI Desktop**. Three primary reasons cause sign-in trouble: proxy authentication errors, non-HTTPS URL redirect errors, and sign-in problems when using the default web browser in older versions.
 
-To determine which problem is causing your sign-in issue, the first step is to contact your administrator and provide diagnostic information so that they can determine the cause of the issue. By tracing issues associated with your sign-in problem, administrators can determine which of the following errors or scenarios apply to you.
+To determine which problem is causing your sign-in issue, contact your administrator and provide diagnostic information so that they can determine the cause of the problem. By tracing problems associated with your sign-in problem, administrators can determine which of the following errors or scenarios apply to you.
 
 Let's take a look at each of those issues in turn. At the end of this article is a discussion on how to capture a *trace* in Power BI Desktop, which can help track down troubleshooting issues.
 
@@ -55,36 +55,36 @@ If the `ErrorCode: non_https_redirect_failed` occurs, it means that one or more 
 
 ## Sign-in error when using the default web browser
 
-Users running older versions of Power BI Desktop may experience the following sign-in failure when the **Use my default web browser** option is enabled: **The application requested an unsupported mode 'query' when requesting a token**
+Users running older versions of Power BI Desktop might see the following sign-in failure when they enable the **Use my default web browser** option: **The application requested an unsupported mode 'query' when requesting a token**.
 
-This issue can occur when:
-- Signing in to Power BI Desktop
-- Signing in to a data source that uses organizational (Microsoft Entra ID) authentication, such as SharePoint, Exchange, or SQL Azure
-- Refreshing data from those sources
+This problem can occur when users:
+- Sign in to Power BI Desktop
+- Sign in to a data source that uses organizational (Microsoft Entra ID) authentication, such as SharePoint, Exchange, or SQL Azure
+- Refresh data from those sources
 
-To solve this issue, update to the latest version of Power BI Desktop:
+To fix this problem, update to the latest version of Power BI Desktop:
 
-- **Microsoft Store:** Open the Store, go to **Library** > **Get updates** (or [get it here](https://aka.ms/pbidesktopstore)). Store installs updates automatically.
+- **Microsoft Store:** Open the Store, go to **Library** > **Get updates** (or [get it here](https://aka.ms/pbidesktopstore)). The Store installs updates automatically.
 - **Download Center:** [Download and install the latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 Then restart **Power BI Desktop** and sign in again.
 
-If updating isn't immediately possible:
+If you can't update right away:
 
-1. Open **File** > **Options and settings** > **Options**
-2. Select **Security**
-3. Clear **Use my default web browser**
-4. Restart **Power BI Desktop**
-5. Sign in again.
+1. Open **File** > **Options and settings** > **Options**.
+1. Select **Security**
+1. Clear **Use my default web browser**
+1. Restart **Power BI Desktop**
+1. Sign in again.
 
 ### Additional troubleshooting for data source sign-in
 
 If Power BI Desktop sign-in succeeds but data source authentication still fails:
 
 1. Open **File** > **Options and settings** > **Options**
-2. Select **Security**
-3. Enable **Use updated sign-in experience for data sources**
-4. Reconnect to the data source and sign in again
+1. Select **Security**.
+1. Enable **Use updated sign-in experience for data sources**.
+1. Reconnect to the data source and sign in again.
 
 ## How to collect a trace in Power BI Desktop
 
