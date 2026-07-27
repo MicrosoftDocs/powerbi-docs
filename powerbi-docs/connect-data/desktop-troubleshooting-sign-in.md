@@ -81,7 +81,7 @@ If you can't update right away:
 
 If Power BI Desktop sign-in succeeds but data source authentication still fails:
 
-1. Open **File** > **Options and settings** > **Options**
+1. Open **File** > **Options and settings** > **Options**.
 1. Select **Security**.
 1. Enable **Use updated sign-in experience for data sources**.
 1. Reconnect to the data source and sign in again.
