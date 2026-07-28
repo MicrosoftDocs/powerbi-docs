@@ -3,11 +3,11 @@ title: Export Paginated Reports with Power Automate
 description: Learn how to create Power Automate flows that automate the export and distribution of Power BI paginated reports.
 author: JulCsc
 ms.author: juliacawthra
-ms.reviewer: ''
+ms.reviewer: rauagarwal
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 11/01/2025
+ms.date: 07/23/2026
 ai-usage: ai-assisted
 LocalizationGroup: Get started
 ---
@@ -22,7 +22,7 @@ Power Automate is a no-code way to interact with the Export To File API in the u
 To follow along, make sure you have:
 
 - At least one workspace in your Power BI tenant backed by a Premium capacity (also known as reserved capacity). This capacity can be any of the A4–A6 or P1/F2 and above SKU. Read more about [Premium capacities](../enterprise/service-premium-what-is.md).
-- Access to the standard connectors in Power Automate, which come with any Office 365 subscription.
+- Access to the standard connectors in Power Automate, which come with any Microsoft 365 subscription.
 
 >[!NOTE]
 >You can also follow along if you have a [Power BI Premium Per User (PPU) license](../enterprise/service-premium-per-user-faq.yml) but you're limited to one export within a five-minute window. 
@@ -45,6 +45,29 @@ Select a template from the following list to start the step-by-step walkthrough.
 ## Considerations and limitations
 
 When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to the  Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
+
+## Best practices for exporting paginated reports with Power Automate
+
+When you use the Export to File API to export paginated reports through Power Automate - especially at scale, such as looping over many reports or parameter sets - a few simple habits go a long way toward building reliable, resilient flows. The guidance in this section helps your flows handle the occasional hiccup gracefully.
+
+### Implement your own retry logic
+
+Every now and then, a report export briefly can't reach its underlying data source. This condition is normal and temporary in any cloud service. In most cases, a later attempt simply succeeds. By default, the export action uses an exponential retry policy, where the number of retries is based on your performance profile. For paginated report exports, this default often isn't enough on its own. The service can take a little while to recover, and the default attempts happen too close together to give it that time. For that reason, configure a longer retry policy:
+
+- **Recommended:** use a **fixed interval** policy with a **count of 5** and an **interval of PT5M** (5 minutes). The wider spacing gives the service enough time to recover, so the next attempt is far more likely to succeed.
+- **If you prefer exponential backoff:** use a **count of at least 5**, with a **minimum interval of PT30S** and a **maximum interval of at least PT5M**. This spacing keeps attempts far enough apart to be effective.
+
+> [!NOTE]
+> Retries help with temporary failures only. If the *same* report fails every time, even after retrying, the cause is usually something specific to that report - such as an incorrect connection string, or a sign-in or permissions problem. In that case, fixing the underlying report or data source resolves the problem, whereas retrying doesn't.
+
+### Optimize report design
+
+- Split very large exports into smaller batches. Reducing the size and memory footprint of each export improves both reliability and performance.
+- Review the [performance and scalability considerations](../guidance/report-paginated-performance-scalability-considerations.md) for paginated reports.
+
+## Additional references
+
+- Power BI now supports [Dynamic per recipient subscriptions](../collaborate-share/dynamic-subscriptions.md) and sending large report subscriptions to [OneDrive SharePoint](paginated-reports-onedrive-sharepoint.md).
 
 ## Related content
 
