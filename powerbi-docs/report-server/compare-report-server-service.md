@@ -23,7 +23,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 |---------|---------|---------|---------|
 | Analyze in Excel | No | Yes | [Analyze in Excel](../collaborate-share/office-integration/service-analyze-in-excel.md) |
 | Bookmarks | No | Yes| Bookmarks in the [Power BI service](../explore-reports/end-user-bookmarks.md) |
-| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
+| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud). See [Licensing Power BI Report Server](get-started.md#licensing-power-bi-report-server) for licensing requirements. |
 | Data sources | Cloud and/or on-premises | Cloud and/or on-premises |  |
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
