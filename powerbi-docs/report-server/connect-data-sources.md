@@ -19,7 +19,7 @@ Paginated report data sources in Power BI Report Server match those in SQL Serve
 Access and Excel data sources rely on the **Microsoft Access Database Engine (ACE)** OLE DB provider (`Microsoft.ACE.OLEDB.*`) to read Access databases (`.accdb`, `.mdb`) and Excel workbooks (`.xls`, `.xlsx`) through OLE DB.
 
 > [!IMPORTANT]
-> Starting with **Power BI Report Server September 2026**, PBIRS setup no longer installs the Access Database Engine. In earlier releases it was installed automatically as part of the report server bundle. To use Access or Excel data sources after September 2026 release an administrator must install the Access Database Engine **separately** on the computer running Power BI Report Server.
+> Starting with **Power BI Report Server September 2026**, PBIRS setup no longer installs the Access Database Engine. In earlier releases, the report server bundle automatically installed it. To use Access or Excel data sources after the September 2026 release, an administrator must **separately** install the Access Database Engine on the computer running Power BI Report Server.
 
 ## Use a shared dataset as an OData feed
 
