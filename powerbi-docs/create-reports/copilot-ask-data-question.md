@@ -131,6 +131,7 @@ Consider the following factors when you use Copilot data questions:
 - Copilot data questions don't apply filters or slicers currently affecting visuals on the report page to the answers generated in the Copilot pane.
 - The requirement to enable Q&A is unique to Copilot data questions. You can still use Copilot for other tasks, like [asking questions about content present in your report](../explore-reports/copilot-pane-summarize-content.md#answer-questions-about-your-report-content-in-the-copilot-pane).
 - When a question is related to data in the semantic model, Copilot uses the semantic model to answer the question. Otherwise, it might answer from the [large language model's (LLM's) general knowledge](https://go.microsoft.com/fwlink/p/?linkid=2325401).
+- Percentage values might be formatted differently between Copilot-generated text responses and Copilot-generated data tables. Table values use the formatting defined in the semantic model.
 - For additional limitations on data sources, see [Limitations of Power BI Q&A](../natural-language/q-and-a-limitations.md).
 
 ## Next steps
