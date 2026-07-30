@@ -246,6 +246,9 @@ In addition to providing accessibility tools and functionality, Power BI provide
 - Don't use tooltips to convey important information. Users with motor problems and users who don't use a mouse have difficulties accessing them.
 - Do add tooltips to charts as ancillary information. It's included in the accessible **Show Data** table for each visual.
 
+> [!TIP]
+> Don't use report tooltips for information that screen readers need to read. Screen readers can't read report tooltip content when the tooltip appears for a data point in a visual or from the **Help tooltip** icon. For more information, see [Considerations and limitations for report tooltips](desktop-tooltips.md#considerations-and-limitations).
+
 ### Video
 
 - Avoid video that automatically starts when the page renders.
