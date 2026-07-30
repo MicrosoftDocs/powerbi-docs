@@ -42,31 +42,25 @@ Select a template from the following list to start the step-by-step walkthrough.
 - [Export a Power BI paginated report for items in a SharePoint Online List, or for each row in an Excel Online table](service-automate-paginated-excel-sharepoint-list.md).
 - [Save a Power BI paginated report to a local system folder](service-automate-paginated-local-file.md).
 
-## Considerations and limitations
-
-When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to the  Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
-
-## Best practices for exporting paginated reports with Power Automate
+## Implement retry logic
 
 When you use the Export to File API to export paginated reports through Power Automate - especially at scale, such as looping over many reports or parameter sets - a few simple habits go a long way toward building reliable, resilient flows. The guidance in this section helps your flows handle the occasional hiccup gracefully.
-
-### Implement your own retry logic
-
 Every now and then, a report export briefly can't reach its underlying data source. This condition is normal and temporary in any cloud service. In most cases, a later attempt simply succeeds. By default, the export action uses an exponential retry policy, where the number of retries is based on your performance profile. For paginated report exports, this default often isn't enough on its own. The service can take a little while to recover, and the default attempts happen too close together to give it that time. For that reason, configure a longer retry policy:
 
-- **Recommended:** use a **fixed interval** policy with a **count of 5** and an **interval of PT5M** (5 minutes). The wider spacing gives the service enough time to recover, so the next attempt is far more likely to succeed.
-- **If you prefer exponential backoff:** use a **count of at least 5**, with a **minimum interval of PT30S** and a **maximum interval of at least PT5M**. This spacing keeps attempts far enough apart to be effective.
+- **Fixed interval** - Use a **fixed interval** policy with a **count of 5** and an **interval of PT5M** (5 minutes). The wider spacing gives the service enough time to recover, so the next attempt is far more likely to succeed, or
+- **Exponential backoff** - Use a **count of at least 5**, with a **minimum interval of PT30S** and a **maximum interval of at least PT5M**. This spacing keeps attempts far enough apart to be effective.
 
 > [!NOTE]
 > Retries help with temporary failures only. If the *same* report fails every time, even after retrying, the cause is usually something specific to that report - such as an incorrect connection string, or a sign-in or permissions problem. In that case, fixing the underlying report or data source resolves the problem, whereas retrying doesn't.
 
-### Optimize report design
+## Considerations and limitations
+
+When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to the  Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
+
+## Additional notes
 
 - Split very large exports into smaller batches. Reducing the size and memory footprint of each export improves both reliability and performance.
-- Review the [performance and scalability considerations](../guidance/report-paginated-performance-scalability-considerations.md) for paginated reports.
-
-## Additional references
-
+- Review the [performance and scalability considerations](../guidance/report-paginated-performance-scalability-considerations.md) for Paginated Reports.
 - Power BI now supports [Dynamic per recipient subscriptions](../collaborate-share/dynamic-subscriptions.md) and sending large report subscriptions to [OneDrive SharePoint](paginated-reports-onedrive-sharepoint.md).
 
 ## Related content
