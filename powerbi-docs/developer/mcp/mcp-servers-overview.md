@@ -26,7 +26,7 @@ Choose the local server for development and model management workflows, or the r
 
 | Feature | Remote MCP Server | Local MCP Server |
 | --- | --- | --- |
-| **Installation** | No installation required | Requires Visual Studio Code or Node.js 20.0+ (npx) |
+| **Installation** | Requires Visual Studio Code and GitHub Copilot | Requires Visual Studio Code or Node.js 20.0+ (npx) |
 | **Transport** | Streamable HTTP | `stdio` |
 | **Authentication** | Microsoft Entra ID (OAuth) | Microsoft Entra ID, Service Principal |
 | **Hosting** | Fabric hosted service | Runs locally on your machine |
