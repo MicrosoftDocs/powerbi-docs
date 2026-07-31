@@ -42,9 +42,10 @@ Select a template from the following list to start the step-by-step walkthrough.
 - [Export a Power BI paginated report for items in a SharePoint Online List, or for each row in an Excel Online table](service-automate-paginated-excel-sharepoint-list.md).
 - [Save a Power BI paginated report to a local system folder](service-automate-paginated-local-file.md).
 
-## Implement retry logic
+## Implement custom retry logic
 
 When you use the Export to File API to export paginated reports through Power Automate - especially at scale, such as looping over many reports or parameter sets - a few simple habits go a long way toward building reliable, resilient flows. The guidance in this section helps your flows handle the occasional hiccup gracefully.
+
 Every now and then, a report export briefly can't reach its underlying data source. This condition is normal and temporary in any cloud service. In most cases, a later attempt simply succeeds. By default, the export action uses an exponential retry policy, where the number of retries is based on your performance profile. For paginated report exports, this default often isn't enough on its own. The service can take a little while to recover, and the default attempts happen too close together to give it that time. For that reason, configure a longer retry policy:
 
 - **Fixed interval** - Use a **fixed interval** policy with a **count of 5** and an **interval of PT5M** (5 minutes). The wider spacing gives the service enough time to recover, so the next attempt is far more likely to succeed, or
