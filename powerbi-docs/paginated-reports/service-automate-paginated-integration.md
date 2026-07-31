@@ -56,7 +56,7 @@ Every now and then, a report export briefly can't reach its underlying data sour
 
 ## Considerations and limitations
 
-When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to the  Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
+When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to a Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
 
 ## Additional notes
 
