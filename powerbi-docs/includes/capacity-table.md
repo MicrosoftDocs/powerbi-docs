@@ -5,7 +5,7 @@ services: powerbi
 author: JulCsc
 ms.author: juliacawthra
 ms.topic: include
-ms.date: 09/30/2025
+ms.date: 08/01/2026
 ms.custom: include file
 ai-usage: ai-assisted
 ---
@@ -30,4 +30,4 @@ ai-usage: ai-assisted
 
 <sup>2</sup> These SKUs aren't available in all regions. To request using these SKUs in regions where they're not available, contact your Microsoft account manager.
 
-<sup>3</sup> FT (trial) capacities inherit F64 limits (time-limited) unless explicitly documented otherwise.
+<sup>3</sup> Fabric trial capacities are assigned either an F4 or F64 SKU and inherit the limits of the assigned SKU for the duration of the trial.
