@@ -326,7 +326,7 @@ By default, all small multiple charts share the same axis scale. To customize:
 
 ## Considerations and limitations
 
-- **Conditional formatting**: Line charts don't natively support conditional formatting for lines, shaded areas, or markers.
+- **Conditional formatting**: You can conditionally format line colors, shaded areas, and markers. For instructions and examples, see [Apply conditional formatting to chart lines and legends](power-bi-visualization-conditional-formatting-chart-line-legends.md).
 - **Line segment behavior**:
   - **Single series only**: Segment formatting (color, shade area) works with only one series. Multiple series disable this feature.
   - **Gaps in data**: How gaps appear depends on axis type. Categorical axes show gaps as discrete breaks when "Show items with no data" is enabled. Continuous axes connect points with a line even when values are missing.
