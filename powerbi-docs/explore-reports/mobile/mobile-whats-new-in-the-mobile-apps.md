@@ -7,7 +7,7 @@ ms.reviewer: michalfo
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 07/08/2026
+ms.date: 08/04/2026
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 - [What's new in Power BI](../../fundamentals/whats-new.md)
 - [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/power-bi-mobile/)
+
+## August 2026
+
+### Export data to Excel from a report visual
+
+You can now export data from a supported report visual to an Excel file directly in the Power BI mobile apps. The exported file is a static copy of the data at the time of export, and it follows the same permissions, report settings, sensitivity labels, row-level security (RLS), and export limits as export from the Power BI service. For more information, see [Export data to Excel](./mobile-apps-view-phone-report.md#export-data-to-excel).
 
 ## July 2026
 

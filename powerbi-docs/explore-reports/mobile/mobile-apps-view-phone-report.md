@@ -3,11 +3,11 @@ title: View Power BI Reports Optimized for Your Phone
 description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
 author: dknappettmsft 
 ms.author: daknappe
-ms.reviewer: ''
+ms.reviewer: emininberg
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 07/07/2026
 ai-usage: ai-assisted
 ---
 # View Power BI reports optimized for your phone
@@ -15,11 +15,11 @@ ai-usage: ai-assisted
 **Applies to:** [!INCLUDE [applies-to-mobile](../../includes/applies-to-version/mobile.md)]
 
 
-When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the report in the optimized view.
+When you view a Power BI report on your phone, Power BI checks if the report is optimized for phones. If it is, Power BI automatically opens the report in the optimized view.
 
 :::image type="content" source="./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png" alt-text="Screenshot of report in portrait mode.":::
 
-If the report doesn't have an optimized view, in portrait orientation you'll see small regular version of the report page. For a closer look, you can either tip the phone to landscape orientation, or, if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
+If the report doesn't have an optimized view, in portrait orientation you see a small regular version of the report page. For a closer look, you can either tip the phone to landscape orientation, or, if all you need is a quick look at the numbers, you can quite easily stay in portrait orientation and just use pinch and zoom.
 
 :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-phone-report-page-not-optimized.png" alt-text="Screenshot of report page not optimized.":::
 
@@ -38,7 +38,7 @@ A filled in filter icon indicates there are active filters on the page. You can 
 
     :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-active-filters.png" alt-text="Screenshot of Power BI phone report filters pane.":::
 
-1. Tap a filter to open it. You can then change the filter, choose between basic and advanced filtering, etc.
+1. Tap a filter to open it. You can then change the filter, choose between basic and advanced filtering, and more.
 
     :::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-iphone-basic-advanced-filtering.png" alt-text="Screenshot of Power BI phone report basic and advanced filtering.":::
 
@@ -58,7 +58,7 @@ With the visual selected, you can do things like scroll within the visual. To de
 
 ## Open visuals in focus mode
 
-Phone reports also offer a focus mode: You get a bigger view of a single visual and explore it more easily.
+Phone reports also offer a focus mode. You get a bigger view of a single visual and can explore it more easily.
 
 - In a phone report, tap the ellipsis (**...**) in the upper-right corner of a visual  > **Expand to focus mode**.
   
@@ -68,9 +68,9 @@ What you do in focus mode carries over to the report canvas and vice versa. For 
 
 Some actions are only possible in focus mode, due to screen size constraints:
 
-- **Drill down** into the information displayed in a visual. Read more about [drilling down and up](mobile-apps-view-phone-report.md#drill-down-in-a-visual) in a phone report, below.
+- **Drill down** into the information displayed in a visual. Read more about [drilling down and up](mobile-apps-view-phone-report.md#drill-down-in-a-visual) in a phone report, later in this article.
 - **Sort** the values in the visual.
-- **Revert**: Clear exploration steps you've taken on a visual and revert to the definition set when the report was created.
+- **Revert**: Clear exploration steps you took on a visual and revert to the definition set when the report was created.
   
     To clear all exploration from a visual, tap the ellipsis (**...**) > **Revert**.
   
@@ -80,19 +80,19 @@ Some actions are only possible in focus mode, due to screen size constraints:
 
 ## Drill down in a visual
 
-If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../../create-reports/desktop-drillthrough.md) either in the Power BI service or in Power BI Desktop.
+If you define hierarchy levels in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../../create-reports/desktop-drillthrough.md) either in the Power BI service or in Power BI Desktop.
 
-There are few ways to drill down:
+There are a few ways to drill down:
 
 ### Drill down on a value
 
 1. Long tap (tap and hold) on a data point in a visual.
-1. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill-down and up arrow.
-1. Tap on the down arrow to drill down
+1. The tooltip appears. If a hierarchy exists, the tooltip footer shows drill-down and up arrow.
+1. Tap the down arrow to drill down.
 
     :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-down.png" alt-text="Screenshot of a drill-down on a visual as seen in the Power BI mobile app." border="false":::
 
-1. Tap on the up arrow to drill up.
+1. Tap the up arrow to drill up.
 
 ### Drill to next level
 
@@ -124,20 +124,58 @@ There are few ways to drill down:
 
 ## Drill through from a value
 
-Drilling through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
+Drilling through connects values in one report page with other report pages. When you drill through from a data point to another report page, the data point values filter the drilled through page, or they provide the context for the selected data.
 Report authors can [define drillthrough](../../create-reports/desktop-drillthrough.md) when they create the report.
 
 1. Long tap (tap and hold) on a data point in a visual.
-1. Tooltip will show up, and if drillthrough is defined, then the tooltip footer will show the drillthrough arrow.
-1. Tap on the arrow to drill through
+1. The tooltip appears. If the report author defined drillthrough, the tooltip footer shows the drillthrough arrow.
+1. Tap the arrow to drill through.
 
     :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through1.png" alt-text="Screenshot of drill-through button on mobile app visual tooltip." border="false":::
 
-1. Choose which report page to drill through
+1. Choose which report page to drill through.
 
     :::image type="content" source="./media/mobile-apps-view-phone-report/report-drill-through2.png" alt-text="Screenshot of drill-through options in the mobile app.":::
 
 1. Use the back arrow on the app header to go back to the page you started from.
+
+## Export data to Excel
+
+In the Power BI mobile apps, you can export data from a supported report visual to an Excel file. The exported file is a static copy of the data at the time of export and doesn't keep a live connection to the report.
+
+:::image type="content" source="./media/mobile-apps-view-phone-report/power-bi-export-data-excel.png" alt-text="Screenshot of the More options menu open on a visual in the Power BI mobile app, showing the Export to Excel option.":::
+
+To export data to Excel:
+
+1. Open the report in the Power BI mobile app.
+
+1. Tap the visual you want to export.
+
+1. Tap the ellipsis (**...**) to open **More options**.
+
+1. Tap **Export to Excel**.
+
+When the export finishes, you can open the file in Excel, share it, or save it to your device. The file uses the visual's name as its file name. If the visual doesn't have a name, the file is named *data*.
+
+Power BI selects the export type based on the visual:
+
+- **Table and matrix visuals** export with the current layout, up to 150,000 data intersections.
+- **Other supported visual types** export as summarized data, up to 150,000 rows.
+
+Any filters you apply to the visual are reflected in the exported data. The exported file keeps the sensitivity label of the visual or report.
+
+> [!NOTE]
+> Export to Excel from the mobile apps follows the same permissions, report settings, tenant admin settings, sensitivity labels, row-level security (RLS), and export limits as export from the Power BI service. If export is disabled for the report, visual, or user, the **Export to Excel** option might not appear or might be unavailable.
+
+### Ensure a successful export
+
+To get the most out of Export to Excel, keep these tips in mind:
+
+- **Confirm export is turned on for the visual.** The **Export to Excel** option appears when the report author and your organization's admin enable export for the visual. If you don't see the option, the same visual in the Power BI service shows whether export is available.
+
+- **Try the export in the Power BI service.** Because mobile export uses the same permissions and settings as the service, opening the report in the [Power BI service](https://app.powerbi.com) is a great way to confirm the export works and to explore more export options.
+
+- **Check with the report author.** If you'd like export enabled for a visual, reach out to the person who created the report—they can turn on the export option for you.
 
 ## Related content
 
