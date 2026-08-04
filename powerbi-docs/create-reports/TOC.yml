@@ -533,6 +533,8 @@
       items:
       - name: Conditional formatting overview
         href: ../visuals/power-bi-visualization-conditional-formatting.md
+      - name: Apply conditional formatting to chart lines and legends
+        href: ../visuals/power-bi-visualization-conditional-formatting-chart-line-legends.md
       - name: Apply conditional table formatting
         href: desktop-conditional-table-formatting.md
       - name: Create dynamic, expression-based titles

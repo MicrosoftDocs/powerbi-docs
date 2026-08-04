@@ -198,9 +198,9 @@ EVALUATE
     }
 ```
 
-For line charts, you can also format line colors using a gradient based on the total value of each line, or by the category it represents. For example, when overlaying multiple years by month, apply a gradient that displays the most recent year in blue while older years fade to lighter shades of grey. Markers and series labels automatically inherit the conditional formatting until you choose to color them differently.
+For line charts, you can also format line colors using a gradient based on the total value of each line, or by the category it represents. For example, when overlaying multiple years by month, apply a gradient that displays the most recent year in blue while older years fade to lighter shades of gray. Markers and series labels automatically inherit the conditional formatting until you choose to color them differently.
 
-:::image type="content" source="media/power-bi-visualization-conditional-formatting/conditional-formatting-legends.png" alt-text="Screenshot showing a Power BI report with multiple visuals using conditional formatting. A table displays segment names with hex color codes. A donut chart, clustered column chart, and line chart all show units by segment using the same colors from the table. A separate line chart shows units shipped by year with 2026 in blue fading to grey for older years. The Format pane shows the fx button for line color conditional formatting.":::
+:::image type="content" source="media/power-bi-visualization-conditional-formatting/conditional-formatting-legends.png" alt-text="Screenshot showing a Power BI report with multiple visuals using conditional formatting. A table displays segment names with hex color codes. A donut chart, clustered column chart, and line chart all show units by segment using the same colors from the table. A separate line chart shows units shipped by year with 2026 in blue fading to gray for older years. The Format pane shows the fx button for line color conditional formatting.":::
 
 ## Considerations and limitations
 
@@ -216,6 +216,7 @@ Keep these considerations in mind when working with conditional formatting:
 
 ## Related content
 
+- [Apply conditional formatting to chart lines and legends](power-bi-visualization-conditional-formatting-chart-line-legends.md)
 - [Expression-based titles in Power BI Desktop](../create-reports/desktop-conditional-format-visual-titles.md)
 - [Apply conditional formatting in tables and matrices](../create-reports/desktop-conditional-table-formatting.md)
 - [Tips and tricks for color formatting in reports](service-tips-and-tricks-for-color-formatting.md)
