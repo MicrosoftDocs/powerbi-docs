@@ -63,9 +63,11 @@ The next section is a tabbed list.
 
 ## Change the scorecard view
 
-When you're viewing your scorecard, you can change the view from **List view** to **Compact view**, which is currently in preview.
+When you're viewing your scorecard, you can change the view from **List view** to **Compact view**.
 
-:::image type="content" source="media/service-goals-introduction/metrics-compact-view.png" alt-text="Screenshot showing Compact view menu item.":::
+![Screenshot 2026-08-05 at 4.00.00 PM](media/service-goals-introduction/screenshot-2026-08-05-at-4.00.00 pm.png)
+
+
 
 Compact view adjusts to various screen sizes and supports resizing columns. You can do everything you can do in list view, except editing and creating a new goal.
 
@@ -112,12 +114,15 @@ Scorecards have goal-level permissions roles. While workspace permissions give v
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
 - Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).
 
+- The maximum number of goals supported in a scorecard is 1,000.
+
 ## Next steps
 
 Now that you understand what goals are and how to navigate the Scorecards hub, you're ready to create your first scorecard:
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
 - [Set permissions for your scorecards](service-goals-set-permissions.md)
+
 - [Connect goals to data sources](service-goals-create-connected.md)
 
 **For administrators:**
