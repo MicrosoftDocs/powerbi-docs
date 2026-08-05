@@ -10,7 +10,7 @@ ms.date: 12/19/2025
 #customer intent: As a Power BI user I want to learn how to show the same goal on multiple Power BI scoredcards.
 ---
 
-# Create linked goals in the Power BI service (preview)
+# Create linked goals in the Power BI service
 
 **Applies to:** [!INCLUDE [applies-to-service](../includes/applies-to-version/service.md)]
 
@@ -69,6 +69,7 @@ If you link a rollup goal onto a different scorecard, it continues to show its c
 ## Related content
 
 - [Create scorecards and manual goals in Power BI](service-goals-create.md)
+
 - [Create subgoals in the Power BI service](service-goals-subgoals.md)
 
 Have more questions? [Try the Power BI Community](https://community.powerbi.com/).
