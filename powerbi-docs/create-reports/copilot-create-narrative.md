@@ -53,8 +53,11 @@ If you aren't signed in to Power BI Desktop, you still see the Copilot entry poi
 
 1. You can include or exclude individual visuals or pages, or summarize the entire report.
 
-    :::image type="content" source="media/copilot-create-narrative/copilot-narrative-select-content.png" alt-text="Screenshot of selecting visuals and pages to include or exclude in the Copilot narrative summary." lightbox="media/copilot-create-narrative/copilot-narrative-select-content.png":::
-
+   :::image type="content" source="media/copilot-create-narrative/copilot-narrative-select-content.png" alt-text="Screenshot of selecting visuals and pages to include or exclude in the Copilot narrative summary." lightbox="media/copilot-create-narrative/copilot-narrative-select-content.png":::
+   
+   To also include visuals that are hidden by default and appear only when a display-only report bookmark is selected, turn on Show hidden bookmark visuals. The hidden visuals are grouped under Hidden bookmark visuals for the page, where you can select the ones you want to include.  
+   ![Hidden bookmark visual selection](media/copilot-create-narrative/hidden-bookmark-visual-selection.jpg)
+   
 1. Read through the summary to make sure it's accurate.
 
     :::image type="content" source="media/copilot-create-narrative/check-summary.png" alt-text="Screenshot of the Copilot-generated narrative summary that the user reads to verify accuracy." lightbox="media/copilot-create-narrative/check-summary.png" :::
@@ -106,6 +109,17 @@ Microsoft is continuously working to improve the quality of the report pages, in
 - Users need to refresh the summary visual when they update or filter a page, report, or data, to see an updated summary.
 - The narrative visual doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
+- Bookmark limitations for Hidden bookmark visuals:
+
+  - Only display-only report bookmarks are supported, meaning bookmarks where Data is cleared in the Bookmarks pane, so the bookmark changes only visibility and not filters or slicers.
+  
+  - The bookmark must be reachable from the report through a bookmark button or bookmark navigator. Bookmarks without a user-facing affordance are excluded.
+  
+  - Personal bookmarks aren't supported.
+  
+  - Visuals on hidden pages aren't included, unless a report bookmark makes them visible.
+  
 ## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
+
