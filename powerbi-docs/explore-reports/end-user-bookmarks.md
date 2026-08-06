@@ -7,7 +7,7 @@ ms.reviewer: juliacawthra
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 08/05/2026
 ai-usage: ai-assisted
 LocalizationGroup: Create reports
 ---
@@ -168,8 +168,10 @@ In this release of **personal bookmarks**, there are a few considerations and li
   - When you add a column to a visual during personalization, a filter pane card is automatically created for that column. Selections made on this auto-generated filter aren't captured in bookmarks if the column is later removed from the visual.
   - Bookmarks capture filters that the report author explicitly added to the filter pane regardless of whether the column is in the visual.
   - Bookmarks capture filter changes for columns that remain in the visual.
-- You can create up to 20 bookmarks for a single report.
-- If you use a personal bookmark to hide a group of visuals, exporting the report to PDF or PowerPoint might still include those visuals. To hide the visuals in the export, hide each visual in the group individually in the personal bookmark instead of hiding them as a group.
+- You can create up to 20 personal bookmarks for a single report and up to 2,000 personal bookmarks across all reports.
+- You can add or update a personal bookmark only when you're viewing a report.
+- Personal bookmarks expire after six months.
+- If you use a personal bookmark to hide a group of visuals, exporting the report to PDF or PowerPoint might still include those visuals. To hide the visuals in the export, use a report bookmark instead.
 
 ## Related content
 
