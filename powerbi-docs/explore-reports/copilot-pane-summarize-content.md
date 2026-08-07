@@ -109,8 +109,8 @@ In a summary response from the Copilot pane, citations are provided within the s
 
 ## Custom prompts
 
-The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. You can even ask about data behind slicers and filters on your report page.  As long as the filter or slicer exists in the report, Copilot can filter the response for you.
- 
+The benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted list or a summary specifically about sales, or about another nuanced slice of your data. You can even ask about data behind slicers and filters on your report page.  As long as the filter or slicer exists in the report, Copilot can filter the response for you. You can also ask about visuals that are hidden by default and revealed only when a display-only report bookmark is triggered through a bookmark button or bookmark navigator.
+
 :::image type="content" source="../create-reports/media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="../create-reports/media/copilot-pane-summarize-content/bulleted-insights.png":::
 
 Copilot allows you to generate a custom summary to fit your business needs. Here are some examples of custom summaries:
@@ -135,6 +135,8 @@ This customization allows you to focus on nuanced aspects of the data that are r
 ## Answer questions about your report content in the Copilot pane
 
 In the Copilot pane, you can ask specific questions about your report content and get a summarized response. This feature lets you request summaries and ask extra follow-up questions about your report or about a summary you received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report. You can even ask about data behind different slicers and filters in your report, and the citation references the correct, filtered visual. Some filter types aren't supported, such as relative date filters.
+
+Answers also consider visuals that are hidden by default and revealed by a display-only report bookmark, and the citation references the correct hidden visual. Copilot reads these visuals in place, so the report's bookmark state doesn't change, and row-level security (RLS) and object-level security (OLS) stay fully enforced.
 
 ## Examples of questions you can ask 
 
@@ -236,9 +238,19 @@ The following limitations and considerations apply to both experiences (also see
   - Basic, categorical filters and slicers are supported.
   - Advanced filters are supported, except for relative date/time filters, is/is not blank or empty filters, and numerical range filters (between X and Y).
   - Field parameters aren't supported as slicers or filter types.
+    
+- Bookmark limitations:
+
+  - Only display-only report bookmarks are supported, meaning bookmarks where Data is cleared in the Bookmarks pane, so the bookmark changes only visibility and not filters or slicers.
+  
+  - The bookmark must be reachable from the report through a bookmark button or bookmark navigator. Bookmarks without a user-facing affordance are excluded.
+  
+  - Personal bookmarks aren't supported.
+  
+  - Visuals on hidden pages aren't included, unless a report bookmark makes them visible.
   
 - To make the Copilot button available in reports, the report needs to be in:
-  - An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
+- An eligible workspace: the workspace needs to have a paid dedicated Fabric capacity.
   - A tenant where the admin settings are enabled.
 - Copilot summaries only consider visuals with less than 30,000 rows of data. If visuals include more data, Copilot answers use the semantic model itself, not the report visual.
 - Copilot summaries might not work accurately on table or matrix visuals with more than 500 rows. If the visual surpasses 100 rows, Copilot answers use the semantic model itself, not the report visual.
